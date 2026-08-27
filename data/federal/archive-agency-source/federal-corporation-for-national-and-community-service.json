@@ -1,0 +1,230 @@
+{
+  "scope": "United States",
+  "code": "federal",
+  "department": "Corporation for National and Community Service",
+  "fiscalYear": 2024,
+  "ledgerAmount": 1128595025.79,
+  "sourceTotal": 1538084194.05,
+  "sourceUrl": "https://api.usaspending.gov/api/v2/agency/485/object_class/?fiscal_year=2024&limit=100&page=1",
+  "sourceUrls": [
+    [
+      "FY2024 gross outlays by object class",
+      "https://api.usaspending.gov/api/v2/agency/485/object_class/?fiscal_year=2024&limit=100&page=1"
+    ],
+    [
+      "FY2024 agency budgetary resources total",
+      "https://api.usaspending.gov/api/v2/agency/485/budgetary_resources/?fiscal_year=2024"
+    ]
+  ],
+  "rowSchema": [
+    "subAgency",
+    "program",
+    "amount",
+    "sourceAmount",
+    "sourceRows"
+  ],
+  "rows": [
+    [
+      "Corporation for National and Community Service",
+      "Grants, subsidies, and contributions",
+      855986798.3,
+      855986798.3,
+      null
+    ],
+    [
+      "Corporation for National and Community Service",
+      "Financial transfers",
+      206946172.58,
+      206946172.58,
+      null
+    ],
+    [
+      "Corporation for National and Community Service",
+      "Advisory and assistance services",
+      81028440.83,
+      81028440.83,
+      null
+    ],
+    [
+      "Corporation for National and Community Service",
+      "Other services from non-Federal sources",
+      132468661.79,
+      132468661.79,
+      null
+    ],
+    [
+      "Corporation for National and Community Service",
+      "Full-time permanent",
+      83325083.06,
+      83325083.06,
+      null
+    ],
+    [
+      "Corporation for National and Community Service",
+      "Special personal services payments",
+      73305025.46,
+      73305025.46,
+      null
+    ],
+    [
+      "Corporation for National and Community Service",
+      "Civilian personnel benefits",
+      32452718.23,
+      32452718.23,
+      null
+    ],
+    [
+      "Corporation for National and Community Service",
+      "Other goods and services from Federal sources",
+      19086089.5,
+      19086089.5,
+      null
+    ],
+    [
+      "Corporation for National and Community Service",
+      "Equipment",
+      13479235.95,
+      13479235.95,
+      null
+    ],
+    [
+      "Corporation for National and Community Service",
+      "Medical care",
+      7275890.29,
+      7275890.29,
+      null
+    ],
+    [
+      "Corporation for National and Community Service",
+      "Travel and transportation of persons",
+      7752959.8,
+      7752959.8,
+      null
+    ],
+    [
+      "Corporation for National and Community Service",
+      "Land and structures",
+      2757833.2,
+      2757833.2,
+      null
+    ],
+    [
+      "Corporation for National and Community Service",
+      "Rental payments to GSA",
+      5649370.71,
+      5649370.71,
+      null
+    ],
+    [
+      "Corporation for National and Community Service",
+      "Communications, utilities, and miscellaneous charges",
+      3034419.39,
+      3034419.39,
+      null
+    ],
+    [
+      "Corporation for National and Community Service",
+      "Other personnel compensation",
+      2583794.24,
+      2583794.24,
+      null
+    ],
+    [
+      "Corporation for National and Community Service",
+      "Other than full-time permanent",
+      2628227.27,
+      2628227.27,
+      null
+    ],
+    [
+      "Corporation for National and Community Service",
+      "Supplies and materials",
+      1913368.52,
+      1913368.52,
+      null
+    ],
+    [
+      "Corporation for National and Community Service",
+      "Transportation of things",
+      108987.95,
+      108987.95,
+      null
+    ],
+    [
+      "Corporation for National and Community Service",
+      "Printing and reproduction",
+      2218970.46,
+      2218970.46,
+      null
+    ],
+    [
+      "Corporation for National and Community Service",
+      "Research and development contracts",
+      650505.6,
+      650505.6,
+      null
+    ],
+    [
+      "Corporation for National and Community Service",
+      "Refunds",
+      35239.57,
+      35239.57,
+      null
+    ],
+    [
+      "Corporation for National and Community Service",
+      "Operation and maintenance of equipment",
+      9981.06,
+      9981.06,
+      null
+    ],
+    [
+      "Corporation for National and Community Service",
+      "Benefits for former personnel",
+      13365.02,
+      13365.02,
+      null
+    ],
+    [
+      "Corporation for National and Community Service",
+      "Operation and maintenance of facilities",
+      6588.46,
+      6588.46,
+      null
+    ],
+    [
+      "Corporation for National and Community Service",
+      "Insurance claims and indemnities",
+      15000,
+      15000,
+      null
+    ],
+    [
+      "Corporation for National and Community Service",
+      "Object class not reported by official source",
+      1540.5,
+      1540.5,
+      null
+    ],
+    [
+      "Corporation for National and Community Service",
+      "Rental payments to others",
+      3349926.31,
+      3349926.31,
+      null
+    ]
+  ],
+  "sourceBasis": "official source amount",
+  "sourceCheck": {
+    "objectClassRows": 27,
+    "objectClassTotal": 1538084194.05,
+    "agencyTotal": 1538084194.05,
+    "difference": 0
+  },
+  "normalizationAdjustment": 0.01,
+  "hierarchyNote": "The source endpoint returns agency-level object-class aggregates; no individual employees or payees are included.",
+  "sourceLabelMap": {
+    "Object class not reported by official source": "Unknown"
+  },
+  "note": "The official USAspending object-class response labels 1 row as Unknown; the display label states that the object class was not reported and no category was inferred. Amounts are shown on the official source basis; no comparator normalization was applied."
+}

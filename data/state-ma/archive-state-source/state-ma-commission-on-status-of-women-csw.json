@@ -1,0 +1,77 @@
+{
+  "scope": "Massachusetts",
+  "code": "ma",
+  "department": "COMMISSION ON STATUS OF WOMEN (CSW)",
+  "fiscalYear": 2024,
+  "ledgerAmount": 769961.5,
+  "sourceTotal": 838243.23,
+  "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000",
+  "rowSchema": [
+    "subAgency",
+    "program",
+    "amount",
+    "sourceAmount",
+    "sourceRows"
+  ],
+  "rows": [
+    [
+      "COMMISSION ON STATUS OF WOMEN (CSW)",
+      "COMMISSION ON STATUS OF WOMEN (CSW) · (AA) REGULAR EMPLOYEE COMPENSATION",
+      621022.36,
+      621022.36,
+      27
+    ],
+    [
+      "COMMISSION ON STATUS OF WOMEN (CSW)",
+      "COMMISSION ON STATUS OF WOMEN (CSW) · (EE) ADMINISTRATIVE EXPENSES",
+      110523.56,
+      110523.56,
+      127
+    ],
+    [
+      "COMMISSION ON STATUS OF WOMEN (CSW)",
+      "COMMISSION ON STATUS OF WOMEN (CSW) · (CC) SPECIAL EMPLOYEES",
+      52492,
+      52492,
+      27
+    ],
+    [
+      "COMMISSION ON STATUS OF WOMEN (CSW)",
+      "COMMISSION ON STATUS OF WOMEN (CSW) · (HH) CONSULTANT SVCS (TO DEPTS)",
+      14000,
+      14000,
+      4
+    ],
+    [
+      "COMMISSION ON STATUS OF WOMEN (CSW)",
+      "COMMISSION ON STATUS OF WOMEN (CSW) · (PP) STATE AID/POL SUB",
+      12703.92,
+      12703.92,
+      28
+    ],
+    [
+      "COMMISSION ON STATUS OF WOMEN (CSW)",
+      "COMMISSION ON STATUS OF WOMEN (CSW) · (JJ) OPERATIONAL SERVICES",
+      10263.15,
+      10263.15,
+      14
+    ],
+    [
+      "COMMISSION ON STATUS OF WOMEN (CSW)",
+      "COMMISSION ON STATUS OF WOMEN (CSW) · (BB) REGULAR EMPLOYEE RELATED EXPEN",
+      9922.42,
+      9922.42,
+      41
+    ],
+    [
+      "COMMISSION ON STATUS OF WOMEN (CSW)",
+      "COMMISSION ON STATUS OF WOMEN (CSW) · (UU) IT NON-PAYROLL EXPENSES",
+      7315.82,
+      7315.82,
+      30
+    ]
+  ],
+  "hierarchyNote": "The source does not identify a separate sub-agency column; direct-managed rows repeat the parent entity.",
+  "sourceBasis": "official source amount",
+  "note": "Amounts are shown on the official source basis; no comparator normalization was applied."
+}

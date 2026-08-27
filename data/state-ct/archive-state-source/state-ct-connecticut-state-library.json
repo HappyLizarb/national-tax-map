@@ -1,0 +1,161 @@
+{
+  "scope": "Connecticut",
+  "code": "ct",
+  "department": "Connecticut State Library",
+  "fiscalYear": 2024,
+  "ledgerAmount": 10242986.65,
+  "sourceTotal": 10914590.35,
+  "sourceUrl": "https://data.ct.gov/resource/ajdm-rvz7.json?$select=department,program,sum(amount)%20as%20amount,count(*)%20as%20records&$where=fiscal_year=2024&$group=department,program",
+  "rowSchema": [
+    "subAgency",
+    "program",
+    "amount",
+    "sourceAmount",
+    "sourceRows"
+  ],
+  "rows": [
+    [
+      "Connecticut State Library",
+      "Connecticut State Library · PUBLIC LIBRARY REPAIRS",
+      1901549,
+      1901549,
+      10
+    ],
+    [
+      "Connecticut State Library",
+      "Connecticut State Library · Statewide Digital Library",
+      1630918.55,
+      1630918.55,
+      38
+    ],
+    [
+      "Connecticut State Library",
+      "Connecticut State Library · CT EDUCATION NETWORK",
+      1348300.7,
+      1348300.7,
+      37
+    ],
+    [
+      "Connecticut State Library",
+      "Connecticut State Library · Other Expenses",
+      1313927.12,
+      1313927.12,
+      863
+    ],
+    [
+      "Connecticut State Library",
+      "Connecticut State Library · Historic Document Preservation",
+      1171818.54,
+      1171818.54,
+      273
+    ],
+    [
+      "Connecticut State Library",
+      "Connecticut State Library · Library Srvcs & Technology Act",
+      1094536.21,
+      1094536.21,
+      418
+    ],
+    [
+      "Connecticut State Library",
+      "Connecticut State Library · Connecticard Payments",
+      703638,
+      703638,
+      167
+    ],
+    [
+      "Connecticut State Library",
+      "Connecticut State Library · Legal Legislative Lib Material",
+      567023,
+      567023,
+      332
+    ],
+    [
+      "Connecticut State Library",
+      "Connecticut State Library · Archives Connection System",
+      427686.41,
+      427686.41,
+      18
+    ],
+    [
+      "Connecticut State Library",
+      "Connecticut State Library · Digital Navigator Sharing Plan",
+      206073,
+      206073,
+      1
+    ],
+    [
+      "Connecticut State Library",
+      "Connecticut State Library · IMLS TFL The Futures School",
+      145000,
+      145000,
+      6
+    ],
+    [
+      "Connecticut State Library",
+      "Connecticut State Library · Cooperating Library Serv Units",
+      124402,
+      124402,
+      2
+    ],
+    [
+      "Connecticut State Library",
+      "Connecticut State Library · Natnl Digital Newspaper Prgrm",
+      89968.69,
+      89968.69,
+      110
+    ],
+    [
+      "Connecticut State Library",
+      "Connecticut State Library · Library for the Blind.",
+      58679.63,
+      58679.63,
+      48
+    ],
+    [
+      "Connecticut State Library",
+      "Connecticut State Library · Capital Equip Purchase Fund",
+      52213.02,
+      52213.02,
+      26
+    ],
+    [
+      "Connecticut State Library",
+      "Connecticut State Library · IT Services",
+      42936.51,
+      42936.51,
+      48
+    ],
+    [
+      "Connecticut State Library",
+      "Connecticut State Library · CT Board Programming Grant",
+      17640,
+      17640,
+      10
+    ],
+    [
+      "Connecticut State Library",
+      "Connecticut State Library · Conserving/Digitizing CSL matl",
+      8446.42,
+      8446.42,
+      10
+    ],
+    [
+      "Connecticut State Library",
+      "Connecticut State Library · Interlibrary Loan Delivry Serv",
+      6074,
+      6074,
+      3
+    ],
+    [
+      "Connecticut State Library",
+      "Connecticut State Library · State Library Institutnal Acct",
+      3759.55,
+      3759.55,
+      38
+    ]
+  ],
+  "hierarchyNote": "The source does not identify a separate sub-agency column; direct-managed rows repeat the parent entity.",
+  "sourceBasis": "official source amount",
+  "note": "Amounts are shown on the official source basis; no comparator normalization was applied."
+}

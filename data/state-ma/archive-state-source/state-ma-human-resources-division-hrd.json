@@ -1,0 +1,119 @@
+{
+  "scope": "Massachusetts",
+  "code": "ma",
+  "department": "HUMAN RESOURCES DIVISION (HRD)",
+  "fiscalYear": 2024,
+  "ledgerAmount": 95373511.11,
+  "sourceTotal": 103831425.98,
+  "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000",
+  "rowSchema": [
+    "subAgency",
+    "program",
+    "amount",
+    "sourceAmount",
+    "sourceRows"
+  ],
+  "rows": [
+    [
+      "HUMAN RESOURCES DIVISION (HRD)",
+      "HUMAN RESOURCES DIVISION (HRD) · (HH) CONSULTANT SVCS (TO DEPTS)",
+      47834055.43,
+      47834055.43,
+      272
+    ],
+    [
+      "HUMAN RESOURCES DIVISION (HRD)",
+      "HUMAN RESOURCES DIVISION (HRD) · (DD) PENSION & INSURANCE RELATED EX",
+      37506836.7,
+      37506836.7,
+      102
+    ],
+    [
+      "HUMAN RESOURCES DIVISION (HRD)",
+      "HUMAN RESOURCES DIVISION (HRD) · (AA) REGULAR EMPLOYEE COMPENSATION",
+      15777609.83,
+      15777609.83,
+      244
+    ],
+    [
+      "HUMAN RESOURCES DIVISION (HRD)",
+      "HUMAN RESOURCES DIVISION (HRD) · (JJ) OPERATIONAL SERVICES",
+      1951546.59,
+      1951546.59,
+      1121
+    ],
+    [
+      "HUMAN RESOURCES DIVISION (HRD)",
+      "HUMAN RESOURCES DIVISION (HRD) · (GG) ENERGY COSTS AND SPACE RENTAL",
+      285086.68,
+      285086.68,
+      46
+    ],
+    [
+      "HUMAN RESOURCES DIVISION (HRD)",
+      "HUMAN RESOURCES DIVISION (HRD) · (CC) SPECIAL EMPLOYEES",
+      278149.25,
+      278149.25,
+      99
+    ],
+    [
+      "HUMAN RESOURCES DIVISION (HRD)",
+      "HUMAN RESOURCES DIVISION (HRD) · (EE) ADMINISTRATIVE EXPENSES",
+      84630.66,
+      84630.66,
+      133
+    ],
+    [
+      "HUMAN RESOURCES DIVISION (HRD)",
+      "HUMAN RESOURCES DIVISION (HRD) · (BB) REGULAR EMPLOYEE RELATED EXPEN",
+      44680.8,
+      44680.8,
+      159
+    ],
+    [
+      "HUMAN RESOURCES DIVISION (HRD)",
+      "HUMAN RESOURCES DIVISION (HRD) · (NN) INFRASTRUCTURE:",
+      26142.55,
+      26142.55,
+      38
+    ],
+    [
+      "HUMAN RESOURCES DIVISION (HRD)",
+      "HUMAN RESOURCES DIVISION (HRD) · (LL) EQUIPMENT LEASE-MAINTAIN/REPAR",
+      19288.38,
+      19288.38,
+      55
+    ],
+    [
+      "HUMAN RESOURCES DIVISION (HRD)",
+      "HUMAN RESOURCES DIVISION (HRD) · (UU) IT NON-PAYROLL EXPENSES",
+      8094.9,
+      8094.9,
+      12
+    ],
+    [
+      "HUMAN RESOURCES DIVISION (HRD)",
+      "HUMAN RESOURCES DIVISION (HRD) · (KK) EQUIPMENT PURCHASE",
+      8072.03,
+      8072.03,
+      7
+    ],
+    [
+      "HUMAN RESOURCES DIVISION (HRD)",
+      "HUMAN RESOURCES DIVISION (HRD) · (FF) FACILITY OPERATIONAL EXPENSES",
+      7232.18,
+      7232.18,
+      20
+    ],
+    [
+      "HUMAN RESOURCES DIVISION (HRD)",
+      "HUMAN RESOURCES DIVISION (HRD) · (99) PAYROLL REJECTS",
+      0,
+      0,
+      6
+    ]
+  ],
+  "hierarchyNote": "The source does not identify a separate sub-agency column; direct-managed rows repeat the parent entity.",
+  "sourceBasis": "official source amount",
+  "note": "Amounts are shown on the official source basis; no comparator normalization was applied."
+}

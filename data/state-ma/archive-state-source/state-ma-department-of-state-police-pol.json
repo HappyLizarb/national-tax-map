@@ -1,0 +1,133 @@
+{
+  "scope": "Massachusetts",
+  "code": "ma",
+  "department": "DEPARTMENT OF STATE POLICE (POL)",
+  "fiscalYear": 2024,
+  "ledgerAmount": 507258231.87,
+  "sourceTotal": 552242912.53,
+  "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000",
+  "rowSchema": [
+    "subAgency",
+    "program",
+    "amount",
+    "sourceAmount",
+    "sourceRows"
+  ],
+  "rows": [
+    [
+      "DEPARTMENT OF STATE POLICE (POL)",
+      "DEPARTMENT OF STATE POLICE (POL) · (AA) REGULAR EMPLOYEE COMPENSATION",
+      444408408.34,
+      444408408.34,
+      3012
+    ],
+    [
+      "DEPARTMENT OF STATE POLICE (POL)",
+      "DEPARTMENT OF STATE POLICE (POL) · (UU) IT NON-PAYROLL EXPENSES",
+      25443903.15,
+      25443903.15,
+      796
+    ],
+    [
+      "DEPARTMENT OF STATE POLICE (POL)",
+      "DEPARTMENT OF STATE POLICE (POL) · (KK) EQUIPMENT PURCHASE",
+      18620576.45,
+      18620576.45,
+      193
+    ],
+    [
+      "DEPARTMENT OF STATE POLICE (POL)",
+      "DEPARTMENT OF STATE POLICE (POL) · (GG) ENERGY COSTS AND SPACE RENTAL",
+      17850811.35,
+      17850811.35,
+      4783
+    ],
+    [
+      "DEPARTMENT OF STATE POLICE (POL)",
+      "DEPARTMENT OF STATE POLICE (POL) · (FF) FACILITY OPERATIONAL EXPENSES",
+      13370483.22,
+      13370483.22,
+      3049
+    ],
+    [
+      "DEPARTMENT OF STATE POLICE (POL)",
+      "DEPARTMENT OF STATE POLICE (POL) · (NN) INFRASTRUCTURE:",
+      10351561.8,
+      10351561.8,
+      3171
+    ],
+    [
+      "DEPARTMENT OF STATE POLICE (POL)",
+      "DEPARTMENT OF STATE POLICE (POL) · (JJ) OPERATIONAL SERVICES",
+      9363804.08,
+      9363804.08,
+      2307
+    ],
+    [
+      "DEPARTMENT OF STATE POLICE (POL)",
+      "DEPARTMENT OF STATE POLICE (POL) · (LL) EQUIPMENT LEASE-MAINTAIN/REPAR",
+      4578339.79,
+      4578339.79,
+      1797
+    ],
+    [
+      "DEPARTMENT OF STATE POLICE (POL)",
+      "DEPARTMENT OF STATE POLICE (POL) · (TT) LOANS AND SPECIAL PAYMENTS",
+      2800673.64,
+      2800673.64,
+      85
+    ],
+    [
+      "DEPARTMENT OF STATE POLICE (POL)",
+      "DEPARTMENT OF STATE POLICE (POL) · (EE) ADMINISTRATIVE EXPENSES",
+      2174224.54,
+      2174224.54,
+      1902
+    ],
+    [
+      "DEPARTMENT OF STATE POLICE (POL)",
+      "DEPARTMENT OF STATE POLICE (POL) · (PP) STATE AID/POL SUB",
+      1287056.26,
+      1287056.26,
+      94
+    ],
+    [
+      "DEPARTMENT OF STATE POLICE (POL)",
+      "DEPARTMENT OF STATE POLICE (POL) · (HH) CONSULTANT SVCS (TO DEPTS)",
+      800523.78,
+      800523.78,
+      186
+    ],
+    [
+      "DEPARTMENT OF STATE POLICE (POL)",
+      "DEPARTMENT OF STATE POLICE (POL) · (BB) REGULAR EMPLOYEE RELATED EXPEN",
+      768616.88,
+      768616.88,
+      466
+    ],
+    [
+      "DEPARTMENT OF STATE POLICE (POL)",
+      "DEPARTMENT OF STATE POLICE (POL) · (CC) SPECIAL EMPLOYEES",
+      421679.25,
+      421679.25,
+      149
+    ],
+    [
+      "DEPARTMENT OF STATE POLICE (POL)",
+      "DEPARTMENT OF STATE POLICE (POL) · (DD) PENSION & INSURANCE RELATED EX",
+      2250,
+      2250,
+      1
+    ],
+    [
+      "DEPARTMENT OF STATE POLICE (POL)",
+      "DEPARTMENT OF STATE POLICE (POL) · (99) PAYROLL REJECTS",
+      0,
+      0,
+      54
+    ]
+  ],
+  "hierarchyNote": "The source does not identify a separate sub-agency column; direct-managed rows repeat the parent entity.",
+  "sourceBasis": "official source amount",
+  "note": "Amounts are shown on the official source basis; no comparator normalization was applied."
+}

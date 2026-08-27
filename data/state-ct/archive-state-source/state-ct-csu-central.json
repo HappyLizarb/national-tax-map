@@ -1,0 +1,49 @@
+{
+  "scope": "Connecticut",
+  "code": "ct",
+  "department": "CSU - Central",
+  "fiscalYear": 2024,
+  "ledgerAmount": 67732525.79,
+  "sourceTotal": 72173556.16,
+  "sourceUrl": "https://data.ct.gov/resource/ajdm-rvz7.json?$select=department,program,sum(amount)%20as%20amount,count(*)%20as%20records&$where=fiscal_year=2024&$group=department,program",
+  "rowSchema": [
+    "subAgency",
+    "program",
+    "amount",
+    "sourceAmount",
+    "sourceRows"
+  ],
+  "rows": [
+    [
+      "CSU - Central",
+      "CSU - Central · Non-Budgeted Operating Approp",
+      71949758.59,
+      71949758.59,
+      357
+    ],
+    [
+      "CSU - Central",
+      "CSU - Central · Deferred Maintenance all Univ",
+      116061.29,
+      116061.29,
+      12
+    ],
+    [
+      "CSU - Central",
+      "CSU - Central · DEFERRED MAINT-ALL UNIVERSITY",
+      105020.76,
+      105020.76,
+      9
+    ],
+    [
+      "CSU - Central",
+      "CSU - Central · Imprv Willard & Diloreto Halls",
+      2715.52,
+      2715.52,
+      1
+    ]
+  ],
+  "hierarchyNote": "The source does not identify a separate sub-agency column; direct-managed rows repeat the parent entity.",
+  "sourceBasis": "official source amount",
+  "note": "Amounts are shown on the official source basis; no comparator normalization was applied."
+}

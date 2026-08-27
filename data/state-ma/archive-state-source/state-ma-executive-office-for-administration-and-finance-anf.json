@@ -1,0 +1,112 @@
+{
+  "scope": "Massachusetts",
+  "code": "ma",
+  "department": "EXECUTIVE OFFICE FOR ADMINISTRATION AND FINANCE (ANF)",
+  "fiscalYear": 2024,
+  "ledgerAmount": 634656747.52,
+  "sourceTotal": 690939384.88,
+  "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000",
+  "rowSchema": [
+    "subAgency",
+    "program",
+    "amount",
+    "sourceAmount",
+    "sourceRows"
+  ],
+  "rows": [
+    [
+      "EXECUTIVE OFFICE FOR ADMINISTRATION AND FINANCE (ANF)",
+      "EXECUTIVE OFFICE FOR ADMINISTRATION AND FINANCE (ANF) · (PP) STATE AID/POL SUB",
+      563564806.58,
+      563564806.58,
+      133
+    ],
+    [
+      "EXECUTIVE OFFICE FOR ADMINISTRATION AND FINANCE (ANF)",
+      "EXECUTIVE OFFICE FOR ADMINISTRATION AND FINANCE (ANF) · (TT) LOANS AND SPECIAL PAYMENTS",
+      50063149.71,
+      50063149.71,
+      1
+    ],
+    [
+      "EXECUTIVE OFFICE FOR ADMINISTRATION AND FINANCE (ANF)",
+      "EXECUTIVE OFFICE FOR ADMINISTRATION AND FINANCE (ANF) · (UU) IT NON-PAYROLL EXPENSES",
+      32554678.04,
+      32554678.04,
+      2925
+    ],
+    [
+      "EXECUTIVE OFFICE FOR ADMINISTRATION AND FINANCE (ANF)",
+      "EXECUTIVE OFFICE FOR ADMINISTRATION AND FINANCE (ANF) · (AA) REGULAR EMPLOYEE COMPENSATION",
+      30096792.66,
+      30096792.66,
+      1244
+    ],
+    [
+      "EXECUTIVE OFFICE FOR ADMINISTRATION AND FINANCE (ANF)",
+      "EXECUTIVE OFFICE FOR ADMINISTRATION AND FINANCE (ANF) · (HH) CONSULTANT SVCS (TO DEPTS)",
+      12392913.68,
+      12392913.68,
+      73
+    ],
+    [
+      "EXECUTIVE OFFICE FOR ADMINISTRATION AND FINANCE (ANF)",
+      "EXECUTIVE OFFICE FOR ADMINISTRATION AND FINANCE (ANF) · (NN) INFRASTRUCTURE:",
+      1500000,
+      1500000,
+      4
+    ],
+    [
+      "EXECUTIVE OFFICE FOR ADMINISTRATION AND FINANCE (ANF)",
+      "EXECUTIVE OFFICE FOR ADMINISTRATION AND FINANCE (ANF) · (CC) SPECIAL EMPLOYEES",
+      435101.5,
+      435101.5,
+      96
+    ],
+    [
+      "EXECUTIVE OFFICE FOR ADMINISTRATION AND FINANCE (ANF)",
+      "EXECUTIVE OFFICE FOR ADMINISTRATION AND FINANCE (ANF) · (EE) ADMINISTRATIVE EXPENSES",
+      220246.98,
+      220246.98,
+      117
+    ],
+    [
+      "EXECUTIVE OFFICE FOR ADMINISTRATION AND FINANCE (ANF)",
+      "EXECUTIVE OFFICE FOR ADMINISTRATION AND FINANCE (ANF) · (KK) EQUIPMENT PURCHASE",
+      44811.07,
+      44811.07,
+      4
+    ],
+    [
+      "EXECUTIVE OFFICE FOR ADMINISTRATION AND FINANCE (ANF)",
+      "EXECUTIVE OFFICE FOR ADMINISTRATION AND FINANCE (ANF) · (BB) REGULAR EMPLOYEE RELATED EXPEN",
+      39663.02,
+      39663.02,
+      186
+    ],
+    [
+      "EXECUTIVE OFFICE FOR ADMINISTRATION AND FINANCE (ANF)",
+      "EXECUTIVE OFFICE FOR ADMINISTRATION AND FINANCE (ANF) · (JJ) OPERATIONAL SERVICES",
+      18562.5,
+      18562.5,
+      1
+    ],
+    [
+      "EXECUTIVE OFFICE FOR ADMINISTRATION AND FINANCE (ANF)",
+      "EXECUTIVE OFFICE FOR ADMINISTRATION AND FINANCE (ANF) · (LL) EQUIPMENT LEASE-MAINTAIN/REPAR",
+      8659.14,
+      8659.14,
+      33
+    ],
+    [
+      "EXECUTIVE OFFICE FOR ADMINISTRATION AND FINANCE (ANF)",
+      "EXECUTIVE OFFICE FOR ADMINISTRATION AND FINANCE (ANF) · (99) PAYROLL REJECTS",
+      0,
+      0,
+      14
+    ]
+  ],
+  "hierarchyNote": "The source does not identify a separate sub-agency column; direct-managed rows repeat the parent entity.",
+  "sourceBasis": "official source amount",
+  "note": "Amounts are shown on the official source basis; no comparator normalization was applied."
+}

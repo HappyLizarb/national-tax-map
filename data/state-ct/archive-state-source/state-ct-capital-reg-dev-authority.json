@@ -1,0 +1,70 @@
+{
+  "scope": "Connecticut",
+  "code": "ct",
+  "department": "Capital Reg Dev Authority",
+  "fiscalYear": 2024,
+  "ledgerAmount": 32963666.51,
+  "sourceTotal": 35125001,
+  "sourceUrl": "https://data.ct.gov/resource/ajdm-rvz7.json?$select=department,program,sum(amount)%20as%20amount,count(*)%20as%20records&$where=fiscal_year=2024&$group=department,program",
+  "rowSchema": [
+    "subAgency",
+    "program",
+    "amount",
+    "sourceAmount",
+    "sourceRows"
+  ],
+  "rows": [
+    [
+      "Capital Reg Dev Authority",
+      "Capital Reg Dev Authority · Capital City Economic Developm",
+      11750000,
+      11750000,
+      6
+    ],
+    [
+      "Capital Reg Dev Authority",
+      "Capital Reg Dev Authority · CRDA Parking Facilities Htfd",
+      9250000,
+      9250000,
+      9
+    ],
+    [
+      "Capital Reg Dev Authority",
+      "Capital Reg Dev Authority · CRDA Econ Dev Gia E Htfd",
+      7375000,
+      7375000,
+      12
+    ],
+    [
+      "Capital Reg Dev Authority",
+      "Capital Reg Dev Authority · CT CONVENTION CTR/RENT FIELD",
+      2650000,
+      2650000,
+      6
+    ],
+    [
+      "Capital Reg Dev Authority",
+      "Capital Reg Dev Authority · PROMISE ZONE",
+      2100000,
+      2100000,
+      3
+    ],
+    [
+      "Capital Reg Dev Authority",
+      "Capital Reg Dev Authority · CRDA development grants",
+      1500000,
+      1500000,
+      2
+    ],
+    [
+      "Capital Reg Dev Authority",
+      "Capital Reg Dev Authority · Urban Act Grant-CRD",
+      500001,
+      500001,
+      2
+    ]
+  ],
+  "hierarchyNote": "The source does not identify a separate sub-agency column; direct-managed rows repeat the parent entity.",
+  "sourceBasis": "official source amount",
+  "note": "Amounts are shown on the official source basis; no comparator normalization was applied."
+}

@@ -1,0 +1,15 @@
+{
+  "scope": "United States",
+  "code": "federal",
+  "fiscalYear": 2024,
+  "department": "Treasury Table 5 rounding",
+  "sourceTotal": 2000000,
+  "sourceUrl": "https://fiscal.treasury.gov/system/files/files/reports-statements/mts/mts0924.pdf",
+  "sourceUrls": [["Treasury FY2024 MTS Table 5", "https://fiscal.treasury.gov/system/files/files/reports-statements/mts/mts0924.pdf"]],
+  "sourceBasis": "Explicit reconciliation of rounded Table 5 classifications to Treasury's published Total Outlays.",
+  "rowSchema": ["subAgency", "program", "amount", "sourceAmount", "sourceRows", "grossOutlays", "applicableReceipts"],
+  "sourceCheck": {"groupRows": 1, "difference": 0},
+  "rows": [
+    ["Treasury", "Published total less rounded classifications", 2000000, 2000000, 0, 2000000, 0]
+  ]
+}

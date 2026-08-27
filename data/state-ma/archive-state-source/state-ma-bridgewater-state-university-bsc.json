@@ -1,0 +1,140 @@
+{
+  "scope": "Massachusetts",
+  "code": "ma",
+  "department": "BRIDGEWATER STATE UNIVERSITY (BSC)",
+  "fiscalYear": 2024,
+  "ledgerAmount": 363411081.66,
+  "sourceTotal": 395639107.6,
+  "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000",
+  "rowSchema": [
+    "subAgency",
+    "program",
+    "amount",
+    "sourceAmount",
+    "sourceRows"
+  ],
+  "rows": [
+    [
+      "BRIDGEWATER STATE UNIVERSITY (BSC)",
+      "BRIDGEWATER STATE UNIVERSITY (BSC) · (AA) REGULAR EMPLOYEE COMPENSATION",
+      124008681.28,
+      124008681.28,
+      1023
+    ],
+    [
+      "BRIDGEWATER STATE UNIVERSITY (BSC)",
+      "BRIDGEWATER STATE UNIVERSITY (BSC) · (TT) LOANS AND SPECIAL PAYMENTS",
+      73353873.32,
+      73353873.32,
+      74
+    ],
+    [
+      "BRIDGEWATER STATE UNIVERSITY (BSC)",
+      "BRIDGEWATER STATE UNIVERSITY (BSC) · (RR) BENEFIT PROGRAMS",
+      57289775.53,
+      57289775.53,
+      71
+    ],
+    [
+      "BRIDGEWATER STATE UNIVERSITY (BSC)",
+      "BRIDGEWATER STATE UNIVERSITY (BSC) · (CC) SPECIAL EMPLOYEES",
+      50242989.21,
+      50242989.21,
+      346
+    ],
+    [
+      "BRIDGEWATER STATE UNIVERSITY (BSC)",
+      "BRIDGEWATER STATE UNIVERSITY (BSC) · (NN) INFRASTRUCTURE:",
+      24398617.17,
+      24398617.17,
+      42
+    ],
+    [
+      "BRIDGEWATER STATE UNIVERSITY (BSC)",
+      "BRIDGEWATER STATE UNIVERSITY (BSC) · (JJ) OPERATIONAL SERVICES",
+      14011302.11,
+      14011302.11,
+      32
+    ],
+    [
+      "BRIDGEWATER STATE UNIVERSITY (BSC)",
+      "BRIDGEWATER STATE UNIVERSITY (BSC) · (DD) PENSION & INSURANCE RELATED EX",
+      10569647.13,
+      10569647.13,
+      33
+    ],
+    [
+      "BRIDGEWATER STATE UNIVERSITY (BSC)",
+      "BRIDGEWATER STATE UNIVERSITY (BSC) · (EE) ADMINISTRATIVE EXPENSES",
+      8720722.39,
+      8720722.39,
+      59
+    ],
+    [
+      "BRIDGEWATER STATE UNIVERSITY (BSC)",
+      "BRIDGEWATER STATE UNIVERSITY (BSC) · (UU) IT NON-PAYROLL EXPENSES",
+      8043221.28,
+      8043221.28,
+      37
+    ],
+    [
+      "BRIDGEWATER STATE UNIVERSITY (BSC)",
+      "BRIDGEWATER STATE UNIVERSITY (BSC) · (KK) EQUIPMENT PURCHASE",
+      5962654.71,
+      5962654.71,
+      24
+    ],
+    [
+      "BRIDGEWATER STATE UNIVERSITY (BSC)",
+      "BRIDGEWATER STATE UNIVERSITY (BSC) · (GG) ENERGY COSTS AND SPACE RENTAL",
+      5745852.42,
+      5745852.42,
+      13
+    ],
+    [
+      "BRIDGEWATER STATE UNIVERSITY (BSC)",
+      "BRIDGEWATER STATE UNIVERSITY (BSC) · (LL) EQUIPMENT LEASE-MAINTAIN/REPAR",
+      2964399.57,
+      2964399.57,
+      142
+    ],
+    [
+      "BRIDGEWATER STATE UNIVERSITY (BSC)",
+      "BRIDGEWATER STATE UNIVERSITY (BSC) · (HH) CONSULTANT SVCS (TO DEPTS)",
+      2585791.42,
+      2585791.42,
+      33
+    ],
+    [
+      "BRIDGEWATER STATE UNIVERSITY (BSC)",
+      "BRIDGEWATER STATE UNIVERSITY (BSC) · (MM) PURCHASED CLIENT/PROGRAM SVCS",
+      2490405.15,
+      2490405.15,
+      35
+    ],
+    [
+      "BRIDGEWATER STATE UNIVERSITY (BSC)",
+      "BRIDGEWATER STATE UNIVERSITY (BSC) · (FF) FACILITY OPERATIONAL EXPENSES",
+      2267213.06,
+      2267213.06,
+      52
+    ],
+    [
+      "BRIDGEWATER STATE UNIVERSITY (BSC)",
+      "BRIDGEWATER STATE UNIVERSITY (BSC) · (SS) DEBT PAYMENT",
+      1578728.44,
+      1578728.44,
+      11
+    ],
+    [
+      "BRIDGEWATER STATE UNIVERSITY (BSC)",
+      "BRIDGEWATER STATE UNIVERSITY (BSC) · (BB) REGULAR EMPLOYEE RELATED EXPEN",
+      1405233.41,
+      1405233.41,
+      202
+    ]
+  ],
+  "hierarchyNote": "The source does not identify a separate sub-agency column; direct-managed rows repeat the parent entity.",
+  "sourceBasis": "official source amount",
+  "note": "Amounts are shown on the official source basis; no comparator normalization was applied."
+}

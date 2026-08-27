@@ -1,0 +1,28 @@
+{
+  "scope": "United States",
+  "code": "federal",
+  "fiscalYear": 2024,
+  "department": "Executive Office of the President",
+  "sourceTotal": 607000000,
+  "sourceUrl": "https://fiscal.treasury.gov/system/files/files/reports-statements/mts/mts0924.pdf",
+  "sourceUrls": [["Treasury FY2024 MTS Table 5", "https://fiscal.treasury.gov/system/files/files/reports-statements/mts/mts0924.pdf"]],
+  "relatedSources": [["USAspending gross research (supporting detail)", "data/federal/archive-agency-source/federal-executive-office-of-the-president.json"]],
+  "sourceBasis": "Treasury MTS Table 5 current-fiscal-year gross outlays, applicable receipts, and net outlays; published in $ millions and converted to USD.",
+  "rowSchema": ["subAgency", "program", "amount", "sourceAmount", "sourceRows", "grossOutlays", "applicableReceipts"],
+  "sourceCheck": {"groupRows": 7, "difference": 0, "publishedRoundingAdjustment": -1000000},
+  "note": "Displayed amounts are net outlays; each row retains its published gross outlays and applicable receipts.",
+  "accountResearch": {"accountCount": 28, "largeAccountCount": 0, "netAccountOutlays": 621163540.06, "threshold": 1000000000, "sourceUrl": "https://fiscal.treasury.gov/system/files/files/reports-statements/combined-statement/cs2024/c03.xlsx"},
+  "largeAccountSchema": ["treasuryAccount", "title", "netOutlays", "availabilityRows"],
+  "largeAccountBasis": "Exact Combined Statement net outlays by appropriation or fund account. This is a research cross-section of the same department, not another amount to add to MTS classification rows.",
+  "largeAccountRows": [
+  ],
+  "rows": [
+    ["Executive Office of the President", "The White House", 80000000, 80000000, 1, 80000000, 0],
+    ["Executive Office of the President", "Office of Management and Budget", 143000000, 143000000, 1, 143000000, 0],
+    ["Executive Office of the President", "Unanticipated Needs", 52000000, 52000000, 1, 52000000, 0],
+    ["Executive Office of the President", "Other", 347000000, 347000000, 1, 347000000, 0],
+    ["Executive Office of the President", "Proprietary Receipts from the Public", 0, 0, 1, 0, 0],
+    ["Executive Office of the President", "Intrabudgetary Transactions", -14000000, -14000000, 1, -14000000, 0],
+    ["Executive Office of the President", "Published Table 5 rounding adjustment", -1000000, -1000000, 0, -1000000, 0]
+  ]
+}

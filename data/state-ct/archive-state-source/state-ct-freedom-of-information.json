@@ -1,0 +1,35 @@
+{
+  "scope": "Connecticut",
+  "code": "ct",
+  "department": "Freedom of Information",
+  "fiscalYear": 2024,
+  "ledgerAmount": 120933.27,
+  "sourceTotal": 128862.52,
+  "sourceUrl": "https://data.ct.gov/resource/ajdm-rvz7.json?$select=department,program,sum(amount)%20as%20amount,count(*)%20as%20records&$where=fiscal_year=2024&$group=department,program",
+  "rowSchema": [
+    "subAgency",
+    "program",
+    "amount",
+    "sourceAmount",
+    "sourceRows"
+  ],
+  "rows": [
+    [
+      "Freedom of Information",
+      "Freedom of Information · Freedom of Infor Commission",
+      114601.7,
+      114601.7,
+      376
+    ],
+    [
+      "Freedom of Information",
+      "Freedom of Information · Capital Equip Purchase Fund",
+      14260.82,
+      14260.82,
+      15
+    ]
+  ],
+  "hierarchyNote": "The source does not identify a separate sub-agency column; direct-managed rows repeat the parent entity.",
+  "sourceBasis": "official source amount",
+  "note": "Amounts are shown on the official source basis; no comparator normalization was applied."
+}

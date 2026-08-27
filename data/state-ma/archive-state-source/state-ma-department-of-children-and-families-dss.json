@@ -1,0 +1,119 @@
+{
+  "scope": "Massachusetts",
+  "code": "ma",
+  "department": "DEPARTMENT OF CHILDREN AND FAMILIES (DSS)",
+  "fiscalYear": 2024,
+  "ledgerAmount": 1034316884.65,
+  "sourceTotal": 1126042187.13,
+  "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000",
+  "rowSchema": [
+    "subAgency",
+    "program",
+    "amount",
+    "sourceAmount",
+    "sourceRows"
+  ],
+  "rows": [
+    [
+      "DEPARTMENT OF CHILDREN AND FAMILIES (DSS)",
+      "DEPARTMENT OF CHILDREN AND FAMILIES (DSS) · (MM) PURCHASED CLIENT/PROGRAM SVCS",
+      684889500.99,
+      684889500.99,
+      23367
+    ],
+    [
+      "DEPARTMENT OF CHILDREN AND FAMILIES (DSS)",
+      "DEPARTMENT OF CHILDREN AND FAMILIES (DSS) · (AA) REGULAR EMPLOYEE COMPENSATION",
+      381750503.06,
+      381750503.06,
+      1753
+    ],
+    [
+      "DEPARTMENT OF CHILDREN AND FAMILIES (DSS)",
+      "DEPARTMENT OF CHILDREN AND FAMILIES (DSS) · (GG) ENERGY COSTS AND SPACE RENTAL",
+      29221478.44,
+      29221478.44,
+      789
+    ],
+    [
+      "DEPARTMENT OF CHILDREN AND FAMILIES (DSS)",
+      "DEPARTMENT OF CHILDREN AND FAMILIES (DSS) · (BB) REGULAR EMPLOYEE RELATED EXPEN",
+      13797292.93,
+      13797292.93,
+      408
+    ],
+    [
+      "DEPARTMENT OF CHILDREN AND FAMILIES (DSS)",
+      "DEPARTMENT OF CHILDREN AND FAMILIES (DSS) · (HH) CONSULTANT SVCS (TO DEPTS)",
+      6639494.64,
+      6639494.64,
+      204
+    ],
+    [
+      "DEPARTMENT OF CHILDREN AND FAMILIES (DSS)",
+      "DEPARTMENT OF CHILDREN AND FAMILIES (DSS) · (JJ) OPERATIONAL SERVICES",
+      3604417.84,
+      3604417.84,
+      2095
+    ],
+    [
+      "DEPARTMENT OF CHILDREN AND FAMILIES (DSS)",
+      "DEPARTMENT OF CHILDREN AND FAMILIES (DSS) · (EE) ADMINISTRATIVE EXPENSES",
+      2828578.64,
+      2828578.64,
+      3196
+    ],
+    [
+      "DEPARTMENT OF CHILDREN AND FAMILIES (DSS)",
+      "DEPARTMENT OF CHILDREN AND FAMILIES (DSS) · (UU) IT NON-PAYROLL EXPENSES",
+      1575733.65,
+      1575733.65,
+      57
+    ],
+    [
+      "DEPARTMENT OF CHILDREN AND FAMILIES (DSS)",
+      "DEPARTMENT OF CHILDREN AND FAMILIES (DSS) · (KK) EQUIPMENT PURCHASE",
+      1151598.78,
+      1151598.78,
+      314
+    ],
+    [
+      "DEPARTMENT OF CHILDREN AND FAMILIES (DSS)",
+      "DEPARTMENT OF CHILDREN AND FAMILIES (DSS) · (LL) EQUIPMENT LEASE-MAINTAIN/REPAR",
+      388400.73,
+      388400.73,
+      188
+    ],
+    [
+      "DEPARTMENT OF CHILDREN AND FAMILIES (DSS)",
+      "DEPARTMENT OF CHILDREN AND FAMILIES (DSS) · (NN) INFRASTRUCTURE:",
+      149845.59,
+      149845.59,
+      118
+    ],
+    [
+      "DEPARTMENT OF CHILDREN AND FAMILIES (DSS)",
+      "DEPARTMENT OF CHILDREN AND FAMILIES (DSS) · (CC) SPECIAL EMPLOYEES",
+      45340,
+      45340,
+      21
+    ],
+    [
+      "DEPARTMENT OF CHILDREN AND FAMILIES (DSS)",
+      "DEPARTMENT OF CHILDREN AND FAMILIES (DSS) · (DD) PENSION & INSURANCE RELATED EX",
+      1.84,
+      1.84,
+      1
+    ],
+    [
+      "DEPARTMENT OF CHILDREN AND FAMILIES (DSS)",
+      "DEPARTMENT OF CHILDREN AND FAMILIES (DSS) · (99) PAYROLL REJECTS",
+      0,
+      0,
+      93
+    ]
+  ],
+  "hierarchyNote": "The source does not identify a separate sub-agency column; direct-managed rows repeat the parent entity.",
+  "sourceBasis": "official source amount",
+  "note": "Amounts are shown on the official source basis; no comparator normalization was applied."
+}

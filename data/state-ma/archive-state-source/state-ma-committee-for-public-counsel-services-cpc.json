@@ -1,0 +1,126 @@
+{
+  "scope": "Massachusetts",
+  "code": "ma",
+  "department": "COMMITTEE FOR PUBLIC COUNSEL SERVICES (CPC)",
+  "fiscalYear": 2024,
+  "ledgerAmount": 302256513.36,
+  "sourceTotal": 329061229.13,
+  "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000",
+  "rowSchema": [
+    "subAgency",
+    "program",
+    "amount",
+    "sourceAmount",
+    "sourceRows"
+  ],
+  "rows": [
+    [
+      "COMMITTEE FOR PUBLIC COUNSEL SERVICES (CPC)",
+      "COMMITTEE FOR PUBLIC COUNSEL SERVICES (CPC) · (RR) BENEFIT PROGRAMS",
+      242094738.51,
+      242094738.51,
+      57455
+    ],
+    [
+      "COMMITTEE FOR PUBLIC COUNSEL SERVICES (CPC)",
+      "COMMITTEE FOR PUBLIC COUNSEL SERVICES (CPC) · (AA) REGULAR EMPLOYEE COMPENSATION",
+      67463009.28,
+      67463009.28,
+      715
+    ],
+    [
+      "COMMITTEE FOR PUBLIC COUNSEL SERVICES (CPC)",
+      "COMMITTEE FOR PUBLIC COUNSEL SERVICES (CPC) · (GG) ENERGY COSTS AND SPACE RENTAL",
+      6940035.14,
+      6940035.14,
+      348
+    ],
+    [
+      "COMMITTEE FOR PUBLIC COUNSEL SERVICES (CPC)",
+      "COMMITTEE FOR PUBLIC COUNSEL SERVICES (CPC) · (UU) IT NON-PAYROLL EXPENSES",
+      5943060.43,
+      5943060.43,
+      1104
+    ],
+    [
+      "COMMITTEE FOR PUBLIC COUNSEL SERVICES (CPC)",
+      "COMMITTEE FOR PUBLIC COUNSEL SERVICES (CPC) · (MM) PURCHASED CLIENT/PROGRAM SVCS",
+      1484702,
+      1484702,
+      144
+    ],
+    [
+      "COMMITTEE FOR PUBLIC COUNSEL SERVICES (CPC)",
+      "COMMITTEE FOR PUBLIC COUNSEL SERVICES (CPC) · (EE) ADMINISTRATIVE EXPENSES",
+      1386305.06,
+      1386305.06,
+      2159
+    ],
+    [
+      "COMMITTEE FOR PUBLIC COUNSEL SERVICES (CPC)",
+      "COMMITTEE FOR PUBLIC COUNSEL SERVICES (CPC) · (KK) EQUIPMENT PURCHASE",
+      1121363.22,
+      1121363.22,
+      278
+    ],
+    [
+      "COMMITTEE FOR PUBLIC COUNSEL SERVICES (CPC)",
+      "COMMITTEE FOR PUBLIC COUNSEL SERVICES (CPC) · (BB) REGULAR EMPLOYEE RELATED EXPEN",
+      1066242.29,
+      1066242.29,
+      1046
+    ],
+    [
+      "COMMITTEE FOR PUBLIC COUNSEL SERVICES (CPC)",
+      "COMMITTEE FOR PUBLIC COUNSEL SERVICES (CPC) · (HH) CONSULTANT SVCS (TO DEPTS)",
+      660964.38,
+      660964.38,
+      218
+    ],
+    [
+      "COMMITTEE FOR PUBLIC COUNSEL SERVICES (CPC)",
+      "COMMITTEE FOR PUBLIC COUNSEL SERVICES (CPC) · (JJ) OPERATIONAL SERVICES",
+      649536.51,
+      649536.51,
+      199
+    ],
+    [
+      "COMMITTEE FOR PUBLIC COUNSEL SERVICES (CPC)",
+      "COMMITTEE FOR PUBLIC COUNSEL SERVICES (CPC) · (CC) SPECIAL EMPLOYEES",
+      97776.15,
+      97776.15,
+      55
+    ],
+    [
+      "COMMITTEE FOR PUBLIC COUNSEL SERVICES (CPC)",
+      "COMMITTEE FOR PUBLIC COUNSEL SERVICES (CPC) · (FF) FACILITY OPERATIONAL EXPENSES",
+      75091.5,
+      75091.5,
+      182
+    ],
+    [
+      "COMMITTEE FOR PUBLIC COUNSEL SERVICES (CPC)",
+      "COMMITTEE FOR PUBLIC COUNSEL SERVICES (CPC) · (NN) INFRASTRUCTURE:",
+      57281.02,
+      57281.02,
+      110
+    ],
+    [
+      "COMMITTEE FOR PUBLIC COUNSEL SERVICES (CPC)",
+      "COMMITTEE FOR PUBLIC COUNSEL SERVICES (CPC) · (LL) EQUIPMENT LEASE-MAINTAIN/REPAR",
+      21123.64,
+      21123.64,
+      25
+    ],
+    [
+      "COMMITTEE FOR PUBLIC COUNSEL SERVICES (CPC)",
+      "COMMITTEE FOR PUBLIC COUNSEL SERVICES (CPC) · (99) PAYROLL REJECTS",
+      0,
+      0,
+      6
+    ]
+  ],
+  "hierarchyNote": "The source does not identify a separate sub-agency column; direct-managed rows repeat the parent entity.",
+  "sourceBasis": "official source amount",
+  "note": "Amounts are shown on the official source basis; no comparator normalization was applied."
+}

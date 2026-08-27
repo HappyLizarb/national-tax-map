@@ -1,0 +1,92 @@
+{
+  "scope": "Tennessee",
+  "code": "tn",
+  "fiscalYear": 2024,
+  "sourceTotal": 33097780967.41,
+  "sourceUrl": "https://data.tn.gov/t/Public/views/SearchableCheckbookPublic_17861130451500/Agency.csv?:showVizHome=no",
+  "dimension": "branch",
+  "note": "Official FY2024 branch controls reconcile exactly to annual payments. Each branch links a separately exported public agency-payment slice as non-additive supplemental detail because protected payments remain summarized by program.",
+  "reconciliation": {
+    "itemizedDifference": 0,
+    "normalized": false,
+    "scale": 1,
+    "comparisonDifference": -16420425032.59,
+    "sourceRows": 3,
+    "sourceGroups": 3,
+    "supplementalGroups": 10
+  },
+  "departments": [
+    {
+      "id": "executive",
+      "name": "Executive",
+      "amount": 32296038413.26,
+      "sourceAmount": 32296038413.26,
+      "program": "Executive Branch total · public agency slice linked",
+      "sourceRows": 1,
+      "detailUrl": "data/state-tn/archive-state-source/state-tn-executive.json",
+      "sourceUrl": "https://data.tn.gov/t/Public/views/SearchableCheckbookPublic_17861130451500/Agency.csv?:showVizHome=no",
+      "relatedSources": [
+        [
+          "FY2024 ACFR functional expenses (non-additive)",
+          "data/state-tn/archive-state-source/state-tn-acfr-functions.json"
+        ],
+        [
+          "Official Tennessee ACFR",
+          "https://www.tn.gov/content/dam/tn/finance/acfr/ACFR_FY24.pdf"
+        ]
+      ],
+      "detailRows": 9
+    },
+    {
+      "id": "legislative",
+      "name": "Legislative",
+      "amount": 695546194.42,
+      "sourceAmount": 695546194.42,
+      "program": "Legislative Branch total · public agency slice linked",
+      "sourceRows": 1,
+      "detailUrl": "data/state-tn/archive-state-source/state-tn-legislative.json",
+      "sourceUrl": "https://data.tn.gov/t/Public/views/SearchableCheckbookPublic_17861130451500/Agency.csv?:showVizHome=no",
+      "relatedSources": [
+        [
+          "FY2024 ACFR functional expenses (non-additive)",
+          "data/state-tn/archive-state-source/state-tn-acfr-functions.json"
+        ],
+        [
+          "Official Tennessee ACFR",
+          "https://www.tn.gov/content/dam/tn/finance/acfr/ACFR_FY24.pdf"
+        ]
+      ],
+      "detailRows": 2
+    },
+    {
+      "id": "judicial",
+      "name": "Judicial",
+      "amount": 106196359.73,
+      "sourceAmount": 106196359.73,
+      "program": "Judicial Branch total · public agency slice linked",
+      "sourceRows": 1,
+      "detailUrl": "data/state-tn/archive-state-source/state-tn-judicial.json",
+      "sourceUrl": "https://data.tn.gov/t/Public/views/SearchableCheckbookPublic_17861130451500/Agency.csv?:showVizHome=no",
+      "relatedSources": [
+        [
+          "FY2024 ACFR functional expenses (non-additive)",
+          "data/state-tn/archive-state-source/state-tn-acfr-functions.json"
+        ],
+        [
+          "Official Tennessee ACFR",
+          "https://www.tn.gov/content/dam/tn/finance/acfr/ACFR_FY24.pdf"
+        ]
+      ],
+      "detailRows": 2
+    }
+  ],
+  "itemizedTotal": 33097780967.41,
+  "comparison": {
+    "label": "Census FY2024 state-finance comparator",
+    "url": "https://data.census.gov/table/GOVSSTATEFINTIMESERIES.GS00STATEFIN01?g=040XX00US47&time=2024",
+    "total": 49518206000,
+    "difference": -16420425032.59
+  },
+  "coverageStatus": "official-itemized-source-basis",
+  "archiveNote": "Prior official state layer archived when the complete Census function layer became primary for map reconciliation."
+}

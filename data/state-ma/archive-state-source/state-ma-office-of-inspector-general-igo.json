@@ -1,0 +1,112 @@
+{
+  "scope": "Massachusetts",
+  "code": "ma",
+  "department": "OFFICE OF INSPECTOR GENERAL (IGO)",
+  "fiscalYear": 2024,
+  "ledgerAmount": 7205108.79,
+  "sourceTotal": 7844072.33,
+  "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000",
+  "rowSchema": [
+    "subAgency",
+    "program",
+    "amount",
+    "sourceAmount",
+    "sourceRows"
+  ],
+  "rows": [
+    [
+      "OFFICE OF INSPECTOR GENERAL (IGO)",
+      "OFFICE OF INSPECTOR GENERAL (IGO) · (AA) REGULAR EMPLOYEE COMPENSATION",
+      6794411.6,
+      6794411.6,
+      380
+    ],
+    [
+      "OFFICE OF INSPECTOR GENERAL (IGO)",
+      "OFFICE OF INSPECTOR GENERAL (IGO) · (HH) CONSULTANT SVCS (TO DEPTS)",
+      330192.39,
+      330192.39,
+      19
+    ],
+    [
+      "OFFICE OF INSPECTOR GENERAL (IGO)",
+      "OFFICE OF INSPECTOR GENERAL (IGO) · (UU) IT NON-PAYROLL EXPENSES",
+      201025.82,
+      201025.82,
+      60
+    ],
+    [
+      "OFFICE OF INSPECTOR GENERAL (IGO)",
+      "OFFICE OF INSPECTOR GENERAL (IGO) · (EE) ADMINISTRATIVE EXPENSES",
+      182755.96,
+      182755.96,
+      235
+    ],
+    [
+      "OFFICE OF INSPECTOR GENERAL (IGO)",
+      "OFFICE OF INSPECTOR GENERAL (IGO) · (CC) SPECIAL EMPLOYEES",
+      174256.57,
+      174256.57,
+      131
+    ],
+    [
+      "OFFICE OF INSPECTOR GENERAL (IGO)",
+      "OFFICE OF INSPECTOR GENERAL (IGO) · (JJ) OPERATIONAL SERVICES",
+      64174.46,
+      64174.46,
+      67
+    ],
+    [
+      "OFFICE OF INSPECTOR GENERAL (IGO)",
+      "OFFICE OF INSPECTOR GENERAL (IGO) · (KK) EQUIPMENT PURCHASE",
+      37296.89,
+      37296.89,
+      6
+    ],
+    [
+      "OFFICE OF INSPECTOR GENERAL (IGO)",
+      "OFFICE OF INSPECTOR GENERAL (IGO) · (BB) REGULAR EMPLOYEE RELATED EXPEN",
+      27691.35,
+      27691.35,
+      146
+    ],
+    [
+      "OFFICE OF INSPECTOR GENERAL (IGO)",
+      "OFFICE OF INSPECTOR GENERAL (IGO) · (NN) INFRASTRUCTURE:",
+      19007.79,
+      19007.79,
+      21
+    ],
+    [
+      "OFFICE OF INSPECTOR GENERAL (IGO)",
+      "OFFICE OF INSPECTOR GENERAL (IGO) · (LL) EQUIPMENT LEASE-MAINTAIN/REPAR",
+      12408.43,
+      12408.43,
+      38
+    ],
+    [
+      "OFFICE OF INSPECTOR GENERAL (IGO)",
+      "OFFICE OF INSPECTOR GENERAL (IGO) · (FF) FACILITY OPERATIONAL EXPENSES",
+      548.51,
+      548.51,
+      9
+    ],
+    [
+      "OFFICE OF INSPECTOR GENERAL (IGO)",
+      "OFFICE OF INSPECTOR GENERAL (IGO) · (GG) ENERGY COSTS AND SPACE RENTAL",
+      302.56,
+      302.56,
+      7
+    ],
+    [
+      "OFFICE OF INSPECTOR GENERAL (IGO)",
+      "OFFICE OF INSPECTOR GENERAL (IGO) · (99) PAYROLL REJECTS",
+      0,
+      0,
+      10
+    ]
+  ],
+  "hierarchyNote": "The source does not identify a separate sub-agency column; direct-managed rows repeat the parent entity.",
+  "sourceBasis": "official source amount",
+  "note": "Amounts are shown on the official source basis; no comparator normalization was applied."
+}

@@ -1,0 +1,113 @@
+{
+  "scope": "Maryland",
+  "code": "md",
+  "fiscalYear": 2024,
+  "department": "WEST NORTH AVENUE DEVELOPMENT AUTHORITY",
+  "sourceUrl": "https://opendata.maryland.gov/Budget/State-of-Maryland-Payments-Data-FY2008-to-FY2024/7syw-q4cy/about_data",
+  "sourceUrls": [
+    [
+      "Maryland payments dataset",
+      "https://opendata.maryland.gov/Budget/State-of-Maryland-Payments-Data-FY2008-to-FY2024/7syw-q4cy/about_data"
+    ],
+    [
+      "FY2024 raw API rows",
+      "https://opendata.maryland.gov/resource/7syw-q4cy.json?%24where=fiscal_year=%272024%27&%24limit=50000"
+    ]
+  ],
+  "sourceBasis": "FY2024 cash payments grouped by official agency, published category code, and privacy-safe receiver label.",
+  "privacyNote": "Organization receiver names are retained; individual or ambiguous vendor names are grouped as [individual recipient omitted]. No person-level payroll fields are retained.",
+  "sourceRows": 11,
+  "sourceTotal": 462553.71,
+  "rowSchema": [
+    "subAgency",
+    "program",
+    "amount",
+    "sourceAmount",
+    "sourceRows"
+  ],
+  "rows": [
+    [
+      "WEST NORTH AVENUE DEVELOPMENT AUTHORITY",
+      "Category code D91 · Receiver [individual recipient omitted]",
+      25000,
+      25000,
+      1
+    ],
+    [
+      "WEST NORTH AVENUE DEVELOPMENT AUTHORITY",
+      "Category code D91 · Receiver CARAHSOFT TECHNOLOGY CORPORATION",
+      2928.35,
+      2928.35,
+      1
+    ],
+    [
+      "WEST NORTH AVENUE DEVELOPMENT AUTHORITY",
+      "Category code D91 · Receiver COPPIN HEIGHTS COMMUNITY DEVELOPMENT CORP INC",
+      25000,
+      25000,
+      1
+    ],
+    [
+      "WEST NORTH AVENUE DEVELOPMENT AUTHORITY",
+      "Category code D91 · Receiver COPPIN STATE UNIVERSITY DEVELOPMENT FOUNDATION,INC",
+      25000,
+      25000,
+      1
+    ],
+    [
+      "WEST NORTH AVENUE DEVELOPMENT AUTHORITY",
+      "Category code D91 · Receiver DRUID HILL PARK PARTNERSHIP",
+      250000,
+      250000,
+      1
+    ],
+    [
+      "WEST NORTH AVENUE DEVELOPMENT AUTHORITY",
+      "Category code D91 · Receiver GEORGE MASON UNIVERSITY",
+      795,
+      795,
+      1
+    ],
+    [
+      "WEST NORTH AVENUE DEVELOPMENT AUTHORITY",
+      "Category code D91 · Receiver MARYLAND REAL ESTATE CONVENTION LLC",
+      7500,
+      7500,
+      1
+    ],
+    [
+      "WEST NORTH AVENUE DEVELOPMENT AUTHORITY",
+      "Category code D91 · Receiver PARKS & PEOPLE INC",
+      25000,
+      25000,
+      1
+    ],
+    [
+      "WEST NORTH AVENUE DEVELOPMENT AUTHORITY",
+      "Category code D91 · Receiver T MOBILE USA INC",
+      3349.92,
+      3349.92,
+      1
+    ],
+    [
+      "WEST NORTH AVENUE DEVELOPMENT AUTHORITY",
+      "Category code D91 · Receiver TIME PRINTERS INC",
+      17916,
+      17916,
+      1
+    ],
+    [
+      "WEST NORTH AVENUE DEVELOPMENT AUTHORITY",
+      "Category code D91 · Receiver WSP USA INC",
+      80064.44,
+      80064.44,
+      1
+    ]
+  ],
+  "sourceCheck": {
+    "objectClassRows": 11,
+    "sourceRows": 11,
+    "sourceTotal": 462553.71,
+    "difference": 0
+  }
+}

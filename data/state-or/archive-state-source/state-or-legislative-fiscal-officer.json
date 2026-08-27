@@ -1,0 +1,308 @@
+{
+  "scope": "Oregon",
+  "fiscalYear": 2024,
+  "department": "LEGISLATIVE FISCAL OFFICER",
+  "sourceUrl": "https://data.oregon.gov/resource/y9g9-xsxs.json?$select=agency,agency_1,budget_class,budget_class_1,expend_class,expend_class_1,vendor,sum(expense)%20as%20total,count(*)%20as%20source_rows&$where=fiscal_year=2024&$group=agency,agency_1,budget_class,budget_class_1,expend_class,expend_class_1,vendor&$limit=500000",
+  "sourceUrls": [
+    [
+      "Oregon transparency expenditure catalog",
+      "https://data.oregon.gov/Revenue-Expense/Agency-Expenditures-Multi-Year-Report/y9g9-xsxs"
+    ],
+    [
+      "Grouped FY2024 API export",
+      "https://data.oregon.gov/resource/y9g9-xsxs.json?$select=agency,agency_1,budget_class,budget_class_1,expend_class,expend_class_1,vendor,sum(expense)%20as%20total,count(*)%20as%20source_rows&$where=fiscal_year=2024&$group=agency,agency_1,budget_class,budget_class_1,expend_class,expend_class_1,vendor&$limit=500000"
+    ]
+  ],
+  "sourceBasis": "Official Oregon Agency Expenditures Multi-Year Report; FY2024 cash expense grouped by agency, budget class, expenditure class, and privacy-safe receiver label.",
+  "privacyNote": "Individual or ambiguous vendor labels are grouped as [individual recipient omitted]; organization receivers are retained. This layer does not expose person-level payroll.",
+  "sourceRows": 100,
+  "sourceTotal": 186200.24,
+  "rowSchema": [
+    "subAgency",
+    "program",
+    "amount",
+    "sourceAmount",
+    "sourceRows"
+  ],
+  "rows": [
+    [
+      "LEGISLATIVE FISCAL OFFICER",
+      "4225 · STATE GOVERNMENT SERVICE CHARGES · 4600 · STATE GOVERNMENT SERVICE CHARGES · Receiver DEPARTMENT OF ADMINISTRATIVE SERVICES",
+      71514,
+      71514,
+      1
+    ],
+    [
+      "LEGISLATIVE FISCAL OFFICER",
+      "4150 · EMPLOYEE TRAINING · 4437 · PROF DEV DUES/MEMBERSHIP · Receiver GARTNER GROUP INC",
+      36215,
+      36215,
+      1
+    ],
+    [
+      "LEGISLATIVE FISCAL OFFICER",
+      "3240 · UNEMPLOYMENT ASSESSMENT · 3231 · UNEMPLOYMENT COMPENSATION & ASSESSMENT · Receiver EMPLOYMENT DEPARTMENT",
+      13180.08,
+      13180.08,
+      1
+    ],
+    [
+      "LEGISLATIVE FISCAL OFFICER",
+      "4225 · STATE GOVERNMENT SERVICE CHARGES · 4600 · STATE GOVERNMENT SERVICE CHARGES · Receiver STATE OF OREGON SECRETARY OF STATE",
+      11147.52,
+      11147.52,
+      1
+    ],
+    [
+      "LEGISLATIVE FISCAL OFFICER",
+      "4715 · IT EXPENDABLE PROPERTY · 4365 · COMPUTER TECHNOLOGY PC EQUIPMENT<$5K · Receiver CDW GOVERNMENT INC",
+      7762.31,
+      7762.31,
+      1
+    ],
+    [
+      "LEGISLATIVE FISCAL OFFICER",
+      "4225 · STATE GOVERNMENT SERVICE CHARGES · 4600 · STATE GOVERNMENT SERVICE CHARGES · Receiver [individual recipient omitted]",
+      5022,
+      5022,
+      1
+    ],
+    [
+      "LEGISLATIVE FISCAL OFFICER",
+      "4150 · EMPLOYEE TRAINING · 4401 · TRAINING, EDUCATION OR INSTRUCTION SRVC · Receiver [individual recipient omitted]",
+      4053.5,
+      4053.5,
+      5
+    ],
+    [
+      "LEGISLATIVE FISCAL OFFICER",
+      "4150 · EMPLOYEE TRAINING · 4434 · PROF DEV OUT-OF-STATE LODGING · Receiver [individual recipient omitted]",
+      3681.21,
+      3681.21,
+      5
+    ],
+    [
+      "LEGISLATIVE FISCAL OFFICER",
+      "4175 · OFFICE EXPENSES · 4201 · OFFICE SERVICES · Receiver PACIFIC OFFICE AUTOMATION INC",
+      3495.82,
+      3495.82,
+      1
+    ],
+    [
+      "LEGISLATIVE FISCAL OFFICER",
+      "4100 · INSTATE TRAVEL · 4106 · INSTATE LODGING · Receiver [individual recipient omitted]",
+      3036.61,
+      3036.61,
+      7
+    ],
+    [
+      "LEGISLATIVE FISCAL OFFICER",
+      "4150 · EMPLOYEE TRAINING · 4440 · PROF DEV OUT-OF-STATE AIR TRANSPORTATION · Receiver [individual recipient omitted]",
+      2596.61,
+      2596.61,
+      4
+    ],
+    [
+      "LEGISLATIVE FISCAL OFFICER",
+      "4715 · IT EXPENDABLE PROPERTY · 4366 · COMPUTER TECHNOLOGY PC SOFTWARE<$5K · Receiver SHI INTERNATIONAL CORP",
+      2208.87,
+      2208.87,
+      1
+    ],
+    [
+      "LEGISLATIVE FISCAL OFFICER",
+      "4150 · EMPLOYEE TRAINING · 4437 · PROF DEV DUES/MEMBERSHIP · Receiver [individual recipient omitted]",
+      2158,
+      2158,
+      6
+    ],
+    [
+      "LEGISLATIVE FISCAL OFFICER",
+      "4150 · EMPLOYEE TRAINING · 4452 · PROF DEV OUT-OF-ST MILE REIMB-FULL RATE · Receiver [individual recipient omitted]",
+      1948.23,
+      1948.23,
+      4
+    ],
+    [
+      "LEGISLATIVE FISCAL OFFICER",
+      "4175 · OFFICE EXPENSES · 4201 · OFFICE SERVICES · Receiver RICOH USA INC",
+      1784.62,
+      1784.62,
+      1
+    ],
+    [
+      "LEGISLATIVE FISCAL OFFICER",
+      "4100 · INSTATE TRAVEL · 4109 · INSTATE MILEAGE REIMBURSEMENT-FULL RATE · Receiver [individual recipient omitted]",
+      1391.79,
+      1391.79,
+      7
+    ],
+    [
+      "LEGISLATIVE FISCAL OFFICER",
+      "4150 · EMPLOYEE TRAINING · 4411 · PROF DEV OUT-OF-STATE TUITION/REGIST · Receiver [individual recipient omitted]",
+      1369,
+      1369,
+      3
+    ],
+    [
+      "LEGISLATIVE FISCAL OFFICER",
+      "4175 · OFFICE EXPENSES · 4201 · OFFICE SERVICES · Receiver [individual recipient omitted]",
+      1345,
+      1345,
+      1
+    ],
+    [
+      "LEGISLATIVE FISCAL OFFICER",
+      "4700 · EXPENDABLE PROPERTY $250-$5000 · 4999 · EXPENDABLE PROPERTY NON-IT<$5K · Receiver [individual recipient omitted]",
+      1162.5,
+      1162.5,
+      1
+    ],
+    [
+      "LEGISLATIVE FISCAL OFFICER",
+      "4150 · EMPLOYEE TRAINING · 4406 · PROF DEV INSTATE TUITION/REGISTRATION · Receiver THE SEMINAR GROUP",
+      1028,
+      1028,
+      1
+    ],
+    [
+      "LEGISLATIVE FISCAL OFFICER",
+      "4175 · OFFICE EXPENSES · 4200 · OFFICE SUPPLIES · Receiver OFFICE DEPOT BUSINESS SOLUTIONS LLC",
+      943.33,
+      943.33,
+      1
+    ],
+    [
+      "LEGISLATIVE FISCAL OFFICER",
+      "4150 · EMPLOYEE TRAINING · 4406 · PROF DEV INSTATE TUITION/REGISTRATION · Receiver [individual recipient omitted]",
+      920,
+      920,
+      7
+    ],
+    [
+      "LEGISLATIVE FISCAL OFFICER",
+      "4150 · EMPLOYEE TRAINING · 4450 · PROF DEV INSTATE MILE REIMB-FULL RATE · Receiver [individual recipient omitted]",
+      880.78,
+      880.78,
+      4
+    ],
+    [
+      "LEGISLATIVE FISCAL OFFICER",
+      "4175 · OFFICE EXPENSES · 4200 · OFFICE SUPPLIES · Receiver [individual recipient omitted]",
+      870.59,
+      870.59,
+      3
+    ],
+    [
+      "LEGISLATIVE FISCAL OFFICER",
+      "4150 · EMPLOYEE TRAINING · 4433 · PROF DEV INSTATE LODGING · Receiver [individual recipient omitted]",
+      858.39,
+      858.39,
+      2
+    ],
+    [
+      "LEGISLATIVE FISCAL OFFICER",
+      "4150 · EMPLOYEE TRAINING · 4432 · PROF DEV OUT-OF-STATE MEAL W/OVERNITE · Receiver [individual recipient omitted]",
+      829.02,
+      829.02,
+      5
+    ],
+    [
+      "LEGISLATIVE FISCAL OFFICER",
+      "4150 · EMPLOYEE TRAINING · 4441 · PROF DEV OUT-OF-STATE GROUND TRANSPRTATN · Receiver [individual recipient omitted]",
+      782.33,
+      782.33,
+      5
+    ],
+    [
+      "LEGISLATIVE FISCAL OFFICER",
+      "4100 · INSTATE TRAVEL · 4101 · INSTATE MEALS WITH OVERNIGHT STAY · Receiver [individual recipient omitted]",
+      763.71,
+      763.71,
+      6
+    ],
+    [
+      "LEGISLATIVE FISCAL OFFICER",
+      "4700 · EXPENDABLE PROPERTY $250-$5000 · 4999 · EXPENDABLE PROPERTY NON-IT<$5K · Receiver ERGOCENTRIC INC",
+      712.35,
+      712.35,
+      1
+    ],
+    [
+      "LEGISLATIVE FISCAL OFFICER",
+      "4700 · EXPENDABLE PROPERTY $250-$5000 · 4999 · EXPENDABLE PROPERTY NON-IT<$5K · Receiver CDW GOVERNMENT INC",
+      587.38,
+      587.38,
+      1
+    ],
+    [
+      "LEGISLATIVE FISCAL OFFICER",
+      "4225 · STATE GOVERNMENT SERVICE CHARGES · 4600 · STATE GOVERNMENT SERVICE CHARGES · Receiver OREGON GOVERNMENT ETHICS COMMISSION",
+      473,
+      473,
+      1
+    ],
+    [
+      "LEGISLATIVE FISCAL OFFICER",
+      "4150 · EMPLOYEE TRAINING · 4411 · PROF DEV OUT-OF-STATE TUITION/REGIST · Receiver THE SEMINAR GROUP",
+      374,
+      374,
+      1
+    ],
+    [
+      "LEGISLATIVE FISCAL OFFICER",
+      "4400 · DUES AND SUBSCRIPTIONS · 4251 · SUBSCRIPTIONS AND PUBLICATIONS · Receiver [individual recipient omitted]",
+      352.25,
+      352.25,
+      1
+    ],
+    [
+      "LEGISLATIVE FISCAL OFFICER",
+      "4275 · PUBLICITY & PUBLICATIONS · 4253 · ADVERTISE, PUBLICITY, PUBLISH/PRINT SRVS · Receiver [individual recipient omitted]",
+      300,
+      300,
+      2
+    ],
+    [
+      "LEGISLATIVE FISCAL OFFICER",
+      "4250 · DATA PROCESSING · 4367 · COMPUTER TECHNOLOGY PC SUPPORT · Receiver CDW GOVERNMENT INC",
+      238.77,
+      238.77,
+      1
+    ],
+    [
+      "LEGISLATIVE FISCAL OFFICER",
+      "4150 · EMPLOYEE TRAINING · 4431 · PROF DEV INSTATE MEAL WITH OVERNITE STAY · Receiver [individual recipient omitted]",
+      83.35,
+      83.35,
+      1
+    ],
+    [
+      "LEGISLATIVE FISCAL OFFICER",
+      "4150 · EMPLOYEE TRAINING · 4415 · PROF DEV OUT-OF-STATE TRAVEL MISC EXPENS · Receiver [individual recipient omitted]",
+      58.88,
+      58.88,
+      2
+    ],
+    [
+      "LEGISLATIVE FISCAL OFFICER",
+      "4150 · EMPLOYEE TRAINING · 4439 · PROF DEV INSTATE GROUND TRANSPORTATION · Receiver [individual recipient omitted]",
+      54,
+      54,
+      2
+    ],
+    [
+      "LEGISLATIVE FISCAL OFFICER",
+      "4150 · EMPLOYEE TRAINING · 4436 · PROFDEV OUTOFSTATE MEALS-NO OVERNIT STAY · Receiver [individual recipient omitted]",
+      17.44,
+      17.44,
+      1
+    ]
+  ],
+  "sourceCheck": {
+    "objectClassRows": 39,
+    "sourceRows": 100,
+    "sourceTotal": 186200.24,
+    "difference": 0
+  }
+}

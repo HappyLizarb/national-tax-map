@@ -1,0 +1,126 @@
+{
+  "scope": "Massachusetts",
+  "code": "ma",
+  "department": "MASS COMMISSION FOR THE BLIND (MCB)",
+  "fiscalYear": 2024,
+  "ledgerAmount": 34532236.57,
+  "sourceTotal": 37594624.79,
+  "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000",
+  "rowSchema": [
+    "subAgency",
+    "program",
+    "amount",
+    "sourceAmount",
+    "sourceRows"
+  ],
+  "rows": [
+    [
+      "MASS COMMISSION FOR THE BLIND (MCB)",
+      "MASS COMMISSION FOR THE BLIND (MCB) · (MM) PURCHASED CLIENT/PROGRAM SVCS",
+      16149129.36,
+      16149129.36,
+      2166
+    ],
+    [
+      "MASS COMMISSION FOR THE BLIND (MCB)",
+      "MASS COMMISSION FOR THE BLIND (MCB) · (AA) REGULAR EMPLOYEE COMPENSATION",
+      11884720.73,
+      11884720.73,
+      1277
+    ],
+    [
+      "MASS COMMISSION FOR THE BLIND (MCB)",
+      "MASS COMMISSION FOR THE BLIND (MCB) · (PP) STATE AID/POL SUB",
+      4620523,
+      4620523,
+      36
+    ],
+    [
+      "MASS COMMISSION FOR THE BLIND (MCB)",
+      "MASS COMMISSION FOR THE BLIND (MCB) · (KK) EQUIPMENT PURCHASE",
+      1593302.89,
+      1593302.89,
+      370
+    ],
+    [
+      "MASS COMMISSION FOR THE BLIND (MCB)",
+      "MASS COMMISSION FOR THE BLIND (MCB) · (FF) FACILITY OPERATIONAL EXPENSES",
+      902553.81,
+      902553.81,
+      1075
+    ],
+    [
+      "MASS COMMISSION FOR THE BLIND (MCB)",
+      "MASS COMMISSION FOR THE BLIND (MCB) · (GG) ENERGY COSTS AND SPACE RENTAL",
+      820434,
+      820434,
+      53
+    ],
+    [
+      "MASS COMMISSION FOR THE BLIND (MCB)",
+      "MASS COMMISSION FOR THE BLIND (MCB) · (UU) IT NON-PAYROLL EXPENSES",
+      561592.15,
+      561592.15,
+      94
+    ],
+    [
+      "MASS COMMISSION FOR THE BLIND (MCB)",
+      "MASS COMMISSION FOR THE BLIND (MCB) · (BB) REGULAR EMPLOYEE RELATED EXPEN",
+      384269.6,
+      384269.6,
+      201
+    ],
+    [
+      "MASS COMMISSION FOR THE BLIND (MCB)",
+      "MASS COMMISSION FOR THE BLIND (MCB) · (JJ) OPERATIONAL SERVICES",
+      369686.25,
+      369686.25,
+      8
+    ],
+    [
+      "MASS COMMISSION FOR THE BLIND (MCB)",
+      "MASS COMMISSION FOR THE BLIND (MCB) · (EE) ADMINISTRATIVE EXPENSES",
+      139319.87,
+      139319.87,
+      190
+    ],
+    [
+      "MASS COMMISSION FOR THE BLIND (MCB)",
+      "MASS COMMISSION FOR THE BLIND (MCB) · (HH) CONSULTANT SVCS (TO DEPTS)",
+      87183.37,
+      87183.37,
+      10
+    ],
+    [
+      "MASS COMMISSION FOR THE BLIND (MCB)",
+      "MASS COMMISSION FOR THE BLIND (MCB) · (CC) SPECIAL EMPLOYEES",
+      56137.5,
+      56137.5,
+      31
+    ],
+    [
+      "MASS COMMISSION FOR THE BLIND (MCB)",
+      "MASS COMMISSION FOR THE BLIND (MCB) · (LL) EQUIPMENT LEASE-MAINTAIN/REPAR",
+      19182.46,
+      19182.46,
+      50
+    ],
+    [
+      "MASS COMMISSION FOR THE BLIND (MCB)",
+      "MASS COMMISSION FOR THE BLIND (MCB) · (NN) INFRASTRUCTURE:",
+      6589.8,
+      6589.8,
+      21
+    ],
+    [
+      "MASS COMMISSION FOR THE BLIND (MCB)",
+      "MASS COMMISSION FOR THE BLIND (MCB) · (99) PAYROLL REJECTS",
+      0,
+      0,
+      7
+    ]
+  ],
+  "hierarchyNote": "The source does not identify a separate sub-agency column; direct-managed rows repeat the parent entity.",
+  "sourceBasis": "official source amount",
+  "note": "Amounts are shown on the official source basis; no comparator normalization was applied."
+}

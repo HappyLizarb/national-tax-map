@@ -1,0 +1,186 @@
+{
+  "scope": "New Jersey",
+  "fiscalYear": 2024,
+  "department": "MOSQUITO CONTROL COMMISSION",
+  "sourceUrl": "https://data.nj.gov/Government-Finance/YourMoney-Agency-Expenditures/apet-rp2i",
+  "sourceUrls": [
+    [
+      "Official expenditures catalog",
+      "https://www.nj.gov/transparency/financial-management/expenditures/index.shtml"
+    ],
+    [
+      "FY2024 agency dataset",
+      "https://data.nj.gov/Government-Finance/YourMoney-Agency-Expenditures/apet-rp2i"
+    ],
+    [
+      "Grouped FY2024 API export",
+      "https://data.nj.gov/resource/apet-rp2i.csv?%24select=ibno_agency%2Cstatewide_program%2Cpayee_name%2Csum%28expended_amt%29%20as%20expended%2Csum%28obligation_amt%29%20as%20obligations%2Ccount%28%2A%29%20as%20source_rows&%24where=budget_fiscal_year%3D2024&%24group=ibno_agency%2Cstatewide_program%2Cpayee_name&%24limit=500000"
+    ]
+  ],
+  "sourceBasis": "Official FY2024 Agency Expenditures dataset; pie amount uses expended, with obligations retained as a separate row measure.",
+  "privacyNote": "Individual or ambiguous payee labels are grouped as [individual recipient omitted]; organization receivers are retained. This layer does not expose person-level payroll.",
+  "sourceRows": 54,
+  "sourceTotal": 1347442.81,
+  "obligationTotal": 38243.61,
+  "rowSchema": [
+    "subAgency",
+    "program",
+    "amount",
+    "sourceAmount",
+    "sourceRows",
+    "obligations"
+  ],
+  "rows": [
+    [
+      "MOSQUITO CONTROL COMMISSION",
+      "ENVIRONMENTAL PLANNING ADMINISTRATION · Receiver DOWNSTOWN AIRPORT INC.",
+      429312.8,
+      429312.8,
+      1,
+      0
+    ],
+    [
+      "MOSQUITO CONTROL COMMISSION",
+      "ENVIRONMENTAL PLANNING ADMINISTRATION · Receiver *",
+      291025.16,
+      291025.16,
+      17,
+      0
+    ],
+    [
+      "MOSQUITO CONTROL COMMISSION",
+      "ENVIRONMENTAL PLANNING ADMINISTRATION · Receiver [individual recipient omitted]",
+      146973.83,
+      146973.83,
+      14,
+      9712.88
+    ],
+    [
+      "MOSQUITO CONTROL COMMISSION",
+      "ENVIRONMENTAL PLANNING ADMINISTRATION · Receiver ADAPCO LLC",
+      121961.2,
+      121961.2,
+      1,
+      642.64
+    ],
+    [
+      "MOSQUITO CONTROL COMMISSION",
+      "ENVIRONMENTAL PLANNING ADMINISTRATION · Receiver COUNTY OF CAPE MAY",
+      90000,
+      90000,
+      1,
+      0
+    ],
+    [
+      "MOSQUITO CONTROL COMMISSION",
+      "ENVIRONMENTAL PLANNING ADMINISTRATION · Receiver MILETTA BROTHERS, INC.",
+      73871.87,
+      73871.87,
+      1,
+      0
+    ],
+    [
+      "MOSQUITO CONTROL COMMISSION",
+      "ENVIRONMENTAL PLANNING ADMINISTRATION · Receiver LA TORRE CORPORATION",
+      66150,
+      66150,
+      1,
+      0
+    ],
+    [
+      "MOSQUITO CONTROL COMMISSION",
+      "ENVIRONMENTAL PLANNING ADMINISTRATION · Receiver 22ND CENTURY TECHNOLOGIES INC",
+      63660.36,
+      63660.36,
+      1,
+      0
+    ],
+    [
+      "MOSQUITO CONTROL COMMISSION",
+      "ENVIRONMENTAL PLANNING ADMINISTRATION · Receiver ES OPCO USA LLC DBA VESERIS",
+      19572,
+      19572,
+      1,
+      0
+    ],
+    [
+      "MOSQUITO CONTROL COMMISSION",
+      "ENVIRONMENTAL PLANNING ADMINISTRATION · Receiver BANK OF AMERICA N A",
+      9446.21,
+      9446.21,
+      8,
+      0
+    ],
+    [
+      "MOSQUITO CONTROL COMMISSION",
+      "ENVIRONMENTAL PLANNING ADMINISTRATION · Receiver KEO FISH FARMS, INC.",
+      8570,
+      8570,
+      1,
+      0
+    ],
+    [
+      "MOSQUITO CONTROL COMMISSION",
+      "ENVIRONMENTAL PLANNING ADMINISTRATION · Receiver PUBLIC HEALTH ENTOMOLOGISTS LL",
+      8500,
+      8500,
+      1,
+      0
+    ],
+    [
+      "MOSQUITO CONTROL COMMISSION",
+      "ENVIRONMENTAL PLANNING ADMINISTRATION · Receiver SCIENTIFIC SALES INC.",
+      7367,
+      7367,
+      1,
+      0
+    ],
+    [
+      "MOSQUITO CONTROL COMMISSION",
+      "ENVIRONMENTAL PLANNING ADMINISTRATION · Receiver ES OPCO USA LLC DBA UNIVAR ENV",
+      3938,
+      3938,
+      1,
+      1590
+    ],
+    [
+      "MOSQUITO CONTROL COMMISSION",
+      "ENVIRONMENTAL PLANNING ADMINISTRATION · Receiver LINDE GAS & EQUIPMENT INC.",
+      3930.62,
+      3930.62,
+      1,
+      26180.2
+    ],
+    [
+      "MOSQUITO CONTROL COMMISSION",
+      "ENVIRONMENTAL PLANNING ADMINISTRATION · Receiver COAST MACHINERY LLC",
+      2699.05,
+      2699.05,
+      1,
+      0
+    ],
+    [
+      "MOSQUITO CONTROL COMMISSION",
+      "ENVIRONMENTAL PLANNING ADMINISTRATION · Receiver COUNTY OF SALEM",
+      355.48,
+      355.48,
+      1,
+      0
+    ],
+    [
+      "MOSQUITO CONTROL COMMISSION",
+      "ENVIRONMENTAL PLANNING ADMINISTRATION · Receiver AT&T",
+      109.23,
+      109.23,
+      1,
+      117.89
+    ]
+  ],
+  "sourceCheck": {
+    "objectClassRows": 18,
+    "sourceRows": 54,
+    "sourceTotal": 1347442.81,
+    "obligationTotal": 38243.61,
+    "difference": 0
+  }
+}

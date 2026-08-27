@@ -1,0 +1,227 @@
+{
+  "scope": "United States",
+  "code": "federal",
+  "department": "Small Business Administration",
+  "fiscalYear": 2024,
+  "ledgerAmount": 26835146882.93,
+  "sourceTotal": 36571767837.26,
+  "sourceUrl": "https://api.usaspending.gov/api/v2/agency/073/object_class/?fiscal_year=2024&limit=100&page=1",
+  "sourceUrls": [
+    [
+      "FY2024 gross outlays by object class",
+      "https://api.usaspending.gov/api/v2/agency/073/object_class/?fiscal_year=2024&limit=100&page=1"
+    ],
+    [
+      "FY2024 agency budgetary resources total",
+      "https://api.usaspending.gov/api/v2/agency/073/budgetary_resources/?fiscal_year=2024"
+    ]
+  ],
+  "rowSchema": [
+    "subAgency",
+    "program",
+    "amount",
+    "sourceAmount",
+    "sourceRows"
+  ],
+  "rows": [
+    [
+      "Small Business Administration",
+      "Grants, subsidies, and contributions",
+      34780147036.67,
+      34780147036.67,
+      null
+    ],
+    [
+      "Small Business Administration",
+      "Other goods and services from Federal sources",
+      357055081.23,
+      357055081.23,
+      null
+    ],
+    [
+      "Small Business Administration",
+      "Other than full-time permanent",
+      313684387.92,
+      313684387.92,
+      null
+    ],
+    [
+      "Small Business Administration",
+      "Full-time permanent",
+      298518929.24,
+      298518929.24,
+      null
+    ],
+    [
+      "Small Business Administration",
+      "Other services from non-Federal sources",
+      309923988.62,
+      309923988.62,
+      null
+    ],
+    [
+      "Small Business Administration",
+      "Civilian personnel benefits",
+      207691867.77,
+      207691867.77,
+      null
+    ],
+    [
+      "Small Business Administration",
+      "Rental payments to GSA",
+      41557279.54,
+      41557279.54,
+      null
+    ],
+    [
+      "Small Business Administration",
+      "Operation and maintenance of equipment",
+      39553445.92,
+      39553445.92,
+      null
+    ],
+    [
+      "Small Business Administration",
+      "Travel and transportation of persons",
+      34485340.11,
+      34485340.11,
+      null
+    ],
+    [
+      "Small Business Administration",
+      "Equipment",
+      51601300.24,
+      51601300.24,
+      null
+    ],
+    [
+      "Small Business Administration",
+      "Special personal services payments",
+      36012581.79,
+      36012581.79,
+      null
+    ],
+    [
+      "Small Business Administration",
+      "Other personnel compensation",
+      33540361.22,
+      33540361.22,
+      null
+    ],
+    [
+      "Small Business Administration",
+      "Advisory and assistance services",
+      30895674.36,
+      30895674.36,
+      null
+    ],
+    [
+      "Small Business Administration",
+      "Communications, utilities, and miscellaneous charges",
+      14656034.72,
+      14656034.72,
+      null
+    ],
+    [
+      "Small Business Administration",
+      "Benefits for former personnel",
+      6066867.05,
+      6066867.05,
+      null
+    ],
+    [
+      "Small Business Administration",
+      "Supplies and materials",
+      8607313.57,
+      8607313.57,
+      null
+    ],
+    [
+      "Small Business Administration",
+      "Printing and reproduction",
+      6546236.54,
+      6546236.54,
+      null
+    ],
+    [
+      "Small Business Administration",
+      "Investments and loans",
+      222084.34,
+      222084.34,
+      null
+    ],
+    [
+      "Small Business Administration",
+      "Research and development contracts",
+      677483.8,
+      677483.8,
+      null
+    ],
+    [
+      "Small Business Administration",
+      "Interest and dividends",
+      113046.43,
+      113046.43,
+      null
+    ],
+    [
+      "Small Business Administration",
+      "Insurance claims and indemnities",
+      109046.74,
+      109046.74,
+      null
+    ],
+    [
+      "Small Business Administration",
+      "Refunds",
+      51428.48,
+      51428.48,
+      null
+    ],
+    [
+      "Small Business Administration",
+      "Undistributed",
+      13269.68,
+      13269.68,
+      null
+    ],
+    [
+      "Small Business Administration",
+      "Rental payments to others",
+      3563.35,
+      3563.35,
+      null
+    ],
+    [
+      "Small Business Administration",
+      "Operation and maintenance of facilities",
+      32769.1,
+      32769.1,
+      null
+    ],
+    [
+      "Small Business Administration",
+      "Land and structures",
+      531.43,
+      531.43,
+      null
+    ],
+    [
+      "Small Business Administration",
+      "Transportation of things",
+      887.4,
+      887.4,
+      null
+    ]
+  ],
+  "sourceBasis": "official source amount",
+  "sourceCheck": {
+    "objectClassRows": 27,
+    "objectClassTotal": 36571767837.26,
+    "agencyTotal": 36571767837.26,
+    "difference": 0
+  },
+  "normalizationAdjustment": -0.01,
+  "hierarchyNote": "The source endpoint returns agency-level object-class aggregates; no individual employees or payees are included.",
+  "note": "Amounts are shown on the official source basis; no comparator normalization was applied."
+}

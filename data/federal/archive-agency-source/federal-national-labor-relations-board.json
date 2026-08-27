@@ -1,0 +1,178 @@
+{
+  "scope": "United States",
+  "code": "federal",
+  "department": "National Labor Relations Board",
+  "fiscalYear": 2024,
+  "ledgerAmount": 221373132.72,
+  "sourceTotal": 301694149.49,
+  "sourceUrl": "https://api.usaspending.gov/api/v2/agency/420/object_class/?fiscal_year=2024&limit=100&page=1",
+  "sourceUrls": [
+    [
+      "FY2024 gross outlays by object class",
+      "https://api.usaspending.gov/api/v2/agency/420/object_class/?fiscal_year=2024&limit=100&page=1"
+    ],
+    [
+      "FY2024 agency budgetary resources total",
+      "https://api.usaspending.gov/api/v2/agency/420/budgetary_resources/?fiscal_year=2024"
+    ]
+  ],
+  "rowSchema": [
+    "subAgency",
+    "program",
+    "amount",
+    "sourceAmount",
+    "sourceRows"
+  ],
+  "rows": [
+    [
+      "National Labor Relations Board",
+      "Full-time permanent",
+      168768476.52,
+      168768476.52,
+      null
+    ],
+    [
+      "National Labor Relations Board",
+      "Civilian personnel benefits",
+      54816918.11,
+      54816918.11,
+      null
+    ],
+    [
+      "National Labor Relations Board",
+      "Rental payments to GSA",
+      23484168.72,
+      23484168.72,
+      null
+    ],
+    [
+      "National Labor Relations Board",
+      "Advisory and assistance services",
+      20258742.68,
+      20258742.68,
+      null
+    ],
+    [
+      "National Labor Relations Board",
+      "Other services from non-Federal sources",
+      8845838.5,
+      8845838.5,
+      null
+    ],
+    [
+      "National Labor Relations Board",
+      "Military personnel benefits",
+      7775981.49,
+      7775981.49,
+      null
+    ],
+    [
+      "National Labor Relations Board",
+      "Operation and maintenance of facilities",
+      4128357.43,
+      4128357.43,
+      null
+    ],
+    [
+      "National Labor Relations Board",
+      "Other personnel compensation",
+      4121351.72,
+      4121351.72,
+      null
+    ],
+    [
+      "National Labor Relations Board",
+      "Research and development contracts",
+      2461491.21,
+      2461491.21,
+      null
+    ],
+    [
+      "National Labor Relations Board",
+      "Communications, utilities, and miscellaneous charges",
+      2617512.07,
+      2617512.07,
+      null
+    ],
+    [
+      "National Labor Relations Board",
+      "Travel and transportation of persons",
+      1254510.23,
+      1254510.23,
+      null
+    ],
+    [
+      "National Labor Relations Board",
+      "Equipment",
+      1723935.87,
+      1723935.87,
+      null
+    ],
+    [
+      "National Labor Relations Board",
+      "Other goods and services from Federal sources",
+      510097.75,
+      510097.75,
+      null
+    ],
+    [
+      "National Labor Relations Board",
+      "Supplies and materials",
+      248998.06,
+      248998.06,
+      null
+    ],
+    [
+      "National Labor Relations Board",
+      "Rental payments to others",
+      122024.08,
+      122024.08,
+      null
+    ],
+    [
+      "National Labor Relations Board",
+      "Insurance claims and indemnities",
+      188332.93,
+      188332.93,
+      null
+    ],
+    [
+      "National Labor Relations Board",
+      "Transportation of things",
+      193583.74,
+      193583.74,
+      null
+    ],
+    [
+      "National Labor Relations Board",
+      "Printing and reproduction",
+      136233.44,
+      136233.44,
+      null
+    ],
+    [
+      "National Labor Relations Board",
+      "Benefits for former personnel",
+      30194.94,
+      30194.94,
+      null
+    ],
+    [
+      "National Labor Relations Board",
+      "Special personal services payments",
+      7400,
+      7400,
+      null
+    ]
+  ],
+  "sourceBasis": "official source amount",
+  "sourceCheck": {
+    "objectClassRows": 20,
+    "objectClassTotal": 301694149.49,
+    "agencyTotal": 301694149.49,
+    "difference": 0
+  },
+  "normalizationAdjustment": 0.02,
+  "hierarchyNote": "The source endpoint returns agency-level object-class aggregates; no individual employees or payees are included.",
+  "note": "Amounts are shown on the official source basis; no comparator normalization was applied."
+}

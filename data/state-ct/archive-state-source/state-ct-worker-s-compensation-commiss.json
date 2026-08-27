@@ -1,0 +1,42 @@
+{
+  "scope": "Connecticut",
+  "code": "ct",
+  "department": "Worker's Compensation Commiss.",
+  "fiscalYear": 2024,
+  "ledgerAmount": 2441123.01,
+  "sourceTotal": 2601180.55,
+  "sourceUrl": "https://data.ct.gov/resource/ajdm-rvz7.json?$select=department,program,sum(amount)%20as%20amount,count(*)%20as%20records&$where=fiscal_year=2024&$group=department,program",
+  "rowSchema": [
+    "subAgency",
+    "program",
+    "amount",
+    "sourceAmount",
+    "sourceRows"
+  ],
+  "rows": [
+    [
+      "Worker's Compensation Commiss.",
+      "Worker's Compensation Commiss. · Other Expenses",
+      2423966.16,
+      2423966.16,
+      1899
+    ],
+    [
+      "Worker's Compensation Commiss.",
+      "Worker's Compensation Commiss. · IT Services",
+      139419.39,
+      139419.39,
+      172
+    ],
+    [
+      "Worker's Compensation Commiss.",
+      "Worker's Compensation Commiss. · Occup Disease Surveillnce Prog",
+      37795,
+      37795,
+      12
+    ]
+  ],
+  "hierarchyNote": "The source does not identify a separate sub-agency column; direct-managed rows repeat the parent entity.",
+  "sourceBasis": "official source amount",
+  "note": "Amounts are shown on the official source basis; no comparator normalization was applied."
+}

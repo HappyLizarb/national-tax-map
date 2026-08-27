@@ -1,0 +1,112 @@
+{
+  "scope": "Massachusetts",
+  "code": "ma",
+  "department": "STATE RECLAMATION BOARD (SRB)",
+  "fiscalYear": 2024,
+  "ledgerAmount": 12426426.64,
+  "sourceTotal": 13528427.16,
+  "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000",
+  "rowSchema": [
+    "subAgency",
+    "program",
+    "amount",
+    "sourceAmount",
+    "sourceRows"
+  ],
+  "rows": [
+    [
+      "STATE RECLAMATION BOARD (SRB)",
+      "STATE RECLAMATION BOARD (SRB) · (AA) REGULAR EMPLOYEE COMPENSATION",
+      7831736.84,
+      7831736.84,
+      490
+    ],
+    [
+      "STATE RECLAMATION BOARD (SRB)",
+      "STATE RECLAMATION BOARD (SRB) · (NN) INFRASTRUCTURE:",
+      1664249.74,
+      1664249.74,
+      588
+    ],
+    [
+      "STATE RECLAMATION BOARD (SRB)",
+      "STATE RECLAMATION BOARD (SRB) · (DD) PENSION & INSURANCE RELATED EX",
+      1352243.6,
+      1352243.6,
+      21
+    ],
+    [
+      "STATE RECLAMATION BOARD (SRB)",
+      "STATE RECLAMATION BOARD (SRB) · (GG) ENERGY COSTS AND SPACE RENTAL",
+      1183973.11,
+      1183973.11,
+      691
+    ],
+    [
+      "STATE RECLAMATION BOARD (SRB)",
+      "STATE RECLAMATION BOARD (SRB) · (KK) EQUIPMENT PURCHASE",
+      490622.21,
+      490622.21,
+      47
+    ],
+    [
+      "STATE RECLAMATION BOARD (SRB)",
+      "STATE RECLAMATION BOARD (SRB) · (CC) SPECIAL EMPLOYEES",
+      349065.88,
+      349065.88,
+      161
+    ],
+    [
+      "STATE RECLAMATION BOARD (SRB)",
+      "STATE RECLAMATION BOARD (SRB) · (UU) IT NON-PAYROLL EXPENSES",
+      250569.25,
+      250569.25,
+      427
+    ],
+    [
+      "STATE RECLAMATION BOARD (SRB)",
+      "STATE RECLAMATION BOARD (SRB) · (EE) ADMINISTRATIVE EXPENSES",
+      123360.98,
+      123360.98,
+      272
+    ],
+    [
+      "STATE RECLAMATION BOARD (SRB)",
+      "STATE RECLAMATION BOARD (SRB) · (LL) EQUIPMENT LEASE-MAINTAIN/REPAR",
+      117705.6,
+      117705.6,
+      189
+    ],
+    [
+      "STATE RECLAMATION BOARD (SRB)",
+      "STATE RECLAMATION BOARD (SRB) · (FF) FACILITY OPERATIONAL EXPENSES",
+      83136.99,
+      83136.99,
+      399
+    ],
+    [
+      "STATE RECLAMATION BOARD (SRB)",
+      "STATE RECLAMATION BOARD (SRB) · (BB) REGULAR EMPLOYEE RELATED EXPEN",
+      50239.21,
+      50239.21,
+      216
+    ],
+    [
+      "STATE RECLAMATION BOARD (SRB)",
+      "STATE RECLAMATION BOARD (SRB) · (JJ) OPERATIONAL SERVICES",
+      27266.33,
+      27266.33,
+      60
+    ],
+    [
+      "STATE RECLAMATION BOARD (SRB)",
+      "STATE RECLAMATION BOARD (SRB) · (HH) CONSULTANT SVCS (TO DEPTS)",
+      4257.42,
+      4257.42,
+      6
+    ]
+  ],
+  "hierarchyNote": "The source does not identify a separate sub-agency column; direct-managed rows repeat the parent entity.",
+  "sourceBasis": "official source amount",
+  "note": "Amounts are shown on the official source basis; no comparator normalization was applied."
+}

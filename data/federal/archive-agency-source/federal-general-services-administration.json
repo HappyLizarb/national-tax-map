@@ -1,0 +1,244 @@
+{
+  "scope": "United States",
+  "code": "federal",
+  "department": "General Services Administration",
+  "fiscalYear": 2024,
+  "ledgerAmount": 29641542389.91,
+  "sourceTotal": 40396410399.82,
+  "sourceUrl": "https://api.usaspending.gov/api/v2/agency/047/object_class/?fiscal_year=2024&limit=100&page=1",
+  "sourceUrls": [
+    [
+      "FY2024 gross outlays by object class",
+      "https://api.usaspending.gov/api/v2/agency/047/object_class/?fiscal_year=2024&limit=100&page=1"
+    ],
+    [
+      "FY2024 agency budgetary resources total",
+      "https://api.usaspending.gov/api/v2/agency/047/budgetary_resources/?fiscal_year=2024"
+    ]
+  ],
+  "rowSchema": [
+    "subAgency",
+    "program",
+    "amount",
+    "sourceAmount",
+    "sourceRows"
+  ],
+  "rows": [
+    [
+      "General Services Administration",
+      "Advisory and assistance services",
+      20289574701.85,
+      20289574701.85,
+      null
+    ],
+    [
+      "General Services Administration",
+      "Rental payments to others",
+      5777807396.5,
+      5777807396.5,
+      null
+    ],
+    [
+      "General Services Administration",
+      "Equipment",
+      4161228500.99,
+      4161228500.99,
+      null
+    ],
+    [
+      "General Services Administration",
+      "Operation and maintenance of facilities",
+      2451461610.29,
+      2451461610.29,
+      null
+    ],
+    [
+      "General Services Administration",
+      "Supplies and materials",
+      1937426819.05,
+      1937426819.05,
+      null
+    ],
+    [
+      "General Services Administration",
+      "Land and structures",
+      1019459458.54,
+      1019459458.54,
+      null
+    ],
+    [
+      "General Services Administration",
+      "Full-time permanent",
+      1589767380.28,
+      1589767380.28,
+      null
+    ],
+    [
+      "General Services Administration",
+      "Other goods and services from Federal sources",
+      1080757087.11,
+      1080757087.11,
+      null
+    ],
+    [
+      "General Services Administration",
+      "Communications, utilities, and miscellaneous charges",
+      615617261.76,
+      615617261.76,
+      null
+    ],
+    [
+      "General Services Administration",
+      "Civilian personnel benefits",
+      628632120.07,
+      628632120.07,
+      null
+    ],
+    [
+      "General Services Administration",
+      "Operation and maintenance of equipment",
+      324988256.14,
+      324988256.14,
+      null
+    ],
+    [
+      "General Services Administration",
+      "Transportation of things",
+      212650891.43,
+      212650891.43,
+      null
+    ],
+    [
+      "General Services Administration",
+      "Other services from non-Federal sources",
+      79337145.49,
+      79337145.49,
+      null
+    ],
+    [
+      "General Services Administration",
+      "Other than full-time permanent",
+      60572579.88,
+      60572579.88,
+      null
+    ],
+    [
+      "General Services Administration",
+      "Rental payments to GSA",
+      40067724.2,
+      40067724.2,
+      null
+    ],
+    [
+      "General Services Administration",
+      "Other personnel compensation",
+      42086738.61,
+      42086738.61,
+      null
+    ],
+    [
+      "General Services Administration",
+      "Interest and dividends",
+      29815210.76,
+      29815210.76,
+      null
+    ],
+    [
+      "General Services Administration",
+      "Travel and transportation of persons",
+      26588232.16,
+      26588232.16,
+      null
+    ],
+    [
+      "General Services Administration",
+      "Insurance claims and indemnities",
+      9832699.01,
+      9832699.01,
+      null
+    ],
+    [
+      "General Services Administration",
+      "Object class not reported by official source",
+      10221867.3,
+      10221867.3,
+      null
+    ],
+    [
+      "General Services Administration",
+      "Special personal services payments",
+      1885543.98,
+      1885543.98,
+      null
+    ],
+    [
+      "General Services Administration",
+      "Printing and reproduction",
+      2381545.67,
+      2381545.67,
+      null
+    ],
+    [
+      "General Services Administration",
+      "Financial transfers",
+      2248392.75,
+      2248392.75,
+      null
+    ],
+    [
+      "General Services Administration",
+      "Benefits for former personnel",
+      1612504.32,
+      1612504.32,
+      null
+    ],
+    [
+      "General Services Administration",
+      "Refunds",
+      364125.55,
+      364125.55,
+      null
+    ],
+    [
+      "General Services Administration",
+      "Research and development contracts",
+      14280.61,
+      14280.61,
+      null
+    ],
+    [
+      "General Services Administration",
+      "Medical care",
+      9879.46,
+      9879.46,
+      null
+    ],
+    [
+      "General Services Administration",
+      "Grants, subsidies, and contributions",
+      537.76,
+      537.76,
+      null
+    ],
+    [
+      "General Services Administration",
+      "Unvouchered",
+      -91.7,
+      -91.7,
+      null
+    ]
+  ],
+  "sourceBasis": "official source amount",
+  "sourceCheck": {
+    "objectClassRows": 29,
+    "objectClassTotal": 40396410399.82,
+    "agencyTotal": 40396410399.82,
+    "difference": 0
+  },
+  "normalizationAdjustment": 0.01,
+  "hierarchyNote": "The source endpoint returns agency-level object-class aggregates; no individual employees or payees are included.",
+  "sourceLabelMap": {
+    "Object class not reported by official source": "Unknown"
+  },
+  "note": "The official USAspending object-class response labels 1 row as Unknown; the display label states that the object class was not reported and no category was inferred. Amounts are shown on the official source basis; no comparator normalization was applied."
+}

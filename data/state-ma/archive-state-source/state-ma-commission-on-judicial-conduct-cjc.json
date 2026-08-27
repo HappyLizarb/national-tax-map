@@ -1,0 +1,70 @@
+{
+  "scope": "Massachusetts",
+  "code": "ma",
+  "department": "COMMISSION ON JUDICIAL CONDUCT (CJC)",
+  "fiscalYear": 2024,
+  "ledgerAmount": 936376.76,
+  "sourceTotal": 1019416.54,
+  "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000",
+  "rowSchema": [
+    "subAgency",
+    "program",
+    "amount",
+    "sourceAmount",
+    "sourceRows"
+  ],
+  "rows": [
+    [
+      "COMMISSION ON JUDICIAL CONDUCT (CJC)",
+      "COMMISSION ON JUDICIAL CONDUCT (CJC) · (AA) REGULAR EMPLOYEE COMPENSATION",
+      734337.28,
+      734337.28,
+      26
+    ],
+    [
+      "COMMISSION ON JUDICIAL CONDUCT (CJC)",
+      "COMMISSION ON JUDICIAL CONDUCT (CJC) · (GG) ENERGY COSTS AND SPACE RENTAL",
+      219536.83,
+      219536.83,
+      34
+    ],
+    [
+      "COMMISSION ON JUDICIAL CONDUCT (CJC)",
+      "COMMISSION ON JUDICIAL CONDUCT (CJC) · (UU) IT NON-PAYROLL EXPENSES",
+      48438.84,
+      48438.84,
+      18
+    ],
+    [
+      "COMMISSION ON JUDICIAL CONDUCT (CJC)",
+      "COMMISSION ON JUDICIAL CONDUCT (CJC) · (EE) ADMINISTRATIVE EXPENSES",
+      12825.12,
+      12825.12,
+      16
+    ],
+    [
+      "COMMISSION ON JUDICIAL CONDUCT (CJC)",
+      "COMMISSION ON JUDICIAL CONDUCT (CJC) · (BB) REGULAR EMPLOYEE RELATED EXPEN",
+      2864.66,
+      2864.66,
+      20
+    ],
+    [
+      "COMMISSION ON JUDICIAL CONDUCT (CJC)",
+      "COMMISSION ON JUDICIAL CONDUCT (CJC) · (LL) EQUIPMENT LEASE-MAINTAIN/REPAR",
+      1233.53,
+      1233.53,
+      15
+    ],
+    [
+      "COMMISSION ON JUDICIAL CONDUCT (CJC)",
+      "COMMISSION ON JUDICIAL CONDUCT (CJC) · (JJ) OPERATIONAL SERVICES",
+      180.28,
+      180.28,
+      4
+    ]
+  ],
+  "hierarchyNote": "The source does not identify a separate sub-agency column; direct-managed rows repeat the parent entity.",
+  "sourceBasis": "official source amount",
+  "note": "Amounts are shown on the official source basis; no comparator normalization was applied."
+}

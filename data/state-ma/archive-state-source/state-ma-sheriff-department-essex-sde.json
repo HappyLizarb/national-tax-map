@@ -1,0 +1,126 @@
+{
+  "scope": "Massachusetts",
+  "code": "ma",
+  "department": "SHERIFF DEPARTMENT ESSEX (SDE)",
+  "fiscalYear": 2024,
+  "ledgerAmount": 68358078.96,
+  "sourceTotal": 74420210.95,
+  "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000",
+  "rowSchema": [
+    "subAgency",
+    "program",
+    "amount",
+    "sourceAmount",
+    "sourceRows"
+  ],
+  "rows": [
+    [
+      "SHERIFF DEPARTMENT ESSEX (SDE)",
+      "SHERIFF DEPARTMENT ESSEX (SDE) · (AA) REGULAR EMPLOYEE COMPENSATION",
+      55227114.19,
+      55227114.19,
+      825
+    ],
+    [
+      "SHERIFF DEPARTMENT ESSEX (SDE)",
+      "SHERIFF DEPARTMENT ESSEX (SDE) · (NN) INFRASTRUCTURE:",
+      3604232.54,
+      3604232.54,
+      749
+    ],
+    [
+      "SHERIFF DEPARTMENT ESSEX (SDE)",
+      "SHERIFF DEPARTMENT ESSEX (SDE) · (UU) IT NON-PAYROLL EXPENSES",
+      3103605.12,
+      3103605.12,
+      473
+    ],
+    [
+      "SHERIFF DEPARTMENT ESSEX (SDE)",
+      "SHERIFF DEPARTMENT ESSEX (SDE) · (JJ) OPERATIONAL SERVICES",
+      2537962.03,
+      2537962.03,
+      156
+    ],
+    [
+      "SHERIFF DEPARTMENT ESSEX (SDE)",
+      "SHERIFF DEPARTMENT ESSEX (SDE) · (GG) ENERGY COSTS AND SPACE RENTAL",
+      2316439.84,
+      2316439.84,
+      295
+    ],
+    [
+      "SHERIFF DEPARTMENT ESSEX (SDE)",
+      "SHERIFF DEPARTMENT ESSEX (SDE) · (MM) PURCHASED CLIENT/PROGRAM SVCS",
+      2072736.65,
+      2072736.65,
+      58
+    ],
+    [
+      "SHERIFF DEPARTMENT ESSEX (SDE)",
+      "SHERIFF DEPARTMENT ESSEX (SDE) · (KK) EQUIPMENT PURCHASE",
+      1519146.16,
+      1519146.16,
+      257
+    ],
+    [
+      "SHERIFF DEPARTMENT ESSEX (SDE)",
+      "SHERIFF DEPARTMENT ESSEX (SDE) · (FF) FACILITY OPERATIONAL EXPENSES",
+      1229160.61,
+      1229160.61,
+      452
+    ],
+    [
+      "SHERIFF DEPARTMENT ESSEX (SDE)",
+      "SHERIFF DEPARTMENT ESSEX (SDE) · (EE) ADMINISTRATIVE EXPENSES",
+      633182.78,
+      633182.78,
+      455
+    ],
+    [
+      "SHERIFF DEPARTMENT ESSEX (SDE)",
+      "SHERIFF DEPARTMENT ESSEX (SDE) · (DD) PENSION & INSURANCE RELATED EX",
+      574494.85,
+      574494.85,
+      65
+    ],
+    [
+      "SHERIFF DEPARTMENT ESSEX (SDE)",
+      "SHERIFF DEPARTMENT ESSEX (SDE) · (HH) CONSULTANT SVCS (TO DEPTS)",
+      479970.77,
+      479970.77,
+      119
+    ],
+    [
+      "SHERIFF DEPARTMENT ESSEX (SDE)",
+      "SHERIFF DEPARTMENT ESSEX (SDE) · (BB) REGULAR EMPLOYEE RELATED EXPEN",
+      465783.5,
+      465783.5,
+      77
+    ],
+    [
+      "SHERIFF DEPARTMENT ESSEX (SDE)",
+      "SHERIFF DEPARTMENT ESSEX (SDE) · (CC) SPECIAL EMPLOYEES",
+      381789.65,
+      381789.65,
+      57
+    ],
+    [
+      "SHERIFF DEPARTMENT ESSEX (SDE)",
+      "SHERIFF DEPARTMENT ESSEX (SDE) · (LL) EQUIPMENT LEASE-MAINTAIN/REPAR",
+      274592.26,
+      274592.26,
+      731
+    ],
+    [
+      "SHERIFF DEPARTMENT ESSEX (SDE)",
+      "SHERIFF DEPARTMENT ESSEX (SDE) · (99) PAYROLL REJECTS",
+      0,
+      0,
+      24
+    ]
+  ],
+  "hierarchyNote": "The source does not identify a separate sub-agency column; direct-managed rows repeat the parent entity.",
+  "sourceBasis": "official source amount",
+  "note": "Amounts are shown on the official source basis; no comparator normalization was applied."
+}

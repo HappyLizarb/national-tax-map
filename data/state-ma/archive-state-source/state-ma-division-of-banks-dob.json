@@ -1,0 +1,105 @@
+{
+  "scope": "Massachusetts",
+  "code": "ma",
+  "department": "DIVISION OF BANKS (DOB)",
+  "fiscalYear": 2024,
+  "ledgerAmount": 22041105.22,
+  "sourceTotal": 23995754.78,
+  "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000",
+  "rowSchema": [
+    "subAgency",
+    "program",
+    "amount",
+    "sourceAmount",
+    "sourceRows"
+  ],
+  "rows": [
+    [
+      "DIVISION OF BANKS (DOB)",
+      "DIVISION OF BANKS (DOB) · (AA) REGULAR EMPLOYEE COMPENSATION",
+      17484693.24,
+      17484693.24,
+      46
+    ],
+    [
+      "DIVISION OF BANKS (DOB)",
+      "DIVISION OF BANKS (DOB) · (PP) STATE AID/POL SUB",
+      3350151,
+      3350151,
+      25
+    ],
+    [
+      "DIVISION OF BANKS (DOB)",
+      "DIVISION OF BANKS (DOB) · (GG) ENERGY COSTS AND SPACE RENTAL",
+      1558635.26,
+      1558635.26,
+      48
+    ],
+    [
+      "DIVISION OF BANKS (DOB)",
+      "DIVISION OF BANKS (DOB) · (UU) IT NON-PAYROLL EXPENSES",
+      471998.54,
+      471998.54,
+      64
+    ],
+    [
+      "DIVISION OF BANKS (DOB)",
+      "DIVISION OF BANKS (DOB) · (EE) ADMINISTRATIVE EXPENSES",
+      460747.48,
+      460747.48,
+      211
+    ],
+    [
+      "DIVISION OF BANKS (DOB)",
+      "DIVISION OF BANKS (DOB) · (HH) CONSULTANT SVCS (TO DEPTS)",
+      314780.13,
+      314780.13,
+      15
+    ],
+    [
+      "DIVISION OF BANKS (DOB)",
+      "DIVISION OF BANKS (DOB) · (BB) REGULAR EMPLOYEE RELATED EXPEN",
+      215799.12,
+      215799.12,
+      124
+    ],
+    [
+      "DIVISION OF BANKS (DOB)",
+      "DIVISION OF BANKS (DOB) · (CC) SPECIAL EMPLOYEES",
+      129663,
+      129663,
+      31
+    ],
+    [
+      "DIVISION OF BANKS (DOB)",
+      "DIVISION OF BANKS (DOB) · (LL) EQUIPMENT LEASE-MAINTAIN/REPAR",
+      3415.63,
+      3415.63,
+      12
+    ],
+    [
+      "DIVISION OF BANKS (DOB)",
+      "DIVISION OF BANKS (DOB) · (JJ) OPERATIONAL SERVICES",
+      2678.63,
+      2678.63,
+      64
+    ],
+    [
+      "DIVISION OF BANKS (DOB)",
+      "DIVISION OF BANKS (DOB) · (DD) PENSION & INSURANCE RELATED EX",
+      2613,
+      2613,
+      2
+    ],
+    [
+      "DIVISION OF BANKS (DOB)",
+      "DIVISION OF BANKS (DOB) · (NN) INFRASTRUCTURE:",
+      579.75,
+      579.75,
+      11
+    ]
+  ],
+  "hierarchyNote": "The source does not identify a separate sub-agency column; direct-managed rows repeat the parent entity.",
+  "sourceBasis": "official source amount",
+  "note": "Amounts are shown on the official source basis; no comparator normalization was applied."
+}

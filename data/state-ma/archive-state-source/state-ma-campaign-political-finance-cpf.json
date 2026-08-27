@@ -1,0 +1,77 @@
+{
+  "scope": "Massachusetts",
+  "code": "ma",
+  "department": "CAMPAIGN & POLITICAL FINANCE (CPF)",
+  "fiscalYear": 2024,
+  "ledgerAmount": 1842956.73,
+  "sourceTotal": 2006393.84,
+  "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000",
+  "rowSchema": [
+    "subAgency",
+    "program",
+    "amount",
+    "sourceAmount",
+    "sourceRows"
+  ],
+  "rows": [
+    [
+      "CAMPAIGN & POLITICAL FINANCE (CPF)",
+      "CAMPAIGN & POLITICAL FINANCE (CPF) · (AA) REGULAR EMPLOYEE COMPENSATION",
+      1917945.35,
+      1917945.35,
+      60
+    ],
+    [
+      "CAMPAIGN & POLITICAL FINANCE (CPF)",
+      "CAMPAIGN & POLITICAL FINANCE (CPF) · (EE) ADMINISTRATIVE EXPENSES",
+      38779.52,
+      38779.52,
+      42
+    ],
+    [
+      "CAMPAIGN & POLITICAL FINANCE (CPF)",
+      "CAMPAIGN & POLITICAL FINANCE (CPF) · (UU) IT NON-PAYROLL EXPENSES",
+      34462.95,
+      34462.95,
+      45
+    ],
+    [
+      "CAMPAIGN & POLITICAL FINANCE (CPF)",
+      "CAMPAIGN & POLITICAL FINANCE (CPF) · (KK) EQUIPMENT PURCHASE",
+      6166.88,
+      6166.88,
+      2
+    ],
+    [
+      "CAMPAIGN & POLITICAL FINANCE (CPF)",
+      "CAMPAIGN & POLITICAL FINANCE (CPF) · (JJ) OPERATIONAL SERVICES",
+      3519,
+      3519,
+      5
+    ],
+    [
+      "CAMPAIGN & POLITICAL FINANCE (CPF)",
+      "CAMPAIGN & POLITICAL FINANCE (CPF) · (NN) INFRASTRUCTURE:",
+      2462.68,
+      2462.68,
+      5
+    ],
+    [
+      "CAMPAIGN & POLITICAL FINANCE (CPF)",
+      "CAMPAIGN & POLITICAL FINANCE (CPF) · (LL) EQUIPMENT LEASE-MAINTAIN/REPAR",
+      1947.89,
+      1947.89,
+      18
+    ],
+    [
+      "CAMPAIGN & POLITICAL FINANCE (CPF)",
+      "CAMPAIGN & POLITICAL FINANCE (CPF) · (BB) REGULAR EMPLOYEE RELATED EXPEN",
+      1109.57,
+      1109.57,
+      30
+    ]
+  ],
+  "hierarchyNote": "The source does not identify a separate sub-agency column; direct-managed rows repeat the parent entity.",
+  "sourceBasis": "official source amount",
+  "note": "Amounts are shown on the official source basis; no comparator normalization was applied."
+}

@@ -1,0 +1,1310 @@
+{
+  "scope": "Massachusetts",
+  "code": "ma",
+  "fiscalYear": 2024,
+  "sourceTotal": 93697656881.25,
+  "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000",
+  "dimension": "department",
+  "note": "The pie uses one official itemized source layer and never inserts a synthetic residual. Department amounts reconcile to the official itemized source total. sourceAmount preserves the imported itemized basis. The census fy2024 state-finance comparator is retained for comparison only; its higher total is not assigned to a receiver or program.",
+  "reconciliation": {
+    "itemizedDifference": 0,
+    "normalized": false,
+    "scale": 1,
+    "comparisonDifference": 7632436881.25
+  },
+  "departments": [
+    {
+      "id": "executive-office-of-health-and-human-services-ehs",
+      "name": "EXECUTIVE OFFICE OF HEALTH AND HUMAN SERVICES (EHS)",
+      "amount": 24020373132.57,
+      "sourceAmount": 24020373132.57,
+      "detailUrl": "data/state-ma/archive-state-source/state-ma-executive-office-of-health-and-human-services-ehs.json",
+      "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000"
+    },
+    {
+      "id": "office-of-the-state-treasurer-tre",
+      "name": "OFFICE OF THE STATE TREASURER (TRE)",
+      "amount": 9874278466.11,
+      "sourceAmount": 9874278466.11,
+      "detailUrl": "data/state-ma/archive-state-source/state-ma-office-of-the-state-treasurer-tre.json",
+      "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000"
+    },
+    {
+      "id": "executive-office-of-labor-and-workforce-development-eol",
+      "name": "EXECUTIVE OFFICE OF LABOR AND WORKFORCE DEVELOPMENT (EOL)",
+      "amount": 8947789528.56,
+      "sourceAmount": 8947789528.56,
+      "detailUrl": "data/state-ma/archive-state-source/state-ma-executive-office-of-labor-and-workforce-development-eol.json",
+      "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000"
+    },
+    {
+      "id": "department-of-revenue-dor",
+      "name": "DEPARTMENT OF REVENUE (DOR)",
+      "amount": 8849358022.2,
+      "sourceAmount": 8849358022.2,
+      "detailUrl": "data/state-ma/archive-state-source/state-ma-department-of-revenue-dor.json",
+      "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000"
+    },
+    {
+      "id": "university-of-massachusetts-system-ums",
+      "name": "UNIVERSITY OF MASSACHUSETTS SYSTEM (UMS)",
+      "amount": 4200182815.03,
+      "sourceAmount": 4200182815.03,
+      "detailUrl": "data/state-ma/archive-state-source/state-ma-university-of-massachusetts-system-ums.json",
+      "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000"
+    },
+    {
+      "id": "massachusetts-department-of-transportation-dot",
+      "name": "MASSACHUSETTS DEPARTMENT OF TRANSPORTATION (DOT)",
+      "amount": 4020885810.19,
+      "sourceAmount": 4020885810.19,
+      "detailUrl": "data/state-ma/archive-state-source/state-ma-massachusetts-department-of-transportation-dot.json",
+      "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000"
+    },
+    {
+      "id": "teachers-retirement-board-trb",
+      "name": "TEACHERS RETIREMENT BOARD (TRB)",
+      "amount": 3752672193.82,
+      "sourceAmount": 3752672193.82,
+      "detailUrl": "data/state-ma/archive-state-source/state-ma-teachers-retirement-board-trb.json",
+      "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000"
+    },
+    {
+      "id": "group-insurance-commission-gic",
+      "name": "GROUP INSURANCE COMMISSION (GIC)",
+      "amount": 3592547044.43,
+      "sourceAmount": 3592547044.43,
+      "detailUrl": "data/state-ma/archive-state-source/state-ma-group-insurance-commission-gic.json",
+      "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000"
+    },
+    {
+      "id": "department-of-developmental-services-dmr",
+      "name": "DEPARTMENT OF DEVELOPMENTAL SERVICES (DMR)",
+      "amount": 2879019634.56,
+      "sourceAmount": 2879019634.56,
+      "detailUrl": "data/state-ma/archive-state-source/state-ma-department-of-developmental-services-dmr.json",
+      "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000"
+    },
+    {
+      "id": "department-of-elementary-secondary-education-doe",
+      "name": "DEPARTMENT OF ELEMENTARY & SECONDARY EDUCATION (DOE)",
+      "amount": 2160829350.45,
+      "sourceAmount": 2160829350.45,
+      "detailUrl": "data/state-ma/archive-state-source/state-ma-department-of-elementary-secondary-education-doe.json",
+      "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000"
+    },
+    {
+      "id": "department-of-public-health-dph",
+      "name": "DEPARTMENT OF PUBLIC HEALTH (DPH)",
+      "amount": 1482474021.79,
+      "sourceAmount": 1482474021.79,
+      "detailUrl": "data/state-ma/archive-state-source/state-ma-department-of-public-health-dph.json",
+      "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000"
+    },
+    {
+      "id": "department-of-children-and-families-dss",
+      "name": "DEPARTMENT OF CHILDREN AND FAMILIES (DSS)",
+      "amount": 1126042187.13,
+      "sourceAmount": 1126042187.13,
+      "detailUrl": "data/state-ma/archive-state-source/state-ma-department-of-children-and-families-dss.json",
+      "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000"
+    },
+    {
+      "id": "department-of-mental-health-dmh",
+      "name": "DEPARTMENT OF MENTAL HEALTH (DMH)",
+      "amount": 1111274934.54,
+      "sourceAmount": 1111274934.54,
+      "detailUrl": "data/state-ma/archive-state-source/state-ma-department-of-mental-health-dmh.json",
+      "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000"
+    },
+    {
+      "id": "executive-office-of-housing-and-livable-communities-ocd",
+      "name": "EXECUTIVE OFFICE OF HOUSING AND LIVABLE COMMUNITIES (OCD)",
+      "amount": 1096733442.42,
+      "sourceAmount": 1096733442.42,
+      "detailUrl": "data/state-ma/archive-state-source/state-ma-executive-office-of-housing-and-livable-communities-ocd.json",
+      "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000"
+    },
+    {
+      "id": "lottery-and-gaming-commission-lot",
+      "name": "LOTTERY AND GAMING COMMISSION (LOT)",
+      "amount": 1004900158,
+      "sourceAmount": 1004900158,
+      "detailUrl": "data/state-ma/archive-state-source/state-ma-lottery-and-gaming-commission-lot.json",
+      "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000"
+    },
+    {
+      "id": "department-of-early-education-care-eec",
+      "name": "DEPARTMENT OF EARLY EDUCATION & CARE (EEC)",
+      "amount": 997896686.94,
+      "sourceAmount": 997896686.94,
+      "detailUrl": "data/state-ma/archive-state-source/state-ma-department-of-early-education-care-eec.json",
+      "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000"
+    },
+    {
+      "id": "trial-court-trc",
+      "name": "TRIAL COURT (TRC)",
+      "amount": 880691181.09,
+      "sourceAmount": 880691181.09,
+      "detailUrl": "data/state-ma/archive-state-source/state-ma-trial-court-trc.json",
+      "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000"
+    },
+    {
+      "id": "department-of-elder-affairs-eld",
+      "name": "DEPARTMENT OF ELDER AFFAIRS (ELD)",
+      "amount": 856184083.72,
+      "sourceAmount": 856184083.72,
+      "detailUrl": "data/state-ma/archive-state-source/state-ma-department-of-elder-affairs-eld.json",
+      "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000"
+    },
+    {
+      "id": "emergency-management-agency-cda",
+      "name": "EMERGENCY MANAGEMENT AGENCY (CDA)",
+      "amount": 809276833.51,
+      "sourceAmount": 809276833.51,
+      "detailUrl": "data/state-ma/archive-state-source/state-ma-emergency-management-agency-cda.json",
+      "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000"
+    },
+    {
+      "id": "massachusetts-bay-transportation-authority-mbt",
+      "name": "MASSACHUSETTS BAY TRANSPORTATION AUTHORITY (MBT)",
+      "amount": 808667056.6,
+      "sourceAmount": 808667056.6,
+      "detailUrl": "data/state-ma/archive-state-source/state-ma-massachusetts-bay-transportation-authority-mbt.json",
+      "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000"
+    },
+    {
+      "id": "executive-office-for-administration-and-finance-anf",
+      "name": "EXECUTIVE OFFICE FOR ADMINISTRATION AND FINANCE (ANF)",
+      "amount": 690939384.88,
+      "sourceAmount": 690939384.88,
+      "detailUrl": "data/state-ma/archive-state-source/state-ma-executive-office-for-administration-and-finance-anf.json",
+      "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000"
+    },
+    {
+      "id": "department-of-correction-doc",
+      "name": "DEPARTMENT OF CORRECTION (DOC)",
+      "amount": 637807867.36,
+      "sourceAmount": 637807867.36,
+      "detailUrl": "data/state-ma/archive-state-source/state-ma-department-of-correction-doc.json",
+      "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000"
+    },
+    {
+      "id": "capital-asset-management-and-maintenance-division-dcp",
+      "name": "CAPITAL ASSET MANAGEMENT AND MAINTENANCE DIVISION (DCP)",
+      "amount": 579081081.14,
+      "sourceAmount": 579081081.14,
+      "detailUrl": "data/state-ma/archive-state-source/state-ma-capital-asset-management-and-maintenance-division-dcp.json",
+      "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000"
+    },
+    {
+      "id": "department-of-state-police-pol",
+      "name": "DEPARTMENT OF STATE POLICE (POL)",
+      "amount": 552242912.53,
+      "sourceAmount": 552242912.53,
+      "detailUrl": "data/state-ma/archive-state-source/state-ma-department-of-state-police-pol.json",
+      "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000"
+    },
+    {
+      "id": "executive-office-of-economic-development-eed",
+      "name": "EXECUTIVE OFFICE OF ECONOMIC DEVELOPMENT (EED)",
+      "amount": 542189236.39,
+      "sourceAmount": 542189236.39,
+      "detailUrl": "data/state-ma/archive-state-source/state-ma-executive-office-of-economic-development-eed.json",
+      "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000"
+    },
+    {
+      "id": "bridgewater-state-university-bsc",
+      "name": "BRIDGEWATER STATE UNIVERSITY (BSC)",
+      "amount": 395639107.6,
+      "sourceAmount": 395639107.6,
+      "detailUrl": "data/state-ma/archive-state-source/state-ma-bridgewater-state-university-bsc.json",
+      "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000"
+    },
+    {
+      "id": "department-conservation-and-recreation-dcr",
+      "name": "DEPARTMENT CONSERVATION AND RECREATION (DCR)",
+      "amount": 347621895.2,
+      "sourceAmount": 347621895.2,
+      "detailUrl": "data/state-ma/archive-state-source/state-ma-department-conservation-and-recreation-dcr.json",
+      "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000"
+    },
+    {
+      "id": "committee-for-public-counsel-services-cpc",
+      "name": "COMMITTEE FOR PUBLIC COUNSEL SERVICES (CPC)",
+      "amount": 329061229.13,
+      "sourceAmount": 329061229.13,
+      "detailUrl": "data/state-ma/archive-state-source/state-ma-committee-for-public-counsel-services-cpc.json",
+      "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000"
+    },
+    {
+      "id": "executive-office-of-environmental-affairs-env",
+      "name": "EXECUTIVE OFFICE OF ENVIRONMENTAL AFFAIRS (ENV)",
+      "amount": 309118591.63,
+      "sourceAmount": 309118591.63,
+      "detailUrl": "data/state-ma/archive-state-source/state-ma-executive-office-of-environmental-affairs-env.json",
+      "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000"
+    },
+    {
+      "id": "department-of-energy-resources-ene",
+      "name": "DEPARTMENT OF ENERGY RESOURCES (ENE)",
+      "amount": 286132479.45,
+      "sourceAmount": 286132479.45,
+      "detailUrl": "data/state-ma/archive-state-source/state-ma-department-of-energy-resources-ene.json",
+      "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000"
+    },
+    {
+      "id": "executive-office-of-technology-services-and-security-itd",
+      "name": "EXECUTIVE OFFICE OF TECHNOLOGY SERVICES AND SECURITY (ITD)",
+      "amount": 278578512.44,
+      "sourceAmount": 278578512.44,
+      "detailUrl": "data/state-ma/archive-state-source/state-ma-executive-office-of-technology-services-and-security-itd.json",
+      "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000"
+    },
+    {
+      "id": "department-of-transitional-assistance-wel",
+      "name": "DEPARTMENT OF TRANSITIONAL ASSISTANCE (WEL)",
+      "amount": 260114355.15,
+      "sourceAmount": 260114355.15,
+      "detailUrl": "data/state-ma/archive-state-source/state-ma-department-of-transitional-assistance-wel.json",
+      "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000"
+    },
+    {
+      "id": "office-of-the-comptroller-ctr",
+      "name": "OFFICE OF THE COMPTROLLER (CTR)",
+      "amount": 258065561.1,
+      "sourceAmount": 258065561.1,
+      "detailUrl": "data/state-ma/archive-state-source/state-ma-office-of-the-comptroller-ctr.json",
+      "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000"
+    },
+    {
+      "id": "executive-office-of-public-safety-homeland-security-eps",
+      "name": "EXECUTIVE OFFICE OF PUBLIC SAFETY & HOMELAND SECURITY (EPS)",
+      "amount": 243137727.91,
+      "sourceAmount": 243137727.91,
+      "detailUrl": "data/state-ma/archive-state-source/state-ma-executive-office-of-public-safety-homeland-security-eps.json",
+      "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000"
+    },
+    {
+      "id": "mass-rehabilitation-commission-mrc",
+      "name": "MASS REHABILITATION COMMISSION (MRC)",
+      "amount": 204439814.23,
+      "sourceAmount": 204439814.23,
+      "detailUrl": "data/state-ma/archive-state-source/state-ma-mass-rehabilitation-commission-mrc.json",
+      "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000"
+    },
+    {
+      "id": "executive-office-of-education-edu",
+      "name": "EXECUTIVE OFFICE OF EDUCATION (EDU)",
+      "amount": 196203423.21,
+      "sourceAmount": 196203423.21,
+      "detailUrl": "data/state-ma/archive-state-source/state-ma-executive-office-of-education-edu.json",
+      "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000"
+    },
+    {
+      "id": "salem-state-university-ssa",
+      "name": "SALEM STATE UNIVERSITY (SSA)",
+      "amount": 187981287.8,
+      "sourceAmount": 187981287.8,
+      "detailUrl": "data/state-ma/archive-state-source/state-ma-salem-state-university-ssa.json",
+      "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000"
+    },
+    {
+      "id": "department-of-youth-services-dys",
+      "name": "DEPARTMENT OF YOUTH SERVICES (DYS)",
+      "amount": 175371085.95,
+      "sourceAmount": 175371085.95,
+      "detailUrl": "data/state-ma/archive-state-source/state-ma-department-of-youth-services-dys.json",
+      "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000"
+    },
+    {
+      "id": "fitchburg-state-university-fsc",
+      "name": "FITCHBURG STATE UNIVERSITY (FSC)",
+      "amount": 163342135.32,
+      "sourceAmount": 163342135.32,
+      "detailUrl": "data/state-ma/archive-state-source/state-ma-fitchburg-state-university-fsc.json",
+      "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000"
+    },
+    {
+      "id": "department-of-environmental-protection-eqe",
+      "name": "DEPARTMENT OF ENVIRONMENTAL PROTECTION (EQE)",
+      "amount": 162847139.57,
+      "sourceAmount": 162847139.57,
+      "detailUrl": "data/state-ma/archive-state-source/state-ma-department-of-environmental-protection-eqe.json",
+      "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000"
+    },
+    {
+      "id": "bunker-hill-community-college-bhc",
+      "name": "BUNKER HILL COMMUNITY COLLEGE (BHC)",
+      "amount": 156544303.24,
+      "sourceAmount": 156544303.24,
+      "detailUrl": "data/state-ma/archive-state-source/state-ma-bunker-hill-community-college-bhc.json",
+      "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000"
+    },
+    {
+      "id": "westfield-state-university-wsc",
+      "name": "WESTFIELD STATE UNIVERSITY (WSC)",
+      "amount": 148705671.23,
+      "sourceAmount": 148705671.23,
+      "detailUrl": "data/state-ma/archive-state-source/state-ma-westfield-state-university-wsc.json",
+      "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000"
+    },
+    {
+      "id": "framingham-state-university-frc",
+      "name": "FRAMINGHAM STATE UNIVERSITY (FRC)",
+      "amount": 129675797.43,
+      "sourceAmount": 129675797.43,
+      "detailUrl": "data/state-ma/archive-state-source/state-ma-framingham-state-university-frc.json",
+      "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000"
+    },
+    {
+      "id": "quinsigamond-community-college-qcc",
+      "name": "QUINSIGAMOND COMMUNITY COLLEGE (QCC)",
+      "amount": 128677361.12,
+      "sourceAmount": 128677361.12,
+      "detailUrl": "data/state-ma/archive-state-source/state-ma-quinsigamond-community-college-qcc.json",
+      "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000"
+    },
+    {
+      "id": "sheriff-department-hampden-sdh",
+      "name": "SHERIFF DEPARTMENT HAMPDEN (SDH)",
+      "amount": 127173521.12,
+      "sourceAmount": 127173521.12,
+      "detailUrl": "data/state-ma/archive-state-source/state-ma-sheriff-department-hampden-sdh.json",
+      "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000"
+    },
+    {
+      "id": "sheriff-department-suffolk-sds",
+      "name": "SHERIFF DEPARTMENT SUFFOLK (SDS)",
+      "amount": 116013556.95,
+      "sourceAmount": 116013556.95,
+      "detailUrl": "data/state-ma/archive-state-source/state-ma-sheriff-department-suffolk-sds.json",
+      "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000"
+    },
+    {
+      "id": "worcester-state-university-wor",
+      "name": "WORCESTER STATE UNIVERSITY (WOR)",
+      "amount": 112862370.68,
+      "sourceAmount": 112862370.68,
+      "detailUrl": "data/state-ma/archive-state-source/state-ma-worcester-state-university-wor.json",
+      "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000"
+    },
+    {
+      "id": "department-of-higher-education-rgt",
+      "name": "DEPARTMENT OF HIGHER EDUCATION (RGT)",
+      "amount": 107541264.86,
+      "sourceAmount": 107541264.86,
+      "detailUrl": "data/state-ma/archive-state-source/state-ma-department-of-higher-education-rgt.json",
+      "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000"
+    },
+    {
+      "id": "military-division-mil",
+      "name": "MILITARY DIVISION (MIL)",
+      "amount": 104520553.67,
+      "sourceAmount": 104520553.67,
+      "detailUrl": "data/state-ma/archive-state-source/state-ma-military-division-mil.json",
+      "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000"
+    },
+    {
+      "id": "human-resources-division-hrd",
+      "name": "HUMAN RESOURCES DIVISION (HRD)",
+      "amount": 103831425.98,
+      "sourceAmount": 103831425.98,
+      "detailUrl": "data/state-ma/archive-state-source/state-ma-human-resources-division-hrd.json",
+      "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000"
+    },
+    {
+      "id": "department-of-agricultural-resources-agr",
+      "name": "DEPARTMENT OF AGRICULTURAL RESOURCES (AGR)",
+      "amount": 101987453.31,
+      "sourceAmount": 101987453.31,
+      "detailUrl": "data/state-ma/archive-state-source/state-ma-department-of-agricultural-resources-agr.json",
+      "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000"
+    },
+    {
+      "id": "middlesex-community-college-mcc",
+      "name": "MIDDLESEX COMMUNITY COLLEGE (MCC)",
+      "amount": 101011522.09,
+      "sourceAmount": 101011522.09,
+      "detailUrl": "data/state-ma/archive-state-source/state-ma-middlesex-community-college-mcc.json",
+      "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000"
+    },
+    {
+      "id": "massachusetts-college-of-art-and-design-mca",
+      "name": "MASSACHUSETTS COLLEGE OF ART AND DESIGN (MCA)",
+      "amount": 87998439.22,
+      "sourceAmount": 87998439.22,
+      "detailUrl": "data/state-ma/archive-state-source/state-ma-massachusetts-college-of-art-and-design-mca.json",
+      "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000"
+    },
+    {
+      "id": "north-shore-community-college-nsc",
+      "name": "NORTH SHORE COMMUNITY COLLEGE (NSC)",
+      "amount": 87430252.58,
+      "sourceAmount": 87430252.58,
+      "detailUrl": "data/state-ma/archive-state-source/state-ma-north-shore-community-college-nsc.json",
+      "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000"
+    },
+    {
+      "id": "northern-essex-community-college-nec",
+      "name": "NORTHERN ESSEX COMMUNITY COLLEGE (NEC)",
+      "amount": 84225158.72,
+      "sourceAmount": 84225158.72,
+      "detailUrl": "data/state-ma/archive-state-source/state-ma-northern-essex-community-college-nec.json",
+      "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000"
+    },
+    {
+      "id": "secretary-of-state-sec",
+      "name": "SECRETARY OF STATE (SEC)",
+      "amount": 82689183.39,
+      "sourceAmount": 82689183.39,
+      "detailUrl": "data/state-ma/archive-state-source/state-ma-secretary-of-state-sec.json",
+      "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000"
+    },
+    {
+      "id": "bristol-community-college-brc",
+      "name": "BRISTOL COMMUNITY COLLEGE (BRC)",
+      "amount": 81634464.91,
+      "sourceAmount": 81634464.91,
+      "detailUrl": "data/state-ma/archive-state-source/state-ma-bristol-community-college-brc.json",
+      "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000"
+    },
+    {
+      "id": "department-of-fish-and-game-fwe",
+      "name": "DEPARTMENT OF FISH AND GAME (FWE)",
+      "amount": 79696532.77,
+      "sourceAmount": 79696532.77,
+      "detailUrl": "data/state-ma/archive-state-source/state-ma-department-of-fish-and-game-fwe.json",
+      "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000"
+    },
+    {
+      "id": "sheriff-department-middlesex-sdm",
+      "name": "SHERIFF DEPARTMENT MIDDLESEX (SDM)",
+      "amount": 79063047.49,
+      "sourceAmount": 79063047.49,
+      "detailUrl": "data/state-ma/archive-state-source/state-ma-sheriff-department-middlesex-sdm.json",
+      "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000"
+    },
+    {
+      "id": "massasoit-community-college-mas",
+      "name": "MASSASOIT COMMUNITY COLLEGE (MAS)",
+      "amount": 79039821.12,
+      "sourceAmount": 79039821.12,
+      "detailUrl": "data/state-ma/archive-state-source/state-ma-massasoit-community-college-mas.json",
+      "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000"
+    },
+    {
+      "id": "sheriff-department-plymouth-sdp",
+      "name": "SHERIFF DEPARTMENT PLYMOUTH (SDP)",
+      "amount": 77452299.3,
+      "sourceAmount": 77452299.3,
+      "detailUrl": "data/state-ma/archive-state-source/state-ma-sheriff-department-plymouth-sdp.json",
+      "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000"
+    },
+    {
+      "id": "massachusetts-maritime-academy-mma",
+      "name": "MASSACHUSETTS MARITIME ACADEMY (MMA)",
+      "amount": 77338468.44,
+      "sourceAmount": 77338468.44,
+      "detailUrl": "data/state-ma/archive-state-source/state-ma-massachusetts-maritime-academy-mma.json",
+      "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000"
+    },
+    {
+      "id": "board-of-library-commissioners-blc",
+      "name": "BOARD OF LIBRARY COMMISSIONERS (BLC)",
+      "amount": 74848003.89,
+      "sourceAmount": 74848003.89,
+      "detailUrl": "data/state-ma/archive-state-source/state-ma-board-of-library-commissioners-blc.json",
+      "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000"
+    },
+    {
+      "id": "sheriff-department-essex-sde",
+      "name": "SHERIFF DEPARTMENT ESSEX (SDE)",
+      "amount": 74420210.95,
+      "sourceAmount": 74420210.95,
+      "detailUrl": "data/state-ma/archive-state-source/state-ma-sheriff-department-essex-sde.json",
+      "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000"
+    },
+    {
+      "id": "springfield-tech-comm-college-stc",
+      "name": "SPRINGFIELD TECH COMM COLLEGE (STC)",
+      "amount": 73449307.01,
+      "sourceAmount": 73449307.01,
+      "detailUrl": "data/state-ma/archive-state-source/state-ma-springfield-tech-comm-college-stc.json",
+      "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000"
+    },
+    {
+      "id": "mt-wachusett-community-college-mwc",
+      "name": "MT WACHUSETT COMMUNITY COLLEGE (MWC)",
+      "amount": 72015928.43,
+      "sourceAmount": 72015928.43,
+      "detailUrl": "data/state-ma/archive-state-source/state-ma-mt-wachusett-community-college-mwc.json",
+      "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000"
+    },
+    {
+      "id": "holyoke-community-college-hcc",
+      "name": "HOLYOKE COMMUNITY COLLEGE (HCC)",
+      "amount": 71017396.7,
+      "sourceAmount": 71017396.7,
+      "detailUrl": "data/state-ma/archive-state-source/state-ma-holyoke-community-college-hcc.json",
+      "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000"
+    },
+    {
+      "id": "supreme-judicial-court-sjc",
+      "name": "SUPREME JUDICIAL COURT (SJC)",
+      "amount": 70429724.79,
+      "sourceAmount": 70429724.79,
+      "detailUrl": "data/state-ma/archive-state-source/state-ma-supreme-judicial-court-sjc.json",
+      "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000"
+    },
+    {
+      "id": "mass-bay-community-college-mbc",
+      "name": "MASS BAY COMMUNITY COLLEGE (MBC)",
+      "amount": 66484850.22,
+      "sourceAmount": 66484850.22,
+      "detailUrl": "data/state-ma/archive-state-source/state-ma-mass-bay-community-college-mbc.json",
+      "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000"
+    },
+    {
+      "id": "attorney-general-office-ago",
+      "name": "ATTORNEY GENERAL OFFICE (AGO)",
+      "amount": 63860034.36,
+      "sourceAmount": 63860034.36,
+      "detailUrl": "data/state-ma/archive-state-source/state-ma-attorney-general-office-ago.json",
+      "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000"
+    },
+    {
+      "id": "sheriff-department-worcester-sdw",
+      "name": "SHERIFF DEPARTMENT WORCESTER (SDW)",
+      "amount": 59529710.1,
+      "sourceAmount": 59529710.1,
+      "detailUrl": "data/state-ma/archive-state-source/state-ma-sheriff-department-worcester-sdw.json",
+      "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000"
+    },
+    {
+      "id": "massachusetts-gaming-commission-mgc",
+      "name": "MASSACHUSETTS GAMING COMMISSION (MGC)",
+      "amount": 57748661.4,
+      "sourceAmount": 57748661.4,
+      "detailUrl": "data/state-ma/archive-state-source/state-ma-massachusetts-gaming-commission-mgc.json",
+      "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000"
+    },
+    {
+      "id": "house-of-representatives-hou",
+      "name": "HOUSE OF REPRESENTATIVES (HOU)",
+      "amount": 52608553.64,
+      "sourceAmount": 52608553.64,
+      "detailUrl": "data/state-ma/archive-state-source/state-ma-house-of-representatives-hou.json",
+      "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000"
+    },
+    {
+      "id": "cape-cod-community-college-ccc",
+      "name": "CAPE COD COMMUNITY COLLEGE (CCC)",
+      "amount": 50954749.31,
+      "sourceAmount": 50954749.31,
+      "detailUrl": "data/state-ma/archive-state-source/state-ma-cape-cod-community-college-ccc.json",
+      "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000"
+    },
+    {
+      "id": "massachusetts-college-of-liberal-arts-nac",
+      "name": "MASSACHUSETTS COLLEGE OF LIBERAL ARTS (NAC)",
+      "amount": 50605132.49,
+      "sourceAmount": 50605132.49,
+      "detailUrl": "data/state-ma/archive-state-source/state-ma-massachusetts-college-of-liberal-arts-nac.json",
+      "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000"
+    },
+    {
+      "id": "sheriff-department-bristol-bsd",
+      "name": "SHERIFF DEPARTMENT BRISTOL (BSD)",
+      "amount": 49983184.16,
+      "sourceAmount": 49983184.16,
+      "detailUrl": "data/state-ma/archive-state-source/state-ma-sheriff-department-bristol-bsd.json",
+      "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000"
+    },
+    {
+      "id": "department-of-fire-services-dfs",
+      "name": "DEPARTMENT OF FIRE SERVICES (DFS)",
+      "amount": 47643323.44,
+      "sourceAmount": 47643323.44,
+      "detailUrl": "data/state-ma/archive-state-source/state-ma-department-of-fire-services-dfs.json",
+      "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000"
+    },
+    {
+      "id": "mass-cultural-council-art",
+      "name": "MASS CULTURAL COUNCIL (ART)",
+      "amount": 43428756.65,
+      "sourceAmount": 43428756.65,
+      "detailUrl": "data/state-ma/archive-state-source/state-ma-mass-cultural-council-art.json",
+      "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000"
+    },
+    {
+      "id": "veterans-home-in-chelsea-che",
+      "name": "VETERANS' HOME IN CHELSEA (CHE)",
+      "amount": 43108565.79,
+      "sourceAmount": 43108565.79,
+      "detailUrl": "data/state-ma/archive-state-source/state-ma-veterans-home-in-chelsea-che.json",
+      "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000"
+    },
+    {
+      "id": "executive-office-of-veterans-services-vet",
+      "name": "EXECUTIVE OFFICE OF VETERANS' SERVICES (VET)",
+      "amount": 42714775.75,
+      "sourceAmount": 42714775.75,
+      "detailUrl": "data/state-ma/archive-state-source/state-ma-executive-office-of-veterans-services-vet.json",
+      "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000"
+    },
+    {
+      "id": "victim-and-witness-assistance-board-vwa",
+      "name": "VICTIM AND WITNESS ASSISTANCE BOARD (VWA)",
+      "amount": 41612336.09,
+      "sourceAmount": 41612336.09,
+      "detailUrl": "data/state-ma/archive-state-source/state-ma-victim-and-witness-assistance-board-vwa.json",
+      "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000"
+    },
+    {
+      "id": "sheriff-department-norfolk-sdn",
+      "name": "SHERIFF DEPARTMENT NORFOLK (SDN)",
+      "amount": 38720955.16,
+      "sourceAmount": 38720955.16,
+      "detailUrl": "data/state-ma/archive-state-source/state-ma-sheriff-department-norfolk-sdn.json",
+      "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000"
+    },
+    {
+      "id": "mass-commission-for-the-blind-mcb",
+      "name": "MASS COMMISSION FOR THE BLIND (MCB)",
+      "amount": 37594624.79,
+      "sourceAmount": 37594624.79,
+      "detailUrl": "data/state-ma/archive-state-source/state-ma-mass-commission-for-the-blind-mcb.json",
+      "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000"
+    },
+    {
+      "id": "roxbury-community-college-rcc",
+      "name": "ROXBURY COMMUNITY COLLEGE (RCC)",
+      "amount": 37063772.54,
+      "sourceAmount": 37063772.54,
+      "detailUrl": "data/state-ma/archive-state-source/state-ma-roxbury-community-college-rcc.json",
+      "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000"
+    },
+    {
+      "id": "office-for-refugees-and-immigrants-ori",
+      "name": "OFFICE FOR REFUGEES AND IMMIGRANTS (ORI)",
+      "amount": 36203634.43,
+      "sourceAmount": 36203634.43,
+      "detailUrl": "data/state-ma/archive-state-source/state-ma-office-for-refugees-and-immigrants-ori.json",
+      "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000"
+    },
+    {
+      "id": "sheriff-department-barnstable-sdc",
+      "name": "SHERIFF DEPARTMENT BARNSTABLE (SDC)",
+      "amount": 36029767.05,
+      "sourceAmount": 36029767.05,
+      "detailUrl": "data/state-ma/archive-state-source/state-ma-sheriff-department-barnstable-sdc.json",
+      "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000"
+    },
+    {
+      "id": "department-of-public-utilities-dpu",
+      "name": "DEPARTMENT OF PUBLIC UTILITIES (DPU)",
+      "amount": 35296666.67,
+      "sourceAmount": 35296666.67,
+      "detailUrl": "data/state-ma/archive-state-source/state-ma-department-of-public-utilities-dpu.json",
+      "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000"
+    },
+    {
+      "id": "greenfield-community-college-gcc",
+      "name": "GREENFIELD COMMUNITY COLLEGE (GCC)",
+      "amount": 34712401.43,
+      "sourceAmount": 34712401.43,
+      "detailUrl": "data/state-ma/archive-state-source/state-ma-greenfield-community-college-gcc.json",
+      "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000"
+    },
+    {
+      "id": "massachusetts-marketing-partnership-mmp",
+      "name": "MASSACHUSETTS MARKETING PARTNERSHIP (MMP)",
+      "amount": 33610888.4,
+      "sourceAmount": 33610888.4,
+      "detailUrl": "data/state-ma/archive-state-source/state-ma-massachusetts-marketing-partnership-mmp.json",
+      "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000"
+    },
+    {
+      "id": "division-of-occupational-licensure-reg",
+      "name": "DIVISION OF OCCUPATIONAL LICENSURE (REG)",
+      "amount": 31338641.49,
+      "sourceAmount": 31338641.49,
+      "detailUrl": "data/state-ma/archive-state-source/state-ma-division-of-occupational-licensure-reg.json",
+      "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000"
+    },
+    {
+      "id": "center-for-health-information-analysis-hcf",
+      "name": "CENTER FOR HEALTH INFORMATION & ANALYSIS (HCF)",
+      "amount": 31013169.66,
+      "sourceAmount": 31013169.66,
+      "detailUrl": "data/state-ma/archive-state-source/state-ma-center-for-health-information-analysis-hcf.json",
+      "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000"
+    },
+    {
+      "id": "berkshire-community-college-bcc",
+      "name": "BERKSHIRE COMMUNITY COLLEGE (BCC)",
+      "amount": 28884695.39,
+      "sourceAmount": 28884695.39,
+      "detailUrl": "data/state-ma/archive-state-source/state-ma-berkshire-community-college-bcc.json",
+      "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000"
+    },
+    {
+      "id": "suffolk-district-attorney-suf",
+      "name": "SUFFOLK DISTRICT ATTORNEY (SUF)",
+      "amount": 28270082.75,
+      "sourceAmount": 28270082.75,
+      "detailUrl": "data/state-ma/archive-state-source/state-ma-suffolk-district-attorney-suf.json",
+      "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000"
+    },
+    {
+      "id": "veterans-home-in-holyoke-hly",
+      "name": "VETERANS' HOME IN HOLYOKE (HLY)",
+      "amount": 28089112.66,
+      "sourceAmount": 28089112.66,
+      "detailUrl": "data/state-ma/archive-state-source/state-ma-veterans-home-in-holyoke-hly.json",
+      "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000"
+    },
+    {
+      "id": "senate-sen",
+      "name": "SENATE (SEN)",
+      "amount": 26878526.94,
+      "sourceAmount": 26878526.94,
+      "detailUrl": "data/state-ma/archive-state-source/state-ma-senate-sen.json",
+      "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000"
+    },
+    {
+      "id": "sheriff-department-berkshire-sdb",
+      "name": "SHERIFF DEPARTMENT BERKSHIRE (SDB)",
+      "amount": 24985930.11,
+      "sourceAmount": 24985930.11,
+      "detailUrl": "data/state-ma/archive-state-source/state-ma-sheriff-department-berkshire-sdb.json",
+      "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000"
+    },
+    {
+      "id": "sheriff-department-franklin-sdf",
+      "name": "SHERIFF DEPARTMENT FRANKLIN (SDF)",
+      "amount": 24629329.72,
+      "sourceAmount": 24629329.72,
+      "detailUrl": "data/state-ma/archive-state-source/state-ma-sheriff-department-franklin-sdf.json",
+      "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000"
+    },
+    {
+      "id": "division-of-operational-services-osd",
+      "name": "DIVISION OF OPERATIONAL SERVICES (OSD)",
+      "amount": 24565119.36,
+      "sourceAmount": 24565119.36,
+      "detailUrl": "data/state-ma/archive-state-source/state-ma-division-of-operational-services-osd.json",
+      "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000"
+    },
+    {
+      "id": "division-of-banks-dob",
+      "name": "DIVISION OF BANKS (DOB)",
+      "amount": 23995754.78,
+      "sourceAmount": 23995754.78,
+      "detailUrl": "data/state-ma/archive-state-source/state-ma-division-of-banks-dob.json",
+      "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000"
+    },
+    {
+      "id": "middlesex-northern-district-attorney-nor",
+      "name": "MIDDLESEX (NORTHERN) DISTRICT ATTORNEY (NOR)",
+      "amount": 23146133.75,
+      "sourceAmount": 23146133.75,
+      "detailUrl": "data/state-ma/archive-state-source/state-ma-middlesex-northern-district-attorney-nor.json",
+      "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000"
+    },
+    {
+      "id": "chief-medical-examiner-cme",
+      "name": "CHIEF MEDICAL EXAMINER (CME)",
+      "amount": 22294358.09,
+      "sourceAmount": 22294358.09,
+      "detailUrl": "data/state-ma/archive-state-source/state-ma-chief-medical-examiner-cme.json",
+      "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000"
+    },
+    {
+      "id": "parole-board-par",
+      "name": "PAROLE BOARD (PAR)",
+      "amount": 22199317.25,
+      "sourceAmount": 22199317.25,
+      "detailUrl": "data/state-ma/archive-state-source/state-ma-parole-board-par.json",
+      "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000"
+    },
+    {
+      "id": "state-auditors-office-sao",
+      "name": "STATE AUDITORS OFFICE (SAO)",
+      "amount": 22165336.28,
+      "sourceAmount": 22165336.28,
+      "detailUrl": "data/state-ma/archive-state-source/state-ma-state-auditors-office-sao.json",
+      "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000"
+    },
+    {
+      "id": "municipal-police-training-committee-cjt",
+      "name": "MUNICIPAL POLICE TRAINING COMMITTEE (CJT)",
+      "amount": 19916553.17,
+      "sourceAmount": 19916553.17,
+      "detailUrl": "data/state-ma/archive-state-source/state-ma-municipal-police-training-committee-cjt.json",
+      "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000"
+    },
+    {
+      "id": "sheriff-department-hampshire-hsd",
+      "name": "SHERIFF DEPARTMENT HAMPSHIRE (HSD)",
+      "amount": 19724956.61,
+      "sourceAmount": 19724956.61,
+      "detailUrl": "data/state-ma/archive-state-source/state-ma-sheriff-department-hampshire-hsd.json",
+      "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000"
+    },
+    {
+      "id": "cannabis-control-commission-cnb",
+      "name": "CANNABIS CONTROL COMMISSION (CNB)",
+      "amount": 18323281.15,
+      "sourceAmount": 18323281.15,
+      "detailUrl": "data/state-ma/archive-state-source/state-ma-cannabis-control-commission-cnb.json",
+      "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000"
+    },
+    {
+      "id": "office-of-the-comptroller-osc",
+      "name": "OFFICE OF THE COMPTROLLER (OSC)",
+      "amount": 16898466.87,
+      "sourceAmount": 16898466.87,
+      "detailUrl": "data/state-ma/archive-state-source/state-ma-office-of-the-comptroller-osc.json",
+      "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000"
+    },
+    {
+      "id": "worcester-middle-district-attorney-mid",
+      "name": "WORCESTER (MIDDLE) DISTRICT ATTORNEY (MID)",
+      "amount": 16644064.18,
+      "sourceAmount": 16644064.18,
+      "detailUrl": "data/state-ma/archive-state-source/state-ma-worcester-middle-district-attorney-mid.json",
+      "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000"
+    },
+    {
+      "id": "hampden-district-attorney-wes",
+      "name": "HAMPDEN DISTRICT ATTORNEY (WES)",
+      "amount": 15793589.68,
+      "sourceAmount": 15793589.68,
+      "detailUrl": "data/state-ma/archive-state-source/state-ma-hampden-district-attorney-wes.json",
+      "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000"
+    },
+    {
+      "id": "division-of-insurance-doi",
+      "name": "DIVISION OF INSURANCE (DOI)",
+      "amount": 14893971.47,
+      "sourceAmount": 14893971.47,
+      "detailUrl": "data/state-ma/archive-state-source/state-ma-division-of-insurance-doi.json",
+      "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000"
+    },
+    {
+      "id": "department-of-business-and-technology-sea",
+      "name": "DEPARTMENT OF BUSINESS AND TECHNOLOGY (SEA)",
+      "amount": 14714906.29,
+      "sourceAmount": 14714906.29,
+      "detailUrl": "data/state-ma/archive-state-source/state-ma-department-of-business-and-technology-sea.json",
+      "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000"
+    },
+    {
+      "id": "eastern-district-attorney-eas",
+      "name": "EASTERN DISTRICT ATTORNEY (EAS)",
+      "amount": 14411507.19,
+      "sourceAmount": 14411507.19,
+      "detailUrl": "data/state-ma/archive-state-source/state-ma-eastern-district-attorney-eas.json",
+      "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000"
+    },
+    {
+      "id": "norfolk-district-attorney-nfk",
+      "name": "NORFOLK DISTRICT ATTORNEY (NFK)",
+      "amount": 14283666.2,
+      "sourceAmount": 14283666.2,
+      "detailUrl": "data/state-ma/archive-state-source/state-ma-norfolk-district-attorney-nfk.json",
+      "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000"
+    },
+    {
+      "id": "appeals-court-apc",
+      "name": "APPEALS COURT (APC)",
+      "amount": 13982172.56,
+      "sourceAmount": 13982172.56,
+      "detailUrl": "data/state-ma/archive-state-source/state-ma-appeals-court-apc.json",
+      "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000"
+    },
+    {
+      "id": "bristol-district-attorney-bri",
+      "name": "BRISTOL DISTRICT ATTORNEY (BRI)",
+      "amount": 13979234.33,
+      "sourceAmount": 13979234.33,
+      "detailUrl": "data/state-ma/archive-state-source/state-ma-bristol-district-attorney-bri.json",
+      "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000"
+    },
+    {
+      "id": "disabled-persons-protection-commission-dac",
+      "name": "DISABLED PERSONS PROTECTION COMMISSION (DAC)",
+      "amount": 13827842.28,
+      "sourceAmount": 13827842.28,
+      "detailUrl": "data/state-ma/archive-state-source/state-ma-disabled-persons-protection-commission-dac.json",
+      "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000"
+    },
+    {
+      "id": "state-reclamation-board-srb",
+      "name": "STATE RECLAMATION BOARD (SRB)",
+      "amount": 13528427.16,
+      "sourceAmount": 13528427.16,
+      "detailUrl": "data/state-ma/archive-state-source/state-ma-state-reclamation-board-srb.json",
+      "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000"
+    },
+    {
+      "id": "plymouth-district-attorney-ply",
+      "name": "PLYMOUTH DISTRICT ATTORNEY (PLY)",
+      "amount": 13187262.68,
+      "sourceAmount": 13187262.68,
+      "detailUrl": "data/state-ma/archive-state-source/state-ma-plymouth-district-attorney-ply.json",
+      "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000"
+    },
+    {
+      "id": "health-policy-commission-hpc",
+      "name": "HEALTH POLICY COMMISSION (HPC)",
+      "amount": 11517201.81,
+      "sourceAmount": 11517201.81,
+      "detailUrl": "data/state-ma/archive-state-source/state-ma-health-policy-commission-hpc.json",
+      "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000"
+    },
+    {
+      "id": "commission-for-the-deaf-and-hard-of-hearing-mcd",
+      "name": "COMMISSION FOR THE DEAF AND HARD OF HEARING (MCD)",
+      "amount": 10455919.5,
+      "sourceAmount": 10455919.5,
+      "detailUrl": "data/state-ma/archive-state-source/state-ma-commission-for-the-deaf-and-hard-of-hearing-mcd.json",
+      "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000"
+    },
+    {
+      "id": "commission-against-discrimination-cad",
+      "name": "COMMISSION AGAINST DISCRIMINATION (CAD)",
+      "amount": 9303074.68,
+      "sourceAmount": 9303074.68,
+      "detailUrl": "data/state-ma/archive-state-source/state-ma-commission-against-discrimination-cad.json",
+      "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000"
+    },
+    {
+      "id": "governors-office-gov",
+      "name": "GOVERNORS OFFICE (GOV)",
+      "amount": 9270958.45,
+      "sourceAmount": 9270958.45,
+      "detailUrl": "data/state-ma/archive-state-source/state-ma-governors-office-gov.json",
+      "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000"
+    },
+    {
+      "id": "northwestern-district-attorney-nwd",
+      "name": "NORTHWESTERN DISTRICT ATTORNEY (NWD)",
+      "amount": 9033600.39,
+      "sourceAmount": 9033600.39,
+      "detailUrl": "data/state-ma/archive-state-source/state-ma-northwestern-district-attorney-nwd.json",
+      "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000"
+    },
+    {
+      "id": "massachusetts-school-building-authority-sba",
+      "name": "MASSACHUSETTS SCHOOL BUILDING AUTHORITY (SBA)",
+      "amount": 8703341.42,
+      "sourceAmount": 8703341.42,
+      "detailUrl": "data/state-ma/archive-state-source/state-ma-massachusetts-school-building-authority-sba.json",
+      "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000"
+    },
+    {
+      "id": "office-of-inspector-general-igo",
+      "name": "OFFICE OF INSPECTOR GENERAL (IGO)",
+      "amount": 7844072.33,
+      "sourceAmount": 7844072.33,
+      "detailUrl": "data/state-ma/archive-state-source/state-ma-office-of-inspector-general-igo.json",
+      "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000"
+    },
+    {
+      "id": "public-employee-retirement-administration-per",
+      "name": "PUBLIC EMPLOYEE RETIREMENT ADMINISTRATION (PER)",
+      "amount": 7582847.75,
+      "sourceAmount": 7582847.75,
+      "detailUrl": "data/state-ma/archive-state-source/state-ma-public-employee-retirement-administration-per.json",
+      "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000"
+    },
+    {
+      "id": "massachusetts-peace-officer-standards-and-training-pst",
+      "name": "MASSACHUSETTS  PEACE OFFICER STANDARDS AND TRAINING (PST)",
+      "amount": 7478707.87,
+      "sourceAmount": 7478707.87,
+      "detailUrl": "data/state-ma/archive-state-source/state-ma-massachusetts-peace-officer-standards-and-training-pst.json",
+      "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000"
+    },
+    {
+      "id": "sex-offender-registry-sor",
+      "name": "SEX OFFENDER REGISTRY (SOR)",
+      "amount": 7369272.93,
+      "sourceAmount": 7369272.93,
+      "detailUrl": "data/state-ma/archive-state-source/state-ma-sex-offender-registry-sor.json",
+      "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000"
+    },
+    {
+      "id": "joint-legislative-expenditures-leg",
+      "name": "JOINT LEGISLATIVE EXPENDITURES (LEG)",
+      "amount": 7349840.71,
+      "sourceAmount": 7349840.71,
+      "detailUrl": "data/state-ma/archive-state-source/state-ma-joint-legislative-expenditures-leg.json",
+      "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000"
+    },
+    {
+      "id": "cape-islands-district-attorney-cpi",
+      "name": "CAPE & ISLANDS DISTRICT ATTORNEY (CPI)",
+      "amount": 6303630.17,
+      "sourceAmount": 6303630.17,
+      "detailUrl": "data/state-ma/archive-state-source/state-ma-cape-islands-district-attorney-cpi.json",
+      "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000"
+    },
+    {
+      "id": "sheriff-department-dukes-sdd",
+      "name": "SHERIFF DEPARTMENT DUKES (SDD)",
+      "amount": 6210735.78,
+      "sourceAmount": 6210735.78,
+      "detailUrl": "data/state-ma/archive-state-source/state-ma-sheriff-department-dukes-sdd.json",
+      "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000"
+    },
+    {
+      "id": "district-attorney-association-daa",
+      "name": "DISTRICT ATTORNEY ASSOCIATION (DAA)",
+      "amount": 6082819.76,
+      "sourceAmount": 6082819.76,
+      "detailUrl": "data/state-ma/archive-state-source/state-ma-district-attorney-association-daa.json",
+      "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000"
+    },
+    {
+      "id": "berkshire-district-attorney-ber",
+      "name": "BERKSHIRE DISTRICT ATTORNEY (BER)",
+      "amount": 5811669.73,
+      "sourceAmount": 5811669.73,
+      "detailUrl": "data/state-ma/archive-state-source/state-ma-berkshire-district-attorney-ber.json",
+      "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000"
+    },
+    {
+      "id": "office-of-the-child-advocate-oca",
+      "name": "OFFICE OF THE CHILD ADVOCATE (OCA)",
+      "amount": 5334679.86,
+      "sourceAmount": 5334679.86,
+      "detailUrl": "data/state-ma/archive-state-source/state-ma-office-of-the-child-advocate-oca.json",
+      "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000"
+    },
+    {
+      "id": "criminal-justice-information-services-department-chs",
+      "name": "CRIMINAL JUSTICE INFORMATION SERVICES DEPARTMENT (CHS)",
+      "amount": 4870152.38,
+      "sourceAmount": 4870152.38,
+      "detailUrl": "data/state-ma/archive-state-source/state-ma-criminal-justice-information-services-department-chs.json",
+      "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000"
+    },
+    {
+      "id": "administrative-law-appeals-division-ala",
+      "name": "ADMINISTRATIVE LAW APPEALS DIVISION (ALA)",
+      "amount": 4509168.57,
+      "sourceAmount": 4509168.57,
+      "detailUrl": "data/state-ma/archive-state-source/state-ma-administrative-law-appeals-division-ala.json",
+      "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000"
+    },
+    {
+      "id": "massachusetts-office-on-disability-oha",
+      "name": "MASSACHUSETTS OFFICE ON DISABILITY (OHA)",
+      "amount": 4364581.27,
+      "sourceAmount": 4364581.27,
+      "detailUrl": "data/state-ma/archive-state-source/state-ma-massachusetts-office-on-disability-oha.json",
+      "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000"
+    },
+    {
+      "id": "bureau-of-state-buildings-bsb",
+      "name": "BUREAU OF STATE BUILDINGS (BSB)",
+      "amount": 3964614.03,
+      "sourceAmount": 3964614.03,
+      "detailUrl": "data/state-ma/archive-state-source/state-ma-bureau-of-state-buildings-bsb.json",
+      "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000"
+    },
+    {
+      "id": "office-of-the-state-treasurer-ost",
+      "name": "OFFICE OF THE STATE TREASURER (OST)",
+      "amount": 3500909.86,
+      "sourceAmount": 3500909.86,
+      "program": "OFFICE OF THE STATE TREASURER (OST) · (TT) LOANS AND SPECIAL PAYMENTS",
+      "sourceRows": 4,
+      "detailUrl": null,
+      "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000"
+    },
+    {
+      "id": "supplier-diversity-office-sdo",
+      "name": "SUPPLIER DIVERSITY OFFICE (SDO)",
+      "amount": 3347360.06,
+      "sourceAmount": 3347360.06,
+      "detailUrl": "data/state-ma/archive-state-source/state-ma-supplier-diversity-office-sdo.json",
+      "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000"
+    },
+    {
+      "id": "state-ethics-commission-eth",
+      "name": "STATE ETHICS COMMISSION (ETH)",
+      "amount": 3283340.74,
+      "sourceAmount": 3283340.74,
+      "detailUrl": "data/state-ma/archive-state-source/state-ma-state-ethics-commission-eth.json",
+      "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000"
+    },
+    {
+      "id": "mental-health-legal-advisors-mhl",
+      "name": "MENTAL HEALTH LEGAL ADVISORS (MHL)",
+      "amount": 2956344.97,
+      "sourceAmount": 2956344.97,
+      "detailUrl": "data/state-ma/archive-state-source/state-ma-mental-health-legal-advisors-mhl.json",
+      "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000"
+    },
+    {
+      "id": "department-of-telecommunication-and-cable-tac",
+      "name": "DEPARTMENT OF TELECOMMUNICATION AND CABLE (TAC)",
+      "amount": 2776486.32,
+      "sourceAmount": 2776486.32,
+      "detailUrl": "data/state-ma/archive-state-source/state-ma-department-of-telecommunication-and-cable-tac.json",
+      "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000"
+    },
+    {
+      "id": "office-of-consumer-affairs-and-business-regulation-sca",
+      "name": "OFFICE OF CONSUMER AFFAIRS AND BUSINESS REGULATION (SCA)",
+      "amount": 2767355.03,
+      "sourceAmount": 2767355.03,
+      "detailUrl": "data/state-ma/archive-state-source/state-ma-office-of-consumer-affairs-and-business-regulation-sca.json",
+      "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000"
+    },
+    {
+      "id": "appellate-tax-board-atb",
+      "name": "APPELLATE TAX BOARD (ATB)",
+      "amount": 2347013.74,
+      "sourceAmount": 2347013.74,
+      "detailUrl": "data/state-ma/archive-state-source/state-ma-appellate-tax-board-atb.json",
+      "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000"
+    },
+    {
+      "id": "division-of-standards-dos",
+      "name": "DIVISION OF STANDARDS (DOS)",
+      "amount": 2346045.38,
+      "sourceAmount": 2346045.38,
+      "detailUrl": "data/state-ma/archive-state-source/state-ma-division-of-standards-dos.json",
+      "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000"
+    },
+    {
+      "id": "board-of-bar-examiners-bbe",
+      "name": "BOARD OF BAR EXAMINERS (BBE)",
+      "amount": 2019096.53,
+      "sourceAmount": 2019096.53,
+      "detailUrl": "data/state-ma/archive-state-source/state-ma-board-of-bar-examiners-bbe.json",
+      "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000"
+    },
+    {
+      "id": "campaign-political-finance-cpf",
+      "name": "CAMPAIGN & POLITICAL FINANCE (CPF)",
+      "amount": 2006393.84,
+      "sourceAmount": 2006393.84,
+      "detailUrl": "data/state-ma/archive-state-source/state-ma-campaign-political-finance-cpf.json",
+      "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000"
+    },
+    {
+      "id": "developmental-disabilities-council-add",
+      "name": "DEVELOPMENTAL DISABILITIES COUNCIL (ADD)",
+      "amount": 1519241.35,
+      "sourceAmount": 1519241.35,
+      "detailUrl": "data/state-ma/archive-state-source/state-ma-developmental-disabilities-council-add.json",
+      "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000"
+    },
+    {
+      "id": "george-fingold-library-lib",
+      "name": "GEORGE FINGOLD LIBRARY (LIB)",
+      "amount": 1239760.95,
+      "sourceAmount": 1239760.95,
+      "detailUrl": "data/state-ma/archive-state-source/state-ma-george-fingold-library-lib.json",
+      "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000"
+    },
+    {
+      "id": "commission-on-judicial-conduct-cjc",
+      "name": "COMMISSION ON JUDICIAL CONDUCT (CJC)",
+      "amount": 1019416.54,
+      "sourceAmount": 1019416.54,
+      "detailUrl": "data/state-ma/archive-state-source/state-ma-commission-on-judicial-conduct-cjc.json",
+      "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000"
+    },
+    {
+      "id": "civil-service-commission-csc",
+      "name": "CIVIL SERVICE COMMISSION (CSC)",
+      "amount": 891240.99,
+      "sourceAmount": 891240.99,
+      "detailUrl": "data/state-ma/archive-state-source/state-ma-civil-service-commission-csc.json",
+      "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000"
+    },
+    {
+      "id": "sheriffs-department-association-sda",
+      "name": "SHERIFFS DEPARTMENT ASSOCIATION (SDA)",
+      "amount": 852908.41,
+      "sourceAmount": 852908.41,
+      "detailUrl": "data/state-ma/archive-state-source/state-ma-sheriffs-department-association-sda.json",
+      "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000"
+    },
+    {
+      "id": "commission-on-status-of-women-csw",
+      "name": "COMMISSION ON STATUS OF WOMEN (CSW)",
+      "amount": 838243.23,
+      "sourceAmount": 838243.23,
+      "detailUrl": "data/state-ma/archive-state-source/state-ma-commission-on-status-of-women-csw.json",
+      "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000"
+    },
+    {
+      "id": "sheriff-department-nantucket-nsd",
+      "name": "SHERIFF DEPARTMENT NANTUCKET (NSD)",
+      "amount": 586451.88,
+      "sourceAmount": 586451.88,
+      "detailUrl": "data/state-ma/archive-state-source/state-ma-sheriff-department-nantucket-nsd.json",
+      "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000"
+    },
+    {
+      "id": "governors-council-gcn",
+      "name": "GOVERNORS COUNCIL (GCN)",
+      "amount": 259436.08,
+      "sourceAmount": 259436.08,
+      "detailUrl": "data/state-ma/archive-state-source/state-ma-governors-council-gcn.json",
+      "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000"
+    },
+    {
+      "id": "office-of-the-veteran-advocate-ova",
+      "name": "OFFICE OF THE VETERAN ADVOCATE (OVA)",
+      "amount": 181587.87,
+      "sourceAmount": 181587.87,
+      "detailUrl": "data/state-ma/archive-state-source/state-ma-office-of-the-veteran-advocate-ova.json",
+      "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000"
+    },
+    {
+      "id": "commission-on-the-status-of-persons-with-disabilities-spd",
+      "name": "COMMISSION ON THE STATUS OF PERSONS WITH DISABILITIES (SPD)",
+      "amount": 130949.2,
+      "sourceAmount": 130949.2,
+      "detailUrl": "data/state-ma/archive-state-source/state-ma-commission-on-the-status-of-persons-with-disabilities-spd.json",
+      "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000"
+    },
+    {
+      "id": "state-retiree-benefits-trust-fund-board-hst",
+      "name": "STATE RETIREE BENEFITS TRUST FUND BOARD (HST)",
+      "amount": 61201.93,
+      "sourceAmount": 61201.93,
+      "detailUrl": "data/state-ma/archive-state-source/state-ma-state-retiree-benefits-trust-fund-board-hst.json",
+      "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000"
+    },
+    {
+      "id": "payroll-hold-default-dept-999",
+      "name": "PAYROLL HOLD DEFAULT DEPT (999)",
+      "amount": 0,
+      "sourceAmount": 0,
+      "program": "PAYROLL HOLD DEFAULT DEPT (999) · (99) PAYROLL REJECTS",
+      "sourceRows": 21,
+      "detailUrl": null,
+      "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000"
+    }
+  ],
+  "itemizedTotal": 93697656881.25,
+  "comparison": {
+    "label": "Census FY2024 state-finance comparator",
+    "url": "https://data.census.gov/table/GOVSSTATEFINTIMESERIES.GS00STATEFIN01?g=040XX00US25&time=2024",
+    "total": 86065220000,
+    "difference": 7632436881.25
+  },
+  "coverageStatus": "official-itemized-source-basis",
+  "archiveNote": "Prior official state layer archived when the complete Census function layer became primary for map reconciliation."
+}

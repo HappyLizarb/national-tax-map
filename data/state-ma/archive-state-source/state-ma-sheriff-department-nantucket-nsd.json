@@ -1,0 +1,105 @@
+{
+  "scope": "Massachusetts",
+  "code": "ma",
+  "department": "SHERIFF DEPARTMENT NANTUCKET (NSD)",
+  "fiscalYear": 2024,
+  "ledgerAmount": 538680.6,
+  "sourceTotal": 586451.88,
+  "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000",
+  "rowSchema": [
+    "subAgency",
+    "program",
+    "amount",
+    "sourceAmount",
+    "sourceRows"
+  ],
+  "rows": [
+    [
+      "SHERIFF DEPARTMENT NANTUCKET (NSD)",
+      "SHERIFF DEPARTMENT NANTUCKET (NSD) · (AA) REGULAR EMPLOYEE COMPENSATION",
+      452481.29,
+      452481.29,
+      68
+    ],
+    [
+      "SHERIFF DEPARTMENT NANTUCKET (NSD)",
+      "SHERIFF DEPARTMENT NANTUCKET (NSD) · (EE) ADMINISTRATIVE EXPENSES",
+      42206.21,
+      42206.21,
+      34
+    ],
+    [
+      "SHERIFF DEPARTMENT NANTUCKET (NSD)",
+      "SHERIFF DEPARTMENT NANTUCKET (NSD) · (UU) IT NON-PAYROLL EXPENSES",
+      39245.74,
+      39245.74,
+      60
+    ],
+    [
+      "SHERIFF DEPARTMENT NANTUCKET (NSD)",
+      "SHERIFF DEPARTMENT NANTUCKET (NSD) · (HH) CONSULTANT SVCS (TO DEPTS)",
+      19243.74,
+      19243.74,
+      12
+    ],
+    [
+      "SHERIFF DEPARTMENT NANTUCKET (NSD)",
+      "SHERIFF DEPARTMENT NANTUCKET (NSD) · (GG) ENERGY COSTS AND SPACE RENTAL",
+      13066.67,
+      13066.67,
+      29
+    ],
+    [
+      "SHERIFF DEPARTMENT NANTUCKET (NSD)",
+      "SHERIFF DEPARTMENT NANTUCKET (NSD) · (CC) SPECIAL EMPLOYEES",
+      5818,
+      5818,
+      12
+    ],
+    [
+      "SHERIFF DEPARTMENT NANTUCKET (NSD)",
+      "SHERIFF DEPARTMENT NANTUCKET (NSD) · (NN) INFRASTRUCTURE:",
+      4990,
+      4990,
+      1
+    ],
+    [
+      "SHERIFF DEPARTMENT NANTUCKET (NSD)",
+      "SHERIFF DEPARTMENT NANTUCKET (NSD) · (BB) REGULAR EMPLOYEE RELATED EXPEN",
+      4269.84,
+      4269.84,
+      19
+    ],
+    [
+      "SHERIFF DEPARTMENT NANTUCKET (NSD)",
+      "SHERIFF DEPARTMENT NANTUCKET (NSD) · (LL) EQUIPMENT LEASE-MAINTAIN/REPAR",
+      3118.84,
+      3118.84,
+      18
+    ],
+    [
+      "SHERIFF DEPARTMENT NANTUCKET (NSD)",
+      "SHERIFF DEPARTMENT NANTUCKET (NSD) · (FF) FACILITY OPERATIONAL EXPENSES",
+      1386,
+      1386,
+      6
+    ],
+    [
+      "SHERIFF DEPARTMENT NANTUCKET (NSD)",
+      "SHERIFF DEPARTMENT NANTUCKET (NSD) · (KK) EQUIPMENT PURCHASE",
+      625.55,
+      625.55,
+      2
+    ],
+    [
+      "SHERIFF DEPARTMENT NANTUCKET (NSD)",
+      "SHERIFF DEPARTMENT NANTUCKET (NSD) · (99) PAYROLL REJECTS",
+      0,
+      0,
+      2
+    ]
+  ],
+  "hierarchyNote": "The source does not identify a separate sub-agency column; direct-managed rows repeat the parent entity.",
+  "sourceBasis": "official source amount",
+  "note": "Amounts are shown on the official source basis; no comparator normalization was applied."
+}

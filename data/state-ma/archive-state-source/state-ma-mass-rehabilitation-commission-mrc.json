@@ -1,0 +1,119 @@
+{
+  "scope": "Massachusetts",
+  "code": "ma",
+  "department": "MASS REHABILITATION COMMISSION (MRC)",
+  "fiscalYear": 2024,
+  "ledgerAmount": 187786527.16,
+  "sourceTotal": 204439814.23,
+  "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000",
+  "rowSchema": [
+    "subAgency",
+    "program",
+    "amount",
+    "sourceAmount",
+    "sourceRows"
+  ],
+  "rows": [
+    [
+      "MASS REHABILITATION COMMISSION (MRC)",
+      "MASS REHABILITATION COMMISSION (MRC) · (MM) PURCHASED CLIENT/PROGRAM SVCS",
+      91635830.57,
+      91635830.57,
+      15283
+    ],
+    [
+      "MASS REHABILITATION COMMISSION (MRC)",
+      "MASS REHABILITATION COMMISSION (MRC) · (AA) REGULAR EMPLOYEE COMPENSATION",
+      72708102,
+      72708102,
+      5607
+    ],
+    [
+      "MASS REHABILITATION COMMISSION (MRC)",
+      "MASS REHABILITATION COMMISSION (MRC) · (HH) CONSULTANT SVCS (TO DEPTS)",
+      14031133.23,
+      14031133.23,
+      21782
+    ],
+    [
+      "MASS REHABILITATION COMMISSION (MRC)",
+      "MASS REHABILITATION COMMISSION (MRC) · (NN) INFRASTRUCTURE:",
+      7162461.21,
+      7162461.21,
+      438
+    ],
+    [
+      "MASS REHABILITATION COMMISSION (MRC)",
+      "MASS REHABILITATION COMMISSION (MRC) · (GG) ENERGY COSTS AND SPACE RENTAL",
+      6518371.31,
+      6518371.31,
+      381
+    ],
+    [
+      "MASS REHABILITATION COMMISSION (MRC)",
+      "MASS REHABILITATION COMMISSION (MRC) · (CC) SPECIAL EMPLOYEES",
+      6137282.43,
+      6137282.43,
+      466
+    ],
+    [
+      "MASS REHABILITATION COMMISSION (MRC)",
+      "MASS REHABILITATION COMMISSION (MRC) · (JJ) OPERATIONAL SERVICES",
+      2995082.94,
+      2995082.94,
+      111043
+    ],
+    [
+      "MASS REHABILITATION COMMISSION (MRC)",
+      "MASS REHABILITATION COMMISSION (MRC) · (UU) IT NON-PAYROLL EXPENSES",
+      996351.45,
+      996351.45,
+      773
+    ],
+    [
+      "MASS REHABILITATION COMMISSION (MRC)",
+      "MASS REHABILITATION COMMISSION (MRC) · (EE) ADMINISTRATIVE EXPENSES",
+      691564.52,
+      691564.52,
+      537
+    ],
+    [
+      "MASS REHABILITATION COMMISSION (MRC)",
+      "MASS REHABILITATION COMMISSION (MRC) · (FF) FACILITY OPERATIONAL EXPENSES",
+      555881.28,
+      555881.28,
+      184
+    ],
+    [
+      "MASS REHABILITATION COMMISSION (MRC)",
+      "MASS REHABILITATION COMMISSION (MRC) · (BB) REGULAR EMPLOYEE RELATED EXPEN",
+      489781.91,
+      489781.91,
+      995
+    ],
+    [
+      "MASS REHABILITATION COMMISSION (MRC)",
+      "MASS REHABILITATION COMMISSION (MRC) · (LL) EQUIPMENT LEASE-MAINTAIN/REPAR",
+      358136.85,
+      358136.85,
+      234
+    ],
+    [
+      "MASS REHABILITATION COMMISSION (MRC)",
+      "MASS REHABILITATION COMMISSION (MRC) · (KK) EQUIPMENT PURCHASE",
+      159834.53,
+      159834.53,
+      46
+    ],
+    [
+      "MASS REHABILITATION COMMISSION (MRC)",
+      "MASS REHABILITATION COMMISSION (MRC) · (99) PAYROLL REJECTS",
+      0,
+      0,
+      465
+    ]
+  ],
+  "hierarchyNote": "The source does not identify a separate sub-agency column; direct-managed rows repeat the parent entity.",
+  "sourceBasis": "official source amount",
+  "note": "Amounts are shown on the official source basis; no comparator normalization was applied."
+}

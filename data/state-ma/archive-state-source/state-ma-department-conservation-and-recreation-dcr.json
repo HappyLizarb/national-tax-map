@@ -1,0 +1,133 @@
+{
+  "scope": "Massachusetts",
+  "code": "ma",
+  "department": "DEPARTMENT CONSERVATION AND RECREATION (DCR)",
+  "fiscalYear": 2024,
+  "ledgerAmount": 319305262.09,
+  "sourceTotal": 347621895.2,
+  "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000",
+  "rowSchema": [
+    "subAgency",
+    "program",
+    "amount",
+    "sourceAmount",
+    "sourceRows"
+  ],
+  "rows": [
+    [
+      "DEPARTMENT CONSERVATION AND RECREATION (DCR)",
+      "DEPARTMENT CONSERVATION AND RECREATION (DCR) · (NN) INFRASTRUCTURE:",
+      143095173.02,
+      143095173.02,
+      16152
+    ],
+    [
+      "DEPARTMENT CONSERVATION AND RECREATION (DCR)",
+      "DEPARTMENT CONSERVATION AND RECREATION (DCR) · (AA) REGULAR EMPLOYEE COMPENSATION",
+      108852220.5,
+      108852220.5,
+      7436
+    ],
+    [
+      "DEPARTMENT CONSERVATION AND RECREATION (DCR)",
+      "DEPARTMENT CONSERVATION AND RECREATION (DCR) · (PP) STATE AID/POL SUB",
+      37927861.43,
+      37927861.43,
+      480
+    ],
+    [
+      "DEPARTMENT CONSERVATION AND RECREATION (DCR)",
+      "DEPARTMENT CONSERVATION AND RECREATION (DCR) · (GG) ENERGY COSTS AND SPACE RENTAL",
+      14893070.39,
+      14893070.39,
+      10173
+    ],
+    [
+      "DEPARTMENT CONSERVATION AND RECREATION (DCR)",
+      "DEPARTMENT CONSERVATION AND RECREATION (DCR) · (CC) SPECIAL EMPLOYEES",
+      9701018.92,
+      9701018.92,
+      362
+    ],
+    [
+      "DEPARTMENT CONSERVATION AND RECREATION (DCR)",
+      "DEPARTMENT CONSERVATION AND RECREATION (DCR) · (JJ) OPERATIONAL SERVICES",
+      7064259.39,
+      7064259.39,
+      1729
+    ],
+    [
+      "DEPARTMENT CONSERVATION AND RECREATION (DCR)",
+      "DEPARTMENT CONSERVATION AND RECREATION (DCR) · (HH) CONSULTANT SVCS (TO DEPTS)",
+      6234199.4,
+      6234199.4,
+      399
+    ],
+    [
+      "DEPARTMENT CONSERVATION AND RECREATION (DCR)",
+      "DEPARTMENT CONSERVATION AND RECREATION (DCR) · (LL) EQUIPMENT LEASE-MAINTAIN/REPAR",
+      4282279.73,
+      4282279.73,
+      3253
+    ],
+    [
+      "DEPARTMENT CONSERVATION AND RECREATION (DCR)",
+      "DEPARTMENT CONSERVATION AND RECREATION (DCR) · (FF) FACILITY OPERATIONAL EXPENSES",
+      4270342.62,
+      4270342.62,
+      3621
+    ],
+    [
+      "DEPARTMENT CONSERVATION AND RECREATION (DCR)",
+      "DEPARTMENT CONSERVATION AND RECREATION (DCR) · (KK) EQUIPMENT PURCHASE",
+      4179279,
+      4179279,
+      215
+    ],
+    [
+      "DEPARTMENT CONSERVATION AND RECREATION (DCR)",
+      "DEPARTMENT CONSERVATION AND RECREATION (DCR) · (UU) IT NON-PAYROLL EXPENSES",
+      3547188.5,
+      3547188.5,
+      892
+    ],
+    [
+      "DEPARTMENT CONSERVATION AND RECREATION (DCR)",
+      "DEPARTMENT CONSERVATION AND RECREATION (DCR) · (TT) LOANS AND SPECIAL PAYMENTS",
+      2362561.84,
+      2362561.84,
+      33
+    ],
+    [
+      "DEPARTMENT CONSERVATION AND RECREATION (DCR)",
+      "DEPARTMENT CONSERVATION AND RECREATION (DCR) · (EE) ADMINISTRATIVE EXPENSES",
+      793460.09,
+      793460.09,
+      2284
+    ],
+    [
+      "DEPARTMENT CONSERVATION AND RECREATION (DCR)",
+      "DEPARTMENT CONSERVATION AND RECREATION (DCR) · (BB) REGULAR EMPLOYEE RELATED EXPEN",
+      385980.37,
+      385980.37,
+      618
+    ],
+    [
+      "DEPARTMENT CONSERVATION AND RECREATION (DCR)",
+      "DEPARTMENT CONSERVATION AND RECREATION (DCR) · (SS) DEBT PAYMENT",
+      33000,
+      33000,
+      9
+    ],
+    [
+      "DEPARTMENT CONSERVATION AND RECREATION (DCR)",
+      "DEPARTMENT CONSERVATION AND RECREATION (DCR) · (99) PAYROLL REJECTS",
+      0,
+      0,
+      137
+    ]
+  ],
+  "hierarchyNote": "The source does not identify a separate sub-agency column; direct-managed rows repeat the parent entity.",
+  "sourceBasis": "official source amount",
+  "note": "Amounts are shown on the official source basis; no comparator normalization was applied."
+}

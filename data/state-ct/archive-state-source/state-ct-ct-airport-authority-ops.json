@@ -1,0 +1,35 @@
+{
+  "scope": "Connecticut",
+  "code": "ct",
+  "department": "CT Airport Authority (OPS)",
+  "fiscalYear": 2024,
+  "ledgerAmount": 3411083.33,
+  "sourceTotal": 3634738.43,
+  "sourceUrl": "https://data.ct.gov/resource/ajdm-rvz7.json?$select=department,program,sum(amount)%20as%20amount,count(*)%20as%20records&$where=fiscal_year=2024&$group=department,program",
+  "rowSchema": [
+    "subAgency",
+    "program",
+    "amount",
+    "sourceAmount",
+    "sourceRows"
+  ],
+  "rows": [
+    [
+      "CT Airport Authority (OPS)",
+      "CT Airport Authority (OPS) · Ct Airport & Aviation Account",
+      3492974.3,
+      3492974.3,
+      2
+    ],
+    [
+      "CT Airport Authority (OPS)",
+      "CT Airport Authority (OPS) · Imp Various Aviation Airports",
+      141764.13,
+      141764.13,
+      1
+    ]
+  ],
+  "hierarchyNote": "The source does not identify a separate sub-agency column; direct-managed rows repeat the parent entity.",
+  "sourceBasis": "official source amount",
+  "note": "Amounts are shown on the official source basis; no comparator normalization was applied."
+}

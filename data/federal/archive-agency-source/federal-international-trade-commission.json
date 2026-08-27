@@ -1,0 +1,164 @@
+{
+  "scope": "United States",
+  "code": "federal",
+  "department": "International Trade Commission",
+  "fiscalYear": 2024,
+  "ledgerAmount": 87518005.69,
+  "sourceTotal": 119272243.96,
+  "sourceUrl": "https://api.usaspending.gov/api/v2/agency/034/object_class/?fiscal_year=2024&limit=100&page=1",
+  "sourceUrls": [
+    [
+      "FY2024 gross outlays by object class",
+      "https://api.usaspending.gov/api/v2/agency/034/object_class/?fiscal_year=2024&limit=100&page=1"
+    ],
+    [
+      "FY2024 agency budgetary resources total",
+      "https://api.usaspending.gov/api/v2/agency/034/budgetary_resources/?fiscal_year=2024"
+    ]
+  ],
+  "rowSchema": [
+    "subAgency",
+    "program",
+    "amount",
+    "sourceAmount",
+    "sourceRows"
+  ],
+  "rows": [
+    [
+      "International Trade Commission",
+      "Full-time permanent",
+      59134880.55,
+      59134880.55,
+      null
+    ],
+    [
+      "International Trade Commission",
+      "Civilian personnel benefits",
+      22827807.33,
+      22827807.33,
+      null
+    ],
+    [
+      "International Trade Commission",
+      "Rental payments to GSA",
+      10330820.28,
+      10330820.28,
+      null
+    ],
+    [
+      "International Trade Commission",
+      "Advisory and assistance services",
+      4176257.78,
+      4176257.78,
+      null
+    ],
+    [
+      "International Trade Commission",
+      "Operation and maintenance of equipment",
+      6974061.93,
+      6974061.93,
+      null
+    ],
+    [
+      "International Trade Commission",
+      "Other than full-time permanent",
+      4548272.09,
+      4548272.09,
+      null
+    ],
+    [
+      "International Trade Commission",
+      "Other goods and services from Federal sources",
+      2813838.92,
+      2813838.92,
+      null
+    ],
+    [
+      "International Trade Commission",
+      "Other personnel compensation",
+      2334193.64,
+      2334193.64,
+      null
+    ],
+    [
+      "International Trade Commission",
+      "Supplies and materials",
+      2173923.91,
+      2173923.91,
+      null
+    ],
+    [
+      "International Trade Commission",
+      "Equipment",
+      1315641.34,
+      1315641.34,
+      null
+    ],
+    [
+      "International Trade Commission",
+      "Communications, utilities, and miscellaneous charges",
+      980505.63,
+      980505.63,
+      null
+    ],
+    [
+      "International Trade Commission",
+      "Land and structures",
+      0,
+      0,
+      null
+    ],
+    [
+      "International Trade Commission",
+      "Other services from non-Federal sources",
+      807238.5,
+      807238.5,
+      null
+    ],
+    [
+      "International Trade Commission",
+      "Travel and transportation of persons",
+      377733.93,
+      377733.93,
+      null
+    ],
+    [
+      "International Trade Commission",
+      "Special personal services payments",
+      63375.58,
+      63375.58,
+      null
+    ],
+    [
+      "International Trade Commission",
+      "Printing and reproduction",
+      250590.03,
+      250590.03,
+      null
+    ],
+    [
+      "International Trade Commission",
+      "Rental payments to others",
+      119156.68,
+      119156.68,
+      null
+    ],
+    [
+      "International Trade Commission",
+      "Operation and maintenance of facilities",
+      43945.84,
+      43945.84,
+      null
+    ]
+  ],
+  "sourceBasis": "official source amount",
+  "sourceCheck": {
+    "objectClassRows": 18,
+    "objectClassTotal": 119272243.96,
+    "agencyTotal": 119272243.96,
+    "difference": 0
+  },
+  "normalizationAdjustment": 0,
+  "hierarchyNote": "The source endpoint returns agency-level object-class aggregates; no individual employees or payees are included.",
+  "note": "Amounts are shown on the official source basis; no comparator normalization was applied."
+}

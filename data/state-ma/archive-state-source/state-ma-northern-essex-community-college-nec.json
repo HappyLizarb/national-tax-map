@@ -1,0 +1,140 @@
+{
+  "scope": "Massachusetts",
+  "code": "ma",
+  "department": "NORTHERN ESSEX COMMUNITY COLLEGE (NEC)",
+  "fiscalYear": 2024,
+  "ledgerAmount": 77364333.92,
+  "sourceTotal": 84225158.72,
+  "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000",
+  "rowSchema": [
+    "subAgency",
+    "program",
+    "amount",
+    "sourceAmount",
+    "sourceRows"
+  ],
+  "rows": [
+    [
+      "NORTHERN ESSEX COMMUNITY COLLEGE (NEC)",
+      "NORTHERN ESSEX COMMUNITY COLLEGE (NEC) · (AA) REGULAR EMPLOYEE COMPENSATION",
+      35267282.21,
+      35267282.21,
+      6316
+    ],
+    [
+      "NORTHERN ESSEX COMMUNITY COLLEGE (NEC)",
+      "NORTHERN ESSEX COMMUNITY COLLEGE (NEC) · (CC) SPECIAL EMPLOYEES",
+      15598136.11,
+      15598136.11,
+      2786
+    ],
+    [
+      "NORTHERN ESSEX COMMUNITY COLLEGE (NEC)",
+      "NORTHERN ESSEX COMMUNITY COLLEGE (NEC) · (RR) BENEFIT PROGRAMS",
+      9911233.61,
+      9911233.61,
+      9
+    ],
+    [
+      "NORTHERN ESSEX COMMUNITY COLLEGE (NEC)",
+      "NORTHERN ESSEX COMMUNITY COLLEGE (NEC) · (NN) INFRASTRUCTURE:",
+      4255397.72,
+      4255397.72,
+      15
+    ],
+    [
+      "NORTHERN ESSEX COMMUNITY COLLEGE (NEC)",
+      "NORTHERN ESSEX COMMUNITY COLLEGE (NEC) · (UU) IT NON-PAYROLL EXPENSES",
+      3660161.69,
+      3660161.69,
+      3
+    ],
+    [
+      "NORTHERN ESSEX COMMUNITY COLLEGE (NEC)",
+      "NORTHERN ESSEX COMMUNITY COLLEGE (NEC) · (GG) ENERGY COSTS AND SPACE RENTAL",
+      3495636.4,
+      3495636.4,
+      5
+    ],
+    [
+      "NORTHERN ESSEX COMMUNITY COLLEGE (NEC)",
+      "NORTHERN ESSEX COMMUNITY COLLEGE (NEC) · (JJ) OPERATIONAL SERVICES",
+      3018723.58,
+      3018723.58,
+      3
+    ],
+    [
+      "NORTHERN ESSEX COMMUNITY COLLEGE (NEC)",
+      "NORTHERN ESSEX COMMUNITY COLLEGE (NEC) · (EE) ADMINISTRATIVE EXPENSES",
+      2116690.28,
+      2116690.28,
+      20
+    ],
+    [
+      "NORTHERN ESSEX COMMUNITY COLLEGE (NEC)",
+      "NORTHERN ESSEX COMMUNITY COLLEGE (NEC) · (DD) PENSION & INSURANCE RELATED EX",
+      2014531.65,
+      2014531.65,
+      1
+    ],
+    [
+      "NORTHERN ESSEX COMMUNITY COLLEGE (NEC)",
+      "NORTHERN ESSEX COMMUNITY COLLEGE (NEC) · (TT) LOANS AND SPECIAL PAYMENTS",
+      1000000,
+      1000000,
+      1
+    ],
+    [
+      "NORTHERN ESSEX COMMUNITY COLLEGE (NEC)",
+      "NORTHERN ESSEX COMMUNITY COLLEGE (NEC) · (FF) FACILITY OPERATIONAL EXPENSES",
+      904844.5,
+      904844.5,
+      1
+    ],
+    [
+      "NORTHERN ESSEX COMMUNITY COLLEGE (NEC)",
+      "NORTHERN ESSEX COMMUNITY COLLEGE (NEC) · (KK) EQUIPMENT PURCHASE",
+      837871.79,
+      837871.79,
+      1
+    ],
+    [
+      "NORTHERN ESSEX COMMUNITY COLLEGE (NEC)",
+      "NORTHERN ESSEX COMMUNITY COLLEGE (NEC) · (HH) CONSULTANT SVCS (TO DEPTS)",
+      682287.92,
+      682287.92,
+      3
+    ],
+    [
+      "NORTHERN ESSEX COMMUNITY COLLEGE (NEC)",
+      "NORTHERN ESSEX COMMUNITY COLLEGE (NEC) · (SS) DEBT PAYMENT",
+      668938.2,
+      668938.2,
+      2
+    ],
+    [
+      "NORTHERN ESSEX COMMUNITY COLLEGE (NEC)",
+      "NORTHERN ESSEX COMMUNITY COLLEGE (NEC) · (LL) EQUIPMENT LEASE-MAINTAIN/REPAR",
+      433849.82,
+      433849.82,
+      2
+    ],
+    [
+      "NORTHERN ESSEX COMMUNITY COLLEGE (NEC)",
+      "NORTHERN ESSEX COMMUNITY COLLEGE (NEC) · (BB) REGULAR EMPLOYEE RELATED EXPEN",
+      359573.24,
+      359573.24,
+      172
+    ],
+    [
+      "NORTHERN ESSEX COMMUNITY COLLEGE (NEC)",
+      "NORTHERN ESSEX COMMUNITY COLLEGE (NEC) · (99) PAYROLL REJECTS",
+      0,
+      0,
+      20
+    ]
+  ],
+  "hierarchyNote": "The source does not identify a separate sub-agency column; direct-managed rows repeat the parent entity.",
+  "sourceBasis": "official source amount",
+  "note": "Amounts are shown on the official source basis; no comparator normalization was applied."
+}

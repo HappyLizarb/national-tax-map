@@ -1,0 +1,113 @@
+{
+  "scope": "Maryland",
+  "code": "md",
+  "fiscalYear": 2024,
+  "department": "PROPERTY TAX ASSESSMENT APPEALS BOARDS",
+  "sourceUrl": "https://opendata.maryland.gov/Budget/State-of-Maryland-Payments-Data-FY2008-to-FY2024/7syw-q4cy/about_data",
+  "sourceUrls": [
+    [
+      "Maryland payments dataset",
+      "https://opendata.maryland.gov/Budget/State-of-Maryland-Payments-Data-FY2008-to-FY2024/7syw-q4cy/about_data"
+    ],
+    [
+      "FY2024 raw API rows",
+      "https://opendata.maryland.gov/resource/7syw-q4cy.json?%24where=fiscal_year=%272024%27&%24limit=50000"
+    ]
+  ],
+  "sourceBasis": "FY2024 cash payments grouped by official agency, published category code, and privacy-safe receiver label.",
+  "privacyNote": "Organization receiver names are retained; individual or ambiguous vendor names are grouped as [individual recipient omitted]. No person-level payroll fields are retained.",
+  "sourceRows": 12,
+  "sourceTotal": 81170.31,
+  "rowSchema": [
+    "subAgency",
+    "program",
+    "amount",
+    "sourceAmount",
+    "sourceRows"
+  ],
+  "rows": [
+    [
+      "PROPERTY TAX ASSESSMENT APPEALS BOARDS",
+      "Category code E80 · Receiver [individual recipient omitted]",
+      6255,
+      6255,
+      1
+    ],
+    [
+      "PROPERTY TAX ASSESSMENT APPEALS BOARDS",
+      "Category code E80 · Receiver 3 PUBLIC LLC",
+      17455.6,
+      17455.6,
+      1
+    ],
+    [
+      "PROPERTY TAX ASSESSMENT APPEALS BOARDS",
+      "Category code E80 · Receiver B&B PARTNERS - TOWSON LLC",
+      2409.76,
+      2409.76,
+      1
+    ],
+    [
+      "PROPERTY TAX ASSESSMENT APPEALS BOARDS",
+      "Category code E80 · Receiver BSREP II MD OFFICE MONROE LLC",
+      32706.94,
+      32706.94,
+      2
+    ],
+    [
+      "PROPERTY TAX ASSESSMENT APPEALS BOARDS",
+      "Category code E80 · Receiver CARROLL INDEPENDENT FUEL LLC",
+      109.12,
+      109.12,
+      1
+    ],
+    [
+      "PROPERTY TAX ASSESSMENT APPEALS BOARDS",
+      "Category code E80 · Receiver ELEMENT FLEET CORPORATION",
+      37.95,
+      37.95,
+      1
+    ],
+    [
+      "PROPERTY TAX ASSESSMENT APPEALS BOARDS",
+      "Category code E80 · Receiver HAMPTON PLAZA LLLP",
+      7220.76,
+      7220.76,
+      1
+    ],
+    [
+      "PROPERTY TAX ASSESSMENT APPEALS BOARDS",
+      "Category code E80 · Receiver PITNEY BOWES BANK INC PURCHASE POWER",
+      4977.73,
+      4977.73,
+      1
+    ],
+    [
+      "PROPERTY TAX ASSESSMENT APPEALS BOARDS",
+      "Category code E80 · Receiver PITNEY BOWES BANK INC RESERVE ACCOUNT",
+      704.82,
+      704.82,
+      1
+    ],
+    [
+      "PROPERTY TAX ASSESSMENT APPEALS BOARDS",
+      "Category code E80 · Receiver PITNEY BOWES GLOBAL FINANCIAL SERVICES LLC",
+      1199.55,
+      1199.55,
+      1
+    ],
+    [
+      "PROPERTY TAX ASSESSMENT APPEALS BOARDS",
+      "Category code E80 · Receiver RICOH USA INC",
+      8093.08,
+      8093.08,
+      1
+    ]
+  ],
+  "sourceCheck": {
+    "objectClassRows": 11,
+    "sourceRows": 12,
+    "sourceTotal": 81170.31,
+    "difference": 0
+  }
+}

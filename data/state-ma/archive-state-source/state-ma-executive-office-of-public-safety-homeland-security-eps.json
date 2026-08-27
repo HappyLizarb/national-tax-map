@@ -1,0 +1,133 @@
+{
+  "scope": "Massachusetts",
+  "code": "ma",
+  "department": "EXECUTIVE OFFICE OF PUBLIC SAFETY & HOMELAND SECURITY (EPS)",
+  "fiscalYear": 2024,
+  "ledgerAmount": 223332180.75,
+  "sourceTotal": 243137727.91,
+  "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000",
+  "rowSchema": [
+    "subAgency",
+    "program",
+    "amount",
+    "sourceAmount",
+    "sourceRows"
+  ],
+  "rows": [
+    [
+      "EXECUTIVE OFFICE OF PUBLIC SAFETY & HOMELAND SECURITY (EPS)",
+      "EXECUTIVE OFFICE OF PUBLIC SAFETY & HOMELAND SECURITY (EPS) · (PP) STATE AID/POL SUB",
+      171361303.12,
+      171361303.12,
+      4948
+    ],
+    [
+      "EXECUTIVE OFFICE OF PUBLIC SAFETY & HOMELAND SECURITY (EPS)",
+      "EXECUTIVE OFFICE OF PUBLIC SAFETY & HOMELAND SECURITY (EPS) · (UU) IT NON-PAYROLL EXPENSES",
+      34734980.42,
+      34734980.42,
+      3480
+    ],
+    [
+      "EXECUTIVE OFFICE OF PUBLIC SAFETY & HOMELAND SECURITY (EPS)",
+      "EXECUTIVE OFFICE OF PUBLIC SAFETY & HOMELAND SECURITY (EPS) · (AA) REGULAR EMPLOYEE COMPENSATION",
+      23895230.06,
+      23895230.06,
+      1975
+    ],
+    [
+      "EXECUTIVE OFFICE OF PUBLIC SAFETY & HOMELAND SECURITY (EPS)",
+      "EXECUTIVE OFFICE OF PUBLIC SAFETY & HOMELAND SECURITY (EPS) · (NN) INFRASTRUCTURE:",
+      5419335.08,
+      5419335.08,
+      97
+    ],
+    [
+      "EXECUTIVE OFFICE OF PUBLIC SAFETY & HOMELAND SECURITY (EPS)",
+      "EXECUTIVE OFFICE OF PUBLIC SAFETY & HOMELAND SECURITY (EPS) · (GG) ENERGY COSTS AND SPACE RENTAL",
+      2037083.56,
+      2037083.56,
+      214
+    ],
+    [
+      "EXECUTIVE OFFICE OF PUBLIC SAFETY & HOMELAND SECURITY (EPS)",
+      "EXECUTIVE OFFICE OF PUBLIC SAFETY & HOMELAND SECURITY (EPS) · (MM) PURCHASED CLIENT/PROGRAM SVCS",
+      1839686.51,
+      1839686.51,
+      173
+    ],
+    [
+      "EXECUTIVE OFFICE OF PUBLIC SAFETY & HOMELAND SECURITY (EPS)",
+      "EXECUTIVE OFFICE OF PUBLIC SAFETY & HOMELAND SECURITY (EPS) · (KK) EQUIPMENT PURCHASE",
+      1413494.39,
+      1413494.39,
+      73
+    ],
+    [
+      "EXECUTIVE OFFICE OF PUBLIC SAFETY & HOMELAND SECURITY (EPS)",
+      "EXECUTIVE OFFICE OF PUBLIC SAFETY & HOMELAND SECURITY (EPS) · (HH) CONSULTANT SVCS (TO DEPTS)",
+      1206539.07,
+      1206539.07,
+      59
+    ],
+    [
+      "EXECUTIVE OFFICE OF PUBLIC SAFETY & HOMELAND SECURITY (EPS)",
+      "EXECUTIVE OFFICE OF PUBLIC SAFETY & HOMELAND SECURITY (EPS) · (CC) SPECIAL EMPLOYEES",
+      343333.53,
+      343333.53,
+      221
+    ],
+    [
+      "EXECUTIVE OFFICE OF PUBLIC SAFETY & HOMELAND SECURITY (EPS)",
+      "EXECUTIVE OFFICE OF PUBLIC SAFETY & HOMELAND SECURITY (EPS) · (EE) ADMINISTRATIVE EXPENSES",
+      286471.53,
+      286471.53,
+      811
+    ],
+    [
+      "EXECUTIVE OFFICE OF PUBLIC SAFETY & HOMELAND SECURITY (EPS)",
+      "EXECUTIVE OFFICE OF PUBLIC SAFETY & HOMELAND SECURITY (EPS) · (FF) FACILITY OPERATIONAL EXPENSES",
+      270006.49,
+      270006.49,
+      37
+    ],
+    [
+      "EXECUTIVE OFFICE OF PUBLIC SAFETY & HOMELAND SECURITY (EPS)",
+      "EXECUTIVE OFFICE OF PUBLIC SAFETY & HOMELAND SECURITY (EPS) · (BB) REGULAR EMPLOYEE RELATED EXPEN",
+      243414.91,
+      243414.91,
+      342
+    ],
+    [
+      "EXECUTIVE OFFICE OF PUBLIC SAFETY & HOMELAND SECURITY (EPS)",
+      "EXECUTIVE OFFICE OF PUBLIC SAFETY & HOMELAND SECURITY (EPS) · (LL) EQUIPMENT LEASE-MAINTAIN/REPAR",
+      66110.15,
+      66110.15,
+      423
+    ],
+    [
+      "EXECUTIVE OFFICE OF PUBLIC SAFETY & HOMELAND SECURITY (EPS)",
+      "EXECUTIVE OFFICE OF PUBLIC SAFETY & HOMELAND SECURITY (EPS) · (JJ) OPERATIONAL SERVICES",
+      20341.07,
+      20341.07,
+      107
+    ],
+    [
+      "EXECUTIVE OFFICE OF PUBLIC SAFETY & HOMELAND SECURITY (EPS)",
+      "EXECUTIVE OFFICE OF PUBLIC SAFETY & HOMELAND SECURITY (EPS) · (TT) LOANS AND SPECIAL PAYMENTS",
+      398.02,
+      398.02,
+      5
+    ],
+    [
+      "EXECUTIVE OFFICE OF PUBLIC SAFETY & HOMELAND SECURITY (EPS)",
+      "EXECUTIVE OFFICE OF PUBLIC SAFETY & HOMELAND SECURITY (EPS) · (99) PAYROLL REJECTS",
+      0,
+      0,
+      281
+    ]
+  ],
+  "hierarchyNote": "The source does not identify a separate sub-agency column; direct-managed rows repeat the parent entity.",
+  "sourceBasis": "official source amount",
+  "note": "Amounts are shown on the official source basis; no comparator normalization was applied."
+}

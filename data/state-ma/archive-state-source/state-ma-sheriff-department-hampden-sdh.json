@@ -1,0 +1,126 @@
+{
+  "scope": "Massachusetts",
+  "code": "ma",
+  "department": "SHERIFF DEPARTMENT HAMPDEN (SDH)",
+  "fiscalYear": 2024,
+  "ledgerAmount": 116814202.59,
+  "sourceTotal": 127173521.12,
+  "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000",
+  "rowSchema": [
+    "subAgency",
+    "program",
+    "amount",
+    "sourceAmount",
+    "sourceRows"
+  ],
+  "rows": [
+    [
+      "SHERIFF DEPARTMENT HAMPDEN (SDH)",
+      "SHERIFF DEPARTMENT HAMPDEN (SDH) · (AA) REGULAR EMPLOYEE COMPENSATION",
+      98425516,
+      98425516,
+      1619
+    ],
+    [
+      "SHERIFF DEPARTMENT HAMPDEN (SDH)",
+      "SHERIFF DEPARTMENT HAMPDEN (SDH) · (CC) SPECIAL EMPLOYEES",
+      7996135.87,
+      7996135.87,
+      512
+    ],
+    [
+      "SHERIFF DEPARTMENT HAMPDEN (SDH)",
+      "SHERIFF DEPARTMENT HAMPDEN (SDH) · (FF) FACILITY OPERATIONAL EXPENSES",
+      6705919.53,
+      6705919.53,
+      1850
+    ],
+    [
+      "SHERIFF DEPARTMENT HAMPDEN (SDH)",
+      "SHERIFF DEPARTMENT HAMPDEN (SDH) · (GG) ENERGY COSTS AND SPACE RENTAL",
+      3957192.33,
+      3957192.33,
+      374
+    ],
+    [
+      "SHERIFF DEPARTMENT HAMPDEN (SDH)",
+      "SHERIFF DEPARTMENT HAMPDEN (SDH) · (KK) EQUIPMENT PURCHASE",
+      3436569.43,
+      3436569.43,
+      100
+    ],
+    [
+      "SHERIFF DEPARTMENT HAMPDEN (SDH)",
+      "SHERIFF DEPARTMENT HAMPDEN (SDH) · (NN) INFRASTRUCTURE:",
+      2460378.03,
+      2460378.03,
+      1069
+    ],
+    [
+      "SHERIFF DEPARTMENT HAMPDEN (SDH)",
+      "SHERIFF DEPARTMENT HAMPDEN (SDH) · (UU) IT NON-PAYROLL EXPENSES",
+      1416204.38,
+      1416204.38,
+      409
+    ],
+    [
+      "SHERIFF DEPARTMENT HAMPDEN (SDH)",
+      "SHERIFF DEPARTMENT HAMPDEN (SDH) · (EE) ADMINISTRATIVE EXPENSES",
+      590099.86,
+      590099.86,
+      469
+    ],
+    [
+      "SHERIFF DEPARTMENT HAMPDEN (SDH)",
+      "SHERIFF DEPARTMENT HAMPDEN (SDH) · (DD) PENSION & INSURANCE RELATED EX",
+      565983.65,
+      565983.65,
+      67
+    ],
+    [
+      "SHERIFF DEPARTMENT HAMPDEN (SDH)",
+      "SHERIFF DEPARTMENT HAMPDEN (SDH) · (JJ) OPERATIONAL SERVICES",
+      549159.18,
+      549159.18,
+      411
+    ],
+    [
+      "SHERIFF DEPARTMENT HAMPDEN (SDH)",
+      "SHERIFF DEPARTMENT HAMPDEN (SDH) · (HH) CONSULTANT SVCS (TO DEPTS)",
+      478936.34,
+      478936.34,
+      53
+    ],
+    [
+      "SHERIFF DEPARTMENT HAMPDEN (SDH)",
+      "SHERIFF DEPARTMENT HAMPDEN (SDH) · (LL) EQUIPMENT LEASE-MAINTAIN/REPAR",
+      379028.36,
+      379028.36,
+      217
+    ],
+    [
+      "SHERIFF DEPARTMENT HAMPDEN (SDH)",
+      "SHERIFF DEPARTMENT HAMPDEN (SDH) · (MM) PURCHASED CLIENT/PROGRAM SVCS",
+      115287.55,
+      115287.55,
+      30
+    ],
+    [
+      "SHERIFF DEPARTMENT HAMPDEN (SDH)",
+      "SHERIFF DEPARTMENT HAMPDEN (SDH) · (BB) REGULAR EMPLOYEE RELATED EXPEN",
+      97110.61,
+      97110.61,
+      112
+    ],
+    [
+      "SHERIFF DEPARTMENT HAMPDEN (SDH)",
+      "SHERIFF DEPARTMENT HAMPDEN (SDH) · (99) PAYROLL REJECTS",
+      0,
+      0,
+      631
+    ]
+  ],
+  "hierarchyNote": "The source does not identify a separate sub-agency column; direct-managed rows repeat the parent entity.",
+  "sourceBasis": "official source amount",
+  "note": "Amounts are shown on the official source basis; no comparator normalization was applied."
+}

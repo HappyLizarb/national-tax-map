@@ -1,0 +1,98 @@
+{
+  "scope": "Massachusetts",
+  "code": "ma",
+  "department": "GOVERNORS OFFICE (GOV)",
+  "fiscalYear": 2024,
+  "ledgerAmount": 8515763.42,
+  "sourceTotal": 9270958.45,
+  "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000",
+  "rowSchema": [
+    "subAgency",
+    "program",
+    "amount",
+    "sourceAmount",
+    "sourceRows"
+  ],
+  "rows": [
+    [
+      "GOVERNORS OFFICE (GOV)",
+      "GOVERNORS OFFICE (GOV) · (AA) REGULAR EMPLOYEE COMPENSATION",
+      6897681.45,
+      6897681.45,
+      804
+    ],
+    [
+      "GOVERNORS OFFICE (GOV)",
+      "GOVERNORS OFFICE (GOV) · (HH) CONSULTANT SVCS (TO DEPTS)",
+      1188427.82,
+      1188427.82,
+      16
+    ],
+    [
+      "GOVERNORS OFFICE (GOV)",
+      "GOVERNORS OFFICE (GOV) · (EE) ADMINISTRATIVE EXPENSES",
+      452654.01,
+      452654.01,
+      333
+    ],
+    [
+      "GOVERNORS OFFICE (GOV)",
+      "GOVERNORS OFFICE (GOV) · (CC) SPECIAL EMPLOYEES",
+      316662.02,
+      316662.02,
+      56
+    ],
+    [
+      "GOVERNORS OFFICE (GOV)",
+      "GOVERNORS OFFICE (GOV) · (BB) REGULAR EMPLOYEE RELATED EXPEN",
+      131721.84,
+      131721.84,
+      94
+    ],
+    [
+      "GOVERNORS OFFICE (GOV)",
+      "GOVERNORS OFFICE (GOV) · (UU) IT NON-PAYROLL EXPENSES",
+      115566.62,
+      115566.62,
+      48
+    ],
+    [
+      "GOVERNORS OFFICE (GOV)",
+      "GOVERNORS OFFICE (GOV) · (GG) ENERGY COSTS AND SPACE RENTAL",
+      57441.33,
+      57441.33,
+      25
+    ],
+    [
+      "GOVERNORS OFFICE (GOV)",
+      "GOVERNORS OFFICE (GOV) · (LL) EQUIPMENT LEASE-MAINTAIN/REPAR",
+      43286.17,
+      43286.17,
+      22
+    ],
+    [
+      "GOVERNORS OFFICE (GOV)",
+      "GOVERNORS OFFICE (GOV) · (JJ) OPERATIONAL SERVICES",
+      38974.25,
+      38974.25,
+      81
+    ],
+    [
+      "GOVERNORS OFFICE (GOV)",
+      "GOVERNORS OFFICE (GOV) · (KK) EQUIPMENT PURCHASE",
+      24828.32,
+      24828.32,
+      16
+    ],
+    [
+      "GOVERNORS OFFICE (GOV)",
+      "GOVERNORS OFFICE (GOV) · (FF) FACILITY OPERATIONAL EXPENSES",
+      3714.62,
+      3714.62,
+      1
+    ]
+  ],
+  "hierarchyNote": "The source does not identify a separate sub-agency column; direct-managed rows repeat the parent entity.",
+  "sourceBasis": "official source amount",
+  "note": "Amounts are shown on the official source basis; no comparator normalization was applied."
+}

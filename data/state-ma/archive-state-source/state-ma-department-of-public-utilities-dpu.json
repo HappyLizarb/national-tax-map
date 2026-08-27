@@ -1,0 +1,126 @@
+{
+  "scope": "Massachusetts",
+  "code": "ma",
+  "department": "DEPARTMENT OF PUBLIC UTILITIES (DPU)",
+  "fiscalYear": 2024,
+  "ledgerAmount": 32421465.84,
+  "sourceTotal": 35296666.67,
+  "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000",
+  "rowSchema": [
+    "subAgency",
+    "program",
+    "amount",
+    "sourceAmount",
+    "sourceRows"
+  ],
+  "rows": [
+    [
+      "DEPARTMENT OF PUBLIC UTILITIES (DPU)",
+      "DEPARTMENT OF PUBLIC UTILITIES (DPU) · (AA) REGULAR EMPLOYEE COMPENSATION",
+      21337648.82,
+      21337648.82,
+      931
+    ],
+    [
+      "DEPARTMENT OF PUBLIC UTILITIES (DPU)",
+      "DEPARTMENT OF PUBLIC UTILITIES (DPU) · (PP) STATE AID/POL SUB",
+      7872263.4,
+      7872263.4,
+      344
+    ],
+    [
+      "DEPARTMENT OF PUBLIC UTILITIES (DPU)",
+      "DEPARTMENT OF PUBLIC UTILITIES (DPU) · (GG) ENERGY COSTS AND SPACE RENTAL",
+      3283253.28,
+      3283253.28,
+      37
+    ],
+    [
+      "DEPARTMENT OF PUBLIC UTILITIES (DPU)",
+      "DEPARTMENT OF PUBLIC UTILITIES (DPU) · (KK) EQUIPMENT PURCHASE",
+      692447.06,
+      692447.06,
+      19
+    ],
+    [
+      "DEPARTMENT OF PUBLIC UTILITIES (DPU)",
+      "DEPARTMENT OF PUBLIC UTILITIES (DPU) · (UU) IT NON-PAYROLL EXPENSES",
+      495182.57,
+      495182.57,
+      130
+    ],
+    [
+      "DEPARTMENT OF PUBLIC UTILITIES (DPU)",
+      "DEPARTMENT OF PUBLIC UTILITIES (DPU) · (JJ) OPERATIONAL SERVICES",
+      461841.75,
+      461841.75,
+      155
+    ],
+    [
+      "DEPARTMENT OF PUBLIC UTILITIES (DPU)",
+      "DEPARTMENT OF PUBLIC UTILITIES (DPU) · (EE) ADMINISTRATIVE EXPENSES",
+      377576.42,
+      377576.42,
+      246
+    ],
+    [
+      "DEPARTMENT OF PUBLIC UTILITIES (DPU)",
+      "DEPARTMENT OF PUBLIC UTILITIES (DPU) · (HH) CONSULTANT SVCS (TO DEPTS)",
+      320840.31,
+      320840.31,
+      40
+    ],
+    [
+      "DEPARTMENT OF PUBLIC UTILITIES (DPU)",
+      "DEPARTMENT OF PUBLIC UTILITIES (DPU) · (BB) REGULAR EMPLOYEE RELATED EXPEN",
+      305631.5,
+      305631.5,
+      516
+    ],
+    [
+      "DEPARTMENT OF PUBLIC UTILITIES (DPU)",
+      "DEPARTMENT OF PUBLIC UTILITIES (DPU) · (CC) SPECIAL EMPLOYEES",
+      52384.5,
+      52384.5,
+      79
+    ],
+    [
+      "DEPARTMENT OF PUBLIC UTILITIES (DPU)",
+      "DEPARTMENT OF PUBLIC UTILITIES (DPU) · (FF) FACILITY OPERATIONAL EXPENSES",
+      46151.03,
+      46151.03,
+      19
+    ],
+    [
+      "DEPARTMENT OF PUBLIC UTILITIES (DPU)",
+      "DEPARTMENT OF PUBLIC UTILITIES (DPU) · (LL) EQUIPMENT LEASE-MAINTAIN/REPAR",
+      45067.3,
+      45067.3,
+      47
+    ],
+    [
+      "DEPARTMENT OF PUBLIC UTILITIES (DPU)",
+      "DEPARTMENT OF PUBLIC UTILITIES (DPU) · (NN) INFRASTRUCTURE:",
+      6136.73,
+      6136.73,
+      3
+    ],
+    [
+      "DEPARTMENT OF PUBLIC UTILITIES (DPU)",
+      "DEPARTMENT OF PUBLIC UTILITIES (DPU) · (TT) LOANS AND SPECIAL PAYMENTS",
+      242,
+      242,
+      1
+    ],
+    [
+      "DEPARTMENT OF PUBLIC UTILITIES (DPU)",
+      "DEPARTMENT OF PUBLIC UTILITIES (DPU) · (99) PAYROLL REJECTS",
+      0,
+      0,
+      53
+    ]
+  ],
+  "hierarchyNote": "The source does not identify a separate sub-agency column; direct-managed rows repeat the parent entity.",
+  "sourceBasis": "official source amount",
+  "note": "Amounts are shown on the official source basis; no comparator normalization was applied."
+}

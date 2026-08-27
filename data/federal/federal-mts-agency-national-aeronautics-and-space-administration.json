@@ -1,0 +1,34 @@
+{
+  "scope": "United States",
+  "code": "federal",
+  "fiscalYear": 2024,
+  "department": "National Aeronautics and Space Administration",
+  "sourceTotal": 25015000000,
+  "sourceUrl": "https://fiscal.treasury.gov/system/files/files/reports-statements/mts/mts0924.pdf",
+  "sourceUrls": [["Treasury FY2024 MTS Table 5", "https://fiscal.treasury.gov/system/files/files/reports-statements/mts/mts0924.pdf"]],
+  "relatedSources": [["USAspending gross research (supporting detail)", "data/federal/archive-agency-source/federal-national-aeronautics-and-space-administration.json"]],
+  "sourceBasis": "Treasury MTS Table 5 current-fiscal-year gross outlays, applicable receipts, and net outlays; published in $ millions and converted to USD.",
+  "rowSchema": ["subAgency", "program", "amount", "sourceAmount", "sourceRows", "grossOutlays", "applicableReceipts"],
+  "sourceCheck": {"groupRows": 8, "difference": 0, "publishedRoundingAdjustment": 0},
+  "note": "Displayed amounts are net outlays; each row retains its published gross outlays and applicable receipts.",
+  "accountResearch": {"accountCount": 14, "largeAccountCount": 5, "netAccountOutlays": 25019019838.78, "threshold": 1000000000, "sourceUrl": "https://fiscal.treasury.gov/system/files/files/reports-statements/combined-statement/cs2024/c49.xlsx"},
+  "largeAccountSchema": ["treasuryAccount", "title", "netOutlays", "availabilityRows"],
+  "largeAccountBasis": "Exact Combined Statement net outlays by appropriation or fund account. This is a research cross-section of the same department, not another amount to add to MTS classification rows.",
+  "largeAccountRows": [
+    ["080-0120-000", "Science, National Aeronautics and Space Administration", 7705721173.21, 8],
+    ["080-0124-000", "Exploration, National Aeronautics and Space Administration", 7203254608.54, 12],
+    ["080-0115-000", "Space Flight Capabilities, National Aeronautics and Space Administration", 4339922873.86, 23],
+    ["080-0122-000", "Safety, Security and Mission Services, National Aeronautics and Space Administration", 3099296944.08, 15],
+    ["080-0131-000", "Space Technology, National Aeronautics and Space Administration", 1149756966.24, 8]
+  ],
+  "rows": [
+    ["National Aeronautics and Space Administration", "Science", 7706000000, 7706000000, 1, 7706000000, 0],
+    ["National Aeronautics and Space Administration", "Aeronautics", 947000000, 947000000, 1, 947000000, 0],
+    ["National Aeronautics and Space Administration", "Exploration", 7203000000, 7203000000, 1, 7203000000, 0],
+    ["National Aeronautics and Space Administration", "Cross Agency Support", 3099000000, 3099000000, 1, 3099000000, 0],
+    ["National Aeronautics and Space Administration", "Space Operations", 4340000000, 4340000000, 1, 4340000000, 0],
+    ["National Aeronautics and Space Administration", "Other", 1724000000, 1724000000, 1, 1724000000, 0],
+    ["National Aeronautics and Space Administration", "Proprietary Receipts from the Public", -3000000, -3000000, 1, 0, 3000000],
+    ["National Aeronautics and Space Administration", "Intrabudgetary Transactions", -1000000, -1000000, 1, -1000000, 0]
+  ]
+}

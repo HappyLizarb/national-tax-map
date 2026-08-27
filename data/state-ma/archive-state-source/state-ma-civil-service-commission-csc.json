@@ -1,0 +1,70 @@
+{
+  "scope": "Massachusetts",
+  "code": "ma",
+  "department": "CIVIL SERVICE COMMISSION (CSC)",
+  "fiscalYear": 2024,
+  "ledgerAmount": 818642.16,
+  "sourceTotal": 891240.99,
+  "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000",
+  "rowSchema": [
+    "subAgency",
+    "program",
+    "amount",
+    "sourceAmount",
+    "sourceRows"
+  ],
+  "rows": [
+    [
+      "CIVIL SERVICE COMMISSION (CSC)",
+      "CIVIL SERVICE COMMISSION (CSC) · (AA) REGULAR EMPLOYEE COMPENSATION",
+      832366.77,
+      832366.77,
+      26
+    ],
+    [
+      "CIVIL SERVICE COMMISSION (CSC)",
+      "CIVIL SERVICE COMMISSION (CSC) · (CC) SPECIAL EMPLOYEES",
+      25630,
+      25630,
+      39
+    ],
+    [
+      "CIVIL SERVICE COMMISSION (CSC)",
+      "CIVIL SERVICE COMMISSION (CSC) · (EE) ADMINISTRATIVE EXPENSES",
+      15223.13,
+      15223.13,
+      84
+    ],
+    [
+      "CIVIL SERVICE COMMISSION (CSC)",
+      "CIVIL SERVICE COMMISSION (CSC) · (KK) EQUIPMENT PURCHASE",
+      4875.78,
+      4875.78,
+      1
+    ],
+    [
+      "CIVIL SERVICE COMMISSION (CSC)",
+      "CIVIL SERVICE COMMISSION (CSC) · (BB) REGULAR EMPLOYEE RELATED EXPEN",
+      4465.26,
+      4465.26,
+      21
+    ],
+    [
+      "CIVIL SERVICE COMMISSION (CSC)",
+      "CIVIL SERVICE COMMISSION (CSC) · (JJ) OPERATIONAL SERVICES",
+      4387.97,
+      4387.97,
+      18
+    ],
+    [
+      "CIVIL SERVICE COMMISSION (CSC)",
+      "CIVIL SERVICE COMMISSION (CSC) · (LL) EQUIPMENT LEASE-MAINTAIN/REPAR",
+      4292.08,
+      4292.08,
+      17
+    ]
+  ],
+  "hierarchyNote": "The source does not identify a separate sub-agency column; direct-managed rows repeat the parent entity.",
+  "sourceBasis": "official source amount",
+  "note": "Amounts are shown on the official source basis; no comparator normalization was applied."
+}

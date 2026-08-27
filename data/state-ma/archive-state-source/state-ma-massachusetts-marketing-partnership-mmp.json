@@ -1,0 +1,91 @@
+{
+  "scope": "Massachusetts",
+  "code": "ma",
+  "department": "MASSACHUSETTS MARKETING PARTNERSHIP (MMP)",
+  "fiscalYear": 2024,
+  "ledgerAmount": 30873007.94,
+  "sourceTotal": 33610888.4,
+  "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000",
+  "rowSchema": [
+    "subAgency",
+    "program",
+    "amount",
+    "sourceAmount",
+    "sourceRows"
+  ],
+  "rows": [
+    [
+      "MASSACHUSETTS MARKETING PARTNERSHIP (MMP)",
+      "MASSACHUSETTS MARKETING PARTNERSHIP (MMP) · (PP) STATE AID/POL SUB",
+      25517993.48,
+      25517993.48,
+      490
+    ],
+    [
+      "MASSACHUSETTS MARKETING PARTNERSHIP (MMP)",
+      "MASSACHUSETTS MARKETING PARTNERSHIP (MMP) · (HH) CONSULTANT SVCS (TO DEPTS)",
+      5464910.36,
+      5464910.36,
+      46
+    ],
+    [
+      "MASSACHUSETTS MARKETING PARTNERSHIP (MMP)",
+      "MASSACHUSETTS MARKETING PARTNERSHIP (MMP) · (AA) REGULAR EMPLOYEE COMPENSATION",
+      1461984.48,
+      1461984.48,
+      97
+    ],
+    [
+      "MASSACHUSETTS MARKETING PARTNERSHIP (MMP)",
+      "MASSACHUSETTS MARKETING PARTNERSHIP (MMP) · (EE) ADMINISTRATIVE EXPENSES",
+      1031752.24,
+      1031752.24,
+      99
+    ],
+    [
+      "MASSACHUSETTS MARKETING PARTNERSHIP (MMP)",
+      "MASSACHUSETTS MARKETING PARTNERSHIP (MMP) · (BB) REGULAR EMPLOYEE RELATED EXPEN",
+      36793.54,
+      36793.54,
+      63
+    ],
+    [
+      "MASSACHUSETTS MARKETING PARTNERSHIP (MMP)",
+      "MASSACHUSETTS MARKETING PARTNERSHIP (MMP) · (CC) SPECIAL EMPLOYEES",
+      32005.5,
+      32005.5,
+      27
+    ],
+    [
+      "MASSACHUSETTS MARKETING PARTNERSHIP (MMP)",
+      "MASSACHUSETTS MARKETING PARTNERSHIP (MMP) · (JJ) OPERATIONAL SERVICES",
+      29915.54,
+      29915.54,
+      9
+    ],
+    [
+      "MASSACHUSETTS MARKETING PARTNERSHIP (MMP)",
+      "MASSACHUSETTS MARKETING PARTNERSHIP (MMP) · (UU) IT NON-PAYROLL EXPENSES",
+      29259.54,
+      29259.54,
+      2
+    ],
+    [
+      "MASSACHUSETTS MARKETING PARTNERSHIP (MMP)",
+      "MASSACHUSETTS MARKETING PARTNERSHIP (MMP) · (LL) EQUIPMENT LEASE-MAINTAIN/REPAR",
+      6273.72,
+      6273.72,
+      10
+    ],
+    [
+      "MASSACHUSETTS MARKETING PARTNERSHIP (MMP)",
+      "MASSACHUSETTS MARKETING PARTNERSHIP (MMP) · (99) PAYROLL REJECTS",
+      0,
+      0,
+      23
+    ]
+  ],
+  "hierarchyNote": "The source does not identify a separate sub-agency column; direct-managed rows repeat the parent entity.",
+  "sourceBasis": "official source amount",
+  "note": "Amounts are shown on the official source basis; no comparator normalization was applied."
+}

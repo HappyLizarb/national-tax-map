@@ -1,0 +1,98 @@
+{
+  "scope": "Massachusetts",
+  "code": "ma",
+  "department": "COMMISSION AGAINST DISCRIMINATION (CAD)",
+  "fiscalYear": 2024,
+  "ledgerAmount": 8545263.52,
+  "sourceTotal": 9303074.68,
+  "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000",
+  "rowSchema": [
+    "subAgency",
+    "program",
+    "amount",
+    "sourceAmount",
+    "sourceRows"
+  ],
+  "rows": [
+    [
+      "COMMISSION AGAINST DISCRIMINATION (CAD)",
+      "COMMISSION AGAINST DISCRIMINATION (CAD) · (AA) REGULAR EMPLOYEE COMPENSATION",
+      7187316.52,
+      7187316.52,
+      204
+    ],
+    [
+      "COMMISSION AGAINST DISCRIMINATION (CAD)",
+      "COMMISSION AGAINST DISCRIMINATION (CAD) · (UU) IT NON-PAYROLL EXPENSES",
+      1471355.91,
+      1471355.91,
+      137
+    ],
+    [
+      "COMMISSION AGAINST DISCRIMINATION (CAD)",
+      "COMMISSION AGAINST DISCRIMINATION (CAD) · (JJ) OPERATIONAL SERVICES",
+      209575.58,
+      209575.58,
+      154
+    ],
+    [
+      "COMMISSION AGAINST DISCRIMINATION (CAD)",
+      "COMMISSION AGAINST DISCRIMINATION (CAD) · (EE) ADMINISTRATIVE EXPENSES",
+      164826.06,
+      164826.06,
+      159
+    ],
+    [
+      "COMMISSION AGAINST DISCRIMINATION (CAD)",
+      "COMMISSION AGAINST DISCRIMINATION (CAD) · (KK) EQUIPMENT PURCHASE",
+      79311.22,
+      79311.22,
+      7
+    ],
+    [
+      "COMMISSION AGAINST DISCRIMINATION (CAD)",
+      "COMMISSION AGAINST DISCRIMINATION (CAD) · (LL) EQUIPMENT LEASE-MAINTAIN/REPAR",
+      70566.24,
+      70566.24,
+      50
+    ],
+    [
+      "COMMISSION AGAINST DISCRIMINATION (CAD)",
+      "COMMISSION AGAINST DISCRIMINATION (CAD) · (BB) REGULAR EMPLOYEE RELATED EXPEN",
+      46519.43,
+      46519.43,
+      91
+    ],
+    [
+      "COMMISSION AGAINST DISCRIMINATION (CAD)",
+      "COMMISSION AGAINST DISCRIMINATION (CAD) · (GG) ENERGY COSTS AND SPACE RENTAL",
+      32381.76,
+      32381.76,
+      6
+    ],
+    [
+      "COMMISSION AGAINST DISCRIMINATION (CAD)",
+      "COMMISSION AGAINST DISCRIMINATION (CAD) · (NN) INFRASTRUCTURE:",
+      28802.36,
+      28802.36,
+      3
+    ],
+    [
+      "COMMISSION AGAINST DISCRIMINATION (CAD)",
+      "COMMISSION AGAINST DISCRIMINATION (CAD) · (CC) SPECIAL EMPLOYEES",
+      12419.6,
+      12419.6,
+      40
+    ],
+    [
+      "COMMISSION AGAINST DISCRIMINATION (CAD)",
+      "COMMISSION AGAINST DISCRIMINATION (CAD) · (99) PAYROLL REJECTS",
+      0,
+      0,
+      2
+    ]
+  ],
+  "hierarchyNote": "The source does not identify a separate sub-agency column; direct-managed rows repeat the parent entity.",
+  "sourceBasis": "official source amount",
+  "note": "Amounts are shown on the official source basis; no comparator normalization was applied."
+}

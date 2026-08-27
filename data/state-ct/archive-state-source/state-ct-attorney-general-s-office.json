@@ -1,0 +1,77 @@
+{
+  "scope": "Connecticut",
+  "code": "ct",
+  "department": "Attorney General's Office",
+  "fiscalYear": 2024,
+  "ledgerAmount": 3900484.9,
+  "sourceTotal": 4156228.68,
+  "sourceUrl": "https://data.ct.gov/resource/ajdm-rvz7.json?$select=department,program,sum(amount)%20as%20amount,count(*)%20as%20records&$where=fiscal_year=2024&$group=department,program",
+  "rowSchema": [
+    "subAgency",
+    "program",
+    "amount",
+    "sourceAmount",
+    "sourceRows"
+  ],
+  "rows": [
+    [
+      "Attorney General's Office",
+      "Attorney General's Office · Client Agency Costs",
+      2753056.95,
+      2753056.95,
+      420
+    ],
+    [
+      "Attorney General's Office",
+      "Attorney General's Office · Other Expenses",
+      939149.06,
+      939149.06,
+      1159
+    ],
+    [
+      "Attorney General's Office",
+      "Attorney General's Office · Consumer Protection Case Acct",
+      364218.67,
+      364218.67,
+      552
+    ],
+    [
+      "Attorney General's Office",
+      "Attorney General's Office · Personal Services",
+      35905.34,
+      35905.34,
+      10
+    ],
+    [
+      "Attorney General's Office",
+      "Attorney General's Office · Purdue Cost Share Acct",
+      29068,
+      29068,
+      12
+    ],
+    [
+      "Attorney General's Office",
+      "Attorney General's Office · Second Injury",
+      25405.02,
+      25405.02,
+      181
+    ],
+    [
+      "Attorney General's Office",
+      "Attorney General's Office · Emergency Spill Response Acct",
+      9425.64,
+      9425.64,
+      13
+    ],
+    [
+      "Attorney General's Office",
+      "Attorney General's Office · FAD-Temporary Holding Account",
+      0,
+      0,
+      2
+    ]
+  ],
+  "hierarchyNote": "The source does not identify a separate sub-agency column; direct-managed rows repeat the parent entity.",
+  "sourceBasis": "official source amount",
+  "note": "Amounts are shown on the official source basis; no comparator normalization was applied."
+}

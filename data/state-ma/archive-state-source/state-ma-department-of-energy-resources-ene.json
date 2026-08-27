@@ -1,0 +1,91 @@
+{
+  "scope": "Massachusetts",
+  "code": "ma",
+  "department": "DEPARTMENT OF ENERGY RESOURCES (ENE)",
+  "fiscalYear": 2024,
+  "ledgerAmount": 262824659.79,
+  "sourceTotal": 286132479.45,
+  "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000",
+  "rowSchema": [
+    "subAgency",
+    "program",
+    "amount",
+    "sourceAmount",
+    "sourceRows"
+  ],
+  "rows": [
+    [
+      "DEPARTMENT OF ENERGY RESOURCES (ENE)",
+      "DEPARTMENT OF ENERGY RESOURCES (ENE) · (PP) STATE AID/POL SUB",
+      276956447.63,
+      276956447.63,
+      642
+    ],
+    [
+      "DEPARTMENT OF ENERGY RESOURCES (ENE)",
+      "DEPARTMENT OF ENERGY RESOURCES (ENE) · (AA) REGULAR EMPLOYEE COMPENSATION",
+      6723200.03,
+      6723200.03,
+      461
+    ],
+    [
+      "DEPARTMENT OF ENERGY RESOURCES (ENE)",
+      "DEPARTMENT OF ENERGY RESOURCES (ENE) · (HH) CONSULTANT SVCS (TO DEPTS)",
+      2168834.34,
+      2168834.34,
+      130
+    ],
+    [
+      "DEPARTMENT OF ENERGY RESOURCES (ENE)",
+      "DEPARTMENT OF ENERGY RESOURCES (ENE) · (EE) ADMINISTRATIVE EXPENSES",
+      88958.33,
+      88958.33,
+      74
+    ],
+    [
+      "DEPARTMENT OF ENERGY RESOURCES (ENE)",
+      "DEPARTMENT OF ENERGY RESOURCES (ENE) · (CC) SPECIAL EMPLOYEES",
+      88843.46,
+      88843.46,
+      29
+    ],
+    [
+      "DEPARTMENT OF ENERGY RESOURCES (ENE)",
+      "DEPARTMENT OF ENERGY RESOURCES (ENE) · (BB) REGULAR EMPLOYEE RELATED EXPEN",
+      38952.07,
+      38952.07,
+      87
+    ],
+    [
+      "DEPARTMENT OF ENERGY RESOURCES (ENE)",
+      "DEPARTMENT OF ENERGY RESOURCES (ENE) · (JJ) OPERATIONAL SERVICES",
+      35094.13,
+      35094.13,
+      24
+    ],
+    [
+      "DEPARTMENT OF ENERGY RESOURCES (ENE)",
+      "DEPARTMENT OF ENERGY RESOURCES (ENE) · (UU) IT NON-PAYROLL EXPENSES",
+      27457.23,
+      27457.23,
+      80
+    ],
+    [
+      "DEPARTMENT OF ENERGY RESOURCES (ENE)",
+      "DEPARTMENT OF ENERGY RESOURCES (ENE) · (LL) EQUIPMENT LEASE-MAINTAIN/REPAR",
+      4692.23,
+      4692.23,
+      14
+    ],
+    [
+      "DEPARTMENT OF ENERGY RESOURCES (ENE)",
+      "DEPARTMENT OF ENERGY RESOURCES (ENE) · (99) PAYROLL REJECTS",
+      0,
+      0,
+      40
+    ]
+  ],
+  "hierarchyNote": "The source does not identify a separate sub-agency column; direct-managed rows repeat the parent entity.",
+  "sourceBasis": "official source amount",
+  "note": "Amounts are shown on the official source basis; no comparator normalization was applied."
+}

@@ -1,0 +1,168 @@
+{
+  "scope": "Connecticut",
+  "code": "ct",
+  "department": "Dept. of Consumer Protection",
+  "fiscalYear": 2024,
+  "ledgerAmount": 3448122.88,
+  "sourceTotal": 3674206.56,
+  "sourceUrl": "https://data.ct.gov/resource/ajdm-rvz7.json?$select=department,program,sum(amount)%20as%20amount,count(*)%20as%20records&$where=fiscal_year=2024&$group=department,program",
+  "rowSchema": [
+    "subAgency",
+    "program",
+    "amount",
+    "sourceAmount",
+    "sourceRows"
+  ],
+  "rows": [
+    [
+      "Dept. of Consumer Protection",
+      "Dept. of Consumer Protection · Non-Budgeted Operating Approp",
+      1780173.52,
+      1780173.52,
+      207
+    ],
+    [
+      "Dept. of Consumer Protection",
+      "Dept. of Consumer Protection · Other Expenses",
+      1300795.72,
+      1300795.72,
+      1863
+    ],
+    [
+      "Dept. of Consumer Protection",
+      "Dept. of Consumer Protection · IT Services",
+      196631.35,
+      196631.35,
+      54
+    ],
+    [
+      "Dept. of Consumer Protection",
+      "Dept. of Consumer Protection · Consumer Protection Settlement",
+      116792.68,
+      116792.68,
+      80
+    ],
+    [
+      "Dept. of Consumer Protection",
+      "Dept. of Consumer Protection · Capital Equip Purchase Fund",
+      87730.06,
+      87730.06,
+      14
+    ],
+    [
+      "Dept. of Consumer Protection",
+      "Dept. of Consumer Protection · Lottery Assessment Account",
+      78876.81,
+      78876.81,
+      237
+    ],
+    [
+      "Dept. of Consumer Protection",
+      "Dept. of Consumer Protection · Prescription Drug Monitoring",
+      42229.06,
+      42229.06,
+      24
+    ],
+    [
+      "Dept. of Consumer Protection",
+      "Dept. of Consumer Protection · Sport Wagering & Online Gaming",
+      41459.89,
+      41459.89,
+      207
+    ],
+    [
+      "Dept. of Consumer Protection",
+      "Dept. of Consumer Protection · MFRPS FDA Conformance Award",
+      25575.42,
+      25575.42,
+      23
+    ],
+    [
+      "Dept. of Consumer Protection",
+      "Dept. of Consumer Protection · Consumer Protectn Enfrcmt Acct",
+      18729.34,
+      18729.34,
+      41
+    ],
+    [
+      "Dept. of Consumer Protection",
+      "Dept. of Consumer Protection · Indian Gaming-Mashantucket",
+      6850.67,
+      6850.67,
+      40
+    ],
+    [
+      "Dept. of Consumer Protection",
+      "Dept. of Consumer Protection · Indian Gaming-Mohegan",
+      6059.77,
+      6059.77,
+      43
+    ],
+    [
+      "Dept. of Consumer Protection",
+      "Dept. of Consumer Protection · ASC State Appraiser Reg Grant",
+      5725.2,
+      5725.2,
+      6
+    ],
+    [
+      "Dept. of Consumer Protection",
+      "Dept. of Consumer Protection · Summer Law Intern",
+      5217,
+      5217,
+      4
+    ],
+    [
+      "Dept. of Consumer Protection",
+      "Dept. of Consumer Protection · New Automobile Warranties Acct",
+      2754.74,
+      2754.74,
+      14
+    ],
+    [
+      "Dept. of Consumer Protection",
+      "Dept. of Consumer Protection · Bedding And Filling Material",
+      2645.74,
+      2645.74,
+      8
+    ],
+    [
+      "Dept. of Consumer Protection",
+      "Dept. of Consumer Protection · CT AES LFFM",
+      819.93,
+      819.93,
+      5
+    ],
+    [
+      "Dept. of Consumer Protection",
+      "Dept. of Consumer Protection · COMPLIANCE CHECK OPS - DMHAS",
+      107.66,
+      107.66,
+      2
+    ],
+    [
+      "Dept. of Consumer Protection",
+      "Dept. of Consumer Protection · Personal Services",
+      32,
+      32,
+      1
+    ],
+    [
+      "Dept. of Consumer Protection",
+      "Dept. of Consumer Protection · COAP CT PDMP Enhancements",
+      -15000,
+      -15000,
+      1
+    ],
+    [
+      "Dept. of Consumer Protection",
+      "Dept. of Consumer Protection · COAP CT PDMP Partnership",
+      -30000,
+      -30000,
+      1
+    ]
+  ],
+  "hierarchyNote": "The source does not identify a separate sub-agency column; direct-managed rows repeat the parent entity.",
+  "sourceBasis": "official source amount",
+  "note": "Amounts are shown on the official source basis; no comparator normalization was applied."
+}

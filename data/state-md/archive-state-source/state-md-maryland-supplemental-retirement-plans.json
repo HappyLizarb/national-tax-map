@@ -1,0 +1,127 @@
+{
+  "scope": "Maryland",
+  "code": "md",
+  "fiscalYear": 2024,
+  "department": "MARYLAND SUPPLEMENTAL RETIREMENT PLANS",
+  "sourceUrl": "https://opendata.maryland.gov/Budget/State-of-Maryland-Payments-Data-FY2008-to-FY2024/7syw-q4cy/about_data",
+  "sourceUrls": [
+    [
+      "Maryland payments dataset",
+      "https://opendata.maryland.gov/Budget/State-of-Maryland-Payments-Data-FY2008-to-FY2024/7syw-q4cy/about_data"
+    ],
+    [
+      "FY2024 raw API rows",
+      "https://opendata.maryland.gov/resource/7syw-q4cy.json?%24where=fiscal_year=%272024%27&%24limit=50000"
+    ]
+  ],
+  "sourceBasis": "FY2024 cash payments grouped by official agency, published category code, and privacy-safe receiver label.",
+  "privacyNote": "Organization receiver names are retained; individual or ambiguous vendor names are grouped as [individual recipient omitted]. No person-level payroll fields are retained.",
+  "sourceRows": 14,
+  "sourceTotal": 228244.93,
+  "rowSchema": [
+    "subAgency",
+    "program",
+    "amount",
+    "sourceAmount",
+    "sourceRows"
+  ],
+  "rows": [
+    [
+      "MARYLAND SUPPLEMENTAL RETIREMENT PLANS",
+      "Category code G50 · Receiver [individual recipient omitted]",
+      11231.18,
+      11231.18,
+      2
+    ],
+    [
+      "MARYLAND SUPPLEMENTAL RETIREMENT PLANS",
+      "Category code G50 · Receiver AT&T CORP",
+      8.14,
+      8.14,
+      1
+    ],
+    [
+      "MARYLAND SUPPLEMENTAL RETIREMENT PLANS",
+      "Category code G50 · Receiver AT&T MOBILITY",
+      7384.29,
+      7384.29,
+      1
+    ],
+    [
+      "MARYLAND SUPPLEMENTAL RETIREMENT PLANS",
+      "Category code G50 · Receiver BLUETRITON BRANDS INC",
+      302.3,
+      302.3,
+      1
+    ],
+    [
+      "MARYLAND SUPPLEMENTAL RETIREMENT PLANS",
+      "Category code G50 · Receiver CANON USA INC",
+      2259.09,
+      2259.09,
+      1
+    ],
+    [
+      "MARYLAND SUPPLEMENTAL RETIREMENT PLANS",
+      "Category code G50 · Receiver CCH INCORPORATED",
+      2559.14,
+      2559.14,
+      1
+    ],
+    [
+      "MARYLAND SUPPLEMENTAL RETIREMENT PLANS",
+      "Category code G50 · Receiver FEDERAL EXPRESS CORPORATION",
+      3378.8,
+      3378.8,
+      1
+    ],
+    [
+      "MARYLAND SUPPLEMENTAL RETIREMENT PLANS",
+      "Category code G50 · Receiver NFP RETIREMENT INC",
+      121000,
+      121000,
+      1
+    ],
+    [
+      "MARYLAND SUPPLEMENTAL RETIREMENT PLANS",
+      "Category code G50 · Receiver RSM US LLP",
+      54925,
+      54925,
+      1
+    ],
+    [
+      "MARYLAND SUPPLEMENTAL RETIREMENT PLANS",
+      "Category code G50 · Receiver SKYLINE TECHNOLOGY SOLUTIONS LLC",
+      20356,
+      20356,
+      1
+    ],
+    [
+      "MARYLAND SUPPLEMENTAL RETIREMENT PLANS",
+      "Category code G50 · Receiver VERIZON BUSINESS",
+      6.05,
+      6.05,
+      1
+    ],
+    [
+      "MARYLAND SUPPLEMENTAL RETIREMENT PLANS",
+      "Category code G50 · Receiver VERIZON COMMUNICATIONS INC",
+      35.84,
+      35.84,
+      1
+    ],
+    [
+      "MARYLAND SUPPLEMENTAL RETIREMENT PLANS",
+      "Category code G50 · Receiver ZOOM VIDEO COMMUNICATIONS, INC.",
+      4799.1,
+      4799.1,
+      1
+    ]
+  ],
+  "sourceCheck": {
+    "objectClassRows": 13,
+    "sourceRows": 14,
+    "sourceTotal": 228244.93,
+    "difference": 0
+  }
+}

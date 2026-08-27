@@ -1,0 +1,126 @@
+{
+  "scope": "Massachusetts",
+  "code": "ma",
+  "department": "SHERIFF DEPARTMENT NORFOLK (SDN)",
+  "fiscalYear": 2024,
+  "ledgerAmount": 35566818.16,
+  "sourceTotal": 38720955.16,
+  "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000",
+  "rowSchema": [
+    "subAgency",
+    "program",
+    "amount",
+    "sourceAmount",
+    "sourceRows"
+  ],
+  "rows": [
+    [
+      "SHERIFF DEPARTMENT NORFOLK (SDN)",
+      "SHERIFF DEPARTMENT NORFOLK (SDN) · (AA) REGULAR EMPLOYEE COMPENSATION",
+      28141398.47,
+      28141398.47,
+      211
+    ],
+    [
+      "SHERIFF DEPARTMENT NORFOLK (SDN)",
+      "SHERIFF DEPARTMENT NORFOLK (SDN) · (NN) INFRASTRUCTURE:",
+      3187881.55,
+      3187881.55,
+      517
+    ],
+    [
+      "SHERIFF DEPARTMENT NORFOLK (SDN)",
+      "SHERIFF DEPARTMENT NORFOLK (SDN) · (UU) IT NON-PAYROLL EXPENSES",
+      2057676.3,
+      2057676.3,
+      243
+    ],
+    [
+      "SHERIFF DEPARTMENT NORFOLK (SDN)",
+      "SHERIFF DEPARTMENT NORFOLK (SDN) · (FF) FACILITY OPERATIONAL EXPENSES",
+      1549019.33,
+      1549019.33,
+      893
+    ],
+    [
+      "SHERIFF DEPARTMENT NORFOLK (SDN)",
+      "SHERIFF DEPARTMENT NORFOLK (SDN) · (GG) ENERGY COSTS AND SPACE RENTAL",
+      1119368.65,
+      1119368.65,
+      253
+    ],
+    [
+      "SHERIFF DEPARTMENT NORFOLK (SDN)",
+      "SHERIFF DEPARTMENT NORFOLK (SDN) · (KK) EQUIPMENT PURCHASE",
+      867649.69,
+      867649.69,
+      45
+    ],
+    [
+      "SHERIFF DEPARTMENT NORFOLK (SDN)",
+      "SHERIFF DEPARTMENT NORFOLK (SDN) · (BB) REGULAR EMPLOYEE RELATED EXPEN",
+      431119.87,
+      431119.87,
+      78
+    ],
+    [
+      "SHERIFF DEPARTMENT NORFOLK (SDN)",
+      "SHERIFF DEPARTMENT NORFOLK (SDN) · (EE) ADMINISTRATIVE EXPENSES",
+      414917.16,
+      414917.16,
+      389
+    ],
+    [
+      "SHERIFF DEPARTMENT NORFOLK (SDN)",
+      "SHERIFF DEPARTMENT NORFOLK (SDN) · (CC) SPECIAL EMPLOYEES",
+      304807,
+      304807,
+      24
+    ],
+    [
+      "SHERIFF DEPARTMENT NORFOLK (SDN)",
+      "SHERIFF DEPARTMENT NORFOLK (SDN) · (HH) CONSULTANT SVCS (TO DEPTS)",
+      254180.73,
+      254180.73,
+      75
+    ],
+    [
+      "SHERIFF DEPARTMENT NORFOLK (SDN)",
+      "SHERIFF DEPARTMENT NORFOLK (SDN) · (DD) PENSION & INSURANCE RELATED EX",
+      158591.74,
+      158591.74,
+      49
+    ],
+    [
+      "SHERIFF DEPARTMENT NORFOLK (SDN)",
+      "SHERIFF DEPARTMENT NORFOLK (SDN) · (JJ) OPERATIONAL SERVICES",
+      134859.5,
+      134859.5,
+      104
+    ],
+    [
+      "SHERIFF DEPARTMENT NORFOLK (SDN)",
+      "SHERIFF DEPARTMENT NORFOLK (SDN) · (LL) EQUIPMENT LEASE-MAINTAIN/REPAR",
+      90485.17,
+      90485.17,
+      70
+    ],
+    [
+      "SHERIFF DEPARTMENT NORFOLK (SDN)",
+      "SHERIFF DEPARTMENT NORFOLK (SDN) · (MM) PURCHASED CLIENT/PROGRAM SVCS",
+      9000,
+      9000,
+      10
+    ],
+    [
+      "SHERIFF DEPARTMENT NORFOLK (SDN)",
+      "SHERIFF DEPARTMENT NORFOLK (SDN) · (99) PAYROLL REJECTS",
+      0,
+      0,
+      2
+    ]
+  ],
+  "hierarchyNote": "The source does not identify a separate sub-agency column; direct-managed rows repeat the parent entity.",
+  "sourceBasis": "official source amount",
+  "note": "Amounts are shown on the official source basis; no comparator normalization was applied."
+}

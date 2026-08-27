@@ -1,0 +1,70 @@
+{
+  "scope": "Massachusetts",
+  "code": "ma",
+  "department": "GEORGE FINGOLD LIBRARY (LIB)",
+  "fiscalYear": 2024,
+  "ledgerAmount": 1138772.33,
+  "sourceTotal": 1239760.95,
+  "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000",
+  "rowSchema": [
+    "subAgency",
+    "program",
+    "amount",
+    "sourceAmount",
+    "sourceRows"
+  ],
+  "rows": [
+    [
+      "GEORGE FINGOLD LIBRARY (LIB)",
+      "GEORGE FINGOLD LIBRARY (LIB) · (AA) REGULAR EMPLOYEE COMPENSATION",
+      979838.55,
+      979838.55,
+      33
+    ],
+    [
+      "GEORGE FINGOLD LIBRARY (LIB)",
+      "GEORGE FINGOLD LIBRARY (LIB) · (EE) ADMINISTRATIVE EXPENSES",
+      208371.05,
+      208371.05,
+      128
+    ],
+    [
+      "GEORGE FINGOLD LIBRARY (LIB)",
+      "GEORGE FINGOLD LIBRARY (LIB) · (CC) SPECIAL EMPLOYEES",
+      31386.75,
+      31386.75,
+      13
+    ],
+    [
+      "GEORGE FINGOLD LIBRARY (LIB)",
+      "GEORGE FINGOLD LIBRARY (LIB) · (LL) EQUIPMENT LEASE-MAINTAIN/REPAR",
+      7961.75,
+      7961.75,
+      20
+    ],
+    [
+      "GEORGE FINGOLD LIBRARY (LIB)",
+      "GEORGE FINGOLD LIBRARY (LIB) · (HH) CONSULTANT SVCS (TO DEPTS)",
+      6498.65,
+      6498.65,
+      11
+    ],
+    [
+      "GEORGE FINGOLD LIBRARY (LIB)",
+      "GEORGE FINGOLD LIBRARY (LIB) · (KK) EQUIPMENT PURCHASE",
+      5229.2,
+      5229.2,
+      4
+    ],
+    [
+      "GEORGE FINGOLD LIBRARY (LIB)",
+      "GEORGE FINGOLD LIBRARY (LIB) · (JJ) OPERATIONAL SERVICES",
+      475,
+      475,
+      1
+    ]
+  ],
+  "hierarchyNote": "The source does not identify a separate sub-agency column; direct-managed rows repeat the parent entity.",
+  "sourceBasis": "official source amount",
+  "note": "Amounts are shown on the official source basis; no comparator normalization was applied."
+}

@@ -1,0 +1,140 @@
+{
+  "scope": "Massachusetts",
+  "code": "ma",
+  "department": "DEPARTMENT OF PUBLIC HEALTH (DPH)",
+  "fiscalYear": 2024,
+  "ledgerAmount": 1361714444.91,
+  "sourceTotal": 1482474021.79,
+  "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000",
+  "rowSchema": [
+    "subAgency",
+    "program",
+    "amount",
+    "sourceAmount",
+    "sourceRows"
+  ],
+  "rows": [
+    [
+      "DEPARTMENT OF PUBLIC HEALTH (DPH)",
+      "DEPARTMENT OF PUBLIC HEALTH (DPH) · (MM) PURCHASED CLIENT/PROGRAM SVCS",
+      639268729.06,
+      639268729.06,
+      34395
+    ],
+    [
+      "DEPARTMENT OF PUBLIC HEALTH (DPH)",
+      "DEPARTMENT OF PUBLIC HEALTH (DPH) · (AA) REGULAR EMPLOYEE COMPENSATION",
+      312476590.75,
+      312476590.75,
+      31133
+    ],
+    [
+      "DEPARTMENT OF PUBLIC HEALTH (DPH)",
+      "DEPARTMENT OF PUBLIC HEALTH (DPH) · (FF) FACILITY OPERATIONAL EXPENSES",
+      182553790.32,
+      182553790.32,
+      10452
+    ],
+    [
+      "DEPARTMENT OF PUBLIC HEALTH (DPH)",
+      "DEPARTMENT OF PUBLIC HEALTH (DPH) · (PP) STATE AID/POL SUB",
+      116881067.43,
+      116881067.43,
+      1674
+    ],
+    [
+      "DEPARTMENT OF PUBLIC HEALTH (DPH)",
+      "DEPARTMENT OF PUBLIC HEALTH (DPH) · (HH) CONSULTANT SVCS (TO DEPTS)",
+      92895415.18,
+      92895415.18,
+      2982
+    ],
+    [
+      "DEPARTMENT OF PUBLIC HEALTH (DPH)",
+      "DEPARTMENT OF PUBLIC HEALTH (DPH) · (JJ) OPERATIONAL SERVICES",
+      55489707.31,
+      55489707.31,
+      3245
+    ],
+    [
+      "DEPARTMENT OF PUBLIC HEALTH (DPH)",
+      "DEPARTMENT OF PUBLIC HEALTH (DPH) · (UU) IT NON-PAYROLL EXPENSES",
+      31863721.12,
+      31863721.12,
+      2202
+    ],
+    [
+      "DEPARTMENT OF PUBLIC HEALTH (DPH)",
+      "DEPARTMENT OF PUBLIC HEALTH (DPH) · (GG) ENERGY COSTS AND SPACE RENTAL",
+      18713541.07,
+      18713541.07,
+      803
+    ],
+    [
+      "DEPARTMENT OF PUBLIC HEALTH (DPH)",
+      "DEPARTMENT OF PUBLIC HEALTH (DPH) · (NN) INFRASTRUCTURE:",
+      13425190.18,
+      13425190.18,
+      3359
+    ],
+    [
+      "DEPARTMENT OF PUBLIC HEALTH (DPH)",
+      "DEPARTMENT OF PUBLIC HEALTH (DPH) · (LL) EQUIPMENT LEASE-MAINTAIN/REPAR",
+      8092573.28,
+      8092573.28,
+      3874
+    ],
+    [
+      "DEPARTMENT OF PUBLIC HEALTH (DPH)",
+      "DEPARTMENT OF PUBLIC HEALTH (DPH) · (EE) ADMINISTRATIVE EXPENSES",
+      4037034.12,
+      4037034.12,
+      3560
+    ],
+    [
+      "DEPARTMENT OF PUBLIC HEALTH (DPH)",
+      "DEPARTMENT OF PUBLIC HEALTH (DPH) · (CC) SPECIAL EMPLOYEES",
+      2690953.93,
+      2690953.93,
+      802
+    ],
+    [
+      "DEPARTMENT OF PUBLIC HEALTH (DPH)",
+      "DEPARTMENT OF PUBLIC HEALTH (DPH) · (KK) EQUIPMENT PURCHASE",
+      2407361.07,
+      2407361.07,
+      385
+    ],
+    [
+      "DEPARTMENT OF PUBLIC HEALTH (DPH)",
+      "DEPARTMENT OF PUBLIC HEALTH (DPH) · (BB) REGULAR EMPLOYEE RELATED EXPEN",
+      1542625.38,
+      1542625.38,
+      3596
+    ],
+    [
+      "DEPARTMENT OF PUBLIC HEALTH (DPH)",
+      "DEPARTMENT OF PUBLIC HEALTH (DPH) · (TT) LOANS AND SPECIAL PAYMENTS",
+      107000,
+      107000,
+      10
+    ],
+    [
+      "DEPARTMENT OF PUBLIC HEALTH (DPH)",
+      "DEPARTMENT OF PUBLIC HEALTH (DPH) · (DD) PENSION & INSURANCE RELATED EX",
+      28721.59,
+      28721.59,
+      32
+    ],
+    [
+      "DEPARTMENT OF PUBLIC HEALTH (DPH)",
+      "DEPARTMENT OF PUBLIC HEALTH (DPH) · (99) PAYROLL REJECTS",
+      0,
+      0,
+      431
+    ]
+  ],
+  "hierarchyNote": "The source does not identify a separate sub-agency column; direct-managed rows repeat the parent entity.",
+  "sourceBasis": "official source amount",
+  "note": "Amounts are shown on the official source basis; no comparator normalization was applied."
+}

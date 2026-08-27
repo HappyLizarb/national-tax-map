@@ -1,0 +1,91 @@
+{
+  "scope": "Massachusetts",
+  "code": "ma",
+  "department": "HOUSE OF REPRESENTATIVES (HOU)",
+  "fiscalYear": 2024,
+  "ledgerAmount": 48323158.7,
+  "sourceTotal": 52608553.64,
+  "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000",
+  "rowSchema": [
+    "subAgency",
+    "program",
+    "amount",
+    "sourceAmount",
+    "sourceRows"
+  ],
+  "rows": [
+    [
+      "HOUSE OF REPRESENTATIVES (HOU)",
+      "HOUSE OF REPRESENTATIVES (HOU) · (AA) REGULAR EMPLOYEE COMPENSATION",
+      51293329.4,
+      51293329.4,
+      286
+    ],
+    [
+      "HOUSE OF REPRESENTATIVES (HOU)",
+      "HOUSE OF REPRESENTATIVES (HOU) · (UU) IT NON-PAYROLL EXPENSES",
+      852982.13,
+      852982.13,
+      6
+    ],
+    [
+      "HOUSE OF REPRESENTATIVES (HOU)",
+      "HOUSE OF REPRESENTATIVES (HOU) · (CC) SPECIAL EMPLOYEES",
+      144926.89,
+      144926.89,
+      26
+    ],
+    [
+      "HOUSE OF REPRESENTATIVES (HOU)",
+      "HOUSE OF REPRESENTATIVES (HOU) · (LL) EQUIPMENT LEASE-MAINTAIN/REPAR",
+      139591.8,
+      139591.8,
+      20
+    ],
+    [
+      "HOUSE OF REPRESENTATIVES (HOU)",
+      "HOUSE OF REPRESENTATIVES (HOU) · (HH) CONSULTANT SVCS (TO DEPTS)",
+      97679.45,
+      97679.45,
+      28
+    ],
+    [
+      "HOUSE OF REPRESENTATIVES (HOU)",
+      "HOUSE OF REPRESENTATIVES (HOU) · (FF) FACILITY OPERATIONAL EXPENSES",
+      30926.63,
+      30926.63,
+      30
+    ],
+    [
+      "HOUSE OF REPRESENTATIVES (HOU)",
+      "HOUSE OF REPRESENTATIVES (HOU) · (EE) ADMINISTRATIVE EXPENSES",
+      29031.67,
+      29031.67,
+      60
+    ],
+    [
+      "HOUSE OF REPRESENTATIVES (HOU)",
+      "HOUSE OF REPRESENTATIVES (HOU) · (NN) INFRASTRUCTURE:",
+      13949.64,
+      13949.64,
+      5
+    ],
+    [
+      "HOUSE OF REPRESENTATIVES (HOU)",
+      "HOUSE OF REPRESENTATIVES (HOU) · (KK) EQUIPMENT PURCHASE",
+      5667.8,
+      5667.8,
+      4
+    ],
+    [
+      "HOUSE OF REPRESENTATIVES (HOU)",
+      "HOUSE OF REPRESENTATIVES (HOU) · (BB) REGULAR EMPLOYEE RELATED EXPEN",
+      468.23,
+      468.23,
+      5
+    ]
+  ],
+  "hierarchyNote": "The source does not identify a separate sub-agency column; direct-managed rows repeat the parent entity.",
+  "sourceBasis": "official source amount",
+  "note": "Amounts are shown on the official source basis; no comparator normalization was applied."
+}

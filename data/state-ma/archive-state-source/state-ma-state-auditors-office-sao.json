@@ -1,0 +1,98 @@
+{
+  "scope": "Massachusetts",
+  "code": "ma",
+  "department": "STATE AUDITORS OFFICE (SAO)",
+  "fiscalYear": 2024,
+  "ledgerAmount": 20359789.21,
+  "sourceTotal": 22165336.28,
+  "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000",
+  "rowSchema": [
+    "subAgency",
+    "program",
+    "amount",
+    "sourceAmount",
+    "sourceRows"
+  ],
+  "rows": [
+    [
+      "STATE AUDITORS OFFICE (SAO)",
+      "STATE AUDITORS OFFICE (SAO) · (AA) REGULAR EMPLOYEE COMPENSATION",
+      17750872.9,
+      17750872.9,
+      199
+    ],
+    [
+      "STATE AUDITORS OFFICE (SAO)",
+      "STATE AUDITORS OFFICE (SAO) · (UU) IT NON-PAYROLL EXPENSES",
+      3093733.79,
+      3093733.79,
+      298
+    ],
+    [
+      "STATE AUDITORS OFFICE (SAO)",
+      "STATE AUDITORS OFFICE (SAO) · (GG) ENERGY COSTS AND SPACE RENTAL",
+      1023989.35,
+      1023989.35,
+      59
+    ],
+    [
+      "STATE AUDITORS OFFICE (SAO)",
+      "STATE AUDITORS OFFICE (SAO) · (EE) ADMINISTRATIVE EXPENSES",
+      141578.69,
+      141578.69,
+      170
+    ],
+    [
+      "STATE AUDITORS OFFICE (SAO)",
+      "STATE AUDITORS OFFICE (SAO) · (BB) REGULAR EMPLOYEE RELATED EXPEN",
+      51105.28,
+      51105.28,
+      128
+    ],
+    [
+      "STATE AUDITORS OFFICE (SAO)",
+      "STATE AUDITORS OFFICE (SAO) · (KK) EQUIPMENT PURCHASE",
+      48808,
+      48808,
+      9
+    ],
+    [
+      "STATE AUDITORS OFFICE (SAO)",
+      "STATE AUDITORS OFFICE (SAO) · (HH) CONSULTANT SVCS (TO DEPTS)",
+      28400.08,
+      28400.08,
+      36
+    ],
+    [
+      "STATE AUDITORS OFFICE (SAO)",
+      "STATE AUDITORS OFFICE (SAO) · (JJ) OPERATIONAL SERVICES",
+      19407.3,
+      19407.3,
+      7
+    ],
+    [
+      "STATE AUDITORS OFFICE (SAO)",
+      "STATE AUDITORS OFFICE (SAO) · (LL) EQUIPMENT LEASE-MAINTAIN/REPAR",
+      7340.89,
+      7340.89,
+      69
+    ],
+    [
+      "STATE AUDITORS OFFICE (SAO)",
+      "STATE AUDITORS OFFICE (SAO) · (DD) PENSION & INSURANCE RELATED EX",
+      100,
+      100,
+      1
+    ],
+    [
+      "STATE AUDITORS OFFICE (SAO)",
+      "STATE AUDITORS OFFICE (SAO) · (99) PAYROLL REJECTS",
+      0,
+      0,
+      2
+    ]
+  ],
+  "hierarchyNote": "The source does not identify a separate sub-agency column; direct-managed rows repeat the parent entity.",
+  "sourceBasis": "official source amount",
+  "note": "Amounts are shown on the official source basis; no comparator normalization was applied."
+}

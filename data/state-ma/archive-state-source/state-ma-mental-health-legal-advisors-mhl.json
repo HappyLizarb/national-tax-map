@@ -1,0 +1,91 @@
+{
+  "scope": "Massachusetts",
+  "code": "ma",
+  "department": "MENTAL HEALTH LEGAL ADVISORS (MHL)",
+  "fiscalYear": 2024,
+  "ledgerAmount": 2715526.61,
+  "sourceTotal": 2956344.97,
+  "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000",
+  "rowSchema": [
+    "subAgency",
+    "program",
+    "amount",
+    "sourceAmount",
+    "sourceRows"
+  ],
+  "rows": [
+    [
+      "MENTAL HEALTH LEGAL ADVISORS (MHL)",
+      "MENTAL HEALTH LEGAL ADVISORS (MHL) · (AA) REGULAR EMPLOYEE COMPENSATION",
+      2248556.57,
+      2248556.57,
+      42
+    ],
+    [
+      "MENTAL HEALTH LEGAL ADVISORS (MHL)",
+      "MENTAL HEALTH LEGAL ADVISORS (MHL) · (GG) ENERGY COSTS AND SPACE RENTAL",
+      229059.66,
+      229059.66,
+      14
+    ],
+    [
+      "MENTAL HEALTH LEGAL ADVISORS (MHL)",
+      "MENTAL HEALTH LEGAL ADVISORS (MHL) · (UU) IT NON-PAYROLL EXPENSES",
+      224898.29,
+      224898.29,
+      41
+    ],
+    [
+      "MENTAL HEALTH LEGAL ADVISORS (MHL)",
+      "MENTAL HEALTH LEGAL ADVISORS (MHL) · (EE) ADMINISTRATIVE EXPENSES",
+      119499.52,
+      119499.52,
+      76
+    ],
+    [
+      "MENTAL HEALTH LEGAL ADVISORS (MHL)",
+      "MENTAL HEALTH LEGAL ADVISORS (MHL) · (JJ) OPERATIONAL SERVICES",
+      51024.61,
+      51024.61,
+      44
+    ],
+    [
+      "MENTAL HEALTH LEGAL ADVISORS (MHL)",
+      "MENTAL HEALTH LEGAL ADVISORS (MHL) · (BB) REGULAR EMPLOYEE RELATED EXPEN",
+      43563.58,
+      43563.58,
+      95
+    ],
+    [
+      "MENTAL HEALTH LEGAL ADVISORS (MHL)",
+      "MENTAL HEALTH LEGAL ADVISORS (MHL) · (HH) CONSULTANT SVCS (TO DEPTS)",
+      21351.6,
+      21351.6,
+      12
+    ],
+    [
+      "MENTAL HEALTH LEGAL ADVISORS (MHL)",
+      "MENTAL HEALTH LEGAL ADVISORS (MHL) · (CC) SPECIAL EMPLOYEES",
+      11381.67,
+      11381.67,
+      9
+    ],
+    [
+      "MENTAL HEALTH LEGAL ADVISORS (MHL)",
+      "MENTAL HEALTH LEGAL ADVISORS (MHL) · (LL) EQUIPMENT LEASE-MAINTAIN/REPAR",
+      7009.47,
+      7009.47,
+      27
+    ],
+    [
+      "MENTAL HEALTH LEGAL ADVISORS (MHL)",
+      "MENTAL HEALTH LEGAL ADVISORS (MHL) · (99) PAYROLL REJECTS",
+      0,
+      0,
+      6
+    ]
+  ],
+  "hierarchyNote": "The source does not identify a separate sub-agency column; direct-managed rows repeat the parent entity.",
+  "sourceBasis": "official source amount",
+  "note": "Amounts are shown on the official source basis; no comparator normalization was applied."
+}

@@ -1,0 +1,756 @@
+{
+  "scope": "Oregon",
+  "fiscalYear": 2024,
+  "department": "HEALTH RELATED LICENSING BRDs",
+  "sourceUrl": "https://data.oregon.gov/resource/y9g9-xsxs.json?$select=agency,agency_1,budget_class,budget_class_1,expend_class,expend_class_1,vendor,sum(expense)%20as%20total,count(*)%20as%20source_rows&$where=fiscal_year=2024&$group=agency,agency_1,budget_class,budget_class_1,expend_class,expend_class_1,vendor&$limit=500000",
+  "sourceUrls": [
+    [
+      "Oregon transparency expenditure catalog",
+      "https://data.oregon.gov/Revenue-Expense/Agency-Expenditures-Multi-Year-Report/y9g9-xsxs"
+    ],
+    [
+      "Grouped FY2024 API export",
+      "https://data.oregon.gov/resource/y9g9-xsxs.json?$select=agency,agency_1,budget_class,budget_class_1,expend_class,expend_class_1,vendor,sum(expense)%20as%20total,count(*)%20as%20source_rows&$where=fiscal_year=2024&$group=agency,agency_1,budget_class,budget_class_1,expend_class,expend_class_1,vendor&$limit=500000"
+    ]
+  ],
+  "sourceBasis": "Official Oregon Agency Expenditures Multi-Year Report; FY2024 cash expense grouped by agency, budget class, expenditure class, and privacy-safe receiver label.",
+  "privacyNote": "Individual or ambiguous vendor labels are grouped as [individual recipient omitted]; organization receivers are retained. This layer does not expose person-level payroll.",
+  "sourceRows": 294,
+  "sourceTotal": 1408584.51,
+  "rowSchema": [
+    "subAgency",
+    "program",
+    "amount",
+    "sourceAmount",
+    "sourceRows"
+  ],
+  "rows": [
+    [
+      "HEALTH RELATED LICENSING BRDs",
+      "4325 · ATTORNEY GENERAL LEGAL FEES · 4550 · ATTORNEY GENERAL LEGAL FEES · Receiver STATE OF OREGON DEPARTMENT OF JUSTICE",
+      237991.65,
+      237991.65,
+      6
+    ],
+    [
+      "HEALTH RELATED LICENSING BRDs",
+      "4425 · LEASE PAYMENTS & TAXES · 4800 · INTERAGENCY LEASE PAYMENTS · Receiver DEPARTMENT OF ADMINISTRATIVE SERVICES",
+      189770.57,
+      189770.57,
+      6
+    ],
+    [
+      "HEALTH RELATED LICENSING BRDs",
+      "4650 · OTHER SERVICES AND SUPPLIES · 4701 · OTHER SERVICES · Receiver DEPARTMENT OF ADMINISTRATIVE SERVICES",
+      133126.29,
+      133126.29,
+      6
+    ],
+    [
+      "HEALTH RELATED LICENSING BRDs",
+      "4575 · AGENCY PROGRAM RELATED SVCS & SUPP · 4975 · AGENCY PROGRAM RELATED SERVICES · Receiver OREGON STATE POLICE",
+      124920.75,
+      124920.75,
+      5
+    ],
+    [
+      "HEALTH RELATED LICENSING BRDs",
+      "4575 · AGENCY PROGRAM RELATED SVCS & SUPP · 4975 · AGENCY PROGRAM RELATED SERVICES · Receiver PORTLAND CREMATION CENTER LLC",
+      111220,
+      111220,
+      1
+    ],
+    [
+      "HEALTH RELATED LICENSING BRDs",
+      "4225 · STATE GOVERNMENT SERVICE CHARGES · 4600 · STATE GOVERNMENT SERVICE CHARGES · Receiver DEPARTMENT OF ADMINISTRATIVE SERVICES",
+      109319.5,
+      109319.5,
+      6
+    ],
+    [
+      "HEALTH RELATED LICENSING BRDs",
+      "4650 · OTHER SERVICES AND SUPPLIES · 4730 · MERCHANT FEES · Receiver US BANK NATIONAL ASSOCIATION",
+      93100.92,
+      93100.92,
+      6
+    ],
+    [
+      "HEALTH RELATED LICENSING BRDs",
+      "4575 · AGENCY PROGRAM RELATED SVCS & SUPP · 4975 · AGENCY PROGRAM RELATED SERVICES · Receiver FPG OREGON LLC",
+      35350,
+      35350,
+      1
+    ],
+    [
+      "HEALTH RELATED LICENSING BRDs",
+      "4575 · AGENCY PROGRAM RELATED SVCS & SUPP · 4975 · AGENCY PROGRAM RELATED SERVICES · Receiver [individual recipient omitted]",
+      33700,
+      33700,
+      16
+    ],
+    [
+      "HEALTH RELATED LICENSING BRDs",
+      "4315 · IT PROFESSIONAL SERVICES · 4519 · PROFESSIONAL SERV/MANAGED SERV PROVIDER · Receiver THENTIA GLOBAL SYSTEMS USA INC",
+      29412.5,
+      29412.5,
+      6
+    ],
+    [
+      "HEALTH RELATED LICENSING BRDs",
+      "4650 · OTHER SERVICES AND SUPPLIES · 4701 · OTHER SERVICES · Receiver [individual recipient omitted]",
+      26889.83,
+      26889.83,
+      1
+    ],
+    [
+      "HEALTH RELATED LICENSING BRDs",
+      "4325 · ATTORNEY GENERAL LEGAL FEES · 4550 · ATTORNEY GENERAL LEGAL FEES · Receiver DEPARTMENT OF JUSTICE",
+      13337.5,
+      13337.5,
+      1
+    ],
+    [
+      "HEALTH RELATED LICENSING BRDs",
+      "4175 · OFFICE EXPENSES · 4200 · OFFICE SUPPLIES · Receiver OREGON HEALTH AUTHORITY",
+      13245.21,
+      13245.21,
+      4
+    ],
+    [
+      "HEALTH RELATED LICENSING BRDs",
+      "4300 · PROFESSIONAL SERVICES · 4500 · PROFESSIONAL SERVICES NON-IT · Receiver [individual recipient omitted]",
+      12710.62,
+      12710.62,
+      3
+    ],
+    [
+      "HEALTH RELATED LICENSING BRDs",
+      "4575 · AGENCY PROGRAM RELATED SVCS & SUPP · 4975 · AGENCY PROGRAM RELATED SERVICES · Receiver ANDREASONS CREMATION AND BURIAL SERVICES",
+      11450,
+      11450,
+      1
+    ],
+    [
+      "HEALTH RELATED LICENSING BRDs",
+      "4715 · IT EXPENDABLE PROPERTY · 4366 · COMPUTER TECHNOLOGY PC SOFTWARE<$5K · Receiver SHI INTERNATIONAL CORP",
+      11112.15,
+      11112.15,
+      4
+    ],
+    [
+      "HEALTH RELATED LICENSING BRDs",
+      "4250 · DATA PROCESSING · 4375 · COMPUTER TECHNOLOGY COMPUTER PROCESSING · Receiver DEPARTMENT OF ADMINISTRATIVE SERVICES",
+      11060.62,
+      11060.62,
+      6
+    ],
+    [
+      "HEALTH RELATED LICENSING BRDs",
+      "4575 · AGENCY PROGRAM RELATED SVCS & SUPP · 4975 · AGENCY PROGRAM RELATED SERVICES · Receiver CLEARSTONE MEMORIAL PARTNERS",
+      10300,
+      10300,
+      1
+    ],
+    [
+      "HEALTH RELATED LICENSING BRDs",
+      "4200 · TELECOMM/TECH SVC AND SUPPLIES · 4301 · TELECOM/VOICE USAGE · Receiver AT&T MOBILITY",
+      10255.76,
+      10255.76,
+      4
+    ],
+    [
+      "HEALTH RELATED LICENSING BRDs",
+      "4225 · STATE GOVERNMENT SERVICE CHARGES · 4600 · STATE GOVERNMENT SERVICE CHARGES · Receiver STATE OF OREGON SECRETARY OF STATE",
+      10192.52,
+      10192.52,
+      6
+    ],
+    [
+      "HEALTH RELATED LICENSING BRDs",
+      "4200 · TELECOMM/TECH SVC AND SUPPLIES · 4307 · TELECOM/NETWORK SUPPORT · Receiver NORTHWEST REGIONAL EDUCATION SERVICES DISTRICT",
+      9045.72,
+      9045.72,
+      6
+    ],
+    [
+      "HEALTH RELATED LICENSING BRDs",
+      "4575 · AGENCY PROGRAM RELATED SVCS & SUPP · 4975 · AGENCY PROGRAM RELATED SERVICES · Receiver CHAPEL OF THE VALLEY FUNERAL HOME INC",
+      8800,
+      8800,
+      1
+    ],
+    [
+      "HEALTH RELATED LICENSING BRDs",
+      "4300 · PROFESSIONAL SERVICES · 4500 · PROFESSIONAL SERVICES NON-IT · Receiver EMPLOYMENT DEPARTMENT",
+      8796.7,
+      8796.7,
+      3
+    ],
+    [
+      "HEALTH RELATED LICENSING BRDs",
+      "4575 · AGENCY PROGRAM RELATED SVCS & SUPP · 4975 · AGENCY PROGRAM RELATED SERVICES · Receiver CASCADE FUNERAL DIRECTORS INC",
+      8480,
+      8480,
+      1
+    ],
+    [
+      "HEALTH RELATED LICENSING BRDs",
+      "4575 · AGENCY PROGRAM RELATED SVCS & SUPP · 4975 · AGENCY PROGRAM RELATED SERVICES · Receiver SUNSET HILLS INC",
+      8250,
+      8250,
+      1
+    ],
+    [
+      "HEALTH RELATED LICENSING BRDs",
+      "4575 · AGENCY PROGRAM RELATED SVCS & SUPP · 4975 · AGENCY PROGRAM RELATED SERVICES · Receiver SCI OREGON FUNERAL SERVICES INC",
+      7150,
+      7150,
+      1
+    ],
+    [
+      "HEALTH RELATED LICENSING BRDs",
+      "4200 · TELECOMM/TECH SVC AND SUPPLIES · 4301 · TELECOM/VOICE USAGE · Receiver KYNDRYL INC",
+      6791.06,
+      6791.06,
+      6
+    ],
+    [
+      "HEALTH RELATED LICENSING BRDs",
+      "4175 · OFFICE EXPENSES · 4201 · OFFICE SERVICES · Receiver DEPARTMENT OF ADMINISTRATIVE SERVICES",
+      6276.76,
+      6276.76,
+      2
+    ],
+    [
+      "HEALTH RELATED LICENSING BRDs",
+      "4575 · AGENCY PROGRAM RELATED SVCS & SUPP · 4975 · AGENCY PROGRAM RELATED SERVICES · Receiver SLACK 5 LTD",
+      5950,
+      5950,
+      1
+    ],
+    [
+      "HEALTH RELATED LICENSING BRDs",
+      "4315 · IT PROFESSIONAL SERVICES · 4519 · PROFESSIONAL SERV/MANAGED SERV PROVIDER · Receiver NICUSA INC",
+      5764,
+      5764,
+      1
+    ],
+    [
+      "HEALTH RELATED LICENSING BRDs",
+      "4100 · INSTATE TRAVEL · 4101 · INSTATE MEALS WITH OVERNIGHT STAY · Receiver [individual recipient omitted]",
+      5683.95,
+      5683.95,
+      13
+    ],
+    [
+      "HEALTH RELATED LICENSING BRDs",
+      "4575 · AGENCY PROGRAM RELATED SVCS & SUPP · 4975 · AGENCY PROGRAM RELATED SERVICES · Receiver ALDERWOOD INC",
+      5200,
+      5200,
+      1
+    ],
+    [
+      "HEALTH RELATED LICENSING BRDs",
+      "4575 · AGENCY PROGRAM RELATED SVCS & SUPP · 4975 · AGENCY PROGRAM RELATED SERVICES · Receiver BASIN MEMORIAL SERVICES INC",
+      4800,
+      4800,
+      1
+    ],
+    [
+      "HEALTH RELATED LICENSING BRDs",
+      "4200 · TELECOMM/TECH SVC AND SUPPLIES · 4305 · TELECOM/NETWORK SERVICES · Receiver DEPARTMENT OF ADMINISTRATIVE SERVICES",
+      4316.24,
+      4316.24,
+      6
+    ],
+    [
+      "HEALTH RELATED LICENSING BRDs",
+      "4400 · DUES AND SUBSCRIPTIONS · 4250 · DUES/MEMBERSHIPS · Receiver [individual recipient omitted]",
+      4100,
+      4100,
+      1
+    ],
+    [
+      "HEALTH RELATED LICENSING BRDs",
+      "4575 · AGENCY PROGRAM RELATED SVCS & SUPP · 4975 · AGENCY PROGRAM RELATED SERVICES · Receiver BATEMEN NEWPORT LLC",
+      3750,
+      3750,
+      1
+    ],
+    [
+      "HEALTH RELATED LICENSING BRDs",
+      "4575 · AGENCY PROGRAM RELATED SVCS & SUPP · 4975 · AGENCY PROGRAM RELATED SERVICES · Receiver ALDERWOODS INC",
+      3350,
+      3350,
+      1
+    ],
+    [
+      "HEALTH RELATED LICENSING BRDs",
+      "4575 · AGENCY PROGRAM RELATED SVCS & SUPP · 4975 · AGENCY PROGRAM RELATED SERVICES · Receiver C&M WESTERN INC",
+      3250,
+      3250,
+      1
+    ],
+    [
+      "HEALTH RELATED LICENSING BRDs",
+      "4200 · TELECOMM/TECH SVC AND SUPPLIES · 4301 · TELECOM/VOICE USAGE · Receiver DEPARTMENT OF ADMINISTRATIVE SERVICES",
+      3007.68,
+      3007.68,
+      6
+    ],
+    [
+      "HEALTH RELATED LICENSING BRDs",
+      "4100 · INSTATE TRAVEL · 4109 · INSTATE MILEAGE REIMBURSEMENT-FULL RATE · Receiver [individual recipient omitted]",
+      2963.4,
+      2963.4,
+      12
+    ],
+    [
+      "HEALTH RELATED LICENSING BRDs",
+      "4100 · INSTATE TRAVEL · 4111 · INSTATE MILEAGE REIMBURSMNT-VOLUNTEERS · Receiver [individual recipient omitted]",
+      2828.63,
+      2828.63,
+      20
+    ],
+    [
+      "HEALTH RELATED LICENSING BRDs",
+      "4575 · AGENCY PROGRAM RELATED SVCS & SUPP · 4975 · AGENCY PROGRAM RELATED SERVICES · Receiver DEPT OF STATE POLICE",
+      2761.75,
+      2761.75,
+      1
+    ],
+    [
+      "HEALTH RELATED LICENSING BRDs",
+      "4575 · AGENCY PROGRAM RELATED SVCS & SUPP · 4975 · AGENCY PROGRAM RELATED SERVICES · Receiver OMEGA FUNERAL & CREMATION SERVICE",
+      2750,
+      2750,
+      1
+    ],
+    [
+      "HEALTH RELATED LICENSING BRDs",
+      "4225 · STATE GOVERNMENT SERVICE CHARGES · 4600 · STATE GOVERNMENT SERVICE CHARGES · Receiver OREGON STATE TREASURY",
+      2699.4,
+      2699.4,
+      6
+    ],
+    [
+      "HEALTH RELATED LICENSING BRDs",
+      "4575 · AGENCY PROGRAM RELATED SVCS & SUPP · 4975 · AGENCY PROGRAM RELATED SERVICES · Receiver LITWILLER-SIMONSEN FUNERAL SERVICE INC",
+      2650,
+      2650,
+      1
+    ],
+    [
+      "HEALTH RELATED LICENSING BRDs",
+      "4715 · IT EXPENDABLE PROPERTY · 4366 · COMPUTER TECHNOLOGY PC SOFTWARE<$5K · Receiver SHI INTERNATIONAL CORPORATION",
+      2496.48,
+      2496.48,
+      1
+    ],
+    [
+      "HEALTH RELATED LICENSING BRDs",
+      "4175 · OFFICE EXPENSES · 4202 · EQUIPMENT RENTAL · Receiver RICOH USA INC",
+      2254.07,
+      2254.07,
+      5
+    ],
+    [
+      "HEALTH RELATED LICENSING BRDs",
+      "4575 · AGENCY PROGRAM RELATED SVCS & SUPP · 4975 · AGENCY PROGRAM RELATED SERVICES · Receiver MACY & SON FUNERAL DIRECTORS",
+      2200,
+      2200,
+      1
+    ],
+    [
+      "HEALTH RELATED LICENSING BRDs",
+      "4575 · AGENCY PROGRAM RELATED SVCS & SUPP · 4975 · AGENCY PROGRAM RELATED SERVICES · Receiver BATEMAN ACQUISITION COMPANY LLC",
+      2150,
+      2150,
+      1
+    ],
+    [
+      "HEALTH RELATED LICENSING BRDs",
+      "4575 · AGENCY PROGRAM RELATED SVCS & SUPP · 4975 · AGENCY PROGRAM RELATED SERVICES · Receiver JOHNSON FUNERAL HOME LLC",
+      2150,
+      2150,
+      1
+    ],
+    [
+      "HEALTH RELATED LICENSING BRDs",
+      "4650 · OTHER SERVICES AND SUPPLIES · 4720 · COLLECTION FEES - DOR · Receiver OREGON DEPARTMENT OF REVENUE",
+      1998.57,
+      1998.57,
+      2
+    ],
+    [
+      "HEALTH RELATED LICENSING BRDs",
+      "4575 · AGENCY PROGRAM RELATED SVCS & SUPP · 4975 · AGENCY PROGRAM RELATED SERVICES · Receiver SPRINGER AND SON INC",
+      1750,
+      1750,
+      1
+    ],
+    [
+      "HEALTH RELATED LICENSING BRDs",
+      "4575 · AGENCY PROGRAM RELATED SVCS & SUPP · 4975 · AGENCY PROGRAM RELATED SERVICES · Receiver SYNERGY FIRST CALL MORTUARY INC",
+      1700,
+      1700,
+      1
+    ],
+    [
+      "HEALTH RELATED LICENSING BRDs",
+      "4575 · AGENCY PROGRAM RELATED SVCS & SUPP · 4975 · AGENCY PROGRAM RELATED SERVICES · Receiver HR MORT LLC",
+      1650,
+      1650,
+      1
+    ],
+    [
+      "HEALTH RELATED LICENSING BRDs",
+      "4575 · AGENCY PROGRAM RELATED SVCS & SUPP · 4975 · AGENCY PROGRAM RELATED SERVICES · Receiver BOLLMAN INC",
+      1650,
+      1650,
+      1
+    ],
+    [
+      "HEALTH RELATED LICENSING BRDs",
+      "4575 · AGENCY PROGRAM RELATED SVCS & SUPP · 4975 · AGENCY PROGRAM RELATED SERVICES · Receiver FISHER FUNERAL HOME INC",
+      1650,
+      1650,
+      1
+    ],
+    [
+      "HEALTH RELATED LICENSING BRDs",
+      "4100 · INSTATE TRAVEL · 4112 · INSTATE MILEAGE REIMBURSMNT-NONEMPLOYEE · Receiver [individual recipient omitted]",
+      1632.45,
+      1632.45,
+      13
+    ],
+    [
+      "HEALTH RELATED LICENSING BRDs",
+      "4575 · AGENCY PROGRAM RELATED SVCS & SUPP · 4975 · AGENCY PROGRAM RELATED SERVICES · Receiver HAH FUNERAL SERVICES LLC",
+      1600,
+      1600,
+      1
+    ],
+    [
+      "HEALTH RELATED LICENSING BRDs",
+      "4575 · AGENCY PROGRAM RELATED SVCS & SUPP · 4975 · AGENCY PROGRAM RELATED SERVICES · Receiver MCHENRY ACQUISITION CO LLC",
+      1600,
+      1600,
+      1
+    ],
+    [
+      "HEALTH RELATED LICENSING BRDs",
+      "4575 · AGENCY PROGRAM RELATED SVCS & SUPP · 4975 · AGENCY PROGRAM RELATED SERVICES · Receiver D&D FUNERAL SERVICES INC",
+      1600,
+      1600,
+      1
+    ],
+    [
+      "HEALTH RELATED LICENSING BRDs",
+      "4575 · AGENCY PROGRAM RELATED SVCS & SUPP · 4975 · AGENCY PROGRAM RELATED SERVICES · Receiver OLSENS SWEET HOME FUNERAL CHAPEL INC",
+      1550,
+      1550,
+      1
+    ],
+    [
+      "HEALTH RELATED LICENSING BRDs",
+      "4715 · IT EXPENDABLE PROPERTY · 4365 · COMPUTER TECHNOLOGY PC EQUIPMENT<$5K · Receiver SHI INTERNATIONAL CORP",
+      1268.18,
+      1268.18,
+      1
+    ],
+    [
+      "HEALTH RELATED LICENSING BRDs",
+      "4150 · EMPLOYEE TRAINING · 4437 · PROF DEV DUES/MEMBERSHIP · Receiver FED OF NATUROPATHIC MEDICINE REGULATORY AUTHORITIE",
+      1200,
+      1200,
+      1
+    ],
+    [
+      "HEALTH RELATED LICENSING BRDs",
+      "4100 · INSTATE TRAVEL · 4106 · INSTATE LODGING · Receiver [individual recipient omitted]",
+      1125.34,
+      1125.34,
+      3
+    ],
+    [
+      "HEALTH RELATED LICENSING BRDs",
+      "4575 · AGENCY PROGRAM RELATED SVCS & SUPP · 4975 · AGENCY PROGRAM RELATED SERVICES · Receiver ZELLER CHAPEL OF THE ROSES INC",
+      1100,
+      1100,
+      1
+    ],
+    [
+      "HEALTH RELATED LICENSING BRDs",
+      "4575 · AGENCY PROGRAM RELATED SVCS & SUPP · 4975 · AGENCY PROGRAM RELATED SERVICES · Receiver JED INC",
+      1100,
+      1100,
+      1
+    ],
+    [
+      "HEALTH RELATED LICENSING BRDs",
+      "4575 · AGENCY PROGRAM RELATED SVCS & SUPP · 4975 · AGENCY PROGRAM RELATED SERVICES · Receiver THE CITY VIEW CEMETERY ASSOCIATION",
+      1100,
+      1100,
+      1
+    ],
+    [
+      "HEALTH RELATED LICENSING BRDs",
+      "4575 · AGENCY PROGRAM RELATED SVCS & SUPP · 4975 · AGENCY PROGRAM RELATED SERVICES · Receiver COASTAL CREMATION AND FUNERAL SERVICE LLC",
+      1050,
+      1050,
+      1
+    ],
+    [
+      "HEALTH RELATED LICENSING BRDs",
+      "4575 · AGENCY PROGRAM RELATED SVCS & SUPP · 4975 · AGENCY PROGRAM RELATED SERVICES · Receiver CARNAHAN FUNERAL SERVICES INC",
+      1000,
+      1000,
+      1
+    ],
+    [
+      "HEALTH RELATED LICENSING BRDs",
+      "4575 · AGENCY PROGRAM RELATED SVCS & SUPP · 4975 · AGENCY PROGRAM RELATED SERVICES · Receiver CROWN MEMORIAL CENTER",
+      1000,
+      1000,
+      1
+    ],
+    [
+      "HEALTH RELATED LICENSING BRDs",
+      "4200 · TELECOMM/TECH SVC AND SUPPLIES · 4315 · TELECOM/TELECONFERENCE USAGE · Receiver OREGON PHYSICAL THERAPIST LICENSING BOARD",
+      999.5,
+      999.5,
+      3
+    ],
+    [
+      "HEALTH RELATED LICENSING BRDs",
+      "4300 · PROFESSIONAL SERVICES · 4500 · PROFESSIONAL SERVICES NON-IT · Receiver DEPARTMENT OF ADMINISTRATIVE SERVICES",
+      679.1,
+      679.1,
+      1
+    ],
+    [
+      "HEALTH RELATED LICENSING BRDs",
+      "4300 · PROFESSIONAL SERVICES · 4500 · PROFESSIONAL SERVICES NON-IT · Receiver CASCADE CENTERS INC",
+      556.05,
+      556.05,
+      4
+    ],
+    [
+      "HEALTH RELATED LICENSING BRDs",
+      "4575 · AGENCY PROGRAM RELATED SVCS & SUPP · 4975 · AGENCY PROGRAM RELATED SERVICES · Receiver OAK KNOLL INC",
+      550,
+      550,
+      1
+    ],
+    [
+      "HEALTH RELATED LICENSING BRDs",
+      "4575 · AGENCY PROGRAM RELATED SVCS & SUPP · 4975 · AGENCY PROGRAM RELATED SERVICES · Receiver AFTER OR1 LLC",
+      550,
+      550,
+      1
+    ],
+    [
+      "HEALTH RELATED LICENSING BRDs",
+      "4575 · AGENCY PROGRAM RELATED SVCS & SUPP · 4975 · AGENCY PROGRAM RELATED SERVICES · Receiver CITY VIEW FUNERAL HOME & CEMETERY",
+      550,
+      550,
+      1
+    ],
+    [
+      "HEALTH RELATED LICENSING BRDs",
+      "4275 · PUBLICITY & PUBLICATIONS · 4253 · ADVERTISE, PUBLICITY, PUBLISH/PRINT SRVS · Receiver [individual recipient omitted]",
+      523.58,
+      523.58,
+      4
+    ],
+    [
+      "HEALTH RELATED LICENSING BRDs",
+      "4575 · AGENCY PROGRAM RELATED SVCS & SUPP · 4975 · AGENCY PROGRAM RELATED SERVICES · Receiver LINCOLN MEMORIAL PARK & FUNERAL HOME",
+      500,
+      500,
+      1
+    ],
+    [
+      "HEALTH RELATED LICENSING BRDs",
+      "4575 · AGENCY PROGRAM RELATED SVCS & SUPP · 4975 · AGENCY PROGRAM RELATED SERVICES · Receiver TERRY FAMILY FUNERAL HOME LLC",
+      500,
+      500,
+      1
+    ],
+    [
+      "HEALTH RELATED LICENSING BRDs",
+      "4575 · AGENCY PROGRAM RELATED SVCS & SUPP · 4975 · AGENCY PROGRAM RELATED SERVICES · Receiver SOLACE CREMATION INC",
+      500,
+      500,
+      1
+    ],
+    [
+      "HEALTH RELATED LICENSING BRDs",
+      "4575 · AGENCY PROGRAM RELATED SVCS & SUPP · 4975 · AGENCY PROGRAM RELATED SERVICES · Receiver DESCHUTES ACQUISITION COMPANY LLC",
+      500,
+      500,
+      1
+    ],
+    [
+      "HEALTH RELATED LICENSING BRDs",
+      "4575 · AGENCY PROGRAM RELATED SVCS & SUPP · 4975 · AGENCY PROGRAM RELATED SERVICES · Receiver NISWONGER-REYNOLDS LLC",
+      500,
+      500,
+      1
+    ],
+    [
+      "HEALTH RELATED LICENSING BRDs",
+      "4575 · AGENCY PROGRAM RELATED SVCS & SUPP · 4975 · AGENCY PROGRAM RELATED SERVICES · Receiver SUNNYSIDE LITTLE CHAPEL OF THE CHIMES",
+      470,
+      470,
+      1
+    ],
+    [
+      "HEALTH RELATED LICENSING BRDs",
+      "4125 · OUT-OF-STATE TRAVEL · 4151 · OUT-OF-STATE MEALS WITH OVERNIGHT STAY · Receiver [individual recipient omitted]",
+      461.25,
+      461.25,
+      3
+    ],
+    [
+      "HEALTH RELATED LICENSING BRDs",
+      "4250 · DATA PROCESSING · 4375 · COMPUTER TECHNOLOGY COMPUTER PROCESSING · Receiver LEXISNEXIS RISK DATA MANAGMENT INC",
+      417.94,
+      417.94,
+      1
+    ],
+    [
+      "HEALTH RELATED LICENSING BRDs",
+      "4175 · OFFICE EXPENSES · 4201 · OFFICE SERVICES · Receiver FEDERAL EXPRESS CORPORATION",
+      415.34,
+      415.34,
+      3
+    ],
+    [
+      "HEALTH RELATED LICENSING BRDs",
+      "4100 · INSTATE TRAVEL · 4108 · INSTATE GROUND TRANSPORTATION · Receiver [individual recipient omitted]",
+      413.44,
+      413.44,
+      14
+    ],
+    [
+      "HEALTH RELATED LICENSING BRDs",
+      "4225 · STATE GOVERNMENT SERVICE CHARGES · 4600 · STATE GOVERNMENT SERVICE CHARGES · Receiver OREGON GOVERNMENT ETHICS COMMISSION",
+      391.5,
+      391.5,
+      5
+    ],
+    [
+      "HEALTH RELATED LICENSING BRDs",
+      "4175 · OFFICE EXPENSES · 4201 · OFFICE SERVICES · Receiver OREGON HEALTH AUTHORITY",
+      358.83,
+      358.83,
+      1
+    ],
+    [
+      "HEALTH RELATED LICENSING BRDs",
+      "4715 · IT EXPENDABLE PROPERTY · 4366 · COMPUTER TECHNOLOGY PC SOFTWARE<$5K · Receiver PUBLIC SAFETY SOFTWARE LLC",
+      240,
+      240,
+      1
+    ],
+    [
+      "HEALTH RELATED LICENSING BRDs",
+      "4475 · FACILITIES MAINTENANCE · 4850 · FACILITIES MAINTENANCE · Receiver DEPARTMENT OF ADMINISTRATIVE SERVICES",
+      212.5,
+      212.5,
+      1
+    ],
+    [
+      "HEALTH RELATED LICENSING BRDs",
+      "4100 · INSTATE TRAVEL · 4105 · INSTATE MEALS-NO OVERNIGHT STAY · Receiver [individual recipient omitted]",
+      201,
+      201,
+      2
+    ],
+    [
+      "HEALTH RELATED LICENSING BRDs",
+      "4175 · OFFICE EXPENSES · 4202 · EQUIPMENT RENTAL · Receiver CANON FINANCIAL SERVICES INC",
+      165.79,
+      165.79,
+      1
+    ],
+    [
+      "HEALTH RELATED LICENSING BRDs",
+      "4150 · EMPLOYEE TRAINING · 4431 · PROF DEV INSTATE MEAL WITH OVERNITE STAY · Receiver [individual recipient omitted]",
+      147.5,
+      147.5,
+      1
+    ],
+    [
+      "HEALTH RELATED LICENSING BRDs",
+      "3110 · CLASS/UNCLASS SALARY & PER DIEM · 3111 · REGULAR EMPLOYEES · Receiver DEPARTMENT OF ADMINISTRATIVE SERVICES",
+      74.19,
+      74.19,
+      1
+    ],
+    [
+      "HEALTH RELATED LICENSING BRDs",
+      "4175 · OFFICE EXPENSES · 4201 · OFFICE SERVICES · Receiver OREGON PHYSICAL THERAPIST LICENSING BOARD",
+      67.5,
+      67.5,
+      3
+    ],
+    [
+      "HEALTH RELATED LICENSING BRDs",
+      "4150 · EMPLOYEE TRAINING · 4450 · PROF DEV INSTATE MILE REIMB-FULL RATE · Receiver [individual recipient omitted]",
+      61.58,
+      61.58,
+      1
+    ],
+    [
+      "HEALTH RELATED LICENSING BRDs",
+      "4200 · TELECOMM/TECH SVC AND SUPPLIES · 4301 · TELECOM/VOICE USAGE · Receiver [individual recipient omitted]",
+      53.43,
+      53.43,
+      1
+    ],
+    [
+      "HEALTH RELATED LICENSING BRDs",
+      "4175 · OFFICE EXPENSES · 4201 · OFFICE SERVICES · Receiver WESTERN IDAHO TRAINING CO INC",
+      18.7,
+      18.7,
+      1
+    ],
+    [
+      "HEALTH RELATED LICENSING BRDs",
+      "4175 · OFFICE EXPENSES · 4202 · EQUIPMENT RENTAL · Receiver PACIFIC OFFICE AUTOMATION INC",
+      18.31,
+      18.31,
+      1
+    ],
+    [
+      "HEALTH RELATED LICENSING BRDs",
+      "4175 · OFFICE EXPENSES · 4201 · OFFICE SERVICES · Receiver [individual recipient omitted]",
+      12.43,
+      12.43,
+      1
+    ],
+    [
+      "HEALTH RELATED LICENSING BRDs",
+      "4650 · OTHER SERVICES AND SUPPLIES · 4701 · OTHER SERVICES · Receiver RICOH USA INC",
+      10,
+      10,
+      1
+    ],
+    [
+      "HEALTH RELATED LICENSING BRDs",
+      "4200 · TELECOMM/TECH SVC AND SUPPLIES · 4301 · TELECOM/VOICE USAGE · Receiver AT&T",
+      8.28,
+      8.28,
+      1
+    ]
+  ],
+  "sourceCheck": {
+    "objectClassRows": 103,
+    "sourceRows": 294,
+    "sourceTotal": 1408584.51,
+    "difference": 0
+  }
+}

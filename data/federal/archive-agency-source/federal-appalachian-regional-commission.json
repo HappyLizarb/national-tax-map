@@ -1,0 +1,143 @@
+{
+  "scope": "United States",
+  "code": "federal",
+  "department": "Appalachian Regional Commission",
+  "fiscalYear": 2024,
+  "ledgerAmount": 128708037.28,
+  "sourceTotal": 175407292.48,
+  "sourceUrl": "https://api.usaspending.gov/api/v2/agency/309/object_class/?fiscal_year=2024&limit=100&page=1",
+  "sourceUrls": [
+    [
+      "FY2024 gross outlays by object class",
+      "https://api.usaspending.gov/api/v2/agency/309/object_class/?fiscal_year=2024&limit=100&page=1"
+    ],
+    [
+      "FY2024 agency budgetary resources total",
+      "https://api.usaspending.gov/api/v2/agency/309/budgetary_resources/?fiscal_year=2024"
+    ]
+  ],
+  "rowSchema": [
+    "subAgency",
+    "program",
+    "amount",
+    "sourceAmount",
+    "sourceRows"
+  ],
+  "rows": [
+    [
+      "Appalachian Regional Commission",
+      "Grants, subsidies, and contributions",
+      156260476.81,
+      156260476.81,
+      null
+    ],
+    [
+      "Appalachian Regional Commission",
+      "Full-time permanent",
+      10129157.22,
+      10129157.22,
+      null
+    ],
+    [
+      "Appalachian Regional Commission",
+      "Civilian personnel benefits",
+      2809685.95,
+      2809685.95,
+      null
+    ],
+    [
+      "Appalachian Regional Commission",
+      "Advisory and assistance services",
+      2508735.65,
+      2508735.65,
+      null
+    ],
+    [
+      "Appalachian Regional Commission",
+      "Rental payments to others",
+      1369201.04,
+      1369201.04,
+      null
+    ],
+    [
+      "Appalachian Regional Commission",
+      "Other goods and services from Federal sources",
+      615023.91,
+      615023.91,
+      null
+    ],
+    [
+      "Appalachian Regional Commission",
+      "Other personnel compensation",
+      379828.65,
+      379828.65,
+      null
+    ],
+    [
+      "Appalachian Regional Commission",
+      "Other services from non-Federal sources",
+      729663.93,
+      729663.93,
+      null
+    ],
+    [
+      "Appalachian Regional Commission",
+      "Other than full-time permanent",
+      267612.63,
+      267612.63,
+      null
+    ],
+    [
+      "Appalachian Regional Commission",
+      "Travel and transportation of persons",
+      367273.71,
+      367273.71,
+      null
+    ],
+    [
+      "Appalachian Regional Commission",
+      "Communications, utilities, and miscellaneous charges",
+      147102.68,
+      147102.68,
+      null
+    ],
+    [
+      "Appalachian Regional Commission",
+      "Supplies and materials",
+      67983.29,
+      67983.29,
+      null
+    ],
+    [
+      "Appalachian Regional Commission",
+      "Printing and reproduction",
+      9825.5,
+      9825.5,
+      null
+    ],
+    [
+      "Appalachian Regional Commission",
+      "Operation and maintenance of equipment",
+      941.85,
+      941.85,
+      null
+    ],
+    [
+      "Appalachian Regional Commission",
+      "Equipment",
+      -255220.34,
+      -255220.34,
+      null
+    ]
+  ],
+  "sourceBasis": "official source amount",
+  "sourceCheck": {
+    "objectClassRows": 15,
+    "objectClassTotal": 175407292.48,
+    "agencyTotal": 175407292.48,
+    "difference": 0
+  },
+  "normalizationAdjustment": 0.01,
+  "hierarchyNote": "The source endpoint returns agency-level object-class aggregates; no individual employees or payees are included.",
+  "note": "Amounts are shown on the official source basis; no comparator normalization was applied."
+}

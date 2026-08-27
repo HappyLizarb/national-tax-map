@@ -1,0 +1,218 @@
+{
+  "scope": "Delaware",
+  "code": "de",
+  "fiscalYear": 2024,
+  "sourceTotal": 15486501947.44,
+  "sourceUrl": "https://data.delaware.gov/resource/5s6n-7hpx.json?$select=department,category,sum(amount)%20as%20amount,count(*)%20as%20records&$where=fiscal_year=2024&$group=department,category",
+  "dimension": "department / agency",
+  "note": "The pie uses one official itemized source layer and never inserts a synthetic residual. Department amounts reconcile to the official itemized source total. sourceAmount preserves the imported itemized basis. The census fy2024 state-finance comparator is retained for comparison only; its higher total is not assigned to a receiver or program.",
+  "reconciliation": {
+    "itemizedDifference": 0,
+    "normalized": false,
+    "scale": 1,
+    "comparisonDifference": 1691544947.44
+  },
+  "departments": [
+    {
+      "id": "dept-of-health-social-svs",
+      "name": "DEPT OF HEALTH & SOCIAL SVS",
+      "amount": 4446862501.36,
+      "sourceAmount": 4446862501.36,
+      "detailUrl": "data/state-de/archive-state-source/state-de-dept-of-health-social-svs.json",
+      "sourceUrl": "https://data.delaware.gov/resource/5s6n-7hpx.json?$select=department,category,sum(amount)%20as%20amount,count(*)%20as%20records&$where=fiscal_year=2024&$group=department,category"
+    },
+    {
+      "id": "dept-of-education",
+      "name": "DEPT OF EDUCATION",
+      "amount": 3637199953.63,
+      "sourceAmount": 3637199953.63,
+      "detailUrl": "data/state-de/archive-state-source/state-de-dept-of-education.json",
+      "sourceUrl": "https://data.delaware.gov/resource/5s6n-7hpx.json?$select=department,category,sum(amount)%20as%20amount,count(*)%20as%20records&$where=fiscal_year=2024&$group=department,category"
+    },
+    {
+      "id": "department-of-human-resources",
+      "name": "DEPARTMENT OF HUMAN RESOURCES",
+      "amount": 1522247833.23,
+      "sourceAmount": 1522247833.23,
+      "detailUrl": "data/state-de/archive-state-source/state-de-department-of-human-resources.json",
+      "sourceUrl": "https://data.delaware.gov/resource/5s6n-7hpx.json?$select=department,category,sum(amount)%20as%20amount,count(*)%20as%20records&$where=fiscal_year=2024&$group=department,category"
+    },
+    {
+      "id": "executive",
+      "name": "EXECUTIVE",
+      "amount": 1227079201.39,
+      "sourceAmount": 1227079201.39,
+      "detailUrl": "data/state-de/archive-state-source/state-de-executive.json",
+      "sourceUrl": "https://data.delaware.gov/resource/5s6n-7hpx.json?$select=department,category,sum(amount)%20as%20amount,count(*)%20as%20records&$where=fiscal_year=2024&$group=department,category"
+    },
+    {
+      "id": "dept-of-transportation",
+      "name": "DEPT OF TRANSPORTATION",
+      "amount": 1082412612.98,
+      "sourceAmount": 1082412612.98,
+      "detailUrl": "data/state-de/archive-state-source/state-de-dept-of-transportation.json",
+      "sourceUrl": "https://data.delaware.gov/resource/5s6n-7hpx.json?$select=department,category,sum(amount)%20as%20amount,count(*)%20as%20records&$where=fiscal_year=2024&$group=department,category"
+    },
+    {
+      "id": "higher-education",
+      "name": "HIGHER EDUCATION",
+      "amount": 616991559.63,
+      "sourceAmount": 616991559.63,
+      "detailUrl": "data/state-de/archive-state-source/state-de-higher-education.json",
+      "sourceUrl": "https://data.delaware.gov/resource/5s6n-7hpx.json?$select=department,category,sum(amount)%20as%20amount,count(*)%20as%20records&$where=fiscal_year=2024&$group=department,category"
+    },
+    {
+      "id": "dept-of-corrections",
+      "name": "DEPT OF CORRECTIONS",
+      "amount": 449297306,
+      "sourceAmount": 449297306,
+      "detailUrl": "data/state-de/archive-state-source/state-de-dept-of-corrections.json",
+      "sourceUrl": "https://data.delaware.gov/resource/5s6n-7hpx.json?$select=department,category,sum(amount)%20as%20amount,count(*)%20as%20records&$where=fiscal_year=2024&$group=department,category"
+    },
+    {
+      "id": "other-elective-offices",
+      "name": "OTHER ELECTIVE OFFICES",
+      "amount": 354769360.76,
+      "sourceAmount": 354769360.76,
+      "detailUrl": "data/state-de/archive-state-source/state-de-other-elective-offices.json",
+      "sourceUrl": "https://data.delaware.gov/resource/5s6n-7hpx.json?$select=department,category,sum(amount)%20as%20amount,count(*)%20as%20records&$where=fiscal_year=2024&$group=department,category"
+    },
+    {
+      "id": "dept-of-safety-homeland-sec",
+      "name": "DEPT OF SAFETY & HOMELAND SEC",
+      "amount": 325248610.2,
+      "sourceAmount": 325248610.2,
+      "detailUrl": "data/state-de/archive-state-source/state-de-dept-of-safety-homeland-sec.json",
+      "sourceUrl": "https://data.delaware.gov/resource/5s6n-7hpx.json?$select=department,category,sum(amount)%20as%20amount,count(*)%20as%20records&$where=fiscal_year=2024&$group=department,category"
+    },
+    {
+      "id": "dept-of-state",
+      "name": "DEPT OF STATE",
+      "amount": 312109514.59,
+      "sourceAmount": 312109514.59,
+      "detailUrl": "data/state-de/archive-state-source/state-de-dept-of-state.json",
+      "sourceUrl": "https://data.delaware.gov/resource/5s6n-7hpx.json?$select=department,category,sum(amount)%20as%20amount,count(*)%20as%20records&$where=fiscal_year=2024&$group=department,category"
+    },
+    {
+      "id": "dept-of-natrl-res-and-env-cont",
+      "name": "DEPT OF NATRL RES AND ENV CONT",
+      "amount": 302055757.72,
+      "sourceAmount": 302055757.72,
+      "detailUrl": "data/state-de/archive-state-source/state-de-dept-of-natrl-res-and-env-cont.json",
+      "sourceUrl": "https://data.delaware.gov/resource/5s6n-7hpx.json?$select=department,category,sum(amount)%20as%20amount,count(*)%20as%20records&$where=fiscal_year=2024&$group=department,category"
+    },
+    {
+      "id": "svs-fr-children-youth-families",
+      "name": "SVS FR CHILDREN,YOUTH,FAMILIES",
+      "amount": 210022312.42,
+      "sourceAmount": 210022312.42,
+      "detailUrl": "data/state-de/archive-state-source/state-de-svs-fr-children-youth-families.json",
+      "sourceUrl": "https://data.delaware.gov/resource/5s6n-7hpx.json?$select=department,category,sum(amount)%20as%20amount,count(*)%20as%20records&$where=fiscal_year=2024&$group=department,category"
+    },
+    {
+      "id": "dept-of-finance",
+      "name": "DEPT OF FINANCE",
+      "amount": 189610174.98,
+      "sourceAmount": 189610174.98,
+      "detailUrl": "data/state-de/archive-state-source/state-de-dept-of-finance.json",
+      "sourceUrl": "https://data.delaware.gov/resource/5s6n-7hpx.json?$select=department,category,sum(amount)%20as%20amount,count(*)%20as%20records&$where=fiscal_year=2024&$group=department,category"
+    },
+    {
+      "id": "judicial",
+      "name": "JUDICIAL",
+      "amount": 157140897.42,
+      "sourceAmount": 157140897.42,
+      "detailUrl": "data/state-de/archive-state-source/state-de-judicial.json",
+      "sourceUrl": "https://data.delaware.gov/resource/5s6n-7hpx.json?$select=department,category,sum(amount)%20as%20amount,count(*)%20as%20records&$where=fiscal_year=2024&$group=department,category"
+    },
+    {
+      "id": "dept-of-technology-informati",
+      "name": "DEPT OF TECHNOLOGY & INFORMATI",
+      "amount": 142695366.21,
+      "sourceAmount": 142695366.21,
+      "detailUrl": "data/state-de/archive-state-source/state-de-dept-of-technology-informati.json",
+      "sourceUrl": "https://data.delaware.gov/resource/5s6n-7hpx.json?$select=department,category,sum(amount)%20as%20amount,count(*)%20as%20records&$where=fiscal_year=2024&$group=department,category"
+    },
+    {
+      "id": "legal",
+      "name": "LEGAL",
+      "amount": 117668774.14,
+      "sourceAmount": 117668774.14,
+      "detailUrl": "data/state-de/archive-state-source/state-de-legal.json",
+      "sourceUrl": "https://data.delaware.gov/resource/5s6n-7hpx.json?$select=department,category,sum(amount)%20as%20amount,count(*)%20as%20records&$where=fiscal_year=2024&$group=department,category"
+    },
+    {
+      "id": "dept-of-labor",
+      "name": "DEPT OF LABOR",
+      "amount": 103228494.82,
+      "sourceAmount": 103228494.82,
+      "detailUrl": "data/state-de/archive-state-source/state-de-dept-of-labor.json",
+      "sourceUrl": "https://data.delaware.gov/resource/5s6n-7hpx.json?$select=department,category,sum(amount)%20as%20amount,count(*)%20as%20records&$where=fiscal_year=2024&$group=department,category"
+    },
+    {
+      "id": "dept-of-agriculture",
+      "name": "DEPT OF AGRICULTURE",
+      "amount": 86697323.42,
+      "sourceAmount": 86697323.42,
+      "detailUrl": "data/state-de/archive-state-source/state-de-dept-of-agriculture.json",
+      "sourceUrl": "https://data.delaware.gov/resource/5s6n-7hpx.json?$select=department,category,sum(amount)%20as%20amount,count(*)%20as%20records&$where=fiscal_year=2024&$group=department,category"
+    },
+    {
+      "id": "legislative-branch",
+      "name": "LEGISLATIVE BRANCH",
+      "amount": 70464604.29,
+      "sourceAmount": 70464604.29,
+      "detailUrl": "data/state-de/archive-state-source/state-de-legislative-branch.json",
+      "sourceUrl": "https://data.delaware.gov/resource/5s6n-7hpx.json?$select=department,category,sum(amount)%20as%20amount,count(*)%20as%20records&$where=fiscal_year=2024&$group=department,category"
+    },
+    {
+      "id": "dept-of-education-continued",
+      "name": "DEPT OF EDUCATION CONTINUED",
+      "amount": 66245101.01,
+      "sourceAmount": 66245101.01,
+      "detailUrl": "data/state-de/archive-state-source/state-de-dept-of-education-continued.json",
+      "sourceUrl": "https://data.delaware.gov/resource/5s6n-7hpx.json?$select=department,category,sum(amount)%20as%20amount,count(*)%20as%20records&$where=fiscal_year=2024&$group=department,category"
+    },
+    {
+      "id": "delaware-national-guard",
+      "name": "DELAWARE NATIONAL GUARD",
+      "amount": 36788906.39,
+      "sourceAmount": 36788906.39,
+      "detailUrl": "data/state-de/archive-state-source/state-de-delaware-national-guard.json",
+      "sourceUrl": "https://data.delaware.gov/resource/5s6n-7hpx.json?$select=department,category,sum(amount)%20as%20amount,count(*)%20as%20records&$where=fiscal_year=2024&$group=department,category"
+    },
+    {
+      "id": "fire-prevention-commission",
+      "name": "FIRE PREVENTION COMMISSION",
+      "amount": 19099171.21,
+      "sourceAmount": 19099171.21,
+      "detailUrl": "data/state-de/archive-state-source/state-de-fire-prevention-commission.json",
+      "sourceUrl": "https://data.delaware.gov/resource/5s6n-7hpx.json?$select=department,category,sum(amount)%20as%20amount,count(*)%20as%20records&$where=fiscal_year=2024&$group=department,category"
+    },
+    {
+      "id": "dept-of-elections",
+      "name": "DEPT OF ELECTIONS",
+      "amount": 10212219.68,
+      "sourceAmount": 10212219.68,
+      "detailUrl": "data/state-de/archive-state-source/state-de-dept-of-elections.json",
+      "sourceUrl": "https://data.delaware.gov/resource/5s6n-7hpx.json?$select=department,category,sum(amount)%20as%20amount,count(*)%20as%20records&$where=fiscal_year=2024&$group=department,category"
+    },
+    {
+      "id": "advisory-counc-exceptnl-citizn",
+      "name": "ADVISORY COUNC EXCEPTNL CITIZN",
+      "amount": 354389.96,
+      "sourceAmount": 354389.96,
+      "detailUrl": "data/state-de/archive-state-source/state-de-advisory-counc-exceptnl-citizn.json",
+      "sourceUrl": "https://data.delaware.gov/resource/5s6n-7hpx.json?$select=department,category,sum(amount)%20as%20amount,count(*)%20as%20records&$where=fiscal_year=2024&$group=department,category"
+    }
+  ],
+  "itemizedTotal": 15486501947.44,
+  "comparison": {
+    "label": "Census FY2024 state-finance comparator",
+    "url": "https://data.census.gov/table/GOVSSTATEFINTIMESERIES.GS00STATEFIN01?g=040XX00US10&time=2024",
+    "total": 13794957000,
+    "difference": 1691544947.44
+  },
+  "coverageStatus": "official-itemized-source-basis",
+  "archiveNote": "Prior official state layer archived when the complete Census function layer became primary for map reconciliation."
+}

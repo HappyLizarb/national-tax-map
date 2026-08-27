@@ -1,0 +1,113 @@
+{
+  "scope": "Maryland",
+  "code": "md",
+  "fiscalYear": 2024,
+  "department": "HISTORIC ST. MARY'S CITY COMMISSION",
+  "sourceUrl": "https://opendata.maryland.gov/Budget/State-of-Maryland-Payments-Data-FY2008-to-FY2024/7syw-q4cy/about_data",
+  "sourceUrls": [
+    [
+      "Maryland payments dataset",
+      "https://opendata.maryland.gov/Budget/State-of-Maryland-Payments-Data-FY2008-to-FY2024/7syw-q4cy/about_data"
+    ],
+    [
+      "FY2024 raw API rows",
+      "https://opendata.maryland.gov/resource/7syw-q4cy.json?%24where=fiscal_year=%272024%27&%24limit=50000"
+    ]
+  ],
+  "sourceBasis": "FY2024 cash payments grouped by official agency, published category code, and privacy-safe receiver label.",
+  "privacyNote": "Organization receiver names are retained; individual or ambiguous vendor names are grouped as [individual recipient omitted]. No person-level payroll fields are retained.",
+  "sourceRows": 11,
+  "sourceTotal": 287732,
+  "rowSchema": [
+    "subAgency",
+    "program",
+    "amount",
+    "sourceAmount",
+    "sourceRows"
+  ],
+  "rows": [
+    [
+      "HISTORIC ST. MARY'S CITY COMMISSION",
+      "Category code D17 · Receiver [individual recipient omitted]",
+      1180,
+      1180,
+      1
+    ],
+    [
+      "HISTORIC ST. MARY'S CITY COMMISSION",
+      "Category code D17 · Receiver BURCH OIL CO INC",
+      1773.39,
+      1773.39,
+      1
+    ],
+    [
+      "HISTORIC ST. MARY'S CITY COMMISSION",
+      "Category code D17 · Receiver ENVIRONMENTAL HEALTH CONSULTANTS",
+      4288.5,
+      4288.5,
+      1
+    ],
+    [
+      "HISTORIC ST. MARY'S CITY COMMISSION",
+      "Category code D17 · Receiver MARYLAND ENVIRONMENTAL SERVICE",
+      4532.7,
+      4532.7,
+      1
+    ],
+    [
+      "HISTORIC ST. MARY'S CITY COMMISSION",
+      "Category code D17 · Receiver SKYLINE TECHNOLOGY SOLUTIONS LLC",
+      4100,
+      4100,
+      1
+    ],
+    [
+      "HISTORIC ST. MARY'S CITY COMMISSION",
+      "Category code D17 · Receiver SOUTHERN MARYLAND ELECTRIC COOPERATIVE INC",
+      84035.52,
+      84035.52,
+      1
+    ],
+    [
+      "HISTORIC ST. MARY'S CITY COMMISSION",
+      "Category code D17 · Receiver SPORT CHEVROLET COMPANY LLC",
+      47539,
+      47539,
+      1
+    ],
+    [
+      "HISTORIC ST. MARY'S CITY COMMISSION",
+      "Category code D17 · Receiver TRUIST BANK",
+      3465.07,
+      3465.07,
+      1
+    ],
+    [
+      "HISTORIC ST. MARY'S CITY COMMISSION",
+      "Category code D17 · Receiver US MODULAR GROUP EAST, INC.",
+      99290,
+      99290,
+      1
+    ],
+    [
+      "HISTORIC ST. MARY'S CITY COMMISSION",
+      "Category code D17 · Receiver VERIZON MARYLAND LLC",
+      2012.08,
+      2012.08,
+      1
+    ],
+    [
+      "HISTORIC ST. MARY'S CITY COMMISSION",
+      "Category code D17 · Receiver VERIZON WIRELESS SERVICES LLC",
+      35515.74,
+      35515.74,
+      1
+    ]
+  ],
+  "sourceCheck": {
+    "objectClassRows": 11,
+    "sourceRows": 11,
+    "sourceTotal": 287732,
+    "difference": 0
+  }
+}

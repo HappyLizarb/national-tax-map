@@ -1,0 +1,147 @@
+{
+  "scope": "Massachusetts",
+  "code": "ma",
+  "department": "BRISTOL COMMUNITY COLLEGE (BRC)",
+  "fiscalYear": 2024,
+  "ledgerAmount": 74984673.21,
+  "sourceTotal": 81634464.91,
+  "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000",
+  "rowSchema": [
+    "subAgency",
+    "program",
+    "amount",
+    "sourceAmount",
+    "sourceRows"
+  ],
+  "rows": [
+    [
+      "BRISTOL COMMUNITY COLLEGE (BRC)",
+      "BRISTOL COMMUNITY COLLEGE (BRC) · (AA) REGULAR EMPLOYEE COMPENSATION",
+      31088995.73,
+      31088995.73,
+      1215
+    ],
+    [
+      "BRISTOL COMMUNITY COLLEGE (BRC)",
+      "BRISTOL COMMUNITY COLLEGE (BRC) · (RR) BENEFIT PROGRAMS",
+      16480144.4,
+      16480144.4,
+      66
+    ],
+    [
+      "BRISTOL COMMUNITY COLLEGE (BRC)",
+      "BRISTOL COMMUNITY COLLEGE (BRC) · (CC) SPECIAL EMPLOYEES",
+      13161238.56,
+      13161238.56,
+      1243
+    ],
+    [
+      "BRISTOL COMMUNITY COLLEGE (BRC)",
+      "BRISTOL COMMUNITY COLLEGE (BRC) · (NN) INFRASTRUCTURE:",
+      4902413.64,
+      4902413.64,
+      62
+    ],
+    [
+      "BRISTOL COMMUNITY COLLEGE (BRC)",
+      "BRISTOL COMMUNITY COLLEGE (BRC) · (UU) IT NON-PAYROLL EXPENSES",
+      3040894.32,
+      3040894.32,
+      45
+    ],
+    [
+      "BRISTOL COMMUNITY COLLEGE (BRC)",
+      "BRISTOL COMMUNITY COLLEGE (BRC) · (EE) ADMINISTRATIVE EXPENSES",
+      2847084.2,
+      2847084.2,
+      72
+    ],
+    [
+      "BRISTOL COMMUNITY COLLEGE (BRC)",
+      "BRISTOL COMMUNITY COLLEGE (BRC) · (GG) ENERGY COSTS AND SPACE RENTAL",
+      2581119.81,
+      2581119.81,
+      12
+    ],
+    [
+      "BRISTOL COMMUNITY COLLEGE (BRC)",
+      "BRISTOL COMMUNITY COLLEGE (BRC) · (MM) PURCHASED CLIENT/PROGRAM SVCS",
+      1917803.82,
+      1917803.82,
+      32
+    ],
+    [
+      "BRISTOL COMMUNITY COLLEGE (BRC)",
+      "BRISTOL COMMUNITY COLLEGE (BRC) · (HH) CONSULTANT SVCS (TO DEPTS)",
+      1856446.27,
+      1856446.27,
+      43
+    ],
+    [
+      "BRISTOL COMMUNITY COLLEGE (BRC)",
+      "BRISTOL COMMUNITY COLLEGE (BRC) · (KK) EQUIPMENT PURCHASE",
+      1135480.11,
+      1135480.11,
+      28
+    ],
+    [
+      "BRISTOL COMMUNITY COLLEGE (BRC)",
+      "BRISTOL COMMUNITY COLLEGE (BRC) · (JJ) OPERATIONAL SERVICES",
+      891606.48,
+      891606.48,
+      28
+    ],
+    [
+      "BRISTOL COMMUNITY COLLEGE (BRC)",
+      "BRISTOL COMMUNITY COLLEGE (BRC) · (FF) FACILITY OPERATIONAL EXPENSES",
+      829084.49,
+      829084.49,
+      46
+    ],
+    [
+      "BRISTOL COMMUNITY COLLEGE (BRC)",
+      "BRISTOL COMMUNITY COLLEGE (BRC) · (TT) LOANS AND SPECIAL PAYMENTS",
+      293022.05,
+      293022.05,
+      45
+    ],
+    [
+      "BRISTOL COMMUNITY COLLEGE (BRC)",
+      "BRISTOL COMMUNITY COLLEGE (BRC) · (PP) STATE AID/POL SUB",
+      236812.95,
+      236812.95,
+      12
+    ],
+    [
+      "BRISTOL COMMUNITY COLLEGE (BRC)",
+      "BRISTOL COMMUNITY COLLEGE (BRC) · (LL) EQUIPMENT LEASE-MAINTAIN/REPAR",
+      201456.5,
+      201456.5,
+      41
+    ],
+    [
+      "BRISTOL COMMUNITY COLLEGE (BRC)",
+      "BRISTOL COMMUNITY COLLEGE (BRC) · (BB) REGULAR EMPLOYEE RELATED EXPEN",
+      170861.58,
+      170861.58,
+      334
+    ],
+    [
+      "BRISTOL COMMUNITY COLLEGE (BRC)",
+      "BRISTOL COMMUNITY COLLEGE (BRC) · (DD) PENSION & INSURANCE RELATED EX",
+      0,
+      0,
+      2
+    ],
+    [
+      "BRISTOL COMMUNITY COLLEGE (BRC)",
+      "BRISTOL COMMUNITY COLLEGE (BRC) · (99) PAYROLL REJECTS",
+      0,
+      0,
+      44
+    ]
+  ],
+  "hierarchyNote": "The source does not identify a separate sub-agency column; direct-managed rows repeat the parent entity.",
+  "sourceBasis": "official source amount",
+  "note": "Amounts are shown on the official source basis; no comparator normalization was applied."
+}

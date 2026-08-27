@@ -1,0 +1,164 @@
+{
+  "scope": "United States",
+  "code": "federal",
+  "department": "National Endowment for the Arts",
+  "fiscalYear": 2024,
+  "ledgerAmount": 162653473.77,
+  "sourceTotal": 221669182.83,
+  "sourceUrl": "https://api.usaspending.gov/api/v2/agency/417/object_class/?fiscal_year=2024&limit=100&page=1",
+  "sourceUrls": [
+    [
+      "FY2024 gross outlays by object class",
+      "https://api.usaspending.gov/api/v2/agency/417/object_class/?fiscal_year=2024&limit=100&page=1"
+    ],
+    [
+      "FY2024 agency budgetary resources total",
+      "https://api.usaspending.gov/api/v2/agency/417/budgetary_resources/?fiscal_year=2024"
+    ]
+  ],
+  "rowSchema": [
+    "subAgency",
+    "program",
+    "amount",
+    "sourceAmount",
+    "sourceRows"
+  ],
+  "rows": [
+    [
+      "National Endowment for the Arts",
+      "Grants, subsidies, and contributions",
+      177322470.27,
+      177322470.27,
+      null
+    ],
+    [
+      "National Endowment for the Arts",
+      "Full-time permanent",
+      18455053.41,
+      18455053.41,
+      null
+    ],
+    [
+      "National Endowment for the Arts",
+      "Civilian personnel benefits",
+      7641499.73,
+      7641499.73,
+      null
+    ],
+    [
+      "National Endowment for the Arts",
+      "Advisory and assistance services",
+      4001561.64,
+      4001561.64,
+      null
+    ],
+    [
+      "National Endowment for the Arts",
+      "Other services from non-Federal sources",
+      3811680.32,
+      3811680.32,
+      null
+    ],
+    [
+      "National Endowment for the Arts",
+      "Other goods and services from Federal sources",
+      2372375.3,
+      2372375.3,
+      null
+    ],
+    [
+      "National Endowment for the Arts",
+      "Rental payments to GSA",
+      2967649.07,
+      2967649.07,
+      null
+    ],
+    [
+      "National Endowment for the Arts",
+      "Other than full-time permanent",
+      2603106.51,
+      2603106.51,
+      null
+    ],
+    [
+      "National Endowment for the Arts",
+      "Equipment",
+      958113.39,
+      958113.39,
+      null
+    ],
+    [
+      "National Endowment for the Arts",
+      "Other personnel compensation",
+      589722.88,
+      589722.88,
+      null
+    ],
+    [
+      "National Endowment for the Arts",
+      "Travel and transportation of persons",
+      399325.82,
+      399325.82,
+      null
+    ],
+    [
+      "National Endowment for the Arts",
+      "Communications, utilities, and miscellaneous charges",
+      265979.74,
+      265979.74,
+      null
+    ],
+    [
+      "National Endowment for the Arts",
+      "Special personal services payments",
+      236774.64,
+      236774.64,
+      null
+    ],
+    [
+      "National Endowment for the Arts",
+      "Printing and reproduction",
+      31084.59,
+      31084.59,
+      null
+    ],
+    [
+      "National Endowment for the Arts",
+      "Supplies and materials",
+      14160,
+      14160,
+      null
+    ],
+    [
+      "National Endowment for the Arts",
+      "Transportation of things",
+      2671.08,
+      2671.08,
+      null
+    ],
+    [
+      "National Endowment for the Arts",
+      "Interest and dividends",
+      3.53,
+      3.53,
+      null
+    ],
+    [
+      "National Endowment for the Arts",
+      "Undistributed",
+      -4049.09,
+      -4049.09,
+      null
+    ]
+  ],
+  "sourceBasis": "official source amount",
+  "sourceCheck": {
+    "objectClassRows": 18,
+    "objectClassTotal": 221669182.83,
+    "agencyTotal": 221669182.83,
+    "difference": 0
+  },
+  "normalizationAdjustment": -0.02,
+  "hierarchyNote": "The source endpoint returns agency-level object-class aggregates; no individual employees or payees are included.",
+  "note": "Amounts are shown on the official source basis; no comparator normalization was applied."
+}

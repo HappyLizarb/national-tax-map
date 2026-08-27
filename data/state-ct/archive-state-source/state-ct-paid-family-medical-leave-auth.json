@@ -1,0 +1,42 @@
+{
+  "scope": "Connecticut",
+  "code": "ct",
+  "department": "Paid Family Medical Leave Auth",
+  "fiscalYear": 2024,
+  "ledgerAmount": 389827581.09,
+  "sourceTotal": 415387474.31,
+  "sourceUrl": "https://data.ct.gov/resource/ajdm-rvz7.json?$select=department,program,sum(amount)%20as%20amount,count(*)%20as%20records&$where=fiscal_year=2024&$group=department,program",
+  "rowSchema": [
+    "subAgency",
+    "program",
+    "amount",
+    "sourceAmount",
+    "sourceRows"
+  ],
+  "rows": [
+    [
+      "Paid Family Medical Leave Auth",
+      "Paid Family Medical Leave Auth · PMFLA TRUST CONTRIBUTIONS",
+      410253287.82,
+      410253287.82,
+      83
+    ],
+    [
+      "Paid Family Medical Leave Auth",
+      "Paid Family Medical Leave Auth · Non-Budgeted Operating Approp",
+      4702528.17,
+      4702528.17,
+      60
+    ],
+    [
+      "Paid Family Medical Leave Auth",
+      "Paid Family Medical Leave Auth · Capitalize PFMLI Authority",
+      431658.32,
+      431658.32,
+      25
+    ]
+  ],
+  "hierarchyNote": "The source does not identify a separate sub-agency column; direct-managed rows repeat the parent entity.",
+  "sourceBasis": "official source amount",
+  "note": "Amounts are shown on the official source basis; no comparator normalization was applied."
+}

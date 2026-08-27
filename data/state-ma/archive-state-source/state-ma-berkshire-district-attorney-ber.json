@@ -1,0 +1,105 @@
+{
+  "scope": "Massachusetts",
+  "code": "ma",
+  "department": "BERKSHIRE DISTRICT ATTORNEY (BER)",
+  "fiscalYear": 2024,
+  "ledgerAmount": 5338261.92,
+  "sourceTotal": 5811669.73,
+  "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000",
+  "rowSchema": [
+    "subAgency",
+    "program",
+    "amount",
+    "sourceAmount",
+    "sourceRows"
+  ],
+  "rows": [
+    [
+      "BERKSHIRE DISTRICT ATTORNEY (BER)",
+      "BERKSHIRE DISTRICT ATTORNEY (BER) · (AA) REGULAR EMPLOYEE COMPENSATION",
+      4282644.7,
+      4282644.7,
+      82
+    ],
+    [
+      "BERKSHIRE DISTRICT ATTORNEY (BER)",
+      "BERKSHIRE DISTRICT ATTORNEY (BER) · (GG) ENERGY COSTS AND SPACE RENTAL",
+      463309.06,
+      463309.06,
+      12
+    ],
+    [
+      "BERKSHIRE DISTRICT ATTORNEY (BER)",
+      "BERKSHIRE DISTRICT ATTORNEY (BER) · (UU) IT NON-PAYROLL EXPENSES",
+      430699.24,
+      430699.24,
+      115
+    ],
+    [
+      "BERKSHIRE DISTRICT ATTORNEY (BER)",
+      "BERKSHIRE DISTRICT ATTORNEY (BER) · (EE) ADMINISTRATIVE EXPENSES",
+      224027.64,
+      224027.64,
+      292
+    ],
+    [
+      "BERKSHIRE DISTRICT ATTORNEY (BER)",
+      "BERKSHIRE DISTRICT ATTORNEY (BER) · (CC) SPECIAL EMPLOYEES",
+      137996.65,
+      137996.65,
+      38
+    ],
+    [
+      "BERKSHIRE DISTRICT ATTORNEY (BER)",
+      "BERKSHIRE DISTRICT ATTORNEY (BER) · (JJ) OPERATIONAL SERVICES",
+      99833.43,
+      99833.43,
+      30
+    ],
+    [
+      "BERKSHIRE DISTRICT ATTORNEY (BER)",
+      "BERKSHIRE DISTRICT ATTORNEY (BER) · (KK) EQUIPMENT PURCHASE",
+      76602.84,
+      76602.84,
+      22
+    ],
+    [
+      "BERKSHIRE DISTRICT ATTORNEY (BER)",
+      "BERKSHIRE DISTRICT ATTORNEY (BER) · (HH) CONSULTANT SVCS (TO DEPTS)",
+      38698.48,
+      38698.48,
+      17
+    ],
+    [
+      "BERKSHIRE DISTRICT ATTORNEY (BER)",
+      "BERKSHIRE DISTRICT ATTORNEY (BER) · (BB) REGULAR EMPLOYEE RELATED EXPEN",
+      35363.81,
+      35363.81,
+      76
+    ],
+    [
+      "BERKSHIRE DISTRICT ATTORNEY (BER)",
+      "BERKSHIRE DISTRICT ATTORNEY (BER) · (LL) EQUIPMENT LEASE-MAINTAIN/REPAR",
+      21443.88,
+      21443.88,
+      12
+    ],
+    [
+      "BERKSHIRE DISTRICT ATTORNEY (BER)",
+      "BERKSHIRE DISTRICT ATTORNEY (BER) · (DD) PENSION & INSURANCE RELATED EX",
+      1050,
+      1050,
+      3
+    ],
+    [
+      "BERKSHIRE DISTRICT ATTORNEY (BER)",
+      "BERKSHIRE DISTRICT ATTORNEY (BER) · (99) PAYROLL REJECTS",
+      0,
+      0,
+      2
+    ]
+  ],
+  "hierarchyNote": "The source does not identify a separate sub-agency column; direct-managed rows repeat the parent entity.",
+  "sourceBasis": "official source amount",
+  "note": "Amounts are shown on the official source basis; no comparator normalization was applied."
+}

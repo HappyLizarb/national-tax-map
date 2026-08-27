@@ -1,0 +1,48 @@
+{
+  "scope": "Iowa",
+  "code": "ia",
+  "fiscalYear": 2024,
+  "department": "AG- Soybean Promotion",
+  "ledgerAmount": 23967475.87,
+  "sourceTotal": 31305503.16,
+  "sourceUrl": "https://idh-be.iowa.gov/api/v1/datasets/999/rows.csv",
+  "sourceUrls": [
+    [
+      "Iowa fiscal transparency",
+      "https://dom.iowa.gov/state-government/fiscal-transparency"
+    ],
+    [
+      "Iowa expenditure dataset",
+      "https://data.iowa.gov/catalog/dataset/999"
+    ],
+    [
+      "Iowa Data Hub CSV export",
+      "https://idh-be.iowa.gov/api/v1/datasets/999/rows.csv"
+    ]
+  ],
+  "rowSchema": [
+    "subAgency",
+    "program",
+    "amount",
+    "sourceAmount",
+    "sourceRows"
+  ],
+  "sourceBasis": "official source amount",
+  "privacyNote": "No vendor name, vendor number, invoice number, or person-level identifier is retained.",
+  "rows": [
+    [
+      "National Soybean Checkoff",
+      "AG- Soybean Promotion · National Soybean Checkoff · Soybean Promotion Board · Blank Appropriation · Refunds-Other",
+      31305503.16,
+      31305503.16,
+      13
+    ]
+  ],
+  "sourceCheck": {
+    "groupRows": 1,
+    "sourceRows": 13,
+    "sourceTotal": 31305503.16,
+    "difference": 0
+  },
+  "note": "Amounts are shown on the official source basis; no comparator normalization was applied."
+}

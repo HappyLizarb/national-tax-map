@@ -1,0 +1,36 @@
+{
+  "scope": "United States",
+  "code": "federal",
+  "fiscalYear": 2024,
+  "department": "Department of Commerce",
+  "sourceTotal": 14831000000,
+  "sourceUrl": "https://fiscal.treasury.gov/system/files/files/reports-statements/mts/mts0924.pdf",
+  "sourceUrls": [["Treasury FY2024 MTS Table 5", "https://fiscal.treasury.gov/system/files/files/reports-statements/mts/mts0924.pdf"]],
+  "relatedSources": [["USAspending gross research (supporting detail)", "data/federal/archive-agency-source/federal-department-of-commerce.json"]],
+  "sourceBasis": "Treasury MTS Table 5 current-fiscal-year gross outlays, applicable receipts, and net outlays; published in $ millions and converted to USD.",
+  "rowSchema": ["subAgency", "program", "amount", "sourceAmount", "sourceRows", "grossOutlays", "applicableReceipts"],
+  "sourceCheck": {"groupRows": 10, "difference": 0, "publishedRoundingAdjustment": 0},
+  "note": "Displayed amounts are net outlays; each row retains its published gross outlays and applicable receipts.",
+  "accountResearch": {"accountCount": 63, "largeAccountCount": 5, "netAccountOutlays": 14803329962.86, "threshold": 1000000000, "sourceUrl": "https://fiscal.treasury.gov/system/files/files/reports-statements/combined-statement/cs2024/c10.xlsx"},
+  "largeAccountSchema": ["treasuryAccount", "title", "netOutlays", "availabilityRows"],
+  "largeAccountBasis": "Exact Combined Statement net outlays by appropriation or fund account. This is a research cross-section of the same department, not another amount to add to MTS classification rows.",
+  "largeAccountRows": [
+    ["013-1450-000", "Operations, Research and Facilities, National Oceanic and Atmospheric Administration, Commerce", 5612689733.57, 24],
+    ["013-1460-000", "Procurement, Acquisition and Construction, National Oceanic and Atmospheric Administration, Commerce", 1791173471.72, 15],
+    ["013-0450-000", "Periodic Censuses and Programs, Bureau of the Census, Commerce", 1070193697.42, 7],
+    ["013-2050-000", "Economic Development Assistance Programs, Economic Development Administration, Commerce", 1050563484.09, 6],
+    ["013-0500-000", "Scientific and Technical Research and Services, National Institute of Standards and Technology, Commerce", 1041899541.05, 6]
+  ],
+  "rows": [
+    ["Department of Commerce", "Economic Development Administration", 1137000000, 1137000000, 1, 1137000000, 0],
+    ["Department of Commerce", "Bureau of the Census", 1493000000, 1493000000, 1, 1493000000, 0],
+    ["Department of Commerce", "International Trade Administration", 625000000, 625000000, 1, 625000000, 0],
+    ["Department of Commerce", "National Oceanic and Atmospheric Administration", 7650000000, 7650000000, 1, 7670000000, 20000000],
+    ["Department of Commerce", "National Institute of Standards and Technology", 2313000000, 2313000000, 1, 2313000000, 0],
+    ["Department of Commerce", "National Telecommunications and Information Administration", 662000000, 662000000, 1, 1223000000, 561000000],
+    ["Department of Commerce", "Other", 837000000, 837000000, 1, 908000000, 71000000],
+    ["Department of Commerce", "Proprietary Receipts from the Public", 122000000, 122000000, 1, 0, -122000000],
+    ["Department of Commerce", "Intrabudgetary Transactions", -6000000, -6000000, 1, -6000000, 0],
+    ["Department of Commerce", "Offsetting Governmental Receipts", -2000000, -2000000, 1, 0, 2000000]
+  ]
+}

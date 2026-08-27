@@ -1,0 +1,126 @@
+{
+  "scope": "Massachusetts",
+  "code": "ma",
+  "department": "DEPARTMENT OF YOUTH SERVICES (DYS)",
+  "fiscalYear": 2024,
+  "ledgerAmount": 161085683.42,
+  "sourceTotal": 175371085.95,
+  "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000",
+  "rowSchema": [
+    "subAgency",
+    "program",
+    "amount",
+    "sourceAmount",
+    "sourceRows"
+  ],
+  "rows": [
+    [
+      "DEPARTMENT OF YOUTH SERVICES (DYS)",
+      "DEPARTMENT OF YOUTH SERVICES (DYS) · (MM) PURCHASED CLIENT/PROGRAM SVCS",
+      92353106.09,
+      92353106.09,
+      1500
+    ],
+    [
+      "DEPARTMENT OF YOUTH SERVICES (DYS)",
+      "DEPARTMENT OF YOUTH SERVICES (DYS) · (AA) REGULAR EMPLOYEE COMPENSATION",
+      69601066.31,
+      69601066.31,
+      9551
+    ],
+    [
+      "DEPARTMENT OF YOUTH SERVICES (DYS)",
+      "DEPARTMENT OF YOUTH SERVICES (DYS) · (NN) INFRASTRUCTURE:",
+      3870621,
+      3870621,
+      1707
+    ],
+    [
+      "DEPARTMENT OF YOUTH SERVICES (DYS)",
+      "DEPARTMENT OF YOUTH SERVICES (DYS) · (FF) FACILITY OPERATIONAL EXPENSES",
+      3323288.73,
+      3323288.73,
+      4246
+    ],
+    [
+      "DEPARTMENT OF YOUTH SERVICES (DYS)",
+      "DEPARTMENT OF YOUTH SERVICES (DYS) · (GG) ENERGY COSTS AND SPACE RENTAL",
+      2599052.9,
+      2599052.9,
+      866
+    ],
+    [
+      "DEPARTMENT OF YOUTH SERVICES (DYS)",
+      "DEPARTMENT OF YOUTH SERVICES (DYS) · (PP) STATE AID/POL SUB",
+      600000,
+      600000,
+      3
+    ],
+    [
+      "DEPARTMENT OF YOUTH SERVICES (DYS)",
+      "DEPARTMENT OF YOUTH SERVICES (DYS) · (BB) REGULAR EMPLOYEE RELATED EXPEN",
+      557876.86,
+      557876.86,
+      749
+    ],
+    [
+      "DEPARTMENT OF YOUTH SERVICES (DYS)",
+      "DEPARTMENT OF YOUTH SERVICES (DYS) · (DD) PENSION & INSURANCE RELATED EX",
+      471954.32,
+      471954.32,
+      229
+    ],
+    [
+      "DEPARTMENT OF YOUTH SERVICES (DYS)",
+      "DEPARTMENT OF YOUTH SERVICES (DYS) · (JJ) OPERATIONAL SERVICES",
+      432686.98,
+      432686.98,
+      206
+    ],
+    [
+      "DEPARTMENT OF YOUTH SERVICES (DYS)",
+      "DEPARTMENT OF YOUTH SERVICES (DYS) · (EE) ADMINISTRATIVE EXPENSES",
+      431630.3,
+      431630.3,
+      1019
+    ],
+    [
+      "DEPARTMENT OF YOUTH SERVICES (DYS)",
+      "DEPARTMENT OF YOUTH SERVICES (DYS) · (HH) CONSULTANT SVCS (TO DEPTS)",
+      431534.55,
+      431534.55,
+      101
+    ],
+    [
+      "DEPARTMENT OF YOUTH SERVICES (DYS)",
+      "DEPARTMENT OF YOUTH SERVICES (DYS) · (KK) EQUIPMENT PURCHASE",
+      343666.76,
+      343666.76,
+      99
+    ],
+    [
+      "DEPARTMENT OF YOUTH SERVICES (DYS)",
+      "DEPARTMENT OF YOUTH SERVICES (DYS) · (LL) EQUIPMENT LEASE-MAINTAIN/REPAR",
+      323666.64,
+      323666.64,
+      806
+    ],
+    [
+      "DEPARTMENT OF YOUTH SERVICES (DYS)",
+      "DEPARTMENT OF YOUTH SERVICES (DYS) · (CC) SPECIAL EMPLOYEES",
+      18844,
+      18844,
+      29
+    ],
+    [
+      "DEPARTMENT OF YOUTH SERVICES (DYS)",
+      "DEPARTMENT OF YOUTH SERVICES (DYS) · (99) PAYROLL REJECTS",
+      12090.51,
+      12090.51,
+      185
+    ]
+  ],
+  "hierarchyNote": "The source does not identify a separate sub-agency column; direct-managed rows repeat the parent entity.",
+  "sourceBasis": "official source amount",
+  "note": "Amounts are shown on the official source basis; no comparator normalization was applied."
+}

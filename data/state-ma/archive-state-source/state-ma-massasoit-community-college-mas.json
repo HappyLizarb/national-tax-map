@@ -1,0 +1,147 @@
+{
+  "scope": "Massachusetts",
+  "code": "ma",
+  "department": "MASSASOIT COMMUNITY COLLEGE (MAS)",
+  "fiscalYear": 2024,
+  "ledgerAmount": 72601384.28,
+  "sourceTotal": 79039821.12,
+  "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000",
+  "rowSchema": [
+    "subAgency",
+    "program",
+    "amount",
+    "sourceAmount",
+    "sourceRows"
+  ],
+  "rows": [
+    [
+      "MASSASOIT COMMUNITY COLLEGE (MAS)",
+      "MASSASOIT COMMUNITY COLLEGE (MAS) · (AA) REGULAR EMPLOYEE COMPENSATION",
+      31427346.7,
+      31427346.7,
+      977
+    ],
+    [
+      "MASSASOIT COMMUNITY COLLEGE (MAS)",
+      "MASSASOIT COMMUNITY COLLEGE (MAS) · (CC) SPECIAL EMPLOYEES",
+      17043783.59,
+      17043783.59,
+      911
+    ],
+    [
+      "MASSASOIT COMMUNITY COLLEGE (MAS)",
+      "MASSASOIT COMMUNITY COLLEGE (MAS) · (RR) BENEFIT PROGRAMS",
+      11662155.28,
+      11662155.28,
+      64
+    ],
+    [
+      "MASSASOIT COMMUNITY COLLEGE (MAS)",
+      "MASSASOIT COMMUNITY COLLEGE (MAS) · (NN) INFRASTRUCTURE:",
+      3954388.18,
+      3954388.18,
+      51
+    ],
+    [
+      "MASSASOIT COMMUNITY COLLEGE (MAS)",
+      "MASSASOIT COMMUNITY COLLEGE (MAS) · (TT) LOANS AND SPECIAL PAYMENTS",
+      2991579.59,
+      2991579.59,
+      18
+    ],
+    [
+      "MASSASOIT COMMUNITY COLLEGE (MAS)",
+      "MASSASOIT COMMUNITY COLLEGE (MAS) · (UU) IT NON-PAYROLL EXPENSES",
+      2783356.73,
+      2783356.73,
+      33
+    ],
+    [
+      "MASSASOIT COMMUNITY COLLEGE (MAS)",
+      "MASSASOIT COMMUNITY COLLEGE (MAS) · (EE) ADMINISTRATIVE EXPENSES",
+      1988389.43,
+      1988389.43,
+      56
+    ],
+    [
+      "MASSASOIT COMMUNITY COLLEGE (MAS)",
+      "MASSASOIT COMMUNITY COLLEGE (MAS) · (MM) PURCHASED CLIENT/PROGRAM SVCS",
+      1352757.45,
+      1352757.45,
+      24
+    ],
+    [
+      "MASSASOIT COMMUNITY COLLEGE (MAS)",
+      "MASSASOIT COMMUNITY COLLEGE (MAS) · (GG) ENERGY COSTS AND SPACE RENTAL",
+      1233915.29,
+      1233915.29,
+      13
+    ],
+    [
+      "MASSASOIT COMMUNITY COLLEGE (MAS)",
+      "MASSASOIT COMMUNITY COLLEGE (MAS) · (FF) FACILITY OPERATIONAL EXPENSES",
+      1036758.84,
+      1036758.84,
+      49
+    ],
+    [
+      "MASSASOIT COMMUNITY COLLEGE (MAS)",
+      "MASSASOIT COMMUNITY COLLEGE (MAS) · (DD) PENSION & INSURANCE RELATED EX",
+      975150.08,
+      975150.08,
+      41
+    ],
+    [
+      "MASSASOIT COMMUNITY COLLEGE (MAS)",
+      "MASSASOIT COMMUNITY COLLEGE (MAS) · (JJ) OPERATIONAL SERVICES",
+      930597.09,
+      930597.09,
+      34
+    ],
+    [
+      "MASSASOIT COMMUNITY COLLEGE (MAS)",
+      "MASSASOIT COMMUNITY COLLEGE (MAS) · (LL) EQUIPMENT LEASE-MAINTAIN/REPAR",
+      598197.73,
+      598197.73,
+      30
+    ],
+    [
+      "MASSASOIT COMMUNITY COLLEGE (MAS)",
+      "MASSASOIT COMMUNITY COLLEGE (MAS) · (HH) CONSULTANT SVCS (TO DEPTS)",
+      480351.82,
+      480351.82,
+      26
+    ],
+    [
+      "MASSASOIT COMMUNITY COLLEGE (MAS)",
+      "MASSASOIT COMMUNITY COLLEGE (MAS) · (KK) EQUIPMENT PURCHASE",
+      209464.7,
+      209464.7,
+      21
+    ],
+    [
+      "MASSASOIT COMMUNITY COLLEGE (MAS)",
+      "MASSASOIT COMMUNITY COLLEGE (MAS) · (BB) REGULAR EMPLOYEE RELATED EXPEN",
+      166224.24,
+      166224.24,
+      138
+    ],
+    [
+      "MASSASOIT COMMUNITY COLLEGE (MAS)",
+      "MASSASOIT COMMUNITY COLLEGE (MAS) · (PP) STATE AID/POL SUB",
+      133118.74,
+      133118.74,
+      1
+    ],
+    [
+      "MASSASOIT COMMUNITY COLLEGE (MAS)",
+      "MASSASOIT COMMUNITY COLLEGE (MAS) · (SS) DEBT PAYMENT",
+      72285.64,
+      72285.64,
+      2
+    ]
+  ],
+  "hierarchyNote": "The source does not identify a separate sub-agency column; direct-managed rows repeat the parent entity.",
+  "sourceBasis": "official source amount",
+  "note": "Amounts are shown on the official source basis; no comparator normalization was applied."
+}

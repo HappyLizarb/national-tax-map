@@ -1,0 +1,105 @@
+{
+  "scope": "Massachusetts",
+  "code": "ma",
+  "department": "SUPREME JUDICIAL COURT (SJC)",
+  "fiscalYear": 2024,
+  "ledgerAmount": 64692650.39,
+  "sourceTotal": 70429724.79,
+  "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000",
+  "rowSchema": [
+    "subAgency",
+    "program",
+    "amount",
+    "sourceAmount",
+    "sourceRows"
+  ],
+  "rows": [
+    [
+      "SUPREME JUDICIAL COURT (SJC)",
+      "SUPREME JUDICIAL COURT (SJC) · (HH) CONSULTANT SVCS (TO DEPTS)",
+      54734814,
+      54734814,
+      26
+    ],
+    [
+      "SUPREME JUDICIAL COURT (SJC)",
+      "SUPREME JUDICIAL COURT (SJC) · (AA) REGULAR EMPLOYEE COMPENSATION",
+      10436610.64,
+      10436610.64,
+      88
+    ],
+    [
+      "SUPREME JUDICIAL COURT (SJC)",
+      "SUPREME JUDICIAL COURT (SJC) · (JJ) OPERATIONAL SERVICES",
+      2991389.95,
+      2991389.95,
+      63
+    ],
+    [
+      "SUPREME JUDICIAL COURT (SJC)",
+      "SUPREME JUDICIAL COURT (SJC) · (UU) IT NON-PAYROLL EXPENSES",
+      1086822.63,
+      1086822.63,
+      121
+    ],
+    [
+      "SUPREME JUDICIAL COURT (SJC)",
+      "SUPREME JUDICIAL COURT (SJC) · (EE) ADMINISTRATIVE EXPENSES",
+      821444.01,
+      821444.01,
+      270
+    ],
+    [
+      "SUPREME JUDICIAL COURT (SJC)",
+      "SUPREME JUDICIAL COURT (SJC) · (CC) SPECIAL EMPLOYEES",
+      174095.13,
+      174095.13,
+      70
+    ],
+    [
+      "SUPREME JUDICIAL COURT (SJC)",
+      "SUPREME JUDICIAL COURT (SJC) · (KK) EQUIPMENT PURCHASE",
+      84172.03,
+      84172.03,
+      11
+    ],
+    [
+      "SUPREME JUDICIAL COURT (SJC)",
+      "SUPREME JUDICIAL COURT (SJC) · (LL) EQUIPMENT LEASE-MAINTAIN/REPAR",
+      62436.59,
+      62436.59,
+      138
+    ],
+    [
+      "SUPREME JUDICIAL COURT (SJC)",
+      "SUPREME JUDICIAL COURT (SJC) · (DD) PENSION & INSURANCE RELATED EX",
+      19227,
+      19227,
+      2
+    ],
+    [
+      "SUPREME JUDICIAL COURT (SJC)",
+      "SUPREME JUDICIAL COURT (SJC) · (BB) REGULAR EMPLOYEE RELATED EXPEN",
+      16761.38,
+      16761.38,
+      45
+    ],
+    [
+      "SUPREME JUDICIAL COURT (SJC)",
+      "SUPREME JUDICIAL COURT (SJC) · (FF) FACILITY OPERATIONAL EXPENSES",
+      1951.43,
+      1951.43,
+      4
+    ],
+    [
+      "SUPREME JUDICIAL COURT (SJC)",
+      "SUPREME JUDICIAL COURT (SJC) · (99) PAYROLL REJECTS",
+      0,
+      0,
+      4
+    ]
+  ],
+  "hierarchyNote": "The source does not identify a separate sub-agency column; direct-managed rows repeat the parent entity.",
+  "sourceBasis": "official source amount",
+  "note": "Amounts are shown on the official source basis; no comparator normalization was applied."
+}

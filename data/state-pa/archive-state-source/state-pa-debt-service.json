@@ -1,0 +1,47 @@
+{
+  "scope": "Pennsylvania",
+  "code": "pa",
+  "department": "Debt Service",
+  "fiscalYear": 2024,
+  "ledgerAmount": 850371012,
+  "sourceTotal": 850371012,
+  "sourceUrl": "https://www.patreasury.gov/openbookpa/checkbook.php",
+  "rowSchema": [
+    "subAgency",
+    "program",
+    "amount",
+    "sourceAmount",
+    "sourceRows"
+  ],
+  "rows": [
+    [
+      "Debt Service",
+      "TREASURY SIB   · Debt Service · 6500000",
+      850365012,
+      850365012,
+      1
+    ],
+    [
+      "Debt Service",
+      "WILMINGTON TRUST CO   · Debt Service · 6500000",
+      3500,
+      3500,
+      7
+    ],
+    [
+      "Debt Service",
+      "WIR PAYEE   · Debt Service · 6500000",
+      2000,
+      2000,
+      4
+    ],
+    [
+      "Debt Service",
+      "M&T BANK   · Debt Service · 6500000",
+      500,
+      500,
+      1
+    ]
+  ],
+  "hierarchyNote": "The source does not identify a separate sub-agency column; direct-managed rows repeat the parent entity."
+}

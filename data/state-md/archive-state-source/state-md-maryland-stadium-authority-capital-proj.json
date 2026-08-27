@@ -1,0 +1,78 @@
+{
+  "scope": "Maryland",
+  "code": "md",
+  "fiscalYear": 2024,
+  "department": "MARYLAND STADIUM AUTHORITY-CAPITAL PROJ",
+  "sourceUrl": "https://opendata.maryland.gov/Budget/State-of-Maryland-Payments-Data-FY2008-to-FY2024/7syw-q4cy/about_data",
+  "sourceUrls": [
+    [
+      "Maryland payments dataset",
+      "https://opendata.maryland.gov/Budget/State-of-Maryland-Payments-Data-FY2008-to-FY2024/7syw-q4cy/about_data"
+    ],
+    [
+      "FY2024 raw API rows",
+      "https://opendata.maryland.gov/resource/7syw-q4cy.json?%24where=fiscal_year=%272024%27&%24limit=50000"
+    ]
+  ],
+  "sourceBasis": "FY2024 cash payments grouped by official agency, published category code, and privacy-safe receiver label.",
+  "privacyNote": "Organization receiver names are retained; individual or ambiguous vendor names are grouped as [individual recipient omitted]. No person-level payroll fields are retained.",
+  "sourceRows": 6,
+  "sourceTotal": 43746519.34,
+  "rowSchema": [
+    "subAgency",
+    "program",
+    "amount",
+    "sourceAmount",
+    "sourceRows"
+  ],
+  "rows": [
+    [
+      "MARYLAND STADIUM AUTHORITY-CAPITAL PROJ",
+      "Category code 617 · Receiver [individual recipient omitted]",
+      7800,
+      7800,
+      1
+    ],
+    [
+      "MARYLAND STADIUM AUTHORITY-CAPITAL PROJ",
+      "Category code 617 · Receiver ADVANCED BUILDING PERFORMANCE INC",
+      28779.84,
+      28779.84,
+      1
+    ],
+    [
+      "MARYLAND STADIUM AUTHORITY-CAPITAL PROJ",
+      "Category code 617 · Receiver ADVANCED FIRE PROTECTION SYSTEMS LLC",
+      5861.76,
+      5861.76,
+      1
+    ],
+    [
+      "MARYLAND STADIUM AUTHORITY-CAPITAL PROJ",
+      "Category code 617 · Receiver ECS MID-ATLANTIC LLC",
+      168836.43,
+      168836.43,
+      1
+    ],
+    [
+      "MARYLAND STADIUM AUTHORITY-CAPITAL PROJ",
+      "Category code 617 · Receiver MURPHY & DITTENHAFER INC",
+      283424.44,
+      283424.44,
+      1
+    ],
+    [
+      "MARYLAND STADIUM AUTHORITY-CAPITAL PROJ",
+      "Category code 617 · Receiver WHITING TURNER CONTRACTING COMPANY",
+      43251816.87,
+      43251816.87,
+      1
+    ]
+  ],
+  "sourceCheck": {
+    "objectClassRows": 6,
+    "sourceRows": 6,
+    "sourceTotal": 43746519.34,
+    "difference": 0
+  }
+}

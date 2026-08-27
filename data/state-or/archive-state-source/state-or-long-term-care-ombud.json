@@ -1,0 +1,574 @@
+{
+  "scope": "Oregon",
+  "fiscalYear": 2024,
+  "department": "LONG TERM CARE OMBUD",
+  "sourceUrl": "https://data.oregon.gov/resource/y9g9-xsxs.json?$select=agency,agency_1,budget_class,budget_class_1,expend_class,expend_class_1,vendor,sum(expense)%20as%20total,count(*)%20as%20source_rows&$where=fiscal_year=2024&$group=agency,agency_1,budget_class,budget_class_1,expend_class,expend_class_1,vendor&$limit=500000",
+  "sourceUrls": [
+    [
+      "Oregon transparency expenditure catalog",
+      "https://data.oregon.gov/Revenue-Expense/Agency-Expenditures-Multi-Year-Report/y9g9-xsxs"
+    ],
+    [
+      "Grouped FY2024 API export",
+      "https://data.oregon.gov/resource/y9g9-xsxs.json?$select=agency,agency_1,budget_class,budget_class_1,expend_class,expend_class_1,vendor,sum(expense)%20as%20total,count(*)%20as%20source_rows&$where=fiscal_year=2024&$group=agency,agency_1,budget_class,budget_class_1,expend_class,expend_class_1,vendor&$limit=500000"
+    ]
+  ],
+  "sourceBasis": "Official Oregon Agency Expenditures Multi-Year Report; FY2024 cash expense grouped by agency, budget class, expenditure class, and privacy-safe receiver label.",
+  "privacyNote": "Individual or ambiguous vendor labels are grouped as [individual recipient omitted]; organization receivers are retained. This layer does not expose person-level payroll.",
+  "sourceRows": 156,
+  "sourceTotal": 880263.26,
+  "rowSchema": [
+    "subAgency",
+    "program",
+    "amount",
+    "sourceAmount",
+    "sourceRows"
+  ],
+  "rows": [
+    [
+      "LONG TERM CARE OMBUD",
+      "4325 · ATTORNEY GENERAL LEGAL FEES · 4550 · ATTORNEY GENERAL LEGAL FEES · Receiver STATE OF OREGON DEPARTMENT OF JUSTICE",
+      262467.97,
+      262467.97,
+      1
+    ],
+    [
+      "LONG TERM CARE OMBUD",
+      "4225 · STATE GOVERNMENT SERVICE CHARGES · 4600 · STATE GOVERNMENT SERVICE CHARGES · Receiver DEPARTMENT OF ADMINISTRATIVE SERVICES",
+      211895,
+      211895,
+      1
+    ],
+    [
+      "LONG TERM CARE OMBUD",
+      "4650 · OTHER SERVICES AND SUPPLIES · 4701 · OTHER SERVICES · Receiver DEPARTMENT OF ADMINISTRATIVE SERVICES",
+      72608.49,
+      72608.49,
+      1
+    ],
+    [
+      "LONG TERM CARE OMBUD",
+      "4300 · PROFESSIONAL SERVICES · 4500 · PROFESSIONAL SERVICES NON-IT · Receiver KERNUTT STOKES LLP",
+      49999,
+      49999,
+      1
+    ],
+    [
+      "LONG TERM CARE OMBUD",
+      "4425 · LEASE PAYMENTS & TAXES · 4800 · INTERAGENCY LEASE PAYMENTS · Receiver DEPARTMENT OF ADMINISTRATIVE SERVICES",
+      48923.64,
+      48923.64,
+      1
+    ],
+    [
+      "LONG TERM CARE OMBUD",
+      "4100 · INSTATE TRAVEL · 4108 · INSTATE GROUND TRANSPORTATION · Receiver DEPARTMENT OF ADMINISTRATIVE SERVICES",
+      44500.29,
+      44500.29,
+      1
+    ],
+    [
+      "LONG TERM CARE OMBUD",
+      "4100 · INSTATE TRAVEL · 4109 · INSTATE MILEAGE REIMBURSEMENT-FULL RATE · Receiver [individual recipient omitted]",
+      25928.82,
+      25928.82,
+      22
+    ],
+    [
+      "LONG TERM CARE OMBUD",
+      "4325 · ATTORNEY GENERAL LEGAL FEES · 4550 · ATTORNEY GENERAL LEGAL FEES · Receiver DEPARTMENT OF JUSTICE",
+      20760.1,
+      20760.1,
+      1
+    ],
+    [
+      "LONG TERM CARE OMBUD",
+      "3110 · CLASS/UNCLASS SALARY & PER DIEM · 3111 · REGULAR EMPLOYEES · Receiver DHS OFFICE OF FINANCIAL SERVICES DIRECTORS OFFICE",
+      12241.84,
+      12241.84,
+      1
+    ],
+    [
+      "LONG TERM CARE OMBUD",
+      "4100 · INSTATE TRAVEL · 4101 · INSTATE MEALS WITH OVERNIGHT STAY · Receiver [individual recipient omitted]",
+      11761.47,
+      11761.47,
+      14
+    ],
+    [
+      "LONG TERM CARE OMBUD",
+      "4225 · STATE GOVERNMENT SERVICE CHARGES · 4600 · STATE GOVERNMENT SERVICE CHARGES · Receiver STATE OF OREGON SECRETARY OF STATE",
+      9963.26,
+      9963.26,
+      1
+    ],
+    [
+      "LONG TERM CARE OMBUD",
+      "4315 · IT PROFESSIONAL SERVICES · 4515 · PROFESSIONAL SERVICES APPLICATION MAINT · Receiver FCC INC",
+      8765,
+      8765,
+      1
+    ],
+    [
+      "LONG TERM CARE OMBUD",
+      "4100 · INSTATE TRAVEL · 4106 · INSTATE LODGING · Receiver [individual recipient omitted]",
+      7692.86,
+      7692.86,
+      9
+    ],
+    [
+      "LONG TERM CARE OMBUD",
+      "4275 · PUBLICITY & PUBLICATIONS · 4253 · ADVERTISE, PUBLICITY, PUBLISH/PRINT SRVS · Receiver DEPARTMENT OF ADMINISTRATIVE SERVICES",
+      7658.27,
+      7658.27,
+      1
+    ],
+    [
+      "LONG TERM CARE OMBUD",
+      "4250 · DATA PROCESSING · 4375 · COMPUTER TECHNOLOGY COMPUTER PROCESSING · Receiver SHI INTERNATIONAL CORPORATION",
+      7651.94,
+      7651.94,
+      1
+    ],
+    [
+      "LONG TERM CARE OMBUD",
+      "4275 · PUBLICITY & PUBLICATIONS · 4253 · ADVERTISE, PUBLICITY, PUBLISH/PRINT SRVS · Receiver HALO BRANDED SOLUTIONS",
+      6923.25,
+      6923.25,
+      1
+    ],
+    [
+      "LONG TERM CARE OMBUD",
+      "4175 · OFFICE EXPENSES · 4201 · OFFICE SERVICES · Receiver DEPARTMENT OF ADMINISTRATIVE SERVICES",
+      6115.43,
+      6115.43,
+      1
+    ],
+    [
+      "LONG TERM CARE OMBUD",
+      "4275 · PUBLICITY & PUBLICATIONS · 4253 · ADVERTISE, PUBLICITY, PUBLISH/PRINT SRVS · Receiver [individual recipient omitted]",
+      5606.72,
+      5606.72,
+      5
+    ],
+    [
+      "LONG TERM CARE OMBUD",
+      "4250 · DATA PROCESSING · 4375 · COMPUTER TECHNOLOGY COMPUTER PROCESSING · Receiver DEPARTMENT OF ADMINISTRATIVE SERVICES",
+      5353.06,
+      5353.06,
+      1
+    ],
+    [
+      "LONG TERM CARE OMBUD",
+      "4250 · DATA PROCESSING · 4375 · COMPUTER TECHNOLOGY COMPUTER PROCESSING · Receiver FILEMAKER INC",
+      5310,
+      5310,
+      1
+    ],
+    [
+      "LONG TERM CARE OMBUD",
+      "4100 · INSTATE TRAVEL · 4108 · INSTATE GROUND TRANSPORTATION · Receiver EAN HOLDING LLC",
+      4597.39,
+      4597.39,
+      1
+    ],
+    [
+      "LONG TERM CARE OMBUD",
+      "4300 · PROFESSIONAL SERVICES · 4500 · PROFESSIONAL SERVICES NON-IT · Receiver EDMONDS LAW LLC",
+      3775,
+      3775,
+      1
+    ],
+    [
+      "LONG TERM CARE OMBUD",
+      "4225 · STATE GOVERNMENT SERVICE CHARGES · 4600 · STATE GOVERNMENT SERVICE CHARGES · Receiver STATE OF OREGON - SECRETARY OF STATE",
+      3143.26,
+      3143.26,
+      1
+    ],
+    [
+      "LONG TERM CARE OMBUD",
+      "4575 · AGENCY PROGRAM RELATED SVCS & SUPP · 4976 · AGENCY PROGRAM RELATED SUPPLIES · Receiver HALO BRANDED SOLUTIONS",
+      3110.21,
+      3110.21,
+      1
+    ],
+    [
+      "LONG TERM CARE OMBUD",
+      "4175 · OFFICE EXPENSES · 4202 · EQUIPMENT RENTAL · Receiver DEPARTMENT OF ADMINISTRATIVE SERVICES",
+      2833.33,
+      2833.33,
+      1
+    ],
+    [
+      "LONG TERM CARE OMBUD",
+      "3221 · PENSION BOND CONTRIBUTION · 3212 · PENSION BOND ASSESSMENT · Receiver DHS OFFICE OF FINANCIAL SERVICES DIRECTORS OFFICE",
+      2231.07,
+      2231.07,
+      1
+    ],
+    [
+      "LONG TERM CARE OMBUD",
+      "4200 · TELECOMM/TECH SVC AND SUPPLIES · 4301 · TELECOM/VOICE USAGE · Receiver KYNDRYL INC",
+      2184.77,
+      2184.77,
+      1
+    ],
+    [
+      "LONG TERM CARE OMBUD",
+      "4150 · EMPLOYEE TRAINING · 4401 · TRAINING, EDUCATION OR INSTRUCTION SRVC · Receiver CAPACITY BUILDING PARTNERSHIPS,LLCC",
+      2000,
+      2000,
+      1
+    ],
+    [
+      "LONG TERM CARE OMBUD",
+      "4300 · PROFESSIONAL SERVICES · 4500 · PROFESSIONAL SERVICES NON-IT · Receiver PASSPORT TO LANGUAGES INC",
+      1677.5,
+      1677.5,
+      1
+    ],
+    [
+      "LONG TERM CARE OMBUD",
+      "4100 · INSTATE TRAVEL · 4111 · INSTATE MILEAGE REIMBURSMNT-VOLUNTEERS · Receiver [individual recipient omitted]",
+      1640.99,
+      1640.99,
+      2
+    ],
+    [
+      "LONG TERM CARE OMBUD",
+      "4250 · DATA PROCESSING · 4375 · COMPUTER TECHNOLOGY COMPUTER PROCESSING · Receiver CALM COM INC",
+      1541,
+      1541,
+      1
+    ],
+    [
+      "LONG TERM CARE OMBUD",
+      "4300 · PROFESSIONAL SERVICES · 4500 · PROFESSIONAL SERVICES NON-IT · Receiver CASCADE CENTERS INC",
+      1308.96,
+      1308.96,
+      1
+    ],
+    [
+      "LONG TERM CARE OMBUD",
+      "4425 · LEASE PAYMENTS & TAXES · 4800 · INTERAGENCY LEASE PAYMENTS · Receiver [individual recipient omitted]",
+      1250,
+      1250,
+      1
+    ],
+    [
+      "LONG TERM CARE OMBUD",
+      "4175 · OFFICE EXPENSES · 4200 · OFFICE SUPPLIES · Receiver HALO BRANDED SOLUTIONS",
+      1169,
+      1169,
+      1
+    ],
+    [
+      "LONG TERM CARE OMBUD",
+      "4100 · INSTATE TRAVEL · 4106 · INSTATE LODGING · Receiver ROGUE REGENCY INC",
+      1153.15,
+      1153.15,
+      1
+    ],
+    [
+      "LONG TERM CARE OMBUD",
+      "4100 · INSTATE TRAVEL · 4110 · INSTATE MILEAGE REIMBURSMNT-REDUCED RATE · Receiver [individual recipient omitted]",
+      1033.37,
+      1033.37,
+      5
+    ],
+    [
+      "LONG TERM CARE OMBUD",
+      "4200 · TELECOMM/TECH SVC AND SUPPLIES · 4305 · TELECOM/NETWORK SERVICES · Receiver DEPARTMENT OF ADMINISTRATIVE SERVICES",
+      984.84,
+      984.84,
+      1
+    ],
+    [
+      "LONG TERM CARE OMBUD",
+      "3230 · SOCIAL SECURITY TAX · 3221 · SOCIAL SECURITY TAXES · Receiver DHS OFFICE OF FINANCIAL SERVICES DIRECTORS OFFICE",
+      929.68,
+      929.68,
+      1
+    ],
+    [
+      "LONG TERM CARE OMBUD",
+      "3110 · CLASS/UNCLASS SALARY & PER DIEM · 3111 · REGULAR EMPLOYEES · Receiver OREGON HEALTH AUTHORITY",
+      767.3,
+      767.3,
+      1
+    ],
+    [
+      "LONG TERM CARE OMBUD",
+      "4715 · IT EXPENDABLE PROPERTY · 4304 · TELECOM/VOICE EQUIPMENT<$5K · Receiver DEPARTMENT OF ADMINISTRATIVE SERVICES",
+      694.08,
+      694.08,
+      1
+    ],
+    [
+      "LONG TERM CARE OMBUD",
+      "3220 · PUBLIC EMPLOYES' RETIREMENT SYSTEM · 3210 · PUBLIC EMPLOYEES RETIREMENT CONTRIBUTION · Receiver DHS OFFICE OF FINANCIAL SERVICES DIRECTORS OFFICE",
+      683.48,
+      683.48,
+      1
+    ],
+    [
+      "LONG TERM CARE OMBUD",
+      "4150 · EMPLOYEE TRAINING · 4450 · PROF DEV INSTATE MILE REIMB-FULL RATE · Receiver [individual recipient omitted]",
+      683.23,
+      683.23,
+      6
+    ],
+    [
+      "LONG TERM CARE OMBUD",
+      "4225 · STATE GOVERNMENT SERVICE CHARGES · 4600 · STATE GOVERNMENT SERVICE CHARGES · Receiver OREGON GOVERNMENT ETHICS COMMISSION",
+      622,
+      622,
+      1
+    ],
+    [
+      "LONG TERM CARE OMBUD",
+      "4100 · INSTATE TRAVEL · 4108 · INSTATE GROUND TRANSPORTATION · Receiver [individual recipient omitted]",
+      589.62,
+      589.62,
+      8
+    ],
+    [
+      "LONG TERM CARE OMBUD",
+      "4575 · AGENCY PROGRAM RELATED SVCS & SUPP · 4977 · AGENCY PROGRAM RELATED REIMBURSEMENTS · Receiver [individual recipient omitted]",
+      526.61,
+      526.61,
+      5
+    ],
+    [
+      "LONG TERM CARE OMBUD",
+      "4300 · PROFESSIONAL SERVICES · 4500 · PROFESSIONAL SERVICES NON-IT · Receiver TRI-COUNTY SIGN LANGUAGE INTERPRETING INC",
+      525,
+      525,
+      1
+    ],
+    [
+      "LONG TERM CARE OMBUD",
+      "4275 · PUBLICITY & PUBLICATIONS · 4253 · ADVERTISE, PUBLICITY, PUBLISH/PRINT SRVS · Receiver COUNTRY MEDIA INC",
+      510,
+      510,
+      1
+    ],
+    [
+      "LONG TERM CARE OMBUD",
+      "4175 · OFFICE EXPENSES · 4201 · OFFICE SERVICES · Receiver [individual recipient omitted]",
+      491.75,
+      491.75,
+      3
+    ],
+    [
+      "LONG TERM CARE OMBUD",
+      "4225 · STATE GOVERNMENT SERVICE CHARGES · 4600 · STATE GOVERNMENT SERVICE CHARGES · Receiver OREGON STATE TREASURY",
+      409.9,
+      409.9,
+      1
+    ],
+    [
+      "LONG TERM CARE OMBUD",
+      "4175 · OFFICE EXPENSES · 4201 · OFFICE SERVICES · Receiver GARTEN SERVICES INC",
+      402.16,
+      402.16,
+      1
+    ],
+    [
+      "LONG TERM CARE OMBUD",
+      "4550 · OTHER CARE OF RESIDENTS & PATIENTS · 4951 · OTHER CARE OF RESIDENT/PATIENT-SUPPLIES · Receiver [individual recipient omitted]",
+      391.87,
+      391.87,
+      3
+    ],
+    [
+      "LONG TERM CARE OMBUD",
+      "4275 · PUBLICITY & PUBLICATIONS · 4253 · ADVERTISE, PUBLICITY, PUBLISH/PRINT SRVS · Receiver MLASKO INSURANCE LLC",
+      350,
+      350,
+      1
+    ],
+    [
+      "LONG TERM CARE OMBUD",
+      "4150 · EMPLOYEE TRAINING · 4431 · PROF DEV INSTATE MEAL WITH OVERNITE STAY · Receiver [individual recipient omitted]",
+      332.5,
+      332.5,
+      2
+    ],
+    [
+      "LONG TERM CARE OMBUD",
+      "4275 · PUBLICITY & PUBLICATIONS · 4253 · ADVERTISE, PUBLICITY, PUBLISH/PRINT SRVS · Receiver SILVERMAN STUDIOS LLC",
+      300,
+      300,
+      1
+    ],
+    [
+      "LONG TERM CARE OMBUD",
+      "4175 · OFFICE EXPENSES · 4200 · OFFICE SUPPLIES · Receiver [individual recipient omitted]",
+      297.35,
+      297.35,
+      5
+    ],
+    [
+      "LONG TERM CARE OMBUD",
+      "4650 · OTHER SERVICES AND SUPPLIES · 4704 · OTHER SUPPLIES · Receiver [individual recipient omitted]",
+      256.94,
+      256.94,
+      2
+    ],
+    [
+      "LONG TERM CARE OMBUD",
+      "4275 · PUBLICITY & PUBLICATIONS · 4253 · ADVERTISE, PUBLICITY, PUBLISH/PRINT SRVS · Receiver GUARDIAN CONSERVATOR ASSOCIATION OF OREGON INC",
+      250,
+      250,
+      1
+    ],
+    [
+      "LONG TERM CARE OMBUD",
+      "4300 · PROFESSIONAL SERVICES · 4500 · PROFESSIONAL SERVICES NON-IT · Receiver CRIMINAL INFORMATION SERVICES INC",
+      240,
+      240,
+      1
+    ],
+    [
+      "LONG TERM CARE OMBUD",
+      "4100 · INSTATE TRAVEL · 4108 · INSTATE GROUND TRANSPORTATION · Receiver ENTERPRISE HOLDINGS LLC",
+      234.83,
+      234.83,
+      1
+    ],
+    [
+      "LONG TERM CARE OMBUD",
+      "4200 · TELECOMM/TECH SVC AND SUPPLIES · 4301 · TELECOM/VOICE USAGE · Receiver DEPARTMENT OF ADMINISTRATIVE SERVICES",
+      231.36,
+      231.36,
+      1
+    ],
+    [
+      "LONG TERM CARE OMBUD",
+      "4275 · PUBLICITY & PUBLICATIONS · 4253 · ADVERTISE, PUBLICITY, PUBLISH/PRINT SRVS · Receiver COOS BAY DOWNTOWN ASSOCIATION",
+      200,
+      200,
+      1
+    ],
+    [
+      "LONG TERM CARE OMBUD",
+      "4150 · EMPLOYEE TRAINING · 4432 · PROF DEV OUT-OF-STATE MEAL W/OVERNITE · Receiver [individual recipient omitted]",
+      185,
+      185,
+      1
+    ],
+    [
+      "LONG TERM CARE OMBUD",
+      "3220 · PUBLIC EMPLOYES' RETIREMENT SYSTEM · 3210 · PUBLIC EMPLOYEES RETIREMENT CONTRIBUTION · Receiver OREGON HEALTH AUTHORITY",
+      175.63,
+      175.63,
+      1
+    ],
+    [
+      "LONG TERM CARE OMBUD",
+      "4125 · OUT-OF-STATE TRAVEL · 4151 · OUT-OF-STATE MEALS WITH OVERNIGHT STAY · Receiver [individual recipient omitted]",
+      162.25,
+      162.25,
+      2
+    ],
+    [
+      "LONG TERM CARE OMBUD",
+      "4125 · OUT-OF-STATE TRAVEL · 4159 · OUT-OF-STATE AIR TRANSPORTATION · Receiver [individual recipient omitted]",
+      159.44,
+      159.44,
+      1
+    ],
+    [
+      "LONG TERM CARE OMBUD",
+      "4250 · DATA PROCESSING · 4375 · COMPUTER TECHNOLOGY COMPUTER PROCESSING · Receiver [individual recipient omitted]",
+      147,
+      147,
+      1
+    ],
+    [
+      "LONG TERM CARE OMBUD",
+      "4425 · LEASE PAYMENTS & TAXES · 4800 · INTERAGENCY LEASE PAYMENTS · Receiver WILLAMALANE PARK & RECREATION DISTRICT",
+      145.2,
+      145.2,
+      1
+    ],
+    [
+      "LONG TERM CARE OMBUD",
+      "4100 · INSTATE TRAVEL · 4105 · INSTATE MEALS-NO OVERNIGHT STAY · Receiver [individual recipient omitted]",
+      113.5,
+      113.5,
+      2
+    ],
+    [
+      "LONG TERM CARE OMBUD",
+      "4525 · MEDICAL SUPPLIES AND SERVICES · 4900 · MEDICAL SUPPLIES · Receiver [individual recipient omitted]",
+      90.27,
+      90.27,
+      1
+    ],
+    [
+      "LONG TERM CARE OMBUD",
+      "4275 · PUBLICITY & PUBLICATIONS · 4253 · ADVERTISE, PUBLICITY, PUBLISH/PRINT SRVS · Receiver CENTRAL OREGON DISABILITY SUPPORT NETWORK INC",
+      80,
+      80,
+      1
+    ],
+    [
+      "LONG TERM CARE OMBUD",
+      "4150 · EMPLOYEE TRAINING · 4437 · PROF DEV DUES/MEMBERSHIP · Receiver GUARDIAN CONSERVATOR ASSOCIATION OF OREGON INC",
+      62.5,
+      62.5,
+      1
+    ],
+    [
+      "LONG TERM CARE OMBUD",
+      "4150 · EMPLOYEE TRAINING · 4440 · PROF DEV OUT-OF-STATE AIR TRANSPORTATION · Receiver [individual recipient omitted]",
+      60,
+      60,
+      1
+    ],
+    [
+      "LONG TERM CARE OMBUD",
+      "3230 · SOCIAL SECURITY TAX · 3221 · SOCIAL SECURITY TAXES · Receiver OREGON HEALTH AUTHORITY",
+      58.7,
+      58.7,
+      1
+    ],
+    [
+      "LONG TERM CARE OMBUD",
+      "3241 · PAID FAMILY MEDICAL LEAVE INSURANCE · 3273 · PAID LEAVE OREGON-EMPLOYER CONTRIBUTIONS · Receiver DHS OFFICE OF FINANCIAL SERVICES DIRECTORS OFFICE",
+      48.6,
+      48.6,
+      1
+    ],
+    [
+      "LONG TERM CARE OMBUD",
+      "4150 · EMPLOYEE TRAINING · 4441 · PROF DEV OUT-OF-STATE GROUND TRANSPRTATN · Receiver [individual recipient omitted]",
+      44.76,
+      44.76,
+      1
+    ],
+    [
+      "LONG TERM CARE OMBUD",
+      "4575 · AGENCY PROGRAM RELATED SVCS & SUPP · 4975 · AGENCY PROGRAM RELATED SERVICES · Receiver [individual recipient omitted]",
+      38,
+      38,
+      1
+    ],
+    [
+      "LONG TERM CARE OMBUD",
+      "4300 · PROFESSIONAL SERVICES · 4500 · PROFESSIONAL SERVICES NON-IT · Receiver [individual recipient omitted]",
+      12.5,
+      12.5,
+      1
+    ]
+  ],
+  "sourceCheck": {
+    "objectClassRows": 77,
+    "sourceRows": 156,
+    "sourceTotal": 880263.26,
+    "difference": 0
+  }
+}

@@ -1,0 +1,77 @@
+{
+  "scope": "Massachusetts",
+  "code": "ma",
+  "department": "MASSACHUSETTS OFFICE ON DISABILITY (OHA)",
+  "fiscalYear": 2024,
+  "ledgerAmount": 4009050.6,
+  "sourceTotal": 4364581.27,
+  "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000",
+  "rowSchema": [
+    "subAgency",
+    "program",
+    "amount",
+    "sourceAmount",
+    "sourceRows"
+  ],
+  "rows": [
+    [
+      "MASSACHUSETTS OFFICE ON DISABILITY (OHA)",
+      "MASSACHUSETTS OFFICE ON DISABILITY (OHA) · (PP) STATE AID/POL SUB",
+      3170592.08,
+      3170592.08,
+      55
+    ],
+    [
+      "MASSACHUSETTS OFFICE ON DISABILITY (OHA)",
+      "MASSACHUSETTS OFFICE ON DISABILITY (OHA) · (AA) REGULAR EMPLOYEE COMPENSATION",
+      1041139.36,
+      1041139.36,
+      57
+    ],
+    [
+      "MASSACHUSETTS OFFICE ON DISABILITY (OHA)",
+      "MASSACHUSETTS OFFICE ON DISABILITY (OHA) · (CC) SPECIAL EMPLOYEES",
+      100972.32,
+      100972.32,
+      54
+    ],
+    [
+      "MASSACHUSETTS OFFICE ON DISABILITY (OHA)",
+      "MASSACHUSETTS OFFICE ON DISABILITY (OHA) · (EE) ADMINISTRATIVE EXPENSES",
+      29765.93,
+      29765.93,
+      48
+    ],
+    [
+      "MASSACHUSETTS OFFICE ON DISABILITY (OHA)",
+      "MASSACHUSETTS OFFICE ON DISABILITY (OHA) · (JJ) OPERATIONAL SERVICES",
+      18154.64,
+      18154.64,
+      81
+    ],
+    [
+      "MASSACHUSETTS OFFICE ON DISABILITY (OHA)",
+      "MASSACHUSETTS OFFICE ON DISABILITY (OHA) · (LL) EQUIPMENT LEASE-MAINTAIN/REPAR",
+      2288.61,
+      2288.61,
+      12
+    ],
+    [
+      "MASSACHUSETTS OFFICE ON DISABILITY (OHA)",
+      "MASSACHUSETTS OFFICE ON DISABILITY (OHA) · (BB) REGULAR EMPLOYEE RELATED EXPEN",
+      1668.33,
+      1668.33,
+      29
+    ],
+    [
+      "MASSACHUSETTS OFFICE ON DISABILITY (OHA)",
+      "MASSACHUSETTS OFFICE ON DISABILITY (OHA) · (99) PAYROLL REJECTS",
+      0,
+      0,
+      2
+    ]
+  ],
+  "hierarchyNote": "The source does not identify a separate sub-agency column; direct-managed rows repeat the parent entity.",
+  "sourceBasis": "official source amount",
+  "note": "Amounts are shown on the official source basis; no comparator normalization was applied."
+}

@@ -1,0 +1,112 @@
+{
+  "scope": "Massachusetts",
+  "code": "ma",
+  "department": "DIVISION OF INSURANCE (DOI)",
+  "fiscalYear": 2024,
+  "ledgerAmount": 13680736.25,
+  "sourceTotal": 14893971.47,
+  "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000",
+  "rowSchema": [
+    "subAgency",
+    "program",
+    "amount",
+    "sourceAmount",
+    "sourceRows"
+  ],
+  "rows": [
+    [
+      "DIVISION OF INSURANCE (DOI)",
+      "DIVISION OF INSURANCE (DOI) · (AA) REGULAR EMPLOYEE COMPENSATION",
+      10677297.85,
+      10677297.85,
+      215
+    ],
+    [
+      "DIVISION OF INSURANCE (DOI)",
+      "DIVISION OF INSURANCE (DOI) · (GG) ENERGY COSTS AND SPACE RENTAL",
+      2354575.7,
+      2354575.7,
+      26
+    ],
+    [
+      "DIVISION OF INSURANCE (DOI)",
+      "DIVISION OF INSURANCE (DOI) · (HH) CONSULTANT SVCS (TO DEPTS)",
+      1169695.46,
+      1169695.46,
+      59
+    ],
+    [
+      "DIVISION OF INSURANCE (DOI)",
+      "DIVISION OF INSURANCE (DOI) · (CC) SPECIAL EMPLOYEES",
+      258165.25,
+      258165.25,
+      61
+    ],
+    [
+      "DIVISION OF INSURANCE (DOI)",
+      "DIVISION OF INSURANCE (DOI) · (EE) ADMINISTRATIVE EXPENSES",
+      205283.34,
+      205283.34,
+      122
+    ],
+    [
+      "DIVISION OF INSURANCE (DOI)",
+      "DIVISION OF INSURANCE (DOI) · (UU) IT NON-PAYROLL EXPENSES",
+      109497.77,
+      109497.77,
+      38
+    ],
+    [
+      "DIVISION OF INSURANCE (DOI)",
+      "DIVISION OF INSURANCE (DOI) · (LL) EQUIPMENT LEASE-MAINTAIN/REPAR",
+      56434.89,
+      56434.89,
+      38
+    ],
+    [
+      "DIVISION OF INSURANCE (DOI)",
+      "DIVISION OF INSURANCE (DOI) · (JJ) OPERATIONAL SERVICES",
+      44595.17,
+      44595.17,
+      72
+    ],
+    [
+      "DIVISION OF INSURANCE (DOI)",
+      "DIVISION OF INSURANCE (DOI) · (BB) REGULAR EMPLOYEE RELATED EXPEN",
+      13149.14,
+      13149.14,
+      59
+    ],
+    [
+      "DIVISION OF INSURANCE (DOI)",
+      "DIVISION OF INSURANCE (DOI) · (NN) INFRASTRUCTURE:",
+      4761.4,
+      4761.4,
+      13
+    ],
+    [
+      "DIVISION OF INSURANCE (DOI)",
+      "DIVISION OF INSURANCE (DOI) · (KK) EQUIPMENT PURCHASE",
+      415.5,
+      415.5,
+      1
+    ],
+    [
+      "DIVISION OF INSURANCE (DOI)",
+      "DIVISION OF INSURANCE (DOI) · (DD) PENSION & INSURANCE RELATED EX",
+      100,
+      100,
+      1
+    ],
+    [
+      "DIVISION OF INSURANCE (DOI)",
+      "DIVISION OF INSURANCE (DOI) · (99) PAYROLL REJECTS",
+      0,
+      0,
+      4
+    ]
+  ],
+  "hierarchyNote": "The source does not identify a separate sub-agency column; direct-managed rows repeat the parent entity.",
+  "sourceBasis": "official source amount",
+  "note": "Amounts are shown on the official source basis; no comparator normalization was applied."
+}

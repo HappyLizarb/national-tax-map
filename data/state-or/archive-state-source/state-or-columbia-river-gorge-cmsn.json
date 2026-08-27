@@ -1,0 +1,126 @@
+{
+  "scope": "Oregon",
+  "fiscalYear": 2024,
+  "department": "COLUMBIA RIVER GORGE CMSN",
+  "sourceUrl": "https://data.oregon.gov/resource/y9g9-xsxs.json?$select=agency,agency_1,budget_class,budget_class_1,expend_class,expend_class_1,vendor,sum(expense)%20as%20total,count(*)%20as%20source_rows&$where=fiscal_year=2024&$group=agency,agency_1,budget_class,budget_class_1,expend_class,expend_class_1,vendor&$limit=500000",
+  "sourceUrls": [
+    [
+      "Oregon transparency expenditure catalog",
+      "https://data.oregon.gov/Revenue-Expense/Agency-Expenditures-Multi-Year-Report/y9g9-xsxs"
+    ],
+    [
+      "Grouped FY2024 API export",
+      "https://data.oregon.gov/resource/y9g9-xsxs.json?$select=agency,agency_1,budget_class,budget_class_1,expend_class,expend_class_1,vendor,sum(expense)%20as%20total,count(*)%20as%20source_rows&$where=fiscal_year=2024&$group=agency,agency_1,budget_class,budget_class_1,expend_class,expend_class_1,vendor&$limit=500000"
+    ]
+  ],
+  "sourceBasis": "Official Oregon Agency Expenditures Multi-Year Report; FY2024 cash expense grouped by agency, budget class, expenditure class, and privacy-safe receiver label.",
+  "privacyNote": "Individual or ambiguous vendor labels are grouped as [individual recipient omitted]; organization receivers are retained. This layer does not expose person-level payroll.",
+  "sourceRows": 15,
+  "sourceTotal": 972087.17,
+  "rowSchema": [
+    "subAgency",
+    "program",
+    "amount",
+    "sourceAmount",
+    "sourceRows"
+  ],
+  "rows": [
+    [
+      "COLUMBIA RIVER GORGE CMSN",
+      "4300 · PROFESSIONAL SERVICES · 4500 · PROFESSIONAL SERVICES NON-IT · Receiver COLUMBIA RIVER GORGE COMMISSION",
+      962085.03,
+      962085.03,
+      1
+    ],
+    [
+      "COLUMBIA RIVER GORGE CMSN",
+      "4225 · STATE GOVERNMENT SERVICE CHARGES · 4600 · STATE GOVERNMENT SERVICE CHARGES · Receiver COLUMBIA RIVER GORGE COMMISSION",
+      4224.25,
+      4224.25,
+      1
+    ],
+    [
+      "COLUMBIA RIVER GORGE CMSN",
+      "4225 · STATE GOVERNMENT SERVICE CHARGES · 4600 · STATE GOVERNMENT SERVICE CHARGES · Receiver DEPARTMENT OF ADMINISTRATIVE SERVICES",
+      3419,
+      3419,
+      1
+    ],
+    [
+      "COLUMBIA RIVER GORGE CMSN",
+      "4250 · DATA PROCESSING · 4375 · COMPUTER TECHNOLOGY COMPUTER PROCESSING · Receiver US BANK CORPORATE PAYMENT SYSTEMS",
+      662.85,
+      662.85,
+      1
+    ],
+    [
+      "COLUMBIA RIVER GORGE CMSN",
+      "4100 · INSTATE TRAVEL · 4106 · INSTATE LODGING · Receiver US BANK CORPORATE PAYMENT SYSTEMS",
+      452.41,
+      452.41,
+      1
+    ],
+    [
+      "COLUMBIA RIVER GORGE CMSN",
+      "4100 · INSTATE TRAVEL · 4111 · INSTATE MILEAGE REIMBURSMNT-VOLUNTEERS · Receiver [individual recipient omitted]",
+      394.89,
+      394.89,
+      3
+    ],
+    [
+      "COLUMBIA RIVER GORGE CMSN",
+      "4575 · AGENCY PROGRAM RELATED SVCS & SUPP · 4977 · AGENCY PROGRAM RELATED REIMBURSEMENTS · Receiver US BANK CORPORATE PAYMENT SYSTEMS",
+      253.64,
+      253.64,
+      1
+    ],
+    [
+      "COLUMBIA RIVER GORGE CMSN",
+      "4425 · LEASE PAYMENTS & TAXES · 4800 · INTERAGENCY LEASE PAYMENTS · Receiver US BANK CORPORATE PAYMENT SYSTEMS",
+      200,
+      200,
+      1
+    ],
+    [
+      "COLUMBIA RIVER GORGE CMSN",
+      "4650 · OTHER SERVICES AND SUPPLIES · 4255 · PRIZES AND AWARDS · Receiver US BANK CORPORATE PAYMENT SYSTEMS",
+      159.32,
+      159.32,
+      1
+    ],
+    [
+      "COLUMBIA RIVER GORGE CMSN",
+      "4100 · INSTATE TRAVEL · 4101 · INSTATE MEALS WITH OVERNIGHT STAY · Receiver [individual recipient omitted]",
+      88.5,
+      88.5,
+      1
+    ],
+    [
+      "COLUMBIA RIVER GORGE CMSN",
+      "4275 · PUBLICITY & PUBLICATIONS · 4253 · ADVERTISE, PUBLICITY, PUBLISH/PRINT SRVS · Receiver PRINT IT INC",
+      72.03,
+      72.03,
+      1
+    ],
+    [
+      "COLUMBIA RIVER GORGE CMSN",
+      "4715 · IT EXPENDABLE PROPERTY · 4366 · COMPUTER TECHNOLOGY PC SOFTWARE<$5K · Receiver US BANK CORPORATE PAYMENT SYSTEMS",
+      60.2,
+      60.2,
+      1
+    ],
+    [
+      "COLUMBIA RIVER GORGE CMSN",
+      "4175 · OFFICE EXPENSES · 4201 · OFFICE SERVICES · Receiver PRINT IT INC",
+      15.05,
+      15.05,
+      1
+    ]
+  ],
+  "sourceCheck": {
+    "objectClassRows": 13,
+    "sourceRows": 15,
+    "sourceTotal": 972087.17,
+    "difference": 0
+  }
+}

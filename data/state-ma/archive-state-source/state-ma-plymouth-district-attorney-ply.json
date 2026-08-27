@@ -1,0 +1,119 @@
+{
+  "scope": "Massachusetts",
+  "code": "ma",
+  "department": "PLYMOUTH DISTRICT ATTORNEY (PLY)",
+  "fiscalYear": 2024,
+  "ledgerAmount": 12113052.79,
+  "sourceTotal": 13187262.68,
+  "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000",
+  "rowSchema": [
+    "subAgency",
+    "program",
+    "amount",
+    "sourceAmount",
+    "sourceRows"
+  ],
+  "rows": [
+    [
+      "PLYMOUTH DISTRICT ATTORNEY (PLY)",
+      "PLYMOUTH DISTRICT ATTORNEY (PLY) · (AA) REGULAR EMPLOYEE COMPENSATION",
+      10513608.16,
+      10513608.16,
+      225
+    ],
+    [
+      "PLYMOUTH DISTRICT ATTORNEY (PLY)",
+      "PLYMOUTH DISTRICT ATTORNEY (PLY) · (GG) ENERGY COSTS AND SPACE RENTAL",
+      786838.43,
+      786838.43,
+      30
+    ],
+    [
+      "PLYMOUTH DISTRICT ATTORNEY (PLY)",
+      "PLYMOUTH DISTRICT ATTORNEY (PLY) · (PP) STATE AID/POL SUB",
+      578913.08,
+      578913.08,
+      104
+    ],
+    [
+      "PLYMOUTH DISTRICT ATTORNEY (PLY)",
+      "PLYMOUTH DISTRICT ATTORNEY (PLY) · (UU) IT NON-PAYROLL EXPENSES",
+      415496.48,
+      415496.48,
+      169
+    ],
+    [
+      "PLYMOUTH DISTRICT ATTORNEY (PLY)",
+      "PLYMOUTH DISTRICT ATTORNEY (PLY) · (EE) ADMINISTRATIVE EXPENSES",
+      380424.05,
+      380424.05,
+      538
+    ],
+    [
+      "PLYMOUTH DISTRICT ATTORNEY (PLY)",
+      "PLYMOUTH DISTRICT ATTORNEY (PLY) · (HH) CONSULTANT SVCS (TO DEPTS)",
+      125948.93,
+      125948.93,
+      33
+    ],
+    [
+      "PLYMOUTH DISTRICT ATTORNEY (PLY)",
+      "PLYMOUTH DISTRICT ATTORNEY (PLY) · (LL) EQUIPMENT LEASE-MAINTAIN/REPAR",
+      92191.26,
+      92191.26,
+      56
+    ],
+    [
+      "PLYMOUTH DISTRICT ATTORNEY (PLY)",
+      "PLYMOUTH DISTRICT ATTORNEY (PLY) · (BB) REGULAR EMPLOYEE RELATED EXPEN",
+      84271.88,
+      84271.88,
+      114
+    ],
+    [
+      "PLYMOUTH DISTRICT ATTORNEY (PLY)",
+      "PLYMOUTH DISTRICT ATTORNEY (PLY) · (KK) EQUIPMENT PURCHASE",
+      54840.87,
+      54840.87,
+      17
+    ],
+    [
+      "PLYMOUTH DISTRICT ATTORNEY (PLY)",
+      "PLYMOUTH DISTRICT ATTORNEY (PLY) · (MM) PURCHASED CLIENT/PROGRAM SVCS",
+      53246.17,
+      53246.17,
+      6
+    ],
+    [
+      "PLYMOUTH DISTRICT ATTORNEY (PLY)",
+      "PLYMOUTH DISTRICT ATTORNEY (PLY) · (NN) INFRASTRUCTURE:",
+      48475.02,
+      48475.02,
+      19
+    ],
+    [
+      "PLYMOUTH DISTRICT ATTORNEY (PLY)",
+      "PLYMOUTH DISTRICT ATTORNEY (PLY) · (DD) PENSION & INSURANCE RELATED EX",
+      38073.75,
+      38073.75,
+      3
+    ],
+    [
+      "PLYMOUTH DISTRICT ATTORNEY (PLY)",
+      "PLYMOUTH DISTRICT ATTORNEY (PLY) · (JJ) OPERATIONAL SERVICES",
+      14934.6,
+      14934.6,
+      17
+    ],
+    [
+      "PLYMOUTH DISTRICT ATTORNEY (PLY)",
+      "PLYMOUTH DISTRICT ATTORNEY (PLY) · (99) PAYROLL REJECTS",
+      0,
+      0,
+      2
+    ]
+  ],
+  "hierarchyNote": "The source does not identify a separate sub-agency column; direct-managed rows repeat the parent entity.",
+  "sourceBasis": "official source amount",
+  "note": "Amounts are shown on the official source basis; no comparator normalization was applied."
+}

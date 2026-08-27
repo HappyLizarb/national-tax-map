@@ -1,0 +1,84 @@
+{
+  "scope": "Massachusetts",
+  "code": "ma",
+  "department": "OFFICE OF CONSUMER AFFAIRS AND BUSINESS REGULATION (SCA)",
+  "fiscalYear": 2024,
+  "ledgerAmount": 2541931.44,
+  "sourceTotal": 2767355.03,
+  "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000",
+  "rowSchema": [
+    "subAgency",
+    "program",
+    "amount",
+    "sourceAmount",
+    "sourceRows"
+  ],
+  "rows": [
+    [
+      "OFFICE OF CONSUMER AFFAIRS AND BUSINESS REGULATION (SCA)",
+      "OFFICE OF CONSUMER AFFAIRS AND BUSINESS REGULATION (SCA) · (AA) REGULAR EMPLOYEE COMPENSATION",
+      2014412.7,
+      2014412.7,
+      372
+    ],
+    [
+      "OFFICE OF CONSUMER AFFAIRS AND BUSINESS REGULATION (SCA)",
+      "OFFICE OF CONSUMER AFFAIRS AND BUSINESS REGULATION (SCA) · (GG) ENERGY COSTS AND SPACE RENTAL",
+      500321.67,
+      500321.67,
+      24
+    ],
+    [
+      "OFFICE OF CONSUMER AFFAIRS AND BUSINESS REGULATION (SCA)",
+      "OFFICE OF CONSUMER AFFAIRS AND BUSINESS REGULATION (SCA) · (CC) SPECIAL EMPLOYEES",
+      189987.51,
+      189987.51,
+      74
+    ],
+    [
+      "OFFICE OF CONSUMER AFFAIRS AND BUSINESS REGULATION (SCA)",
+      "OFFICE OF CONSUMER AFFAIRS AND BUSINESS REGULATION (SCA) · (EE) ADMINISTRATIVE EXPENSES",
+      32610.43,
+      32610.43,
+      53
+    ],
+    [
+      "OFFICE OF CONSUMER AFFAIRS AND BUSINESS REGULATION (SCA)",
+      "OFFICE OF CONSUMER AFFAIRS AND BUSINESS REGULATION (SCA) · (JJ) OPERATIONAL SERVICES",
+      25739.91,
+      25739.91,
+      87
+    ],
+    [
+      "OFFICE OF CONSUMER AFFAIRS AND BUSINESS REGULATION (SCA)",
+      "OFFICE OF CONSUMER AFFAIRS AND BUSINESS REGULATION (SCA) · (LL) EQUIPMENT LEASE-MAINTAIN/REPAR",
+      2274.63,
+      2274.63,
+      8
+    ],
+    [
+      "OFFICE OF CONSUMER AFFAIRS AND BUSINESS REGULATION (SCA)",
+      "OFFICE OF CONSUMER AFFAIRS AND BUSINESS REGULATION (SCA) · (BB) REGULAR EMPLOYEE RELATED EXPEN",
+      1141.1,
+      1141.1,
+      28
+    ],
+    [
+      "OFFICE OF CONSUMER AFFAIRS AND BUSINESS REGULATION (SCA)",
+      "OFFICE OF CONSUMER AFFAIRS AND BUSINESS REGULATION (SCA) · (NN) INFRASTRUCTURE:",
+      744,
+      744,
+      6
+    ],
+    [
+      "OFFICE OF CONSUMER AFFAIRS AND BUSINESS REGULATION (SCA)",
+      "OFFICE OF CONSUMER AFFAIRS AND BUSINESS REGULATION (SCA) · (KK) EQUIPMENT PURCHASE",
+      123.08,
+      123.08,
+      1
+    ]
+  ],
+  "hierarchyNote": "The source does not identify a separate sub-agency column; direct-managed rows repeat the parent entity.",
+  "sourceBasis": "official source amount",
+  "note": "Amounts are shown on the official source basis; no comparator normalization was applied."
+}

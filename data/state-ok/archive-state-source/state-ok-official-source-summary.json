@@ -1,0 +1,1347 @@
+{
+  "scope": "Oklahoma",
+  "code": "ok",
+  "fiscalYear": 2024,
+  "sourceTotal": 35864460747.76,
+  "sourceUrl": "https://data.ok.gov/api/3/action/package_show?id=3a481186-0cb2-4651-85af-34b4afb3712b",
+  "dimension": "business unit / agency / major class / account / fund / accounting period",
+  "note": "The pie uses one official itemized source layer and never inserts a synthetic residual. The official OMES expenditure-summary datastore is a broader aggregate accounting layer than the separate vendor-payment import. Amounts use the official OMES datastore basis; sourceAmount preserves that same official amount. Salary categories remain organization-level totals with no named people. The census fy2024 state-finance comparator is retained for comparison only; its higher total is not assigned to a receiver or program.",
+  "reconciliation": {
+    "itemizedDifference": 0,
+    "normalized": false,
+    "scale": 1,
+    "comparisonDifference": 594435747.76,
+    "sourceRows": 109570,
+    "sourceGroups": 109570,
+    "businessUnits": 164,
+    "agencyLabels": 163,
+    "negativeAdjustments": -36726259.71,
+    "zeroRows": 534,
+    "printedTotal": 35864460747.76
+  },
+  "departments": [
+    {
+      "id": "bu-80700-health-care-authority",
+      "name": "HEALTH CARE AUTHORITY",
+      "amount": 10411224640.27,
+      "sourceAmount": 10411224640.27,
+      "detailUrl": "data/state-ok/archive-state-source/state-ok-omes-fy2024-80700-health-care-authority.json",
+      "sourceUrl": "https://data.ok.gov/api/3/action/package_show?id=3a481186-0cb2-4651-85af-34b4afb3712b"
+    },
+    {
+      "id": "bu-26500-department-of-education",
+      "name": "DEPARTMENT OF EDUCATION",
+      "amount": 5225485621.57,
+      "sourceAmount": 5225485621.57,
+      "detailUrl": "data/state-ok/archive-state-source/state-ok-omes-fy2024-26500-department-of-education.json",
+      "sourceUrl": "https://data.ok.gov/api/3/action/package_show?id=3a481186-0cb2-4651-85af-34b4afb3712b"
+    },
+    {
+      "id": "bu-83000-department-of-human-services",
+      "name": "DEPARTMENT OF HUMAN SERVICES",
+      "amount": 3763772375.65,
+      "sourceAmount": 3763772375.65,
+      "detailUrl": "data/state-ok/archive-state-source/state-ok-omes-fy2024-83000-department-of-human-services.json",
+      "sourceUrl": "https://data.ok.gov/api/3/action/package_show?id=3a481186-0cb2-4651-85af-34b4afb3712b"
+    },
+    {
+      "id": "bu-34500-department-of-transportation",
+      "name": "DEPARTMENT OF TRANSPORTATION",
+      "amount": 2237280266.97,
+      "sourceAmount": 2237280266.97,
+      "detailUrl": "data/state-ok/archive-state-source/state-ok-omes-fy2024-34500-department-of-transportation.json",
+      "sourceUrl": "https://data.ok.gov/api/3/action/package_show?id=3a481186-0cb2-4651-85af-34b4afb3712b"
+    },
+    {
+      "id": "bu-76000-university-of-oklahoma",
+      "name": "UNIVERSITY OF OKLAHOMA",
+      "amount": 1472451102.35,
+      "sourceAmount": 1472451102.35,
+      "detailUrl": "data/state-ok/archive-state-source/state-ok-omes-fy2024-76000-university-of-oklahoma.json",
+      "sourceUrl": "https://data.ok.gov/api/3/action/package_show?id=3a481186-0cb2-4651-85af-34b4afb3712b"
+    },
+    {
+      "id": "bu-01000-oklahoma-state-university",
+      "name": "OKLAHOMA STATE UNIVERSITY",
+      "amount": 1214716438.84,
+      "sourceAmount": 1214716438.84,
+      "detailUrl": "data/state-ok/archive-state-source/state-ok-omes-fy2024-01000-oklahoma-state-university.json",
+      "sourceUrl": "https://data.ok.gov/api/3/action/package_show?id=3a481186-0cb2-4651-85af-34b4afb3712b"
+    },
+    {
+      "id": "bu-77000-univ-of-okla-health-sciences-center",
+      "name": "UNIV. OF OKLA. HEALTH SCIENCES CENTER",
+      "amount": 1097758975.67,
+      "sourceAmount": 1097758975.67,
+      "detailUrl": "data/state-ok/archive-state-source/state-ok-omes-fy2024-77000-univ-of-okla-health-sciences-center.json",
+      "sourceUrl": "https://data.ok.gov/api/3/action/package_show?id=3a481186-0cb2-4651-85af-34b4afb3712b"
+    },
+    {
+      "id": "bu-83500-water-resources-board",
+      "name": "WATER RESOURCES BOARD",
+      "amount": 883805751.03,
+      "sourceAmount": 883805751.03,
+      "detailUrl": "data/state-ok/archive-state-source/state-ok-omes-fy2024-83500-water-resources-board.json",
+      "sourceUrl": "https://data.ok.gov/api/3/action/package_show?id=3a481186-0cb2-4651-85af-34b4afb3712b"
+    },
+    {
+      "id": "bu-13100-department-of-corrections",
+      "name": "DEPARTMENT OF CORRECTIONS",
+      "amount": 669512328.83,
+      "sourceAmount": 669512328.83,
+      "detailUrl": "data/state-ok/archive-state-source/state-ok-omes-fy2024-13100-department-of-corrections.json",
+      "sourceUrl": "https://data.ok.gov/api/3/action/package_show?id=3a481186-0cb2-4651-85af-34b4afb3712b"
+    },
+    {
+      "id": "bu-45200-mental-health-and-substance-abuse-serv",
+      "name": "MENTAL HEALTH AND SUBSTANCE ABUSE SERV.",
+      "amount": 643516550.06,
+      "sourceAmount": 643516550.06,
+      "detailUrl": "data/state-ok/archive-state-source/state-ok-omes-fy2024-45200-mental-health-and-substance-abuse-serv.json",
+      "sourceUrl": "https://data.ok.gov/api/3/action/package_show?id=3a481186-0cb2-4651-85af-34b4afb3712b"
+    },
+    {
+      "id": "bu-60500-regents-for-higher-education",
+      "name": "REGENTS FOR HIGHER EDUCATION",
+      "amount": 527167373.73,
+      "sourceAmount": 527167373.73,
+      "detailUrl": "data/state-ok/archive-state-source/state-ok-omes-fy2024-60500-regents-for-higher-education.json",
+      "sourceUrl": "https://data.ok.gov/api/3/action/package_show?id=3a481186-0cb2-4651-85af-34b4afb3712b"
+    },
+    {
+      "id": "bu-10500-capitol-improvement-authority",
+      "name": "CAPITOL IMPROVEMENT AUTHORITY",
+      "amount": 498060797.26,
+      "sourceAmount": 498060797.26,
+      "detailUrl": "data/state-ok/archive-state-source/state-ok-omes-fy2024-10500-capitol-improvement-authority.json",
+      "sourceUrl": "https://data.ok.gov/api/3/action/package_show?id=3a481186-0cb2-4651-85af-34b4afb3712b"
+    },
+    {
+      "id": "bu-09000-office-of-management-and-enterprise-serv",
+      "name": "OFFICE OF MANAGEMENT AND ENTERPRISE SERV",
+      "amount": 488680336.98,
+      "sourceAmount": 488680336.98,
+      "detailUrl": "data/state-ok/archive-state-source/state-ok-omes-fy2024-09000-office-of-management-and-enterprise-serv.json",
+      "sourceUrl": "https://data.ok.gov/api/3/action/package_show?id=3a481186-0cb2-4651-85af-34b4afb3712b"
+    },
+    {
+      "id": "bu-71500-teachers-retirement-system",
+      "name": "TEACHERS RETIREMENT SYSTEM",
+      "amount": 472267014.97,
+      "sourceAmount": 472267014.97,
+      "detailUrl": "data/state-ok/archive-state-source/state-ok-omes-fy2024-71500-teachers-retirement-system.json",
+      "sourceUrl": "https://data.ok.gov/api/3/action/package_show?id=3a481186-0cb2-4651-85af-34b4afb3712b"
+    },
+    {
+      "id": "bu-34000-oklahoma-state-department-of-health",
+      "name": "OKLAHOMA STATE DEPARTMENT OF HEALTH",
+      "amount": 448340536.72,
+      "sourceAmount": 448340536.72,
+      "detailUrl": "data/state-ok/archive-state-source/state-ok-omes-fy2024-34000-oklahoma-state-department-of-health.json",
+      "sourceUrl": "https://data.ok.gov/api/3/action/package_show?id=3a481186-0cb2-4651-85af-34b4afb3712b"
+    },
+    {
+      "id": "bu-82500-univ-hospitals-authority",
+      "name": "UNIV. HOSPITALS AUTHORITY",
+      "amount": 349901467.1,
+      "sourceAmount": 349901467.1,
+      "detailUrl": "data/state-ok/archive-state-source/state-ok-omes-fy2024-82500-univ-hospitals-authority.json",
+      "sourceUrl": "https://data.ok.gov/api/3/action/package_show?id=3a481186-0cb2-4651-85af-34b4afb3712b"
+    },
+    {
+      "id": "bu-69500-oklahoma-tax-commission",
+      "name": "OKLAHOMA TAX COMMISSION",
+      "amount": 273095475.63,
+      "sourceAmount": 273095475.63,
+      "detailUrl": "data/state-ok/archive-state-source/state-ok-omes-fy2024-69500-oklahoma-tax-commission.json",
+      "sourceUrl": "https://data.ok.gov/api/3/action/package_show?id=3a481186-0cb2-4651-85af-34b4afb3712b"
+    },
+    {
+      "id": "bu-12000-univ-of-central-okla",
+      "name": "UNIV. OF CENTRAL OKLA.",
+      "amount": 229894230.43,
+      "sourceAmount": 229894230.43,
+      "detailUrl": "data/state-ok/archive-state-source/state-ok-omes-fy2024-12000-univ-of-central-okla.json",
+      "sourceUrl": "https://data.ok.gov/api/3/action/package_show?id=3a481186-0cb2-4651-85af-34b4afb3712b"
+    },
+    {
+      "id": "bu-65000-department-of-veterans-affairs",
+      "name": "DEPARTMENT OF VETERANS AFFAIRS",
+      "amount": 215926922.9,
+      "sourceAmount": 215926922.9,
+      "detailUrl": "data/state-ok/archive-state-source/state-ok-omes-fy2024-65000-department-of-veterans-affairs.json",
+      "sourceUrl": "https://data.ok.gov/api/3/action/package_show?id=3a481186-0cb2-4651-85af-34b4afb3712b"
+    },
+    {
+      "id": "bu-92200-oklahoma-housing-finance-agency",
+      "name": "OKLAHOMA HOUSING FINANCE AGENCY",
+      "amount": 215000000,
+      "sourceAmount": 215000000,
+      "detailUrl": null,
+      "sourceUrl": "https://data.ok.gov/api/3/action/package_show?id=3a481186-0cb2-4651-85af-34b4afb3712b",
+      "program": "BU 92200 · 560000 · TRANSFERS & OTHER DISBURSMNTS · 562000 · TRANSFERS · 562160 · TRANS-INVEST.FDS-MASTER CUST. · Fund 8000 · OTHER COMPONENT UNITS · FY2024 period 2",
+      "sourceRows": 1
+    },
+    {
+      "id": "bu-58500-department-of-public-safety",
+      "name": "DEPARTMENT OF PUBLIC SAFETY",
+      "amount": 204191340.35,
+      "sourceAmount": 204191340.35,
+      "detailUrl": "data/state-ok/archive-state-source/state-ok-omes-fy2024-58500-department-of-public-safety.json",
+      "sourceUrl": "https://data.ok.gov/api/3/action/package_show?id=3a481186-0cb2-4651-85af-34b4afb3712b"
+    },
+    {
+      "id": "bu-80000-okla-career-and-technology-education",
+      "name": "OKLA. CAREER AND TECHNOLOGY EDUCATION",
+      "amount": 200321495.41,
+      "sourceAmount": 200321495.41,
+      "detailUrl": "data/state-ok/archive-state-source/state-ok-omes-fy2024-80000-okla-career-and-technology-education.json",
+      "sourceUrl": "https://data.ok.gov/api/3/action/package_show?id=3a481186-0cb2-4651-85af-34b4afb3712b"
+    },
+    {
+      "id": "bu-30900-department-of-emergency-management",
+      "name": "DEPARTMENT OF EMERGENCY MANAGEMENT",
+      "amount": 158647753.11,
+      "sourceAmount": 158647753.11,
+      "detailUrl": "data/state-ok/archive-state-source/state-ok-omes-fy2024-30900-department-of-emergency-management.json",
+      "sourceUrl": "https://data.ok.gov/api/3/action/package_show?id=3a481186-0cb2-4651-85af-34b4afb3712b"
+    },
+    {
+      "id": "bu-77300-osu-college-of-osteopathic-med",
+      "name": "OSU-COLLEGE OF OSTEOPATHIC MED.",
+      "amount": 142618264.07,
+      "sourceAmount": 142618264.07,
+      "detailUrl": "data/state-ok/archive-state-source/state-ok-omes-fy2024-77300-osu-college-of-osteopathic-med.json",
+      "sourceUrl": "https://data.ok.gov/api/3/action/package_show?id=3a481186-0cb2-4651-85af-34b4afb3712b"
+    },
+    {
+      "id": "bu-75000-tulsa-community-college",
+      "name": "TULSA COMMUNITY COLLEGE",
+      "amount": 141916969.44,
+      "sourceAmount": 141916969.44,
+      "detailUrl": "data/state-ok/archive-state-source/state-ok-omes-fy2024-75000-tulsa-community-college.json",
+      "sourceUrl": "https://data.ok.gov/api/3/action/package_show?id=3a481186-0cb2-4651-85af-34b4afb3712b"
+    },
+    {
+      "id": "bu-48500-northeastern-state-university",
+      "name": "NORTHEASTERN STATE UNIVERSITY",
+      "amount": 140611151.53,
+      "sourceAmount": 140611151.53,
+      "detailUrl": "data/state-ok/archive-state-source/state-ok-omes-fy2024-48500-northeastern-state-university.json",
+      "sourceUrl": "https://data.ok.gov/api/3/action/package_show?id=3a481186-0cb2-4651-85af-34b4afb3712b"
+    },
+    {
+      "id": "bu-80500-department-of-rehabilitation-services",
+      "name": "DEPARTMENT OF REHABILITATION SERVICES",
+      "amount": 133989625.68,
+      "sourceAmount": 133989625.68,
+      "detailUrl": "data/state-ok/archive-state-source/state-ok-omes-fy2024-80500-department-of-rehabilitation-services.json",
+      "sourceUrl": "https://data.ok.gov/api/3/action/package_show?id=3a481186-0cb2-4651-85af-34b4afb3712b"
+    },
+    {
+      "id": "bu-16000-department-of-commerce",
+      "name": "DEPARTMENT OF COMMERCE",
+      "amount": 130253740.07,
+      "sourceAmount": 130253740.07,
+      "detailUrl": "data/state-ok/archive-state-source/state-ok-omes-fy2024-16000-department-of-commerce.json",
+      "sourceUrl": "https://data.ok.gov/api/3/action/package_show?id=3a481186-0cb2-4651-85af-34b4afb3712b"
+    },
+    {
+      "id": "bu-40000-office-of-juvenile-affairs",
+      "name": "OFFICE OF JUVENILE AFFAIRS",
+      "amount": 123253081.5,
+      "sourceAmount": 123253081.5,
+      "detailUrl": "data/state-ok/archive-state-source/state-ok-omes-fy2024-40000-office-of-juvenile-affairs.json",
+      "sourceUrl": "https://data.ok.gov/api/3/action/package_show?id=3a481186-0cb2-4651-85af-34b4afb3712b"
+    },
+    {
+      "id": "bu-66000-s-e-okla-st-univ",
+      "name": "S. E. OKLA. ST. UNIV.",
+      "amount": 121285196.27,
+      "sourceAmount": 121285196.27,
+      "detailUrl": "data/state-ok/archive-state-source/state-ok-omes-fy2024-66000-s-e-okla-st-univ.json",
+      "sourceUrl": "https://data.ok.gov/api/3/action/package_show?id=3a481186-0cb2-4651-85af-34b4afb3712b"
+    },
+    {
+      "id": "bu-66500-s-w-okla-st-univ",
+      "name": "S. W. OKLA. ST. UNIV.",
+      "amount": 120405709.87,
+      "sourceAmount": 120405709.87,
+      "detailUrl": "data/state-ok/archive-state-source/state-ok-omes-fy2024-66500-s-w-okla-st-univ.json",
+      "sourceUrl": "https://data.ok.gov/api/3/action/package_show?id=3a481186-0cb2-4651-85af-34b4afb3712b"
+    },
+    {
+      "id": "bu-22000-district-attorneys-council",
+      "name": "DISTRICT ATTORNEYS COUNCIL",
+      "amount": 116695153.6,
+      "sourceAmount": 116695153.6,
+      "detailUrl": "data/state-ok/archive-state-source/state-ok-omes-fy2024-22000-district-attorneys-council.json",
+      "sourceUrl": "https://data.ok.gov/api/3/action/package_show?id=3a481186-0cb2-4651-85af-34b4afb3712b"
+    },
+    {
+      "id": "bu-63300-okla-city-community-college",
+      "name": "OKLA. CITY COMMUNITY COLLEGE",
+      "amount": 112043281.51,
+      "sourceAmount": 112043281.51,
+      "detailUrl": "data/state-ok/archive-state-source/state-ok-omes-fy2024-63300-okla-city-community-college.json",
+      "sourceUrl": "https://data.ok.gov/api/3/action/package_show?id=3a481186-0cb2-4651-85af-34b4afb3712b"
+    },
+    {
+      "id": "bu-18500-corporation-commission",
+      "name": "CORPORATION COMMISSION",
+      "amount": 103083254.15,
+      "sourceAmount": 103083254.15,
+      "detailUrl": "data/state-ok/archive-state-source/state-ok-omes-fy2024-18500-corporation-commission.json",
+      "sourceUrl": "https://data.ok.gov/api/3/action/package_show?id=3a481186-0cb2-4651-85af-34b4afb3712b"
+    },
+    {
+      "id": "bu-29200-dept-of-environmental-quality",
+      "name": "DEPT. OF ENVIRONMENTAL QUALITY",
+      "amount": 86220325.84,
+      "sourceAmount": 86220325.84,
+      "detailUrl": "data/state-ok/archive-state-source/state-ok-omes-fy2024-29200-dept-of-environmental-quality.json",
+      "sourceUrl": "https://data.ok.gov/api/3/action/package_show?id=3a481186-0cb2-4651-85af-34b4afb3712b"
+    },
+    {
+      "id": "bu-77500-osu-medical-authority",
+      "name": "OSU MEDICAL AUTHORITY",
+      "amount": 83003599.02,
+      "sourceAmount": 83003599.02,
+      "detailUrl": "data/state-ok/archive-state-source/state-ok-omes-fy2024-77500-osu-medical-authority.json",
+      "sourceUrl": "https://data.ok.gov/api/3/action/package_show?id=3a481186-0cb2-4651-85af-34b4afb3712b"
+    },
+    {
+      "id": "bu-02500-oklahoma-military-department",
+      "name": "OKLAHOMA MILITARY DEPARTMENT",
+      "amount": 81219717.11,
+      "sourceAmount": 81219717.11,
+      "detailUrl": "data/state-ok/archive-state-source/state-ok-omes-fy2024-02500-oklahoma-military-department.json",
+      "sourceUrl": "https://data.ok.gov/api/3/action/package_show?id=3a481186-0cb2-4651-85af-34b4afb3712b"
+    },
+    {
+      "id": "bu-56600-department-of-tourism-and-recreation",
+      "name": "DEPARTMENT OF TOURISM AND RECREATION",
+      "amount": 80924076.41,
+      "sourceAmount": 80924076.41,
+      "detailUrl": "data/state-ok/archive-state-source/state-ok-omes-fy2024-56600-department-of-tourism-and-recreation.json",
+      "sourceUrl": "https://data.ok.gov/api/3/action/package_show?id=3a481186-0cb2-4651-85af-34b4afb3712b"
+    },
+    {
+      "id": "bu-21900-district-courts",
+      "name": "DISTRICT COURTS",
+      "amount": 76008473.16,
+      "sourceAmount": 76008473.16,
+      "detailUrl": "data/state-ok/archive-state-source/state-ok-omes-fy2024-21900-district-courts.json",
+      "sourceUrl": "https://data.ok.gov/api/3/action/package_show?id=3a481186-0cb2-4651-85af-34b4afb3712b"
+    },
+    {
+      "id": "bu-42000-langston-university",
+      "name": "LANGSTON UNIVERSITY",
+      "amount": 74626183.66,
+      "sourceAmount": 74626183.66,
+      "detailUrl": "data/state-ok/archive-state-source/state-ok-omes-fy2024-42000-langston-university.json",
+      "sourceUrl": "https://data.ok.gov/api/3/action/package_show?id=3a481186-0cb2-4651-85af-34b4afb3712b"
+    },
+    {
+      "id": "bu-09200-tobacco-settlement-endmt-trust",
+      "name": "TOBACCO SETTLEMENT ENDMT TRUST",
+      "amount": 74067042.36,
+      "sourceAmount": 74067042.36,
+      "detailUrl": "data/state-ok/archive-state-source/state-ok-omes-fy2024-09200-tobacco-settlement-endmt-trust.json",
+      "sourceUrl": "https://data.ok.gov/api/3/action/package_show?id=3a481186-0cb2-4651-85af-34b4afb3712b"
+    },
+    {
+      "id": "bu-04900-attorney-general",
+      "name": "ATTORNEY GENERAL",
+      "amount": 73267979.19,
+      "sourceAmount": 73267979.19,
+      "detailUrl": "data/state-ok/archive-state-source/state-ok-omes-fy2024-04900-attorney-general.json",
+      "sourceUrl": "https://data.ok.gov/api/3/action/package_show?id=3a481186-0cb2-4651-85af-34b4afb3712b"
+    },
+    {
+      "id": "bu-74000-state-treasurer",
+      "name": "STATE TREASURER",
+      "amount": 73102877.5,
+      "sourceAmount": 73102877.5,
+      "detailUrl": "data/state-ok/archive-state-source/state-ok-omes-fy2024-74000-state-treasurer.json",
+      "sourceUrl": "https://data.ok.gov/api/3/action/package_show?id=3a481186-0cb2-4651-85af-34b4afb3712b"
+    },
+    {
+      "id": "bu-43500-oklahoma-lottery-commission",
+      "name": "OKLAHOMA LOTTERY COMMISSION",
+      "amount": 71564308.71,
+      "sourceAmount": 71564308.71,
+      "detailUrl": "data/state-ok/archive-state-source/state-ok-omes-fy2024-43500-oklahoma-lottery-commission.json",
+      "sourceUrl": "https://data.ok.gov/api/3/action/package_show?id=3a481186-0cb2-4651-85af-34b4afb3712b"
+    },
+    {
+      "id": "bu-04000-dept-of-agriculture-food-forestry",
+      "name": "DEPT OF AGRICULTURE FOOD & FORESTRY",
+      "amount": 66988956.72,
+      "sourceAmount": 66988956.72,
+      "detailUrl": "data/state-ok/archive-state-source/state-ok-omes-fy2024-04000-dept-of-agriculture-food-forestry.json",
+      "sourceUrl": "https://data.ok.gov/api/3/action/package_show?id=3a481186-0cb2-4651-85af-34b4afb3712b"
+    },
+    {
+      "id": "bu-29000-employment-security-commission",
+      "name": "EMPLOYMENT SECURITY COMMISSION",
+      "amount": 64774342.83,
+      "sourceAmount": 64774342.83,
+      "detailUrl": "data/state-ok/archive-state-source/state-ok-omes-fy2024-29000-employment-security-commission.json",
+      "sourceUrl": "https://data.ok.gov/api/3/action/package_show?id=3a481186-0cb2-4651-85af-34b4afb3712b"
+    },
+    {
+      "id": "bu-53100-rose-state-colege",
+      "name": "ROSE STATE COLEGE",
+      "amount": 62550312.25,
+      "sourceAmount": 62550312.25,
+      "detailUrl": "data/state-ok/archive-state-source/state-ok-omes-fy2024-53100-rose-state-colege.json",
+      "sourceUrl": "https://data.ok.gov/api/3/action/package_show?id=3a481186-0cb2-4651-85af-34b4afb3712b"
+    },
+    {
+      "id": "bu-32000-department-of-wildlife-conservation",
+      "name": "DEPARTMENT OF WILDLIFE CONSERVATION",
+      "amount": 61905848,
+      "sourceAmount": 61905848,
+      "detailUrl": "data/state-ok/archive-state-source/state-ok-omes-fy2024-32000-department-of-wildlife-conservation.json",
+      "sourceUrl": "https://data.ok.gov/api/3/action/package_show?id=3a481186-0cb2-4651-85af-34b4afb3712b"
+    },
+    {
+      "id": "bu-23000-east-central-university",
+      "name": "EAST CENTRAL UNIVERSITY",
+      "amount": 60043612.98,
+      "sourceAmount": 60043612.98,
+      "detailUrl": "data/state-ok/archive-state-source/state-ok-omes-fy2024-23000-east-central-university.json",
+      "sourceUrl": "https://data.ok.gov/api/3/action/package_show?id=3a481186-0cb2-4651-85af-34b4afb3712b"
+    },
+    {
+      "id": "bu-30800-state-bureau-of-investigation",
+      "name": "STATE BUREAU OF INVESTIGATION",
+      "amount": 59877271.22,
+      "sourceAmount": 59877271.22,
+      "detailUrl": "data/state-ok/archive-state-source/state-ok-omes-fy2024-30800-state-bureau-of-investigation.json",
+      "sourceUrl": "https://data.ok.gov/api/3/action/package_show?id=3a481186-0cb2-4651-85af-34b4afb3712b"
+    },
+    {
+      "id": "bu-01100-osu-experiment-station",
+      "name": "OSU-EXPERIMENT STATION",
+      "amount": 51484930.42,
+      "sourceAmount": 51484930.42,
+      "detailUrl": "data/state-ok/archive-state-source/state-ok-omes-fy2024-01100-osu-experiment-station.json",
+      "sourceUrl": "https://data.ok.gov/api/3/action/package_show?id=3a481186-0cb2-4651-85af-34b4afb3712b"
+    },
+    {
+      "id": "bu-10000-cameron-university",
+      "name": "CAMERON UNIVERSITY",
+      "amount": 50474785.05,
+      "sourceAmount": 50474785.05,
+      "detailUrl": "data/state-ok/archive-state-source/state-ok-omes-fy2024-10000-cameron-university.json",
+      "sourceUrl": "https://data.ok.gov/api/3/action/package_show?id=3a481186-0cb2-4651-85af-34b4afb3712b"
+    },
+    {
+      "id": "bu-46100-rogers-state-university",
+      "name": "ROGERS STATE UNIVERSITY",
+      "amount": 48430026.42,
+      "sourceAmount": 48430026.42,
+      "detailUrl": "data/state-ok/archive-state-source/state-ok-omes-fy2024-46100-rogers-state-university.json",
+      "sourceUrl": "https://data.ok.gov/api/3/action/package_show?id=3a481186-0cb2-4651-85af-34b4afb3712b"
+    },
+    {
+      "id": "bu-01400-osu-college-of-veterinary-medicine",
+      "name": "OSU COLLEGE OF VETERINARY MEDICINE",
+      "amount": 46964631.86,
+      "sourceAmount": 46964631.86,
+      "detailUrl": "data/state-ok/archive-state-source/state-ok-omes-fy2024-01400-osu-college-of-veterinary-medicine.json",
+      "sourceUrl": "https://data.ok.gov/api/3/action/package_show?id=3a481186-0cb2-4651-85af-34b4afb3712b"
+    },
+    {
+      "id": "bu-97800-oklahoma-turnpike-authority",
+      "name": "OKLAHOMA TURNPIKE AUTHORITY",
+      "amount": 45082047.36,
+      "sourceAmount": 45082047.36,
+      "detailUrl": "data/state-ok/archive-state-source/state-ok-omes-fy2024-97800-oklahoma-turnpike-authority.json",
+      "sourceUrl": "https://data.ok.gov/api/3/action/package_show?id=3a481186-0cb2-4651-85af-34b4afb3712b"
+    },
+    {
+      "id": "bu-01200-osu-extension-division",
+      "name": "OSU-EXTENSION DIVISION",
+      "amount": 43560768.85,
+      "sourceAmount": 43560768.85,
+      "detailUrl": "data/state-ok/archive-state-source/state-ok-omes-fy2024-01200-osu-extension-division.json",
+      "sourceUrl": "https://data.ok.gov/api/3/action/package_show?id=3a481186-0cb2-4651-85af-34b4afb3712b"
+    },
+    {
+      "id": "bu-64500-conservation-commission",
+      "name": "CONSERVATION COMMISSION",
+      "amount": 40286901.78,
+      "sourceAmount": 40286901.78,
+      "detailUrl": "data/state-ok/archive-state-source/state-ok-omes-fy2024-64500-conservation-commission.json",
+      "sourceUrl": "https://data.ok.gov/api/3/action/package_show?id=3a481186-0cb2-4651-85af-34b4afb3712b"
+    },
+    {
+      "id": "bu-49000-northern-oklahoma-college",
+      "name": "NORTHERN OKLAHOMA COLLEGE",
+      "amount": 38698800.98,
+      "sourceAmount": 38698800.98,
+      "detailUrl": "data/state-ok/archive-state-source/state-ok-omes-fy2024-49000-northern-oklahoma-college.json",
+      "sourceUrl": "https://data.ok.gov/api/3/action/package_show?id=3a481186-0cb2-4651-85af-34b4afb3712b"
+    },
+    {
+      "id": "bu-67700-supreme-court",
+      "name": "SUPREME COURT",
+      "amount": 37746489.25,
+      "sourceAmount": 37746489.25,
+      "detailUrl": "data/state-ok/archive-state-source/state-ok-omes-fy2024-67700-supreme-court.json",
+      "sourceUrl": "https://data.ok.gov/api/3/action/package_show?id=3a481186-0cb2-4651-85af-34b4afb3712b"
+    },
+    {
+      "id": "bu-45500-ok-medical-marijuana-authority",
+      "name": "OK MEDICAL MARIJUANA AUTHORITY",
+      "amount": 36542593.21,
+      "sourceAmount": 36542593.21,
+      "detailUrl": "data/state-ok/archive-state-source/state-ok-omes-fy2024-45500-ok-medical-marijuana-authority.json",
+      "sourceUrl": "https://data.ok.gov/api/3/action/package_show?id=3a481186-0cb2-4651-85af-34b4afb3712b"
+    },
+    {
+      "id": "bu-64000-service-oklahoma",
+      "name": "SERVICE OKLAHOMA",
+      "amount": 35229794.75,
+      "sourceAmount": 35229794.75,
+      "detailUrl": "data/state-ok/archive-state-source/state-ok-omes-fy2024-64000-service-oklahoma.json",
+      "sourceUrl": "https://data.ok.gov/api/3/action/package_show?id=3a481186-0cb2-4651-85af-34b4afb3712b"
+    },
+    {
+      "id": "bu-50500-northwestern-okla-state-university",
+      "name": "NORTHWESTERN OKLA. STATE UNIVERSITY",
+      "amount": 34524926.41,
+      "sourceAmount": 34524926.41,
+      "detailUrl": "data/state-ok/archive-state-source/state-ok-omes-fy2024-50500-northwestern-okla-state-university.json",
+      "sourceUrl": "https://data.ok.gov/api/3/action/package_show?id=3a481186-0cb2-4651-85af-34b4afb3712b"
+    },
+    {
+      "id": "bu-47700-okla-bureau-of-narcotics-and-dangerous",
+      "name": "OKLA. BUREAU OF NARCOTICS AND DANGEROUS",
+      "amount": 34159484.28,
+      "sourceAmount": 34159484.28,
+      "detailUrl": "data/state-ok/archive-state-source/state-ok-omes-fy2024-47700-okla-bureau-of-narcotics-and-dangerous.json",
+      "sourceUrl": "https://data.ok.gov/api/3/action/package_show?id=3a481186-0cb2-4651-85af-34b4afb3712b"
+    },
+    {
+      "id": "bu-67000-j-d-mccarty-center",
+      "name": "J.D. MCCARTY CENTER",
+      "amount": 33751777.19,
+      "sourceAmount": 33751777.19,
+      "detailUrl": "data/state-ok/archive-state-source/state-ok-omes-fy2024-67000-j-d-mccarty-center.json",
+      "sourceUrl": "https://data.ok.gov/api/3/action/package_show?id=3a481186-0cb2-4651-85af-34b4afb3712b"
+    },
+    {
+      "id": "bu-47000-murray-state-college",
+      "name": "MURRAY STATE COLLEGE",
+      "amount": 31694481.95,
+      "sourceAmount": 31694481.95,
+      "detailUrl": "data/state-ok/archive-state-source/state-ok-omes-fy2024-47000-murray-state-college.json",
+      "sourceUrl": "https://data.ok.gov/api/3/action/package_show?id=3a481186-0cb2-4651-85af-34b4afb3712b"
+    },
+    {
+      "id": "bu-62800-cntr-for-advanc-of-science-technology",
+      "name": "CNTR. FOR ADVANC. OF SCIENCE/TECHNOLOGY",
+      "amount": 31090014.59,
+      "sourceAmount": 31090014.59,
+      "detailUrl": "data/state-ok/archive-state-source/state-ok-omes-fy2024-62800-cntr-for-advanc-of-science-technology.json",
+      "sourceUrl": "https://data.ok.gov/api/3/action/package_show?id=3a481186-0cb2-4651-85af-34b4afb3712b"
+    },
+    {
+      "id": "bu-01300-osu-technical-branch-okmulgee",
+      "name": "OSU-TECHNICAL BRANCH, OKMULGEE",
+      "amount": 29126154.71,
+      "sourceAmount": 29126154.71,
+      "detailUrl": "data/state-ok/archive-state-source/state-ok-omes-fy2024-01300-osu-technical-branch-okmulgee.json",
+      "sourceUrl": "https://data.ok.gov/api/3/action/package_show?id=3a481186-0cb2-4651-85af-34b4afb3712b"
+    },
+    {
+      "id": "bu-24000-eastern-okla-state-college",
+      "name": "EASTERN OKLA. STATE COLLEGE",
+      "amount": 28220818.46,
+      "sourceAmount": 28220818.46,
+      "detailUrl": "data/state-ok/archive-state-source/state-ok-omes-fy2024-24000-eastern-okla-state-college.json",
+      "sourceUrl": "https://data.ok.gov/api/3/action/package_show?id=3a481186-0cb2-4651-85af-34b4afb3712b"
+    },
+    {
+      "id": "bu-01500-osu-oklahoma-city",
+      "name": "OSU-OKLAHOMA CITY",
+      "amount": 28028489.79,
+      "sourceAmount": 28028489.79,
+      "detailUrl": "data/state-ok/archive-state-source/state-ok-omes-fy2024-01500-osu-oklahoma-city.json",
+      "sourceUrl": "https://data.ok.gov/api/3/action/package_show?id=3a481186-0cb2-4651-85af-34b4afb3712b"
+    },
+    {
+      "id": "bu-35000-historical-society",
+      "name": "HISTORICAL SOCIETY",
+      "amount": 27393136.07,
+      "sourceAmount": 27393136.07,
+      "detailUrl": "data/state-ok/archive-state-source/state-ok-omes-fy2024-35000-historical-society.json",
+      "sourceUrl": "https://data.ok.gov/api/3/action/package_show?id=3a481186-0cb2-4651-85af-34b4afb3712b"
+    },
+    {
+      "id": "bu-61900-health-care-workforce-trng-com",
+      "name": "HEALTH CARE WORKFORCE TRNG COM",
+      "amount": 27369519.97,
+      "sourceAmount": 27369519.97,
+      "detailUrl": "data/state-ok/archive-state-source/state-ok-omes-fy2024-61900-health-care-workforce-trng-com.json",
+      "sourceUrl": "https://data.ok.gov/api/3/action/package_show?id=3a481186-0cb2-4651-85af-34b4afb3712b"
+    },
+    {
+      "id": "bu-48000-n-e-okla-a-m-college",
+      "name": "N. E. OKLA. A & M COLLEGE",
+      "amount": 26968395.61,
+      "sourceAmount": 26968395.61,
+      "detailUrl": "data/state-ok/archive-state-source/state-ok-omes-fy2024-48000-n-e-okla-a-m-college.json",
+      "sourceUrl": "https://data.ok.gov/api/3/action/package_show?id=3a481186-0cb2-4651-85af-34b4afb3712b"
+    },
+    {
+      "id": "bu-42200-ok-house-of-representatives",
+      "name": "OK. HOUSE OF REPRESENTATIVES",
+      "amount": 26893582.18,
+      "sourceAmount": 26893582.18,
+      "detailUrl": "data/state-ok/archive-state-source/state-ok-omes-fy2024-42200-ok-house-of-representatives.json",
+      "sourceUrl": "https://data.ok.gov/api/3/action/package_show?id=3a481186-0cb2-4651-85af-34b4afb3712b"
+    },
+    {
+      "id": "bu-04700-indigent-defense-system",
+      "name": "INDIGENT DEFENSE SYSTEM",
+      "amount": 26400455.68,
+      "sourceAmount": 26400455.68,
+      "detailUrl": "data/state-ok/archive-state-source/state-ok-omes-fy2024-04700-indigent-defense-system.json",
+      "sourceUrl": "https://data.ok.gov/api/3/action/package_show?id=3a481186-0cb2-4651-85af-34b4afb3712b"
+    },
+    {
+      "id": "bu-35900-energy-resources-board",
+      "name": "ENERGY RESOURCES BOARD",
+      "amount": 26070985.72,
+      "sourceAmount": 26070985.72,
+      "detailUrl": "data/state-ok/archive-state-source/state-ok-omes-fy2024-35900-energy-resources-board.json",
+      "sourceUrl": "https://data.ok.gov/api/3/action/package_show?id=3a481186-0cb2-4651-85af-34b4afb3712b"
+    },
+    {
+      "id": "bu-10800-carl-albert-state-college",
+      "name": "CARL ALBERT STATE COLLEGE",
+      "amount": 23827873.81,
+      "sourceAmount": 23827873.81,
+      "detailUrl": "data/state-ok/archive-state-source/state-ok-omes-fy2024-10800-carl-albert-state-college.json",
+      "sourceUrl": "https://data.ok.gov/api/3/action/package_show?id=3a481186-0cb2-4651-85af-34b4afb3712b"
+    },
+    {
+      "id": "bu-53000-okla-panhandle-state-univ",
+      "name": "OKLA. PANHANDLE STATE UNIV.",
+      "amount": 23124794.19,
+      "sourceAmount": 23124794.19,
+      "detailUrl": "data/state-ok/archive-state-source/state-ok-omes-fy2024-53000-okla-panhandle-state-univ.json",
+      "sourceUrl": "https://data.ok.gov/api/3/action/package_show?id=3a481186-0cb2-4651-85af-34b4afb3712b"
+    },
+    {
+      "id": "bu-34200-office-of-the-chief-medical-examiner",
+      "name": "OFFICE OF THE CHIEF MEDICAL EXAMINER",
+      "amount": 22458668.74,
+      "sourceAmount": 22458668.74,
+      "detailUrl": "data/state-ok/archive-state-source/state-ok-omes-fy2024-34200-office-of-the-chief-medical-examiner.json",
+      "sourceUrl": "https://data.ok.gov/api/3/action/package_show?id=3a481186-0cb2-4651-85af-34b4afb3712b"
+    },
+    {
+      "id": "bu-15000-univ-of-science-arts-of-ok",
+      "name": "UNIV.OF SCIENCE & ARTS OF OK",
+      "amount": 22349452.49,
+      "sourceAmount": 22349452.49,
+      "detailUrl": "data/state-ok/archive-state-source/state-ok-omes-fy2024-15000-univ-of-science-arts-of-ok.json",
+      "sourceUrl": "https://data.ok.gov/api/3/action/package_show?id=3a481186-0cb2-4651-85af-34b4afb3712b"
+    },
+    {
+      "id": "bu-16500-connors-state-college",
+      "name": "CONNORS STATE COLLEGE",
+      "amount": 21848946.79,
+      "sourceAmount": 21848946.79,
+      "detailUrl": "data/state-ok/archive-state-source/state-ok-omes-fy2024-16500-connors-state-college.json",
+      "sourceUrl": "https://data.ok.gov/api/3/action/package_show?id=3a481186-0cb2-4651-85af-34b4afb3712b"
+    },
+    {
+      "id": "bu-62300-seminole-state-college",
+      "name": "SEMINOLE STATE COLLEGE",
+      "amount": 21759771.84,
+      "sourceAmount": 21759771.84,
+      "detailUrl": "data/state-ok/archive-state-source/state-ok-omes-fy2024-62300-seminole-state-college.json",
+      "sourceUrl": "https://data.ok.gov/api/3/action/package_show?id=3a481186-0cb2-4651-85af-34b4afb3712b"
+    },
+    {
+      "id": "bu-01600-osu-tulsa",
+      "name": "OSU-TULSA",
+      "amount": 20946523.31,
+      "sourceAmount": 20946523.31,
+      "detailUrl": "data/state-ok/archive-state-source/state-ok-omes-fy2024-01600-osu-tulsa.json",
+      "sourceUrl": "https://data.ok.gov/api/3/action/package_show?id=3a481186-0cb2-4651-85af-34b4afb3712b"
+    },
+    {
+      "id": "bu-24100-redlands-community-college",
+      "name": "REDLANDS COMMUNITY COLLEGE",
+      "amount": 20683859.36,
+      "sourceAmount": 20683859.36,
+      "detailUrl": "data/state-ok/archive-state-source/state-ok-omes-fy2024-24100-redlands-community-college.json",
+      "sourceUrl": "https://data.ok.gov/api/3/action/package_show?id=3a481186-0cb2-4651-85af-34b4afb3712b"
+    },
+    {
+      "id": "bu-76100-univ-of-okla-law-center",
+      "name": "UNIV. OF OKLA. LAW CENTER",
+      "amount": 19199652.05,
+      "sourceAmount": 19199652.05,
+      "detailUrl": "data/state-ok/archive-state-source/state-ok-omes-fy2024-76100-univ-of-okla-law-center.json",
+      "sourceUrl": "https://data.ok.gov/api/3/action/package_show?id=3a481186-0cb2-4651-85af-34b4afb3712b"
+    },
+    {
+      "id": "bu-06000-ok-dep-aerospace-aeronautics",
+      "name": "OK DEP AEROSPACE & AERONAUTICS",
+      "amount": 18699563.37,
+      "sourceAmount": 18699563.37,
+      "detailUrl": "data/state-ok/archive-state-source/state-ok-omes-fy2024-06000-ok-dep-aerospace-aeronautics.json",
+      "sourceUrl": "https://data.ok.gov/api/3/action/package_show?id=3a481186-0cb2-4651-85af-34b4afb3712b"
+    },
+    {
+      "id": "bu-04100-western-okla-state-college",
+      "name": "WESTERN OKLA. STATE COLLEGE",
+      "amount": 17973960.99,
+      "sourceAmount": 17973960.99,
+      "detailUrl": "data/state-ok/archive-state-source/state-ok-omes-fy2024-04100-western-okla-state-college.json",
+      "sourceUrl": "https://data.ok.gov/api/3/action/package_show?id=3a481186-0cb2-4651-85af-34b4afb3712b"
+    },
+    {
+      "id": "bu-41000-comm-of-the-land-office",
+      "name": "COMM. OF THE LAND OFFICE",
+      "amount": 17174912.23,
+      "sourceAmount": 17174912.23,
+      "detailUrl": "data/state-ok/archive-state-source/state-ok-omes-fy2024-41000-comm-of-the-land-office.json",
+      "sourceUrl": "https://data.ok.gov/api/3/action/package_show?id=3a481186-0cb2-4651-85af-34b4afb3712b"
+    },
+    {
+      "id": "bu-42100-oklahoma-state-senate",
+      "name": "OKLAHOMA STATE SENATE",
+      "amount": 16905877.92,
+      "sourceAmount": 16905877.92,
+      "detailUrl": "data/state-ok/archive-state-source/state-ok-omes-fy2024-42100-oklahoma-state-senate.json",
+      "sourceUrl": "https://data.ok.gov/api/3/action/package_show?id=3a481186-0cb2-4651-85af-34b4afb3712b"
+    },
+    {
+      "id": "bu-38500-oklahoma-insurance-department",
+      "name": "OKLAHOMA INSURANCE DEPARTMENT",
+      "amount": 16802110.23,
+      "sourceAmount": 16802110.23,
+      "detailUrl": "data/state-ok/archive-state-source/state-ok-omes-fy2024-38500-oklahoma-insurance-department.json",
+      "sourceUrl": "https://data.ok.gov/api/3/action/package_show?id=3a481186-0cb2-4651-85af-34b4afb3712b"
+    },
+    {
+      "id": "bu-30000-state-auditor-and-inspector",
+      "name": "STATE AUDITOR AND INSPECTOR",
+      "amount": 13384233.54,
+      "sourceAmount": 13384233.54,
+      "detailUrl": "data/state-ok/archive-state-source/state-ok-omes-fy2024-30000-state-auditor-and-inspector.json",
+      "sourceUrl": "https://data.ok.gov/api/3/action/package_show?id=3a481186-0cb2-4651-85af-34b4afb3712b"
+    },
+    {
+      "id": "bu-35300-okla-horse-racing-comm",
+      "name": "OKLA. HORSE RACING COMM.",
+      "amount": 11598500.86,
+      "sourceAmount": 11598500.86,
+      "detailUrl": "data/state-ok/archive-state-source/state-ok-omes-fy2024-35300-okla-horse-racing-comm.json",
+      "sourceUrl": "https://data.ok.gov/api/3/action/package_show?id=3a481186-0cb2-4651-85af-34b4afb3712b"
+    },
+    {
+      "id": "bu-27000-state-election-board",
+      "name": "STATE ELECTION BOARD",
+      "amount": 11413462.08,
+      "sourceAmount": 11413462.08,
+      "detailUrl": "data/state-ok/archive-state-source/state-ok-omes-fy2024-27000-state-election-board.json",
+      "sourceUrl": "https://data.ok.gov/api/3/action/package_show?id=3a481186-0cb2-4651-85af-34b4afb3712b"
+    },
+    {
+      "id": "bu-31500-firefighters-pens-ret-syst",
+      "name": "FIREFIGHTERS PENS. & RET. SYST.",
+      "amount": 11294001.16,
+      "sourceAmount": 11294001.16,
+      "detailUrl": "data/state-ok/archive-state-source/state-ok-omes-fy2024-31500-firefighters-pens-ret-syst.json",
+      "sourceUrl": "https://data.ok.gov/api/3/action/package_show?id=3a481186-0cb2-4651-85af-34b4afb3712b"
+    },
+    {
+      "id": "bu-51500-ok-public-employees-ret-sys",
+      "name": "OK. PUBLIC EMPLOYEES RET. SYS.",
+      "amount": 10670774.93,
+      "sourceAmount": 10670774.93,
+      "detailUrl": "data/state-ok/archive-state-source/state-ok-omes-fy2024-51500-ok-public-employees-ret-sys.json",
+      "sourceUrl": "https://data.ok.gov/api/3/action/package_show?id=3a481186-0cb2-4651-85af-34b4afb3712b"
+    },
+    {
+      "id": "bu-77600-osu-veterinary-medicine-authority",
+      "name": "OSU VETERINARY MEDICINE AUTHORITY",
+      "amount": 10327000,
+      "sourceAmount": 10327000,
+      "detailUrl": "data/state-ok/archive-state-source/state-ok-omes-fy2024-77600-osu-veterinary-medicine-authority.json",
+      "sourceUrl": "https://data.ok.gov/api/3/action/package_show?id=3a481186-0cb2-4651-85af-34b4afb3712b"
+    },
+    {
+      "id": "bu-40500-department-of-labor",
+      "name": "DEPARTMENT OF LABOR",
+      "amount": 9567643.49,
+      "sourceAmount": 9567643.49,
+      "detailUrl": "data/state-ok/archive-state-source/state-ok-omes-fy2024-40500-department-of-labor.json",
+      "sourceUrl": "https://data.ok.gov/api/3/action/package_show?id=3a481186-0cb2-4651-85af-34b4afb3712b"
+    },
+    {
+      "id": "bu-62900-ok-school-of-science-math",
+      "name": "OK. SCHOOL OF SCIENCE & MATH",
+      "amount": 8736469.27,
+      "sourceAmount": 8736469.27,
+      "detailUrl": "data/state-ok/archive-state-source/state-ok-omes-fy2024-62900-ok-school-of-science-math.json",
+      "sourceUrl": "https://data.ok.gov/api/3/action/package_show?id=3a481186-0cb2-4651-85af-34b4afb3712b"
+    },
+    {
+      "id": "bu-43000-department-of-libraries",
+      "name": "DEPARTMENT OF LIBRARIES",
+      "amount": 8341855.35,
+      "sourceAmount": 8341855.35,
+      "detailUrl": "data/state-ok/archive-state-source/state-ok-omes-fy2024-43000-department-of-libraries.json",
+      "sourceUrl": "https://data.ok.gov/api/3/action/package_show?id=3a481186-0cb2-4651-85af-34b4afb3712b"
+    },
+    {
+      "id": "bu-41500-council-on-law-enfc-ed-trng",
+      "name": "COUNCIL ON LAW ENFC. ED. & TRNG.",
+      "amount": 8019543.28,
+      "sourceAmount": 8019543.28,
+      "detailUrl": "data/state-ok/archive-state-source/state-ok-omes-fy2024-41500-council-on-law-enfc-ed-trng.json",
+      "sourceUrl": "https://data.ok.gov/api/3/action/package_show?id=3a481186-0cb2-4651-85af-34b4afb3712b"
+    },
+    {
+      "id": "bu-39100-multiple-injury-trust-fund",
+      "name": "MULTIPLE INJURY TRUST FUND",
+      "amount": 7261989.81,
+      "sourceAmount": 7261989.81,
+      "detailUrl": "data/state-ok/archive-state-source/state-ok-omes-fy2024-39100-multiple-injury-trust-fund.json",
+      "sourceUrl": "https://data.ok.gov/api/3/action/package_show?id=3a481186-0cb2-4651-85af-34b4afb3712b"
+    },
+    {
+      "id": "bu-06500-state-banking-department",
+      "name": "STATE BANKING DEPARTMENT",
+      "amount": 7009454.7,
+      "sourceAmount": 7009454.7,
+      "detailUrl": "data/state-ok/archive-state-source/state-ok-omes-fy2024-06500-state-banking-department.json",
+      "sourceUrl": "https://data.ok.gov/api/3/action/package_show?id=3a481186-0cb2-4651-85af-34b4afb3712b"
+    },
+    {
+      "id": "bu-86500-worker-s-comp-commission",
+      "name": "WORKER'S COMP. COMMISSION",
+      "amount": 6956955.37,
+      "sourceAmount": 6956955.37,
+      "detailUrl": "data/state-ok/archive-state-source/state-ok-omes-fy2024-86500-worker-s-comp-commission.json",
+      "sourceUrl": "https://data.ok.gov/api/3/action/package_show?id=3a481186-0cb2-4651-85af-34b4afb3712b"
+    },
+    {
+      "id": "bu-03000-alcoholic-bev-laws-enforce",
+      "name": "ALCOHOLIC BEV. LAWS ENFORCE.",
+      "amount": 6576420.21,
+      "sourceAmount": 6576420.21,
+      "detailUrl": "data/state-ok/archive-state-source/state-ok-omes-fy2024-03000-alcoholic-bev-laws-enforce.json",
+      "sourceUrl": "https://data.ok.gov/api/3/action/package_show?id=3a481186-0cb2-4651-85af-34b4afb3712b"
+    },
+    {
+      "id": "bu-42300-legislative-service-bureau",
+      "name": "LEGISLATIVE SERVICE BUREAU",
+      "amount": 6572718.21,
+      "sourceAmount": 6572718.21,
+      "detailUrl": "data/state-ok/archive-state-source/state-ok-omes-fy2024-42300-legislative-service-bureau.json",
+      "sourceUrl": "https://data.ok.gov/api/3/action/package_show?id=3a481186-0cb2-4651-85af-34b4afb3712b"
+    },
+    {
+      "id": "bu-46700-office-of-management-and-enterprise-serv",
+      "name": "OFFICE OF MANAGEMENT AND ENTERPRISE SERV",
+      "amount": 6502375.76,
+      "sourceAmount": 6502375.76,
+      "detailUrl": "data/state-ok/archive-state-source/state-ok-omes-fy2024-46700-office-of-management-and-enterprise-serv.json",
+      "sourceUrl": "https://data.ok.gov/api/3/action/package_show?id=3a481186-0cb2-4651-85af-34b4afb3712b"
+    },
+    {
+      "id": "bu-63000-department-of-securities",
+      "name": "DEPARTMENT OF SECURITIES",
+      "amount": 6063469.25,
+      "sourceAmount": 6063469.25,
+      "detailUrl": "data/state-ok/archive-state-source/state-ok-omes-fy2024-63000-department-of-securities.json",
+      "sourceUrl": "https://data.ok.gov/api/3/action/package_show?id=3a481186-0cb2-4651-85af-34b4afb3712b"
+    },
+    {
+      "id": "bu-05500-state-arts-council",
+      "name": "STATE ARTS COUNCIL",
+      "amount": 5985544.31,
+      "sourceAmount": 5985544.31,
+      "detailUrl": "data/state-ok/archive-state-source/state-ok-omes-fy2024-05500-state-arts-council.json",
+      "sourceUrl": "https://data.ok.gov/api/3/action/package_show?id=3a481186-0cb2-4651-85af-34b4afb3712b"
+    },
+    {
+      "id": "bu-63500-comm-on-consumer-credit",
+      "name": "COMM. ON CONSUMER CREDIT",
+      "amount": 5831997.09,
+      "sourceAmount": 5831997.09,
+      "detailUrl": "data/state-ok/archive-state-source/state-ok-omes-fy2024-63500-comm-on-consumer-credit.json",
+      "sourceUrl": "https://data.ok.gov/api/3/action/package_show?id=3a481186-0cb2-4651-85af-34b4afb3712b"
+    },
+    {
+      "id": "bu-62500-secretary-of-state",
+      "name": "SECRETARY OF STATE",
+      "amount": 5642714.59,
+      "sourceAmount": 5642714.59,
+      "detailUrl": "data/state-ok/archive-state-source/state-ok-omes-fy2024-62500-secretary-of-state.json",
+      "sourceUrl": "https://data.ok.gov/api/3/action/package_show?id=3a481186-0cb2-4651-85af-34b4afb3712b"
+    },
+    {
+      "id": "bu-26600-okla-educ-television-auth",
+      "name": "OKLA. EDUC. TELEVISION AUTH.",
+      "amount": 5218741.02,
+      "sourceAmount": 5218741.02,
+      "detailUrl": "data/state-ok/archive-state-source/state-ok-omes-fy2024-26600-okla-educ-television-auth.json",
+      "sourceUrl": "https://data.ok.gov/api/3/action/package_show?id=3a481186-0cb2-4651-85af-34b4afb3712b"
+    },
+    {
+      "id": "bu-12700-commission-on-children-and-youth",
+      "name": "COMMISSION ON CHILDREN AND YOUTH",
+      "amount": 5084544.52,
+      "sourceAmount": 5084544.52,
+      "detailUrl": "data/state-ok/archive-state-source/state-ok-omes-fy2024-12700-commission-on-children-and-youth.json",
+      "sourceUrl": "https://data.ok.gov/api/3/action/package_show?id=3a481186-0cb2-4651-85af-34b4afb3712b"
+    },
+    {
+      "id": "bu-08500-oklahoma-broadband-office",
+      "name": "OKLAHOMA BROADBAND OFFICE",
+      "amount": 4945359.97,
+      "sourceAmount": 4945359.97,
+      "detailUrl": "data/state-ok/archive-state-source/state-ok-omes-fy2024-08500-oklahoma-broadband-office.json",
+      "sourceUrl": "https://data.ok.gov/api/3/action/package_show?id=3a481186-0cb2-4651-85af-34b4afb3712b"
+    },
+    {
+      "id": "bu-41600-ok-law-enforce-ret-system",
+      "name": "OK. LAW ENFORCE. RET. SYSTEM",
+      "amount": 4738203.2,
+      "sourceAmount": 4738203.2,
+      "detailUrl": "data/state-ok/archive-state-source/state-ok-omes-fy2024-41600-ok-law-enforce-ret-system.json",
+      "sourceUrl": "https://data.ok.gov/api/3/action/package_show?id=3a481186-0cb2-4651-85af-34b4afb3712b"
+    },
+    {
+      "id": "bu-80300-statewide-charter-school-board",
+      "name": "STATEWIDE CHARTER SCHOOL BOARD",
+      "amount": 4591181.38,
+      "sourceAmount": 4591181.38,
+      "detailUrl": "data/state-ok/archive-state-source/state-ok-omes-fy2024-80300-statewide-charter-school-board.json",
+      "sourceUrl": "https://data.ok.gov/api/3/action/package_show?id=3a481186-0cb2-4651-85af-34b4afb3712b"
+    },
+    {
+      "id": "bu-45000-bd-of-med-licensure-supv",
+      "name": "BD. OF MED. LICENSURE & SUPV.",
+      "amount": 4409450.4,
+      "sourceAmount": 4409450.4,
+      "detailUrl": "data/state-ok/archive-state-source/state-ok-omes-fy2024-45000-bd-of-med-licensure-supv.json",
+      "sourceUrl": "https://data.ok.gov/api/3/action/package_show?id=3a481186-0cb2-4651-85af-34b4afb3712b"
+    },
+    {
+      "id": "bu-19900-court-of-criminal-appeals",
+      "name": "COURT OF CRIMINAL APPEALS",
+      "amount": 4376161.46,
+      "sourceAmount": 4376161.46,
+      "detailUrl": "data/state-ok/archive-state-source/state-ok-omes-fy2024-19900-court-of-criminal-appeals.json",
+      "sourceUrl": "https://data.ok.gov/api/3/action/package_show?id=3a481186-0cb2-4651-85af-34b4afb3712b"
+    },
+    {
+      "id": "bu-17000-construction-industries-board",
+      "name": "CONSTRUCTION INDUSTRIES BOARD",
+      "amount": 4058837.04,
+      "sourceAmount": 4058837.04,
+      "detailUrl": "data/state-ok/archive-state-source/state-ok-omes-fy2024-17000-construction-industries-board.json",
+      "sourceUrl": "https://data.ok.gov/api/3/action/package_show?id=3a481186-0cb2-4651-85af-34b4afb3712b"
+    },
+    {
+      "id": "bu-51000-okla-board-of-nursing",
+      "name": "OKLA. BOARD OF NURSING",
+      "amount": 3586591.09,
+      "sourceAmount": 3586591.09,
+      "detailUrl": "data/state-ok/archive-state-source/state-ok-omes-fy2024-51000-okla-board-of-nursing.json",
+      "sourceUrl": "https://data.ok.gov/api/3/action/package_show?id=3a481186-0cb2-4651-85af-34b4afb3712b"
+    },
+    {
+      "id": "bu-30500-governor",
+      "name": "GOVERNOR",
+      "amount": 3573519.68,
+      "sourceAmount": 3573519.68,
+      "detailUrl": "data/state-ok/archive-state-source/state-ok-omes-fy2024-30500-governor.json",
+      "sourceUrl": "https://data.ok.gov/api/3/action/package_show?id=3a481186-0cb2-4651-85af-34b4afb3712b"
+    },
+    {
+      "id": "bu-55700-police-pension-ret-system",
+      "name": "POLICE PENSION & RET. SYSTEM",
+      "amount": 3154410.66,
+      "sourceAmount": 3154410.66,
+      "detailUrl": "data/state-ok/archive-state-source/state-ok-omes-fy2024-55700-police-pension-ret-system.json",
+      "sourceUrl": "https://data.ok.gov/api/3/action/package_show?id=3a481186-0cb2-4651-85af-34b4afb3712b"
+    },
+    {
+      "id": "bu-31000-state-fire-marshal",
+      "name": "STATE FIRE MARSHAL",
+      "amount": 2839304.15,
+      "sourceAmount": 2839304.15,
+      "detailUrl": "data/state-ok/archive-state-source/state-ok-omes-fy2024-31000-state-fire-marshal.json",
+      "sourceUrl": "https://data.ok.gov/api/3/action/package_show?id=3a481186-0cb2-4651-85af-34b4afb3712b"
+    },
+    {
+      "id": "bu-34600-okla-space-industry-dev-auth",
+      "name": "OKLA. SPACE INDUSTRY DEV. AUTH.",
+      "amount": 2595155.36,
+      "sourceAmount": 2595155.36,
+      "detailUrl": "data/state-ok/archive-state-source/state-ok-omes-fy2024-34600-okla-space-industry-dev-auth.json",
+      "sourceUrl": "https://data.ok.gov/api/3/action/package_show?id=3a481186-0cb2-4651-85af-34b4afb3712b"
+    },
+    {
+      "id": "bu-30600-pardon-and-parole-board",
+      "name": "PARDON AND PAROLE BOARD",
+      "amount": 2533332.52,
+      "sourceAmount": 2533332.52,
+      "detailUrl": "data/state-ok/archive-state-source/state-ok-omes-fy2024-30600-pardon-and-parole-board.json",
+      "sourceUrl": "https://data.ok.gov/api/3/action/package_show?id=3a481186-0cb2-4651-85af-34b4afb3712b"
+    },
+    {
+      "id": "bu-37000-ok-industrial-finance-auth",
+      "name": "OK. INDUSTRIAL FINANCE AUTH.",
+      "amount": 2499148.18,
+      "sourceAmount": 2499148.18,
+      "detailUrl": "data/state-ok/archive-state-source/state-ok-omes-fy2024-37000-ok-industrial-finance-auth.json",
+      "sourceUrl": "https://data.ok.gov/api/3/action/package_show?id=3a481186-0cb2-4651-85af-34b4afb3712b"
+    },
+    {
+      "id": "bu-12500-department-of-mines",
+      "name": "DEPARTMENT OF MINES",
+      "amount": 2489336.12,
+      "sourceAmount": 2489336.12,
+      "detailUrl": "data/state-ok/archive-state-source/state-ok-omes-fy2024-12500-department-of-mines.json",
+      "sourceUrl": "https://data.ok.gov/api/3/action/package_show?id=3a481186-0cb2-4651-85af-34b4afb3712b"
+    },
+    {
+      "id": "bu-56000-state-pharmacy-board",
+      "name": "STATE PHARMACY BOARD",
+      "amount": 2410667.61,
+      "sourceAmount": 2410667.61,
+      "detailUrl": "data/state-ok/archive-state-source/state-ok-omes-fy2024-56000-state-pharmacy-board.json",
+      "sourceUrl": "https://data.ok.gov/api/3/action/package_show?id=3a481186-0cb2-4651-85af-34b4afb3712b"
+    },
+    {
+      "id": "bu-58800-oklahoma-real-estate-comm",
+      "name": "OKLAHOMA REAL ESTATE COMM.",
+      "amount": 2093005.07,
+      "sourceAmount": 2093005.07,
+      "detailUrl": "data/state-ok/archive-state-source/state-ok-omes-fy2024-58800-oklahoma-real-estate-comm.json",
+      "sourceUrl": "https://data.ok.gov/api/3/action/package_show?id=3a481186-0cb2-4651-85af-34b4afb3712b"
+    },
+    {
+      "id": "bu-27500-office-of-educ-quality-accountability",
+      "name": "OFFICE OF EDUC. QUALITY & ACCOUNTABILITY",
+      "amount": 1925415.08,
+      "sourceAmount": 1925415.08,
+      "detailUrl": "data/state-ok/archive-state-source/state-ok-omes-fy2024-27500-office-of-educ-quality-accountability.json",
+      "sourceUrl": "https://data.ok.gov/api/3/action/package_show?id=3a481186-0cb2-4651-85af-34b4afb3712b"
+    },
+    {
+      "id": "bu-57000-prof-engi-land-surveyors",
+      "name": "PROF. ENGI. & LAND SURVEYORS",
+      "amount": 1502955.1,
+      "sourceAmount": 1502955.1,
+      "detailUrl": "data/state-ok/archive-state-source/state-ok-omes-fy2024-57000-prof-engi-land-surveyors.json",
+      "sourceUrl": "https://data.ok.gov/api/3/action/package_show?id=3a481186-0cb2-4651-85af-34b4afb3712b"
+    },
+    {
+      "id": "bu-19000-st-bd-of-cosmetology-and-barbering",
+      "name": "ST BD OF COSMETOLOGY AND BARBERING",
+      "amount": 1450537.54,
+      "sourceAmount": 1450537.54,
+      "detailUrl": "data/state-ok/archive-state-source/state-ok-omes-fy2024-19000-st-bd-of-cosmetology-and-barbering.json",
+      "sourceUrl": "https://data.ok.gov/api/3/action/package_show?id=3a481186-0cb2-4651-85af-34b4afb3712b"
+    },
+    {
+      "id": "bu-02000-oklahoma-accountancy-board",
+      "name": "OKLAHOMA ACCOUNTANCY BOARD",
+      "amount": 1389743.33,
+      "sourceAmount": 1389743.33,
+      "detailUrl": "data/state-ok/archive-state-source/state-ok-omes-fy2024-02000-oklahoma-accountancy-board.json",
+      "sourceUrl": "https://data.ok.gov/api/3/action/package_show?id=3a481186-0cb2-4651-85af-34b4afb3712b"
+    },
+    {
+      "id": "bu-75500-used-motor-veh-mfg-housing",
+      "name": "USED MOTOR VEH & MFG HOUSING",
+      "amount": 1339604.17,
+      "sourceAmount": 1339604.17,
+      "detailUrl": "data/state-ok/archive-state-source/state-ok-omes-fy2024-75500-used-motor-veh-mfg-housing.json",
+      "sourceUrl": "https://data.ok.gov/api/3/action/package_show?id=3a481186-0cb2-4651-85af-34b4afb3712b"
+    },
+    {
+      "id": "bu-61000-regional-university-system-of-oklahoma",
+      "name": "REGIONAL UNIVERSITY SYSTEM OF OKLAHOMA",
+      "amount": 1264173.25,
+      "sourceAmount": 1264173.25,
+      "detailUrl": "data/state-ok/archive-state-source/state-ok-omes-fy2024-61000-regional-university-system-of-oklahoma.json",
+      "sourceUrl": "https://data.ok.gov/api/3/action/package_show?id=3a481186-0cb2-4651-85af-34b4afb3712b"
+    },
+    {
+      "id": "bu-30700-interstate-oil-compact-comm",
+      "name": "INTERSTATE OIL COMPACT COMM.",
+      "amount": 1102948.29,
+      "sourceAmount": 1102948.29,
+      "detailUrl": "data/state-ok/archive-state-source/state-ok-omes-fy2024-30700-interstate-oil-compact-comm.json",
+      "sourceUrl": "https://data.ok.gov/api/3/action/package_show?id=3a481186-0cb2-4651-85af-34b4afb3712b"
+    },
+    {
+      "id": "bu-52500-state-bd-of-osteopathic-exam",
+      "name": "STATE BD. OF OSTEOPATHIC EXAM.",
+      "amount": 1083707.45,
+      "sourceAmount": 1083707.45,
+      "detailUrl": "data/state-ok/archive-state-source/state-ok-omes-fy2024-52500-state-bd-of-osteopathic-exam.json",
+      "sourceUrl": "https://data.ok.gov/api/3/action/package_show?id=3a481186-0cb2-4651-85af-34b4afb3712b"
+    },
+    {
+      "id": "bu-21500-oklahoma-st-board-of-dentistry",
+      "name": "OKLAHOMA ST.BOARD OF DENTISTRY",
+      "amount": 983268.96,
+      "sourceAmount": 983268.96,
+      "detailUrl": "data/state-ok/archive-state-source/state-ok-omes-fy2024-21500-oklahoma-st-board-of-dentistry.json",
+      "sourceUrl": "https://data.ok.gov/api/3/action/package_show?id=3a481186-0cb2-4651-85af-34b4afb3712b"
+    },
+    {
+      "id": "bu-36900-workers-comp-court-of-existing-claims",
+      "name": "WORKERS COMP COURT OF EXISTING CLAIMS",
+      "amount": 952496.3,
+      "sourceAmount": 952496.3,
+      "detailUrl": "data/state-ok/archive-state-source/state-ok-omes-fy2024-36900-workers-comp-court-of-existing-claims.json",
+      "sourceUrl": "https://data.ok.gov/api/3/action/package_show?id=3a481186-0cb2-4651-85af-34b4afb3712b"
+    },
+    {
+      "id": "bu-44500-liquefied-petroleum-gas-bd",
+      "name": "LIQUEFIED PETROLEUM GAS BD",
+      "amount": 923558.9,
+      "sourceAmount": 923558.9,
+      "detailUrl": "data/state-ok/archive-state-source/state-ok-omes-fy2024-44500-liquefied-petroleum-gas-bd.json",
+      "sourceUrl": "https://data.ok.gov/api/3/action/package_show?id=3a481186-0cb2-4651-85af-34b4afb3712b"
+    },
+    {
+      "id": "bu-29600-ethics-commission",
+      "name": "ETHICS COMMISSION",
+      "amount": 792371.04,
+      "sourceAmount": 792371.04,
+      "detailUrl": "data/state-ok/archive-state-source/state-ok-omes-fy2024-29600-ethics-commission.json",
+      "sourceUrl": "https://data.ok.gov/api/3/action/package_show?id=3a481186-0cb2-4651-85af-34b4afb3712b"
+    },
+    {
+      "id": "bu-04500-okla-bd-of-architects",
+      "name": "OKLA. BD. OF ARCHITECTS",
+      "amount": 709178.94,
+      "sourceAmount": 709178.94,
+      "detailUrl": "data/state-ok/archive-state-source/state-ok-omes-fy2024-04500-okla-bd-of-architects.json",
+      "sourceUrl": "https://data.ok.gov/api/3/action/package_show?id=3a481186-0cb2-4651-85af-34b4afb3712b"
+    },
+    {
+      "id": "bu-44000-office-of-lieutenant-governor",
+      "name": "OFFICE OF LIEUTENANT GOVERNOR",
+      "amount": 699916.45,
+      "sourceAmount": 699916.45,
+      "detailUrl": "data/state-ok/archive-state-source/state-ok-omes-fy2024-44000-office-of-lieutenant-governor.json",
+      "sourceUrl": "https://data.ok.gov/api/3/action/package_show?id=3a481186-0cb2-4651-85af-34b4afb3712b"
+    },
+    {
+      "id": "bu-77200-bd-of-chem-test-alcohol-drug",
+      "name": "BD. OF CHEM. TEST ALCOHOL/DRUG",
+      "amount": 664567.23,
+      "sourceAmount": 664567.23,
+      "detailUrl": "data/state-ok/archive-state-source/state-ok-omes-fy2024-77200-bd-of-chem-test-alcohol-drug.json",
+      "sourceUrl": "https://data.ok.gov/api/3/action/package_show?id=3a481186-0cb2-4651-85af-34b4afb3712b"
+    },
+    {
+      "id": "bu-03900-boll-weevil-eradication-org",
+      "name": "BOLL WEEVIL ERADICATION ORG.",
+      "amount": 598700,
+      "sourceAmount": 598700,
+      "detailUrl": "data/state-ok/archive-state-source/state-ok-omes-fy2024-03900-boll-weevil-eradication-org.json",
+      "sourceUrl": "https://data.ok.gov/api/3/action/package_show?id=3a481186-0cb2-4651-85af-34b4afb3712b"
+    },
+    {
+      "id": "bu-75300-uniform-building-code-commission",
+      "name": "UNIFORM BUILDING CODE COMMISSION",
+      "amount": 559373.47,
+      "sourceAmount": 559373.47,
+      "detailUrl": "data/state-ok/archive-state-source/state-ok-omes-fy2024-75300-uniform-building-code-commission.json",
+      "sourceUrl": "https://data.ok.gov/api/3/action/package_show?id=3a481186-0cb2-4651-85af-34b4afb3712b"
+    },
+    {
+      "id": "bu-79000-bd-of-veterinary-med-exam",
+      "name": "BD. OF VETERINARY MED. EXAM.",
+      "amount": 558017.54,
+      "sourceAmount": 558017.54,
+      "detailUrl": "data/state-ok/archive-state-source/state-ok-omes-fy2024-79000-bd-of-veterinary-med-exam.json",
+      "sourceUrl": "https://data.ok.gov/api/3/action/package_show?id=3a481186-0cb2-4651-85af-34b4afb3712b"
+    },
+    {
+      "id": "bu-75800-university-center-at-ponca-city",
+      "name": "UNIVERSITY CENTER AT PONCA CITY",
+      "amount": 542231.29,
+      "sourceAmount": 542231.29,
+      "detailUrl": "data/state-ok/archive-state-source/state-ok-omes-fy2024-75800-university-center-at-ponca-city.json",
+      "sourceUrl": "https://data.ok.gov/api/3/action/package_show?id=3a481186-0cb2-4651-85af-34b4afb3712b"
+    },
+    {
+      "id": "bu-67800-council-on-judicial-complaints",
+      "name": "COUNCIL ON JUDICIAL COMPLAINTS",
+      "amount": 522966.27,
+      "sourceAmount": 522966.27,
+      "detailUrl": "data/state-ok/archive-state-source/state-ok-omes-fy2024-67800-council-on-judicial-complaints.json",
+      "sourceUrl": "https://data.ok.gov/api/3/action/package_show?id=3a481186-0cb2-4651-85af-34b4afb3712b"
+    },
+    {
+      "id": "bu-20400-j-m-davis-arms-hist-museum",
+      "name": "J. M. DAVIS ARMS & HIST. MUSEUM",
+      "amount": 495586.2,
+      "sourceAmount": 495586.2,
+      "detailUrl": "data/state-ok/archive-state-source/state-ok-omes-fy2024-20400-j-m-davis-arms-hist-museum.json",
+      "sourceUrl": "https://data.ok.gov/api/3/action/package_show?id=3a481186-0cb2-4651-85af-34b4afb3712b"
+    },
+    {
+      "id": "bu-47500-ok-new-motor-vehicle-comm",
+      "name": "OK NEW MOTOR VEHICLE COMM",
+      "amount": 460099.74,
+      "sourceAmount": 460099.74,
+      "detailUrl": "data/state-ok/archive-state-source/state-ok-omes-fy2024-47500-ok-new-motor-vehicle-comm.json",
+      "sourceUrl": "https://data.ok.gov/api/3/action/package_show?id=3a481186-0cb2-4651-85af-34b4afb3712b"
+    },
+    {
+      "id": "bu-28500-oklahoma-funeral-board",
+      "name": "OKLAHOMA FUNERAL BOARD",
+      "amount": 432990.91,
+      "sourceAmount": 432990.91,
+      "detailUrl": "data/state-ok/archive-state-source/state-ok-omes-fy2024-28500-oklahoma-funeral-board.json",
+      "sourceUrl": "https://data.ok.gov/api/3/action/package_show?id=3a481186-0cb2-4651-85af-34b4afb3712b"
+    },
+    {
+      "id": "bu-14800-board-of-behavioral-health-licensure",
+      "name": "BOARD OF BEHAVIORAL HEALTH LICENSURE",
+      "amount": 429551.89,
+      "sourceAmount": 429551.89,
+      "detailUrl": "data/state-ok/archive-state-source/state-ok-omes-fy2024-14800-board-of-behavioral-health-licensure.json",
+      "sourceUrl": "https://data.ok.gov/api/3/action/package_show?id=3a481186-0cb2-4651-85af-34b4afb3712b"
+    },
+    {
+      "id": "bu-32600-office-of-disability-concerns",
+      "name": "OFFICE OF DISABILITY CONCERNS",
+      "amount": 328027.25,
+      "sourceAmount": 328027.25,
+      "detailUrl": "data/state-ok/archive-state-source/state-ok-omes-fy2024-32600-office-of-disability-concerns.json",
+      "sourceUrl": "https://data.ok.gov/api/3/action/package_show?id=3a481186-0cb2-4651-85af-34b4afb3712b"
+    },
+    {
+      "id": "bu-52000-board-of-examiners-in-optometry",
+      "name": "BOARD OF EXAMINERS IN OPTOMETRY",
+      "amount": 315099.45,
+      "sourceAmount": 315099.45,
+      "detailUrl": "data/state-ok/archive-state-source/state-ok-omes-fy2024-52000-board-of-examiners-in-optometry.json",
+      "sourceUrl": "https://data.ok.gov/api/3/action/package_show?id=3a481186-0cb2-4651-85af-34b4afb3712b"
+    },
+    {
+      "id": "bu-14500-st-bd-of-chiropractic-exam",
+      "name": "ST. BD. OF CHIROPRACTIC EXAM.",
+      "amount": 311058.28,
+      "sourceAmount": 311058.28,
+      "detailUrl": "data/state-ok/archive-state-source/state-ok-omes-fy2024-14500-st-bd-of-chiropractic-exam.json",
+      "sourceUrl": "https://data.ok.gov/api/3/action/package_show?id=3a481186-0cb2-4651-85af-34b4afb3712b"
+    },
+    {
+      "id": "bu-62200-ok-st-bd-of-lic-social-workers",
+      "name": "OK. ST. BD. OF LIC. SOCIAL WORKERS",
+      "amount": 294461.71,
+      "sourceAmount": 294461.71,
+      "detailUrl": "data/state-ok/archive-state-source/state-ok-omes-fy2024-62200-ok-st-bd-of-lic-social-workers.json",
+      "sourceUrl": "https://data.ok.gov/api/3/action/package_show?id=3a481186-0cb2-4651-85af-34b4afb3712b"
+    },
+    {
+      "id": "bu-56300-bd-of-priv-vocational-schools",
+      "name": "BD. OF PRIV. VOCATIONAL SCHOOLS",
+      "amount": 289687.89,
+      "sourceAmount": 289687.89,
+      "detailUrl": "data/state-ok/archive-state-source/state-ok-omes-fy2024-56300-bd-of-priv-vocational-schools.json",
+      "sourceUrl": "https://data.ok.gov/api/3/action/package_show?id=3a481186-0cb2-4651-85af-34b4afb3712b"
+    },
+    {
+      "id": "bu-57500-bd-of-psychologists-examiners",
+      "name": "BD. OF PSYCHOLOGISTS EXAMINERS",
+      "amount": 271680.2,
+      "sourceAmount": 271680.2,
+      "detailUrl": "data/state-ok/archive-state-source/state-ok-omes-fy2024-57500-bd-of-psychologists-examiners.json",
+      "sourceUrl": "https://data.ok.gov/api/3/action/package_show?id=3a481186-0cb2-4651-85af-34b4afb3712b"
+    },
+    {
+      "id": "bu-63200-speech-language-pathology-audiology",
+      "name": "SPEECH-LANGUAGE PATHOLOGY & AUDIOLOGY",
+      "amount": 268740.31,
+      "sourceAmount": 268740.31,
+      "detailUrl": "data/state-ok/archive-state-source/state-ok-omes-fy2024-63200-speech-language-pathology-audiology.json",
+      "sourceUrl": "https://data.ok.gov/api/3/action/package_show?id=3a481186-0cb2-4651-85af-34b4afb3712b"
+    },
+    {
+      "id": "bu-02200-oklahoma-abstractors-board",
+      "name": "OKLAHOMA ABSTRACTORS BOARD",
+      "amount": 263281.78,
+      "sourceAmount": 263281.78,
+      "detailUrl": "data/state-ok/archive-state-source/state-ok-omes-fy2024-02200-oklahoma-abstractors-board.json",
+      "sourceUrl": "https://data.ok.gov/api/3/action/package_show?id=3a481186-0cb2-4651-85af-34b4afb3712b"
+    },
+    {
+      "id": "bu-67500-self-insurance-guaranty-fund-board",
+      "name": "SELF-INSURANCE GUARANTY FUND BOARD",
+      "amount": 185275.11,
+      "sourceAmount": 185275.11,
+      "detailUrl": "data/state-ok/archive-state-source/state-ok-omes-fy2024-67500-self-insurance-guaranty-fund-board.json",
+      "sourceUrl": "https://data.ok.gov/api/3/action/package_show?id=3a481186-0cb2-4651-85af-34b4afb3712b"
+    },
+    {
+      "id": "bu-44800-bd-of-lic-alcohol-drug-couns",
+      "name": "BD OF LIC ALCOHOL & DRUG COUNS",
+      "amount": 160739.35,
+      "sourceAmount": 160739.35,
+      "detailUrl": "data/state-ok/archive-state-source/state-ok-omes-fy2024-44800-bd-of-lic-alcohol-drug-couns.json",
+      "sourceUrl": "https://data.ok.gov/api/3/action/package_show?id=3a481186-0cb2-4651-85af-34b4afb3712b"
+    },
+    {
+      "id": "bu-50900-bd-of-exam-for-lt-care-admin",
+      "name": "BD. OF EXAM. FOR LT CARE ADMIN.",
+      "amount": 144325.89,
+      "sourceAmount": 144325.89,
+      "detailUrl": "data/state-ok/archive-state-source/state-ok-omes-fy2024-50900-bd-of-exam-for-lt-care-admin.json",
+      "sourceUrl": "https://data.ok.gov/api/3/action/package_show?id=3a481186-0cb2-4651-85af-34b4afb3712b"
+    },
+    {
+      "id": "bu-14000-st-bd-of-podiatric-med-exam",
+      "name": "ST. BD. OF PODIATRIC MED. EXAM.",
+      "amount": 13063.91,
+      "sourceAmount": 13063.91,
+      "detailUrl": "data/state-ok/archive-state-source/state-ok-omes-fy2024-14000-st-bd-of-podiatric-med-exam.json",
+      "sourceUrl": "https://data.ok.gov/api/3/action/package_show?id=3a481186-0cb2-4651-85af-34b4afb3712b"
+    },
+    {
+      "id": "bu-34300-st-bd-of-examiners-of-perfusionists",
+      "name": "ST. BD. OF EXAMINERS OF PERFUSIONISTS",
+      "amount": 8164.26,
+      "sourceAmount": 8164.26,
+      "detailUrl": "data/state-ok/archive-state-source/state-ok-omes-fy2024-34300-st-bd-of-examiners-of-perfusionists.json",
+      "sourceUrl": "https://data.ok.gov/api/3/action/package_show?id=3a481186-0cb2-4651-85af-34b4afb3712b"
+    }
+  ],
+  "itemizedTotal": 35864460747.76,
+  "comparison": {
+    "label": "Census FY2024 state-finance comparator",
+    "url": "https://data.census.gov/table/GOVSSTATEFINTIMESERIES.GS00STATEFIN01?g=040XX00US40&time=2024",
+    "total": 35270025000,
+    "difference": 594435747.76
+  },
+  "coverageStatus": "official-itemized-source-basis",
+  "archiveNote": "Prior official state layer archived when the complete Census function layer became primary for map reconciliation."
+}

@@ -1,0 +1,126 @@
+{
+  "scope": "Massachusetts",
+  "code": "ma",
+  "department": "DEPARTMENT OF TRANSITIONAL ASSISTANCE (WEL)",
+  "fiscalYear": 2024,
+  "ledgerAmount": 238925923.51,
+  "sourceTotal": 260114355.15,
+  "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000",
+  "rowSchema": [
+    "subAgency",
+    "program",
+    "amount",
+    "sourceAmount",
+    "sourceRows"
+  ],
+  "rows": [
+    [
+      "DEPARTMENT OF TRANSITIONAL ASSISTANCE (WEL)",
+      "DEPARTMENT OF TRANSITIONAL ASSISTANCE (WEL) · (AA) REGULAR EMPLOYEE COMPENSATION",
+      166016333.77,
+      166016333.77,
+      15562
+    ],
+    [
+      "DEPARTMENT OF TRANSITIONAL ASSISTANCE (WEL)",
+      "DEPARTMENT OF TRANSITIONAL ASSISTANCE (WEL) · (EE) ADMINISTRATIVE EXPENSES",
+      25300603.07,
+      25300603.07,
+      711
+    ],
+    [
+      "DEPARTMENT OF TRANSITIONAL ASSISTANCE (WEL)",
+      "DEPARTMENT OF TRANSITIONAL ASSISTANCE (WEL) · (MM) PURCHASED CLIENT/PROGRAM SVCS",
+      22051485.61,
+      22051485.61,
+      1283
+    ],
+    [
+      "DEPARTMENT OF TRANSITIONAL ASSISTANCE (WEL)",
+      "DEPARTMENT OF TRANSITIONAL ASSISTANCE (WEL) · (RR) BENEFIT PROGRAMS",
+      18409422.37,
+      18409422.37,
+      19
+    ],
+    [
+      "DEPARTMENT OF TRANSITIONAL ASSISTANCE (WEL)",
+      "DEPARTMENT OF TRANSITIONAL ASSISTANCE (WEL) · (GG) ENERGY COSTS AND SPACE RENTAL",
+      11845802.17,
+      11845802.17,
+      376
+    ],
+    [
+      "DEPARTMENT OF TRANSITIONAL ASSISTANCE (WEL)",
+      "DEPARTMENT OF TRANSITIONAL ASSISTANCE (WEL) · (HH) CONSULTANT SVCS (TO DEPTS)",
+      8832920.37,
+      8832920.37,
+      44
+    ],
+    [
+      "DEPARTMENT OF TRANSITIONAL ASSISTANCE (WEL)",
+      "DEPARTMENT OF TRANSITIONAL ASSISTANCE (WEL) · (JJ) OPERATIONAL SERVICES",
+      5838888.77,
+      5838888.77,
+      426
+    ],
+    [
+      "DEPARTMENT OF TRANSITIONAL ASSISTANCE (WEL)",
+      "DEPARTMENT OF TRANSITIONAL ASSISTANCE (WEL) · (UU) IT NON-PAYROLL EXPENSES",
+      655025.45,
+      655025.45,
+      40
+    ],
+    [
+      "DEPARTMENT OF TRANSITIONAL ASSISTANCE (WEL)",
+      "DEPARTMENT OF TRANSITIONAL ASSISTANCE (WEL) · (LL) EQUIPMENT LEASE-MAINTAIN/REPAR",
+      508574.92,
+      508574.92,
+      142
+    ],
+    [
+      "DEPARTMENT OF TRANSITIONAL ASSISTANCE (WEL)",
+      "DEPARTMENT OF TRANSITIONAL ASSISTANCE (WEL) · (PP) STATE AID/POL SUB",
+      300000,
+      300000,
+      2
+    ],
+    [
+      "DEPARTMENT OF TRANSITIONAL ASSISTANCE (WEL)",
+      "DEPARTMENT OF TRANSITIONAL ASSISTANCE (WEL) · (BB) REGULAR EMPLOYEE RELATED EXPEN",
+      232590.32,
+      232590.32,
+      754
+    ],
+    [
+      "DEPARTMENT OF TRANSITIONAL ASSISTANCE (WEL)",
+      "DEPARTMENT OF TRANSITIONAL ASSISTANCE (WEL) · (NN) INFRASTRUCTURE:",
+      93123.45,
+      93123.45,
+      61
+    ],
+    [
+      "DEPARTMENT OF TRANSITIONAL ASSISTANCE (WEL)",
+      "DEPARTMENT OF TRANSITIONAL ASSISTANCE (WEL) · (KK) EQUIPMENT PURCHASE",
+      23246.77,
+      23246.77,
+      41
+    ],
+    [
+      "DEPARTMENT OF TRANSITIONAL ASSISTANCE (WEL)",
+      "DEPARTMENT OF TRANSITIONAL ASSISTANCE (WEL) · (FF) FACILITY OPERATIONAL EXPENSES",
+      6338.11,
+      6338.11,
+      79
+    ],
+    [
+      "DEPARTMENT OF TRANSITIONAL ASSISTANCE (WEL)",
+      "DEPARTMENT OF TRANSITIONAL ASSISTANCE (WEL) · (99) PAYROLL REJECTS",
+      0,
+      0,
+      16
+    ]
+  ],
+  "hierarchyNote": "The source does not identify a separate sub-agency column; direct-managed rows repeat the parent entity.",
+  "sourceBasis": "official source amount",
+  "note": "Amounts are shown on the official source basis; no comparator normalization was applied."
+}

@@ -1,0 +1,49 @@
+{
+  "scope": "New York",
+  "fiscalYear": 2024,
+  "department": "New York Statewide",
+  "sourceUrl": "https://wwe2.osc.state.ny.us/transparency/checkbook/chkbkMain.cfm",
+  "sourceUrls": [
+    [
+      "Official OSC state payments",
+      "https://wwe2.osc.state.ny.us/transparency/checkbook/chkbkMain.cfm"
+    ],
+    [
+      "Open Book New York overview",
+      "https://www.osc.ny.gov/open-book-new-york"
+    ]
+  ],
+  "sourceBasis": "Official OSC State Payments FY2024 cash/checkbook export; detail grouped by agency, purpose, and privacy-safe receiver label.",
+  "privacyNote": "Individual or ambiguous payee labels are grouped as [individual recipient omitted]; organization receivers are retained. This layer does not expose person-level payroll.",
+  "sourceRows": 8,
+  "sourceTotal": 210827414.66,
+  "rowSchema": [
+    "subAgency",
+    "program",
+    "amount",
+    "sourceAmount",
+    "sourceRows"
+  ],
+  "rows": [
+    [
+      "New York Statewide",
+      "Fixed Rate Interest; Fixed Rate Principal · Receiver BANK OF NEW YORK MELLON - FIXED",
+      183562641.14,
+      183562641.14,
+      4
+    ],
+    [
+      "New York Statewide",
+      "Fixed Rate Interest · Receiver BANK OF NEW YORK MELLON - FIXED",
+      27264773.52,
+      27264773.52,
+      4
+    ]
+  ],
+  "sourceCheck": {
+    "objectClassRows": 2,
+    "sourceRows": 8,
+    "sourceTotal": 210827414.66,
+    "difference": 0
+  }
+}

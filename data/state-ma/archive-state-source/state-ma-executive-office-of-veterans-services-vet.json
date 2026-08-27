@@ -1,0 +1,119 @@
+{
+  "scope": "Massachusetts",
+  "code": "ma",
+  "department": "EXECUTIVE OFFICE OF VETERANS' SERVICES (VET)",
+  "fiscalYear": 2024,
+  "ledgerAmount": 39235309.55,
+  "sourceTotal": 42714775.75,
+  "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000",
+  "rowSchema": [
+    "subAgency",
+    "program",
+    "amount",
+    "sourceAmount",
+    "sourceRows"
+  ],
+  "rows": [
+    [
+      "EXECUTIVE OFFICE OF VETERANS' SERVICES (VET)",
+      "EXECUTIVE OFFICE OF VETERANS' SERVICES (VET) · (MM) PURCHASED CLIENT/PROGRAM SVCS",
+      16392109.26,
+      16392109.26,
+      451
+    ],
+    [
+      "EXECUTIVE OFFICE OF VETERANS' SERVICES (VET)",
+      "EXECUTIVE OFFICE OF VETERANS' SERVICES (VET) · (AA) REGULAR EMPLOYEE COMPENSATION",
+      11188233.73,
+      11188233.73,
+      893
+    ],
+    [
+      "EXECUTIVE OFFICE OF VETERANS' SERVICES (VET)",
+      "EXECUTIVE OFFICE OF VETERANS' SERVICES (VET) · (JJ) OPERATIONAL SERVICES",
+      6779252.97,
+      6779252.97,
+      531
+    ],
+    [
+      "EXECUTIVE OFFICE OF VETERANS' SERVICES (VET)",
+      "EXECUTIVE OFFICE OF VETERANS' SERVICES (VET) · (UU) IT NON-PAYROLL EXPENSES",
+      3550927.06,
+      3550927.06,
+      185
+    ],
+    [
+      "EXECUTIVE OFFICE OF VETERANS' SERVICES (VET)",
+      "EXECUTIVE OFFICE OF VETERANS' SERVICES (VET) · (PP) STATE AID/POL SUB",
+      2880700,
+      2880700,
+      103
+    ],
+    [
+      "EXECUTIVE OFFICE OF VETERANS' SERVICES (VET)",
+      "EXECUTIVE OFFICE OF VETERANS' SERVICES (VET) · (EE) ADMINISTRATIVE EXPENSES",
+      554111.5,
+      554111.5,
+      323
+    ],
+    [
+      "EXECUTIVE OFFICE OF VETERANS' SERVICES (VET)",
+      "EXECUTIVE OFFICE OF VETERANS' SERVICES (VET) · (NN) INFRASTRUCTURE:",
+      539909.23,
+      539909.23,
+      159
+    ],
+    [
+      "EXECUTIVE OFFICE OF VETERANS' SERVICES (VET)",
+      "EXECUTIVE OFFICE OF VETERANS' SERVICES (VET) · (GG) ENERGY COSTS AND SPACE RENTAL",
+      381774.97,
+      381774.97,
+      173
+    ],
+    [
+      "EXECUTIVE OFFICE OF VETERANS' SERVICES (VET)",
+      "EXECUTIVE OFFICE OF VETERANS' SERVICES (VET) · (HH) CONSULTANT SVCS (TO DEPTS)",
+      360870.86,
+      360870.86,
+      18
+    ],
+    [
+      "EXECUTIVE OFFICE OF VETERANS' SERVICES (VET)",
+      "EXECUTIVE OFFICE OF VETERANS' SERVICES (VET) · (BB) REGULAR EMPLOYEE RELATED EXPEN",
+      52566.56,
+      52566.56,
+      141
+    ],
+    [
+      "EXECUTIVE OFFICE OF VETERANS' SERVICES (VET)",
+      "EXECUTIVE OFFICE OF VETERANS' SERVICES (VET) · (LL) EQUIPMENT LEASE-MAINTAIN/REPAR",
+      25886.48,
+      25886.48,
+      99
+    ],
+    [
+      "EXECUTIVE OFFICE OF VETERANS' SERVICES (VET)",
+      "EXECUTIVE OFFICE OF VETERANS' SERVICES (VET) · (FF) FACILITY OPERATIONAL EXPENSES",
+      5590.63,
+      5590.63,
+      5
+    ],
+    [
+      "EXECUTIVE OFFICE OF VETERANS' SERVICES (VET)",
+      "EXECUTIVE OFFICE OF VETERANS' SERVICES (VET) · (KK) EQUIPMENT PURCHASE",
+      2842.5,
+      2842.5,
+      3
+    ],
+    [
+      "EXECUTIVE OFFICE OF VETERANS' SERVICES (VET)",
+      "EXECUTIVE OFFICE OF VETERANS' SERVICES (VET) · (99) PAYROLL REJECTS",
+      0,
+      0,
+      10
+    ]
+  ],
+  "hierarchyNote": "The source does not identify a separate sub-agency column; direct-managed rows repeat the parent entity.",
+  "sourceBasis": "official source amount",
+  "note": "Amounts are shown on the official source basis; no comparator normalization was applied."
+}

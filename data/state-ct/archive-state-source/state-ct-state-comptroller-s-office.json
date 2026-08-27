@@ -1,0 +1,182 @@
+{
+  "scope": "Connecticut",
+  "code": "ct",
+  "department": "State Comptroller's Office",
+  "fiscalYear": 2024,
+  "ledgerAmount": 2417805628.75,
+  "sourceTotal": 2576334313.48,
+  "sourceUrl": "https://data.ct.gov/resource/ajdm-rvz7.json?$select=department,program,sum(amount)%20as%20amount,count(*)%20as%20records&$where=fiscal_year=2024&$group=department,program",
+  "rowSchema": [
+    "subAgency",
+    "program",
+    "amount",
+    "sourceAmount",
+    "sourceRows"
+  ],
+  "rows": [
+    [
+      "State Comptroller's Office",
+      "State Comptroller's Office · Act. Emp. HI FAD",
+      1038978407.01,
+      1038978407.01,
+      38
+    ],
+    [
+      "State Comptroller's Office",
+      "State Comptroller's Office · Partnership 2.0",
+      599893453.69,
+      599893453.69,
+      48
+    ],
+    [
+      "State Comptroller's Office",
+      "State Comptroller's Office · Retiree Med. Empl. Share",
+      386814027.28,
+      386814027.28,
+      94
+    ],
+    [
+      "State Comptroller's Office",
+      "State Comptroller's Office · Retiree Pharmacy",
+      215797039.35,
+      215797039.35,
+      48
+    ],
+    [
+      "State Comptroller's Office",
+      "State Comptroller's Office · Pharmacy Employer",
+      206290373.4,
+      206290373.4,
+      24
+    ],
+    [
+      "State Comptroller's Office",
+      "State Comptroller's Office · Adjudicated Claims",
+      55497495.67,
+      55497495.67,
+      239
+    ],
+    [
+      "State Comptroller's Office",
+      "State Comptroller's Office · IT Capital Investment Program",
+      25550487.09,
+      25550487.09,
+      277
+    ],
+    [
+      "State Comptroller's Office",
+      "State Comptroller's Office · Partnership 1.0",
+      23404850.84,
+      23404850.84,
+      48
+    ],
+    [
+      "State Comptroller's Office",
+      "State Comptroller's Office · Other Expenses",
+      17773183.97,
+      17773183.97,
+      1730
+    ],
+    [
+      "State Comptroller's Office",
+      "State Comptroller's Office · Unemployment Compensation",
+      3221129.92,
+      3221129.92,
+      21
+    ],
+    [
+      "State Comptroller's Office",
+      "State Comptroller's Office · Municipal Emps Retirement Admn",
+      700046.28,
+      700046.28,
+      112
+    ],
+    [
+      "State Comptroller's Office",
+      "State Comptroller's Office · CT Essential Workers Asst Fund",
+      612785.02,
+      612785.02,
+      4
+    ],
+    [
+      "State Comptroller's Office",
+      "State Comptroller's Office · Non-Budgeted Operating Approp",
+      438359.67,
+      438359.67,
+      185
+    ],
+    [
+      "State Comptroller's Office",
+      "State Comptroller's Office · ST Employees Hlth Service Cost",
+      370362.75,
+      370362.75,
+      28
+    ],
+    [
+      "State Comptroller's Office",
+      "State Comptroller's Office · CT Premium Pay Account",
+      320264.98,
+      320264.98,
+      2
+    ],
+    [
+      "State Comptroller's Office",
+      "State Comptroller's Office · Tuition Reimburs Tranig & Trvl",
+      292478.11,
+      292478.11,
+      78
+    ],
+    [
+      "State Comptroller's Office",
+      "State Comptroller's Office · Personal Services",
+      210187.06,
+      210187.06,
+      34
+    ],
+    [
+      "State Comptroller's Office",
+      "State Comptroller's Office · Capital Equip Purchase Fund",
+      97303.43,
+      97303.43,
+      45
+    ],
+    [
+      "State Comptroller's Office",
+      "State Comptroller's Office · CONSOLIDATE HIGHER ED SYSTEMS",
+      41600,
+      41600,
+      10
+    ],
+    [
+      "State Comptroller's Office",
+      "State Comptroller's Office · Petty Cash",
+      18000,
+      18000,
+      2
+    ],
+    [
+      "State Comptroller's Office",
+      "State Comptroller's Office · Death Benefits For St Employ",
+      10599.96,
+      10599.96,
+      24
+    ],
+    [
+      "State Comptroller's Office",
+      "State Comptroller's Office · Retir Employ Health Serv Cost",
+      1700,
+      1700,
+      2
+    ],
+    [
+      "State Comptroller's Office",
+      "State Comptroller's Office · CMIA Settlement Account",
+      178,
+      178,
+      1
+    ]
+  ],
+  "hierarchyNote": "The source does not identify a separate sub-agency column; direct-managed rows repeat the parent entity.",
+  "sourceBasis": "official source amount",
+  "note": "Amounts are shown on the official source basis; no comparator normalization was applied."
+}

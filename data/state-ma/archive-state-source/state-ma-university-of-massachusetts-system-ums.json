@@ -1,0 +1,147 @@
+{
+  "scope": "Massachusetts",
+  "code": "ma",
+  "department": "UNIVERSITY OF MASSACHUSETTS SYSTEM (UMS)",
+  "fiscalYear": 2024,
+  "ledgerAmount": 3858043733.94,
+  "sourceTotal": 4200182815.03,
+  "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000",
+  "rowSchema": [
+    "subAgency",
+    "program",
+    "amount",
+    "sourceAmount",
+    "sourceRows"
+  ],
+  "rows": [
+    [
+      "UNIVERSITY OF MASSACHUSETTS SYSTEM (UMS)",
+      "UNIVERSITY OF MASSACHUSETTS SYSTEM (UMS) · (AA) REGULAR EMPLOYEE COMPENSATION",
+      1502574727.8,
+      1502574727.8,
+      1868
+    ],
+    [
+      "UNIVERSITY OF MASSACHUSETTS SYSTEM (UMS)",
+      "UNIVERSITY OF MASSACHUSETTS SYSTEM (UMS) · (RR) BENEFIT PROGRAMS",
+      606652082.34,
+      606652082.34,
+      157
+    ],
+    [
+      "UNIVERSITY OF MASSACHUSETTS SYSTEM (UMS)",
+      "UNIVERSITY OF MASSACHUSETTS SYSTEM (UMS) · (CC) SPECIAL EMPLOYEES",
+      316950096.53,
+      316950096.53,
+      964
+    ],
+    [
+      "UNIVERSITY OF MASSACHUSETTS SYSTEM (UMS)",
+      "UNIVERSITY OF MASSACHUSETTS SYSTEM (UMS) · (NN) INFRASTRUCTURE:",
+      301390881.91,
+      301390881.91,
+      408
+    ],
+    [
+      "UNIVERSITY OF MASSACHUSETTS SYSTEM (UMS)",
+      "UNIVERSITY OF MASSACHUSETTS SYSTEM (UMS) · (HH) CONSULTANT SVCS (TO DEPTS)",
+      244158262.1,
+      244158262.1,
+      263
+    ],
+    [
+      "UNIVERSITY OF MASSACHUSETTS SYSTEM (UMS)",
+      "UNIVERSITY OF MASSACHUSETTS SYSTEM (UMS) · (DD) PENSION & INSURANCE RELATED EX",
+      233262972.05,
+      233262972.05,
+      494
+    ],
+    [
+      "UNIVERSITY OF MASSACHUSETTS SYSTEM (UMS)",
+      "UNIVERSITY OF MASSACHUSETTS SYSTEM (UMS) · (TT) LOANS AND SPECIAL PAYMENTS",
+      148085260.25,
+      148085260.25,
+      249
+    ],
+    [
+      "UNIVERSITY OF MASSACHUSETTS SYSTEM (UMS)",
+      "UNIVERSITY OF MASSACHUSETTS SYSTEM (UMS) · (GG) ENERGY COSTS AND SPACE RENTAL",
+      145646233.11,
+      145646233.11,
+      129
+    ],
+    [
+      "UNIVERSITY OF MASSACHUSETTS SYSTEM (UMS)",
+      "UNIVERSITY OF MASSACHUSETTS SYSTEM (UMS) · (FF) FACILITY OPERATIONAL EXPENSES",
+      138661174.65,
+      138661174.65,
+      183
+    ],
+    [
+      "UNIVERSITY OF MASSACHUSETTS SYSTEM (UMS)",
+      "UNIVERSITY OF MASSACHUSETTS SYSTEM (UMS) · (EE) ADMINISTRATIVE EXPENSES",
+      129924509.43,
+      129924509.43,
+      180
+    ],
+    [
+      "UNIVERSITY OF MASSACHUSETTS SYSTEM (UMS)",
+      "UNIVERSITY OF MASSACHUSETTS SYSTEM (UMS) · (UU) IT NON-PAYROLL EXPENSES",
+      122239235.27,
+      122239235.27,
+      166
+    ],
+    [
+      "UNIVERSITY OF MASSACHUSETTS SYSTEM (UMS)",
+      "UNIVERSITY OF MASSACHUSETTS SYSTEM (UMS) · (LL) EQUIPMENT LEASE-MAINTAIN/REPAR",
+      118672385.23,
+      118672385.23,
+      146
+    ],
+    [
+      "UNIVERSITY OF MASSACHUSETTS SYSTEM (UMS)",
+      "UNIVERSITY OF MASSACHUSETTS SYSTEM (UMS) · (JJ) OPERATIONAL SERVICES",
+      72579946.07,
+      72579946.07,
+      198
+    ],
+    [
+      "UNIVERSITY OF MASSACHUSETTS SYSTEM (UMS)",
+      "UNIVERSITY OF MASSACHUSETTS SYSTEM (UMS) · (KK) EQUIPMENT PURCHASE",
+      51076270.37,
+      51076270.37,
+      140
+    ],
+    [
+      "UNIVERSITY OF MASSACHUSETTS SYSTEM (UMS)",
+      "UNIVERSITY OF MASSACHUSETTS SYSTEM (UMS) · (SS) DEBT PAYMENT",
+      44352291.13,
+      44352291.13,
+      18
+    ],
+    [
+      "UNIVERSITY OF MASSACHUSETTS SYSTEM (UMS)",
+      "UNIVERSITY OF MASSACHUSETTS SYSTEM (UMS) · (BB) REGULAR EMPLOYEE RELATED EXPEN",
+      23998993.93,
+      23998993.93,
+      910
+    ],
+    [
+      "UNIVERSITY OF MASSACHUSETTS SYSTEM (UMS)",
+      "UNIVERSITY OF MASSACHUSETTS SYSTEM (UMS) · (PP) STATE AID/POL SUB",
+      0,
+      0,
+      2
+    ],
+    [
+      "UNIVERSITY OF MASSACHUSETTS SYSTEM (UMS)",
+      "UNIVERSITY OF MASSACHUSETTS SYSTEM (UMS) · (MM) PURCHASED CLIENT/PROGRAM SVCS",
+      -42507.14,
+      -42507.14,
+      71
+    ]
+  ],
+  "hierarchyNote": "The source does not identify a separate sub-agency column; direct-managed rows repeat the parent entity.",
+  "sourceBasis": "official source amount",
+  "note": "Amounts are shown on the official source basis; no comparator normalization was applied."
+}

@@ -1,0 +1,42 @@
+{
+  "scope": "Connecticut",
+  "code": "ct",
+  "department": "Dept. of Banking",
+  "fiscalYear": 2024,
+  "ledgerAmount": 1528071.92,
+  "sourceTotal": 1628263.28,
+  "sourceUrl": "https://data.ct.gov/resource/ajdm-rvz7.json?$select=department,program,sum(amount)%20as%20amount,count(*)%20as%20records&$where=fiscal_year=2024&$group=department,program",
+  "rowSchema": [
+    "subAgency",
+    "program",
+    "amount",
+    "sourceAmount",
+    "sourceRows"
+  ],
+  "rows": [
+    [
+      "Dept. of Banking",
+      "Dept. of Banking · Other Expenses",
+      1276396.39,
+      1276396.39,
+      846
+    ],
+    [
+      "Dept. of Banking",
+      "Dept. of Banking · IT Services",
+      310418.71,
+      310418.71,
+      204
+    ],
+    [
+      "Dept. of Banking",
+      "Dept. of Banking · Equipment",
+      41448.18,
+      41448.18,
+      40
+    ]
+  ],
+  "hierarchyNote": "The source does not identify a separate sub-agency column; direct-managed rows repeat the parent entity.",
+  "sourceBasis": "official source amount",
+  "note": "Amounts are shown on the official source basis; no comparator normalization was applied."
+}

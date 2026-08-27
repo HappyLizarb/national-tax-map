@@ -1,0 +1,209 @@
+{
+  "scope": "United States",
+  "code": "federal",
+  "department": "National Science Foundation",
+  "fiscalYear": 2024,
+  "ledgerAmount": 7055072376.35,
+  "sourceTotal": 9614870756.94,
+  "sourceUrl": "https://api.usaspending.gov/api/v2/agency/049/object_class/?fiscal_year=2024&limit=100&page=1",
+  "sourceUrls": [
+    [
+      "FY2024 gross outlays by object class",
+      "https://api.usaspending.gov/api/v2/agency/049/object_class/?fiscal_year=2024&limit=100&page=1"
+    ],
+    [
+      "FY2024 agency budgetary resources total",
+      "https://api.usaspending.gov/api/v2/agency/049/budgetary_resources/?fiscal_year=2024"
+    ]
+  ],
+  "rowSchema": [
+    "subAgency",
+    "program",
+    "amount",
+    "sourceAmount",
+    "sourceRows"
+  ],
+  "rows": [
+    [
+      "National Science Foundation",
+      "Grants, subsidies, and contributions",
+      8245890228.61,
+      8245890228.61,
+      null
+    ],
+    [
+      "National Science Foundation",
+      "Operation and maintenance of facilities",
+      315895504.9,
+      315895504.9,
+      null
+    ],
+    [
+      "National Science Foundation",
+      "Advisory and assistance services",
+      308397932.79,
+      308397932.79,
+      null
+    ],
+    [
+      "National Science Foundation",
+      "Full-time permanent",
+      237689913.95,
+      237689913.95,
+      null
+    ],
+    [
+      "National Science Foundation",
+      "Other goods and services from Federal sources",
+      169024935.29,
+      169024935.29,
+      null
+    ],
+    [
+      "National Science Foundation",
+      "Civilian personnel benefits",
+      86780754.51,
+      86780754.51,
+      null
+    ],
+    [
+      "National Science Foundation",
+      "Other services from non-Federal sources",
+      69086283.57,
+      69086283.57,
+      null
+    ],
+    [
+      "National Science Foundation",
+      "Special personal services payments",
+      61442544.68,
+      61442544.68,
+      null
+    ],
+    [
+      "National Science Foundation",
+      "Research and development contracts",
+      31514797.03,
+      31514797.03,
+      null
+    ],
+    [
+      "National Science Foundation",
+      "Rental payments to GSA",
+      26991528.09,
+      26991528.09,
+      null
+    ],
+    [
+      "National Science Foundation",
+      "Travel and transportation of persons",
+      16638119.04,
+      16638119.04,
+      null
+    ],
+    [
+      "National Science Foundation",
+      "Other than full-time permanent",
+      13283612.96,
+      13283612.96,
+      null
+    ],
+    [
+      "National Science Foundation",
+      "Other personnel compensation",
+      9756819.68,
+      9756819.68,
+      null
+    ],
+    [
+      "National Science Foundation",
+      "Equipment",
+      7586565.8,
+      7586565.8,
+      null
+    ],
+    [
+      "National Science Foundation",
+      "Communications, utilities, and miscellaneous charges",
+      3125850.42,
+      3125850.42,
+      null
+    ],
+    [
+      "National Science Foundation",
+      "Operation and maintenance of equipment",
+      1862802.08,
+      1862802.08,
+      null
+    ],
+    [
+      "National Science Foundation",
+      "Supplies and materials",
+      682496.83,
+      682496.83,
+      null
+    ],
+    [
+      "National Science Foundation",
+      "Transportation of things",
+      234433.14,
+      234433.14,
+      null
+    ],
+    [
+      "National Science Foundation",
+      "Financial transfers",
+      301233,
+      301233,
+      null
+    ],
+    [
+      "National Science Foundation",
+      "Rental payments to others",
+      3686280.8,
+      3686280.8,
+      null
+    ],
+    [
+      "National Science Foundation",
+      "Object class not reported by official source",
+      2542305.92,
+      2542305.92,
+      null
+    ],
+    [
+      "National Science Foundation",
+      "Printing and reproduction",
+      194399.14,
+      194399.14,
+      null
+    ],
+    [
+      "National Science Foundation",
+      "Benefits for former personnel",
+      16382,
+      16382,
+      null
+    ],
+    [
+      "National Science Foundation",
+      "Land and structures",
+      2245032.71,
+      2245032.71,
+      null
+    ]
+  ],
+  "sourceBasis": "official source amount",
+  "sourceCheck": {
+    "objectClassRows": 24,
+    "objectClassTotal": 9614870756.94,
+    "agencyTotal": 9614870756.94,
+    "difference": 0
+  },
+  "normalizationAdjustment": 0.02,
+  "hierarchyNote": "The source endpoint returns agency-level object-class aggregates; no individual employees or payees are included.",
+  "sourceLabelMap": {
+    "Object class not reported by official source": "Unknown"
+  },
+  "note": "The official USAspending object-class response labels 1 row as Unknown; the display label states that the object class was not reported and no category was inferred. Amounts are shown on the official source basis; no comparator normalization was applied."
+}

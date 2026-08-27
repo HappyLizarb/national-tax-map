@@ -1,0 +1,98 @@
+{
+  "scope": "Massachusetts",
+  "code": "ma",
+  "department": "BUREAU OF STATE BUILDINGS (BSB)",
+  "fiscalYear": 2024,
+  "ledgerAmount": 3641663.94,
+  "sourceTotal": 3964614.03,
+  "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000",
+  "rowSchema": [
+    "subAgency",
+    "program",
+    "amount",
+    "sourceAmount",
+    "sourceRows"
+  ],
+  "rows": [
+    [
+      "BUREAU OF STATE BUILDINGS (BSB)",
+      "BUREAU OF STATE BUILDINGS (BSB) · (NN) INFRASTRUCTURE:",
+      1887509.96,
+      1887509.96,
+      262
+    ],
+    [
+      "BUREAU OF STATE BUILDINGS (BSB)",
+      "BUREAU OF STATE BUILDINGS (BSB) · (AA) REGULAR EMPLOYEE COMPENSATION",
+      1630737.62,
+      1630737.62,
+      237
+    ],
+    [
+      "BUREAU OF STATE BUILDINGS (BSB)",
+      "BUREAU OF STATE BUILDINGS (BSB) · (KK) EQUIPMENT PURCHASE",
+      270043.5,
+      270043.5,
+      27
+    ],
+    [
+      "BUREAU OF STATE BUILDINGS (BSB)",
+      "BUREAU OF STATE BUILDINGS (BSB) · (LL) EQUIPMENT LEASE-MAINTAIN/REPAR",
+      110071.86,
+      110071.86,
+      51
+    ],
+    [
+      "BUREAU OF STATE BUILDINGS (BSB)",
+      "BUREAU OF STATE BUILDINGS (BSB) · (UU) IT NON-PAYROLL EXPENSES",
+      22272.45,
+      22272.45,
+      17
+    ],
+    [
+      "BUREAU OF STATE BUILDINGS (BSB)",
+      "BUREAU OF STATE BUILDINGS (BSB) · (FF) FACILITY OPERATIONAL EXPENSES",
+      14114.12,
+      14114.12,
+      48
+    ],
+    [
+      "BUREAU OF STATE BUILDINGS (BSB)",
+      "BUREAU OF STATE BUILDINGS (BSB) · (EE) ADMINISTRATIVE EXPENSES",
+      11417.12,
+      11417.12,
+      44
+    ],
+    [
+      "BUREAU OF STATE BUILDINGS (BSB)",
+      "BUREAU OF STATE BUILDINGS (BSB) · (JJ) OPERATIONAL SERVICES",
+      10890.3,
+      10890.3,
+      14
+    ],
+    [
+      "BUREAU OF STATE BUILDINGS (BSB)",
+      "BUREAU OF STATE BUILDINGS (BSB) · (CC) SPECIAL EMPLOYEES",
+      2962.2,
+      2962.2,
+      7
+    ],
+    [
+      "BUREAU OF STATE BUILDINGS (BSB)",
+      "BUREAU OF STATE BUILDINGS (BSB) · (GG) ENERGY COSTS AND SPACE RENTAL",
+      2539.1,
+      2539.1,
+      12
+    ],
+    [
+      "BUREAU OF STATE BUILDINGS (BSB)",
+      "BUREAU OF STATE BUILDINGS (BSB) · (BB) REGULAR EMPLOYEE RELATED EXPEN",
+      2055.8,
+      2055.8,
+      4
+    ]
+  ],
+  "hierarchyNote": "The source does not identify a separate sub-agency column; direct-managed rows repeat the parent entity.",
+  "sourceBasis": "official source amount",
+  "note": "Amounts are shown on the official source basis; no comparator normalization was applied."
+}

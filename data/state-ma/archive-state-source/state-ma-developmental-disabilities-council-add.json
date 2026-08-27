@@ -1,0 +1,91 @@
+{
+  "scope": "Massachusetts",
+  "code": "ma",
+  "department": "DEVELOPMENTAL DISABILITIES COUNCIL (ADD)",
+  "fiscalYear": 2024,
+  "ledgerAmount": 1395486.78,
+  "sourceTotal": 1519241.35,
+  "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000",
+  "rowSchema": [
+    "subAgency",
+    "program",
+    "amount",
+    "sourceAmount",
+    "sourceRows"
+  ],
+  "rows": [
+    [
+      "DEVELOPMENTAL DISABILITIES COUNCIL (ADD)",
+      "DEVELOPMENTAL DISABILITIES COUNCIL (ADD) · (AA) REGULAR EMPLOYEE COMPENSATION",
+      739546.19,
+      739546.19,
+      80
+    ],
+    [
+      "DEVELOPMENTAL DISABILITIES COUNCIL (ADD)",
+      "DEVELOPMENTAL DISABILITIES COUNCIL (ADD) · (CC) SPECIAL EMPLOYEES",
+      275851.68,
+      275851.68,
+      98
+    ],
+    [
+      "DEVELOPMENTAL DISABILITIES COUNCIL (ADD)",
+      "DEVELOPMENTAL DISABILITIES COUNCIL (ADD) · (PP) STATE AID/POL SUB",
+      204885.07,
+      204885.07,
+      84
+    ],
+    [
+      "DEVELOPMENTAL DISABILITIES COUNCIL (ADD)",
+      "DEVELOPMENTAL DISABILITIES COUNCIL (ADD) · (EE) ADMINISTRATIVE EXPENSES",
+      136404.44,
+      136404.44,
+      207
+    ],
+    [
+      "DEVELOPMENTAL DISABILITIES COUNCIL (ADD)",
+      "DEVELOPMENTAL DISABILITIES COUNCIL (ADD) · (GG) ENERGY COSTS AND SPACE RENTAL",
+      107380.08,
+      107380.08,
+      11
+    ],
+    [
+      "DEVELOPMENTAL DISABILITIES COUNCIL (ADD)",
+      "DEVELOPMENTAL DISABILITIES COUNCIL (ADD) · (BB) REGULAR EMPLOYEE RELATED EXPEN",
+      25554.65,
+      25554.65,
+      51
+    ],
+    [
+      "DEVELOPMENTAL DISABILITIES COUNCIL (ADD)",
+      "DEVELOPMENTAL DISABILITIES COUNCIL (ADD) · (UU) IT NON-PAYROLL EXPENSES",
+      22839.03,
+      22839.03,
+      53
+    ],
+    [
+      "DEVELOPMENTAL DISABILITIES COUNCIL (ADD)",
+      "DEVELOPMENTAL DISABILITIES COUNCIL (ADD) · (LL) EQUIPMENT LEASE-MAINTAIN/REPAR",
+      5549.51,
+      5549.51,
+      35
+    ],
+    [
+      "DEVELOPMENTAL DISABILITIES COUNCIL (ADD)",
+      "DEVELOPMENTAL DISABILITIES COUNCIL (ADD) · (JJ) OPERATIONAL SERVICES",
+      1230.7,
+      1230.7,
+      7
+    ],
+    [
+      "DEVELOPMENTAL DISABILITIES COUNCIL (ADD)",
+      "DEVELOPMENTAL DISABILITIES COUNCIL (ADD) · (99) PAYROLL REJECTS",
+      0,
+      0,
+      8
+    ]
+  ],
+  "hierarchyNote": "The source does not identify a separate sub-agency column; direct-managed rows repeat the parent entity.",
+  "sourceBasis": "official source amount",
+  "note": "Amounts are shown on the official source basis; no comparator normalization was applied."
+}

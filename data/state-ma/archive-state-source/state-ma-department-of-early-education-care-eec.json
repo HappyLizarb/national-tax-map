@@ -1,0 +1,133 @@
+{
+  "scope": "Massachusetts",
+  "code": "ma",
+  "department": "DEPARTMENT OF EARLY EDUCATION & CARE (EEC)",
+  "fiscalYear": 2024,
+  "ledgerAmount": 916609878.6,
+  "sourceTotal": 997896686.94,
+  "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000",
+  "rowSchema": [
+    "subAgency",
+    "program",
+    "amount",
+    "sourceAmount",
+    "sourceRows"
+  ],
+  "rows": [
+    [
+      "DEPARTMENT OF EARLY EDUCATION & CARE (EEC)",
+      "DEPARTMENT OF EARLY EDUCATION & CARE (EEC) · (PP) STATE AID/POL SUB",
+      566741785.72,
+      566741785.72,
+      1074
+    ],
+    [
+      "DEPARTMENT OF EARLY EDUCATION & CARE (EEC)",
+      "DEPARTMENT OF EARLY EDUCATION & CARE (EEC) · (MM) PURCHASED CLIENT/PROGRAM SVCS",
+      367369177.97,
+      367369177.97,
+      16954
+    ],
+    [
+      "DEPARTMENT OF EARLY EDUCATION & CARE (EEC)",
+      "DEPARTMENT OF EARLY EDUCATION & CARE (EEC) · (AA) REGULAR EMPLOYEE COMPENSATION",
+      29751928.55,
+      29751928.55,
+      505
+    ],
+    [
+      "DEPARTMENT OF EARLY EDUCATION & CARE (EEC)",
+      "DEPARTMENT OF EARLY EDUCATION & CARE (EEC) · (JJ) OPERATIONAL SERVICES",
+      17167745.24,
+      17167745.24,
+      367
+    ],
+    [
+      "DEPARTMENT OF EARLY EDUCATION & CARE (EEC)",
+      "DEPARTMENT OF EARLY EDUCATION & CARE (EEC) · (HH) CONSULTANT SVCS (TO DEPTS)",
+      11434381.21,
+      11434381.21,
+      144
+    ],
+    [
+      "DEPARTMENT OF EARLY EDUCATION & CARE (EEC)",
+      "DEPARTMENT OF EARLY EDUCATION & CARE (EEC) · (GG) ENERGY COSTS AND SPACE RENTAL",
+      2150587.74,
+      2150587.74,
+      119
+    ],
+    [
+      "DEPARTMENT OF EARLY EDUCATION & CARE (EEC)",
+      "DEPARTMENT OF EARLY EDUCATION & CARE (EEC) · (CC) SPECIAL EMPLOYEES",
+      729895.58,
+      729895.58,
+      215
+    ],
+    [
+      "DEPARTMENT OF EARLY EDUCATION & CARE (EEC)",
+      "DEPARTMENT OF EARLY EDUCATION & CARE (EEC) · (KK) EQUIPMENT PURCHASE",
+      668468.69,
+      668468.69,
+      15
+    ],
+    [
+      "DEPARTMENT OF EARLY EDUCATION & CARE (EEC)",
+      "DEPARTMENT OF EARLY EDUCATION & CARE (EEC) · (EE) ADMINISTRATIVE EXPENSES",
+      641575.01,
+      641575.01,
+      392
+    ],
+    [
+      "DEPARTMENT OF EARLY EDUCATION & CARE (EEC)",
+      "DEPARTMENT OF EARLY EDUCATION & CARE (EEC) · (BB) REGULAR EMPLOYEE RELATED EXPEN",
+      435811.15,
+      435811.15,
+      305
+    ],
+    [
+      "DEPARTMENT OF EARLY EDUCATION & CARE (EEC)",
+      "DEPARTMENT OF EARLY EDUCATION & CARE (EEC) · (TT) LOANS AND SPECIAL PAYMENTS",
+      412089.39,
+      412089.39,
+      5
+    ],
+    [
+      "DEPARTMENT OF EARLY EDUCATION & CARE (EEC)",
+      "DEPARTMENT OF EARLY EDUCATION & CARE (EEC) · (UU) IT NON-PAYROLL EXPENSES",
+      279674.35,
+      279674.35,
+      18
+    ],
+    [
+      "DEPARTMENT OF EARLY EDUCATION & CARE (EEC)",
+      "DEPARTMENT OF EARLY EDUCATION & CARE (EEC) · (LL) EQUIPMENT LEASE-MAINTAIN/REPAR",
+      67182.28,
+      67182.28,
+      243
+    ],
+    [
+      "DEPARTMENT OF EARLY EDUCATION & CARE (EEC)",
+      "DEPARTMENT OF EARLY EDUCATION & CARE (EEC) · (NN) INFRASTRUCTURE:",
+      42865.24,
+      42865.24,
+      37
+    ],
+    [
+      "DEPARTMENT OF EARLY EDUCATION & CARE (EEC)",
+      "DEPARTMENT OF EARLY EDUCATION & CARE (EEC) · (FF) FACILITY OPERATIONAL EXPENSES",
+      3518.82,
+      3518.82,
+      1
+    ],
+    [
+      "DEPARTMENT OF EARLY EDUCATION & CARE (EEC)",
+      "DEPARTMENT OF EARLY EDUCATION & CARE (EEC) · (99) PAYROLL REJECTS",
+      0,
+      0,
+      74
+    ]
+  ],
+  "hierarchyNote": "The source does not identify a separate sub-agency column; direct-managed rows repeat the parent entity.",
+  "sourceBasis": "official source amount",
+  "note": "Amounts are shown on the official source basis; no comparator normalization was applied."
+}

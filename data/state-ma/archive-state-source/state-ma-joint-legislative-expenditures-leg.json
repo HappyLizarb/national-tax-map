@@ -1,0 +1,84 @@
+{
+  "scope": "Massachusetts",
+  "code": "ma",
+  "department": "JOINT LEGISLATIVE EXPENDITURES (LEG)",
+  "fiscalYear": 2024,
+  "ledgerAmount": 6751136.35,
+  "sourceTotal": 7349840.71,
+  "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000",
+  "rowSchema": [
+    "subAgency",
+    "program",
+    "amount",
+    "sourceAmount",
+    "sourceRows"
+  ],
+  "rows": [
+    [
+      "JOINT LEGISLATIVE EXPENDITURES (LEG)",
+      "JOINT LEGISLATIVE EXPENDITURES (LEG) · (UU) IT NON-PAYROLL EXPENSES",
+      3961997.18,
+      3961997.18,
+      388
+    ],
+    [
+      "JOINT LEGISLATIVE EXPENDITURES (LEG)",
+      "JOINT LEGISLATIVE EXPENDITURES (LEG) · (AA) REGULAR EMPLOYEE COMPENSATION",
+      2468910.83,
+      2468910.83,
+      80
+    ],
+    [
+      "JOINT LEGISLATIVE EXPENDITURES (LEG)",
+      "JOINT LEGISLATIVE EXPENDITURES (LEG) · (EE) ADMINISTRATIVE EXPENSES",
+      807920.7,
+      807920.7,
+      140
+    ],
+    [
+      "JOINT LEGISLATIVE EXPENDITURES (LEG)",
+      "JOINT LEGISLATIVE EXPENDITURES (LEG) · (CC) SPECIAL EMPLOYEES",
+      32309.81,
+      32309.81,
+      26
+    ],
+    [
+      "JOINT LEGISLATIVE EXPENDITURES (LEG)",
+      "JOINT LEGISLATIVE EXPENDITURES (LEG) · (LL) EQUIPMENT LEASE-MAINTAIN/REPAR",
+      26865.73,
+      26865.73,
+      31
+    ],
+    [
+      "JOINT LEGISLATIVE EXPENDITURES (LEG)",
+      "JOINT LEGISLATIVE EXPENDITURES (LEG) · (HH) CONSULTANT SVCS (TO DEPTS)",
+      19147.95,
+      19147.95,
+      14
+    ],
+    [
+      "JOINT LEGISLATIVE EXPENDITURES (LEG)",
+      "JOINT LEGISLATIVE EXPENDITURES (LEG) · (FF) FACILITY OPERATIONAL EXPENSES",
+      13082.64,
+      13082.64,
+      3
+    ],
+    [
+      "JOINT LEGISLATIVE EXPENDITURES (LEG)",
+      "JOINT LEGISLATIVE EXPENDITURES (LEG) · (KK) EQUIPMENT PURCHASE",
+      9893.47,
+      9893.47,
+      4
+    ],
+    [
+      "JOINT LEGISLATIVE EXPENDITURES (LEG)",
+      "JOINT LEGISLATIVE EXPENDITURES (LEG) · (JJ) OPERATIONAL SERVICES",
+      9712.4,
+      9712.4,
+      4
+    ]
+  ],
+  "hierarchyNote": "The source does not identify a separate sub-agency column; direct-managed rows repeat the parent entity.",
+  "sourceBasis": "official source amount",
+  "note": "Amounts are shown on the official source basis; no comparator normalization was applied."
+}

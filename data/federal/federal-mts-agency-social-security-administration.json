@@ -1,0 +1,47 @@
+{
+  "scope": "United States",
+  "code": "federal",
+  "fiscalYear": 2024,
+  "department": "Social Security Administration",
+  "sourceTotal": 1519734000000,
+  "sourceUrl": "https://fiscal.treasury.gov/system/files/files/reports-statements/mts/mts0924.pdf",
+  "sourceUrls": [["Treasury FY2024 MTS Table 5", "https://fiscal.treasury.gov/system/files/files/reports-statements/mts/mts0924.pdf"]],
+  "relatedSources": [["USAspending gross research (supporting detail)", "data/federal/archive-agency-source/federal-social-security-administration.json"]],
+  "sourceBasis": "Treasury MTS Table 5 current-fiscal-year gross outlays, applicable receipts, and net outlays; published in $ millions and converted to USD.",
+  "rowSchema": ["subAgency", "program", "amount", "sourceAmount", "sourceRows", "grossOutlays", "applicableReceipts"],
+  "sourceCheck": {"groupRows": 13, "difference": 0, "publishedRoundingAdjustment": -1000000},
+  "note": "Displayed amounts are net outlays; each row retains its published gross outlays and applicable receipts.",
+  "accountResearch": {"accountCount": 13, "largeAccountCount": 4, "netAccountOutlays": 1576794706166.96, "threshold": 1000000000, "sourceUrl": "https://fiscal.treasury.gov/system/files/files/reports-statements/combined-statement/cs2024/c53.xlsx"},
+  "largeAccountSchema": ["treasuryAccount", "title", "netOutlays", "availabilityRows"],
+  "largeAccountBasis": "Exact Combined Statement net outlays by appropriation or fund account. This is a research cross-section of the same department, not another amount to add to MTS classification rows.",
+  "itemBreakdownSchema": ["treasuryAccount", "title", "netOutlays"],
+  "itemBreakdownBasis": "Exact FY2024 Treasury accounts grouped to one MTS row; each final bridge reconciles account cents to the parent published in rounded $ millions.",
+  "largeAccountRows": [
+    ["028-8006-000", "Federal Old-Age and Survivors Insurance Trust Fund - Treasury Managed, Social Security Administration", 1304381049302.06, 2],
+    ["028-8007-000", "Federal Disability Insurance Trust Fund - Treasury Managed, Social Security Administration", 156511062198.96, 2],
+    ["028-0406-000", "Supplemental Security Income Program, Social Security Administration", 61930581636.68, 9],
+    ["028-0404-000", "Payments to Social Security Trust Funds, Social Security Administration", 53767762501.09, 7]
+  ],
+  "itemBreakdowns": [
+    {"parent": ["Intrabudgetary Transactions", "Off-Budget1", -53765000000], "accountCount": 5, "rows": [["028-X-8006-006", "Miscellaneous Federal Payments, Federal Old-Age and Survivors Insurance Trust Fund", -53143654112.54], ["028-X-8007-006", "Miscellaneous Federal Payments, Federal Disability Insurance Trust Fund", -618502619.91], ["028-X-8006-043", "Federal Payments for Pension Reform Administrative Expenses, Federal Old-Age and Survivors Insurance Trust Fund", -2360347.86], ["028-X-8006-018", "FOASI, General Fund Payments for Payroll Tax Holiday, SSA", -29221.73], ["028-X-8007-018", "FDI, General Fund Payments for Payroll Tax Holiday, SSA", -4962.18], ["MTS-rounding", "Published MTS million-dollar rounding bridge", -448735.78]], "sourceUrl": "https://fiscal.treasury.gov/system/files/files/reports-statements/combined-statement/cs2024/tbb.xlsx", "basis": "Exact intragovernmental receipt accounts shown as negative offsets."}
+  ],
+  "supplementalBreakdowns": [
+    {"parent": ["Federal Old-Age and Survivors Insurance Trust Fund (Off-Budget)", "Benefit Payments", 1293782000000], "title": "OASI benefits by beneficiary type", "basis": "SSA calendar-year 2024 estimated benefit payments total $1.316T. The parent is Treasury fiscal-year cash, so the two periods do not reconcile and these rows are contextual, not additive to the parent.", "sourceLabel": "SSA OASI benefit-payment table", "sourceUrl": "https://www.ssa.gov/OACT/STATS/table4a5.html", "rows": [["Retired workers", "Estimated CY2024 benefits", 1111728000000], ["Widows and widowers", "Estimated CY2024 benefits", 130854000000], ["Spouses", "Estimated CY2024 benefits", 35352000000], ["Surviving children", "Estimated CY2024 benefits", 28668000000], ["Dependent children", "Estimated CY2024 benefits", 7914000000], ["Widowed mothers and fathers", "Estimated CY2024 benefits", 1676000000], ["Lump-sum death payments", "Estimated CY2024 benefits", 211000000], ["Parents", "Estimated CY2024 benefits", 20000000], ["Published rounding and special-age-72 residual", "Difference between rounded categories and published total", 1000000]]},
+    {"parent": ["Federal Disability Insurance Trust Fund (Off-Budget)", "Benefit Payments", 153918000000], "title": "DI benefits by beneficiary type", "basis": "SSA calendar-year 2024 benefit payments total $154.983B. The parent is Treasury fiscal-year cash, so these source rows provide composition but do not reconcile to the $153.918B parent.", "sourceLabel": "SSA DI benefit-payment table", "sourceUrl": "https://www.ssa.gov/policy/docs/statcomps/supplement/2025/4a.html", "rows": [["Disabled workers", "CY2024 benefit payments", 147174000000], ["Children", "CY2024 benefit payments", 7332000000], ["Spouses", "CY2024 benefit payments", 477000000]]}
+  ],
+  "rows": [
+    ["Social Security Administration", "Payments to Social Security Trust Funds", 53768000000, 53768000000, 1, 53768000000, 0],
+    ["Social Security Administration", "Supplemental Security Income Program", 61931000000, 61931000000, 1, 61931000000, 0],
+    ["Federal Old-Age and Survivors Insurance Trust Fund (Off-Budget)", "Benefit Payments", 1293782000000, 1293782000000, 1, 1293782000000, 0],
+    ["Federal Old-Age and Survivors Insurance Trust Fund (Off-Budget)", "Administrative Expenses", 4754000000, 4754000000, 1, 4754000000, 0],
+    ["Federal Old-Age and Survivors Insurance Trust Fund (Off-Budget)", "Payment to Railroad Retirement Account", 5860000000, 5860000000, 1, 5860000000, 0],
+    ["Federal Disability Insurance Trust Fund (Off-Budget)", "Benefit Payments", 153918000000, 153918000000, 1, 153918000000, 0],
+    ["Federal Disability Insurance Trust Fund (Off-Budget)", "Administrative Expenses", 2520000000, 2520000000, 1, 2520000000, 0],
+    ["Federal Disability Insurance Trust Fund (Off-Budget)", "Payment to Railroad Retirement Account", 74000000, 74000000, 1, 74000000, 0],
+    ["Social Security Administration", "Other", 189000000, 189000000, 1, 189000000, 0],
+    ["Proprietary Receipts from the Public", "On-Budget", -3299000000, -3299000000, 1, 0, 3299000000],
+    ["Proprietary Receipts from the Public", "Off-Budget", 3000000, 3000000, 1, 0, -3000000],
+    ["Intrabudgetary Transactions", "Off-Budget1", -53765000000, -53765000000, 1, -53765000000, 0],
+    ["Social Security Administration", "Published Table 5 rounding adjustment", -1000000, -1000000, 0, -1000000, 0]
+  ]
+}

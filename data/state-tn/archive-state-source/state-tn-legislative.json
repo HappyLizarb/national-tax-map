@@ -1,0 +1,43 @@
+{
+  "scope": "Tennessee",
+  "code": "tn",
+  "department": "Legislative Branch",
+  "fiscalYear": 2024,
+  "ledgerAmount": 695546194.42,
+  "sourceTotal": 695546194.42,
+  "sourceUrl": "https://data.tn.gov/t/Public/views/SearchableCheckbookPublic_17861130451500/Vendor.csv?:showVizHome=no&YEAR%28Fiscal%20Year%20Date%29=2024&Branch%20of%20Government=Legislative%20Branch",
+  "rowSchema": [
+    "subAgency",
+    "program",
+    "amount",
+    "sourceAmount",
+    "sourceRows"
+  ],
+  "hierarchyNote": "The additive row preserves the official FY2024 branch control. Supplemental rows show the separately exported public agency-payment slice and are non-additive because protected payments remain summarized.",
+  "rows": [
+    [
+      "Legislative Branch",
+      "FY2024 total annual payments",
+      695546194.42,
+      695546194.42,
+      1
+    ]
+  ],
+  "supplementalSchema": [
+    "subAgency",
+    "program",
+    "amount",
+    "measure",
+    "source"
+  ],
+  "supplementalRows": [
+    [
+      "Claims and Compensation",
+      "Publicly itemized annual payments",
+      2207329.75,
+      "FY2024 public agency slice (non-additive)",
+      "https://data.tn.gov/t/Public/views/SearchableCheckbookPublic_17861130451500/Agency.csv?:showVizHome=no&YEAR%28Fiscal%20Year%20Date%29=2024&Branch%20of%20Government=Legislative%20Branch"
+    ]
+  ],
+  "supplementalTotal": 2207329.75
+}

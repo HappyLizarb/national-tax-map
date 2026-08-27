@@ -1,0 +1,56 @@
+{
+  "scope": "Connecticut",
+  "code": "ct",
+  "department": "Connecticut State Universities",
+  "fiscalYear": 2024,
+  "ledgerAmount": 19508911.56,
+  "sourceTotal": 20788055.78,
+  "sourceUrl": "https://data.ct.gov/resource/ajdm-rvz7.json?$select=department,program,sum(amount)%20as%20amount,count(*)%20as%20records&$where=fiscal_year=2024&$group=department,program",
+  "rowSchema": [
+    "subAgency",
+    "program",
+    "amount",
+    "sourceAmount",
+    "sourceRows"
+  ],
+  "rows": [
+    [
+      "Connecticut State Universities",
+      "Connecticut State Universities · Non-Budgeted Operating Approp",
+      20145108.61,
+      20145108.61,
+      51
+    ],
+    [
+      "Connecticut State Universities",
+      "Connecticut State Universities · Security Improvements",
+      293471.48,
+      293471.48,
+      12
+    ],
+    [
+      "Connecticut State Universities",
+      "Connecticut State Universities · DEFERRED MAINT-ALL UNIVERSITY",
+      243856.3,
+      243856.3,
+      10
+    ],
+    [
+      "Connecticut State Universities",
+      "Connecticut State Universities · Deferred Maintenance all Univ",
+      71969.98,
+      71969.98,
+      3
+    ],
+    [
+      "Connecticut State Universities",
+      "Connecticut State Universities · NEW & REPLACEMENT INSTRUCTION",
+      33649.41,
+      33649.41,
+      3
+    ]
+  ],
+  "hierarchyNote": "The source does not identify a separate sub-agency column; direct-managed rows repeat the parent entity.",
+  "sourceBasis": "official source amount",
+  "note": "Amounts are shown on the official source basis; no comparator normalization was applied."
+}

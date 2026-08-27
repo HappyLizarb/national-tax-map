@@ -1,0 +1,140 @@
+{
+  "scope": "Massachusetts",
+  "code": "ma",
+  "department": "SALEM STATE UNIVERSITY (SSA)",
+  "fiscalYear": 2024,
+  "ledgerAmount": 172668681.68,
+  "sourceTotal": 187981287.8,
+  "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000",
+  "rowSchema": [
+    "subAgency",
+    "program",
+    "amount",
+    "sourceAmount",
+    "sourceRows"
+  ],
+  "rows": [
+    [
+      "SALEM STATE UNIVERSITY (SSA)",
+      "SALEM STATE UNIVERSITY (SSA) · (AA) REGULAR EMPLOYEE COMPENSATION",
+      77791381.71,
+      77791381.71,
+      818
+    ],
+    [
+      "SALEM STATE UNIVERSITY (SSA)",
+      "SALEM STATE UNIVERSITY (SSA) · (EE) ADMINISTRATIVE EXPENSES",
+      32442067,
+      32442067,
+      15
+    ],
+    [
+      "SALEM STATE UNIVERSITY (SSA)",
+      "SALEM STATE UNIVERSITY (SSA) · (RR) BENEFIT PROGRAMS",
+      28624838,
+      28624838,
+      20
+    ],
+    [
+      "SALEM STATE UNIVERSITY (SSA)",
+      "SALEM STATE UNIVERSITY (SSA) · (CC) SPECIAL EMPLOYEES",
+      16116536.29,
+      16116536.29,
+      827
+    ],
+    [
+      "SALEM STATE UNIVERSITY (SSA)",
+      "SALEM STATE UNIVERSITY (SSA) · (JJ) OPERATIONAL SERVICES",
+      8024057.83,
+      8024057.83,
+      15
+    ],
+    [
+      "SALEM STATE UNIVERSITY (SSA)",
+      "SALEM STATE UNIVERSITY (SSA) · (NN) INFRASTRUCTURE:",
+      5938086.41,
+      5938086.41,
+      110
+    ],
+    [
+      "SALEM STATE UNIVERSITY (SSA)",
+      "SALEM STATE UNIVERSITY (SSA) · (UU) IT NON-PAYROLL EXPENSES",
+      4990656,
+      4990656,
+      15
+    ],
+    [
+      "SALEM STATE UNIVERSITY (SSA)",
+      "SALEM STATE UNIVERSITY (SSA) · (GG) ENERGY COSTS AND SPACE RENTAL",
+      4026235,
+      4026235,
+      14
+    ],
+    [
+      "SALEM STATE UNIVERSITY (SSA)",
+      "SALEM STATE UNIVERSITY (SSA) · (FF) FACILITY OPERATIONAL EXPENSES",
+      3166439.46,
+      3166439.46,
+      24
+    ],
+    [
+      "SALEM STATE UNIVERSITY (SSA)",
+      "SALEM STATE UNIVERSITY (SSA) · (TT) LOANS AND SPECIAL PAYMENTS",
+      2533022.62,
+      2533022.62,
+      50
+    ],
+    [
+      "SALEM STATE UNIVERSITY (SSA)",
+      "SALEM STATE UNIVERSITY (SSA) · (HH) CONSULTANT SVCS (TO DEPTS)",
+      1679171,
+      1679171,
+      33
+    ],
+    [
+      "SALEM STATE UNIVERSITY (SSA)",
+      "SALEM STATE UNIVERSITY (SSA) · (PP) STATE AID/POL SUB",
+      756187,
+      756187,
+      7
+    ],
+    [
+      "SALEM STATE UNIVERSITY (SSA)",
+      "SALEM STATE UNIVERSITY (SSA) · (LL) EQUIPMENT LEASE-MAINTAIN/REPAR",
+      518929,
+      518929,
+      14
+    ],
+    [
+      "SALEM STATE UNIVERSITY (SSA)",
+      "SALEM STATE UNIVERSITY (SSA) · (KK) EQUIPMENT PURCHASE",
+      508930,
+      508930,
+      15
+    ],
+    [
+      "SALEM STATE UNIVERSITY (SSA)",
+      "SALEM STATE UNIVERSITY (SSA) · (MM) PURCHASED CLIENT/PROGRAM SVCS",
+      350880,
+      350880,
+      12
+    ],
+    [
+      "SALEM STATE UNIVERSITY (SSA)",
+      "SALEM STATE UNIVERSITY (SSA) · (DD) PENSION & INSURANCE RELATED EX",
+      271805,
+      271805,
+      6
+    ],
+    [
+      "SALEM STATE UNIVERSITY (SSA)",
+      "SALEM STATE UNIVERSITY (SSA) · (BB) REGULAR EMPLOYEE RELATED EXPEN",
+      242065.48,
+      242065.48,
+      89
+    ]
+  ],
+  "hierarchyNote": "The source does not identify a separate sub-agency column; direct-managed rows repeat the parent entity.",
+  "sourceBasis": "official source amount",
+  "note": "Amounts are shown on the official source basis; no comparator normalization was applied."
+}

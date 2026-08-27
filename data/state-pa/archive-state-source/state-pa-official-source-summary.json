@@ -1,0 +1,616 @@
+{
+  "scope": "Pennsylvania",
+  "code": "pa",
+  "fiscalYear": 2024,
+  "sourceTotal": 4265171224.59,
+  "sourceUrl": "https://www.patreasury.gov/openbookpa/checkbook.php",
+  "dimension": "description",
+  "note": "The pie uses one official itemized source layer and never inserts a synthetic residual. Department amounts reconcile to the official itemized source total. sourceAmount preserves the imported itemized basis. The census fy2024 state-finance comparator is retained for comparison only; its lower total is not assigned to a receiver or program.",
+  "reconciliation": {
+    "itemizedDifference": 0,
+    "normalized": false,
+    "scale": 1,
+    "comparisonDifference": -118081116775.41
+  },
+  "departments": [
+    {
+      "id": "debt-service-princ",
+      "name": "Debt Service - Princ",
+      "amount": 2284397748.29,
+      "sourceAmount": 2284397748.29,
+      "detailUrl": "data/state-pa/archive-state-source/state-pa-debt-service-princ.json",
+      "sourceUrl": "https://www.patreasury.gov/openbookpa/checkbook.php"
+    },
+    {
+      "id": "debt-service",
+      "name": "Debt Service",
+      "amount": 850371012,
+      "sourceAmount": 850371012,
+      "detailUrl": "data/state-pa/archive-state-source/state-pa-debt-service.json",
+      "sourceUrl": "https://www.patreasury.gov/openbookpa/checkbook.php"
+    },
+    {
+      "id": "grants-payments-to",
+      "name": "Grants & Payments to",
+      "amount": 736216711.79,
+      "sourceAmount": 736216711.79,
+      "detailUrl": "data/state-pa/archive-state-source/state-pa-grants-payments-to.json",
+      "sourceUrl": "https://www.patreasury.gov/openbookpa/checkbook.php"
+    },
+    {
+      "id": "debt-service-inter",
+      "name": "Debt Service - Inter",
+      "amount": 219151087.55,
+      "sourceAmount": 219151087.55,
+      "detailUrl": "data/state-pa/archive-state-source/state-pa-debt-service-inter.json",
+      "sourceUrl": "https://www.patreasury.gov/openbookpa/checkbook.php"
+    },
+    {
+      "id": "operating",
+      "name": "Operating",
+      "amount": 150072554.71,
+      "sourceAmount": 150072554.71,
+      "detailUrl": "data/state-pa/archive-state-source/state-pa-operating.json",
+      "sourceUrl": "https://www.patreasury.gov/openbookpa/checkbook.php"
+    },
+    {
+      "id": "advertising",
+      "name": "Advertising",
+      "amount": 3366459.23,
+      "sourceAmount": 3366459.23,
+      "detailUrl": "data/state-pa/archive-state-source/state-pa-advertising.json",
+      "sourceUrl": "https://www.patreasury.gov/openbookpa/checkbook.php"
+    },
+    {
+      "id": "prof-svcs-not-spec-d",
+      "name": "Prof Svcs-Not Spec'd",
+      "amount": 3157854.63,
+      "sourceAmount": 3157854.63,
+      "detailUrl": "data/state-pa/archive-state-source/state-pa-prof-svcs-not-spec-d.json",
+      "sourceUrl": "https://www.patreasury.gov/openbookpa/checkbook.php"
+    },
+    {
+      "id": "sftwre-lic-proc-rec",
+      "name": "Sftwre Lic Proc Rec",
+      "amount": 2889100.87,
+      "sourceAmount": 2889100.87,
+      "detailUrl": "data/state-pa/archive-state-source/state-pa-sftwre-lic-proc-rec.json",
+      "sourceUrl": "https://www.patreasury.gov/openbookpa/checkbook.php"
+    },
+    {
+      "id": "administrative-services",
+      "name": "Administrative Services",
+      "amount": 1791506.69,
+      "sourceAmount": 1791506.69,
+      "detailUrl": "data/state-pa/archive-state-source/state-pa-administrative-services.json",
+      "sourceUrl": "https://www.patreasury.gov/openbookpa/checkbook.php"
+    },
+    {
+      "id": "bank-service-charges",
+      "name": "Bank Service Charges",
+      "amount": 1772848.09,
+      "sourceAmount": 1772848.09,
+      "detailUrl": "data/state-pa/archive-state-source/state-pa-bank-service-charges.json",
+      "sourceUrl": "https://www.patreasury.gov/openbookpa/checkbook.php"
+    },
+    {
+      "id": "postage",
+      "name": "Postage",
+      "amount": 1605982.63,
+      "sourceAmount": 1605982.63,
+      "detailUrl": "data/state-pa/archive-state-source/state-pa-postage.json",
+      "sourceUrl": "https://www.patreasury.gov/openbookpa/checkbook.php"
+    },
+    {
+      "id": "membership-dues",
+      "name": "Membership Dues",
+      "amount": 1270272.15,
+      "sourceAmount": 1270272.15,
+      "detailUrl": "data/state-pa/archive-state-source/state-pa-membership-dues.json",
+      "sourceUrl": "https://www.patreasury.gov/openbookpa/checkbook.php"
+    },
+    {
+      "id": "bond-issuance-cost-e",
+      "name": "Bond Issuance Cost E",
+      "amount": 1172359.08,
+      "sourceAmount": 1172359.08,
+      "detailUrl": "data/state-pa/archive-state-source/state-pa-bond-issuance-cost-e.json",
+      "sourceUrl": "https://www.patreasury.gov/openbookpa/checkbook.php"
+    },
+    {
+      "id": "oth-op-exp",
+      "name": "Oth Op Exp",
+      "amount": 1126984.62,
+      "sourceAmount": 1126984.62,
+      "program": "COMMONWEALTH OF PENNSYLVANIA   · Oth Op Exp · 6399999",
+      "sourceRows": 4,
+      "detailUrl": null,
+      "sourceUrl": "https://www.patreasury.gov/openbookpa/checkbook.php"
+    },
+    {
+      "id": "edp-software-rentals-vendor",
+      "name": "EDP Software Rentals - Vendor",
+      "amount": 875821.88,
+      "sourceAmount": 875821.88,
+      "detailUrl": "data/state-pa/archive-state-source/state-pa-edp-software-rentals-vendor.json",
+      "sourceUrl": "https://www.patreasury.gov/openbookpa/checkbook.php"
+    },
+    {
+      "id": "legal-services-fees",
+      "name": "Legal Services/Fees",
+      "amount": 812644.49,
+      "sourceAmount": 812644.49,
+      "detailUrl": "data/state-pa/archive-state-source/state-pa-legal-services-fees.json",
+      "sourceUrl": "https://www.patreasury.gov/openbookpa/checkbook.php"
+    },
+    {
+      "id": "itconsulting-general",
+      "name": "ITConsulting-General",
+      "amount": 765960.3,
+      "sourceAmount": 765960.3,
+      "detailUrl": "data/state-pa/archive-state-source/state-pa-itconsulting-general.json",
+      "sourceUrl": "https://www.patreasury.gov/openbookpa/checkbook.php"
+    },
+    {
+      "id": "dot-payroll-additive",
+      "name": "DOT Payroll Additive",
+      "amount": 581674.41,
+      "sourceAmount": 581674.41,
+      "detailUrl": "data/state-pa/archive-state-source/state-pa-dot-payroll-additive.json",
+      "sourceUrl": "https://www.patreasury.gov/openbookpa/checkbook.php"
+    },
+    {
+      "id": "dot-rents-leases",
+      "name": "DOT-Rents & Leases",
+      "amount": 574142.72,
+      "sourceAmount": 574142.72,
+      "detailUrl": "data/state-pa/archive-state-source/state-pa-dot-rents-leases.json",
+      "sourceUrl": "https://www.patreasury.gov/openbookpa/checkbook.php"
+    },
+    {
+      "id": "hrdwre-network",
+      "name": "Hrdwre Network",
+      "amount": 535683.61,
+      "sourceAmount": 535683.61,
+      "program": "EPLUS TECHNOLOGY   · Hrdwre Network · 6450282",
+      "sourceRows": 9,
+      "detailUrl": null,
+      "sourceUrl": "https://www.patreasury.gov/openbookpa/checkbook.php"
+    },
+    {
+      "id": "administrative-transfers",
+      "name": "Administrative Transfers",
+      "amount": 338999.68,
+      "sourceAmount": 338999.68,
+      "program": "PENNSYLVANIA STATE UNIVERSITY   · Administrative Transfers · 6900000",
+      "sourceRows": 1,
+      "detailUrl": null,
+      "sourceUrl": "https://www.patreasury.gov/openbookpa/checkbook.php"
+    },
+    {
+      "id": "vehicle-parking-leases",
+      "name": "Vehicle Parking Leases",
+      "amount": 256456.29,
+      "sourceAmount": 256456.29,
+      "detailUrl": "data/state-pa/archive-state-source/state-pa-vehicle-parking-leases.json",
+      "sourceUrl": "https://www.patreasury.gov/openbookpa/checkbook.php"
+    },
+    {
+      "id": "contracted-maintenance-offic",
+      "name": "Contracted Maintenance - Offic",
+      "amount": 206385.92,
+      "sourceAmount": 206385.92,
+      "detailUrl": "data/state-pa/archive-state-source/state-pa-contracted-maintenance-offic.json",
+      "sourceUrl": "https://www.patreasury.gov/openbookpa/checkbook.php"
+    },
+    {
+      "id": "contedpsvc-vndprov",
+      "name": "ContEDPSvc-VndProv",
+      "amount": 193102,
+      "sourceAmount": 193102,
+      "detailUrl": "data/state-pa/archive-state-source/state-pa-contedpsvc-vndprov.json",
+      "sourceUrl": "https://www.patreasury.gov/openbookpa/checkbook.php"
+    },
+    {
+      "id": "consultntsvc-non-edp",
+      "name": "ConsultntSvc-Non-EDP",
+      "amount": 180528.93,
+      "sourceAmount": 180528.93,
+      "detailUrl": "data/state-pa/archive-state-source/state-pa-consultntsvc-non-edp.json",
+      "sourceUrl": "https://www.patreasury.gov/openbookpa/checkbook.php"
+    },
+    {
+      "id": "telecommunications-recurring-f",
+      "name": "Telecommunications Recurring F",
+      "amount": 174064.99,
+      "sourceAmount": 174064.99,
+      "detailUrl": "data/state-pa/archive-state-source/state-pa-telecommunications-recurring-f.json",
+      "sourceUrl": "https://www.patreasury.gov/openbookpa/checkbook.php"
+    },
+    {
+      "id": "edp-computers-and-pe",
+      "name": "EDP-Computers and Pe",
+      "amount": 140880.88,
+      "sourceAmount": 140880.88,
+      "detailUrl": "data/state-pa/archive-state-source/state-pa-edp-computers-and-pe.json",
+      "sourceUrl": "https://www.patreasury.gov/openbookpa/checkbook.php"
+    },
+    {
+      "id": "toll-free-telephone-services",
+      "name": "Toll free Telephone Services",
+      "amount": 137683.97,
+      "sourceAmount": 137683.97,
+      "detailUrl": "data/state-pa/archive-state-source/state-pa-toll-free-telephone-services.json",
+      "sourceUrl": "https://www.patreasury.gov/openbookpa/checkbook.php"
+    },
+    {
+      "id": "hardware-serv-main",
+      "name": "Hardware Serv Main",
+      "amount": 125785.53,
+      "sourceAmount": 125785.53,
+      "detailUrl": "data/state-pa/archive-state-source/state-pa-hardware-serv-main.json",
+      "sourceUrl": "https://www.patreasury.gov/openbookpa/checkbook.php"
+    },
+    {
+      "id": "postage-meter",
+      "name": "Postage Meter",
+      "amount": 100000,
+      "sourceAmount": 100000,
+      "program": "PITNEY BOWES GLOBAL FINANCIAL SERVICES L  · Postage Meter · 6391011",
+      "sourceRows": 1,
+      "detailUrl": null,
+      "sourceUrl": "https://www.patreasury.gov/openbookpa/checkbook.php"
+    },
+    {
+      "id": "edpsoftware",
+      "name": "EDPSoftware",
+      "amount": 91540,
+      "sourceAmount": 91540,
+      "program": "PHIRE   · EDPSoftware · 6371000",
+      "sourceRows": 1,
+      "detailUrl": null,
+      "sourceUrl": "https://www.patreasury.gov/openbookpa/checkbook.php"
+    },
+    {
+      "id": "subscriptions",
+      "name": "Subscriptions",
+      "amount": 82576.46,
+      "sourceAmount": 82576.46,
+      "detailUrl": "data/state-pa/archive-state-source/state-pa-subscriptions.json",
+      "sourceUrl": "https://www.patreasury.gov/openbookpa/checkbook.php"
+    },
+    {
+      "id": "hrdwre-server",
+      "name": "Hrdwre Server",
+      "amount": 72570.5,
+      "sourceAmount": 72570.5,
+      "detailUrl": "data/state-pa/archive-state-source/state-pa-hrdwre-server.json",
+      "sourceUrl": "https://www.patreasury.gov/openbookpa/checkbook.php"
+    },
+    {
+      "id": "other-specialized-se",
+      "name": "Other Specialized Se",
+      "amount": 72388.08,
+      "sourceAmount": 72388.08,
+      "detailUrl": "data/state-pa/archive-state-source/state-pa-other-specialized-se.json",
+      "sourceUrl": "https://www.patreasury.gov/openbookpa/checkbook.php"
+    },
+    {
+      "id": "envelopes",
+      "name": "Envelopes",
+      "amount": 48092.16,
+      "sourceAmount": 48092.16,
+      "program": "CENVEO WORLDWIDE LIMITED   · Envelopes · 6361106",
+      "sourceRows": 9,
+      "detailUrl": null,
+      "sourceUrl": "https://www.patreasury.gov/openbookpa/checkbook.php"
+    },
+    {
+      "id": "hrdwre-storag-rt-lea",
+      "name": "Hrdwre Storag Rt/Lea",
+      "amount": 42129.79,
+      "sourceAmount": 42129.79,
+      "detailUrl": "data/state-pa/archive-state-source/state-pa-hrdwre-storag-rt-lea.json",
+      "sourceUrl": "https://www.patreasury.gov/openbookpa/checkbook.php"
+    },
+    {
+      "id": "contmaintsv-edp",
+      "name": "ContMaintSv-EDP",
+      "amount": 39821.61,
+      "sourceAmount": 39821.61,
+      "detailUrl": "data/state-pa/archive-state-source/state-pa-contmaintsv-edp.json",
+      "sourceUrl": "https://www.patreasury.gov/openbookpa/checkbook.php"
+    },
+    {
+      "id": "in-service-training",
+      "name": "In Service Training",
+      "amount": 34355.1,
+      "sourceAmount": 34355.1,
+      "detailUrl": "data/state-pa/archive-state-source/state-pa-in-service-training.json",
+      "sourceUrl": "https://www.patreasury.gov/openbookpa/checkbook.php"
+    },
+    {
+      "id": "paper-printing",
+      "name": "Paper-Printing",
+      "amount": 30553.24,
+      "sourceAmount": 30553.24,
+      "detailUrl": "data/state-pa/archive-state-source/state-pa-paper-printing.json",
+      "sourceUrl": "https://www.patreasury.gov/openbookpa/checkbook.php"
+    },
+    {
+      "id": "celluar-phones",
+      "name": "Celluar Phones",
+      "amount": 26968.62,
+      "sourceAmount": 26968.62,
+      "program": "VERIZON WIRELESS   · Celluar Phones · 6331180",
+      "sourceRows": 14,
+      "detailUrl": null,
+      "sourceUrl": "https://www.patreasury.gov/openbookpa/checkbook.php"
+    },
+    {
+      "id": "software-lic-maint",
+      "name": "Software Lic Maint",
+      "amount": 25677.5,
+      "sourceAmount": 25677.5,
+      "program": "EPLUS TECHNOLOGY   · Software Lic Maint · 6344302",
+      "sourceRows": 2,
+      "detailUrl": null,
+      "sourceUrl": "https://www.patreasury.gov/openbookpa/checkbook.php"
+    },
+    {
+      "id": "machinery-equipmen",
+      "name": "Machinery & Equipmen",
+      "amount": 25006.28,
+      "sourceAmount": 25006.28,
+      "program": "QUADIENT USA INC   · Machinery & Equipmen · 6450080",
+      "sourceRows": 1,
+      "detailUrl": null,
+      "sourceUrl": "https://www.patreasury.gov/openbookpa/checkbook.php"
+    },
+    {
+      "id": "conference-registration",
+      "name": "Conference Registration",
+      "amount": 23757.61,
+      "sourceAmount": 23757.61,
+      "detailUrl": "data/state-pa/archive-state-source/state-pa-conference-registration.json",
+      "sourceUrl": "https://www.patreasury.gov/openbookpa/checkbook.php"
+    },
+    {
+      "id": "maintenance-materials-suppli",
+      "name": "Maintenance Materials & Suppli",
+      "amount": 20205.73,
+      "sourceAmount": 20205.73,
+      "detailUrl": "data/state-pa/archive-state-source/state-pa-maintenance-materials-suppli.json",
+      "sourceUrl": "https://www.patreasury.gov/openbookpa/checkbook.php"
+    },
+    {
+      "id": "contmaint-non-edp",
+      "name": "ContMaint-Non-EDP",
+      "amount": 18951.25,
+      "sourceAmount": 18951.25,
+      "detailUrl": "data/state-pa/archive-state-source/state-pa-contmaint-non-edp.json",
+      "sourceUrl": "https://www.patreasury.gov/openbookpa/checkbook.php"
+    },
+    {
+      "id": "telecommunications-e",
+      "name": "Telecommunications E",
+      "amount": 16240.4,
+      "sourceAmount": 16240.4,
+      "program": "EPLUS TECHNOLOGY   · Telecommunications E · 6450350",
+      "sourceRows": 4,
+      "detailUrl": null,
+      "sourceUrl": "https://www.patreasury.gov/openbookpa/checkbook.php"
+    },
+    {
+      "id": "other-supplies",
+      "name": "Other Supplies",
+      "amount": 14961.3,
+      "sourceAmount": 14961.3,
+      "detailUrl": "data/state-pa/archive-state-source/state-pa-other-supplies.json",
+      "sourceUrl": "https://www.patreasury.gov/openbookpa/checkbook.php"
+    },
+    {
+      "id": "out-service-training",
+      "name": "Out Service Training",
+      "amount": 14228.71,
+      "sourceAmount": 14228.71,
+      "detailUrl": "data/state-pa/archive-state-source/state-pa-out-service-training.json",
+      "sourceUrl": "https://www.patreasury.gov/openbookpa/checkbook.php"
+    },
+    {
+      "id": "othequipment",
+      "name": "OthEquipment",
+      "amount": 12758.11,
+      "sourceAmount": 12758.11,
+      "detailUrl": "data/state-pa/archive-state-source/state-pa-othequipment.json",
+      "sourceUrl": "https://www.patreasury.gov/openbookpa/checkbook.php"
+    },
+    {
+      "id": "travel-lodging",
+      "name": "Travel-Lodging",
+      "amount": 12361.5,
+      "sourceAmount": 12361.5,
+      "program": "AMERICAN EXPRESS   · Travel-Lodging · 6311010",
+      "sourceRows": 11,
+      "detailUrl": null,
+      "sourceUrl": "https://www.patreasury.gov/openbookpa/checkbook.php"
+    },
+    {
+      "id": "insur-sur-fid-bonds",
+      "name": "Insur/Sur/Fid Bonds",
+      "amount": 12195,
+      "sourceAmount": 12195,
+      "program": "TRAVELERS INSURANCE Travelers Property and Casualty Corp · Insur/Sur/Fid Bonds · 6391120",
+      "sourceRows": 2,
+      "detailUrl": null,
+      "sourceUrl": "https://www.patreasury.gov/openbookpa/checkbook.php"
+    },
+    {
+      "id": "contrepairs-non-edp",
+      "name": "ContRepairs-Non-EDP",
+      "amount": 11948,
+      "sourceAmount": 11948,
+      "detailUrl": "data/state-pa/archive-state-source/state-pa-contrepairs-non-edp.json",
+      "sourceUrl": "https://www.patreasury.gov/openbookpa/checkbook.php"
+    },
+    {
+      "id": "officesupplies",
+      "name": "OfficeSupplies",
+      "amount": 10079.17,
+      "sourceAmount": 10079.17,
+      "detailUrl": "data/state-pa/archive-state-source/state-pa-officesupplies.json",
+      "sourceUrl": "https://www.patreasury.gov/openbookpa/checkbook.php"
+    },
+    {
+      "id": "printing",
+      "name": "Printing",
+      "amount": 9134.73,
+      "sourceAmount": 9134.73,
+      "detailUrl": "data/state-pa/archive-state-source/state-pa-printing.json",
+      "sourceUrl": "https://www.patreasury.gov/openbookpa/checkbook.php"
+    },
+    {
+      "id": "sftwre-lic-proc-nrec",
+      "name": "Sftwre Lic Proc NRec",
+      "amount": 5514.92,
+      "sourceAmount": 5514.92,
+      "program": "EPLUS TECHNOLOGY   · Sftwre Lic Proc NRec · 6371010",
+      "sourceRows": 2,
+      "detailUrl": null,
+      "sourceUrl": "https://www.patreasury.gov/openbookpa/checkbook.php"
+    },
+    {
+      "id": "housekeepingsupplies",
+      "name": "HousekeepingSupplies",
+      "amount": 5318.33,
+      "sourceAmount": 5318.33,
+      "detailUrl": "data/state-pa/archive-state-source/state-pa-housekeepingsupplies.json",
+      "sourceUrl": "https://www.patreasury.gov/openbookpa/checkbook.php"
+    },
+    {
+      "id": "water",
+      "name": "Water",
+      "amount": 5117.3,
+      "sourceAmount": 5117.3,
+      "detailUrl": "data/state-pa/archive-state-source/state-pa-water.json",
+      "sourceUrl": "https://www.patreasury.gov/openbookpa/checkbook.php"
+    },
+    {
+      "id": "state-share-defined-contribu",
+      "name": "State Share - Defined Contribu",
+      "amount": 4883.76,
+      "sourceAmount": 4883.76,
+      "program": "SERS DEFINED CONTRIBUTION PLAN FUND   · State Share - Defined Contribu · 6145100",
+      "sourceRows": 1,
+      "detailUrl": null,
+      "sourceUrl": "https://www.patreasury.gov/openbookpa/checkbook.php"
+    },
+    {
+      "id": "hardware-netw-main",
+      "name": "Hardware Netw Main",
+      "amount": 4201,
+      "sourceAmount": 4201,
+      "program": "VERTIV CORPORATION   · Hardware Netw Main · 6344304",
+      "sourceRows": 1,
+      "detailUrl": null,
+      "sourceUrl": "https://www.patreasury.gov/openbookpa/checkbook.php"
+    },
+    {
+      "id": "office-equipment",
+      "name": "Office Equipment",
+      "amount": 4098,
+      "sourceAmount": 4098,
+      "program": "QUADIENT   · Office Equipment · 6450310",
+      "sourceRows": 1,
+      "detailUrl": null,
+      "sourceUrl": "https://www.patreasury.gov/openbookpa/checkbook.php"
+    },
+    {
+      "id": "contracted-maintenance-motor",
+      "name": "Contracted Maintenance - Motor",
+      "amount": 3446,
+      "sourceAmount": 3446,
+      "program": "Unified Power   · Contracted Maintenance - Motor · 6344430",
+      "sourceRows": 1,
+      "detailUrl": null,
+      "sourceUrl": "https://www.patreasury.gov/openbookpa/checkbook.php"
+    },
+    {
+      "id": "rentals-other",
+      "name": "Rentals - Other",
+      "amount": 2942.29,
+      "sourceAmount": 2942.29,
+      "detailUrl": "data/state-pa/archive-state-source/state-pa-rentals-other.json",
+      "sourceUrl": "https://www.patreasury.gov/openbookpa/checkbook.php"
+    },
+    {
+      "id": "telecomm-rec",
+      "name": "Telecomm-Rec",
+      "amount": 2388,
+      "sourceAmount": 2388,
+      "program": "GOTO TECHNOLOGIES USA, INC   · Telecomm-Rec · 6331100",
+      "sourceRows": 1,
+      "detailUrl": null,
+      "sourceUrl": "https://www.patreasury.gov/openbookpa/checkbook.php"
+    },
+    {
+      "id": "hrdwre-peripheral",
+      "name": "Hrdwre Peripheral",
+      "amount": 1129.16,
+      "sourceAmount": 1129.16,
+      "program": "CDW-G   · Hrdwre Peripheral · 6450284",
+      "sourceRows": 1,
+      "detailUrl": null,
+      "sourceUrl": "https://www.patreasury.gov/openbookpa/checkbook.php"
+    },
+    {
+      "id": "travel-transportation",
+      "name": "Travel-Transportation",
+      "amount": 844.58,
+      "sourceAmount": 844.58,
+      "program": "Enterprise   · Travel-Transportation · 6311040",
+      "sourceRows": 3,
+      "detailUrl": null,
+      "sourceUrl": "https://www.patreasury.gov/openbookpa/checkbook.php"
+    },
+    {
+      "id": "other-heating-fuel",
+      "name": "Other Heating Fuel",
+      "amount": 386.38,
+      "sourceAmount": 386.38,
+      "program": "W.C. Eshenaur & Sons   · Other Heating Fuel · 6332105",
+      "sourceRows": 2,
+      "detailUrl": null,
+      "sourceUrl": "https://www.patreasury.gov/openbookpa/checkbook.php"
+    },
+    {
+      "id": "officeequipment",
+      "name": "OfficeEquipment",
+      "amount": 150,
+      "sourceAmount": 150,
+      "program": "PITNEY BOWES GLOBAL FINANCIAL SERVICES L  · OfficeEquipment · 6351400",
+      "sourceRows": 1,
+      "detailUrl": null,
+      "sourceUrl": "https://www.patreasury.gov/openbookpa/checkbook.php"
+    },
+    {
+      "id": "consultant-services",
+      "name": "Consultant Services",
+      "amount": 6.09,
+      "sourceAmount": 6.09,
+      "program": "ACH PAYEE   · Consultant Services · 6341000",
+      "sourceRows": 3,
+      "detailUrl": null,
+      "sourceUrl": "https://www.patreasury.gov/openbookpa/checkbook.php"
+    }
+  ],
+  "itemizedTotal": 4265171224.59,
+  "comparison": {
+    "label": "Census FY2024 state-finance comparator",
+    "url": "https://data.census.gov/table/GOVSSTATEFINTIMESERIES.GS00STATEFIN01?g=040XX00US42&time=2024",
+    "total": 122346288000,
+    "difference": -118081116775.41
+  },
+  "coverageStatus": "official-itemized-source-basis",
+  "archiveNote": "Prior official state layer archived when the complete Census function layer became primary for map reconciliation."
+}

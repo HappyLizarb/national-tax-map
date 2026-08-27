@@ -1,0 +1,238 @@
+{
+  "scope": "Oregon",
+  "fiscalYear": 2024,
+  "department": "LEGISLATIVE REV OFFICE",
+  "sourceUrl": "https://data.oregon.gov/resource/y9g9-xsxs.json?$select=agency,agency_1,budget_class,budget_class_1,expend_class,expend_class_1,vendor,sum(expense)%20as%20total,count(*)%20as%20source_rows&$where=fiscal_year=2024&$group=agency,agency_1,budget_class,budget_class_1,expend_class,expend_class_1,vendor&$limit=500000",
+  "sourceUrls": [
+    [
+      "Oregon transparency expenditure catalog",
+      "https://data.oregon.gov/Revenue-Expense/Agency-Expenditures-Multi-Year-Report/y9g9-xsxs"
+    ],
+    [
+      "Grouped FY2024 API export",
+      "https://data.oregon.gov/resource/y9g9-xsxs.json?$select=agency,agency_1,budget_class,budget_class_1,expend_class,expend_class_1,vendor,sum(expense)%20as%20total,count(*)%20as%20source_rows&$where=fiscal_year=2024&$group=agency,agency_1,budget_class,budget_class_1,expend_class,expend_class_1,vendor&$limit=500000"
+    ]
+  ],
+  "sourceBasis": "Official Oregon Agency Expenditures Multi-Year Report; FY2024 cash expense grouped by agency, budget class, expenditure class, and privacy-safe receiver label.",
+  "privacyNote": "Individual or ambiguous vendor labels are grouped as [individual recipient omitted]; organization receivers are retained. This layer does not expose person-level payroll.",
+  "sourceRows": 38,
+  "sourceTotal": 70775.2,
+  "rowSchema": [
+    "subAgency",
+    "program",
+    "amount",
+    "sourceAmount",
+    "sourceRows"
+  ],
+  "rows": [
+    [
+      "LEGISLATIVE REV OFFICE",
+      "4225 · STATE GOVERNMENT SERVICE CHARGES · 4600 · STATE GOVERNMENT SERVICE CHARGES · Receiver DEPARTMENT OF ADMINISTRATIVE SERVICES",
+      20962.92,
+      20962.92,
+      1
+    ],
+    [
+      "LEGISLATIVE REV OFFICE",
+      "4715 · IT EXPENDABLE PROPERTY · 4366 · COMPUTER TECHNOLOGY PC SOFTWARE<$5K · Receiver SAS INSTITUTE INC",
+      11819,
+      11819,
+      1
+    ],
+    [
+      "LEGISLATIVE REV OFFICE",
+      "4300 · PROFESSIONAL SERVICES · 4500 · PROFESSIONAL SERVICES NON-IT · Receiver REGIONAL ECONOMIC MODELS INC",
+      10500,
+      10500,
+      1
+    ],
+    [
+      "LEGISLATIVE REV OFFICE",
+      "4400 · DUES AND SUBSCRIPTIONS · 4251 · SUBSCRIPTIONS AND PUBLICATIONS · Receiver [individual recipient omitted]",
+      4875,
+      4875,
+      2
+    ],
+    [
+      "LEGISLATIVE REV OFFICE",
+      "4715 · IT EXPENDABLE PROPERTY · 4365 · COMPUTER TECHNOLOGY PC EQUIPMENT<$5K · Receiver CDW GOVERNMENT INC",
+      3518.18,
+      3518.18,
+      1
+    ],
+    [
+      "LEGISLATIVE REV OFFICE",
+      "4225 · STATE GOVERNMENT SERVICE CHARGES · 4600 · STATE GOVERNMENT SERVICE CHARGES · Receiver STATE OF OREGON SECRETARY OF STATE",
+      3033.52,
+      3033.52,
+      1
+    ],
+    [
+      "LEGISLATIVE REV OFFICE",
+      "4175 · OFFICE EXPENSES · 4201 · OFFICE SERVICES · Receiver [individual recipient omitted]",
+      2914.4,
+      2914.4,
+      3
+    ],
+    [
+      "LEGISLATIVE REV OFFICE",
+      "4175 · OFFICE EXPENSES · 4202 · EQUIPMENT RENTAL · Receiver PACIFIC OFFICE AUTOMATION INC",
+      2669.04,
+      2669.04,
+      1
+    ],
+    [
+      "LEGISLATIVE REV OFFICE",
+      "4715 · IT EXPENDABLE PROPERTY · 4366 · COMPUTER TECHNOLOGY PC SOFTWARE<$5K · Receiver IMPLAN GROUP LLC",
+      2200,
+      2200,
+      1
+    ],
+    [
+      "LEGISLATIVE REV OFFICE",
+      "4150 · EMPLOYEE TRAINING · 4440 · PROF DEV OUT-OF-STATE AIR TRANSPORTATION · Receiver [individual recipient omitted]",
+      971.21,
+      971.21,
+      2
+    ],
+    [
+      "LEGISLATIVE REV OFFICE",
+      "4150 · EMPLOYEE TRAINING · 4434 · PROF DEV OUT-OF-STATE LODGING · Receiver [individual recipient omitted]",
+      888.58,
+      888.58,
+      2
+    ],
+    [
+      "LEGISLATIVE REV OFFICE",
+      "4150 · EMPLOYEE TRAINING · 4433 · PROF DEV INSTATE LODGING · Receiver [individual recipient omitted]",
+      850.83,
+      850.83,
+      1
+    ],
+    [
+      "LEGISLATIVE REV OFFICE",
+      "4715 · IT EXPENDABLE PROPERTY · 4366 · COMPUTER TECHNOLOGY PC SOFTWARE<$5K · Receiver SHI INTERNATIONAL CORP",
+      822.19,
+      822.19,
+      1
+    ],
+    [
+      "LEGISLATIVE REV OFFICE",
+      "4650 · OTHER SERVICES AND SUPPLIES · 4704 · OTHER SUPPLIES · Receiver [individual recipient omitted]",
+      720.89,
+      720.89,
+      1
+    ],
+    [
+      "LEGISLATIVE REV OFFICE",
+      "4400 · DUES AND SUBSCRIPTIONS · 4251 · SUBSCRIPTIONS AND PUBLICATIONS · Receiver US BANK NATIONAL ASSOCIATION ND",
+      649.42,
+      649.42,
+      1
+    ],
+    [
+      "LEGISLATIVE REV OFFICE",
+      "4175 · OFFICE EXPENSES · 4201 · OFFICE SERVICES · Receiver STATE OF OREGON SECRETARY OF STATE",
+      564.25,
+      564.25,
+      1
+    ],
+    [
+      "LEGISLATIVE REV OFFICE",
+      "4250 · DATA PROCESSING · 4367 · COMPUTER TECHNOLOGY PC SUPPORT · Receiver CDW GOVERNMENT INC",
+      477.49,
+      477.49,
+      1
+    ],
+    [
+      "LEGISLATIVE REV OFFICE",
+      "4150 · EMPLOYEE TRAINING · 4406 · PROF DEV INSTATE TUITION/REGISTRATION · Receiver [individual recipient omitted]",
+      350,
+      350,
+      1
+    ],
+    [
+      "LEGISLATIVE REV OFFICE",
+      "4175 · OFFICE EXPENSES · 4200 · OFFICE SUPPLIES · Receiver US BANK NATIONAL ASSOCIATION ND",
+      345.98,
+      345.98,
+      1
+    ],
+    [
+      "LEGISLATIVE REV OFFICE",
+      "4150 · EMPLOYEE TRAINING · 4450 · PROF DEV INSTATE MILE REIMB-FULL RATE · Receiver [individual recipient omitted]",
+      342.57,
+      342.57,
+      1
+    ],
+    [
+      "LEGISLATIVE REV OFFICE",
+      "4175 · OFFICE EXPENSES · 4200 · OFFICE SUPPLIES · Receiver [individual recipient omitted]",
+      319.65,
+      319.65,
+      2
+    ],
+    [
+      "LEGISLATIVE REV OFFICE",
+      "4175 · OFFICE EXPENSES · 4201 · OFFICE SERVICES · Receiver PACIFIC OFFICE AUTOMATION INC",
+      189.07,
+      189.07,
+      1
+    ],
+    [
+      "LEGISLATIVE REV OFFICE",
+      "4150 · EMPLOYEE TRAINING · 4432 · PROF DEV OUT-OF-STATE MEAL W/OVERNITE · Receiver [individual recipient omitted]",
+      176.69,
+      176.69,
+      2
+    ],
+    [
+      "LEGISLATIVE REV OFFICE",
+      "4150 · EMPLOYEE TRAINING · 4441 · PROF DEV OUT-OF-STATE GROUND TRANSPRTATN · Receiver [individual recipient omitted]",
+      150.83,
+      150.83,
+      2
+    ],
+    [
+      "LEGISLATIVE REV OFFICE",
+      "4150 · EMPLOYEE TRAINING · 4452 · PROF DEV OUT-OF-ST MILE REIMB-FULL RATE · Receiver [individual recipient omitted]",
+      140.44,
+      140.44,
+      2
+    ],
+    [
+      "LEGISLATIVE REV OFFICE",
+      "4225 · STATE GOVERNMENT SERVICE CHARGES · 4600 · STATE GOVERNMENT SERVICE CHARGES · Receiver OREGON GOVERNMENT ETHICS COMMISSION",
+      122.5,
+      122.5,
+      1
+    ],
+    [
+      "LEGISLATIVE REV OFFICE",
+      "4650 · OTHER SERVICES AND SUPPLIES · 4704 · OTHER SUPPLIES · Receiver LANDMARK AWARDS & ENGRAVING",
+      106.75,
+      106.75,
+      1
+    ],
+    [
+      "LEGISLATIVE REV OFFICE",
+      "4400 · DUES AND SUBSCRIPTIONS · 4251 · SUBSCRIPTIONS AND PUBLICATIONS · Receiver UNIVERSITY OF ILLINOIS",
+      80,
+      80,
+      1
+    ],
+    [
+      "LEGISLATIVE REV OFFICE",
+      "4150 · EMPLOYEE TRAINING · 4431 · PROF DEV INSTATE MEAL WITH OVERNITE STAY · Receiver [individual recipient omitted]",
+      13.8,
+      13.8,
+      1
+    ]
+  ],
+  "sourceCheck": {
+    "objectClassRows": 29,
+    "sourceRows": 38,
+    "sourceTotal": 70775.2,
+    "difference": 0
+  }
+}

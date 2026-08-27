@@ -1,0 +1,126 @@
+{
+  "scope": "Massachusetts",
+  "code": "ma",
+  "department": "SHERIFF DEPARTMENT BRISTOL (BSD)",
+  "fiscalYear": 2024,
+  "ledgerAmount": 45911646.93,
+  "sourceTotal": 49983184.16,
+  "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000",
+  "rowSchema": [
+    "subAgency",
+    "program",
+    "amount",
+    "sourceAmount",
+    "sourceRows"
+  ],
+  "rows": [
+    [
+      "SHERIFF DEPARTMENT BRISTOL (BSD)",
+      "SHERIFF DEPARTMENT BRISTOL (BSD) · (AA) REGULAR EMPLOYEE COMPENSATION",
+      38285589.59,
+      38285589.59,
+      533
+    ],
+    [
+      "SHERIFF DEPARTMENT BRISTOL (BSD)",
+      "SHERIFF DEPARTMENT BRISTOL (BSD) · (JJ) OPERATIONAL SERVICES",
+      2809248.59,
+      2809248.59,
+      297
+    ],
+    [
+      "SHERIFF DEPARTMENT BRISTOL (BSD)",
+      "SHERIFF DEPARTMENT BRISTOL (BSD) · (MM) PURCHASED CLIENT/PROGRAM SVCS",
+      2122643.95,
+      2122643.95,
+      69
+    ],
+    [
+      "SHERIFF DEPARTMENT BRISTOL (BSD)",
+      "SHERIFF DEPARTMENT BRISTOL (BSD) · (GG) ENERGY COSTS AND SPACE RENTAL",
+      1567104.24,
+      1567104.24,
+      460
+    ],
+    [
+      "SHERIFF DEPARTMENT BRISTOL (BSD)",
+      "SHERIFF DEPARTMENT BRISTOL (BSD) · (UU) IT NON-PAYROLL EXPENSES",
+      1357281.46,
+      1357281.46,
+      345
+    ],
+    [
+      "SHERIFF DEPARTMENT BRISTOL (BSD)",
+      "SHERIFF DEPARTMENT BRISTOL (BSD) · (NN) INFRASTRUCTURE:",
+      929028.74,
+      929028.74,
+      980
+    ],
+    [
+      "SHERIFF DEPARTMENT BRISTOL (BSD)",
+      "SHERIFF DEPARTMENT BRISTOL (BSD) · (FF) FACILITY OPERATIONAL EXPENSES",
+      619541.42,
+      619541.42,
+      960
+    ],
+    [
+      "SHERIFF DEPARTMENT BRISTOL (BSD)",
+      "SHERIFF DEPARTMENT BRISTOL (BSD) · (DD) PENSION & INSURANCE RELATED EX",
+      410061.26,
+      410061.26,
+      64
+    ],
+    [
+      "SHERIFF DEPARTMENT BRISTOL (BSD)",
+      "SHERIFF DEPARTMENT BRISTOL (BSD) · (CC) SPECIAL EMPLOYEES",
+      363759.53,
+      363759.53,
+      244
+    ],
+    [
+      "SHERIFF DEPARTMENT BRISTOL (BSD)",
+      "SHERIFF DEPARTMENT BRISTOL (BSD) · (HH) CONSULTANT SVCS (TO DEPTS)",
+      349817.9,
+      349817.9,
+      85
+    ],
+    [
+      "SHERIFF DEPARTMENT BRISTOL (BSD)",
+      "SHERIFF DEPARTMENT BRISTOL (BSD) · (BB) REGULAR EMPLOYEE RELATED EXPEN",
+      311683.87,
+      311683.87,
+      25
+    ],
+    [
+      "SHERIFF DEPARTMENT BRISTOL (BSD)",
+      "SHERIFF DEPARTMENT BRISTOL (BSD) · (EE) ADMINISTRATIVE EXPENSES",
+      250656.52,
+      250656.52,
+      555
+    ],
+    [
+      "SHERIFF DEPARTMENT BRISTOL (BSD)",
+      "SHERIFF DEPARTMENT BRISTOL (BSD) · (99) PAYROLL REJECTS",
+      239834.24,
+      239834.24,
+      77
+    ],
+    [
+      "SHERIFF DEPARTMENT BRISTOL (BSD)",
+      "SHERIFF DEPARTMENT BRISTOL (BSD) · (KK) EQUIPMENT PURCHASE",
+      197814.29,
+      197814.29,
+      108
+    ],
+    [
+      "SHERIFF DEPARTMENT BRISTOL (BSD)",
+      "SHERIFF DEPARTMENT BRISTOL (BSD) · (LL) EQUIPMENT LEASE-MAINTAIN/REPAR",
+      169118.56,
+      169118.56,
+      175
+    ]
+  ],
+  "hierarchyNote": "The source does not identify a separate sub-agency column; direct-managed rows repeat the parent entity.",
+  "sourceBasis": "official source amount",
+  "note": "Amounts are shown on the official source basis; no comparator normalization was applied."
+}

@@ -1,0 +1,154 @@
+{
+  "scope": "Massachusetts",
+  "code": "ma",
+  "department": "WESTFIELD STATE UNIVERSITY (WSC)",
+  "fiscalYear": 2024,
+  "ledgerAmount": 136592383.8,
+  "sourceTotal": 148705671.23,
+  "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000",
+  "rowSchema": [
+    "subAgency",
+    "program",
+    "amount",
+    "sourceAmount",
+    "sourceRows"
+  ],
+  "rows": [
+    [
+      "WESTFIELD STATE UNIVERSITY (WSC)",
+      "WESTFIELD STATE UNIVERSITY (WSC) · (AA) REGULAR EMPLOYEE COMPENSATION",
+      55467294.2,
+      55467294.2,
+      1076
+    ],
+    [
+      "WESTFIELD STATE UNIVERSITY (WSC)",
+      "WESTFIELD STATE UNIVERSITY (WSC) · (TT) LOANS AND SPECIAL PAYMENTS",
+      23427287.69,
+      23427287.69,
+      37
+    ],
+    [
+      "WESTFIELD STATE UNIVERSITY (WSC)",
+      "WESTFIELD STATE UNIVERSITY (WSC) · (RR) BENEFIT PROGRAMS",
+      17602249.64,
+      17602249.64,
+      32
+    ],
+    [
+      "WESTFIELD STATE UNIVERSITY (WSC)",
+      "WESTFIELD STATE UNIVERSITY (WSC) · (CC) SPECIAL EMPLOYEES",
+      11737926.67,
+      11737926.67,
+      1064
+    ],
+    [
+      "WESTFIELD STATE UNIVERSITY (WSC)",
+      "WESTFIELD STATE UNIVERSITY (WSC) · (SS) DEBT PAYMENT",
+      10115539.48,
+      10115539.48,
+      7
+    ],
+    [
+      "WESTFIELD STATE UNIVERSITY (WSC)",
+      "WESTFIELD STATE UNIVERSITY (WSC) · (NN) INFRASTRUCTURE:",
+      5576258.13,
+      5576258.13,
+      209
+    ],
+    [
+      "WESTFIELD STATE UNIVERSITY (WSC)",
+      "WESTFIELD STATE UNIVERSITY (WSC) · (UU) IT NON-PAYROLL EXPENSES",
+      5485459.3,
+      5485459.3,
+      104
+    ],
+    [
+      "WESTFIELD STATE UNIVERSITY (WSC)",
+      "WESTFIELD STATE UNIVERSITY (WSC) · (GG) ENERGY COSTS AND SPACE RENTAL",
+      4979851.82,
+      4979851.82,
+      55
+    ],
+    [
+      "WESTFIELD STATE UNIVERSITY (WSC)",
+      "WESTFIELD STATE UNIVERSITY (WSC) · (FF) FACILITY OPERATIONAL EXPENSES",
+      4403291.43,
+      4403291.43,
+      153
+    ],
+    [
+      "WESTFIELD STATE UNIVERSITY (WSC)",
+      "WESTFIELD STATE UNIVERSITY (WSC) · (HH) CONSULTANT SVCS (TO DEPTS)",
+      3760473.19,
+      3760473.19,
+      110
+    ],
+    [
+      "WESTFIELD STATE UNIVERSITY (WSC)",
+      "WESTFIELD STATE UNIVERSITY (WSC) · (EE) ADMINISTRATIVE EXPENSES",
+      2098925.52,
+      2098925.52,
+      187
+    ],
+    [
+      "WESTFIELD STATE UNIVERSITY (WSC)",
+      "WESTFIELD STATE UNIVERSITY (WSC) · (LL) EQUIPMENT LEASE-MAINTAIN/REPAR",
+      896849.83,
+      896849.83,
+      80
+    ],
+    [
+      "WESTFIELD STATE UNIVERSITY (WSC)",
+      "WESTFIELD STATE UNIVERSITY (WSC) · (JJ) OPERATIONAL SERVICES",
+      773907.48,
+      773907.48,
+      97
+    ],
+    [
+      "WESTFIELD STATE UNIVERSITY (WSC)",
+      "WESTFIELD STATE UNIVERSITY (WSC) · (KK) EQUIPMENT PURCHASE",
+      736411.78,
+      736411.78,
+      42
+    ],
+    [
+      "WESTFIELD STATE UNIVERSITY (WSC)",
+      "WESTFIELD STATE UNIVERSITY (WSC) · (BB) REGULAR EMPLOYEE RELATED EXPEN",
+      641444.8,
+      641444.8,
+      268
+    ],
+    [
+      "WESTFIELD STATE UNIVERSITY (WSC)",
+      "WESTFIELD STATE UNIVERSITY (WSC) · (DD) PENSION & INSURANCE RELATED EX",
+      612559.24,
+      612559.24,
+      30
+    ],
+    [
+      "WESTFIELD STATE UNIVERSITY (WSC)",
+      "WESTFIELD STATE UNIVERSITY (WSC) · (MM) PURCHASED CLIENT/PROGRAM SVCS",
+      388455.4,
+      388455.4,
+      21
+    ],
+    [
+      "WESTFIELD STATE UNIVERSITY (WSC)",
+      "WESTFIELD STATE UNIVERSITY (WSC) · (PP) STATE AID/POL SUB",
+      1485.63,
+      1485.63,
+      2
+    ],
+    [
+      "WESTFIELD STATE UNIVERSITY (WSC)",
+      "WESTFIELD STATE UNIVERSITY (WSC) · (99) PAYROLL REJECTS",
+      0,
+      0,
+      2
+    ]
+  ],
+  "hierarchyNote": "The source does not identify a separate sub-agency column; direct-managed rows repeat the parent entity.",
+  "sourceBasis": "official source amount",
+  "note": "Amounts are shown on the official source basis; no comparator normalization was applied."
+}

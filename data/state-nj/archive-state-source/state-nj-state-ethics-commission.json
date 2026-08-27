@@ -1,0 +1,106 @@
+{
+  "scope": "New Jersey",
+  "fiscalYear": 2024,
+  "department": "STATE ETHICS COMMISSION",
+  "sourceUrl": "https://data.nj.gov/Government-Finance/YourMoney-Agency-Expenditures/apet-rp2i",
+  "sourceUrls": [
+    [
+      "Official expenditures catalog",
+      "https://www.nj.gov/transparency/financial-management/expenditures/index.shtml"
+    ],
+    [
+      "FY2024 agency dataset",
+      "https://data.nj.gov/Government-Finance/YourMoney-Agency-Expenditures/apet-rp2i"
+    ],
+    [
+      "Grouped FY2024 API export",
+      "https://data.nj.gov/resource/apet-rp2i.csv?%24select=ibno_agency%2Cstatewide_program%2Cpayee_name%2Csum%28expended_amt%29%20as%20expended%2Csum%28obligation_amt%29%20as%20obligations%2Ccount%28%2A%29%20as%20source_rows&%24where=budget_fiscal_year%3D2024&%24group=ibno_agency%2Cstatewide_program%2Cpayee_name&%24limit=500000"
+    ]
+  ],
+  "sourceBasis": "Official FY2024 Agency Expenditures dataset; pie amount uses expended, with obligations retained as a separate row measure.",
+  "privacyNote": "Individual or ambiguous payee labels are grouped as [individual recipient omitted]; organization receivers are retained. This layer does not expose person-level payroll.",
+  "sourceRows": 22,
+  "sourceTotal": 1120622.45,
+  "obligationTotal": 0,
+  "rowSchema": [
+    "subAgency",
+    "program",
+    "amount",
+    "sourceAmount",
+    "sourceRows",
+    "obligations"
+  ],
+  "rows": [
+    [
+      "STATE ETHICS COMMISSION",
+      "SPECIAL LAW ENFORCEMENT ACTIVITIES · Receiver *",
+      1084436.61,
+      1084436.61,
+      11,
+      0
+    ],
+    [
+      "STATE ETHICS COMMISSION",
+      "SPECIAL LAW ENFORCEMENT ACTIVITIES · Receiver [individual recipient omitted]",
+      17871.19,
+      17871.19,
+      5,
+      0
+    ],
+    [
+      "STATE ETHICS COMMISSION",
+      "SPECIAL LAW ENFORCEMENT ACTIVITIES · Receiver 22ND CENTURY TECHNOLOGIES INC",
+      10045.5,
+      10045.5,
+      1,
+      0
+    ],
+    [
+      "STATE ETHICS COMMISSION",
+      "SPECIAL LAW ENFORCEMENT ACTIVITIES · Receiver FORMROUTER INC.",
+      3000,
+      3000,
+      1,
+      0
+    ],
+    [
+      "STATE ETHICS COMMISSION",
+      "SPECIAL LAW ENFORCEMENT ACTIVITIES · Receiver STEWART BUSINESS SYSTEMS",
+      2218.14,
+      2218.14,
+      1,
+      0
+    ],
+    [
+      "STATE ETHICS COMMISSION",
+      "SPECIAL LAW ENFORCEMENT ACTIVITIES · Receiver BANK OF AMERICA N A",
+      1498.55,
+      1498.55,
+      1,
+      0
+    ],
+    [
+      "STATE ETHICS COMMISSION",
+      "SPECIAL LAW ENFORCEMENT ACTIVITIES · Receiver ALM MEDIA LLC DBA - NEW JERSEY",
+      808.17,
+      808.17,
+      1,
+      0
+    ],
+    [
+      "STATE ETHICS COMMISSION",
+      "SPECIAL LAW ENFORCEMENT ACTIVITIES · Receiver WB MASON CO INC.",
+      744.29,
+      744.29,
+      1,
+      0
+    ]
+  ],
+  "sourceCheck": {
+    "objectClassRows": 8,
+    "sourceRows": 22,
+    "sourceTotal": 1120622.45,
+    "obligationTotal": 0,
+    "difference": 0
+  }
+}

@@ -1,0 +1,133 @@
+{
+  "scope": "Massachusetts",
+  "code": "ma",
+  "department": "MILITARY DIVISION (MIL)",
+  "fiscalYear": 2024,
+  "ledgerAmount": 96006503.74,
+  "sourceTotal": 104520553.67,
+  "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000",
+  "rowSchema": [
+    "subAgency",
+    "program",
+    "amount",
+    "sourceAmount",
+    "sourceRows"
+  ],
+  "rows": [
+    [
+      "MILITARY DIVISION (MIL)",
+      "MILITARY DIVISION (MIL) · (NN) INFRASTRUCTURE:",
+      35225312.73,
+      35225312.73,
+      5751
+    ],
+    [
+      "MILITARY DIVISION (MIL)",
+      "MILITARY DIVISION (MIL) · (CC) SPECIAL EMPLOYEES",
+      27189356.4,
+      27189356.4,
+      1393
+    ],
+    [
+      "MILITARY DIVISION (MIL)",
+      "MILITARY DIVISION (MIL) · (AA) REGULAR EMPLOYEE COMPENSATION",
+      23708594.86,
+      23708594.86,
+      1868
+    ],
+    [
+      "MILITARY DIVISION (MIL)",
+      "MILITARY DIVISION (MIL) · (GG) ENERGY COSTS AND SPACE RENTAL",
+      9111121.74,
+      9111121.74,
+      4062
+    ],
+    [
+      "MILITARY DIVISION (MIL)",
+      "MILITARY DIVISION (MIL) · (JJ) OPERATIONAL SERVICES",
+      2257278.11,
+      2257278.11,
+      317
+    ],
+    [
+      "MILITARY DIVISION (MIL)",
+      "MILITARY DIVISION (MIL) · (EE) ADMINISTRATIVE EXPENSES",
+      1667997.23,
+      1667997.23,
+      737
+    ],
+    [
+      "MILITARY DIVISION (MIL)",
+      "MILITARY DIVISION (MIL) · (TT) LOANS AND SPECIAL PAYMENTS",
+      1354824.51,
+      1354824.51,
+      61
+    ],
+    [
+      "MILITARY DIVISION (MIL)",
+      "MILITARY DIVISION (MIL) · (RR) BENEFIT PROGRAMS",
+      980862.5,
+      980862.5,
+      8
+    ],
+    [
+      "MILITARY DIVISION (MIL)",
+      "MILITARY DIVISION (MIL) · (KK) EQUIPMENT PURCHASE",
+      850423.93,
+      850423.93,
+      42
+    ],
+    [
+      "MILITARY DIVISION (MIL)",
+      "MILITARY DIVISION (MIL) · (BB) REGULAR EMPLOYEE RELATED EXPEN",
+      701057.45,
+      701057.45,
+      308
+    ],
+    [
+      "MILITARY DIVISION (MIL)",
+      "MILITARY DIVISION (MIL) · (UU) IT NON-PAYROLL EXPENSES",
+      503174.72,
+      503174.72,
+      139
+    ],
+    [
+      "MILITARY DIVISION (MIL)",
+      "MILITARY DIVISION (MIL) · (FF) FACILITY OPERATIONAL EXPENSES",
+      305244.95,
+      305244.95,
+      258
+    ],
+    [
+      "MILITARY DIVISION (MIL)",
+      "MILITARY DIVISION (MIL) · (PP) STATE AID/POL SUB",
+      250000,
+      250000,
+      1
+    ],
+    [
+      "MILITARY DIVISION (MIL)",
+      "MILITARY DIVISION (MIL) · (HH) CONSULTANT SVCS (TO DEPTS)",
+      208215.86,
+      208215.86,
+      23
+    ],
+    [
+      "MILITARY DIVISION (MIL)",
+      "MILITARY DIVISION (MIL) · (LL) EQUIPMENT LEASE-MAINTAIN/REPAR",
+      207088.68,
+      207088.68,
+      172
+    ],
+    [
+      "MILITARY DIVISION (MIL)",
+      "MILITARY DIVISION (MIL) · (99) PAYROLL REJECTS",
+      0,
+      0,
+      98
+    ]
+  ],
+  "hierarchyNote": "The source does not identify a separate sub-agency column; direct-managed rows repeat the parent entity.",
+  "sourceBasis": "official source amount",
+  "note": "Amounts are shown on the official source basis; no comparator normalization was applied."
+}

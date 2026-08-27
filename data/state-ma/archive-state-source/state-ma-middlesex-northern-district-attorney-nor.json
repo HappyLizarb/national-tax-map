@@ -1,0 +1,119 @@
+{
+  "scope": "Massachusetts",
+  "code": "ma",
+  "department": "MIDDLESEX (NORTHERN) DISTRICT ATTORNEY (NOR)",
+  "fiscalYear": 2024,
+  "ledgerAmount": 21260692.74,
+  "sourceTotal": 23146133.75,
+  "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000",
+  "rowSchema": [
+    "subAgency",
+    "program",
+    "amount",
+    "sourceAmount",
+    "sourceRows"
+  ],
+  "rows": [
+    [
+      "MIDDLESEX (NORTHERN) DISTRICT ATTORNEY (NOR)",
+      "MIDDLESEX (NORTHERN) DISTRICT ATTORNEY (NOR) · (AA) REGULAR EMPLOYEE COMPENSATION",
+      19838355.76,
+      19838355.76,
+      240
+    ],
+    [
+      "MIDDLESEX (NORTHERN) DISTRICT ATTORNEY (NOR)",
+      "MIDDLESEX (NORTHERN) DISTRICT ATTORNEY (NOR) · (GG) ENERGY COSTS AND SPACE RENTAL",
+      2126862.58,
+      2126862.58,
+      91
+    ],
+    [
+      "MIDDLESEX (NORTHERN) DISTRICT ATTORNEY (NOR)",
+      "MIDDLESEX (NORTHERN) DISTRICT ATTORNEY (NOR) · (UU) IT NON-PAYROLL EXPENSES",
+      389206.65,
+      389206.65,
+      218
+    ],
+    [
+      "MIDDLESEX (NORTHERN) DISTRICT ATTORNEY (NOR)",
+      "MIDDLESEX (NORTHERN) DISTRICT ATTORNEY (NOR) · (EE) ADMINISTRATIVE EXPENSES",
+      323371.27,
+      323371.27,
+      326
+    ],
+    [
+      "MIDDLESEX (NORTHERN) DISTRICT ATTORNEY (NOR)",
+      "MIDDLESEX (NORTHERN) DISTRICT ATTORNEY (NOR) · (LL) EQUIPMENT LEASE-MAINTAIN/REPAR",
+      210584.61,
+      210584.61,
+      98
+    ],
+    [
+      "MIDDLESEX (NORTHERN) DISTRICT ATTORNEY (NOR)",
+      "MIDDLESEX (NORTHERN) DISTRICT ATTORNEY (NOR) · (BB) REGULAR EMPLOYEE RELATED EXPEN",
+      60376.43,
+      60376.43,
+      70
+    ],
+    [
+      "MIDDLESEX (NORTHERN) DISTRICT ATTORNEY (NOR)",
+      "MIDDLESEX (NORTHERN) DISTRICT ATTORNEY (NOR) · (PP) STATE AID/POL SUB",
+      57000,
+      57000,
+      4
+    ],
+    [
+      "MIDDLESEX (NORTHERN) DISTRICT ATTORNEY (NOR)",
+      "MIDDLESEX (NORTHERN) DISTRICT ATTORNEY (NOR) · (FF) FACILITY OPERATIONAL EXPENSES",
+      48777.16,
+      48777.16,
+      5
+    ],
+    [
+      "MIDDLESEX (NORTHERN) DISTRICT ATTORNEY (NOR)",
+      "MIDDLESEX (NORTHERN) DISTRICT ATTORNEY (NOR) · (NN) INFRASTRUCTURE:",
+      28880,
+      28880,
+      4
+    ],
+    [
+      "MIDDLESEX (NORTHERN) DISTRICT ATTORNEY (NOR)",
+      "MIDDLESEX (NORTHERN) DISTRICT ATTORNEY (NOR) · (JJ) OPERATIONAL SERVICES",
+      26415,
+      26415,
+      19
+    ],
+    [
+      "MIDDLESEX (NORTHERN) DISTRICT ATTORNEY (NOR)",
+      "MIDDLESEX (NORTHERN) DISTRICT ATTORNEY (NOR) · (KK) EQUIPMENT PURCHASE",
+      17762.96,
+      17762.96,
+      6
+    ],
+    [
+      "MIDDLESEX (NORTHERN) DISTRICT ATTORNEY (NOR)",
+      "MIDDLESEX (NORTHERN) DISTRICT ATTORNEY (NOR) · (HH) CONSULTANT SVCS (TO DEPTS)",
+      11680,
+      11680,
+      2
+    ],
+    [
+      "MIDDLESEX (NORTHERN) DISTRICT ATTORNEY (NOR)",
+      "MIDDLESEX (NORTHERN) DISTRICT ATTORNEY (NOR) · (CC) SPECIAL EMPLOYEES",
+      6861.33,
+      6861.33,
+      7
+    ],
+    [
+      "MIDDLESEX (NORTHERN) DISTRICT ATTORNEY (NOR)",
+      "MIDDLESEX (NORTHERN) DISTRICT ATTORNEY (NOR) · (99) PAYROLL REJECTS",
+      0,
+      0,
+      4
+    ]
+  ],
+  "hierarchyNote": "The source does not identify a separate sub-agency column; direct-managed rows repeat the parent entity.",
+  "sourceBasis": "official source amount",
+  "note": "Amounts are shown on the official source basis; no comparator normalization was applied."
+}

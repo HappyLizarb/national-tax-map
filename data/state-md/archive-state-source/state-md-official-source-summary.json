@@ -1,0 +1,1056 @@
+{
+  "scope": "Maryland",
+  "code": "md",
+  "fiscalYear": 2024,
+  "sourceTotal": 40390013646.72,
+  "sourceUrl": "https://opendata.maryland.gov/resource/7syw-q4cy.json?$select=agency_name,sum(amount)%20as%20amount&$where=fiscal_year=2024&$group=agency_name",
+  "dimension": "department / agency",
+  "note": "The pie uses one official itemized source layer and never inserts a synthetic residual. Department amounts reconcile to the official itemized source total. sourceAmount preserves the imported itemized basis. The census fy2024 state-finance comparator is retained for comparison only; its lower total is not assigned to a receiver or program.",
+  "reconciliation": {
+    "itemizedDifference": 0,
+    "normalized": false,
+    "scale": 1,
+    "comparisonDifference": -23232339353.28
+  },
+  "departments": [
+    {
+      "id": "maryland-department-of-health",
+      "name": "MARYLAND DEPARTMENT OF HEALTH",
+      "amount": 15473876170.2,
+      "sourceAmount": 15473876170.2,
+      "program": "MARYLAND DEPARTMENT OF HEALTH",
+      "sourceRows": null,
+      "detailUrl": "data/state-md/archive-state-source/state-md-maryland-department-of-health.json",
+      "sourceUrl": "https://opendata.maryland.gov/Budget/State-of-Maryland-Payments-Data-FY2008-to-FY2024/7syw-q4cy/about_data"
+    },
+    {
+      "id": "state-department-of-education",
+      "name": "STATE DEPARTMENT OF EDUCATION",
+      "amount": 10582946958.21,
+      "sourceAmount": 10582946958.21,
+      "program": "STATE DEPARTMENT OF EDUCATION",
+      "sourceRows": null,
+      "detailUrl": "data/state-md/archive-state-source/state-md-state-department-of-education.json",
+      "sourceUrl": "https://opendata.maryland.gov/Budget/State-of-Maryland-Payments-Data-FY2008-to-FY2024/7syw-q4cy/about_data"
+    },
+    {
+      "id": "redemption-and-interest-on-state-bonds",
+      "name": "REDEMPTION AND INTEREST ON STATE BONDS",
+      "amount": 1429336111.27,
+      "sourceAmount": 1429336111.27,
+      "program": "REDEMPTION AND INTEREST ON STATE BONDS",
+      "sourceRows": null,
+      "detailUrl": "data/state-md/archive-state-source/state-md-redemption-and-interest-on-state-bonds.json",
+      "sourceUrl": "https://opendata.maryland.gov/Budget/State-of-Maryland-Payments-Data-FY2008-to-FY2024/7syw-q4cy/about_data"
+    },
+    {
+      "id": "maryland-transit-administration",
+      "name": "MARYLAND TRANSIT ADMINISTRATION",
+      "amount": 1292118069.3,
+      "sourceAmount": 1292118069.3,
+      "program": "MARYLAND TRANSIT ADMINISTRATION",
+      "sourceRows": null,
+      "detailUrl": "data/state-md/archive-state-source/state-md-maryland-transit-administration.json",
+      "sourceUrl": "https://opendata.maryland.gov/Budget/State-of-Maryland-Payments-Data-FY2008-to-FY2024/7syw-q4cy/about_data"
+    },
+    {
+      "id": "mdot-the-secretary-s-office",
+      "name": "MDOT THE SECRETARY'S OFFICE",
+      "amount": 1151471709.09,
+      "sourceAmount": 1151471709.09,
+      "program": "MDOT THE SECRETARY'S OFFICE",
+      "sourceRows": null,
+      "detailUrl": "data/state-md/archive-state-source/state-md-mdot-the-secretary-s-office.json",
+      "sourceUrl": "https://opendata.maryland.gov/Budget/State-of-Maryland-Payments-Data-FY2008-to-FY2024/7syw-q4cy/about_data"
+    },
+    {
+      "id": "state-highway-admin",
+      "name": "STATE HIGHWAY ADMIN",
+      "amount": 1141938744.96,
+      "sourceAmount": 1141938744.96,
+      "program": "STATE HIGHWAY ADMIN",
+      "sourceRows": null,
+      "detailUrl": "data/state-md/archive-state-source/state-md-state-highway-admin.json",
+      "sourceUrl": "https://opendata.maryland.gov/Budget/State-of-Maryland-Payments-Data-FY2008-to-FY2024/7syw-q4cy/about_data"
+    },
+    {
+      "id": "maryland-transportation-authority",
+      "name": "MARYLAND TRANSPORTATION AUTHORITY",
+      "amount": 841887512.8,
+      "sourceAmount": 841887512.8,
+      "program": "MARYLAND TRANSPORTATION AUTHORITY",
+      "sourceRows": null,
+      "detailUrl": "data/state-md/archive-state-source/state-md-maryland-transportation-authority.json",
+      "sourceUrl": "https://opendata.maryland.gov/Budget/State-of-Maryland-Payments-Data-FY2008-to-FY2024/7syw-q4cy/about_data"
+    },
+    {
+      "id": "dept-of-housing-community-development",
+      "name": "DEPT OF HOUSING & COMMUNITY DEVELOPMENT",
+      "amount": 744419518.15,
+      "sourceAmount": 744419518.15,
+      "program": "DEPT OF HOUSING & COMMUNITY DEVELOPMENT",
+      "sourceRows": null,
+      "detailUrl": "data/state-md/archive-state-source/state-md-dept-of-housing-community-development.json",
+      "sourceUrl": "https://opendata.maryland.gov/Budget/State-of-Maryland-Payments-Data-FY2008-to-FY2024/7syw-q4cy/about_data"
+    },
+    {
+      "id": "department-of-human-services",
+      "name": "DEPARTMENT OF HUMAN SERVICES",
+      "amount": 713964538.95,
+      "sourceAmount": 713964538.95,
+      "program": "DEPARTMENT OF HUMAN SERVICES",
+      "sourceRows": null,
+      "detailUrl": "data/state-md/archive-state-source/state-md-department-of-human-services.json",
+      "sourceUrl": "https://opendata.maryland.gov/Budget/State-of-Maryland-Payments-Data-FY2008-to-FY2024/7syw-q4cy/about_data"
+    },
+    {
+      "id": "maryland-higher-education-commission",
+      "name": "MARYLAND HIGHER EDUCATION COMMISSION",
+      "amount": 686060092.28,
+      "sourceAmount": 686060092.28,
+      "program": "MARYLAND HIGHER EDUCATION COMMISSION",
+      "sourceRows": null,
+      "detailUrl": "data/state-md/archive-state-source/state-md-maryland-higher-education-commission.json",
+      "sourceUrl": "https://opendata.maryland.gov/Budget/State-of-Maryland-Payments-Data-FY2008-to-FY2024/7syw-q4cy/about_data"
+    },
+    {
+      "id": "maryland-health-benefit-exchange",
+      "name": "MARYLAND HEALTH BENEFIT EXCHANGE",
+      "amount": 530023455.71,
+      "sourceAmount": 530023455.71,
+      "program": "MARYLAND HEALTH BENEFIT EXCHANGE",
+      "sourceRows": null,
+      "detailUrl": "data/state-md/archive-state-source/state-md-maryland-health-benefit-exchange.json",
+      "sourceUrl": "https://opendata.maryland.gov/Budget/State-of-Maryland-Payments-Data-FY2008-to-FY2024/7syw-q4cy/about_data"
+    },
+    {
+      "id": "dept-of-public-safety-correctional-svc",
+      "name": "DEPT OF PUBLIC SAFETY & CORRECTIONAL SVC",
+      "amount": 475738354.23,
+      "sourceAmount": 475738354.23,
+      "program": "DEPT OF PUBLIC SAFETY & CORRECTIONAL SVC",
+      "sourceRows": null,
+      "detailUrl": "data/state-md/archive-state-source/state-md-dept-of-public-safety-correctional-svc.json",
+      "sourceUrl": "https://opendata.maryland.gov/Budget/State-of-Maryland-Payments-Data-FY2008-to-FY2024/7syw-q4cy/about_data"
+    },
+    {
+      "id": "department-of-emergency-management",
+      "name": "DEPARTMENT OF EMERGENCY MANAGEMENT",
+      "amount": 388519190.67,
+      "sourceAmount": 388519190.67,
+      "program": "DEPARTMENT OF EMERGENCY MANAGEMENT",
+      "sourceRows": null,
+      "detailUrl": "data/state-md/archive-state-source/state-md-department-of-emergency-management.json",
+      "sourceUrl": "https://opendata.maryland.gov/Budget/State-of-Maryland-Payments-Data-FY2008-to-FY2024/7syw-q4cy/about_data"
+    },
+    {
+      "id": "department-of-general-services",
+      "name": "DEPARTMENT OF GENERAL SERVICES",
+      "amount": 382108236.25,
+      "sourceAmount": 382108236.25,
+      "program": "DEPARTMENT OF GENERAL SERVICES",
+      "sourceRows": null,
+      "detailUrl": "data/state-md/archive-state-source/state-md-department-of-general-services.json",
+      "sourceUrl": "https://opendata.maryland.gov/Budget/State-of-Maryland-Payments-Data-FY2008-to-FY2024/7syw-q4cy/about_data"
+    },
+    {
+      "id": "comptroller-of-maryland",
+      "name": "COMPTROLLER OF MARYLAND",
+      "amount": 349400250.27,
+      "sourceAmount": 349400250.27,
+      "program": "COMPTROLLER OF MARYLAND",
+      "sourceRows": null,
+      "detailUrl": "data/state-md/archive-state-source/state-md-comptroller-of-maryland.json",
+      "sourceUrl": "https://opendata.maryland.gov/Budget/State-of-Maryland-Payments-Data-FY2008-to-FY2024/7syw-q4cy/about_data"
+    },
+    {
+      "id": "department-of-labor",
+      "name": "DEPARTMENT OF LABOR",
+      "amount": 342959710.55,
+      "sourceAmount": 342959710.55,
+      "program": "DEPARTMENT OF LABOR",
+      "sourceRows": null,
+      "detailUrl": "data/state-md/archive-state-source/state-md-department-of-labor.json",
+      "sourceUrl": "https://opendata.maryland.gov/Budget/State-of-Maryland-Payments-Data-FY2008-to-FY2024/7syw-q4cy/about_data"
+    },
+    {
+      "id": "iac-on-school-construction-capital",
+      "name": "IAC ON SCHOOL CONSTRUCTION - CAPITAL",
+      "amount": 271795115.59,
+      "sourceAmount": 271795115.59,
+      "program": "IAC ON SCHOOL CONSTRUCTION - CAPITAL",
+      "sourceRows": null,
+      "detailUrl": "data/state-md/archive-state-source/state-md-iac-on-school-construction-capital.json",
+      "sourceUrl": "https://opendata.maryland.gov/Budget/State-of-Maryland-Payments-Data-FY2008-to-FY2024/7syw-q4cy/about_data"
+    },
+    {
+      "id": "department-of-general-services-capital",
+      "name": "DEPARTMENT OF GENERAL SERVICES- CAPITAL",
+      "amount": 260256907.44,
+      "sourceAmount": 260256907.44,
+      "program": "DEPARTMENT OF GENERAL SERVICES- CAPITAL",
+      "sourceRows": null,
+      "detailUrl": "data/state-md/archive-state-source/state-md-department-of-general-services-capital.json",
+      "sourceUrl": "https://opendata.maryland.gov/Budget/State-of-Maryland-Payments-Data-FY2008-to-FY2024/7syw-q4cy/about_data"
+    },
+    {
+      "id": "gov-office-crime-prevention-and-policy",
+      "name": "GOV OFFICE CRIME PREVENTION AND POLICY",
+      "amount": 258377240.54,
+      "sourceAmount": 258377240.54,
+      "program": "GOV OFFICE CRIME PREVENTION AND POLICY",
+      "sourceRows": null,
+      "detailUrl": "data/state-md/archive-state-source/state-md-gov-office-crime-prevention-and-policy.json",
+      "sourceUrl": "https://opendata.maryland.gov/Budget/State-of-Maryland-Payments-Data-FY2008-to-FY2024/7syw-q4cy/about_data"
+    },
+    {
+      "id": "maryland-aviation-administration",
+      "name": "MARYLAND AVIATION ADMINISTRATION",
+      "amount": 255505992.32,
+      "sourceAmount": 255505992.32,
+      "program": "MARYLAND AVIATION ADMINISTRATION",
+      "sourceRows": null,
+      "detailUrl": "data/state-md/archive-state-source/state-md-maryland-aviation-administration.json",
+      "sourceUrl": "https://opendata.maryland.gov/Budget/State-of-Maryland-Payments-Data-FY2008-to-FY2024/7syw-q4cy/about_data"
+    },
+    {
+      "id": "payments-to-civil-divisions-of-the-state",
+      "name": "PAYMENTS TO CIVIL DIVISIONS OF THE STATE",
+      "amount": 197588253.21,
+      "sourceAmount": 197588253.21,
+      "program": "PAYMENTS TO CIVIL DIVISIONS OF THE STATE",
+      "sourceRows": null,
+      "detailUrl": "data/state-md/archive-state-source/state-md-payments-to-civil-divisions-of-the-state.json",
+      "sourceUrl": "https://opendata.maryland.gov/Budget/State-of-Maryland-Payments-Data-FY2008-to-FY2024/7syw-q4cy/about_data"
+    },
+    {
+      "id": "maryland-stadium-authority",
+      "name": "MARYLAND STADIUM AUTHORITY",
+      "amount": 179764628.83,
+      "sourceAmount": 179764628.83,
+      "program": "MARYLAND STADIUM AUTHORITY",
+      "sourceRows": null,
+      "detailUrl": "data/state-md/archive-state-source/state-md-maryland-stadium-authority.json",
+      "sourceUrl": "https://opendata.maryland.gov/Budget/State-of-Maryland-Payments-Data-FY2008-to-FY2024/7syw-q4cy/about_data"
+    },
+    {
+      "id": "department-of-the-environment",
+      "name": "DEPARTMENT OF THE ENVIRONMENT",
+      "amount": 173901188.99,
+      "sourceAmount": 173901188.99,
+      "program": "DEPARTMENT OF THE ENVIRONMENT",
+      "sourceRows": null,
+      "detailUrl": "data/state-md/archive-state-source/state-md-department-of-the-environment.json",
+      "sourceUrl": "https://opendata.maryland.gov/Budget/State-of-Maryland-Payments-Data-FY2008-to-FY2024/7syw-q4cy/about_data"
+    },
+    {
+      "id": "department-of-commerce",
+      "name": "DEPARTMENT OF COMMERCE",
+      "amount": 142955854.08,
+      "sourceAmount": 142955854.08,
+      "program": "DEPARTMENT OF COMMERCE",
+      "sourceRows": null,
+      "detailUrl": "data/state-md/archive-state-source/state-md-department-of-commerce.json",
+      "sourceUrl": "https://opendata.maryland.gov/Budget/State-of-Maryland-Payments-Data-FY2008-to-FY2024/7syw-q4cy/about_data"
+    },
+    {
+      "id": "maryland-environmental-service",
+      "name": "Maryland Environmental Service",
+      "amount": 141021653.67,
+      "sourceAmount": 141021653.67,
+      "program": "Maryland Environmental Service",
+      "sourceRows": null,
+      "detailUrl": "data/state-md/archive-state-source/state-md-maryland-environmental-service.json",
+      "sourceUrl": "https://opendata.maryland.gov/Budget/State-of-Maryland-Payments-Data-FY2008-to-FY2024/7syw-q4cy/about_data"
+    },
+    {
+      "id": "maryland-port-administration",
+      "name": "MARYLAND PORT ADMINISTRATION",
+      "amount": 131748848.97,
+      "sourceAmount": 131748848.97,
+      "program": "MARYLAND PORT ADMINISTRATION",
+      "sourceRows": null,
+      "detailUrl": "data/state-md/archive-state-source/state-md-maryland-port-administration.json",
+      "sourceUrl": "https://opendata.maryland.gov/Budget/State-of-Maryland-Payments-Data-FY2008-to-FY2024/7syw-q4cy/about_data"
+    },
+    {
+      "id": "department-of-information-technology",
+      "name": "DEPARTMENT OF INFORMATION TECHNOLOGY",
+      "amount": 130366710.49,
+      "sourceAmount": 130366710.49,
+      "program": "DEPARTMENT OF INFORMATION TECHNOLOGY",
+      "sourceRows": null,
+      "detailUrl": "data/state-md/archive-state-source/state-md-department-of-information-technology.json",
+      "sourceUrl": "https://opendata.maryland.gov/Budget/State-of-Maryland-Payments-Data-FY2008-to-FY2024/7syw-q4cy/about_data"
+    },
+    {
+      "id": "department-of-agriculture",
+      "name": "DEPARTMENT OF AGRICULTURE",
+      "amount": 114412174.5,
+      "sourceAmount": 114412174.5,
+      "program": "DEPARTMENT OF AGRICULTURE",
+      "sourceRows": null,
+      "detailUrl": "data/state-md/archive-state-source/state-md-department-of-agriculture.json",
+      "sourceUrl": "https://opendata.maryland.gov/Budget/State-of-Maryland-Payments-Data-FY2008-to-FY2024/7syw-q4cy/about_data"
+    },
+    {
+      "id": "capital-projects-university-of-maryland",
+      "name": "CAPITAL PROJECTS- UNIVERSITY OF MARYLAND",
+      "amount": 110169136.03,
+      "sourceAmount": 110169136.03,
+      "program": "CAPITAL PROJECTS- UNIVERSITY OF MARYLAND",
+      "sourceRows": null,
+      "detailUrl": "data/state-md/archive-state-source/state-md-capital-projects-university-of-maryland.json",
+      "sourceUrl": "https://opendata.maryland.gov/Budget/State-of-Maryland-Payments-Data-FY2008-to-FY2024/7syw-q4cy/about_data"
+    },
+    {
+      "id": "state-dept-of-assessments-taxation",
+      "name": "STATE DEPT OF ASSESSMENTS & TAXATION",
+      "amount": 100503371.16,
+      "sourceAmount": 100503371.16,
+      "program": "STATE DEPT OF ASSESSMENTS & TAXATION",
+      "sourceRows": null,
+      "detailUrl": "data/state-md/archive-state-source/state-md-state-dept-of-assessments-taxation.json",
+      "sourceUrl": "https://opendata.maryland.gov/Budget/State-of-Maryland-Payments-Data-FY2008-to-FY2024/7syw-q4cy/about_data"
+    },
+    {
+      "id": "maryland-state-library-agency",
+      "name": "MARYLAND STATE LIBRARY AGENCY",
+      "amount": 93249701.15,
+      "sourceAmount": 93249701.15,
+      "program": "MARYLAND STATE LIBRARY AGENCY",
+      "sourceRows": null,
+      "detailUrl": "data/state-md/archive-state-source/state-md-maryland-state-library-agency.json",
+      "sourceUrl": "https://opendata.maryland.gov/Budget/State-of-Maryland-Payments-Data-FY2008-to-FY2024/7syw-q4cy/about_data"
+    },
+    {
+      "id": "department-of-natural-resources",
+      "name": "DEPARTMENT OF NATURAL RESOURCES",
+      "amount": 91135679.7,
+      "sourceAmount": 91135679.7,
+      "program": "DEPARTMENT OF NATURAL RESOURCES",
+      "sourceRows": null,
+      "detailUrl": "data/state-md/archive-state-source/state-md-department-of-natural-resources.json",
+      "sourceUrl": "https://opendata.maryland.gov/Budget/State-of-Maryland-Payments-Data-FY2008-to-FY2024/7syw-q4cy/about_data"
+    },
+    {
+      "id": "department-of-natural-resources-capital",
+      "name": "DEPARTMENT OF NATURAL RESOURCES-CAPITAL",
+      "amount": 90719052.76,
+      "sourceAmount": 90719052.76,
+      "program": "DEPARTMENT OF NATURAL RESOURCES-CAPITAL",
+      "sourceRows": null,
+      "detailUrl": "data/state-md/archive-state-source/state-md-department-of-natural-resources-capital.json",
+      "sourceUrl": "https://opendata.maryland.gov/Budget/State-of-Maryland-Payments-Data-FY2008-to-FY2024/7syw-q4cy/about_data"
+    },
+    {
+      "id": "morgan-state-university-capital-project",
+      "name": "MORGAN STATE UNIVERSITY-CAPITAL PROJECT",
+      "amount": 88255437.03,
+      "sourceAmount": 88255437.03,
+      "program": "MORGAN STATE UNIVERSITY-CAPITAL PROJECT",
+      "sourceRows": null,
+      "detailUrl": "data/state-md/archive-state-source/state-md-morgan-state-university-capital-project.json",
+      "sourceUrl": "https://opendata.maryland.gov/Budget/State-of-Maryland-Payments-Data-FY2008-to-FY2024/7syw-q4cy/about_data"
+    },
+    {
+      "id": "maryland-lottery-and-gaming-control-agy",
+      "name": "MARYLAND LOTTERY AND GAMING CONTROL AGY",
+      "amount": 81383102.56,
+      "sourceAmount": 81383102.56,
+      "program": "MARYLAND LOTTERY AND GAMING CONTROL AGY",
+      "sourceRows": null,
+      "detailUrl": "data/state-md/archive-state-source/state-md-maryland-lottery-and-gaming-control-agy.json",
+      "sourceUrl": "https://opendata.maryland.gov/Budget/State-of-Maryland-Payments-Data-FY2008-to-FY2024/7syw-q4cy/about_data"
+    },
+    {
+      "id": "maryland-state-police",
+      "name": "MARYLAND STATE POLICE",
+      "amount": 77276394.65,
+      "sourceAmount": 77276394.65,
+      "program": "MARYLAND STATE POLICE",
+      "sourceRows": null,
+      "detailUrl": "data/state-md/archive-state-source/state-md-maryland-state-police.json",
+      "sourceUrl": "https://opendata.maryland.gov/Budget/State-of-Maryland-Payments-Data-FY2008-to-FY2024/7syw-q4cy/about_data"
+    },
+    {
+      "id": "state-treasurer-s-office",
+      "name": "STATE TREASURER'S OFFICE",
+      "amount": 70365609.67,
+      "sourceAmount": 70365609.67,
+      "program": "STATE TREASURER'S OFFICE",
+      "sourceRows": null,
+      "detailUrl": "data/state-md/archive-state-source/state-md-state-treasurer-s-office.json",
+      "sourceUrl": "https://opendata.maryland.gov/Budget/State-of-Maryland-Payments-Data-FY2008-to-FY2024/7syw-q4cy/about_data"
+    },
+    {
+      "id": "maryland-department-of-aging",
+      "name": "MARYLAND DEPARTMENT OF AGING",
+      "amount": 69930895.38,
+      "sourceAmount": 69930895.38,
+      "program": "MARYLAND DEPARTMENT OF AGING",
+      "sourceRows": null,
+      "detailUrl": "data/state-md/archive-state-source/state-md-maryland-department-of-aging.json",
+      "sourceUrl": "https://opendata.maryland.gov/Budget/State-of-Maryland-Payments-Data-FY2008-to-FY2024/7syw-q4cy/about_data"
+    },
+    {
+      "id": "motor-vehicle-adminstration",
+      "name": "MOTOR VEHICLE ADMINSTRATION",
+      "amount": 67751110.83,
+      "sourceAmount": 67751110.83,
+      "program": "MOTOR VEHICLE ADMINSTRATION",
+      "sourceRows": null,
+      "detailUrl": "data/state-md/archive-state-source/state-md-motor-vehicle-adminstration.json",
+      "sourceUrl": "https://opendata.maryland.gov/Budget/State-of-Maryland-Payments-Data-FY2008-to-FY2024/7syw-q4cy/about_data"
+    },
+    {
+      "id": "md-technology-development-corporation",
+      "name": "MD TECHNOLOGY DEVELOPMENT CORPORATION",
+      "amount": 59715816,
+      "sourceAmount": 59715816,
+      "program": "MD TECHNOLOGY DEVELOPMENT CORPORATION",
+      "sourceRows": null,
+      "detailUrl": "data/state-md/archive-state-source/state-md-md-technology-development-corporation.json",
+      "sourceUrl": "https://opendata.maryland.gov/Budget/State-of-Maryland-Payments-Data-FY2008-to-FY2024/7syw-q4cy/about_data"
+    },
+    {
+      "id": "department-of-juvenile-services",
+      "name": "DEPARTMENT OF JUVENILE SERVICES",
+      "amount": 57504720.76,
+      "sourceAmount": 57504720.76,
+      "program": "DEPARTMENT OF JUVENILE SERVICES",
+      "sourceRows": null,
+      "detailUrl": "data/state-md/archive-state-source/state-md-department-of-juvenile-services.json",
+      "sourceUrl": "https://opendata.maryland.gov/Budget/State-of-Maryland-Payments-Data-FY2008-to-FY2024/7syw-q4cy/about_data"
+    },
+    {
+      "id": "maryland-stadium-authority-capital-proj",
+      "name": "MARYLAND STADIUM AUTHORITY-CAPITAL PROJ",
+      "amount": 43746519.34,
+      "sourceAmount": 43746519.34,
+      "program": "MARYLAND STADIUM AUTHORITY-CAPITAL PROJ",
+      "sourceRows": null,
+      "detailUrl": "data/state-md/archive-state-source/state-md-maryland-stadium-authority-capital-proj.json",
+      "sourceUrl": "https://opendata.maryland.gov/Budget/State-of-Maryland-Payments-Data-FY2008-to-FY2024/7syw-q4cy/about_data"
+    },
+    {
+      "id": "board-of-public-works",
+      "name": "BOARD OF PUBLIC WORKS",
+      "amount": 40771445.17,
+      "sourceAmount": 40771445.17,
+      "program": "BOARD OF PUBLIC WORKS",
+      "sourceRows": null,
+      "detailUrl": "data/state-md/archive-state-source/state-md-board-of-public-works.json",
+      "sourceUrl": "https://opendata.maryland.gov/Budget/State-of-Maryland-Payments-Data-FY2008-to-FY2024/7syw-q4cy/about_data"
+    },
+    {
+      "id": "maryland-state-retirement-agency",
+      "name": "MARYLAND STATE RETIREMENT AGENCY",
+      "amount": 40618140.63,
+      "sourceAmount": 40618140.63,
+      "program": "MARYLAND STATE RETIREMENT AGENCY",
+      "sourceRows": null,
+      "detailUrl": "data/state-md/archive-state-source/state-md-maryland-state-retirement-agency.json",
+      "sourceUrl": "https://opendata.maryland.gov/Budget/State-of-Maryland-Payments-Data-FY2008-to-FY2024/7syw-q4cy/about_data"
+    },
+    {
+      "id": "dhcd-community-development-adm-capital",
+      "name": "DHCD-COMMUNITY DEVELOPMENT ADM- CAPITAL",
+      "amount": 34214499.98,
+      "sourceAmount": 34214499.98,
+      "program": "DHCD-COMMUNITY DEVELOPMENT ADM- CAPITAL",
+      "sourceRows": null,
+      "detailUrl": "data/state-md/archive-state-source/state-md-dhcd-community-development-adm-capital.json",
+      "sourceUrl": "https://opendata.maryland.gov/Budget/State-of-Maryland-Payments-Data-FY2008-to-FY2024/7syw-q4cy/about_data"
+    },
+    {
+      "id": "maryland-department-of-veterans-affairs",
+      "name": "MARYLAND DEPARTMENT OF VETERANS AFFAIRS",
+      "amount": 33510056.47,
+      "sourceAmount": 33510056.47,
+      "program": "MARYLAND DEPARTMENT OF VETERANS AFFAIRS",
+      "sourceRows": null,
+      "detailUrl": "data/state-md/archive-state-source/state-md-maryland-department-of-veterans-affairs.json",
+      "sourceUrl": "https://opendata.maryland.gov/Budget/State-of-Maryland-Payments-Data-FY2008-to-FY2024/7syw-q4cy/about_data"
+    },
+    {
+      "id": "maryland-energy-administration",
+      "name": "MARYLAND ENERGY ADMINISTRATION",
+      "amount": 27263496.3,
+      "sourceAmount": 27263496.3,
+      "program": "MARYLAND ENERGY ADMINISTRATION",
+      "sourceRows": null,
+      "detailUrl": "data/state-md/archive-state-source/state-md-maryland-energy-administration.json",
+      "sourceUrl": "https://opendata.maryland.gov/Budget/State-of-Maryland-Payments-Data-FY2008-to-FY2024/7syw-q4cy/about_data"
+    },
+    {
+      "id": "state-board-of-elections",
+      "name": "STATE BOARD OF ELECTIONS",
+      "amount": 25585445.72,
+      "sourceAmount": 25585445.72,
+      "program": "STATE BOARD OF ELECTIONS",
+      "sourceRows": null,
+      "detailUrl": "data/state-md/archive-state-source/state-md-state-board-of-elections.json",
+      "sourceUrl": "https://opendata.maryland.gov/Budget/State-of-Maryland-Payments-Data-FY2008-to-FY2024/7syw-q4cy/about_data"
+    },
+    {
+      "id": "state-reserve-fund",
+      "name": "STATE RESERVE FUND",
+      "amount": 25000000,
+      "sourceAmount": 25000000,
+      "program": "STATE RESERVE FUND",
+      "sourceRows": null,
+      "detailUrl": "data/state-md/archive-state-source/state-md-state-reserve-fund.json",
+      "sourceUrl": "https://opendata.maryland.gov/Budget/State-of-Maryland-Payments-Data-FY2008-to-FY2024/7syw-q4cy/about_data"
+    },
+    {
+      "id": "department-of-inform-technology-cap",
+      "name": "DEPARTMENT OF INFORM TECHNOLOGY - CAP",
+      "amount": 20517486.41,
+      "sourceAmount": 20517486.41,
+      "program": "DEPARTMENT OF INFORM TECHNOLOGY - CAP",
+      "sourceRows": null,
+      "detailUrl": "data/state-md/archive-state-source/state-md-department-of-inform-technology-cap.json",
+      "sourceUrl": "https://opendata.maryland.gov/Budget/State-of-Maryland-Payments-Data-FY2008-to-FY2024/7syw-q4cy/about_data"
+    },
+    {
+      "id": "office-of-the-attorney-general",
+      "name": "OFFICE OF THE ATTORNEY GENERAL",
+      "amount": 20389713.13,
+      "sourceAmount": 20389713.13,
+      "program": "OFFICE OF THE ATTORNEY GENERAL",
+      "sourceRows": null,
+      "detailUrl": "data/state-md/archive-state-source/state-md-office-of-the-attorney-general.json",
+      "sourceUrl": "https://opendata.maryland.gov/Budget/State-of-Maryland-Payments-Data-FY2008-to-FY2024/7syw-q4cy/about_data"
+    },
+    {
+      "id": "office-of-the-public-defender",
+      "name": "OFFICE OF THE PUBLIC DEFENDER",
+      "amount": 19649448.01,
+      "sourceAmount": 19649448.01,
+      "program": "OFFICE OF THE PUBLIC DEFENDER",
+      "sourceRows": null,
+      "detailUrl": "data/state-md/archive-state-source/state-md-office-of-the-public-defender.json",
+      "sourceUrl": "https://opendata.maryland.gov/Budget/State-of-Maryland-Payments-Data-FY2008-to-FY2024/7syw-q4cy/about_data"
+    },
+    {
+      "id": "baltimore-city-community-college",
+      "name": "BALTIMORE CITY COMMUNITY COLLEGE",
+      "amount": 19170624.44,
+      "sourceAmount": 19170624.44,
+      "program": "BALTIMORE CITY COMMUNITY COLLEGE",
+      "sourceRows": null,
+      "detailUrl": "data/state-md/archive-state-source/state-md-baltimore-city-community-college.json",
+      "sourceUrl": "https://opendata.maryland.gov/Budget/State-of-Maryland-Payments-Data-FY2008-to-FY2024/7syw-q4cy/about_data"
+    },
+    {
+      "id": "capital-projects-office-of-comptroller",
+      "name": "CAPITAL PROJECTS- OFFICE OF COMPTROLLER",
+      "amount": 17695576.55,
+      "sourceAmount": 17695576.55,
+      "program": "CAPITAL PROJECTS- OFFICE OF COMPTROLLER",
+      "sourceRows": null,
+      "detailUrl": "data/state-md/archive-state-source/state-md-capital-projects-office-of-comptroller.json",
+      "sourceUrl": "https://opendata.maryland.gov/Budget/State-of-Maryland-Payments-Data-FY2008-to-FY2024/7syw-q4cy/about_data"
+    },
+    {
+      "id": "department-of-budget-and-management",
+      "name": "DEPARTMENT OF BUDGET AND MANAGEMENT",
+      "amount": 17566827.83,
+      "sourceAmount": 17566827.83,
+      "program": "DEPARTMENT OF BUDGET AND MANAGEMENT",
+      "sourceRows": null,
+      "detailUrl": "data/state-md/archive-state-source/state-md-department-of-budget-and-management.json",
+      "sourceUrl": "https://opendata.maryland.gov/Budget/State-of-Maryland-Payments-Data-FY2008-to-FY2024/7syw-q4cy/about_data"
+    },
+    {
+      "id": "maryland-environmental-service-2",
+      "name": "MARYLAND ENVIRONMENTAL SERVICE",
+      "amount": 15303793.77,
+      "sourceAmount": 15303793.77,
+      "program": "MARYLAND ENVIRONMENTAL SERVICE",
+      "sourceRows": null,
+      "detailUrl": "data/state-md/archive-state-source/state-md-maryland-environmental-service-2.json",
+      "sourceUrl": "https://opendata.maryland.gov/Budget/State-of-Maryland-Payments-Data-FY2008-to-FY2024/7syw-q4cy/about_data"
+    },
+    {
+      "id": "maryland-public-television",
+      "name": "MARYLAND PUBLIC TELEVISION",
+      "amount": 14017827.61,
+      "sourceAmount": 14017827.61,
+      "program": "MARYLAND PUBLIC TELEVISION",
+      "sourceRows": null,
+      "detailUrl": "data/state-md/archive-state-source/state-md-maryland-public-television.json",
+      "sourceUrl": "https://opendata.maryland.gov/Budget/State-of-Maryland-Payments-Data-FY2008-to-FY2024/7syw-q4cy/about_data"
+    },
+    {
+      "id": "military-department",
+      "name": "MILITARY DEPARTMENT",
+      "amount": 10377014.24,
+      "sourceAmount": 10377014.24,
+      "program": "MILITARY DEPARTMENT",
+      "sourceRows": null,
+      "detailUrl": "data/state-md/archive-state-source/state-md-military-department.json",
+      "sourceUrl": "https://opendata.maryland.gov/Budget/State-of-Maryland-Payments-Data-FY2008-to-FY2024/7syw-q4cy/about_data"
+    },
+    {
+      "id": "maryland-state-library-agency-capital",
+      "name": "MARYLAND STATE LIBRARY AGENCY - CAPITAL",
+      "amount": 9815106,
+      "sourceAmount": 9815106,
+      "program": "MARYLAND STATE LIBRARY AGENCY - CAPITAL",
+      "sourceRows": null,
+      "detailUrl": "data/state-md/archive-state-source/state-md-maryland-state-library-agency-capital.json",
+      "sourceUrl": "https://opendata.maryland.gov/Budget/State-of-Maryland-Payments-Data-FY2008-to-FY2024/7syw-q4cy/about_data"
+    },
+    {
+      "id": "st-mary-s-college-of-maryland-capital",
+      "name": "ST. MARY'S COLLEGE OF MARYLAND -CAPITAL",
+      "amount": 9697579.48,
+      "sourceAmount": 9697579.48,
+      "program": "ST. MARY'S COLLEGE OF MARYLAND -CAPITAL",
+      "sourceRows": null,
+      "detailUrl": "data/state-md/archive-state-source/state-md-st-mary-s-college-of-maryland-capital.json",
+      "sourceUrl": "https://opendata.maryland.gov/Budget/State-of-Maryland-Payments-Data-FY2008-to-FY2024/7syw-q4cy/about_data"
+    },
+    {
+      "id": "department-of-service-civic-innovation",
+      "name": "DEPARTMENT OF SERVICE & CIVIC INNOVATION",
+      "amount": 8523419.12,
+      "sourceAmount": 8523419.12,
+      "program": "DEPARTMENT OF SERVICE & CIVIC INNOVATION",
+      "sourceRows": null,
+      "detailUrl": "data/state-md/archive-state-source/state-md-department-of-service-civic-innovation.json",
+      "sourceUrl": "https://opendata.maryland.gov/Budget/State-of-Maryland-Payments-Data-FY2008-to-FY2024/7syw-q4cy/about_data"
+    },
+    {
+      "id": "maryland-department-of-health-mdh",
+      "name": "MARYLAND DEPARTMENT OF HEALTH, MDH",
+      "amount": 8096271,
+      "sourceAmount": 8096271,
+      "program": "MARYLAND DEPARTMENT OF HEALTH, MDH",
+      "sourceRows": null,
+      "detailUrl": "data/state-md/archive-state-source/state-md-maryland-department-of-health-mdh.json",
+      "sourceUrl": "https://opendata.maryland.gov/Budget/State-of-Maryland-Payments-Data-FY2008-to-FY2024/7syw-q4cy/about_data"
+    },
+    {
+      "id": "md-department-of-planning",
+      "name": "MD DEPARTMENT OF PLANNING",
+      "amount": 7567386.45,
+      "sourceAmount": 7567386.45,
+      "program": "MD DEPARTMENT OF PLANNING",
+      "sourceRows": null,
+      "detailUrl": "data/state-md/archive-state-source/state-md-md-department-of-planning.json",
+      "sourceUrl": "https://opendata.maryland.gov/Budget/State-of-Maryland-Payments-Data-FY2008-to-FY2024/7syw-q4cy/about_data"
+    },
+    {
+      "id": "uninsured-employers-fund",
+      "name": "UNINSURED EMPLOYERS FUND",
+      "amount": 7229066.01,
+      "sourceAmount": 7229066.01,
+      "program": "UNINSURED EMPLOYERS FUND",
+      "sourceRows": null,
+      "detailUrl": "data/state-md/archive-state-source/state-md-uninsured-employers-fund.json",
+      "sourceUrl": "https://opendata.maryland.gov/Budget/State-of-Maryland-Payments-Data-FY2008-to-FY2024/7syw-q4cy/about_data"
+    },
+    {
+      "id": "universities-at-shady-grove",
+      "name": "UNIVERSITIES AT SHADY GROVE",
+      "amount": 7192252.34,
+      "sourceAmount": 7192252.34,
+      "program": "UNIVERSITIES AT SHADY GROVE",
+      "sourceRows": null,
+      "detailUrl": "data/state-md/archive-state-source/state-md-universities-at-shady-grove.json",
+      "sourceUrl": "https://opendata.maryland.gov/Budget/State-of-Maryland-Payments-Data-FY2008-to-FY2024/7syw-q4cy/about_data"
+    },
+    {
+      "id": "department-of-the-environment-capital",
+      "name": "DEPARTMENT OF THE ENVIRONMENT - CAPITAL",
+      "amount": 6073968.84,
+      "sourceAmount": 6073968.84,
+      "program": "DEPARTMENT OF THE ENVIRONMENT - CAPITAL",
+      "sourceRows": null,
+      "detailUrl": "data/state-md/archive-state-source/state-md-department-of-the-environment-capital.json",
+      "sourceUrl": "https://opendata.maryland.gov/Budget/State-of-Maryland-Payments-Data-FY2008-to-FY2024/7syw-q4cy/about_data"
+    },
+    {
+      "id": "workers-compensation-commission",
+      "name": "WORKERS' COMPENSATION COMMISSION",
+      "amount": 5918263.78,
+      "sourceAmount": 5918263.78,
+      "program": "WORKERS' COMPENSATION COMMISSION",
+      "sourceRows": null,
+      "detailUrl": "data/state-md/archive-state-source/state-md-workers-compensation-commission.json",
+      "sourceUrl": "https://opendata.maryland.gov/Budget/State-of-Maryland-Payments-Data-FY2008-to-FY2024/7syw-q4cy/about_data"
+    },
+    {
+      "id": "department-of-disabilities",
+      "name": "DEPARTMENT OF DISABILITIES",
+      "amount": 5000648.46,
+      "sourceAmount": 5000648.46,
+      "program": "DEPARTMENT OF DISABILITIES",
+      "sourceRows": null,
+      "detailUrl": "data/state-md/archive-state-source/state-md-department-of-disabilities.json",
+      "sourceUrl": "https://opendata.maryland.gov/Budget/State-of-Maryland-Payments-Data-FY2008-to-FY2024/7syw-q4cy/about_data"
+    },
+    {
+      "id": "dept-of-agriculture-capital-projects",
+      "name": "DEPT OF AGRICULTURE -  CAPITAL PROJECTS",
+      "amount": 4818284.79,
+      "sourceAmount": 4818284.79,
+      "program": "DEPT OF AGRICULTURE -  CAPITAL PROJECTS",
+      "sourceRows": null,
+      "detailUrl": "data/state-md/archive-state-source/state-md-dept-of-agriculture-capital-projects.json",
+      "sourceUrl": "https://opendata.maryland.gov/Budget/State-of-Maryland-Payments-Data-FY2008-to-FY2024/7syw-q4cy/about_data"
+    },
+    {
+      "id": "maryland-insurance-administration",
+      "name": "MARYLAND INSURANCE ADMINISTRATION",
+      "amount": 4746652.23,
+      "sourceAmount": 4746652.23,
+      "program": "MARYLAND INSURANCE ADMINISTRATION",
+      "sourceRows": null,
+      "detailUrl": "data/state-md/archive-state-source/state-md-maryland-insurance-administration.json",
+      "sourceUrl": "https://opendata.maryland.gov/Budget/State-of-Maryland-Payments-Data-FY2008-to-FY2024/7syw-q4cy/about_data"
+    },
+    {
+      "id": "md-inst-emerg-medical-service-systems",
+      "name": "MD INST EMERG MEDICAL SERVICE SYSTEMS",
+      "amount": 4188997.75,
+      "sourceAmount": 4188997.75,
+      "program": "MD INST EMERG MEDICAL SERVICE SYSTEMS",
+      "sourceRows": null,
+      "detailUrl": "data/state-md/archive-state-source/state-md-md-inst-emerg-medical-service-systems.json",
+      "sourceUrl": "https://opendata.maryland.gov/Budget/State-of-Maryland-Payments-Data-FY2008-to-FY2024/7syw-q4cy/about_data"
+    },
+    {
+      "id": "maryland-school-for-the-deaf",
+      "name": "MARYLAND SCHOOL FOR THE DEAF",
+      "amount": 3791314.06,
+      "sourceAmount": 3791314.06,
+      "program": "MARYLAND SCHOOL FOR THE DEAF",
+      "sourceRows": null,
+      "detailUrl": "data/state-md/archive-state-source/state-md-maryland-school-for-the-deaf.json",
+      "sourceUrl": "https://opendata.maryland.gov/Budget/State-of-Maryland-Payments-Data-FY2008-to-FY2024/7syw-q4cy/about_data"
+    },
+    {
+      "id": "office-of-peoples-counsel",
+      "name": "OFFICE OF PEOPLES COUNSEL",
+      "amount": 3730700.64,
+      "sourceAmount": 3730700.64,
+      "program": "OFFICE OF PEOPLES COUNSEL",
+      "sourceRows": null,
+      "detailUrl": "data/state-md/archive-state-source/state-md-office-of-peoples-counsel.json",
+      "sourceUrl": "https://opendata.maryland.gov/Budget/State-of-Maryland-Payments-Data-FY2008-to-FY2024/7syw-q4cy/about_data"
+    },
+    {
+      "id": "maryland-food-center-authority",
+      "name": "MARYLAND FOOD CENTER AUTHORITY",
+      "amount": 3472631.1,
+      "sourceAmount": 3472631.1,
+      "program": "MARYLAND FOOD CENTER AUTHORITY",
+      "sourceRows": null,
+      "detailUrl": "data/state-md/archive-state-source/state-md-maryland-food-center-authority.json",
+      "sourceUrl": "https://opendata.maryland.gov/Budget/State-of-Maryland-Payments-Data-FY2008-to-FY2024/7syw-q4cy/about_data"
+    },
+    {
+      "id": "dhcd-maryland-historical-trust-capital",
+      "name": "DHCD-MARYLAND HISTORICAL TRUST -CAPITAL",
+      "amount": 2528469,
+      "sourceAmount": 2528469,
+      "program": "DHCD-MARYLAND HISTORICAL TRUST -CAPITAL",
+      "sourceRows": null,
+      "detailUrl": "data/state-md/archive-state-source/state-md-dhcd-maryland-historical-trust-capital.json",
+      "sourceUrl": "https://opendata.maryland.gov/Budget/State-of-Maryland-Payments-Data-FY2008-to-FY2024/7syw-q4cy/about_data"
+    },
+    {
+      "id": "maryland-state-archives",
+      "name": "MARYLAND STATE ARCHIVES",
+      "amount": 2521012.81,
+      "sourceAmount": 2521012.81,
+      "program": "MARYLAND STATE ARCHIVES",
+      "sourceRows": null,
+      "detailUrl": "data/state-md/archive-state-source/state-md-maryland-state-archives.json",
+      "sourceUrl": "https://opendata.maryland.gov/Budget/State-of-Maryland-Payments-Data-FY2008-to-FY2024/7syw-q4cy/about_data"
+    },
+    {
+      "id": "office-of-administrative-hearings",
+      "name": "OFFICE OF ADMINISTRATIVE HEARINGS",
+      "amount": 2350079.35,
+      "sourceAmount": 2350079.35,
+      "program": "OFFICE OF ADMINISTRATIVE HEARINGS",
+      "sourceRows": null,
+      "detailUrl": "data/state-md/archive-state-source/state-md-office-of-administrative-hearings.json",
+      "sourceUrl": "https://opendata.maryland.gov/Budget/State-of-Maryland-Payments-Data-FY2008-to-FY2024/7syw-q4cy/about_data"
+    },
+    {
+      "id": "public-service-commission",
+      "name": "PUBLIC SERVICE COMMISSION",
+      "amount": 2323930.74,
+      "sourceAmount": 2323930.74,
+      "program": "PUBLIC SERVICE COMMISSION",
+      "sourceRows": null,
+      "detailUrl": "data/state-md/archive-state-source/state-md-public-service-commission.json",
+      "sourceUrl": "https://opendata.maryland.gov/Budget/State-of-Maryland-Payments-Data-FY2008-to-FY2024/7syw-q4cy/about_data"
+    },
+    {
+      "id": "alcohol-tobacco-and-cannabis-commission",
+      "name": "ALCOHOL TOBACCO AND CANNABIS COMMISSION",
+      "amount": 1970941.72,
+      "sourceAmount": 1970941.72,
+      "program": "ALCOHOL TOBACCO AND CANNABIS COMMISSION",
+      "sourceRows": null,
+      "detailUrl": "data/state-md/archive-state-source/state-md-alcohol-tobacco-and-cannabis-commission.json",
+      "sourceUrl": "https://opendata.maryland.gov/Budget/State-of-Maryland-Payments-Data-FY2008-to-FY2024/7syw-q4cy/about_data"
+    },
+    {
+      "id": "registers-of-wills",
+      "name": "REGISTERS OF WILLS",
+      "amount": 1683871.17,
+      "sourceAmount": 1683871.17,
+      "program": "REGISTERS OF WILLS",
+      "sourceRows": null,
+      "detailUrl": "data/state-md/archive-state-source/state-md-registers-of-wills.json",
+      "sourceUrl": "https://opendata.maryland.gov/Budget/State-of-Maryland-Payments-Data-FY2008-to-FY2024/7syw-q4cy/about_data"
+    },
+    {
+      "id": "accountability-implementation-board",
+      "name": "ACCOUNTABILITY & IMPLEMENTATION BOARD",
+      "amount": 1641087.69,
+      "sourceAmount": 1641087.69,
+      "program": "ACCOUNTABILITY & IMPLEMENTATION BOARD",
+      "sourceRows": null,
+      "detailUrl": "data/state-md/archive-state-source/state-md-accountability-implementation-board.json",
+      "sourceUrl": "https://opendata.maryland.gov/Budget/State-of-Maryland-Payments-Data-FY2008-to-FY2024/7syw-q4cy/about_data"
+    },
+    {
+      "id": "md-african-american-museum-corporation",
+      "name": "MD. AFRICAN AMERICAN MUSEUM CORPORATION",
+      "amount": 1350000,
+      "sourceAmount": 1350000,
+      "program": "MD. AFRICAN AMERICAN MUSEUM CORPORATION",
+      "sourceRows": null,
+      "detailUrl": "data/state-md/archive-state-source/state-md-md-african-american-museum-corporation.json",
+      "sourceUrl": "https://opendata.maryland.gov/Budget/State-of-Maryland-Payments-Data-FY2008-to-FY2024/7syw-q4cy/about_data"
+    },
+    {
+      "id": "maryland-office-of-planning",
+      "name": "MARYLAND OFFICE OF PLANNING",
+      "amount": 1043949.93,
+      "sourceAmount": 1043949.93,
+      "program": "MARYLAND OFFICE OF PLANNING",
+      "sourceRows": null,
+      "detailUrl": "data/state-md/archive-state-source/state-md-maryland-office-of-planning.json",
+      "sourceUrl": "https://opendata.maryland.gov/Budget/State-of-Maryland-Payments-Data-FY2008-to-FY2024/7syw-q4cy/about_data"
+    },
+    {
+      "id": "md-thoroughbred-racetrack-operating-auth",
+      "name": "MD THOROUGHBRED RACETRACK OPERATING AUTH",
+      "amount": 902394.82,
+      "sourceAmount": 902394.82,
+      "program": "MD THOROUGHBRED RACETRACK OPERATING AUTH",
+      "sourceRows": null,
+      "detailUrl": "data/state-md/archive-state-source/state-md-md-thoroughbred-racetrack-operating-auth.json",
+      "sourceUrl": "https://opendata.maryland.gov/Budget/State-of-Maryland-Payments-Data-FY2008-to-FY2024/7syw-q4cy/about_data"
+    },
+    {
+      "id": "executive-dept-office-of-the-governor",
+      "name": "EXECUTIVE DEPT OFFICE OF THE GOVERNOR",
+      "amount": 712808.05,
+      "sourceAmount": 712808.05,
+      "program": "EXECUTIVE DEPT OFFICE OF THE GOVERNOR",
+      "sourceRows": null,
+      "detailUrl": "data/state-md/archive-state-source/state-md-executive-dept-office-of-the-governor.json",
+      "sourceUrl": "https://opendata.maryland.gov/Budget/State-of-Maryland-Payments-Data-FY2008-to-FY2024/7syw-q4cy/about_data"
+    },
+    {
+      "id": "secretary-of-the-state",
+      "name": "SECRETARY OF THE STATE",
+      "amount": 544584.65,
+      "sourceAmount": 544584.65,
+      "program": "SECRETARY OF THE STATE",
+      "sourceRows": null,
+      "detailUrl": "data/state-md/archive-state-source/state-md-secretary-of-the-state.json",
+      "sourceUrl": "https://opendata.maryland.gov/Budget/State-of-Maryland-Payments-Data-FY2008-to-FY2024/7syw-q4cy/about_data"
+    },
+    {
+      "id": "west-north-avenue-development-authority",
+      "name": "WEST NORTH AVENUE DEVELOPMENT AUTHORITY",
+      "amount": 462553.71,
+      "sourceAmount": 462553.71,
+      "program": "WEST NORTH AVENUE DEVELOPMENT AUTHORITY",
+      "sourceRows": null,
+      "detailUrl": "data/state-md/archive-state-source/state-md-west-north-avenue-development-authority.json",
+      "sourceUrl": "https://opendata.maryland.gov/Budget/State-of-Maryland-Payments-Data-FY2008-to-FY2024/7syw-q4cy/about_data"
+    },
+    {
+      "id": "boards-commissions-offices",
+      "name": "BOARDS COMMISSIONS & OFFICES",
+      "amount": 430548.65,
+      "sourceAmount": 430548.65,
+      "program": "BOARDS COMMISSIONS & OFFICES",
+      "sourceRows": null,
+      "detailUrl": "data/state-md/archive-state-source/state-md-boards-commissions-offices.json",
+      "sourceUrl": "https://opendata.maryland.gov/Budget/State-of-Maryland-Payments-Data-FY2008-to-FY2024/7syw-q4cy/about_data"
+    },
+    {
+      "id": "historic-st-mary-s-city-commission",
+      "name": "HISTORIC ST. MARY'S CITY COMMISSION",
+      "amount": 287732,
+      "sourceAmount": 287732,
+      "program": "HISTORIC ST. MARY'S CITY COMMISSION",
+      "sourceRows": null,
+      "detailUrl": "data/state-md/archive-state-source/state-md-historic-st-mary-s-city-commission.json",
+      "sourceUrl": "https://opendata.maryland.gov/Budget/State-of-Maryland-Payments-Data-FY2008-to-FY2024/7syw-q4cy/about_data"
+    },
+    {
+      "id": "office-of-the-state-prosecutor",
+      "name": "OFFICE OF THE STATE PROSECUTOR",
+      "amount": 245481.67,
+      "sourceAmount": 245481.67,
+      "program": "OFFICE OF THE STATE PROSECUTOR",
+      "sourceRows": null,
+      "detailUrl": "data/state-md/archive-state-source/state-md-office-of-the-state-prosecutor.json",
+      "sourceUrl": "https://opendata.maryland.gov/Budget/State-of-Maryland-Payments-Data-FY2008-to-FY2024/7syw-q4cy/about_data"
+    },
+    {
+      "id": "maryland-supplemental-retirement-plans",
+      "name": "MARYLAND SUPPLEMENTAL RETIREMENT PLANS",
+      "amount": 228244.93,
+      "sourceAmount": 228244.93,
+      "program": "MARYLAND SUPPLEMENTAL RETIREMENT PLANS",
+      "sourceRows": null,
+      "detailUrl": "data/state-md/archive-state-source/state-md-maryland-supplemental-retirement-plans.json",
+      "sourceUrl": "https://opendata.maryland.gov/Budget/State-of-Maryland-Payments-Data-FY2008-to-FY2024/7syw-q4cy/about_data"
+    },
+    {
+      "id": "md-commission-on-afri-ameri-hist-cult",
+      "name": "MD COMMISSION ON AFRI AMERI HIST & CULT",
+      "amount": 218439.41,
+      "sourceAmount": 218439.41,
+      "program": "MD COMMISSION ON AFRI AMERI HIST & CULT",
+      "sourceRows": null,
+      "detailUrl": "data/state-md/archive-state-source/state-md-md-commission-on-afri-ameri-hist-cult.json",
+      "sourceUrl": "https://opendata.maryland.gov/Budget/State-of-Maryland-Payments-Data-FY2008-to-FY2024/7syw-q4cy/about_data"
+    },
+    {
+      "id": "canal-place-preservation-authority",
+      "name": "CANAL PLACE PRESERVATION AUTHORITY",
+      "amount": 213884.89,
+      "sourceAmount": 213884.89,
+      "program": "CANAL PLACE PRESERVATION AUTHORITY",
+      "sourceRows": null,
+      "detailUrl": "data/state-md/archive-state-source/state-md-canal-place-preservation-authority.json",
+      "sourceUrl": "https://opendata.maryland.gov/Budget/State-of-Maryland-Payments-Data-FY2008-to-FY2024/7syw-q4cy/about_data"
+    },
+    {
+      "id": "subsequent-injury-fund",
+      "name": "SUBSEQUENT INJURY FUND",
+      "amount": 125168.26,
+      "sourceAmount": 125168.26,
+      "program": "SUBSEQUENT INJURY FUND",
+      "sourceRows": null,
+      "detailUrl": "data/state-md/archive-state-source/state-md-subsequent-injury-fund.json",
+      "sourceUrl": "https://opendata.maryland.gov/Budget/State-of-Maryland-Payments-Data-FY2008-to-FY2024/7syw-q4cy/about_data"
+    },
+    {
+      "id": "department-of-public-safety-capital",
+      "name": "DEPARTMENT OF PUBLIC SAFETY -   CAPITAL",
+      "amount": 121100.23,
+      "sourceAmount": 121100.23,
+      "program": "DEPARTMENT OF PUBLIC SAFETY -   CAPITAL",
+      "sourceRows": null,
+      "detailUrl": "data/state-md/archive-state-source/state-md-department-of-public-safety-capital.json",
+      "sourceUrl": "https://opendata.maryland.gov/Budget/State-of-Maryland-Payments-Data-FY2008-to-FY2024/7syw-q4cy/about_data"
+    },
+    {
+      "id": "commission-on-civil-rights",
+      "name": "COMMISSION ON CIVIL RIGHTS",
+      "amount": 109301.18,
+      "sourceAmount": 109301.18,
+      "program": "COMMISSION ON CIVIL RIGHTS",
+      "sourceRows": null,
+      "detailUrl": "data/state-md/archive-state-source/state-md-commission-on-civil-rights.json",
+      "sourceUrl": "https://opendata.maryland.gov/Budget/State-of-Maryland-Payments-Data-FY2008-to-FY2024/7syw-q4cy/about_data"
+    },
+    {
+      "id": "md-department-of-aging-capital-projects",
+      "name": "MD DEPARTMENT OF AGING-CAPITAL PROJECTS",
+      "amount": 100000,
+      "sourceAmount": 100000,
+      "program": "MD DEPARTMENT OF AGING-CAPITAL PROJECTS",
+      "sourceRows": null,
+      "detailUrl": "data/state-md/archive-state-source/state-md-md-department-of-aging-capital-projects.json",
+      "sourceUrl": "https://opendata.maryland.gov/Budget/State-of-Maryland-Payments-Data-FY2008-to-FY2024/7syw-q4cy/about_data"
+    },
+    {
+      "id": "property-tax-assessment-appeals-boards",
+      "name": "PROPERTY TAX ASSESSMENT APPEALS BOARDS",
+      "amount": 81170.31,
+      "sourceAmount": 81170.31,
+      "program": "PROPERTY TAX ASSESSMENT APPEALS BOARDS",
+      "sourceRows": null,
+      "detailUrl": "data/state-md/archive-state-source/state-md-property-tax-assessment-appeals-boards.json",
+      "sourceUrl": "https://opendata.maryland.gov/Budget/State-of-Maryland-Payments-Data-FY2008-to-FY2024/7syw-q4cy/about_data"
+    },
+    {
+      "id": "prescription-drug-affordability-board",
+      "name": "PRESCRIPTION DRUG AFFORDABILITY BOARD",
+      "amount": 41620,
+      "sourceAmount": 41620,
+      "program": "PRESCRIPTION DRUG AFFORDABILITY BOARD",
+      "sourceRows": null,
+      "detailUrl": "data/state-md/archive-state-source/state-md-prescription-drug-affordability-board.json",
+      "sourceUrl": "https://opendata.maryland.gov/Budget/State-of-Maryland-Payments-Data-FY2008-to-FY2024/7syw-q4cy/about_data"
+    },
+    {
+      "id": "office-of-deaf-and-hard-of-hearing",
+      "name": "OFFICE OF DEAF AND HARD OF HEARING",
+      "amount": 38235.95,
+      "sourceAmount": 38235.95,
+      "program": "OFFICE OF DEAF AND HARD OF HEARING",
+      "sourceRows": null,
+      "detailUrl": "data/state-md/archive-state-source/state-md-office-of-deaf-and-hard-of-hearing.json",
+      "sourceUrl": "https://opendata.maryland.gov/Budget/State-of-Maryland-Payments-Data-FY2008-to-FY2024/7syw-q4cy/about_data"
+    },
+    {
+      "id": "college-savings-plans-of-maryland",
+      "name": "COLLEGE SAVINGS PLANS OF MARYLAND",
+      "amount": 36782.04,
+      "sourceAmount": 36782.04,
+      "program": "COLLEGE SAVINGS PLANS OF MARYLAND",
+      "sourceRows": null,
+      "detailUrl": "data/state-md/archive-state-source/state-md-college-savings-plans-of-maryland.json",
+      "sourceUrl": "https://opendata.maryland.gov/Budget/State-of-Maryland-Payments-Data-FY2008-to-FY2024/7syw-q4cy/about_data"
+    },
+    {
+      "id": "interagency-comm-iac-on-school-constr",
+      "name": "INTERAGENCY COMM. (IAC) ON SCHOOL CONSTR",
+      "amount": 10757.32,
+      "sourceAmount": 10757.32,
+      "program": "INTERAGENCY COMM. (IAC) ON SCHOOL CONSTR",
+      "sourceRows": null,
+      "detailUrl": "data/state-md/archive-state-source/state-md-interagency-comm-iac-on-school-constr.json",
+      "sourceUrl": "https://opendata.maryland.gov/Budget/State-of-Maryland-Payments-Data-FY2008-to-FY2024/7syw-q4cy/about_data"
+    },
+    {
+      "id": "maryland-tax-court",
+      "name": "MARYLAND TAX COURT",
+      "amount": 5819.39,
+      "sourceAmount": 5819.39,
+      "program": "MARYLAND TAX COURT",
+      "sourceRows": null,
+      "detailUrl": "data/state-md/archive-state-source/state-md-maryland-tax-court.json",
+      "sourceUrl": "https://opendata.maryland.gov/Budget/State-of-Maryland-Payments-Data-FY2008-to-FY2024/7syw-q4cy/about_data"
+    }
+  ],
+  "itemizedTotal": 40390013646.72,
+  "comparison": {
+    "label": "Census FY2024 state-finance comparator",
+    "url": "https://data.census.gov/table/GOVSSTATEFINTIMESERIES.GS00STATEFIN01?g=040XX00US24&time=2024",
+    "total": 63622353000,
+    "difference": -23232339353.28
+  },
+  "coverageStatus": "official-itemized-source-basis",
+  "archiveNote": "Prior official state layer archived when the complete Census function layer became primary for map reconciliation."
+}

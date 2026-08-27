@@ -1,0 +1,119 @@
+{
+  "scope": "Massachusetts",
+  "code": "ma",
+  "department": "DEPARTMENT OF HIGHER EDUCATION (RGT)",
+  "fiscalYear": 2024,
+  "ledgerAmount": 98781153.42,
+  "sourceTotal": 107541264.86,
+  "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000",
+  "rowSchema": [
+    "subAgency",
+    "program",
+    "amount",
+    "sourceAmount",
+    "sourceRows"
+  ],
+  "rows": [
+    [
+      "DEPARTMENT OF HIGHER EDUCATION (RGT)",
+      "DEPARTMENT OF HIGHER EDUCATION (RGT) · (PP) STATE AID/POL SUB",
+      65234309.67,
+      65234309.67,
+      626
+    ],
+    [
+      "DEPARTMENT OF HIGHER EDUCATION (RGT)",
+      "DEPARTMENT OF HIGHER EDUCATION (RGT) · (DD) PENSION & INSURANCE RELATED EX",
+      25163075.97,
+      25163075.97,
+      123
+    ],
+    [
+      "DEPARTMENT OF HIGHER EDUCATION (RGT)",
+      "DEPARTMENT OF HIGHER EDUCATION (RGT) · (JJ) OPERATIONAL SERVICES",
+      6614934.5,
+      6614934.5,
+      115
+    ],
+    [
+      "DEPARTMENT OF HIGHER EDUCATION (RGT)",
+      "DEPARTMENT OF HIGHER EDUCATION (RGT) · (AA) REGULAR EMPLOYEE COMPENSATION",
+      6421970.48,
+      6421970.48,
+      804
+    ],
+    [
+      "DEPARTMENT OF HIGHER EDUCATION (RGT)",
+      "DEPARTMENT OF HIGHER EDUCATION (RGT) · (HH) CONSULTANT SVCS (TO DEPTS)",
+      2330464.22,
+      2330464.22,
+      177
+    ],
+    [
+      "DEPARTMENT OF HIGHER EDUCATION (RGT)",
+      "DEPARTMENT OF HIGHER EDUCATION (RGT) · (EE) ADMINISTRATIVE EXPENSES",
+      760524.29,
+      760524.29,
+      195
+    ],
+    [
+      "DEPARTMENT OF HIGHER EDUCATION (RGT)",
+      "DEPARTMENT OF HIGHER EDUCATION (RGT) · (UU) IT NON-PAYROLL EXPENSES",
+      554969.87,
+      554969.87,
+      75
+    ],
+    [
+      "DEPARTMENT OF HIGHER EDUCATION (RGT)",
+      "DEPARTMENT OF HIGHER EDUCATION (RGT) · (CC) SPECIAL EMPLOYEES",
+      331669.21,
+      331669.21,
+      109
+    ],
+    [
+      "DEPARTMENT OF HIGHER EDUCATION (RGT)",
+      "DEPARTMENT OF HIGHER EDUCATION (RGT) · (BB) REGULAR EMPLOYEE RELATED EXPEN",
+      102336.49,
+      102336.49,
+      174
+    ],
+    [
+      "DEPARTMENT OF HIGHER EDUCATION (RGT)",
+      "DEPARTMENT OF HIGHER EDUCATION (RGT) · (MM) PURCHASED CLIENT/PROGRAM SVCS",
+      17500,
+      17500,
+      1
+    ],
+    [
+      "DEPARTMENT OF HIGHER EDUCATION (RGT)",
+      "DEPARTMENT OF HIGHER EDUCATION (RGT) · (LL) EQUIPMENT LEASE-MAINTAIN/REPAR",
+      5037.12,
+      5037.12,
+      12
+    ],
+    [
+      "DEPARTMENT OF HIGHER EDUCATION (RGT)",
+      "DEPARTMENT OF HIGHER EDUCATION (RGT) · (NN) INFRASTRUCTURE:",
+      2566.08,
+      2566.08,
+      1
+    ],
+    [
+      "DEPARTMENT OF HIGHER EDUCATION (RGT)",
+      "DEPARTMENT OF HIGHER EDUCATION (RGT) · (KK) EQUIPMENT PURCHASE",
+      1906.96,
+      1906.96,
+      5
+    ],
+    [
+      "DEPARTMENT OF HIGHER EDUCATION (RGT)",
+      "DEPARTMENT OF HIGHER EDUCATION (RGT) · (99) PAYROLL REJECTS",
+      0,
+      0,
+      92
+    ]
+  ],
+  "hierarchyNote": "The source does not identify a separate sub-agency column; direct-managed rows repeat the parent entity.",
+  "sourceBasis": "official source amount",
+  "note": "Amounts are shown on the official source basis; no comparator normalization was applied."
+}

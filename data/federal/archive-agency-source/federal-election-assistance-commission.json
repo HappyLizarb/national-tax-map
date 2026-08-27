@@ -1,0 +1,178 @@
+{
+  "scope": "United States",
+  "code": "federal",
+  "department": "Election Assistance Commission",
+  "fiscalYear": 2024,
+  "ledgerAmount": 63921800.08,
+  "sourceTotal": 87114605.42,
+  "sourceUrl": "https://api.usaspending.gov/api/v2/agency/525/object_class/?fiscal_year=2024&limit=100&page=1",
+  "sourceUrls": [
+    [
+      "FY2024 gross outlays by object class",
+      "https://api.usaspending.gov/api/v2/agency/525/object_class/?fiscal_year=2024&limit=100&page=1"
+    ],
+    [
+      "FY2024 agency budgetary resources total",
+      "https://api.usaspending.gov/api/v2/agency/525/budgetary_resources/?fiscal_year=2024"
+    ]
+  ],
+  "rowSchema": [
+    "subAgency",
+    "program",
+    "amount",
+    "sourceAmount",
+    "sourceRows"
+  ],
+  "rows": [
+    [
+      "Election Assistance Commission",
+      "Grants, subsidies, and contributions",
+      57604272.65,
+      57604272.65,
+      null
+    ],
+    [
+      "Election Assistance Commission",
+      "Other goods and services from Federal sources",
+      4361560.2,
+      4361560.2,
+      null
+    ],
+    [
+      "Election Assistance Commission",
+      "Full-time permanent",
+      4761038.69,
+      4761038.69,
+      null
+    ],
+    [
+      "Election Assistance Commission",
+      "Other than full-time permanent",
+      4613241.7,
+      4613241.7,
+      null
+    ],
+    [
+      "Election Assistance Commission",
+      "Other services from non-Federal sources",
+      5051250.48,
+      5051250.48,
+      null
+    ],
+    [
+      "Election Assistance Commission",
+      "Civilian personnel benefits",
+      3499065.2,
+      3499065.2,
+      null
+    ],
+    [
+      "Election Assistance Commission",
+      "Advisory and assistance services",
+      3617009.45,
+      3617009.45,
+      null
+    ],
+    [
+      "Election Assistance Commission",
+      "Travel and transportation of persons",
+      857940.15,
+      857940.15,
+      null
+    ],
+    [
+      "Election Assistance Commission",
+      "Equipment",
+      606428.05,
+      606428.05,
+      null
+    ],
+    [
+      "Election Assistance Commission",
+      "Rental payments to GSA",
+      717183.6,
+      717183.6,
+      null
+    ],
+    [
+      "Election Assistance Commission",
+      "Other personnel compensation",
+      299109.05,
+      299109.05,
+      null
+    ],
+    [
+      "Election Assistance Commission",
+      "Communications, utilities, and miscellaneous charges",
+      253496.14,
+      253496.14,
+      null
+    ],
+    [
+      "Election Assistance Commission",
+      "Rental payments to others",
+      133554.23,
+      133554.23,
+      null
+    ],
+    [
+      "Election Assistance Commission",
+      "Supplies and materials",
+      271233.3,
+      271233.3,
+      null
+    ],
+    [
+      "Election Assistance Commission",
+      "Printing and reproduction",
+      50415.08,
+      50415.08,
+      null
+    ],
+    [
+      "Election Assistance Commission",
+      "Land and structures",
+      9830.08,
+      9830.08,
+      null
+    ],
+    [
+      "Election Assistance Commission",
+      "Operation and maintenance of equipment",
+      364863.76,
+      364863.76,
+      null
+    ],
+    [
+      "Election Assistance Commission",
+      "Special personal services payments",
+      23532,
+      23532,
+      null
+    ],
+    [
+      "Election Assistance Commission",
+      "Transportation of things",
+      18167.91,
+      18167.91,
+      null
+    ],
+    [
+      "Election Assistance Commission",
+      "Operation and maintenance of facilities",
+      1413.7,
+      1413.7,
+      null
+    ]
+  ],
+  "sourceBasis": "official source amount",
+  "sourceCheck": {
+    "objectClassRows": 20,
+    "objectClassTotal": 87114605.42,
+    "agencyTotal": 87114605.42,
+    "difference": 0
+  },
+  "normalizationAdjustment": 0,
+  "hierarchyNote": "The source endpoint returns agency-level object-class aggregates; no individual employees or payees are included.",
+  "note": "Amounts are shown on the official source basis; no comparator normalization was applied."
+}

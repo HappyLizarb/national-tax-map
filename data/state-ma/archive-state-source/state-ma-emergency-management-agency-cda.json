@@ -1,0 +1,133 @@
+{
+  "scope": "Massachusetts",
+  "code": "ma",
+  "department": "EMERGENCY MANAGEMENT AGENCY (CDA)",
+  "fiscalYear": 2024,
+  "ledgerAmount": 743354647.65,
+  "sourceTotal": 809276833.51,
+  "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000",
+  "rowSchema": [
+    "subAgency",
+    "program",
+    "amount",
+    "sourceAmount",
+    "sourceRows"
+  ],
+  "rows": [
+    [
+      "EMERGENCY MANAGEMENT AGENCY (CDA)",
+      "EMERGENCY MANAGEMENT AGENCY (CDA) · (PP) STATE AID/POL SUB",
+      769417322.62,
+      769417322.62,
+      1075
+    ],
+    [
+      "EMERGENCY MANAGEMENT AGENCY (CDA)",
+      "EMERGENCY MANAGEMENT AGENCY (CDA) · (HH) CONSULTANT SVCS (TO DEPTS)",
+      17934166.59,
+      17934166.59,
+      144
+    ],
+    [
+      "EMERGENCY MANAGEMENT AGENCY (CDA)",
+      "EMERGENCY MANAGEMENT AGENCY (CDA) · (JJ) OPERATIONAL SERVICES",
+      9292299.89,
+      9292299.89,
+      137
+    ],
+    [
+      "EMERGENCY MANAGEMENT AGENCY (CDA)",
+      "EMERGENCY MANAGEMENT AGENCY (CDA) · (AA) REGULAR EMPLOYEE COMPENSATION",
+      8878724.86,
+      8878724.86,
+      5135
+    ],
+    [
+      "EMERGENCY MANAGEMENT AGENCY (CDA)",
+      "EMERGENCY MANAGEMENT AGENCY (CDA) · (GG) ENERGY COSTS AND SPACE RENTAL",
+      1174993.45,
+      1174993.45,
+      141
+    ],
+    [
+      "EMERGENCY MANAGEMENT AGENCY (CDA)",
+      "EMERGENCY MANAGEMENT AGENCY (CDA) · (NN) INFRASTRUCTURE:",
+      768110.71,
+      768110.71,
+      321
+    ],
+    [
+      "EMERGENCY MANAGEMENT AGENCY (CDA)",
+      "EMERGENCY MANAGEMENT AGENCY (CDA) · (FF) FACILITY OPERATIONAL EXPENSES",
+      359515.53,
+      359515.53,
+      68
+    ],
+    [
+      "EMERGENCY MANAGEMENT AGENCY (CDA)",
+      "EMERGENCY MANAGEMENT AGENCY (CDA) · (CC) SPECIAL EMPLOYEES",
+      334878.18,
+      334878.18,
+      327
+    ],
+    [
+      "EMERGENCY MANAGEMENT AGENCY (CDA)",
+      "EMERGENCY MANAGEMENT AGENCY (CDA) · (KK) EQUIPMENT PURCHASE",
+      307166.15,
+      307166.15,
+      37
+    ],
+    [
+      "EMERGENCY MANAGEMENT AGENCY (CDA)",
+      "EMERGENCY MANAGEMENT AGENCY (CDA) · (MM) PURCHASED CLIENT/PROGRAM SVCS",
+      303031.45,
+      303031.45,
+      44
+    ],
+    [
+      "EMERGENCY MANAGEMENT AGENCY (CDA)",
+      "EMERGENCY MANAGEMENT AGENCY (CDA) · (UU) IT NON-PAYROLL EXPENSES",
+      206962.51,
+      206962.51,
+      183
+    ],
+    [
+      "EMERGENCY MANAGEMENT AGENCY (CDA)",
+      "EMERGENCY MANAGEMENT AGENCY (CDA) · (EE) ADMINISTRATIVE EXPENSES",
+      162010.09,
+      162010.09,
+      331
+    ],
+    [
+      "EMERGENCY MANAGEMENT AGENCY (CDA)",
+      "EMERGENCY MANAGEMENT AGENCY (CDA) · (LL) EQUIPMENT LEASE-MAINTAIN/REPAR",
+      84800.36,
+      84800.36,
+      111
+    ],
+    [
+      "EMERGENCY MANAGEMENT AGENCY (CDA)",
+      "EMERGENCY MANAGEMENT AGENCY (CDA) · (BB) REGULAR EMPLOYEE RELATED EXPEN",
+      52398.62,
+      52398.62,
+      490
+    ],
+    [
+      "EMERGENCY MANAGEMENT AGENCY (CDA)",
+      "EMERGENCY MANAGEMENT AGENCY (CDA) · (TT) LOANS AND SPECIAL PAYMENTS",
+      452.5,
+      452.5,
+      2
+    ],
+    [
+      "EMERGENCY MANAGEMENT AGENCY (CDA)",
+      "EMERGENCY MANAGEMENT AGENCY (CDA) · (99) PAYROLL REJECTS",
+      0,
+      0,
+      158
+    ]
+  ],
+  "hierarchyNote": "The source does not identify a separate sub-agency column; direct-managed rows repeat the parent entity.",
+  "sourceBasis": "official source amount",
+  "note": "Amounts are shown on the official source basis; no comparator normalization was applied."
+}

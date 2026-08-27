@@ -1,0 +1,170 @@
+{
+  "scope": "Connecticut",
+  "code": "ct",
+  "department": "Comm on WomenChilSenEquityOpty",
+  "fiscalYear": 2024,
+  "ledgerAmount": 36659.27,
+  "sourceTotal": 39062.92,
+  "sourceUrl": "https://data.ct.gov/resource/ajdm-rvz7.json?$select=department%2Cprogram%2Caccount%2Cexpense_category%2Csum(amount)%20as%20amount%2Ccount(*)%20as%20records&$where=fiscal_year=2024%20and%20program=%27Other%20Expenses%27&$group=department%2Cprogram%2Caccount%2Cexpense_category&$limit=50000",
+  "sourceUrls": [
+    [
+      "Connecticut Open Expenditures API",
+      "https://data.ct.gov/resource/ajdm-rvz7.json?$select=department%2Cprogram%2Caccount%2Cexpense_category%2Csum(amount)%20as%20amount%2Ccount(*)%20as%20records&$where=fiscal_year=2024%20and%20program=%27Other%20Expenses%27&$group=department%2Cprogram%2Caccount%2Cexpense_category&$limit=50000"
+    ],
+    [
+      "Open Connecticut",
+      "https://osc.ct.gov/openct/"
+    ]
+  ],
+  "rowSchema": [
+    "subAgency",
+    "program",
+    "amount",
+    "sourceAmount",
+    "sourceRows"
+  ],
+  "sourceBasis": "official source amount",
+  "privacyNote": "No vendor, employee name, vendor ID, or payment identifier is retained; account/category aggregates and source-row counts only.",
+  "rows": [
+    [
+      "Comm on WomenChilSenEquityOpty",
+      "Comm on WomenChilSenEquityOpty · Other Expenses · 50790 · Out-Of-State Travel",
+      6399.99,
+      6399.99,
+      13
+    ],
+    [
+      "Comm on WomenChilSenEquityOpty",
+      "Comm on WomenChilSenEquityOpty · Other Expenses · 51570 · Catering Services",
+      6072.95,
+      6072.95,
+      12
+    ],
+    [
+      "Comm on WomenChilSenEquityOpty",
+      "Comm on WomenChilSenEquityOpty · Other Expenses · 54200 · Promotional Supplies",
+      6022.28,
+      6022.28,
+      22
+    ],
+    [
+      "Comm on WomenChilSenEquityOpty",
+      "Comm on WomenChilSenEquityOpty · Other Expenses · 52050 · Visual Media Services",
+      5212.2,
+      5212.2,
+      5
+    ],
+    [
+      "Comm on WomenChilSenEquityOpty",
+      "Comm on WomenChilSenEquityOpty · Other Expenses · 52080 · sponsorship",
+      3500,
+      3500,
+      6
+    ],
+    [
+      "Comm on WomenChilSenEquityOpty",
+      "Comm on WomenChilSenEquityOpty · Other Expenses · 51675 · Subscriptions",
+      2890.99,
+      2890.99,
+      3
+    ],
+    [
+      "Comm on WomenChilSenEquityOpty",
+      "Comm on WomenChilSenEquityOpty · Other Expenses · 52511 · ST-Office Equip Lease/Rental",
+      1834.5,
+      1834.5,
+      12
+    ],
+    [
+      "Comm on WomenChilSenEquityOpty",
+      "Comm on WomenChilSenEquityOpty · Other Expenses · 52531 · Off Equip Mnt/Rep-Contractual",
+      1565.55,
+      1565.55,
+      4
+    ],
+    [
+      "Comm on WomenChilSenEquityOpty",
+      "Comm on WomenChilSenEquityOpty · Other Expenses · 54060 · General Office Supplies",
+      1451.39,
+      1451.39,
+      7
+    ],
+    [
+      "Comm on WomenChilSenEquityOpty",
+      "Comm on WomenChilSenEquityOpty · Other Expenses · 54050 · Food And Beverages",
+      1098,
+      1098,
+      1
+    ],
+    [
+      "Comm on WomenChilSenEquityOpty",
+      "Comm on WomenChilSenEquityOpty · Other Expenses · 51662 · Athletes And Entertainers",
+      1000,
+      1000,
+      2
+    ],
+    [
+      "Comm on WomenChilSenEquityOpty",
+      "Comm on WomenChilSenEquityOpty · Other Expenses · 51590 · Conf/Seminars/Workshop-Hosting",
+      500,
+      500,
+      1
+    ],
+    [
+      "Comm on WomenChilSenEquityOpty",
+      "Comm on WomenChilSenEquityOpty · Other Expenses · 51620 · Fees And Permits",
+      499,
+      499,
+      1
+    ],
+    [
+      "Comm on WomenChilSenEquityOpty",
+      "Comm on WomenChilSenEquityOpty · Other Expenses · 52000 · Translation & Interpretation",
+      382.91,
+      382.91,
+      3
+    ],
+    [
+      "Comm on WomenChilSenEquityOpty",
+      "Comm on WomenChilSenEquityOpty · Other Expenses · 54190 · Publications And Music",
+      315,
+      315,
+      1
+    ],
+    [
+      "Comm on WomenChilSenEquityOpty",
+      "Comm on WomenChilSenEquityOpty · Other Expenses · 51780 · Membership Dues",
+      250,
+      250,
+      1
+    ],
+    [
+      "Comm on WomenChilSenEquityOpty",
+      "Comm on WomenChilSenEquityOpty · Other Expenses · 51874 · Printing & Binding",
+      27.71,
+      27.71,
+      1
+    ],
+    [
+      "Comm on WomenChilSenEquityOpty",
+      "Comm on WomenChilSenEquityOpty · Other Expenses · 54051 · Potable Drinking Water",
+      25.87,
+      25.87,
+      1
+    ],
+    [
+      "Comm on WomenChilSenEquityOpty",
+      "Comm on WomenChilSenEquityOpty · Other Expenses · 51764 · Regular Postage",
+      14.58,
+      14.58,
+      2
+    ]
+  ],
+  "sourceCheck": {
+    "groupRows": 19,
+    "sourceRows": 98,
+    "sourceTotal": 39062.92,
+    "difference": 0
+  },
+  "note": "Amounts are shown on the official source basis; no comparator normalization was applied."
+}

@@ -1,0 +1,119 @@
+{
+  "scope": "Massachusetts",
+  "code": "ma",
+  "department": "ATTORNEY GENERAL OFFICE (AGO)",
+  "fiscalYear": 2024,
+  "ledgerAmount": 58658114.72,
+  "sourceTotal": 63860034.36,
+  "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000",
+  "rowSchema": [
+    "subAgency",
+    "program",
+    "amount",
+    "sourceAmount",
+    "sourceRows"
+  ],
+  "rows": [
+    [
+      "ATTORNEY GENERAL OFFICE (AGO)",
+      "ATTORNEY GENERAL OFFICE (AGO) · (AA) REGULAR EMPLOYEE COMPENSATION",
+      50981104.91,
+      50981104.91,
+      4172
+    ],
+    [
+      "ATTORNEY GENERAL OFFICE (AGO)",
+      "ATTORNEY GENERAL OFFICE (AGO) · (PP) STATE AID/POL SUB",
+      4264372.36,
+      4264372.36,
+      83
+    ],
+    [
+      "ATTORNEY GENERAL OFFICE (AGO)",
+      "ATTORNEY GENERAL OFFICE (AGO) · (UU) IT NON-PAYROLL EXPENSES",
+      2537939.81,
+      2537939.81,
+      1680
+    ],
+    [
+      "ATTORNEY GENERAL OFFICE (AGO)",
+      "ATTORNEY GENERAL OFFICE (AGO) · (EE) ADMINISTRATIVE EXPENSES",
+      2174857.18,
+      2174857.18,
+      1842
+    ],
+    [
+      "ATTORNEY GENERAL OFFICE (AGO)",
+      "ATTORNEY GENERAL OFFICE (AGO) · (HH) CONSULTANT SVCS (TO DEPTS)",
+      1120596.1,
+      1120596.1,
+      162
+    ],
+    [
+      "ATTORNEY GENERAL OFFICE (AGO)",
+      "ATTORNEY GENERAL OFFICE (AGO) · (CC) SPECIAL EMPLOYEES",
+      812360.22,
+      812360.22,
+      536
+    ],
+    [
+      "ATTORNEY GENERAL OFFICE (AGO)",
+      "ATTORNEY GENERAL OFFICE (AGO) · (GG) ENERGY COSTS AND SPACE RENTAL",
+      542188.98,
+      542188.98,
+      308
+    ],
+    [
+      "ATTORNEY GENERAL OFFICE (AGO)",
+      "ATTORNEY GENERAL OFFICE (AGO) · (KK) EQUIPMENT PURCHASE",
+      465148.66,
+      465148.66,
+      84
+    ],
+    [
+      "ATTORNEY GENERAL OFFICE (AGO)",
+      "ATTORNEY GENERAL OFFICE (AGO) · (LL) EQUIPMENT LEASE-MAINTAIN/REPAR",
+      319081.35,
+      319081.35,
+      373
+    ],
+    [
+      "ATTORNEY GENERAL OFFICE (AGO)",
+      "ATTORNEY GENERAL OFFICE (AGO) · (JJ) OPERATIONAL SERVICES",
+      293105.04,
+      293105.04,
+      285
+    ],
+    [
+      "ATTORNEY GENERAL OFFICE (AGO)",
+      "ATTORNEY GENERAL OFFICE (AGO) · (BB) REGULAR EMPLOYEE RELATED EXPEN",
+      259776.81,
+      259776.81,
+      1505
+    ],
+    [
+      "ATTORNEY GENERAL OFFICE (AGO)",
+      "ATTORNEY GENERAL OFFICE (AGO) · (TT) LOANS AND SPECIAL PAYMENTS",
+      72063.63,
+      72063.63,
+      2
+    ],
+    [
+      "ATTORNEY GENERAL OFFICE (AGO)",
+      "ATTORNEY GENERAL OFFICE (AGO) · (NN) INFRASTRUCTURE:",
+      17439.31,
+      17439.31,
+      54
+    ],
+    [
+      "ATTORNEY GENERAL OFFICE (AGO)",
+      "ATTORNEY GENERAL OFFICE (AGO) · (99) PAYROLL REJECTS",
+      0,
+      0,
+      10
+    ]
+  ],
+  "hierarchyNote": "The source does not identify a separate sub-agency column; direct-managed rows repeat the parent entity.",
+  "sourceBasis": "official source amount",
+  "note": "Amounts are shown on the official source basis; no comparator normalization was applied."
+}

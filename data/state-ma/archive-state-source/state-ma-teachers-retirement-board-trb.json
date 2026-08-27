@@ -1,0 +1,105 @@
+{
+  "scope": "Massachusetts",
+  "code": "ma",
+  "department": "TEACHERS RETIREMENT BOARD (TRB)",
+  "fiscalYear": 2024,
+  "ledgerAmount": 3446986495.71,
+  "sourceTotal": 3752672193.82,
+  "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000",
+  "rowSchema": [
+    "subAgency",
+    "program",
+    "amount",
+    "sourceAmount",
+    "sourceRows"
+  ],
+  "rows": [
+    [
+      "TEACHERS RETIREMENT BOARD (TRB)",
+      "TEACHERS RETIREMENT BOARD (TRB) · (DD) PENSION & INSURANCE RELATED EX",
+      3739089401.91,
+      3739089401.91,
+      524
+    ],
+    [
+      "TEACHERS RETIREMENT BOARD (TRB)",
+      "TEACHERS RETIREMENT BOARD (TRB) · (AA) REGULAR EMPLOYEE COMPENSATION",
+      8938569.92,
+      8938569.92,
+      64
+    ],
+    [
+      "TEACHERS RETIREMENT BOARD (TRB)",
+      "TEACHERS RETIREMENT BOARD (TRB) · (UU) IT NON-PAYROLL EXPENSES",
+      2662082.96,
+      2662082.96,
+      191
+    ],
+    [
+      "TEACHERS RETIREMENT BOARD (TRB)",
+      "TEACHERS RETIREMENT BOARD (TRB) · (GG) ENERGY COSTS AND SPACE RENTAL",
+      1078040.61,
+      1078040.61,
+      36
+    ],
+    [
+      "TEACHERS RETIREMENT BOARD (TRB)",
+      "TEACHERS RETIREMENT BOARD (TRB) · (EE) ADMINISTRATIVE EXPENSES",
+      443195.59,
+      443195.59,
+      193
+    ],
+    [
+      "TEACHERS RETIREMENT BOARD (TRB)",
+      "TEACHERS RETIREMENT BOARD (TRB) · (CC) SPECIAL EMPLOYEES",
+      305255.55,
+      305255.55,
+      52
+    ],
+    [
+      "TEACHERS RETIREMENT BOARD (TRB)",
+      "TEACHERS RETIREMENT BOARD (TRB) · (HH) CONSULTANT SVCS (TO DEPTS)",
+      69761.06,
+      69761.06,
+      5
+    ],
+    [
+      "TEACHERS RETIREMENT BOARD (TRB)",
+      "TEACHERS RETIREMENT BOARD (TRB) · (BB) REGULAR EMPLOYEE RELATED EXPEN",
+      34474.98,
+      34474.98,
+      31
+    ],
+    [
+      "TEACHERS RETIREMENT BOARD (TRB)",
+      "TEACHERS RETIREMENT BOARD (TRB) · (JJ) OPERATIONAL SERVICES",
+      18367.87,
+      18367.87,
+      85
+    ],
+    [
+      "TEACHERS RETIREMENT BOARD (TRB)",
+      "TEACHERS RETIREMENT BOARD (TRB) · (LL) EQUIPMENT LEASE-MAINTAIN/REPAR",
+      18022.52,
+      18022.52,
+      38
+    ],
+    [
+      "TEACHERS RETIREMENT BOARD (TRB)",
+      "TEACHERS RETIREMENT BOARD (TRB) · (KK) EQUIPMENT PURCHASE",
+      14928.73,
+      14928.73,
+      7
+    ],
+    [
+      "TEACHERS RETIREMENT BOARD (TRB)",
+      "TEACHERS RETIREMENT BOARD (TRB) · (FF) FACILITY OPERATIONAL EXPENSES",
+      92.12,
+      92.12,
+      1
+    ]
+  ],
+  "hierarchyNote": "The source does not identify a separate sub-agency column; direct-managed rows repeat the parent entity.",
+  "sourceBasis": "official source amount",
+  "note": "Amounts are shown on the official source basis; no comparator normalization was applied."
+}

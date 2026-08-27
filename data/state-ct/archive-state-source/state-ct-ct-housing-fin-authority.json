@@ -1,0 +1,56 @@
+{
+  "scope": "Connecticut",
+  "code": "ct",
+  "department": "CT Housing & Fin. Authority",
+  "fiscalYear": 2024,
+  "ledgerAmount": 139634656.98,
+  "sourceTotal": 148790106.97,
+  "sourceUrl": "https://data.ct.gov/resource/ajdm-rvz7.json?$select=department,program,sum(amount)%20as%20amount,count(*)%20as%20records&$where=fiscal_year=2024&$group=department,program",
+  "rowSchema": [
+    "subAgency",
+    "program",
+    "amount",
+    "sourceAmount",
+    "sourceRows"
+  ],
+  "rows": [
+    [
+      "CT Housing & Fin. Authority",
+      "CT Housing & Fin. Authority · Non-Budgeted Operating Approp",
+      71311242,
+      71311242,
+      7
+    ],
+    [
+      "CT Housing & Fin. Authority",
+      "CT Housing & Fin. Authority · Time -to-Own",
+      60000000,
+      60000000,
+      2
+    ],
+    [
+      "CT Housing & Fin. Authority",
+      "CT Housing & Fin. Authority · Hsng Asst Bnd Fd Tax Exmpt Gts",
+      13338574.97,
+      13338574.97,
+      95
+    ],
+    [
+      "CT Housing & Fin. Authority",
+      "CT Housing & Fin. Authority · Hsng Asstnc Bond Fd Txbl Grnts",
+      3881655,
+      3881655,
+      23
+    ],
+    [
+      "CT Housing & Fin. Authority",
+      "CT Housing & Fin. Authority · Hsng Asstnc Bond Fd Txbl Loans",
+      258635,
+      258635,
+      1
+    ]
+  ],
+  "hierarchyNote": "The source does not identify a separate sub-agency column; direct-managed rows repeat the parent entity.",
+  "sourceBasis": "official source amount",
+  "note": "Amounts are shown on the official source basis; no comparator normalization was applied."
+}

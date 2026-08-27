@@ -1,0 +1,91 @@
+{
+  "scope": "Massachusetts",
+  "code": "ma",
+  "department": "SUFFOLK DISTRICT ATTORNEY (SUF)",
+  "fiscalYear": 2024,
+  "ledgerAmount": 25967254.38,
+  "sourceTotal": 28270082.75,
+  "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000",
+  "rowSchema": [
+    "subAgency",
+    "program",
+    "amount",
+    "sourceAmount",
+    "sourceRows"
+  ],
+  "rows": [
+    [
+      "SUFFOLK DISTRICT ATTORNEY (SUF)",
+      "SUFFOLK DISTRICT ATTORNEY (SUF) · (AA) REGULAR EMPLOYEE COMPENSATION",
+      22104954.52,
+      22104954.52,
+      311
+    ],
+    [
+      "SUFFOLK DISTRICT ATTORNEY (SUF)",
+      "SUFFOLK DISTRICT ATTORNEY (SUF) · (GG) ENERGY COSTS AND SPACE RENTAL",
+      2980562.27,
+      2980562.27,
+      134
+    ],
+    [
+      "SUFFOLK DISTRICT ATTORNEY (SUF)",
+      "SUFFOLK DISTRICT ATTORNEY (SUF) · (UU) IT NON-PAYROLL EXPENSES",
+      1216601.43,
+      1216601.43,
+      135
+    ],
+    [
+      "SUFFOLK DISTRICT ATTORNEY (SUF)",
+      "SUFFOLK DISTRICT ATTORNEY (SUF) · (PP) STATE AID/POL SUB",
+      777421.66,
+      777421.66,
+      15
+    ],
+    [
+      "SUFFOLK DISTRICT ATTORNEY (SUF)",
+      "SUFFOLK DISTRICT ATTORNEY (SUF) · (EE) ADMINISTRATIVE EXPENSES",
+      620245.75,
+      620245.75,
+      358
+    ],
+    [
+      "SUFFOLK DISTRICT ATTORNEY (SUF)",
+      "SUFFOLK DISTRICT ATTORNEY (SUF) · (HH) CONSULTANT SVCS (TO DEPTS)",
+      309803.01,
+      309803.01,
+      53
+    ],
+    [
+      "SUFFOLK DISTRICT ATTORNEY (SUF)",
+      "SUFFOLK DISTRICT ATTORNEY (SUF) · (JJ) OPERATIONAL SERVICES",
+      137436.2,
+      137436.2,
+      133
+    ],
+    [
+      "SUFFOLK DISTRICT ATTORNEY (SUF)",
+      "SUFFOLK DISTRICT ATTORNEY (SUF) · (LL) EQUIPMENT LEASE-MAINTAIN/REPAR",
+      57161.41,
+      57161.41,
+      123
+    ],
+    [
+      "SUFFOLK DISTRICT ATTORNEY (SUF)",
+      "SUFFOLK DISTRICT ATTORNEY (SUF) · (BB) REGULAR EMPLOYEE RELATED EXPEN",
+      41345.3,
+      41345.3,
+      59
+    ],
+    [
+      "SUFFOLK DISTRICT ATTORNEY (SUF)",
+      "SUFFOLK DISTRICT ATTORNEY (SUF) · (KK) EQUIPMENT PURCHASE",
+      24551.2,
+      24551.2,
+      3
+    ]
+  ],
+  "hierarchyNote": "The source does not identify a separate sub-agency column; direct-managed rows repeat the parent entity.",
+  "sourceBasis": "official source amount",
+  "note": "Amounts are shown on the official source basis; no comparator normalization was applied."
+}

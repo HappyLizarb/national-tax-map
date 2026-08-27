@@ -1,0 +1,128 @@
+{
+  "scope": "Connecticut",
+  "code": "ct",
+  "department": "Lieutenant Governor's Office",
+  "fiscalYear": 2024,
+  "ledgerAmount": 26715.85,
+  "sourceTotal": 28467.53,
+  "sourceUrl": "https://data.ct.gov/resource/ajdm-rvz7.json?$select=department%2Cprogram%2Caccount%2Cexpense_category%2Csum(amount)%20as%20amount%2Ccount(*)%20as%20records&$where=fiscal_year=2024%20and%20program=%27Other%20Expenses%27&$group=department%2Cprogram%2Caccount%2Cexpense_category&$limit=50000",
+  "sourceUrls": [
+    [
+      "Connecticut Open Expenditures API",
+      "https://data.ct.gov/resource/ajdm-rvz7.json?$select=department%2Cprogram%2Caccount%2Cexpense_category%2Csum(amount)%20as%20amount%2Ccount(*)%20as%20records&$where=fiscal_year=2024%20and%20program=%27Other%20Expenses%27&$group=department%2Cprogram%2Caccount%2Cexpense_category&$limit=50000"
+    ],
+    [
+      "Open Connecticut",
+      "https://osc.ct.gov/openct/"
+    ]
+  ],
+  "rowSchema": [
+    "subAgency",
+    "program",
+    "amount",
+    "sourceAmount",
+    "sourceRows"
+  ],
+  "sourceBasis": "official source amount",
+  "privacyNote": "No vendor, employee name, vendor ID, or payment identifier is retained; account/category aggregates and source-row counts only.",
+  "rows": [
+    [
+      "Lieutenant Governor's Office",
+      "Lieutenant Governor's Office · Other Expenses · 53011 · ST-Motor Vehicle Lease/Rental",
+      11055,
+      11055,
+      12
+    ],
+    [
+      "Lieutenant Governor's Office",
+      "Lieutenant Governor's Office · Other Expenses · 53020 · Motor Vehicle Fuel - Gasoline",
+      5477.21,
+      5477.21,
+      9
+    ],
+    [
+      "Lieutenant Governor's Office",
+      "Lieutenant Governor's Office · Other Expenses · 51610 · Credit Card Processing Srvcs",
+      2690.48,
+      2690.48,
+      6
+    ],
+    [
+      "Lieutenant Governor's Office",
+      "Lieutenant Governor's Office · Other Expenses · 54149 · Long-term  Non-Capital SBITA",
+      2120.44,
+      2120.44,
+      11
+    ],
+    [
+      "Lieutenant Governor's Office",
+      "Lieutenant Governor's Office · Other Expenses · 52511 · ST-Office Equip Lease/Rental",
+      1929.2,
+      1929.2,
+      13
+    ],
+    [
+      "Lieutenant Governor's Office",
+      "Lieutenant Governor's Office · Other Expenses · 54154 · IT Hardware Non-Controllable",
+      1689.38,
+      1689.38,
+      1
+    ],
+    [
+      "Lieutenant Governor's Office",
+      "Lieutenant Governor's Office · Other Expenses · 54060 · General Office Supplies",
+      1022.08,
+      1022.08,
+      11
+    ],
+    [
+      "Lieutenant Governor's Office",
+      "Lieutenant Governor's Office · Other Expenses · 51780 · Membership Dues",
+      1000,
+      1000,
+      1
+    ],
+    [
+      "Lieutenant Governor's Office",
+      "Lieutenant Governor's Office · Other Expenses · 51764 · Regular Postage",
+      594.81,
+      594.81,
+      12
+    ],
+    [
+      "Lieutenant Governor's Office",
+      "Lieutenant Governor's Office · Other Expenses · 53012 · Motor Vehicle Repairs",
+      354.32,
+      354.32,
+      1
+    ],
+    [
+      "Lieutenant Governor's Office",
+      "Lieutenant Governor's Office · Other Expenses · 54148 · Short-term  Non-Capital SBITA",
+      311.98,
+      311.98,
+      2
+    ],
+    [
+      "Lieutenant Governor's Office",
+      "Lieutenant Governor's Office · Other Expenses · 51675 · Subscriptions",
+      190.63,
+      190.63,
+      5
+    ],
+    [
+      "Lieutenant Governor's Office",
+      "Lieutenant Governor's Office · Other Expenses · 51874 · Printing & Binding",
+      32,
+      32,
+      1
+    ]
+  ],
+  "sourceCheck": {
+    "groupRows": 13,
+    "sourceRows": 85,
+    "sourceTotal": 28467.53,
+    "difference": 0
+  },
+  "note": "Amounts are shown on the official source basis; no comparator normalization was applied."
+}

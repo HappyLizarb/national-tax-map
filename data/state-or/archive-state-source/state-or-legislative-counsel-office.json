@@ -1,0 +1,427 @@
+{
+  "scope": "Oregon",
+  "fiscalYear": 2024,
+  "department": "LEGISLATIVE COUNSEL OFFICE",
+  "sourceUrl": "https://data.oregon.gov/resource/y9g9-xsxs.json?$select=agency,agency_1,budget_class,budget_class_1,expend_class,expend_class_1,vendor,sum(expense)%20as%20total,count(*)%20as%20source_rows&$where=fiscal_year=2024&$group=agency,agency_1,budget_class,budget_class_1,expend_class,expend_class_1,vendor&$limit=500000",
+  "sourceUrls": [
+    [
+      "Oregon transparency expenditure catalog",
+      "https://data.oregon.gov/Revenue-Expense/Agency-Expenditures-Multi-Year-Report/y9g9-xsxs"
+    ],
+    [
+      "Grouped FY2024 API export",
+      "https://data.oregon.gov/resource/y9g9-xsxs.json?$select=agency,agency_1,budget_class,budget_class_1,expend_class,expend_class_1,vendor,sum(expense)%20as%20total,count(*)%20as%20source_rows&$where=fiscal_year=2024&$group=agency,agency_1,budget_class,budget_class_1,expend_class,expend_class_1,vendor&$limit=500000"
+    ]
+  ],
+  "sourceBasis": "Official Oregon Agency Expenditures Multi-Year Report; FY2024 cash expense grouped by agency, budget class, expenditure class, and privacy-safe receiver label.",
+  "privacyNote": "Individual or ambiguous vendor labels are grouped as [individual recipient omitted]; organization receivers are retained. This layer does not expose person-level payroll.",
+  "sourceRows": 84,
+  "sourceTotal": 767406.85,
+  "rowSchema": [
+    "subAgency",
+    "program",
+    "amount",
+    "sourceAmount",
+    "sourceRows"
+  ],
+  "rows": [
+    [
+      "LEGISLATIVE COUNSEL OFFICE",
+      "4275 · PUBLICITY & PUBLICATIONS · 4253 · ADVERTISE, PUBLICITY, PUBLISH/PRINT SRVS · Receiver SHERIDAN BOOKS INC",
+      334589.3,
+      334589.3,
+      1
+    ],
+    [
+      "LEGISLATIVE COUNSEL OFFICE",
+      "4225 · STATE GOVERNMENT SERVICE CHARGES · 4600 · STATE GOVERNMENT SERVICE CHARGES · Receiver DEPARTMENT OF ADMINISTRATIVE SERVICES",
+      187428,
+      187428,
+      1
+    ],
+    [
+      "LEGISLATIVE COUNSEL OFFICE",
+      "4225 · STATE GOVERNMENT SERVICE CHARGES · 4600 · STATE GOVERNMENT SERVICE CHARGES · Receiver US BANK CORPORATE PAYMENT SYSTEMS",
+      43872,
+      43872,
+      1
+    ],
+    [
+      "LEGISLATIVE COUNSEL OFFICE",
+      "4175 · OFFICE EXPENSES · 4201 · OFFICE SERVICES · Receiver US BANK CORPORATE PAYMENT SYSTEMS",
+      42426.64,
+      42426.64,
+      1
+    ],
+    [
+      "LEGISLATIVE COUNSEL OFFICE",
+      "3280 · OTHER PAYROLL EXPENSES · 3271 · OTHER PAYROLL EXPENSES · Receiver [individual recipient omitted]",
+      30226.17,
+      30226.17,
+      1
+    ],
+    [
+      "LEGISLATIVE COUNSEL OFFICE",
+      "4650 · OTHER SERVICES AND SUPPLIES · 4730 · MERCHANT FEES · Receiver US BANK NATIONAL ASSOCIATION",
+      17434.5,
+      17434.5,
+      1
+    ],
+    [
+      "LEGISLATIVE COUNSEL OFFICE",
+      "4425 · LEASE PAYMENTS & TAXES · 4800 · INTERAGENCY LEASE PAYMENTS · Receiver DEPARTMENT OF ADMINISTRATIVE SERVICES",
+      13654.5,
+      13654.5,
+      1
+    ],
+    [
+      "LEGISLATIVE COUNSEL OFFICE",
+      "4400 · DUES AND SUBSCRIPTIONS · 4250 · DUES/MEMBERSHIPS · Receiver US BANK CORPORATE PAYMENT SYSTEMS",
+      13072,
+      13072,
+      1
+    ],
+    [
+      "LEGISLATIVE COUNSEL OFFICE",
+      "4400 · DUES AND SUBSCRIPTIONS · 4251 · SUBSCRIPTIONS AND PUBLICATIONS · Receiver US BANK CORPORATE PAYMENT SYSTEMS",
+      9197.82,
+      9197.82,
+      1
+    ],
+    [
+      "LEGISLATIVE COUNSEL OFFICE",
+      "4150 · EMPLOYEE TRAINING · 4434 · PROF DEV OUT-OF-STATE LODGING · Receiver US BANK CORPORATE PAYMENT SYSTEMS",
+      7477.73,
+      7477.73,
+      1
+    ],
+    [
+      "LEGISLATIVE COUNSEL OFFICE",
+      "4150 · EMPLOYEE TRAINING · 4406 · PROF DEV INSTATE TUITION/REGISTRATION · Receiver [individual recipient omitted]",
+      6585,
+      6585,
+      1
+    ],
+    [
+      "LEGISLATIVE COUNSEL OFFICE",
+      "4150 · EMPLOYEE TRAINING · 4440 · PROF DEV OUT-OF-STATE AIR TRANSPORTATION · Receiver US BANK CORPORATE PAYMENT SYSTEMS",
+      5911.18,
+      5911.18,
+      1
+    ],
+    [
+      "LEGISLATIVE COUNSEL OFFICE",
+      "4175 · OFFICE EXPENSES · 4200 · OFFICE SUPPLIES · Receiver DEPARTMENT OF ADMINISTRATIVE SERVICES",
+      4926.21,
+      4926.21,
+      1
+    ],
+    [
+      "LEGISLATIVE COUNSEL OFFICE",
+      "4715 · IT EXPENDABLE PROPERTY · 4366 · COMPUTER TECHNOLOGY PC SOFTWARE<$5K · Receiver SHI INTERNATIONAL CORP",
+      4617.24,
+      4617.24,
+      1
+    ],
+    [
+      "LEGISLATIVE COUNSEL OFFICE",
+      "4150 · EMPLOYEE TRAINING · 4401 · TRAINING, EDUCATION OR INSTRUCTION SRVC · Receiver US BANK CORPORATE PAYMENT SYSTEMS",
+      3969,
+      3969,
+      1
+    ],
+    [
+      "LEGISLATIVE COUNSEL OFFICE",
+      "4150 · EMPLOYEE TRAINING · 4411 · PROF DEV OUT-OF-STATE TUITION/REGIST · Receiver US BANK CORPORATE PAYMENT SYSTEMS",
+      3600,
+      3600,
+      1
+    ],
+    [
+      "LEGISLATIVE COUNSEL OFFICE",
+      "4250 · DATA PROCESSING · 4375 · COMPUTER TECHNOLOGY COMPUTER PROCESSING · Receiver DEPARTMENT OF ADMINISTRATIVE SERVICES",
+      3471.16,
+      3471.16,
+      1
+    ],
+    [
+      "LEGISLATIVE COUNSEL OFFICE",
+      "4700 · EXPENDABLE PROPERTY $250-$5000 · 4999 · EXPENDABLE PROPERTY NON-IT<$5K · Receiver US BANK CORPORATE PAYMENT SYSTEMS",
+      3317.09,
+      3317.09,
+      1
+    ],
+    [
+      "LEGISLATIVE COUNSEL OFFICE",
+      "4715 · IT EXPENDABLE PROPERTY · 4366 · COMPUTER TECHNOLOGY PC SOFTWARE<$5K · Receiver OPENMFG LLC",
+      3139.5,
+      3139.5,
+      1
+    ],
+    [
+      "LEGISLATIVE COUNSEL OFFICE",
+      "4425 · LEASE PAYMENTS & TAXES · 7000 · LEASE PMT FOR EQUIP AND MACHINERY · Receiver PACIFIC OFFICE AUTOMATION INC",
+      2803.64,
+      2803.64,
+      1
+    ],
+    [
+      "LEGISLATIVE COUNSEL OFFICE",
+      "4315 · IT PROFESSIONAL SERVICES · 4515 · PROFESSIONAL SERVICES APPLICATION MAINT · Receiver MULTIPORT SYSTEMS INC",
+      2730,
+      2730,
+      1
+    ],
+    [
+      "LEGISLATIVE COUNSEL OFFICE",
+      "4175 · OFFICE EXPENSES · 4202 · EQUIPMENT RENTAL · Receiver PACIFIC OFFICE AUTOMATION INC",
+      2403.12,
+      2403.12,
+      1
+    ],
+    [
+      "LEGISLATIVE COUNSEL OFFICE",
+      "4100 · INSTATE TRAVEL · 4106 · INSTATE LODGING · Receiver US BANK CORPORATE PAYMENT SYSTEMS",
+      1661.36,
+      1661.36,
+      1
+    ],
+    [
+      "LEGISLATIVE COUNSEL OFFICE",
+      "4175 · OFFICE EXPENSES · 4200 · OFFICE SUPPLIES · Receiver US BANK CORPORATE PAYMENT SYSTEMS",
+      1543.18,
+      1543.18,
+      1
+    ],
+    [
+      "LEGISLATIVE COUNSEL OFFICE",
+      "4325 · ATTORNEY GENERAL LEGAL FEES · 4550 · ATTORNEY GENERAL LEGAL FEES · Receiver DEPARTMENT OF JUSTICE",
+      1402.5,
+      1402.5,
+      1
+    ],
+    [
+      "LEGISLATIVE COUNSEL OFFICE",
+      "4175 · OFFICE EXPENSES · 4200 · OFFICE SUPPLIES · Receiver OFFICE DEPOT BUSINESS SOLUTIONS LLC",
+      1286.33,
+      1286.33,
+      1
+    ],
+    [
+      "LEGISLATIVE COUNSEL OFFICE",
+      "4150 · EMPLOYEE TRAINING · 4432 · PROF DEV OUT-OF-STATE MEAL W/OVERNITE · Receiver [individual recipient omitted]",
+      1250.78,
+      1250.78,
+      8
+    ],
+    [
+      "LEGISLATIVE COUNSEL OFFICE",
+      "4715 · IT EXPENDABLE PROPERTY · 4366 · COMPUTER TECHNOLOGY PC SOFTWARE<$5K · Receiver QUADIENT LEASING USA INC",
+      1203.44,
+      1203.44,
+      1
+    ],
+    [
+      "LEGISLATIVE COUNSEL OFFICE",
+      "4250 · DATA PROCESSING · 4375 · COMPUTER TECHNOLOGY COMPUTER PROCESSING · Receiver US BANK CORPORATE PAYMENT SYSTEMS",
+      1122.99,
+      1122.99,
+      1
+    ],
+    [
+      "LEGISLATIVE COUNSEL OFFICE",
+      "4125 · OUT-OF-STATE TRAVEL · 4159 · OUT-OF-STATE AIR TRANSPORTATION · Receiver US BANK CORPORATE PAYMENT SYSTEMS",
+      1010.04,
+      1010.04,
+      1
+    ],
+    [
+      "LEGISLATIVE COUNSEL OFFICE",
+      "4225 · STATE GOVERNMENT SERVICE CHARGES · 4600 · STATE GOVERNMENT SERVICE CHARGES · Receiver OREGON GOVERNMENT ETHICS COMMISSION",
+      998.5,
+      998.5,
+      1
+    ],
+    [
+      "LEGISLATIVE COUNSEL OFFICE",
+      "4175 · OFFICE EXPENSES · 4201 · OFFICE SERVICES · Receiver PACIFIC OFFICE AUTOMATION INC",
+      928.09,
+      928.09,
+      1
+    ],
+    [
+      "LEGISLATIVE COUNSEL OFFICE",
+      "4100 · INSTATE TRAVEL · 4109 · INSTATE MILEAGE REIMBURSEMENT-FULL RATE · Receiver [individual recipient omitted]",
+      858.33,
+      858.33,
+      8
+    ],
+    [
+      "LEGISLATIVE COUNSEL OFFICE",
+      "4150 · EMPLOYEE TRAINING · 4415 · PROF DEV OUT-OF-STATE TRAVEL MISC EXPENS · Receiver [individual recipient omitted]",
+      750,
+      750,
+      7
+    ],
+    [
+      "LEGISLATIVE COUNSEL OFFICE",
+      "4715 · IT EXPENDABLE PROPERTY · 4366 · COMPUTER TECHNOLOGY PC SOFTWARE<$5K · Receiver US BANK CORPORATE PAYMENT SYSTEMS",
+      648.61,
+      648.61,
+      1
+    ],
+    [
+      "LEGISLATIVE COUNSEL OFFICE",
+      "4175 · OFFICE EXPENSES · 4201 · OFFICE SERVICES · Receiver DEPARTMENT OF ADMINISTRATIVE SERVICES",
+      634.98,
+      634.98,
+      1
+    ],
+    [
+      "LEGISLATIVE COUNSEL OFFICE",
+      "4150 · EMPLOYEE TRAINING · 4426 · PROF DEV TRAINING MATERIALS · Receiver US BANK CORPORATE PAYMENT SYSTEMS",
+      550,
+      550,
+      1
+    ],
+    [
+      "LEGISLATIVE COUNSEL OFFICE",
+      "4175 · OFFICE EXPENSES · 4200 · OFFICE SUPPLIES · Receiver PACIFIC OFFICE AUTOMATION INC",
+      520.27,
+      520.27,
+      1
+    ],
+    [
+      "LEGISLATIVE COUNSEL OFFICE",
+      "4150 · EMPLOYEE TRAINING · 4441 · PROF DEV OUT-OF-STATE GROUND TRANSPRTATN · Receiver [individual recipient omitted]",
+      505.38,
+      505.38,
+      6
+    ],
+    [
+      "LEGISLATIVE COUNSEL OFFICE",
+      "4100 · INSTATE TRAVEL · 4108 · INSTATE GROUND TRANSPORTATION · Receiver [individual recipient omitted]",
+      431.34,
+      431.34,
+      2
+    ],
+    [
+      "LEGISLATIVE COUNSEL OFFICE",
+      "4150 · EMPLOYEE TRAINING · 4437 · PROF DEV DUES/MEMBERSHIP · Receiver US BANK CORPORATE PAYMENT SYSTEMS",
+      392,
+      392,
+      1
+    ],
+    [
+      "LEGISLATIVE COUNSEL OFFICE",
+      "4715 · IT EXPENDABLE PROPERTY · 4372 · COMPUTER TECHNOLOGY PERIPHERAL EQUIP<$5K · Receiver US BANK CORPORATE PAYMENT SYSTEMS",
+      374.89,
+      374.89,
+      1
+    ],
+    [
+      "LEGISLATIVE COUNSEL OFFICE",
+      "4175 · OFFICE EXPENSES · 4200 · OFFICE SUPPLIES · Receiver [individual recipient omitted]",
+      356.32,
+      356.32,
+      3
+    ],
+    [
+      "LEGISLATIVE COUNSEL OFFICE",
+      "4200 · TELECOMM/TECH SVC AND SUPPLIES · 4301 · TELECOM/VOICE USAGE · Receiver QWEST",
+      299.49,
+      299.49,
+      1
+    ],
+    [
+      "LEGISLATIVE COUNSEL OFFICE",
+      "4150 · EMPLOYEE TRAINING · 4433 · PROF DEV INSTATE LODGING · Receiver [individual recipient omitted]",
+      267.45,
+      267.45,
+      1
+    ],
+    [
+      "LEGISLATIVE COUNSEL OFFICE",
+      "4225 · STATE GOVERNMENT SERVICE CHARGES · 4600 · STATE GOVERNMENT SERVICE CHARGES · Receiver OREGON STATE TREASURY",
+      253.4,
+      253.4,
+      1
+    ],
+    [
+      "LEGISLATIVE COUNSEL OFFICE",
+      "4650 · OTHER SERVICES AND SUPPLIES · 4701 · OTHER SERVICES · Receiver GARTEN SERVICES INC",
+      252.8,
+      252.8,
+      1
+    ],
+    [
+      "LEGISLATIVE COUNSEL OFFICE",
+      "4125 · OUT-OF-STATE TRAVEL · 4151 · OUT-OF-STATE MEALS WITH OVERNIGHT STAY · Receiver [individual recipient omitted]",
+      232.08,
+      232.08,
+      1
+    ],
+    [
+      "LEGISLATIVE COUNSEL OFFICE",
+      "4150 · EMPLOYEE TRAINING · 4426 · PROF DEV TRAINING MATERIALS · Receiver [individual recipient omitted]",
+      184.5,
+      184.5,
+      1
+    ],
+    [
+      "LEGISLATIVE COUNSEL OFFICE",
+      "4575 · AGENCY PROGRAM RELATED SVCS & SUPP · 4977 · AGENCY PROGRAM RELATED REIMBURSEMENTS · Receiver [individual recipient omitted]",
+      166.2,
+      166.2,
+      1
+    ],
+    [
+      "LEGISLATIVE COUNSEL OFFICE",
+      "4715 · IT EXPENDABLE PROPERTY · 4372 · COMPUTER TECHNOLOGY PERIPHERAL EQUIP<$5K · Receiver OFFICE DEPOT BUSINESS SOLUTIONS LLC",
+      134.8,
+      134.8,
+      1
+    ],
+    [
+      "LEGISLATIVE COUNSEL OFFICE",
+      "4150 · EMPLOYEE TRAINING · 4401 · TRAINING, EDUCATION OR INSTRUCTION SRVC · Receiver [individual recipient omitted]",
+      125,
+      125,
+      1
+    ],
+    [
+      "LEGISLATIVE COUNSEL OFFICE",
+      "4375 · EMPLOYEE RECRUITMENT AND DEVELOPMENT · 4430 · EMPLOYEE RECRUIT, WELLNESS & SAFETY · Receiver US BANK CORPORATE PAYMENT SYSTEMS",
+      100,
+      100,
+      1
+    ],
+    [
+      "LEGISLATIVE COUNSEL OFFICE",
+      "4275 · PUBLICITY & PUBLICATIONS · 4253 · ADVERTISE, PUBLICITY, PUBLISH/PRINT SRVS · Receiver US BANK CORPORATE PAYMENT SYSTEMS",
+      58,
+      58,
+      1
+    ],
+    [
+      "LEGISLATIVE COUNSEL OFFICE",
+      "4175 · OFFICE EXPENSES · 4200 · OFFICE SUPPLIES · Receiver LANDMARK AWARDS & ENGRAVING",
+      27,
+      27,
+      1
+    ],
+    [
+      "LEGISLATIVE COUNSEL OFFICE",
+      "4150 · EMPLOYEE TRAINING · 4428 · TRAINING SUPPLIES · Receiver [individual recipient omitted]",
+      25,
+      25,
+      1
+    ]
+  ],
+  "sourceCheck": {
+    "objectClassRows": 56,
+    "sourceRows": 84,
+    "sourceTotal": 767406.85,
+    "difference": 0
+  }
+}

@@ -1,0 +1,105 @@
+{
+  "scope": "Massachusetts",
+  "code": "ma",
+  "department": "CAPE & ISLANDS DISTRICT ATTORNEY (CPI)",
+  "fiscalYear": 2024,
+  "ledgerAmount": 5790148.18,
+  "sourceTotal": 6303630.17,
+  "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000",
+  "rowSchema": [
+    "subAgency",
+    "program",
+    "amount",
+    "sourceAmount",
+    "sourceRows"
+  ],
+  "rows": [
+    [
+      "CAPE & ISLANDS DISTRICT ATTORNEY (CPI)",
+      "CAPE & ISLANDS DISTRICT ATTORNEY (CPI) · (AA) REGULAR EMPLOYEE COMPENSATION",
+      4897664.81,
+      4897664.81,
+      47
+    ],
+    [
+      "CAPE & ISLANDS DISTRICT ATTORNEY (CPI)",
+      "CAPE & ISLANDS DISTRICT ATTORNEY (CPI) · (GG) ENERGY COSTS AND SPACE RENTAL",
+      672755.48,
+      672755.48,
+      83
+    ],
+    [
+      "CAPE & ISLANDS DISTRICT ATTORNEY (CPI)",
+      "CAPE & ISLANDS DISTRICT ATTORNEY (CPI) · (UU) IT NON-PAYROLL EXPENSES",
+      255782.37,
+      255782.37,
+      115
+    ],
+    [
+      "CAPE & ISLANDS DISTRICT ATTORNEY (CPI)",
+      "CAPE & ISLANDS DISTRICT ATTORNEY (CPI) · (EE) ADMINISTRATIVE EXPENSES",
+      225123.81,
+      225123.81,
+      522
+    ],
+    [
+      "CAPE & ISLANDS DISTRICT ATTORNEY (CPI)",
+      "CAPE & ISLANDS DISTRICT ATTORNEY (CPI) · (MM) PURCHASED CLIENT/PROGRAM SVCS",
+      81734.59,
+      81734.59,
+      8
+    ],
+    [
+      "CAPE & ISLANDS DISTRICT ATTORNEY (CPI)",
+      "CAPE & ISLANDS DISTRICT ATTORNEY (CPI) · (PP) STATE AID/POL SUB",
+      45450,
+      45450,
+      15
+    ],
+    [
+      "CAPE & ISLANDS DISTRICT ATTORNEY (CPI)",
+      "CAPE & ISLANDS DISTRICT ATTORNEY (CPI) · (LL) EQUIPMENT LEASE-MAINTAIN/REPAR",
+      43182.73,
+      43182.73,
+      80
+    ],
+    [
+      "CAPE & ISLANDS DISTRICT ATTORNEY (CPI)",
+      "CAPE & ISLANDS DISTRICT ATTORNEY (CPI) · (DD) PENSION & INSURANCE RELATED EX",
+      24976,
+      24976,
+      1
+    ],
+    [
+      "CAPE & ISLANDS DISTRICT ATTORNEY (CPI)",
+      "CAPE & ISLANDS DISTRICT ATTORNEY (CPI) · (BB) REGULAR EMPLOYEE RELATED EXPEN",
+      19931.67,
+      19931.67,
+      56
+    ],
+    [
+      "CAPE & ISLANDS DISTRICT ATTORNEY (CPI)",
+      "CAPE & ISLANDS DISTRICT ATTORNEY (CPI) · (KK) EQUIPMENT PURCHASE",
+      15635.85,
+      15635.85,
+      13
+    ],
+    [
+      "CAPE & ISLANDS DISTRICT ATTORNEY (CPI)",
+      "CAPE & ISLANDS DISTRICT ATTORNEY (CPI) · (HH) CONSULTANT SVCS (TO DEPTS)",
+      12100,
+      12100,
+      3
+    ],
+    [
+      "CAPE & ISLANDS DISTRICT ATTORNEY (CPI)",
+      "CAPE & ISLANDS DISTRICT ATTORNEY (CPI) · (NN) INFRASTRUCTURE:",
+      9292.86,
+      9292.86,
+      25
+    ]
+  ],
+  "hierarchyNote": "The source does not identify a separate sub-agency column; direct-managed rows repeat the parent entity.",
+  "sourceBasis": "official source amount",
+  "note": "Amounts are shown on the official source basis; no comparator normalization was applied."
+}

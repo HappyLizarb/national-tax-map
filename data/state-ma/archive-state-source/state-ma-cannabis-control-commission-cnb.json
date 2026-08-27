@@ -1,0 +1,105 @@
+{
+  "scope": "Massachusetts",
+  "code": "ma",
+  "department": "CANNABIS CONTROL COMMISSION (CNB)",
+  "fiscalYear": 2024,
+  "ledgerAmount": 16830700.74,
+  "sourceTotal": 18323281.15,
+  "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000",
+  "rowSchema": [
+    "subAgency",
+    "program",
+    "amount",
+    "sourceAmount",
+    "sourceRows"
+  ],
+  "rows": [
+    [
+      "CANNABIS CONTROL COMMISSION (CNB)",
+      "CANNABIS CONTROL COMMISSION (CNB) · (AA) REGULAR EMPLOYEE COMPENSATION",
+      11941515.68,
+      11941515.68,
+      129
+    ],
+    [
+      "CANNABIS CONTROL COMMISSION (CNB)",
+      "CANNABIS CONTROL COMMISSION (CNB) · (UU) IT NON-PAYROLL EXPENSES",
+      3344275.22,
+      3344275.22,
+      147
+    ],
+    [
+      "CANNABIS CONTROL COMMISSION (CNB)",
+      "CANNABIS CONTROL COMMISSION (CNB) · (FF) FACILITY OPERATIONAL EXPENSES",
+      867470.91,
+      867470.91,
+      40
+    ],
+    [
+      "CANNABIS CONTROL COMMISSION (CNB)",
+      "CANNABIS CONTROL COMMISSION (CNB) · (HH) CONSULTANT SVCS (TO DEPTS)",
+      826526.01,
+      826526.01,
+      102
+    ],
+    [
+      "CANNABIS CONTROL COMMISSION (CNB)",
+      "CANNABIS CONTROL COMMISSION (CNB) · (GG) ENERGY COSTS AND SPACE RENTAL",
+      783556.23,
+      783556.23,
+      53
+    ],
+    [
+      "CANNABIS CONTROL COMMISSION (CNB)",
+      "CANNABIS CONTROL COMMISSION (CNB) · (EE) ADMINISTRATIVE EXPENSES",
+      341082.15,
+      341082.15,
+      118
+    ],
+    [
+      "CANNABIS CONTROL COMMISSION (CNB)",
+      "CANNABIS CONTROL COMMISSION (CNB) · (JJ) OPERATIONAL SERVICES",
+      144150.37,
+      144150.37,
+      82
+    ],
+    [
+      "CANNABIS CONTROL COMMISSION (CNB)",
+      "CANNABIS CONTROL COMMISSION (CNB) · (BB) REGULAR EMPLOYEE RELATED EXPEN",
+      31994.46,
+      31994.46,
+      82
+    ],
+    [
+      "CANNABIS CONTROL COMMISSION (CNB)",
+      "CANNABIS CONTROL COMMISSION (CNB) · (LL) EQUIPMENT LEASE-MAINTAIN/REPAR",
+      26056.17,
+      26056.17,
+      77
+    ],
+    [
+      "CANNABIS CONTROL COMMISSION (CNB)",
+      "CANNABIS CONTROL COMMISSION (CNB) · (KK) EQUIPMENT PURCHASE",
+      12653.95,
+      12653.95,
+      7
+    ],
+    [
+      "CANNABIS CONTROL COMMISSION (CNB)",
+      "CANNABIS CONTROL COMMISSION (CNB) · (DD) PENSION & INSURANCE RELATED EX",
+      4000,
+      4000,
+      12
+    ],
+    [
+      "CANNABIS CONTROL COMMISSION (CNB)",
+      "CANNABIS CONTROL COMMISSION (CNB) · (99) PAYROLL REJECTS",
+      0,
+      0,
+      2
+    ]
+  ],
+  "hierarchyNote": "The source does not identify a separate sub-agency column; direct-managed rows repeat the parent entity.",
+  "sourceBasis": "official source amount",
+  "note": "Amounts are shown on the official source basis; no comparator normalization was applied."
+}

@@ -1,0 +1,50 @@
+{
+  "scope": "New Jersey",
+  "fiscalYear": 2024,
+  "department": "PALISADES INTERSTATE",
+  "sourceUrl": "https://data.nj.gov/Government-Finance/YourMoney-Agency-Expenditures/apet-rp2i",
+  "sourceUrls": [
+    [
+      "Official expenditures catalog",
+      "https://www.nj.gov/transparency/financial-management/expenditures/index.shtml"
+    ],
+    [
+      "FY2024 agency dataset",
+      "https://data.nj.gov/Government-Finance/YourMoney-Agency-Expenditures/apet-rp2i"
+    ],
+    [
+      "Grouped FY2024 API export",
+      "https://data.nj.gov/resource/apet-rp2i.csv?%24select=ibno_agency%2Cstatewide_program%2Cpayee_name%2Csum%28expended_amt%29%20as%20expended%2Csum%28obligation_amt%29%20as%20obligations%2Ccount%28%2A%29%20as%20source_rows&%24where=budget_fiscal_year%3D2024&%24group=ibno_agency%2Cstatewide_program%2Cpayee_name&%24limit=500000"
+    ]
+  ],
+  "sourceBasis": "Official FY2024 Agency Expenditures dataset; pie amount uses expended, with obligations retained as a separate row measure.",
+  "privacyNote": "Individual or ambiguous payee labels are grouped as [individual recipient omitted]; organization receivers are retained. This layer does not expose person-level payroll.",
+  "sourceRows": 3,
+  "sourceTotal": 6728000,
+  "obligationTotal": 0,
+  "rowSchema": [
+    "subAgency",
+    "program",
+    "amount",
+    "sourceAmount",
+    "sourceRows",
+    "obligations"
+  ],
+  "rows": [
+    [
+      "PALISADES INTERSTATE",
+      "NATIONAL RESOURCE MANAGEMENT · Receiver [individual recipient omitted]",
+      6728000,
+      6728000,
+      3,
+      0
+    ]
+  ],
+  "sourceCheck": {
+    "objectClassRows": 1,
+    "sourceRows": 3,
+    "sourceTotal": 6728000,
+    "obligationTotal": 0,
+    "difference": 0
+  }
+}

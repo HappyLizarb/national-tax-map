@@ -1,0 +1,140 @@
+{
+  "scope": "Massachusetts",
+  "code": "ma",
+  "department": "HOLYOKE COMMUNITY COLLEGE (HCC)",
+  "fiscalYear": 2024,
+  "ledgerAmount": 65232451.64,
+  "sourceTotal": 71017396.7,
+  "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000",
+  "rowSchema": [
+    "subAgency",
+    "program",
+    "amount",
+    "sourceAmount",
+    "sourceRows"
+  ],
+  "rows": [
+    [
+      "HOLYOKE COMMUNITY COLLEGE (HCC)",
+      "HOLYOKE COMMUNITY COLLEGE (HCC) · (AA) REGULAR EMPLOYEE COMPENSATION",
+      30186183.81,
+      30186183.81,
+      808
+    ],
+    [
+      "HOLYOKE COMMUNITY COLLEGE (HCC)",
+      "HOLYOKE COMMUNITY COLLEGE (HCC) · (RR) BENEFIT PROGRAMS",
+      13561904.33,
+      13561904.33,
+      24
+    ],
+    [
+      "HOLYOKE COMMUNITY COLLEGE (HCC)",
+      "HOLYOKE COMMUNITY COLLEGE (HCC) · (CC) SPECIAL EMPLOYEES",
+      8980219.28,
+      8980219.28,
+      525
+    ],
+    [
+      "HOLYOKE COMMUNITY COLLEGE (HCC)",
+      "HOLYOKE COMMUNITY COLLEGE (HCC) · (NN) INFRASTRUCTURE:",
+      3985988.08,
+      3985988.08,
+      33
+    ],
+    [
+      "HOLYOKE COMMUNITY COLLEGE (HCC)",
+      "HOLYOKE COMMUNITY COLLEGE (HCC) · (UU) IT NON-PAYROLL EXPENSES",
+      3439121.21,
+      3439121.21,
+      28
+    ],
+    [
+      "HOLYOKE COMMUNITY COLLEGE (HCC)",
+      "HOLYOKE COMMUNITY COLLEGE (HCC) · (EE) ADMINISTRATIVE EXPENSES",
+      2671521.42,
+      2671521.42,
+      31
+    ],
+    [
+      "HOLYOKE COMMUNITY COLLEGE (HCC)",
+      "HOLYOKE COMMUNITY COLLEGE (HCC) · (HH) CONSULTANT SVCS (TO DEPTS)",
+      2371563.99,
+      2371563.99,
+      39
+    ],
+    [
+      "HOLYOKE COMMUNITY COLLEGE (HCC)",
+      "HOLYOKE COMMUNITY COLLEGE (HCC) · (GG) ENERGY COSTS AND SPACE RENTAL",
+      1831108.63,
+      1831108.63,
+      97
+    ],
+    [
+      "HOLYOKE COMMUNITY COLLEGE (HCC)",
+      "HOLYOKE COMMUNITY COLLEGE (HCC) · (JJ) OPERATIONAL SERVICES",
+      1415567.75,
+      1415567.75,
+      287
+    ],
+    [
+      "HOLYOKE COMMUNITY COLLEGE (HCC)",
+      "HOLYOKE COMMUNITY COLLEGE (HCC) · (FF) FACILITY OPERATIONAL EXPENSES",
+      1028618.06,
+      1028618.06,
+      126
+    ],
+    [
+      "HOLYOKE COMMUNITY COLLEGE (HCC)",
+      "HOLYOKE COMMUNITY COLLEGE (HCC) · (KK) EQUIPMENT PURCHASE",
+      652609.89,
+      652609.89,
+      16
+    ],
+    [
+      "HOLYOKE COMMUNITY COLLEGE (HCC)",
+      "HOLYOKE COMMUNITY COLLEGE (HCC) · (SS) DEBT PAYMENT",
+      305745.39,
+      305745.39,
+      3
+    ],
+    [
+      "HOLYOKE COMMUNITY COLLEGE (HCC)",
+      "HOLYOKE COMMUNITY COLLEGE (HCC) · (PP) STATE AID/POL SUB",
+      268125,
+      268125,
+      1
+    ],
+    [
+      "HOLYOKE COMMUNITY COLLEGE (HCC)",
+      "HOLYOKE COMMUNITY COLLEGE (HCC) · (LL) EQUIPMENT LEASE-MAINTAIN/REPAR",
+      160044.88,
+      160044.88,
+      11
+    ],
+    [
+      "HOLYOKE COMMUNITY COLLEGE (HCC)",
+      "HOLYOKE COMMUNITY COLLEGE (HCC) · (BB) REGULAR EMPLOYEE RELATED EXPEN",
+      158824.98,
+      158824.98,
+      189
+    ],
+    [
+      "HOLYOKE COMMUNITY COLLEGE (HCC)",
+      "HOLYOKE COMMUNITY COLLEGE (HCC) · (TT) LOANS AND SPECIAL PAYMENTS",
+      250,
+      250,
+      1
+    ],
+    [
+      "HOLYOKE COMMUNITY COLLEGE (HCC)",
+      "HOLYOKE COMMUNITY COLLEGE (HCC) · (99) PAYROLL REJECTS",
+      0,
+      0,
+      5
+    ]
+  ],
+  "hierarchyNote": "The source does not identify a separate sub-agency column; direct-managed rows repeat the parent entity.",
+  "sourceBasis": "official source amount",
+  "note": "Amounts are shown on the official source basis; no comparator normalization was applied."
+}

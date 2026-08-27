@@ -1,0 +1,49 @@
+{
+  "scope": "Connecticut",
+  "code": "ct",
+  "department": "Dept. of Insurance",
+  "fiscalYear": 2024,
+  "ledgerAmount": 2069847.78,
+  "sourceTotal": 2205561.85,
+  "sourceUrl": "https://data.ct.gov/resource/ajdm-rvz7.json?$select=department,program,sum(amount)%20as%20amount,count(*)%20as%20records&$where=fiscal_year=2024&$group=department,program",
+  "rowSchema": [
+    "subAgency",
+    "program",
+    "amount",
+    "sourceAmount",
+    "sourceRows"
+  ],
+  "rows": [
+    [
+      "Dept. of Insurance",
+      "Dept. of Insurance · Other Expenses",
+      1640702.93,
+      1640702.93,
+      733
+    ],
+    [
+      "Dept. of Insurance",
+      "Dept. of Insurance · IT Services",
+      311667.33,
+      311667.33,
+      260
+    ],
+    [
+      "Dept. of Insurance",
+      "Dept. of Insurance · Equipment",
+      137674.09,
+      137674.09,
+      107
+    ],
+    [
+      "Dept. of Insurance",
+      "Dept. of Insurance · SURETY BAIL BOND AGENT EXAMINA",
+      115517.5,
+      115517.5,
+      11
+    ]
+  ],
+  "hierarchyNote": "The source does not identify a separate sub-agency column; direct-managed rows repeat the parent entity.",
+  "sourceBasis": "official source amount",
+  "note": "Amounts are shown on the official source basis; no comparator normalization was applied."
+}

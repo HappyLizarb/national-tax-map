@@ -1,0 +1,105 @@
+{
+  "scope": "Massachusetts",
+  "code": "ma",
+  "department": "MASSACHUSETTS  PEACE OFFICER STANDARDS AND TRAINING (PST)",
+  "fiscalYear": 2024,
+  "ledgerAmount": 6869506.24,
+  "sourceTotal": 7478707.87,
+  "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000",
+  "rowSchema": [
+    "subAgency",
+    "program",
+    "amount",
+    "sourceAmount",
+    "sourceRows"
+  ],
+  "rows": [
+    [
+      "MASSACHUSETTS  PEACE OFFICER STANDARDS AND TRAINING (PST)",
+      "MASSACHUSETTS  PEACE OFFICER STANDARDS AND TRAINING (PST) · (AA) REGULAR EMPLOYEE COMPENSATION",
+      4551445.91,
+      4551445.91,
+      39
+    ],
+    [
+      "MASSACHUSETTS  PEACE OFFICER STANDARDS AND TRAINING (PST)",
+      "MASSACHUSETTS  PEACE OFFICER STANDARDS AND TRAINING (PST) · (UU) IT NON-PAYROLL EXPENSES",
+      1867540.36,
+      1867540.36,
+      148
+    ],
+    [
+      "MASSACHUSETTS  PEACE OFFICER STANDARDS AND TRAINING (PST)",
+      "MASSACHUSETTS  PEACE OFFICER STANDARDS AND TRAINING (PST) · (GG) ENERGY COSTS AND SPACE RENTAL",
+      479177.41,
+      479177.41,
+      30
+    ],
+    [
+      "MASSACHUSETTS  PEACE OFFICER STANDARDS AND TRAINING (PST)",
+      "MASSACHUSETTS  PEACE OFFICER STANDARDS AND TRAINING (PST) · (EE) ADMINISTRATIVE EXPENSES",
+      194441.93,
+      194441.93,
+      137
+    ],
+    [
+      "MASSACHUSETTS  PEACE OFFICER STANDARDS AND TRAINING (PST)",
+      "MASSACHUSETTS  PEACE OFFICER STANDARDS AND TRAINING (PST) · (HH) CONSULTANT SVCS (TO DEPTS)",
+      136391.48,
+      136391.48,
+      31
+    ],
+    [
+      "MASSACHUSETTS  PEACE OFFICER STANDARDS AND TRAINING (PST)",
+      "MASSACHUSETTS  PEACE OFFICER STANDARDS AND TRAINING (PST) · (NN) INFRASTRUCTURE:",
+      86414.21,
+      86414.21,
+      15
+    ],
+    [
+      "MASSACHUSETTS  PEACE OFFICER STANDARDS AND TRAINING (PST)",
+      "MASSACHUSETTS  PEACE OFFICER STANDARDS AND TRAINING (PST) · (KK) EQUIPMENT PURCHASE",
+      59074.82,
+      59074.82,
+      6
+    ],
+    [
+      "MASSACHUSETTS  PEACE OFFICER STANDARDS AND TRAINING (PST)",
+      "MASSACHUSETTS  PEACE OFFICER STANDARDS AND TRAINING (PST) · (CC) SPECIAL EMPLOYEES",
+      36211.25,
+      36211.25,
+      25
+    ],
+    [
+      "MASSACHUSETTS  PEACE OFFICER STANDARDS AND TRAINING (PST)",
+      "MASSACHUSETTS  PEACE OFFICER STANDARDS AND TRAINING (PST) · (FF) FACILITY OPERATIONAL EXPENSES",
+      28308.47,
+      28308.47,
+      17
+    ],
+    [
+      "MASSACHUSETTS  PEACE OFFICER STANDARDS AND TRAINING (PST)",
+      "MASSACHUSETTS  PEACE OFFICER STANDARDS AND TRAINING (PST) · (JJ) OPERATIONAL SERVICES",
+      21908.48,
+      21908.48,
+      21
+    ],
+    [
+      "MASSACHUSETTS  PEACE OFFICER STANDARDS AND TRAINING (PST)",
+      "MASSACHUSETTS  PEACE OFFICER STANDARDS AND TRAINING (PST) · (BB) REGULAR EMPLOYEE RELATED EXPEN",
+      16155.18,
+      16155.18,
+      41
+    ],
+    [
+      "MASSACHUSETTS  PEACE OFFICER STANDARDS AND TRAINING (PST)",
+      "MASSACHUSETTS  PEACE OFFICER STANDARDS AND TRAINING (PST) · (LL) EQUIPMENT LEASE-MAINTAIN/REPAR",
+      1638.37,
+      1638.37,
+      14
+    ]
+  ],
+  "hierarchyNote": "The source does not identify a separate sub-agency column; direct-managed rows repeat the parent entity.",
+  "sourceBasis": "official source amount",
+  "note": "Amounts are shown on the official source basis; no comparator normalization was applied."
+}

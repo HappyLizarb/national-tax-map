@@ -1,0 +1,634 @@
+{
+  "scope": "Connecticut",
+  "code": "ct",
+  "fiscalYear": 2024,
+  "sourceTotal": 36131360457.04,
+  "sourceUrl": "https://data.ct.gov/resource/ajdm-rvz7.json?$select=department,program,sum(amount)%20as%20amount,count(*)%20as%20records&$where=fiscal_year=2024&$group=department,program",
+  "dimension": "department / agency",
+  "note": "The pie uses one official itemized source layer and never inserts a synthetic residual. Department amounts reconcile to the official itemized source total. sourceAmount preserves the imported itemized basis. The census fy2024 state-finance comparator is retained for comparison only; its higher total is not assigned to a receiver or program.",
+  "reconciliation": {
+    "itemizedDifference": 0,
+    "normalized": false,
+    "scale": 1,
+    "comparisonDifference": 2223258457.04
+  },
+  "departments": [
+    {
+      "id": "dept-of-social-services",
+      "name": "Dept. of Social Services",
+      "amount": 10130631137.79,
+      "sourceAmount": 10130631137.79,
+      "detailUrl": "data/state-ct/archive-state-source/state-ct-dept-of-social-services.json",
+      "sourceUrl": "https://data.ct.gov/resource/ajdm-rvz7.json?$select=department,program,sum(amount)%20as%20amount,count(*)%20as%20records&$where=fiscal_year=2024&$group=department,program"
+    },
+    {
+      "id": "state-dept-of-education",
+      "name": "State Dept of Education",
+      "amount": 4320131880.12,
+      "sourceAmount": 4320131880.12,
+      "detailUrl": "data/state-ct/archive-state-source/state-ct-state-dept-of-education.json",
+      "sourceUrl": "https://data.ct.gov/resource/ajdm-rvz7.json?$select=department,program,sum(amount)%20as%20amount,count(*)%20as%20records&$where=fiscal_year=2024&$group=department,program"
+    },
+    {
+      "id": "dept-of-transportation",
+      "name": "Dept. of Transportation",
+      "amount": 2885920652.38,
+      "sourceAmount": 2885920652.38,
+      "detailUrl": "data/state-ct/archive-state-source/state-ct-dept-of-transportation.json",
+      "sourceUrl": "https://data.ct.gov/resource/ajdm-rvz7.json?$select=department,program,sum(amount)%20as%20amount,count(*)%20as%20records&$where=fiscal_year=2024&$group=department,program"
+    },
+    {
+      "id": "office-of-the-state-treasurer",
+      "name": "Office of the State Treasurer",
+      "amount": 2884371905,
+      "sourceAmount": 2884371905,
+      "detailUrl": "data/state-ct/archive-state-source/state-ct-office-of-the-state-treasurer.json",
+      "sourceUrl": "https://data.ct.gov/resource/ajdm-rvz7.json?$select=department,program,sum(amount)%20as%20amount,count(*)%20as%20records&$where=fiscal_year=2024&$group=department,program"
+    },
+    {
+      "id": "state-comptroller-s-office",
+      "name": "State Comptroller's Office",
+      "amount": 2576334313.48,
+      "sourceAmount": 2576334313.48,
+      "detailUrl": "data/state-ct/archive-state-source/state-ct-state-comptroller-s-office.json",
+      "sourceUrl": "https://data.ct.gov/resource/ajdm-rvz7.json?$select=department,program,sum(amount)%20as%20amount,count(*)%20as%20records&$where=fiscal_year=2024&$group=department,program"
+    },
+    {
+      "id": "teachers-retirement-board",
+      "name": "Teachers' Retirement Board",
+      "amount": 2503640004.21,
+      "sourceAmount": 2503640004.21,
+      "detailUrl": "data/state-ct/archive-state-source/state-ct-teachers-retirement-board.json",
+      "sourceUrl": "https://data.ct.gov/resource/ajdm-rvz7.json?$select=department,program,sum(amount)%20as%20amount,count(*)%20as%20records&$where=fiscal_year=2024&$group=department,program"
+    },
+    {
+      "id": "department-of-development-serv",
+      "name": "Department of Development Serv",
+      "amount": 1307863074.87,
+      "sourceAmount": 1307863074.87,
+      "detailUrl": "data/state-ct/archive-state-source/state-ct-department-of-development-serv.json",
+      "sourceUrl": "https://data.ct.gov/resource/ajdm-rvz7.json?$select=department,program,sum(amount)%20as%20amount,count(*)%20as%20records&$where=fiscal_year=2024&$group=department,program"
+    },
+    {
+      "id": "office-of-policy-management",
+      "name": "Office of Policy & Management",
+      "amount": 911201335.51,
+      "sourceAmount": 911201335.51,
+      "detailUrl": "data/state-ct/archive-state-source/state-ct-office-of-policy-management.json",
+      "sourceUrl": "https://data.ct.gov/resource/ajdm-rvz7.json?$select=department,program,sum(amount)%20as%20amount,count(*)%20as%20records&$where=fiscal_year=2024&$group=department,program"
+    },
+    {
+      "id": "dept-of-administrative-svcs",
+      "name": "Dept of Administrative Svcs",
+      "amount": 886276132.95,
+      "sourceAmount": 886276132.95,
+      "detailUrl": "data/state-ct/archive-state-source/state-ct-dept-of-administrative-svcs.json",
+      "sourceUrl": "https://data.ct.gov/resource/ajdm-rvz7.json?$select=department,program,sum(amount)%20as%20amount,count(*)%20as%20records&$where=fiscal_year=2024&$group=department,program"
+    },
+    {
+      "id": "university-of-connecticut",
+      "name": "University of Connecticut",
+      "amount": 760000000,
+      "sourceAmount": 760000000,
+      "detailUrl": "data/state-ct/archive-state-source/state-ct-university-of-connecticut.json",
+      "sourceUrl": "https://data.ct.gov/resource/ajdm-rvz7.json?$select=department,program,sum(amount)%20as%20amount,count(*)%20as%20records&$where=fiscal_year=2024&$group=department,program"
+    },
+    {
+      "id": "mental-health-addiction-serv",
+      "name": "Mental Health & Addiction Serv",
+      "amount": 636017816.35,
+      "sourceAmount": 636017816.35,
+      "detailUrl": "data/state-ct/archive-state-source/state-ct-mental-health-addiction-serv.json",
+      "sourceUrl": "https://data.ct.gov/resource/ajdm-rvz7.json?$select=department,program,sum(amount)%20as%20amount,count(*)%20as%20records&$where=fiscal_year=2024&$group=department,program"
+    },
+    {
+      "id": "uconn-health-center",
+      "name": "UConn Health Center",
+      "amount": 635000000,
+      "sourceAmount": 635000000,
+      "detailUrl": "data/state-ct/archive-state-source/state-ct-uconn-health-center.json",
+      "sourceUrl": "https://data.ct.gov/resource/ajdm-rvz7.json?$select=department,program,sum(amount)%20as%20amount,count(*)%20as%20records&$where=fiscal_year=2024&$group=department,program"
+    },
+    {
+      "id": "dept-of-labor-unemploymt-div",
+      "name": "Dept. of Labor Unemploymt Div",
+      "amount": 577570000,
+      "sourceAmount": 577570000,
+      "program": "Dept. of Labor Unemploymt Div · Non-Budgeted Operating Approp",
+      "sourceRows": 92,
+      "detailUrl": null,
+      "sourceUrl": "https://data.ct.gov/resource/ajdm-rvz7.json?$select=department,program,sum(amount)%20as%20amount,count(*)%20as%20records&$where=fiscal_year=2024&$group=department,program"
+    },
+    {
+      "id": "dept-of-children-and-families",
+      "name": "Dept. of Children and Families",
+      "amount": 559204173.32,
+      "sourceAmount": 559204173.32,
+      "detailUrl": "data/state-ct/archive-state-source/state-ct-dept-of-children-and-families.json",
+      "sourceUrl": "https://data.ct.gov/resource/ajdm-rvz7.json?$select=department,program,sum(amount)%20as%20amount,count(*)%20as%20records&$where=fiscal_year=2024&$group=department,program"
+    },
+    {
+      "id": "office-of-early-childhood",
+      "name": "Office of Early Childhood",
+      "amount": 553379795.8,
+      "sourceAmount": 553379795.8,
+      "detailUrl": "data/state-ct/archive-state-source/state-ct-office-of-early-childhood.json",
+      "sourceUrl": "https://data.ct.gov/resource/ajdm-rvz7.json?$select=department,program,sum(amount)%20as%20amount,count(*)%20as%20records&$where=fiscal_year=2024&$group=department,program"
+    },
+    {
+      "id": "department-of-housing",
+      "name": "Department of Housing",
+      "amount": 516729644.81,
+      "sourceAmount": 516729644.81,
+      "detailUrl": "data/state-ct/archive-state-source/state-ct-department-of-housing.json",
+      "sourceUrl": "https://data.ct.gov/resource/ajdm-rvz7.json?$select=department,program,sum(amount)%20as%20amount,count(*)%20as%20records&$where=fiscal_year=2024&$group=department,program"
+    },
+    {
+      "id": "paid-family-medical-leave-auth",
+      "name": "Paid Family Medical Leave Auth",
+      "amount": 415387474.31,
+      "sourceAmount": 415387474.31,
+      "detailUrl": "data/state-ct/archive-state-source/state-ct-paid-family-medical-leave-auth.json",
+      "sourceUrl": "https://data.ct.gov/resource/ajdm-rvz7.json?$select=department,program,sum(amount)%20as%20amount,count(*)%20as%20records&$where=fiscal_year=2024&$group=department,program"
+    },
+    {
+      "id": "dept-of-emrg-svc-public-prot",
+      "name": "Dept of Emrg Svc & Public Prot",
+      "amount": 389653102,
+      "sourceAmount": 389653102,
+      "detailUrl": "data/state-ct/archive-state-source/state-ct-dept-of-emrg-svc-public-prot.json",
+      "sourceUrl": "https://data.ct.gov/resource/ajdm-rvz7.json?$select=department,program,sum(amount)%20as%20amount,count(*)%20as%20records&$where=fiscal_year=2024&$group=department,program"
+    },
+    {
+      "id": "dept-of-energy-environ-prot",
+      "name": "Dept of Energy & Environ Prot.",
+      "amount": 303266264.05,
+      "sourceAmount": 303266264.05,
+      "detailUrl": "data/state-ct/archive-state-source/state-ct-dept-of-energy-environ-prot.json",
+      "sourceUrl": "https://data.ct.gov/resource/ajdm-rvz7.json?$select=department,program,sum(amount)%20as%20amount,count(*)%20as%20records&$where=fiscal_year=2024&$group=department,program"
+    },
+    {
+      "id": "dept-of-public-health",
+      "name": "Dept. of Public Health",
+      "amount": 295619980.48,
+      "sourceAmount": 295619980.48,
+      "detailUrl": "data/state-ct/archive-state-source/state-ct-dept-of-public-health.json",
+      "sourceUrl": "https://data.ct.gov/resource/ajdm-rvz7.json?$select=department,program,sum(amount)%20as%20amount,count(*)%20as%20records&$where=fiscal_year=2024&$group=department,program"
+    },
+    {
+      "id": "judicial-branch",
+      "name": "Judicial Branch",
+      "amount": 275065883.73,
+      "sourceAmount": 275065883.73,
+      "detailUrl": "data/state-ct/archive-state-source/state-ct-judicial-branch.json",
+      "sourceUrl": "https://data.ct.gov/resource/ajdm-rvz7.json?$select=department,program,sum(amount)%20as%20amount,count(*)%20as%20records&$where=fiscal_year=2024&$group=department,program"
+    },
+    {
+      "id": "econ-community-development",
+      "name": "Econ. & Community Development",
+      "amount": 258767978.05,
+      "sourceAmount": 258767978.05,
+      "detailUrl": "data/state-ct/archive-state-source/state-ct-econ-community-development.json",
+      "sourceUrl": "https://data.ct.gov/resource/ajdm-rvz7.json?$select=department,program,sum(amount)%20as%20amount,count(*)%20as%20records&$where=fiscal_year=2024&$group=department,program"
+    },
+    {
+      "id": "dept-of-correction",
+      "name": "Dept. of Correction",
+      "amount": 216158460.93,
+      "sourceAmount": 216158460.93,
+      "detailUrl": "data/state-ct/archive-state-source/state-ct-dept-of-correction.json",
+      "sourceUrl": "https://data.ct.gov/resource/ajdm-rvz7.json?$select=department,program,sum(amount)%20as%20amount,count(*)%20as%20records&$where=fiscal_year=2024&$group=department,program"
+    },
+    {
+      "id": "ct-state-community-college",
+      "name": "CT STATE COMMUNITY COLLEGE",
+      "amount": 179434218.12,
+      "sourceAmount": 179434218.12,
+      "program": "CT STATE COMMUNITY COLLEGE · Non-Budgeted Operating Approp",
+      "sourceRows": 540,
+      "detailUrl": null,
+      "sourceUrl": "https://data.ct.gov/resource/ajdm-rvz7.json?$select=department,program,sum(amount)%20as%20amount,count(*)%20as%20records&$where=fiscal_year=2024&$group=department,program"
+    },
+    {
+      "id": "ct-housing-fin-authority",
+      "name": "CT Housing & Fin. Authority",
+      "amount": 148790106.97,
+      "sourceAmount": 148790106.97,
+      "detailUrl": "data/state-ct/archive-state-source/state-ct-ct-housing-fin-authority.json",
+      "sourceUrl": "https://data.ct.gov/resource/ajdm-rvz7.json?$select=department,program,sum(amount)%20as%20amount,count(*)%20as%20records&$where=fiscal_year=2024&$group=department,program"
+    },
+    {
+      "id": "dept-of-labor",
+      "name": "Dept. of Labor",
+      "amount": 97225216.92,
+      "sourceAmount": 97225216.92,
+      "detailUrl": "data/state-ct/archive-state-source/state-ct-dept-of-labor.json",
+      "sourceUrl": "https://data.ct.gov/resource/ajdm-rvz7.json?$select=department,program,sum(amount)%20as%20amount,count(*)%20as%20records&$where=fiscal_year=2024&$group=department,program"
+    },
+    {
+      "id": "csu-southern",
+      "name": "CSU - Southern",
+      "amount": 78700088.68,
+      "sourceAmount": 78700088.68,
+      "detailUrl": "data/state-ct/archive-state-source/state-ct-csu-southern.json",
+      "sourceUrl": "https://data.ct.gov/resource/ajdm-rvz7.json?$select=department,program,sum(amount)%20as%20amount,count(*)%20as%20records&$where=fiscal_year=2024&$group=department,program"
+    },
+    {
+      "id": "aging-and-disability-services",
+      "name": "Aging and Disability Services",
+      "amount": 75216605.88,
+      "sourceAmount": 75216605.88,
+      "detailUrl": "data/state-ct/archive-state-source/state-ct-aging-and-disability-services.json",
+      "sourceUrl": "https://data.ct.gov/resource/ajdm-rvz7.json?$select=department,program,sum(amount)%20as%20amount,count(*)%20as%20records&$where=fiscal_year=2024&$group=department,program"
+    },
+    {
+      "id": "csu-central",
+      "name": "CSU - Central",
+      "amount": 72173556.16,
+      "sourceAmount": 72173556.16,
+      "detailUrl": "data/state-ct/archive-state-source/state-ct-csu-central.json",
+      "sourceUrl": "https://data.ct.gov/resource/ajdm-rvz7.json?$select=department,program,sum(amount)%20as%20amount,count(*)%20as%20records&$where=fiscal_year=2024&$group=department,program"
+    },
+    {
+      "id": "office-of-higher-education",
+      "name": "Office of Higher Education",
+      "amount": 70712324.47,
+      "sourceAmount": 70712324.47,
+      "detailUrl": "data/state-ct/archive-state-source/state-ct-office-of-higher-education.json",
+      "sourceUrl": "https://data.ct.gov/resource/ajdm-rvz7.json?$select=department,program,sum(amount)%20as%20amount,count(*)%20as%20records&$where=fiscal_year=2024&$group=department,program"
+    },
+    {
+      "id": "ct-tech-educ-and-career-sys",
+      "name": "CT Tech Educ and Career Sys",
+      "amount": 64362149.29,
+      "sourceAmount": 64362149.29,
+      "detailUrl": "data/state-ct/archive-state-source/state-ct-ct-tech-educ-and-career-sys.json",
+      "sourceUrl": "https://data.ct.gov/resource/ajdm-rvz7.json?$select=department,program,sum(amount)%20as%20amount,count(*)%20as%20records&$where=fiscal_year=2024&$group=department,program"
+    },
+    {
+      "id": "probate-court-administration",
+      "name": "Probate Court Administration",
+      "amount": 47582718.39,
+      "sourceAmount": 47582718.39,
+      "program": "Probate Court Administration · Probate Court Administration",
+      "sourceRows": 24304,
+      "detailUrl": null,
+      "sourceUrl": "https://data.ct.gov/resource/ajdm-rvz7.json?$select=department,program,sum(amount)%20as%20amount,count(*)%20as%20records&$where=fiscal_year=2024&$group=department,program"
+    },
+    {
+      "id": "csu-eastern",
+      "name": "CSU - Eastern",
+      "amount": 38353065.58,
+      "sourceAmount": 38353065.58,
+      "detailUrl": "data/state-ct/archive-state-source/state-ct-csu-eastern.json",
+      "sourceUrl": "https://data.ct.gov/resource/ajdm-rvz7.json?$select=department,program,sum(amount)%20as%20amount,count(*)%20as%20records&$where=fiscal_year=2024&$group=department,program"
+    },
+    {
+      "id": "public-defender-services",
+      "name": "Public Defender Services",
+      "amount": 35704549.8,
+      "sourceAmount": 35704549.8,
+      "detailUrl": "data/state-ct/archive-state-source/state-ct-public-defender-services.json",
+      "sourceUrl": "https://data.ct.gov/resource/ajdm-rvz7.json?$select=department,program,sum(amount)%20as%20amount,count(*)%20as%20records&$where=fiscal_year=2024&$group=department,program"
+    },
+    {
+      "id": "capital-reg-dev-authority",
+      "name": "Capital Reg Dev Authority",
+      "amount": 35125001,
+      "sourceAmount": 35125001,
+      "detailUrl": "data/state-ct/archive-state-source/state-ct-capital-reg-dev-authority.json",
+      "sourceUrl": "https://data.ct.gov/resource/ajdm-rvz7.json?$select=department,program,sum(amount)%20as%20amount,count(*)%20as%20records&$where=fiscal_year=2024&$group=department,program"
+    },
+    {
+      "id": "csu-western",
+      "name": "CSU - Western",
+      "amount": 33496443.64,
+      "sourceAmount": 33496443.64,
+      "detailUrl": "data/state-ct/archive-state-source/state-ct-csu-western.json",
+      "sourceUrl": "https://data.ct.gov/resource/ajdm-rvz7.json?$select=department,program,sum(amount)%20as%20amount,count(*)%20as%20records&$where=fiscal_year=2024&$group=department,program"
+    },
+    {
+      "id": "ct-port-authority",
+      "name": "CT Port Authority",
+      "amount": 32827531.46,
+      "sourceAmount": 32827531.46,
+      "program": "CT Port Authority · PORTS  HARBORS & MARINAS",
+      "sourceRows": 82,
+      "detailUrl": null,
+      "sourceUrl": "https://data.ct.gov/resource/ajdm-rvz7.json?$select=department,program,sum(amount)%20as%20amount,count(*)%20as%20records&$where=fiscal_year=2024&$group=department,program"
+    },
+    {
+      "id": "dept-of-agriculture",
+      "name": "Dept. of Agriculture",
+      "amount": 29302347.72,
+      "sourceAmount": 29302347.72,
+      "detailUrl": "data/state-ct/archive-state-source/state-ct-dept-of-agriculture.json",
+      "sourceUrl": "https://data.ct.gov/resource/ajdm-rvz7.json?$select=department,program,sum(amount)%20as%20amount,count(*)%20as%20records&$where=fiscal_year=2024&$group=department,program"
+    },
+    {
+      "id": "legislative-management",
+      "name": "Legislative Management",
+      "amount": 26901985.04,
+      "sourceAmount": 26901985.04,
+      "detailUrl": "data/state-ct/archive-state-source/state-ct-legislative-management.json",
+      "sourceUrl": "https://data.ct.gov/resource/ajdm-rvz7.json?$select=department,program,sum(amount)%20as%20amount,count(*)%20as%20records&$where=fiscal_year=2024&$group=department,program"
+    },
+    {
+      "id": "office-of-health-strategy",
+      "name": "Office of Health Strategy",
+      "amount": 25392606.66,
+      "sourceAmount": 25392606.66,
+      "detailUrl": "data/state-ct/archive-state-source/state-ct-office-of-health-strategy.json",
+      "sourceUrl": "https://data.ct.gov/resource/ajdm-rvz7.json?$select=department,program,sum(amount)%20as%20amount,count(*)%20as%20records&$where=fiscal_year=2024&$group=department,program"
+    },
+    {
+      "id": "dept-of-motor-vehicles",
+      "name": "Dept. of Motor Vehicles",
+      "amount": 25336863.41,
+      "sourceAmount": 25336863.41,
+      "detailUrl": "data/state-ct/archive-state-source/state-ct-dept-of-motor-vehicles.json",
+      "sourceUrl": "https://data.ct.gov/resource/ajdm-rvz7.json?$select=department,program,sum(amount)%20as%20amount,count(*)%20as%20records&$where=fiscal_year=2024&$group=department,program"
+    },
+    {
+      "id": "military-dept",
+      "name": "Military Dept.",
+      "amount": 24755930.68,
+      "sourceAmount": 24755930.68,
+      "detailUrl": "data/state-ct/archive-state-source/state-ct-military-dept.json",
+      "sourceUrl": "https://data.ct.gov/resource/ajdm-rvz7.json?$select=department,program,sum(amount)%20as%20amount,count(*)%20as%20records&$where=fiscal_year=2024&$group=department,program"
+    },
+    {
+      "id": "renters-rebate",
+      "name": "Renters Rebate",
+      "amount": 24709747.47,
+      "sourceAmount": 24709747.47,
+      "program": "Renters Rebate · Tax Relief For Elderly Renters",
+      "sourceRows": 45481,
+      "detailUrl": null,
+      "sourceUrl": "https://data.ct.gov/resource/ajdm-rvz7.json?$select=department,program,sum(amount)%20as%20amount,count(*)%20as%20records&$where=fiscal_year=2024&$group=department,program"
+    },
+    {
+      "id": "doc-correctional-industries",
+      "name": "DOC - Correctional Industries",
+      "amount": 21570238.31,
+      "sourceAmount": 21570238.31,
+      "detailUrl": "data/state-ct/archive-state-source/state-ct-doc-correctional-industries.json",
+      "sourceUrl": "https://data.ct.gov/resource/ajdm-rvz7.json?$select=department,program,sum(amount)%20as%20amount,count(*)%20as%20records&$where=fiscal_year=2024&$group=department,program"
+    },
+    {
+      "id": "connecticut-state-universities",
+      "name": "Connecticut State Universities",
+      "amount": 20788055.78,
+      "sourceAmount": 20788055.78,
+      "detailUrl": "data/state-ct/archive-state-source/state-ct-connecticut-state-universities.json",
+      "sourceUrl": "https://data.ct.gov/resource/ajdm-rvz7.json?$select=department,program,sum(amount)%20as%20amount,count(*)%20as%20records&$where=fiscal_year=2024&$group=department,program"
+    },
+    {
+      "id": "dept-of-revenue-services",
+      "name": "Dept. of Revenue Services",
+      "amount": 17074789.67,
+      "sourceAmount": 17074789.67,
+      "detailUrl": "data/state-ct/archive-state-source/state-ct-dept-of-revenue-services.json",
+      "sourceUrl": "https://data.ct.gov/resource/ajdm-rvz7.json?$select=department,program,sum(amount)%20as%20amount,count(*)%20as%20records&$where=fiscal_year=2024&$group=department,program"
+    },
+    {
+      "id": "das-information-technology",
+      "name": "DAS - Information Technology",
+      "amount": 16838096.92,
+      "sourceAmount": 16838096.92,
+      "detailUrl": "data/state-ct/archive-state-source/state-ct-das-information-technology.json",
+      "sourceUrl": "https://data.ct.gov/resource/ajdm-rvz7.json?$select=department,program,sum(amount)%20as%20amount,count(*)%20as%20records&$where=fiscal_year=2024&$group=department,program"
+    },
+    {
+      "id": "connecticut-state-library",
+      "name": "Connecticut State Library",
+      "amount": 10914590.35,
+      "sourceAmount": 10914590.35,
+      "detailUrl": "data/state-ct/archive-state-source/state-ct-connecticut-state-library.json",
+      "sourceUrl": "https://data.ct.gov/resource/ajdm-rvz7.json?$select=department,program,sum(amount)%20as%20amount,count(*)%20as%20records&$where=fiscal_year=2024&$group=department,program"
+    },
+    {
+      "id": "charter-oak-state-college",
+      "name": "Charter Oak State College",
+      "amount": 10533618.92,
+      "sourceAmount": 10533618.92,
+      "detailUrl": "data/state-ct/archive-state-source/state-ct-charter-oak-state-college.json",
+      "sourceUrl": "https://data.ct.gov/resource/ajdm-rvz7.json?$select=department,program,sum(amount)%20as%20amount,count(*)%20as%20records&$where=fiscal_year=2024&$group=department,program"
+    },
+    {
+      "id": "secretary-of-the-state",
+      "name": "Secretary of the State",
+      "amount": 10053093.47,
+      "sourceAmount": 10053093.47,
+      "detailUrl": "data/state-ct/archive-state-source/state-ct-secretary-of-the-state.json",
+      "sourceUrl": "https://data.ct.gov/resource/ajdm-rvz7.json?$select=department,program,sum(amount)%20as%20amount,count(*)%20as%20records&$where=fiscal_year=2024&$group=department,program"
+    },
+    {
+      "id": "dept-of-veterans-affairs",
+      "name": "Dept. of Veterans' Affairs",
+      "amount": 9425242.84,
+      "sourceAmount": 9425242.84,
+      "detailUrl": "data/state-ct/archive-state-source/state-ct-dept-of-veterans-affairs.json",
+      "sourceUrl": "https://data.ct.gov/resource/ajdm-rvz7.json?$select=department,program,sum(amount)%20as%20amount,count(*)%20as%20records&$where=fiscal_year=2024&$group=department,program"
+    },
+    {
+      "id": "division-of-criminal-justice",
+      "name": "Division of Criminal Justice",
+      "amount": 7684609.61,
+      "sourceAmount": 7684609.61,
+      "detailUrl": "data/state-ct/archive-state-source/state-ct-division-of-criminal-justice.json",
+      "sourceUrl": "https://data.ct.gov/resource/ajdm-rvz7.json?$select=department,program,sum(amount)%20as%20amount,count(*)%20as%20records&$where=fiscal_year=2024&$group=department,program"
+    },
+    {
+      "id": "ct-innovations-inc",
+      "name": "CT Innovations Inc",
+      "amount": 5007546.21,
+      "sourceAmount": 5007546.21,
+      "detailUrl": "data/state-ct/archive-state-source/state-ct-ct-innovations-inc.json",
+      "sourceUrl": "https://data.ct.gov/resource/ajdm-rvz7.json?$select=department,program,sum(amount)%20as%20amount,count(*)%20as%20records&$where=fiscal_year=2024&$group=department,program"
+    },
+    {
+      "id": "dcf-solnit-children-cntr-south",
+      "name": "DCF-Solnit Children Cntr South",
+      "amount": 4633554.6,
+      "sourceAmount": 4633554.6,
+      "detailUrl": "data/state-ct/archive-state-source/state-ct-dcf-solnit-children-cntr-south.json",
+      "sourceUrl": "https://data.ct.gov/resource/ajdm-rvz7.json?$select=department,program,sum(amount)%20as%20amount,count(*)%20as%20records&$where=fiscal_year=2024&$group=department,program"
+    },
+    {
+      "id": "agricultural-experiment-sta",
+      "name": "Agricultural Experiment Sta",
+      "amount": 4623291.92,
+      "sourceAmount": 4623291.92,
+      "detailUrl": "data/state-ct/archive-state-source/state-ct-agricultural-experiment-sta.json",
+      "sourceUrl": "https://data.ct.gov/resource/ajdm-rvz7.json?$select=department,program,sum(amount)%20as%20amount,count(*)%20as%20records&$where=fiscal_year=2024&$group=department,program"
+    },
+    {
+      "id": "attorney-general-s-office",
+      "name": "Attorney General's Office",
+      "amount": 4156228.68,
+      "sourceAmount": 4156228.68,
+      "detailUrl": "data/state-ct/archive-state-source/state-ct-attorney-general-s-office.json",
+      "sourceUrl": "https://data.ct.gov/resource/ajdm-rvz7.json?$select=department,program,sum(amount)%20as%20amount,count(*)%20as%20records&$where=fiscal_year=2024&$group=department,program"
+    },
+    {
+      "id": "dept-of-consumer-protection",
+      "name": "Dept. of Consumer Protection",
+      "amount": 3674206.56,
+      "sourceAmount": 3674206.56,
+      "detailUrl": "data/state-ct/archive-state-source/state-ct-dept-of-consumer-protection.json",
+      "sourceUrl": "https://data.ct.gov/resource/ajdm-rvz7.json?$select=department,program,sum(amount)%20as%20amount,count(*)%20as%20records&$where=fiscal_year=2024&$group=department,program"
+    },
+    {
+      "id": "ct-airport-authority-ops",
+      "name": "CT Airport Authority (OPS)",
+      "amount": 3634738.43,
+      "sourceAmount": 3634738.43,
+      "detailUrl": "data/state-ct/archive-state-source/state-ct-ct-airport-authority-ops.json",
+      "sourceUrl": "https://data.ct.gov/resource/ajdm-rvz7.json?$select=department,program,sum(amount)%20as%20amount,count(*)%20as%20records&$where=fiscal_year=2024&$group=department,program"
+    },
+    {
+      "id": "chief-medical-examiner-s-offc",
+      "name": "Chief Medical Examiner's Offc",
+      "amount": 3010432.89,
+      "sourceAmount": 3010432.89,
+      "detailUrl": "data/state-ct/archive-state-source/state-ct-chief-medical-examiner-s-offc.json",
+      "sourceUrl": "https://data.ct.gov/resource/ajdm-rvz7.json?$select=department,program,sum(amount)%20as%20amount,count(*)%20as%20records&$where=fiscal_year=2024&$group=department,program"
+    },
+    {
+      "id": "worker-s-compensation-commiss",
+      "name": "Worker's Compensation Commiss.",
+      "amount": 2601180.55,
+      "sourceAmount": 2601180.55,
+      "detailUrl": "data/state-ct/archive-state-source/state-ct-worker-s-compensation-commiss.json",
+      "sourceUrl": "https://data.ct.gov/resource/ajdm-rvz7.json?$select=department,program,sum(amount)%20as%20amount,count(*)%20as%20records&$where=fiscal_year=2024&$group=department,program"
+    },
+    {
+      "id": "dept-of-insurance",
+      "name": "Dept. of Insurance",
+      "amount": 2205561.85,
+      "sourceAmount": 2205561.85,
+      "detailUrl": "data/state-ct/archive-state-source/state-ct-dept-of-insurance.json",
+      "sourceUrl": "https://data.ct.gov/resource/ajdm-rvz7.json?$select=department,program,sum(amount)%20as%20amount,count(*)%20as%20records&$where=fiscal_year=2024&$group=department,program"
+    },
+    {
+      "id": "human-rights-opportunities",
+      "name": "Human Rights & Opportunities",
+      "amount": 1890261.02,
+      "sourceAmount": 1890261.02,
+      "detailUrl": "data/state-ct/archive-state-source/state-ct-human-rights-opportunities.json",
+      "sourceUrl": "https://data.ct.gov/resource/ajdm-rvz7.json?$select=department,program,sum(amount)%20as%20amount,count(*)%20as%20records&$where=fiscal_year=2024&$group=department,program"
+    },
+    {
+      "id": "elections-enforcement",
+      "name": "Elections Enforcement",
+      "amount": 1691279.56,
+      "sourceAmount": 1691279.56,
+      "detailUrl": "data/state-ct/archive-state-source/state-ct-elections-enforcement.json",
+      "sourceUrl": "https://data.ct.gov/resource/ajdm-rvz7.json?$select=department,program,sum(amount)%20as%20amount,count(*)%20as%20records&$where=fiscal_year=2024&$group=department,program"
+    },
+    {
+      "id": "dept-of-banking",
+      "name": "Dept. of Banking",
+      "amount": 1628263.28,
+      "sourceAmount": 1628263.28,
+      "detailUrl": "data/state-ct/archive-state-source/state-ct-dept-of-banking.json",
+      "sourceUrl": "https://data.ct.gov/resource/ajdm-rvz7.json?$select=department,program,sum(amount)%20as%20amount,count(*)%20as%20records&$where=fiscal_year=2024&$group=department,program"
+    },
+    {
+      "id": "dcf-solnit-children-cntr-north",
+      "name": "DCF-Solnit Children Cntr North",
+      "amount": 1615069.98,
+      "sourceAmount": 1615069.98,
+      "detailUrl": "data/state-ct/archive-state-source/state-ct-dcf-solnit-children-cntr-north.json",
+      "sourceUrl": "https://data.ct.gov/resource/ajdm-rvz7.json?$select=department,program,sum(amount)%20as%20amount,count(*)%20as%20records&$where=fiscal_year=2024&$group=department,program"
+    },
+    {
+      "id": "auditors-of-public-accounts",
+      "name": "Auditors of Public Accounts",
+      "amount": 557698.6,
+      "sourceAmount": 557698.6,
+      "program": "Auditors of Public Accounts · Other Expenses",
+      "sourceRows": 170,
+      "detailUrl": "data/state-ct/archive-state-source/state-ct-auditors-of-public-accounts.json",
+      "sourceUrl": "https://data.ct.gov/resource/ajdm-rvz7.json?$select=department,program,sum(amount)%20as%20amount,count(*)%20as%20records&$where=fiscal_year=2024&$group=department,program"
+    },
+    {
+      "id": "governor-s-office",
+      "name": "Governor's Office",
+      "amount": 525399.83,
+      "sourceAmount": 525399.83,
+      "detailUrl": "data/state-ct/archive-state-source/state-ct-governor-s-office.json",
+      "sourceUrl": "https://data.ct.gov/resource/ajdm-rvz7.json?$select=department,program,sum(amount)%20as%20amount,count(*)%20as%20records&$where=fiscal_year=2024&$group=department,program"
+    },
+    {
+      "id": "off-of-the-healthcare-advocate",
+      "name": "Off of the Healthcare Advocate",
+      "amount": 231632.31,
+      "sourceAmount": 231632.31,
+      "detailUrl": "data/state-ct/archive-state-source/state-ct-off-of-the-healthcare-advocate.json",
+      "sourceUrl": "https://data.ct.gov/resource/ajdm-rvz7.json?$select=department,program,sum(amount)%20as%20amount,count(*)%20as%20records&$where=fiscal_year=2024&$group=department,program"
+    },
+    {
+      "id": "office-of-govt-accountability",
+      "name": "Office of Govt. Accountability",
+      "amount": 149894.9,
+      "sourceAmount": 149894.9,
+      "detailUrl": "data/state-ct/archive-state-source/state-ct-office-of-govt-accountability.json",
+      "sourceUrl": "https://data.ct.gov/resource/ajdm-rvz7.json?$select=department,program,sum(amount)%20as%20amount,count(*)%20as%20records&$where=fiscal_year=2024&$group=department,program"
+    },
+    {
+      "id": "freedom-of-information",
+      "name": "Freedom of Information",
+      "amount": 128862.52,
+      "sourceAmount": 128862.52,
+      "detailUrl": "data/state-ct/archive-state-source/state-ct-freedom-of-information.json",
+      "sourceUrl": "https://data.ct.gov/resource/ajdm-rvz7.json?$select=department,program,sum(amount)%20as%20amount,count(*)%20as%20records&$where=fiscal_year=2024&$group=department,program"
+    },
+    {
+      "id": "military-department-combat-pay",
+      "name": "Military Department-Combat Pay",
+      "amount": 79835,
+      "sourceAmount": 79835,
+      "detailUrl": "data/state-ct/archive-state-source/state-ct-military-department-combat-pay.json",
+      "sourceUrl": "https://data.ct.gov/resource/ajdm-rvz7.json?$select=department,program,sum(amount)%20as%20amount,count(*)%20as%20records&$where=fiscal_year=2024&$group=department,program"
+    },
+    {
+      "id": "office-of-state-ethics",
+      "name": "Office of State Ethics",
+      "amount": 71584.55,
+      "sourceAmount": 71584.55,
+      "detailUrl": "data/state-ct/archive-state-source/state-ct-office-of-state-ethics.json",
+      "sourceUrl": "https://data.ct.gov/resource/ajdm-rvz7.json?$select=department,program,sum(amount)%20as%20amount,count(*)%20as%20records&$where=fiscal_year=2024&$group=department,program"
+    },
+    {
+      "id": "comm-on-womenchilsenequityopty",
+      "name": "Comm on WomenChilSenEquityOpty",
+      "amount": 39062.92,
+      "sourceAmount": 39062.92,
+      "program": "Comm on WomenChilSenEquityOpty · Other Expenses",
+      "sourceRows": 98,
+      "detailUrl": "data/state-ct/archive-state-source/state-ct-comm-on-womenchilsenequityopty.json",
+      "sourceUrl": "https://data.ct.gov/resource/ajdm-rvz7.json?$select=department,program,sum(amount)%20as%20amount,count(*)%20as%20records&$where=fiscal_year=2024&$group=department,program"
+    },
+    {
+      "id": "lieutenant-governor-s-office",
+      "name": "Lieutenant Governor's Office",
+      "amount": 28467.53,
+      "sourceAmount": 28467.53,
+      "program": "Lieutenant Governor's Office · Other Expenses",
+      "sourceRows": 85,
+      "detailUrl": "data/state-ct/archive-state-source/state-ct-lieutenant-governor-s-office.json",
+      "sourceUrl": "https://data.ct.gov/resource/ajdm-rvz7.json?$select=department,program,sum(amount)%20as%20amount,count(*)%20as%20records&$where=fiscal_year=2024&$group=department,program"
+    }
+  ],
+  "itemizedTotal": 36131360457.04,
+  "comparison": {
+    "label": "Census FY2024 state-finance comparator",
+    "url": "https://data.census.gov/table/GOVSSTATEFINTIMESERIES.GS00STATEFIN01?g=040XX00US09&time=2024",
+    "total": 33908102000,
+    "difference": 2223258457.04
+  },
+  "coverageStatus": "official-itemized-source-basis",
+  "archiveNote": "Prior official state layer archived when the complete Census function layer became primary for map reconciliation."
+}

@@ -1,0 +1,112 @@
+{
+  "scope": "Oregon",
+  "fiscalYear": 2024,
+  "department": "PUBLIC RECORDS ADVOCATE, OFFICE OF",
+  "sourceUrl": "https://data.oregon.gov/resource/y9g9-xsxs.json?$select=agency,agency_1,budget_class,budget_class_1,expend_class,expend_class_1,vendor,sum(expense)%20as%20total,count(*)%20as%20source_rows&$where=fiscal_year=2024&$group=agency,agency_1,budget_class,budget_class_1,expend_class,expend_class_1,vendor&$limit=500000",
+  "sourceUrls": [
+    [
+      "Oregon transparency expenditure catalog",
+      "https://data.oregon.gov/Revenue-Expense/Agency-Expenditures-Multi-Year-Report/y9g9-xsxs"
+    ],
+    [
+      "Grouped FY2024 API export",
+      "https://data.oregon.gov/resource/y9g9-xsxs.json?$select=agency,agency_1,budget_class,budget_class_1,expend_class,expend_class_1,vendor,sum(expense)%20as%20total,count(*)%20as%20source_rows&$where=fiscal_year=2024&$group=agency,agency_1,budget_class,budget_class_1,expend_class,expend_class_1,vendor&$limit=500000"
+    ]
+  ],
+  "sourceBasis": "Official Oregon Agency Expenditures Multi-Year Report; FY2024 cash expense grouped by agency, budget class, expenditure class, and privacy-safe receiver label.",
+  "privacyNote": "Individual or ambiguous vendor labels are grouped as [individual recipient omitted]; organization receivers are retained. This layer does not expose person-level payroll.",
+  "sourceRows": 11,
+  "sourceTotal": 47687.22,
+  "rowSchema": [
+    "subAgency",
+    "program",
+    "amount",
+    "sourceAmount",
+    "sourceRows"
+  ],
+  "rows": [
+    [
+      "PUBLIC RECORDS ADVOCATE, OFFICE OF",
+      "4650 · OTHER SERVICES AND SUPPLIES · 4701 · OTHER SERVICES · Receiver DEPARTMENT OF ADMINISTRATIVE SERVICES",
+      20976.87,
+      20976.87,
+      1
+    ],
+    [
+      "PUBLIC RECORDS ADVOCATE, OFFICE OF",
+      "4225 · STATE GOVERNMENT SERVICE CHARGES · 4600 · STATE GOVERNMENT SERVICE CHARGES · Receiver DEPARTMENT OF ADMINISTRATIVE SERVICES",
+      19686.1,
+      19686.1,
+      1
+    ],
+    [
+      "PUBLIC RECORDS ADVOCATE, OFFICE OF",
+      "4250 · DATA PROCESSING · 4367 · COMPUTER TECHNOLOGY PC SUPPORT · Receiver DEPARTMENT OF ADMINISTRATIVE SERVICES",
+      5532.5,
+      5532.5,
+      1
+    ],
+    [
+      "PUBLIC RECORDS ADVOCATE, OFFICE OF",
+      "4225 · STATE GOVERNMENT SERVICE CHARGES · 4600 · STATE GOVERNMENT SERVICE CHARGES · Receiver STATE OF OREGON SECRETARY OF STATE",
+      386,
+      386,
+      1
+    ],
+    [
+      "PUBLIC RECORDS ADVOCATE, OFFICE OF",
+      "4715 · IT EXPENDABLE PROPERTY · 4372 · COMPUTER TECHNOLOGY PERIPHERAL EQUIP<$5K · Receiver CDW GOVERNMENT INC",
+      369.91,
+      369.91,
+      1
+    ],
+    [
+      "PUBLIC RECORDS ADVOCATE, OFFICE OF",
+      "4715 · IT EXPENDABLE PROPERTY · 4304 · TELECOM/VOICE EQUIPMENT<$5K · Receiver CDW GOVERNMENT INC",
+      208.46,
+      208.46,
+      1
+    ],
+    [
+      "PUBLIC RECORDS ADVOCATE, OFFICE OF",
+      "4715 · IT EXPENDABLE PROPERTY · 4366 · COMPUTER TECHNOLOGY PC SOFTWARE<$5K · Receiver SHI INTERNATIONAL CORP",
+      153.9,
+      153.9,
+      1
+    ],
+    [
+      "PUBLIC RECORDS ADVOCATE, OFFICE OF",
+      "4225 · STATE GOVERNMENT SERVICE CHARGES · 4600 · STATE GOVERNMENT SERVICE CHARGES · Receiver OREGON STATE TREASURY",
+      132,
+      132,
+      1
+    ],
+    [
+      "PUBLIC RECORDS ADVOCATE, OFFICE OF",
+      "4100 · INSTATE TRAVEL · 4108 · INSTATE GROUND TRANSPORTATION · Receiver [individual recipient omitted]",
+      130.48,
+      130.48,
+      1
+    ],
+    [
+      "PUBLIC RECORDS ADVOCATE, OFFICE OF",
+      "4100 · INSTATE TRAVEL · 4101 · INSTATE MEALS WITH OVERNIGHT STAY · Receiver [individual recipient omitted]",
+      69,
+      69,
+      1
+    ],
+    [
+      "PUBLIC RECORDS ADVOCATE, OFFICE OF",
+      "4300 · PROFESSIONAL SERVICES · 4500 · PROFESSIONAL SERVICES NON-IT · Receiver CASCADE CENTERS INC",
+      42,
+      42,
+      1
+    ]
+  ],
+  "sourceCheck": {
+    "objectClassRows": 11,
+    "sourceRows": 11,
+    "sourceTotal": 47687.22,
+    "difference": 0
+  }
+}

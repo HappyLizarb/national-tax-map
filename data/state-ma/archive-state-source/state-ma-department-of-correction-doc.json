@@ -1,0 +1,140 @@
+{
+  "scope": "Massachusetts",
+  "code": "ma",
+  "department": "DEPARTMENT OF CORRECTION (DOC)",
+  "fiscalYear": 2024,
+  "ledgerAmount": 585853224.61,
+  "sourceTotal": 637807867.36,
+  "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000",
+  "rowSchema": [
+    "subAgency",
+    "program",
+    "amount",
+    "sourceAmount",
+    "sourceRows"
+  ],
+  "rows": [
+    [
+      "DEPARTMENT OF CORRECTION (DOC)",
+      "DEPARTMENT OF CORRECTION (DOC) · (AA) REGULAR EMPLOYEE COMPENSATION",
+      447991258.24,
+      447991258.24,
+      978
+    ],
+    [
+      "DEPARTMENT OF CORRECTION (DOC)",
+      "DEPARTMENT OF CORRECTION (DOC) · (NN) INFRASTRUCTURE:",
+      31305978.94,
+      31305978.94,
+      8550
+    ],
+    [
+      "DEPARTMENT OF CORRECTION (DOC)",
+      "DEPARTMENT OF CORRECTION (DOC) · (FF) FACILITY OPERATIONAL EXPENSES",
+      31121877.05,
+      31121877.05,
+      9135
+    ],
+    [
+      "DEPARTMENT OF CORRECTION (DOC)",
+      "DEPARTMENT OF CORRECTION (DOC) · (GG) ENERGY COSTS AND SPACE RENTAL",
+      27605455.9,
+      27605455.9,
+      3411
+    ],
+    [
+      "DEPARTMENT OF CORRECTION (DOC)",
+      "DEPARTMENT OF CORRECTION (DOC) · (UU) IT NON-PAYROLL EXPENSES",
+      26714303.55,
+      26714303.55,
+      501
+    ],
+    [
+      "DEPARTMENT OF CORRECTION (DOC)",
+      "DEPARTMENT OF CORRECTION (DOC) · (MM) PURCHASED CLIENT/PROGRAM SVCS",
+      19567159.98,
+      19567159.98,
+      99
+    ],
+    [
+      "DEPARTMENT OF CORRECTION (DOC)",
+      "DEPARTMENT OF CORRECTION (DOC) · (TT) LOANS AND SPECIAL PAYMENTS",
+      18044464.21,
+      18044464.21,
+      18
+    ],
+    [
+      "DEPARTMENT OF CORRECTION (DOC)",
+      "DEPARTMENT OF CORRECTION (DOC) · (KK) EQUIPMENT PURCHASE",
+      10496088.29,
+      10496088.29,
+      225
+    ],
+    [
+      "DEPARTMENT OF CORRECTION (DOC)",
+      "DEPARTMENT OF CORRECTION (DOC) · (JJ) OPERATIONAL SERVICES",
+      6879663.13,
+      6879663.13,
+      1202
+    ],
+    [
+      "DEPARTMENT OF CORRECTION (DOC)",
+      "DEPARTMENT OF CORRECTION (DOC) · (PP) STATE AID/POL SUB",
+      5965016,
+      5965016,
+      75
+    ],
+    [
+      "DEPARTMENT OF CORRECTION (DOC)",
+      "DEPARTMENT OF CORRECTION (DOC) · (HH) CONSULTANT SVCS (TO DEPTS)",
+      3434141.98,
+      3434141.98,
+      90
+    ],
+    [
+      "DEPARTMENT OF CORRECTION (DOC)",
+      "DEPARTMENT OF CORRECTION (DOC) · (BB) REGULAR EMPLOYEE RELATED EXPEN",
+      3404144.21,
+      3404144.21,
+      257
+    ],
+    [
+      "DEPARTMENT OF CORRECTION (DOC)",
+      "DEPARTMENT OF CORRECTION (DOC) · (EE) ADMINISTRATIVE EXPENSES",
+      2061822.61,
+      2061822.61,
+      3397
+    ],
+    [
+      "DEPARTMENT OF CORRECTION (DOC)",
+      "DEPARTMENT OF CORRECTION (DOC) · (LL) EQUIPMENT LEASE-MAINTAIN/REPAR",
+      1842385.37,
+      1842385.37,
+      2316
+    ],
+    [
+      "DEPARTMENT OF CORRECTION (DOC)",
+      "DEPARTMENT OF CORRECTION (DOC) · (DD) PENSION & INSURANCE RELATED EX",
+      1025379.21,
+      1025379.21,
+      37
+    ],
+    [
+      "DEPARTMENT OF CORRECTION (DOC)",
+      "DEPARTMENT OF CORRECTION (DOC) · (CC) SPECIAL EMPLOYEES",
+      348728.69,
+      348728.69,
+      103
+    ],
+    [
+      "DEPARTMENT OF CORRECTION (DOC)",
+      "DEPARTMENT OF CORRECTION (DOC) · (99) PAYROLL REJECTS",
+      0,
+      0,
+      4
+    ]
+  ],
+  "hierarchyNote": "The source does not identify a separate sub-agency column; direct-managed rows repeat the parent entity.",
+  "sourceBasis": "official source amount",
+  "note": "Amounts are shown on the official source basis; no comparator normalization was applied."
+}

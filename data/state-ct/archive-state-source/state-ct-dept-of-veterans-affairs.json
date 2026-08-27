@@ -1,0 +1,133 @@
+{
+  "scope": "Connecticut",
+  "code": "ct",
+  "department": "Dept. of Veterans' Affairs",
+  "fiscalYear": 2024,
+  "ledgerAmount": 8845282.65,
+  "sourceTotal": 9425242.84,
+  "sourceUrl": "https://data.ct.gov/resource/ajdm-rvz7.json?$select=department,program,sum(amount)%20as%20amount,count(*)%20as%20records&$where=fiscal_year=2024&$group=department,program",
+  "rowSchema": [
+    "subAgency",
+    "program",
+    "amount",
+    "sourceAmount",
+    "sourceRows"
+  ],
+  "rows": [
+    [
+      "Dept. of Veterans' Affairs",
+      "Dept. of Veterans' Affairs · Other Expenses",
+      3197592.13,
+      3197592.13,
+      2586
+    ],
+    [
+      "Dept. of Veterans' Affairs",
+      "Dept. of Veterans' Affairs · Institutional Gen Welfare Fund",
+      3058982.86,
+      3058982.86,
+      2046
+    ],
+    [
+      "Dept. of Veterans' Affairs",
+      "Dept. of Veterans' Affairs · Energy Projects-St Buildings",
+      628519.2,
+      628519.2,
+      5
+    ],
+    [
+      "Dept. of Veterans' Affairs",
+      "Dept. of Veterans' Affairs · SSMF Administration",
+      560345,
+      560345,
+      4
+    ],
+    [
+      "Dept. of Veterans' Affairs",
+      "Dept. of Veterans' Affairs · Veteran's Rally Point",
+      512764,
+      512764,
+      4
+    ],
+    [
+      "Dept. of Veterans' Affairs",
+      "Dept. of Veterans' Affairs · POWER PLANT UPGRADE ROCKY HILL",
+      376665.64,
+      376665.64,
+      16
+    ],
+    [
+      "Dept. of Veterans' Affairs",
+      "Dept. of Veterans' Affairs · DVA Donations IGWF",
+      220227.51,
+      220227.51,
+      188
+    ],
+    [
+      "Dept. of Veterans' Affairs",
+      "Dept. of Veterans' Affairs · DVA-ALTERATION & REPAIR BLDG",
+      196365.3,
+      196365.3,
+      61
+    ],
+    [
+      "Dept. of Veterans' Affairs",
+      "Dept. of Veterans' Affairs · IT Services",
+      185170.67,
+      185170.67,
+      95
+    ],
+    [
+      "Dept. of Veterans' Affairs",
+      "Dept. of Veterans' Affairs · SVH ARPA Grant",
+      183822.57,
+      183822.57,
+      190
+    ],
+    [
+      "Dept. of Veterans' Affairs",
+      "Dept. of Veterans' Affairs · Headstones",
+      169734.1,
+      169734.1,
+      481
+    ],
+    [
+      "Dept. of Veterans' Affairs",
+      "Dept. of Veterans' Affairs · Capital Equip Purchase Fund",
+      66764.4,
+      66764.4,
+      11
+    ],
+    [
+      "Dept. of Veterans' Affairs",
+      "Dept. of Veterans' Affairs · Veterans' Opportunity Pilot",
+      38090.26,
+      38090.26,
+      34
+    ],
+    [
+      "Dept. of Veterans' Affairs",
+      "Dept. of Veterans' Affairs · DVA Provider Relief Funds",
+      15561.2,
+      15561.2,
+      3
+    ],
+    [
+      "Dept. of Veterans' Affairs",
+      "Dept. of Veterans' Affairs · Ren/improve-existing facility",
+      7972,
+      7972,
+      2
+    ],
+    [
+      "Dept. of Veterans' Affairs",
+      "Dept. of Veterans' Affairs · Burial Expenses",
+      6666,
+      6666,
+      4
+    ]
+  ],
+  "hierarchyNote": "The source does not identify a separate sub-agency column; direct-managed rows repeat the parent entity.",
+  "sourceBasis": "official source amount",
+  "note": "Amounts are shown on the official source basis; no comparator normalization was applied."
+}

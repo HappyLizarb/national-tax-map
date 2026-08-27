@@ -1,0 +1,133 @@
+{
+  "scope": "Massachusetts",
+  "code": "ma",
+  "department": "EXECUTIVE OFFICE OF ENVIRONMENTAL AFFAIRS (ENV)",
+  "fiscalYear": 2024,
+  "ledgerAmount": 283938366.02,
+  "sourceTotal": 309118591.63,
+  "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000",
+  "rowSchema": [
+    "subAgency",
+    "program",
+    "amount",
+    "sourceAmount",
+    "sourceRows"
+  ],
+  "rows": [
+    [
+      "EXECUTIVE OFFICE OF ENVIRONMENTAL AFFAIRS (ENV)",
+      "EXECUTIVE OFFICE OF ENVIRONMENTAL AFFAIRS (ENV) · (PP) STATE AID/POL SUB",
+      238732954.89,
+      238732954.89,
+      1106
+    ],
+    [
+      "EXECUTIVE OFFICE OF ENVIRONMENTAL AFFAIRS (ENV)",
+      "EXECUTIVE OFFICE OF ENVIRONMENTAL AFFAIRS (ENV) · (AA) REGULAR EMPLOYEE COMPENSATION",
+      38091114.71,
+      38091114.71,
+      2352
+    ],
+    [
+      "EXECUTIVE OFFICE OF ENVIRONMENTAL AFFAIRS (ENV)",
+      "EXECUTIVE OFFICE OF ENVIRONMENTAL AFFAIRS (ENV) · (UU) IT NON-PAYROLL EXPENSES",
+      17695696.12,
+      17695696.12,
+      1863
+    ],
+    [
+      "EXECUTIVE OFFICE OF ENVIRONMENTAL AFFAIRS (ENV)",
+      "EXECUTIVE OFFICE OF ENVIRONMENTAL AFFAIRS (ENV) · (HH) CONSULTANT SVCS (TO DEPTS)",
+      6238565.95,
+      6238565.95,
+      204
+    ],
+    [
+      "EXECUTIVE OFFICE OF ENVIRONMENTAL AFFAIRS (ENV)",
+      "EXECUTIVE OFFICE OF ENVIRONMENTAL AFFAIRS (ENV) · (KK) EQUIPMENT PURCHASE",
+      2463161.39,
+      2463161.39,
+      97
+    ],
+    [
+      "EXECUTIVE OFFICE OF ENVIRONMENTAL AFFAIRS (ENV)",
+      "EXECUTIVE OFFICE OF ENVIRONMENTAL AFFAIRS (ENV) · (TT) LOANS AND SPECIAL PAYMENTS",
+      2120079.44,
+      2120079.44,
+      3
+    ],
+    [
+      "EXECUTIVE OFFICE OF ENVIRONMENTAL AFFAIRS (ENV)",
+      "EXECUTIVE OFFICE OF ENVIRONMENTAL AFFAIRS (ENV) · (LL) EQUIPMENT LEASE-MAINTAIN/REPAR",
+      674526.88,
+      674526.88,
+      819
+    ],
+    [
+      "EXECUTIVE OFFICE OF ENVIRONMENTAL AFFAIRS (ENV)",
+      "EXECUTIVE OFFICE OF ENVIRONMENTAL AFFAIRS (ENV) · (DD) PENSION & INSURANCE RELATED EX",
+      665354.03,
+      665354.03,
+      27
+    ],
+    [
+      "EXECUTIVE OFFICE OF ENVIRONMENTAL AFFAIRS (ENV)",
+      "EXECUTIVE OFFICE OF ENVIRONMENTAL AFFAIRS (ENV) · (GG) ENERGY COSTS AND SPACE RENTAL",
+      571307.15,
+      571307.15,
+      636
+    ],
+    [
+      "EXECUTIVE OFFICE OF ENVIRONMENTAL AFFAIRS (ENV)",
+      "EXECUTIVE OFFICE OF ENVIRONMENTAL AFFAIRS (ENV) · (EE) ADMINISTRATIVE EXPENSES",
+      566824.58,
+      566824.58,
+      504
+    ],
+    [
+      "EXECUTIVE OFFICE OF ENVIRONMENTAL AFFAIRS (ENV)",
+      "EXECUTIVE OFFICE OF ENVIRONMENTAL AFFAIRS (ENV) · (FF) FACILITY OPERATIONAL EXPENSES",
+      355418.09,
+      355418.09,
+      497
+    ],
+    [
+      "EXECUTIVE OFFICE OF ENVIRONMENTAL AFFAIRS (ENV)",
+      "EXECUTIVE OFFICE OF ENVIRONMENTAL AFFAIRS (ENV) · (JJ) OPERATIONAL SERVICES",
+      317373.02,
+      317373.02,
+      148
+    ],
+    [
+      "EXECUTIVE OFFICE OF ENVIRONMENTAL AFFAIRS (ENV)",
+      "EXECUTIVE OFFICE OF ENVIRONMENTAL AFFAIRS (ENV) · (BB) REGULAR EMPLOYEE RELATED EXPEN",
+      246086.59,
+      246086.59,
+      317
+    ],
+    [
+      "EXECUTIVE OFFICE OF ENVIRONMENTAL AFFAIRS (ENV)",
+      "EXECUTIVE OFFICE OF ENVIRONMENTAL AFFAIRS (ENV) · (NN) INFRASTRUCTURE:",
+      194757.85,
+      194757.85,
+      244
+    ],
+    [
+      "EXECUTIVE OFFICE OF ENVIRONMENTAL AFFAIRS (ENV)",
+      "EXECUTIVE OFFICE OF ENVIRONMENTAL AFFAIRS (ENV) · (CC) SPECIAL EMPLOYEES",
+      185370.94,
+      185370.94,
+      158
+    ],
+    [
+      "EXECUTIVE OFFICE OF ENVIRONMENTAL AFFAIRS (ENV)",
+      "EXECUTIVE OFFICE OF ENVIRONMENTAL AFFAIRS (ENV) · (99) PAYROLL REJECTS",
+      0,
+      0,
+      158
+    ]
+  ],
+  "hierarchyNote": "The source does not identify a separate sub-agency column; direct-managed rows repeat the parent entity.",
+  "sourceBasis": "official source amount",
+  "note": "Amounts are shown on the official source basis; no comparator normalization was applied."
+}

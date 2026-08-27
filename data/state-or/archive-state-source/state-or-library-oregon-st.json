@@ -1,0 +1,1624 @@
+{
+  "scope": "Oregon",
+  "fiscalYear": 2024,
+  "department": "LIBRARY, OREGON ST",
+  "sourceUrl": "https://data.oregon.gov/resource/y9g9-xsxs.json?$select=agency,agency_1,budget_class,budget_class_1,expend_class,expend_class_1,vendor,sum(expense)%20as%20total,count(*)%20as%20source_rows&$where=fiscal_year=2024&$group=agency,agency_1,budget_class,budget_class_1,expend_class,expend_class_1,vendor&$limit=500000",
+  "sourceUrls": [
+    [
+      "Oregon transparency expenditure catalog",
+      "https://data.oregon.gov/Revenue-Expense/Agency-Expenditures-Multi-Year-Report/y9g9-xsxs"
+    ],
+    [
+      "Grouped FY2024 API export",
+      "https://data.oregon.gov/resource/y9g9-xsxs.json?$select=agency,agency_1,budget_class,budget_class_1,expend_class,expend_class_1,vendor,sum(expense)%20as%20total,count(*)%20as%20source_rows&$where=fiscal_year=2024&$group=agency,agency_1,budget_class,budget_class_1,expend_class,expend_class_1,vendor&$limit=500000"
+    ]
+  ],
+  "sourceBasis": "Official Oregon Agency Expenditures Multi-Year Report; FY2024 cash expense grouped by agency, budget class, expenditure class, and privacy-safe receiver label.",
+  "privacyNote": "Individual or ambiguous vendor labels are grouped as [individual recipient omitted]; organization receivers are retained. This layer does not expose person-level payroll.",
+  "sourceRows": 360,
+  "sourceTotal": 4163659.17,
+  "rowSchema": [
+    "subAgency",
+    "program",
+    "amount",
+    "sourceAmount",
+    "sourceRows"
+  ],
+  "rows": [
+    [
+      "LIBRARY, OREGON ST",
+      "4425 · LEASE PAYMENTS & TAXES · 4800 · INTERAGENCY LEASE PAYMENTS · Receiver DEPARTMENT OF ADMINISTRATIVE SERVICES",
+      839133.31,
+      839133.31,
+      1
+    ],
+    [
+      "LIBRARY, OREGON ST",
+      "4250 · DATA PROCESSING · 4375 · COMPUTER TECHNOLOGY COMPUTER PROCESSING · Receiver CENGAGE LEARNING INC",
+      350000,
+      350000,
+      1
+    ],
+    [
+      "LIBRARY, OREGON ST",
+      "6015 · DISTRIBUTION TO CITIES · 6400 · DISTRIBUTION TO CITIES · Receiver [individual recipient omitted]",
+      262321.25,
+      262321.25,
+      48
+    ],
+    [
+      "LIBRARY, OREGON ST",
+      "4225 · STATE GOVERNMENT SERVICE CHARGES · 4600 · STATE GOVERNMENT SERVICE CHARGES · Receiver DEPARTMENT OF ADMINISTRATIVE SERVICES",
+      234140,
+      234140,
+      1
+    ],
+    [
+      "LIBRARY, OREGON ST",
+      "6050 · DISTRIBUTION TO NON-PROFIT ORG · 6735 · DISTRIBUTION TO NON-PROFIT ORG · Receiver [individual recipient omitted]",
+      186704.81,
+      186704.81,
+      8
+    ],
+    [
+      "LIBRARY, OREGON ST",
+      "6020 · DISTRIBUTION TO COUNTIES · 6300 · DISTRIBUTION TO COUNTIES · Receiver MULTNOMAH COUNTY LIBRARY",
+      117268.7,
+      117268.7,
+      1
+    ],
+    [
+      "LIBRARY, OREGON ST",
+      "6050 · DISTRIBUTION TO NON-PROFIT ORG · 6735 · DISTRIBUTION TO NON-PROFIT ORG · Receiver OREGON LIBRARY ASSOCIATION",
+      116316.77,
+      116316.77,
+      1
+    ],
+    [
+      "LIBRARY, OREGON ST",
+      "6015 · DISTRIBUTION TO CITIES · 6400 · DISTRIBUTION TO CITIES · Receiver BEAVERTON CITY LIBRARY",
+      108978.08,
+      108978.08,
+      1
+    ],
+    [
+      "LIBRARY, OREGON ST",
+      "4650 · OTHER SERVICES AND SUPPLIES · 4701 · OTHER SERVICES · Receiver DEPARTMENT OF ADMINISTRATIVE SERVICES",
+      93155.15,
+      93155.15,
+      1
+    ],
+    [
+      "LIBRARY, OREGON ST",
+      "4250 · DATA PROCESSING · 4375 · COMPUTER TECHNOLOGY COMPUTER PROCESSING · Receiver DEPARTMENT OF ADMINISTRATIVE SERVICES",
+      82749.17,
+      82749.17,
+      1
+    ],
+    [
+      "LIBRARY, OREGON ST",
+      "6025 · DISTRIBUTION TO OTHER GOVTS · 6700 · DISTRIBUTION TO OTHER GOVERNMENTS · Receiver BAKER COUNTY LIBRARY DISTRICT",
+      76548,
+      76548,
+      1
+    ],
+    [
+      "LIBRARY, OREGON ST",
+      "4250 · DATA PROCESSING · 4375 · COMPUTER TECHNOLOGY COMPUTER PROCESSING · Receiver SAFARI BOOKS ONLINE LLC",
+      74990,
+      74990,
+      1
+    ],
+    [
+      "LIBRARY, OREGON ST",
+      "4700 · EXPENDABLE PROPERTY $250-$5000 · 4999 · EXPENDABLE PROPERTY NON-IT<$5K · Receiver [individual recipient omitted]",
+      71978.47,
+      71978.47,
+      3
+    ],
+    [
+      "LIBRARY, OREGON ST",
+      "4575 · AGENCY PROGRAM RELATED SVCS & SUPP · 4976 · AGENCY PROGRAM RELATED SUPPLIES · Receiver CENGAGE LEARNING INC",
+      62302,
+      62302,
+      1
+    ],
+    [
+      "LIBRARY, OREGON ST",
+      "6025 · DISTRIBUTION TO OTHER GOVTS · 6700 · DISTRIBUTION TO OTHER GOVERNMENTS · Receiver JACKSON COUNTY LIBRARY DISTRICT",
+      60688,
+      60688,
+      1
+    ],
+    [
+      "LIBRARY, OREGON ST",
+      "4250 · DATA PROCESSING · 4375 · COMPUTER TECHNOLOGY COMPUTER PROCESSING · Receiver [individual recipient omitted]",
+      51757.77,
+      51757.77,
+      3
+    ],
+    [
+      "LIBRARY, OREGON ST",
+      "4250 · DATA PROCESSING · 4375 · COMPUTER TECHNOLOGY COMPUTER PROCESSING · Receiver NEWSBANK INC",
+      44011,
+      44011,
+      1
+    ],
+    [
+      "LIBRARY, OREGON ST",
+      "6045 · DISTRIBUTION TO COMM COLL DISTRICTS · 6500 · DISTRIBUTION TO COMM COLLEGE DISTRICTS · Receiver CHEMEKETA COMMUNITY COLLEGE",
+      42095.8,
+      42095.8,
+      1
+    ],
+    [
+      "LIBRARY, OREGON ST",
+      "4575 · AGENCY PROGRAM RELATED SVCS & SUPP · 4976 · AGENCY PROGRAM RELATED SUPPLIES · Receiver ONLINE COMPUTER LIBRARY CENTER INC",
+      36573.09,
+      36573.09,
+      1
+    ],
+    [
+      "LIBRARY, OREGON ST",
+      "6025 · DISTRIBUTION TO OTHER GOVTS · 6700 · DISTRIBUTION TO OTHER GOVERNMENTS · Receiver DESCHUTES PUBLIC LIBRARY DISTRICT",
+      36543,
+      36543,
+      1
+    ],
+    [
+      "LIBRARY, OREGON ST",
+      "6025 · DISTRIBUTION TO OTHER GOVTS · 6700 · DISTRIBUTION TO OTHER GOVERNMENTS · Receiver LAKE COUNTY LIBRARY DISTRICT",
+      32503.46,
+      32503.46,
+      1
+    ],
+    [
+      "LIBRARY, OREGON ST",
+      "6015 · DISTRIBUTION TO CITIES · 6400 · DISTRIBUTION TO CITIES · Receiver CITY OF SALEM",
+      32375,
+      32375,
+      1
+    ],
+    [
+      "LIBRARY, OREGON ST",
+      "4225 · STATE GOVERNMENT SERVICE CHARGES · 4600 · STATE GOVERNMENT SERVICE CHARGES · Receiver DEPT OF STATE POLICE",
+      30526.5,
+      30526.5,
+      1
+    ],
+    [
+      "LIBRARY, OREGON ST",
+      "4250 · DATA PROCESSING · 4375 · COMPUTER TECHNOLOGY COMPUTER PROCESSING · Receiver SPRINGSHARE LLC",
+      27849,
+      27849,
+      1
+    ],
+    [
+      "LIBRARY, OREGON ST",
+      "6015 · DISTRIBUTION TO CITIES · 6400 · DISTRIBUTION TO CITIES · Receiver CITY OF HILLSBORO",
+      26513,
+      26513,
+      1
+    ],
+    [
+      "LIBRARY, OREGON ST",
+      "4250 · DATA PROCESSING · 4375 · COMPUTER TECHNOLOGY COMPUTER PROCESSING · Receiver ELSEVIER SCIENCE INC",
+      26334,
+      26334,
+      1
+    ],
+    [
+      "LIBRARY, OREGON ST",
+      "4575 · AGENCY PROGRAM RELATED SVCS & SUPP · 4975 · AGENCY PROGRAM RELATED SERVICES · Receiver [individual recipient omitted]",
+      25829.21,
+      25829.21,
+      4
+    ],
+    [
+      "LIBRARY, OREGON ST",
+      "6025 · DISTRIBUTION TO OTHER GOVTS · 6700 · DISTRIBUTION TO OTHER GOVERNMENTS · Receiver ONTARIO LIBRARY DISTRICT",
+      24954,
+      24954,
+      1
+    ],
+    [
+      "LIBRARY, OREGON ST",
+      "6020 · DISTRIBUTION TO COUNTIES · 6300 · DISTRIBUTION TO COUNTIES · Receiver COUNTY OF HARNEY",
+      24429,
+      24429,
+      1
+    ],
+    [
+      "LIBRARY, OREGON ST",
+      "6020 · DISTRIBUTION TO COUNTIES · 6300 · DISTRIBUTION TO COUNTIES · Receiver KLAMATH COUNTY LIBRARY SERVICE DISTRICT",
+      24143,
+      24143,
+      1
+    ],
+    [
+      "LIBRARY, OREGON ST",
+      "4200 · TELECOMM/TECH SVC AND SUPPLIES · 4305 · TELECOM/NETWORK SERVICES · Receiver DEPARTMENT OF ADMINISTRATIVE SERVICES",
+      23712.6,
+      23712.6,
+      1
+    ],
+    [
+      "LIBRARY, OREGON ST",
+      "4200 · TELECOMM/TECH SVC AND SUPPLIES · 4301 · TELECOM/VOICE USAGE · Receiver [individual recipient omitted]",
+      23210.33,
+      23210.33,
+      1
+    ],
+    [
+      "LIBRARY, OREGON ST",
+      "6050 · DISTRIBUTION TO NON-PROFIT ORG · 6735 · DISTRIBUTION TO NON-PROFIT ORG · Receiver FRIENDS OF THE KLAMATH COUNTY LIBRARY",
+      20042.5,
+      20042.5,
+      1
+    ],
+    [
+      "LIBRARY, OREGON ST",
+      "4250 · DATA PROCESSING · 4375 · COMPUTER TECHNOLOGY COMPUTER PROCESSING · Receiver KEYSTONE SYSTEMS INC",
+      19672.9,
+      19672.9,
+      1
+    ],
+    [
+      "LIBRARY, OREGON ST",
+      "4575 · AGENCY PROGRAM RELATED SVCS & SUPP · 4975 · AGENCY PROGRAM RELATED SERVICES · Receiver AMERICAN LIBRARY ASSOCIATION",
+      19454,
+      19454,
+      1
+    ],
+    [
+      "LIBRARY, OREGON ST",
+      "4250 · DATA PROCESSING · 4375 · COMPUTER TECHNOLOGY COMPUTER PROCESSING · Receiver ONLINE COMPUTER LIBRARY CENTER INC",
+      19132.11,
+      19132.11,
+      1
+    ],
+    [
+      "LIBRARY, OREGON ST",
+      "4250 · DATA PROCESSING · 4375 · COMPUTER TECHNOLOGY COMPUTER PROCESSING · Receiver ANDREW SANDERBECK LLC",
+      18000,
+      18000,
+      1
+    ],
+    [
+      "LIBRARY, OREGON ST",
+      "4475 · FACILITIES MAINTENANCE · 4850 · FACILITIES MAINTENANCE · Receiver DEPARTMENT OF ADMINISTRATIVE SERVICES",
+      16909.86,
+      16909.86,
+      1
+    ],
+    [
+      "LIBRARY, OREGON ST",
+      "6045 · DISTRIBUTION TO COMM COLL DISTRICTS · 6500 · DISTRIBUTION TO COMM COLLEGE DISTRICTS · Receiver COLUMBIA GORGE COMMUNITY COLLEGE",
+      16884.05,
+      16884.05,
+      1
+    ],
+    [
+      "LIBRARY, OREGON ST",
+      "6050 · DISTRIBUTION TO NON-PROFIT ORG · 6735 · DISTRIBUTION TO NON-PROFIT ORG · Receiver CEDAR MILL COMMUNITY LIBRARY ASSOCIATION",
+      16589,
+      16589,
+      1
+    ],
+    [
+      "LIBRARY, OREGON ST",
+      "4275 · PUBLICITY & PUBLICATIONS · 4253 · ADVERTISE, PUBLICITY, PUBLISH/PRINT SRVS · Receiver DEPARTMENT OF ADMINISTRATIVE SERVICES",
+      16577.54,
+      16577.54,
+      1
+    ],
+    [
+      "LIBRARY, OREGON ST",
+      "6048 · SPECIAL PAYMENT TO PUBLIC UNIVERSITIES · 6453 · DISTRIBUTION TO SOUTHERN OR UNIVERSITY · Receiver SOUTHERN OREGON UNIVERSITY",
+      16291.14,
+      16291.14,
+      1
+    ],
+    [
+      "LIBRARY, OREGON ST",
+      "6015 · DISTRIBUTION TO CITIES · 6400 · DISTRIBUTION TO CITIES · Receiver CITY OF SPRINGFIELD",
+      16239.29,
+      16239.29,
+      1
+    ],
+    [
+      "LIBRARY, OREGON ST",
+      "4715 · IT EXPENDABLE PROPERTY · 4366 · COMPUTER TECHNOLOGY PC SOFTWARE<$5K · Receiver ONLINE COMPUTER LIBRARY CENTER INC",
+      15750.32,
+      15750.32,
+      1
+    ],
+    [
+      "LIBRARY, OREGON ST",
+      "5100 · OFFICE FURNITURE AND FIXTURES · 5100 · OFFICE FURNITURE AND FIXTURES>=$5K · Receiver IMAGE ACCESS INC",
+      15600,
+      15600,
+      1
+    ],
+    [
+      "LIBRARY, OREGON ST",
+      "6590 · DIST TO OHSU · 6093 · DISTRIBUTION TO OHSU (COMP UNIT) · Receiver OREGON HEALTH & SCIENCE UNIVERSITY",
+      15327.58,
+      15327.58,
+      1
+    ],
+    [
+      "LIBRARY, OREGON ST",
+      "6040 · DISTRIBUTION TO LOCAL SCHOOL DIST · 6600 · DISTRIBUTION TO LOCAL SCHOOL DISTRICTS · Receiver DESCHUTES CO SCH DIST 2J",
+      15224.87,
+      15224.87,
+      1
+    ],
+    [
+      "LIBRARY, OREGON ST",
+      "4250 · DATA PROCESSING · 4375 · COMPUTER TECHNOLOGY COMPUTER PROCESSING · Receiver CHEMEKETA COMMUNITY COLLEGE",
+      15007,
+      15007,
+      1
+    ],
+    [
+      "LIBRARY, OREGON ST",
+      "4250 · DATA PROCESSING · 4375 · COMPUTER TECHNOLOGY COMPUTER PROCESSING · Receiver NICHE ACADEMY LLC",
+      15000,
+      15000,
+      1
+    ],
+    [
+      "LIBRARY, OREGON ST",
+      "6015 · DISTRIBUTION TO CITIES · 6400 · DISTRIBUTION TO CITIES · Receiver THE DALLES-WASCO COUNTY LIBRARY",
+      14735,
+      14735,
+      1
+    ],
+    [
+      "LIBRARY, OREGON ST",
+      "4225 · STATE GOVERNMENT SERVICE CHARGES · 4600 · STATE GOVERNMENT SERVICE CHARGES · Receiver STATE OF OREGON - SECRETARY OF STATE",
+      14443.52,
+      14443.52,
+      1
+    ],
+    [
+      "LIBRARY, OREGON ST",
+      "6020 · DISTRIBUTION TO COUNTIES · 6300 · DISTRIBUTION TO COUNTIES · Receiver COUNTY OF CROOK",
+      13565,
+      13565,
+      1
+    ],
+    [
+      "LIBRARY, OREGON ST",
+      "6015 · DISTRIBUTION TO CITIES · 6400 · DISTRIBUTION TO CITIES · Receiver CITY OF COQUILLE",
+      13400,
+      13400,
+      1
+    ],
+    [
+      "LIBRARY, OREGON ST",
+      "6015 · DISTRIBUTION TO CITIES · 6400 · DISTRIBUTION TO CITIES · Receiver CORVALLIS/BENTON CO LIBRARY",
+      11776,
+      11776,
+      1
+    ],
+    [
+      "LIBRARY, OREGON ST",
+      "4575 · AGENCY PROGRAM RELATED SVCS & SUPP · 4976 · AGENCY PROGRAM RELATED SUPPLIES · Receiver OREGON COMMISSION FOR THE BLIND",
+      11667,
+      11667,
+      1
+    ],
+    [
+      "LIBRARY, OREGON ST",
+      "6020 · DISTRIBUTION TO COUNTIES · 6300 · DISTRIBUTION TO COUNTIES · Receiver GRANT COUNTY LIBRARY",
+      10806,
+      10806,
+      1
+    ],
+    [
+      "LIBRARY, OREGON ST",
+      "6025 · DISTRIBUTION TO OTHER GOVTS · 6700 · DISTRIBUTION TO OTHER GOVERNMENTS · Receiver JOSEPHINE COMMUNITY LIBRARY DISTRICT",
+      10550.73,
+      10550.73,
+      1
+    ],
+    [
+      "LIBRARY, OREGON ST",
+      "5100 · OFFICE FURNITURE AND FIXTURES · 5100 · OFFICE FURNITURE AND FIXTURES>=$5K · Receiver [individual recipient omitted]",
+      10198.42,
+      10198.42,
+      1
+    ],
+    [
+      "LIBRARY, OREGON ST",
+      "4575 · AGENCY PROGRAM RELATED SVCS & SUPP · 4975 · AGENCY PROGRAM RELATED SERVICES · Receiver CALIFA GROUP",
+      10000,
+      10000,
+      1
+    ],
+    [
+      "LIBRARY, OREGON ST",
+      "6015 · DISTRIBUTION TO CITIES · 6400 · DISTRIBUTION TO CITIES · Receiver OREGON CITY PUBLIC LIBRARY",
+      9895,
+      9895,
+      1
+    ],
+    [
+      "LIBRARY, OREGON ST",
+      "6015 · DISTRIBUTION TO CITIES · 6400 · DISTRIBUTION TO CITIES · Receiver CITY OF HAPPY VALLEY LIBRARY",
+      9700,
+      9700,
+      1
+    ],
+    [
+      "LIBRARY, OREGON ST",
+      "6025 · DISTRIBUTION TO OTHER GOVTS · 6700 · DISTRIBUTION TO OTHER GOVERNMENTS · Receiver UMATILLA COUNTY SPECIAL LIBRARY DISTRICT",
+      9555,
+      9555,
+      1
+    ],
+    [
+      "LIBRARY, OREGON ST",
+      "4325 · ATTORNEY GENERAL LEGAL FEES · 4550 · ATTORNEY GENERAL LEGAL FEES · Receiver STATE OF OREGON DEPARTMENT OF JUSTICE",
+      9418.2,
+      9418.2,
+      1
+    ],
+    [
+      "LIBRARY, OREGON ST",
+      "6025 · DISTRIBUTION TO OTHER GOVTS · 6700 · DISTRIBUTION TO OTHER GOVERNMENTS · Receiver HOOD RIVER COUNTY LIBRARY DISTRICT",
+      9281,
+      9281,
+      1
+    ],
+    [
+      "LIBRARY, OREGON ST",
+      "6015 · DISTRIBUTION TO CITIES · 6400 · DISTRIBUTION TO CITIES · Receiver CITY OF HERMISTON",
+      9214.6,
+      9214.6,
+      1
+    ],
+    [
+      "LIBRARY, OREGON ST",
+      "6015 · DISTRIBUTION TO CITIES · 6400 · DISTRIBUTION TO CITIES · Receiver CITY OF ALBANY",
+      9127,
+      9127,
+      1
+    ],
+    [
+      "LIBRARY, OREGON ST",
+      "6025 · DISTRIBUTION TO OTHER GOVTS · 6700 · DISTRIBUTION TO OTHER GOVERNMENTS · Receiver JEFFERSON COUNTY LIBRARY DISTRICT",
+      9002,
+      9002,
+      1
+    ],
+    [
+      "LIBRARY, OREGON ST",
+      "6015 · DISTRIBUTION TO CITIES · 6400 · DISTRIBUTION TO CITIES · Receiver CITY OF COOS BAY",
+      8823,
+      8823,
+      1
+    ],
+    [
+      "LIBRARY, OREGON ST",
+      "4575 · AGENCY PROGRAM RELATED SVCS & SUPP · 4975 · AGENCY PROGRAM RELATED SERVICES · Receiver UTAH STATE LIBRARY DIVISION",
+      8755,
+      8755,
+      1
+    ],
+    [
+      "LIBRARY, OREGON ST",
+      "4575 · AGENCY PROGRAM RELATED SVCS & SUPP · 4976 · AGENCY PROGRAM RELATED SUPPLIES · Receiver [individual recipient omitted]",
+      7768.49,
+      7768.49,
+      2
+    ],
+    [
+      "LIBRARY, OREGON ST",
+      "4575 · AGENCY PROGRAM RELATED SVCS & SUPP · 4976 · AGENCY PROGRAM RELATED SUPPLIES · Receiver E-IMAGEDATA CORP",
+      7722.14,
+      7722.14,
+      1
+    ],
+    [
+      "LIBRARY, OREGON ST",
+      "4175 · OFFICE EXPENSES · 4202 · EQUIPMENT RENTAL · Receiver DEPARTMENT OF ADMINISTRATIVE SERVICES",
+      7614.95,
+      7614.95,
+      1
+    ],
+    [
+      "LIBRARY, OREGON ST",
+      "4575 · AGENCY PROGRAM RELATED SVCS & SUPP · 4975 · AGENCY PROGRAM RELATED SERVICES · Receiver ONLINE COMPUTER LIBRARY CENTER INC",
+      7574.83,
+      7574.83,
+      1
+    ],
+    [
+      "LIBRARY, OREGON ST",
+      "6015 · DISTRIBUTION TO CITIES · 6400 · DISTRIBUTION TO CITIES · Receiver CITY OF LAKE OSWEGO",
+      7416,
+      7416,
+      1
+    ],
+    [
+      "LIBRARY, OREGON ST",
+      "4475 · FACILITIES MAINTENANCE · 4850 · FACILITIES MAINTENANCE · Receiver ACCURATE CORPORATE SERVICES INC",
+      7400.05,
+      7400.05,
+      1
+    ],
+    [
+      "LIBRARY, OREGON ST",
+      "6025 · DISTRIBUTION TO OTHER GOVTS · 6700 · DISTRIBUTION TO OTHER GOVERNMENTS · Receiver LOWER UMPQUA LIBRARY DISTRICT",
+      7190,
+      7190,
+      1
+    ],
+    [
+      "LIBRARY, OREGON ST",
+      "6015 · DISTRIBUTION TO CITIES · 6400 · DISTRIBUTION TO CITIES · Receiver CITY OF WOODBURN",
+      6897,
+      6897,
+      1
+    ],
+    [
+      "LIBRARY, OREGON ST",
+      "6015 · DISTRIBUTION TO CITIES · 6400 · DISTRIBUTION TO CITIES · Receiver CITY OF ASTORIA",
+      6891.8,
+      6891.8,
+      1
+    ],
+    [
+      "LIBRARY, OREGON ST",
+      "4250 · DATA PROCESSING · 4375 · COMPUTER TECHNOLOGY COMPUTER PROCESSING · Receiver FOUNDANT TECHNOLOGIES INC",
+      6750,
+      6750,
+      1
+    ],
+    [
+      "LIBRARY, OREGON ST",
+      "6015 · DISTRIBUTION TO CITIES · 6400 · DISTRIBUTION TO CITIES · Receiver CITY OF MILWAUKIE",
+      6654,
+      6654,
+      1
+    ],
+    [
+      "LIBRARY, OREGON ST",
+      "4200 · TELECOMM/TECH SVC AND SUPPLIES · 4301 · TELECOM/VOICE USAGE · Receiver KYNDRYL INC",
+      6611.58,
+      6611.58,
+      1
+    ],
+    [
+      "LIBRARY, OREGON ST",
+      "6020 · DISTRIBUTION TO COUNTIES · 6300 · DISTRIBUTION TO COUNTIES · Receiver TILLAMOOK COUNTY LIBRARY",
+      6580,
+      6580,
+      1
+    ],
+    [
+      "LIBRARY, OREGON ST",
+      "6015 · DISTRIBUTION TO CITIES · 6400 · DISTRIBUTION TO CITIES · Receiver HALSEY CITY LIBRARY",
+      6565,
+      6565,
+      1
+    ],
+    [
+      "LIBRARY, OREGON ST",
+      "4150 · EMPLOYEE TRAINING · 4434 · PROF DEV OUT-OF-STATE LODGING · Receiver [individual recipient omitted]",
+      6507.62,
+      6507.62,
+      5
+    ],
+    [
+      "LIBRARY, OREGON ST",
+      "4475 · FACILITIES MAINTENANCE · 4850 · FACILITIES MAINTENANCE · Receiver JGCM INC",
+      6266.65,
+      6266.65,
+      1
+    ],
+    [
+      "LIBRARY, OREGON ST",
+      "4575 · AGENCY PROGRAM RELATED SVCS & SUPP · 4976 · AGENCY PROGRAM RELATED SUPPLIES · Receiver ILLINOIS LIBRARY ASSOCIATION",
+      6243.25,
+      6243.25,
+      1
+    ],
+    [
+      "LIBRARY, OREGON ST",
+      "4125 · OUT-OF-STATE TRAVEL · 4159 · OUT-OF-STATE AIR TRANSPORTATION · Receiver US BANK CORPORATE PAYMENT SYSTEMS",
+      6131.64,
+      6131.64,
+      1
+    ],
+    [
+      "LIBRARY, OREGON ST",
+      "6025 · DISTRIBUTION TO OTHER GOVTS · 6700 · DISTRIBUTION TO OTHER GOVERNMENTS · Receiver CLATSKANIE LIBRARY DISTRICT",
+      6009.27,
+      6009.27,
+      1
+    ],
+    [
+      "LIBRARY, OREGON ST",
+      "4250 · DATA PROCESSING · 4375 · COMPUTER TECHNOLOGY COMPUTER PROCESSING · Receiver INFO USA MARKETING INC",
+      6000,
+      6000,
+      1
+    ],
+    [
+      "LIBRARY, OREGON ST",
+      "6015 · DISTRIBUTION TO CITIES · 6400 · DISTRIBUTION TO CITIES · Receiver CITY OF TUALATIN",
+      5978,
+      5978,
+      1
+    ],
+    [
+      "LIBRARY, OREGON ST",
+      "6025 · DISTRIBUTION TO OTHER GOVTS · 6700 · DISTRIBUTION TO OTHER GOVERNMENTS · Receiver LINCOLN COUNTY LIBRARY DISTRICT",
+      5935,
+      5935,
+      1
+    ],
+    [
+      "LIBRARY, OREGON ST",
+      "4100 · INSTATE TRAVEL · 4108 · INSTATE GROUND TRANSPORTATION · Receiver DEPARTMENT OF ADMINISTRATIVE SERVICES",
+      5872.24,
+      5872.24,
+      1
+    ],
+    [
+      "LIBRARY, OREGON ST",
+      "6015 · DISTRIBUTION TO CITIES · 6400 · DISTRIBUTION TO CITIES · Receiver FOREST GROVE CITY LIBRARY",
+      5393,
+      5393,
+      1
+    ],
+    [
+      "LIBRARY, OREGON ST",
+      "6025 · DISTRIBUTION TO OTHER GOVTS · 6700 · DISTRIBUTION TO OTHER GOVERNMENTS · Receiver [individual recipient omitted]",
+      5355,
+      5355,
+      4
+    ],
+    [
+      "LIBRARY, OREGON ST",
+      "4250 · DATA PROCESSING · 4375 · COMPUTER TECHNOLOGY COMPUTER PROCESSING · Receiver LYRASIS",
+      5209,
+      5209,
+      1
+    ],
+    [
+      "LIBRARY, OREGON ST",
+      "6020 · DISTRIBUTION TO COUNTIES · 6300 · DISTRIBUTION TO COUNTIES · Receiver COUNTY OF CLACKAMAS",
+      5093,
+      5093,
+      1
+    ],
+    [
+      "LIBRARY, OREGON ST",
+      "4100 · INSTATE TRAVEL · 4106 · INSTATE LODGING · Receiver [individual recipient omitted]",
+      5057.9,
+      5057.9,
+      9
+    ],
+    [
+      "LIBRARY, OREGON ST",
+      "6015 · DISTRIBUTION TO CITIES · 6400 · DISTRIBUTION TO CITIES · Receiver CITY OF LA GRANDE",
+      5015,
+      5015,
+      1
+    ],
+    [
+      "LIBRARY, OREGON ST",
+      "6040 · DISTRIBUTION TO LOCAL SCHOOL DIST · 6600 · DISTRIBUTION TO LOCAL SCHOOL DISTRICTS · Receiver [individual recipient omitted]",
+      4806.91,
+      4806.91,
+      1
+    ],
+    [
+      "LIBRARY, OREGON ST",
+      "6040 · DISTRIBUTION TO LOCAL SCHOOL DIST · 6600 · DISTRIBUTION TO LOCAL SCHOOL DISTRICTS · Receiver BAKER CO SCH DIST 61J",
+      4801,
+      4801,
+      1
+    ],
+    [
+      "LIBRARY, OREGON ST",
+      "4250 · DATA PROCESSING · 4375 · COMPUTER TECHNOLOGY COMPUTER PROCESSING · Receiver PRONUNCIATOR LLC",
+      4500,
+      4500,
+      1
+    ],
+    [
+      "LIBRARY, OREGON ST",
+      "4575 · AGENCY PROGRAM RELATED SVCS & SUPP · 4975 · AGENCY PROGRAM RELATED SERVICES · Receiver WASHINGTON LIBRARY ASSOCIATION",
+      4500,
+      4500,
+      1
+    ],
+    [
+      "LIBRARY, OREGON ST",
+      "4175 · OFFICE EXPENSES · 4201 · OFFICE SERVICES · Receiver DEPARTMENT OF ADMINISTRATIVE SERVICES",
+      4374.63,
+      4374.63,
+      1
+    ],
+    [
+      "LIBRARY, OREGON ST",
+      "4575 · AGENCY PROGRAM RELATED SVCS & SUPP · 4975 · AGENCY PROGRAM RELATED SERVICES · Receiver LIBRARY JOURNALS LLC",
+      4328.25,
+      4328.25,
+      1
+    ],
+    [
+      "LIBRARY, OREGON ST",
+      "6025 · DISTRIBUTION TO OTHER GOVTS · 6700 · DISTRIBUTION TO OTHER GOVERNMENTS · Receiver OREGON TRAIL LIBRARY DISTRICT",
+      4305,
+      4305,
+      1
+    ],
+    [
+      "LIBRARY, OREGON ST",
+      "6025 · DISTRIBUTION TO OTHER GOVTS · 6700 · DISTRIBUTION TO OTHER GOVERNMENTS · Receiver SILVER FALLS LIBRARY DISTRICT",
+      4258,
+      4258,
+      1
+    ],
+    [
+      "LIBRARY, OREGON ST",
+      "4575 · AGENCY PROGRAM RELATED SVCS & SUPP · 4976 · AGENCY PROGRAM RELATED SUPPLIES · Receiver LITHO PRESS INC",
+      4229.72,
+      4229.72,
+      1
+    ],
+    [
+      "LIBRARY, OREGON ST",
+      "6015 · DISTRIBUTION TO CITIES · 6400 · DISTRIBUTION TO CITIES · Receiver CITY OF SHERWOOD",
+      4224,
+      4224,
+      1
+    ],
+    [
+      "LIBRARY, OREGON ST",
+      "4250 · DATA PROCESSING · 4375 · COMPUTER TECHNOLOGY COMPUTER PROCESSING · Receiver SHI INTERNATIONAL CORP",
+      4029.69,
+      4029.69,
+      2
+    ],
+    [
+      "LIBRARY, OREGON ST",
+      "6050 · DISTRIBUTION TO NON-PROFIT ORG · 6735 · DISTRIBUTION TO NON-PROFIT ORG · Receiver JOSEPHY CENTER FOR ARTS AND CULTURE",
+      4010,
+      4010,
+      1
+    ],
+    [
+      "LIBRARY, OREGON ST",
+      "4150 · EMPLOYEE TRAINING · 4406 · PROF DEV INSTATE TUITION/REGISTRATION · Receiver DEPARTMENT OF ADMINISTRATIVE SERVICES",
+      4000,
+      4000,
+      1
+    ],
+    [
+      "LIBRARY, OREGON ST",
+      "4100 · INSTATE TRAVEL · 4101 · INSTATE MEALS WITH OVERNIGHT STAY · Receiver [individual recipient omitted]",
+      3807.77,
+      3807.77,
+      14
+    ],
+    [
+      "LIBRARY, OREGON ST",
+      "6015 · DISTRIBUTION TO CITIES · 6400 · DISTRIBUTION TO CITIES · Receiver CITY OF ROSEBURG",
+      3600,
+      3600,
+      1
+    ],
+    [
+      "LIBRARY, OREGON ST",
+      "4300 · PROFESSIONAL SERVICES · 4500 · PROFESSIONAL SERVICES NON-IT · Receiver [individual recipient omitted]",
+      3500,
+      3500,
+      1
+    ],
+    [
+      "LIBRARY, OREGON ST",
+      "6015 · DISTRIBUTION TO CITIES · 6400 · DISTRIBUTION TO CITIES · Receiver CITY OF OAKLAND",
+      3500,
+      3500,
+      1
+    ],
+    [
+      "LIBRARY, OREGON ST",
+      "4100 · INSTATE TRAVEL · 4109 · INSTATE MILEAGE REIMBURSEMENT-FULL RATE · Receiver [individual recipient omitted]",
+      3387.61,
+      3387.61,
+      9
+    ],
+    [
+      "LIBRARY, OREGON ST",
+      "6015 · DISTRIBUTION TO CITIES · 6400 · DISTRIBUTION TO CITIES · Receiver CITY OF PENDLETON PUBLIC LIBRARY",
+      3332,
+      3332,
+      1
+    ],
+    [
+      "LIBRARY, OREGON ST",
+      "4175 · OFFICE EXPENSES · 4200 · OFFICE SUPPLIES · Receiver [individual recipient omitted]",
+      3250.11,
+      3250.11,
+      2
+    ],
+    [
+      "LIBRARY, OREGON ST",
+      "4250 · DATA PROCESSING · 4375 · COMPUTER TECHNOLOGY COMPUTER PROCESSING · Receiver JOHN WILEY & SONS INC",
+      3211.64,
+      3211.64,
+      1
+    ],
+    [
+      "LIBRARY, OREGON ST",
+      "4150 · EMPLOYEE TRAINING · 4432 · PROF DEV OUT-OF-STATE MEAL W/OVERNITE · Receiver [individual recipient omitted]",
+      3209.3,
+      3209.3,
+      6
+    ],
+    [
+      "LIBRARY, OREGON ST",
+      "4400 · DUES AND SUBSCRIPTIONS · 4250 · DUES/MEMBERSHIPS · Receiver WESTERN COUNCIL OF STATE LIBRARIES INC",
+      3000,
+      3000,
+      1
+    ],
+    [
+      "LIBRARY, OREGON ST",
+      "6025 · DISTRIBUTION TO OTHER GOVTS · 6700 · DISTRIBUTION TO OTHER GOVERNMENTS · Receiver SIUSLAW PUBLIC LIBRARY DISTRICT",
+      2972,
+      2972,
+      1
+    ],
+    [
+      "LIBRARY, OREGON ST",
+      "4250 · DATA PROCESSING · 4375 · COMPUTER TECHNOLOGY COMPUTER PROCESSING · Receiver LJL3 INCORPORATED",
+      2759,
+      2759,
+      1
+    ],
+    [
+      "LIBRARY, OREGON ST",
+      "6015 · DISTRIBUTION TO CITIES · 6400 · DISTRIBUTION TO CITIES · Receiver CITY OF CORNELIUS",
+      2712,
+      2712,
+      1
+    ],
+    [
+      "LIBRARY, OREGON ST",
+      "4250 · DATA PROCESSING · 4375 · COMPUTER TECHNOLOGY COMPUTER PROCESSING · Receiver SIX FEET UP INC",
+      2700,
+      2700,
+      1
+    ],
+    [
+      "LIBRARY, OREGON ST",
+      "6020 · DISTRIBUTION TO COUNTIES · 6300 · DISTRIBUTION TO COUNTIES · Receiver GILLIAM COUNTY LIBRARY",
+      2651,
+      2651,
+      1
+    ],
+    [
+      "LIBRARY, OREGON ST",
+      "4200 · TELECOMM/TECH SVC AND SUPPLIES · 4301 · TELECOM/VOICE USAGE · Receiver DEPARTMENT OF ADMINISTRATIVE SERVICES",
+      2631.72,
+      2631.72,
+      1
+    ],
+    [
+      "LIBRARY, OREGON ST",
+      "6015 · DISTRIBUTION TO CITIES · 6400 · DISTRIBUTION TO CITIES · Receiver SUTHERLIN LIBRARY FOUNDATION",
+      2500,
+      2500,
+      1
+    ],
+    [
+      "LIBRARY, OREGON ST",
+      "4400 · DUES AND SUBSCRIPTIONS · 4250 · DUES/MEMBERSHIPS · Receiver LYRASIS",
+      2450,
+      2450,
+      1
+    ],
+    [
+      "LIBRARY, OREGON ST",
+      "6025 · DISTRIBUTION TO OTHER GOVTS · 6700 · DISTRIBUTION TO OTHER GOVERNMENTS · Receiver WASHINGTON COUNTY COOP LIBRARY SERVICES",
+      2425,
+      2425,
+      1
+    ],
+    [
+      "LIBRARY, OREGON ST",
+      "6025 · DISTRIBUTION TO OTHER GOVTS · 6700 · DISTRIBUTION TO OTHER GOVERNMENTS · Receiver CHETCO COMMUNITY LIBRARY DISTRICT",
+      2421,
+      2421,
+      1
+    ],
+    [
+      "LIBRARY, OREGON ST",
+      "4250 · DATA PROCESSING · 4375 · COMPUTER TECHNOLOGY COMPUTER PROCESSING · Receiver ABILA INC",
+      2388,
+      2388,
+      1
+    ],
+    [
+      "LIBRARY, OREGON ST",
+      "6015 · DISTRIBUTION TO CITIES · 6400 · DISTRIBUTION TO CITIES · Receiver CITY OF MAUPIN",
+      2315,
+      2315,
+      1
+    ],
+    [
+      "LIBRARY, OREGON ST",
+      "4225 · STATE GOVERNMENT SERVICE CHARGES · 4600 · STATE GOVERNMENT SERVICE CHARGES · Receiver STATE OF OREGON SECRETARY OF STATE",
+      2271,
+      2271,
+      1
+    ],
+    [
+      "LIBRARY, OREGON ST",
+      "4250 · DATA PROCESSING · 4375 · COMPUTER TECHNOLOGY COMPUTER PROCESSING · Receiver PLUM LIBRARIAN LLC",
+      2200,
+      2200,
+      1
+    ],
+    [
+      "LIBRARY, OREGON ST",
+      "4250 · DATA PROCESSING · 4367 · COMPUTER TECHNOLOGY PC SUPPORT · Receiver IMAGE ACCESS INC",
+      2140,
+      2140,
+      1
+    ],
+    [
+      "LIBRARY, OREGON ST",
+      "6025 · DISTRIBUTION TO OTHER GOVTS · 6700 · DISTRIBUTION TO OTHER GOVERNMENTS · Receiver SCAPPOOSE PUBLIC LIBRARY DISTRICT",
+      2138,
+      2138,
+      1
+    ],
+    [
+      "LIBRARY, OREGON ST",
+      "6045 · DISTRIBUTION TO COMM COLL DISTRICTS · 6500 · DISTRIBUTION TO COMM COLLEGE DISTRICTS · Receiver UMPQUA COMMUNITY COLLEGE",
+      2059,
+      2059,
+      1
+    ],
+    [
+      "LIBRARY, OREGON ST",
+      "6020 · DISTRIBUTION TO COUNTIES · 6300 · DISTRIBUTION TO COUNTIES · Receiver [individual recipient omitted]",
+      1977,
+      1977,
+      1
+    ],
+    [
+      "LIBRARY, OREGON ST",
+      "6045 · DISTRIBUTION TO COMM COLL DISTRICTS · 6500 · DISTRIBUTION TO COMM COLLEGE DISTRICTS · Receiver KLAMATH COMMUNITY COLLEGE",
+      1975,
+      1975,
+      1
+    ],
+    [
+      "LIBRARY, OREGON ST",
+      "6045 · DISTRIBUTION TO COMM COLL DISTRICTS · 6500 · DISTRIBUTION TO COMM COLLEGE DISTRICTS · Receiver LINN BENTON COMMUNITY COLLEGE",
+      1975,
+      1975,
+      1
+    ],
+    [
+      "LIBRARY, OREGON ST",
+      "6045 · DISTRIBUTION TO COMM COLL DISTRICTS · 6500 · DISTRIBUTION TO COMM COLLEGE DISTRICTS · Receiver BLUE MOUNTAIN COMMUNITY COLLEGE",
+      1975,
+      1975,
+      1
+    ],
+    [
+      "LIBRARY, OREGON ST",
+      "6045 · DISTRIBUTION TO COMM COLL DISTRICTS · 6500 · DISTRIBUTION TO COMM COLLEGE DISTRICTS · Receiver CLATSOP COMMUNITY COLLEGE",
+      1975,
+      1975,
+      1
+    ],
+    [
+      "LIBRARY, OREGON ST",
+      "4100 · INSTATE TRAVEL · 4108 · INSTATE GROUND TRANSPORTATION · Receiver [individual recipient omitted]",
+      1927.38,
+      1927.38,
+      7
+    ],
+    [
+      "LIBRARY, OREGON ST",
+      "6015 · DISTRIBUTION TO CITIES · 6400 · DISTRIBUTION TO CITIES · Receiver CITY OF MONMOUTH",
+      1917,
+      1917,
+      1
+    ],
+    [
+      "LIBRARY, OREGON ST",
+      "4250 · DATA PROCESSING · 4375 · COMPUTER TECHNOLOGY COMPUTER PROCESSING · Receiver ITHAKA HARBOUR INC",
+      1875,
+      1875,
+      1
+    ],
+    [
+      "LIBRARY, OREGON ST",
+      "4125 · OUT-OF-STATE TRAVEL · 4161 · FOREIGN AIR TRANSPORTATION · Receiver US BANK CORPORATE PAYMENT SYSTEMS",
+      1714.88,
+      1714.88,
+      1
+    ],
+    [
+      "LIBRARY, OREGON ST",
+      "6015 · DISTRIBUTION TO CITIES · 6400 · DISTRIBUTION TO CITIES · Receiver CITY OF UNION",
+      1565,
+      1565,
+      1
+    ],
+    [
+      "LIBRARY, OREGON ST",
+      "6025 · DISTRIBUTION TO OTHER GOVTS · 6700 · DISTRIBUTION TO OTHER GOVERNMENTS · Receiver LANE LIBRARY DISTRICT",
+      1536,
+      1536,
+      1
+    ],
+    [
+      "LIBRARY, OREGON ST",
+      "4300 · PROFESSIONAL SERVICES · 4500 · PROFESSIONAL SERVICES NON-IT · Receiver ERIN MCCUSKER LLC",
+      1500,
+      1500,
+      1
+    ],
+    [
+      "LIBRARY, OREGON ST",
+      "6045 · DISTRIBUTION TO COMM COLL DISTRICTS · 6500 · DISTRIBUTION TO COMM COLLEGE DISTRICTS · Receiver TILLAMOOK BAY COMMUNITY COLLEGE",
+      1483.33,
+      1483.33,
+      1
+    ],
+    [
+      "LIBRARY, OREGON ST",
+      "6015 · DISTRIBUTION TO CITIES · 6400 · DISTRIBUTION TO CITIES · Receiver COUNTY OF WASCO",
+      1412,
+      1412,
+      1
+    ],
+    [
+      "LIBRARY, OREGON ST",
+      "6025 · DISTRIBUTION TO OTHER GOVTS · 6700 · DISTRIBUTION TO OTHER GOVERNMENTS · Receiver SUTHERLIN LIBRARY FOUNDATION",
+      1375,
+      1375,
+      1
+    ],
+    [
+      "LIBRARY, OREGON ST",
+      "4400 · DUES AND SUBSCRIPTIONS · 4250 · DUES/MEMBERSHIPS · Receiver AMERICAN LIBRARY ASSOCIATION",
+      1363,
+      1363,
+      1
+    ],
+    [
+      "LIBRARY, OREGON ST",
+      "6040 · DISTRIBUTION TO LOCAL SCHOOL DIST · 6600 · DISTRIBUTION TO LOCAL SCHOOL DISTRICTS · Receiver WASCO CO SCH DIST 29",
+      1356,
+      1356,
+      1
+    ],
+    [
+      "LIBRARY, OREGON ST",
+      "6045 · DISTRIBUTION TO COMM COLL DISTRICTS · 6500 · DISTRIBUTION TO COMM COLLEGE DISTRICTS · Receiver PORTLAND COMMUNITY COLLEGE",
+      1345,
+      1345,
+      1
+    ],
+    [
+      "LIBRARY, OREGON ST",
+      "4125 · OUT-OF-STATE TRAVEL · 4150 · OUT-OF-STATE LODGING · Receiver [individual recipient omitted]",
+      1322.79,
+      1322.79,
+      3
+    ],
+    [
+      "LIBRARY, OREGON ST",
+      "4150 · EMPLOYEE TRAINING · 4433 · PROF DEV INSTATE LODGING · Receiver [individual recipient omitted]",
+      1299.66,
+      1299.66,
+      2
+    ],
+    [
+      "LIBRARY, OREGON ST",
+      "4715 · IT EXPENDABLE PROPERTY · 4366 · COMPUTER TECHNOLOGY PC SOFTWARE<$5K · Receiver IMAGE ACCESS INC",
+      1152,
+      1152,
+      1
+    ],
+    [
+      "LIBRARY, OREGON ST",
+      "6025 · DISTRIBUTION TO OTHER GOVTS · 6700 · DISTRIBUTION TO OTHER GOVERNMENTS · Receiver CURRY PUBLIC LIBRARY DISTRICT",
+      1065,
+      1065,
+      1
+    ],
+    [
+      "LIBRARY, OREGON ST",
+      "6015 · DISTRIBUTION TO CITIES · 6400 · DISTRIBUTION TO CITIES · Receiver CITY OF NORTH PLAINS",
+      1054,
+      1054,
+      1
+    ],
+    [
+      "LIBRARY, OREGON ST",
+      "6040 · DISTRIBUTION TO LOCAL SCHOOL DIST · 6600 · DISTRIBUTION TO LOCAL SCHOOL DISTRICTS · Receiver UMATILLA CO SCH DIST 80",
+      1053,
+      1053,
+      1
+    ],
+    [
+      "LIBRARY, OREGON ST",
+      "4275 · PUBLICITY & PUBLICATIONS · 4253 · ADVERTISE, PUBLICITY, PUBLISH/PRINT SRVS · Receiver WASHINGTON STATE SCHOOL FOR THE BLIND",
+      1018.9,
+      1018.9,
+      1
+    ],
+    [
+      "LIBRARY, OREGON ST",
+      "4300 · PROFESSIONAL SERVICES · 4500 · PROFESSIONAL SERVICES NON-IT · Receiver CASCADE CENTERS INC",
+      1008.6,
+      1008.6,
+      1
+    ],
+    [
+      "LIBRARY, OREGON ST",
+      "6015 · DISTRIBUTION TO CITIES · 6400 · DISTRIBUTION TO CITIES · Receiver JUNCTION CITY PUBLIC LIBRARY",
+      1002,
+      1002,
+      1
+    ],
+    [
+      "LIBRARY, OREGON ST",
+      "6015 · DISTRIBUTION TO CITIES · 6400 · DISTRIBUTION TO CITIES · Receiver CITY OF WALDPORT",
+      1000,
+      1000,
+      1
+    ],
+    [
+      "LIBRARY, OREGON ST",
+      "6015 · DISTRIBUTION TO CITIES · 6400 · DISTRIBUTION TO CITIES · Receiver CITY OF FOSSIL",
+      1000,
+      1000,
+      1
+    ],
+    [
+      "LIBRARY, OREGON ST",
+      "6015 · DISTRIBUTION TO CITIES · 6400 · DISTRIBUTION TO CITIES · Receiver ENTERPRISE CITY LIBRARY",
+      1000,
+      1000,
+      1
+    ],
+    [
+      "LIBRARY, OREGON ST",
+      "6015 · DISTRIBUTION TO CITIES · 6400 · DISTRIBUTION TO CITIES · Receiver CITY OF VERNONIA PUBLIC LIBRARY",
+      1000,
+      1000,
+      1
+    ],
+    [
+      "LIBRARY, OREGON ST",
+      "6025 · DISTRIBUTION TO OTHER GOVTS · 6700 · DISTRIBUTION TO OTHER GOVERNMENTS · Receiver LANGLOIS LIBRARY DISTRICT",
+      1000,
+      1000,
+      1
+    ],
+    [
+      "LIBRARY, OREGON ST",
+      "6015 · DISTRIBUTION TO CITIES · 6400 · DISTRIBUTION TO CITIES · Receiver MARY GILKEY CITY LIBRARY",
+      1000,
+      1000,
+      1
+    ],
+    [
+      "LIBRARY, OREGON ST",
+      "6025 · DISTRIBUTION TO OTHER GOVTS · 6700 · DISTRIBUTION TO OTHER GOVERNMENTS · Receiver PORT ORFORD PUBLIC LIBRARY FOUNDATION",
+      1000,
+      1000,
+      1
+    ],
+    [
+      "LIBRARY, OREGON ST",
+      "6025 · DISTRIBUTION TO OTHER GOVTS · 6700 · DISTRIBUTION TO OTHER GOVERNMENTS · Receiver NORTH DOUGLAS LIBRARY DISTRICT",
+      1000,
+      1000,
+      1
+    ],
+    [
+      "LIBRARY, OREGON ST",
+      "6015 · DISTRIBUTION TO CITIES · 6400 · DISTRIBUTION TO CITIES · Receiver CITY OF LYONS",
+      1000,
+      1000,
+      1
+    ],
+    [
+      "LIBRARY, OREGON ST",
+      "6015 · DISTRIBUTION TO CITIES · 6400 · DISTRIBUTION TO CITIES · Receiver CITY OF NYSSA",
+      1000,
+      1000,
+      1
+    ],
+    [
+      "LIBRARY, OREGON ST",
+      "6015 · DISTRIBUTION TO CITIES · 6400 · DISTRIBUTION TO CITIES · Receiver CITY OF HELIX",
+      1000,
+      1000,
+      1
+    ],
+    [
+      "LIBRARY, OREGON ST",
+      "6015 · DISTRIBUTION TO CITIES · 6400 · DISTRIBUTION TO CITIES · Receiver CITY OF WALLOWA",
+      1000,
+      1000,
+      1
+    ],
+    [
+      "LIBRARY, OREGON ST",
+      "6015 · DISTRIBUTION TO CITIES · 6400 · DISTRIBUTION TO CITIES · Receiver CITY OF LOWELL",
+      1000,
+      1000,
+      1
+    ],
+    [
+      "LIBRARY, OREGON ST",
+      "6025 · DISTRIBUTION TO OTHER GOVTS · 6700 · DISTRIBUTION TO OTHER GOVERNMENTS · Receiver AGNESS COMMUNITY LIBRARY DISTRICT",
+      1000,
+      1000,
+      1
+    ],
+    [
+      "LIBRARY, OREGON ST",
+      "6015 · DISTRIBUTION TO CITIES · 6400 · DISTRIBUTION TO CITIES · Receiver CITY OF RAINIER",
+      1000,
+      1000,
+      1
+    ],
+    [
+      "LIBRARY, OREGON ST",
+      "6015 · DISTRIBUTION TO CITIES · 6400 · DISTRIBUTION TO CITIES · Receiver CITY OF POWERS",
+      1000,
+      1000,
+      1
+    ],
+    [
+      "LIBRARY, OREGON ST",
+      "6015 · DISTRIBUTION TO CITIES · 6400 · DISTRIBUTION TO CITIES · Receiver CITY OF STANFIELD",
+      1000,
+      1000,
+      1
+    ],
+    [
+      "LIBRARY, OREGON ST",
+      "6015 · DISTRIBUTION TO CITIES · 6400 · DISTRIBUTION TO CITIES · Receiver CITY OF JOSEPH",
+      1000,
+      1000,
+      1
+    ],
+    [
+      "LIBRARY, OREGON ST",
+      "6045 · DISTRIBUTION TO COMM COLL DISTRICTS · 6500 · DISTRIBUTION TO COMM COLLEGE DISTRICTS · Receiver LANE COMMUNITY COLLEGE",
+      988,
+      988,
+      1
+    ],
+    [
+      "LIBRARY, OREGON ST",
+      "6045 · DISTRIBUTION TO COMM COLL DISTRICTS · 6500 · DISTRIBUTION TO COMM COLLEGE DISTRICTS · Receiver CLACKAMAS COMMUNITY COLLEGE",
+      988,
+      988,
+      1
+    ],
+    [
+      "LIBRARY, OREGON ST",
+      "4200 · TELECOMM/TECH SVC AND SUPPLIES · 4301 · TELECOM/VOICE USAGE · Receiver QWEST",
+      883.84,
+      883.84,
+      1
+    ],
+    [
+      "LIBRARY, OREGON ST",
+      "4150 · EMPLOYEE TRAINING · 4452 · PROF DEV OUT-OF-ST MILE REIMB-FULL RATE · Receiver [individual recipient omitted]",
+      873.9,
+      873.9,
+      3
+    ],
+    [
+      "LIBRARY, OREGON ST",
+      "4275 · PUBLICITY & PUBLICATIONS · 4253 · ADVERTISE, PUBLICITY, PUBLISH/PRINT SRVS · Receiver [individual recipient omitted]",
+      788.13,
+      788.13,
+      2
+    ],
+    [
+      "LIBRARY, OREGON ST",
+      "4575 · AGENCY PROGRAM RELATED SVCS & SUPP · 4976 · AGENCY PROGRAM RELATED SUPPLIES · Receiver AMERICAN LIBRARY ASSOCIATION",
+      761,
+      761,
+      1
+    ],
+    [
+      "LIBRARY, OREGON ST",
+      "4175 · OFFICE EXPENSES · 4201 · OFFICE SERVICES · Receiver GARTEN SERVICES INC",
+      738.26,
+      738.26,
+      1
+    ],
+    [
+      "LIBRARY, OREGON ST",
+      "4125 · OUT-OF-STATE TRAVEL · 4151 · OUT-OF-STATE MEALS WITH OVERNIGHT STAY · Receiver [individual recipient omitted]",
+      737.88,
+      737.88,
+      3
+    ],
+    [
+      "LIBRARY, OREGON ST",
+      "4225 · STATE GOVERNMENT SERVICE CHARGES · 4600 · STATE GOVERNMENT SERVICE CHARGES · Receiver OREGON GOVERNMENT ETHICS COMMISSION",
+      691.5,
+      691.5,
+      1
+    ],
+    [
+      "LIBRARY, OREGON ST",
+      "4150 · EMPLOYEE TRAINING · 4406 · PROF DEV INSTATE TUITION/REGISTRATION · Receiver KEYSTONE SYSTEMS INC",
+      690,
+      690,
+      1
+    ],
+    [
+      "LIBRARY, OREGON ST",
+      "4200 · TELECOMM/TECH SVC AND SUPPLIES · 4307 · TELECOM/NETWORK SUPPORT · Receiver IES COMMERCIAL INC",
+      669.12,
+      669.12,
+      1
+    ],
+    [
+      "LIBRARY, OREGON ST",
+      "4100 · INSTATE TRAVEL · 4110 · INSTATE MILEAGE REIMBURSMNT-REDUCED RATE · Receiver [individual recipient omitted]",
+      609.25,
+      609.25,
+      5
+    ],
+    [
+      "LIBRARY, OREGON ST",
+      "4100 · INSTATE TRAVEL · 4109 · INSTATE MILEAGE REIMBURSEMENT-FULL RATE · Receiver DEPARTMENT OF HUMAN SERVICES",
+      592.12,
+      592.12,
+      1
+    ],
+    [
+      "LIBRARY, OREGON ST",
+      "4650 · OTHER SERVICES AND SUPPLIES · 4730 · MERCHANT FEES · Receiver US BANK",
+      551.18,
+      551.18,
+      1
+    ],
+    [
+      "LIBRARY, OREGON ST",
+      "4150 · EMPLOYEE TRAINING · 4441 · PROF DEV OUT-OF-STATE GROUND TRANSPRTATN · Receiver [individual recipient omitted]",
+      480.13,
+      480.13,
+      4
+    ],
+    [
+      "LIBRARY, OREGON ST",
+      "4100 · INSTATE TRAVEL · 4101 · INSTATE MEALS WITH OVERNIGHT STAY · Receiver DEPARTMENT OF HUMAN SERVICES",
+      441.05,
+      441.05,
+      1
+    ],
+    [
+      "LIBRARY, OREGON ST",
+      "4100 · INSTATE TRAVEL · 4101 · INSTATE MEALS WITH OVERNIGHT STAY · Receiver STATE OF OREGON DEPARTMENT OF EDUCATION",
+      387.5,
+      387.5,
+      1
+    ],
+    [
+      "LIBRARY, OREGON ST",
+      "4150 · EMPLOYEE TRAINING · 4416 · PROFESSIONAL DEV FOREIGN MEALS & LODGING · Receiver [individual recipient omitted]",
+      364.5,
+      364.5,
+      1
+    ],
+    [
+      "LIBRARY, OREGON ST",
+      "4100 · INSTATE TRAVEL · 4108 · INSTATE GROUND TRANSPORTATION · Receiver STATE OF OREGON DEPARTMENT OF EDUCATION",
+      364.18,
+      364.18,
+      1
+    ],
+    [
+      "LIBRARY, OREGON ST",
+      "4100 · INSTATE TRAVEL · 4109 · INSTATE MILEAGE REIMBURSEMENT-FULL RATE · Receiver STATE OF OREGON DEPARTMENT OF EDUCATION",
+      332.74,
+      332.74,
+      1
+    ],
+    [
+      "LIBRARY, OREGON ST",
+      "4125 · OUT-OF-STATE TRAVEL · 4160 · OUT-OF-STATE GROUND TRANSPORTATION · Receiver [individual recipient omitted]",
+      293.13,
+      293.13,
+      3
+    ],
+    [
+      "LIBRARY, OREGON ST",
+      "4575 · AGENCY PROGRAM RELATED SVCS & SUPP · 4206 · CATERING SERVICES · Receiver OREGON LIBRARY ASSOCIATION",
+      267.84,
+      267.84,
+      1
+    ],
+    [
+      "LIBRARY, OREGON ST",
+      "4100 · INSTATE TRAVEL · 4112 · INSTATE MILEAGE REIMBURSMNT-NONEMPLOYEE · Receiver [individual recipient omitted]",
+      258.75,
+      258.75,
+      3
+    ],
+    [
+      "LIBRARY, OREGON ST",
+      "4300 · PROFESSIONAL SERVICES · 4500 · PROFESSIONAL SERVICES NON-IT · Receiver US BANK CORPORATE PAYMENT SYSTEMS",
+      185.2,
+      185.2,
+      1
+    ],
+    [
+      "LIBRARY, OREGON ST",
+      "4150 · EMPLOYEE TRAINING · 4431 · PROF DEV INSTATE MEAL WITH OVERNITE STAY · Receiver [individual recipient omitted]",
+      148.75,
+      148.75,
+      3
+    ],
+    [
+      "LIBRARY, OREGON ST",
+      "4150 · EMPLOYEE TRAINING · 4450 · PROF DEV INSTATE MILE REIMB-FULL RATE · Receiver [individual recipient omitted]",
+      147.92,
+      147.92,
+      2
+    ],
+    [
+      "LIBRARY, OREGON ST",
+      "4225 · STATE GOVERNMENT SERVICE CHARGES · 4600 · STATE GOVERNMENT SERVICE CHARGES · Receiver OREGON STATE TREASURY",
+      143.8,
+      143.8,
+      1
+    ],
+    [
+      "LIBRARY, OREGON ST",
+      "4575 · AGENCY PROGRAM RELATED SVCS & SUPP · 4975 · AGENCY PROGRAM RELATED SERVICES · Receiver SALEM FIRE ALARM INC",
+      135,
+      135,
+      1
+    ],
+    [
+      "LIBRARY, OREGON ST",
+      "4175 · OFFICE EXPENSES · 4200 · OFFICE SUPPLIES · Receiver OFFICE DEPOT BUSINESS SOLUTIONS LLC",
+      118.2,
+      118.2,
+      1
+    ],
+    [
+      "LIBRARY, OREGON ST",
+      "4715 · IT EXPENDABLE PROPERTY · 4372 · COMPUTER TECHNOLOGY PERIPHERAL EQUIP<$5K · Receiver OFFICE DEPOT BUSINESS SOLUTIONS LLC",
+      104.69,
+      104.69,
+      1
+    ],
+    [
+      "LIBRARY, OREGON ST",
+      "4150 · EMPLOYEE TRAINING · 4421 · PROF DEV FOREIGN MILEAGE REIMBURSEMENT · Receiver [individual recipient omitted]",
+      91.12,
+      91.12,
+      1
+    ],
+    [
+      "LIBRARY, OREGON ST",
+      "4150 · EMPLOYEE TRAINING · 4406 · PROF DEV INSTATE TUITION/REGISTRATION · Receiver AMIGOS LIBRARY SERVICES",
+      90,
+      90,
+      1
+    ],
+    [
+      "LIBRARY, OREGON ST",
+      "4315 · IT PROFESSIONAL SERVICES · 4519 · PROFESSIONAL SERV/MANAGED SERV PROVIDER · Receiver NICUSA INC",
+      77,
+      77,
+      1
+    ],
+    [
+      "LIBRARY, OREGON ST",
+      "4150 · EMPLOYEE TRAINING · 4415 · PROF DEV OUT-OF-STATE TRAVEL MISC EXPENS · Receiver [individual recipient omitted]",
+      75,
+      75,
+      1
+    ],
+    [
+      "LIBRARY, OREGON ST",
+      "4400 · DUES AND SUBSCRIPTIONS · 4250 · DUES/MEMBERSHIPS · Receiver KYNDRYL INC",
+      72.2,
+      72.2,
+      1
+    ],
+    [
+      "LIBRARY, OREGON ST",
+      "4150 · EMPLOYEE TRAINING · 4453 · PROF DEV OUT-OF-ST MILE REIMB-REDUC RATE · Receiver [individual recipient omitted]",
+      72.05,
+      72.05,
+      1
+    ],
+    [
+      "LIBRARY, OREGON ST",
+      "4150 · EMPLOYEE TRAINING · 4440 · PROF DEV OUT-OF-STATE AIR TRANSPORTATION · Receiver [individual recipient omitted]",
+      70,
+      70,
+      1
+    ],
+    [
+      "LIBRARY, OREGON ST",
+      "4575 · AGENCY PROGRAM RELATED SVCS & SUPP · 4206 · CATERING SERVICES · Receiver [individual recipient omitted]",
+      61.75,
+      61.75,
+      1
+    ],
+    [
+      "LIBRARY, OREGON ST",
+      "4175 · OFFICE EXPENSES · 4201 · OFFICE SERVICES · Receiver [individual recipient omitted]",
+      52,
+      52,
+      1
+    ],
+    [
+      "LIBRARY, OREGON ST",
+      "4400 · DUES AND SUBSCRIPTIONS · 4250 · DUES/MEMBERSHIPS · Receiver MID-VALLEY VOLUNTEER MANAGERS ASSOCIATION",
+      50,
+      50,
+      1
+    ],
+    [
+      "LIBRARY, OREGON ST",
+      "4575 · AGENCY PROGRAM RELATED SVCS & SUPP · 4976 · AGENCY PROGRAM RELATED SUPPLIES · Receiver UNION COLLEGE",
+      47.49,
+      47.49,
+      1
+    ],
+    [
+      "LIBRARY, OREGON ST",
+      "4125 · OUT-OF-STATE TRAVEL · 4154 · OUT-OF-STATE TRAVEL MISC EXPENSE · Receiver [individual recipient omitted]",
+      45,
+      45,
+      1
+    ],
+    [
+      "LIBRARY, OREGON ST",
+      "4650 · OTHER SERVICES AND SUPPLIES · 4701 · OTHER SERVICES · Receiver SALEM FIRE ALARM INC",
+      45,
+      45,
+      1
+    ],
+    [
+      "LIBRARY, OREGON ST",
+      "4650 · OTHER SERVICES AND SUPPLIES · 4701 · OTHER SERVICES · Receiver GARTEN SERVICES INC",
+      3.6,
+      3.6,
+      1
+    ]
+  ],
+  "sourceCheck": {
+    "objectClassRows": 227,
+    "sourceRows": 360,
+    "sourceTotal": 4163659.17,
+    "difference": 0
+  }
+}

@@ -1,0 +1,136 @@
+{
+  "scope": "United States",
+  "code": "federal",
+  "department": "Federal Deposit Insurance Corporation",
+  "fiscalYear": 2024,
+  "ledgerAmount": 52542537363.91,
+  "sourceTotal": 71606594382.97,
+  "sourceUrl": "https://api.usaspending.gov/api/v2/agency/051/object_class/?fiscal_year=2024&limit=100&page=1",
+  "sourceUrls": [
+    [
+      "FY2024 gross outlays by object class",
+      "https://api.usaspending.gov/api/v2/agency/051/object_class/?fiscal_year=2024&limit=100&page=1"
+    ],
+    [
+      "FY2024 agency budgetary resources total",
+      "https://api.usaspending.gov/api/v2/agency/051/budgetary_resources/?fiscal_year=2024"
+    ]
+  ],
+  "rowSchema": [
+    "subAgency",
+    "program",
+    "amount",
+    "sourceAmount",
+    "sourceRows"
+  ],
+  "rows": [
+    [
+      "Federal Deposit Insurance Corporation",
+      "Insurance claims and indemnities",
+      69629279099.36,
+      69629279099.36,
+      null
+    ],
+    [
+      "Federal Deposit Insurance Corporation",
+      "Full-time permanent",
+      1019597030.02,
+      1019597030.02,
+      null
+    ],
+    [
+      "Federal Deposit Insurance Corporation",
+      "Civilian personnel benefits",
+      452133140.27,
+      452133140.27,
+      null
+    ],
+    [
+      "Federal Deposit Insurance Corporation",
+      "Advisory and assistance services",
+      310065886.23,
+      310065886.23,
+      null
+    ],
+    [
+      "Federal Deposit Insurance Corporation",
+      "Travel and transportation of persons",
+      55413175.65,
+      55413175.65,
+      null
+    ],
+    [
+      "Federal Deposit Insurance Corporation",
+      "Equipment",
+      37698349.27,
+      37698349.27,
+      null
+    ],
+    [
+      "Federal Deposit Insurance Corporation",
+      "Rental payments to others",
+      32592370.12,
+      32592370.12,
+      null
+    ],
+    [
+      "Federal Deposit Insurance Corporation",
+      "Other personnel compensation",
+      29006449.62,
+      29006449.62,
+      null
+    ],
+    [
+      "Federal Deposit Insurance Corporation",
+      "Communications, utilities, and miscellaneous charges",
+      22697312.61,
+      22697312.61,
+      null
+    ],
+    [
+      "Federal Deposit Insurance Corporation",
+      "Land and structures",
+      7065394.19,
+      7065394.19,
+      null
+    ],
+    [
+      "Federal Deposit Insurance Corporation",
+      "Grants, subsidies, and contributions",
+      5666228.9,
+      5666228.9,
+      null
+    ],
+    [
+      "Federal Deposit Insurance Corporation",
+      "Supplies and materials",
+      4916174.11,
+      4916174.11,
+      null
+    ],
+    [
+      "Federal Deposit Insurance Corporation",
+      "Printing and reproduction",
+      454298.16,
+      454298.16,
+      null
+    ],
+    [
+      "Federal Deposit Insurance Corporation",
+      "Interest and dividends",
+      9474.46,
+      9474.46,
+      null
+    ]
+  ],
+  "sourceBasis": "official source amount",
+  "sourceCheck": {
+    "objectClassRows": 14,
+    "objectClassTotal": 71606594382.97,
+    "agencyTotal": 71606594382.97,
+    "difference": 0
+  },
+  "normalizationAdjustment": 0.01,
+  "hierarchyNote": "The source endpoint returns agency-level object-class aggregates; no individual employees or payees are included.",
+  "note": "Amounts are shown on the official source basis; no comparator normalization was applied."
+}

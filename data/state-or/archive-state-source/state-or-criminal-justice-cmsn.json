@@ -1,0 +1,889 @@
+{
+  "scope": "Oregon",
+  "fiscalYear": 2024,
+  "department": "CRIMINAL JUSTICE CMSN",
+  "sourceUrl": "https://data.oregon.gov/resource/y9g9-xsxs.json?$select=agency,agency_1,budget_class,budget_class_1,expend_class,expend_class_1,vendor,sum(expense)%20as%20total,count(*)%20as%20source_rows&$where=fiscal_year=2024&$group=agency,agency_1,budget_class,budget_class_1,expend_class,expend_class_1,vendor&$limit=500000",
+  "sourceUrls": [
+    [
+      "Oregon transparency expenditure catalog",
+      "https://data.oregon.gov/Revenue-Expense/Agency-Expenditures-Multi-Year-Report/y9g9-xsxs"
+    ],
+    [
+      "Grouped FY2024 API export",
+      "https://data.oregon.gov/resource/y9g9-xsxs.json?$select=agency,agency_1,budget_class,budget_class_1,expend_class,expend_class_1,vendor,sum(expense)%20as%20total,count(*)%20as%20source_rows&$where=fiscal_year=2024&$group=agency,agency_1,budget_class,budget_class_1,expend_class,expend_class_1,vendor&$limit=500000"
+    ]
+  ],
+  "sourceBasis": "Official Oregon Agency Expenditures Multi-Year Report; FY2024 cash expense grouped by agency, budget class, expenditure class, and privacy-safe receiver label.",
+  "privacyNote": "Individual or ambiguous vendor labels are grouped as [individual recipient omitted]; organization receivers are retained. This layer does not expose person-level payroll.",
+  "sourceRows": 189,
+  "sourceTotal": 54702086.59,
+  "rowSchema": [
+    "subAgency",
+    "program",
+    "amount",
+    "sourceAmount",
+    "sourceRows"
+  ],
+  "rows": [
+    [
+      "CRIMINAL JUSTICE CMSN",
+      "6020 · DISTRIBUTION TO COUNTIES · 6300 · DISTRIBUTION TO COUNTIES · Receiver COUNTY OF MULTNOMAH",
+      9069833.72,
+      9069833.72,
+      1
+    ],
+    [
+      "CRIMINAL JUSTICE CMSN",
+      "6020 · DISTRIBUTION TO COUNTIES · 6300 · DISTRIBUTION TO COUNTIES · Receiver COUNTY OF LANE",
+      4974076.18,
+      4974076.18,
+      1
+    ],
+    [
+      "CRIMINAL JUSTICE CMSN",
+      "6020 · DISTRIBUTION TO COUNTIES · 6300 · DISTRIBUTION TO COUNTIES · Receiver COUNTY OF MARION TREASURY DEPARTMENT",
+      3654291.85,
+      3654291.85,
+      1
+    ],
+    [
+      "CRIMINAL JUSTICE CMSN",
+      "6020 · DISTRIBUTION TO COUNTIES · 6300 · DISTRIBUTION TO COUNTIES · Receiver COUNTY OF JACKSON",
+      2997571.32,
+      2997571.32,
+      1
+    ],
+    [
+      "CRIMINAL JUSTICE CMSN",
+      "6020 · DISTRIBUTION TO COUNTIES · 6300 · DISTRIBUTION TO COUNTIES · Receiver DESCHUTES COUNTY",
+      2762903.67,
+      2762903.67,
+      1
+    ],
+    [
+      "CRIMINAL JUSTICE CMSN",
+      "6085 · OTHER SPECIAL PAYMENTS · 6900 · OTHER SPECIAL PAYMENTS · Receiver NORTHWEST HEALTH FOUNDATION FUND II",
+      2500000,
+      2500000,
+      1
+    ],
+    [
+      "CRIMINAL JUSTICE CMSN",
+      "6020 · DISTRIBUTION TO COUNTIES · 6300 · DISTRIBUTION TO COUNTIES · Receiver DOUGLAS COUNTY",
+      2486612.48,
+      2486612.48,
+      1
+    ],
+    [
+      "CRIMINAL JUSTICE CMSN",
+      "6020 · DISTRIBUTION TO COUNTIES · 6300 · DISTRIBUTION TO COUNTIES · Receiver WASHINGTON COUNTY COMMUNITY CORRECTIONS",
+      2188805.83,
+      2188805.83,
+      1
+    ],
+    [
+      "CRIMINAL JUSTICE CMSN",
+      "6020 · DISTRIBUTION TO COUNTIES · 6300 · DISTRIBUTION TO COUNTIES · Receiver COUNTY OF CLACKAMAS",
+      1651362.21,
+      1651362.21,
+      1
+    ],
+    [
+      "CRIMINAL JUSTICE CMSN",
+      "6198 · DIST TO JUDICIAL · 6132 · DISTRIBUTION TO JUDICIAL 198 · Receiver STATE OF OREGON JUDICIAL DEPARTMENT",
+      1634741.63,
+      1634741.63,
+      1
+    ],
+    [
+      "CRIMINAL JUSTICE CMSN",
+      "6020 · DISTRIBUTION TO COUNTIES · 6300 · DISTRIBUTION TO COUNTIES · Receiver COUNTY OF KLAMATH",
+      1298539.92,
+      1298539.92,
+      1
+    ],
+    [
+      "CRIMINAL JUSTICE CMSN",
+      "6020 · DISTRIBUTION TO COUNTIES · 6300 · DISTRIBUTION TO COUNTIES · Receiver COUNTY OF LINN",
+      1179086.18,
+      1179086.18,
+      1
+    ],
+    [
+      "CRIMINAL JUSTICE CMSN",
+      "6020 · DISTRIBUTION TO COUNTIES · 6300 · DISTRIBUTION TO COUNTIES · Receiver COUNTY OF LINCOLN",
+      1158448.59,
+      1158448.59,
+      1
+    ],
+    [
+      "CRIMINAL JUSTICE CMSN",
+      "6020 · DISTRIBUTION TO COUNTIES · 6300 · DISTRIBUTION TO COUNTIES · Receiver WASHINGTON COUNTY",
+      1029298.14,
+      1029298.14,
+      1
+    ],
+    [
+      "CRIMINAL JUSTICE CMSN",
+      "6020 · DISTRIBUTION TO COUNTIES · 6300 · DISTRIBUTION TO COUNTIES · Receiver COUNTY OF CLATSOP",
+      947893.31,
+      947893.31,
+      1
+    ],
+    [
+      "CRIMINAL JUSTICE CMSN",
+      "6020 · DISTRIBUTION TO COUNTIES · 6300 · DISTRIBUTION TO COUNTIES · Receiver COUNTY OF YAMHILL",
+      880015.78,
+      880015.78,
+      1
+    ],
+    [
+      "CRIMINAL JUSTICE CMSN",
+      "6020 · DISTRIBUTION TO COUNTIES · 6300 · DISTRIBUTION TO COUNTIES · Receiver JOSEPHINE COUNTY CCA",
+      837524,
+      837524,
+      1
+    ],
+    [
+      "CRIMINAL JUSTICE CMSN",
+      "6404 · DIST TO PUBLIC DEFENSE COMMISSION · 6110 · DISTRIBUTION TO PUBLIC DEFENSE COMM · Receiver OFFICE OF PUBLIC DEFENSE SERVICES",
+      806045.37,
+      806045.37,
+      1
+    ],
+    [
+      "CRIMINAL JUSTICE CMSN",
+      "6020 · DISTRIBUTION TO COUNTIES · 6300 · DISTRIBUTION TO COUNTIES · Receiver COUNTY OF UMATILLA",
+      798698.89,
+      798698.89,
+      1
+    ],
+    [
+      "CRIMINAL JUSTICE CMSN",
+      "6020 · DISTRIBUTION TO COUNTIES · 6300 · DISTRIBUTION TO COUNTIES · Receiver COUNTY OF MARION",
+      695767,
+      695767,
+      1
+    ],
+    [
+      "CRIMINAL JUSTICE CMSN",
+      "6020 · DISTRIBUTION TO COUNTIES · 6300 · DISTRIBUTION TO COUNTIES · Receiver JOSEPHINE COUNTY DISTRICT ATTORNEY'S OFFICE",
+      613671,
+      613671,
+      1
+    ],
+    [
+      "CRIMINAL JUSTICE CMSN",
+      "6020 · DISTRIBUTION TO COUNTIES · 6300 · DISTRIBUTION TO COUNTIES · Receiver [individual recipient omitted]",
+      583463.68,
+      583463.68,
+      1
+    ],
+    [
+      "CRIMINAL JUSTICE CMSN",
+      "6020 · DISTRIBUTION TO COUNTIES · 6300 · DISTRIBUTION TO COUNTIES · Receiver COUNTY OF COLUMBIA",
+      504133.37,
+      504133.37,
+      1
+    ],
+    [
+      "CRIMINAL JUSTICE CMSN",
+      "4300 · PROFESSIONAL SERVICES · 4500 · PROFESSIONAL SERVICES NON-IT · Receiver OREGON HEALTH & SCIENCE UNIVERSITY",
+      475432.06,
+      475432.06,
+      1
+    ],
+    [
+      "CRIMINAL JUSTICE CMSN",
+      "6020 · DISTRIBUTION TO COUNTIES · 6300 · DISTRIBUTION TO COUNTIES · Receiver CLACKAMAS CO DISTRICT ATTORNEY'S OFFICE",
+      475255,
+      475255,
+      1
+    ],
+    [
+      "CRIMINAL JUSTICE CMSN",
+      "6020 · DISTRIBUTION TO COUNTIES · 6300 · DISTRIBUTION TO COUNTIES · Receiver COUNTY OF UNION",
+      451955.66,
+      451955.66,
+      1
+    ],
+    [
+      "CRIMINAL JUSTICE CMSN",
+      "6020 · DISTRIBUTION TO COUNTIES · 6300 · DISTRIBUTION TO COUNTIES · Receiver DEPARTMENT OF ADMINISTRATIVE SERVICES",
+      448976.36,
+      448976.36,
+      1
+    ],
+    [
+      "CRIMINAL JUSTICE CMSN",
+      "6020 · DISTRIBUTION TO COUNTIES · 6300 · DISTRIBUTION TO COUNTIES · Receiver COUNTY OF COOS",
+      437935,
+      437935,
+      1
+    ],
+    [
+      "CRIMINAL JUSTICE CMSN",
+      "6020 · DISTRIBUTION TO COUNTIES · 6300 · DISTRIBUTION TO COUNTIES · Receiver COUNTY OF BENTON",
+      415187.98,
+      415187.98,
+      1
+    ],
+    [
+      "CRIMINAL JUSTICE CMSN",
+      "6020 · DISTRIBUTION TO COUNTIES · 6300 · DISTRIBUTION TO COUNTIES · Receiver COUNTY OF TILLAMOOK",
+      386787.61,
+      386787.61,
+      1
+    ],
+    [
+      "CRIMINAL JUSTICE CMSN",
+      "6020 · DISTRIBUTION TO COUNTIES · 6300 · DISTRIBUTION TO COUNTIES · Receiver COUNTY OF MALHEUR",
+      386512,
+      386512,
+      1
+    ],
+    [
+      "CRIMINAL JUSTICE CMSN",
+      "6085 · OTHER SPECIAL PAYMENTS · 6900 · OTHER SPECIAL PAYMENTS · Receiver COMMUNITY COUNSELING SOLUTIONS",
+      385664.04,
+      385664.04,
+      1
+    ],
+    [
+      "CRIMINAL JUSTICE CMSN",
+      "6020 · DISTRIBUTION TO COUNTIES · 6300 · DISTRIBUTION TO COUNTIES · Receiver COUNTY OF CROOK",
+      367523.67,
+      367523.67,
+      1
+    ],
+    [
+      "CRIMINAL JUSTICE CMSN",
+      "6025 · DISTRIBUTION TO OTHER GOVTS · 6700 · DISTRIBUTION TO OTHER GOVERNMENTS · Receiver [individual recipient omitted]",
+      355258.02,
+      355258.02,
+      3
+    ],
+    [
+      "CRIMINAL JUSTICE CMSN",
+      "6085 · OTHER SPECIAL PAYMENTS · 6900 · OTHER SPECIAL PAYMENTS · Receiver YOUNG WOMEN'S CHRISTIAN ASSOCIATION OF PORTLAND",
+      325000,
+      325000,
+      1
+    ],
+    [
+      "CRIMINAL JUSTICE CMSN",
+      "6020 · DISTRIBUTION TO COUNTIES · 6300 · DISTRIBUTION TO COUNTIES · Receiver COUNTY OF POLK",
+      322690.17,
+      322690.17,
+      1
+    ],
+    [
+      "CRIMINAL JUSTICE CMSN",
+      "6020 · DISTRIBUTION TO COUNTIES · 6300 · DISTRIBUTION TO COUNTIES · Receiver COUNTY OF WASCO COMMUNITY CORRECTIONS",
+      315836,
+      315836,
+      1
+    ],
+    [
+      "CRIMINAL JUSTICE CMSN",
+      "6020 · DISTRIBUTION TO COUNTIES · 6300 · DISTRIBUTION TO COUNTIES · Receiver COUNTY OF HOOD RIVER",
+      309221,
+      309221,
+      1
+    ],
+    [
+      "CRIMINAL JUSTICE CMSN",
+      "4300 · PROFESSIONAL SERVICES · 4500 · PROFESSIONAL SERVICES NON-IT · Receiver PORTLAND STATE UNIVERSITY",
+      280070.61,
+      280070.61,
+      1
+    ],
+    [
+      "CRIMINAL JUSTICE CMSN",
+      "6020 · DISTRIBUTION TO COUNTIES · 6300 · DISTRIBUTION TO COUNTIES · Receiver COUNTY OF LAKE",
+      224651,
+      224651,
+      1
+    ],
+    [
+      "CRIMINAL JUSTICE CMSN",
+      "6291 · DIST TO CORRECTIONS · 6139 · DISTRIBUTION TO CORRECTIONS · Receiver STATE OF OREGON DEPARTMENT OF CORRECTIONS",
+      219005.35,
+      219005.35,
+      1
+    ],
+    [
+      "CRIMINAL JUSTICE CMSN",
+      "6590 · DIST TO OHSU · 6093 · DISTRIBUTION TO OHSU (COMP UNIT) · Receiver OREGON HEALTH & SCIENCE UNIVERSITY",
+      202277.9,
+      202277.9,
+      1
+    ],
+    [
+      "CRIMINAL JUSTICE CMSN",
+      "6025 · DISTRIBUTION TO OTHER GOVTS · 6700 · DISTRIBUTION TO OTHER GOVERNMENTS · Receiver KLAMATH TRIBAL WELLNESS CLINIC",
+      188242.52,
+      188242.52,
+      1
+    ],
+    [
+      "CRIMINAL JUSTICE CMSN",
+      "6020 · DISTRIBUTION TO COUNTIES · 6300 · DISTRIBUTION TO COUNTIES · Receiver UNION COUNTY DISTRICT ATTORNEY",
+      178970,
+      178970,
+      1
+    ],
+    [
+      "CRIMINAL JUSTICE CMSN",
+      "6020 · DISTRIBUTION TO COUNTIES · 6300 · DISTRIBUTION TO COUNTIES · Receiver COUNTY OF HARNEY",
+      159788,
+      159788,
+      1
+    ],
+    [
+      "CRIMINAL JUSTICE CMSN",
+      "4425 · LEASE PAYMENTS & TAXES · 4800 · INTERAGENCY LEASE PAYMENTS · Receiver DEPARTMENT OF ADMINISTRATIVE SERVICES",
+      148863.36,
+      148863.36,
+      1
+    ],
+    [
+      "CRIMINAL JUSTICE CMSN",
+      "6257 · DIST TO STATE POLICE · 6136 · DISTRIBUTION TO STATE POLICE · Receiver DEPT OF STATE POLICE",
+      143983.7,
+      143983.7,
+      1
+    ],
+    [
+      "CRIMINAL JUSTICE CMSN",
+      "4650 · OTHER SERVICES AND SUPPLIES · 4701 · OTHER SERVICES · Receiver DEPARTMENT OF ADMINISTRATIVE SERVICES",
+      133638.4,
+      133638.4,
+      1
+    ],
+    [
+      "CRIMINAL JUSTICE CMSN",
+      "6020 · DISTRIBUTION TO COUNTIES · 6300 · DISTRIBUTION TO COUNTIES · Receiver COUNTY OF WALLOWA",
+      125311.63,
+      125311.63,
+      1
+    ],
+    [
+      "CRIMINAL JUSTICE CMSN",
+      "6020 · DISTRIBUTION TO COUNTIES · 6300 · DISTRIBUTION TO COUNTIES · Receiver COUNTY OF JEFFERSON",
+      116460.67,
+      116460.67,
+      1
+    ],
+    [
+      "CRIMINAL JUSTICE CMSN",
+      "4300 · PROFESSIONAL SERVICES · 4500 · PROFESSIONAL SERVICES NON-IT · Receiver UNIVERSITY OF OREGON",
+      115000,
+      115000,
+      1
+    ],
+    [
+      "CRIMINAL JUSTICE CMSN",
+      "4250 · DATA PROCESSING · 4367 · COMPUTER TECHNOLOGY PC SUPPORT · Receiver 5 POINT SOLUTIONS LLC",
+      110333,
+      110333,
+      1
+    ],
+    [
+      "CRIMINAL JUSTICE CMSN",
+      "6020 · DISTRIBUTION TO COUNTIES · 6300 · DISTRIBUTION TO COUNTIES · Receiver COUNTY OF BAKER PAROLE/PROBATION",
+      106365.24,
+      106365.24,
+      1
+    ],
+    [
+      "CRIMINAL JUSTICE CMSN",
+      "6020 · DISTRIBUTION TO COUNTIES · 6300 · DISTRIBUTION TO COUNTIES · Receiver MORROW COUNTY COMMUNITY CORRECTIONS",
+      92800,
+      92800,
+      1
+    ],
+    [
+      "CRIMINAL JUSTICE CMSN",
+      "6020 · DISTRIBUTION TO COUNTIES · 6300 · DISTRIBUTION TO COUNTIES · Receiver COUNTY OF WASCO",
+      89078,
+      89078,
+      1
+    ],
+    [
+      "CRIMINAL JUSTICE CMSN",
+      "4250 · DATA PROCESSING · 4375 · COMPUTER TECHNOLOGY COMPUTER PROCESSING · Receiver 5 POINT SOLUTIONS LLC",
+      83811.1,
+      83811.1,
+      1
+    ],
+    [
+      "CRIMINAL JUSTICE CMSN",
+      "6020 · DISTRIBUTION TO COUNTIES · 6300 · DISTRIBUTION TO COUNTIES · Receiver COUNTY OF BAKER",
+      83039,
+      83039,
+      1
+    ],
+    [
+      "CRIMINAL JUSTICE CMSN",
+      "6020 · DISTRIBUTION TO COUNTIES · 6300 · DISTRIBUTION TO COUNTIES · Receiver GILLIAM COUNTY",
+      75000,
+      75000,
+      1
+    ],
+    [
+      "CRIMINAL JUSTICE CMSN",
+      "6020 · DISTRIBUTION TO COUNTIES · 6300 · DISTRIBUTION TO COUNTIES · Receiver COUNTY OF MORROW",
+      75000,
+      75000,
+      1
+    ],
+    [
+      "CRIMINAL JUSTICE CMSN",
+      "4225 · STATE GOVERNMENT SERVICE CHARGES · 4600 · STATE GOVERNMENT SERVICE CHARGES · Receiver DEPARTMENT OF ADMINISTRATIVE SERVICES",
+      70692,
+      70692,
+      1
+    ],
+    [
+      "CRIMINAL JUSTICE CMSN",
+      "4315 · IT PROFESSIONAL SERVICES · 4513 · PROFESSIONAL SERVICES APPLICATION NEW · Receiver RECONNECT INC",
+      67500,
+      67500,
+      1
+    ],
+    [
+      "CRIMINAL JUSTICE CMSN",
+      "4250 · DATA PROCESSING · 4367 · COMPUTER TECHNOLOGY PC SUPPORT · Receiver DEPARTMENT OF ADMINISTRATIVE SERVICES",
+      60857.5,
+      60857.5,
+      1
+    ],
+    [
+      "CRIMINAL JUSTICE CMSN",
+      "6020 · DISTRIBUTION TO COUNTIES · 6300 · DISTRIBUTION TO COUNTIES · Receiver COUNTY OF GILLIAM",
+      48500,
+      48500,
+      1
+    ],
+    [
+      "CRIMINAL JUSTICE CMSN",
+      "6020 · DISTRIBUTION TO COUNTIES · 6300 · DISTRIBUTION TO COUNTIES · Receiver COUNTY OF WHEELER",
+      48500,
+      48500,
+      1
+    ],
+    [
+      "CRIMINAL JUSTICE CMSN",
+      "6020 · DISTRIBUTION TO COUNTIES · 6300 · DISTRIBUTION TO COUNTIES · Receiver HARNEY COUNTY",
+      48471.43,
+      48471.43,
+      1
+    ],
+    [
+      "CRIMINAL JUSTICE CMSN",
+      "6020 · DISTRIBUTION TO COUNTIES · 6300 · DISTRIBUTION TO COUNTIES · Receiver COUNTY OF SHERMAN",
+      48328,
+      48328,
+      1
+    ],
+    [
+      "CRIMINAL JUSTICE CMSN",
+      "6025 · DISTRIBUTION TO OTHER GOVTS · 6700 · DISTRIBUTION TO OTHER GOVERNMENTS · Receiver COW CREEK BAND OF UMPQUA TRIBE OF INDIANS",
+      48008.88,
+      48008.88,
+      1
+    ],
+    [
+      "CRIMINAL JUSTICE CMSN",
+      "4175 · OFFICE EXPENSES · 4200 · OFFICE SUPPLIES · Receiver US BANK CORPORATE PAYMENT SYSTEMS",
+      33797.6,
+      33797.6,
+      1
+    ],
+    [
+      "CRIMINAL JUSTICE CMSN",
+      "4325 · ATTORNEY GENERAL LEGAL FEES · 4550 · ATTORNEY GENERAL LEGAL FEES · Receiver STATE OF OREGON DEPARTMENT OF JUSTICE",
+      26622.2,
+      26622.2,
+      1
+    ],
+    [
+      "CRIMINAL JUSTICE CMSN",
+      "4225 · STATE GOVERNMENT SERVICE CHARGES · 4600 · STATE GOVERNMENT SERVICE CHARGES · Receiver STATE OF OREGON SECRETARY OF STATE",
+      22613,
+      22613,
+      1
+    ],
+    [
+      "CRIMINAL JUSTICE CMSN",
+      "4715 · IT EXPENDABLE PROPERTY · 4365 · COMPUTER TECHNOLOGY PC EQUIPMENT<$5K · Receiver CDW GOVERNMENT INC",
+      19549.15,
+      19549.15,
+      1
+    ],
+    [
+      "CRIMINAL JUSTICE CMSN",
+      "4425 · LEASE PAYMENTS & TAXES · 4800 · INTERAGENCY LEASE PAYMENTS · Receiver STATE OF OREGON DEPARTMENT OF JUSTICE",
+      13686.26,
+      13686.26,
+      1
+    ],
+    [
+      "CRIMINAL JUSTICE CMSN",
+      "6415 · DIST TO OREGON YOUTH AUTHORITY · 6096 · DISTRIBUTION TO OREGON YOUTH AUTHORITY · Receiver OREGON YOUTH AUTHORITY",
+      11400,
+      11400,
+      1
+    ],
+    [
+      "CRIMINAL JUSTICE CMSN",
+      "4150 · EMPLOYEE TRAINING · 4406 · PROF DEV INSTATE TUITION/REGISTRATION · Receiver WA ST CRIMINAL JUSTICE TRAINING COMMISSION",
+      10850,
+      10850,
+      1
+    ],
+    [
+      "CRIMINAL JUSTICE CMSN",
+      "4225 · STATE GOVERNMENT SERVICE CHARGES · 4600 · STATE GOVERNMENT SERVICE CHARGES · Receiver OREGON STATE POLICE",
+      9775.5,
+      9775.5,
+      1
+    ],
+    [
+      "CRIMINAL JUSTICE CMSN",
+      "4300 · PROFESSIONAL SERVICES · 4500 · PROFESSIONAL SERVICES NON-IT · Receiver ICF MACRO INC",
+      6847,
+      6847,
+      1
+    ],
+    [
+      "CRIMINAL JUSTICE CMSN",
+      "4250 · DATA PROCESSING · 4375 · COMPUTER TECHNOLOGY COMPUTER PROCESSING · Receiver DEPARTMENT OF ADMINISTRATIVE SERVICES",
+      4582.3,
+      4582.3,
+      1
+    ],
+    [
+      "CRIMINAL JUSTICE CMSN",
+      "4100 · INSTATE TRAVEL · 4108 · INSTATE GROUND TRANSPORTATION · Receiver DEPARTMENT OF ADMINISTRATIVE SERVICES",
+      3543.75,
+      3543.75,
+      1
+    ],
+    [
+      "CRIMINAL JUSTICE CMSN",
+      "4150 · EMPLOYEE TRAINING · 4440 · PROF DEV OUT-OF-STATE AIR TRANSPORTATION · Receiver US BANK CORPORATE PAYMENT SYSTEMS",
+      3509.16,
+      3509.16,
+      1
+    ],
+    [
+      "CRIMINAL JUSTICE CMSN",
+      "4715 · IT EXPENDABLE PROPERTY · 4366 · COMPUTER TECHNOLOGY PC SOFTWARE<$5K · Receiver SAS INSTITUTE INC",
+      3270,
+      3270,
+      1
+    ],
+    [
+      "CRIMINAL JUSTICE CMSN",
+      "4200 · TELECOMM/TECH SVC AND SUPPLIES · 4305 · TELECOM/NETWORK SERVICES · Receiver DEPARTMENT OF ADMINISTRATIVE SERVICES",
+      2885.58,
+      2885.58,
+      1
+    ],
+    [
+      "CRIMINAL JUSTICE CMSN",
+      "4150 · EMPLOYEE TRAINING · 4434 · PROF DEV OUT-OF-STATE LODGING · Receiver [individual recipient omitted]",
+      2345.69,
+      2345.69,
+      5
+    ],
+    [
+      "CRIMINAL JUSTICE CMSN",
+      "4250 · DATA PROCESSING · 4375 · COMPUTER TECHNOLOGY COMPUTER PROCESSING · Receiver SHI INTERNATIONAL CORP",
+      2144.32,
+      2144.32,
+      1
+    ],
+    [
+      "CRIMINAL JUSTICE CMSN",
+      "4150 · EMPLOYEE TRAINING · 4432 · PROF DEV OUT-OF-STATE MEAL W/OVERNITE · Receiver [individual recipient omitted]",
+      2022.75,
+      2022.75,
+      8
+    ],
+    [
+      "CRIMINAL JUSTICE CMSN",
+      "4300 · PROFESSIONAL SERVICES · 4500 · PROFESSIONAL SERVICES NON-IT · Receiver HECHT & NORMAN LLP",
+      2000,
+      2000,
+      1
+    ],
+    [
+      "CRIMINAL JUSTICE CMSN",
+      "4150 · EMPLOYEE TRAINING · 4431 · PROF DEV INSTATE MEAL WITH OVERNITE STAY · Receiver [individual recipient omitted]",
+      1968.25,
+      1968.25,
+      9
+    ],
+    [
+      "CRIMINAL JUSTICE CMSN",
+      "4150 · EMPLOYEE TRAINING · 4441 · PROF DEV OUT-OF-STATE GROUND TRANSPRTATN · Receiver [individual recipient omitted]",
+      1693.15,
+      1693.15,
+      8
+    ],
+    [
+      "CRIMINAL JUSTICE CMSN",
+      "4200 · TELECOMM/TECH SVC AND SUPPLIES · 4301 · TELECOM/VOICE USAGE · Receiver KYNDRYL INC",
+      1182.59,
+      1182.59,
+      1
+    ],
+    [
+      "CRIMINAL JUSTICE CMSN",
+      "4575 · AGENCY PROGRAM RELATED SVCS & SUPP · 4206 · CATERING SERVICES · Receiver SEASIDE CIVIC & CONVENTION CENTER",
+      1047.84,
+      1047.84,
+      1
+    ],
+    [
+      "CRIMINAL JUSTICE CMSN",
+      "4250 · DATA PROCESSING · 4367 · COMPUTER TECHNOLOGY PC SUPPORT · Receiver CDW GOVERNMENT INC",
+      1001.14,
+      1001.14,
+      1
+    ],
+    [
+      "CRIMINAL JUSTICE CMSN",
+      "4715 · IT EXPENDABLE PROPERTY · 4372 · COMPUTER TECHNOLOGY PERIPHERAL EQUIP<$5K · Receiver CDW GOVERNMENT INC",
+      986.17,
+      986.17,
+      1
+    ],
+    [
+      "CRIMINAL JUSTICE CMSN",
+      "4715 · IT EXPENDABLE PROPERTY · 4366 · COMPUTER TECHNOLOGY PC SOFTWARE<$5K · Receiver SHI INTERNATIONAL CORP",
+      975.42,
+      975.42,
+      1
+    ],
+    [
+      "CRIMINAL JUSTICE CMSN",
+      "4225 · STATE GOVERNMENT SERVICE CHARGES · 4600 · STATE GOVERNMENT SERVICE CHARGES · Receiver OREGON STATE TREASURY",
+      709.6,
+      709.6,
+      1
+    ],
+    [
+      "CRIMINAL JUSTICE CMSN",
+      "4200 · TELECOMM/TECH SVC AND SUPPLIES · 4301 · TELECOM/VOICE USAGE · Receiver DEPARTMENT OF ADMINISTRATIVE SERVICES",
+      694.08,
+      694.08,
+      1
+    ],
+    [
+      "CRIMINAL JUSTICE CMSN",
+      "4150 · EMPLOYEE TRAINING · 4452 · PROF DEV OUT-OF-ST MILE REIMB-FULL RATE · Receiver [individual recipient omitted]",
+      692.2,
+      692.2,
+      5
+    ],
+    [
+      "CRIMINAL JUSTICE CMSN",
+      "4150 · EMPLOYEE TRAINING · 4450 · PROF DEV INSTATE MILE REIMB-FULL RATE · Receiver [individual recipient omitted]",
+      606.29,
+      606.29,
+      6
+    ],
+    [
+      "CRIMINAL JUSTICE CMSN",
+      "4100 · INSTATE TRAVEL · 4109 · INSTATE MILEAGE REIMBURSEMENT-FULL RATE · Receiver [individual recipient omitted]",
+      561.59,
+      561.59,
+      7
+    ],
+    [
+      "CRIMINAL JUSTICE CMSN",
+      "4325 · ATTORNEY GENERAL LEGAL FEES · 4550 · ATTORNEY GENERAL LEGAL FEES · Receiver DEPARTMENT OF JUSTICE",
+      522.5,
+      522.5,
+      1
+    ],
+    [
+      "CRIMINAL JUSTICE CMSN",
+      "4225 · STATE GOVERNMENT SERVICE CHARGES · 4600 · STATE GOVERNMENT SERVICE CHARGES · Receiver OREGON GOVERNMENT ETHICS COMMISSION",
+      385.5,
+      385.5,
+      1
+    ],
+    [
+      "CRIMINAL JUSTICE CMSN",
+      "4100 · INSTATE TRAVEL · 4105 · INSTATE MEALS-NO OVERNIGHT STAY · Receiver [individual recipient omitted]",
+      383.5,
+      383.5,
+      10
+    ],
+    [
+      "CRIMINAL JUSTICE CMSN",
+      "4100 · INSTATE TRAVEL · 4101 · INSTATE MEALS WITH OVERNIGHT STAY · Receiver [individual recipient omitted]",
+      304,
+      304,
+      4
+    ],
+    [
+      "CRIMINAL JUSTICE CMSN",
+      "4175 · OFFICE EXPENSES · 4201 · OFFICE SERVICES · Receiver [individual recipient omitted]",
+      278,
+      278,
+      1
+    ],
+    [
+      "CRIMINAL JUSTICE CMSN",
+      "4275 · PUBLICITY & PUBLICATIONS · 4253 · ADVERTISE, PUBLICITY, PUBLISH/PRINT SRVS · Receiver [individual recipient omitted]",
+      242.19,
+      242.19,
+      1
+    ],
+    [
+      "CRIMINAL JUSTICE CMSN",
+      "3220 · PUBLIC EMPLOYES' RETIREMENT SYSTEM · 3210 · PUBLIC EMPLOYEES RETIREMENT CONTRIBUTION · Receiver [individual recipient omitted]",
+      234.32,
+      234.32,
+      1
+    ],
+    [
+      "CRIMINAL JUSTICE CMSN",
+      "4175 · OFFICE EXPENSES · 4201 · OFFICE SERVICES · Receiver DEPARTMENT OF ADMINISTRATIVE SERVICES",
+      190.59,
+      190.59,
+      1
+    ],
+    [
+      "CRIMINAL JUSTICE CMSN",
+      "4100 · INSTATE TRAVEL · 4110 · INSTATE MILEAGE REIMBURSMNT-REDUCED RATE · Receiver [individual recipient omitted]",
+      185.12,
+      185.12,
+      5
+    ],
+    [
+      "CRIMINAL JUSTICE CMSN",
+      "4150 · EMPLOYEE TRAINING · 4439 · PROF DEV INSTATE GROUND TRANSPORTATION · Receiver [individual recipient omitted]",
+      160.75,
+      160.75,
+      3
+    ],
+    [
+      "CRIMINAL JUSTICE CMSN",
+      "4300 · PROFESSIONAL SERVICES · 4500 · PROFESSIONAL SERVICES NON-IT · Receiver US BANK CORPORATE PAYMENT SYSTEMS",
+      157,
+      157,
+      1
+    ],
+    [
+      "CRIMINAL JUSTICE CMSN",
+      "4150 · EMPLOYEE TRAINING · 4435 · PROF DEV INSTATE MEALS-NO OVERNIGHT STAY · Receiver [individual recipient omitted]",
+      155,
+      155,
+      4
+    ],
+    [
+      "CRIMINAL JUSTICE CMSN",
+      "4650 · OTHER SERVICES AND SUPPLIES · 4255 · PRIZES AND AWARDS · Receiver [individual recipient omitted]",
+      154,
+      154,
+      1
+    ],
+    [
+      "CRIMINAL JUSTICE CMSN",
+      "4100 · INSTATE TRAVEL · 4111 · INSTATE MILEAGE REIMBURSMNT-VOLUNTEERS · Receiver RECONNECTIONS ALCOHOL AND DRUG TREATMENT INC",
+      153.27,
+      153.27,
+      1
+    ],
+    [
+      "CRIMINAL JUSTICE CMSN",
+      "4150 · EMPLOYEE TRAINING · 4431 · PROF DEV INSTATE MEAL WITH OVERNITE STAY · Receiver RECONNECTIONS ALCOHOL AND DRUG TREATMENT INC",
+      138,
+      138,
+      1
+    ],
+    [
+      "CRIMINAL JUSTICE CMSN",
+      "4150 · EMPLOYEE TRAINING · 4453 · PROF DEV OUT-OF-ST MILE REIMB-REDUC RATE · Receiver [individual recipient omitted]",
+      58.65,
+      58.65,
+      1
+    ],
+    [
+      "CRIMINAL JUSTICE CMSN",
+      "4150 · EMPLOYEE TRAINING · 4451 · PROF DEV INSTATE MILE REIMB-REDUCED RATE · Receiver [individual recipient omitted]",
+      55.22,
+      55.22,
+      2
+    ],
+    [
+      "CRIMINAL JUSTICE CMSN",
+      "4650 · OTHER SERVICES AND SUPPLIES · 4701 · OTHER SERVICES · Receiver STATE OF OREGON DEPARTMENT OF JUSTICE",
+      55,
+      55,
+      1
+    ],
+    [
+      "CRIMINAL JUSTICE CMSN",
+      "4100 · INSTATE TRAVEL · 4108 · INSTATE GROUND TRANSPORTATION · Receiver [individual recipient omitted]",
+      39.68,
+      39.68,
+      3
+    ],
+    [
+      "CRIMINAL JUSTICE CMSN",
+      "4715 · IT EXPENDABLE PROPERTY · 4372 · COMPUTER TECHNOLOGY PERIPHERAL EQUIP<$5K · Receiver [individual recipient omitted]",
+      25.98,
+      25.98,
+      1
+    ],
+    [
+      "CRIMINAL JUSTICE CMSN",
+      "4150 · EMPLOYEE TRAINING · 4433 · PROF DEV INSTATE LODGING · Receiver [individual recipient omitted]",
+      25,
+      25,
+      1
+    ],
+    [
+      "CRIMINAL JUSTICE CMSN",
+      "4650 · OTHER SERVICES AND SUPPLIES · 4701 · OTHER SERVICES · Receiver US BANK CORPORATE PAYMENT SYSTEMS",
+      17.87,
+      17.87,
+      1
+    ],
+    [
+      "CRIMINAL JUSTICE CMSN",
+      "4650 · OTHER SERVICES AND SUPPLIES · 4701 · OTHER SERVICES · Receiver [individual recipient omitted]",
+      15,
+      15,
+      1
+    ],
+    [
+      "CRIMINAL JUSTICE CMSN",
+      "4125 · OUT-OF-STATE TRAVEL · 4164 · OUT-OF-STATE MILEAGE REIMB-VOLUNTEERS · Receiver [individual recipient omitted]",
+      11.4,
+      11.4,
+      1
+    ],
+    [
+      "CRIMINAL JUSTICE CMSN",
+      "4575 · AGENCY PROGRAM RELATED SVCS & SUPP · 4976 · AGENCY PROGRAM RELATED SUPPLIES · Receiver [individual recipient omitted]",
+      10.49,
+      10.49,
+      1
+    ]
+  ],
+  "sourceCheck": {
+    "objectClassRows": 122,
+    "sourceRows": 189,
+    "sourceTotal": 54702086.59,
+    "difference": 0
+  }
+}

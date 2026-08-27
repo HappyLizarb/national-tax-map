@@ -1,0 +1,1540 @@
+{
+  "scope": "Oregon",
+  "fiscalYear": 2024,
+  "department": "PUBLIC UTILITY CMSN",
+  "sourceUrl": "https://data.oregon.gov/resource/y9g9-xsxs.json?$select=agency,agency_1,budget_class,budget_class_1,expend_class,expend_class_1,vendor,sum(expense)%20as%20total,count(*)%20as%20source_rows&$where=fiscal_year=2024&$group=agency,agency_1,budget_class,budget_class_1,expend_class,expend_class_1,vendor&$limit=500000",
+  "sourceUrls": [
+    [
+      "Oregon transparency expenditure catalog",
+      "https://data.oregon.gov/Revenue-Expense/Agency-Expenditures-Multi-Year-Report/y9g9-xsxs"
+    ],
+    [
+      "Grouped FY2024 API export",
+      "https://data.oregon.gov/resource/y9g9-xsxs.json?$select=agency,agency_1,budget_class,budget_class_1,expend_class,expend_class_1,vendor,sum(expense)%20as%20total,count(*)%20as%20source_rows&$where=fiscal_year=2024&$group=agency,agency_1,budget_class,budget_class_1,expend_class,expend_class_1,vendor&$limit=500000"
+    ]
+  ],
+  "sourceBasis": "Official Oregon Agency Expenditures Multi-Year Report; FY2024 cash expense grouped by agency, budget class, expenditure class, and privacy-safe receiver label.",
+  "privacyNote": "Individual or ambiguous vendor labels are grouped as [individual recipient omitted]; organization receivers are retained. This layer does not expose person-level payroll.",
+  "sourceRows": 434,
+  "sourceTotal": 37399129.28,
+  "rowSchema": [
+    "subAgency",
+    "program",
+    "amount",
+    "sourceAmount",
+    "sourceRows"
+  ],
+  "rows": [
+    [
+      "PUBLIC UTILITY CMSN",
+      "6030 · DISTRIBUTION TO NON-GOVERNMENTS · 6725 · DISTRIBUTION TO NON-GOVERNMENTS · Receiver QWEST",
+      7939778.22,
+      7939778.22,
+      1
+    ],
+    [
+      "PUBLIC UTILITY CMSN",
+      "6030 · DISTRIBUTION TO NON-GOVERNMENTS · 6725 · DISTRIBUTION TO NON-GOVERNMENTS · Receiver NORTHWEST FIBER LLC",
+      5495290.8,
+      5495290.8,
+      1
+    ],
+    [
+      "PUBLIC UTILITY CMSN",
+      "6030 · DISTRIBUTION TO NON-GOVERNMENTS · 6725 · DISTRIBUTION TO NON-GOVERNMENTS · Receiver [individual recipient omitted]",
+      2666363.16,
+      2666363.16,
+      7
+    ],
+    [
+      "PUBLIC UTILITY CMSN",
+      "6030 · DISTRIBUTION TO NON-GOVERNMENTS · 6725 · DISTRIBUTION TO NON-GOVERNMENTS · Receiver CENTURYTEL OF OREGON INC",
+      2617558.32,
+      2617558.32,
+      1
+    ],
+    [
+      "PUBLIC UTILITY CMSN",
+      "4325 · ATTORNEY GENERAL LEGAL FEES · 4550 · ATTORNEY GENERAL LEGAL FEES · Receiver DEPARTMENT OF JUSTICE",
+      2382434.21,
+      2382434.21,
+      1
+    ],
+    [
+      "PUBLIC UTILITY CMSN",
+      "6030 · DISTRIBUTION TO NON-GOVERNMENTS · 6725 · DISTRIBUTION TO NON-GOVERNMENTS · Receiver UNITED TELEPHONE COMPANY OF THE NORTHWEST",
+      2084692.5,
+      2084692.5,
+      1
+    ],
+    [
+      "PUBLIC UTILITY CMSN",
+      "6030 · DISTRIBUTION TO NON-GOVERNMENTS · 6725 · DISTRIBUTION TO NON-GOVERNMENTS · Receiver WARM SPRINGS TELECOMMUNICATIONS COMPANY",
+      1319392.02,
+      1319392.02,
+      1
+    ],
+    [
+      "PUBLIC UTILITY CMSN",
+      "4425 · LEASE PAYMENTS & TAXES · 7007 · LEASE PMT FOR BUILDINGS · Receiver BEARDSLEY BUILDING LLC",
+      1044788.47,
+      1044788.47,
+      1
+    ],
+    [
+      "PUBLIC UTILITY CMSN",
+      "4575 · AGENCY PROGRAM RELATED SVCS & SUPP · 4976 · AGENCY PROGRAM RELATED SUPPLIES · Receiver TELTEX INC",
+      741940.85,
+      741940.85,
+      1
+    ],
+    [
+      "PUBLIC UTILITY CMSN",
+      "6030 · DISTRIBUTION TO NON-GOVERNMENTS · 6725 · DISTRIBUTION TO NON-GOVERNMENTS · Receiver CASCADE UTILITIES INC",
+      715709.52,
+      715709.52,
+      1
+    ],
+    [
+      "PUBLIC UTILITY CMSN",
+      "6030 · DISTRIBUTION TO NON-GOVERNMENTS · 6725 · DISTRIBUTION TO NON-GOVERNMENTS · Receiver CANBY TELEPHONE ASSOCIATION",
+      687556.68,
+      687556.68,
+      1
+    ],
+    [
+      "PUBLIC UTILITY CMSN",
+      "6030 · DISTRIBUTION TO NON-GOVERNMENTS · 6725 · DISTRIBUTION TO NON-GOVERNMENTS · Receiver PINE TELEPHONE SYSTEM INC",
+      666550.5,
+      666550.5,
+      1
+    ],
+    [
+      "PUBLIC UTILITY CMSN",
+      "4225 · STATE GOVERNMENT SERVICE CHARGES · 4600 · STATE GOVERNMENT SERVICE CHARGES · Receiver DEPARTMENT OF ADMINISTRATIVE SERVICES",
+      605640,
+      605640,
+      1
+    ],
+    [
+      "PUBLIC UTILITY CMSN",
+      "4575 · AGENCY PROGRAM RELATED SVCS & SUPP · 4975 · AGENCY PROGRAM RELATED SERVICES · Receiver I-WIRELESS",
+      521350,
+      521350,
+      1
+    ],
+    [
+      "PUBLIC UTILITY CMSN",
+      "4575 · AGENCY PROGRAM RELATED SVCS & SUPP · 4975 · AGENCY PROGRAM RELATED SERVICES · Receiver QWEST",
+      501951.8,
+      501951.8,
+      1
+    ],
+    [
+      "PUBLIC UTILITY CMSN",
+      "6030 · DISTRIBUTION TO NON-GOVERNMENTS · 6725 · DISTRIBUTION TO NON-GOVERNMENTS · Receiver DOUGLAS SERVICES INC",
+      488415.62,
+      488415.62,
+      1
+    ],
+    [
+      "PUBLIC UTILITY CMSN",
+      "6030 · DISTRIBUTION TO NON-GOVERNMENTS · 6725 · DISTRIBUTION TO NON-GOVERNMENTS · Receiver STAYTON COOPERATIVE TELEPHONE COMPANY",
+      477378.36,
+      477378.36,
+      1
+    ],
+    [
+      "PUBLIC UTILITY CMSN",
+      "4575 · AGENCY PROGRAM RELATED SVCS & SUPP · 4976 · AGENCY PROGRAM RELATED SUPPLIES · Receiver [individual recipient omitted]",
+      350059.76,
+      350059.76,
+      2
+    ],
+    [
+      "PUBLIC UTILITY CMSN",
+      "6030 · DISTRIBUTION TO NON-GOVERNMENTS · 6725 · DISTRIBUTION TO NON-GOVERNMENTS · Receiver NEHALEM TELECOMMUNICATIONS INC",
+      312857.82,
+      312857.82,
+      1
+    ],
+    [
+      "PUBLIC UTILITY CMSN",
+      "6030 · DISTRIBUTION TO NON-GOVERNMENTS · 6725 · DISTRIBUTION TO NON-GOVERNMENTS · Receiver OREGON TELEPHONE CORPORATION",
+      267337.62,
+      267337.62,
+      1
+    ],
+    [
+      "PUBLIC UTILITY CMSN",
+      "4300 · PROFESSIONAL SERVICES · 4500 · PROFESSIONAL SERVICES NON-IT · Receiver [individual recipient omitted]",
+      264061.22,
+      264061.22,
+      6
+    ],
+    [
+      "PUBLIC UTILITY CMSN",
+      "6030 · DISTRIBUTION TO NON-GOVERNMENTS · 6725 · DISTRIBUTION TO NON-GOVERNMENTS · Receiver OREGON-IDAHO UTILITIES INC",
+      240889.26,
+      240889.26,
+      1
+    ],
+    [
+      "PUBLIC UTILITY CMSN",
+      "4715 · IT EXPENDABLE PROPERTY · 4365 · COMPUTER TECHNOLOGY PC EQUIPMENT<$5K · Receiver CDW GOVERNMENT INC",
+      213795.12,
+      213795.12,
+      1
+    ],
+    [
+      "PUBLIC UTILITY CMSN",
+      "4575 · AGENCY PROGRAM RELATED SVCS & SUPP · 4975 · AGENCY PROGRAM RELATED SERVICES · Receiver NORTHWEST FIBER LLC",
+      201990,
+      201990,
+      1
+    ],
+    [
+      "PUBLIC UTILITY CMSN",
+      "6030 · DISTRIBUTION TO NON-GOVERNMENTS · 6725 · DISTRIBUTION TO NON-GOVERNMENTS · Receiver EAGLE TELEPHONE SYSTEM INC",
+      199520.46,
+      199520.46,
+      1
+    ],
+    [
+      "PUBLIC UTILITY CMSN",
+      "4250 · DATA PROCESSING · 4367 · COMPUTER TECHNOLOGY PC SUPPORT · Receiver SHI INTERNATIONAL CORP",
+      195980.02,
+      195980.02,
+      1
+    ],
+    [
+      "PUBLIC UTILITY CMSN",
+      "6030 · DISTRIBUTION TO NON-GOVERNMENTS · 6725 · DISTRIBUTION TO NON-GOVERNMENTS · Receiver SCIO MUTUAL TELEPHONE ASSOCIATION",
+      186539.4,
+      186539.4,
+      1
+    ],
+    [
+      "PUBLIC UTILITY CMSN",
+      "4300 · PROFESSIONAL SERVICES · 4500 · PROFESSIONAL SERVICES NON-IT · Receiver QSI CONSULTING INC",
+      183542.5,
+      183542.5,
+      1
+    ],
+    [
+      "PUBLIC UTILITY CMSN",
+      "4300 · PROFESSIONAL SERVICES · 4500 · PROFESSIONAL SERVICES NON-IT · Receiver HAMILTON RELAY INC",
+      182579.64,
+      182579.64,
+      1
+    ],
+    [
+      "PUBLIC UTILITY CMSN",
+      "4175 · OFFICE EXPENSES · 4201 · OFFICE SERVICES · Receiver US BANK NATIONAL ASSOCIATION ND",
+      168989.25,
+      168989.25,
+      1
+    ],
+    [
+      "PUBLIC UTILITY CMSN",
+      "4575 · AGENCY PROGRAM RELATED SVCS & SUPP · 4975 · AGENCY PROGRAM RELATED SERVICES · Receiver UNITED STATES CELLULAR CORPORATION",
+      145350,
+      145350,
+      1
+    ],
+    [
+      "PUBLIC UTILITY CMSN",
+      "4300 · PROFESSIONAL SERVICES · 4500 · PROFESSIONAL SERVICES NON-IT · Receiver T MOBILE USA INC",
+      133903.62,
+      133903.62,
+      1
+    ],
+    [
+      "PUBLIC UTILITY CMSN",
+      "6030 · DISTRIBUTION TO NON-GOVERNMENTS · 6725 · DISTRIBUTION TO NON-GOVERNMENTS · Receiver HELIX TELEPHONE COMPANY",
+      132247.86,
+      132247.86,
+      1
+    ],
+    [
+      "PUBLIC UTILITY CMSN",
+      "6030 · DISTRIBUTION TO NON-GOVERNMENTS · 6725 · DISTRIBUTION TO NON-GOVERNMENTS · Receiver TRANS-CASCADE TELEPHONE COMPANY",
+      131491.74,
+      131491.74,
+      1
+    ],
+    [
+      "PUBLIC UTILITY CMSN",
+      "4300 · PROFESSIONAL SERVICES · 4500 · PROFESSIONAL SERVICES NON-IT · Receiver ECONOMISTS COM OF PORTLAND LLC",
+      120790,
+      120790,
+      1
+    ],
+    [
+      "PUBLIC UTILITY CMSN",
+      "6030 · DISTRIBUTION TO NON-GOVERNMENTS · 6725 · DISTRIBUTION TO NON-GOVERNMENTS · Receiver COLTON TELEPHONE COMPANY",
+      118128,
+      118128,
+      1
+    ],
+    [
+      "PUBLIC UTILITY CMSN",
+      "6030 · DISTRIBUTION TO NON-GOVERNMENTS · 6725 · DISTRIBUTION TO NON-GOVERNMENTS · Receiver ST PAUL COOPERATIVE TELEPHONE ASSOCIATION",
+      109780.68,
+      109780.68,
+      1
+    ],
+    [
+      "PUBLIC UTILITY CMSN",
+      "4300 · PROFESSIONAL SERVICES · 4500 · PROFESSIONAL SERVICES NON-IT · Receiver MOMENT ENERGY INSIGHTS LLC",
+      100503.75,
+      100503.75,
+      1
+    ],
+    [
+      "PUBLIC UTILITY CMSN",
+      "6030 · DISTRIBUTION TO NON-GOVERNMENTS · 6725 · DISTRIBUTION TO NON-GOVERNMENTS · Receiver NORTH STATE TELEPHONE COMPANY",
+      98751.42,
+      98751.42,
+      1
+    ],
+    [
+      "PUBLIC UTILITY CMSN",
+      "4100 · INSTATE TRAVEL · 4108 · INSTATE GROUND TRANSPORTATION · Receiver DEPARTMENT OF ADMINISTRATIVE SERVICES",
+      93821.62,
+      93821.62,
+      1
+    ],
+    [
+      "PUBLIC UTILITY CMSN",
+      "6030 · DISTRIBUTION TO NON-GOVERNMENTS · 6725 · DISTRIBUTION TO NON-GOVERNMENTS · Receiver GERVAIS TELEPHONE COMPANY",
+      83318.94,
+      83318.94,
+      1
+    ],
+    [
+      "PUBLIC UTILITY CMSN",
+      "4425 · LEASE PAYMENTS & TAXES · 7007 · LEASE PMT FOR BUILDINGS · Receiver 200 MARKET ASSOCIATES LIMITED PARTNERSHIP",
+      79918.71,
+      79918.71,
+      1
+    ],
+    [
+      "PUBLIC UTILITY CMSN",
+      "4250 · DATA PROCESSING · 4367 · COMPUTER TECHNOLOGY PC SUPPORT · Receiver MICROSOFT CORPORATION",
+      76411,
+      76411,
+      1
+    ],
+    [
+      "PUBLIC UTILITY CMSN",
+      "4300 · PROFESSIONAL SERVICES · 4500 · PROFESSIONAL SERVICES NON-IT · Receiver CLIMATE WILDFIRE AND ENERGY STRATEGIES LLC",
+      73100,
+      73100,
+      1
+    ],
+    [
+      "PUBLIC UTILITY CMSN",
+      "4575 · AGENCY PROGRAM RELATED SVCS & SUPP · 4976 · AGENCY PROGRAM RELATED SUPPLIES · Receiver RAZ MOBILITY LLC",
+      71596,
+      71596,
+      1
+    ],
+    [
+      "PUBLIC UTILITY CMSN",
+      "4715 · IT EXPENDABLE PROPERTY · 4377 · OTHER SUBSCRIPTION-BASED IT PAYMENTS · Receiver SHI INTERNATIONAL CORP",
+      66850.85,
+      66850.85,
+      1
+    ],
+    [
+      "PUBLIC UTILITY CMSN",
+      "6030 · DISTRIBUTION TO NON-GOVERNMENTS · 6725 · DISTRIBUTION TO NON-GOVERNMENTS · Receiver HOME TELEPHONE COMPANY",
+      63869.34,
+      63869.34,
+      1
+    ],
+    [
+      "PUBLIC UTILITY CMSN",
+      "4575 · AGENCY PROGRAM RELATED SVCS & SUPP · 4975 · AGENCY PROGRAM RELATED SERVICES · Receiver [individual recipient omitted]",
+      63505.5,
+      63505.5,
+      8
+    ],
+    [
+      "PUBLIC UTILITY CMSN",
+      "4300 · PROFESSIONAL SERVICES · 4500 · PROFESSIONAL SERVICES NON-IT · Receiver SOLIX INC",
+      60708.16,
+      60708.16,
+      1
+    ],
+    [
+      "PUBLIC UTILITY CMSN",
+      "4400 · DUES AND SUBSCRIPTIONS · 4250 · DUES/MEMBERSHIPS · Receiver INFO-TECH RESEARCH GROUP INC",
+      59623.2,
+      59623.2,
+      1
+    ],
+    [
+      "PUBLIC UTILITY CMSN",
+      "4315 · IT PROFESSIONAL SERVICES · 4519 · PROFESSIONAL SERV/MANAGED SERV PROVIDER · Receiver CHAVES CONSULTING INC",
+      59232,
+      59232,
+      1
+    ],
+    [
+      "PUBLIC UTILITY CMSN",
+      "4200 · TELECOMM/TECH SVC AND SUPPLIES · 4301 · TELECOM/VOICE USAGE · Receiver AT&T MOBILITY",
+      59053.57,
+      59053.57,
+      1
+    ],
+    [
+      "PUBLIC UTILITY CMSN",
+      "4200 · TELECOMM/TECH SVC AND SUPPLIES · 4305 · TELECOM/NETWORK SERVICES · Receiver SHI INTERNATIONAL CORP",
+      55432.38,
+      55432.38,
+      1
+    ],
+    [
+      "PUBLIC UTILITY CMSN",
+      "6030 · DISTRIBUTION TO NON-GOVERNMENTS · 6725 · DISTRIBUTION TO NON-GOVERNMENTS · Receiver ROOME TELECOMMUNICATIONS INC",
+      51486.54,
+      51486.54,
+      1
+    ],
+    [
+      "PUBLIC UTILITY CMSN",
+      "4425 · LEASE PAYMENTS & TAXES · 4800 · INTERAGENCY LEASE PAYMENTS · Receiver BEARDSLEY BUILDING LLC",
+      48933.89,
+      48933.89,
+      1
+    ],
+    [
+      "PUBLIC UTILITY CMSN",
+      "4225 · STATE GOVERNMENT SERVICE CHARGES · 4600 · STATE GOVERNMENT SERVICE CHARGES · Receiver STATE OF OREGON SECRETARY OF STATE",
+      47281,
+      47281,
+      1
+    ],
+    [
+      "PUBLIC UTILITY CMSN",
+      "4300 · PROFESSIONAL SERVICES · 4500 · PROFESSIONAL SERVICES NON-IT · Receiver BUREAU VERITAS NORTH AMERICA INC",
+      46182.5,
+      46182.5,
+      1
+    ],
+    [
+      "PUBLIC UTILITY CMSN",
+      "4225 · STATE GOVERNMENT SERVICE CHARGES · 4600 · STATE GOVERNMENT SERVICE CHARGES · Receiver STATE OF OREGON - SECRETARY OF STATE",
+      45112.52,
+      45112.52,
+      1
+    ],
+    [
+      "PUBLIC UTILITY CMSN",
+      "4300 · PROFESSIONAL SERVICES · 4500 · PROFESSIONAL SERVICES NON-IT · Receiver DEPARTMENT OF ADMINISTRATIVE SERVICES",
+      39606.23,
+      39606.23,
+      1
+    ],
+    [
+      "PUBLIC UTILITY CMSN",
+      "4575 · AGENCY PROGRAM RELATED SVCS & SUPP · 4975 · AGENCY PROGRAM RELATED SERVICES · Receiver CENTURYTEL OF OREGON INC",
+      36810.01,
+      36810.01,
+      1
+    ],
+    [
+      "PUBLIC UTILITY CMSN",
+      "4575 · AGENCY PROGRAM RELATED SVCS & SUPP · 4976 · AGENCY PROGRAM RELATED SUPPLIES · Receiver SMARTBOX ASSISTIVE TECHNOLOGY INC",
+      36415.35,
+      36415.35,
+      1
+    ],
+    [
+      "PUBLIC UTILITY CMSN",
+      "4315 · IT PROFESSIONAL SERVICES · 4515 · PROFESSIONAL SERVICES APPLICATION MAINT · Receiver RESOURCE DATA INC",
+      35328.75,
+      35328.75,
+      1
+    ],
+    [
+      "PUBLIC UTILITY CMSN",
+      "4715 · IT EXPENDABLE PROPERTY · 4376 · VARIABLE SUBSCRIPTION-BASED IT PAYMENTS · Receiver SHI INTERNATIONAL CORP",
+      35180.71,
+      35180.71,
+      1
+    ],
+    [
+      "PUBLIC UTILITY CMSN",
+      "4575 · AGENCY PROGRAM RELATED SVCS & SUPP · 4975 · AGENCY PROGRAM RELATED SERVICES · Receiver CASCADE UTILITIES INC",
+      34625.3,
+      34625.3,
+      1
+    ],
+    [
+      "PUBLIC UTILITY CMSN",
+      "4650 · OTHER SERVICES AND SUPPLIES · 4701 · OTHER SERVICES · Receiver [individual recipient omitted]",
+      32306.69,
+      32306.69,
+      3
+    ],
+    [
+      "PUBLIC UTILITY CMSN",
+      "4315 · IT PROFESSIONAL SERVICES · 4519 · PROFESSIONAL SERV/MANAGED SERV PROVIDER · Receiver SHI INTERNATIONAL CORP",
+      32282.52,
+      32282.52,
+      1
+    ],
+    [
+      "PUBLIC UTILITY CMSN",
+      "4250 · DATA PROCESSING · 4375 · COMPUTER TECHNOLOGY COMPUTER PROCESSING · Receiver DEPARTMENT OF ADMINISTRATIVE SERVICES",
+      31800.66,
+      31800.66,
+      1
+    ],
+    [
+      "PUBLIC UTILITY CMSN",
+      "4575 · AGENCY PROGRAM RELATED SVCS & SUPP · 4975 · AGENCY PROGRAM RELATED SERVICES · Receiver WARM SPRINGS TELECOMMUNICATIONS COMPANY",
+      31770,
+      31770,
+      1
+    ],
+    [
+      "PUBLIC UTILITY CMSN",
+      "4125 · OUT-OF-STATE TRAVEL · 4159 · OUT-OF-STATE AIR TRANSPORTATION · Receiver US BANK CORPORATE PAYMENT SYSTEMS",
+      31539.15,
+      31539.15,
+      1
+    ],
+    [
+      "PUBLIC UTILITY CMSN",
+      "4400 · DUES AND SUBSCRIPTIONS · 4251 · SUBSCRIPTIONS AND PUBLICATIONS · Receiver [individual recipient omitted]",
+      28830,
+      28830,
+      1
+    ],
+    [
+      "PUBLIC UTILITY CMSN",
+      "4200 · TELECOMM/TECH SVC AND SUPPLIES · 4301 · TELECOM/VOICE USAGE · Receiver KYNDRYL INC",
+      28751.07,
+      28751.07,
+      1
+    ],
+    [
+      "PUBLIC UTILITY CMSN",
+      "4200 · TELECOMM/TECH SVC AND SUPPLIES · 4301 · TELECOM/VOICE USAGE · Receiver [individual recipient omitted]",
+      28133.06,
+      28133.06,
+      1
+    ],
+    [
+      "PUBLIC UTILITY CMSN",
+      "4650 · OTHER SERVICES AND SUPPLIES · 4701 · OTHER SERVICES · Receiver U WORK COM INC",
+      27720,
+      27720,
+      1
+    ],
+    [
+      "PUBLIC UTILITY CMSN",
+      "4200 · TELECOMM/TECH SVC AND SUPPLIES · 4307 · TELECOM/NETWORK SUPPORT · Receiver CDW GOVERNMENT INC",
+      25681.32,
+      25681.32,
+      1
+    ],
+    [
+      "PUBLIC UTILITY CMSN",
+      "6030 · DISTRIBUTION TO NON-GOVERNMENTS · 6725 · DISTRIBUTION TO NON-GOVERNMENTS · Receiver ASOTIN TELEPHONE COMPANY",
+      25020.78,
+      25020.78,
+      1
+    ],
+    [
+      "PUBLIC UTILITY CMSN",
+      "4150 · EMPLOYEE TRAINING · 4406 · PROF DEV INSTATE TUITION/REGISTRATION · Receiver ITBOM INC",
+      25000,
+      25000,
+      1
+    ],
+    [
+      "PUBLIC UTILITY CMSN",
+      "4400 · DUES AND SUBSCRIPTIONS · 4250 · DUES/MEMBERSHIPS · Receiver NATIONAL ASSN OF REGULATORY UTIL COMMISSIONERS",
+      24294,
+      24294,
+      1
+    ],
+    [
+      "PUBLIC UTILITY CMSN",
+      "4575 · AGENCY PROGRAM RELATED SVCS & SUPP · 4975 · AGENCY PROGRAM RELATED SERVICES · Receiver DOUGLAS SERVICES INC",
+      24138.08,
+      24138.08,
+      1
+    ],
+    [
+      "PUBLIC UTILITY CMSN",
+      "4425 · LEASE PAYMENTS & TAXES · 7000 · LEASE PMT FOR EQUIP AND MACHINERY · Receiver RICOH USA INC",
+      23862.58,
+      23862.58,
+      1
+    ],
+    [
+      "PUBLIC UTILITY CMSN",
+      "4425 · LEASE PAYMENTS & TAXES · 4800 · INTERAGENCY LEASE PAYMENTS · Receiver DEPARTMENT OF ADMINISTRATIVE SERVICES",
+      19963.08,
+      19963.08,
+      1
+    ],
+    [
+      "PUBLIC UTILITY CMSN",
+      "4575 · AGENCY PROGRAM RELATED SVCS & SUPP · 4975 · AGENCY PROGRAM RELATED SERVICES · Receiver UNITED TELEPHONE COMPANY OF THE NORTHWEST",
+      19117.01,
+      19117.01,
+      1
+    ],
+    [
+      "PUBLIC UTILITY CMSN",
+      "5550 · DATA PROCESSING SOFTWARE · 5303 · INFORMATION TECH PC SOFTWARE>=$5K · Receiver SHI INTERNATIONAL CORP",
+      18919.39,
+      18919.39,
+      1
+    ],
+    [
+      "PUBLIC UTILITY CMSN",
+      "4300 · PROFESSIONAL SERVICES · 4500 · PROFESSIONAL SERVICES NON-IT · Receiver HERSHNER HUNTER LLP",
+      17080,
+      17080,
+      1
+    ],
+    [
+      "PUBLIC UTILITY CMSN",
+      "4175 · OFFICE EXPENSES · 4200 · OFFICE SUPPLIES · Receiver US BANK NATIONAL ASSOCIATION ND",
+      16932.14,
+      16932.14,
+      1
+    ],
+    [
+      "PUBLIC UTILITY CMSN",
+      "4200 · TELECOMM/TECH SVC AND SUPPLIES · 4307 · TELECOM/NETWORK SUPPORT · Receiver CONVERGEONE INC",
+      16782.9,
+      16782.9,
+      1
+    ],
+    [
+      "PUBLIC UTILITY CMSN",
+      "4715 · IT EXPENDABLE PROPERTY · 4372 · COMPUTER TECHNOLOGY PERIPHERAL EQUIP<$5K · Receiver CDW GOVERNMENT INC",
+      16257.08,
+      16257.08,
+      1
+    ],
+    [
+      "PUBLIC UTILITY CMSN",
+      "4575 · AGENCY PROGRAM RELATED SVCS & SUPP · 4975 · AGENCY PROGRAM RELATED SERVICES · Receiver STAYTON COOPERATIVE TELEPHONE COMPANY",
+      15292,
+      15292,
+      1
+    ],
+    [
+      "PUBLIC UTILITY CMSN",
+      "4300 · PROFESSIONAL SERVICES · 4500 · PROFESSIONAL SERVICES NON-IT · Receiver COURTSCRIPTS LLC",
+      14794.45,
+      14794.45,
+      1
+    ],
+    [
+      "PUBLIC UTILITY CMSN",
+      "4300 · PROFESSIONAL SERVICES · 4500 · PROFESSIONAL SERVICES NON-IT · Receiver GALLUP INC",
+      14270,
+      14270,
+      1
+    ],
+    [
+      "PUBLIC UTILITY CMSN",
+      "4575 · AGENCY PROGRAM RELATED SVCS & SUPP · 4975 · AGENCY PROGRAM RELATED SERVICES · Receiver MINET",
+      14186.7,
+      14186.7,
+      1
+    ],
+    [
+      "PUBLIC UTILITY CMSN",
+      "4315 · IT PROFESSIONAL SERVICES · 4519 · PROFESSIONAL SERV/MANAGED SERV PROVIDER · Receiver GRANICUS",
+      13990.98,
+      13990.98,
+      1
+    ],
+    [
+      "PUBLIC UTILITY CMSN",
+      "4100 · INSTATE TRAVEL · 4106 · INSTATE LODGING · Receiver [individual recipient omitted]",
+      13838.57,
+      13838.57,
+      11
+    ],
+    [
+      "PUBLIC UTILITY CMSN",
+      "4575 · AGENCY PROGRAM RELATED SVCS & SUPP · 4975 · AGENCY PROGRAM RELATED SERVICES · Receiver CANBY TELEPHONE ASSOCIATION",
+      13431.16,
+      13431.16,
+      1
+    ],
+    [
+      "PUBLIC UTILITY CMSN",
+      "4100 · INSTATE TRAVEL · 4101 · INSTATE MEALS WITH OVERNIGHT STAY · Receiver [individual recipient omitted]",
+      12116,
+      12116,
+      16
+    ],
+    [
+      "PUBLIC UTILITY CMSN",
+      "4575 · AGENCY PROGRAM RELATED SVCS & SUPP · 4975 · AGENCY PROGRAM RELATED SERVICES · Receiver AT&T MOBILITY LLC",
+      11940,
+      11940,
+      1
+    ],
+    [
+      "PUBLIC UTILITY CMSN",
+      "4125 · OUT-OF-STATE TRAVEL · 4151 · OUT-OF-STATE MEALS WITH OVERNIGHT STAY · Receiver [individual recipient omitted]",
+      11418.75,
+      11418.75,
+      34
+    ],
+    [
+      "PUBLIC UTILITY CMSN",
+      "4150 · EMPLOYEE TRAINING · 4440 · PROF DEV OUT-OF-STATE AIR TRANSPORTATION · Receiver US BANK CORPORATE PAYMENT SYSTEMS",
+      11221.2,
+      11221.2,
+      1
+    ],
+    [
+      "PUBLIC UTILITY CMSN",
+      "4125 · OUT-OF-STATE TRAVEL · 4150 · OUT-OF-STATE LODGING · Receiver [individual recipient omitted]",
+      9825.97,
+      9825.97,
+      14
+    ],
+    [
+      "PUBLIC UTILITY CMSN",
+      "4175 · OFFICE EXPENSES · 4200 · OFFICE SUPPLIES · Receiver DEPARTMENT OF ADMINISTRATIVE SERVICES",
+      9632.39,
+      9632.39,
+      1
+    ],
+    [
+      "PUBLIC UTILITY CMSN",
+      "4715 · IT EXPENDABLE PROPERTY · 4366 · COMPUTER TECHNOLOGY PC SOFTWARE<$5K · Receiver DEPARTMENT OF ADMINISTRATIVE SERVICES",
+      8489.2,
+      8489.2,
+      1
+    ],
+    [
+      "PUBLIC UTILITY CMSN",
+      "4275 · PUBLICITY & PUBLICATIONS · 4253 · ADVERTISE, PUBLICITY, PUBLISH/PRINT SRVS · Receiver DEPARTMENT OF ADMINISTRATIVE SERVICES",
+      8423.42,
+      8423.42,
+      1
+    ],
+    [
+      "PUBLIC UTILITY CMSN",
+      "4575 · AGENCY PROGRAM RELATED SVCS & SUPP · 4975 · AGENCY PROGRAM RELATED SERVICES · Receiver HUNTER COMMUNICATIONS & TECHNOLOGIES LLC",
+      8380,
+      8380,
+      1
+    ],
+    [
+      "PUBLIC UTILITY CMSN",
+      "4650 · OTHER SERVICES AND SUPPLIES · 4701 · OTHER SERVICES · Receiver THE ADT SECURITY CORPORATION",
+      8131.41,
+      8131.41,
+      1
+    ],
+    [
+      "PUBLIC UTILITY CMSN",
+      "4575 · AGENCY PROGRAM RELATED SVCS & SUPP · 4976 · AGENCY PROGRAM RELATED SUPPLIES · Receiver WEITBRECHT COMMUNICATIONS INC",
+      7558,
+      7558,
+      1
+    ],
+    [
+      "PUBLIC UTILITY CMSN",
+      "4715 · IT EXPENDABLE PROPERTY · 4366 · COMPUTER TECHNOLOGY PC SOFTWARE<$5K · Receiver SHI INTERNATIONAL CORP",
+      7231.28,
+      7231.28,
+      1
+    ],
+    [
+      "PUBLIC UTILITY CMSN",
+      "4175 · OFFICE EXPENSES · 4201 · OFFICE SERVICES · Receiver DEPARTMENT OF ADMINISTRATIVE SERVICES",
+      6880.52,
+      6880.52,
+      1
+    ],
+    [
+      "PUBLIC UTILITY CMSN",
+      "4300 · PROFESSIONAL SERVICES · 4500 · PROFESSIONAL SERVICES NON-IT · Receiver SPRINT",
+      6841.53,
+      6841.53,
+      1
+    ],
+    [
+      "PUBLIC UTILITY CMSN",
+      "4575 · AGENCY PROGRAM RELATED SVCS & SUPP · 4975 · AGENCY PROGRAM RELATED SERVICES · Receiver OREGON TELEPHONE CORPORATION",
+      6621.79,
+      6621.79,
+      1
+    ],
+    [
+      "PUBLIC UTILITY CMSN",
+      "4475 · FACILITIES MAINTENANCE · 4850 · FACILITIES MAINTENANCE · Receiver WIREMAP SYSTEMS LLC",
+      6446.85,
+      6446.85,
+      1
+    ],
+    [
+      "PUBLIC UTILITY CMSN",
+      "4200 · TELECOMM/TECH SVC AND SUPPLIES · 4301 · TELECOM/VOICE USAGE · Receiver DEPARTMENT OF ADMINISTRATIVE SERVICES",
+      6131.04,
+      6131.04,
+      1
+    ],
+    [
+      "PUBLIC UTILITY CMSN",
+      "6055 · DISTRIBUTION TO CONTRACT SVC PROVIDER · 6910 · DISTRIBUTION TO CONTRACT SVC PROVIDER · Receiver OREGON UNIONS STATE WORKER TRAINING AND EDUCATIONA",
+      6087.06,
+      6087.06,
+      1
+    ],
+    [
+      "PUBLIC UTILITY CMSN",
+      "4575 · AGENCY PROGRAM RELATED SVCS & SUPP · 4976 · AGENCY PROGRAM RELATED SUPPLIES · Receiver REHADAPT NORTH AMERICA LLC",
+      6061,
+      6061,
+      1
+    ],
+    [
+      "PUBLIC UTILITY CMSN",
+      "4650 · OTHER SERVICES AND SUPPLIES · 4701 · OTHER SERVICES · Receiver LEXISNEXIS",
+      6056,
+      6056,
+      1
+    ],
+    [
+      "PUBLIC UTILITY CMSN",
+      "4300 · PROFESSIONAL SERVICES · 4505 · PROFESSIONAL SERVICES NON-IT>$75K · Receiver ENERGY AND ENVIRONMENTAL ECONOMICS INC",
+      5810,
+      5810,
+      1
+    ],
+    [
+      "PUBLIC UTILITY CMSN",
+      "4300 · PROFESSIONAL SERVICES · 4500 · PROFESSIONAL SERVICES NON-IT · Receiver NORTHWEST INTERPRETERS INC",
+      5698.18,
+      5698.18,
+      1
+    ],
+    [
+      "PUBLIC UTILITY CMSN",
+      "4125 · OUT-OF-STATE TRAVEL · 4160 · OUT-OF-STATE GROUND TRANSPORTATION · Receiver [individual recipient omitted]",
+      5278.06,
+      5278.06,
+      29
+    ],
+    [
+      "PUBLIC UTILITY CMSN",
+      "4650 · OTHER SERVICES AND SUPPLIES · 4701 · OTHER SERVICES · Receiver WIRE WORKS LLC",
+      5180.2,
+      5180.2,
+      1
+    ],
+    [
+      "PUBLIC UTILITY CMSN",
+      "4300 · PROFESSIONAL SERVICES · 4500 · PROFESSIONAL SERVICES NON-IT · Receiver WILLAMETTE SIGN LANGUAGE INTERPRETING SVC INC",
+      5081.25,
+      5081.25,
+      1
+    ],
+    [
+      "PUBLIC UTILITY CMSN",
+      "4175 · OFFICE EXPENSES · 4200 · OFFICE SUPPLIES · Receiver [individual recipient omitted]",
+      4895.23,
+      4895.23,
+      4
+    ],
+    [
+      "PUBLIC UTILITY CMSN",
+      "4150 · EMPLOYEE TRAINING · 4432 · PROF DEV OUT-OF-STATE MEAL W/OVERNITE · Receiver [individual recipient omitted]",
+      4451,
+      4451,
+      16
+    ],
+    [
+      "PUBLIC UTILITY CMSN",
+      "4275 · PUBLICITY & PUBLICATIONS · 4253 · ADVERTISE, PUBLICITY, PUBLISH/PRINT SRVS · Receiver 50 PLUS MAGAZINE LLC",
+      4350,
+      4350,
+      1
+    ],
+    [
+      "PUBLIC UTILITY CMSN",
+      "4650 · OTHER SERVICES AND SUPPLIES · 4701 · OTHER SERVICES · Receiver GLOBALSTAR USA LLC",
+      4251.09,
+      4251.09,
+      1
+    ],
+    [
+      "PUBLIC UTILITY CMSN",
+      "4650 · OTHER SERVICES AND SUPPLIES · 4701 · OTHER SERVICES · Receiver US BANK NATIONAL ASSOCIATION",
+      4005.24,
+      4005.24,
+      1
+    ],
+    [
+      "PUBLIC UTILITY CMSN",
+      "4200 · TELECOMM/TECH SVC AND SUPPLIES · 4305 · TELECOM/NETWORK SERVICES · Receiver LIGHTSPEED NETWORKS INC",
+      3889.94,
+      3889.94,
+      2
+    ],
+    [
+      "PUBLIC UTILITY CMSN",
+      "4575 · AGENCY PROGRAM RELATED SVCS & SUPP · 4975 · AGENCY PROGRAM RELATED SERVICES · Receiver AVION WATER COMPANY INC",
+      3724.21,
+      3724.21,
+      1
+    ],
+    [
+      "PUBLIC UTILITY CMSN",
+      "4400 · DUES AND SUBSCRIPTIONS · 4251 · SUBSCRIPTIONS AND PUBLICATIONS · Receiver MELISSA DATA CORP",
+      3675,
+      3675,
+      1
+    ],
+    [
+      "PUBLIC UTILITY CMSN",
+      "4575 · AGENCY PROGRAM RELATED SVCS & SUPP · 4975 · AGENCY PROGRAM RELATED SERVICES · Receiver EAGLE TELEPHONE SYSTEM INC",
+      3490,
+      3490,
+      1
+    ],
+    [
+      "PUBLIC UTILITY CMSN",
+      "4275 · PUBLICITY & PUBLICATIONS · 4253 · ADVERTISE, PUBLICITY, PUBLISH/PRINT SRVS · Receiver QWEST",
+      3340.74,
+      3340.74,
+      1
+    ],
+    [
+      "PUBLIC UTILITY CMSN",
+      "4175 · OFFICE EXPENSES · 4201 · OFFICE SERVICES · Receiver RICOH USA INC",
+      3161.05,
+      3161.05,
+      1
+    ],
+    [
+      "PUBLIC UTILITY CMSN",
+      "4715 · IT EXPENDABLE PROPERTY · 4304 · TELECOM/VOICE EQUIPMENT<$5K · Receiver [individual recipient omitted]",
+      3017.5,
+      3017.5,
+      1
+    ],
+    [
+      "PUBLIC UTILITY CMSN",
+      "4300 · PROFESSIONAL SERVICES · 4500 · PROFESSIONAL SERVICES NON-IT · Receiver CASCADE CENTERS INC",
+      2950.5,
+      2950.5,
+      1
+    ],
+    [
+      "PUBLIC UTILITY CMSN",
+      "4275 · PUBLICITY & PUBLICATIONS · 4253 · ADVERTISE, PUBLICITY, PUBLISH/PRINT SRVS · Receiver THE BOWLIN-JOHANNES GROUP",
+      2925,
+      2925,
+      1
+    ],
+    [
+      "PUBLIC UTILITY CMSN",
+      "4575 · AGENCY PROGRAM RELATED SVCS & SUPP · 4975 · AGENCY PROGRAM RELATED SERVICES · Receiver NEHALEM TELECOMMUNICATIONS INC",
+      2645.2,
+      2645.2,
+      1
+    ],
+    [
+      "PUBLIC UTILITY CMSN",
+      "4400 · DUES AND SUBSCRIPTIONS · 4251 · SUBSCRIPTIONS AND PUBLICATIONS · Receiver NATIONAL ASSN OF REGULATORY UTIL COMMISSIONERS",
+      2599,
+      2599,
+      1
+    ],
+    [
+      "PUBLIC UTILITY CMSN",
+      "4275 · PUBLICITY & PUBLICATIONS · 4253 · ADVERTISE, PUBLICITY, PUBLISH/PRINT SRVS · Receiver KD PUBLICATIONS INC",
+      2550,
+      2550,
+      1
+    ],
+    [
+      "PUBLIC UTILITY CMSN",
+      "4400 · DUES AND SUBSCRIPTIONS · 4251 · SUBSCRIPTIONS AND PUBLICATIONS · Receiver TVEYES INC",
+      2400,
+      2400,
+      1
+    ],
+    [
+      "PUBLIC UTILITY CMSN",
+      "4400 · DUES AND SUBSCRIPTIONS · 4251 · SUBSCRIPTIONS AND PUBLICATIONS · Receiver PRESSRELATIONS INC",
+      2399.4,
+      2399.4,
+      1
+    ],
+    [
+      "PUBLIC UTILITY CMSN",
+      "4200 · TELECOMM/TECH SVC AND SUPPLIES · 4305 · TELECOM/NETWORK SERVICES · Receiver LEVEL 3 COMMUNICATIONS",
+      2395.57,
+      2395.57,
+      1
+    ],
+    [
+      "PUBLIC UTILITY CMSN",
+      "4225 · STATE GOVERNMENT SERVICE CHARGES · 4600 · STATE GOVERNMENT SERVICE CHARGES · Receiver OREGON GOVERNMENT ETHICS COMMISSION",
+      2373.5,
+      2373.5,
+      1
+    ],
+    [
+      "PUBLIC UTILITY CMSN",
+      "4575 · AGENCY PROGRAM RELATED SVCS & SUPP · 4975 · AGENCY PROGRAM RELATED SERVICES · Receiver COLTON TELEPHONE COMPANY",
+      2180,
+      2180,
+      1
+    ],
+    [
+      "PUBLIC UTILITY CMSN",
+      "4715 · IT EXPENDABLE PROPERTY · 4306 · TELECOM/NETWORK EQUIPMENT<$5K · Receiver AT&T MOBILITY",
+      2139.99,
+      2139.99,
+      1
+    ],
+    [
+      "PUBLIC UTILITY CMSN",
+      "4650 · OTHER SERVICES AND SUPPLIES · 4704 · OTHER SUPPLIES · Receiver [individual recipient omitted]",
+      2137.13,
+      2137.13,
+      3
+    ],
+    [
+      "PUBLIC UTILITY CMSN",
+      "4150 · EMPLOYEE TRAINING · 4441 · PROF DEV OUT-OF-STATE GROUND TRANSPRTATN · Receiver [individual recipient omitted]",
+      2118.88,
+      2118.88,
+      15
+    ],
+    [
+      "PUBLIC UTILITY CMSN",
+      "4650 · OTHER SERVICES AND SUPPLIES · 4701 · OTHER SERVICES · Receiver LEXISNEXIS RISK DATA MANAGMENT INC",
+      2000,
+      2000,
+      1
+    ],
+    [
+      "PUBLIC UTILITY CMSN",
+      "4575 · AGENCY PROGRAM RELATED SVCS & SUPP · 4975 · AGENCY PROGRAM RELATED SERVICES · Receiver SCIO MUTUAL TELEPHONE ASSOCIATION",
+      1960,
+      1960,
+      1
+    ],
+    [
+      "PUBLIC UTILITY CMSN",
+      "4150 · EMPLOYEE TRAINING · 4434 · PROF DEV OUT-OF-STATE LODGING · Receiver [individual recipient omitted]",
+      1910.5,
+      1910.5,
+      3
+    ],
+    [
+      "PUBLIC UTILITY CMSN",
+      "4575 · AGENCY PROGRAM RELATED SVCS & SUPP · 4975 · AGENCY PROGRAM RELATED SERVICES · Receiver GERVAIS TELEPHONE COMPANY",
+      1899.7,
+      1899.7,
+      1
+    ],
+    [
+      "PUBLIC UTILITY CMSN",
+      "4125 · OUT-OF-STATE TRAVEL · 4162 · OUT-OF-STATE MILEAGE REIMBRSMT-FULL RATE · Receiver [individual recipient omitted]",
+      1717.7,
+      1717.7,
+      16
+    ],
+    [
+      "PUBLIC UTILITY CMSN",
+      "4575 · AGENCY PROGRAM RELATED SVCS & SUPP · 4976 · AGENCY PROGRAM RELATED SUPPLIES · Receiver FREEDOM SCIENTIFIC BLV GROUP LLC",
+      1570,
+      1570,
+      1
+    ],
+    [
+      "PUBLIC UTILITY CMSN",
+      "4150 · EMPLOYEE TRAINING · 4406 · PROF DEV INSTATE TUITION/REGISTRATION · Receiver SJF TRAINING LLC",
+      1570,
+      1570,
+      1
+    ],
+    [
+      "PUBLIC UTILITY CMSN",
+      "4475 · FACILITIES MAINTENANCE · 4850 · FACILITIES MAINTENANCE · Receiver JGCM INC",
+      1488.07,
+      1488.07,
+      1
+    ],
+    [
+      "PUBLIC UTILITY CMSN",
+      "4575 · AGENCY PROGRAM RELATED SVCS & SUPP · 4975 · AGENCY PROGRAM RELATED SERVICES · Receiver ROOME TELECOMMUNICATIONS INC",
+      1480,
+      1480,
+      1
+    ],
+    [
+      "PUBLIC UTILITY CMSN",
+      "4575 · AGENCY PROGRAM RELATED SVCS & SUPP · 4975 · AGENCY PROGRAM RELATED SERVICES · Receiver HOME TELEPHONE COMPANY",
+      1428.35,
+      1428.35,
+      1
+    ],
+    [
+      "PUBLIC UTILITY CMSN",
+      "4300 · PROFESSIONAL SERVICES · 4500 · PROFESSIONAL SERVICES NON-IT · Receiver CORPORATE TRANSLATION SERVICES INC",
+      1236.28,
+      1236.28,
+      1
+    ],
+    [
+      "PUBLIC UTILITY CMSN",
+      "4250 · DATA PROCESSING · 4367 · COMPUTER TECHNOLOGY PC SUPPORT · Receiver CDW GOVERNMENT INC",
+      1171.2,
+      1171.2,
+      1
+    ],
+    [
+      "PUBLIC UTILITY CMSN",
+      "4715 · IT EXPENDABLE PROPERTY · 4365 · COMPUTER TECHNOLOGY PC EQUIPMENT<$5K · Receiver [individual recipient omitted]",
+      1149.98,
+      1149.98,
+      1
+    ],
+    [
+      "PUBLIC UTILITY CMSN",
+      "4400 · DUES AND SUBSCRIPTIONS · 4250 · DUES/MEMBERSHIPS · Receiver PORTLAND BUSINESS ALLIANCE CHARITABLE INSTITUTE",
+      1000,
+      1000,
+      1
+    ],
+    [
+      "PUBLIC UTILITY CMSN",
+      "4175 · OFFICE EXPENSES · 4201 · OFFICE SERVICES · Receiver FEDERAL EXPRESS CORPORATION",
+      977.01,
+      977.01,
+      1
+    ],
+    [
+      "PUBLIC UTILITY CMSN",
+      "4650 · OTHER SERVICES AND SUPPLIES · 4701 · OTHER SERVICES · Receiver DEPARTMENT OF ADMINISTRATIVE SERVICES",
+      942.26,
+      942.26,
+      1
+    ],
+    [
+      "PUBLIC UTILITY CMSN",
+      "4575 · AGENCY PROGRAM RELATED SVCS & SUPP · 4975 · AGENCY PROGRAM RELATED SERVICES · Receiver PINE TELEPHONE SYSTEM INC",
+      912.61,
+      912.61,
+      1
+    ],
+    [
+      "PUBLIC UTILITY CMSN",
+      "4200 · TELECOMM/TECH SVC AND SUPPLIES · 4301 · TELECOM/VOICE USAGE · Receiver QWEST",
+      843.27,
+      843.27,
+      1
+    ],
+    [
+      "PUBLIC UTILITY CMSN",
+      "4175 · OFFICE EXPENSES · 4200 · OFFICE SUPPLIES · Receiver OREGON HEALTH AUTHORITY",
+      836.88,
+      836.88,
+      1
+    ],
+    [
+      "PUBLIC UTILITY CMSN",
+      "4575 · AGENCY PROGRAM RELATED SVCS & SUPP · 4976 · AGENCY PROGRAM RELATED SUPPLIES · Receiver BELLEVUE HEALTHCARE INC",
+      815.96,
+      815.96,
+      1
+    ],
+    [
+      "PUBLIC UTILITY CMSN",
+      "4325 · ATTORNEY GENERAL LEGAL FEES · 4550 · ATTORNEY GENERAL LEGAL FEES · Receiver STATE OF OREGON DEPARTMENT OF JUSTICE",
+      770,
+      770,
+      1
+    ],
+    [
+      "PUBLIC UTILITY CMSN",
+      "4400 · DUES AND SUBSCRIPTIONS · 4250 · DUES/MEMBERSHIPS · Receiver NORTHWEST PUBLIC POWER ASSOCIATION",
+      750,
+      750,
+      1
+    ],
+    [
+      "PUBLIC UTILITY CMSN",
+      "3110 · CLASS/UNCLASS SALARY & PER DIEM · 3111 · REGULAR EMPLOYEES · Receiver DEPARTMENT OF ADMINISTRATIVE SERVICES",
+      734.19,
+      734.19,
+      1
+    ],
+    [
+      "PUBLIC UTILITY CMSN",
+      "4150 · EMPLOYEE TRAINING · 4452 · PROF DEV OUT-OF-ST MILE REIMB-FULL RATE · Receiver [individual recipient omitted]",
+      691.57,
+      691.57,
+      10
+    ],
+    [
+      "PUBLIC UTILITY CMSN",
+      "4175 · OFFICE EXPENSES · 4200 · OFFICE SUPPLIES · Receiver WIREMAP SYSTEMS LLC",
+      682,
+      682,
+      1
+    ],
+    [
+      "PUBLIC UTILITY CMSN",
+      "4475 · FACILITIES MAINTENANCE · 4850 · FACILITIES MAINTENANCE · Receiver [individual recipient omitted]",
+      648,
+      648,
+      1
+    ],
+    [
+      "PUBLIC UTILITY CMSN",
+      "4275 · PUBLICITY & PUBLICATIONS · 4253 · ADVERTISE, PUBLICITY, PUBLISH/PRINT SRVS · Receiver [individual recipient omitted]",
+      640.5,
+      640.5,
+      2
+    ],
+    [
+      "PUBLIC UTILITY CMSN",
+      "4400 · DUES AND SUBSCRIPTIONS · 4250 · DUES/MEMBERSHIPS · Receiver OREGON ASSOCIATION OF WATER UTILITIES",
+      600,
+      600,
+      1
+    ],
+    [
+      "PUBLIC UTILITY CMSN",
+      "4125 · OUT-OF-STATE TRAVEL · 4154 · OUT-OF-STATE TRAVEL MISC EXPENSE · Receiver [individual recipient omitted]",
+      569.82,
+      569.82,
+      8
+    ],
+    [
+      "PUBLIC UTILITY CMSN",
+      "5200 · TECHNICAL EQUIPMENT · 5255 · INSTALLATION/TECHNICAL EQUIPMENT>=$5K · Receiver WIREMAP SYSTEMS LLC",
+      540,
+      540,
+      1
+    ],
+    [
+      "PUBLIC UTILITY CMSN",
+      "4100 · INSTATE TRAVEL · 4110 · INSTATE MILEAGE REIMBURSMNT-REDUCED RATE · Receiver [individual recipient omitted]",
+      533.32,
+      533.32,
+      10
+    ],
+    [
+      "PUBLIC UTILITY CMSN",
+      "4225 · STATE GOVERNMENT SERVICE CHARGES · 4600 · STATE GOVERNMENT SERVICE CHARGES · Receiver OREGON STATE TREASURY",
+      500.7,
+      500.7,
+      1
+    ],
+    [
+      "PUBLIC UTILITY CMSN",
+      "4150 · EMPLOYEE TRAINING · 4431 · PROF DEV INSTATE MEAL WITH OVERNITE STAY · Receiver [individual recipient omitted]",
+      481,
+      481,
+      4
+    ],
+    [
+      "PUBLIC UTILITY CMSN",
+      "4150 · EMPLOYEE TRAINING · 4401 · TRAINING, EDUCATION OR INSTRUCTION SRVC · Receiver [individual recipient omitted]",
+      447,
+      447,
+      1
+    ],
+    [
+      "PUBLIC UTILITY CMSN",
+      "4100 · INSTATE TRAVEL · 4109 · INSTATE MILEAGE REIMBURSEMENT-FULL RATE · Receiver [individual recipient omitted]",
+      406.5,
+      406.5,
+      2
+    ],
+    [
+      "PUBLIC UTILITY CMSN",
+      "4575 · AGENCY PROGRAM RELATED SVCS & SUPP · 4975 · AGENCY PROGRAM RELATED SERVICES · Receiver OREGON-IDAHO UTILITIES INC",
+      400,
+      400,
+      1
+    ],
+    [
+      "PUBLIC UTILITY CMSN",
+      "4575 · AGENCY PROGRAM RELATED SVCS & SUPP · 4975 · AGENCY PROGRAM RELATED SERVICES · Receiver HELIX TELEPHONE COMPANY",
+      390,
+      390,
+      1
+    ],
+    [
+      "PUBLIC UTILITY CMSN",
+      "4650 · OTHER SERVICES AND SUPPLIES · 4701 · OTHER SERVICES · Receiver REIMERS & JOLIVETTE INC",
+      389.94,
+      389.94,
+      1
+    ],
+    [
+      "PUBLIC UTILITY CMSN",
+      "4150 · EMPLOYEE TRAINING · 4415 · PROF DEV OUT-OF-STATE TRAVEL MISC EXPENS · Receiver [individual recipient omitted]",
+      360,
+      360,
+      6
+    ],
+    [
+      "PUBLIC UTILITY CMSN",
+      "4575 · AGENCY PROGRAM RELATED SVCS & SUPP · 4975 · AGENCY PROGRAM RELATED SERVICES · Receiver TRANS-CASCADE TELEPHONE COMPANY",
+      360,
+      360,
+      1
+    ],
+    [
+      "PUBLIC UTILITY CMSN",
+      "4175 · OFFICE EXPENSES · 4200 · OFFICE SUPPLIES · Receiver US PO POSTMASTER/WINDOWLINE",
+      320,
+      320,
+      1
+    ],
+    [
+      "PUBLIC UTILITY CMSN",
+      "4400 · DUES AND SUBSCRIPTIONS · 4250 · DUES/MEMBERSHIPS · Receiver OJUA",
+      300,
+      300,
+      1
+    ],
+    [
+      "PUBLIC UTILITY CMSN",
+      "4100 · INSTATE TRAVEL · 4105 · INSTATE MEALS-NO OVERNIGHT STAY · Receiver [individual recipient omitted]",
+      288,
+      288,
+      1
+    ],
+    [
+      "PUBLIC UTILITY CMSN",
+      "4250 · DATA PROCESSING · 4375 · COMPUTER TECHNOLOGY COMPUTER PROCESSING · Receiver OREGON DEPT OF TRANSPORTATION",
+      285.95,
+      285.95,
+      1
+    ],
+    [
+      "PUBLIC UTILITY CMSN",
+      "4100 · INSTATE TRAVEL · 4108 · INSTATE GROUND TRANSPORTATION · Receiver [individual recipient omitted]",
+      283.48,
+      283.48,
+      10
+    ],
+    [
+      "PUBLIC UTILITY CMSN",
+      "4650 · OTHER SERVICES AND SUPPLIES · 4701 · OTHER SERVICES · Receiver GARTEN SERVICES INC",
+      275,
+      275,
+      1
+    ],
+    [
+      "PUBLIC UTILITY CMSN",
+      "4400 · DUES AND SUBSCRIPTIONS · 4251 · SUBSCRIPTIONS AND PUBLICATIONS · Receiver CRAIG WALKER COMMUNICATIONS INC",
+      270,
+      270,
+      1
+    ],
+    [
+      "PUBLIC UTILITY CMSN",
+      "4125 · OUT-OF-STATE TRAVEL · 4163 · OUT-OF-STATE MILEAGE REIMB-REDUCED RATE · Receiver [individual recipient omitted]",
+      248.86,
+      248.86,
+      3
+    ],
+    [
+      "PUBLIC UTILITY CMSN",
+      "4650 · OTHER SERVICES AND SUPPLIES · 4701 · OTHER SERVICES · Receiver BEARDSLEY BUILDING LLC",
+      205,
+      205,
+      1
+    ],
+    [
+      "PUBLIC UTILITY CMSN",
+      "4650 · OTHER SERVICES AND SUPPLIES · 4704 · OTHER SUPPLIES · Receiver GRAINGER",
+      201.6,
+      201.6,
+      1
+    ],
+    [
+      "PUBLIC UTILITY CMSN",
+      "4400 · DUES AND SUBSCRIPTIONS · 4250 · DUES/MEMBERSHIPS · Receiver NATIONAL ASSOC FOR STATE RELAY ADMINISTRATION",
+      200,
+      200,
+      1
+    ],
+    [
+      "PUBLIC UTILITY CMSN",
+      "4150 · EMPLOYEE TRAINING · 4406 · PROF DEV INSTATE TUITION/REGISTRATION · Receiver NATIONAL ASSN OF REGULATORY UTIL COMMISSIONERS",
+      200,
+      200,
+      1
+    ],
+    [
+      "PUBLIC UTILITY CMSN",
+      "4400 · DUES AND SUBSCRIPTIONS · 4250 · DUES/MEMBERSHIPS · Receiver OREGON ASSOCIATION OF INFORMATION TECHNOLOGY MANAG",
+      200,
+      200,
+      1
+    ],
+    [
+      "PUBLIC UTILITY CMSN",
+      "4175 · OFFICE EXPENSES · 4202 · EQUIPMENT RENTAL · Receiver RICOH USA INC",
+      192.73,
+      192.73,
+      1
+    ],
+    [
+      "PUBLIC UTILITY CMSN",
+      "4650 · OTHER SERVICES AND SUPPLIES · 4704 · OTHER SUPPLIES · Receiver 200 MARKET ASSOCIATES LIMITED PARTNERSHIP",
+      190,
+      190,
+      1
+    ],
+    [
+      "PUBLIC UTILITY CMSN",
+      "4650 · OTHER SERVICES AND SUPPLIES · 4701 · OTHER SERVICES · Receiver 200 MARKET ASSOCIATES LIMITED PARTNERSHIP",
+      180,
+      180,
+      1
+    ],
+    [
+      "PUBLIC UTILITY CMSN",
+      "4175 · OFFICE EXPENSES · 4201 · OFFICE SERVICES · Receiver CDW GOVERNMENT INC",
+      178.51,
+      178.51,
+      1
+    ],
+    [
+      "PUBLIC UTILITY CMSN",
+      "4715 · IT EXPENDABLE PROPERTY · 4304 · TELECOM/VOICE EQUIPMENT<$5K · Receiver CDW GOVERNMENT INC",
+      172.47,
+      172.47,
+      1
+    ],
+    [
+      "PUBLIC UTILITY CMSN",
+      "4200 · TELECOMM/TECH SVC AND SUPPLIES · 4305 · TELECOM/NETWORK SERVICES · Receiver DEPARTMENT OF ADMINISTRATIVE SERVICES",
+      158.41,
+      158.41,
+      1
+    ],
+    [
+      "PUBLIC UTILITY CMSN",
+      "4475 · FACILITIES MAINTENANCE · 4850 · FACILITIES MAINTENANCE · Receiver BEARDSLEY BUILDING LLC",
+      154.95,
+      154.95,
+      1
+    ],
+    [
+      "PUBLIC UTILITY CMSN",
+      "4575 · AGENCY PROGRAM RELATED SVCS & SUPP · 4206 · CATERING SERVICES · Receiver [individual recipient omitted]",
+      139.23,
+      139.23,
+      1
+    ],
+    [
+      "PUBLIC UTILITY CMSN",
+      "4575 · AGENCY PROGRAM RELATED SVCS & SUPP · 4975 · AGENCY PROGRAM RELATED SERVICES · Receiver NORTH STATE TELEPHONE COMPANY",
+      130,
+      130,
+      1
+    ],
+    [
+      "PUBLIC UTILITY CMSN",
+      "4715 · IT EXPENDABLE PROPERTY · 4306 · TELECOM/NETWORK EQUIPMENT<$5K · Receiver CDW GOVERNMENT INC",
+      105.08,
+      105.08,
+      1
+    ],
+    [
+      "PUBLIC UTILITY CMSN",
+      "4575 · AGENCY PROGRAM RELATED SVCS & SUPP · 4975 · AGENCY PROGRAM RELATED SERVICES · Receiver BEACON BROADBAND INC",
+      102.6,
+      102.6,
+      1
+    ],
+    [
+      "PUBLIC UTILITY CMSN",
+      "4650 · OTHER SERVICES AND SUPPLIES · 4720 · COLLECTION FEES - DOR · Receiver OREGON DEPARTMENT OF REVENUE",
+      96.83,
+      96.83,
+      1
+    ],
+    [
+      "PUBLIC UTILITY CMSN",
+      "4175 · OFFICE EXPENSES · 4201 · OFFICE SERVICES · Receiver [individual recipient omitted]",
+      85.56,
+      85.56,
+      1
+    ],
+    [
+      "PUBLIC UTILITY CMSN",
+      "4575 · AGENCY PROGRAM RELATED SVCS & SUPP · 4976 · AGENCY PROGRAM RELATED SUPPLIES · Receiver ATTAINMENT COMPANY INC",
+      84,
+      84,
+      1
+    ],
+    [
+      "PUBLIC UTILITY CMSN",
+      "4125 · OUT-OF-STATE TRAVEL · 4149 · OUT OF STATE MEAL-NO OVERNIGHT STAY · Receiver [individual recipient omitted]",
+      75.25,
+      75.25,
+      2
+    ],
+    [
+      "PUBLIC UTILITY CMSN",
+      "4175 · OFFICE EXPENSES · 4200 · OFFICE SUPPLIES · Receiver OFFICE DEPOT BUSINESS SOLUTIONS LLC",
+      69.95,
+      69.95,
+      1
+    ],
+    [
+      "PUBLIC UTILITY CMSN",
+      "4150 · EMPLOYEE TRAINING · 4453 · PROF DEV OUT-OF-ST MILE REIMB-REDUC RATE · Receiver [individual recipient omitted]",
+      24.15,
+      24.15,
+      1
+    ],
+    [
+      "PUBLIC UTILITY CMSN",
+      "4650 · OTHER SERVICES AND SUPPLIES · 4704 · OTHER SUPPLIES · Receiver DEPARTMENT OF ADMINISTRATIVE SERVICES",
+      24,
+      24,
+      1
+    ],
+    [
+      "PUBLIC UTILITY CMSN",
+      "4425 · LEASE PAYMENTS & TAXES · 7401 · INTEREST-LEASED ASSETS · Receiver RICOH USA INC",
+      7.48,
+      7.48,
+      1
+    ]
+  ],
+  "sourceCheck": {
+    "objectClassRows": 215,
+    "sourceRows": 434,
+    "sourceTotal": 37399129.28,
+    "difference": 0
+  }
+}

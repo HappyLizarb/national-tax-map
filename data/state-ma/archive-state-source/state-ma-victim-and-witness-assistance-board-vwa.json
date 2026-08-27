@@ -1,0 +1,98 @@
+{
+  "scope": "Massachusetts",
+  "code": "ma",
+  "department": "VICTIM AND WITNESS ASSISTANCE BOARD (VWA)",
+  "fiscalYear": 2024,
+  "ledgerAmount": 38222672.58,
+  "sourceTotal": 41612336.09,
+  "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000",
+  "rowSchema": [
+    "subAgency",
+    "program",
+    "amount",
+    "sourceAmount",
+    "sourceRows"
+  ],
+  "rows": [
+    [
+      "VICTIM AND WITNESS ASSISTANCE BOARD (VWA)",
+      "VICTIM AND WITNESS ASSISTANCE BOARD (VWA) · (PP) STATE AID/POL SUB",
+      39070136.34,
+      39070136.34,
+      1251
+    ],
+    [
+      "VICTIM AND WITNESS ASSISTANCE BOARD (VWA)",
+      "VICTIM AND WITNESS ASSISTANCE BOARD (VWA) · (AA) REGULAR EMPLOYEE COMPENSATION",
+      1964695.18,
+      1964695.18,
+      243
+    ],
+    [
+      "VICTIM AND WITNESS ASSISTANCE BOARD (VWA)",
+      "VICTIM AND WITNESS ASSISTANCE BOARD (VWA) · (UU) IT NON-PAYROLL EXPENSES",
+      167124.29,
+      167124.29,
+      63
+    ],
+    [
+      "VICTIM AND WITNESS ASSISTANCE BOARD (VWA)",
+      "VICTIM AND WITNESS ASSISTANCE BOARD (VWA) · (EE) ADMINISTRATIVE EXPENSES",
+      112795.63,
+      112795.63,
+      174
+    ],
+    [
+      "VICTIM AND WITNESS ASSISTANCE BOARD (VWA)",
+      "VICTIM AND WITNESS ASSISTANCE BOARD (VWA) · (CC) SPECIAL EMPLOYEES",
+      103724.38,
+      103724.38,
+      90
+    ],
+    [
+      "VICTIM AND WITNESS ASSISTANCE BOARD (VWA)",
+      "VICTIM AND WITNESS ASSISTANCE BOARD (VWA) · (JJ) OPERATIONAL SERVICES",
+      74448.76,
+      74448.76,
+      117
+    ],
+    [
+      "VICTIM AND WITNESS ASSISTANCE BOARD (VWA)",
+      "VICTIM AND WITNESS ASSISTANCE BOARD (VWA) · (HH) CONSULTANT SVCS (TO DEPTS)",
+      50215.31,
+      50215.31,
+      20
+    ],
+    [
+      "VICTIM AND WITNESS ASSISTANCE BOARD (VWA)",
+      "VICTIM AND WITNESS ASSISTANCE BOARD (VWA) · (GG) ENERGY COSTS AND SPACE RENTAL",
+      44064,
+      44064,
+      12
+    ],
+    [
+      "VICTIM AND WITNESS ASSISTANCE BOARD (VWA)",
+      "VICTIM AND WITNESS ASSISTANCE BOARD (VWA) · (BB) REGULAR EMPLOYEE RELATED EXPEN",
+      17433.32,
+      17433.32,
+      63
+    ],
+    [
+      "VICTIM AND WITNESS ASSISTANCE BOARD (VWA)",
+      "VICTIM AND WITNESS ASSISTANCE BOARD (VWA) · (LL) EQUIPMENT LEASE-MAINTAIN/REPAR",
+      7698.88,
+      7698.88,
+      92
+    ],
+    [
+      "VICTIM AND WITNESS ASSISTANCE BOARD (VWA)",
+      "VICTIM AND WITNESS ASSISTANCE BOARD (VWA) · (99) PAYROLL REJECTS",
+      0,
+      0,
+      12
+    ]
+  ],
+  "hierarchyNote": "The source does not identify a separate sub-agency column; direct-managed rows repeat the parent entity.",
+  "sourceBasis": "official source amount",
+  "note": "Amounts are shown on the official source basis; no comparator normalization was applied."
+}

@@ -1,0 +1,105 @@
+{
+  "scope": "Massachusetts",
+  "code": "ma",
+  "department": "COMMISSION FOR THE DEAF AND HARD OF HEARING (MCD)",
+  "fiscalYear": 2024,
+  "ledgerAmount": 9604199.74,
+  "sourceTotal": 10455919.5,
+  "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000",
+  "rowSchema": [
+    "subAgency",
+    "program",
+    "amount",
+    "sourceAmount",
+    "sourceRows"
+  ],
+  "rows": [
+    [
+      "COMMISSION FOR THE DEAF AND HARD OF HEARING (MCD)",
+      "COMMISSION FOR THE DEAF AND HARD OF HEARING (MCD) · (AA) REGULAR EMPLOYEE COMPENSATION",
+      5351677.21,
+      5351677.21,
+      241
+    ],
+    [
+      "COMMISSION FOR THE DEAF AND HARD OF HEARING (MCD)",
+      "COMMISSION FOR THE DEAF AND HARD OF HEARING (MCD) · (MM) PURCHASED CLIENT/PROGRAM SVCS",
+      2833573.62,
+      2833573.62,
+      104
+    ],
+    [
+      "COMMISSION FOR THE DEAF AND HARD OF HEARING (MCD)",
+      "COMMISSION FOR THE DEAF AND HARD OF HEARING (MCD) · (PP) STATE AID/POL SUB",
+      999999.99,
+      999999.99,
+      3
+    ],
+    [
+      "COMMISSION FOR THE DEAF AND HARD OF HEARING (MCD)",
+      "COMMISSION FOR THE DEAF AND HARD OF HEARING (MCD) · (GG) ENERGY COSTS AND SPACE RENTAL",
+      429329.26,
+      429329.26,
+      28
+    ],
+    [
+      "COMMISSION FOR THE DEAF AND HARD OF HEARING (MCD)",
+      "COMMISSION FOR THE DEAF AND HARD OF HEARING (MCD) · (JJ) OPERATIONAL SERVICES",
+      387211.29,
+      387211.29,
+      882
+    ],
+    [
+      "COMMISSION FOR THE DEAF AND HARD OF HEARING (MCD)",
+      "COMMISSION FOR THE DEAF AND HARD OF HEARING (MCD) · (UU) IT NON-PAYROLL EXPENSES",
+      146385.02,
+      146385.02,
+      37
+    ],
+    [
+      "COMMISSION FOR THE DEAF AND HARD OF HEARING (MCD)",
+      "COMMISSION FOR THE DEAF AND HARD OF HEARING (MCD) · (HH) CONSULTANT SVCS (TO DEPTS)",
+      138620,
+      138620,
+      14
+    ],
+    [
+      "COMMISSION FOR THE DEAF AND HARD OF HEARING (MCD)",
+      "COMMISSION FOR THE DEAF AND HARD OF HEARING (MCD) · (BB) REGULAR EMPLOYEE RELATED EXPEN",
+      74810.09,
+      74810.09,
+      58
+    ],
+    [
+      "COMMISSION FOR THE DEAF AND HARD OF HEARING (MCD)",
+      "COMMISSION FOR THE DEAF AND HARD OF HEARING (MCD) · (CC) SPECIAL EMPLOYEES",
+      65401.38,
+      65401.38,
+      56
+    ],
+    [
+      "COMMISSION FOR THE DEAF AND HARD OF HEARING (MCD)",
+      "COMMISSION FOR THE DEAF AND HARD OF HEARING (MCD) · (EE) ADMINISTRATIVE EXPENSES",
+      23473.71,
+      23473.71,
+      37
+    ],
+    [
+      "COMMISSION FOR THE DEAF AND HARD OF HEARING (MCD)",
+      "COMMISSION FOR THE DEAF AND HARD OF HEARING (MCD) · (NN) INFRASTRUCTURE:",
+      5437.93,
+      5437.93,
+      16
+    ],
+    [
+      "COMMISSION FOR THE DEAF AND HARD OF HEARING (MCD)",
+      "COMMISSION FOR THE DEAF AND HARD OF HEARING (MCD) · (99) PAYROLL REJECTS",
+      0,
+      0,
+      18
+    ]
+  ],
+  "hierarchyNote": "The source does not identify a separate sub-agency column; direct-managed rows repeat the parent entity.",
+  "sourceBasis": "official source amount",
+  "note": "Amounts are shown on the official source basis; no comparator normalization was applied."
+}

@@ -1,0 +1,84 @@
+{
+  "scope": "Connecticut",
+  "code": "ct",
+  "department": "Charter Oak State College",
+  "fiscalYear": 2024,
+  "ledgerAmount": 9885457.4,
+  "sourceTotal": 10533618.92,
+  "sourceUrl": "https://data.ct.gov/resource/ajdm-rvz7.json?$select=department,program,sum(amount)%20as%20amount,count(*)%20as%20records&$where=fiscal_year=2024&$group=department,program",
+  "rowSchema": [
+    "subAgency",
+    "program",
+    "amount",
+    "sourceAmount",
+    "sourceRows"
+  ],
+  "rows": [
+    [
+      "Charter Oak State College",
+      "Charter Oak State College · Federal Direct Student Loan",
+      5040603.19,
+      5040603.19,
+      1795
+    ],
+    [
+      "Charter Oak State College",
+      "Charter Oak State College · Brd For St Acad Awrd Op Fund",
+      4111236.67,
+      4111236.67,
+      1796
+    ],
+    [
+      "Charter Oak State College",
+      "Charter Oak State College · NEW & REPLACEMENT INSTRUCTION",
+      731560.99,
+      731560.99,
+      64
+    ],
+    [
+      "Charter Oak State College",
+      "Charter Oak State College · COSC Pell Grant Fed Financ Aid",
+      511268.23,
+      511268.23,
+      813
+    ],
+    [
+      "Charter Oak State College",
+      "Charter Oak State College · System Telecom Infra Upgrade",
+      64888,
+      64888,
+      4
+    ],
+    [
+      "Charter Oak State College",
+      "Charter Oak State College · DEFERRED MAINT-ALL COLLEGES",
+      51362.85,
+      51362.85,
+      9
+    ],
+    [
+      "Charter Oak State College",
+      "Charter Oak State College · Alternative Loans - Private",
+      18637.5,
+      18637.5,
+      7
+    ],
+    [
+      "Charter Oak State College",
+      "Charter Oak State College · CTDLC Operations",
+      3978.49,
+      3978.49,
+      18
+    ],
+    [
+      "Charter Oak State College",
+      "Charter Oak State College · Federal SEOG",
+      83,
+      83,
+      1
+    ]
+  ],
+  "hierarchyNote": "The source does not identify a separate sub-agency column; direct-managed rows repeat the parent entity.",
+  "sourceBasis": "official source amount",
+  "note": "Amounts are shown on the official source basis; no comparator normalization was applied."
+}

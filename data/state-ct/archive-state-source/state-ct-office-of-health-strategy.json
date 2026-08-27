@@ -1,0 +1,77 @@
+{
+  "scope": "Connecticut",
+  "code": "ct",
+  "department": "Office of Health Strategy",
+  "fiscalYear": 2024,
+  "ledgerAmount": 23830132.21,
+  "sourceTotal": 25392606.66,
+  "sourceUrl": "https://data.ct.gov/resource/ajdm-rvz7.json?$select=department,program,sum(amount)%20as%20amount,count(*)%20as%20records&$where=fiscal_year=2024&$group=department,program",
+  "rowSchema": [
+    "subAgency",
+    "program",
+    "amount",
+    "sourceAmount",
+    "sourceRows"
+  ],
+  "rows": [
+    [
+      "Office of Health Strategy",
+      "Office of Health Strategy · Other Expenses",
+      11479723.58,
+      11479723.58,
+      453
+    ],
+    [
+      "Office of Health Strategy",
+      "Office of Health Strategy · Covered Connecticut Program",
+      9885287.1,
+      9885287.1,
+      93
+    ],
+    [
+      "Office of Health Strategy",
+      "Office of Health Strategy · HIT PMO",
+      2758211.76,
+      2758211.76,
+      32
+    ],
+    [
+      "Office of Health Strategy",
+      "Office of Health Strategy · APCD user fees",
+      685718.6,
+      685718.6,
+      10
+    ],
+    [
+      "Office of Health Strategy",
+      "Office of Health Strategy · ARPA-Payment Parity Study",
+      290502.77,
+      290502.77,
+      7
+    ],
+    [
+      "Office of Health Strategy",
+      "Office of Health Strategy · ARPA-Data Collection and Integ",
+      154028.08,
+      154028.08,
+      18
+    ],
+    [
+      "Office of Health Strategy",
+      "Office of Health Strategy · ARPA-Study Behavioral Hlth Cov",
+      91599.01,
+      91599.01,
+      7
+    ],
+    [
+      "Office of Health Strategy",
+      "Office of Health Strategy · ARPA-Telehealth Study",
+      47535.76,
+      47535.76,
+      1
+    ]
+  ],
+  "hierarchyNote": "The source does not identify a separate sub-agency column; direct-managed rows repeat the parent entity.",
+  "sourceBasis": "official source amount",
+  "note": "Amounts are shown on the official source basis; no comparator normalization was applied."
+}

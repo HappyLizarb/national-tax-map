@@ -1,0 +1,133 @@
+{
+  "scope": "Massachusetts",
+  "code": "ma",
+  "department": "SHERIFF DEPARTMENT PLYMOUTH (SDP)",
+  "fiscalYear": 2024,
+  "ledgerAmount": 71143179.04,
+  "sourceTotal": 77452299.3,
+  "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000",
+  "rowSchema": [
+    "subAgency",
+    "program",
+    "amount",
+    "sourceAmount",
+    "sourceRows"
+  ],
+  "rows": [
+    [
+      "SHERIFF DEPARTMENT PLYMOUTH (SDP)",
+      "SHERIFF DEPARTMENT PLYMOUTH (SDP) · (AA) REGULAR EMPLOYEE COMPENSATION",
+      64252153.83,
+      64252153.83,
+      431
+    ],
+    [
+      "SHERIFF DEPARTMENT PLYMOUTH (SDP)",
+      "SHERIFF DEPARTMENT PLYMOUTH (SDP) · (JJ) OPERATIONAL SERVICES",
+      2868862.15,
+      2868862.15,
+      380
+    ],
+    [
+      "SHERIFF DEPARTMENT PLYMOUTH (SDP)",
+      "SHERIFF DEPARTMENT PLYMOUTH (SDP) · (GG) ENERGY COSTS AND SPACE RENTAL",
+      2025556.03,
+      2025556.03,
+      375
+    ],
+    [
+      "SHERIFF DEPARTMENT PLYMOUTH (SDP)",
+      "SHERIFF DEPARTMENT PLYMOUTH (SDP) · (UU) IT NON-PAYROLL EXPENSES",
+      1959560.69,
+      1959560.69,
+      392
+    ],
+    [
+      "SHERIFF DEPARTMENT PLYMOUTH (SDP)",
+      "SHERIFF DEPARTMENT PLYMOUTH (SDP) · (NN) INFRASTRUCTURE:",
+      1639406.11,
+      1639406.11,
+      774
+    ],
+    [
+      "SHERIFF DEPARTMENT PLYMOUTH (SDP)",
+      "SHERIFF DEPARTMENT PLYMOUTH (SDP) · (FF) FACILITY OPERATIONAL EXPENSES",
+      1048227.03,
+      1048227.03,
+      820
+    ],
+    [
+      "SHERIFF DEPARTMENT PLYMOUTH (SDP)",
+      "SHERIFF DEPARTMENT PLYMOUTH (SDP) · (CC) SPECIAL EMPLOYEES",
+      1033115.76,
+      1033115.76,
+      200
+    ],
+    [
+      "SHERIFF DEPARTMENT PLYMOUTH (SDP)",
+      "SHERIFF DEPARTMENT PLYMOUTH (SDP) · (KK) EQUIPMENT PURCHASE",
+      779209.4,
+      779209.4,
+      152
+    ],
+    [
+      "SHERIFF DEPARTMENT PLYMOUTH (SDP)",
+      "SHERIFF DEPARTMENT PLYMOUTH (SDP) · (DD) PENSION & INSURANCE RELATED EX",
+      527992.51,
+      527992.51,
+      74
+    ],
+    [
+      "SHERIFF DEPARTMENT PLYMOUTH (SDP)",
+      "SHERIFF DEPARTMENT PLYMOUTH (SDP) · (HH) CONSULTANT SVCS (TO DEPTS)",
+      494923.96,
+      494923.96,
+      39
+    ],
+    [
+      "SHERIFF DEPARTMENT PLYMOUTH (SDP)",
+      "SHERIFF DEPARTMENT PLYMOUTH (SDP) · (LL) EQUIPMENT LEASE-MAINTAIN/REPAR",
+      403349.82,
+      403349.82,
+      409
+    ],
+    [
+      "SHERIFF DEPARTMENT PLYMOUTH (SDP)",
+      "SHERIFF DEPARTMENT PLYMOUTH (SDP) · (EE) ADMINISTRATIVE EXPENSES",
+      353561.13,
+      353561.13,
+      612
+    ],
+    [
+      "SHERIFF DEPARTMENT PLYMOUTH (SDP)",
+      "SHERIFF DEPARTMENT PLYMOUTH (SDP) · (BB) REGULAR EMPLOYEE RELATED EXPEN",
+      45130.73,
+      45130.73,
+      42
+    ],
+    [
+      "SHERIFF DEPARTMENT PLYMOUTH (SDP)",
+      "SHERIFF DEPARTMENT PLYMOUTH (SDP) · (PP) STATE AID/POL SUB",
+      18371.15,
+      18371.15,
+      4
+    ],
+    [
+      "SHERIFF DEPARTMENT PLYMOUTH (SDP)",
+      "SHERIFF DEPARTMENT PLYMOUTH (SDP) · (MM) PURCHASED CLIENT/PROGRAM SVCS",
+      2879,
+      2879,
+      4
+    ],
+    [
+      "SHERIFF DEPARTMENT PLYMOUTH (SDP)",
+      "SHERIFF DEPARTMENT PLYMOUTH (SDP) · (99) PAYROLL REJECTS",
+      0,
+      0,
+      148
+    ]
+  ],
+  "hierarchyNote": "The source does not identify a separate sub-agency column; direct-managed rows repeat the parent entity.",
+  "sourceBasis": "official source amount",
+  "note": "Amounts are shown on the official source basis; no comparator normalization was applied."
+}

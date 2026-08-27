@@ -1,0 +1,35 @@
+{
+  "scope": "Massachusetts",
+  "code": "ma",
+  "department": "STATE RETIREE BENEFITS TRUST FUND BOARD (HST)",
+  "fiscalYear": 2024,
+  "ledgerAmount": 56216.53,
+  "sourceTotal": 61201.93,
+  "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000",
+  "rowSchema": [
+    "subAgency",
+    "program",
+    "amount",
+    "sourceAmount",
+    "sourceRows"
+  ],
+  "rows": [
+    [
+      "STATE RETIREE BENEFITS TRUST FUND BOARD (HST)",
+      "STATE RETIREE BENEFITS TRUST FUND BOARD (HST) · (HH) CONSULTANT SVCS (TO DEPTS)",
+      37355.75,
+      37355.75,
+      2
+    ],
+    [
+      "STATE RETIREE BENEFITS TRUST FUND BOARD (HST)",
+      "STATE RETIREE BENEFITS TRUST FUND BOARD (HST) · (AA) REGULAR EMPLOYEE COMPENSATION",
+      23846.18,
+      23846.18,
+      16
+    ]
+  ],
+  "hierarchyNote": "The source does not identify a separate sub-agency column; direct-managed rows repeat the parent entity.",
+  "sourceBasis": "official source amount",
+  "note": "Amounts are shown on the official source basis; no comparator normalization was applied."
+}

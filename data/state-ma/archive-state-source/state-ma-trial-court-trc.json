@@ -1,0 +1,140 @@
+{
+  "scope": "Massachusetts",
+  "code": "ma",
+  "department": "TRIAL COURT (TRC)",
+  "fiscalYear": 2024,
+  "ledgerAmount": 808951715.29,
+  "sourceTotal": 880691181.09,
+  "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000",
+  "rowSchema": [
+    "subAgency",
+    "program",
+    "amount",
+    "sourceAmount",
+    "sourceRows"
+  ],
+  "rows": [
+    [
+      "TRIAL COURT (TRC)",
+      "TRIAL COURT (TRC) · (AA) REGULAR EMPLOYEE COMPENSATION",
+      633527157.68,
+      633527157.68,
+      5743
+    ],
+    [
+      "TRIAL COURT (TRC)",
+      "TRIAL COURT (TRC) · (GG) ENERGY COSTS AND SPACE RENTAL",
+      54645123.76,
+      54645123.76,
+      4215
+    ],
+    [
+      "TRIAL COURT (TRC)",
+      "TRIAL COURT (TRC) · (UU) IT NON-PAYROLL EXPENSES",
+      42536131.44,
+      42536131.44,
+      2711
+    ],
+    [
+      "TRIAL COURT (TRC)",
+      "TRIAL COURT (TRC) · (MM) PURCHASED CLIENT/PROGRAM SVCS",
+      36570122.62,
+      36570122.62,
+      647
+    ],
+    [
+      "TRIAL COURT (TRC)",
+      "TRIAL COURT (TRC) · (NN) INFRASTRUCTURE:",
+      32024726.83,
+      32024726.83,
+      5316
+    ],
+    [
+      "TRIAL COURT (TRC)",
+      "TRIAL COURT (TRC) · (JJ) OPERATIONAL SERVICES",
+      24610714.49,
+      24610714.49,
+      21010
+    ],
+    [
+      "TRIAL COURT (TRC)",
+      "TRIAL COURT (TRC) · (KK) EQUIPMENT PURCHASE",
+      13138729.29,
+      13138729.29,
+      509
+    ],
+    [
+      "TRIAL COURT (TRC)",
+      "TRIAL COURT (TRC) · (EE) ADMINISTRATIVE EXPENSES",
+      12969529.47,
+      12969529.47,
+      3003
+    ],
+    [
+      "TRIAL COURT (TRC)",
+      "TRIAL COURT (TRC) · (LL) EQUIPMENT LEASE-MAINTAIN/REPAR",
+      11863448.82,
+      11863448.82,
+      902
+    ],
+    [
+      "TRIAL COURT (TRC)",
+      "TRIAL COURT (TRC) · (HH) CONSULTANT SVCS (TO DEPTS)",
+      5942318,
+      5942318,
+      218
+    ],
+    [
+      "TRIAL COURT (TRC)",
+      "TRIAL COURT (TRC) · (DD) PENSION & INSURANCE RELATED EX",
+      5909301.86,
+      5909301.86,
+      51
+    ],
+    [
+      "TRIAL COURT (TRC)",
+      "TRIAL COURT (TRC) · (BB) REGULAR EMPLOYEE RELATED EXPEN",
+      4318977.51,
+      4318977.51,
+      743
+    ],
+    [
+      "TRIAL COURT (TRC)",
+      "TRIAL COURT (TRC) · (FF) FACILITY OPERATIONAL EXPENSES",
+      1911469.12,
+      1911469.12,
+      882
+    ],
+    [
+      "TRIAL COURT (TRC)",
+      "TRIAL COURT (TRC) · (CC) SPECIAL EMPLOYEES",
+      430323.09,
+      430323.09,
+      107
+    ],
+    [
+      "TRIAL COURT (TRC)",
+      "TRIAL COURT (TRC) · (PP) STATE AID/POL SUB",
+      280422.53,
+      280422.53,
+      19
+    ],
+    [
+      "TRIAL COURT (TRC)",
+      "TRIAL COURT (TRC) · (TT) LOANS AND SPECIAL PAYMENTS",
+      12684.58,
+      12684.58,
+      2
+    ],
+    [
+      "TRIAL COURT (TRC)",
+      "TRIAL COURT (TRC) · (99) PAYROLL REJECTS",
+      0,
+      0,
+      72
+    ]
+  ],
+  "hierarchyNote": "The source does not identify a separate sub-agency column; direct-managed rows repeat the parent entity.",
+  "sourceBasis": "official source amount",
+  "note": "Amounts are shown on the official source basis; no comparator normalization was applied."
+}

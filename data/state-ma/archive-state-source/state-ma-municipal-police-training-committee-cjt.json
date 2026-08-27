@@ -1,0 +1,119 @@
+{
+  "scope": "Massachusetts",
+  "code": "ma",
+  "department": "MUNICIPAL POLICE TRAINING COMMITTEE (CJT)",
+  "fiscalYear": 2024,
+  "ledgerAmount": 18294187.79,
+  "sourceTotal": 19916553.17,
+  "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000",
+  "rowSchema": [
+    "subAgency",
+    "program",
+    "amount",
+    "sourceAmount",
+    "sourceRows"
+  ],
+  "rows": [
+    [
+      "MUNICIPAL POLICE TRAINING COMMITTEE (CJT)",
+      "MUNICIPAL POLICE TRAINING COMMITTEE (CJT) · (GG) ENERGY COSTS AND SPACE RENTAL",
+      5623016.91,
+      5623016.91,
+      115
+    ],
+    [
+      "MUNICIPAL POLICE TRAINING COMMITTEE (CJT)",
+      "MUNICIPAL POLICE TRAINING COMMITTEE (CJT) · (AA) REGULAR EMPLOYEE COMPENSATION",
+      5417308.15,
+      5417308.15,
+      38
+    ],
+    [
+      "MUNICIPAL POLICE TRAINING COMMITTEE (CJT)",
+      "MUNICIPAL POLICE TRAINING COMMITTEE (CJT) · (CC) SPECIAL EMPLOYEES",
+      4942776.29,
+      4942776.29,
+      1073
+    ],
+    [
+      "MUNICIPAL POLICE TRAINING COMMITTEE (CJT)",
+      "MUNICIPAL POLICE TRAINING COMMITTEE (CJT) · (KK) EQUIPMENT PURCHASE",
+      1198404.36,
+      1198404.36,
+      54
+    ],
+    [
+      "MUNICIPAL POLICE TRAINING COMMITTEE (CJT)",
+      "MUNICIPAL POLICE TRAINING COMMITTEE (CJT) · (UU) IT NON-PAYROLL EXPENSES",
+      930966.14,
+      930966.14,
+      80
+    ],
+    [
+      "MUNICIPAL POLICE TRAINING COMMITTEE (CJT)",
+      "MUNICIPAL POLICE TRAINING COMMITTEE (CJT) · (HH) CONSULTANT SVCS (TO DEPTS)",
+      678003.77,
+      678003.77,
+      43
+    ],
+    [
+      "MUNICIPAL POLICE TRAINING COMMITTEE (CJT)",
+      "MUNICIPAL POLICE TRAINING COMMITTEE (CJT) · (EE) ADMINISTRATIVE EXPENSES",
+      614013.38,
+      614013.38,
+      411
+    ],
+    [
+      "MUNICIPAL POLICE TRAINING COMMITTEE (CJT)",
+      "MUNICIPAL POLICE TRAINING COMMITTEE (CJT) · (NN) INFRASTRUCTURE:",
+      258024.5,
+      258024.5,
+      49
+    ],
+    [
+      "MUNICIPAL POLICE TRAINING COMMITTEE (CJT)",
+      "MUNICIPAL POLICE TRAINING COMMITTEE (CJT) · (LL) EQUIPMENT LEASE-MAINTAIN/REPAR",
+      87362.47,
+      87362.47,
+      286
+    ],
+    [
+      "MUNICIPAL POLICE TRAINING COMMITTEE (CJT)",
+      "MUNICIPAL POLICE TRAINING COMMITTEE (CJT) · (FF) FACILITY OPERATIONAL EXPENSES",
+      81610.98,
+      81610.98,
+      50
+    ],
+    [
+      "MUNICIPAL POLICE TRAINING COMMITTEE (CJT)",
+      "MUNICIPAL POLICE TRAINING COMMITTEE (CJT) · (PP) STATE AID/POL SUB",
+      50000,
+      50000,
+      1
+    ],
+    [
+      "MUNICIPAL POLICE TRAINING COMMITTEE (CJT)",
+      "MUNICIPAL POLICE TRAINING COMMITTEE (CJT) · (BB) REGULAR EMPLOYEE RELATED EXPEN",
+      26706.45,
+      26706.45,
+      48
+    ],
+    [
+      "MUNICIPAL POLICE TRAINING COMMITTEE (CJT)",
+      "MUNICIPAL POLICE TRAINING COMMITTEE (CJT) · (JJ) OPERATIONAL SERVICES",
+      8359.77,
+      8359.77,
+      28
+    ],
+    [
+      "MUNICIPAL POLICE TRAINING COMMITTEE (CJT)",
+      "MUNICIPAL POLICE TRAINING COMMITTEE (CJT) · (99) PAYROLL REJECTS",
+      0,
+      0,
+      23
+    ]
+  ],
+  "hierarchyNote": "The source does not identify a separate sub-agency column; direct-managed rows repeat the parent entity.",
+  "sourceBasis": "official source amount",
+  "note": "Amounts are shown on the official source basis; no comparator normalization was applied."
+}

@@ -1,0 +1,56 @@
+{
+  "scope": "Massachusetts",
+  "code": "ma",
+  "department": "MASSACHUSETTS BAY TRANSPORTATION AUTHORITY (MBT)",
+  "fiscalYear": 2024,
+  "ledgerAmount": 742794542.04,
+  "sourceTotal": 808667056.6,
+  "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000",
+  "rowSchema": [
+    "subAgency",
+    "program",
+    "amount",
+    "sourceAmount",
+    "sourceRows"
+  ],
+  "rows": [
+    [
+      "MASSACHUSETTS BAY TRANSPORTATION AUTHORITY (MBT)",
+      "MASSACHUSETTS BAY TRANSPORTATION AUTHORITY (MBT) · (AA) REGULAR EMPLOYEE COMPENSATION",
+      804938515.73,
+      804938515.73,
+      27498
+    ],
+    [
+      "MASSACHUSETTS BAY TRANSPORTATION AUTHORITY (MBT)",
+      "MASSACHUSETTS BAY TRANSPORTATION AUTHORITY (MBT) · (CC) SPECIAL EMPLOYEES",
+      2260931.2,
+      2260931.2,
+      581
+    ],
+    [
+      "MASSACHUSETTS BAY TRANSPORTATION AUTHORITY (MBT)",
+      "MASSACHUSETTS BAY TRANSPORTATION AUTHORITY (MBT) · (BB) REGULAR EMPLOYEE RELATED EXPEN",
+      1425907.27,
+      1425907.27,
+      2705
+    ],
+    [
+      "MASSACHUSETTS BAY TRANSPORTATION AUTHORITY (MBT)",
+      "MASSACHUSETTS BAY TRANSPORTATION AUTHORITY (MBT) · (DD) PENSION & INSURANCE RELATED EX",
+      41702.4,
+      41702.4,
+      27
+    ],
+    [
+      "MASSACHUSETTS BAY TRANSPORTATION AUTHORITY (MBT)",
+      "MASSACHUSETTS BAY TRANSPORTATION AUTHORITY (MBT) · (99) PAYROLL REJECTS",
+      0,
+      0,
+      189
+    ]
+  ],
+  "hierarchyNote": "The source does not identify a separate sub-agency column; direct-managed rows repeat the parent entity.",
+  "sourceBasis": "official source amount",
+  "note": "Amounts are shown on the official source basis; no comparator normalization was applied."
+}

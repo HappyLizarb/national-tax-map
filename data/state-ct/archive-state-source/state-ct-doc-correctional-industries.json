@@ -1,0 +1,42 @@
+{
+  "scope": "Connecticut",
+  "code": "ct",
+  "department": "DOC - Correctional Industries",
+  "fiscalYear": 2024,
+  "ledgerAmount": 20242964.33,
+  "sourceTotal": 21570238.31,
+  "sourceUrl": "https://data.ct.gov/resource/ajdm-rvz7.json?$select=department,program,sum(amount)%20as%20amount,count(*)%20as%20records&$where=fiscal_year=2024&$group=department,program",
+  "rowSchema": [
+    "subAgency",
+    "program",
+    "amount",
+    "sourceAmount",
+    "sourceRows"
+  ],
+  "rows": [
+    [
+      "DOC - Correctional Industries",
+      "DOC - Correctional Industries · Correction Commissaries",
+      16400919.92,
+      16400919.92,
+      2618
+    ],
+    [
+      "DOC - Correctional Industries",
+      "DOC - Correctional Industries · Non-Budgeted Operating Approp",
+      5167238.42,
+      5167238.42,
+      4547
+    ],
+    [
+      "DOC - Correctional Industries",
+      "DOC - Correctional Industries · Other Expenses",
+      2079.97,
+      2079.97,
+      2
+    ]
+  ],
+  "hierarchyNote": "The source does not identify a separate sub-agency column; direct-managed rows repeat the parent entity.",
+  "sourceBasis": "official source amount",
+  "note": "Amounts are shown on the official source basis; no comparator normalization was applied."
+}

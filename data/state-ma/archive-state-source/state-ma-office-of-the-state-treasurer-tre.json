@@ -1,0 +1,140 @@
+{
+  "scope": "Massachusetts",
+  "code": "ma",
+  "department": "OFFICE OF THE STATE TREASURER (TRE)",
+  "fiscalYear": 2024,
+  "ledgerAmount": 9069938105.33,
+  "sourceTotal": 9874278466.11,
+  "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000",
+  "rowSchema": [
+    "subAgency",
+    "program",
+    "amount",
+    "sourceAmount",
+    "sourceRows"
+  ],
+  "rows": [
+    [
+      "OFFICE OF THE STATE TREASURER (TRE)",
+      "OFFICE OF THE STATE TREASURER (TRE) · (SS) DEBT PAYMENT",
+      4175788638.9,
+      4175788638.9,
+      171
+    ],
+    [
+      "OFFICE OF THE STATE TREASURER (TRE)",
+      "OFFICE OF THE STATE TREASURER (TRE) · (DD) PENSION & INSURANCE RELATED EX",
+      2969558672.84,
+      2969558672.84,
+      552
+    ],
+    [
+      "OFFICE OF THE STATE TREASURER (TRE)",
+      "OFFICE OF THE STATE TREASURER (TRE) · (PP) STATE AID/POL SUB",
+      2657284395.85,
+      2657284395.85,
+      199
+    ],
+    [
+      "OFFICE OF THE STATE TREASURER (TRE)",
+      "OFFICE OF THE STATE TREASURER (TRE) · (AA) REGULAR EMPLOYEE COMPENSATION",
+      23870476.27,
+      23870476.27,
+      581
+    ],
+    [
+      "OFFICE OF THE STATE TREASURER (TRE)",
+      "OFFICE OF THE STATE TREASURER (TRE) · (TT) LOANS AND SPECIAL PAYMENTS",
+      23352109.37,
+      23352109.37,
+      1414
+    ],
+    [
+      "OFFICE OF THE STATE TREASURER (TRE)",
+      "OFFICE OF THE STATE TREASURER (TRE) · (EE) ADMINISTRATIVE EXPENSES",
+      9398193.05,
+      9398193.05,
+      1764
+    ],
+    [
+      "OFFICE OF THE STATE TREASURER (TRE)",
+      "OFFICE OF THE STATE TREASURER (TRE) · (UU) IT NON-PAYROLL EXPENSES",
+      8742202.03,
+      8742202.03,
+      836
+    ],
+    [
+      "OFFICE OF THE STATE TREASURER (TRE)",
+      "OFFICE OF THE STATE TREASURER (TRE) · (HH) CONSULTANT SVCS (TO DEPTS)",
+      3924118.31,
+      3924118.31,
+      280
+    ],
+    [
+      "OFFICE OF THE STATE TREASURER (TRE)",
+      "OFFICE OF THE STATE TREASURER (TRE) · (GG) ENERGY COSTS AND SPACE RENTAL",
+      1618821.05,
+      1618821.05,
+      105
+    ],
+    [
+      "OFFICE OF THE STATE TREASURER (TRE)",
+      "OFFICE OF THE STATE TREASURER (TRE) · (JJ) OPERATIONAL SERVICES",
+      259578.47,
+      259578.47,
+      247
+    ],
+    [
+      "OFFICE OF THE STATE TREASURER (TRE)",
+      "OFFICE OF THE STATE TREASURER (TRE) · (CC) SPECIAL EMPLOYEES",
+      258974.04,
+      258974.04,
+      133
+    ],
+    [
+      "OFFICE OF THE STATE TREASURER (TRE)",
+      "OFFICE OF THE STATE TREASURER (TRE) · (BB) REGULAR EMPLOYEE RELATED EXPEN",
+      113672.14,
+      113672.14,
+      423
+    ],
+    [
+      "OFFICE OF THE STATE TREASURER (TRE)",
+      "OFFICE OF THE STATE TREASURER (TRE) · (LL) EQUIPMENT LEASE-MAINTAIN/REPAR",
+      67405.57,
+      67405.57,
+      146
+    ],
+    [
+      "OFFICE OF THE STATE TREASURER (TRE)",
+      "OFFICE OF THE STATE TREASURER (TRE) · (NN) INFRASTRUCTURE:",
+      33300.84,
+      33300.84,
+      115
+    ],
+    [
+      "OFFICE OF THE STATE TREASURER (TRE)",
+      "OFFICE OF THE STATE TREASURER (TRE) · (FF) FACILITY OPERATIONAL EXPENSES",
+      5828.62,
+      5828.62,
+      7
+    ],
+    [
+      "OFFICE OF THE STATE TREASURER (TRE)",
+      "OFFICE OF THE STATE TREASURER (TRE) · (KK) EQUIPMENT PURCHASE",
+      2078.76,
+      2078.76,
+      2
+    ],
+    [
+      "OFFICE OF THE STATE TREASURER (TRE)",
+      "OFFICE OF THE STATE TREASURER (TRE) · (99) PAYROLL REJECTS",
+      0,
+      0,
+      24
+    ]
+  ],
+  "hierarchyNote": "The source does not identify a separate sub-agency column; direct-managed rows repeat the parent entity.",
+  "sourceBasis": "official source amount",
+  "note": "Amounts are shown on the official source basis; no comparator normalization was applied."
+}

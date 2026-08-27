@@ -1,0 +1,119 @@
+{
+  "scope": "Massachusetts",
+  "code": "ma",
+  "department": "DEPARTMENT OF FIRE SERVICES (DFS)",
+  "fiscalYear": 2024,
+  "ledgerAmount": 43762386.91,
+  "sourceTotal": 47643323.44,
+  "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000",
+  "rowSchema": [
+    "subAgency",
+    "program",
+    "amount",
+    "sourceAmount",
+    "sourceRows"
+  ],
+  "rows": [
+    [
+      "DEPARTMENT OF FIRE SERVICES (DFS)",
+      "DEPARTMENT OF FIRE SERVICES (DFS) · (PP) STATE AID/POL SUB",
+      16601186.61,
+      16601186.61,
+      1866
+    ],
+    [
+      "DEPARTMENT OF FIRE SERVICES (DFS)",
+      "DEPARTMENT OF FIRE SERVICES (DFS) · (CC) SPECIAL EMPLOYEES",
+      13499464.46,
+      13499464.46,
+      617
+    ],
+    [
+      "DEPARTMENT OF FIRE SERVICES (DFS)",
+      "DEPARTMENT OF FIRE SERVICES (DFS) · (AA) REGULAR EMPLOYEE COMPENSATION",
+      9601500.91,
+      9601500.91,
+      908
+    ],
+    [
+      "DEPARTMENT OF FIRE SERVICES (DFS)",
+      "DEPARTMENT OF FIRE SERVICES (DFS) · (KK) EQUIPMENT PURCHASE",
+      2237840.56,
+      2237840.56,
+      65
+    ],
+    [
+      "DEPARTMENT OF FIRE SERVICES (DFS)",
+      "DEPARTMENT OF FIRE SERVICES (DFS) · (NN) INFRASTRUCTURE:",
+      2232923.07,
+      2232923.07,
+      662
+    ],
+    [
+      "DEPARTMENT OF FIRE SERVICES (DFS)",
+      "DEPARTMENT OF FIRE SERVICES (DFS) · (GG) ENERGY COSTS AND SPACE RENTAL",
+      903883.95,
+      903883.95,
+      384
+    ],
+    [
+      "DEPARTMENT OF FIRE SERVICES (DFS)",
+      "DEPARTMENT OF FIRE SERVICES (DFS) · (FF) FACILITY OPERATIONAL EXPENSES",
+      775491.5,
+      775491.5,
+      354
+    ],
+    [
+      "DEPARTMENT OF FIRE SERVICES (DFS)",
+      "DEPARTMENT OF FIRE SERVICES (DFS) · (LL) EQUIPMENT LEASE-MAINTAIN/REPAR",
+      615007.31,
+      615007.31,
+      553
+    ],
+    [
+      "DEPARTMENT OF FIRE SERVICES (DFS)",
+      "DEPARTMENT OF FIRE SERVICES (DFS) · (HH) CONSULTANT SVCS (TO DEPTS)",
+      482292.83,
+      482292.83,
+      55
+    ],
+    [
+      "DEPARTMENT OF FIRE SERVICES (DFS)",
+      "DEPARTMENT OF FIRE SERVICES (DFS) · (EE) ADMINISTRATIVE EXPENSES",
+      440670.28,
+      440670.28,
+      603
+    ],
+    [
+      "DEPARTMENT OF FIRE SERVICES (DFS)",
+      "DEPARTMENT OF FIRE SERVICES (DFS) · (JJ) OPERATIONAL SERVICES",
+      177432.27,
+      177432.27,
+      121
+    ],
+    [
+      "DEPARTMENT OF FIRE SERVICES (DFS)",
+      "DEPARTMENT OF FIRE SERVICES (DFS) · (UU) IT NON-PAYROLL EXPENSES",
+      70284.88,
+      70284.88,
+      98
+    ],
+    [
+      "DEPARTMENT OF FIRE SERVICES (DFS)",
+      "DEPARTMENT OF FIRE SERVICES (DFS) · (BB) REGULAR EMPLOYEE RELATED EXPEN",
+      5344.81,
+      5344.81,
+      38
+    ],
+    [
+      "DEPARTMENT OF FIRE SERVICES (DFS)",
+      "DEPARTMENT OF FIRE SERVICES (DFS) · (99) PAYROLL REJECTS",
+      0,
+      0,
+      7
+    ]
+  ],
+  "hierarchyNote": "The source does not identify a separate sub-agency column; direct-managed rows repeat the parent entity.",
+  "sourceBasis": "official source amount",
+  "note": "Amounts are shown on the official source basis; no comparator normalization was applied."
+}

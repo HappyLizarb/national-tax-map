@@ -1,0 +1,98 @@
+{
+  "scope": "Massachusetts",
+  "code": "ma",
+  "department": "MASS CULTURAL COUNCIL (ART)",
+  "fiscalYear": 2024,
+  "ledgerAmount": 39891130.9,
+  "sourceTotal": 43428756.65,
+  "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000",
+  "rowSchema": [
+    "subAgency",
+    "program",
+    "amount",
+    "sourceAmount",
+    "sourceRows"
+  ],
+  "rows": [
+    [
+      "MASS CULTURAL COUNCIL (ART)",
+      "MASS CULTURAL COUNCIL (ART) · (PP) STATE AID/POL SUB",
+      38060043,
+      38060043,
+      4506
+    ],
+    [
+      "MASS CULTURAL COUNCIL (ART)",
+      "MASS CULTURAL COUNCIL (ART) · (AA) REGULAR EMPLOYEE COMPENSATION",
+      4073279.39,
+      4073279.39,
+      143
+    ],
+    [
+      "MASS CULTURAL COUNCIL (ART)",
+      "MASS CULTURAL COUNCIL (ART) · (GG) ENERGY COSTS AND SPACE RENTAL",
+      355321.07,
+      355321.07,
+      22
+    ],
+    [
+      "MASS CULTURAL COUNCIL (ART)",
+      "MASS CULTURAL COUNCIL (ART) · (HH) CONSULTANT SVCS (TO DEPTS)",
+      289292,
+      289292,
+      39
+    ],
+    [
+      "MASS CULTURAL COUNCIL (ART)",
+      "MASS CULTURAL COUNCIL (ART) · (UU) IT NON-PAYROLL EXPENSES",
+      245652.33,
+      245652.33,
+      95
+    ],
+    [
+      "MASS CULTURAL COUNCIL (ART)",
+      "MASS CULTURAL COUNCIL (ART) · (EE) ADMINISTRATIVE EXPENSES",
+      159359.44,
+      159359.44,
+      83
+    ],
+    [
+      "MASS CULTURAL COUNCIL (ART)",
+      "MASS CULTURAL COUNCIL (ART) · (JJ) OPERATIONAL SERVICES",
+      144321.87,
+      144321.87,
+      94
+    ],
+    [
+      "MASS CULTURAL COUNCIL (ART)",
+      "MASS CULTURAL COUNCIL (ART) · (CC) SPECIAL EMPLOYEES",
+      53134.7,
+      53134.7,
+      22
+    ],
+    [
+      "MASS CULTURAL COUNCIL (ART)",
+      "MASS CULTURAL COUNCIL (ART) · (BB) REGULAR EMPLOYEE RELATED EXPEN",
+      39638.22,
+      39638.22,
+      72
+    ],
+    [
+      "MASS CULTURAL COUNCIL (ART)",
+      "MASS CULTURAL COUNCIL (ART) · (LL) EQUIPMENT LEASE-MAINTAIN/REPAR",
+      6732.24,
+      6732.24,
+      28
+    ],
+    [
+      "MASS CULTURAL COUNCIL (ART)",
+      "MASS CULTURAL COUNCIL (ART) · (KK) EQUIPMENT PURCHASE",
+      1982.39,
+      1982.39,
+      1
+    ]
+  ],
+  "hierarchyNote": "The source does not identify a separate sub-agency column; direct-managed rows repeat the parent entity.",
+  "sourceBasis": "official source amount",
+  "note": "Amounts are shown on the official source basis; no comparator normalization was applied."
+}

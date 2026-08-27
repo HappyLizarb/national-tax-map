@@ -1,0 +1,77 @@
+{
+  "scope": "Massachusetts",
+  "code": "ma",
+  "department": "DIVISION OF STANDARDS (DOS)",
+  "fiscalYear": 2024,
+  "ledgerAmount": 2154940.89,
+  "sourceTotal": 2346045.38,
+  "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000",
+  "rowSchema": [
+    "subAgency",
+    "program",
+    "amount",
+    "sourceAmount",
+    "sourceRows"
+  ],
+  "rows": [
+    [
+      "DIVISION OF STANDARDS (DOS)",
+      "DIVISION OF STANDARDS (DOS) · (AA) REGULAR EMPLOYEE COMPENSATION",
+      1846338.93,
+      1846338.93,
+      107
+    ],
+    [
+      "DIVISION OF STANDARDS (DOS)",
+      "DIVISION OF STANDARDS (DOS) · (KK) EQUIPMENT PURCHASE",
+      273400.08,
+      273400.08,
+      5
+    ],
+    [
+      "DIVISION OF STANDARDS (DOS)",
+      "DIVISION OF STANDARDS (DOS) · (GG) ENERGY COSTS AND SPACE RENTAL",
+      170345.83,
+      170345.83,
+      48
+    ],
+    [
+      "DIVISION OF STANDARDS (DOS)",
+      "DIVISION OF STANDARDS (DOS) · (LL) EQUIPMENT LEASE-MAINTAIN/REPAR",
+      20966.27,
+      20966.27,
+      21
+    ],
+    [
+      "DIVISION OF STANDARDS (DOS)",
+      "DIVISION OF STANDARDS (DOS) · (EE) ADMINISTRATIVE EXPENSES",
+      15254.54,
+      15254.54,
+      73
+    ],
+    [
+      "DIVISION OF STANDARDS (DOS)",
+      "DIVISION OF STANDARDS (DOS) · (NN) INFRASTRUCTURE:",
+      8506.1,
+      8506.1,
+      25
+    ],
+    [
+      "DIVISION OF STANDARDS (DOS)",
+      "DIVISION OF STANDARDS (DOS) · (FF) FACILITY OPERATIONAL EXPENSES",
+      5721.7,
+      5721.7,
+      2
+    ],
+    [
+      "DIVISION OF STANDARDS (DOS)",
+      "DIVISION OF STANDARDS (DOS) · (BB) REGULAR EMPLOYEE RELATED EXPEN",
+      5511.93,
+      5511.93,
+      19
+    ]
+  ],
+  "hierarchyNote": "The source does not identify a separate sub-agency column; direct-managed rows repeat the parent entity.",
+  "sourceBasis": "official source amount",
+  "note": "Amounts are shown on the official source basis; no comparator normalization was applied."
+}

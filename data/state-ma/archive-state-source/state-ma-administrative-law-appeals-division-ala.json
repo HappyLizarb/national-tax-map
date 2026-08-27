@@ -1,0 +1,98 @@
+{
+  "scope": "Massachusetts",
+  "code": "ma",
+  "department": "ADMINISTRATIVE LAW APPEALS DIVISION (ALA)",
+  "fiscalYear": 2024,
+  "ledgerAmount": 4141860.08,
+  "sourceTotal": 4509168.57,
+  "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000",
+  "rowSchema": [
+    "subAgency",
+    "program",
+    "amount",
+    "sourceAmount",
+    "sourceRows"
+  ],
+  "rows": [
+    [
+      "ADMINISTRATIVE LAW APPEALS DIVISION (ALA)",
+      "ADMINISTRATIVE LAW APPEALS DIVISION (ALA) · (AA) REGULAR EMPLOYEE COMPENSATION",
+      3674491.4,
+      3674491.4,
+      100
+    ],
+    [
+      "ADMINISTRATIVE LAW APPEALS DIVISION (ALA)",
+      "ADMINISTRATIVE LAW APPEALS DIVISION (ALA) · (GG) ENERGY COSTS AND SPACE RENTAL",
+      393349.17,
+      393349.17,
+      49
+    ],
+    [
+      "ADMINISTRATIVE LAW APPEALS DIVISION (ALA)",
+      "ADMINISTRATIVE LAW APPEALS DIVISION (ALA) · (JJ) OPERATIONAL SERVICES",
+      253979.26,
+      253979.26,
+      240
+    ],
+    [
+      "ADMINISTRATIVE LAW APPEALS DIVISION (ALA)",
+      "ADMINISTRATIVE LAW APPEALS DIVISION (ALA) · (CC) SPECIAL EMPLOYEES",
+      92346.5,
+      92346.5,
+      58
+    ],
+    [
+      "ADMINISTRATIVE LAW APPEALS DIVISION (ALA)",
+      "ADMINISTRATIVE LAW APPEALS DIVISION (ALA) · (EE) ADMINISTRATIVE EXPENSES",
+      46183.41,
+      46183.41,
+      87
+    ],
+    [
+      "ADMINISTRATIVE LAW APPEALS DIVISION (ALA)",
+      "ADMINISTRATIVE LAW APPEALS DIVISION (ALA) · (UU) IT NON-PAYROLL EXPENSES",
+      16232.01,
+      16232.01,
+      10
+    ],
+    [
+      "ADMINISTRATIVE LAW APPEALS DIVISION (ALA)",
+      "ADMINISTRATIVE LAW APPEALS DIVISION (ALA) · (BB) REGULAR EMPLOYEE RELATED EXPEN",
+      16148.9,
+      16148.9,
+      47
+    ],
+    [
+      "ADMINISTRATIVE LAW APPEALS DIVISION (ALA)",
+      "ADMINISTRATIVE LAW APPEALS DIVISION (ALA) · (LL) EQUIPMENT LEASE-MAINTAIN/REPAR",
+      8768.63,
+      8768.63,
+      32
+    ],
+    [
+      "ADMINISTRATIVE LAW APPEALS DIVISION (ALA)",
+      "ADMINISTRATIVE LAW APPEALS DIVISION (ALA) · (KK) EQUIPMENT PURCHASE",
+      4167.88,
+      4167.88,
+      2
+    ],
+    [
+      "ADMINISTRATIVE LAW APPEALS DIVISION (ALA)",
+      "ADMINISTRATIVE LAW APPEALS DIVISION (ALA) · (NN) INFRASTRUCTURE:",
+      3501.41,
+      3501.41,
+      18
+    ],
+    [
+      "ADMINISTRATIVE LAW APPEALS DIVISION (ALA)",
+      "ADMINISTRATIVE LAW APPEALS DIVISION (ALA) · (99) PAYROLL REJECTS",
+      0,
+      0,
+      20
+    ]
+  ],
+  "hierarchyNote": "The source does not identify a separate sub-agency column; direct-managed rows repeat the parent entity.",
+  "sourceBasis": "official source amount",
+  "note": "Amounts are shown on the official source basis; no comparator normalization was applied."
+}

@@ -1,0 +1,133 @@
+{
+  "scope": "Massachusetts",
+  "code": "ma",
+  "department": "MASSACHUSETTS DEPARTMENT OF TRANSPORTATION (DOT)",
+  "fiscalYear": 2024,
+  "ledgerAmount": 3693351929.68,
+  "sourceTotal": 4020885810.19,
+  "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000",
+  "rowSchema": [
+    "subAgency",
+    "program",
+    "amount",
+    "sourceAmount",
+    "sourceRows"
+  ],
+  "rows": [
+    [
+      "MASSACHUSETTS DEPARTMENT OF TRANSPORTATION (DOT)",
+      "MASSACHUSETTS DEPARTMENT OF TRANSPORTATION (DOT) · (NN) INFRASTRUCTURE:",
+      2001711390.91,
+      2001711390.91,
+      45454
+    ],
+    [
+      "MASSACHUSETTS DEPARTMENT OF TRANSPORTATION (DOT)",
+      "MASSACHUSETTS DEPARTMENT OF TRANSPORTATION (DOT) · (PP) STATE AID/POL SUB",
+      904780717.23,
+      904780717.23,
+      8299
+    ],
+    [
+      "MASSACHUSETTS DEPARTMENT OF TRANSPORTATION (DOT)",
+      "MASSACHUSETTS DEPARTMENT OF TRANSPORTATION (DOT) · (AA) REGULAR EMPLOYEE COMPENSATION",
+      441532565.5,
+      441532565.5,
+      95744
+    ],
+    [
+      "MASSACHUSETTS DEPARTMENT OF TRANSPORTATION (DOT)",
+      "MASSACHUSETTS DEPARTMENT OF TRANSPORTATION (DOT) · (EE) ADMINISTRATIVE EXPENSES",
+      293233113.76,
+      293233113.76,
+      5308
+    ],
+    [
+      "MASSACHUSETTS DEPARTMENT OF TRANSPORTATION (DOT)",
+      "MASSACHUSETTS DEPARTMENT OF TRANSPORTATION (DOT) · (KK) EQUIPMENT PURCHASE",
+      120216275.57,
+      120216275.57,
+      660
+    ],
+    [
+      "MASSACHUSETTS DEPARTMENT OF TRANSPORTATION (DOT)",
+      "MASSACHUSETTS DEPARTMENT OF TRANSPORTATION (DOT) · (UU) IT NON-PAYROLL EXPENSES",
+      91986192.31,
+      91986192.31,
+      6982
+    ],
+    [
+      "MASSACHUSETTS DEPARTMENT OF TRANSPORTATION (DOT)",
+      "MASSACHUSETTS DEPARTMENT OF TRANSPORTATION (DOT) · (JJ) OPERATIONAL SERVICES",
+      84880333.64,
+      84880333.64,
+      5782
+    ],
+    [
+      "MASSACHUSETTS DEPARTMENT OF TRANSPORTATION (DOT)",
+      "MASSACHUSETTS DEPARTMENT OF TRANSPORTATION (DOT) · (GG) ENERGY COSTS AND SPACE RENTAL",
+      35926459.03,
+      35926459.03,
+      22168
+    ],
+    [
+      "MASSACHUSETTS DEPARTMENT OF TRANSPORTATION (DOT)",
+      "MASSACHUSETTS DEPARTMENT OF TRANSPORTATION (DOT) · (HH) CONSULTANT SVCS (TO DEPTS)",
+      19583326.58,
+      19583326.58,
+      1348
+    ],
+    [
+      "MASSACHUSETTS DEPARTMENT OF TRANSPORTATION (DOT)",
+      "MASSACHUSETTS DEPARTMENT OF TRANSPORTATION (DOT) · (LL) EQUIPMENT LEASE-MAINTAIN/REPAR",
+      12188658.61,
+      12188658.61,
+      6119
+    ],
+    [
+      "MASSACHUSETTS DEPARTMENT OF TRANSPORTATION (DOT)",
+      "MASSACHUSETTS DEPARTMENT OF TRANSPORTATION (DOT) · (FF) FACILITY OPERATIONAL EXPENSES",
+      8533273.66,
+      8533273.66,
+      9235
+    ],
+    [
+      "MASSACHUSETTS DEPARTMENT OF TRANSPORTATION (DOT)",
+      "MASSACHUSETTS DEPARTMENT OF TRANSPORTATION (DOT) · (CC) SPECIAL EMPLOYEES",
+      3459953.16,
+      3459953.16,
+      3731
+    ],
+    [
+      "MASSACHUSETTS DEPARTMENT OF TRANSPORTATION (DOT)",
+      "MASSACHUSETTS DEPARTMENT OF TRANSPORTATION (DOT) · (BB) REGULAR EMPLOYEE RELATED EXPEN",
+      1694882.89,
+      1694882.89,
+      8988
+    ],
+    [
+      "MASSACHUSETTS DEPARTMENT OF TRANSPORTATION (DOT)",
+      "MASSACHUSETTS DEPARTMENT OF TRANSPORTATION (DOT) · (TT) LOANS AND SPECIAL PAYMENTS",
+      1154100,
+      1154100,
+      7
+    ],
+    [
+      "MASSACHUSETTS DEPARTMENT OF TRANSPORTATION (DOT)",
+      "MASSACHUSETTS DEPARTMENT OF TRANSPORTATION (DOT) · (DD) PENSION & INSURANCE RELATED EX",
+      4567.34,
+      4567.34,
+      4
+    ],
+    [
+      "MASSACHUSETTS DEPARTMENT OF TRANSPORTATION (DOT)",
+      "MASSACHUSETTS DEPARTMENT OF TRANSPORTATION (DOT) · (99) PAYROLL REJECTS",
+      0,
+      0,
+      366
+    ]
+  ],
+  "hierarchyNote": "The source does not identify a separate sub-agency column; direct-managed rows repeat the parent entity.",
+  "sourceBasis": "official source amount",
+  "note": "Amounts are shown on the official source basis; no comparator normalization was applied."
+}

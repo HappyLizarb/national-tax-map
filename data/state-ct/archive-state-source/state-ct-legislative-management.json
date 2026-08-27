@@ -1,0 +1,119 @@
+{
+  "scope": "Connecticut",
+  "code": "ct",
+  "department": "Legislative Management",
+  "fiscalYear": 2024,
+  "ledgerAmount": 25246634.54,
+  "sourceTotal": 26901985.04,
+  "sourceUrl": "https://data.ct.gov/resource/ajdm-rvz7.json?$select=department,program,sum(amount)%20as%20amount,count(*)%20as%20records&$where=fiscal_year=2024&$group=department,program",
+  "rowSchema": [
+    "subAgency",
+    "program",
+    "amount",
+    "sourceAmount",
+    "sourceRows"
+  ],
+  "rows": [
+    [
+      "Legislative Management",
+      "Legislative Management · Other Expenses",
+      19134077.01,
+      19134077.01,
+      7832
+    ],
+    [
+      "Legislative Management",
+      "Legislative Management · CTN",
+      2410510.16,
+      2410510.16,
+      178
+    ],
+    [
+      "Legislative Management",
+      "Legislative Management · Equipment",
+      1597952.45,
+      1597952.45,
+      138
+    ],
+    [
+      "Legislative Management",
+      "Legislative Management · Capital Improve/Equipment-OLM",
+      1135984.23,
+      1135984.23,
+      98
+    ],
+    [
+      "Legislative Management",
+      "Legislative Management · Minor Capital Improvements",
+      786128.24,
+      786128.24,
+      27
+    ],
+    [
+      "Legislative Management",
+      "Legislative Management · Old State House",
+      635687.67,
+      635687.67,
+      214
+    ],
+    [
+      "Legislative Management",
+      "Legislative Management · Interstate Conference Fund",
+      446809,
+      446809,
+      6
+    ],
+    [
+      "Legislative Management",
+      "Legislative Management · ARPA-CTN",
+      294493.43,
+      294493.43,
+      39
+    ],
+    [
+      "Legislative Management",
+      "Legislative Management · CT Academy of Science and Engi",
+      206000,
+      206000,
+      2
+    ],
+    [
+      "Legislative Management",
+      "Legislative Management · Nw Englnd Board of Higher Educ",
+      189263,
+      189263,
+      1
+    ],
+    [
+      "Legislative Management",
+      "Legislative Management · Capitol Child Dev Center",
+      41658.17,
+      41658.17,
+      15
+    ],
+    [
+      "Legislative Management",
+      "Legislative Management · Personal Services",
+      15592.94,
+      15592.94,
+      14
+    ],
+    [
+      "Legislative Management",
+      "Legislative Management · Translators",
+      6832,
+      6832,
+      14
+    ],
+    [
+      "Legislative Management",
+      "Legislative Management · Flag Restoration",
+      996.74,
+      996.74,
+      1
+    ]
+  ],
+  "hierarchyNote": "The source does not identify a separate sub-agency column; direct-managed rows repeat the parent entity.",
+  "sourceBasis": "official source amount",
+  "note": "Amounts are shown on the official source basis; no comparator normalization was applied."
+}

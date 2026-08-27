@@ -1,0 +1,84 @@
+{
+  "scope": "Massachusetts",
+  "code": "ma",
+  "department": "BOARD OF BAR EXAMINERS (BBE)",
+  "fiscalYear": 2024,
+  "ledgerAmount": 1854624.68,
+  "sourceTotal": 2019096.53,
+  "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000",
+  "rowSchema": [
+    "subAgency",
+    "program",
+    "amount",
+    "sourceAmount",
+    "sourceRows"
+  ],
+  "rows": [
+    [
+      "BOARD OF BAR EXAMINERS (BBE)",
+      "BOARD OF BAR EXAMINERS (BBE) · (AA) REGULAR EMPLOYEE COMPENSATION",
+      911329.07,
+      911329.07,
+      32
+    ],
+    [
+      "BOARD OF BAR EXAMINERS (BBE)",
+      "BOARD OF BAR EXAMINERS (BBE) · (HH) CONSULTANT SVCS (TO DEPTS)",
+      329160.5,
+      329160.5,
+      67
+    ],
+    [
+      "BOARD OF BAR EXAMINERS (BBE)",
+      "BOARD OF BAR EXAMINERS (BBE) · (EE) ADMINISTRATIVE EXPENSES",
+      251107.44,
+      251107.44,
+      133
+    ],
+    [
+      "BOARD OF BAR EXAMINERS (BBE)",
+      "BOARD OF BAR EXAMINERS (BBE) · (CC) SPECIAL EMPLOYEES",
+      225292.13,
+      225292.13,
+      13
+    ],
+    [
+      "BOARD OF BAR EXAMINERS (BBE)",
+      "BOARD OF BAR EXAMINERS (BBE) · (JJ) OPERATIONAL SERVICES",
+      208762.87,
+      208762.87,
+      211
+    ],
+    [
+      "BOARD OF BAR EXAMINERS (BBE)",
+      "BOARD OF BAR EXAMINERS (BBE) · (UU) IT NON-PAYROLL EXPENSES",
+      38208.45,
+      38208.45,
+      16
+    ],
+    [
+      "BOARD OF BAR EXAMINERS (BBE)",
+      "BOARD OF BAR EXAMINERS (BBE) · (BB) REGULAR EMPLOYEE RELATED EXPEN",
+      31944.24,
+      31944.24,
+      60
+    ],
+    [
+      "BOARD OF BAR EXAMINERS (BBE)",
+      "BOARD OF BAR EXAMINERS (BBE) · (KK) EQUIPMENT PURCHASE",
+      20181.52,
+      20181.52,
+      1
+    ],
+    [
+      "BOARD OF BAR EXAMINERS (BBE)",
+      "BOARD OF BAR EXAMINERS (BBE) · (LL) EQUIPMENT LEASE-MAINTAIN/REPAR",
+      3110.31,
+      3110.31,
+      12
+    ]
+  ],
+  "hierarchyNote": "The source does not identify a separate sub-agency column; direct-managed rows repeat the parent entity.",
+  "sourceBasis": "official source amount",
+  "note": "Amounts are shown on the official source basis; no comparator normalization was applied."
+}

@@ -1,0 +1,43 @@
+{
+  "scope": "Washington",
+  "state": "wa",
+  "fiscalYear": 2024,
+  "department": "Sundry Claims",
+  "sourceUrl": "https://fiscal.wa.gov/Spending/VendorPayments2325.xlsx",
+  "sourceUrls": [
+    [
+      "FY2024 Washington checkbook workbook",
+      "https://fiscal.wa.gov/Spending/VendorPayments2325.xlsx"
+    ],
+    [
+      "Washington checkbook exclusions",
+      "https://www.fiscal.wa.gov/Spending/DisclaimerWAVendorCB.pdf"
+    ]
+  ],
+  "sourceBasis": "FY2024 cash/checkbook vendor-payment rows grouped by agency, object, category, subobject, and subcategory.",
+  "privacyNote": "Vendor names are intentionally excluded; salary and other payment rows remain aggregate by agency and accounting classification.",
+  "sourceTotal": 464499,
+  "sourceRows": 16,
+  "rowSchema": [
+    "subAgency",
+    "program",
+    "amount",
+    "sourceAmount",
+    "sourceRows"
+  ],
+  "sourceCheck": {
+    "objectClassRows": 1,
+    "sourceRows": 16,
+    "sourceTotal": 464499,
+    "difference": 0
+  },
+  "rows": [
+    [
+      "Sundry Claims",
+      "Goods and Services — Other Goods and Services (object E, subobject EZ)",
+      464499,
+      464499,
+      16
+    ]
+  ]
+}

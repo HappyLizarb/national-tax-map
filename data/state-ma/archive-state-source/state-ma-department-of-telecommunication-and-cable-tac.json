@@ -1,0 +1,84 @@
+{
+  "scope": "Massachusetts",
+  "code": "ma",
+  "department": "DEPARTMENT OF TELECOMMUNICATION AND CABLE (TAC)",
+  "fiscalYear": 2024,
+  "ledgerAmount": 2550318.91,
+  "sourceTotal": 2776486.32,
+  "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000",
+  "rowSchema": [
+    "subAgency",
+    "program",
+    "amount",
+    "sourceAmount",
+    "sourceRows"
+  ],
+  "rows": [
+    [
+      "DEPARTMENT OF TELECOMMUNICATION AND CABLE (TAC)",
+      "DEPARTMENT OF TELECOMMUNICATION AND CABLE (TAC) · (AA) REGULAR EMPLOYEE COMPENSATION",
+      2073245.13,
+      2073245.13,
+      32
+    ],
+    [
+      "DEPARTMENT OF TELECOMMUNICATION AND CABLE (TAC)",
+      "DEPARTMENT OF TELECOMMUNICATION AND CABLE (TAC) · (GG) ENERGY COSTS AND SPACE RENTAL",
+      457810.91,
+      457810.91,
+      24
+    ],
+    [
+      "DEPARTMENT OF TELECOMMUNICATION AND CABLE (TAC)",
+      "DEPARTMENT OF TELECOMMUNICATION AND CABLE (TAC) · (UU) IT NON-PAYROLL EXPENSES",
+      91700.57,
+      91700.57,
+      67
+    ],
+    [
+      "DEPARTMENT OF TELECOMMUNICATION AND CABLE (TAC)",
+      "DEPARTMENT OF TELECOMMUNICATION AND CABLE (TAC) · (CC) SPECIAL EMPLOYEES",
+      66879.9,
+      66879.9,
+      25
+    ],
+    [
+      "DEPARTMENT OF TELECOMMUNICATION AND CABLE (TAC)",
+      "DEPARTMENT OF TELECOMMUNICATION AND CABLE (TAC) · (EE) ADMINISTRATIVE EXPENSES",
+      53598.2,
+      53598.2,
+      92
+    ],
+    [
+      "DEPARTMENT OF TELECOMMUNICATION AND CABLE (TAC)",
+      "DEPARTMENT OF TELECOMMUNICATION AND CABLE (TAC) · (BB) REGULAR EMPLOYEE RELATED EXPEN",
+      15769.59,
+      15769.59,
+      38
+    ],
+    [
+      "DEPARTMENT OF TELECOMMUNICATION AND CABLE (TAC)",
+      "DEPARTMENT OF TELECOMMUNICATION AND CABLE (TAC) · (LL) EQUIPMENT LEASE-MAINTAIN/REPAR",
+      13387.36,
+      13387.36,
+      33
+    ],
+    [
+      "DEPARTMENT OF TELECOMMUNICATION AND CABLE (TAC)",
+      "DEPARTMENT OF TELECOMMUNICATION AND CABLE (TAC) · (NN) INFRASTRUCTURE:",
+      2971.91,
+      2971.91,
+      13
+    ],
+    [
+      "DEPARTMENT OF TELECOMMUNICATION AND CABLE (TAC)",
+      "DEPARTMENT OF TELECOMMUNICATION AND CABLE (TAC) · (JJ) OPERATIONAL SERVICES",
+      1122.75,
+      1122.75,
+      2
+    ]
+  ],
+  "hierarchyNote": "The source does not identify a separate sub-agency column; direct-managed rows repeat the parent entity.",
+  "sourceBasis": "official source amount",
+  "note": "Amounts are shown on the official source basis; no comparator normalization was applied."
+}

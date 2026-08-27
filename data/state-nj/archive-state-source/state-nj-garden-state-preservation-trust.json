@@ -1,0 +1,210 @@
+{
+  "scope": "New Jersey",
+  "fiscalYear": 2024,
+  "department": "GARDEN STATE PRESERVATION TRUST",
+  "sourceUrl": "https://data.nj.gov/Government-Finance/YourMoney-Agency-Expenditures/apet-rp2i",
+  "sourceUrls": [
+    [
+      "Official expenditures catalog",
+      "https://www.nj.gov/transparency/financial-management/expenditures/index.shtml"
+    ],
+    [
+      "FY2024 agency dataset",
+      "https://data.nj.gov/Government-Finance/YourMoney-Agency-Expenditures/apet-rp2i"
+    ],
+    [
+      "Grouped FY2024 API export",
+      "https://data.nj.gov/resource/apet-rp2i.csv?%24select=ibno_agency%2Cstatewide_program%2Cpayee_name%2Csum%28expended_amt%29%20as%20expended%2Csum%28obligation_amt%29%20as%20obligations%2Ccount%28%2A%29%20as%20source_rows&%24where=budget_fiscal_year%3D2024&%24group=ibno_agency%2Cstatewide_program%2Cpayee_name&%24limit=500000"
+    ]
+  ],
+  "sourceBasis": "Official FY2024 Agency Expenditures dataset; pie amount uses expended, with obligations retained as a separate row measure.",
+  "privacyNote": "Individual or ambiguous payee labels are grouped as [individual recipient omitted]; organization receivers are retained. This layer does not expose person-level payroll.",
+  "sourceRows": 60,
+  "sourceTotal": 2550850.92,
+  "obligationTotal": 97500,
+  "rowSchema": [
+    "subAgency",
+    "program",
+    "amount",
+    "sourceAmount",
+    "sourceRows",
+    "obligations"
+  ],
+  "rows": [
+    [
+      "GARDEN STATE PRESERVATION TRUST",
+      "NATIONAL RESOURCE MANAGEMENT · Receiver *",
+      2278850.87,
+      2278850.87,
+      17,
+      0
+    ],
+    [
+      "GARDEN STATE PRESERVATION TRUST",
+      "GENERAL GOVERNMENT SERVICES · Receiver ROWAN UNIVERSITY",
+      97500,
+      97500,
+      1,
+      97500
+    ],
+    [
+      "GARDEN STATE PRESERVATION TRUST",
+      "GENERAL GOVERNMENT SERVICES · Receiver *",
+      77918.78,
+      77918.78,
+      6,
+      0
+    ],
+    [
+      "GARDEN STATE PRESERVATION TRUST",
+      "NATIONAL RESOURCE MANAGEMENT · Receiver 22ND CENTURY TECHNOLOGIES INC",
+      29629.7,
+      29629.7,
+      1,
+      0
+    ],
+    [
+      "GARDEN STATE PRESERVATION TRUST",
+      "NATIONAL RESOURCE MANAGEMENT · Receiver RICOH USA INC",
+      22515.96,
+      22515.96,
+      1,
+      0
+    ],
+    [
+      "GARDEN STATE PRESERVATION TRUST",
+      "NATIONAL RESOURCE MANAGEMENT · Receiver [individual recipient omitted]",
+      17505.58,
+      17505.58,
+      16,
+      0
+    ],
+    [
+      "GARDEN STATE PRESERVATION TRUST",
+      "NATIONAL RESOURCE MANAGEMENT · Receiver THE TRUST FOR PUBLIC LAND",
+      10000,
+      10000,
+      1,
+      0
+    ],
+    [
+      "GARDEN STATE PRESERVATION TRUST",
+      "NATIONAL RESOURCE MANAGEMENT · Receiver NORMANS AUTO SERVICES",
+      3970.95,
+      3970.95,
+      1,
+      0
+    ],
+    [
+      "GARDEN STATE PRESERVATION TRUST",
+      "NATIONAL RESOURCE MANAGEMENT · Receiver PROPERTY FAX LLC",
+      3600,
+      3600,
+      1,
+      0
+    ],
+    [
+      "GARDEN STATE PRESERVATION TRUST",
+      "NATIONAL RESOURCE MANAGEMENT · Receiver PROMOTIONS & UNICORNS TOO",
+      2177.5,
+      2177.5,
+      1,
+      0
+    ],
+    [
+      "GARDEN STATE PRESERVATION TRUST",
+      "GENERAL GOVERNMENT SERVICES · Receiver [individual recipient omitted]",
+      1717.07,
+      1717.07,
+      2,
+      0
+    ],
+    [
+      "GARDEN STATE PRESERVATION TRUST",
+      "NATIONAL RESOURCE MANAGEMENT · Receiver NATIONAL ASSOCIATION OF STATE",
+      1250,
+      1250,
+      1,
+      0
+    ],
+    [
+      "GARDEN STATE PRESERVATION TRUST",
+      "GENERAL GOVERNMENT SERVICES · Receiver XEROX CORPORATION",
+      1247.36,
+      1247.36,
+      1,
+      0
+    ],
+    [
+      "GARDEN STATE PRESERVATION TRUST",
+      "NATIONAL RESOURCE MANAGEMENT · Receiver NEW JERSEY CHAPTER OF THE AMER",
+      855,
+      855,
+      1,
+      0
+    ],
+    [
+      "GARDEN STATE PRESERVATION TRUST",
+      "NATIONAL RESOURCE MANAGEMENT · Receiver BANK OF AMERICA N A",
+      852.85,
+      852.85,
+      3,
+      0
+    ],
+    [
+      "GARDEN STATE PRESERVATION TRUST",
+      "NATIONAL RESOURCE MANAGEMENT · Receiver FOSTER 411, LLC DBA SHORE CATE",
+      718.25,
+      718.25,
+      1,
+      0
+    ],
+    [
+      "GARDEN STATE PRESERVATION TRUST",
+      "NATIONAL RESOURCE MANAGEMENT · Receiver MONMOUTH UNIVERSITY",
+      400,
+      400,
+      1,
+      0
+    ],
+    [
+      "GARDEN STATE PRESERVATION TRUST",
+      "NATIONAL RESOURCE MANAGEMENT · Receiver CROWN TROPHY 141",
+      75,
+      75,
+      1,
+      0
+    ],
+    [
+      "GARDEN STATE PRESERVATION TRUST",
+      "NATIONAL RESOURCE MANAGEMENT · Receiver BRIDGESTONE AMERICAS, INC.",
+      28,
+      28,
+      1,
+      0
+    ],
+    [
+      "GARDEN STATE PRESERVATION TRUST",
+      "GENERAL GOVERNMENT SERVICES · Receiver WB MASON CO INC.",
+      20.09,
+      20.09,
+      1,
+      0
+    ],
+    [
+      "GARDEN STATE PRESERVATION TRUST",
+      "NATIONAL RESOURCE MANAGEMENT · Receiver WEST TRENTON HARDWARE LLC",
+      17.96,
+      17.96,
+      1,
+      0
+    ]
+  ],
+  "sourceCheck": {
+    "objectClassRows": 21,
+    "sourceRows": 60,
+    "sourceTotal": 2550850.92,
+    "obligationTotal": 97500,
+    "difference": 0
+  }
+}

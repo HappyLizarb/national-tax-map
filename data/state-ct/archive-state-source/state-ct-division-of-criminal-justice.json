@@ -1,0 +1,154 @@
+{
+  "scope": "Connecticut",
+  "code": "ct",
+  "department": "Division of Criminal Justice",
+  "fiscalYear": 2024,
+  "ledgerAmount": 7211755.2,
+  "sourceTotal": 7684609.61,
+  "sourceUrl": "https://data.ct.gov/resource/ajdm-rvz7.json?$select=department,program,sum(amount)%20as%20amount,count(*)%20as%20records&$where=fiscal_year=2024&$group=department,program",
+  "rowSchema": [
+    "subAgency",
+    "program",
+    "amount",
+    "sourceAmount",
+    "sourceRows"
+  ],
+  "rows": [
+    [
+      "Division of Criminal Justice",
+      "Division of Criminal Justice · Other Expenses",
+      4869294.59,
+      4869294.59,
+      6737
+    ],
+    [
+      "Division of Criminal Justice",
+      "Division of Criminal Justice · Capital Equip Purchase Fund",
+      1076998.73,
+      1076998.73,
+      69
+    ],
+    [
+      "Division of Criminal Justice",
+      "Division of Criminal Justice · IT Capital Investment Program",
+      702934,
+      702934,
+      6
+    ],
+    [
+      "Division of Criminal Justice",
+      "Division of Criminal Justice · State Opiod Response Crisis Fu",
+      284940.88,
+      284940.88,
+      21
+    ],
+    [
+      "Division of Criminal Justice",
+      "Division of Criminal Justice · Witness Protection",
+      256801.4,
+      256801.4,
+      254
+    ],
+    [
+      "Division of Criminal Justice",
+      "Division of Criminal Justice · Expert Witnesses",
+      129828.85,
+      129828.85,
+      68
+    ],
+    [
+      "Division of Criminal Justice",
+      "Division of Criminal Justice · Training And Education",
+      99279.75,
+      99279.75,
+      201
+    ],
+    [
+      "Division of Criminal Justice",
+      "Division of Criminal Justice · Medicaid Fraud Control",
+      87967.99,
+      87967.99,
+      133
+    ],
+    [
+      "Division of Criminal Justice",
+      "Division of Criminal Justice · Human Trafficking Grant",
+      52595.14,
+      52595.14,
+      4
+    ],
+    [
+      "Division of Criminal Justice",
+      "Division of Criminal Justice · Personal Services",
+      46189.53,
+      46189.53,
+      22
+    ],
+    [
+      "Division of Criminal Justice",
+      "Division of Criminal Justice · Shooting Taskforce",
+      27295.48,
+      27295.48,
+      85
+    ],
+    [
+      "Division of Criminal Justice",
+      "Division of Criminal Justice · DNA Prosecution Grant",
+      27235.44,
+      27235.44,
+      11
+    ],
+    [
+      "Division of Criminal Justice",
+      "Division of Criminal Justice · Cold Case Unit",
+      9708.52,
+      9708.52,
+      55
+    ],
+    [
+      "Division of Criminal Justice",
+      "Division of Criminal Justice · Drug Asset Forfeit Rv Acct DPS",
+      5110,
+      5110,
+      1
+    ],
+    [
+      "Division of Criminal Justice",
+      "Division of Criminal Justice · Forfeited Property Sharing",
+      2993,
+      2993,
+      9
+    ],
+    [
+      "Division of Criminal Justice",
+      "Division of Criminal Justice · Drug Asset Forfeit Rv Acct DCJ",
+      1730,
+      1730,
+      2
+    ],
+    [
+      "Division of Criminal Justice",
+      "Division of Criminal Justice · Drug Asset Forfeit Rv Acct MHA",
+      1460,
+      1460,
+      1
+    ],
+    [
+      "Division of Criminal Justice",
+      "Division of Criminal Justice · Unemployment Comp. Fraud",
+      1141.17,
+      1141.17,
+      7
+    ],
+    [
+      "Division of Criminal Justice",
+      "Division of Criminal Justice · CT Sexual Assault Kit Initiati",
+      1105.14,
+      1105.14,
+      3
+    ]
+  ],
+  "hierarchyNote": "The source does not identify a separate sub-agency column; direct-managed rows repeat the parent entity.",
+  "sourceBasis": "official source amount",
+  "note": "Amounts are shown on the official source basis; no comparator normalization was applied."
+}

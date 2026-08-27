@@ -1,0 +1,63 @@
+{
+  "scope": "Massachusetts",
+  "code": "ma",
+  "department": "DEPARTMENT OF BUSINESS AND TECHNOLOGY (SEA)",
+  "fiscalYear": 2024,
+  "ledgerAmount": 13516257.39,
+  "sourceTotal": 14714906.29,
+  "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000",
+  "rowSchema": [
+    "subAgency",
+    "program",
+    "amount",
+    "sourceAmount",
+    "sourceRows"
+  ],
+  "rows": [
+    [
+      "DEPARTMENT OF BUSINESS AND TECHNOLOGY (SEA)",
+      "DEPARTMENT OF BUSINESS AND TECHNOLOGY (SEA) · (PP) STATE AID/POL SUB",
+      13615370.12,
+      13615370.12,
+      71
+    ],
+    [
+      "DEPARTMENT OF BUSINESS AND TECHNOLOGY (SEA)",
+      "DEPARTMENT OF BUSINESS AND TECHNOLOGY (SEA) · (AA) REGULAR EMPLOYEE COMPENSATION",
+      1065097.39,
+      1065097.39,
+      56
+    ],
+    [
+      "DEPARTMENT OF BUSINESS AND TECHNOLOGY (SEA)",
+      "DEPARTMENT OF BUSINESS AND TECHNOLOGY (SEA) · (EE) ADMINISTRATIVE EXPENSES",
+      15959.78,
+      15959.78,
+      55
+    ],
+    [
+      "DEPARTMENT OF BUSINESS AND TECHNOLOGY (SEA)",
+      "DEPARTMENT OF BUSINESS AND TECHNOLOGY (SEA) · (BB) REGULAR EMPLOYEE RELATED EXPEN",
+      12818.02,
+      12818.02,
+      7
+    ],
+    [
+      "DEPARTMENT OF BUSINESS AND TECHNOLOGY (SEA)",
+      "DEPARTMENT OF BUSINESS AND TECHNOLOGY (SEA) · (LL) EQUIPMENT LEASE-MAINTAIN/REPAR",
+      5660.98,
+      5660.98,
+      18
+    ],
+    [
+      "DEPARTMENT OF BUSINESS AND TECHNOLOGY (SEA)",
+      "DEPARTMENT OF BUSINESS AND TECHNOLOGY (SEA) · (99) PAYROLL REJECTS",
+      0,
+      0,
+      6
+    ]
+  ],
+  "hierarchyNote": "The source does not identify a separate sub-agency column; direct-managed rows repeat the parent entity.",
+  "sourceBasis": "official source amount",
+  "note": "Amounts are shown on the official source basis; no comparator normalization was applied."
+}

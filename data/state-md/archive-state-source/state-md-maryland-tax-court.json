@@ -1,0 +1,57 @@
+{
+  "scope": "Maryland",
+  "code": "md",
+  "fiscalYear": 2024,
+  "department": "MARYLAND TAX COURT",
+  "sourceUrl": "https://opendata.maryland.gov/Budget/State-of-Maryland-Payments-Data-FY2008-to-FY2024/7syw-q4cy/about_data",
+  "sourceUrls": [
+    [
+      "Maryland payments dataset",
+      "https://opendata.maryland.gov/Budget/State-of-Maryland-Payments-Data-FY2008-to-FY2024/7syw-q4cy/about_data"
+    ],
+    [
+      "FY2024 raw API rows",
+      "https://opendata.maryland.gov/resource/7syw-q4cy.json?%24where=fiscal_year=%272024%27&%24limit=50000"
+    ]
+  ],
+  "sourceBasis": "FY2024 cash payments grouped by official agency, published category code, and privacy-safe receiver label.",
+  "privacyNote": "Organization receiver names are retained; individual or ambiguous vendor names are grouped as [individual recipient omitted]. No person-level payroll fields are retained.",
+  "sourceRows": 4,
+  "sourceTotal": 5819.39,
+  "rowSchema": [
+    "subAgency",
+    "program",
+    "amount",
+    "sourceAmount",
+    "sourceRows"
+  ],
+  "rows": [
+    [
+      "MARYLAND TAX COURT",
+      "Category code C85 · Receiver [individual recipient omitted]",
+      3367.74,
+      3367.74,
+      2
+    ],
+    [
+      "MARYLAND TAX COURT",
+      "Category code C85 · Receiver QUADIENT FINANCE USA INC",
+      1866.62,
+      1866.62,
+      1
+    ],
+    [
+      "MARYLAND TAX COURT",
+      "Category code C85 · Receiver XEROX CORPORATION",
+      585.03,
+      585.03,
+      1
+    ]
+  ],
+  "sourceCheck": {
+    "objectClassRows": 3,
+    "sourceRows": 4,
+    "sourceTotal": 5819.39,
+    "difference": 0
+  }
+}

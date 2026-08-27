@@ -1,0 +1,149 @@
+{
+  "scope": "Connecticut",
+  "code": "ct",
+  "department": "Auditors of Public Accounts",
+  "fiscalYear": 2024,
+  "ledgerAmount": 523381.93,
+  "sourceTotal": 557698.6,
+  "sourceUrl": "https://data.ct.gov/resource/ajdm-rvz7.json?$select=department%2Cprogram%2Caccount%2Cexpense_category%2Csum(amount)%20as%20amount%2Ccount(*)%20as%20records&$where=fiscal_year=2024%20and%20program=%27Other%20Expenses%27&$group=department%2Cprogram%2Caccount%2Cexpense_category&$limit=50000",
+  "sourceUrls": [
+    [
+      "Connecticut Open Expenditures API",
+      "https://data.ct.gov/resource/ajdm-rvz7.json?$select=department%2Cprogram%2Caccount%2Cexpense_category%2Csum(amount)%20as%20amount%2Ccount(*)%20as%20records&$where=fiscal_year=2024%20and%20program=%27Other%20Expenses%27&$group=department%2Cprogram%2Caccount%2Cexpense_category&$limit=50000"
+    ],
+    [
+      "Open Connecticut",
+      "https://osc.ct.gov/openct/"
+    ]
+  ],
+  "rowSchema": [
+    "subAgency",
+    "program",
+    "amount",
+    "sourceAmount",
+    "sourceRows"
+  ],
+  "sourceBasis": "official source amount",
+  "privacyNote": "No vendor, employee name, vendor ID, or payment identifier is retained; account/category aggregates and source-row counts only.",
+  "rows": [
+    [
+      "Auditors of Public Accounts",
+      "Auditors of Public Accounts · Other Expenses · 53715 · IT Consultant Services Hourly",
+      285123.75,
+      285123.75,
+      6
+    ],
+    [
+      "Auditors of Public Accounts",
+      "Auditors of Public Accounts · Other Expenses · 53755 · Non-Controllable Software",
+      108717.63,
+      108717.63,
+      19
+    ],
+    [
+      "Auditors of Public Accounts",
+      "Auditors of Public Accounts · Other Expenses · 53760 · IT Software Maint & Support",
+      56501.9,
+      56501.9,
+      4
+    ],
+    [
+      "Auditors of Public Accounts",
+      "Auditors of Public Accounts · Other Expenses · 50750 · Educ & Training For Employees",
+      35220.31,
+      35220.31,
+      34
+    ],
+    [
+      "Auditors of Public Accounts",
+      "Auditors of Public Accounts · Other Expenses · 54150 · Controllable Property",
+      21225,
+      21225,
+      1
+    ],
+    [
+      "Auditors of Public Accounts",
+      "Auditors of Public Accounts · Other Expenses · 53920 · IT Supplies",
+      20988.99,
+      20988.99,
+      30
+    ],
+    [
+      "Auditors of Public Accounts",
+      "Auditors of Public Accounts · Other Expenses · 54050 · Food And Beverages",
+      8957,
+      8957,
+      3
+    ],
+    [
+      "Auditors of Public Accounts",
+      "Auditors of Public Accounts · Other Expenses · 51780 · Membership Dues",
+      8200,
+      8200,
+      2
+    ],
+    [
+      "Auditors of Public Accounts",
+      "Auditors of Public Accounts · Other Expenses · 54060 · General Office Supplies",
+      6198.34,
+      6198.34,
+      41
+    ],
+    [
+      "Auditors of Public Accounts",
+      "Auditors of Public Accounts · Other Expenses · 52511 · ST-Office Equip Lease/Rental",
+      3247.16,
+      3247.16,
+      13
+    ],
+    [
+      "Auditors of Public Accounts",
+      "Auditors of Public Accounts · Other Expenses · 51675 · Subscriptions",
+      1615.28,
+      1615.28,
+      4
+    ],
+    [
+      "Auditors of Public Accounts",
+      "Auditors of Public Accounts · Other Expenses · 51200 · Employee Assist Program Srvcs",
+      1118.26,
+      1118.26,
+      4
+    ],
+    [
+      "Auditors of Public Accounts",
+      "Auditors of Public Accounts · Other Expenses · 53740 · IT Hardware Maint & Support",
+      375,
+      375,
+      1
+    ],
+    [
+      "Auditors of Public Accounts",
+      "Auditors of Public Accounts · Other Expenses · 55302 · LT-Office Equip Lease/Rental",
+      164.5,
+      164.5,
+      3
+    ],
+    [
+      "Auditors of Public Accounts",
+      "Auditors of Public Accounts · Other Expenses · 50780 · In-State Travel",
+      25,
+      25,
+      1
+    ],
+    [
+      "Auditors of Public Accounts",
+      "Auditors of Public Accounts · Other Expenses · 51764 · Regular Postage",
+      20.48,
+      20.48,
+      4
+    ]
+  ],
+  "sourceCheck": {
+    "groupRows": 16,
+    "sourceRows": 170,
+    "sourceTotal": 557698.6,
+    "difference": 0
+  },
+  "note": "Amounts are shown on the official source basis; no comparator normalization was applied."
+}

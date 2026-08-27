@@ -1,0 +1,126 @@
+{
+  "scope": "Massachusetts",
+  "code": "ma",
+  "department": "EXECUTIVE OFFICE OF TECHNOLOGY SERVICES AND SECURITY (ITD)",
+  "fiscalYear": 2024,
+  "ledgerAmount": 255886024.89,
+  "sourceTotal": 278578512.44,
+  "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000",
+  "rowSchema": [
+    "subAgency",
+    "program",
+    "amount",
+    "sourceAmount",
+    "sourceRows"
+  ],
+  "rows": [
+    [
+      "EXECUTIVE OFFICE OF TECHNOLOGY SERVICES AND SECURITY (ITD)",
+      "EXECUTIVE OFFICE OF TECHNOLOGY SERVICES AND SECURITY (ITD) · (UU) IT NON-PAYROLL EXPENSES",
+      221404186.26,
+      221404186.26,
+      2868
+    ],
+    [
+      "EXECUTIVE OFFICE OF TECHNOLOGY SERVICES AND SECURITY (ITD)",
+      "EXECUTIVE OFFICE OF TECHNOLOGY SERVICES AND SECURITY (ITD) · (AA) REGULAR EMPLOYEE COMPENSATION",
+      52908931.93,
+      52908931.93,
+      3979
+    ],
+    [
+      "EXECUTIVE OFFICE OF TECHNOLOGY SERVICES AND SECURITY (ITD)",
+      "EXECUTIVE OFFICE OF TECHNOLOGY SERVICES AND SECURITY (ITD) · (PP) STATE AID/POL SUB",
+      2123780,
+      2123780,
+      4
+    ],
+    [
+      "EXECUTIVE OFFICE OF TECHNOLOGY SERVICES AND SECURITY (ITD)",
+      "EXECUTIVE OFFICE OF TECHNOLOGY SERVICES AND SECURITY (ITD) · (EE) ADMINISTRATIVE EXPENSES",
+      577041.52,
+      577041.52,
+      255
+    ],
+    [
+      "EXECUTIVE OFFICE OF TECHNOLOGY SERVICES AND SECURITY (ITD)",
+      "EXECUTIVE OFFICE OF TECHNOLOGY SERVICES AND SECURITY (ITD) · (TT) LOANS AND SPECIAL PAYMENTS",
+      552000,
+      552000,
+      3
+    ],
+    [
+      "EXECUTIVE OFFICE OF TECHNOLOGY SERVICES AND SECURITY (ITD)",
+      "EXECUTIVE OFFICE OF TECHNOLOGY SERVICES AND SECURITY (ITD) · (HH) CONSULTANT SVCS (TO DEPTS)",
+      314832.35,
+      314832.35,
+      4
+    ],
+    [
+      "EXECUTIVE OFFICE OF TECHNOLOGY SERVICES AND SECURITY (ITD)",
+      "EXECUTIVE OFFICE OF TECHNOLOGY SERVICES AND SECURITY (ITD) · (NN) INFRASTRUCTURE:",
+      269290.4,
+      269290.4,
+      49
+    ],
+    [
+      "EXECUTIVE OFFICE OF TECHNOLOGY SERVICES AND SECURITY (ITD)",
+      "EXECUTIVE OFFICE OF TECHNOLOGY SERVICES AND SECURITY (ITD) · (CC) SPECIAL EMPLOYEES",
+      235514.5,
+      235514.5,
+      157
+    ],
+    [
+      "EXECUTIVE OFFICE OF TECHNOLOGY SERVICES AND SECURITY (ITD)",
+      "EXECUTIVE OFFICE OF TECHNOLOGY SERVICES AND SECURITY (ITD) · (BB) REGULAR EMPLOYEE RELATED EXPEN",
+      62699.19,
+      62699.19,
+      326
+    ],
+    [
+      "EXECUTIVE OFFICE OF TECHNOLOGY SERVICES AND SECURITY (ITD)",
+      "EXECUTIVE OFFICE OF TECHNOLOGY SERVICES AND SECURITY (ITD) · (KK) EQUIPMENT PURCHASE",
+      48392.25,
+      48392.25,
+      5
+    ],
+    [
+      "EXECUTIVE OFFICE OF TECHNOLOGY SERVICES AND SECURITY (ITD)",
+      "EXECUTIVE OFFICE OF TECHNOLOGY SERVICES AND SECURITY (ITD) · (LL) EQUIPMENT LEASE-MAINTAIN/REPAR",
+      41458.91,
+      41458.91,
+      47
+    ],
+    [
+      "EXECUTIVE OFFICE OF TECHNOLOGY SERVICES AND SECURITY (ITD)",
+      "EXECUTIVE OFFICE OF TECHNOLOGY SERVICES AND SECURITY (ITD) · (JJ) OPERATIONAL SERVICES",
+      22393.72,
+      22393.72,
+      26
+    ],
+    [
+      "EXECUTIVE OFFICE OF TECHNOLOGY SERVICES AND SECURITY (ITD)",
+      "EXECUTIVE OFFICE OF TECHNOLOGY SERVICES AND SECURITY (ITD) · (FF) FACILITY OPERATIONAL EXPENSES",
+      12989.46,
+      12989.46,
+      23
+    ],
+    [
+      "EXECUTIVE OFFICE OF TECHNOLOGY SERVICES AND SECURITY (ITD)",
+      "EXECUTIVE OFFICE OF TECHNOLOGY SERVICES AND SECURITY (ITD) · (GG) ENERGY COSTS AND SPACE RENTAL",
+      5001.95,
+      5001.95,
+      12
+    ],
+    [
+      "EXECUTIVE OFFICE OF TECHNOLOGY SERVICES AND SECURITY (ITD)",
+      "EXECUTIVE OFFICE OF TECHNOLOGY SERVICES AND SECURITY (ITD) · (99) PAYROLL REJECTS",
+      0,
+      0,
+      14
+    ]
+  ],
+  "hierarchyNote": "The source does not identify a separate sub-agency column; direct-managed rows repeat the parent entity.",
+  "sourceBasis": "official source amount",
+  "note": "Amounts are shown on the official source basis; no comparator normalization was applied."
+}

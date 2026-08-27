@@ -1,0 +1,113 @@
+{
+  "scope": "Maryland",
+  "code": "md",
+  "fiscalYear": 2024,
+  "department": "UNINSURED EMPLOYERS FUND",
+  "sourceUrl": "https://opendata.maryland.gov/Budget/State-of-Maryland-Payments-Data-FY2008-to-FY2024/7syw-q4cy/about_data",
+  "sourceUrls": [
+    [
+      "Maryland payments dataset",
+      "https://opendata.maryland.gov/Budget/State-of-Maryland-Payments-Data-FY2008-to-FY2024/7syw-q4cy/about_data"
+    ],
+    [
+      "FY2024 raw API rows",
+      "https://opendata.maryland.gov/resource/7syw-q4cy.json?%24where=fiscal_year=%272024%27&%24limit=50000"
+    ]
+  ],
+  "sourceBasis": "FY2024 cash payments grouped by official agency, published category code, and privacy-safe receiver label.",
+  "privacyNote": "Organization receiver names are retained; individual or ambiguous vendor names are grouped as [individual recipient omitted]. No person-level payroll fields are retained.",
+  "sourceRows": 11,
+  "sourceTotal": 7229066.01,
+  "rowSchema": [
+    "subAgency",
+    "program",
+    "amount",
+    "sourceAmount",
+    "sourceRows"
+  ],
+  "rows": [
+    [
+      "UNINSURED EMPLOYERS FUND",
+      "Category code C96 · Receiver B&B PARTNERS - TOWSON LLC",
+      58629.5,
+      58629.5,
+      1
+    ],
+    [
+      "UNINSURED EMPLOYERS FUND",
+      "Category code C96 · Receiver BLUETRITON BRANDS INC",
+      110.07,
+      110.07,
+      1
+    ],
+    [
+      "UNINSURED EMPLOYERS FUND",
+      "Category code C96 · Receiver CORVEL CORPORATION",
+      6795259.99,
+      6795259.99,
+      1
+    ],
+    [
+      "UNINSURED EMPLOYERS FUND",
+      "Category code C96 · Receiver DATA PROCESSING SOLUTIONS",
+      47505.1,
+      47505.1,
+      1
+    ],
+    [
+      "UNINSURED EMPLOYERS FUND",
+      "Category code C96 · Receiver HAMPTON PLAZA LLLP",
+      70925.4,
+      70925.4,
+      1
+    ],
+    [
+      "UNINSURED EMPLOYERS FUND",
+      "Category code C96 · Receiver LEXISNEXIS",
+      1649.44,
+      1649.44,
+      1
+    ],
+    [
+      "UNINSURED EMPLOYERS FUND",
+      "Category code C96 · Receiver QUADIENT INC",
+      4141.68,
+      4141.68,
+      1
+    ],
+    [
+      "UNINSURED EMPLOYERS FUND",
+      "Category code C96 · Receiver RGH ENTERPRISES INC",
+      8876.08,
+      8876.08,
+      1
+    ],
+    [
+      "UNINSURED EMPLOYERS FUND",
+      "Category code C96 · Receiver ROBERT HALF INTERNATIONAL INC",
+      230164.58,
+      230164.58,
+      1
+    ],
+    [
+      "UNINSURED EMPLOYERS FUND",
+      "Category code C96 · Receiver TRUIST BANK",
+      4352.95,
+      4352.95,
+      1
+    ],
+    [
+      "UNINSURED EMPLOYERS FUND",
+      "Category code C96 · Receiver VERIZON MARYLAND LLC",
+      7451.22,
+      7451.22,
+      1
+    ]
+  ],
+  "sourceCheck": {
+    "objectClassRows": 11,
+    "sourceRows": 11,
+    "sourceTotal": 7229066.01,
+    "difference": 0
+  }
+}

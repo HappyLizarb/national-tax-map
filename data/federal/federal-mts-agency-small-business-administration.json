@@ -1,0 +1,32 @@
+{
+  "scope": "United States",
+  "code": "federal",
+  "fiscalYear": 2024,
+  "department": "Small Business Administration",
+  "sourceTotal": 33197000000,
+  "sourceUrl": "https://fiscal.treasury.gov/system/files/files/reports-statements/mts/mts0924.pdf",
+  "sourceUrls": [["Treasury FY2024 MTS Table 5", "https://fiscal.treasury.gov/system/files/files/reports-statements/mts/mts0924.pdf"]],
+  "relatedSources": [["USAspending gross research (supporting detail)", "data/federal/archive-agency-source/federal-small-business-administration.json"]],
+  "sourceBasis": "Treasury MTS Table 5 current-fiscal-year gross outlays, applicable receipts, and net outlays; published in $ millions and converted to USD.",
+  "rowSchema": ["subAgency", "program", "amount", "sourceAmount", "sourceRows", "grossOutlays", "applicableReceipts"],
+  "sourceCheck": {"groupRows": 7, "difference": 0, "publishedRoundingAdjustment": -1000000},
+  "note": "Displayed amounts are net outlays; each row retains its published gross outlays and applicable receipts.",
+  "accountResearch": {"accountCount": 21, "largeAccountCount": 4, "netAccountOutlays": -8204003639.29, "threshold": 1000000000, "sourceUrl": "https://fiscal.treasury.gov/system/files/files/reports-statements/combined-statement/cs2024/c51.xlsx"},
+  "largeAccountSchema": ["treasuryAccount", "title", "netOutlays", "availabilityRows"],
+  "largeAccountBasis": "Exact Combined Statement net outlays by appropriation or fund account. This is a research cross-section of the same department, not another amount to add to MTS classification rows.",
+  "largeAccountRows": [
+    ["073-4150-000", "Disaster Direct Loan Financing Account, Small Business Administration", -49371513715.72, 1],
+    ["073-1152-000", "Disaster Loans Program Account, Small Business Administration", 34146134847.27, 2],
+    ["073-4149-000", "Business Loan and Investment Guaranteed Loan Financing Account, Small Business Administration", 5016037925.45, 1],
+    ["073-0100-000", "Salaries and Expenses, Small Business Administration", 1035511814.24, 14]
+  ],
+  "rows": [
+    ["Small Business Administration", "Salaries and Expenses", 1036000000, 1036000000, 1, 1036000000, 0],
+    ["Small Business Administration", "Business Loans Program", 545000000, 545000000, 1, 546000000, 1000000],
+    ["Small Business Administration", "Disaster Loans Program", 34146000000, 34146000000, 1, 34146000000, 0],
+    ["Small Business Administration", "Other", 423000000, 423000000, 1, 452000000, 30000000],
+    ["Small Business Administration", "Proprietary Receipts from the Public", -2945000000, -2945000000, 1, 0, 2945000000],
+    ["Small Business Administration", "Intrabudgetary Transactions", -7000000, -7000000, 1, -7000000, 0],
+    ["Small Business Administration", "Published Table 5 rounding adjustment", -1000000, -1000000, 0, -1000000, 0]
+  ]
+}

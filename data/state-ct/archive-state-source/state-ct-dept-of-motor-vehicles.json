@@ -1,0 +1,175 @@
+{
+  "scope": "Connecticut",
+  "code": "ct",
+  "department": "Dept. of Motor Vehicles",
+  "fiscalYear": 2024,
+  "ledgerAmount": 23777818.99,
+  "sourceTotal": 25336863.41,
+  "sourceUrl": "https://data.ct.gov/resource/ajdm-rvz7.json?$select=department,program,sum(amount)%20as%20amount,count(*)%20as%20records&$where=fiscal_year=2024&$group=department,program",
+  "rowSchema": [
+    "subAgency",
+    "program",
+    "amount",
+    "sourceAmount",
+    "sourceRows"
+  ],
+  "rows": [
+    [
+      "Dept. of Motor Vehicles",
+      "Dept. of Motor Vehicles · Other Expenses",
+      17540655.9,
+      17540655.9,
+      9239
+    ],
+    [
+      "Dept. of Motor Vehicles",
+      "Dept. of Motor Vehicles · DMV Modernization",
+      4038056.81,
+      4038056.81,
+      92
+    ],
+    [
+      "Dept. of Motor Vehicles",
+      "Dept. of Motor Vehicles · High Priority ITD Grant FY2017",
+      901601.89,
+      901601.89,
+      13
+    ],
+    [
+      "Dept. of Motor Vehicles",
+      "Dept. of Motor Vehicles · ARPA-IT Modernization",
+      500000,
+      500000,
+      25
+    ],
+    [
+      "Dept. of Motor Vehicles",
+      "Dept. of Motor Vehicles · Equipment",
+      468756,
+      468756,
+      120
+    ],
+    [
+      "Dept. of Motor Vehicles",
+      "Dept. of Motor Vehicles · MCSAP Basic Grant   MC-05-09-1",
+      352981.18,
+      352981.18,
+      164
+    ],
+    [
+      "Dept. of Motor Vehicles",
+      "Dept. of Motor Vehicles · CVISN Project",
+      316800,
+      316800,
+      4
+    ],
+    [
+      "Dept. of Motor Vehicles",
+      "Dept. of Motor Vehicles · CDL Improvement Grant",
+      226187.31,
+      226187.31,
+      42
+    ],
+    [
+      "Dept. of Motor Vehicles",
+      "Dept. of Motor Vehicles · DMV-ALTERATION & REPAIR BLDG",
+      201243.1,
+      201243.1,
+      21
+    ],
+    [
+      "Dept. of Motor Vehicles",
+      "Dept. of Motor Vehicles · Non-Budgeted Operating Approp",
+      188127.48,
+      188127.48,
+      226
+    ],
+    [
+      "Dept. of Motor Vehicles",
+      "Dept. of Motor Vehicles · High Crash Corridor Operations",
+      120471.93,
+      120471.93,
+      18
+    ],
+    [
+      "Dept. of Motor Vehicles",
+      "Dept. of Motor Vehicles · Coronavirus Relief Fund",
+      116159.23,
+      116159.23,
+      1
+    ],
+    [
+      "Dept. of Motor Vehicles",
+      "Dept. of Motor Vehicles · IT Capital Investment Program",
+      82869.66,
+      82869.66,
+      10
+    ],
+    [
+      "Dept. of Motor Vehicles",
+      "Dept. of Motor Vehicles · PSA Video",
+      70000,
+      70000,
+      1
+    ],
+    [
+      "Dept. of Motor Vehicles",
+      "Dept. of Motor Vehicles · UPGRADE OF MOTOR VEHICLE SYS",
+      66601.88,
+      66601.88,
+      2
+    ],
+    [
+      "Dept. of Motor Vehicles",
+      "Dept. of Motor Vehicles · ENERGY PROJECTS-ST BUILDINGS",
+      57366.25,
+      57366.25,
+      2
+    ],
+    [
+      "Dept. of Motor Vehicles",
+      "Dept. of Motor Vehicles · HSGP 2013",
+      42000,
+      42000,
+      12
+    ],
+    [
+      "Dept. of Motor Vehicles",
+      "Dept. of Motor Vehicles · Upgrade DMV IT Systems",
+      32202.79,
+      32202.79,
+      2
+    ],
+    [
+      "Dept. of Motor Vehicles",
+      "Dept. of Motor Vehicles · UCONN Commemorative Plates",
+      7780,
+      7780,
+      2
+    ],
+    [
+      "Dept. of Motor Vehicles",
+      "Dept. of Motor Vehicles · DMV-RENOVATE & IMPROVE BLDGS",
+      6844.69,
+      6844.69,
+      1
+    ],
+    [
+      "Dept. of Motor Vehicles",
+      "Dept. of Motor Vehicles · Teen Driving Grant",
+      102,
+      102,
+      8
+    ],
+    [
+      "Dept. of Motor Vehicles",
+      "Dept. of Motor Vehicles · INFRA REPAIR & IMPROVEMENTS",
+      55.31,
+      55.31,
+      1
+    ]
+  ],
+  "hierarchyNote": "The source does not identify a separate sub-agency column; direct-managed rows repeat the parent entity.",
+  "sourceBasis": "official source amount",
+  "note": "Amounts are shown on the official source basis; no comparator normalization was applied."
+}

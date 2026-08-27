@@ -1,0 +1,126 @@
+{
+  "scope": "Massachusetts",
+  "code": "ma",
+  "department": "LOTTERY AND GAMING COMMISSION (LOT)",
+  "fiscalYear": 2024,
+  "ledgerAmount": 923042859.93,
+  "sourceTotal": 1004900158,
+  "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000",
+  "rowSchema": [
+    "subAgency",
+    "program",
+    "amount",
+    "sourceAmount",
+    "sourceRows"
+  ],
+  "rows": [
+    [
+      "LOTTERY AND GAMING COMMISSION (LOT)",
+      "LOTTERY AND GAMING COMMISSION (LOT) · (TT) LOANS AND SPECIAL PAYMENTS",
+      880858354.58,
+      880858354.58,
+      1979
+    ],
+    [
+      "LOTTERY AND GAMING COMMISSION (LOT)",
+      "LOTTERY AND GAMING COMMISSION (LOT) · (EE) ADMINISTRATIVE EXPENSES",
+      40418331.77,
+      40418331.77,
+      1048
+    ],
+    [
+      "LOTTERY AND GAMING COMMISSION (LOT)",
+      "LOTTERY AND GAMING COMMISSION (LOT) · (AA) REGULAR EMPLOYEE COMPENSATION",
+      39919393.6,
+      39919393.6,
+      1828
+    ],
+    [
+      "LOTTERY AND GAMING COMMISSION (LOT)",
+      "LOTTERY AND GAMING COMMISSION (LOT) · (UU) IT NON-PAYROLL EXPENSES",
+      20978586.06,
+      20978586.06,
+      593
+    ],
+    [
+      "LOTTERY AND GAMING COMMISSION (LOT)",
+      "LOTTERY AND GAMING COMMISSION (LOT) · (HH) CONSULTANT SVCS (TO DEPTS)",
+      9484812.05,
+      9484812.05,
+      1863
+    ],
+    [
+      "LOTTERY AND GAMING COMMISSION (LOT)",
+      "LOTTERY AND GAMING COMMISSION (LOT) · (GG) ENERGY COSTS AND SPACE RENTAL",
+      5809276.92,
+      5809276.92,
+      252
+    ],
+    [
+      "LOTTERY AND GAMING COMMISSION (LOT)",
+      "LOTTERY AND GAMING COMMISSION (LOT) · (NN) INFRASTRUCTURE:",
+      2226924.2,
+      2226924.2,
+      562
+    ],
+    [
+      "LOTTERY AND GAMING COMMISSION (LOT)",
+      "LOTTERY AND GAMING COMMISSION (LOT) · (KK) EQUIPMENT PURCHASE",
+      2214015.32,
+      2214015.32,
+      85
+    ],
+    [
+      "LOTTERY AND GAMING COMMISSION (LOT)",
+      "LOTTERY AND GAMING COMMISSION (LOT) · (JJ) OPERATIONAL SERVICES",
+      1124977.36,
+      1124977.36,
+      293
+    ],
+    [
+      "LOTTERY AND GAMING COMMISSION (LOT)",
+      "LOTTERY AND GAMING COMMISSION (LOT) · (LL) EQUIPMENT LEASE-MAINTAIN/REPAR",
+      989264.72,
+      989264.72,
+      569
+    ],
+    [
+      "LOTTERY AND GAMING COMMISSION (LOT)",
+      "LOTTERY AND GAMING COMMISSION (LOT) · (DD) PENSION & INSURANCE RELATED EX",
+      492721.21,
+      492721.21,
+      21
+    ],
+    [
+      "LOTTERY AND GAMING COMMISSION (LOT)",
+      "LOTTERY AND GAMING COMMISSION (LOT) · (CC) SPECIAL EMPLOYEES",
+      177142.35,
+      177142.35,
+      95
+    ],
+    [
+      "LOTTERY AND GAMING COMMISSION (LOT)",
+      "LOTTERY AND GAMING COMMISSION (LOT) · (BB) REGULAR EMPLOYEE RELATED EXPEN",
+      128114.96,
+      128114.96,
+      299
+    ],
+    [
+      "LOTTERY AND GAMING COMMISSION (LOT)",
+      "LOTTERY AND GAMING COMMISSION (LOT) · (MM) PURCHASED CLIENT/PROGRAM SVCS",
+      62579.58,
+      62579.58,
+      9
+    ],
+    [
+      "LOTTERY AND GAMING COMMISSION (LOT)",
+      "LOTTERY AND GAMING COMMISSION (LOT) · (FF) FACILITY OPERATIONAL EXPENSES",
+      15663.32,
+      15663.32,
+      12
+    ]
+  ],
+  "hierarchyNote": "The source does not identify a separate sub-agency column; direct-managed rows repeat the parent entity.",
+  "sourceBasis": "official source amount",
+  "note": "Amounts are shown on the official source basis; no comparator normalization was applied."
+}

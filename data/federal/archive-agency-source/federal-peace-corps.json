@@ -1,0 +1,206 @@
+{
+  "scope": "United States",
+  "code": "federal",
+  "department": "Peace Corps",
+  "fiscalYear": 2024,
+  "ledgerAmount": 361993306.18,
+  "sourceTotal": 493335669.45,
+  "sourceUrl": "https://api.usaspending.gov/api/v2/agency/1125/object_class/?fiscal_year=2024&limit=100&page=1",
+  "sourceUrls": [
+    [
+      "FY2024 gross outlays by object class",
+      "https://api.usaspending.gov/api/v2/agency/1125/object_class/?fiscal_year=2024&limit=100&page=1"
+    ],
+    [
+      "FY2024 agency budgetary resources total",
+      "https://api.usaspending.gov/api/v2/agency/1125/budgetary_resources/?fiscal_year=2024"
+    ]
+  ],
+  "rowSchema": [
+    "subAgency",
+    "program",
+    "amount",
+    "sourceAmount",
+    "sourceRows"
+  ],
+  "rows": [
+    [
+      "Peace Corps",
+      "Full-time permanent",
+      104459943.77,
+      104459943.77,
+      null
+    ],
+    [
+      "Peace Corps",
+      "Other services from non-Federal sources",
+      108949481.62,
+      108949481.62,
+      null
+    ],
+    [
+      "Peace Corps",
+      "Civilian personnel benefits",
+      58942622.36,
+      58942622.36,
+      null
+    ],
+    [
+      "Peace Corps",
+      "Military personnel benefits",
+      28267592.68,
+      28267592.68,
+      null
+    ],
+    [
+      "Peace Corps",
+      "Travel and transportation of persons",
+      23924864.01,
+      23924864.01,
+      null
+    ],
+    [
+      "Peace Corps",
+      "Medical care",
+      21570781.46,
+      21570781.46,
+      null
+    ],
+    [
+      "Peace Corps",
+      "Other than full-time permanent",
+      24346398.71,
+      24346398.71,
+      null
+    ],
+    [
+      "Peace Corps",
+      "Advisory and assistance services",
+      32596503.02,
+      32596503.02,
+      null
+    ],
+    [
+      "Peace Corps",
+      "Communications, utilities, and miscellaneous charges",
+      13338623.19,
+      13338623.19,
+      null
+    ],
+    [
+      "Peace Corps",
+      "Rental payments to others",
+      16636764.15,
+      16636764.15,
+      null
+    ],
+    [
+      "Peace Corps",
+      "Other goods and services from Federal sources",
+      12959951.57,
+      12959951.57,
+      null
+    ],
+    [
+      "Peace Corps",
+      "Supplies and materials",
+      9724207.4,
+      9724207.4,
+      null
+    ],
+    [
+      "Peace Corps",
+      "Rental payments to GSA",
+      10436464.02,
+      10436464.02,
+      null
+    ],
+    [
+      "Peace Corps",
+      "Equipment",
+      7405708.06,
+      7405708.06,
+      null
+    ],
+    [
+      "Peace Corps",
+      "Operation and maintenance of equipment",
+      7294670.16,
+      7294670.16,
+      null
+    ],
+    [
+      "Peace Corps",
+      "Transportation of things",
+      2181916.3,
+      2181916.3,
+      null
+    ],
+    [
+      "Peace Corps",
+      "Operation and maintenance of facilities",
+      2903693.47,
+      2903693.47,
+      null
+    ],
+    [
+      "Peace Corps",
+      "Other personnel compensation",
+      2324100.81,
+      2324100.81,
+      null
+    ],
+    [
+      "Peace Corps",
+      "Grants, subsidies, and contributions",
+      2137535.75,
+      2137535.75,
+      null
+    ],
+    [
+      "Peace Corps",
+      "Land and structures",
+      1871694.95,
+      1871694.95,
+      null
+    ],
+    [
+      "Peace Corps",
+      "Benefits for former personnel",
+      336157.37,
+      336157.37,
+      null
+    ],
+    [
+      "Peace Corps",
+      "Printing and reproduction",
+      621612.23,
+      621612.23,
+      null
+    ],
+    [
+      "Peace Corps",
+      "Insurance claims and indemnities",
+      98863.65,
+      98863.65,
+      null
+    ],
+    [
+      "Peace Corps",
+      "Interest and dividends",
+      5518.74,
+      5518.74,
+      null
+    ]
+  ],
+  "sourceBasis": "official source amount",
+  "sourceCheck": {
+    "objectClassRows": 24,
+    "objectClassTotal": 493335669.45,
+    "agencyTotal": 493335669.45,
+    "difference": 0
+  },
+  "normalizationAdjustment": 0,
+  "hierarchyNote": "The source endpoint returns agency-level object-class aggregates; no individual employees or payees are included.",
+  "note": "Amounts are shown on the official source basis; no comparator normalization was applied."
+}

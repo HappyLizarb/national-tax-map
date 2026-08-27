@@ -1,0 +1,126 @@
+{
+  "scope": "Massachusetts",
+  "code": "ma",
+  "department": "SHERIFF DEPARTMENT FRANKLIN (SDF)",
+  "fiscalYear": 2024,
+  "ledgerAmount": 22623070.32,
+  "sourceTotal": 24629329.72,
+  "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000",
+  "rowSchema": [
+    "subAgency",
+    "program",
+    "amount",
+    "sourceAmount",
+    "sourceRows"
+  ],
+  "rows": [
+    [
+      "SHERIFF DEPARTMENT FRANKLIN (SDF)",
+      "SHERIFF DEPARTMENT FRANKLIN (SDF) · (AA) REGULAR EMPLOYEE COMPENSATION",
+      19814257.58,
+      19814257.58,
+      499
+    ],
+    [
+      "SHERIFF DEPARTMENT FRANKLIN (SDF)",
+      "SHERIFF DEPARTMENT FRANKLIN (SDF) · (FF) FACILITY OPERATIONAL EXPENSES",
+      1504265.28,
+      1504265.28,
+      1178
+    ],
+    [
+      "SHERIFF DEPARTMENT FRANKLIN (SDF)",
+      "SHERIFF DEPARTMENT FRANKLIN (SDF) · (GG) ENERGY COSTS AND SPACE RENTAL",
+      731330.02,
+      731330.02,
+      149
+    ],
+    [
+      "SHERIFF DEPARTMENT FRANKLIN (SDF)",
+      "SHERIFF DEPARTMENT FRANKLIN (SDF) · (CC) SPECIAL EMPLOYEES",
+      551998.99,
+      551998.99,
+      202
+    ],
+    [
+      "SHERIFF DEPARTMENT FRANKLIN (SDF)",
+      "SHERIFF DEPARTMENT FRANKLIN (SDF) · (MM) PURCHASED CLIENT/PROGRAM SVCS",
+      390622.34,
+      390622.34,
+      38
+    ],
+    [
+      "SHERIFF DEPARTMENT FRANKLIN (SDF)",
+      "SHERIFF DEPARTMENT FRANKLIN (SDF) · (KK) EQUIPMENT PURCHASE",
+      371288.74,
+      371288.74,
+      73
+    ],
+    [
+      "SHERIFF DEPARTMENT FRANKLIN (SDF)",
+      "SHERIFF DEPARTMENT FRANKLIN (SDF) · (UU) IT NON-PAYROLL EXPENSES",
+      310198.61,
+      310198.61,
+      321
+    ],
+    [
+      "SHERIFF DEPARTMENT FRANKLIN (SDF)",
+      "SHERIFF DEPARTMENT FRANKLIN (SDF) · (NN) INFRASTRUCTURE:",
+      250937.52,
+      250937.52,
+      406
+    ],
+    [
+      "SHERIFF DEPARTMENT FRANKLIN (SDF)",
+      "SHERIFF DEPARTMENT FRANKLIN (SDF) · (EE) ADMINISTRATIVE EXPENSES",
+      246038.85,
+      246038.85,
+      452
+    ],
+    [
+      "SHERIFF DEPARTMENT FRANKLIN (SDF)",
+      "SHERIFF DEPARTMENT FRANKLIN (SDF) · (BB) REGULAR EMPLOYEE RELATED EXPEN",
+      171378.45,
+      171378.45,
+      106
+    ],
+    [
+      "SHERIFF DEPARTMENT FRANKLIN (SDF)",
+      "SHERIFF DEPARTMENT FRANKLIN (SDF) · (DD) PENSION & INSURANCE RELATED EX",
+      144329.29,
+      144329.29,
+      26
+    ],
+    [
+      "SHERIFF DEPARTMENT FRANKLIN (SDF)",
+      "SHERIFF DEPARTMENT FRANKLIN (SDF) · (HH) CONSULTANT SVCS (TO DEPTS)",
+      76745.67,
+      76745.67,
+      36
+    ],
+    [
+      "SHERIFF DEPARTMENT FRANKLIN (SDF)",
+      "SHERIFF DEPARTMENT FRANKLIN (SDF) · (LL) EQUIPMENT LEASE-MAINTAIN/REPAR",
+      33377.02,
+      33377.02,
+      51
+    ],
+    [
+      "SHERIFF DEPARTMENT FRANKLIN (SDF)",
+      "SHERIFF DEPARTMENT FRANKLIN (SDF) · (JJ) OPERATIONAL SERVICES",
+      32561.36,
+      32561.36,
+      16
+    ],
+    [
+      "SHERIFF DEPARTMENT FRANKLIN (SDF)",
+      "SHERIFF DEPARTMENT FRANKLIN (SDF) · (99) PAYROLL REJECTS",
+      0,
+      0,
+      39
+    ]
+  ],
+  "hierarchyNote": "The source does not identify a separate sub-agency column; direct-managed rows repeat the parent entity.",
+  "sourceBasis": "official source amount",
+  "note": "Amounts are shown on the official source basis; no comparator normalization was applied."
+}

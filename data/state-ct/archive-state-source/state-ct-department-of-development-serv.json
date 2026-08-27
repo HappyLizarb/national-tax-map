@@ -1,0 +1,182 @@
+{
+  "scope": "Connecticut",
+  "code": "ct",
+  "department": "Department of Development Serv",
+  "fiscalYear": 2024,
+  "ledgerAmount": 1227386790.42,
+  "sourceTotal": 1307863074.87,
+  "sourceUrl": "https://data.ct.gov/resource/ajdm-rvz7.json?$select=department,program,sum(amount)%20as%20amount,count(*)%20as%20records&$where=fiscal_year=2024&$group=department,program",
+  "rowSchema": [
+    "subAgency",
+    "program",
+    "amount",
+    "sourceAmount",
+    "sourceRows"
+  ],
+  "rows": [
+    [
+      "Department of Development Serv",
+      "Department of Development Serv · Community Residential Services",
+      833287309.37,
+      833287309.37,
+      11823
+    ],
+    [
+      "Department of Development Serv",
+      "Department of Development Serv · Employ Opportunties & Day Srvs",
+      350934973.61,
+      350934973.61,
+      9103
+    ],
+    [
+      "Department of Development Serv",
+      "Department of Development Serv · Provider Bonuses",
+      50085274.41,
+      50085274.41,
+      417
+    ],
+    [
+      "Department of Development Serv",
+      "Department of Development Serv · Other Expenses",
+      20629828.89,
+      20629828.89,
+      31168
+    ],
+    [
+      "Department of Development Serv",
+      "Department of Development Serv · ARPA-One-Time Stabilization",
+      20000000,
+      20000000,
+      56
+    ],
+    [
+      "Department of Development Serv",
+      "Department of Development Serv · Behavioral Services Program",
+      10652318.04,
+      10652318.04,
+      386
+    ],
+    [
+      "Department of Development Serv",
+      "Department of Development Serv · Rent Subsidy Program",
+      5177396.54,
+      5177396.54,
+      7244
+    ],
+    [
+      "Department of Development Serv",
+      "Department of Development Serv · Family Support Grants",
+      3757607.99,
+      3757607.99,
+      2694
+    ],
+    [
+      "Department of Development Serv",
+      "Department of Development Serv · Emergency Placements",
+      2097453.55,
+      2097453.55,
+      1557
+    ],
+    [
+      "Department of Development Serv",
+      "Department of Development Serv · ARPA-Improve Camps",
+      2000000,
+      2000000,
+      4
+    ],
+    [
+      "Department of Development Serv",
+      "Department of Development Serv · Clinical Services",
+      1924337.88,
+      1924337.88,
+      3889
+    ],
+    [
+      "Department of Development Serv",
+      "Department of Development Serv · ID Partnership Initiatives",
+      1879445.19,
+      1879445.19,
+      191
+    ],
+    [
+      "Department of Development Serv",
+      "Department of Development Serv · FIRE  SAFETY & ENVIRON IMPROVE",
+      1651617.61,
+      1651617.61,
+      239
+    ],
+    [
+      "Department of Development Serv",
+      "Department of Development Serv · Housing Supports And Services",
+      1234378.26,
+      1234378.26,
+      28
+    ],
+    [
+      "Department of Development Serv",
+      "Department of Development Serv · Capital Equip Purchase Fund",
+      713134.77,
+      713134.77,
+      152
+    ],
+    [
+      "Department of Development Serv",
+      "Department of Development Serv · DDS Distance Learning",
+      472755.53,
+      472755.53,
+      599
+    ],
+    [
+      "Department of Development Serv",
+      "Department of Development Serv · Developmental Disabilities",
+      403819.53,
+      403819.53,
+      190
+    ],
+    [
+      "Department of Development Serv",
+      "Department of Development Serv · Personal Services",
+      375102.5,
+      375102.5,
+      7
+    ],
+    [
+      "Department of Development Serv",
+      "Department of Development Serv · IT Capital Investment Program",
+      356971.65,
+      356971.65,
+      38
+    ],
+    [
+      "Department of Development Serv",
+      "Department of Development Serv · State Energy Program",
+      114917.21,
+      114917.21,
+      3
+    ],
+    [
+      "Department of Development Serv",
+      "Department of Development Serv · Electronic Visit Verification",
+      90880.34,
+      90880.34,
+      26
+    ],
+    [
+      "Department of Development Serv",
+      "Department of Development Serv · Expanding Public Hlth Wrkforce",
+      22500,
+      22500,
+      1
+    ],
+    [
+      "Department of Development Serv",
+      "Department of Development Serv · NASDDDS",
+      1052,
+      1052,
+      1
+    ]
+  ],
+  "hierarchyNote": "The source does not identify a separate sub-agency column; direct-managed rows repeat the parent entity.",
+  "sourceBasis": "official source amount",
+  "note": "Amounts are shown on the official source basis; no comparator normalization was applied."
+}

@@ -1,0 +1,119 @@
+{
+  "scope": "Massachusetts",
+  "code": "ma",
+  "department": "CAPITAL ASSET MANAGEMENT AND MAINTENANCE DIVISION (DCP)",
+  "fiscalYear": 2024,
+  "ledgerAmount": 531910213.18,
+  "sourceTotal": 579081081.14,
+  "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000",
+  "rowSchema": [
+    "subAgency",
+    "program",
+    "amount",
+    "sourceAmount",
+    "sourceRows"
+  ],
+  "rows": [
+    [
+      "CAPITAL ASSET MANAGEMENT AND MAINTENANCE DIVISION (DCP)",
+      "CAPITAL ASSET MANAGEMENT AND MAINTENANCE DIVISION (DCP) · (NN) INFRASTRUCTURE:",
+      500812799.81,
+      500812799.81,
+      3755
+    ],
+    [
+      "CAPITAL ASSET MANAGEMENT AND MAINTENANCE DIVISION (DCP)",
+      "CAPITAL ASSET MANAGEMENT AND MAINTENANCE DIVISION (DCP) · (AA) REGULAR EMPLOYEE COMPENSATION",
+      38531185.67,
+      38531185.67,
+      2288
+    ],
+    [
+      "CAPITAL ASSET MANAGEMENT AND MAINTENANCE DIVISION (DCP)",
+      "CAPITAL ASSET MANAGEMENT AND MAINTENANCE DIVISION (DCP) · (GG) ENERGY COSTS AND SPACE RENTAL",
+      23481898.7,
+      23481898.7,
+      1225
+    ],
+    [
+      "CAPITAL ASSET MANAGEMENT AND MAINTENANCE DIVISION (DCP)",
+      "CAPITAL ASSET MANAGEMENT AND MAINTENANCE DIVISION (DCP) · (JJ) OPERATIONAL SERVICES",
+      5869975.3,
+      5869975.3,
+      345
+    ],
+    [
+      "CAPITAL ASSET MANAGEMENT AND MAINTENANCE DIVISION (DCP)",
+      "CAPITAL ASSET MANAGEMENT AND MAINTENANCE DIVISION (DCP) · (FF) FACILITY OPERATIONAL EXPENSES",
+      3131475.96,
+      3131475.96,
+      111
+    ],
+    [
+      "CAPITAL ASSET MANAGEMENT AND MAINTENANCE DIVISION (DCP)",
+      "CAPITAL ASSET MANAGEMENT AND MAINTENANCE DIVISION (DCP) · (CC) SPECIAL EMPLOYEES",
+      2012256.4,
+      2012256.4,
+      825
+    ],
+    [
+      "CAPITAL ASSET MANAGEMENT AND MAINTENANCE DIVISION (DCP)",
+      "CAPITAL ASSET MANAGEMENT AND MAINTENANCE DIVISION (DCP) · (HH) CONSULTANT SVCS (TO DEPTS)",
+      1492937.29,
+      1492937.29,
+      87
+    ],
+    [
+      "CAPITAL ASSET MANAGEMENT AND MAINTENANCE DIVISION (DCP)",
+      "CAPITAL ASSET MANAGEMENT AND MAINTENANCE DIVISION (DCP) · (UU) IT NON-PAYROLL EXPENSES",
+      1378372.42,
+      1378372.42,
+      74
+    ],
+    [
+      "CAPITAL ASSET MANAGEMENT AND MAINTENANCE DIVISION (DCP)",
+      "CAPITAL ASSET MANAGEMENT AND MAINTENANCE DIVISION (DCP) · (KK) EQUIPMENT PURCHASE",
+      779703.01,
+      779703.01,
+      29
+    ],
+    [
+      "CAPITAL ASSET MANAGEMENT AND MAINTENANCE DIVISION (DCP)",
+      "CAPITAL ASSET MANAGEMENT AND MAINTENANCE DIVISION (DCP) · (EE) ADMINISTRATIVE EXPENSES",
+      526834.35,
+      526834.35,
+      396
+    ],
+    [
+      "CAPITAL ASSET MANAGEMENT AND MAINTENANCE DIVISION (DCP)",
+      "CAPITAL ASSET MANAGEMENT AND MAINTENANCE DIVISION (DCP) · (TT) LOANS AND SPECIAL PAYMENTS",
+      450000,
+      450000,
+      1
+    ],
+    [
+      "CAPITAL ASSET MANAGEMENT AND MAINTENANCE DIVISION (DCP)",
+      "CAPITAL ASSET MANAGEMENT AND MAINTENANCE DIVISION (DCP) · (LL) EQUIPMENT LEASE-MAINTAIN/REPAR",
+      401368.63,
+      401368.63,
+      202
+    ],
+    [
+      "CAPITAL ASSET MANAGEMENT AND MAINTENANCE DIVISION (DCP)",
+      "CAPITAL ASSET MANAGEMENT AND MAINTENANCE DIVISION (DCP) · (BB) REGULAR EMPLOYEE RELATED EXPEN",
+      212273.6,
+      212273.6,
+      661
+    ],
+    [
+      "CAPITAL ASSET MANAGEMENT AND MAINTENANCE DIVISION (DCP)",
+      "CAPITAL ASSET MANAGEMENT AND MAINTENANCE DIVISION (DCP) · (99) PAYROLL REJECTS",
+      0,
+      0,
+      10
+    ]
+  ],
+  "hierarchyNote": "The source does not identify a separate sub-agency column; direct-managed rows repeat the parent entity.",
+  "sourceBasis": "official source amount",
+  "note": "Amounts are shown on the official source basis; no comparator normalization was applied."
+}

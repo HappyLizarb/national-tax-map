@@ -1,0 +1,44 @@
+{
+  "scope": "United States",
+  "code": "federal",
+  "fiscalYear": 2024,
+  "department": "Office of Personnel Management",
+  "sourceTotal": 126173000000,
+  "sourceUrl": "https://fiscal.treasury.gov/system/files/files/reports-statements/mts/mts0924.pdf",
+  "sourceUrls": [["Treasury FY2024 MTS Table 5", "https://fiscal.treasury.gov/system/files/files/reports-statements/mts/mts0924.pdf"]],
+  "relatedSources": [["USAspending gross research (supporting detail)", "data/federal/archive-agency-source/federal-office-of-personnel-management.json"]],
+  "sourceBasis": "Treasury MTS Table 5 current-fiscal-year gross outlays, applicable receipts, and net outlays; published in $ millions and converted to USD.",
+  "rowSchema": ["subAgency", "program", "amount", "sourceAmount", "sourceRows", "grossOutlays", "applicableReceipts"],
+  "sourceCheck": {"groupRows": 12, "difference": 0, "publishedRoundingAdjustment": -1000000},
+  "note": "Displayed amounts are net outlays; each row retains its published gross outlays and applicable receipts.",
+  "accountResearch": {"accountCount": 16, "largeAccountCount": 6, "netAccountOutlays": 180165496773.73, "threshold": 1000000000, "sourceUrl": "https://fiscal.treasury.gov/system/files/files/reports-statements/combined-statement/cs2024/c50.xlsx"},
+  "largeAccountSchema": ["treasuryAccount", "title", "netOutlays", "availabilityRows"],
+  "largeAccountBasis": "Exact Combined Statement net outlays by appropriation or fund account. This is a research cross-section of the same department, not another amount to add to MTS classification rows.",
+  "itemBreakdownSchema": ["treasuryAccount", "title", "netOutlays"],
+  "itemBreakdownBasis": "Exact FY2024 Treasury accounts grouped to one MTS row; each final bridge reconciles account cents to the parent published in rounded $ millions.",
+  "largeAccountRows": [
+    ["024-8135-000", "Civil Service Retirement and Disability Fund, Office of Personnel Management", 107734801237.49, 1],
+    ["024-0200-000", "Payment to Civil Service Retirement and Disability Fund, Office of Personnel Management", 53255231701, 1],
+    ["024-0206-000", "Government Payment for Annuitants, Employees' Health Benefits, Office of Personnel Management", 15031720185.05, 1],
+    ["024-5391-000", "Postal Service Contributions for Retiree Health Benefits, Office of Personnel Management", 4542567537.6, 1],
+    ["024-8424-000", "Employees' Life Insurance Fund, Office of Personnel Management", -2438996210.49, 1],
+    ["024-8440-000", "Employees' Health Benefits Fund, Office of Personnel Management", 1803507960.71, 1]
+  ],
+  "itemBreakdowns": [
+    {"parent": ["Intrabudgetary Transactions \u203a Civil Service Retirement and Disability Fund", "General Fund Contributions", -53255000000], "accountCount": 1, "rows": [["024-X-8135-005", "Federal Contribution, Civil Service Retirement and Disability Fund", -53255231701], ["MTS-rounding", "Published MTS million-dollar rounding bridge", 231701]], "sourceUrl": "https://fiscal.treasury.gov/system/files/files/reports-statements/combined-statement/cs2024/tbb.xlsx", "basis": "Exact intragovernmental receipt accounts shown as negative offsets."}
+  ],
+  "rows": [
+    ["Office of Personnel Management", "Government Payment for Annuitants, Employees Health and Life Insurance Benefits", 15074000000, 15074000000, 1, 15074000000, 0],
+    ["Office of Personnel Management", "Payment to Civil Service Retirement and Disability Fund", 53255000000, 53255000000, 1, 53255000000, 0],
+    ["Office of Personnel Management", "Postal Service Retiree Health Benefits Fund", 4543000000, 4543000000, 1, 4543000000, 0],
+    ["Office of Personnel Management", "Civil Service Retirement and Disability Fund", 107735000000, 107735000000, 1, 107735000000, 0],
+    ["Office of Personnel Management", "Employees Life Insurance Fund", -2439000000, -2439000000, 1, 3897000000, 6336000000],
+    ["Office of Personnel Management", "Employees and Retired Employees Health Benefits Fund", 1803000000, 1803000000, 1, 70120000000, 68317000000],
+    ["Office of Personnel Management", "Other", 195000000, 195000000, 1, 195000000, 0],
+    ["Office of Personnel Management", "Proprietary Receipts from the Public", -1000000, -1000000, 1, 0, 1000000],
+    ["Intrabudgetary Transactions", "Postal Service Contributions", -689000000, -689000000, 1, -689000000, 0],
+    ["Intrabudgetary Transactions \u203a Civil Service Retirement and Disability Fund", "General Fund Contributions", -53255000000, -53255000000, 1, -53255000000, 0],
+    ["Intrabudgetary Transactions \u203a Civil Service Retirement and Disability Fund", "Other", -47000000, -47000000, 1, -47000000, 0],
+    ["Office of Personnel Management", "Published Table 5 rounding adjustment", -1000000, -1000000, 0, -1000000, 0]
+  ]
+}

@@ -1,0 +1,126 @@
+{
+  "scope": "Massachusetts",
+  "code": "ma",
+  "department": "WORCESTER STATE UNIVERSITY (WOR)",
+  "fiscalYear": 2024,
+  "ledgerAmount": 103668811.85,
+  "sourceTotal": 112862370.68,
+  "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000",
+  "rowSchema": [
+    "subAgency",
+    "program",
+    "amount",
+    "sourceAmount",
+    "sourceRows"
+  ],
+  "rows": [
+    [
+      "WORCESTER STATE UNIVERSITY (WOR)",
+      "WORCESTER STATE UNIVERSITY (WOR) · (AA) REGULAR EMPLOYEE COMPENSATION",
+      46807859.01,
+      46807859.01,
+      1275
+    ],
+    [
+      "WORCESTER STATE UNIVERSITY (WOR)",
+      "WORCESTER STATE UNIVERSITY (WOR) · (RR) BENEFIT PROGRAMS",
+      19328692.44,
+      19328692.44,
+      25
+    ],
+    [
+      "WORCESTER STATE UNIVERSITY (WOR)",
+      "WORCESTER STATE UNIVERSITY (WOR) · (CC) SPECIAL EMPLOYEES",
+      11650706.55,
+      11650706.55,
+      547
+    ],
+    [
+      "WORCESTER STATE UNIVERSITY (WOR)",
+      "WORCESTER STATE UNIVERSITY (WOR) · (NN) INFRASTRUCTURE:",
+      10516177.74,
+      10516177.74,
+      44
+    ],
+    [
+      "WORCESTER STATE UNIVERSITY (WOR)",
+      "WORCESTER STATE UNIVERSITY (WOR) · (HH) CONSULTANT SVCS (TO DEPTS)",
+      4471284.09,
+      4471284.09,
+      12
+    ],
+    [
+      "WORCESTER STATE UNIVERSITY (WOR)",
+      "WORCESTER STATE UNIVERSITY (WOR) · (SS) DEBT PAYMENT",
+      4150852.61,
+      4150852.61,
+      6
+    ],
+    [
+      "WORCESTER STATE UNIVERSITY (WOR)",
+      "WORCESTER STATE UNIVERSITY (WOR) · (GG) ENERGY COSTS AND SPACE RENTAL",
+      4139875.75,
+      4139875.75,
+      9
+    ],
+    [
+      "WORCESTER STATE UNIVERSITY (WOR)",
+      "WORCESTER STATE UNIVERSITY (WOR) · (EE) ADMINISTRATIVE EXPENSES",
+      3104214.41,
+      3104214.41,
+      11
+    ],
+    [
+      "WORCESTER STATE UNIVERSITY (WOR)",
+      "WORCESTER STATE UNIVERSITY (WOR) · (JJ) OPERATIONAL SERVICES",
+      2657262.71,
+      2657262.71,
+      10
+    ],
+    [
+      "WORCESTER STATE UNIVERSITY (WOR)",
+      "WORCESTER STATE UNIVERSITY (WOR) · (FF) FACILITY OPERATIONAL EXPENSES",
+      2408182.39,
+      2408182.39,
+      11
+    ],
+    [
+      "WORCESTER STATE UNIVERSITY (WOR)",
+      "WORCESTER STATE UNIVERSITY (WOR) · (UU) IT NON-PAYROLL EXPENSES",
+      1475720.76,
+      1475720.76,
+      11
+    ],
+    [
+      "WORCESTER STATE UNIVERSITY (WOR)",
+      "WORCESTER STATE UNIVERSITY (WOR) · (LL) EQUIPMENT LEASE-MAINTAIN/REPAR",
+      996537.09,
+      996537.09,
+      10
+    ],
+    [
+      "WORCESTER STATE UNIVERSITY (WOR)",
+      "WORCESTER STATE UNIVERSITY (WOR) · (BB) REGULAR EMPLOYEE RELATED EXPEN",
+      663400.34,
+      663400.34,
+      91
+    ],
+    [
+      "WORCESTER STATE UNIVERSITY (WOR)",
+      "WORCESTER STATE UNIVERSITY (WOR) · (KK) EQUIPMENT PURCHASE",
+      491604.79,
+      491604.79,
+      10
+    ],
+    [
+      "WORCESTER STATE UNIVERSITY (WOR)",
+      "WORCESTER STATE UNIVERSITY (WOR) · (99) PAYROLL REJECTS",
+      0,
+      0,
+      2
+    ]
+  ],
+  "hierarchyNote": "The source does not identify a separate sub-agency column; direct-managed rows repeat the parent entity.",
+  "sourceBasis": "official source amount",
+  "note": "Amounts are shown on the official source basis; no comparator normalization was applied."
+}

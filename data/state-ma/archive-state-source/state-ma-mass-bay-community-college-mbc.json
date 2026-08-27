@@ -1,0 +1,133 @@
+{
+  "scope": "Massachusetts",
+  "code": "ma",
+  "department": "MASS BAY COMMUNITY COLLEGE (MBC)",
+  "fiscalYear": 2024,
+  "ledgerAmount": 61069117.96,
+  "sourceTotal": 66484850.22,
+  "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000",
+  "rowSchema": [
+    "subAgency",
+    "program",
+    "amount",
+    "sourceAmount",
+    "sourceRows"
+  ],
+  "rows": [
+    [
+      "MASS BAY COMMUNITY COLLEGE (MBC)",
+      "MASS BAY COMMUNITY COLLEGE (MBC) · (AA) REGULAR EMPLOYEE COMPENSATION",
+      23863341.38,
+      23863341.38,
+      3191
+    ],
+    [
+      "MASS BAY COMMUNITY COLLEGE (MBC)",
+      "MASS BAY COMMUNITY COLLEGE (MBC) · (RR) BENEFIT PROGRAMS",
+      10498128.03,
+      10498128.03,
+      20
+    ],
+    [
+      "MASS BAY COMMUNITY COLLEGE (MBC)",
+      "MASS BAY COMMUNITY COLLEGE (MBC) · (CC) SPECIAL EMPLOYEES",
+      9850200.35,
+      9850200.35,
+      2139
+    ],
+    [
+      "MASS BAY COMMUNITY COLLEGE (MBC)",
+      "MASS BAY COMMUNITY COLLEGE (MBC) · (KK) EQUIPMENT PURCHASE",
+      5453748.19,
+      5453748.19,
+      37
+    ],
+    [
+      "MASS BAY COMMUNITY COLLEGE (MBC)",
+      "MASS BAY COMMUNITY COLLEGE (MBC) · (UU) IT NON-PAYROLL EXPENSES",
+      4038496.55,
+      4038496.55,
+      74
+    ],
+    [
+      "MASS BAY COMMUNITY COLLEGE (MBC)",
+      "MASS BAY COMMUNITY COLLEGE (MBC) · (NN) INFRASTRUCTURE:",
+      3113773.64,
+      3113773.64,
+      122
+    ],
+    [
+      "MASS BAY COMMUNITY COLLEGE (MBC)",
+      "MASS BAY COMMUNITY COLLEGE (MBC) · (HH) CONSULTANT SVCS (TO DEPTS)",
+      1903156.6,
+      1903156.6,
+      70
+    ],
+    [
+      "MASS BAY COMMUNITY COLLEGE (MBC)",
+      "MASS BAY COMMUNITY COLLEGE (MBC) · (SS) DEBT PAYMENT",
+      1636628.96,
+      1636628.96,
+      7
+    ],
+    [
+      "MASS BAY COMMUNITY COLLEGE (MBC)",
+      "MASS BAY COMMUNITY COLLEGE (MBC) · (FF) FACILITY OPERATIONAL EXPENSES",
+      1543357.37,
+      1543357.37,
+      84
+    ],
+    [
+      "MASS BAY COMMUNITY COLLEGE (MBC)",
+      "MASS BAY COMMUNITY COLLEGE (MBC) · (EE) ADMINISTRATIVE EXPENSES",
+      1478727.24,
+      1478727.24,
+      149
+    ],
+    [
+      "MASS BAY COMMUNITY COLLEGE (MBC)",
+      "MASS BAY COMMUNITY COLLEGE (MBC) · (GG) ENERGY COSTS AND SPACE RENTAL",
+      1431143.18,
+      1431143.18,
+      53
+    ],
+    [
+      "MASS BAY COMMUNITY COLLEGE (MBC)",
+      "MASS BAY COMMUNITY COLLEGE (MBC) · (JJ) OPERATIONAL SERVICES",
+      667508.02,
+      667508.02,
+      49
+    ],
+    [
+      "MASS BAY COMMUNITY COLLEGE (MBC)",
+      "MASS BAY COMMUNITY COLLEGE (MBC) · (LL) EQUIPMENT LEASE-MAINTAIN/REPAR",
+      424115.11,
+      424115.11,
+      58
+    ],
+    [
+      "MASS BAY COMMUNITY COLLEGE (MBC)",
+      "MASS BAY COMMUNITY COLLEGE (MBC) · (MM) PURCHASED CLIENT/PROGRAM SVCS",
+      388888.19,
+      388888.19,
+      11
+    ],
+    [
+      "MASS BAY COMMUNITY COLLEGE (MBC)",
+      "MASS BAY COMMUNITY COLLEGE (MBC) · (BB) REGULAR EMPLOYEE RELATED EXPEN",
+      114748.01,
+      114748.01,
+      387
+    ],
+    [
+      "MASS BAY COMMUNITY COLLEGE (MBC)",
+      "MASS BAY COMMUNITY COLLEGE (MBC) · (TT) LOANS AND SPECIAL PAYMENTS",
+      78889.4,
+      78889.4,
+      2
+    ]
+  ],
+  "hierarchyNote": "The source does not identify a separate sub-agency column; direct-managed rows repeat the parent entity.",
+  "sourceBasis": "official source amount",
+  "note": "Amounts are shown on the official source basis; no comparator normalization was applied."
+}

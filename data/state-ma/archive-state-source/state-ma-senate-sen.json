@@ -1,0 +1,91 @@
+{
+  "scope": "Massachusetts",
+  "code": "ma",
+  "department": "SENATE (SEN)",
+  "fiscalYear": 2024,
+  "ledgerAmount": 24689052.12,
+  "sourceTotal": 26878526.94,
+  "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000",
+  "rowSchema": [
+    "subAgency",
+    "program",
+    "amount",
+    "sourceAmount",
+    "sourceRows"
+  ],
+  "rows": [
+    [
+      "SENATE (SEN)",
+      "SENATE (SEN) · (AA) REGULAR EMPLOYEE COMPENSATION",
+      25620441.11,
+      25620441.11,
+      241
+    ],
+    [
+      "SENATE (SEN)",
+      "SENATE (SEN) · (CC) SPECIAL EMPLOYEES",
+      681846.57,
+      681846.57,
+      35
+    ],
+    [
+      "SENATE (SEN)",
+      "SENATE (SEN) · (HH) CONSULTANT SVCS (TO DEPTS)",
+      158041.75,
+      158041.75,
+      34
+    ],
+    [
+      "SENATE (SEN)",
+      "SENATE (SEN) · (NN) INFRASTRUCTURE:",
+      125904,
+      125904,
+      5
+    ],
+    [
+      "SENATE (SEN)",
+      "SENATE (SEN) · (LL) EQUIPMENT LEASE-MAINTAIN/REPAR",
+      109310.05,
+      109310.05,
+      96
+    ],
+    [
+      "SENATE (SEN)",
+      "SENATE (SEN) · (EE) ADMINISTRATIVE EXPENSES",
+      99343.26,
+      99343.26,
+      74
+    ],
+    [
+      "SENATE (SEN)",
+      "SENATE (SEN) · (UU) IT NON-PAYROLL EXPENSES",
+      45148.59,
+      45148.59,
+      8
+    ],
+    [
+      "SENATE (SEN)",
+      "SENATE (SEN) · (JJ) OPERATIONAL SERVICES",
+      15417.7,
+      15417.7,
+      3
+    ],
+    [
+      "SENATE (SEN)",
+      "SENATE (SEN) · (FF) FACILITY OPERATIONAL EXPENSES",
+      11538.28,
+      11538.28,
+      19
+    ],
+    [
+      "SENATE (SEN)",
+      "SENATE (SEN) · (BB) REGULAR EMPLOYEE RELATED EXPEN",
+      11535.63,
+      11535.63,
+      22
+    ]
+  ],
+  "hierarchyNote": "The source does not identify a separate sub-agency column; direct-managed rows repeat the parent entity.",
+  "sourceBasis": "official source amount",
+  "note": "Amounts are shown on the official source basis; no comparator normalization was applied."
+}

@@ -1,0 +1,126 @@
+{
+  "scope": "Massachusetts",
+  "code": "ma",
+  "department": "SHERIFF DEPARTMENT WORCESTER (SDW)",
+  "fiscalYear": 2024,
+  "ledgerAmount": 54680530.62,
+  "sourceTotal": 59529710.1,
+  "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000",
+  "rowSchema": [
+    "subAgency",
+    "program",
+    "amount",
+    "sourceAmount",
+    "sourceRows"
+  ],
+  "rows": [
+    [
+      "SHERIFF DEPARTMENT WORCESTER (SDW)",
+      "SHERIFF DEPARTMENT WORCESTER (SDW) · (AA) REGULAR EMPLOYEE COMPENSATION",
+      47470137.62,
+      47470137.62,
+      393
+    ],
+    [
+      "SHERIFF DEPARTMENT WORCESTER (SDW)",
+      "SHERIFF DEPARTMENT WORCESTER (SDW) · (FF) FACILITY OPERATIONAL EXPENSES",
+      3160220.57,
+      3160220.57,
+      1274
+    ],
+    [
+      "SHERIFF DEPARTMENT WORCESTER (SDW)",
+      "SHERIFF DEPARTMENT WORCESTER (SDW) · (NN) INFRASTRUCTURE:",
+      2369157.7,
+      2369157.7,
+      654
+    ],
+    [
+      "SHERIFF DEPARTMENT WORCESTER (SDW)",
+      "SHERIFF DEPARTMENT WORCESTER (SDW) · (GG) ENERGY COSTS AND SPACE RENTAL",
+      2066004.64,
+      2066004.64,
+      429
+    ],
+    [
+      "SHERIFF DEPARTMENT WORCESTER (SDW)",
+      "SHERIFF DEPARTMENT WORCESTER (SDW) · (UU) IT NON-PAYROLL EXPENSES",
+      1902334.94,
+      1902334.94,
+      218
+    ],
+    [
+      "SHERIFF DEPARTMENT WORCESTER (SDW)",
+      "SHERIFF DEPARTMENT WORCESTER (SDW) · (KK) EQUIPMENT PURCHASE",
+      1002605.13,
+      1002605.13,
+      49
+    ],
+    [
+      "SHERIFF DEPARTMENT WORCESTER (SDW)",
+      "SHERIFF DEPARTMENT WORCESTER (SDW) · (BB) REGULAR EMPLOYEE RELATED EXPEN",
+      516164.46,
+      516164.46,
+      95
+    ],
+    [
+      "SHERIFF DEPARTMENT WORCESTER (SDW)",
+      "SHERIFF DEPARTMENT WORCESTER (SDW) · (EE) ADMINISTRATIVE EXPENSES",
+      280918.18,
+      280918.18,
+      553
+    ],
+    [
+      "SHERIFF DEPARTMENT WORCESTER (SDW)",
+      "SHERIFF DEPARTMENT WORCESTER (SDW) · (DD) PENSION & INSURANCE RELATED EX",
+      266262.25,
+      266262.25,
+      52
+    ],
+    [
+      "SHERIFF DEPARTMENT WORCESTER (SDW)",
+      "SHERIFF DEPARTMENT WORCESTER (SDW) · (CC) SPECIAL EMPLOYEES",
+      176191.13,
+      176191.13,
+      42
+    ],
+    [
+      "SHERIFF DEPARTMENT WORCESTER (SDW)",
+      "SHERIFF DEPARTMENT WORCESTER (SDW) · (HH) CONSULTANT SVCS (TO DEPTS)",
+      156411.16,
+      156411.16,
+      100
+    ],
+    [
+      "SHERIFF DEPARTMENT WORCESTER (SDW)",
+      "SHERIFF DEPARTMENT WORCESTER (SDW) · (JJ) OPERATIONAL SERVICES",
+      88700.46,
+      88700.46,
+      271
+    ],
+    [
+      "SHERIFF DEPARTMENT WORCESTER (SDW)",
+      "SHERIFF DEPARTMENT WORCESTER (SDW) · (MM) PURCHASED CLIENT/PROGRAM SVCS",
+      40147.5,
+      40147.5,
+      12
+    ],
+    [
+      "SHERIFF DEPARTMENT WORCESTER (SDW)",
+      "SHERIFF DEPARTMENT WORCESTER (SDW) · (LL) EQUIPMENT LEASE-MAINTAIN/REPAR",
+      34454.36,
+      34454.36,
+      87
+    ],
+    [
+      "SHERIFF DEPARTMENT WORCESTER (SDW)",
+      "SHERIFF DEPARTMENT WORCESTER (SDW) · (99) PAYROLL REJECTS",
+      0,
+      0,
+      86
+    ]
+  ],
+  "hierarchyNote": "The source does not identify a separate sub-agency column; direct-managed rows repeat the parent entity.",
+  "sourceBasis": "official source amount",
+  "note": "Amounts are shown on the official source basis; no comparator normalization was applied."
+}

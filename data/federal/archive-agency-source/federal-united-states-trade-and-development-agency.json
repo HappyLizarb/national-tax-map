@@ -1,0 +1,150 @@
+{
+  "scope": "United States",
+  "code": "federal",
+  "department": "United States Trade and Development Agency",
+  "fiscalYear": 2024,
+  "ledgerAmount": 69101066,
+  "sourceTotal": 94173069.15,
+  "sourceUrl": "https://api.usaspending.gov/api/v2/agency/1133/object_class/?fiscal_year=2024&limit=100&page=1",
+  "sourceUrls": [
+    [
+      "FY2024 gross outlays by object class",
+      "https://api.usaspending.gov/api/v2/agency/1133/object_class/?fiscal_year=2024&limit=100&page=1"
+    ],
+    [
+      "FY2024 agency budgetary resources total",
+      "https://api.usaspending.gov/api/v2/agency/1133/budgetary_resources/?fiscal_year=2024"
+    ]
+  ],
+  "rowSchema": [
+    "subAgency",
+    "program",
+    "amount",
+    "sourceAmount",
+    "sourceRows"
+  ],
+  "rows": [
+    [
+      "United States Trade and Development Agency",
+      "Grants, subsidies, and contributions",
+      50220427.23,
+      50220427.23,
+      null
+    ],
+    [
+      "United States Trade and Development Agency",
+      "Advisory and assistance services",
+      23309231.31,
+      23309231.31,
+      null
+    ],
+    [
+      "United States Trade and Development Agency",
+      "Full-time permanent",
+      7652049.33,
+      7652049.33,
+      null
+    ],
+    [
+      "United States Trade and Development Agency",
+      "Other goods and services from Federal sources",
+      3240549.04,
+      3240549.04,
+      null
+    ],
+    [
+      "United States Trade and Development Agency",
+      "Civilian personnel benefits",
+      2824390.4,
+      2824390.4,
+      null
+    ],
+    [
+      "United States Trade and Development Agency",
+      "Rental payments to GSA",
+      2017664.03,
+      2017664.03,
+      null
+    ],
+    [
+      "United States Trade and Development Agency",
+      "Other than full-time permanent",
+      1634814.79,
+      1634814.79,
+      null
+    ],
+    [
+      "United States Trade and Development Agency",
+      "Travel and transportation of persons",
+      888538.35,
+      888538.35,
+      null
+    ],
+    [
+      "United States Trade and Development Agency",
+      "Military personnel benefits",
+      443376.35,
+      443376.35,
+      null
+    ],
+    [
+      "United States Trade and Development Agency",
+      "Communications, utilities, and miscellaneous charges",
+      150434.27,
+      150434.27,
+      null
+    ],
+    [
+      "United States Trade and Development Agency",
+      "Other personnel compensation",
+      257265.95,
+      257265.95,
+      null
+    ],
+    [
+      "United States Trade and Development Agency",
+      "Equipment",
+      1156721.18,
+      1156721.18,
+      null
+    ],
+    [
+      "United States Trade and Development Agency",
+      "Other services from non-Federal sources",
+      147727.28,
+      147727.28,
+      null
+    ],
+    [
+      "United States Trade and Development Agency",
+      "Supplies and materials",
+      114115.8,
+      114115.8,
+      null
+    ],
+    [
+      "United States Trade and Development Agency",
+      "Operation and maintenance of facilities",
+      88558.03,
+      88558.03,
+      null
+    ],
+    [
+      "United States Trade and Development Agency",
+      "Printing and reproduction",
+      27205.81,
+      27205.81,
+      null
+    ]
+  ],
+  "sourceBasis": "official source amount",
+  "sourceCheck": {
+    "objectClassRows": 16,
+    "objectClassTotal": 94173069.15,
+    "agencyTotal": 94173069.15,
+    "difference": 0
+  },
+  "normalizationAdjustment": -0.01,
+  "hierarchyNote": "The source endpoint returns agency-level object-class aggregates; no individual employees or payees are included.",
+  "note": "Amounts are shown on the official source basis; no comparator normalization was applied."
+}

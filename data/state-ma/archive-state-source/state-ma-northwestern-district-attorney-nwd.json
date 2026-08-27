@@ -1,0 +1,105 @@
+{
+  "scope": "Massachusetts",
+  "code": "ma",
+  "department": "NORTHWESTERN DISTRICT ATTORNEY (NWD)",
+  "fiscalYear": 2024,
+  "ledgerAmount": 8297740.1,
+  "sourceTotal": 9033600.39,
+  "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000",
+  "rowSchema": [
+    "subAgency",
+    "program",
+    "amount",
+    "sourceAmount",
+    "sourceRows"
+  ],
+  "rows": [
+    [
+      "NORTHWESTERN DISTRICT ATTORNEY (NWD)",
+      "NORTHWESTERN DISTRICT ATTORNEY (NWD) · (AA) REGULAR EMPLOYEE COMPENSATION",
+      7429031.3,
+      7429031.3,
+      224
+    ],
+    [
+      "NORTHWESTERN DISTRICT ATTORNEY (NWD)",
+      "NORTHWESTERN DISTRICT ATTORNEY (NWD) · (GG) ENERGY COSTS AND SPACE RENTAL",
+      1086708.6,
+      1086708.6,
+      24
+    ],
+    [
+      "NORTHWESTERN DISTRICT ATTORNEY (NWD)",
+      "NORTHWESTERN DISTRICT ATTORNEY (NWD) · (EE) ADMINISTRATIVE EXPENSES",
+      224732.03,
+      224732.03,
+      293
+    ],
+    [
+      "NORTHWESTERN DISTRICT ATTORNEY (NWD)",
+      "NORTHWESTERN DISTRICT ATTORNEY (NWD) · (UU) IT NON-PAYROLL EXPENSES",
+      127930.61,
+      127930.61,
+      38
+    ],
+    [
+      "NORTHWESTERN DISTRICT ATTORNEY (NWD)",
+      "NORTHWESTERN DISTRICT ATTORNEY (NWD) · (BB) REGULAR EMPLOYEE RELATED EXPEN",
+      51858.09,
+      51858.09,
+      124
+    ],
+    [
+      "NORTHWESTERN DISTRICT ATTORNEY (NWD)",
+      "NORTHWESTERN DISTRICT ATTORNEY (NWD) · (KK) EQUIPMENT PURCHASE",
+      47045.01,
+      47045.01,
+      12
+    ],
+    [
+      "NORTHWESTERN DISTRICT ATTORNEY (NWD)",
+      "NORTHWESTERN DISTRICT ATTORNEY (NWD) · (JJ) OPERATIONAL SERVICES",
+      22323.95,
+      22323.95,
+      12
+    ],
+    [
+      "NORTHWESTERN DISTRICT ATTORNEY (NWD)",
+      "NORTHWESTERN DISTRICT ATTORNEY (NWD) · (CC) SPECIAL EMPLOYEES",
+      20827.5,
+      20827.5,
+      32
+    ],
+    [
+      "NORTHWESTERN DISTRICT ATTORNEY (NWD)",
+      "NORTHWESTERN DISTRICT ATTORNEY (NWD) · (LL) EQUIPMENT LEASE-MAINTAIN/REPAR",
+      12590.8,
+      12590.8,
+      59
+    ],
+    [
+      "NORTHWESTERN DISTRICT ATTORNEY (NWD)",
+      "NORTHWESTERN DISTRICT ATTORNEY (NWD) · (HH) CONSULTANT SVCS (TO DEPTS)",
+      9240,
+      9240,
+      6
+    ],
+    [
+      "NORTHWESTERN DISTRICT ATTORNEY (NWD)",
+      "NORTHWESTERN DISTRICT ATTORNEY (NWD) · (DD) PENSION & INSURANCE RELATED EX",
+      1312.5,
+      1312.5,
+      5
+    ],
+    [
+      "NORTHWESTERN DISTRICT ATTORNEY (NWD)",
+      "NORTHWESTERN DISTRICT ATTORNEY (NWD) · (99) PAYROLL REJECTS",
+      0,
+      0,
+      3
+    ]
+  ],
+  "hierarchyNote": "The source does not identify a separate sub-agency column; direct-managed rows repeat the parent entity.",
+  "sourceBasis": "official source amount",
+  "note": "Amounts are shown on the official source basis; no comparator normalization was applied."
+}

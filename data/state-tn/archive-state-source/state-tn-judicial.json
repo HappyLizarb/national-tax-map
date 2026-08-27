@@ -1,0 +1,43 @@
+{
+  "scope": "Tennessee",
+  "code": "tn",
+  "department": "Judicial Branch",
+  "fiscalYear": 2024,
+  "ledgerAmount": 106196359.73,
+  "sourceTotal": 106196359.73,
+  "sourceUrl": "https://data.tn.gov/t/Public/views/SearchableCheckbookPublic_17861130451500/Vendor.csv?:showVizHome=no&YEAR%28Fiscal%20Year%20Date%29=2024&Branch%20of%20Government=Judicial%20Branch",
+  "rowSchema": [
+    "subAgency",
+    "program",
+    "amount",
+    "sourceAmount",
+    "sourceRows"
+  ],
+  "hierarchyNote": "The additive row preserves the official FY2024 branch control. Supplemental rows show the separately exported public agency-payment slice and are non-additive because protected payments remain summarized.",
+  "rows": [
+    [
+      "Judicial Branch",
+      "FY2024 total annual payments",
+      106196359.73,
+      106196359.73,
+      1
+    ]
+  ],
+  "supplementalSchema": [
+    "subAgency",
+    "program",
+    "amount",
+    "measure",
+    "source"
+  ],
+  "supplementalRows": [
+    [
+      "Attorney General",
+      "Publicly itemized annual payments",
+      5651182.29,
+      "FY2024 public agency slice (non-additive)",
+      "https://data.tn.gov/t/Public/views/SearchableCheckbookPublic_17861130451500/Agency.csv?:showVizHome=no&YEAR%28Fiscal%20Year%20Date%29=2024&Branch%20of%20Government=Judicial%20Branch"
+    ]
+  ],
+  "supplementalTotal": 5651182.29
+}

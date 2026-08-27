@@ -1,0 +1,51 @@
+{
+  "scope": "United States",
+  "code": "federal",
+  "fiscalYear": 2024,
+  "department": "Department of State",
+  "sourceTotal": 37017000000,
+  "sourceUrl": "https://fiscal.treasury.gov/system/files/files/reports-statements/mts/mts0924.pdf",
+  "sourceUrls": [["Treasury FY2024 MTS Table 5", "https://fiscal.treasury.gov/system/files/files/reports-statements/mts/mts0924.pdf"]],
+  "relatedSources": [["USAspending gross research (supporting detail)", "data/federal/archive-agency-source/federal-department-of-state.json"]],
+  "sourceBasis": "Treasury MTS Table 5 current-fiscal-year gross outlays, applicable receipts, and net outlays; published in $ millions and converted to USD.",
+  "rowSchema": ["subAgency", "program", "amount", "sourceAmount", "sourceRows", "grossOutlays", "applicableReceipts"],
+  "sourceCheck": {"groupRows": 15, "difference": 0, "publishedRoundingAdjustment": -1000000},
+  "note": "Displayed amounts are net outlays; each row retains its published gross outlays and applicable receipts.",
+  "accountResearch": {"accountCount": 59, "largeAccountCount": 10, "netAccountOutlays": 43331487861.65, "threshold": 1000000000, "sourceUrl": "https://fiscal.treasury.gov/system/files/files/reports-statements/combined-statement/cs2024/c34.xlsx"},
+  "largeAccountSchema": ["treasuryAccount", "title", "netOutlays", "availabilityRows"],
+  "largeAccountBasis": "Exact Combined Statement net outlays by appropriation or fund account. This is a research cross-section of the same department, not another amount to add to MTS classification rows.",
+  "itemBreakdownSchema": ["treasuryAccount", "title", "netOutlays"],
+  "itemBreakdownBasis": "Exact FY2024 Treasury accounts grouped to one MTS row; each final bridge reconciles account cents to the parent published in rounded $ millions.",
+  "largeAccountRows": [
+    ["019-1031-000", "Global Health Programs, State", 10848212740.67, 86],
+    ["019-0113-000", "Diplomatic and Consular Programs, State", 10401551887.12, 18],
+    ["019-1143-000", "Migration and Refugee Assistance, State", 4614948270.18, 2],
+    ["019-5713-000", "Consular and Border Security Programs, Administration of Foreign Affairs, State", 4588830470.42, 6],
+    ["011-1022-000", "International Narcotics Control and Law Enforcement, International Security Assistance, State", 1850529772.37, 25],
+    ["011-0040-000", "United States Emergency Refugee and Migration Assistance Fund, Funds Appropriated to the President, Executive Office of the President", 1840018646.25, 2],
+    ["019-1124-000", "Contributions for International Peacekeeping Activities, State", 1816568797, 6],
+    ["019-0535-000", "Embassy Security, Construction, and Maintenance, State", 1810521202.82, 8],
+    ["019-1126-000", "Contributions to International Organizations, State", 1549370833.31, 13],
+    ["019-8186-000", "Foreign Service Retirement and Disability Fund, State", 1188753572.64, 1]
+  ],
+  "itemBreakdowns": [
+    {"parent": ["Administration of Foreign Affairs", "Other", 5306000000], "accountCount": 17, "rows": [["019-5713-000", "Consular and Border Security Programs, Administration of Foreign Affairs, State", 4588830470.42], ["019-0120-000", "Capital Investment Fund, State", 426561672.34], ["019-4519-000", "Working Capital Fund, State", -140189797.9], ["019-0529-000", "Expenses, Office of Inspector General, State", 138407133.64], ["019-0522-000", "Emergencies in the Diplomatic and Consular Service, State", 81907252], ["019-0520-000", "Protection of Foreign Missions and Officials, State", 46849469.23], ["019-4519-001", "Working Capital Fund, International Cooperative Administrative Support Services, State", 38597763.53], ["019-0523-000", "Payment to the American Institute in Taiwan, State", 36829629.94], ["019-8340-000", "Foreign Service National Separation Liability Trust Fund, State", 34632219.33], ["019-8821-000", "Unconditional Gift Fund, State", 21243601.5], ["019-5497-000", "Foreign Service National Defined Contributions Retirement Fund, State", 18731607.1], ["019-0545-000", "Representation Expenses, State", 6550870.7], ["019-8822-000", "Conditional Gift Fund, General, State", 3714164.49], ["019-0601-000", "Repatriation Loans, Program Account, State", 2945455.1], ["019-0600-000", "Repatriation Loans, Liquidating Account, State", -51132.63], ["019-0121-000", "Conflict Stabilization Operations, State", -4107.54], ["019-8167-000", "Trust Funds, State", 3737.54], ["MTS-rounding", "Published MTS million-dollar rounding bridge", 439991.21]], "sourceUrl": "https://fiscal.treasury.gov/system/files/files/reports-statements/combined-statement/cs2024/c34.xlsx", "basis": "Exact Combined Statement net-outlay accounts."}
+  ],
+  "rows": [
+    ["Administration of Foreign Affairs", "Diplomatic and Consular Programs", 10453000000, 10453000000, 1, 10453000000, 0],
+    ["Administration of Foreign Affairs", "Educational and Cultural Exchange Programs", 811000000, 811000000, 1, 811000000, 0],
+    ["Administration of Foreign Affairs", "Embassy Security, Construction, and Maintenance", 1811000000, 1811000000, 1, 1811000000, 0],
+    ["Administration of Foreign Affairs", "Payment to Foreign Service Retirement and Disability Fund", 609000000, 609000000, 1, 609000000, 0],
+    ["Administration of Foreign Affairs", "Foreign Service Retirement and Disability Fund", 1189000000, 1189000000, 1, 1189000000, 0],
+    ["Administration of Foreign Affairs", "Other", 5306000000, 5306000000, 1, 5306000000, 0],
+    ["Department of State", "International Organizations and Conferences", 3366000000, 3366000000, 1, 3366000000, 0],
+    ["Department of State", "Global Health and Child Survival", 10848000000, 10848000000, 1, 10848000000, 0],
+    ["Department of State", "Migration and Refugee Assistance", 6455000000, 6455000000, 1, 6455000000, 0],
+    ["Department of State", "International Narcotics Control and Law Enforcement", 1851000000, 1851000000, 1, 1851000000, 0],
+    ["Department of State", "Andean Counterdrug Programs", 0, 0, 1, 0, 0],
+    ["Department of State", "Other", 632000000, 632000000, 1, 632000000, 0],
+    ["Department of State", "Proprietary Receipts from the Public", -5590000000, -5590000000, 1, 0, 5590000000],
+    ["Department of State", "Intrabudgetary Transactions", -723000000, -723000000, 1, -723000000, 0],
+    ["Department of State", "Published Table 5 rounding adjustment", -1000000, -1000000, 0, -1000000, 0]
+  ]
+}

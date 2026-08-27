@@ -1,0 +1,105 @@
+{
+  "scope": "Massachusetts",
+  "code": "ma",
+  "department": "SEX OFFENDER REGISTRY (SOR)",
+  "fiscalYear": 2024,
+  "ledgerAmount": 6768985.66,
+  "sourceTotal": 7369272.93,
+  "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000",
+  "rowSchema": [
+    "subAgency",
+    "program",
+    "amount",
+    "sourceAmount",
+    "sourceRows"
+  ],
+  "rows": [
+    [
+      "SEX OFFENDER REGISTRY (SOR)",
+      "SEX OFFENDER REGISTRY (SOR) · (AA) REGULAR EMPLOYEE COMPENSATION",
+      5835562.01,
+      5835562.01,
+      39
+    ],
+    [
+      "SEX OFFENDER REGISTRY (SOR)",
+      "SEX OFFENDER REGISTRY (SOR) · (UU) IT NON-PAYROLL EXPENSES",
+      673902.16,
+      673902.16,
+      38
+    ],
+    [
+      "SEX OFFENDER REGISTRY (SOR)",
+      "SEX OFFENDER REGISTRY (SOR) · (GG) ENERGY COSTS AND SPACE RENTAL",
+      452829.71,
+      452829.71,
+      12
+    ],
+    [
+      "SEX OFFENDER REGISTRY (SOR)",
+      "SEX OFFENDER REGISTRY (SOR) · (PP) STATE AID/POL SUB",
+      180270.13,
+      180270.13,
+      69
+    ],
+    [
+      "SEX OFFENDER REGISTRY (SOR)",
+      "SEX OFFENDER REGISTRY (SOR) · (EE) ADMINISTRATIVE EXPENSES",
+      82478,
+      82478,
+      115
+    ],
+    [
+      "SEX OFFENDER REGISTRY (SOR)",
+      "SEX OFFENDER REGISTRY (SOR) · (CC) SPECIAL EMPLOYEES",
+      62821.56,
+      62821.56,
+      43
+    ],
+    [
+      "SEX OFFENDER REGISTRY (SOR)",
+      "SEX OFFENDER REGISTRY (SOR) · (BB) REGULAR EMPLOYEE RELATED EXPEN",
+      31648.45,
+      31648.45,
+      62
+    ],
+    [
+      "SEX OFFENDER REGISTRY (SOR)",
+      "SEX OFFENDER REGISTRY (SOR) · (LL) EQUIPMENT LEASE-MAINTAIN/REPAR",
+      26290.32,
+      26290.32,
+      69
+    ],
+    [
+      "SEX OFFENDER REGISTRY (SOR)",
+      "SEX OFFENDER REGISTRY (SOR) · (JJ) OPERATIONAL SERVICES",
+      22516.85,
+      22516.85,
+      36
+    ],
+    [
+      "SEX OFFENDER REGISTRY (SOR)",
+      "SEX OFFENDER REGISTRY (SOR) · (KK) EQUIPMENT PURCHASE",
+      703.74,
+      703.74,
+      2
+    ],
+    [
+      "SEX OFFENDER REGISTRY (SOR)",
+      "SEX OFFENDER REGISTRY (SOR) · (HH) CONSULTANT SVCS (TO DEPTS)",
+      250,
+      250,
+      1
+    ],
+    [
+      "SEX OFFENDER REGISTRY (SOR)",
+      "SEX OFFENDER REGISTRY (SOR) · (99) PAYROLL REJECTS",
+      0,
+      0,
+      2
+    ]
+  ],
+  "hierarchyNote": "The source does not identify a separate sub-agency column; direct-managed rows repeat the parent entity.",
+  "sourceBasis": "official source amount",
+  "note": "Amounts are shown on the official source basis; no comparator normalization was applied."
+}

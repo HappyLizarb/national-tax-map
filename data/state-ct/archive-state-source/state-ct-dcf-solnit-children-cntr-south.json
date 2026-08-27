@@ -1,0 +1,49 @@
+{
+  "scope": "Connecticut",
+  "code": "ct",
+  "department": "DCF-Solnit Children Cntr South",
+  "fiscalYear": 2024,
+  "ledgerAmount": 4348439.69,
+  "sourceTotal": 4633554.6,
+  "sourceUrl": "https://data.ct.gov/resource/ajdm-rvz7.json?$select=department,program,sum(amount)%20as%20amount,count(*)%20as%20records&$where=fiscal_year=2024&$group=department,program",
+  "rowSchema": [
+    "subAgency",
+    "program",
+    "amount",
+    "sourceAmount",
+    "sourceRows"
+  ],
+  "rows": [
+    [
+      "DCF-Solnit Children Cntr South",
+      "DCF-Solnit Children Cntr South · Other Expenses",
+      3283825.91,
+      3283825.91,
+      2708
+    ],
+    [
+      "DCF-Solnit Children Cntr South",
+      "DCF-Solnit Children Cntr South · Personal Services",
+      891636.26,
+      891636.26,
+      12
+    ],
+    [
+      "DCF-Solnit Children Cntr South",
+      "DCF-Solnit Children Cntr South · DCF - Alterations",
+      370038.8,
+      370038.8,
+      27
+    ],
+    [
+      "DCF-Solnit Children Cntr South",
+      "DCF-Solnit Children Cntr South · Capital Equip Purchase Fund",
+      88053.63,
+      88053.63,
+      16
+    ]
+  ],
+  "hierarchyNote": "The source does not identify a separate sub-agency column; direct-managed rows repeat the parent entity.",
+  "sourceBasis": "official source amount",
+  "note": "Amounts are shown on the official source basis; no comparator normalization was applied."
+}

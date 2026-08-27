@@ -1,0 +1,126 @@
+{
+  "scope": "Massachusetts",
+  "code": "ma",
+  "department": "SHERIFF DEPARTMENT SUFFOLK (SDS)",
+  "fiscalYear": 2024,
+  "ledgerAmount": 106563308.35,
+  "sourceTotal": 116013556.95,
+  "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000",
+  "rowSchema": [
+    "subAgency",
+    "program",
+    "amount",
+    "sourceAmount",
+    "sourceRows"
+  ],
+  "rows": [
+    [
+      "SHERIFF DEPARTMENT SUFFOLK (SDS)",
+      "SHERIFF DEPARTMENT SUFFOLK (SDS) · (AA) REGULAR EMPLOYEE COMPENSATION",
+      95559648.75,
+      95559648.75,
+      343
+    ],
+    [
+      "SHERIFF DEPARTMENT SUFFOLK (SDS)",
+      "SHERIFF DEPARTMENT SUFFOLK (SDS) · (JJ) OPERATIONAL SERVICES",
+      4450549.27,
+      4450549.27,
+      160
+    ],
+    [
+      "SHERIFF DEPARTMENT SUFFOLK (SDS)",
+      "SHERIFF DEPARTMENT SUFFOLK (SDS) · (GG) ENERGY COSTS AND SPACE RENTAL",
+      4431884.91,
+      4431884.91,
+      345
+    ],
+    [
+      "SHERIFF DEPARTMENT SUFFOLK (SDS)",
+      "SHERIFF DEPARTMENT SUFFOLK (SDS) · (NN) INFRASTRUCTURE:",
+      2885120.04,
+      2885120.04,
+      1252
+    ],
+    [
+      "SHERIFF DEPARTMENT SUFFOLK (SDS)",
+      "SHERIFF DEPARTMENT SUFFOLK (SDS) · (UU) IT NON-PAYROLL EXPENSES",
+      2624009.08,
+      2624009.08,
+      216
+    ],
+    [
+      "SHERIFF DEPARTMENT SUFFOLK (SDS)",
+      "SHERIFF DEPARTMENT SUFFOLK (SDS) · (FF) FACILITY OPERATIONAL EXPENSES",
+      1414041.81,
+      1414041.81,
+      1075
+    ],
+    [
+      "SHERIFF DEPARTMENT SUFFOLK (SDS)",
+      "SHERIFF DEPARTMENT SUFFOLK (SDS) · (MM) PURCHASED CLIENT/PROGRAM SVCS",
+      1309036.55,
+      1309036.55,
+      63
+    ],
+    [
+      "SHERIFF DEPARTMENT SUFFOLK (SDS)",
+      "SHERIFF DEPARTMENT SUFFOLK (SDS) · (DD) PENSION & INSURANCE RELATED EX",
+      835795.2,
+      835795.2,
+      52
+    ],
+    [
+      "SHERIFF DEPARTMENT SUFFOLK (SDS)",
+      "SHERIFF DEPARTMENT SUFFOLK (SDS) · (BB) REGULAR EMPLOYEE RELATED EXPEN",
+      647717.74,
+      647717.74,
+      64
+    ],
+    [
+      "SHERIFF DEPARTMENT SUFFOLK (SDS)",
+      "SHERIFF DEPARTMENT SUFFOLK (SDS) · (KK) EQUIPMENT PURCHASE",
+      596196.67,
+      596196.67,
+      63
+    ],
+    [
+      "SHERIFF DEPARTMENT SUFFOLK (SDS)",
+      "SHERIFF DEPARTMENT SUFFOLK (SDS) · (EE) ADMINISTRATIVE EXPENSES",
+      410944.28,
+      410944.28,
+      391
+    ],
+    [
+      "SHERIFF DEPARTMENT SUFFOLK (SDS)",
+      "SHERIFF DEPARTMENT SUFFOLK (SDS) · (CC) SPECIAL EMPLOYEES",
+      365649.71,
+      365649.71,
+      142
+    ],
+    [
+      "SHERIFF DEPARTMENT SUFFOLK (SDS)",
+      "SHERIFF DEPARTMENT SUFFOLK (SDS) · (HH) CONSULTANT SVCS (TO DEPTS)",
+      249597.53,
+      249597.53,
+      62
+    ],
+    [
+      "SHERIFF DEPARTMENT SUFFOLK (SDS)",
+      "SHERIFF DEPARTMENT SUFFOLK (SDS) · (LL) EQUIPMENT LEASE-MAINTAIN/REPAR",
+      233365.41,
+      233365.41,
+      347
+    ],
+    [
+      "SHERIFF DEPARTMENT SUFFOLK (SDS)",
+      "SHERIFF DEPARTMENT SUFFOLK (SDS) · (99) PAYROLL REJECTS",
+      0,
+      0,
+      70
+    ]
+  ],
+  "hierarchyNote": "The source does not identify a separate sub-agency column; direct-managed rows repeat the parent entity.",
+  "sourceBasis": "official source amount",
+  "note": "Amounts are shown on the official source basis; no comparator normalization was applied."
+}

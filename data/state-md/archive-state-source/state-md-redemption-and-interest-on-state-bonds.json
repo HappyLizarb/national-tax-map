@@ -1,0 +1,78 @@
+{
+  "scope": "Maryland",
+  "code": "md",
+  "fiscalYear": 2024,
+  "department": "REDEMPTION AND INTEREST ON STATE BONDS",
+  "sourceUrl": "https://opendata.maryland.gov/Budget/State-of-Maryland-Payments-Data-FY2008-to-FY2024/7syw-q4cy/about_data",
+  "sourceUrls": [
+    [
+      "Maryland payments dataset",
+      "https://opendata.maryland.gov/Budget/State-of-Maryland-Payments-Data-FY2008-to-FY2024/7syw-q4cy/about_data"
+    ],
+    [
+      "FY2024 raw API rows",
+      "https://opendata.maryland.gov/resource/7syw-q4cy.json?%24where=fiscal_year=%272024%27&%24limit=50000"
+    ]
+  ],
+  "sourceBasis": "FY2024 cash payments grouped by official agency, published category code, and privacy-safe receiver label.",
+  "privacyNote": "Organization receiver names are retained; individual or ambiguous vendor names are grouped as [individual recipient omitted]. No person-level payroll fields are retained.",
+  "sourceRows": 6,
+  "sourceTotal": 1429336111.27,
+  "rowSchema": [
+    "subAgency",
+    "program",
+    "amount",
+    "sourceAmount",
+    "sourceRows"
+  ],
+  "rows": [
+    [
+      "REDEMPTION AND INTEREST ON STATE BONDS",
+      "Category code X00 · Receiver [individual recipient omitted]",
+      312000,
+      312000,
+      1
+    ],
+    [
+      "REDEMPTION AND INTEREST ON STATE BONDS",
+      "Category code X00 · Receiver BANK OF AMERICA",
+      376800.54,
+      376800.54,
+      1
+    ],
+    [
+      "REDEMPTION AND INTEREST ON STATE BONDS",
+      "Category code X00 · Receiver DEPOSITORY TRUST COMPANY",
+      1423822786.46,
+      1423822786.46,
+      1
+    ],
+    [
+      "REDEMPTION AND INTEREST ON STATE BONDS",
+      "Category code X00 · Receiver JP MORGAN CHASE BANK NA",
+      549591.6,
+      549591.6,
+      1
+    ],
+    [
+      "REDEMPTION AND INTEREST ON STATE BONDS",
+      "Category code X00 · Receiver THE BANK OF NEW YORK",
+      3355000,
+      3355000,
+      1
+    ],
+    [
+      "REDEMPTION AND INTEREST ON STATE BONDS",
+      "Category code X00 · Receiver TRUIST BANK",
+      919932.67,
+      919932.67,
+      1
+    ]
+  ],
+  "sourceCheck": {
+    "objectClassRows": 6,
+    "sourceRows": 6,
+    "sourceTotal": 1429336111.27,
+    "difference": 0
+  }
+}

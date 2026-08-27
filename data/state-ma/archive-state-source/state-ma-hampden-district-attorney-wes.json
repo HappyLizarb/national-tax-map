@@ -1,0 +1,105 @@
+{
+  "scope": "Massachusetts",
+  "code": "ma",
+  "department": "HAMPDEN DISTRICT ATTORNEY (WES)",
+  "fiscalYear": 2024,
+  "ledgerAmount": 14507073.24,
+  "sourceTotal": 15793589.68,
+  "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000",
+  "rowSchema": [
+    "subAgency",
+    "program",
+    "amount",
+    "sourceAmount",
+    "sourceRows"
+  ],
+  "rows": [
+    [
+      "HAMPDEN DISTRICT ATTORNEY (WES)",
+      "HAMPDEN DISTRICT ATTORNEY (WES) · (AA) REGULAR EMPLOYEE COMPENSATION",
+      13083018.15,
+      13083018.15,
+      197
+    ],
+    [
+      "HAMPDEN DISTRICT ATTORNEY (WES)",
+      "HAMPDEN DISTRICT ATTORNEY (WES) · (GG) ENERGY COSTS AND SPACE RENTAL",
+      1272544.56,
+      1272544.56,
+      12
+    ],
+    [
+      "HAMPDEN DISTRICT ATTORNEY (WES)",
+      "HAMPDEN DISTRICT ATTORNEY (WES) · (EE) ADMINISTRATIVE EXPENSES",
+      552694.4,
+      552694.4,
+      504
+    ],
+    [
+      "HAMPDEN DISTRICT ATTORNEY (WES)",
+      "HAMPDEN DISTRICT ATTORNEY (WES) · (UU) IT NON-PAYROLL EXPENSES",
+      249321.7,
+      249321.7,
+      30
+    ],
+    [
+      "HAMPDEN DISTRICT ATTORNEY (WES)",
+      "HAMPDEN DISTRICT ATTORNEY (WES) · (LL) EQUIPMENT LEASE-MAINTAIN/REPAR",
+      162993.6,
+      162993.6,
+      24
+    ],
+    [
+      "HAMPDEN DISTRICT ATTORNEY (WES)",
+      "HAMPDEN DISTRICT ATTORNEY (WES) · (JJ) OPERATIONAL SERVICES",
+      153666.46,
+      153666.46,
+      47
+    ],
+    [
+      "HAMPDEN DISTRICT ATTORNEY (WES)",
+      "HAMPDEN DISTRICT ATTORNEY (WES) · (HH) CONSULTANT SVCS (TO DEPTS)",
+      121867.34,
+      121867.34,
+      30
+    ],
+    [
+      "HAMPDEN DISTRICT ATTORNEY (WES)",
+      "HAMPDEN DISTRICT ATTORNEY (WES) · (PP) STATE AID/POL SUB",
+      95450,
+      95450,
+      3
+    ],
+    [
+      "HAMPDEN DISTRICT ATTORNEY (WES)",
+      "HAMPDEN DISTRICT ATTORNEY (WES) · (DD) PENSION & INSURANCE RELATED EX",
+      47439,
+      47439,
+      1
+    ],
+    [
+      "HAMPDEN DISTRICT ATTORNEY (WES)",
+      "HAMPDEN DISTRICT ATTORNEY (WES) · (BB) REGULAR EMPLOYEE RELATED EXPEN",
+      41926.47,
+      41926.47,
+      73
+    ],
+    [
+      "HAMPDEN DISTRICT ATTORNEY (WES)",
+      "HAMPDEN DISTRICT ATTORNEY (WES) · (KK) EQUIPMENT PURCHASE",
+      12668,
+      12668,
+      2
+    ],
+    [
+      "HAMPDEN DISTRICT ATTORNEY (WES)",
+      "HAMPDEN DISTRICT ATTORNEY (WES) · (99) PAYROLL REJECTS",
+      0,
+      0,
+      4
+    ]
+  ],
+  "hierarchyNote": "The source does not identify a separate sub-agency column; direct-managed rows repeat the parent entity.",
+  "sourceBasis": "official source amount",
+  "note": "Amounts are shown on the official source basis; no comparator normalization was applied."
+}

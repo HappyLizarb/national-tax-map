@@ -1,0 +1,133 @@
+{
+  "scope": "Massachusetts",
+  "code": "ma",
+  "department": "MASSACHUSETTS COLLEGE OF LIBERAL ARTS (NAC)",
+  "fiscalYear": 2024,
+  "ledgerAmount": 46482932.51,
+  "sourceTotal": 50605132.49,
+  "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000",
+  "rowSchema": [
+    "subAgency",
+    "program",
+    "amount",
+    "sourceAmount",
+    "sourceRows"
+  ],
+  "rows": [
+    [
+      "MASSACHUSETTS COLLEGE OF LIBERAL ARTS (NAC)",
+      "MASSACHUSETTS COLLEGE OF LIBERAL ARTS (NAC) · (AA) REGULAR EMPLOYEE COMPENSATION",
+      22578392.85,
+      22578392.85,
+      402
+    ],
+    [
+      "MASSACHUSETTS COLLEGE OF LIBERAL ARTS (NAC)",
+      "MASSACHUSETTS COLLEGE OF LIBERAL ARTS (NAC) · (RR) BENEFIT PROGRAMS",
+      6913161.97,
+      6913161.97,
+      24
+    ],
+    [
+      "MASSACHUSETTS COLLEGE OF LIBERAL ARTS (NAC)",
+      "MASSACHUSETTS COLLEGE OF LIBERAL ARTS (NAC) · (CC) SPECIAL EMPLOYEES",
+      3846278.64,
+      3846278.64,
+      1197
+    ],
+    [
+      "MASSACHUSETTS COLLEGE OF LIBERAL ARTS (NAC)",
+      "MASSACHUSETTS COLLEGE OF LIBERAL ARTS (NAC) · (JJ) OPERATIONAL SERVICES",
+      2996766.25,
+      2996766.25,
+      16
+    ],
+    [
+      "MASSACHUSETTS COLLEGE OF LIBERAL ARTS (NAC)",
+      "MASSACHUSETTS COLLEGE OF LIBERAL ARTS (NAC) · (NN) INFRASTRUCTURE:",
+      2960959.67,
+      2960959.67,
+      34
+    ],
+    [
+      "MASSACHUSETTS COLLEGE OF LIBERAL ARTS (NAC)",
+      "MASSACHUSETTS COLLEGE OF LIBERAL ARTS (NAC) · (TT) LOANS AND SPECIAL PAYMENTS",
+      2535462.61,
+      2535462.61,
+      6
+    ],
+    [
+      "MASSACHUSETTS COLLEGE OF LIBERAL ARTS (NAC)",
+      "MASSACHUSETTS COLLEGE OF LIBERAL ARTS (NAC) · (GG) ENERGY COSTS AND SPACE RENTAL",
+      1998104.26,
+      1998104.26,
+      68
+    ],
+    [
+      "MASSACHUSETTS COLLEGE OF LIBERAL ARTS (NAC)",
+      "MASSACHUSETTS COLLEGE OF LIBERAL ARTS (NAC) · (EE) ADMINISTRATIVE EXPENSES",
+      1790456.73,
+      1790456.73,
+      17
+    ],
+    [
+      "MASSACHUSETTS COLLEGE OF LIBERAL ARTS (NAC)",
+      "MASSACHUSETTS COLLEGE OF LIBERAL ARTS (NAC) · (HH) CONSULTANT SVCS (TO DEPTS)",
+      1562147.36,
+      1562147.36,
+      42
+    ],
+    [
+      "MASSACHUSETTS COLLEGE OF LIBERAL ARTS (NAC)",
+      "MASSACHUSETTS COLLEGE OF LIBERAL ARTS (NAC) · (UU) IT NON-PAYROLL EXPENSES",
+      1329086.83,
+      1329086.83,
+      15
+    ],
+    [
+      "MASSACHUSETTS COLLEGE OF LIBERAL ARTS (NAC)",
+      "MASSACHUSETTS COLLEGE OF LIBERAL ARTS (NAC) · (SS) DEBT PAYMENT",
+      553045.99,
+      553045.99,
+      2
+    ],
+    [
+      "MASSACHUSETTS COLLEGE OF LIBERAL ARTS (NAC)",
+      "MASSACHUSETTS COLLEGE OF LIBERAL ARTS (NAC) · (FF) FACILITY OPERATIONAL EXPENSES",
+      505504.09,
+      505504.09,
+      12
+    ],
+    [
+      "MASSACHUSETTS COLLEGE OF LIBERAL ARTS (NAC)",
+      "MASSACHUSETTS COLLEGE OF LIBERAL ARTS (NAC) · (KK) EQUIPMENT PURCHASE",
+      482937.28,
+      482937.28,
+      12
+    ],
+    [
+      "MASSACHUSETTS COLLEGE OF LIBERAL ARTS (NAC)",
+      "MASSACHUSETTS COLLEGE OF LIBERAL ARTS (NAC) · (BB) REGULAR EMPLOYEE RELATED EXPEN",
+      440590.13,
+      440590.13,
+      60
+    ],
+    [
+      "MASSACHUSETTS COLLEGE OF LIBERAL ARTS (NAC)",
+      "MASSACHUSETTS COLLEGE OF LIBERAL ARTS (NAC) · (LL) EQUIPMENT LEASE-MAINTAIN/REPAR",
+      111037.83,
+      111037.83,
+      12
+    ],
+    [
+      "MASSACHUSETTS COLLEGE OF LIBERAL ARTS (NAC)",
+      "MASSACHUSETTS COLLEGE OF LIBERAL ARTS (NAC) · (99) PAYROLL REJECTS",
+      1200,
+      1200,
+      10
+    ]
+  ],
+  "hierarchyNote": "The source does not identify a separate sub-agency column; direct-managed rows repeat the parent entity.",
+  "sourceBasis": "official source amount",
+  "note": "Amounts are shown on the official source basis; no comparator normalization was applied."
+}

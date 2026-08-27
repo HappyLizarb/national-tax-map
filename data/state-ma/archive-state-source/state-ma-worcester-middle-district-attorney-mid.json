@@ -1,0 +1,112 @@
+{
+  "scope": "Massachusetts",
+  "code": "ma",
+  "department": "WORCESTER (MIDDLE) DISTRICT ATTORNEY (MID)",
+  "fiscalYear": 2024,
+  "ledgerAmount": 15288269.66,
+  "sourceTotal": 16644064.18,
+  "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000",
+  "rowSchema": [
+    "subAgency",
+    "program",
+    "amount",
+    "sourceAmount",
+    "sourceRows"
+  ],
+  "rows": [
+    [
+      "WORCESTER (MIDDLE) DISTRICT ATTORNEY (MID)",
+      "WORCESTER (MIDDLE) DISTRICT ATTORNEY (MID) · (AA) REGULAR EMPLOYEE COMPENSATION",
+      14372830.51,
+      14372830.51,
+      406
+    ],
+    [
+      "WORCESTER (MIDDLE) DISTRICT ATTORNEY (MID)",
+      "WORCESTER (MIDDLE) DISTRICT ATTORNEY (MID) · (PP) STATE AID/POL SUB",
+      603533.16,
+      603533.16,
+      76
+    ],
+    [
+      "WORCESTER (MIDDLE) DISTRICT ATTORNEY (MID)",
+      "WORCESTER (MIDDLE) DISTRICT ATTORNEY (MID) · (GG) ENERGY COSTS AND SPACE RENTAL",
+      578501.18,
+      578501.18,
+      23
+    ],
+    [
+      "WORCESTER (MIDDLE) DISTRICT ATTORNEY (MID)",
+      "WORCESTER (MIDDLE) DISTRICT ATTORNEY (MID) · (HH) CONSULTANT SVCS (TO DEPTS)",
+      340073.21,
+      340073.21,
+      161
+    ],
+    [
+      "WORCESTER (MIDDLE) DISTRICT ATTORNEY (MID)",
+      "WORCESTER (MIDDLE) DISTRICT ATTORNEY (MID) · (EE) ADMINISTRATIVE EXPENSES",
+      337071.69,
+      337071.69,
+      371
+    ],
+    [
+      "WORCESTER (MIDDLE) DISTRICT ATTORNEY (MID)",
+      "WORCESTER (MIDDLE) DISTRICT ATTORNEY (MID) · (UU) IT NON-PAYROLL EXPENSES",
+      167427.77,
+      167427.77,
+      89
+    ],
+    [
+      "WORCESTER (MIDDLE) DISTRICT ATTORNEY (MID)",
+      "WORCESTER (MIDDLE) DISTRICT ATTORNEY (MID) · (DD) PENSION & INSURANCE RELATED EX",
+      85326.4,
+      85326.4,
+      4
+    ],
+    [
+      "WORCESTER (MIDDLE) DISTRICT ATTORNEY (MID)",
+      "WORCESTER (MIDDLE) DISTRICT ATTORNEY (MID) · (BB) REGULAR EMPLOYEE RELATED EXPEN",
+      80811.12,
+      80811.12,
+      130
+    ],
+    [
+      "WORCESTER (MIDDLE) DISTRICT ATTORNEY (MID)",
+      "WORCESTER (MIDDLE) DISTRICT ATTORNEY (MID) · (LL) EQUIPMENT LEASE-MAINTAIN/REPAR",
+      52761.1,
+      52761.1,
+      31
+    ],
+    [
+      "WORCESTER (MIDDLE) DISTRICT ATTORNEY (MID)",
+      "WORCESTER (MIDDLE) DISTRICT ATTORNEY (MID) · (KK) EQUIPMENT PURCHASE",
+      12324.29,
+      12324.29,
+      16
+    ],
+    [
+      "WORCESTER (MIDDLE) DISTRICT ATTORNEY (MID)",
+      "WORCESTER (MIDDLE) DISTRICT ATTORNEY (MID) · (CC) SPECIAL EMPLOYEES",
+      7541.25,
+      7541.25,
+      22
+    ],
+    [
+      "WORCESTER (MIDDLE) DISTRICT ATTORNEY (MID)",
+      "WORCESTER (MIDDLE) DISTRICT ATTORNEY (MID) · (NN) INFRASTRUCTURE:",
+      5862.5,
+      5862.5,
+      2
+    ],
+    [
+      "WORCESTER (MIDDLE) DISTRICT ATTORNEY (MID)",
+      "WORCESTER (MIDDLE) DISTRICT ATTORNEY (MID) · (99) PAYROLL REJECTS",
+      0,
+      0,
+      4
+    ]
+  ],
+  "hierarchyNote": "The source does not identify a separate sub-agency column; direct-managed rows repeat the parent entity.",
+  "sourceBasis": "official source amount",
+  "note": "Amounts are shown on the official source basis; no comparator normalization was applied."
+}

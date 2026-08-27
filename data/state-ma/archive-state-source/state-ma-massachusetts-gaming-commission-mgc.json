@@ -1,0 +1,133 @@
+{
+  "scope": "Massachusetts",
+  "code": "ma",
+  "department": "MASSACHUSETTS GAMING COMMISSION (MGC)",
+  "fiscalYear": 2024,
+  "ledgerAmount": 53044562.84,
+  "sourceTotal": 57748661.4,
+  "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000",
+  "rowSchema": [
+    "subAgency",
+    "program",
+    "amount",
+    "sourceAmount",
+    "sourceRows"
+  ],
+  "rows": [
+    [
+      "MASSACHUSETTS GAMING COMMISSION (MGC)",
+      "MASSACHUSETTS GAMING COMMISSION (MGC) · (TT) LOANS AND SPECIAL PAYMENTS",
+      20185415.11,
+      20185415.11,
+      697
+    ],
+    [
+      "MASSACHUSETTS GAMING COMMISSION (MGC)",
+      "MASSACHUSETTS GAMING COMMISSION (MGC) · (AA) REGULAR EMPLOYEE COMPENSATION",
+      12093588.19,
+      12093588.19,
+      1103
+    ],
+    [
+      "MASSACHUSETTS GAMING COMMISSION (MGC)",
+      "MASSACHUSETTS GAMING COMMISSION (MGC) · (HH) CONSULTANT SVCS (TO DEPTS)",
+      7483411.83,
+      7483411.83,
+      352
+    ],
+    [
+      "MASSACHUSETTS GAMING COMMISSION (MGC)",
+      "MASSACHUSETTS GAMING COMMISSION (MGC) · (PP) STATE AID/POL SUB",
+      6780718.15,
+      6780718.15,
+      147
+    ],
+    [
+      "MASSACHUSETTS GAMING COMMISSION (MGC)",
+      "MASSACHUSETTS GAMING COMMISSION (MGC) · (UU) IT NON-PAYROLL EXPENSES",
+      4627450.92,
+      4627450.92,
+      406
+    ],
+    [
+      "MASSACHUSETTS GAMING COMMISSION (MGC)",
+      "MASSACHUSETTS GAMING COMMISSION (MGC) · (JJ) OPERATIONAL SERVICES",
+      3633311.79,
+      3633311.79,
+      140
+    ],
+    [
+      "MASSACHUSETTS GAMING COMMISSION (MGC)",
+      "MASSACHUSETTS GAMING COMMISSION (MGC) · (GG) ENERGY COSTS AND SPACE RENTAL",
+      1380558.97,
+      1380558.97,
+      48
+    ],
+    [
+      "MASSACHUSETTS GAMING COMMISSION (MGC)",
+      "MASSACHUSETTS GAMING COMMISSION (MGC) · (CC) SPECIAL EMPLOYEES",
+      669525.23,
+      669525.23,
+      156
+    ],
+    [
+      "MASSACHUSETTS GAMING COMMISSION (MGC)",
+      "MASSACHUSETTS GAMING COMMISSION (MGC) · (EE) ADMINISTRATIVE EXPENSES",
+      603523.3,
+      603523.3,
+      820
+    ],
+    [
+      "MASSACHUSETTS GAMING COMMISSION (MGC)",
+      "MASSACHUSETTS GAMING COMMISSION (MGC) · (FF) FACILITY OPERATIONAL EXPENSES",
+      92549.95,
+      92549.95,
+      15
+    ],
+    [
+      "MASSACHUSETTS GAMING COMMISSION (MGC)",
+      "MASSACHUSETTS GAMING COMMISSION (MGC) · (MM) PURCHASED CLIENT/PROGRAM SVCS",
+      65000,
+      65000,
+      1
+    ],
+    [
+      "MASSACHUSETTS GAMING COMMISSION (MGC)",
+      "MASSACHUSETTS GAMING COMMISSION (MGC) · (BB) REGULAR EMPLOYEE RELATED EXPEN",
+      49653.62,
+      49653.62,
+      558
+    ],
+    [
+      "MASSACHUSETTS GAMING COMMISSION (MGC)",
+      "MASSACHUSETTS GAMING COMMISSION (MGC) · (LL) EQUIPMENT LEASE-MAINTAIN/REPAR",
+      30766.17,
+      30766.17,
+      155
+    ],
+    [
+      "MASSACHUSETTS GAMING COMMISSION (MGC)",
+      "MASSACHUSETTS GAMING COMMISSION (MGC) · (NN) INFRASTRUCTURE:",
+      26938.34,
+      26938.34,
+      26
+    ],
+    [
+      "MASSACHUSETTS GAMING COMMISSION (MGC)",
+      "MASSACHUSETTS GAMING COMMISSION (MGC) · (KK) EQUIPMENT PURCHASE",
+      26249.83,
+      26249.83,
+      6
+    ],
+    [
+      "MASSACHUSETTS GAMING COMMISSION (MGC)",
+      "MASSACHUSETTS GAMING COMMISSION (MGC) · (99) PAYROLL REJECTS",
+      0,
+      0,
+      8
+    ]
+  ],
+  "hierarchyNote": "The source does not identify a separate sub-agency column; direct-managed rows repeat the parent entity.",
+  "sourceBasis": "official source amount",
+  "note": "Amounts are shown on the official source basis; no comparator normalization was applied."
+}

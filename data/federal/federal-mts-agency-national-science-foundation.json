@@ -1,0 +1,28 @@
+{
+  "scope": "United States",
+  "code": "federal",
+  "fiscalYear": 2024,
+  "department": "National Science Foundation",
+  "sourceTotal": 9392000000,
+  "sourceUrl": "https://fiscal.treasury.gov/system/files/files/reports-statements/mts/mts0924.pdf",
+  "sourceUrls": [["Treasury FY2024 MTS Table 5", "https://fiscal.treasury.gov/system/files/files/reports-statements/mts/mts0924.pdf"]],
+  "relatedSources": [["USAspending gross research (supporting detail)", "data/federal/archive-agency-source/federal-national-science-foundation.json"]],
+  "sourceBasis": "Treasury MTS Table 5 current-fiscal-year gross outlays, applicable receipts, and net outlays; published in $ millions and converted to USD.",
+  "rowSchema": ["subAgency", "program", "amount", "sourceAmount", "sourceRows", "grossOutlays", "applicableReceipts"],
+  "sourceCheck": {"groupRows": 5, "difference": 0, "publishedRoundingAdjustment": 1000000},
+  "note": "Displayed amounts are net outlays; each row retains its published gross outlays and applicable receipts.",
+  "accountResearch": {"accountCount": 9, "largeAccountCount": 2, "netAccountOutlays": 9438234866.93, "threshold": 1000000000, "sourceUrl": "https://fiscal.treasury.gov/system/files/files/reports-statements/combined-statement/cs2024/c54.pdf"},
+  "largeAccountSchema": ["treasuryAccount", "title", "netOutlays", "availabilityRows"],
+  "largeAccountBasis": "Exact Combined Statement net outlays by appropriation or fund account. This is a research cross-section of the same department, not another amount to add to MTS classification rows.",
+  "largeAccountRows": [
+    ["049-0100-000", "Research and Related Activities, National Science Foundation", 7345983060.93, 8],
+    ["049-0106-000", "Education and Human Resources, National Science Foundation", 1187467763.2, 8]
+  ],
+  "rows": [
+    ["National Science Foundation", "Research and Related Activities", 7346000000, 7346000000, 1, 7346000000, 0],
+    ["National Science Foundation", "Education and Human Resources", 1348000000, 1348000000, 1, 1348000000, 0],
+    ["National Science Foundation", "Other", 744000000, 744000000, 1, 744000000, 0],
+    ["National Science Foundation", "Proprietary Receipts from the Public", -47000000, -47000000, 1, 0, 47000000],
+    ["National Science Foundation", "Published Table 5 rounding adjustment", 1000000, 1000000, 0, 1000000, 0]
+  ]
+}

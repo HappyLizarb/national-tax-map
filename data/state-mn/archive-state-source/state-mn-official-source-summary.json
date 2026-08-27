@@ -1,0 +1,2286 @@
+{
+  "scope": "Minnesota",
+  "code": "mn",
+  "fiscalYear": 2024,
+  "sourceTotal": 64339974325,
+  "sourceUrl": "https://transparency.systems.state.mn.us/analytics/saw.dll?Go&ViewID=d%3adashboard%7ep%3a0lpu8102g8pch6om%7er%3a4rcek211kjk0hpfb&Action=Download&SearchID=1b0b8oo4pgtonh800tnv7d8iaa&Style=MNIT&ViewState=6e023hfv8pu2gn62ug63e79ac2&ItemName=Payments%205.0%20-%20by%20Agency&path=%2fshared%2fCitizens%20Portal%2fPayments%2fPayments%205.0%20-%20by%20Agency&Format=csv&Extension=.csv",
+  "dimension": "agency",
+  "note": "The pie uses one official itemized source layer and never inserts a synthetic residual. Department amounts reconcile to the official itemized source total. sourceAmount preserves the imported itemized basis. The census fy2024 state-finance comparator is retained for comparison only; its higher total is not assigned to a receiver or program.",
+  "reconciliation": {
+    "itemizedDifference": 0,
+    "normalized": false,
+    "scale": 1,
+    "comparisonDifference": 3090069325
+  },
+  "departments": [
+    {
+      "id": "department-of-human-services",
+      "name": "Department of Human Services",
+      "amount": 26254884052,
+      "sourceAmount": 26254884052,
+      "program": "Department of Human Services",
+      "sourceRows": null,
+      "detailUrl": null,
+      "sourceUrl": "https://transparency.systems.state.mn.us/analytics/saw.dll?Go&ViewID=d%3adashboard%7ep%3a0lpu8102g8pch6om%7er%3a4rcek211kjk0hpfb&Action=Download&SearchID=1b0b8oo4pgtonh800tnv7d8iaa&Style=MNIT&ViewState=6e023hfv8pu2gn62ug63e79ac2&ItemName=Payments%205.0%20-%20by%20Agency&path=%2fshared%2fCitizens%20Portal%2fPayments%2fPayments%205.0%20-%20by%20Agency&Format=csv&Extension=.csv",
+      "relatedSources": [
+        [
+          "FY2024 statewide wages (non-additive)",
+          "data/state-mn/archive-state-source/state-mn-payroll.json"
+        ],
+        [
+          "Official Minnesota payroll page",
+          "https://mn.gov/mmb/transparency-mn/payrolldata.jsp"
+        ]
+      ]
+    },
+    {
+      "id": "education-department",
+      "name": "Education Department",
+      "amount": 13065648811,
+      "sourceAmount": 13065648811,
+      "program": "Education Department",
+      "sourceRows": null,
+      "detailUrl": null,
+      "sourceUrl": "https://transparency.systems.state.mn.us/analytics/saw.dll?Go&ViewID=d%3adashboard%7ep%3a0lpu8102g8pch6om%7er%3a4rcek211kjk0hpfb&Action=Download&SearchID=1b0b8oo4pgtonh800tnv7d8iaa&Style=MNIT&ViewState=6e023hfv8pu2gn62ug63e79ac2&ItemName=Payments%205.0%20-%20by%20Agency&path=%2fshared%2fCitizens%20Portal%2fPayments%2fPayments%205.0%20-%20by%20Agency&Format=csv&Extension=.csv",
+      "relatedSources": [
+        [
+          "FY2024 statewide wages (non-additive)",
+          "data/state-mn/archive-state-source/state-mn-payroll.json"
+        ],
+        [
+          "Official Minnesota payroll page",
+          "https://mn.gov/mmb/transparency-mn/payrolldata.jsp"
+        ]
+      ]
+    },
+    {
+      "id": "transportation-dept",
+      "name": "Transportation Dept",
+      "amount": 3284427807,
+      "sourceAmount": 3284427807,
+      "program": "Transportation Dept",
+      "sourceRows": null,
+      "detailUrl": null,
+      "sourceUrl": "https://transparency.systems.state.mn.us/analytics/saw.dll?Go&ViewID=d%3adashboard%7ep%3a0lpu8102g8pch6om%7er%3a4rcek211kjk0hpfb&Action=Download&SearchID=1b0b8oo4pgtonh800tnv7d8iaa&Style=MNIT&ViewState=6e023hfv8pu2gn62ug63e79ac2&ItemName=Payments%205.0%20-%20by%20Agency&path=%2fshared%2fCitizens%20Portal%2fPayments%2fPayments%205.0%20-%20by%20Agency&Format=csv&Extension=.csv",
+      "relatedSources": [
+        [
+          "FY2024 statewide wages (non-additive)",
+          "data/state-mn/archive-state-source/state-mn-payroll.json"
+        ],
+        [
+          "Official Minnesota payroll page",
+          "https://mn.gov/mmb/transparency-mn/payrolldata.jsp"
+        ]
+      ]
+    },
+    {
+      "id": "public-employees-retire-assoc",
+      "name": "Public Employees Retire Assoc",
+      "amount": 2766552359,
+      "sourceAmount": 2766552359,
+      "program": "Public Employees Retire Assoc",
+      "sourceRows": null,
+      "detailUrl": null,
+      "sourceUrl": "https://transparency.systems.state.mn.us/analytics/saw.dll?Go&ViewID=d%3adashboard%7ep%3a0lpu8102g8pch6om%7er%3a4rcek211kjk0hpfb&Action=Download&SearchID=1b0b8oo4pgtonh800tnv7d8iaa&Style=MNIT&ViewState=6e023hfv8pu2gn62ug63e79ac2&ItemName=Payments%205.0%20-%20by%20Agency&path=%2fshared%2fCitizens%20Portal%2fPayments%2fPayments%205.0%20-%20by%20Agency&Format=csv&Extension=.csv",
+      "relatedSources": [
+        [
+          "FY2024 statewide wages (non-additive)",
+          "data/state-mn/archive-state-source/state-mn-payroll.json"
+        ],
+        [
+          "Official Minnesota payroll page",
+          "https://mn.gov/mmb/transparency-mn/payrolldata.jsp"
+        ]
+      ]
+    },
+    {
+      "id": "revenue-intergovt-payments",
+      "name": "Revenue Intergovt Payments",
+      "amount": 2709224829,
+      "sourceAmount": 2709224829,
+      "program": "Revenue Intergovt Payments",
+      "sourceRows": null,
+      "detailUrl": null,
+      "sourceUrl": "https://transparency.systems.state.mn.us/analytics/saw.dll?Go&ViewID=d%3adashboard%7ep%3a0lpu8102g8pch6om%7er%3a4rcek211kjk0hpfb&Action=Download&SearchID=1b0b8oo4pgtonh800tnv7d8iaa&Style=MNIT&ViewState=6e023hfv8pu2gn62ug63e79ac2&ItemName=Payments%205.0%20-%20by%20Agency&path=%2fshared%2fCitizens%20Portal%2fPayments%2fPayments%205.0%20-%20by%20Agency&Format=csv&Extension=.csv",
+      "relatedSources": [
+        [
+          "FY2024 statewide wages (non-additive)",
+          "data/state-mn/archive-state-source/state-mn-payroll.json"
+        ],
+        [
+          "Official Minnesota payroll page",
+          "https://mn.gov/mmb/transparency-mn/payrolldata.jsp"
+        ]
+      ]
+    },
+    {
+      "id": "teachers-retirement-assoc",
+      "name": "Teachers Retirement Assoc",
+      "amount": 2090007021,
+      "sourceAmount": 2090007021,
+      "program": "Teachers Retirement Assoc",
+      "sourceRows": null,
+      "detailUrl": null,
+      "sourceUrl": "https://transparency.systems.state.mn.us/analytics/saw.dll?Go&ViewID=d%3adashboard%7ep%3a0lpu8102g8pch6om%7er%3a4rcek211kjk0hpfb&Action=Download&SearchID=1b0b8oo4pgtonh800tnv7d8iaa&Style=MNIT&ViewState=6e023hfv8pu2gn62ug63e79ac2&ItemName=Payments%205.0%20-%20by%20Agency&path=%2fshared%2fCitizens%20Portal%2fPayments%2fPayments%205.0%20-%20by%20Agency&Format=csv&Extension=.csv",
+      "relatedSources": [
+        [
+          "FY2024 statewide wages (non-additive)",
+          "data/state-mn/archive-state-source/state-mn-payroll.json"
+        ],
+        [
+          "Official Minnesota payroll page",
+          "https://mn.gov/mmb/transparency-mn/payrolldata.jsp"
+        ]
+      ]
+    },
+    {
+      "id": "mn-management-budget",
+      "name": "Mn Management & Budget",
+      "amount": 1691836275,
+      "sourceAmount": 1691836275,
+      "program": "Mn Management & Budget",
+      "sourceRows": null,
+      "detailUrl": null,
+      "sourceUrl": "https://transparency.systems.state.mn.us/analytics/saw.dll?Go&ViewID=d%3adashboard%7ep%3a0lpu8102g8pch6om%7er%3a4rcek211kjk0hpfb&Action=Download&SearchID=1b0b8oo4pgtonh800tnv7d8iaa&Style=MNIT&ViewState=6e023hfv8pu2gn62ug63e79ac2&ItemName=Payments%205.0%20-%20by%20Agency&path=%2fshared%2fCitizens%20Portal%2fPayments%2fPayments%205.0%20-%20by%20Agency&Format=csv&Extension=.csv",
+      "relatedSources": [
+        [
+          "FY2024 statewide wages (non-additive)",
+          "data/state-mn/archive-state-source/state-mn-payroll.json"
+        ],
+        [
+          "Official Minnesota payroll page",
+          "https://mn.gov/mmb/transparency-mn/payrolldata.jsp"
+        ]
+      ]
+    },
+    {
+      "id": "mmb-debt-service",
+      "name": "Mmb Debt Service",
+      "amount": 1597910483,
+      "sourceAmount": 1597910483,
+      "program": "Mmb Debt Service",
+      "sourceRows": null,
+      "detailUrl": null,
+      "sourceUrl": "https://transparency.systems.state.mn.us/analytics/saw.dll?Go&ViewID=d%3adashboard%7ep%3a0lpu8102g8pch6om%7er%3a4rcek211kjk0hpfb&Action=Download&SearchID=1b0b8oo4pgtonh800tnv7d8iaa&Style=MNIT&ViewState=6e023hfv8pu2gn62ug63e79ac2&ItemName=Payments%205.0%20-%20by%20Agency&path=%2fshared%2fCitizens%20Portal%2fPayments%2fPayments%205.0%20-%20by%20Agency&Format=csv&Extension=.csv",
+      "relatedSources": [
+        [
+          "FY2024 statewide wages (non-additive)",
+          "data/state-mn/archive-state-source/state-mn-payroll.json"
+        ],
+        [
+          "Official Minnesota payroll page",
+          "https://mn.gov/mmb/transparency-mn/payrolldata.jsp"
+        ]
+      ]
+    },
+    {
+      "id": "mn-state-retirement-system",
+      "name": "MN State Retirement System",
+      "amount": 1288633372,
+      "sourceAmount": 1288633372,
+      "program": "MN State Retirement System",
+      "sourceRows": null,
+      "detailUrl": null,
+      "sourceUrl": "https://transparency.systems.state.mn.us/analytics/saw.dll?Go&ViewID=d%3adashboard%7ep%3a0lpu8102g8pch6om%7er%3a4rcek211kjk0hpfb&Action=Download&SearchID=1b0b8oo4pgtonh800tnv7d8iaa&Style=MNIT&ViewState=6e023hfv8pu2gn62ug63e79ac2&ItemName=Payments%205.0%20-%20by%20Agency&path=%2fshared%2fCitizens%20Portal%2fPayments%2fPayments%205.0%20-%20by%20Agency&Format=csv&Extension=.csv",
+      "relatedSources": [
+        [
+          "FY2024 statewide wages (non-additive)",
+          "data/state-mn/archive-state-source/state-mn-payroll.json"
+        ],
+        [
+          "Official Minnesota payroll page",
+          "https://mn.gov/mmb/transparency-mn/payrolldata.jsp"
+        ]
+      ]
+    },
+    {
+      "id": "university-of-minnesota",
+      "name": "University Of Minnesota",
+      "amount": 824083803,
+      "sourceAmount": 824083803,
+      "program": "University Of Minnesota",
+      "sourceRows": null,
+      "detailUrl": null,
+      "sourceUrl": "https://transparency.systems.state.mn.us/analytics/saw.dll?Go&ViewID=d%3adashboard%7ep%3a0lpu8102g8pch6om%7er%3a4rcek211kjk0hpfb&Action=Download&SearchID=1b0b8oo4pgtonh800tnv7d8iaa&Style=MNIT&ViewState=6e023hfv8pu2gn62ug63e79ac2&ItemName=Payments%205.0%20-%20by%20Agency&path=%2fshared%2fCitizens%20Portal%2fPayments%2fPayments%205.0%20-%20by%20Agency&Format=csv&Extension=.csv",
+      "relatedSources": [
+        [
+          "FY2024 statewide wages (non-additive)",
+          "data/state-mn/archive-state-source/state-mn-payroll.json"
+        ],
+        [
+          "Official Minnesota payroll page",
+          "https://mn.gov/mmb/transparency-mn/payrolldata.jsp"
+        ]
+      ]
+    },
+    {
+      "id": "employ-econ-development-dept",
+      "name": "Employ & Econ Development Dept",
+      "amount": 755322940,
+      "sourceAmount": 755322940,
+      "program": "Employ & Econ Development Dept",
+      "sourceRows": null,
+      "detailUrl": null,
+      "sourceUrl": "https://transparency.systems.state.mn.us/analytics/saw.dll?Go&ViewID=d%3adashboard%7ep%3a0lpu8102g8pch6om%7er%3a4rcek211kjk0hpfb&Action=Download&SearchID=1b0b8oo4pgtonh800tnv7d8iaa&Style=MNIT&ViewState=6e023hfv8pu2gn62ug63e79ac2&ItemName=Payments%205.0%20-%20by%20Agency&path=%2fshared%2fCitizens%20Portal%2fPayments%2fPayments%205.0%20-%20by%20Agency&Format=csv&Extension=.csv",
+      "relatedSources": [
+        [
+          "FY2024 statewide wages (non-additive)",
+          "data/state-mn/archive-state-source/state-mn-payroll.json"
+        ],
+        [
+          "Official Minnesota payroll page",
+          "https://mn.gov/mmb/transparency-mn/payrolldata.jsp"
+        ]
+      ]
+    },
+    {
+      "id": "public-safety-dept",
+      "name": "Public Safety Dept",
+      "amount": 703134046,
+      "sourceAmount": 703134046,
+      "program": "Public Safety Dept",
+      "sourceRows": null,
+      "detailUrl": null,
+      "sourceUrl": "https://transparency.systems.state.mn.us/analytics/saw.dll?Go&ViewID=d%3adashboard%7ep%3a0lpu8102g8pch6om%7er%3a4rcek211kjk0hpfb&Action=Download&SearchID=1b0b8oo4pgtonh800tnv7d8iaa&Style=MNIT&ViewState=6e023hfv8pu2gn62ug63e79ac2&ItemName=Payments%205.0%20-%20by%20Agency&path=%2fshared%2fCitizens%20Portal%2fPayments%2fPayments%205.0%20-%20by%20Agency&Format=csv&Extension=.csv",
+      "relatedSources": [
+        [
+          "FY2024 statewide wages (non-additive)",
+          "data/state-mn/archive-state-source/state-mn-payroll.json"
+        ],
+        [
+          "Official Minnesota payroll page",
+          "https://mn.gov/mmb/transparency-mn/payrolldata.jsp"
+        ]
+      ]
+    },
+    {
+      "id": "health-department",
+      "name": "Health Department",
+      "amount": 651418720,
+      "sourceAmount": 651418720,
+      "program": "Health Department",
+      "sourceRows": null,
+      "detailUrl": null,
+      "sourceUrl": "https://transparency.systems.state.mn.us/analytics/saw.dll?Go&ViewID=d%3adashboard%7ep%3a0lpu8102g8pch6om%7er%3a4rcek211kjk0hpfb&Action=Download&SearchID=1b0b8oo4pgtonh800tnv7d8iaa&Style=MNIT&ViewState=6e023hfv8pu2gn62ug63e79ac2&ItemName=Payments%205.0%20-%20by%20Agency&path=%2fshared%2fCitizens%20Portal%2fPayments%2fPayments%205.0%20-%20by%20Agency&Format=csv&Extension=.csv",
+      "relatedSources": [
+        [
+          "FY2024 statewide wages (non-additive)",
+          "data/state-mn/archive-state-source/state-mn-payroll.json"
+        ],
+        [
+          "Official Minnesota payroll page",
+          "https://mn.gov/mmb/transparency-mn/payrolldata.jsp"
+        ]
+      ]
+    },
+    {
+      "id": "administration-dept",
+      "name": "Administration Dept",
+      "amount": 639148586,
+      "sourceAmount": 639148586,
+      "program": "Administration Dept",
+      "sourceRows": null,
+      "detailUrl": null,
+      "sourceUrl": "https://transparency.systems.state.mn.us/analytics/saw.dll?Go&ViewID=d%3adashboard%7ep%3a0lpu8102g8pch6om%7er%3a4rcek211kjk0hpfb&Action=Download&SearchID=1b0b8oo4pgtonh800tnv7d8iaa&Style=MNIT&ViewState=6e023hfv8pu2gn62ug63e79ac2&ItemName=Payments%205.0%20-%20by%20Agency&path=%2fshared%2fCitizens%20Portal%2fPayments%2fPayments%205.0%20-%20by%20Agency&Format=csv&Extension=.csv",
+      "relatedSources": [
+        [
+          "FY2024 statewide wages (non-additive)",
+          "data/state-mn/archive-state-source/state-mn-payroll.json"
+        ],
+        [
+          "Official Minnesota payroll page",
+          "https://mn.gov/mmb/transparency-mn/payrolldata.jsp"
+        ]
+      ]
+    },
+    {
+      "id": "natural-resources-dept",
+      "name": "Natural Resources Dept",
+      "amount": 583134279,
+      "sourceAmount": 583134279,
+      "program": "Natural Resources Dept",
+      "sourceRows": null,
+      "detailUrl": null,
+      "sourceUrl": "https://transparency.systems.state.mn.us/analytics/saw.dll?Go&ViewID=d%3adashboard%7ep%3a0lpu8102g8pch6om%7er%3a4rcek211kjk0hpfb&Action=Download&SearchID=1b0b8oo4pgtonh800tnv7d8iaa&Style=MNIT&ViewState=6e023hfv8pu2gn62ug63e79ac2&ItemName=Payments%205.0%20-%20by%20Agency&path=%2fshared%2fCitizens%20Portal%2fPayments%2fPayments%205.0%20-%20by%20Agency&Format=csv&Extension=.csv",
+      "relatedSources": [
+        [
+          "FY2024 statewide wages (non-additive)",
+          "data/state-mn/archive-state-source/state-mn-payroll.json"
+        ],
+        [
+          "Official Minnesota payroll page",
+          "https://mn.gov/mmb/transparency-mn/payrolldata.jsp"
+        ]
+      ]
+    },
+    {
+      "id": "mn-st-colleges-universities",
+      "name": "MN St Colleges & Universities",
+      "amount": 571136862,
+      "sourceAmount": 571136862,
+      "program": "MN St Colleges & Universities",
+      "sourceRows": null,
+      "detailUrl": null,
+      "sourceUrl": "https://transparency.systems.state.mn.us/analytics/saw.dll?Go&ViewID=d%3adashboard%7ep%3a0lpu8102g8pch6om%7er%3a4rcek211kjk0hpfb&Action=Download&SearchID=1b0b8oo4pgtonh800tnv7d8iaa&Style=MNIT&ViewState=6e023hfv8pu2gn62ug63e79ac2&ItemName=Payments%205.0%20-%20by%20Agency&path=%2fshared%2fCitizens%20Portal%2fPayments%2fPayments%205.0%20-%20by%20Agency&Format=csv&Extension=.csv",
+      "relatedSources": [
+        [
+          "FY2024 statewide wages (non-additive)",
+          "data/state-mn/archive-state-source/state-mn-payroll.json"
+        ],
+        [
+          "Official Minnesota payroll page",
+          "https://mn.gov/mmb/transparency-mn/payrolldata.jsp"
+        ]
+      ]
+    },
+    {
+      "id": "metropolitan-council",
+      "name": "Metropolitan Council",
+      "amount": 563339914,
+      "sourceAmount": 563339914,
+      "program": "Metropolitan Council",
+      "sourceRows": null,
+      "detailUrl": null,
+      "sourceUrl": "https://transparency.systems.state.mn.us/analytics/saw.dll?Go&ViewID=d%3adashboard%7ep%3a0lpu8102g8pch6om%7er%3a4rcek211kjk0hpfb&Action=Download&SearchID=1b0b8oo4pgtonh800tnv7d8iaa&Style=MNIT&ViewState=6e023hfv8pu2gn62ug63e79ac2&ItemName=Payments%205.0%20-%20by%20Agency&path=%2fshared%2fCitizens%20Portal%2fPayments%2fPayments%205.0%20-%20by%20Agency&Format=csv&Extension=.csv",
+      "relatedSources": [
+        [
+          "FY2024 statewide wages (non-additive)",
+          "data/state-mn/archive-state-source/state-mn-payroll.json"
+        ],
+        [
+          "Official Minnesota payroll page",
+          "https://mn.gov/mmb/transparency-mn/payrolldata.jsp"
+        ]
+      ]
+    },
+    {
+      "id": "housing-finance-agency",
+      "name": "Housing Finance Agency",
+      "amount": 542148987,
+      "sourceAmount": 542148987,
+      "program": "Housing Finance Agency",
+      "sourceRows": null,
+      "detailUrl": null,
+      "sourceUrl": "https://transparency.systems.state.mn.us/analytics/saw.dll?Go&ViewID=d%3adashboard%7ep%3a0lpu8102g8pch6om%7er%3a4rcek211kjk0hpfb&Action=Download&SearchID=1b0b8oo4pgtonh800tnv7d8iaa&Style=MNIT&ViewState=6e023hfv8pu2gn62ug63e79ac2&ItemName=Payments%205.0%20-%20by%20Agency&path=%2fshared%2fCitizens%20Portal%2fPayments%2fPayments%205.0%20-%20by%20Agency&Format=csv&Extension=.csv",
+      "relatedSources": [
+        [
+          "FY2024 statewide wages (non-additive)",
+          "data/state-mn/archive-state-source/state-mn-payroll.json"
+        ],
+        [
+          "Official Minnesota payroll page",
+          "https://mn.gov/mmb/transparency-mn/payrolldata.jsp"
+        ]
+      ]
+    },
+    {
+      "id": "public-facilities-authority",
+      "name": "Public Facilities Authority",
+      "amount": 472041961,
+      "sourceAmount": 472041961,
+      "program": "Public Facilities Authority",
+      "sourceRows": null,
+      "detailUrl": null,
+      "sourceUrl": "https://transparency.systems.state.mn.us/analytics/saw.dll?Go&ViewID=d%3adashboard%7ep%3a0lpu8102g8pch6om%7er%3a4rcek211kjk0hpfb&Action=Download&SearchID=1b0b8oo4pgtonh800tnv7d8iaa&Style=MNIT&ViewState=6e023hfv8pu2gn62ug63e79ac2&ItemName=Payments%205.0%20-%20by%20Agency&path=%2fshared%2fCitizens%20Portal%2fPayments%2fPayments%205.0%20-%20by%20Agency&Format=csv&Extension=.csv",
+      "relatedSources": [
+        [
+          "FY2024 statewide wages (non-additive)",
+          "data/state-mn/archive-state-source/state-mn-payroll.json"
+        ],
+        [
+          "Official Minnesota payroll page",
+          "https://mn.gov/mmb/transparency-mn/payrolldata.jsp"
+        ]
+      ]
+    },
+    {
+      "id": "commerce-dept",
+      "name": "Commerce Dept",
+      "amount": 438978042,
+      "sourceAmount": 438978042,
+      "program": "Commerce Dept",
+      "sourceRows": null,
+      "detailUrl": null,
+      "sourceUrl": "https://transparency.systems.state.mn.us/analytics/saw.dll?Go&ViewID=d%3adashboard%7ep%3a0lpu8102g8pch6om%7er%3a4rcek211kjk0hpfb&Action=Download&SearchID=1b0b8oo4pgtonh800tnv7d8iaa&Style=MNIT&ViewState=6e023hfv8pu2gn62ug63e79ac2&ItemName=Payments%205.0%20-%20by%20Agency&path=%2fshared%2fCitizens%20Portal%2fPayments%2fPayments%205.0%20-%20by%20Agency&Format=csv&Extension=.csv",
+      "relatedSources": [
+        [
+          "FY2024 statewide wages (non-additive)",
+          "data/state-mn/archive-state-source/state-mn-payroll.json"
+        ],
+        [
+          "Official Minnesota payroll page",
+          "https://mn.gov/mmb/transparency-mn/payrolldata.jsp"
+        ]
+      ]
+    },
+    {
+      "id": "office-of-higher-education",
+      "name": "Office of Higher Education",
+      "amount": 397970330,
+      "sourceAmount": 397970330,
+      "program": "Office of Higher Education",
+      "sourceRows": null,
+      "detailUrl": null,
+      "sourceUrl": "https://transparency.systems.state.mn.us/analytics/saw.dll?Go&ViewID=d%3adashboard%7ep%3a0lpu8102g8pch6om%7er%3a4rcek211kjk0hpfb&Action=Download&SearchID=1b0b8oo4pgtonh800tnv7d8iaa&Style=MNIT&ViewState=6e023hfv8pu2gn62ug63e79ac2&ItemName=Payments%205.0%20-%20by%20Agency&path=%2fshared%2fCitizens%20Portal%2fPayments%2fPayments%205.0%20-%20by%20Agency&Format=csv&Extension=.csv",
+      "relatedSources": [
+        [
+          "FY2024 statewide wages (non-additive)",
+          "data/state-mn/archive-state-source/state-mn-payroll.json"
+        ],
+        [
+          "Official Minnesota payroll page",
+          "https://mn.gov/mmb/transparency-mn/payrolldata.jsp"
+        ]
+      ]
+    },
+    {
+      "id": "corrections-dept",
+      "name": "Corrections Dept",
+      "amount": 396643807,
+      "sourceAmount": 396643807,
+      "program": "Corrections Dept",
+      "sourceRows": null,
+      "detailUrl": null,
+      "sourceUrl": "https://transparency.systems.state.mn.us/analytics/saw.dll?Go&ViewID=d%3adashboard%7ep%3a0lpu8102g8pch6om%7er%3a4rcek211kjk0hpfb&Action=Download&SearchID=1b0b8oo4pgtonh800tnv7d8iaa&Style=MNIT&ViewState=6e023hfv8pu2gn62ug63e79ac2&ItemName=Payments%205.0%20-%20by%20Agency&path=%2fshared%2fCitizens%20Portal%2fPayments%2fPayments%205.0%20-%20by%20Agency&Format=csv&Extension=.csv",
+      "relatedSources": [
+        [
+          "FY2024 statewide wages (non-additive)",
+          "data/state-mn/archive-state-source/state-mn-payroll.json"
+        ],
+        [
+          "Official Minnesota payroll page",
+          "https://mn.gov/mmb/transparency-mn/payrolldata.jsp"
+        ]
+      ]
+    },
+    {
+      "id": "mn-it-services",
+      "name": "MN.IT Services",
+      "amount": 349369478,
+      "sourceAmount": 349369478,
+      "program": "MN.IT Services",
+      "sourceRows": null,
+      "detailUrl": null,
+      "sourceUrl": "https://transparency.systems.state.mn.us/analytics/saw.dll?Go&ViewID=d%3adashboard%7ep%3a0lpu8102g8pch6om%7er%3a4rcek211kjk0hpfb&Action=Download&SearchID=1b0b8oo4pgtonh800tnv7d8iaa&Style=MNIT&ViewState=6e023hfv8pu2gn62ug63e79ac2&ItemName=Payments%205.0%20-%20by%20Agency&path=%2fshared%2fCitizens%20Portal%2fPayments%2fPayments%205.0%20-%20by%20Agency&Format=csv&Extension=.csv",
+      "relatedSources": [
+        [
+          "FY2024 statewide wages (non-additive)",
+          "data/state-mn/archive-state-source/state-mn-payroll.json"
+        ],
+        [
+          "Official Minnesota payroll page",
+          "https://mn.gov/mmb/transparency-mn/payrolldata.jsp"
+        ]
+      ]
+    },
+    {
+      "id": "pollution-control-agency",
+      "name": "Pollution Control Agency",
+      "amount": 272263677,
+      "sourceAmount": 272263677,
+      "program": "Pollution Control Agency",
+      "sourceRows": null,
+      "detailUrl": null,
+      "sourceUrl": "https://transparency.systems.state.mn.us/analytics/saw.dll?Go&ViewID=d%3adashboard%7ep%3a0lpu8102g8pch6om%7er%3a4rcek211kjk0hpfb&Action=Download&SearchID=1b0b8oo4pgtonh800tnv7d8iaa&Style=MNIT&ViewState=6e023hfv8pu2gn62ug63e79ac2&ItemName=Payments%205.0%20-%20by%20Agency&path=%2fshared%2fCitizens%20Portal%2fPayments%2fPayments%205.0%20-%20by%20Agency&Format=csv&Extension=.csv",
+      "relatedSources": [
+        [
+          "FY2024 statewide wages (non-additive)",
+          "data/state-mn/archive-state-source/state-mn-payroll.json"
+        ],
+        [
+          "Official Minnesota payroll page",
+          "https://mn.gov/mmb/transparency-mn/payrolldata.jsp"
+        ]
+      ]
+    },
+    {
+      "id": "mmb-non-operating",
+      "name": "Mmb Non-operating",
+      "amount": 244898176,
+      "sourceAmount": 244898176,
+      "program": "Mmb Non-operating",
+      "sourceRows": null,
+      "detailUrl": null,
+      "sourceUrl": "https://transparency.systems.state.mn.us/analytics/saw.dll?Go&ViewID=d%3adashboard%7ep%3a0lpu8102g8pch6om%7er%3a4rcek211kjk0hpfb&Action=Download&SearchID=1b0b8oo4pgtonh800tnv7d8iaa&Style=MNIT&ViewState=6e023hfv8pu2gn62ug63e79ac2&ItemName=Payments%205.0%20-%20by%20Agency&path=%2fshared%2fCitizens%20Portal%2fPayments%2fPayments%205.0%20-%20by%20Agency&Format=csv&Extension=.csv",
+      "relatedSources": [
+        [
+          "FY2024 statewide wages (non-additive)",
+          "data/state-mn/archive-state-source/state-mn-payroll.json"
+        ],
+        [
+          "Official Minnesota payroll page",
+          "https://mn.gov/mmb/transparency-mn/payrolldata.jsp"
+        ]
+      ]
+    },
+    {
+      "id": "water-soil-resources-board",
+      "name": "Water & Soil Resources Board",
+      "amount": 127777193,
+      "sourceAmount": 127777193,
+      "program": "Water & Soil Resources Board",
+      "sourceRows": null,
+      "detailUrl": null,
+      "sourceUrl": "https://transparency.systems.state.mn.us/analytics/saw.dll?Go&ViewID=d%3adashboard%7ep%3a0lpu8102g8pch6om%7er%3a4rcek211kjk0hpfb&Action=Download&SearchID=1b0b8oo4pgtonh800tnv7d8iaa&Style=MNIT&ViewState=6e023hfv8pu2gn62ug63e79ac2&ItemName=Payments%205.0%20-%20by%20Agency&path=%2fshared%2fCitizens%20Portal%2fPayments%2fPayments%205.0%20-%20by%20Agency&Format=csv&Extension=.csv",
+      "relatedSources": [
+        [
+          "FY2024 statewide wages (non-additive)",
+          "data/state-mn/archive-state-source/state-mn-payroll.json"
+        ],
+        [
+          "Official Minnesota payroll page",
+          "https://mn.gov/mmb/transparency-mn/payrolldata.jsp"
+        ]
+      ]
+    },
+    {
+      "id": "agriculture-dept",
+      "name": "Agriculture Dept",
+      "amount": 108163738,
+      "sourceAmount": 108163738,
+      "program": "Agriculture Dept",
+      "sourceRows": null,
+      "detailUrl": null,
+      "sourceUrl": "https://transparency.systems.state.mn.us/analytics/saw.dll?Go&ViewID=d%3adashboard%7ep%3a0lpu8102g8pch6om%7er%3a4rcek211kjk0hpfb&Action=Download&SearchID=1b0b8oo4pgtonh800tnv7d8iaa&Style=MNIT&ViewState=6e023hfv8pu2gn62ug63e79ac2&ItemName=Payments%205.0%20-%20by%20Agency&path=%2fshared%2fCitizens%20Portal%2fPayments%2fPayments%205.0%20-%20by%20Agency&Format=csv&Extension=.csv",
+      "relatedSources": [
+        [
+          "FY2024 statewide wages (non-additive)",
+          "data/state-mn/archive-state-source/state-mn-payroll.json"
+        ],
+        [
+          "Official Minnesota payroll page",
+          "https://mn.gov/mmb/transparency-mn/payrolldata.jsp"
+        ]
+      ]
+    },
+    {
+      "id": "iron-range-resources-rehab",
+      "name": "Iron Range Resources & Rehab",
+      "amount": 106937784,
+      "sourceAmount": 106937784,
+      "program": "Iron Range Resources & Rehab",
+      "sourceRows": null,
+      "detailUrl": null,
+      "sourceUrl": "https://transparency.systems.state.mn.us/analytics/saw.dll?Go&ViewID=d%3adashboard%7ep%3a0lpu8102g8pch6om%7er%3a4rcek211kjk0hpfb&Action=Download&SearchID=1b0b8oo4pgtonh800tnv7d8iaa&Style=MNIT&ViewState=6e023hfv8pu2gn62ug63e79ac2&ItemName=Payments%205.0%20-%20by%20Agency&path=%2fshared%2fCitizens%20Portal%2fPayments%2fPayments%205.0%20-%20by%20Agency&Format=csv&Extension=.csv",
+      "relatedSources": [
+        [
+          "FY2024 statewide wages (non-additive)",
+          "data/state-mn/archive-state-source/state-mn-payroll.json"
+        ],
+        [
+          "Official Minnesota payroll page",
+          "https://mn.gov/mmb/transparency-mn/payrolldata.jsp"
+        ]
+      ]
+    },
+    {
+      "id": "military-affairs-dept",
+      "name": "Military Affairs Dept",
+      "amount": 102296444,
+      "sourceAmount": 102296444,
+      "program": "Military Affairs Dept",
+      "sourceRows": null,
+      "detailUrl": null,
+      "sourceUrl": "https://transparency.systems.state.mn.us/analytics/saw.dll?Go&ViewID=d%3adashboard%7ep%3a0lpu8102g8pch6om%7er%3a4rcek211kjk0hpfb&Action=Download&SearchID=1b0b8oo4pgtonh800tnv7d8iaa&Style=MNIT&ViewState=6e023hfv8pu2gn62ug63e79ac2&ItemName=Payments%205.0%20-%20by%20Agency&path=%2fshared%2fCitizens%20Portal%2fPayments%2fPayments%205.0%20-%20by%20Agency&Format=csv&Extension=.csv",
+      "relatedSources": [
+        [
+          "FY2024 statewide wages (non-additive)",
+          "data/state-mn/archive-state-source/state-mn-payroll.json"
+        ],
+        [
+          "Official Minnesota payroll page",
+          "https://mn.gov/mmb/transparency-mn/payrolldata.jsp"
+        ]
+      ]
+    },
+    {
+      "id": "veterans-affairs-dept",
+      "name": "Veterans Affairs Dept",
+      "amount": 77040831,
+      "sourceAmount": 77040831,
+      "program": "Veterans Affairs Dept",
+      "sourceRows": null,
+      "detailUrl": null,
+      "sourceUrl": "https://transparency.systems.state.mn.us/analytics/saw.dll?Go&ViewID=d%3adashboard%7ep%3a0lpu8102g8pch6om%7er%3a4rcek211kjk0hpfb&Action=Download&SearchID=1b0b8oo4pgtonh800tnv7d8iaa&Style=MNIT&ViewState=6e023hfv8pu2gn62ug63e79ac2&ItemName=Payments%205.0%20-%20by%20Agency&path=%2fshared%2fCitizens%20Portal%2fPayments%2fPayments%205.0%20-%20by%20Agency&Format=csv&Extension=.csv",
+      "relatedSources": [
+        [
+          "FY2024 statewide wages (non-additive)",
+          "data/state-mn/archive-state-source/state-mn-payroll.json"
+        ],
+        [
+          "Official Minnesota payroll page",
+          "https://mn.gov/mmb/transparency-mn/payrolldata.jsp"
+        ]
+      ]
+    },
+    {
+      "id": "revenue-dept",
+      "name": "Revenue Dept",
+      "amount": 70326219,
+      "sourceAmount": 70326219,
+      "program": "Revenue Dept",
+      "sourceRows": null,
+      "detailUrl": null,
+      "sourceUrl": "https://transparency.systems.state.mn.us/analytics/saw.dll?Go&ViewID=d%3adashboard%7ep%3a0lpu8102g8pch6om%7er%3a4rcek211kjk0hpfb&Action=Download&SearchID=1b0b8oo4pgtonh800tnv7d8iaa&Style=MNIT&ViewState=6e023hfv8pu2gn62ug63e79ac2&ItemName=Payments%205.0%20-%20by%20Agency&path=%2fshared%2fCitizens%20Portal%2fPayments%2fPayments%205.0%20-%20by%20Agency&Format=csv&Extension=.csv",
+      "relatedSources": [
+        [
+          "FY2024 statewide wages (non-additive)",
+          "data/state-mn/archive-state-source/state-mn-payroll.json"
+        ],
+        [
+          "Official Minnesota payroll page",
+          "https://mn.gov/mmb/transparency-mn/payrolldata.jsp"
+        ]
+      ]
+    },
+    {
+      "id": "trial-courts",
+      "name": "Trial Courts",
+      "amount": 63180947,
+      "sourceAmount": 63180947,
+      "program": "Trial Courts",
+      "sourceRows": null,
+      "detailUrl": null,
+      "sourceUrl": "https://transparency.systems.state.mn.us/analytics/saw.dll?Go&ViewID=d%3adashboard%7ep%3a0lpu8102g8pch6om%7er%3a4rcek211kjk0hpfb&Action=Download&SearchID=1b0b8oo4pgtonh800tnv7d8iaa&Style=MNIT&ViewState=6e023hfv8pu2gn62ug63e79ac2&ItemName=Payments%205.0%20-%20by%20Agency&path=%2fshared%2fCitizens%20Portal%2fPayments%2fPayments%205.0%20-%20by%20Agency&Format=csv&Extension=.csv",
+      "relatedSources": [
+        [
+          "FY2024 statewide wages (non-additive)",
+          "data/state-mn/archive-state-source/state-mn-payroll.json"
+        ],
+        [
+          "Official Minnesota payroll page",
+          "https://mn.gov/mmb/transparency-mn/payrolldata.jsp"
+        ]
+      ]
+    },
+    {
+      "id": "labor-industry-dept",
+      "name": "Labor & Industry Dept",
+      "amount": 62611610,
+      "sourceAmount": 62611610,
+      "program": "Labor & Industry Dept",
+      "sourceRows": null,
+      "detailUrl": null,
+      "sourceUrl": "https://transparency.systems.state.mn.us/analytics/saw.dll?Go&ViewID=d%3adashboard%7ep%3a0lpu8102g8pch6om%7er%3a4rcek211kjk0hpfb&Action=Download&SearchID=1b0b8oo4pgtonh800tnv7d8iaa&Style=MNIT&ViewState=6e023hfv8pu2gn62ug63e79ac2&ItemName=Payments%205.0%20-%20by%20Agency&path=%2fshared%2fCitizens%20Portal%2fPayments%2fPayments%205.0%20-%20by%20Agency&Format=csv&Extension=.csv",
+      "relatedSources": [
+        [
+          "FY2024 statewide wages (non-additive)",
+          "data/state-mn/archive-state-source/state-mn-payroll.json"
+        ],
+        [
+          "Official Minnesota payroll page",
+          "https://mn.gov/mmb/transparency-mn/payrolldata.jsp"
+        ]
+      ]
+    },
+    {
+      "id": "arts-board",
+      "name": "Arts Board",
+      "amount": 53347800,
+      "sourceAmount": 53347800,
+      "program": "Arts Board",
+      "sourceRows": null,
+      "detailUrl": null,
+      "sourceUrl": "https://transparency.systems.state.mn.us/analytics/saw.dll?Go&ViewID=d%3adashboard%7ep%3a0lpu8102g8pch6om%7er%3a4rcek211kjk0hpfb&Action=Download&SearchID=1b0b8oo4pgtonh800tnv7d8iaa&Style=MNIT&ViewState=6e023hfv8pu2gn62ug63e79ac2&ItemName=Payments%205.0%20-%20by%20Agency&path=%2fshared%2fCitizens%20Portal%2fPayments%2fPayments%205.0%20-%20by%20Agency&Format=csv&Extension=.csv",
+      "relatedSources": [
+        [
+          "FY2024 statewide wages (non-additive)",
+          "data/state-mn/archive-state-source/state-mn-payroll.json"
+        ],
+        [
+          "Official Minnesota payroll page",
+          "https://mn.gov/mmb/transparency-mn/payrolldata.jsp"
+        ]
+      ]
+    },
+    {
+      "id": "supreme-court",
+      "name": "Supreme Court",
+      "amount": 48060315,
+      "sourceAmount": 48060315,
+      "program": "Supreme Court",
+      "sourceRows": null,
+      "detailUrl": null,
+      "sourceUrl": "https://transparency.systems.state.mn.us/analytics/saw.dll?Go&ViewID=d%3adashboard%7ep%3a0lpu8102g8pch6om%7er%3a4rcek211kjk0hpfb&Action=Download&SearchID=1b0b8oo4pgtonh800tnv7d8iaa&Style=MNIT&ViewState=6e023hfv8pu2gn62ug63e79ac2&ItemName=Payments%205.0%20-%20by%20Agency&path=%2fshared%2fCitizens%20Portal%2fPayments%2fPayments%205.0%20-%20by%20Agency&Format=csv&Extension=.csv",
+      "relatedSources": [
+        [
+          "FY2024 statewide wages (non-additive)",
+          "data/state-mn/archive-state-source/state-mn-payroll.json"
+        ],
+        [
+          "Official Minnesota payroll page",
+          "https://mn.gov/mmb/transparency-mn/payrolldata.jsp"
+        ]
+      ]
+    },
+    {
+      "id": "historical-society",
+      "name": "Historical Society",
+      "amount": 47406940,
+      "sourceAmount": 47406940,
+      "program": "Historical Society",
+      "sourceRows": null,
+      "detailUrl": null,
+      "sourceUrl": "https://transparency.systems.state.mn.us/analytics/saw.dll?Go&ViewID=d%3adashboard%7ep%3a0lpu8102g8pch6om%7er%3a4rcek211kjk0hpfb&Action=Download&SearchID=1b0b8oo4pgtonh800tnv7d8iaa&Style=MNIT&ViewState=6e023hfv8pu2gn62ug63e79ac2&ItemName=Payments%205.0%20-%20by%20Agency&path=%2fshared%2fCitizens%20Portal%2fPayments%2fPayments%205.0%20-%20by%20Agency&Format=csv&Extension=.csv",
+      "relatedSources": [
+        [
+          "FY2024 statewide wages (non-additive)",
+          "data/state-mn/archive-state-source/state-mn-payroll.json"
+        ],
+        [
+          "Official Minnesota payroll page",
+          "https://mn.gov/mmb/transparency-mn/payrolldata.jsp"
+        ]
+      ]
+    },
+    {
+      "id": "house-of-representatives",
+      "name": "House of Representatives",
+      "amount": 47059585,
+      "sourceAmount": 47059585,
+      "program": "House of Representatives",
+      "sourceRows": null,
+      "detailUrl": null,
+      "sourceUrl": "https://transparency.systems.state.mn.us/analytics/saw.dll?Go&ViewID=d%3adashboard%7ep%3a0lpu8102g8pch6om%7er%3a4rcek211kjk0hpfb&Action=Download&SearchID=1b0b8oo4pgtonh800tnv7d8iaa&Style=MNIT&ViewState=6e023hfv8pu2gn62ug63e79ac2&ItemName=Payments%205.0%20-%20by%20Agency&path=%2fshared%2fCitizens%20Portal%2fPayments%2fPayments%205.0%20-%20by%20Agency&Format=csv&Extension=.csv",
+      "relatedSources": [
+        [
+          "FY2024 statewide wages (non-additive)",
+          "data/state-mn/archive-state-source/state-mn-payroll.json"
+        ],
+        [
+          "Official Minnesota payroll page",
+          "https://mn.gov/mmb/transparency-mn/payrolldata.jsp"
+        ]
+      ]
+    },
+    {
+      "id": "explore-minnesota-tourism",
+      "name": "Explore Minnesota Tourism",
+      "amount": 40610402,
+      "sourceAmount": 40610402,
+      "program": "Explore Minnesota Tourism",
+      "sourceRows": null,
+      "detailUrl": null,
+      "sourceUrl": "https://transparency.systems.state.mn.us/analytics/saw.dll?Go&ViewID=d%3adashboard%7ep%3a0lpu8102g8pch6om%7er%3a4rcek211kjk0hpfb&Action=Download&SearchID=1b0b8oo4pgtonh800tnv7d8iaa&Style=MNIT&ViewState=6e023hfv8pu2gn62ug63e79ac2&ItemName=Payments%205.0%20-%20by%20Agency&path=%2fshared%2fCitizens%20Portal%2fPayments%2fPayments%205.0%20-%20by%20Agency&Format=csv&Extension=.csv",
+      "relatedSources": [
+        [
+          "FY2024 statewide wages (non-additive)",
+          "data/state-mn/archive-state-source/state-mn-payroll.json"
+        ],
+        [
+          "Official Minnesota payroll page",
+          "https://mn.gov/mmb/transparency-mn/payrolldata.jsp"
+        ]
+      ]
+    },
+    {
+      "id": "board-of-public-defense",
+      "name": "Board Of Public Defense",
+      "amount": 22903445,
+      "sourceAmount": 22903445,
+      "program": "Board Of Public Defense",
+      "sourceRows": null,
+      "detailUrl": null,
+      "sourceUrl": "https://transparency.systems.state.mn.us/analytics/saw.dll?Go&ViewID=d%3adashboard%7ep%3a0lpu8102g8pch6om%7er%3a4rcek211kjk0hpfb&Action=Download&SearchID=1b0b8oo4pgtonh800tnv7d8iaa&Style=MNIT&ViewState=6e023hfv8pu2gn62ug63e79ac2&ItemName=Payments%205.0%20-%20by%20Agency&path=%2fshared%2fCitizens%20Portal%2fPayments%2fPayments%205.0%20-%20by%20Agency&Format=csv&Extension=.csv",
+      "relatedSources": [
+        [
+          "FY2024 statewide wages (non-additive)",
+          "data/state-mn/archive-state-source/state-mn-payroll.json"
+        ],
+        [
+          "Official Minnesota payroll page",
+          "https://mn.gov/mmb/transparency-mn/payrolldata.jsp"
+        ]
+      ]
+    },
+    {
+      "id": "attorney-general",
+      "name": "Attorney General",
+      "amount": 22577382,
+      "sourceAmount": 22577382,
+      "program": "Attorney General",
+      "sourceRows": null,
+      "detailUrl": null,
+      "sourceUrl": "https://transparency.systems.state.mn.us/analytics/saw.dll?Go&ViewID=d%3adashboard%7ep%3a0lpu8102g8pch6om%7er%3a4rcek211kjk0hpfb&Action=Download&SearchID=1b0b8oo4pgtonh800tnv7d8iaa&Style=MNIT&ViewState=6e023hfv8pu2gn62ug63e79ac2&ItemName=Payments%205.0%20-%20by%20Agency&path=%2fshared%2fCitizens%20Portal%2fPayments%2fPayments%205.0%20-%20by%20Agency&Format=csv&Extension=.csv",
+      "relatedSources": [
+        [
+          "FY2024 statewide wages (non-additive)",
+          "data/state-mn/archive-state-source/state-mn-payroll.json"
+        ],
+        [
+          "Official Minnesota payroll page",
+          "https://mn.gov/mmb/transparency-mn/payrolldata.jsp"
+        ]
+      ]
+    },
+    {
+      "id": "mnsure",
+      "name": "MNsure",
+      "amount": 20602098,
+      "sourceAmount": 20602098,
+      "program": "MNsure",
+      "sourceRows": null,
+      "detailUrl": null,
+      "sourceUrl": "https://transparency.systems.state.mn.us/analytics/saw.dll?Go&ViewID=d%3adashboard%7ep%3a0lpu8102g8pch6om%7er%3a4rcek211kjk0hpfb&Action=Download&SearchID=1b0b8oo4pgtonh800tnv7d8iaa&Style=MNIT&ViewState=6e023hfv8pu2gn62ug63e79ac2&ItemName=Payments%205.0%20-%20by%20Agency&path=%2fshared%2fCitizens%20Portal%2fPayments%2fPayments%205.0%20-%20by%20Agency&Format=csv&Extension=.csv",
+      "relatedSources": [
+        [
+          "FY2024 statewide wages (non-additive)",
+          "data/state-mn/archive-state-source/state-mn-payroll.json"
+        ],
+        [
+          "Official Minnesota payroll page",
+          "https://mn.gov/mmb/transparency-mn/payrolldata.jsp"
+        ]
+      ]
+    },
+    {
+      "id": "minnesota-zoological-garden",
+      "name": "Minnesota Zoological Garden",
+      "amount": 20442693,
+      "sourceAmount": 20442693,
+      "program": "Minnesota Zoological Garden",
+      "sourceRows": null,
+      "detailUrl": null,
+      "sourceUrl": "https://transparency.systems.state.mn.us/analytics/saw.dll?Go&ViewID=d%3adashboard%7ep%3a0lpu8102g8pch6om%7er%3a4rcek211kjk0hpfb&Action=Download&SearchID=1b0b8oo4pgtonh800tnv7d8iaa&Style=MNIT&ViewState=6e023hfv8pu2gn62ug63e79ac2&ItemName=Payments%205.0%20-%20by%20Agency&path=%2fshared%2fCitizens%20Portal%2fPayments%2fPayments%205.0%20-%20by%20Agency&Format=csv&Extension=.csv",
+      "relatedSources": [
+        [
+          "FY2024 statewide wages (non-additive)",
+          "data/state-mn/archive-state-source/state-mn-payroll.json"
+        ],
+        [
+          "Official Minnesota payroll page",
+          "https://mn.gov/mmb/transparency-mn/payrolldata.jsp"
+        ]
+      ]
+    },
+    {
+      "id": "senate",
+      "name": "Senate",
+      "amount": 17896657,
+      "sourceAmount": 17896657,
+      "program": "Senate",
+      "sourceRows": null,
+      "detailUrl": null,
+      "sourceUrl": "https://transparency.systems.state.mn.us/analytics/saw.dll?Go&ViewID=d%3adashboard%7ep%3a0lpu8102g8pch6om%7er%3a4rcek211kjk0hpfb&Action=Download&SearchID=1b0b8oo4pgtonh800tnv7d8iaa&Style=MNIT&ViewState=6e023hfv8pu2gn62ug63e79ac2&ItemName=Payments%205.0%20-%20by%20Agency&path=%2fshared%2fCitizens%20Portal%2fPayments%2fPayments%205.0%20-%20by%20Agency&Format=csv&Extension=.csv",
+      "relatedSources": [
+        [
+          "FY2024 statewide wages (non-additive)",
+          "data/state-mn/archive-state-source/state-mn-payroll.json"
+        ],
+        [
+          "Official Minnesota payroll page",
+          "https://mn.gov/mmb/transparency-mn/payrolldata.jsp"
+        ]
+      ]
+    },
+    {
+      "id": "secretary-of-state",
+      "name": "Secretary of State",
+      "amount": 15041140,
+      "sourceAmount": 15041140,
+      "program": "Secretary of State",
+      "sourceRows": null,
+      "detailUrl": null,
+      "sourceUrl": "https://transparency.systems.state.mn.us/analytics/saw.dll?Go&ViewID=d%3adashboard%7ep%3a0lpu8102g8pch6om%7er%3a4rcek211kjk0hpfb&Action=Download&SearchID=1b0b8oo4pgtonh800tnv7d8iaa&Style=MNIT&ViewState=6e023hfv8pu2gn62ug63e79ac2&ItemName=Payments%205.0%20-%20by%20Agency&path=%2fshared%2fCitizens%20Portal%2fPayments%2fPayments%205.0%20-%20by%20Agency&Format=csv&Extension=.csv",
+      "relatedSources": [
+        [
+          "FY2024 statewide wages (non-additive)",
+          "data/state-mn/archive-state-source/state-mn-payroll.json"
+        ],
+        [
+          "Official Minnesota payroll page",
+          "https://mn.gov/mmb/transparency-mn/payrolldata.jsp"
+        ]
+      ]
+    },
+    {
+      "id": "peace-officer-board-post",
+      "name": "Peace Officer Board (POST)",
+      "amount": 9904381,
+      "sourceAmount": 9904381,
+      "program": "Peace Officer Board (POST)",
+      "sourceRows": null,
+      "detailUrl": null,
+      "sourceUrl": "https://transparency.systems.state.mn.us/analytics/saw.dll?Go&ViewID=d%3adashboard%7ep%3a0lpu8102g8pch6om%7er%3a4rcek211kjk0hpfb&Action=Download&SearchID=1b0b8oo4pgtonh800tnv7d8iaa&Style=MNIT&ViewState=6e023hfv8pu2gn62ug63e79ac2&ItemName=Payments%205.0%20-%20by%20Agency&path=%2fshared%2fCitizens%20Portal%2fPayments%2fPayments%205.0%20-%20by%20Agency&Format=csv&Extension=.csv",
+      "relatedSources": [
+        [
+          "FY2024 statewide wages (non-additive)",
+          "data/state-mn/archive-state-source/state-mn-payroll.json"
+        ],
+        [
+          "Official Minnesota payroll page",
+          "https://mn.gov/mmb/transparency-mn/payrolldata.jsp"
+        ]
+      ]
+    },
+    {
+      "id": "science-museum",
+      "name": "Science Museum",
+      "amount": 9335328,
+      "sourceAmount": 9335328,
+      "program": "Science Museum",
+      "sourceRows": null,
+      "detailUrl": null,
+      "sourceUrl": "https://transparency.systems.state.mn.us/analytics/saw.dll?Go&ViewID=d%3adashboard%7ep%3a0lpu8102g8pch6om%7er%3a4rcek211kjk0hpfb&Action=Download&SearchID=1b0b8oo4pgtonh800tnv7d8iaa&Style=MNIT&ViewState=6e023hfv8pu2gn62ug63e79ac2&ItemName=Payments%205.0%20-%20by%20Agency&path=%2fshared%2fCitizens%20Portal%2fPayments%2fPayments%205.0%20-%20by%20Agency&Format=csv&Extension=.csv",
+      "relatedSources": [
+        [
+          "FY2024 statewide wages (non-additive)",
+          "data/state-mn/archive-state-source/state-mn-payroll.json"
+        ],
+        [
+          "Official Minnesota payroll page",
+          "https://mn.gov/mmb/transparency-mn/payrolldata.jsp"
+        ]
+      ]
+    },
+    {
+      "id": "board-of-teaching",
+      "name": "Board of Teaching",
+      "amount": 8495248,
+      "sourceAmount": 8495248,
+      "program": "Board of Teaching",
+      "sourceRows": null,
+      "detailUrl": null,
+      "sourceUrl": "https://transparency.systems.state.mn.us/analytics/saw.dll?Go&ViewID=d%3adashboard%7ep%3a0lpu8102g8pch6om%7er%3a4rcek211kjk0hpfb&Action=Download&SearchID=1b0b8oo4pgtonh800tnv7d8iaa&Style=MNIT&ViewState=6e023hfv8pu2gn62ug63e79ac2&ItemName=Payments%205.0%20-%20by%20Agency&path=%2fshared%2fCitizens%20Portal%2fPayments%2fPayments%205.0%20-%20by%20Agency&Format=csv&Extension=.csv",
+      "relatedSources": [
+        [
+          "FY2024 statewide wages (non-additive)",
+          "data/state-mn/archive-state-source/state-mn-payroll.json"
+        ],
+        [
+          "Official Minnesota payroll page",
+          "https://mn.gov/mmb/transparency-mn/payrolldata.jsp"
+        ]
+      ]
+    },
+    {
+      "id": "humanities-center",
+      "name": "Humanities Center",
+      "amount": 7390667,
+      "sourceAmount": 7390667,
+      "program": "Humanities Center",
+      "sourceRows": null,
+      "detailUrl": null,
+      "sourceUrl": "https://transparency.systems.state.mn.us/analytics/saw.dll?Go&ViewID=d%3adashboard%7ep%3a0lpu8102g8pch6om%7er%3a4rcek211kjk0hpfb&Action=Download&SearchID=1b0b8oo4pgtonh800tnv7d8iaa&Style=MNIT&ViewState=6e023hfv8pu2gn62ug63e79ac2&ItemName=Payments%205.0%20-%20by%20Agency&path=%2fshared%2fCitizens%20Portal%2fPayments%2fPayments%205.0%20-%20by%20Agency&Format=csv&Extension=.csv",
+      "relatedSources": [
+        [
+          "FY2024 statewide wages (non-additive)",
+          "data/state-mn/archive-state-source/state-mn-payroll.json"
+        ],
+        [
+          "Official Minnesota payroll page",
+          "https://mn.gov/mmb/transparency-mn/payrolldata.jsp"
+        ]
+      ]
+    },
+    {
+      "id": "agriculture-utilization-resrch",
+      "name": "Agriculture Utilization Resrch",
+      "amount": 6143000,
+      "sourceAmount": 6143000,
+      "program": "Agriculture Utilization Resrch",
+      "sourceRows": null,
+      "detailUrl": null,
+      "sourceUrl": "https://transparency.systems.state.mn.us/analytics/saw.dll?Go&ViewID=d%3adashboard%7ep%3a0lpu8102g8pch6om%7er%3a4rcek211kjk0hpfb&Action=Download&SearchID=1b0b8oo4pgtonh800tnv7d8iaa&Style=MNIT&ViewState=6e023hfv8pu2gn62ug63e79ac2&ItemName=Payments%205.0%20-%20by%20Agency&path=%2fshared%2fCitizens%20Portal%2fPayments%2fPayments%205.0%20-%20by%20Agency&Format=csv&Extension=.csv",
+      "relatedSources": [
+        [
+          "FY2024 statewide wages (non-additive)",
+          "data/state-mn/archive-state-source/state-mn-payroll.json"
+        ],
+        [
+          "Official Minnesota payroll page",
+          "https://mn.gov/mmb/transparency-mn/payrolldata.jsp"
+        ]
+      ]
+    },
+    {
+      "id": "investment-board",
+      "name": "Investment Board",
+      "amount": 5780033,
+      "sourceAmount": 5780033,
+      "program": "Investment Board",
+      "sourceRows": null,
+      "detailUrl": null,
+      "sourceUrl": "https://transparency.systems.state.mn.us/analytics/saw.dll?Go&ViewID=d%3adashboard%7ep%3a0lpu8102g8pch6om%7er%3a4rcek211kjk0hpfb&Action=Download&SearchID=1b0b8oo4pgtonh800tnv7d8iaa&Style=MNIT&ViewState=6e023hfv8pu2gn62ug63e79ac2&ItemName=Payments%205.0%20-%20by%20Agency&path=%2fshared%2fCitizens%20Portal%2fPayments%2fPayments%205.0%20-%20by%20Agency&Format=csv&Extension=.csv",
+      "relatedSources": [
+        [
+          "FY2024 statewide wages (non-additive)",
+          "data/state-mn/archive-state-source/state-mn-payroll.json"
+        ],
+        [
+          "Official Minnesota payroll page",
+          "https://mn.gov/mmb/transparency-mn/payrolldata.jsp"
+        ]
+      ]
+    },
+    {
+      "id": "lcc-leg-coordinating-comm",
+      "name": "LCC-Leg Coordinating Comm",
+      "amount": 5021887,
+      "sourceAmount": 5021887,
+      "program": "LCC-Leg Coordinating Comm",
+      "sourceRows": null,
+      "detailUrl": null,
+      "sourceUrl": "https://transparency.systems.state.mn.us/analytics/saw.dll?Go&ViewID=d%3adashboard%7ep%3a0lpu8102g8pch6om%7er%3a4rcek211kjk0hpfb&Action=Download&SearchID=1b0b8oo4pgtonh800tnv7d8iaa&Style=MNIT&ViewState=6e023hfv8pu2gn62ug63e79ac2&ItemName=Payments%205.0%20-%20by%20Agency&path=%2fshared%2fCitizens%20Portal%2fPayments%2fPayments%205.0%20-%20by%20Agency&Format=csv&Extension=.csv",
+      "relatedSources": [
+        [
+          "FY2024 statewide wages (non-additive)",
+          "data/state-mn/archive-state-source/state-mn-payroll.json"
+        ],
+        [
+          "Official Minnesota payroll page",
+          "https://mn.gov/mmb/transparency-mn/payrolldata.jsp"
+        ]
+      ]
+    },
+    {
+      "id": "climate-innovn-finance-authrty",
+      "name": "Climate Innovn Finance Authrty",
+      "amount": 4735503,
+      "sourceAmount": 4735503,
+      "program": "Climate Innovn Finance Authrty",
+      "sourceRows": null,
+      "detailUrl": null,
+      "sourceUrl": "https://transparency.systems.state.mn.us/analytics/saw.dll?Go&ViewID=d%3adashboard%7ep%3a0lpu8102g8pch6om%7er%3a4rcek211kjk0hpfb&Action=Download&SearchID=1b0b8oo4pgtonh800tnv7d8iaa&Style=MNIT&ViewState=6e023hfv8pu2gn62ug63e79ac2&ItemName=Payments%205.0%20-%20by%20Agency&path=%2fshared%2fCitizens%20Portal%2fPayments%2fPayments%205.0%20-%20by%20Agency&Format=csv&Extension=.csv",
+      "relatedSources": [
+        [
+          "FY2024 statewide wages (non-additive)",
+          "data/state-mn/archive-state-source/state-mn-payroll.json"
+        ],
+        [
+          "Official Minnesota payroll page",
+          "https://mn.gov/mmb/transparency-mn/payrolldata.jsp"
+        ]
+      ]
+    },
+    {
+      "id": "racing-commission",
+      "name": "Racing Commission",
+      "amount": 4408709,
+      "sourceAmount": 4408709,
+      "program": "Racing Commission",
+      "sourceRows": null,
+      "detailUrl": null,
+      "sourceUrl": "https://transparency.systems.state.mn.us/analytics/saw.dll?Go&ViewID=d%3adashboard%7ep%3a0lpu8102g8pch6om%7er%3a4rcek211kjk0hpfb&Action=Download&SearchID=1b0b8oo4pgtonh800tnv7d8iaa&Style=MNIT&ViewState=6e023hfv8pu2gn62ug63e79ac2&ItemName=Payments%205.0%20-%20by%20Agency&path=%2fshared%2fCitizens%20Portal%2fPayments%2fPayments%205.0%20-%20by%20Agency&Format=csv&Extension=.csv",
+      "relatedSources": [
+        [
+          "FY2024 statewide wages (non-additive)",
+          "data/state-mn/archive-state-source/state-mn-payroll.json"
+        ],
+        [
+          "Official Minnesota payroll page",
+          "https://mn.gov/mmb/transparency-mn/payrolldata.jsp"
+        ]
+      ]
+    },
+    {
+      "id": "emergency-medical-services-bd",
+      "name": "Emergency Medical Services Bd",
+      "amount": 4405139,
+      "sourceAmount": 4405139,
+      "program": "Emergency Medical Services Bd",
+      "sourceRows": null,
+      "detailUrl": null,
+      "sourceUrl": "https://transparency.systems.state.mn.us/analytics/saw.dll?Go&ViewID=d%3adashboard%7ep%3a0lpu8102g8pch6om%7er%3a4rcek211kjk0hpfb&Action=Download&SearchID=1b0b8oo4pgtonh800tnv7d8iaa&Style=MNIT&ViewState=6e023hfv8pu2gn62ug63e79ac2&ItemName=Payments%205.0%20-%20by%20Agency&path=%2fshared%2fCitizens%20Portal%2fPayments%2fPayments%205.0%20-%20by%20Agency&Format=csv&Extension=.csv",
+      "relatedSources": [
+        [
+          "FY2024 statewide wages (non-additive)",
+          "data/state-mn/archive-state-source/state-mn-payroll.json"
+        ],
+        [
+          "Official Minnesota payroll page",
+          "https://mn.gov/mmb/transparency-mn/payrolldata.jsp"
+        ]
+      ]
+    },
+    {
+      "id": "mn-state-academies",
+      "name": "Mn State Academies",
+      "amount": 3594624,
+      "sourceAmount": 3594624,
+      "program": "Mn State Academies",
+      "sourceRows": null,
+      "detailUrl": null,
+      "sourceUrl": "https://transparency.systems.state.mn.us/analytics/saw.dll?Go&ViewID=d%3adashboard%7ep%3a0lpu8102g8pch6om%7er%3a4rcek211kjk0hpfb&Action=Download&SearchID=1b0b8oo4pgtonh800tnv7d8iaa&Style=MNIT&ViewState=6e023hfv8pu2gn62ug63e79ac2&ItemName=Payments%205.0%20-%20by%20Agency&path=%2fshared%2fCitizens%20Portal%2fPayments%2fPayments%205.0%20-%20by%20Agency&Format=csv&Extension=.csv",
+      "relatedSources": [
+        [
+          "FY2024 statewide wages (non-additive)",
+          "data/state-mn/archive-state-source/state-mn-payroll.json"
+        ],
+        [
+          "Official Minnesota payroll page",
+          "https://mn.gov/mmb/transparency-mn/payrolldata.jsp"
+        ]
+      ]
+    },
+    {
+      "id": "pharmacy-board",
+      "name": "Pharmacy Board",
+      "amount": 3078954,
+      "sourceAmount": 3078954,
+      "program": "Pharmacy Board",
+      "sourceRows": null,
+      "detailUrl": null,
+      "sourceUrl": "https://transparency.systems.state.mn.us/analytics/saw.dll?Go&ViewID=d%3adashboard%7ep%3a0lpu8102g8pch6om%7er%3a4rcek211kjk0hpfb&Action=Download&SearchID=1b0b8oo4pgtonh800tnv7d8iaa&Style=MNIT&ViewState=6e023hfv8pu2gn62ug63e79ac2&ItemName=Payments%205.0%20-%20by%20Agency&path=%2fshared%2fCitizens%20Portal%2fPayments%2fPayments%205.0%20-%20by%20Agency&Format=csv&Extension=.csv",
+      "relatedSources": [
+        [
+          "FY2024 statewide wages (non-additive)",
+          "data/state-mn/archive-state-source/state-mn-payroll.json"
+        ],
+        [
+          "Official Minnesota payroll page",
+          "https://mn.gov/mmb/transparency-mn/payrolldata.jsp"
+        ]
+      ]
+    },
+    {
+      "id": "public-utilities-comm",
+      "name": "Public Utilities Comm",
+      "amount": 2729537,
+      "sourceAmount": 2729537,
+      "program": "Public Utilities Comm",
+      "sourceRows": null,
+      "detailUrl": null,
+      "sourceUrl": "https://transparency.systems.state.mn.us/analytics/saw.dll?Go&ViewID=d%3adashboard%7ep%3a0lpu8102g8pch6om%7er%3a4rcek211kjk0hpfb&Action=Download&SearchID=1b0b8oo4pgtonh800tnv7d8iaa&Style=MNIT&ViewState=6e023hfv8pu2gn62ug63e79ac2&ItemName=Payments%205.0%20-%20by%20Agency&path=%2fshared%2fCitizens%20Portal%2fPayments%2fPayments%205.0%20-%20by%20Agency&Format=csv&Extension=.csv",
+      "relatedSources": [
+        [
+          "FY2024 statewide wages (non-additive)",
+          "data/state-mn/archive-state-source/state-mn-payroll.json"
+        ],
+        [
+          "Official Minnesota payroll page",
+          "https://mn.gov/mmb/transparency-mn/payrolldata.jsp"
+        ]
+      ]
+    },
+    {
+      "id": "medical-practice-board",
+      "name": "Medical Practice Board",
+      "amount": 2502109,
+      "sourceAmount": 2502109,
+      "program": "Medical Practice Board",
+      "sourceRows": null,
+      "detailUrl": null,
+      "sourceUrl": "https://transparency.systems.state.mn.us/analytics/saw.dll?Go&ViewID=d%3adashboard%7ep%3a0lpu8102g8pch6om%7er%3a4rcek211kjk0hpfb&Action=Download&SearchID=1b0b8oo4pgtonh800tnv7d8iaa&Style=MNIT&ViewState=6e023hfv8pu2gn62ug63e79ac2&ItemName=Payments%205.0%20-%20by%20Agency&path=%2fshared%2fCitizens%20Portal%2fPayments%2fPayments%205.0%20-%20by%20Agency&Format=csv&Extension=.csv",
+      "relatedSources": [
+        [
+          "FY2024 statewide wages (non-additive)",
+          "data/state-mn/archive-state-source/state-mn-payroll.json"
+        ],
+        [
+          "Official Minnesota payroll page",
+          "https://mn.gov/mmb/transparency-mn/payrolldata.jsp"
+        ]
+      ]
+    },
+    {
+      "id": "animal-health-board",
+      "name": "Animal Health Board",
+      "amount": 2416738,
+      "sourceAmount": 2416738,
+      "program": "Animal Health Board",
+      "sourceRows": null,
+      "detailUrl": null,
+      "sourceUrl": "https://transparency.systems.state.mn.us/analytics/saw.dll?Go&ViewID=d%3adashboard%7ep%3a0lpu8102g8pch6om%7er%3a4rcek211kjk0hpfb&Action=Download&SearchID=1b0b8oo4pgtonh800tnv7d8iaa&Style=MNIT&ViewState=6e023hfv8pu2gn62ug63e79ac2&ItemName=Payments%205.0%20-%20by%20Agency&path=%2fshared%2fCitizens%20Portal%2fPayments%2fPayments%205.0%20-%20by%20Agency&Format=csv&Extension=.csv",
+      "relatedSources": [
+        [
+          "FY2024 statewide wages (non-additive)",
+          "data/state-mn/archive-state-source/state-mn-payroll.json"
+        ],
+        [
+          "Official Minnesota payroll page",
+          "https://mn.gov/mmb/transparency-mn/payrolldata.jsp"
+        ]
+      ]
+    },
+    {
+      "id": "administrative-hearings",
+      "name": "Administrative Hearings",
+      "amount": 2259140,
+      "sourceAmount": 2259140,
+      "program": "Administrative Hearings",
+      "sourceRows": null,
+      "detailUrl": null,
+      "sourceUrl": "https://transparency.systems.state.mn.us/analytics/saw.dll?Go&ViewID=d%3adashboard%7ep%3a0lpu8102g8pch6om%7er%3a4rcek211kjk0hpfb&Action=Download&SearchID=1b0b8oo4pgtonh800tnv7d8iaa&Style=MNIT&ViewState=6e023hfv8pu2gn62ug63e79ac2&ItemName=Payments%205.0%20-%20by%20Agency&path=%2fshared%2fCitizens%20Portal%2fPayments%2fPayments%205.0%20-%20by%20Agency&Format=csv&Extension=.csv",
+      "relatedSources": [
+        [
+          "FY2024 statewide wages (non-additive)",
+          "data/state-mn/archive-state-source/state-mn-payroll.json"
+        ],
+        [
+          "Official Minnesota payroll page",
+          "https://mn.gov/mmb/transparency-mn/payrolldata.jsp"
+        ]
+      ]
+    },
+    {
+      "id": "indian-affairs-council",
+      "name": "Indian Affairs Council",
+      "amount": 2238838,
+      "sourceAmount": 2238838,
+      "program": "Indian Affairs Council",
+      "sourceRows": null,
+      "detailUrl": null,
+      "sourceUrl": "https://transparency.systems.state.mn.us/analytics/saw.dll?Go&ViewID=d%3adashboard%7ep%3a0lpu8102g8pch6om%7er%3a4rcek211kjk0hpfb&Action=Download&SearchID=1b0b8oo4pgtonh800tnv7d8iaa&Style=MNIT&ViewState=6e023hfv8pu2gn62ug63e79ac2&ItemName=Payments%205.0%20-%20by%20Agency&path=%2fshared%2fCitizens%20Portal%2fPayments%2fPayments%205.0%20-%20by%20Agency&Format=csv&Extension=.csv",
+      "relatedSources": [
+        [
+          "FY2024 statewide wages (non-additive)",
+          "data/state-mn/archive-state-source/state-mn-payroll.json"
+        ],
+        [
+          "Official Minnesota payroll page",
+          "https://mn.gov/mmb/transparency-mn/payrolldata.jsp"
+        ]
+      ]
+    },
+    {
+      "id": "guardian-ad-litem-board",
+      "name": "Guardian ad Litem Board",
+      "amount": 2217283,
+      "sourceAmount": 2217283,
+      "program": "Guardian ad Litem Board",
+      "sourceRows": null,
+      "detailUrl": null,
+      "sourceUrl": "https://transparency.systems.state.mn.us/analytics/saw.dll?Go&ViewID=d%3adashboard%7ep%3a0lpu8102g8pch6om%7er%3a4rcek211kjk0hpfb&Action=Download&SearchID=1b0b8oo4pgtonh800tnv7d8iaa&Style=MNIT&ViewState=6e023hfv8pu2gn62ug63e79ac2&ItemName=Payments%205.0%20-%20by%20Agency&path=%2fshared%2fCitizens%20Portal%2fPayments%2fPayments%205.0%20-%20by%20Agency&Format=csv&Extension=.csv",
+      "relatedSources": [
+        [
+          "FY2024 statewide wages (non-additive)",
+          "data/state-mn/archive-state-source/state-mn-payroll.json"
+        ],
+        [
+          "Official Minnesota payroll page",
+          "https://mn.gov/mmb/transparency-mn/payrolldata.jsp"
+        ]
+      ]
+    },
+    {
+      "id": "perpich-ctr-for-arts-education",
+      "name": "Perpich Ctr For Arts Education",
+      "amount": 2088375,
+      "sourceAmount": 2088375,
+      "program": "Perpich Ctr For Arts Education",
+      "sourceRows": null,
+      "detailUrl": null,
+      "sourceUrl": "https://transparency.systems.state.mn.us/analytics/saw.dll?Go&ViewID=d%3adashboard%7ep%3a0lpu8102g8pch6om%7er%3a4rcek211kjk0hpfb&Action=Download&SearchID=1b0b8oo4pgtonh800tnv7d8iaa&Style=MNIT&ViewState=6e023hfv8pu2gn62ug63e79ac2&ItemName=Payments%205.0%20-%20by%20Agency&path=%2fshared%2fCitizens%20Portal%2fPayments%2fPayments%205.0%20-%20by%20Agency&Format=csv&Extension=.csv",
+      "relatedSources": [
+        [
+          "FY2024 statewide wages (non-additive)",
+          "data/state-mn/archive-state-source/state-mn-payroll.json"
+        ],
+        [
+          "Official Minnesota payroll page",
+          "https://mn.gov/mmb/transparency-mn/payrolldata.jsp"
+        ]
+      ]
+    },
+    {
+      "id": "nursing-board",
+      "name": "Nursing Board",
+      "amount": 1797193,
+      "sourceAmount": 1797193,
+      "program": "Nursing Board",
+      "sourceRows": null,
+      "detailUrl": null,
+      "sourceUrl": "https://transparency.systems.state.mn.us/analytics/saw.dll?Go&ViewID=d%3adashboard%7ep%3a0lpu8102g8pch6om%7er%3a4rcek211kjk0hpfb&Action=Download&SearchID=1b0b8oo4pgtonh800tnv7d8iaa&Style=MNIT&ViewState=6e023hfv8pu2gn62ug63e79ac2&ItemName=Payments%205.0%20-%20by%20Agency&path=%2fshared%2fCitizens%20Portal%2fPayments%2fPayments%205.0%20-%20by%20Agency&Format=csv&Extension=.csv",
+      "relatedSources": [
+        [
+          "FY2024 statewide wages (non-additive)",
+          "data/state-mn/archive-state-source/state-mn-payroll.json"
+        ],
+        [
+          "Official Minnesota payroll page",
+          "https://mn.gov/mmb/transparency-mn/payrolldata.jsp"
+        ]
+      ]
+    },
+    {
+      "id": "dentistry-board",
+      "name": "Dentistry Board",
+      "amount": 1555396,
+      "sourceAmount": 1555396,
+      "program": "Dentistry Board",
+      "sourceRows": null,
+      "detailUrl": null,
+      "sourceUrl": "https://transparency.systems.state.mn.us/analytics/saw.dll?Go&ViewID=d%3adashboard%7ep%3a0lpu8102g8pch6om%7er%3a4rcek211kjk0hpfb&Action=Download&SearchID=1b0b8oo4pgtonh800tnv7d8iaa&Style=MNIT&ViewState=6e023hfv8pu2gn62ug63e79ac2&ItemName=Payments%205.0%20-%20by%20Agency&path=%2fshared%2fCitizens%20Portal%2fPayments%2fPayments%205.0%20-%20by%20Agency&Format=csv&Extension=.csv",
+      "relatedSources": [
+        [
+          "FY2024 statewide wages (non-additive)",
+          "data/state-mn/archive-state-source/state-mn-payroll.json"
+        ],
+        [
+          "Official Minnesota payroll page",
+          "https://mn.gov/mmb/transparency-mn/payrolldata.jsp"
+        ]
+      ]
+    },
+    {
+      "id": "human-rights-dept",
+      "name": "Human Rights Dept",
+      "amount": 1530339,
+      "sourceAmount": 1530339,
+      "program": "Human Rights Dept",
+      "sourceRows": null,
+      "detailUrl": null,
+      "sourceUrl": "https://transparency.systems.state.mn.us/analytics/saw.dll?Go&ViewID=d%3adashboard%7ep%3a0lpu8102g8pch6om%7er%3a4rcek211kjk0hpfb&Action=Download&SearchID=1b0b8oo4pgtonh800tnv7d8iaa&Style=MNIT&ViewState=6e023hfv8pu2gn62ug63e79ac2&ItemName=Payments%205.0%20-%20by%20Agency&path=%2fshared%2fCitizens%20Portal%2fPayments%2fPayments%205.0%20-%20by%20Agency&Format=csv&Extension=.csv",
+      "relatedSources": [
+        [
+          "FY2024 statewide wages (non-additive)",
+          "data/state-mn/archive-state-source/state-mn-payroll.json"
+        ],
+        [
+          "Official Minnesota payroll page",
+          "https://mn.gov/mmb/transparency-mn/payrolldata.jsp"
+        ]
+      ]
+    },
+    {
+      "id": "governors-office",
+      "name": "Governors Office",
+      "amount": 1511840,
+      "sourceAmount": 1511840,
+      "program": "Governors Office",
+      "sourceRows": null,
+      "detailUrl": null,
+      "sourceUrl": "https://transparency.systems.state.mn.us/analytics/saw.dll?Go&ViewID=d%3adashboard%7ep%3a0lpu8102g8pch6om%7er%3a4rcek211kjk0hpfb&Action=Download&SearchID=1b0b8oo4pgtonh800tnv7d8iaa&Style=MNIT&ViewState=6e023hfv8pu2gn62ug63e79ac2&ItemName=Payments%205.0%20-%20by%20Agency&path=%2fshared%2fCitizens%20Portal%2fPayments%2fPayments%205.0%20-%20by%20Agency&Format=csv&Extension=.csv",
+      "relatedSources": [
+        [
+          "FY2024 statewide wages (non-additive)",
+          "data/state-mn/archive-state-source/state-mn-payroll.json"
+        ],
+        [
+          "Official Minnesota payroll page",
+          "https://mn.gov/mmb/transparency-mn/payrolldata.jsp"
+        ]
+      ]
+    },
+    {
+      "id": "court-of-appeals",
+      "name": "Court Of Appeals",
+      "amount": 1438484,
+      "sourceAmount": 1438484,
+      "program": "Court Of Appeals",
+      "sourceRows": null,
+      "detailUrl": null,
+      "sourceUrl": "https://transparency.systems.state.mn.us/analytics/saw.dll?Go&ViewID=d%3adashboard%7ep%3a0lpu8102g8pch6om%7er%3a4rcek211kjk0hpfb&Action=Download&SearchID=1b0b8oo4pgtonh800tnv7d8iaa&Style=MNIT&ViewState=6e023hfv8pu2gn62ug63e79ac2&ItemName=Payments%205.0%20-%20by%20Agency&path=%2fshared%2fCitizens%20Portal%2fPayments%2fPayments%205.0%20-%20by%20Agency&Format=csv&Extension=.csv",
+      "relatedSources": [
+        [
+          "FY2024 statewide wages (non-additive)",
+          "data/state-mn/archive-state-source/state-mn-payroll.json"
+        ],
+        [
+          "Official Minnesota payroll page",
+          "https://mn.gov/mmb/transparency-mn/payrolldata.jsp"
+        ]
+      ]
+    },
+    {
+      "id": "state-auditor",
+      "name": "State Auditor",
+      "amount": 1341341,
+      "sourceAmount": 1341341,
+      "program": "State Auditor",
+      "sourceRows": null,
+      "detailUrl": null,
+      "sourceUrl": "https://transparency.systems.state.mn.us/analytics/saw.dll?Go&ViewID=d%3adashboard%7ep%3a0lpu8102g8pch6om%7er%3a4rcek211kjk0hpfb&Action=Download&SearchID=1b0b8oo4pgtonh800tnv7d8iaa&Style=MNIT&ViewState=6e023hfv8pu2gn62ug63e79ac2&ItemName=Payments%205.0%20-%20by%20Agency&path=%2fshared%2fCitizens%20Portal%2fPayments%2fPayments%205.0%20-%20by%20Agency&Format=csv&Extension=.csv",
+      "relatedSources": [
+        [
+          "FY2024 statewide wages (non-additive)",
+          "data/state-mn/archive-state-source/state-mn-payroll.json"
+        ],
+        [
+          "Official Minnesota payroll page",
+          "https://mn.gov/mmb/transparency-mn/payrolldata.jsp"
+        ]
+      ]
+    },
+    {
+      "id": "amateur-sports-comm",
+      "name": "Amateur Sports Comm",
+      "amount": 1276222,
+      "sourceAmount": 1276222,
+      "program": "Amateur Sports Comm",
+      "sourceRows": null,
+      "detailUrl": null,
+      "sourceUrl": "https://transparency.systems.state.mn.us/analytics/saw.dll?Go&ViewID=d%3adashboard%7ep%3a0lpu8102g8pch6om%7er%3a4rcek211kjk0hpfb&Action=Download&SearchID=1b0b8oo4pgtonh800tnv7d8iaa&Style=MNIT&ViewState=6e023hfv8pu2gn62ug63e79ac2&ItemName=Payments%205.0%20-%20by%20Agency&path=%2fshared%2fCitizens%20Portal%2fPayments%2fPayments%205.0%20-%20by%20Agency&Format=csv&Extension=.csv",
+      "relatedSources": [
+        [
+          "FY2024 statewide wages (non-additive)",
+          "data/state-mn/archive-state-source/state-mn-payroll.json"
+        ],
+        [
+          "Official Minnesota payroll page",
+          "https://mn.gov/mmb/transparency-mn/payrolldata.jsp"
+        ]
+      ]
+    },
+    {
+      "id": "capitol-area-architect",
+      "name": "Capitol Area Architect",
+      "amount": 1119304,
+      "sourceAmount": 1119304,
+      "program": "Capitol Area Architect",
+      "sourceRows": null,
+      "detailUrl": null,
+      "sourceUrl": "https://transparency.systems.state.mn.us/analytics/saw.dll?Go&ViewID=d%3adashboard%7ep%3a0lpu8102g8pch6om%7er%3a4rcek211kjk0hpfb&Action=Download&SearchID=1b0b8oo4pgtonh800tnv7d8iaa&Style=MNIT&ViewState=6e023hfv8pu2gn62ug63e79ac2&ItemName=Payments%205.0%20-%20by%20Agency&path=%2fshared%2fCitizens%20Portal%2fPayments%2fPayments%205.0%20-%20by%20Agency&Format=csv&Extension=.csv",
+      "relatedSources": [
+        [
+          "FY2024 statewide wages (non-additive)",
+          "data/state-mn/archive-state-source/state-mn-payroll.json"
+        ],
+        [
+          "Official Minnesota payroll page",
+          "https://mn.gov/mmb/transparency-mn/payrolldata.jsp"
+        ]
+      ]
+    },
+    {
+      "id": "minn-conservation-corps",
+      "name": "Minn Conservation Corps",
+      "amount": 986919,
+      "sourceAmount": 986919,
+      "program": "Minn Conservation Corps",
+      "sourceRows": null,
+      "detailUrl": null,
+      "sourceUrl": "https://transparency.systems.state.mn.us/analytics/saw.dll?Go&ViewID=d%3adashboard%7ep%3a0lpu8102g8pch6om%7er%3a4rcek211kjk0hpfb&Action=Download&SearchID=1b0b8oo4pgtonh800tnv7d8iaa&Style=MNIT&ViewState=6e023hfv8pu2gn62ug63e79ac2&ItemName=Payments%205.0%20-%20by%20Agency&path=%2fshared%2fCitizens%20Portal%2fPayments%2fPayments%205.0%20-%20by%20Agency&Format=csv&Extension=.csv",
+      "relatedSources": [
+        [
+          "FY2024 statewide wages (non-additive)",
+          "data/state-mn/archive-state-source/state-mn-payroll.json"
+        ],
+        [
+          "Official Minnesota payroll page",
+          "https://mn.gov/mmb/transparency-mn/payrolldata.jsp"
+        ]
+      ]
+    },
+    {
+      "id": "minnesota-board-of-cosmetology",
+      "name": "Minnesota Board of Cosmetology",
+      "amount": 894865,
+      "sourceAmount": 894865,
+      "program": "Minnesota Board of Cosmetology",
+      "sourceRows": null,
+      "detailUrl": null,
+      "sourceUrl": "https://transparency.systems.state.mn.us/analytics/saw.dll?Go&ViewID=d%3adashboard%7ep%3a0lpu8102g8pch6om%7er%3a4rcek211kjk0hpfb&Action=Download&SearchID=1b0b8oo4pgtonh800tnv7d8iaa&Style=MNIT&ViewState=6e023hfv8pu2gn62ug63e79ac2&ItemName=Payments%205.0%20-%20by%20Agency&path=%2fshared%2fCitizens%20Portal%2fPayments%2fPayments%205.0%20-%20by%20Agency&Format=csv&Extension=.csv",
+      "relatedSources": [
+        [
+          "FY2024 statewide wages (non-additive)",
+          "data/state-mn/archive-state-source/state-mn-payroll.json"
+        ],
+        [
+          "Official Minnesota payroll page",
+          "https://mn.gov/mmb/transparency-mn/payrolldata.jsp"
+        ]
+      ]
+    },
+    {
+      "id": "bureau-of-mediation-services",
+      "name": "Bureau of Mediation Services",
+      "amount": 759966,
+      "sourceAmount": 759966,
+      "program": "Bureau of Mediation Services",
+      "sourceRows": null,
+      "detailUrl": null,
+      "sourceUrl": "https://transparency.systems.state.mn.us/analytics/saw.dll?Go&ViewID=d%3adashboard%7ep%3a0lpu8102g8pch6om%7er%3a4rcek211kjk0hpfb&Action=Download&SearchID=1b0b8oo4pgtonh800tnv7d8iaa&Style=MNIT&ViewState=6e023hfv8pu2gn62ug63e79ac2&ItemName=Payments%205.0%20-%20by%20Agency&path=%2fshared%2fCitizens%20Portal%2fPayments%2fPayments%205.0%20-%20by%20Agency&Format=csv&Extension=.csv",
+      "relatedSources": [
+        [
+          "FY2024 statewide wages (non-additive)",
+          "data/state-mn/archive-state-source/state-mn-payroll.json"
+        ],
+        [
+          "Official Minnesota payroll page",
+          "https://mn.gov/mmb/transparency-mn/payrolldata.jsp"
+        ]
+      ]
+    },
+    {
+      "id": "disability-council",
+      "name": "Disability Council",
+      "amount": 759113,
+      "sourceAmount": 759113,
+      "program": "Disability Council",
+      "sourceRows": null,
+      "detailUrl": null,
+      "sourceUrl": "https://transparency.systems.state.mn.us/analytics/saw.dll?Go&ViewID=d%3adashboard%7ep%3a0lpu8102g8pch6om%7er%3a4rcek211kjk0hpfb&Action=Download&SearchID=1b0b8oo4pgtonh800tnv7d8iaa&Style=MNIT&ViewState=6e023hfv8pu2gn62ug63e79ac2&ItemName=Payments%205.0%20-%20by%20Agency&path=%2fshared%2fCitizens%20Portal%2fPayments%2fPayments%205.0%20-%20by%20Agency&Format=csv&Extension=.csv",
+      "relatedSources": [
+        [
+          "FY2024 statewide wages (non-additive)",
+          "data/state-mn/archive-state-source/state-mn-payroll.json"
+        ],
+        [
+          "Official Minnesota payroll page",
+          "https://mn.gov/mmb/transparency-mn/payrolldata.jsp"
+        ]
+      ]
+    },
+    {
+      "id": "legislative-auditor",
+      "name": "Legislative Auditor",
+      "amount": 750115,
+      "sourceAmount": 750115,
+      "program": "Legislative Auditor",
+      "sourceRows": null,
+      "detailUrl": null,
+      "sourceUrl": "https://transparency.systems.state.mn.us/analytics/saw.dll?Go&ViewID=d%3adashboard%7ep%3a0lpu8102g8pch6om%7er%3a4rcek211kjk0hpfb&Action=Download&SearchID=1b0b8oo4pgtonh800tnv7d8iaa&Style=MNIT&ViewState=6e023hfv8pu2gn62ug63e79ac2&ItemName=Payments%205.0%20-%20by%20Agency&path=%2fshared%2fCitizens%20Portal%2fPayments%2fPayments%205.0%20-%20by%20Agency&Format=csv&Extension=.csv",
+      "relatedSources": [
+        [
+          "FY2024 statewide wages (non-additive)",
+          "data/state-mn/archive-state-source/state-mn-payroll.json"
+        ],
+        [
+          "Official Minnesota payroll page",
+          "https://mn.gov/mmb/transparency-mn/payrolldata.jsp"
+        ]
+      ]
+    },
+    {
+      "id": "gambling-control-board",
+      "name": "Gambling Control Board",
+      "amount": 741407,
+      "sourceAmount": 741407,
+      "program": "Gambling Control Board",
+      "sourceRows": null,
+      "detailUrl": null,
+      "sourceUrl": "https://transparency.systems.state.mn.us/analytics/saw.dll?Go&ViewID=d%3adashboard%7ep%3a0lpu8102g8pch6om%7er%3a4rcek211kjk0hpfb&Action=Download&SearchID=1b0b8oo4pgtonh800tnv7d8iaa&Style=MNIT&ViewState=6e023hfv8pu2gn62ug63e79ac2&ItemName=Payments%205.0%20-%20by%20Agency&path=%2fshared%2fCitizens%20Portal%2fPayments%2fPayments%205.0%20-%20by%20Agency&Format=csv&Extension=.csv",
+      "relatedSources": [
+        [
+          "FY2024 statewide wages (non-additive)",
+          "data/state-mn/archive-state-source/state-mn-payroll.json"
+        ],
+        [
+          "Official Minnesota payroll page",
+          "https://mn.gov/mmb/transparency-mn/payrolldata.jsp"
+        ]
+      ]
+    },
+    {
+      "id": "tax-court",
+      "name": "Tax Court",
+      "amount": 532775,
+      "sourceAmount": 532775,
+      "program": "Tax Court",
+      "sourceRows": null,
+      "detailUrl": null,
+      "sourceUrl": "https://transparency.systems.state.mn.us/analytics/saw.dll?Go&ViewID=d%3adashboard%7ep%3a0lpu8102g8pch6om%7er%3a4rcek211kjk0hpfb&Action=Download&SearchID=1b0b8oo4pgtonh800tnv7d8iaa&Style=MNIT&ViewState=6e023hfv8pu2gn62ug63e79ac2&ItemName=Payments%205.0%20-%20by%20Agency&path=%2fshared%2fCitizens%20Portal%2fPayments%2fPayments%205.0%20-%20by%20Agency&Format=csv&Extension=.csv",
+      "relatedSources": [
+        [
+          "FY2024 statewide wages (non-additive)",
+          "data/state-mn/archive-state-source/state-mn-payroll.json"
+        ],
+        [
+          "Official Minnesota payroll page",
+          "https://mn.gov/mmb/transparency-mn/payrolldata.jsp"
+        ]
+      ]
+    },
+    {
+      "id": "psychology-board",
+      "name": "Psychology Board",
+      "amount": 475748,
+      "sourceAmount": 475748,
+      "program": "Psychology Board",
+      "sourceRows": null,
+      "detailUrl": null,
+      "sourceUrl": "https://transparency.systems.state.mn.us/analytics/saw.dll?Go&ViewID=d%3adashboard%7ep%3a0lpu8102g8pch6om%7er%3a4rcek211kjk0hpfb&Action=Download&SearchID=1b0b8oo4pgtonh800tnv7d8iaa&Style=MNIT&ViewState=6e023hfv8pu2gn62ug63e79ac2&ItemName=Payments%205.0%20-%20by%20Agency&path=%2fshared%2fCitizens%20Portal%2fPayments%2fPayments%205.0%20-%20by%20Agency&Format=csv&Extension=.csv",
+      "relatedSources": [
+        [
+          "FY2024 statewide wages (non-additive)",
+          "data/state-mn/archive-state-source/state-mn-payroll.json"
+        ],
+        [
+          "Official Minnesota payroll page",
+          "https://mn.gov/mmb/transparency-mn/payrolldata.jsp"
+        ]
+      ]
+    },
+    {
+      "id": "cannabis-management-office",
+      "name": "Cannabis Management Office",
+      "amount": 465582,
+      "sourceAmount": 465582,
+      "program": "Cannabis Management Office",
+      "sourceRows": null,
+      "detailUrl": null,
+      "sourceUrl": "https://transparency.systems.state.mn.us/analytics/saw.dll?Go&ViewID=d%3adashboard%7ep%3a0lpu8102g8pch6om%7er%3a4rcek211kjk0hpfb&Action=Download&SearchID=1b0b8oo4pgtonh800tnv7d8iaa&Style=MNIT&ViewState=6e023hfv8pu2gn62ug63e79ac2&ItemName=Payments%205.0%20-%20by%20Agency&path=%2fshared%2fCitizens%20Portal%2fPayments%2fPayments%205.0%20-%20by%20Agency&Format=csv&Extension=.csv",
+      "relatedSources": [
+        [
+          "FY2024 statewide wages (non-additive)",
+          "data/state-mn/archive-state-source/state-mn-payroll.json"
+        ],
+        [
+          "Official Minnesota payroll page",
+          "https://mn.gov/mmb/transparency-mn/payrolldata.jsp"
+        ]
+      ]
+    },
+    {
+      "id": "social-work-board",
+      "name": "Social Work Board",
+      "amount": 397459,
+      "sourceAmount": 397459,
+      "program": "Social Work Board",
+      "sourceRows": null,
+      "detailUrl": null,
+      "sourceUrl": "https://transparency.systems.state.mn.us/analytics/saw.dll?Go&ViewID=d%3adashboard%7ep%3a0lpu8102g8pch6om%7er%3a4rcek211kjk0hpfb&Action=Download&SearchID=1b0b8oo4pgtonh800tnv7d8iaa&Style=MNIT&ViewState=6e023hfv8pu2gn62ug63e79ac2&ItemName=Payments%205.0%20-%20by%20Agency&path=%2fshared%2fCitizens%20Portal%2fPayments%2fPayments%205.0%20-%20by%20Agency&Format=csv&Extension=.csv",
+      "relatedSources": [
+        [
+          "FY2024 statewide wages (non-additive)",
+          "data/state-mn/archive-state-source/state-mn-payroll.json"
+        ],
+        [
+          "Official Minnesota payroll page",
+          "https://mn.gov/mmb/transparency-mn/payrolldata.jsp"
+        ]
+      ]
+    },
+    {
+      "id": "lottery",
+      "name": "Lottery",
+      "amount": 386450,
+      "sourceAmount": 386450,
+      "program": "Lottery",
+      "sourceRows": null,
+      "detailUrl": null,
+      "sourceUrl": "https://transparency.systems.state.mn.us/analytics/saw.dll?Go&ViewID=d%3adashboard%7ep%3a0lpu8102g8pch6om%7er%3a4rcek211kjk0hpfb&Action=Download&SearchID=1b0b8oo4pgtonh800tnv7d8iaa&Style=MNIT&ViewState=6e023hfv8pu2gn62ug63e79ac2&ItemName=Payments%205.0%20-%20by%20Agency&path=%2fshared%2fCitizens%20Portal%2fPayments%2fPayments%205.0%20-%20by%20Agency&Format=csv&Extension=.csv",
+      "relatedSources": [
+        [
+          "FY2024 statewide wages (non-additive)",
+          "data/state-mn/archive-state-source/state-mn-payroll.json"
+        ],
+        [
+          "Official Minnesota payroll page",
+          "https://mn.gov/mmb/transparency-mn/payrolldata.jsp"
+        ]
+      ]
+    },
+    {
+      "id": "behavioral-health-therapy-bd",
+      "name": "Behavioral Health & Therapy Bd",
+      "amount": 312429,
+      "sourceAmount": 312429,
+      "program": "Behavioral Health & Therapy Bd",
+      "sourceRows": null,
+      "detailUrl": null,
+      "sourceUrl": "https://transparency.systems.state.mn.us/analytics/saw.dll?Go&ViewID=d%3adashboard%7ep%3a0lpu8102g8pch6om%7er%3a4rcek211kjk0hpfb&Action=Download&SearchID=1b0b8oo4pgtonh800tnv7d8iaa&Style=MNIT&ViewState=6e023hfv8pu2gn62ug63e79ac2&ItemName=Payments%205.0%20-%20by%20Agency&path=%2fshared%2fCitizens%20Portal%2fPayments%2fPayments%205.0%20-%20by%20Agency&Format=csv&Extension=.csv",
+      "relatedSources": [
+        [
+          "FY2024 statewide wages (non-additive)",
+          "data/state-mn/archive-state-source/state-mn-payroll.json"
+        ],
+        [
+          "Official Minnesota payroll page",
+          "https://mn.gov/mmb/transparency-mn/payrolldata.jsp"
+        ]
+      ]
+    },
+    {
+      "id": "workers-comp-court-of-appeals",
+      "name": "Workers Comp Court of Appeals",
+      "amount": 298157,
+      "sourceAmount": 298157,
+      "program": "Workers Comp Court of Appeals",
+      "sourceRows": null,
+      "detailUrl": null,
+      "sourceUrl": "https://transparency.systems.state.mn.us/analytics/saw.dll?Go&ViewID=d%3adashboard%7ep%3a0lpu8102g8pch6om%7er%3a4rcek211kjk0hpfb&Action=Download&SearchID=1b0b8oo4pgtonh800tnv7d8iaa&Style=MNIT&ViewState=6e023hfv8pu2gn62ug63e79ac2&ItemName=Payments%205.0%20-%20by%20Agency&path=%2fshared%2fCitizens%20Portal%2fPayments%2fPayments%205.0%20-%20by%20Agency&Format=csv&Extension=.csv",
+      "relatedSources": [
+        [
+          "FY2024 statewide wages (non-additive)",
+          "data/state-mn/archive-state-source/state-mn-payroll.json"
+        ],
+        [
+          "Official Minnesota payroll page",
+          "https://mn.gov/mmb/transparency-mn/payrolldata.jsp"
+        ]
+      ]
+    },
+    {
+      "id": "ombud-mental-hlth-dev-dis",
+      "name": "Ombud Mental Hlth & Dev Dis",
+      "amount": 266543,
+      "sourceAmount": 266543,
+      "program": "Ombud Mental Hlth & Dev Dis",
+      "sourceRows": null,
+      "detailUrl": null,
+      "sourceUrl": "https://transparency.systems.state.mn.us/analytics/saw.dll?Go&ViewID=d%3adashboard%7ep%3a0lpu8102g8pch6om%7er%3a4rcek211kjk0hpfb&Action=Download&SearchID=1b0b8oo4pgtonh800tnv7d8iaa&Style=MNIT&ViewState=6e023hfv8pu2gn62ug63e79ac2&ItemName=Payments%205.0%20-%20by%20Agency&path=%2fshared%2fCitizens%20Portal%2fPayments%2fPayments%205.0%20-%20by%20Agency&Format=csv&Extension=.csv",
+      "relatedSources": [
+        [
+          "FY2024 statewide wages (non-additive)",
+          "data/state-mn/archive-state-source/state-mn-payroll.json"
+        ],
+        [
+          "Official Minnesota payroll page",
+          "https://mn.gov/mmb/transparency-mn/payrolldata.jsp"
+        ]
+      ]
+    },
+    {
+      "id": "architecture-engineering-bd",
+      "name": "Architecture, Engineering Bd",
+      "amount": 239970,
+      "sourceAmount": 239970,
+      "program": "Architecture, Engineering Bd",
+      "sourceRows": null,
+      "detailUrl": null,
+      "sourceUrl": "https://transparency.systems.state.mn.us/analytics/saw.dll?Go&ViewID=d%3adashboard%7ep%3a0lpu8102g8pch6om%7er%3a4rcek211kjk0hpfb&Action=Download&SearchID=1b0b8oo4pgtonh800tnv7d8iaa&Style=MNIT&ViewState=6e023hfv8pu2gn62ug63e79ac2&ItemName=Payments%205.0%20-%20by%20Agency&path=%2fshared%2fCitizens%20Portal%2fPayments%2fPayments%205.0%20-%20by%20Agency&Format=csv&Extension=.csv",
+      "relatedSources": [
+        [
+          "FY2024 statewide wages (non-additive)",
+          "data/state-mn/archive-state-source/state-mn-payroll.json"
+        ],
+        [
+          "Official Minnesota payroll page",
+          "https://mn.gov/mmb/transparency-mn/payrolldata.jsp"
+        ]
+      ]
+    },
+    {
+      "id": "campaign-fin-public-discl-bd",
+      "name": "Campaign Fin & Public Discl Bd",
+      "amount": 235321,
+      "sourceAmount": 235321,
+      "program": "Campaign Fin & Public Discl Bd",
+      "sourceRows": null,
+      "detailUrl": null,
+      "sourceUrl": "https://transparency.systems.state.mn.us/analytics/saw.dll?Go&ViewID=d%3adashboard%7ep%3a0lpu8102g8pch6om%7er%3a4rcek211kjk0hpfb&Action=Download&SearchID=1b0b8oo4pgtonh800tnv7d8iaa&Style=MNIT&ViewState=6e023hfv8pu2gn62ug63e79ac2&ItemName=Payments%205.0%20-%20by%20Agency&path=%2fshared%2fCitizens%20Portal%2fPayments%2fPayments%205.0%20-%20by%20Agency&Format=csv&Extension=.csv",
+      "relatedSources": [
+        [
+          "FY2024 statewide wages (non-additive)",
+          "data/state-mn/archive-state-source/state-mn-payroll.json"
+        ],
+        [
+          "Official Minnesota payroll page",
+          "https://mn.gov/mmb/transparency-mn/payrolldata.jsp"
+        ]
+      ]
+    },
+    {
+      "id": "chiropractors-board",
+      "name": "Chiropractors Board",
+      "amount": 198754,
+      "sourceAmount": 198754,
+      "program": "Chiropractors Board",
+      "sourceRows": null,
+      "detailUrl": null,
+      "sourceUrl": "https://transparency.systems.state.mn.us/analytics/saw.dll?Go&ViewID=d%3adashboard%7ep%3a0lpu8102g8pch6om%7er%3a4rcek211kjk0hpfb&Action=Download&SearchID=1b0b8oo4pgtonh800tnv7d8iaa&Style=MNIT&ViewState=6e023hfv8pu2gn62ug63e79ac2&ItemName=Payments%205.0%20-%20by%20Agency&path=%2fshared%2fCitizens%20Portal%2fPayments%2fPayments%205.0%20-%20by%20Agency&Format=csv&Extension=.csv",
+      "relatedSources": [
+        [
+          "FY2024 statewide wages (non-additive)",
+          "data/state-mn/archive-state-source/state-mn-payroll.json"
+        ],
+        [
+          "Official Minnesota payroll page",
+          "https://mn.gov/mmb/transparency-mn/payrolldata.jsp"
+        ]
+      ]
+    },
+    {
+      "id": "accountancy-board",
+      "name": "Accountancy Board",
+      "amount": 194977,
+      "sourceAmount": 194977,
+      "program": "Accountancy Board",
+      "sourceRows": null,
+      "detailUrl": null,
+      "sourceUrl": "https://transparency.systems.state.mn.us/analytics/saw.dll?Go&ViewID=d%3adashboard%7ep%3a0lpu8102g8pch6om%7er%3a4rcek211kjk0hpfb&Action=Download&SearchID=1b0b8oo4pgtonh800tnv7d8iaa&Style=MNIT&ViewState=6e023hfv8pu2gn62ug63e79ac2&ItemName=Payments%205.0%20-%20by%20Agency&path=%2fshared%2fCitizens%20Portal%2fPayments%2fPayments%205.0%20-%20by%20Agency&Format=csv&Extension=.csv",
+      "relatedSources": [
+        [
+          "FY2024 statewide wages (non-additive)",
+          "data/state-mn/archive-state-source/state-mn-payroll.json"
+        ],
+        [
+          "Official Minnesota payroll page",
+          "https://mn.gov/mmb/transparency-mn/payrolldata.jsp"
+        ]
+      ]
+    },
+    {
+      "id": "ombudsperson-for-corrections",
+      "name": "Ombudsperson for Corrections",
+      "amount": 188234,
+      "sourceAmount": 188234,
+      "program": "Ombudsperson for Corrections",
+      "sourceRows": null,
+      "detailUrl": null,
+      "sourceUrl": "https://transparency.systems.state.mn.us/analytics/saw.dll?Go&ViewID=d%3adashboard%7ep%3a0lpu8102g8pch6om%7er%3a4rcek211kjk0hpfb&Action=Download&SearchID=1b0b8oo4pgtonh800tnv7d8iaa&Style=MNIT&ViewState=6e023hfv8pu2gn62ug63e79ac2&ItemName=Payments%205.0%20-%20by%20Agency&path=%2fshared%2fCitizens%20Portal%2fPayments%2fPayments%205.0%20-%20by%20Agency&Format=csv&Extension=.csv",
+      "relatedSources": [
+        [
+          "FY2024 statewide wages (non-additive)",
+          "data/state-mn/archive-state-source/state-mn-payroll.json"
+        ],
+        [
+          "Official Minnesota payroll page",
+          "https://mn.gov/mmb/transparency-mn/payrolldata.jsp"
+        ]
+      ]
+    },
+    {
+      "id": "physical-therapy-board",
+      "name": "Physical Therapy Board",
+      "amount": 185714,
+      "sourceAmount": 185714,
+      "program": "Physical Therapy Board",
+      "sourceRows": null,
+      "detailUrl": null,
+      "sourceUrl": "https://transparency.systems.state.mn.us/analytics/saw.dll?Go&ViewID=d%3adashboard%7ep%3a0lpu8102g8pch6om%7er%3a4rcek211kjk0hpfb&Action=Download&SearchID=1b0b8oo4pgtonh800tnv7d8iaa&Style=MNIT&ViewState=6e023hfv8pu2gn62ug63e79ac2&ItemName=Payments%205.0%20-%20by%20Agency&path=%2fshared%2fCitizens%20Portal%2fPayments%2fPayments%205.0%20-%20by%20Agency&Format=csv&Extension=.csv",
+      "relatedSources": [
+        [
+          "FY2024 statewide wages (non-additive)",
+          "data/state-mn/archive-state-source/state-mn-payroll.json"
+        ],
+        [
+          "Official Minnesota payroll page",
+          "https://mn.gov/mmb/transparency-mn/payrolldata.jsp"
+        ]
+      ]
+    },
+    {
+      "id": "sentencing-guidelines-comm",
+      "name": "Sentencing Guidelines Comm",
+      "amount": 175409,
+      "sourceAmount": 175409,
+      "program": "Sentencing Guidelines Comm",
+      "sourceRows": null,
+      "detailUrl": null,
+      "sourceUrl": "https://transparency.systems.state.mn.us/analytics/saw.dll?Go&ViewID=d%3adashboard%7ep%3a0lpu8102g8pch6om%7er%3a4rcek211kjk0hpfb&Action=Download&SearchID=1b0b8oo4pgtonh800tnv7d8iaa&Style=MNIT&ViewState=6e023hfv8pu2gn62ug63e79ac2&ItemName=Payments%205.0%20-%20by%20Agency&path=%2fshared%2fCitizens%20Portal%2fPayments%2fPayments%205.0%20-%20by%20Agency&Format=csv&Extension=.csv",
+      "relatedSources": [
+        [
+          "FY2024 statewide wages (non-additive)",
+          "data/state-mn/archive-state-source/state-mn-payroll.json"
+        ],
+        [
+          "Official Minnesota payroll page",
+          "https://mn.gov/mmb/transparency-mn/payrolldata.jsp"
+        ]
+      ]
+    },
+    {
+      "id": "judicial-standards-board",
+      "name": "Judicial Standards Board",
+      "amount": 153886,
+      "sourceAmount": 153886,
+      "program": "Judicial Standards Board",
+      "sourceRows": null,
+      "detailUrl": null,
+      "sourceUrl": "https://transparency.systems.state.mn.us/analytics/saw.dll?Go&ViewID=d%3adashboard%7ep%3a0lpu8102g8pch6om%7er%3a4rcek211kjk0hpfb&Action=Download&SearchID=1b0b8oo4pgtonh800tnv7d8iaa&Style=MNIT&ViewState=6e023hfv8pu2gn62ug63e79ac2&ItemName=Payments%205.0%20-%20by%20Agency&path=%2fshared%2fCitizens%20Portal%2fPayments%2fPayments%205.0%20-%20by%20Agency&Format=csv&Extension=.csv",
+      "relatedSources": [
+        [
+          "FY2024 statewide wages (non-additive)",
+          "data/state-mn/archive-state-source/state-mn-payroll.json"
+        ],
+        [
+          "Official Minnesota payroll page",
+          "https://mn.gov/mmb/transparency-mn/payrolldata.jsp"
+        ]
+      ]
+    },
+    {
+      "id": "asian-pacific-council",
+      "name": "Asian-Pacific Council",
+      "amount": 133502,
+      "sourceAmount": 133502,
+      "program": "Asian-Pacific Council",
+      "sourceRows": null,
+      "detailUrl": null,
+      "sourceUrl": "https://transparency.systems.state.mn.us/analytics/saw.dll?Go&ViewID=d%3adashboard%7ep%3a0lpu8102g8pch6om%7er%3a4rcek211kjk0hpfb&Action=Download&SearchID=1b0b8oo4pgtonh800tnv7d8iaa&Style=MNIT&ViewState=6e023hfv8pu2gn62ug63e79ac2&ItemName=Payments%205.0%20-%20by%20Agency&path=%2fshared%2fCitizens%20Portal%2fPayments%2fPayments%205.0%20-%20by%20Agency&Format=csv&Extension=.csv",
+      "relatedSources": [
+        [
+          "FY2024 statewide wages (non-additive)",
+          "data/state-mn/archive-state-source/state-mn-payroll.json"
+        ],
+        [
+          "Official Minnesota payroll page",
+          "https://mn.gov/mmb/transparency-mn/payrolldata.jsp"
+        ]
+      ]
+    },
+    {
+      "id": "council-for-mn-of-african-heri",
+      "name": "Council for MN of African Heri",
+      "amount": 122467,
+      "sourceAmount": 122467,
+      "program": "Council for MN of African Heri",
+      "sourceRows": null,
+      "detailUrl": null,
+      "sourceUrl": "https://transparency.systems.state.mn.us/analytics/saw.dll?Go&ViewID=d%3adashboard%7ep%3a0lpu8102g8pch6om%7er%3a4rcek211kjk0hpfb&Action=Download&SearchID=1b0b8oo4pgtonh800tnv7d8iaa&Style=MNIT&ViewState=6e023hfv8pu2gn62ug63e79ac2&ItemName=Payments%205.0%20-%20by%20Agency&path=%2fshared%2fCitizens%20Portal%2fPayments%2fPayments%205.0%20-%20by%20Agency&Format=csv&Extension=.csv",
+      "relatedSources": [
+        [
+          "FY2024 statewide wages (non-additive)",
+          "data/state-mn/archive-state-source/state-mn-payroll.json"
+        ],
+        [
+          "Official Minnesota payroll page",
+          "https://mn.gov/mmb/transparency-mn/payrolldata.jsp"
+        ]
+      ]
+    },
+    {
+      "id": "occupational-therapy-pract-bd",
+      "name": "Occupational Therapy Pract Bd",
+      "amount": 120424,
+      "sourceAmount": 120424,
+      "program": "Occupational Therapy Pract Bd",
+      "sourceRows": null,
+      "detailUrl": null,
+      "sourceUrl": "https://transparency.systems.state.mn.us/analytics/saw.dll?Go&ViewID=d%3adashboard%7ep%3a0lpu8102g8pch6om%7er%3a4rcek211kjk0hpfb&Action=Download&SearchID=1b0b8oo4pgtonh800tnv7d8iaa&Style=MNIT&ViewState=6e023hfv8pu2gn62ug63e79ac2&ItemName=Payments%205.0%20-%20by%20Agency&path=%2fshared%2fCitizens%20Portal%2fPayments%2fPayments%205.0%20-%20by%20Agency&Format=csv&Extension=.csv",
+      "relatedSources": [
+        [
+          "FY2024 statewide wages (non-additive)",
+          "data/state-mn/archive-state-source/state-mn-payroll.json"
+        ],
+        [
+          "Official Minnesota payroll page",
+          "https://mn.gov/mmb/transparency-mn/payrolldata.jsp"
+        ]
+      ]
+    },
+    {
+      "id": "exec-for-lt-svcs-supports-bd",
+      "name": "Exec for LT Svcs & Supports Bd",
+      "amount": 112157,
+      "sourceAmount": 112157,
+      "program": "Exec for LT Svcs & Supports Bd",
+      "sourceRows": null,
+      "detailUrl": null,
+      "sourceUrl": "https://transparency.systems.state.mn.us/analytics/saw.dll?Go&ViewID=d%3adashboard%7ep%3a0lpu8102g8pch6om%7er%3a4rcek211kjk0hpfb&Action=Download&SearchID=1b0b8oo4pgtonh800tnv7d8iaa&Style=MNIT&ViewState=6e023hfv8pu2gn62ug63e79ac2&ItemName=Payments%205.0%20-%20by%20Agency&path=%2fshared%2fCitizens%20Portal%2fPayments%2fPayments%205.0%20-%20by%20Agency&Format=csv&Extension=.csv",
+      "relatedSources": [
+        [
+          "FY2024 statewide wages (non-additive)",
+          "data/state-mn/archive-state-source/state-mn-payroll.json"
+        ],
+        [
+          "Official Minnesota payroll page",
+          "https://mn.gov/mmb/transparency-mn/payrolldata.jsp"
+        ]
+      ]
+    },
+    {
+      "id": "barber-examiners-board",
+      "name": "Barber Examiners Board",
+      "amount": 111401,
+      "sourceAmount": 111401,
+      "program": "Barber Examiners Board",
+      "sourceRows": null,
+      "detailUrl": null,
+      "sourceUrl": "https://transparency.systems.state.mn.us/analytics/saw.dll?Go&ViewID=d%3adashboard%7ep%3a0lpu8102g8pch6om%7er%3a4rcek211kjk0hpfb&Action=Download&SearchID=1b0b8oo4pgtonh800tnv7d8iaa&Style=MNIT&ViewState=6e023hfv8pu2gn62ug63e79ac2&ItemName=Payments%205.0%20-%20by%20Agency&path=%2fshared%2fCitizens%20Portal%2fPayments%2fPayments%205.0%20-%20by%20Agency&Format=csv&Extension=.csv",
+      "relatedSources": [
+        [
+          "FY2024 statewide wages (non-additive)",
+          "data/state-mn/archive-state-source/state-mn-payroll.json"
+        ],
+        [
+          "Official Minnesota payroll page",
+          "https://mn.gov/mmb/transparency-mn/payrolldata.jsp"
+        ]
+      ]
+    },
+    {
+      "id": "uniform-laws-commission",
+      "name": "Uniform Laws Commission",
+      "amount": 99824,
+      "sourceAmount": 99824,
+      "program": "Uniform Laws Commission",
+      "sourceRows": null,
+      "detailUrl": null,
+      "sourceUrl": "https://transparency.systems.state.mn.us/analytics/saw.dll?Go&ViewID=d%3adashboard%7ep%3a0lpu8102g8pch6om%7er%3a4rcek211kjk0hpfb&Action=Download&SearchID=1b0b8oo4pgtonh800tnv7d8iaa&Style=MNIT&ViewState=6e023hfv8pu2gn62ug63e79ac2&ItemName=Payments%205.0%20-%20by%20Agency&path=%2fshared%2fCitizens%20Portal%2fPayments%2fPayments%205.0%20-%20by%20Agency&Format=csv&Extension=.csv",
+      "relatedSources": [
+        [
+          "FY2024 statewide wages (non-additive)",
+          "data/state-mn/archive-state-source/state-mn-payroll.json"
+        ],
+        [
+          "Official Minnesota payroll page",
+          "https://mn.gov/mmb/transparency-mn/payrolldata.jsp"
+        ]
+      ]
+    },
+    {
+      "id": "veterinary-medicine-board",
+      "name": "Veterinary Medicine Board",
+      "amount": 92357,
+      "sourceAmount": 92357,
+      "program": "Veterinary Medicine Board",
+      "sourceRows": null,
+      "detailUrl": null,
+      "sourceUrl": "https://transparency.systems.state.mn.us/analytics/saw.dll?Go&ViewID=d%3adashboard%7ep%3a0lpu8102g8pch6om%7er%3a4rcek211kjk0hpfb&Action=Download&SearchID=1b0b8oo4pgtonh800tnv7d8iaa&Style=MNIT&ViewState=6e023hfv8pu2gn62ug63e79ac2&ItemName=Payments%205.0%20-%20by%20Agency&path=%2fshared%2fCitizens%20Portal%2fPayments%2fPayments%205.0%20-%20by%20Agency&Format=csv&Extension=.csv",
+      "relatedSources": [
+        [
+          "FY2024 statewide wages (non-additive)",
+          "data/state-mn/archive-state-source/state-mn-payroll.json"
+        ],
+        [
+          "Official Minnesota payroll page",
+          "https://mn.gov/mmb/transparency-mn/payrolldata.jsp"
+        ]
+      ]
+    },
+    {
+      "id": "state-competency-attainment-bd",
+      "name": "State Competency Attainment Bd",
+      "amount": 90666,
+      "sourceAmount": 90666,
+      "program": "State Competency Attainment Bd",
+      "sourceRows": null,
+      "detailUrl": null,
+      "sourceUrl": "https://transparency.systems.state.mn.us/analytics/saw.dll?Go&ViewID=d%3adashboard%7ep%3a0lpu8102g8pch6om%7er%3a4rcek211kjk0hpfb&Action=Download&SearchID=1b0b8oo4pgtonh800tnv7d8iaa&Style=MNIT&ViewState=6e023hfv8pu2gn62ug63e79ac2&ItemName=Payments%205.0%20-%20by%20Agency&path=%2fshared%2fCitizens%20Portal%2fPayments%2fPayments%205.0%20-%20by%20Agency&Format=csv&Extension=.csv",
+      "relatedSources": [
+        [
+          "FY2024 statewide wages (non-additive)",
+          "data/state-mn/archive-state-source/state-mn-payroll.json"
+        ],
+        [
+          "Official Minnesota payroll page",
+          "https://mn.gov/mmb/transparency-mn/payrolldata.jsp"
+        ]
+      ]
+    },
+    {
+      "id": "foster-youth-ombudsperson",
+      "name": "Foster Youth Ombudsperson",
+      "amount": 88415,
+      "sourceAmount": 88415,
+      "program": "Foster Youth Ombudsperson",
+      "sourceRows": null,
+      "detailUrl": null,
+      "sourceUrl": "https://transparency.systems.state.mn.us/analytics/saw.dll?Go&ViewID=d%3adashboard%7ep%3a0lpu8102g8pch6om%7er%3a4rcek211kjk0hpfb&Action=Download&SearchID=1b0b8oo4pgtonh800tnv7d8iaa&Style=MNIT&ViewState=6e023hfv8pu2gn62ug63e79ac2&ItemName=Payments%205.0%20-%20by%20Agency&path=%2fshared%2fCitizens%20Portal%2fPayments%2fPayments%205.0%20-%20by%20Agency&Format=csv&Extension=.csv",
+      "relatedSources": [
+        [
+          "FY2024 statewide wages (non-additive)",
+          "data/state-mn/archive-state-source/state-mn-payroll.json"
+        ],
+        [
+          "Official Minnesota payroll page",
+          "https://mn.gov/mmb/transparency-mn/payrolldata.jsp"
+        ]
+      ]
+    },
+    {
+      "id": "mn-council-on-latino-affairs",
+      "name": "MN Council on Latino Affairs",
+      "amount": 86456,
+      "sourceAmount": 86456,
+      "program": "MN Council on Latino Affairs",
+      "sourceRows": null,
+      "detailUrl": null,
+      "sourceUrl": "https://transparency.systems.state.mn.us/analytics/saw.dll?Go&ViewID=d%3adashboard%7ep%3a0lpu8102g8pch6om%7er%3a4rcek211kjk0hpfb&Action=Download&SearchID=1b0b8oo4pgtonh800tnv7d8iaa&Style=MNIT&ViewState=6e023hfv8pu2gn62ug63e79ac2&ItemName=Payments%205.0%20-%20by%20Agency&path=%2fshared%2fCitizens%20Portal%2fPayments%2fPayments%205.0%20-%20by%20Agency&Format=csv&Extension=.csv",
+      "relatedSources": [
+        [
+          "FY2024 statewide wages (non-additive)",
+          "data/state-mn/archive-state-source/state-mn-payroll.json"
+        ],
+        [
+          "Official Minnesota payroll page",
+          "https://mn.gov/mmb/transparency-mn/payrolldata.jsp"
+        ]
+      ]
+    },
+    {
+      "id": "rare-disease-advisory-council",
+      "name": "Rare Disease Advisory Council",
+      "amount": 85733,
+      "sourceAmount": 85733,
+      "program": "Rare Disease Advisory Council",
+      "sourceRows": null,
+      "detailUrl": null,
+      "sourceUrl": "https://transparency.systems.state.mn.us/analytics/saw.dll?Go&ViewID=d%3adashboard%7ep%3a0lpu8102g8pch6om%7er%3a4rcek211kjk0hpfb&Action=Download&SearchID=1b0b8oo4pgtonh800tnv7d8iaa&Style=MNIT&ViewState=6e023hfv8pu2gn62ug63e79ac2&ItemName=Payments%205.0%20-%20by%20Agency&path=%2fshared%2fCitizens%20Portal%2fPayments%2fPayments%205.0%20-%20by%20Agency&Format=csv&Extension=.csv",
+      "relatedSources": [
+        [
+          "FY2024 statewide wages (non-additive)",
+          "data/state-mn/archive-state-source/state-mn-payroll.json"
+        ],
+        [
+          "Official Minnesota payroll page",
+          "https://mn.gov/mmb/transparency-mn/payrolldata.jsp"
+        ]
+      ]
+    },
+    {
+      "id": "marriage-family-therapy",
+      "name": "Marriage & Family Therapy",
+      "amount": 80074,
+      "sourceAmount": 80074,
+      "program": "Marriage & Family Therapy",
+      "sourceRows": null,
+      "detailUrl": null,
+      "sourceUrl": "https://transparency.systems.state.mn.us/analytics/saw.dll?Go&ViewID=d%3adashboard%7ep%3a0lpu8102g8pch6om%7er%3a4rcek211kjk0hpfb&Action=Download&SearchID=1b0b8oo4pgtonh800tnv7d8iaa&Style=MNIT&ViewState=6e023hfv8pu2gn62ug63e79ac2&ItemName=Payments%205.0%20-%20by%20Agency&path=%2fshared%2fCitizens%20Portal%2fPayments%2fPayments%205.0%20-%20by%20Agency&Format=csv&Extension=.csv",
+      "relatedSources": [
+        [
+          "FY2024 statewide wages (non-additive)",
+          "data/state-mn/archive-state-source/state-mn-payroll.json"
+        ],
+        [
+          "Official Minnesota payroll page",
+          "https://mn.gov/mmb/transparency-mn/payrolldata.jsp"
+        ]
+      ]
+    },
+    {
+      "id": "ombudsperson-for-families",
+      "name": "Ombudsperson for Families",
+      "amount": 78464,
+      "sourceAmount": 78464,
+      "program": "Ombudsperson for Families",
+      "sourceRows": null,
+      "detailUrl": null,
+      "sourceUrl": "https://transparency.systems.state.mn.us/analytics/saw.dll?Go&ViewID=d%3adashboard%7ep%3a0lpu8102g8pch6om%7er%3a4rcek211kjk0hpfb&Action=Download&SearchID=1b0b8oo4pgtonh800tnv7d8iaa&Style=MNIT&ViewState=6e023hfv8pu2gn62ug63e79ac2&ItemName=Payments%205.0%20-%20by%20Agency&path=%2fshared%2fCitizens%20Portal%2fPayments%2fPayments%205.0%20-%20by%20Agency&Format=csv&Extension=.csv",
+      "relatedSources": [
+        [
+          "FY2024 statewide wages (non-additive)",
+          "data/state-mn/archive-state-source/state-mn-payroll.json"
+        ],
+        [
+          "Official Minnesota payroll page",
+          "https://mn.gov/mmb/transparency-mn/payrolldata.jsp"
+        ]
+      ]
+    },
+    {
+      "id": "optometry-board",
+      "name": "Optometry Board",
+      "amount": 77677,
+      "sourceAmount": 77677,
+      "program": "Optometry Board",
+      "sourceRows": null,
+      "detailUrl": null,
+      "sourceUrl": "https://transparency.systems.state.mn.us/analytics/saw.dll?Go&ViewID=d%3adashboard%7ep%3a0lpu8102g8pch6om%7er%3a4rcek211kjk0hpfb&Action=Download&SearchID=1b0b8oo4pgtonh800tnv7d8iaa&Style=MNIT&ViewState=6e023hfv8pu2gn62ug63e79ac2&ItemName=Payments%205.0%20-%20by%20Agency&path=%2fshared%2fCitizens%20Portal%2fPayments%2fPayments%205.0%20-%20by%20Agency&Format=csv&Extension=.csv",
+      "relatedSources": [
+        [
+          "FY2024 statewide wages (non-additive)",
+          "data/state-mn/archive-state-source/state-mn-payroll.json"
+        ],
+        [
+          "Official Minnesota payroll page",
+          "https://mn.gov/mmb/transparency-mn/payrolldata.jsp"
+        ]
+      ]
+    },
+    {
+      "id": "ombud-american-indian-families",
+      "name": "Ombud American Indian Families",
+      "amount": 59561,
+      "sourceAmount": 59561,
+      "program": "Ombud American Indian Families",
+      "sourceRows": null,
+      "detailUrl": null,
+      "sourceUrl": "https://transparency.systems.state.mn.us/analytics/saw.dll?Go&ViewID=d%3adashboard%7ep%3a0lpu8102g8pch6om%7er%3a4rcek211kjk0hpfb&Action=Download&SearchID=1b0b8oo4pgtonh800tnv7d8iaa&Style=MNIT&ViewState=6e023hfv8pu2gn62ug63e79ac2&ItemName=Payments%205.0%20-%20by%20Agency&path=%2fshared%2fCitizens%20Portal%2fPayments%2fPayments%205.0%20-%20by%20Agency&Format=csv&Extension=.csv",
+      "relatedSources": [
+        [
+          "FY2024 statewide wages (non-additive)",
+          "data/state-mn/archive-state-source/state-mn-payroll.json"
+        ],
+        [
+          "Official Minnesota payroll page",
+          "https://mn.gov/mmb/transparency-mn/payrolldata.jsp"
+        ]
+      ]
+    },
+    {
+      "id": "lgbtqia2s-minnesotans-council",
+      "name": "LGBTQIA2S+ Minnesotans Council",
+      "amount": 50082,
+      "sourceAmount": 50082,
+      "program": "LGBTQIA2S+ Minnesotans Council",
+      "sourceRows": null,
+      "detailUrl": null,
+      "sourceUrl": "https://transparency.systems.state.mn.us/analytics/saw.dll?Go&ViewID=d%3adashboard%7ep%3a0lpu8102g8pch6om%7er%3a4rcek211kjk0hpfb&Action=Download&SearchID=1b0b8oo4pgtonh800tnv7d8iaa&Style=MNIT&ViewState=6e023hfv8pu2gn62ug63e79ac2&ItemName=Payments%205.0%20-%20by%20Agency&path=%2fshared%2fCitizens%20Portal%2fPayments%2fPayments%205.0%20-%20by%20Agency&Format=csv&Extension=.csv",
+      "relatedSources": [
+        [
+          "FY2024 statewide wages (non-additive)",
+          "data/state-mn/archive-state-source/state-mn-payroll.json"
+        ],
+        [
+          "Official Minnesota payroll page",
+          "https://mn.gov/mmb/transparency-mn/payrolldata.jsp"
+        ]
+      ]
+    },
+    {
+      "id": "podiatric-medicine-board",
+      "name": "Podiatric Medicine Board",
+      "amount": 43739,
+      "sourceAmount": 43739,
+      "program": "Podiatric Medicine Board",
+      "sourceRows": null,
+      "detailUrl": null,
+      "sourceUrl": "https://transparency.systems.state.mn.us/analytics/saw.dll?Go&ViewID=d%3adashboard%7ep%3a0lpu8102g8pch6om%7er%3a4rcek211kjk0hpfb&Action=Download&SearchID=1b0b8oo4pgtonh800tnv7d8iaa&Style=MNIT&ViewState=6e023hfv8pu2gn62ug63e79ac2&ItemName=Payments%205.0%20-%20by%20Agency&path=%2fshared%2fCitizens%20Portal%2fPayments%2fPayments%205.0%20-%20by%20Agency&Format=csv&Extension=.csv",
+      "relatedSources": [
+        [
+          "FY2024 statewide wages (non-additive)",
+          "data/state-mn/archive-state-source/state-mn-payroll.json"
+        ],
+        [
+          "Official Minnesota payroll page",
+          "https://mn.gov/mmb/transparency-mn/payrolldata.jsp"
+        ]
+      ]
+    },
+    {
+      "id": "dietetics-nutrition-practice",
+      "name": "Dietetics & Nutrition Practice",
+      "amount": 37921,
+      "sourceAmount": 37921,
+      "program": "Dietetics & Nutrition Practice",
+      "sourceRows": null,
+      "detailUrl": null,
+      "sourceUrl": "https://transparency.systems.state.mn.us/analytics/saw.dll?Go&ViewID=d%3adashboard%7ep%3a0lpu8102g8pch6om%7er%3a4rcek211kjk0hpfb&Action=Download&SearchID=1b0b8oo4pgtonh800tnv7d8iaa&Style=MNIT&ViewState=6e023hfv8pu2gn62ug63e79ac2&ItemName=Payments%205.0%20-%20by%20Agency&path=%2fshared%2fCitizens%20Portal%2fPayments%2fPayments%205.0%20-%20by%20Agency&Format=csv&Extension=.csv",
+      "relatedSources": [
+        [
+          "FY2024 statewide wages (non-additive)",
+          "data/state-mn/archive-state-source/state-mn-payroll.json"
+        ],
+        [
+          "Official Minnesota payroll page",
+          "https://mn.gov/mmb/transparency-mn/payrolldata.jsp"
+        ]
+      ]
+    },
+    {
+      "id": "cannabis-expungement-board",
+      "name": "Cannabis Expungement Board",
+      "amount": 32226,
+      "sourceAmount": 32226,
+      "program": "Cannabis Expungement Board",
+      "sourceRows": null,
+      "detailUrl": null,
+      "sourceUrl": "https://transparency.systems.state.mn.us/analytics/saw.dll?Go&ViewID=d%3adashboard%7ep%3a0lpu8102g8pch6om%7er%3a4rcek211kjk0hpfb&Action=Download&SearchID=1b0b8oo4pgtonh800tnv7d8iaa&Style=MNIT&ViewState=6e023hfv8pu2gn62ug63e79ac2&ItemName=Payments%205.0%20-%20by%20Agency&path=%2fshared%2fCitizens%20Portal%2fPayments%2fPayments%205.0%20-%20by%20Agency&Format=csv&Extension=.csv",
+      "relatedSources": [
+        [
+          "FY2024 statewide wages (non-additive)",
+          "data/state-mn/archive-state-source/state-mn-payroll.json"
+        ],
+        [
+          "Official Minnesota payroll page",
+          "https://mn.gov/mmb/transparency-mn/payrolldata.jsp"
+        ]
+      ]
+    },
+    {
+      "id": "private-detective-board",
+      "name": "Private Detective Board",
+      "amount": 13934,
+      "sourceAmount": 13934,
+      "program": "Private Detective Board",
+      "sourceRows": null,
+      "detailUrl": null,
+      "sourceUrl": "https://transparency.systems.state.mn.us/analytics/saw.dll?Go&ViewID=d%3adashboard%7ep%3a0lpu8102g8pch6om%7er%3a4rcek211kjk0hpfb&Action=Download&SearchID=1b0b8oo4pgtonh800tnv7d8iaa&Style=MNIT&ViewState=6e023hfv8pu2gn62ug63e79ac2&ItemName=Payments%205.0%20-%20by%20Agency&path=%2fshared%2fCitizens%20Portal%2fPayments%2fPayments%205.0%20-%20by%20Agency&Format=csv&Extension=.csv",
+      "relatedSources": [
+        [
+          "FY2024 statewide wages (non-additive)",
+          "data/state-mn/archive-state-source/state-mn-payroll.json"
+        ],
+        [
+          "Official Minnesota payroll page",
+          "https://mn.gov/mmb/transparency-mn/payrolldata.jsp"
+        ]
+      ]
+    }
+  ],
+  "itemizedTotal": 64339974325,
+  "comparison": {
+    "label": "Census FY2024 state-finance comparator",
+    "url": "https://data.census.gov/table/GOVSSTATEFINTIMESERIES.GS00STATEFIN01?g=040XX00US27&time=2024",
+    "total": 61249905000,
+    "difference": 3090069325
+  },
+  "coverageStatus": "official-itemized-source-basis",
+  "archiveNote": "Prior official state layer archived when the complete Census function layer became primary for map reconciliation."
+}

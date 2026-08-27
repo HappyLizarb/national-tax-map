@@ -1,0 +1,245 @@
+{
+  "scope": "Oregon",
+  "fiscalYear": 2024,
+  "department": "PSYCHIATRIC SECURITY REV BRD",
+  "sourceUrl": "https://data.oregon.gov/resource/y9g9-xsxs.json?$select=agency,agency_1,budget_class,budget_class_1,expend_class,expend_class_1,vendor,sum(expense)%20as%20total,count(*)%20as%20source_rows&$where=fiscal_year=2024&$group=agency,agency_1,budget_class,budget_class_1,expend_class,expend_class_1,vendor&$limit=500000",
+  "sourceUrls": [
+    [
+      "Oregon transparency expenditure catalog",
+      "https://data.oregon.gov/Revenue-Expense/Agency-Expenditures-Multi-Year-Report/y9g9-xsxs"
+    ],
+    [
+      "Grouped FY2024 API export",
+      "https://data.oregon.gov/resource/y9g9-xsxs.json?$select=agency,agency_1,budget_class,budget_class_1,expend_class,expend_class_1,vendor,sum(expense)%20as%20total,count(*)%20as%20source_rows&$where=fiscal_year=2024&$group=agency,agency_1,budget_class,budget_class_1,expend_class,expend_class_1,vendor&$limit=500000"
+    ]
+  ],
+  "sourceBasis": "Official Oregon Agency Expenditures Multi-Year Report; FY2024 cash expense grouped by agency, budget class, expenditure class, and privacy-safe receiver label.",
+  "privacyNote": "Individual or ambiguous vendor labels are grouped as [individual recipient omitted]; organization receivers are retained. This layer does not expose person-level payroll.",
+  "sourceRows": 33,
+  "sourceTotal": 460577.23,
+  "rowSchema": [
+    "subAgency",
+    "program",
+    "amount",
+    "sourceAmount",
+    "sourceRows"
+  ],
+  "rows": [
+    [
+      "PSYCHIATRIC SECURITY REV BRD",
+      "4175 · OFFICE EXPENSES · 4201 · OFFICE SERVICES · Receiver CHAVES CONSULTING INC",
+      141115,
+      141115,
+      1
+    ],
+    [
+      "PSYCHIATRIC SECURITY REV BRD",
+      "4325 · ATTORNEY GENERAL LEGAL FEES · 4550 · ATTORNEY GENERAL LEGAL FEES · Receiver STATE OF OREGON DEPARTMENT OF JUSTICE",
+      104996.1,
+      104996.1,
+      1
+    ],
+    [
+      "PSYCHIATRIC SECURITY REV BRD",
+      "4225 · STATE GOVERNMENT SERVICE CHARGES · 4600 · STATE GOVERNMENT SERVICE CHARGES · Receiver DEPARTMENT OF ADMINISTRATIVE SERVICES",
+      79762,
+      79762,
+      1
+    ],
+    [
+      "PSYCHIATRIC SECURITY REV BRD",
+      "4650 · OTHER SERVICES AND SUPPLIES · 4701 · OTHER SERVICES · Receiver DEPARTMENT OF ADMINISTRATIVE SERVICES",
+      35472.76,
+      35472.76,
+      1
+    ],
+    [
+      "PSYCHIATRIC SECURITY REV BRD",
+      "4425 · LEASE PAYMENTS & TAXES · 4800 · INTERAGENCY LEASE PAYMENTS · Receiver RALPH SCHLESINGER COMPANY LLC",
+      19053.03,
+      19053.03,
+      1
+    ],
+    [
+      "PSYCHIATRIC SECURITY REV BRD",
+      "4425 · LEASE PAYMENTS & TAXES · 4800 · INTERAGENCY LEASE PAYMENTS · Receiver CRUISE 224 LLC",
+      12900,
+      12900,
+      1
+    ],
+    [
+      "PSYCHIATRIC SECURITY REV BRD",
+      "4200 · TELECOMM/TECH SVC AND SUPPLIES · 4305 · TELECOM/NETWORK SERVICES · Receiver AZIMUTH COMMUNICATIONS INC",
+      12045.07,
+      12045.07,
+      1
+    ],
+    [
+      "PSYCHIATRIC SECURITY REV BRD",
+      "4225 · STATE GOVERNMENT SERVICE CHARGES · 4600 · STATE GOVERNMENT SERVICE CHARGES · Receiver STATE OF OREGON SECRETARY OF STATE",
+      11466.52,
+      11466.52,
+      1
+    ],
+    [
+      "PSYCHIATRIC SECURITY REV BRD",
+      "4650 · OTHER SERVICES AND SUPPLIES · 4701 · OTHER SERVICES · Receiver SUDDATH RELOCATION SYSTEMS",
+      9807.42,
+      9807.42,
+      2
+    ],
+    [
+      "PSYCHIATRIC SECURITY REV BRD",
+      "4715 · IT EXPENDABLE PROPERTY · 4365 · COMPUTER TECHNOLOGY PC EQUIPMENT<$5K · Receiver CDW GOVERNMENT INC",
+      7225.07,
+      7225.07,
+      1
+    ],
+    [
+      "PSYCHIATRIC SECURITY REV BRD",
+      "4250 · DATA PROCESSING · 4375 · COMPUTER TECHNOLOGY COMPUTER PROCESSING · Receiver CHAVES CONSULTING INC",
+      6822.2,
+      6822.2,
+      1
+    ],
+    [
+      "PSYCHIATRIC SECURITY REV BRD",
+      "4250 · DATA PROCESSING · 4375 · COMPUTER TECHNOLOGY COMPUTER PROCESSING · Receiver CODELATHE TECHNOLOGIES INC",
+      3900,
+      3900,
+      1
+    ],
+    [
+      "PSYCHIATRIC SECURITY REV BRD",
+      "4300 · PROFESSIONAL SERVICES · 4500 · PROFESSIONAL SERVICES NON-IT · Receiver COURTSCRIPTS LLC",
+      2992,
+      2992,
+      1
+    ],
+    [
+      "PSYCHIATRIC SECURITY REV BRD",
+      "4250 · DATA PROCESSING · 4375 · COMPUTER TECHNOLOGY COMPUTER PROCESSING · Receiver DEPARTMENT OF ADMINISTRATIVE SERVICES",
+      2458.53,
+      2458.53,
+      1
+    ],
+    [
+      "PSYCHIATRIC SECURITY REV BRD",
+      "4200 · TELECOMM/TECH SVC AND SUPPLIES · 4301 · TELECOM/VOICE USAGE · Receiver KYNDRYL INC",
+      2106.51,
+      2106.51,
+      1
+    ],
+    [
+      "PSYCHIATRIC SECURITY REV BRD",
+      "4475 · FACILITIES MAINTENANCE · 4850 · FACILITIES MAINTENANCE · Receiver PRIDE COMMERCIAL INTERIORS LLC",
+      1945,
+      1945,
+      1
+    ],
+    [
+      "PSYCHIATRIC SECURITY REV BRD",
+      "4200 · TELECOMM/TECH SVC AND SUPPLIES · 4305 · TELECOM/NETWORK SERVICES · Receiver DEPARTMENT OF ADMINISTRATIVE SERVICES",
+      1423.56,
+      1423.56,
+      1
+    ],
+    [
+      "PSYCHIATRIC SECURITY REV BRD",
+      "4200 · TELECOMM/TECH SVC AND SUPPLIES · 4305 · TELECOM/NETWORK SERVICES · Receiver ZAYO GROUP LLC",
+      1218.95,
+      1218.95,
+      1
+    ],
+    [
+      "PSYCHIATRIC SECURITY REV BRD",
+      "4700 · EXPENDABLE PROPERTY $250-$5000 · 4999 · EXPENDABLE PROPERTY NON-IT<$5K · Receiver NW OFFICE INTERIORS",
+      1000,
+      1000,
+      1
+    ],
+    [
+      "PSYCHIATRIC SECURITY REV BRD",
+      "4300 · PROFESSIONAL SERVICES · 4500 · PROFESSIONAL SERVICES NON-IT · Receiver INTEGRATED CLINICAL & CORRECTIONAL SERVICES",
+      687.5,
+      687.5,
+      1
+    ],
+    [
+      "PSYCHIATRIC SECURITY REV BRD",
+      "4175 · OFFICE EXPENSES · 4201 · OFFICE SERVICES · Receiver DATASAFE INC",
+      443.58,
+      443.58,
+      1
+    ],
+    [
+      "PSYCHIATRIC SECURITY REV BRD",
+      "4275 · PUBLICITY & PUBLICATIONS · 4253 · ADVERTISE, PUBLICITY, PUBLISH/PRINT SRVS · Receiver [individual recipient omitted]",
+      387.5,
+      387.5,
+      1
+    ],
+    [
+      "PSYCHIATRIC SECURITY REV BRD",
+      "4300 · PROFESSIONAL SERVICES · 4500 · PROFESSIONAL SERVICES NON-IT · Receiver CASCADE CENTERS INC",
+      295.2,
+      295.2,
+      1
+    ],
+    [
+      "PSYCHIATRIC SECURITY REV BRD",
+      "4100 · INSTATE TRAVEL · 4101 · INSTATE MEALS WITH OVERNIGHT STAY · Receiver [individual recipient omitted]",
+      293.25,
+      293.25,
+      2
+    ],
+    [
+      "PSYCHIATRIC SECURITY REV BRD",
+      "4100 · INSTATE TRAVEL · 4109 · INSTATE MILEAGE REIMBURSEMENT-FULL RATE · Receiver [individual recipient omitted]",
+      282.32,
+      282.32,
+      2
+    ],
+    [
+      "PSYCHIATRIC SECURITY REV BRD",
+      "4250 · DATA PROCESSING · 4375 · COMPUTER TECHNOLOGY COMPUTER PROCESSING · Receiver SHI INTERNATIONAL CORP",
+      221.62,
+      221.62,
+      1
+    ],
+    [
+      "PSYCHIATRIC SECURITY REV BRD",
+      "4225 · STATE GOVERNMENT SERVICE CHARGES · 4600 · STATE GOVERNMENT SERVICE CHARGES · Receiver OREGON GOVERNMENT ETHICS COMMISSION",
+      210,
+      210,
+      1
+    ],
+    [
+      "PSYCHIATRIC SECURITY REV BRD",
+      "4175 · OFFICE EXPENSES · 4200 · OFFICE SUPPLIES · Receiver DEPARTMENT OF ADMINISTRATIVE SERVICES",
+      30.82,
+      30.82,
+      1
+    ],
+    [
+      "PSYCHIATRIC SECURITY REV BRD",
+      "4275 · PUBLICITY & PUBLICATIONS · 4253 · ADVERTISE, PUBLICITY, PUBLISH/PRINT SRVS · Receiver DEPARTMENT OF ADMINISTRATIVE SERVICES",
+      15.32,
+      15.32,
+      1
+    ],
+    [
+      "PSYCHIATRIC SECURITY REV BRD",
+      "4225 · STATE GOVERNMENT SERVICE CHARGES · 4600 · STATE GOVERNMENT SERVICE CHARGES · Receiver OREGON STATE TREASURY",
+      0.4,
+      0.4,
+      1
+    ]
+  ],
+  "sourceCheck": {
+    "objectClassRows": 30,
+    "sourceRows": 33,
+    "sourceTotal": 460577.23,
+    "difference": 0
+  }
+}

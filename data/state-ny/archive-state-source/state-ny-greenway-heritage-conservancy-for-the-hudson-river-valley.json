@@ -1,0 +1,49 @@
+{
+  "scope": "New York",
+  "fiscalYear": 2024,
+  "department": "Greenway Heritage Conservancy for the Hudson River Valley",
+  "sourceUrl": "https://wwe2.osc.state.ny.us/transparency/checkbook/chkbkMain.cfm",
+  "sourceUrls": [
+    [
+      "Official OSC state payments",
+      "https://wwe2.osc.state.ny.us/transparency/checkbook/chkbkMain.cfm"
+    ],
+    [
+      "Open Book New York overview",
+      "https://www.osc.ny.gov/open-book-new-york"
+    ]
+  ],
+  "sourceBasis": "Official OSC State Payments FY2024 cash/checkbook export; detail grouped by agency, purpose, and privacy-safe receiver label.",
+  "privacyNote": "Individual or ambiguous payee labels are grouped as [individual recipient omitted]; organization receivers are retained. This layer does not expose person-level payroll.",
+  "sourceRows": 5,
+  "sourceTotal": 750000,
+  "rowSchema": [
+    "subAgency",
+    "program",
+    "amount",
+    "sourceAmount",
+    "sourceRows"
+  ],
+  "rows": [
+    [
+      "Greenway Heritage Conservancy for the Hudson River Valley",
+      "Land Improvements · Receiver [individual recipient omitted]",
+      500000,
+      500000,
+      1
+    ],
+    [
+      "Greenway Heritage Conservancy for the Hudson River Valley",
+      "Client Services (Unclassified) · Receiver [individual recipient omitted]",
+      250000,
+      250000,
+      4
+    ]
+  ],
+  "sourceCheck": {
+    "objectClassRows": 2,
+    "sourceRows": 5,
+    "sourceTotal": 750000,
+    "difference": 0
+  }
+}

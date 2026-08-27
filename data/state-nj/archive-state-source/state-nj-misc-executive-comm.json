@@ -1,0 +1,82 @@
+{
+  "scope": "New Jersey",
+  "fiscalYear": 2024,
+  "department": "MISC EXECUTIVE COMM",
+  "sourceUrl": "https://data.nj.gov/Government-Finance/YourMoney-Agency-Expenditures/apet-rp2i",
+  "sourceUrls": [
+    [
+      "Official expenditures catalog",
+      "https://www.nj.gov/transparency/financial-management/expenditures/index.shtml"
+    ],
+    [
+      "FY2024 agency dataset",
+      "https://data.nj.gov/Government-Finance/YourMoney-Agency-Expenditures/apet-rp2i"
+    ],
+    [
+      "Grouped FY2024 API export",
+      "https://data.nj.gov/resource/apet-rp2i.csv?%24select=ibno_agency%2Cstatewide_program%2Cpayee_name%2Csum%28expended_amt%29%20as%20expended%2Csum%28obligation_amt%29%20as%20obligations%2Ccount%28%2A%29%20as%20source_rows&%24where=budget_fiscal_year%3D2024&%24group=ibno_agency%2Cstatewide_program%2Cpayee_name&%24limit=500000"
+    ]
+  ],
+  "sourceBasis": "Official FY2024 Agency Expenditures dataset; pie amount uses expended, with obligations retained as a separate row measure.",
+  "privacyNote": "Individual or ambiguous payee labels are grouped as [individual recipient omitted]; organization receivers are retained. This layer does not expose person-level payroll.",
+  "sourceRows": 13,
+  "sourceTotal": 993050.23,
+  "obligationTotal": 0,
+  "rowSchema": [
+    "subAgency",
+    "program",
+    "amount",
+    "sourceAmount",
+    "sourceRows",
+    "obligations"
+  ],
+  "rows": [
+    [
+      "MISC EXECUTIVE COMM",
+      "SCIENCE AND TECHNICAL PROGAMS · Receiver [individual recipient omitted]",
+      908000,
+      908000,
+      2,
+      0
+    ],
+    [
+      "MISC EXECUTIVE COMM",
+      "GOVERNMENT REVIEW AND OVERSIGHT · Receiver *",
+      79366.85,
+      79366.85,
+      7,
+      0
+    ],
+    [
+      "MISC EXECUTIVE COMM",
+      "GOVERNMENT REVIEW AND OVERSIGHT · Receiver ARCHER & GREINER P.C.",
+      4504.5,
+      4504.5,
+      1,
+      0
+    ],
+    [
+      "MISC EXECUTIVE COMM",
+      "GOVERNMENT REVIEW AND OVERSIGHT · Receiver XEROX CORPORATION",
+      1155.84,
+      1155.84,
+      1,
+      0
+    ],
+    [
+      "MISC EXECUTIVE COMM",
+      "GOVERNMENT REVIEW AND OVERSIGHT · Receiver WB MASON CO INC.",
+      23.04,
+      23.04,
+      2,
+      0
+    ]
+  ],
+  "sourceCheck": {
+    "objectClassRows": 5,
+    "sourceRows": 13,
+    "sourceTotal": 993050.23,
+    "obligationTotal": 0,
+    "difference": 0
+  }
+}

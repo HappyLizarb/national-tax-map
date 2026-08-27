@@ -1,0 +1,126 @@
+{
+  "scope": "Massachusetts",
+  "code": "ma",
+  "department": "MIDDLESEX COMMUNITY COLLEGE (MCC)",
+  "fiscalYear": 2024,
+  "ledgerAmount": 92783311.35,
+  "sourceTotal": 101011522.09,
+  "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000",
+  "rowSchema": [
+    "subAgency",
+    "program",
+    "amount",
+    "sourceAmount",
+    "sourceRows"
+  ],
+  "rows": [
+    [
+      "MIDDLESEX COMMUNITY COLLEGE (MCC)",
+      "MIDDLESEX COMMUNITY COLLEGE (MCC) · (AA) REGULAR EMPLOYEE COMPENSATION",
+      33641515.65,
+      33641515.65,
+      1045
+    ],
+    [
+      "MIDDLESEX COMMUNITY COLLEGE (MCC)",
+      "MIDDLESEX COMMUNITY COLLEGE (MCC) · (CC) SPECIAL EMPLOYEES",
+      26435653.13,
+      26435653.13,
+      2096
+    ],
+    [
+      "MIDDLESEX COMMUNITY COLLEGE (MCC)",
+      "MIDDLESEX COMMUNITY COLLEGE (MCC) · (TT) LOANS AND SPECIAL PAYMENTS",
+      20245492.07,
+      20245492.07,
+      52
+    ],
+    [
+      "MIDDLESEX COMMUNITY COLLEGE (MCC)",
+      "MIDDLESEX COMMUNITY COLLEGE (MCC) · (JJ) OPERATIONAL SERVICES",
+      3336987.7,
+      3336987.7,
+      23
+    ],
+    [
+      "MIDDLESEX COMMUNITY COLLEGE (MCC)",
+      "MIDDLESEX COMMUNITY COLLEGE (MCC) · (LL) EQUIPMENT LEASE-MAINTAIN/REPAR",
+      3238025.68,
+      3238025.68,
+      30
+    ],
+    [
+      "MIDDLESEX COMMUNITY COLLEGE (MCC)",
+      "MIDDLESEX COMMUNITY COLLEGE (MCC) · (GG) ENERGY COSTS AND SPACE RENTAL",
+      2439833.21,
+      2439833.21,
+      19
+    ],
+    [
+      "MIDDLESEX COMMUNITY COLLEGE (MCC)",
+      "MIDDLESEX COMMUNITY COLLEGE (MCC) · (HH) CONSULTANT SVCS (TO DEPTS)",
+      1904394.18,
+      1904394.18,
+      23
+    ],
+    [
+      "MIDDLESEX COMMUNITY COLLEGE (MCC)",
+      "MIDDLESEX COMMUNITY COLLEGE (MCC) · (FF) FACILITY OPERATIONAL EXPENSES",
+      1887437.99,
+      1887437.99,
+      40
+    ],
+    [
+      "MIDDLESEX COMMUNITY COLLEGE (MCC)",
+      "MIDDLESEX COMMUNITY COLLEGE (MCC) · (KK) EQUIPMENT PURCHASE",
+      1483840.55,
+      1483840.55,
+      12
+    ],
+    [
+      "MIDDLESEX COMMUNITY COLLEGE (MCC)",
+      "MIDDLESEX COMMUNITY COLLEGE (MCC) · (RR) BENEFIT PROGRAMS",
+      1479749.38,
+      1479749.38,
+      18
+    ],
+    [
+      "MIDDLESEX COMMUNITY COLLEGE (MCC)",
+      "MIDDLESEX COMMUNITY COLLEGE (MCC) · (NN) INFRASTRUCTURE:",
+      1241728.11,
+      1241728.11,
+      42
+    ],
+    [
+      "MIDDLESEX COMMUNITY COLLEGE (MCC)",
+      "MIDDLESEX COMMUNITY COLLEGE (MCC) · (EE) ADMINISTRATIVE EXPENSES",
+      1193024.31,
+      1193024.31,
+      40
+    ],
+    [
+      "MIDDLESEX COMMUNITY COLLEGE (MCC)",
+      "MIDDLESEX COMMUNITY COLLEGE (MCC) · (DD) PENSION & INSURANCE RELATED EX",
+      849935.29,
+      849935.29,
+      46
+    ],
+    [
+      "MIDDLESEX COMMUNITY COLLEGE (MCC)",
+      "MIDDLESEX COMMUNITY COLLEGE (MCC) · (BB) REGULAR EMPLOYEE RELATED EXPEN",
+      819316.53,
+      819316.53,
+      75
+    ],
+    [
+      "MIDDLESEX COMMUNITY COLLEGE (MCC)",
+      "MIDDLESEX COMMUNITY COLLEGE (MCC) · (UU) IT NON-PAYROLL EXPENSES",
+      814588.31,
+      814588.31,
+      14
+    ]
+  ],
+  "hierarchyNote": "The source does not identify a separate sub-agency column; direct-managed rows repeat the parent entity.",
+  "sourceBasis": "official source amount",
+  "note": "Amounts are shown on the official source basis; no comparator normalization was applied."
+}

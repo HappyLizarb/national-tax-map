@@ -1,0 +1,112 @@
+{
+  "scope": "Massachusetts",
+  "code": "ma",
+  "department": "NORFOLK DISTRICT ATTORNEY (NFK)",
+  "fiscalYear": 2024,
+  "ledgerAmount": 13120145.31,
+  "sourceTotal": 14283666.2,
+  "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000",
+  "rowSchema": [
+    "subAgency",
+    "program",
+    "amount",
+    "sourceAmount",
+    "sourceRows"
+  ],
+  "rows": [
+    [
+      "NORFOLK DISTRICT ATTORNEY (NFK)",
+      "NORFOLK DISTRICT ATTORNEY (NFK) · (AA) REGULAR EMPLOYEE COMPENSATION",
+      11667236.3,
+      11667236.3,
+      240
+    ],
+    [
+      "NORFOLK DISTRICT ATTORNEY (NFK)",
+      "NORFOLK DISTRICT ATTORNEY (NFK) · (GG) ENERGY COSTS AND SPACE RENTAL",
+      879740.74,
+      879740.74,
+      72
+    ],
+    [
+      "NORFOLK DISTRICT ATTORNEY (NFK)",
+      "NORFOLK DISTRICT ATTORNEY (NFK) · (UU) IT NON-PAYROLL EXPENSES",
+      422150.77,
+      422150.77,
+      88
+    ],
+    [
+      "NORFOLK DISTRICT ATTORNEY (NFK)",
+      "NORFOLK DISTRICT ATTORNEY (NFK) · (EE) ADMINISTRATIVE EXPENSES",
+      369761.35,
+      369761.35,
+      293
+    ],
+    [
+      "NORFOLK DISTRICT ATTORNEY (NFK)",
+      "NORFOLK DISTRICT ATTORNEY (NFK) · (PP) STATE AID/POL SUB",
+      359099.59,
+      359099.59,
+      45
+    ],
+    [
+      "NORFOLK DISTRICT ATTORNEY (NFK)",
+      "NORFOLK DISTRICT ATTORNEY (NFK) · (HH) CONSULTANT SVCS (TO DEPTS)",
+      258648.64,
+      258648.64,
+      65
+    ],
+    [
+      "NORFOLK DISTRICT ATTORNEY (NFK)",
+      "NORFOLK DISTRICT ATTORNEY (NFK) · (KK) EQUIPMENT PURCHASE",
+      96398.18,
+      96398.18,
+      19
+    ],
+    [
+      "NORFOLK DISTRICT ATTORNEY (NFK)",
+      "NORFOLK DISTRICT ATTORNEY (NFK) · (CC) SPECIAL EMPLOYEES",
+      94686.06,
+      94686.06,
+      68
+    ],
+    [
+      "NORFOLK DISTRICT ATTORNEY (NFK)",
+      "NORFOLK DISTRICT ATTORNEY (NFK) · (BB) REGULAR EMPLOYEE RELATED EXPEN",
+      61616.99,
+      61616.99,
+      85
+    ],
+    [
+      "NORFOLK DISTRICT ATTORNEY (NFK)",
+      "NORFOLK DISTRICT ATTORNEY (NFK) · (JJ) OPERATIONAL SERVICES",
+      51518.61,
+      51518.61,
+      42
+    ],
+    [
+      "NORFOLK DISTRICT ATTORNEY (NFK)",
+      "NORFOLK DISTRICT ATTORNEY (NFK) · (LL) EQUIPMENT LEASE-MAINTAIN/REPAR",
+      15240,
+      15240,
+      47
+    ],
+    [
+      "NORFOLK DISTRICT ATTORNEY (NFK)",
+      "NORFOLK DISTRICT ATTORNEY (NFK) · (FF) FACILITY OPERATIONAL EXPENSES",
+      7277.71,
+      7277.71,
+      8
+    ],
+    [
+      "NORFOLK DISTRICT ATTORNEY (NFK)",
+      "NORFOLK DISTRICT ATTORNEY (NFK) · (NN) INFRASTRUCTURE:",
+      291.26,
+      291.26,
+      1
+    ]
+  ],
+  "hierarchyNote": "The source does not identify a separate sub-agency column; direct-managed rows repeat the parent entity.",
+  "sourceBasis": "official source amount",
+  "note": "Amounts are shown on the official source basis; no comparator normalization was applied."
+}

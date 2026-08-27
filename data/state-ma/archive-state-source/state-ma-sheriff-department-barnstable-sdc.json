@@ -1,0 +1,119 @@
+{
+  "scope": "Massachusetts",
+  "code": "ma",
+  "department": "SHERIFF DEPARTMENT BARNSTABLE (SDC)",
+  "fiscalYear": 2024,
+  "ledgerAmount": 33094849.23,
+  "sourceTotal": 36029767.05,
+  "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000",
+  "rowSchema": [
+    "subAgency",
+    "program",
+    "amount",
+    "sourceAmount",
+    "sourceRows"
+  ],
+  "rows": [
+    [
+      "SHERIFF DEPARTMENT BARNSTABLE (SDC)",
+      "SHERIFF DEPARTMENT BARNSTABLE (SDC) · (AA) REGULAR EMPLOYEE COMPENSATION",
+      28987543.47,
+      28987543.47,
+      1014
+    ],
+    [
+      "SHERIFF DEPARTMENT BARNSTABLE (SDC)",
+      "SHERIFF DEPARTMENT BARNSTABLE (SDC) · (JJ) OPERATIONAL SERVICES",
+      1235098.94,
+      1235098.94,
+      242
+    ],
+    [
+      "SHERIFF DEPARTMENT BARNSTABLE (SDC)",
+      "SHERIFF DEPARTMENT BARNSTABLE (SDC) · (UU) IT NON-PAYROLL EXPENSES",
+      1176950.17,
+      1176950.17,
+      487
+    ],
+    [
+      "SHERIFF DEPARTMENT BARNSTABLE (SDC)",
+      "SHERIFF DEPARTMENT BARNSTABLE (SDC) · (GG) ENERGY COSTS AND SPACE RENTAL",
+      1163844.15,
+      1163844.15,
+      230
+    ],
+    [
+      "SHERIFF DEPARTMENT BARNSTABLE (SDC)",
+      "SHERIFF DEPARTMENT BARNSTABLE (SDC) · (CC) SPECIAL EMPLOYEES",
+      770827.15,
+      770827.15,
+      217
+    ],
+    [
+      "SHERIFF DEPARTMENT BARNSTABLE (SDC)",
+      "SHERIFF DEPARTMENT BARNSTABLE (SDC) · (KK) EQUIPMENT PURCHASE",
+      757010.22,
+      757010.22,
+      207
+    ],
+    [
+      "SHERIFF DEPARTMENT BARNSTABLE (SDC)",
+      "SHERIFF DEPARTMENT BARNSTABLE (SDC) · (NN) INFRASTRUCTURE:",
+      446252.07,
+      446252.07,
+      452
+    ],
+    [
+      "SHERIFF DEPARTMENT BARNSTABLE (SDC)",
+      "SHERIFF DEPARTMENT BARNSTABLE (SDC) · (FF) FACILITY OPERATIONAL EXPENSES",
+      412912.34,
+      412912.34,
+      755
+    ],
+    [
+      "SHERIFF DEPARTMENT BARNSTABLE (SDC)",
+      "SHERIFF DEPARTMENT BARNSTABLE (SDC) · (EE) ADMINISTRATIVE EXPENSES",
+      334582.75,
+      334582.75,
+      574
+    ],
+    [
+      "SHERIFF DEPARTMENT BARNSTABLE (SDC)",
+      "SHERIFF DEPARTMENT BARNSTABLE (SDC) · (BB) REGULAR EMPLOYEE RELATED EXPEN",
+      249698.99,
+      249698.99,
+      56
+    ],
+    [
+      "SHERIFF DEPARTMENT BARNSTABLE (SDC)",
+      "SHERIFF DEPARTMENT BARNSTABLE (SDC) · (DD) PENSION & INSURANCE RELATED EX",
+      190999.85,
+      190999.85,
+      53
+    ],
+    [
+      "SHERIFF DEPARTMENT BARNSTABLE (SDC)",
+      "SHERIFF DEPARTMENT BARNSTABLE (SDC) · (HH) CONSULTANT SVCS (TO DEPTS)",
+      182667.42,
+      182667.42,
+      44
+    ],
+    [
+      "SHERIFF DEPARTMENT BARNSTABLE (SDC)",
+      "SHERIFF DEPARTMENT BARNSTABLE (SDC) · (LL) EQUIPMENT LEASE-MAINTAIN/REPAR",
+      121379.53,
+      121379.53,
+      147
+    ],
+    [
+      "SHERIFF DEPARTMENT BARNSTABLE (SDC)",
+      "SHERIFF DEPARTMENT BARNSTABLE (SDC) · (99) PAYROLL REJECTS",
+      0,
+      0,
+      36
+    ]
+  ],
+  "hierarchyNote": "The source does not identify a separate sub-agency column; direct-managed rows repeat the parent entity.",
+  "sourceBasis": "official source amount",
+  "note": "Amounts are shown on the official source basis; no comparator normalization was applied."
+}

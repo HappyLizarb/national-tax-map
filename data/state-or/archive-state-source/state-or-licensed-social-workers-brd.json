@@ -1,0 +1,252 @@
+{
+  "scope": "Oregon",
+  "fiscalYear": 2024,
+  "department": "LICENSED SOCIAL WORKERS BRD",
+  "sourceUrl": "https://data.oregon.gov/resource/y9g9-xsxs.json?$select=agency,agency_1,budget_class,budget_class_1,expend_class,expend_class_1,vendor,sum(expense)%20as%20total,count(*)%20as%20source_rows&$where=fiscal_year=2024&$group=agency,agency_1,budget_class,budget_class_1,expend_class,expend_class_1,vendor&$limit=500000",
+  "sourceUrls": [
+    [
+      "Oregon transparency expenditure catalog",
+      "https://data.oregon.gov/Revenue-Expense/Agency-Expenditures-Multi-Year-Report/y9g9-xsxs"
+    ],
+    [
+      "Grouped FY2024 API export",
+      "https://data.oregon.gov/resource/y9g9-xsxs.json?$select=agency,agency_1,budget_class,budget_class_1,expend_class,expend_class_1,vendor,sum(expense)%20as%20total,count(*)%20as%20source_rows&$where=fiscal_year=2024&$group=agency,agency_1,budget_class,budget_class_1,expend_class,expend_class_1,vendor&$limit=500000"
+    ]
+  ],
+  "sourceBasis": "Official Oregon Agency Expenditures Multi-Year Report; FY2024 cash expense grouped by agency, budget class, expenditure class, and privacy-safe receiver label.",
+  "privacyNote": "Individual or ambiguous vendor labels are grouped as [individual recipient omitted]; organization receivers are retained. This layer does not expose person-level payroll.",
+  "sourceRows": 39,
+  "sourceTotal": 337260.86,
+  "rowSchema": [
+    "subAgency",
+    "program",
+    "amount",
+    "sourceAmount",
+    "sourceRows"
+  ],
+  "rows": [
+    [
+      "LICENSED SOCIAL WORKERS BRD",
+      "4575 · AGENCY PROGRAM RELATED SVCS & SUPP · 4975 · AGENCY PROGRAM RELATED SERVICES · Receiver DEPT OF STATE POLICE",
+      67351.5,
+      67351.5,
+      1
+    ],
+    [
+      "LICENSED SOCIAL WORKERS BRD",
+      "4650 · OTHER SERVICES AND SUPPLIES · 4701 · OTHER SERVICES · Receiver DEPARTMENT OF ADMINISTRATIVE SERVICES",
+      53863.95,
+      53863.95,
+      1
+    ],
+    [
+      "LICENSED SOCIAL WORKERS BRD",
+      "4425 · LEASE PAYMENTS & TAXES · 4800 · INTERAGENCY LEASE PAYMENTS · Receiver WESTPAC INVESTMENT COMPANY",
+      53450.52,
+      53450.52,
+      1
+    ],
+    [
+      "LICENSED SOCIAL WORKERS BRD",
+      "4225 · STATE GOVERNMENT SERVICE CHARGES · 4600 · STATE GOVERNMENT SERVICE CHARGES · Receiver DEPARTMENT OF ADMINISTRATIVE SERVICES",
+      42638,
+      42638,
+      1
+    ],
+    [
+      "LICENSED SOCIAL WORKERS BRD",
+      "4325 · ATTORNEY GENERAL LEGAL FEES · 4550 · ATTORNEY GENERAL LEGAL FEES · Receiver STATE OF OREGON DEPARTMENT OF JUSTICE",
+      40103.05,
+      40103.05,
+      1
+    ],
+    [
+      "LICENSED SOCIAL WORKERS BRD",
+      "4250 · DATA PROCESSING · 4367 · COMPUTER TECHNOLOGY PC SUPPORT · Receiver DEPARTMENT OF ADMINISTRATIVE SERVICES",
+      19363.5,
+      19363.5,
+      1
+    ],
+    [
+      "LICENSED SOCIAL WORKERS BRD",
+      "4315 · IT PROFESSIONAL SERVICES · 4515 · PROFESSIONAL SERVICES APPLICATION MAINT · Receiver THENTIA GLOBAL SYSTEMS USA INC",
+      18000,
+      18000,
+      1
+    ],
+    [
+      "LICENSED SOCIAL WORKERS BRD",
+      "4650 · OTHER SERVICES AND SUPPLIES · 4730 · MERCHANT FEES · Receiver US BANK NATIONAL ASSOCIATION",
+      15718.58,
+      15718.58,
+      1
+    ],
+    [
+      "LICENSED SOCIAL WORKERS BRD",
+      "4715 · IT EXPENDABLE PROPERTY · 4365 · COMPUTER TECHNOLOGY PC EQUIPMENT<$5K · Receiver CDW GOVERNMENT INC",
+      4739.32,
+      4739.32,
+      1
+    ],
+    [
+      "LICENSED SOCIAL WORKERS BRD",
+      "4100 · INSTATE TRAVEL · 4111 · INSTATE MILEAGE REIMBURSMNT-VOLUNTEERS · Receiver [individual recipient omitted]",
+      4093.96,
+      4093.96,
+      6
+    ],
+    [
+      "LICENSED SOCIAL WORKERS BRD",
+      "4225 · STATE GOVERNMENT SERVICE CHARGES · 4600 · STATE GOVERNMENT SERVICE CHARGES · Receiver STATE OF OREGON SECRETARY OF STATE",
+      4033.52,
+      4033.52,
+      1
+    ],
+    [
+      "LICENSED SOCIAL WORKERS BRD",
+      "4250 · DATA PROCESSING · 4375 · COMPUTER TECHNOLOGY COMPUTER PROCESSING · Receiver SHI INTERNATIONAL CORP",
+      3565.77,
+      3565.77,
+      1
+    ],
+    [
+      "LICENSED SOCIAL WORKERS BRD",
+      "4200 · TELECOMM/TECH SVC AND SUPPLIES · 4301 · TELECOM/VOICE USAGE · Receiver KYNDRYL INC",
+      1688.86,
+      1688.86,
+      1
+    ],
+    [
+      "LICENSED SOCIAL WORKERS BRD",
+      "4200 · TELECOMM/TECH SVC AND SUPPLIES · 4305 · TELECOM/NETWORK SERVICES · Receiver DEPARTMENT OF ADMINISTRATIVE SERVICES",
+      1241.72,
+      1241.72,
+      1
+    ],
+    [
+      "LICENSED SOCIAL WORKERS BRD",
+      "4175 · OFFICE EXPENSES · 4201 · OFFICE SERVICES · Receiver DEPARTMENT OF ADMINISTRATIVE SERVICES",
+      1174.5,
+      1174.5,
+      1
+    ],
+    [
+      "LICENSED SOCIAL WORKERS BRD",
+      "4100 · INSTATE TRAVEL · 4101 · INSTATE MEALS WITH OVERNIGHT STAY · Receiver [individual recipient omitted]",
+      988.25,
+      988.25,
+      2
+    ],
+    [
+      "LICENSED SOCIAL WORKERS BRD",
+      "4250 · DATA PROCESSING · 4375 · COMPUTER TECHNOLOGY COMPUTER PROCESSING · Receiver DEPARTMENT OF ADMINISTRATIVE SERVICES",
+      971.54,
+      971.54,
+      1
+    ],
+    [
+      "LICENSED SOCIAL WORKERS BRD",
+      "4200 · TELECOMM/TECH SVC AND SUPPLIES · 4301 · TELECOM/VOICE USAGE · Receiver DEPARTMENT OF ADMINISTRATIVE SERVICES",
+      809.76,
+      809.76,
+      1
+    ],
+    [
+      "LICENSED SOCIAL WORKERS BRD",
+      "4315 · IT PROFESSIONAL SERVICES · 4519 · PROFESSIONAL SERV/MANAGED SERV PROVIDER · Receiver NICUSA INC",
+      582,
+      582,
+      1
+    ],
+    [
+      "LICENSED SOCIAL WORKERS BRD",
+      "4650 · OTHER SERVICES AND SUPPLIES · 4701 · OTHER SERVICES · Receiver US BANK NATIONAL ASSOCIATION",
+      537,
+      537,
+      1
+    ],
+    [
+      "LICENSED SOCIAL WORKERS BRD",
+      "4715 · IT EXPENDABLE PROPERTY · 4372 · COMPUTER TECHNOLOGY PERIPHERAL EQUIP<$5K · Receiver CDW GOVERNMENT INC",
+      528.11,
+      528.11,
+      1
+    ],
+    [
+      "LICENSED SOCIAL WORKERS BRD",
+      "4715 · IT EXPENDABLE PROPERTY · 4366 · COMPUTER TECHNOLOGY PC SOFTWARE<$5K · Receiver SHI INTERNATIONAL CORP",
+      415.51,
+      415.51,
+      1
+    ],
+    [
+      "LICENSED SOCIAL WORKERS BRD",
+      "4200 · TELECOMM/TECH SVC AND SUPPLIES · 4301 · TELECOM/VOICE USAGE · Receiver [individual recipient omitted]",
+      336.46,
+      336.46,
+      1
+    ],
+    [
+      "LICENSED SOCIAL WORKERS BRD",
+      "4300 · PROFESSIONAL SERVICES · 4500 · PROFESSIONAL SERVICES NON-IT · Receiver CASCADE CENTERS INC",
+      290.7,
+      290.7,
+      1
+    ],
+    [
+      "LICENSED SOCIAL WORKERS BRD",
+      "4250 · DATA PROCESSING · 4367 · COMPUTER TECHNOLOGY PC SUPPORT · Receiver CDW GOVERNMENT INC",
+      286.04,
+      286.04,
+      1
+    ],
+    [
+      "LICENSED SOCIAL WORKERS BRD",
+      "4275 · PUBLICITY & PUBLICATIONS · 4253 · ADVERTISE, PUBLICITY, PUBLISH/PRINT SRVS · Receiver [individual recipient omitted]",
+      160.78,
+      160.78,
+      1
+    ],
+    [
+      "LICENSED SOCIAL WORKERS BRD",
+      "4225 · STATE GOVERNMENT SERVICE CHARGES · 4600 · STATE GOVERNMENT SERVICE CHARGES · Receiver OREGON STATE TREASURY",
+      145.4,
+      145.4,
+      1
+    ],
+    [
+      "LICENSED SOCIAL WORKERS BRD",
+      "4225 · STATE GOVERNMENT SERVICE CHARGES · 4600 · STATE GOVERNMENT SERVICE CHARGES · Receiver OREGON GOVERNMENT ETHICS COMMISSION",
+      122.5,
+      122.5,
+      1
+    ],
+    [
+      "LICENSED SOCIAL WORKERS BRD",
+      "4650 · OTHER SERVICES AND SUPPLIES · 4701 · OTHER SERVICES · Receiver [individual recipient omitted]",
+      30,
+      30,
+      2
+    ],
+    [
+      "LICENSED SOCIAL WORKERS BRD",
+      "4175 · OFFICE EXPENSES · 4200 · OFFICE SUPPLIES · Receiver [individual recipient omitted]",
+      22.81,
+      22.81,
+      2
+    ],
+    [
+      "LICENSED SOCIAL WORKERS BRD",
+      "4175 · OFFICE EXPENSES · 4202 · EQUIPMENT RENTAL · Receiver RICOH USA INC",
+      7.25,
+      7.25,
+      1
+    ]
+  ],
+  "sourceCheck": {
+    "objectClassRows": 31,
+    "sourceRows": 39,
+    "sourceTotal": 337260.86,
+    "difference": 0
+  }
+}

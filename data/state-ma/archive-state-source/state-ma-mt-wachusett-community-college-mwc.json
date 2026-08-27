@@ -1,0 +1,140 @@
+{
+  "scope": "Massachusetts",
+  "code": "ma",
+  "department": "MT WACHUSETT COMMUNITY COLLEGE (MWC)",
+  "fiscalYear": 2024,
+  "ledgerAmount": 66149644.83,
+  "sourceTotal": 72015928.43,
+  "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000",
+  "rowSchema": [
+    "subAgency",
+    "program",
+    "amount",
+    "sourceAmount",
+    "sourceRows"
+  ],
+  "rows": [
+    [
+      "MT WACHUSETT COMMUNITY COLLEGE (MWC)",
+      "MT WACHUSETT COMMUNITY COLLEGE (MWC) · (AA) REGULAR EMPLOYEE COMPENSATION",
+      44149530.24,
+      44149530.24,
+      648
+    ],
+    [
+      "MT WACHUSETT COMMUNITY COLLEGE (MWC)",
+      "MT WACHUSETT COMMUNITY COLLEGE (MWC) · (CC) SPECIAL EMPLOYEES",
+      8998193.36,
+      8998193.36,
+      331
+    ],
+    [
+      "MT WACHUSETT COMMUNITY COLLEGE (MWC)",
+      "MT WACHUSETT COMMUNITY COLLEGE (MWC) · (RR) BENEFIT PROGRAMS",
+      3954287.33,
+      3954287.33,
+      13
+    ],
+    [
+      "MT WACHUSETT COMMUNITY COLLEGE (MWC)",
+      "MT WACHUSETT COMMUNITY COLLEGE (MWC) · (EE) ADMINISTRATIVE EXPENSES",
+      3506733.48,
+      3506733.48,
+      14
+    ],
+    [
+      "MT WACHUSETT COMMUNITY COLLEGE (MWC)",
+      "MT WACHUSETT COMMUNITY COLLEGE (MWC) · (GG) ENERGY COSTS AND SPACE RENTAL",
+      2964585.41,
+      2964585.41,
+      13
+    ],
+    [
+      "MT WACHUSETT COMMUNITY COLLEGE (MWC)",
+      "MT WACHUSETT COMMUNITY COLLEGE (MWC) · (FF) FACILITY OPERATIONAL EXPENSES",
+      1893976.6,
+      1893976.6,
+      14
+    ],
+    [
+      "MT WACHUSETT COMMUNITY COLLEGE (MWC)",
+      "MT WACHUSETT COMMUNITY COLLEGE (MWC) · (KK) EQUIPMENT PURCHASE",
+      1499971.76,
+      1499971.76,
+      14
+    ],
+    [
+      "MT WACHUSETT COMMUNITY COLLEGE (MWC)",
+      "MT WACHUSETT COMMUNITY COLLEGE (MWC) · (NN) INFRASTRUCTURE:",
+      1161736.38,
+      1161736.38,
+      34
+    ],
+    [
+      "MT WACHUSETT COMMUNITY COLLEGE (MWC)",
+      "MT WACHUSETT COMMUNITY COLLEGE (MWC) · (HH) CONSULTANT SVCS (TO DEPTS)",
+      1083403.35,
+      1083403.35,
+      13
+    ],
+    [
+      "MT WACHUSETT COMMUNITY COLLEGE (MWC)",
+      "MT WACHUSETT COMMUNITY COLLEGE (MWC) · (TT) LOANS AND SPECIAL PAYMENTS",
+      793870.95,
+      793870.95,
+      8
+    ],
+    [
+      "MT WACHUSETT COMMUNITY COLLEGE (MWC)",
+      "MT WACHUSETT COMMUNITY COLLEGE (MWC) · (LL) EQUIPMENT LEASE-MAINTAIN/REPAR",
+      629472.29,
+      629472.29,
+      13
+    ],
+    [
+      "MT WACHUSETT COMMUNITY COLLEGE (MWC)",
+      "MT WACHUSETT COMMUNITY COLLEGE (MWC) · (UU) IT NON-PAYROLL EXPENSES",
+      467138.17,
+      467138.17,
+      14
+    ],
+    [
+      "MT WACHUSETT COMMUNITY COLLEGE (MWC)",
+      "MT WACHUSETT COMMUNITY COLLEGE (MWC) · (JJ) OPERATIONAL SERVICES",
+      294319.53,
+      294319.53,
+      13
+    ],
+    [
+      "MT WACHUSETT COMMUNITY COLLEGE (MWC)",
+      "MT WACHUSETT COMMUNITY COLLEGE (MWC) · (MM) PURCHASED CLIENT/PROGRAM SVCS",
+      221070.56,
+      221070.56,
+      14
+    ],
+    [
+      "MT WACHUSETT COMMUNITY COLLEGE (MWC)",
+      "MT WACHUSETT COMMUNITY COLLEGE (MWC) · (BB) REGULAR EMPLOYEE RELATED EXPEN",
+      203803.76,
+      203803.76,
+      43
+    ],
+    [
+      "MT WACHUSETT COMMUNITY COLLEGE (MWC)",
+      "MT WACHUSETT COMMUNITY COLLEGE (MWC) · (SS) DEBT PAYMENT",
+      193835.26,
+      193835.26,
+      1
+    ],
+    [
+      "MT WACHUSETT COMMUNITY COLLEGE (MWC)",
+      "MT WACHUSETT COMMUNITY COLLEGE (MWC) · (99) PAYROLL REJECTS",
+      0,
+      0,
+      2
+    ]
+  ],
+  "hierarchyNote": "The source does not identify a separate sub-agency column; direct-managed rows repeat the parent entity.",
+  "sourceBasis": "official source amount",
+  "note": "Amounts are shown on the official source basis; no comparator normalization was applied."
+}

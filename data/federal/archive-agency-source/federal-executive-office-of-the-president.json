@@ -1,0 +1,230 @@
+{
+  "scope": "United States",
+  "code": "federal",
+  "department": "Executive Office of the President",
+  "fiscalYear": 2024,
+  "ledgerAmount": 815999700.34,
+  "sourceTotal": 1112069619.98,
+  "sourceUrl": "https://api.usaspending.gov/api/v2/agency/1100/object_class/?fiscal_year=2024&limit=100&page=1",
+  "sourceUrls": [
+    [
+      "FY2024 gross outlays by object class",
+      "https://api.usaspending.gov/api/v2/agency/1100/object_class/?fiscal_year=2024&limit=100&page=1"
+    ],
+    [
+      "FY2024 agency budgetary resources total",
+      "https://api.usaspending.gov/api/v2/agency/1100/budgetary_resources/?fiscal_year=2024"
+    ]
+  ],
+  "rowSchema": [
+    "subAgency",
+    "program",
+    "amount",
+    "sourceAmount",
+    "sourceRows"
+  ],
+  "rows": [
+    [
+      "Executive Office of the President",
+      "Grants, subsidies, and contributions",
+      289213211.31,
+      289213211.31,
+      null
+    ],
+    [
+      "Executive Office of the President",
+      "Full-time permanent",
+      293497660.48,
+      293497660.48,
+      null
+    ],
+    [
+      "Executive Office of the President",
+      "Civilian personnel benefits",
+      122867422.19,
+      122867422.19,
+      null
+    ],
+    [
+      "Executive Office of the President",
+      "Financial transfers",
+      110740044.9,
+      110740044.9,
+      null
+    ],
+    [
+      "Executive Office of the President",
+      "Other goods and services from Federal sources",
+      70973705.8,
+      70973705.8,
+      null
+    ],
+    [
+      "Executive Office of the President",
+      "Other than full-time permanent",
+      57190700.96,
+      57190700.96,
+      null
+    ],
+    [
+      "Executive Office of the President",
+      "Advisory and assistance services",
+      36331480.46,
+      36331480.46,
+      null
+    ],
+    [
+      "Executive Office of the President",
+      "Rental payments to GSA",
+      29143970.46,
+      29143970.46,
+      null
+    ],
+    [
+      "Executive Office of the President",
+      "Travel and transportation of persons",
+      23157645.98,
+      23157645.98,
+      null
+    ],
+    [
+      "Executive Office of the President",
+      "Other services from non-Federal sources",
+      19058143.83,
+      19058143.83,
+      null
+    ],
+    [
+      "Executive Office of the President",
+      "Operation and maintenance of equipment",
+      19827729.76,
+      19827729.76,
+      null
+    ],
+    [
+      "Executive Office of the President",
+      "Equipment",
+      12946401.23,
+      12946401.23,
+      null
+    ],
+    [
+      "Executive Office of the President",
+      "Special personal services payments",
+      8323190.93,
+      8323190.93,
+      null
+    ],
+    [
+      "Executive Office of the President",
+      "Supplies and materials",
+      5923874.39,
+      5923874.39,
+      null
+    ],
+    [
+      "Executive Office of the President",
+      "Other personnel compensation",
+      5069677.63,
+      5069677.63,
+      null
+    ],
+    [
+      "Executive Office of the President",
+      "Operation and maintenance of facilities",
+      2493401.25,
+      2493401.25,
+      null
+    ],
+    [
+      "Executive Office of the President",
+      "Printing and reproduction",
+      1406247.93,
+      1406247.93,
+      null
+    ],
+    [
+      "Executive Office of the President",
+      "Communications, utilities, and miscellaneous charges",
+      939735.47,
+      939735.47,
+      null
+    ],
+    [
+      "Executive Office of the President",
+      "Rental payments to others",
+      772368.81,
+      772368.81,
+      null
+    ],
+    [
+      "Executive Office of the President",
+      "Transportation of things",
+      179205.03,
+      179205.03,
+      null
+    ],
+    [
+      "Executive Office of the President",
+      "Medical care",
+      884529.71,
+      884529.71,
+      null
+    ],
+    [
+      "Executive Office of the President",
+      "Refunds",
+      94428.38,
+      94428.38,
+      null
+    ],
+    [
+      "Executive Office of the President",
+      "Benefits for former personnel",
+      88350.47,
+      88350.47,
+      null
+    ],
+    [
+      "Executive Office of the President",
+      "Interest and dividends",
+      46606.93,
+      46606.93,
+      null
+    ],
+    [
+      "Executive Office of the President",
+      "Insurance claims and indemnities",
+      24422,
+      24422,
+      null
+    ],
+    [
+      "Executive Office of the President",
+      "Land and structures",
+      875463.69,
+      875463.69,
+      null
+    ],
+    [
+      "Executive Office of the President",
+      "Object class not reported by official source",
+      0,
+      0,
+      null
+    ]
+  ],
+  "sourceBasis": "official source amount",
+  "sourceCheck": {
+    "objectClassRows": 27,
+    "objectClassTotal": 1112069619.98,
+    "agencyTotal": 1112069619.98,
+    "difference": 0
+  },
+  "normalizationAdjustment": 0.01,
+  "hierarchyNote": "The source endpoint returns agency-level object-class aggregates; no individual employees or payees are included.",
+  "sourceLabelMap": {
+    "Object class not reported by official source": "Unknown"
+  },
+  "note": "The official USAspending object-class response labels 1 row as Unknown; the display label states that the object class was not reported and no category was inferred. Amounts are shown on the official source basis; no comparator normalization was applied."
+}

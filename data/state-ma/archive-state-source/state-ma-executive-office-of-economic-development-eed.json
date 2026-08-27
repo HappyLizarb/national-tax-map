@@ -1,0 +1,84 @@
+{
+  "scope": "Massachusetts",
+  "code": "ma",
+  "department": "EXECUTIVE OFFICE OF ECONOMIC DEVELOPMENT (EED)",
+  "fiscalYear": 2024,
+  "ledgerAmount": 498023509.5,
+  "sourceTotal": 542189236.39,
+  "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000",
+  "rowSchema": [
+    "subAgency",
+    "program",
+    "amount",
+    "sourceAmount",
+    "sourceRows"
+  ],
+  "rows": [
+    [
+      "EXECUTIVE OFFICE OF ECONOMIC DEVELOPMENT (EED)",
+      "EXECUTIVE OFFICE OF ECONOMIC DEVELOPMENT (EED) · (PP) STATE AID/POL SUB",
+      528538784.59,
+      528538784.59,
+      1460
+    ],
+    [
+      "EXECUTIVE OFFICE OF ECONOMIC DEVELOPMENT (EED)",
+      "EXECUTIVE OFFICE OF ECONOMIC DEVELOPMENT (EED) · (AA) REGULAR EMPLOYEE COMPENSATION",
+      8016782,
+      8016782,
+      238
+    ],
+    [
+      "EXECUTIVE OFFICE OF ECONOMIC DEVELOPMENT (EED)",
+      "EXECUTIVE OFFICE OF ECONOMIC DEVELOPMENT (EED) · (UU) IT NON-PAYROLL EXPENSES",
+      4020672.4,
+      4020672.4,
+      380
+    ],
+    [
+      "EXECUTIVE OFFICE OF ECONOMIC DEVELOPMENT (EED)",
+      "EXECUTIVE OFFICE OF ECONOMIC DEVELOPMENT (EED) · (HH) CONSULTANT SVCS (TO DEPTS)",
+      1323468.03,
+      1323468.03,
+      7
+    ],
+    [
+      "EXECUTIVE OFFICE OF ECONOMIC DEVELOPMENT (EED)",
+      "EXECUTIVE OFFICE OF ECONOMIC DEVELOPMENT (EED) · (EE) ADMINISTRATIVE EXPENSES",
+      164920.31,
+      164920.31,
+      64
+    ],
+    [
+      "EXECUTIVE OFFICE OF ECONOMIC DEVELOPMENT (EED)",
+      "EXECUTIVE OFFICE OF ECONOMIC DEVELOPMENT (EED) · (CC) SPECIAL EMPLOYEES",
+      95001.72,
+      95001.72,
+      48
+    ],
+    [
+      "EXECUTIVE OFFICE OF ECONOMIC DEVELOPMENT (EED)",
+      "EXECUTIVE OFFICE OF ECONOMIC DEVELOPMENT (EED) · (BB) REGULAR EMPLOYEE RELATED EXPEN",
+      17569.59,
+      17569.59,
+      68
+    ],
+    [
+      "EXECUTIVE OFFICE OF ECONOMIC DEVELOPMENT (EED)",
+      "EXECUTIVE OFFICE OF ECONOMIC DEVELOPMENT (EED) · (LL) EQUIPMENT LEASE-MAINTAIN/REPAR",
+      12037.75,
+      12037.75,
+      48
+    ],
+    [
+      "EXECUTIVE OFFICE OF ECONOMIC DEVELOPMENT (EED)",
+      "EXECUTIVE OFFICE OF ECONOMIC DEVELOPMENT (EED) · (99) PAYROLL REJECTS",
+      0,
+      0,
+      87
+    ]
+  ],
+  "hierarchyNote": "The source does not identify a separate sub-agency column; direct-managed rows repeat the parent entity.",
+  "sourceBasis": "official source amount",
+  "note": "Amounts are shown on the official source basis; no comparator normalization was applied."
+}

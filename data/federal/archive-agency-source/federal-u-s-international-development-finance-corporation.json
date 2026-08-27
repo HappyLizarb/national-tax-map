@@ -1,0 +1,202 @@
+{
+  "scope": "United States",
+  "code": "federal",
+  "department": "U.S. International Development Finance Corporation",
+  "fiscalYear": 2024,
+  "ledgerAmount": 977625585.13,
+  "sourceTotal": 1332338372.78,
+  "sourceUrl": "https://api.usaspending.gov/api/v2/agency/077/object_class/?fiscal_year=2024&limit=100&page=1",
+  "sourceUrls": [
+    [
+      "FY2024 gross outlays by object class",
+      "https://api.usaspending.gov/api/v2/agency/077/object_class/?fiscal_year=2024&limit=100&page=1"
+    ],
+    [
+      "FY2024 agency budgetary resources total",
+      "https://api.usaspending.gov/api/v2/agency/077/budgetary_resources/?fiscal_year=2024"
+    ]
+  ],
+  "rowSchema": [
+    "subAgency",
+    "program",
+    "amount",
+    "sourceAmount",
+    "sourceRows"
+  ],
+  "rows": [
+    [
+      "U.S. International Development Finance Corporation",
+      "Grants, subsidies, and contributions",
+      587733325.03,
+      587733325.03,
+      null
+    ],
+    [
+      "U.S. International Development Finance Corporation",
+      "Investments and loans",
+      262360619,
+      262360619,
+      null
+    ],
+    [
+      "U.S. International Development Finance Corporation",
+      "Financial transfers",
+      207349506.36,
+      207349506.36,
+      null
+    ],
+    [
+      "U.S. International Development Finance Corporation",
+      "Advisory and assistance services",
+      85500126.51,
+      85500126.51,
+      null
+    ],
+    [
+      "U.S. International Development Finance Corporation",
+      "Full-time permanent",
+      99888018.94,
+      99888018.94,
+      null
+    ],
+    [
+      "U.S. International Development Finance Corporation",
+      "Civilian personnel benefits",
+      35661323.75,
+      35661323.75,
+      null
+    ],
+    [
+      "U.S. International Development Finance Corporation",
+      "Operation and maintenance of equipment",
+      12293492.96,
+      12293492.96,
+      null
+    ],
+    [
+      "U.S. International Development Finance Corporation",
+      "Travel and transportation of persons",
+      8698955.7,
+      8698955.7,
+      null
+    ],
+    [
+      "U.S. International Development Finance Corporation",
+      "Insurance claims and indemnities",
+      9900000,
+      9900000,
+      null
+    ],
+    [
+      "U.S. International Development Finance Corporation",
+      "Rental payments to others",
+      10711332.51,
+      10711332.51,
+      null
+    ],
+    [
+      "U.S. International Development Finance Corporation",
+      "Other personnel compensation",
+      3847963,
+      3847963,
+      null
+    ],
+    [
+      "U.S. International Development Finance Corporation",
+      "Communications, utilities, and miscellaneous charges",
+      1259444.24,
+      1259444.24,
+      null
+    ],
+    [
+      "U.S. International Development Finance Corporation",
+      "Supplies and materials",
+      2532680.68,
+      2532680.68,
+      null
+    ],
+    [
+      "U.S. International Development Finance Corporation",
+      "Other services from non-Federal sources",
+      1578304.45,
+      1578304.45,
+      null
+    ],
+    [
+      "U.S. International Development Finance Corporation",
+      "Equipment",
+      1977739.36,
+      1977739.36,
+      null
+    ],
+    [
+      "U.S. International Development Finance Corporation",
+      "Other goods and services from Federal sources",
+      305761.64,
+      305761.64,
+      null
+    ],
+    [
+      "U.S. International Development Finance Corporation",
+      "Interest and dividends",
+      207434.27,
+      207434.27,
+      null
+    ],
+    [
+      "U.S. International Development Finance Corporation",
+      "Operation and maintenance of facilities",
+      578089.99,
+      578089.99,
+      null
+    ],
+    [
+      "U.S. International Development Finance Corporation",
+      "Object class not reported by official source",
+      0,
+      0,
+      null
+    ],
+    [
+      "U.S. International Development Finance Corporation",
+      "Printing and reproduction",
+      39967.53,
+      39967.53,
+      null
+    ],
+    [
+      "U.S. International Development Finance Corporation",
+      "Transportation of things",
+      9770,
+      9770,
+      null
+    ],
+    [
+      "U.S. International Development Finance Corporation",
+      "Benefits for former personnel",
+      5795.97,
+      5795.97,
+      null
+    ],
+    [
+      "U.S. International Development Finance Corporation",
+      "Refunds",
+      -101279.11,
+      -101279.11,
+      null
+    ]
+  ],
+  "sourceBasis": "official source amount",
+  "sourceCheck": {
+    "objectClassRows": 23,
+    "objectClassTotal": 1332338372.78,
+    "agencyTotal": 1332338372.78,
+    "difference": 0
+  },
+  "normalizationAdjustment": 0.01,
+  "hierarchyNote": "The source endpoint returns agency-level object-class aggregates; no individual employees or payees are included.",
+  "sourceLabelMap": {
+    "Object class not reported by official source": "Unknown"
+  },
+  "note": "The official USAspending object-class response labels 1 row as Unknown; the display label states that the object class was not reported and no category was inferred. Amounts are shown on the official source basis; no comparator normalization was applied."
+}

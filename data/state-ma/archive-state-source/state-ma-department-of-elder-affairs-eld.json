@@ -1,0 +1,105 @@
+{
+  "scope": "Massachusetts",
+  "code": "ma",
+  "department": "DEPARTMENT OF ELDER AFFAIRS (ELD)",
+  "fiscalYear": 2024,
+  "ledgerAmount": 786440920.49,
+  "sourceTotal": 856184083.72,
+  "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000",
+  "rowSchema": [
+    "subAgency",
+    "program",
+    "amount",
+    "sourceAmount",
+    "sourceRows"
+  ],
+  "rows": [
+    [
+      "DEPARTMENT OF ELDER AFFAIRS (ELD)",
+      "DEPARTMENT OF ELDER AFFAIRS (ELD) · (MM) PURCHASED CLIENT/PROGRAM SVCS",
+      802073912.15,
+      802073912.15,
+      7218
+    ],
+    [
+      "DEPARTMENT OF ELDER AFFAIRS (ELD)",
+      "DEPARTMENT OF ELDER AFFAIRS (ELD) · (PP) STATE AID/POL SUB",
+      38530706.09,
+      38530706.09,
+      1177
+    ],
+    [
+      "DEPARTMENT OF ELDER AFFAIRS (ELD)",
+      "DEPARTMENT OF ELDER AFFAIRS (ELD) · (AA) REGULAR EMPLOYEE COMPENSATION",
+      7797735.18,
+      7797735.18,
+      786
+    ],
+    [
+      "DEPARTMENT OF ELDER AFFAIRS (ELD)",
+      "DEPARTMENT OF ELDER AFFAIRS (ELD) · (HH) CONSULTANT SVCS (TO DEPTS)",
+      4811699.01,
+      4811699.01,
+      192
+    ],
+    [
+      "DEPARTMENT OF ELDER AFFAIRS (ELD)",
+      "DEPARTMENT OF ELDER AFFAIRS (ELD) · (JJ) OPERATIONAL SERVICES",
+      2360742.78,
+      2360742.78,
+      58
+    ],
+    [
+      "DEPARTMENT OF ELDER AFFAIRS (ELD)",
+      "DEPARTMENT OF ELDER AFFAIRS (ELD) · (UU) IT NON-PAYROLL EXPENSES",
+      270356.55,
+      270356.55,
+      21
+    ],
+    [
+      "DEPARTMENT OF ELDER AFFAIRS (ELD)",
+      "DEPARTMENT OF ELDER AFFAIRS (ELD) · (EE) ADMINISTRATIVE EXPENSES",
+      243869.06,
+      243869.06,
+      94
+    ],
+    [
+      "DEPARTMENT OF ELDER AFFAIRS (ELD)",
+      "DEPARTMENT OF ELDER AFFAIRS (ELD) · (BB) REGULAR EMPLOYEE RELATED EXPEN",
+      46572.28,
+      46572.28,
+      264
+    ],
+    [
+      "DEPARTMENT OF ELDER AFFAIRS (ELD)",
+      "DEPARTMENT OF ELDER AFFAIRS (ELD) · (CC) SPECIAL EMPLOYEES",
+      42319.08,
+      42319.08,
+      27
+    ],
+    [
+      "DEPARTMENT OF ELDER AFFAIRS (ELD)",
+      "DEPARTMENT OF ELDER AFFAIRS (ELD) · (LL) EQUIPMENT LEASE-MAINTAIN/REPAR",
+      5993.04,
+      5993.04,
+      44
+    ],
+    [
+      "DEPARTMENT OF ELDER AFFAIRS (ELD)",
+      "DEPARTMENT OF ELDER AFFAIRS (ELD) · (NN) INFRASTRUCTURE:",
+      178.5,
+      178.5,
+      1
+    ],
+    [
+      "DEPARTMENT OF ELDER AFFAIRS (ELD)",
+      "DEPARTMENT OF ELDER AFFAIRS (ELD) · (99) PAYROLL REJECTS",
+      0,
+      0,
+      114
+    ]
+  ],
+  "hierarchyNote": "The source does not identify a separate sub-agency column; direct-managed rows repeat the parent entity.",
+  "sourceBasis": "official source amount",
+  "note": "Amounts are shown on the official source basis; no comparator normalization was applied."
+}

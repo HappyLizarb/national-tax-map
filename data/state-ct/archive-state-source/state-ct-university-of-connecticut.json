@@ -1,0 +1,35 @@
+{
+  "scope": "Connecticut",
+  "code": "ct",
+  "department": "University of Connecticut",
+  "fiscalYear": 2024,
+  "ledgerAmount": 713235183.9,
+  "sourceTotal": 760000000,
+  "sourceUrl": "https://data.ct.gov/resource/ajdm-rvz7.json?$select=department,program,sum(amount)%20as%20amount,count(*)%20as%20records&$where=fiscal_year=2024&$group=department,program",
+  "rowSchema": [
+    "subAgency",
+    "program",
+    "amount",
+    "sourceAmount",
+    "sourceRows"
+  ],
+  "rows": [
+    [
+      "University of Connecticut",
+      "University of Connecticut · Non-Budgeted Operating Approp",
+      750000000,
+      750000000,
+      18
+    ],
+    [
+      "University of Connecticut",
+      "University of Connecticut · Eqment  libry collect telecom.",
+      10000000,
+      10000000,
+      3
+    ]
+  ],
+  "hierarchyNote": "The source does not identify a separate sub-agency column; direct-managed rows repeat the parent entity.",
+  "sourceBasis": "official source amount",
+  "note": "Amounts are shown on the official source basis; no comparator normalization was applied."
+}

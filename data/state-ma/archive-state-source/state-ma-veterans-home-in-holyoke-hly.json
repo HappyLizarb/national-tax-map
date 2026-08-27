@@ -1,0 +1,119 @@
+{
+  "scope": "Massachusetts",
+  "code": "ma",
+  "department": "VETERANS' HOME IN HOLYOKE (HLY)",
+  "fiscalYear": 2024,
+  "ledgerAmount": 25801025.78,
+  "sourceTotal": 28089112.66,
+  "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000",
+  "rowSchema": [
+    "subAgency",
+    "program",
+    "amount",
+    "sourceAmount",
+    "sourceRows"
+  ],
+  "rows": [
+    [
+      "VETERANS' HOME IN HOLYOKE (HLY)",
+      "VETERANS' HOME IN HOLYOKE (HLY) · (AA) REGULAR EMPLOYEE COMPENSATION",
+      23247217.3,
+      23247217.3,
+      2488
+    ],
+    [
+      "VETERANS' HOME IN HOLYOKE (HLY)",
+      "VETERANS' HOME IN HOLYOKE (HLY) · (FF) FACILITY OPERATIONAL EXPENSES",
+      2055554.56,
+      2055554.56,
+      1809
+    ],
+    [
+      "VETERANS' HOME IN HOLYOKE (HLY)",
+      "VETERANS' HOME IN HOLYOKE (HLY) · (NN) INFRASTRUCTURE:",
+      841302.31,
+      841302.31,
+      502
+    ],
+    [
+      "VETERANS' HOME IN HOLYOKE (HLY)",
+      "VETERANS' HOME IN HOLYOKE (HLY) · (GG) ENERGY COSTS AND SPACE RENTAL",
+      565442.51,
+      565442.51,
+      63
+    ],
+    [
+      "VETERANS' HOME IN HOLYOKE (HLY)",
+      "VETERANS' HOME IN HOLYOKE (HLY) · (JJ) OPERATIONAL SERVICES",
+      424810.37,
+      424810.37,
+      254
+    ],
+    [
+      "VETERANS' HOME IN HOLYOKE (HLY)",
+      "VETERANS' HOME IN HOLYOKE (HLY) · (KK) EQUIPMENT PURCHASE",
+      252360.37,
+      252360.37,
+      63
+    ],
+    [
+      "VETERANS' HOME IN HOLYOKE (HLY)",
+      "VETERANS' HOME IN HOLYOKE (HLY) · (LL) EQUIPMENT LEASE-MAINTAIN/REPAR",
+      222219.61,
+      222219.61,
+      302
+    ],
+    [
+      "VETERANS' HOME IN HOLYOKE (HLY)",
+      "VETERANS' HOME IN HOLYOKE (HLY) · (HH) CONSULTANT SVCS (TO DEPTS)",
+      218678.65,
+      218678.65,
+      81
+    ],
+    [
+      "VETERANS' HOME IN HOLYOKE (HLY)",
+      "VETERANS' HOME IN HOLYOKE (HLY) · (EE) ADMINISTRATIVE EXPENSES",
+      132850.32,
+      132850.32,
+      333
+    ],
+    [
+      "VETERANS' HOME IN HOLYOKE (HLY)",
+      "VETERANS' HOME IN HOLYOKE (HLY) · (UU) IT NON-PAYROLL EXPENSES",
+      65772.47,
+      65772.47,
+      56
+    ],
+    [
+      "VETERANS' HOME IN HOLYOKE (HLY)",
+      "VETERANS' HOME IN HOLYOKE (HLY) · (MM) PURCHASED CLIENT/PROGRAM SVCS",
+      47028.8,
+      47028.8,
+      20
+    ],
+    [
+      "VETERANS' HOME IN HOLYOKE (HLY)",
+      "VETERANS' HOME IN HOLYOKE (HLY) · (BB) REGULAR EMPLOYEE RELATED EXPEN",
+      11673.39,
+      11673.39,
+      39
+    ],
+    [
+      "VETERANS' HOME IN HOLYOKE (HLY)",
+      "VETERANS' HOME IN HOLYOKE (HLY) · (DD) PENSION & INSURANCE RELATED EX",
+      4202,
+      4202,
+      1
+    ],
+    [
+      "VETERANS' HOME IN HOLYOKE (HLY)",
+      "VETERANS' HOME IN HOLYOKE (HLY) · (99) PAYROLL REJECTS",
+      0,
+      0,
+      4
+    ]
+  ],
+  "hierarchyNote": "The source does not identify a separate sub-agency column; direct-managed rows repeat the parent entity.",
+  "sourceBasis": "official source amount",
+  "note": "Amounts are shown on the official source basis; no comparator normalization was applied."
+}

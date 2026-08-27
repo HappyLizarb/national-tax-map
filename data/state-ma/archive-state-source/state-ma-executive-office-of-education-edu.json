@@ -1,0 +1,98 @@
+{
+  "scope": "Massachusetts",
+  "code": "ma",
+  "department": "EXECUTIVE OFFICE OF EDUCATION (EDU)",
+  "fiscalYear": 2024,
+  "ledgerAmount": 180221057.23,
+  "sourceTotal": 196203423.21,
+  "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000",
+  "rowSchema": [
+    "subAgency",
+    "program",
+    "amount",
+    "sourceAmount",
+    "sourceRows"
+  ],
+  "rows": [
+    [
+      "EXECUTIVE OFFICE OF EDUCATION (EDU)",
+      "EXECUTIVE OFFICE OF EDUCATION (EDU) · (PP) STATE AID/POL SUB",
+      146403147.22,
+      146403147.22,
+      214
+    ],
+    [
+      "EXECUTIVE OFFICE OF EDUCATION (EDU)",
+      "EXECUTIVE OFFICE OF EDUCATION (EDU) · (UU) IT NON-PAYROLL EXPENSES",
+      40506121.26,
+      40506121.26,
+      1280
+    ],
+    [
+      "EXECUTIVE OFFICE OF EDUCATION (EDU)",
+      "EXECUTIVE OFFICE OF EDUCATION (EDU) · (AA) REGULAR EMPLOYEE COMPENSATION",
+      8309974.75,
+      8309974.75,
+      305
+    ],
+    [
+      "EXECUTIVE OFFICE OF EDUCATION (EDU)",
+      "EXECUTIVE OFFICE OF EDUCATION (EDU) · (HH) CONSULTANT SVCS (TO DEPTS)",
+      768173.27,
+      768173.27,
+      32
+    ],
+    [
+      "EXECUTIVE OFFICE OF EDUCATION (EDU)",
+      "EXECUTIVE OFFICE OF EDUCATION (EDU) · (EE) ADMINISTRATIVE EXPENSES",
+      147951.11,
+      147951.11,
+      47
+    ],
+    [
+      "EXECUTIVE OFFICE OF EDUCATION (EDU)",
+      "EXECUTIVE OFFICE OF EDUCATION (EDU) · (CC) SPECIAL EMPLOYEES",
+      24207.5,
+      24207.5,
+      20
+    ],
+    [
+      "EXECUTIVE OFFICE OF EDUCATION (EDU)",
+      "EXECUTIVE OFFICE OF EDUCATION (EDU) · (JJ) OPERATIONAL SERVICES",
+      20887.3,
+      20887.3,
+      16
+    ],
+    [
+      "EXECUTIVE OFFICE OF EDUCATION (EDU)",
+      "EXECUTIVE OFFICE OF EDUCATION (EDU) · (BB) REGULAR EMPLOYEE RELATED EXPEN",
+      20861.59,
+      20861.59,
+      85
+    ],
+    [
+      "EXECUTIVE OFFICE OF EDUCATION (EDU)",
+      "EXECUTIVE OFFICE OF EDUCATION (EDU) · (FF) FACILITY OPERATIONAL EXPENSES",
+      1632.11,
+      1632.11,
+      2
+    ],
+    [
+      "EXECUTIVE OFFICE OF EDUCATION (EDU)",
+      "EXECUTIVE OFFICE OF EDUCATION (EDU) · (KK) EQUIPMENT PURCHASE",
+      467.1,
+      467.1,
+      2
+    ],
+    [
+      "EXECUTIVE OFFICE OF EDUCATION (EDU)",
+      "EXECUTIVE OFFICE OF EDUCATION (EDU) · (99) PAYROLL REJECTS",
+      0,
+      0,
+      46
+    ]
+  ],
+  "hierarchyNote": "The source does not identify a separate sub-agency column; direct-managed rows repeat the parent entity.",
+  "sourceBasis": "official source amount",
+  "note": "Amounts are shown on the official source basis; no comparator normalization was applied."
+}

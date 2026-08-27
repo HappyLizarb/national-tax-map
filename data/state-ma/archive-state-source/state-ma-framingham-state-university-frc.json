@@ -1,0 +1,147 @@
+{
+  "scope": "Massachusetts",
+  "code": "ma",
+  "department": "FRAMINGHAM STATE UNIVERSITY (FRC)",
+  "fiscalYear": 2024,
+  "ledgerAmount": 119112648.13,
+  "sourceTotal": 129675797.43,
+  "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000",
+  "rowSchema": [
+    "subAgency",
+    "program",
+    "amount",
+    "sourceAmount",
+    "sourceRows"
+  ],
+  "rows": [
+    [
+      "FRAMINGHAM STATE UNIVERSITY (FRC)",
+      "FRAMINGHAM STATE UNIVERSITY (FRC) · (AA) REGULAR EMPLOYEE COMPENSATION",
+      45928773.38,
+      45928773.38,
+      4537
+    ],
+    [
+      "FRAMINGHAM STATE UNIVERSITY (FRC)",
+      "FRAMINGHAM STATE UNIVERSITY (FRC) · (EE) ADMINISTRATIVE EXPENSES",
+      30258099.54,
+      30258099.54,
+      409
+    ],
+    [
+      "FRAMINGHAM STATE UNIVERSITY (FRC)",
+      "FRAMINGHAM STATE UNIVERSITY (FRC) · (CC) SPECIAL EMPLOYEES",
+      10753070.84,
+      10753070.84,
+      4739
+    ],
+    [
+      "FRAMINGHAM STATE UNIVERSITY (FRC)",
+      "FRAMINGHAM STATE UNIVERSITY (FRC) · (RR) BENEFIT PROGRAMS",
+      9713944.96,
+      9713944.96,
+      73
+    ],
+    [
+      "FRAMINGHAM STATE UNIVERSITY (FRC)",
+      "FRAMINGHAM STATE UNIVERSITY (FRC) · (NN) INFRASTRUCTURE:",
+      9407956.2,
+      9407956.2,
+      114
+    ],
+    [
+      "FRAMINGHAM STATE UNIVERSITY (FRC)",
+      "FRAMINGHAM STATE UNIVERSITY (FRC) · (JJ) OPERATIONAL SERVICES",
+      6988807.6,
+      6988807.6,
+      96
+    ],
+    [
+      "FRAMINGHAM STATE UNIVERSITY (FRC)",
+      "FRAMINGHAM STATE UNIVERSITY (FRC) · (GG) ENERGY COSTS AND SPACE RENTAL",
+      4844201.4,
+      4844201.4,
+      19
+    ],
+    [
+      "FRAMINGHAM STATE UNIVERSITY (FRC)",
+      "FRAMINGHAM STATE UNIVERSITY (FRC) · (UU) IT NON-PAYROLL EXPENSES",
+      3325181.81,
+      3325181.81,
+      123
+    ],
+    [
+      "FRAMINGHAM STATE UNIVERSITY (FRC)",
+      "FRAMINGHAM STATE UNIVERSITY (FRC) · (TT) LOANS AND SPECIAL PAYMENTS",
+      2529130.12,
+      2529130.12,
+      27
+    ],
+    [
+      "FRAMINGHAM STATE UNIVERSITY (FRC)",
+      "FRAMINGHAM STATE UNIVERSITY (FRC) · (HH) CONSULTANT SVCS (TO DEPTS)",
+      2135301.38,
+      2135301.38,
+      109
+    ],
+    [
+      "FRAMINGHAM STATE UNIVERSITY (FRC)",
+      "FRAMINGHAM STATE UNIVERSITY (FRC) · (KK) EQUIPMENT PURCHASE",
+      1481199.61,
+      1481199.61,
+      67
+    ],
+    [
+      "FRAMINGHAM STATE UNIVERSITY (FRC)",
+      "FRAMINGHAM STATE UNIVERSITY (FRC) · (FF) FACILITY OPERATIONAL EXPENSES",
+      1339489.76,
+      1339489.76,
+      169
+    ],
+    [
+      "FRAMINGHAM STATE UNIVERSITY (FRC)",
+      "FRAMINGHAM STATE UNIVERSITY (FRC) · (MM) PURCHASED CLIENT/PROGRAM SVCS",
+      660173.83,
+      660173.83,
+      76
+    ],
+    [
+      "FRAMINGHAM STATE UNIVERSITY (FRC)",
+      "FRAMINGHAM STATE UNIVERSITY (FRC) · (LL) EQUIPMENT LEASE-MAINTAIN/REPAR",
+      405888.34,
+      405888.34,
+      57
+    ],
+    [
+      "FRAMINGHAM STATE UNIVERSITY (FRC)",
+      "FRAMINGHAM STATE UNIVERSITY (FRC) · (SS) DEBT PAYMENT",
+      362502.43,
+      362502.43,
+      2
+    ],
+    [
+      "FRAMINGHAM STATE UNIVERSITY (FRC)",
+      "FRAMINGHAM STATE UNIVERSITY (FRC) · (BB) REGULAR EMPLOYEE RELATED EXPEN",
+      290329.99,
+      290329.99,
+      779
+    ],
+    [
+      "FRAMINGHAM STATE UNIVERSITY (FRC)",
+      "FRAMINGHAM STATE UNIVERSITY (FRC) · (99) PAYROLL REJECTS",
+      0,
+      0,
+      4
+    ],
+    [
+      "FRAMINGHAM STATE UNIVERSITY (FRC)",
+      "FRAMINGHAM STATE UNIVERSITY (FRC) · (DD) PENSION & INSURANCE RELATED EX",
+      -748253.76,
+      -748253.76,
+      4
+    ]
+  ],
+  "hierarchyNote": "The source does not identify a separate sub-agency column; direct-managed rows repeat the parent entity.",
+  "sourceBasis": "official source amount",
+  "note": "Amounts are shown on the official source basis; no comparator normalization was applied."
+}

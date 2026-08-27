@@ -1,0 +1,78 @@
+{
+  "scope": "Maryland",
+  "code": "md",
+  "fiscalYear": 2024,
+  "department": "REGISTERS OF WILLS",
+  "sourceUrl": "https://opendata.maryland.gov/Budget/State-of-Maryland-Payments-Data-FY2008-to-FY2024/7syw-q4cy/about_data",
+  "sourceUrls": [
+    [
+      "Maryland payments dataset",
+      "https://opendata.maryland.gov/Budget/State-of-Maryland-Payments-Data-FY2008-to-FY2024/7syw-q4cy/about_data"
+    ],
+    [
+      "FY2024 raw API rows",
+      "https://opendata.maryland.gov/resource/7syw-q4cy.json?%24where=fiscal_year=%272024%27&%24limit=50000"
+    ]
+  ],
+  "sourceBasis": "FY2024 cash payments grouped by official agency, published category code, and privacy-safe receiver label.",
+  "privacyNote": "Organization receiver names are retained; individual or ambiguous vendor names are grouped as [individual recipient omitted]. No person-level payroll fields are retained.",
+  "sourceRows": 6,
+  "sourceTotal": 1683871.17,
+  "rowSchema": [
+    "subAgency",
+    "program",
+    "amount",
+    "sourceAmount",
+    "sourceRows"
+  ],
+  "rows": [
+    [
+      "REGISTERS OF WILLS",
+      "Category code E90 · Receiver DYNAMSOFT CORPORATION",
+      86313.6,
+      86313.6,
+      1
+    ],
+    [
+      "REGISTERS OF WILLS",
+      "Category code E90 · Receiver HUMANIM INC",
+      114570.04,
+      114570.04,
+      1
+    ],
+    [
+      "REGISTERS OF WILLS",
+      "Category code E90 · Receiver IDOXSOLUTIONS, INC",
+      1381702.21,
+      1381702.21,
+      1
+    ],
+    [
+      "REGISTERS OF WILLS",
+      "Category code E90 · Receiver OPEN SESAME INC",
+      14895,
+      14895,
+      1
+    ],
+    [
+      "REGISTERS OF WILLS",
+      "Category code E90 · Receiver SHI INTERNATIONAL CORP",
+      75144.72,
+      75144.72,
+      1
+    ],
+    [
+      "REGISTERS OF WILLS",
+      "Category code E90 · Receiver TECHNICAL SPECIALTIES INC",
+      11245.6,
+      11245.6,
+      1
+    ]
+  ],
+  "sourceCheck": {
+    "objectClassRows": 6,
+    "sourceRows": 6,
+    "sourceTotal": 1683871.17,
+    "difference": 0
+  }
+}

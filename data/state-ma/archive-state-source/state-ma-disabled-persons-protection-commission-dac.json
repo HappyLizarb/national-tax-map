@@ -1,0 +1,98 @@
+{
+  "scope": "Massachusetts",
+  "code": "ma",
+  "department": "DISABLED PERSONS PROTECTION COMMISSION (DAC)",
+  "fiscalYear": 2024,
+  "ledgerAmount": 12701451.96,
+  "sourceTotal": 13827842.28,
+  "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000",
+  "rowSchema": [
+    "subAgency",
+    "program",
+    "amount",
+    "sourceAmount",
+    "sourceRows"
+  ],
+  "rows": [
+    [
+      "DISABLED PERSONS PROTECTION COMMISSION (DAC)",
+      "DISABLED PERSONS PROTECTION COMMISSION (DAC) · (AA) REGULAR EMPLOYEE COMPENSATION",
+      10388689.11,
+      10388689.11,
+      146
+    ],
+    [
+      "DISABLED PERSONS PROTECTION COMMISSION (DAC)",
+      "DISABLED PERSONS PROTECTION COMMISSION (DAC) · (UU) IT NON-PAYROLL EXPENSES",
+      1079007.49,
+      1079007.49,
+      236
+    ],
+    [
+      "DISABLED PERSONS PROTECTION COMMISSION (DAC)",
+      "DISABLED PERSONS PROTECTION COMMISSION (DAC) · (HH) CONSULTANT SVCS (TO DEPTS)",
+      696536.1,
+      696536.1,
+      62
+    ],
+    [
+      "DISABLED PERSONS PROTECTION COMMISSION (DAC)",
+      "DISABLED PERSONS PROTECTION COMMISSION (DAC) · (GG) ENERGY COSTS AND SPACE RENTAL",
+      542719.56,
+      542719.56,
+      12
+    ],
+    [
+      "DISABLED PERSONS PROTECTION COMMISSION (DAC)",
+      "DISABLED PERSONS PROTECTION COMMISSION (DAC) · (JJ) OPERATIONAL SERVICES",
+      448496.79,
+      448496.79,
+      114
+    ],
+    [
+      "DISABLED PERSONS PROTECTION COMMISSION (DAC)",
+      "DISABLED PERSONS PROTECTION COMMISSION (DAC) · (EE) ADMINISTRATIVE EXPENSES",
+      316407.46,
+      316407.46,
+      150
+    ],
+    [
+      "DISABLED PERSONS PROTECTION COMMISSION (DAC)",
+      "DISABLED PERSONS PROTECTION COMMISSION (DAC) · (KK) EQUIPMENT PURCHASE",
+      177654.33,
+      177654.33,
+      3
+    ],
+    [
+      "DISABLED PERSONS PROTECTION COMMISSION (DAC)",
+      "DISABLED PERSONS PROTECTION COMMISSION (DAC) · (BB) REGULAR EMPLOYEE RELATED EXPEN",
+      106901.76,
+      106901.76,
+      95
+    ],
+    [
+      "DISABLED PERSONS PROTECTION COMMISSION (DAC)",
+      "DISABLED PERSONS PROTECTION COMMISSION (DAC) · (CC) SPECIAL EMPLOYEES",
+      51190.87,
+      51190.87,
+      28
+    ],
+    [
+      "DISABLED PERSONS PROTECTION COMMISSION (DAC)",
+      "DISABLED PERSONS PROTECTION COMMISSION (DAC) · (LL) EQUIPMENT LEASE-MAINTAIN/REPAR",
+      20238.81,
+      20238.81,
+      149
+    ],
+    [
+      "DISABLED PERSONS PROTECTION COMMISSION (DAC)",
+      "DISABLED PERSONS PROTECTION COMMISSION (DAC) · (99) PAYROLL REJECTS",
+      0,
+      0,
+      2
+    ]
+  ],
+  "hierarchyNote": "The source does not identify a separate sub-agency column; direct-managed rows repeat the parent entity.",
+  "sourceBasis": "official source amount",
+  "note": "Amounts are shown on the official source basis; no comparator normalization was applied."
+}

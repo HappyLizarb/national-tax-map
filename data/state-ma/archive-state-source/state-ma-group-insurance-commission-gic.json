@@ -1,0 +1,91 @@
+{
+  "scope": "Massachusetts",
+  "code": "ma",
+  "department": "GROUP INSURANCE COMMISSION (GIC)",
+  "fiscalYear": 2024,
+  "ledgerAmount": 3299904843.2,
+  "sourceTotal": 3592547044.43,
+  "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000",
+  "rowSchema": [
+    "subAgency",
+    "program",
+    "amount",
+    "sourceAmount",
+    "sourceRows"
+  ],
+  "rows": [
+    [
+      "GROUP INSURANCE COMMISSION (GIC)",
+      "GROUP INSURANCE COMMISSION (GIC) · (DD) PENSION & INSURANCE RELATED EX",
+      3585021812.76,
+      3585021812.76,
+      610
+    ],
+    [
+      "GROUP INSURANCE COMMISSION (GIC)",
+      "GROUP INSURANCE COMMISSION (GIC) · (AA) REGULAR EMPLOYEE COMPENSATION",
+      5279578.94,
+      5279578.94,
+      43
+    ],
+    [
+      "GROUP INSURANCE COMMISSION (GIC)",
+      "GROUP INSURANCE COMMISSION (GIC) · (HH) CONSULTANT SVCS (TO DEPTS)",
+      1691044.83,
+      1691044.83,
+      36
+    ],
+    [
+      "GROUP INSURANCE COMMISSION (GIC)",
+      "GROUP INSURANCE COMMISSION (GIC) · (UU) IT NON-PAYROLL EXPENSES",
+      358808.14,
+      358808.14,
+      13
+    ],
+    [
+      "GROUP INSURANCE COMMISSION (GIC)",
+      "GROUP INSURANCE COMMISSION (GIC) · (EE) ADMINISTRATIVE EXPENSES",
+      102242.07,
+      102242.07,
+      96
+    ],
+    [
+      "GROUP INSURANCE COMMISSION (GIC)",
+      "GROUP INSURANCE COMMISSION (GIC) · (JJ) OPERATIONAL SERVICES",
+      74652.97,
+      74652.97,
+      56
+    ],
+    [
+      "GROUP INSURANCE COMMISSION (GIC)",
+      "GROUP INSURANCE COMMISSION (GIC) · (LL) EQUIPMENT LEASE-MAINTAIN/REPAR",
+      12735.71,
+      12735.71,
+      41
+    ],
+    [
+      "GROUP INSURANCE COMMISSION (GIC)",
+      "GROUP INSURANCE COMMISSION (GIC) · (CC) SPECIAL EMPLOYEES",
+      4260,
+      4260,
+      6
+    ],
+    [
+      "GROUP INSURANCE COMMISSION (GIC)",
+      "GROUP INSURANCE COMMISSION (GIC) · (BB) REGULAR EMPLOYEE RELATED EXPEN",
+      1318.35,
+      1318.35,
+      14
+    ],
+    [
+      "GROUP INSURANCE COMMISSION (GIC)",
+      "GROUP INSURANCE COMMISSION (GIC) · (KK) EQUIPMENT PURCHASE",
+      590.66,
+      590.66,
+      14
+    ]
+  ],
+  "hierarchyNote": "The source does not identify a separate sub-agency column; direct-managed rows repeat the parent entity.",
+  "sourceBasis": "official source amount",
+  "note": "Amounts are shown on the official source basis; no comparator normalization was applied."
+}

@@ -1,0 +1,308 @@
+{
+  "scope": "Oregon",
+  "fiscalYear": 2024,
+  "department": "GOVERNMENT ETHICS CMSN",
+  "sourceUrl": "https://data.oregon.gov/resource/y9g9-xsxs.json?$select=agency,agency_1,budget_class,budget_class_1,expend_class,expend_class_1,vendor,sum(expense)%20as%20total,count(*)%20as%20source_rows&$where=fiscal_year=2024&$group=agency,agency_1,budget_class,budget_class_1,expend_class,expend_class_1,vendor&$limit=500000",
+  "sourceUrls": [
+    [
+      "Oregon transparency expenditure catalog",
+      "https://data.oregon.gov/Revenue-Expense/Agency-Expenditures-Multi-Year-Report/y9g9-xsxs"
+    ],
+    [
+      "Grouped FY2024 API export",
+      "https://data.oregon.gov/resource/y9g9-xsxs.json?$select=agency,agency_1,budget_class,budget_class_1,expend_class,expend_class_1,vendor,sum(expense)%20as%20total,count(*)%20as%20source_rows&$where=fiscal_year=2024&$group=agency,agency_1,budget_class,budget_class_1,expend_class,expend_class_1,vendor&$limit=500000"
+    ]
+  ],
+  "sourceBasis": "Official Oregon Agency Expenditures Multi-Year Report; FY2024 cash expense grouped by agency, budget class, expenditure class, and privacy-safe receiver label.",
+  "privacyNote": "Individual or ambiguous vendor labels are grouped as [individual recipient omitted]; organization receivers are retained. This layer does not expose person-level payroll.",
+  "sourceRows": 46,
+  "sourceTotal": 858176.49,
+  "rowSchema": [
+    "subAgency",
+    "program",
+    "amount",
+    "sourceAmount",
+    "sourceRows"
+  ],
+  "rows": [
+    [
+      "GOVERNMENT ETHICS CMSN",
+      "4315 · IT PROFESSIONAL SERVICES · 4515 · PROFESSIONAL SERVICES APPLICATION MAINT · Receiver NICUSA INC",
+      306480,
+      306480,
+      1
+    ],
+    [
+      "GOVERNMENT ETHICS CMSN",
+      "4325 · ATTORNEY GENERAL LEGAL FEES · 4550 · ATTORNEY GENERAL LEGAL FEES · Receiver STATE OF OREGON DEPARTMENT OF JUSTICE",
+      212185.38,
+      212185.38,
+      1
+    ],
+    [
+      "GOVERNMENT ETHICS CMSN",
+      "4650 · OTHER SERVICES AND SUPPLIES · 4701 · OTHER SERVICES · Receiver DEPARTMENT OF ADMINISTRATIVE SERVICES",
+      80946.69,
+      80946.69,
+      1
+    ],
+    [
+      "GOVERNMENT ETHICS CMSN",
+      "4425 · LEASE PAYMENTS & TAXES · 4800 · INTERAGENCY LEASE PAYMENTS · Receiver WESTPAC INVESTMENT COMPANY",
+      59969.29,
+      59969.29,
+      1
+    ],
+    [
+      "GOVERNMENT ETHICS CMSN",
+      "4225 · STATE GOVERNMENT SERVICE CHARGES · 4600 · STATE GOVERNMENT SERVICE CHARGES · Receiver DEPARTMENT OF ADMINISTRATIVE SERVICES",
+      38805,
+      38805,
+      1
+    ],
+    [
+      "GOVERNMENT ETHICS CMSN",
+      "5900 · OTHER CAPITAL OUTLAY · 5755 · LEASEHOLD IMPROVEMENTS>=$5K · Receiver WESTPAC INVESTMENT COMPANY",
+      32543.9,
+      32543.9,
+      1
+    ],
+    [
+      "GOVERNMENT ETHICS CMSN",
+      "4715 · IT EXPENDABLE PROPERTY · 4365 · COMPUTER TECHNOLOGY PC EQUIPMENT<$5K · Receiver CDW GOVERNMENT INC",
+      28055.28,
+      28055.28,
+      1
+    ],
+    [
+      "GOVERNMENT ETHICS CMSN",
+      "4250 · DATA PROCESSING · 4367 · COMPUTER TECHNOLOGY PC SUPPORT · Receiver DEPARTMENT OF ADMINISTRATIVE SERVICES",
+      24896,
+      24896,
+      1
+    ],
+    [
+      "GOVERNMENT ETHICS CMSN",
+      "4700 · EXPENDABLE PROPERTY $250-$5000 · 4999 · EXPENDABLE PROPERTY NON-IT<$5K · Receiver [individual recipient omitted]",
+      17309,
+      17309,
+      1
+    ],
+    [
+      "GOVERNMENT ETHICS CMSN",
+      "5100 · OFFICE FURNITURE AND FIXTURES · 5100 · OFFICE FURNITURE AND FIXTURES>=$5K · Receiver WESTPAC INVESTMENT COMPANY",
+      13500,
+      13500,
+      1
+    ],
+    [
+      "GOVERNMENT ETHICS CMSN",
+      "4250 · DATA PROCESSING · 4375 · COMPUTER TECHNOLOGY COMPUTER PROCESSING · Receiver GRANICUS",
+      9671.59,
+      9671.59,
+      1
+    ],
+    [
+      "GOVERNMENT ETHICS CMSN",
+      "4650 · OTHER SERVICES AND SUPPLIES · 4701 · OTHER SERVICES · Receiver [individual recipient omitted]",
+      4841.83,
+      4841.83,
+      1
+    ],
+    [
+      "GOVERNMENT ETHICS CMSN",
+      "4200 · TELECOMM/TECH SVC AND SUPPLIES · 4301 · TELECOM/VOICE USAGE · Receiver KYNDRYL INC",
+      4017.21,
+      4017.21,
+      1
+    ],
+    [
+      "GOVERNMENT ETHICS CMSN",
+      "4225 · STATE GOVERNMENT SERVICE CHARGES · 4600 · STATE GOVERNMENT SERVICE CHARGES · Receiver STATE OF OREGON SECRETARY OF STATE",
+      3939.64,
+      3939.64,
+      1
+    ],
+    [
+      "GOVERNMENT ETHICS CMSN",
+      "4250 · DATA PROCESSING · 4375 · COMPUTER TECHNOLOGY COMPUTER PROCESSING · Receiver SHI INTERNATIONAL CORP",
+      3202.98,
+      3202.98,
+      1
+    ],
+    [
+      "GOVERNMENT ETHICS CMSN",
+      "4100 · INSTATE TRAVEL · 4108 · INSTATE GROUND TRANSPORTATION · Receiver DEPARTMENT OF ADMINISTRATIVE SERVICES",
+      1925.1,
+      1925.1,
+      1
+    ],
+    [
+      "GOVERNMENT ETHICS CMSN",
+      "4700 · EXPENDABLE PROPERTY $250-$5000 · 4999 · EXPENDABLE PROPERTY NON-IT<$5K · Receiver OFFICE MASTER INC",
+      1881.04,
+      1881.04,
+      1
+    ],
+    [
+      "GOVERNMENT ETHICS CMSN",
+      "4300 · PROFESSIONAL SERVICES · 4500 · PROFESSIONAL SERVICES NON-IT · Receiver BEERY ELSNER & HAMMOND LLP",
+      1714.9,
+      1714.9,
+      1
+    ],
+    [
+      "GOVERNMENT ETHICS CMSN",
+      "4200 · TELECOMM/TECH SVC AND SUPPLIES · 4301 · TELECOM/VOICE USAGE · Receiver DEPARTMENT OF ADMINISTRATIVE SERVICES",
+      1667.72,
+      1667.72,
+      1
+    ],
+    [
+      "GOVERNMENT ETHICS CMSN",
+      "4175 · OFFICE EXPENSES · 4201 · OFFICE SERVICES · Receiver DEPARTMENT OF ADMINISTRATIVE SERVICES",
+      1645.26,
+      1645.26,
+      1
+    ],
+    [
+      "GOVERNMENT ETHICS CMSN",
+      "4250 · DATA PROCESSING · 4375 · COMPUTER TECHNOLOGY COMPUTER PROCESSING · Receiver DEPARTMENT OF ADMINISTRATIVE SERVICES",
+      1510.66,
+      1510.66,
+      1
+    ],
+    [
+      "GOVERNMENT ETHICS CMSN",
+      "4200 · TELECOMM/TECH SVC AND SUPPLIES · 4305 · TELECOM/NETWORK SERVICES · Receiver DEPARTMENT OF ADMINISTRATIVE SERVICES",
+      1190.18,
+      1190.18,
+      1
+    ],
+    [
+      "GOVERNMENT ETHICS CMSN",
+      "4300 · PROFESSIONAL SERVICES · 4500 · PROFESSIONAL SERVICES NON-IT · Receiver US BANK CORPORATE PAYMENT SYSTEMS",
+      1085.33,
+      1085.33,
+      1
+    ],
+    [
+      "GOVERNMENT ETHICS CMSN",
+      "4100 · INSTATE TRAVEL · 4111 · INSTATE MILEAGE REIMBURSMNT-VOLUNTEERS · Receiver [individual recipient omitted]",
+      950.82,
+      950.82,
+      4
+    ],
+    [
+      "GOVERNMENT ETHICS CMSN",
+      "4300 · PROFESSIONAL SERVICES · 4500 · PROFESSIONAL SERVICES NON-IT · Receiver HERSHNER HUNTER LLP",
+      931,
+      931,
+      1
+    ],
+    [
+      "GOVERNMENT ETHICS CMSN",
+      "4200 · TELECOMM/TECH SVC AND SUPPLIES · 4305 · TELECOM/NETWORK SERVICES · Receiver QWEST",
+      649.78,
+      649.78,
+      1
+    ],
+    [
+      "GOVERNMENT ETHICS CMSN",
+      "4150 · EMPLOYEE TRAINING · 4431 · PROF DEV INSTATE MEAL WITH OVERNITE STAY · Receiver [individual recipient omitted]",
+      531,
+      531,
+      4
+    ],
+    [
+      "GOVERNMENT ETHICS CMSN",
+      "4100 · INSTATE TRAVEL · 4101 · INSTATE MEALS WITH OVERNIGHT STAY · Receiver [individual recipient omitted]",
+      398.25,
+      398.25,
+      2
+    ],
+    [
+      "GOVERNMENT ETHICS CMSN",
+      "4200 · TELECOMM/TECH SVC AND SUPPLIES · 4301 · TELECOM/VOICE USAGE · Receiver [individual recipient omitted]",
+      391.48,
+      391.48,
+      1
+    ],
+    [
+      "GOVERNMENT ETHICS CMSN",
+      "4300 · PROFESSIONAL SERVICES · 4500 · PROFESSIONAL SERVICES NON-IT · Receiver CASCADE CENTERS INC",
+      324,
+      324,
+      1
+    ],
+    [
+      "GOVERNMENT ETHICS CMSN",
+      "4125 · OUT-OF-STATE TRAVEL · 4151 · OUT-OF-STATE MEALS WITH OVERNIGHT STAY · Receiver [individual recipient omitted]",
+      272,
+      272,
+      1
+    ],
+    [
+      "GOVERNMENT ETHICS CMSN",
+      "4275 · PUBLICITY & PUBLICATIONS · 4253 · ADVERTISE, PUBLICITY, PUBLISH/PRINT SRVS · Receiver [individual recipient omitted]",
+      269.5,
+      269.5,
+      1
+    ],
+    [
+      "GOVERNMENT ETHICS CMSN",
+      "4175 · OFFICE EXPENSES · 4201 · OFFICE SERVICES · Receiver GARTEN SERVICES INC",
+      152,
+      152,
+      1
+    ],
+    [
+      "GOVERNMENT ETHICS CMSN",
+      "4225 · STATE GOVERNMENT SERVICE CHARGES · 4600 · STATE GOVERNMENT SERVICE CHARGES · Receiver STATE OF OREGON - SECRETARY OF STATE",
+      146,
+      146,
+      1
+    ],
+    [
+      "GOVERNMENT ETHICS CMSN",
+      "4125 · OUT-OF-STATE TRAVEL · 4162 · OUT-OF-STATE MILEAGE REIMBRSMT-FULL RATE · Receiver [individual recipient omitted]",
+      73.94,
+      73.94,
+      1
+    ],
+    [
+      "GOVERNMENT ETHICS CMSN",
+      "4150 · EMPLOYEE TRAINING · 4432 · PROF DEV OUT-OF-STATE MEAL W/OVERNITE · Receiver [individual recipient omitted]",
+      73.75,
+      73.75,
+      1
+    ],
+    [
+      "GOVERNMENT ETHICS CMSN",
+      "4225 · STATE GOVERNMENT SERVICE CHARGES · 4600 · STATE GOVERNMENT SERVICE CHARGES · Receiver OREGON STATE TREASURY",
+      11.6,
+      11.6,
+      1
+    ],
+    [
+      "GOVERNMENT ETHICS CMSN",
+      "4175 · OFFICE EXPENSES · 4202 · EQUIPMENT RENTAL · Receiver RICOH USA INC",
+      10.88,
+      10.88,
+      1
+    ],
+    [
+      "GOVERNMENT ETHICS CMSN",
+      "4650 · OTHER SERVICES AND SUPPLIES · 4701 · OTHER SERVICES · Receiver US BANK CORPORATE PAYMENT SYSTEMS",
+      6.51,
+      6.51,
+      1
+    ]
+  ],
+  "sourceCheck": {
+    "objectClassRows": 39,
+    "sourceRows": 46,
+    "sourceTotal": 858176.49,
+    "difference": 0
+  }
+}

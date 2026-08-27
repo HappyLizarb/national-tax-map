@@ -1,0 +1,126 @@
+{
+  "scope": "Massachusetts",
+  "code": "ma",
+  "department": "MASSACHUSETTS COLLEGE OF ART AND DESIGN (MCA)",
+  "fiscalYear": 2024,
+  "ledgerAmount": 80830250.01,
+  "sourceTotal": 87998439.22,
+  "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000",
+  "rowSchema": [
+    "subAgency",
+    "program",
+    "amount",
+    "sourceAmount",
+    "sourceRows"
+  ],
+  "rows": [
+    [
+      "MASSACHUSETTS COLLEGE OF ART AND DESIGN (MCA)",
+      "MASSACHUSETTS COLLEGE OF ART AND DESIGN (MCA) · (AA) REGULAR EMPLOYEE COMPENSATION",
+      35357072.13,
+      35357072.13,
+      3708
+    ],
+    [
+      "MASSACHUSETTS COLLEGE OF ART AND DESIGN (MCA)",
+      "MASSACHUSETTS COLLEGE OF ART AND DESIGN (MCA) · (TT) LOANS AND SPECIAL PAYMENTS",
+      10407654.91,
+      10407654.91,
+      4
+    ],
+    [
+      "MASSACHUSETTS COLLEGE OF ART AND DESIGN (MCA)",
+      "MASSACHUSETTS COLLEGE OF ART AND DESIGN (MCA) · (RR) BENEFIT PROGRAMS",
+      8843911.82,
+      8843911.82,
+      23
+    ],
+    [
+      "MASSACHUSETTS COLLEGE OF ART AND DESIGN (MCA)",
+      "MASSACHUSETTS COLLEGE OF ART AND DESIGN (MCA) · (NN) INFRASTRUCTURE:",
+      8711626.78,
+      8711626.78,
+      50
+    ],
+    [
+      "MASSACHUSETTS COLLEGE OF ART AND DESIGN (MCA)",
+      "MASSACHUSETTS COLLEGE OF ART AND DESIGN (MCA) · (CC) SPECIAL EMPLOYEES",
+      8621319.63,
+      8621319.63,
+      3243
+    ],
+    [
+      "MASSACHUSETTS COLLEGE OF ART AND DESIGN (MCA)",
+      "MASSACHUSETTS COLLEGE OF ART AND DESIGN (MCA) · (JJ) OPERATIONAL SERVICES",
+      3542857.54,
+      3542857.54,
+      30
+    ],
+    [
+      "MASSACHUSETTS COLLEGE OF ART AND DESIGN (MCA)",
+      "MASSACHUSETTS COLLEGE OF ART AND DESIGN (MCA) · (UU) IT NON-PAYROLL EXPENSES",
+      2959322.17,
+      2959322.17,
+      43
+    ],
+    [
+      "MASSACHUSETTS COLLEGE OF ART AND DESIGN (MCA)",
+      "MASSACHUSETTS COLLEGE OF ART AND DESIGN (MCA) · (EE) ADMINISTRATIVE EXPENSES",
+      2696427,
+      2696427,
+      29
+    ],
+    [
+      "MASSACHUSETTS COLLEGE OF ART AND DESIGN (MCA)",
+      "MASSACHUSETTS COLLEGE OF ART AND DESIGN (MCA) · (GG) ENERGY COSTS AND SPACE RENTAL",
+      2223426.67,
+      2223426.67,
+      42
+    ],
+    [
+      "MASSACHUSETTS COLLEGE OF ART AND DESIGN (MCA)",
+      "MASSACHUSETTS COLLEGE OF ART AND DESIGN (MCA) · (HH) CONSULTANT SVCS (TO DEPTS)",
+      2147127.91,
+      2147127.91,
+      16
+    ],
+    [
+      "MASSACHUSETTS COLLEGE OF ART AND DESIGN (MCA)",
+      "MASSACHUSETTS COLLEGE OF ART AND DESIGN (MCA) · (FF) FACILITY OPERATIONAL EXPENSES",
+      1291142.98,
+      1291142.98,
+      15
+    ],
+    [
+      "MASSACHUSETTS COLLEGE OF ART AND DESIGN (MCA)",
+      "MASSACHUSETTS COLLEGE OF ART AND DESIGN (MCA) · (KK) EQUIPMENT PURCHASE",
+      579483.41,
+      579483.41,
+      14
+    ],
+    [
+      "MASSACHUSETTS COLLEGE OF ART AND DESIGN (MCA)",
+      "MASSACHUSETTS COLLEGE OF ART AND DESIGN (MCA) · (BB) REGULAR EMPLOYEE RELATED EXPEN",
+      413261.11,
+      413261.11,
+      728
+    ],
+    [
+      "MASSACHUSETTS COLLEGE OF ART AND DESIGN (MCA)",
+      "MASSACHUSETTS COLLEGE OF ART AND DESIGN (MCA) · (LL) EQUIPMENT LEASE-MAINTAIN/REPAR",
+      186473.56,
+      186473.56,
+      16
+    ],
+    [
+      "MASSACHUSETTS COLLEGE OF ART AND DESIGN (MCA)",
+      "MASSACHUSETTS COLLEGE OF ART AND DESIGN (MCA) · (DD) PENSION & INSURANCE RELATED EX",
+      17331.6,
+      17331.6,
+      1
+    ]
+  ],
+  "hierarchyNote": "The source does not identify a separate sub-agency column; direct-managed rows repeat the parent entity.",
+  "sourceBasis": "official source amount",
+  "note": "Amounts are shown on the official source basis; no comparator normalization was applied."
+}

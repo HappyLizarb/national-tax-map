@@ -1,0 +1,133 @@
+{
+  "scope": "Massachusetts",
+  "code": "ma",
+  "department": "SPRINGFIELD TECH COMM COLLEGE (STC)",
+  "fiscalYear": 2024,
+  "ledgerAmount": 67466263.05,
+  "sourceTotal": 73449307.01,
+  "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000",
+  "rowSchema": [
+    "subAgency",
+    "program",
+    "amount",
+    "sourceAmount",
+    "sourceRows"
+  ],
+  "rows": [
+    [
+      "SPRINGFIELD TECH COMM COLLEGE (STC)",
+      "SPRINGFIELD TECH COMM COLLEGE (STC) · (AA) REGULAR EMPLOYEE COMPENSATION",
+      28309443.36,
+      28309443.36,
+      693
+    ],
+    [
+      "SPRINGFIELD TECH COMM COLLEGE (STC)",
+      "SPRINGFIELD TECH COMM COLLEGE (STC) · (RR) BENEFIT PROGRAMS",
+      17672070,
+      17672070,
+      45
+    ],
+    [
+      "SPRINGFIELD TECH COMM COLLEGE (STC)",
+      "SPRINGFIELD TECH COMM COLLEGE (STC) · (CC) SPECIAL EMPLOYEES",
+      8757507.24,
+      8757507.24,
+      1134
+    ],
+    [
+      "SPRINGFIELD TECH COMM COLLEGE (STC)",
+      "SPRINGFIELD TECH COMM COLLEGE (STC) · (HH) CONSULTANT SVCS (TO DEPTS)",
+      3879525.02,
+      3879525.02,
+      28
+    ],
+    [
+      "SPRINGFIELD TECH COMM COLLEGE (STC)",
+      "SPRINGFIELD TECH COMM COLLEGE (STC) · (EE) ADMINISTRATIVE EXPENSES",
+      3323335.33,
+      3323335.33,
+      25
+    ],
+    [
+      "SPRINGFIELD TECH COMM COLLEGE (STC)",
+      "SPRINGFIELD TECH COMM COLLEGE (STC) · (FF) FACILITY OPERATIONAL EXPENSES",
+      2047674,
+      2047674,
+      15
+    ],
+    [
+      "SPRINGFIELD TECH COMM COLLEGE (STC)",
+      "SPRINGFIELD TECH COMM COLLEGE (STC) · (NN) INFRASTRUCTURE:",
+      1873985.61,
+      1873985.61,
+      110
+    ],
+    [
+      "SPRINGFIELD TECH COMM COLLEGE (STC)",
+      "SPRINGFIELD TECH COMM COLLEGE (STC) · (UU) IT NON-PAYROLL EXPENSES",
+      1569708.43,
+      1569708.43,
+      15
+    ],
+    [
+      "SPRINGFIELD TECH COMM COLLEGE (STC)",
+      "SPRINGFIELD TECH COMM COLLEGE (STC) · (GG) ENERGY COSTS AND SPACE RENTAL",
+      1523235.71,
+      1523235.71,
+      63
+    ],
+    [
+      "SPRINGFIELD TECH COMM COLLEGE (STC)",
+      "SPRINGFIELD TECH COMM COLLEGE (STC) · (KK) EQUIPMENT PURCHASE",
+      1311247.05,
+      1311247.05,
+      17
+    ],
+    [
+      "SPRINGFIELD TECH COMM COLLEGE (STC)",
+      "SPRINGFIELD TECH COMM COLLEGE (STC) · (MM) PURCHASED CLIENT/PROGRAM SVCS",
+      921505,
+      921505,
+      13
+    ],
+    [
+      "SPRINGFIELD TECH COMM COLLEGE (STC)",
+      "SPRINGFIELD TECH COMM COLLEGE (STC) · (BB) REGULAR EMPLOYEE RELATED EXPEN",
+      777882.56,
+      777882.56,
+      89
+    ],
+    [
+      "SPRINGFIELD TECH COMM COLLEGE (STC)",
+      "SPRINGFIELD TECH COMM COLLEGE (STC) · (LL) EQUIPMENT LEASE-MAINTAIN/REPAR",
+      673354.58,
+      673354.58,
+      28
+    ],
+    [
+      "SPRINGFIELD TECH COMM COLLEGE (STC)",
+      "SPRINGFIELD TECH COMM COLLEGE (STC) · (JJ) OPERATIONAL SERVICES",
+      619233,
+      619233,
+      14
+    ],
+    [
+      "SPRINGFIELD TECH COMM COLLEGE (STC)",
+      "SPRINGFIELD TECH COMM COLLEGE (STC) · (PP) STATE AID/POL SUB",
+      189600.12,
+      189600.12,
+      13
+    ],
+    [
+      "SPRINGFIELD TECH COMM COLLEGE (STC)",
+      "SPRINGFIELD TECH COMM COLLEGE (STC) · (99) PAYROLL REJECTS",
+      0,
+      0,
+      26
+    ]
+  ],
+  "hierarchyNote": "The source does not identify a separate sub-agency column; direct-managed rows repeat the parent entity.",
+  "sourceBasis": "official source amount",
+  "note": "Amounts are shown on the official source basis; no comparator normalization was applied."
+}

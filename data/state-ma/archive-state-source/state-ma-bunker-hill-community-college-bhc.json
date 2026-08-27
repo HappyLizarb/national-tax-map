@@ -1,0 +1,126 @@
+{
+  "scope": "Massachusetts",
+  "code": "ma",
+  "department": "BUNKER HILL COMMUNITY COLLEGE (BHC)",
+  "fiscalYear": 2024,
+  "ledgerAmount": 143792495.42,
+  "sourceTotal": 156544303.24,
+  "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000",
+  "rowSchema": [
+    "subAgency",
+    "program",
+    "amount",
+    "sourceAmount",
+    "sourceRows"
+  ],
+  "rows": [
+    [
+      "BUNKER HILL COMMUNITY COLLEGE (BHC)",
+      "BUNKER HILL COMMUNITY COLLEGE (BHC) · (AA) REGULAR EMPLOYEE COMPENSATION",
+      77727103.98,
+      77727103.98,
+      1759
+    ],
+    [
+      "BUNKER HILL COMMUNITY COLLEGE (BHC)",
+      "BUNKER HILL COMMUNITY COLLEGE (BHC) · (RR) BENEFIT PROGRAMS",
+      20736604.13,
+      20736604.13,
+      85
+    ],
+    [
+      "BUNKER HILL COMMUNITY COLLEGE (BHC)",
+      "BUNKER HILL COMMUNITY COLLEGE (BHC) · (CC) SPECIAL EMPLOYEES",
+      19264929.33,
+      19264929.33,
+      1424
+    ],
+    [
+      "BUNKER HILL COMMUNITY COLLEGE (BHC)",
+      "BUNKER HILL COMMUNITY COLLEGE (BHC) · (NN) INFRASTRUCTURE:",
+      8254436.11,
+      8254436.11,
+      41
+    ],
+    [
+      "BUNKER HILL COMMUNITY COLLEGE (BHC)",
+      "BUNKER HILL COMMUNITY COLLEGE (BHC) · (UU) IT NON-PAYROLL EXPENSES",
+      8251799.06,
+      8251799.06,
+      25
+    ],
+    [
+      "BUNKER HILL COMMUNITY COLLEGE (BHC)",
+      "BUNKER HILL COMMUNITY COLLEGE (BHC) · (HH) CONSULTANT SVCS (TO DEPTS)",
+      6255970.69,
+      6255970.69,
+      21
+    ],
+    [
+      "BUNKER HILL COMMUNITY COLLEGE (BHC)",
+      "BUNKER HILL COMMUNITY COLLEGE (BHC) · (JJ) OPERATIONAL SERVICES",
+      4972883.17,
+      4972883.17,
+      19
+    ],
+    [
+      "BUNKER HILL COMMUNITY COLLEGE (BHC)",
+      "BUNKER HILL COMMUNITY COLLEGE (BHC) · (EE) ADMINISTRATIVE EXPENSES",
+      3493238.07,
+      3493238.07,
+      25
+    ],
+    [
+      "BUNKER HILL COMMUNITY COLLEGE (BHC)",
+      "BUNKER HILL COMMUNITY COLLEGE (BHC) · (GG) ENERGY COSTS AND SPACE RENTAL",
+      2885931.21,
+      2885931.21,
+      13
+    ],
+    [
+      "BUNKER HILL COMMUNITY COLLEGE (BHC)",
+      "BUNKER HILL COMMUNITY COLLEGE (BHC) · (MM) PURCHASED CLIENT/PROGRAM SVCS",
+      1632121.06,
+      1632121.06,
+      15
+    ],
+    [
+      "BUNKER HILL COMMUNITY COLLEGE (BHC)",
+      "BUNKER HILL COMMUNITY COLLEGE (BHC) · (FF) FACILITY OPERATIONAL EXPENSES",
+      1582381.06,
+      1582381.06,
+      24
+    ],
+    [
+      "BUNKER HILL COMMUNITY COLLEGE (BHC)",
+      "BUNKER HILL COMMUNITY COLLEGE (BHC) · (KK) EQUIPMENT PURCHASE",
+      589197.53,
+      589197.53,
+      20
+    ],
+    [
+      "BUNKER HILL COMMUNITY COLLEGE (BHC)",
+      "BUNKER HILL COMMUNITY COLLEGE (BHC) · (LL) EQUIPMENT LEASE-MAINTAIN/REPAR",
+      483998.07,
+      483998.07,
+      16
+    ],
+    [
+      "BUNKER HILL COMMUNITY COLLEGE (BHC)",
+      "BUNKER HILL COMMUNITY COLLEGE (BHC) · (BB) REGULAR EMPLOYEE RELATED EXPEN",
+      413709.77,
+      413709.77,
+      217
+    ],
+    [
+      "BUNKER HILL COMMUNITY COLLEGE (BHC)",
+      "BUNKER HILL COMMUNITY COLLEGE (BHC) · (99) PAYROLL REJECTS",
+      0,
+      0,
+      4
+    ]
+  ],
+  "hierarchyNote": "The source does not identify a separate sub-agency column; direct-managed rows repeat the parent entity.",
+  "sourceBasis": "official source amount",
+  "note": "Amounts are shown on the official source basis; no comparator normalization was applied."
+}

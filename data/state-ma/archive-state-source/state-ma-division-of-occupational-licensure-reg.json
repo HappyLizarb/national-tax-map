@@ -1,0 +1,105 @@
+{
+  "scope": "Massachusetts",
+  "code": "ma",
+  "department": "DIVISION OF OCCUPATIONAL LICENSURE (REG)",
+  "fiscalYear": 2024,
+  "ledgerAmount": 28785854.03,
+  "sourceTotal": 31338641.49,
+  "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000",
+  "rowSchema": [
+    "subAgency",
+    "program",
+    "amount",
+    "sourceAmount",
+    "sourceRows"
+  ],
+  "rows": [
+    [
+      "DIVISION OF OCCUPATIONAL LICENSURE (REG)",
+      "DIVISION OF OCCUPATIONAL LICENSURE (REG) · (AA) REGULAR EMPLOYEE COMPENSATION",
+      25466810.82,
+      25466810.82,
+      602
+    ],
+    [
+      "DIVISION OF OCCUPATIONAL LICENSURE (REG)",
+      "DIVISION OF OCCUPATIONAL LICENSURE (REG) · (GG) ENERGY COSTS AND SPACE RENTAL",
+      2832810.53,
+      2832810.53,
+      72
+    ],
+    [
+      "DIVISION OF OCCUPATIONAL LICENSURE (REG)",
+      "DIVISION OF OCCUPATIONAL LICENSURE (REG) · (UU) IT NON-PAYROLL EXPENSES",
+      1532813.47,
+      1532813.47,
+      155
+    ],
+    [
+      "DIVISION OF OCCUPATIONAL LICENSURE (REG)",
+      "DIVISION OF OCCUPATIONAL LICENSURE (REG) · (BB) REGULAR EMPLOYEE RELATED EXPEN",
+      455700.08,
+      455700.08,
+      245
+    ],
+    [
+      "DIVISION OF OCCUPATIONAL LICENSURE (REG)",
+      "DIVISION OF OCCUPATIONAL LICENSURE (REG) · (EE) ADMINISTRATIVE EXPENSES",
+      360318.29,
+      360318.29,
+      362
+    ],
+    [
+      "DIVISION OF OCCUPATIONAL LICENSURE (REG)",
+      "DIVISION OF OCCUPATIONAL LICENSURE (REG) · (TT) LOANS AND SPECIAL PAYMENTS",
+      192635,
+      192635,
+      17
+    ],
+    [
+      "DIVISION OF OCCUPATIONAL LICENSURE (REG)",
+      "DIVISION OF OCCUPATIONAL LICENSURE (REG) · (LL) EQUIPMENT LEASE-MAINTAIN/REPAR",
+      159186.02,
+      159186.02,
+      102
+    ],
+    [
+      "DIVISION OF OCCUPATIONAL LICENSURE (REG)",
+      "DIVISION OF OCCUPATIONAL LICENSURE (REG) · (CC) SPECIAL EMPLOYEES",
+      147568.18,
+      147568.18,
+      57
+    ],
+    [
+      "DIVISION OF OCCUPATIONAL LICENSURE (REG)",
+      "DIVISION OF OCCUPATIONAL LICENSURE (REG) · (JJ) OPERATIONAL SERVICES",
+      138894.68,
+      138894.68,
+      316
+    ],
+    [
+      "DIVISION OF OCCUPATIONAL LICENSURE (REG)",
+      "DIVISION OF OCCUPATIONAL LICENSURE (REG) · (FF) FACILITY OPERATIONAL EXPENSES",
+      20661.07,
+      20661.07,
+      13
+    ],
+    [
+      "DIVISION OF OCCUPATIONAL LICENSURE (REG)",
+      "DIVISION OF OCCUPATIONAL LICENSURE (REG) · (RR) BENEFIT PROGRAMS",
+      18600,
+      18600,
+      15
+    ],
+    [
+      "DIVISION OF OCCUPATIONAL LICENSURE (REG)",
+      "DIVISION OF OCCUPATIONAL LICENSURE (REG) · (NN) INFRASTRUCTURE:",
+      12643.35,
+      12643.35,
+      40
+    ]
+  ],
+  "hierarchyNote": "The source does not identify a separate sub-agency column; direct-managed rows repeat the parent entity.",
+  "sourceBasis": "official source amount",
+  "note": "Amounts are shown on the official source basis; no comparator normalization was applied."
+}

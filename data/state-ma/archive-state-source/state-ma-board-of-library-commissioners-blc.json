@@ -1,0 +1,105 @@
+{
+  "scope": "Massachusetts",
+  "code": "ma",
+  "department": "BOARD OF LIBRARY COMMISSIONERS (BLC)",
+  "fiscalYear": 2024,
+  "ledgerAmount": 68751024.69,
+  "sourceTotal": 74848003.89,
+  "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000",
+  "rowSchema": [
+    "subAgency",
+    "program",
+    "amount",
+    "sourceAmount",
+    "sourceRows"
+  ],
+  "rows": [
+    [
+      "BOARD OF LIBRARY COMMISSIONERS (BLC)",
+      "BOARD OF LIBRARY COMMISSIONERS (BLC) · (PP) STATE AID/POL SUB",
+      65291571.01,
+      65291571.01,
+      878
+    ],
+    [
+      "BOARD OF LIBRARY COMMISSIONERS (BLC)",
+      "BOARD OF LIBRARY COMMISSIONERS (BLC) · (JJ) OPERATIONAL SERVICES",
+      3885341.28,
+      3885341.28,
+      43
+    ],
+    [
+      "BOARD OF LIBRARY COMMISSIONERS (BLC)",
+      "BOARD OF LIBRARY COMMISSIONERS (BLC) · (UU) IT NON-PAYROLL EXPENSES",
+      2692629.94,
+      2692629.94,
+      175
+    ],
+    [
+      "BOARD OF LIBRARY COMMISSIONERS (BLC)",
+      "BOARD OF LIBRARY COMMISSIONERS (BLC) · (AA) REGULAR EMPLOYEE COMPENSATION",
+      2260335.23,
+      2260335.23,
+      225
+    ],
+    [
+      "BOARD OF LIBRARY COMMISSIONERS (BLC)",
+      "BOARD OF LIBRARY COMMISSIONERS (BLC) · (GG) ENERGY COSTS AND SPACE RENTAL",
+      415299.98,
+      415299.98,
+      16
+    ],
+    [
+      "BOARD OF LIBRARY COMMISSIONERS (BLC)",
+      "BOARD OF LIBRARY COMMISSIONERS (BLC) · (EE) ADMINISTRATIVE EXPENSES",
+      149965.19,
+      149965.19,
+      172
+    ],
+    [
+      "BOARD OF LIBRARY COMMISSIONERS (BLC)",
+      "BOARD OF LIBRARY COMMISSIONERS (BLC) · (HH) CONSULTANT SVCS (TO DEPTS)",
+      95288.6,
+      95288.6,
+      29
+    ],
+    [
+      "BOARD OF LIBRARY COMMISSIONERS (BLC)",
+      "BOARD OF LIBRARY COMMISSIONERS (BLC) · (BB) REGULAR EMPLOYEE RELATED EXPEN",
+      38600.79,
+      38600.79,
+      84
+    ],
+    [
+      "BOARD OF LIBRARY COMMISSIONERS (BLC)",
+      "BOARD OF LIBRARY COMMISSIONERS (BLC) · (LL) EQUIPMENT LEASE-MAINTAIN/REPAR",
+      9652.61,
+      9652.61,
+      53
+    ],
+    [
+      "BOARD OF LIBRARY COMMISSIONERS (BLC)",
+      "BOARD OF LIBRARY COMMISSIONERS (BLC) · (KK) EQUIPMENT PURCHASE",
+      9265.88,
+      9265.88,
+      5
+    ],
+    [
+      "BOARD OF LIBRARY COMMISSIONERS (BLC)",
+      "BOARD OF LIBRARY COMMISSIONERS (BLC) · (FF) FACILITY OPERATIONAL EXPENSES",
+      53.38,
+      53.38,
+      1
+    ],
+    [
+      "BOARD OF LIBRARY COMMISSIONERS (BLC)",
+      "BOARD OF LIBRARY COMMISSIONERS (BLC) · (99) PAYROLL REJECTS",
+      0,
+      0,
+      15
+    ]
+  ],
+  "hierarchyNote": "The source does not identify a separate sub-agency column; direct-managed rows repeat the parent entity.",
+  "sourceBasis": "official source amount",
+  "note": "Amounts are shown on the official source basis; no comparator normalization was applied."
+}

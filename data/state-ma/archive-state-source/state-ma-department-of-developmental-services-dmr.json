@@ -1,0 +1,133 @@
+{
+  "scope": "Massachusetts",
+  "code": "ma",
+  "department": "DEPARTMENT OF DEVELOPMENTAL SERVICES (DMR)",
+  "fiscalYear": 2024,
+  "ledgerAmount": 2644500049.2,
+  "sourceTotal": 2879019634.56,
+  "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000",
+  "rowSchema": [
+    "subAgency",
+    "program",
+    "amount",
+    "sourceAmount",
+    "sourceRows"
+  ],
+  "rows": [
+    [
+      "DEPARTMENT OF DEVELOPMENTAL SERVICES (DMR)",
+      "DEPARTMENT OF DEVELOPMENTAL SERVICES (DMR) · (MM) PURCHASED CLIENT/PROGRAM SVCS",
+      2373467559.45,
+      2373467559.45,
+      75001
+    ],
+    [
+      "DEPARTMENT OF DEVELOPMENTAL SERVICES (DMR)",
+      "DEPARTMENT OF DEVELOPMENTAL SERVICES (DMR) · (AA) REGULAR EMPLOYEE COMPENSATION",
+      425664512.22,
+      425664512.22,
+      48440
+    ],
+    [
+      "DEPARTMENT OF DEVELOPMENTAL SERVICES (DMR)",
+      "DEPARTMENT OF DEVELOPMENTAL SERVICES (DMR) · (GG) ENERGY COSTS AND SPACE RENTAL",
+      23976343.44,
+      23976343.44,
+      9613
+    ],
+    [
+      "DEPARTMENT OF DEVELOPMENTAL SERVICES (DMR)",
+      "DEPARTMENT OF DEVELOPMENTAL SERVICES (DMR) · (NN) INFRASTRUCTURE:",
+      15914599.43,
+      15914599.43,
+      9598
+    ],
+    [
+      "DEPARTMENT OF DEVELOPMENTAL SERVICES (DMR)",
+      "DEPARTMENT OF DEVELOPMENTAL SERVICES (DMR) · (UU) IT NON-PAYROLL EXPENSES",
+      10595120.44,
+      10595120.44,
+      1080
+    ],
+    [
+      "DEPARTMENT OF DEVELOPMENTAL SERVICES (DMR)",
+      "DEPARTMENT OF DEVELOPMENTAL SERVICES (DMR) · (JJ) OPERATIONAL SERVICES",
+      8540595.23,
+      8540595.23,
+      1400
+    ],
+    [
+      "DEPARTMENT OF DEVELOPMENTAL SERVICES (DMR)",
+      "DEPARTMENT OF DEVELOPMENTAL SERVICES (DMR) · (FF) FACILITY OPERATIONAL EXPENSES",
+      7601745.6,
+      7601745.6,
+      24855
+    ],
+    [
+      "DEPARTMENT OF DEVELOPMENTAL SERVICES (DMR)",
+      "DEPARTMENT OF DEVELOPMENTAL SERVICES (DMR) · (HH) CONSULTANT SVCS (TO DEPTS)",
+      4044620.05,
+      4044620.05,
+      133
+    ],
+    [
+      "DEPARTMENT OF DEVELOPMENTAL SERVICES (DMR)",
+      "DEPARTMENT OF DEVELOPMENTAL SERVICES (DMR) · (KK) EQUIPMENT PURCHASE",
+      2104843.87,
+      2104843.87,
+      1175
+    ],
+    [
+      "DEPARTMENT OF DEVELOPMENTAL SERVICES (DMR)",
+      "DEPARTMENT OF DEVELOPMENTAL SERVICES (DMR) · (BB) REGULAR EMPLOYEE RELATED EXPEN",
+      1902881.3,
+      1902881.3,
+      4587
+    ],
+    [
+      "DEPARTMENT OF DEVELOPMENTAL SERVICES (DMR)",
+      "DEPARTMENT OF DEVELOPMENTAL SERVICES (DMR) · (EE) ADMINISTRATIVE EXPENSES",
+      1888399.73,
+      1888399.73,
+      5262
+    ],
+    [
+      "DEPARTMENT OF DEVELOPMENTAL SERVICES (DMR)",
+      "DEPARTMENT OF DEVELOPMENTAL SERVICES (DMR) · (LL) EQUIPMENT LEASE-MAINTAIN/REPAR",
+      1612734.88,
+      1612734.88,
+      1472
+    ],
+    [
+      "DEPARTMENT OF DEVELOPMENTAL SERVICES (DMR)",
+      "DEPARTMENT OF DEVELOPMENTAL SERVICES (DMR) · (CC) SPECIAL EMPLOYEES",
+      823969.85,
+      823969.85,
+      468
+    ],
+    [
+      "DEPARTMENT OF DEVELOPMENTAL SERVICES (DMR)",
+      "DEPARTMENT OF DEVELOPMENTAL SERVICES (DMR) · (PP) STATE AID/POL SUB",
+      669583.52,
+      669583.52,
+      18
+    ],
+    [
+      "DEPARTMENT OF DEVELOPMENTAL SERVICES (DMR)",
+      "DEPARTMENT OF DEVELOPMENTAL SERVICES (DMR) · (DD) PENSION & INSURANCE RELATED EX",
+      212125.55,
+      212125.55,
+      148
+    ],
+    [
+      "DEPARTMENT OF DEVELOPMENTAL SERVICES (DMR)",
+      "DEPARTMENT OF DEVELOPMENTAL SERVICES (DMR) · (99) PAYROLL REJECTS",
+      0,
+      0,
+      46
+    ]
+  ],
+  "hierarchyNote": "The source does not identify a separate sub-agency column; direct-managed rows repeat the parent entity.",
+  "sourceBasis": "official source amount",
+  "note": "Amounts are shown on the official source basis; no comparator normalization was applied."
+}

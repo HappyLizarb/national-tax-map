@@ -1,0 +1,91 @@
+{
+  "scope": "Massachusetts",
+  "code": "ma",
+  "department": "OFFICE OF THE CHILD ADVOCATE (OCA)",
+  "fiscalYear": 2024,
+  "ledgerAmount": 4900126.76,
+  "sourceTotal": 5334679.86,
+  "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000",
+  "rowSchema": [
+    "subAgency",
+    "program",
+    "amount",
+    "sourceAmount",
+    "sourceRows"
+  ],
+  "rows": [
+    [
+      "OFFICE OF THE CHILD ADVOCATE (OCA)",
+      "OFFICE OF THE CHILD ADVOCATE (OCA) · (AA) REGULAR EMPLOYEE COMPENSATION",
+      2238894.22,
+      2238894.22,
+      53
+    ],
+    [
+      "OFFICE OF THE CHILD ADVOCATE (OCA)",
+      "OFFICE OF THE CHILD ADVOCATE (OCA) · (HH) CONSULTANT SVCS (TO DEPTS)",
+      1596069.9,
+      1596069.9,
+      60
+    ],
+    [
+      "OFFICE OF THE CHILD ADVOCATE (OCA)",
+      "OFFICE OF THE CHILD ADVOCATE (OCA) · (MM) PURCHASED CLIENT/PROGRAM SVCS",
+      1121460.91,
+      1121460.91,
+      6
+    ],
+    [
+      "OFFICE OF THE CHILD ADVOCATE (OCA)",
+      "OFFICE OF THE CHILD ADVOCATE (OCA) · (UU) IT NON-PAYROLL EXPENSES",
+      211155.5,
+      211155.5,
+      47
+    ],
+    [
+      "OFFICE OF THE CHILD ADVOCATE (OCA)",
+      "OFFICE OF THE CHILD ADVOCATE (OCA) · (EE) ADMINISTRATIVE EXPENSES",
+      70587.6,
+      70587.6,
+      78
+    ],
+    [
+      "OFFICE OF THE CHILD ADVOCATE (OCA)",
+      "OFFICE OF THE CHILD ADVOCATE (OCA) · (KK) EQUIPMENT PURCHASE",
+      56524.59,
+      56524.59,
+      2
+    ],
+    [
+      "OFFICE OF THE CHILD ADVOCATE (OCA)",
+      "OFFICE OF THE CHILD ADVOCATE (OCA) · (FF) FACILITY OPERATIONAL EXPENSES",
+      32344.28,
+      32344.28,
+      19
+    ],
+    [
+      "OFFICE OF THE CHILD ADVOCATE (OCA)",
+      "OFFICE OF THE CHILD ADVOCATE (OCA) · (BB) REGULAR EMPLOYEE RELATED EXPEN",
+      4327.29,
+      4327.29,
+      15
+    ],
+    [
+      "OFFICE OF THE CHILD ADVOCATE (OCA)",
+      "OFFICE OF THE CHILD ADVOCATE (OCA) · (LL) EQUIPMENT LEASE-MAINTAIN/REPAR",
+      2563.05,
+      2563.05,
+      23
+    ],
+    [
+      "OFFICE OF THE CHILD ADVOCATE (OCA)",
+      "OFFICE OF THE CHILD ADVOCATE (OCA) · (JJ) OPERATIONAL SERVICES",
+      752.52,
+      752.52,
+      8
+    ]
+  ],
+  "hierarchyNote": "The source does not identify a separate sub-agency column; direct-managed rows repeat the parent entity.",
+  "sourceBasis": "official source amount",
+  "note": "Amounts are shown on the official source basis; no comparator normalization was applied."
+}

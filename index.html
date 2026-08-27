@@ -1,0 +1,262 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Source-backed FY2024 federal outlays and state-government expenditures across the United States.">
+  <title>Public Ledger — National Fiscal Map</title>
+  <script>
+    try {
+      const savedTheme = localStorage.getItem("public-ledger-theme");
+      const systemTheme = matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+      document.documentElement.dataset.theme = ["light", "dark"].includes(savedTheme) ? savedTheme : systemTheme;
+    } catch {
+      document.documentElement.dataset.theme = matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+    }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,500;6..72,600;6..72,700&family=Public+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css?v=16">
+  <link rel="stylesheet" href="details.css?v=8">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#" aria-label="Public Ledger home">
+      <span class="brand-mark" aria-hidden="true">PL</span>
+      <span>Public Ledger</span>
+    </a>
+    <div class="topbar-actions">
+      <div class="topbar-meta">
+        <span>National fiscal map</span>
+        <span class="prototype-label">FY 2024 source data</span>
+      </div>
+      <button class="theme-toggle" id="themeToggle" type="button" aria-label="Switch theme" aria-pressed="false">
+        <svg class="moon-icon" aria-hidden="true" viewBox="0 0 24 24">
+          <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"></path>
+        </svg>
+        <svg class="sun-icon" aria-hidden="true" viewBox="0 0 24 24">
+          <circle cx="12" cy="12" r="4"></circle>
+          <path d="M12 2v2M12 20v2M4.93 4.93l1.42 1.42M17.65 17.65l1.42 1.42M2 12h2M20 12h2M4.93 19.07l1.42-1.42M17.65 6.35l1.42-1.42"></path>
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <div class="dashboard">
+    <section class="map-pane" aria-labelledby="map-title">
+      <div class="map-intro">
+        <div>
+          <p class="eyebrow">United States · Fiscal year 2024</p>
+          <h1 id="map-title">Follow the public dollar.</h1>
+        <p class="lede">Trace reported federal outlays and state-government expenditures to the programs and people receiving them.</p>
+        </div>
+        <button class="national-button" id="nationalButton" type="button">National view</button>
+      </div>
+
+      <div class="map-stage">
+        <svg id="usMap" role="img" aria-labelledby="map-title map-description" viewBox="0 0 900 600">
+          <desc id="map-description">Select a state to compare audited GAAP fiscal indicators; select it again to return to the national view.</desc>
+          <text class="map-loading" x="450" y="260" text-anchor="middle">Loading map…</text>
+        </svg>
+        <div class="map-tooltip" id="mapTooltip" role="tooltip" hidden></div>
+        <div class="map-legend" aria-label="Map color scale">
+          <div class="legend-labels"><span id="legendLow">Lower</span><span id="legendHigh">Higher</span></div>
+          <div class="legend-scale diverging" id="legendScale"></div>
+          <p id="legendCaption">Net position (GAAP) · FY 2024 source totals</p>
+        </div>
+      </div>
+
+      <div class="map-footnotes">
+        <p><span class="dot reported"></span> Reported public-finance data</p>
+        <p><span class="dot estimated"></span> State map uses government totals</p>
+        <p class="source-note">Federal outlays and state expenditures are separate ledgers; transfers can appear in both.</p>
+      </div>
+    </section>
+
+    <aside class="detail-panel" aria-live="polite" aria-labelledby="scopeTitle">
+      <div class="panel-heading">
+        <div>
+          <p class="eyebrow" id="scopeContext">Federal outlays · FY 2024</p>
+          <h2><a class="scope-title-link" id="scopeLink" href="https://www.bea.gov/data/government/receipts-and-expenditures" target="_blank" rel="noopener noreferrer"><span id="scopeTitle">United States</span></a></h2>
+          <div class="source-list" id="sourceList" aria-label="Official sources"></div>
+        </div>
+          <span class="data-status" id="budgetStatus">Source-backed</span>
+      </div>
+
+      <section class="kpi-grid" aria-label="Fiscal totals">
+        <article>
+          <p id="revenueLabel">Receipts / revenue</p>
+          <strong><span id="revenueValue">$8.42T</span><sup class="kpi-disclosure-mark" data-kpi-disclosure="revenue" aria-hidden="true" hidden>*</sup></strong>
+        </article>
+        <article>
+          <p id="spendingLabel">Spending</p>
+          <strong><span id="spendingValue">$10.37T</span><sup class="kpi-disclosure-mark" data-kpi-disclosure="spending" aria-hidden="true" hidden>*</sup></strong>
+          <small class="outside-budget-disclaimer" id="outsideBudgetDisclosure" hidden>
+            <b>Outside official legislative budget</b>
+            <span id="outsideBudgetText"></span>
+          </small>
+        </article>
+        <article class="balance-kpi">
+          <p id="balanceLabel">Balance</p>
+          <strong><span id="balanceValue">−$1.95T</span><sup class="kpi-disclosure-mark" data-kpi-disclosure="balance" aria-hidden="true" hidden>*</sup></strong>
+        </article>
+        <small class="budget-disclaimer" id="budgetDisclosure" hidden></small>
+      </section>
+
+      <section class="panel-section" aria-labelledby="gapTitle">
+        <div class="section-heading">
+          <h3 id="gapTitle"><a class="section-source" data-source-link href="https://www.bea.gov/data/government/receipts-and-expenditures" target="_blank" rel="noopener noreferrer">Revenue–spending gap</a></h3>
+          <span id="gapPercent">18.8% deficit</span>
+        </div>
+        <div class="comparison-bars">
+          <div class="bar-row">
+            <span id="revenueBarLabel">Receipts / revenue</span>
+            <div class="bar-track"><i class="bar revenue-bar" id="revenueBar"></i></div>
+            <b id="revenueBarValue">$8.42T</b>
+          </div>
+          <div class="bar-row">
+            <span id="spendingBarLabel">Spending</span>
+            <div class="bar-track"><i class="bar spending-bar" id="spendingBar"></i></div>
+            <b id="spendingBarValue">$10.37T</b>
+          </div>
+        </div>
+      </section>
+
+      <section class="panel-section income-tier-panel" aria-labelledby="incomeTaxTiersTitle">
+        <div class="section-heading">
+          <h3 id="incomeTaxTiersTitle">Individual income tax tiers</h3>
+          <span id="incomeTaxTiersAsOf">Latest published</span>
+        </div>
+        <div class="tax-tiers">
+          <table aria-label="Single-filer income tax tiers">
+            <thead><tr><th scope="col">Taxable-income tier</th><th scope="col">Rate</th></tr></thead>
+            <tbody id="incomeTaxTiersRows"></tbody>
+          </table>
+          <a id="incomeTaxTiersSource" href="#" target="_blank" rel="noopener noreferrer">Open official source ↗</a>
+        </div>
+      </section>
+    </aside>
+    </div>
+
+    <section class="fiscal-detail" aria-labelledby="fiscalDetailTitle">
+      <header class="fiscal-detail-heading">
+        <p class="eyebrow">Selected geography · source detail</p>
+        <h2 id="fiscalDetailTitle">Receipts, spending &amp; public programs</h2>
+        <p>Reported totals, spending categories, accounting standards, and the source records behind the selected geography.</p>
+      </header>
+
+      <section class="household-tax-detail" id="taxEstimateSection" aria-labelledby="householdTaxTitle">
+        <div class="section-heading">
+          <h3 id="householdTaxTitle">Income and property tax estimates</h3>
+          <span>Illustrative · not tax advice</span>
+        </div>
+        <div class="tax-rate-grid" id="householdTaxRows"></div>
+      </section>
+
+      <section class="tax-rate-detail" aria-labelledby="taxRatesTitle">
+        <div class="section-heading">
+          <h3 id="taxRatesTitle">Key tax rates</h3>
+          <span id="taxRateAsOf">Latest published</span>
+        </div>
+        <p class="tax-rate-note" id="taxRateNote"></p>
+        <div class="tax-rate-grid" id="taxRateRows"></div>
+      </section>
+
+      <section class="panel-section accounting-comparison" id="accountingComparison" aria-labelledby="accountingComparisonTitle" aria-live="polite" hidden>
+        <div class="section-heading">
+          <h3 id="accountingComparisonTitle">Two reported totals, different measurement boundaries</h3>
+          <span id="accountingComparisonAsOf">FY 2024 · not additive</span>
+        </div>
+        <div class="accounting-total-grid">
+          <article>
+            <span id="censusReportedLabel">Census statistical total</span>
+            <strong id="censusReportedTotal">—</strong>
+            <small id="censusReportedBasis">Standardized functions and Census-defined state-government coverage</small>
+          </article>
+          <article>
+            <span id="stateReportedLabel">Official state-source total</span>
+            <strong id="stateReportedTotal">—</strong>
+            <small id="stateReportedBasis">Source-specific accounting basis</small>
+          </article>
+          <article class="accounting-difference">
+            <span id="accountingThirdLabel">Census minus state source</span>
+            <strong id="accountingDifference">—</strong>
+            <small id="accountingThirdBasis">Diagnostic difference—not missing or excess spending</small>
+          </article>
+        </div>
+        <p class="accounting-method-note">Census is a statistical presentation, not a single GAAP accrual ledger: it standardizes functions and entity coverage while generally retaining the basis used in the underlying government records.</p>
+        <p id="accountingStatement"></p>
+        <div class="accounting-evidence" id="accountingEvidence" aria-label="Accounting comparison evidence"></div>
+      </section>
+
+      <div class="fiscal-detail-grid">
+
+      <section class="panel-section fiscal-card fiscal-card-wide" aria-labelledby="allocationTitle">
+        <div class="section-heading">
+          <h3 id="allocationTitle"><a class="section-source" data-source-link href="https://www.bea.gov/data/government/receipts-and-expenditures" target="_blank" rel="noopener noreferrer">Where spending goes</a></h3>
+          <div class="allocation-heading-actions">
+            <span id="allocationTotal">$10.37T total</span>
+            <div class="allocation-source-switch" aria-label="Spending view">
+              <button type="button" data-allocation-source="financial" aria-pressed="false" hidden disabled>Audited state GAAP</button>
+              <button type="button" data-allocation-source="itemized" aria-pressed="true">Treasury agencies &amp; programs</button>
+              <button type="button" data-allocation-source="function" aria-pressed="false" hidden disabled>Standardized Census comparison</button>
+              <button type="button" data-allocation-source="archive" aria-pressed="false" hidden disabled>USAspending gross research</button>
+            </div>
+          </div>
+        </div>
+        <div class="allocation-layout">
+          <div class="donut" id="allocationDonut" role="img" aria-label="Spending allocation chart">
+            <div><strong id="donutValue">65%</strong><span>top 3 functions</span></div>
+          </div>
+          <div class="category-list" id="categoryList"></div>
+        </div>
+        <div class="breakdown-details" id="breakdownDetails" aria-live="polite"></div>
+      </section>
+
+      <section class="panel-section source-explorer fiscal-card fiscal-card-wide" aria-labelledby="sourceExplorerTitle">
+        <div class="section-heading">
+          <h3 id="sourceExplorerTitle">Agency source explorer</h3>
+          <span>Nested view</span>
+        </div>
+        <p class="source-explorer-note" id="sourceExplorerNote">Federal agency outlays and obligations are nested evidence and are not added to the pie.</p>
+        <div id="agencyRows" class="agency-rows"></div>
+      </section>
+
+      <section class="secondary-metrics fiscal-card-wide" aria-label="Additional indicators">
+        <article><span>Salaries & wages</span><strong id="interestShare">Not reported</strong></article>
+        <article><span>Intergovernmental transfers</span><strong id="transferShare">Not separated</strong></article>
+        <article><span>Pie reconciliation</span><strong id="coverageShare">100%</strong></article>
+      </section>
+      </div>
+
+      <footer class="panel-footer">
+        <p id="dataBasis">Source basis appears here.</p>
+      </footer>
+    </section>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js"></script>
+  <script src="vendor/topojson-client-3.1.0.min.js"></script>
+  <script src="data/spending.js"></script>
+  <script src="data/state-sources.js"></script>
+  <script src="data/state-ledger-totals.js"></script>
+  <script src="data/state-source-alternates.js"></script>
+  <script src="data/state-accounting-bases.js"></script>
+  <script src="data/state-budget-actuals.js?v=2"></script>
+  <script src="data/state-financial-results.js?v=2"></script>
+  <script src="data/federal-sources.js"></script>
+  <script src="data/tax-rates.js?v=2"></script>
+  <script src="data/income-tiers.js"></script>
+  <script src="data/household-tax-estimates.js?v=2"></script>
+  <script src="data/department-index.js"></script>
+  <script src="department-loader.js?v=5"></script>
+  <script src="model.js?v=7"></script>
+  <script src="receipt-hierarchy.js?v=1"></script>
+  <script src="tax-estimates.js?v=3"></script>
+  <script src="kpi-disclosure.js?v=1"></script>
+  <script src="fiscal-panel.js?v=14"></script>
+  <script src="app.js?v=18"></script>
+</body>
+</html>

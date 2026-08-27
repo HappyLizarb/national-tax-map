@@ -1,0 +1,126 @@
+{
+  "scope": "Massachusetts",
+  "code": "ma",
+  "department": "MASSACHUSETTS MARITIME ACADEMY (MMA)",
+  "fiscalYear": 2024,
+  "ledgerAmount": 71038620.63,
+  "sourceTotal": 77338468.44,
+  "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000",
+  "rowSchema": [
+    "subAgency",
+    "program",
+    "amount",
+    "sourceAmount",
+    "sourceRows"
+  ],
+  "rows": [
+    [
+      "MASSACHUSETTS MARITIME ACADEMY (MMA)",
+      "MASSACHUSETTS MARITIME ACADEMY (MMA) · (AA) REGULAR EMPLOYEE COMPENSATION",
+      24760344.62,
+      24760344.62,
+      503
+    ],
+    [
+      "MASSACHUSETTS MARITIME ACADEMY (MMA)",
+      "MASSACHUSETTS MARITIME ACADEMY (MMA) · (RR) BENEFIT PROGRAMS",
+      8716682.5,
+      8716682.5,
+      11
+    ],
+    [
+      "MASSACHUSETTS MARITIME ACADEMY (MMA)",
+      "MASSACHUSETTS MARITIME ACADEMY (MMA) · (JJ) OPERATIONAL SERVICES",
+      8409450.41,
+      8409450.41,
+      7
+    ],
+    [
+      "MASSACHUSETTS MARITIME ACADEMY (MMA)",
+      "MASSACHUSETTS MARITIME ACADEMY (MMA) · (TT) LOANS AND SPECIAL PAYMENTS",
+      8144196.01,
+      8144196.01,
+      8
+    ],
+    [
+      "MASSACHUSETTS MARITIME ACADEMY (MMA)",
+      "MASSACHUSETTS MARITIME ACADEMY (MMA) · (CC) SPECIAL EMPLOYEES",
+      6648663.9,
+      6648663.9,
+      1712
+    ],
+    [
+      "MASSACHUSETTS MARITIME ACADEMY (MMA)",
+      "MASSACHUSETTS MARITIME ACADEMY (MMA) · (NN) INFRASTRUCTURE:",
+      6009805.34,
+      6009805.34,
+      29
+    ],
+    [
+      "MASSACHUSETTS MARITIME ACADEMY (MMA)",
+      "MASSACHUSETTS MARITIME ACADEMY (MMA) · (UU) IT NON-PAYROLL EXPENSES",
+      3838751.94,
+      3838751.94,
+      7
+    ],
+    [
+      "MASSACHUSETTS MARITIME ACADEMY (MMA)",
+      "MASSACHUSETTS MARITIME ACADEMY (MMA) · (GG) ENERGY COSTS AND SPACE RENTAL",
+      2906589.93,
+      2906589.93,
+      8
+    ],
+    [
+      "MASSACHUSETTS MARITIME ACADEMY (MMA)",
+      "MASSACHUSETTS MARITIME ACADEMY (MMA) · (EE) ADMINISTRATIVE EXPENSES",
+      2241664.28,
+      2241664.28,
+      8
+    ],
+    [
+      "MASSACHUSETTS MARITIME ACADEMY (MMA)",
+      "MASSACHUSETTS MARITIME ACADEMY (MMA) · (FF) FACILITY OPERATIONAL EXPENSES",
+      1656457.38,
+      1656457.38,
+      7
+    ],
+    [
+      "MASSACHUSETTS MARITIME ACADEMY (MMA)",
+      "MASSACHUSETTS MARITIME ACADEMY (MMA) · (BB) REGULAR EMPLOYEE RELATED EXPEN",
+      1397201.09,
+      1397201.09,
+      87
+    ],
+    [
+      "MASSACHUSETTS MARITIME ACADEMY (MMA)",
+      "MASSACHUSETTS MARITIME ACADEMY (MMA) · (LL) EQUIPMENT LEASE-MAINTAIN/REPAR",
+      838632.45,
+      838632.45,
+      20
+    ],
+    [
+      "MASSACHUSETTS MARITIME ACADEMY (MMA)",
+      "MASSACHUSETTS MARITIME ACADEMY (MMA) · (DD) PENSION & INSURANCE RELATED EX",
+      705440.05,
+      705440.05,
+      6
+    ],
+    [
+      "MASSACHUSETTS MARITIME ACADEMY (MMA)",
+      "MASSACHUSETTS MARITIME ACADEMY (MMA) · (KK) EQUIPMENT PURCHASE",
+      648766.4,
+      648766.4,
+      7
+    ],
+    [
+      "MASSACHUSETTS MARITIME ACADEMY (MMA)",
+      "MASSACHUSETTS MARITIME ACADEMY (MMA) · (HH) CONSULTANT SVCS (TO DEPTS)",
+      415822.14,
+      415822.14,
+      7
+    ]
+  ],
+  "hierarchyNote": "The source does not identify a separate sub-agency column; direct-managed rows repeat the parent entity.",
+  "sourceBasis": "official source amount",
+  "note": "Amounts are shown on the official source basis; no comparator normalization was applied."
+}

@@ -1,0 +1,140 @@
+{
+  "scope": "Massachusetts",
+  "code": "ma",
+  "department": "ROXBURY COMMUNITY COLLEGE (RCC)",
+  "fiscalYear": 2024,
+  "ledgerAmount": 34044626.56,
+  "sourceTotal": 37063772.54,
+  "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000",
+  "rowSchema": [
+    "subAgency",
+    "program",
+    "amount",
+    "sourceAmount",
+    "sourceRows"
+  ],
+  "rows": [
+    [
+      "ROXBURY COMMUNITY COLLEGE (RCC)",
+      "ROXBURY COMMUNITY COLLEGE (RCC) · (AA) REGULAR EMPLOYEE COMPENSATION",
+      15607862.09,
+      15607862.09,
+      515
+    ],
+    [
+      "ROXBURY COMMUNITY COLLEGE (RCC)",
+      "ROXBURY COMMUNITY COLLEGE (RCC) · (CC) SPECIAL EMPLOYEES",
+      4868768.82,
+      4868768.82,
+      583
+    ],
+    [
+      "ROXBURY COMMUNITY COLLEGE (RCC)",
+      "ROXBURY COMMUNITY COLLEGE (RCC) · (UU) IT NON-PAYROLL EXPENSES",
+      4189605.96,
+      4189605.96,
+      46
+    ],
+    [
+      "ROXBURY COMMUNITY COLLEGE (RCC)",
+      "ROXBURY COMMUNITY COLLEGE (RCC) · (JJ) OPERATIONAL SERVICES",
+      2923362.95,
+      2923362.95,
+      129
+    ],
+    [
+      "ROXBURY COMMUNITY COLLEGE (RCC)",
+      "ROXBURY COMMUNITY COLLEGE (RCC) · (EE) ADMINISTRATIVE EXPENSES",
+      2318780.47,
+      2318780.47,
+      99
+    ],
+    [
+      "ROXBURY COMMUNITY COLLEGE (RCC)",
+      "ROXBURY COMMUNITY COLLEGE (RCC) · (RR) BENEFIT PROGRAMS",
+      2126930.38,
+      2126930.38,
+      10
+    ],
+    [
+      "ROXBURY COMMUNITY COLLEGE (RCC)",
+      "ROXBURY COMMUNITY COLLEGE (RCC) · (NN) INFRASTRUCTURE:",
+      1707697.7,
+      1707697.7,
+      122
+    ],
+    [
+      "ROXBURY COMMUNITY COLLEGE (RCC)",
+      "ROXBURY COMMUNITY COLLEGE (RCC) · (GG) ENERGY COSTS AND SPACE RENTAL",
+      977837.65,
+      977837.65,
+      98
+    ],
+    [
+      "ROXBURY COMMUNITY COLLEGE (RCC)",
+      "ROXBURY COMMUNITY COLLEGE (RCC) · (FF) FACILITY OPERATIONAL EXPENSES",
+      851750.47,
+      851750.47,
+      88
+    ],
+    [
+      "ROXBURY COMMUNITY COLLEGE (RCC)",
+      "ROXBURY COMMUNITY COLLEGE (RCC) · (HH) CONSULTANT SVCS (TO DEPTS)",
+      847857.81,
+      847857.81,
+      57
+    ],
+    [
+      "ROXBURY COMMUNITY COLLEGE (RCC)",
+      "ROXBURY COMMUNITY COLLEGE (RCC) · (LL) EQUIPMENT LEASE-MAINTAIN/REPAR",
+      290137.97,
+      290137.97,
+      61
+    ],
+    [
+      "ROXBURY COMMUNITY COLLEGE (RCC)",
+      "ROXBURY COMMUNITY COLLEGE (RCC) · (KK) EQUIPMENT PURCHASE",
+      196952.68,
+      196952.68,
+      32
+    ],
+    [
+      "ROXBURY COMMUNITY COLLEGE (RCC)",
+      "ROXBURY COMMUNITY COLLEGE (RCC) · (BB) REGULAR EMPLOYEE RELATED EXPEN",
+      102733.03,
+      102733.03,
+      79
+    ],
+    [
+      "ROXBURY COMMUNITY COLLEGE (RCC)",
+      "ROXBURY COMMUNITY COLLEGE (RCC) · (PP) STATE AID/POL SUB",
+      34632.05,
+      34632.05,
+      1
+    ],
+    [
+      "ROXBURY COMMUNITY COLLEGE (RCC)",
+      "ROXBURY COMMUNITY COLLEGE (RCC) · (TT) LOANS AND SPECIAL PAYMENTS",
+      18560.14,
+      18560.14,
+      4
+    ],
+    [
+      "ROXBURY COMMUNITY COLLEGE (RCC)",
+      "ROXBURY COMMUNITY COLLEGE (RCC) · (MM) PURCHASED CLIENT/PROGRAM SVCS",
+      302.37,
+      302.37,
+      2
+    ],
+    [
+      "ROXBURY COMMUNITY COLLEGE (RCC)",
+      "ROXBURY COMMUNITY COLLEGE (RCC) · (99) PAYROLL REJECTS",
+      0,
+      0,
+      116
+    ]
+  ],
+  "hierarchyNote": "The source does not identify a separate sub-agency column; direct-managed rows repeat the parent entity.",
+  "sourceBasis": "official source amount",
+  "note": "Amounts are shown on the official source basis; no comparator normalization was applied."
+}

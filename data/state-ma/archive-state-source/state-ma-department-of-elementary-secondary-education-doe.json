@@ -1,0 +1,133 @@
+{
+  "scope": "Massachusetts",
+  "code": "ma",
+  "department": "DEPARTMENT OF ELEMENTARY & SECONDARY EDUCATION (DOE)",
+  "fiscalYear": 2024,
+  "ledgerAmount": 1984812210.03,
+  "sourceTotal": 2160829350.45,
+  "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000",
+  "rowSchema": [
+    "subAgency",
+    "program",
+    "amount",
+    "sourceAmount",
+    "sourceRows"
+  ],
+  "rows": [
+    [
+      "DEPARTMENT OF ELEMENTARY & SECONDARY EDUCATION (DOE)",
+      "DEPARTMENT OF ELEMENTARY & SECONDARY EDUCATION (DOE) · (PP) STATE AID/POL SUB",
+      1943950407.39,
+      1943950407.39,
+      23446
+    ],
+    [
+      "DEPARTMENT OF ELEMENTARY & SECONDARY EDUCATION (DOE)",
+      "DEPARTMENT OF ELEMENTARY & SECONDARY EDUCATION (DOE) · (HH) CONSULTANT SVCS (TO DEPTS)",
+      142395077.49,
+      142395077.49,
+      1662
+    ],
+    [
+      "DEPARTMENT OF ELEMENTARY & SECONDARY EDUCATION (DOE)",
+      "DEPARTMENT OF ELEMENTARY & SECONDARY EDUCATION (DOE) · (AA) REGULAR EMPLOYEE COMPENSATION",
+      53681582.56,
+      53681582.56,
+      2527
+    ],
+    [
+      "DEPARTMENT OF ELEMENTARY & SECONDARY EDUCATION (DOE)",
+      "DEPARTMENT OF ELEMENTARY & SECONDARY EDUCATION (DOE) · (MM) PURCHASED CLIENT/PROGRAM SVCS",
+      7469872.23,
+      7469872.23,
+      29
+    ],
+    [
+      "DEPARTMENT OF ELEMENTARY & SECONDARY EDUCATION (DOE)",
+      "DEPARTMENT OF ELEMENTARY & SECONDARY EDUCATION (DOE) · (GG) ENERGY COSTS AND SPACE RENTAL",
+      3696194.64,
+      3696194.64,
+      22
+    ],
+    [
+      "DEPARTMENT OF ELEMENTARY & SECONDARY EDUCATION (DOE)",
+      "DEPARTMENT OF ELEMENTARY & SECONDARY EDUCATION (DOE) · (CC) SPECIAL EMPLOYEES",
+      2348065.89,
+      2348065.89,
+      464
+    ],
+    [
+      "DEPARTMENT OF ELEMENTARY & SECONDARY EDUCATION (DOE)",
+      "DEPARTMENT OF ELEMENTARY & SECONDARY EDUCATION (DOE) · (KK) EQUIPMENT PURCHASE",
+      1892256.24,
+      1892256.24,
+      12
+    ],
+    [
+      "DEPARTMENT OF ELEMENTARY & SECONDARY EDUCATION (DOE)",
+      "DEPARTMENT OF ELEMENTARY & SECONDARY EDUCATION (DOE) · (JJ) OPERATIONAL SERVICES",
+      1747294.05,
+      1747294.05,
+      548
+    ],
+    [
+      "DEPARTMENT OF ELEMENTARY & SECONDARY EDUCATION (DOE)",
+      "DEPARTMENT OF ELEMENTARY & SECONDARY EDUCATION (DOE) · (UU) IT NON-PAYROLL EXPENSES",
+      1581487.34,
+      1581487.34,
+      66
+    ],
+    [
+      "DEPARTMENT OF ELEMENTARY & SECONDARY EDUCATION (DOE)",
+      "DEPARTMENT OF ELEMENTARY & SECONDARY EDUCATION (DOE) · (EE) ADMINISTRATIVE EXPENSES",
+      1381138.54,
+      1381138.54,
+      566
+    ],
+    [
+      "DEPARTMENT OF ELEMENTARY & SECONDARY EDUCATION (DOE)",
+      "DEPARTMENT OF ELEMENTARY & SECONDARY EDUCATION (DOE) · (BB) REGULAR EMPLOYEE RELATED EXPEN",
+      397832.05,
+      397832.05,
+      471
+    ],
+    [
+      "DEPARTMENT OF ELEMENTARY & SECONDARY EDUCATION (DOE)",
+      "DEPARTMENT OF ELEMENTARY & SECONDARY EDUCATION (DOE) · (LL) EQUIPMENT LEASE-MAINTAIN/REPAR",
+      269707.47,
+      269707.47,
+      88
+    ],
+    [
+      "DEPARTMENT OF ELEMENTARY & SECONDARY EDUCATION (DOE)",
+      "DEPARTMENT OF ELEMENTARY & SECONDARY EDUCATION (DOE) · (NN) INFRASTRUCTURE:",
+      9015.36,
+      9015.36,
+      10
+    ],
+    [
+      "DEPARTMENT OF ELEMENTARY & SECONDARY EDUCATION (DOE)",
+      "DEPARTMENT OF ELEMENTARY & SECONDARY EDUCATION (DOE) · (FF) FACILITY OPERATIONAL EXPENSES",
+      5726.85,
+      5726.85,
+      15
+    ],
+    [
+      "DEPARTMENT OF ELEMENTARY & SECONDARY EDUCATION (DOE)",
+      "DEPARTMENT OF ELEMENTARY & SECONDARY EDUCATION (DOE) · (TT) LOANS AND SPECIAL PAYMENTS",
+      3692.35,
+      3692.35,
+      1
+    ],
+    [
+      "DEPARTMENT OF ELEMENTARY & SECONDARY EDUCATION (DOE)",
+      "DEPARTMENT OF ELEMENTARY & SECONDARY EDUCATION (DOE) · (99) PAYROLL REJECTS",
+      0,
+      0,
+      107
+    ]
+  ],
+  "hierarchyNote": "The source does not identify a separate sub-agency column; direct-managed rows repeat the parent entity.",
+  "sourceBasis": "official source amount",
+  "note": "Amounts are shown on the official source basis; no comparator normalization was applied."
+}

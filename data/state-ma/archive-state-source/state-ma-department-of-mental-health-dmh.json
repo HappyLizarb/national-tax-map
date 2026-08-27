@@ -1,0 +1,133 @@
+{
+  "scope": "Massachusetts",
+  "code": "ma",
+  "department": "DEPARTMENT OF MENTAL HEALTH (DMH)",
+  "fiscalYear": 2024,
+  "ledgerAmount": 1020752545,
+  "sourceTotal": 1111274934.54,
+  "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000",
+  "rowSchema": [
+    "subAgency",
+    "program",
+    "amount",
+    "sourceAmount",
+    "sourceRows"
+  ],
+  "rows": [
+    [
+      "DEPARTMENT OF MENTAL HEALTH (DMH)",
+      "DEPARTMENT OF MENTAL HEALTH (DMH) · (MM) PURCHASED CLIENT/PROGRAM SVCS",
+      731200541.27,
+      731200541.27,
+      14434
+    ],
+    [
+      "DEPARTMENT OF MENTAL HEALTH (DMH)",
+      "DEPARTMENT OF MENTAL HEALTH (DMH) · (AA) REGULAR EMPLOYEE COMPENSATION",
+      321763892.87,
+      321763892.87,
+      24558
+    ],
+    [
+      "DEPARTMENT OF MENTAL HEALTH (DMH)",
+      "DEPARTMENT OF MENTAL HEALTH (DMH) · (PP) STATE AID/POL SUB",
+      16213317.82,
+      16213317.82,
+      546
+    ],
+    [
+      "DEPARTMENT OF MENTAL HEALTH (DMH)",
+      "DEPARTMENT OF MENTAL HEALTH (DMH) · (GG) ENERGY COSTS AND SPACE RENTAL",
+      10099498.5,
+      10099498.5,
+      1961
+    ],
+    [
+      "DEPARTMENT OF MENTAL HEALTH (DMH)",
+      "DEPARTMENT OF MENTAL HEALTH (DMH) · (NN) INFRASTRUCTURE:",
+      9349231.85,
+      9349231.85,
+      3841
+    ],
+    [
+      "DEPARTMENT OF MENTAL HEALTH (DMH)",
+      "DEPARTMENT OF MENTAL HEALTH (DMH) · (FF) FACILITY OPERATIONAL EXPENSES",
+      6044523.89,
+      6044523.89,
+      4334
+    ],
+    [
+      "DEPARTMENT OF MENTAL HEALTH (DMH)",
+      "DEPARTMENT OF MENTAL HEALTH (DMH) · (JJ) OPERATIONAL SERVICES",
+      4771161.08,
+      4771161.08,
+      1008
+    ],
+    [
+      "DEPARTMENT OF MENTAL HEALTH (DMH)",
+      "DEPARTMENT OF MENTAL HEALTH (DMH) · (HH) CONSULTANT SVCS (TO DEPTS)",
+      2813250.02,
+      2813250.02,
+      229
+    ],
+    [
+      "DEPARTMENT OF MENTAL HEALTH (DMH)",
+      "DEPARTMENT OF MENTAL HEALTH (DMH) · (KK) EQUIPMENT PURCHASE",
+      1967899.55,
+      1967899.55,
+      718
+    ],
+    [
+      "DEPARTMENT OF MENTAL HEALTH (DMH)",
+      "DEPARTMENT OF MENTAL HEALTH (DMH) · (UU) IT NON-PAYROLL EXPENSES",
+      1627633.14,
+      1627633.14,
+      138
+    ],
+    [
+      "DEPARTMENT OF MENTAL HEALTH (DMH)",
+      "DEPARTMENT OF MENTAL HEALTH (DMH) · (EE) ADMINISTRATIVE EXPENSES",
+      1567003.68,
+      1567003.68,
+      2997
+    ],
+    [
+      "DEPARTMENT OF MENTAL HEALTH (DMH)",
+      "DEPARTMENT OF MENTAL HEALTH (DMH) · (BB) REGULAR EMPLOYEE RELATED EXPEN",
+      1335966.42,
+      1335966.42,
+      1937
+    ],
+    [
+      "DEPARTMENT OF MENTAL HEALTH (DMH)",
+      "DEPARTMENT OF MENTAL HEALTH (DMH) · (DD) PENSION & INSURANCE RELATED EX",
+      892131.04,
+      892131.04,
+      305
+    ],
+    [
+      "DEPARTMENT OF MENTAL HEALTH (DMH)",
+      "DEPARTMENT OF MENTAL HEALTH (DMH) · (CC) SPECIAL EMPLOYEES",
+      850795.1,
+      850795.1,
+      739
+    ],
+    [
+      "DEPARTMENT OF MENTAL HEALTH (DMH)",
+      "DEPARTMENT OF MENTAL HEALTH (DMH) · (LL) EQUIPMENT LEASE-MAINTAIN/REPAR",
+      778088.31,
+      778088.31,
+      2738
+    ],
+    [
+      "DEPARTMENT OF MENTAL HEALTH (DMH)",
+      "DEPARTMENT OF MENTAL HEALTH (DMH) · (99) PAYROLL REJECTS",
+      0,
+      0,
+      199
+    ]
+  ],
+  "hierarchyNote": "The source does not identify a separate sub-agency column; direct-managed rows repeat the parent entity.",
+  "sourceBasis": "official source amount",
+  "note": "Amounts are shown on the official source basis; no comparator normalization was applied."
+}

@@ -1,0 +1,133 @@
+{
+  "scope": "Oregon",
+  "fiscalYear": 2024,
+  "department": "FACILITES AUTH, OREGON",
+  "sourceUrl": "https://data.oregon.gov/resource/y9g9-xsxs.json?$select=agency,agency_1,budget_class,budget_class_1,expend_class,expend_class_1,vendor,sum(expense)%20as%20total,count(*)%20as%20source_rows&$where=fiscal_year=2024&$group=agency,agency_1,budget_class,budget_class_1,expend_class,expend_class_1,vendor&$limit=500000",
+  "sourceUrls": [
+    [
+      "Oregon transparency expenditure catalog",
+      "https://data.oregon.gov/Revenue-Expense/Agency-Expenditures-Multi-Year-Report/y9g9-xsxs"
+    ],
+    [
+      "Grouped FY2024 API export",
+      "https://data.oregon.gov/resource/y9g9-xsxs.json?$select=agency,agency_1,budget_class,budget_class_1,expend_class,expend_class_1,vendor,sum(expense)%20as%20total,count(*)%20as%20source_rows&$where=fiscal_year=2024&$group=agency,agency_1,budget_class,budget_class_1,expend_class,expend_class_1,vendor&$limit=500000"
+    ]
+  ],
+  "sourceBasis": "Official Oregon Agency Expenditures Multi-Year Report; FY2024 cash expense grouped by agency, budget class, expenditure class, and privacy-safe receiver label.",
+  "privacyNote": "Individual or ambiguous vendor labels are grouped as [individual recipient omitted]; organization receivers are retained. This layer does not expose person-level payroll.",
+  "sourceRows": 15,
+  "sourceTotal": 285405.94,
+  "rowSchema": [
+    "subAgency",
+    "program",
+    "amount",
+    "sourceAmount",
+    "sourceRows"
+  ],
+  "rows": [
+    [
+      "FACILITES AUTH, OREGON",
+      "4300 · PROFESSIONAL SERVICES · 4500 · PROFESSIONAL SERVICES NON-IT · Receiver TONKON TORP LLP",
+      212091.93,
+      212091.93,
+      1
+    ],
+    [
+      "FACILITES AUTH, OREGON",
+      "4300 · PROFESSIONAL SERVICES · 4500 · PROFESSIONAL SERVICES NON-IT · Receiver OREGON STATE TREASURY",
+      48000,
+      48000,
+      1
+    ],
+    [
+      "FACILITES AUTH, OREGON",
+      "4650 · OTHER SERVICES AND SUPPLIES · 4701 · OTHER SERVICES · Receiver OREGON STATE TREASURY",
+      12000,
+      12000,
+      1
+    ],
+    [
+      "FACILITES AUTH, OREGON",
+      "4300 · PROFESSIONAL SERVICES · 4500 · PROFESSIONAL SERVICES NON-IT · Receiver STATE OF OREGON DEPARTMENT OF JUSTICE",
+      4195.05,
+      4195.05,
+      1
+    ],
+    [
+      "FACILITES AUTH, OREGON",
+      "4300 · PROFESSIONAL SERVICES · 4500 · PROFESSIONAL SERVICES NON-IT · Receiver [individual recipient omitted]",
+      3313.48,
+      3313.48,
+      2
+    ],
+    [
+      "FACILITES AUTH, OREGON",
+      "4400 · DUES AND SUBSCRIPTIONS · 4250 · DUES/MEMBERSHIPS · Receiver NCHFFA",
+      3250,
+      3250,
+      1
+    ],
+    [
+      "FACILITES AUTH, OREGON",
+      "4325 · ATTORNEY GENERAL LEGAL FEES · 4550 · ATTORNEY GENERAL LEGAL FEES · Receiver STATE OF OREGON DEPARTMENT OF JUSTICE",
+      1540,
+      1540,
+      1
+    ],
+    [
+      "FACILITES AUTH, OREGON",
+      "4300 · PROFESSIONAL SERVICES · 4500 · PROFESSIONAL SERVICES NON-IT · Receiver SECRETARY OF STATE",
+      398.64,
+      398.64,
+      1
+    ],
+    [
+      "FACILITES AUTH, OREGON",
+      "4225 · STATE GOVERNMENT SERVICE CHARGES · 4600 · STATE GOVERNMENT SERVICE CHARGES · Receiver OREGON STATE TREASURY",
+      182.2,
+      182.2,
+      1
+    ],
+    [
+      "FACILITES AUTH, OREGON",
+      "4300 · PROFESSIONAL SERVICES · 4500 · PROFESSIONAL SERVICES NON-IT · Receiver STATE OF OREGON SECRETARY OF STATE",
+      160,
+      160,
+      1
+    ],
+    [
+      "FACILITES AUTH, OREGON",
+      "4225 · STATE GOVERNMENT SERVICE CHARGES · 4600 · STATE GOVERNMENT SERVICE CHARGES · Receiver SECRETARY OF STATE",
+      132.88,
+      132.88,
+      1
+    ],
+    [
+      "FACILITES AUTH, OREGON",
+      "4325 · ATTORNEY GENERAL LEGAL FEES · 4550 · ATTORNEY GENERAL LEGAL FEES · Receiver OREGON STATE TREASURY",
+      96.8,
+      96.8,
+      1
+    ],
+    [
+      "FACILITES AUTH, OREGON",
+      "4300 · PROFESSIONAL SERVICES · 4500 · PROFESSIONAL SERVICES NON-IT · Receiver DEPARTMENT OF ADMINISTRATIVE SERVICES",
+      26.19,
+      26.19,
+      1
+    ],
+    [
+      "FACILITES AUTH, OREGON",
+      "4650 · OTHER SERVICES AND SUPPLIES · 4701 · OTHER SERVICES · Receiver DEPARTMENT OF ADMINISTRATIVE SERVICES",
+      18.77,
+      18.77,
+      1
+    ]
+  ],
+  "sourceCheck": {
+    "objectClassRows": 14,
+    "sourceRows": 15,
+    "sourceTotal": 285405.94,
+    "difference": 0
+  }
+}

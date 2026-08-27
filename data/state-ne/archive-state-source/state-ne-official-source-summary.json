@@ -1,0 +1,756 @@
+{
+  "scope": "Nebraska",
+  "code": "ne",
+  "fiscalYear": 2024,
+  "sourceTotal": 8824754417.13,
+  "sourceUrl": "https://statespending.nebraska.gov/FiscalYearExpenditures",
+  "dimension": "department / agency",
+  "note": "The pie uses one official itemized source layer and never inserts a synthetic residual. Department amounts reconcile to the official itemized source total. sourceAmount preserves the imported itemized basis. The census fy2024 state-finance comparator is retained for comparison only; its lower total is not assigned to a receiver or program.",
+  "reconciliation": {
+    "itemizedDifference": 0,
+    "normalized": false,
+    "scale": 1,
+    "comparisonDifference": -7400721582.87
+  },
+  "departments": [
+    {
+      "id": "dept-of-education",
+      "name": "DEPT OF EDUCATION",
+      "amount": 2426891080.09,
+      "sourceAmount": 2426891080.09,
+      "detailUrl": "data/state-ne/archive-state-source/state-ne-dept-of-education.json",
+      "sourceUrl": "https://statespending.nebraska.gov/FiscalYearExpenditures"
+    },
+    {
+      "id": "dept-of-transportation",
+      "name": "DEPT OF TRANSPORTATION",
+      "amount": 1223998253.77,
+      "sourceAmount": 1223998253.77,
+      "detailUrl": "data/state-ne/archive-state-source/state-ne-dept-of-transportation.json",
+      "sourceUrl": "https://statespending.nebraska.gov/FiscalYearExpenditures"
+    },
+    {
+      "id": "administrative-services",
+      "name": "ADMINISTRATIVE SERVICES",
+      "amount": 859466725.43,
+      "sourceAmount": 859466725.43,
+      "detailUrl": "data/state-ne/archive-state-source/state-ne-administrative-services.json",
+      "sourceUrl": "https://statespending.nebraska.gov/FiscalYearExpenditures"
+    },
+    {
+      "id": "dept-of-health-human-svcs",
+      "name": "DEPT OF HEALTH & HUMAN SVCS",
+      "amount": 607173850.93,
+      "sourceAmount": 607173850.93,
+      "detailUrl": "data/state-ne/archive-state-source/state-ne-dept-of-health-human-svcs.json",
+      "sourceUrl": "https://statespending.nebraska.gov/FiscalYearExpenditures"
+    },
+    {
+      "id": "state-treasurer",
+      "name": "STATE TREASURER",
+      "amount": 498222493.6,
+      "sourceAmount": 498222493.6,
+      "detailUrl": "data/state-ne/archive-state-source/state-ne-state-treasurer.json",
+      "sourceUrl": "https://statespending.nebraska.gov/FiscalYearExpenditures"
+    },
+    {
+      "id": "dept-of-revenue",
+      "name": "DEPT OF REVENUE",
+      "amount": 460386311.99,
+      "sourceAmount": 460386311.99,
+      "detailUrl": "data/state-ne/archive-state-source/state-ne-dept-of-revenue.json",
+      "sourceUrl": "https://statespending.nebraska.gov/FiscalYearExpenditures"
+    },
+    {
+      "id": "military-department",
+      "name": "MILITARY DEPARTMENT",
+      "amount": 415676247.14,
+      "sourceAmount": 415676247.14,
+      "detailUrl": "data/state-ne/archive-state-source/state-ne-military-department.json",
+      "sourceUrl": "https://statespending.nebraska.gov/FiscalYearExpenditures"
+    },
+    {
+      "id": "dept-of-economic-development",
+      "name": "DEPT OF ECONOMIC DEVELOPMENT",
+      "amount": 350822212.67,
+      "sourceAmount": 350822212.67,
+      "detailUrl": "data/state-ne/archive-state-source/state-ne-dept-of-economic-development.json",
+      "sourceUrl": "https://statespending.nebraska.gov/FiscalYearExpenditures"
+    },
+    {
+      "id": "environment-and-energy",
+      "name": "ENVIRONMENT AND ENERGY",
+      "amount": 348822181.16,
+      "sourceAmount": 348822181.16,
+      "detailUrl": "data/state-ne/archive-state-source/state-ne-environment-and-energy.json",
+      "sourceUrl": "https://statespending.nebraska.gov/FiscalYearExpenditures"
+    },
+    {
+      "id": "dept-of-correctional-services",
+      "name": "DEPT OF CORRECTIONAL SERVICES",
+      "amount": 248256680.01,
+      "sourceAmount": 248256680.01,
+      "detailUrl": "data/state-ne/archive-state-source/state-ne-dept-of-correctional-services.json",
+      "sourceUrl": "https://statespending.nebraska.gov/FiscalYearExpenditures"
+    },
+    {
+      "id": "hhs-system-services",
+      "name": "HHS SYSTEM - SERVICES",
+      "amount": 202886331.36,
+      "sourceAmount": 202886331.36,
+      "program": "HHS SYSTEM - SERVICES · [privacy-safe aggregate] · HHS SYSTEM - SERVICES · Net Pay (aggregate)",
+      "sourceRows": 129554,
+      "detailUrl": null,
+      "sourceUrl": "https://statespending.nebraska.gov/FiscalYearExpenditures"
+    },
+    {
+      "id": "supreme-court",
+      "name": "SUPREME COURT",
+      "amount": 169908509.6,
+      "sourceAmount": 169908509.6,
+      "detailUrl": "data/state-ne/archive-state-source/state-ne-supreme-court.json",
+      "sourceUrl": "https://statespending.nebraska.gov/FiscalYearExpenditures"
+    },
+    {
+      "id": "employees-retire-board",
+      "name": "EMPLOYEES RETIRE BOARD",
+      "amount": 138034209.29,
+      "sourceAmount": 138034209.29,
+      "detailUrl": "data/state-ne/archive-state-source/state-ne-employees-retire-board.json",
+      "sourceUrl": "https://statespending.nebraska.gov/FiscalYearExpenditures"
+    },
+    {
+      "id": "community-colleges-aid",
+      "name": "COMMUNITY COLLEGES AID",
+      "amount": 116939172,
+      "sourceAmount": 116939172,
+      "detailUrl": "data/state-ne/archive-state-source/state-ne-community-colleges-aid.json",
+      "sourceUrl": "https://statespending.nebraska.gov/FiscalYearExpenditures"
+    },
+    {
+      "id": "game-parks-commission",
+      "name": "GAME & PARKS COMMISSION",
+      "amount": 101452761.62,
+      "sourceAmount": 101452761.62,
+      "detailUrl": "data/state-ne/archive-state-source/state-ne-game-parks-commission.json",
+      "sourceUrl": "https://statespending.nebraska.gov/FiscalYearExpenditures"
+    },
+    {
+      "id": "public-service-comm",
+      "name": "PUBLIC SERVICE COMM",
+      "amount": 71127889.38,
+      "sourceAmount": 71127889.38,
+      "detailUrl": "data/state-ne/archive-state-source/state-ne-public-service-comm.json",
+      "sourceUrl": "https://statespending.nebraska.gov/FiscalYearExpenditures"
+    },
+    {
+      "id": "dept-of-motor-vehicles",
+      "name": "DEPT OF MOTOR VEHICLES",
+      "amount": 67760609.54,
+      "sourceAmount": 67760609.54,
+      "detailUrl": "data/state-ne/archive-state-source/state-ne-dept-of-motor-vehicles.json",
+      "sourceUrl": "https://statespending.nebraska.gov/FiscalYearExpenditures"
+    },
+    {
+      "id": "nebraska-state-patrol",
+      "name": "NEBRASKA STATE PATROL",
+      "amount": 64489477.3,
+      "sourceAmount": 64489477.3,
+      "detailUrl": "data/state-ne/archive-state-source/state-ne-nebraska-state-patrol.json",
+      "sourceUrl": "https://statespending.nebraska.gov/FiscalYearExpenditures"
+    },
+    {
+      "id": "dept-of-natural-resources",
+      "name": "DEPT OF NATURAL RESOURCES",
+      "amount": 56927964.72,
+      "sourceAmount": 56927964.72,
+      "detailUrl": "data/state-ne/archive-state-source/state-ne-dept-of-natural-resources.json",
+      "sourceUrl": "https://statespending.nebraska.gov/FiscalYearExpenditures"
+    },
+    {
+      "id": "post-sec-educ-comm",
+      "name": "POST SEC EDUC COMM",
+      "amount": 47394508.04,
+      "sourceAmount": 47394508.04,
+      "detailUrl": "data/state-ne/archive-state-source/state-ne-post-sec-educ-comm.json",
+      "sourceUrl": "https://statespending.nebraska.gov/FiscalYearExpenditures"
+    },
+    {
+      "id": "bd-of-educ-lands-funds",
+      "name": "BD OF EDUC LANDS & FUNDS",
+      "amount": 39465367.95,
+      "sourceAmount": 39465367.95,
+      "detailUrl": "data/state-ne/archive-state-source/state-ne-bd-of-educ-lands-funds.json",
+      "sourceUrl": "https://statespending.nebraska.gov/FiscalYearExpenditures"
+    },
+    {
+      "id": "dept-of-veterans-affairs",
+      "name": "DEPT OF VETERANS AFFAIRS",
+      "amount": 36451160.07,
+      "sourceAmount": 36451160.07,
+      "detailUrl": "data/state-ne/archive-state-source/state-ne-dept-of-veterans-affairs.json",
+      "sourceUrl": "https://statespending.nebraska.gov/FiscalYearExpenditures"
+    },
+    {
+      "id": "dept-of-labor",
+      "name": "DEPT OF LABOR",
+      "amount": 33986484.69,
+      "sourceAmount": 33986484.69,
+      "detailUrl": "data/state-ne/archive-state-source/state-ne-dept-of-labor.json",
+      "sourceUrl": "https://statespending.nebraska.gov/FiscalYearExpenditures"
+    },
+    {
+      "id": "dept-of-adm-services",
+      "name": "DEPT OF ADM SERVICES",
+      "amount": 33111083.98,
+      "sourceAmount": 33111083.98,
+      "program": "DEPT OF ADM SERVICES · [privacy-safe aggregate] · DEPT OF ADM SERVICES · Net Pay (aggregate)",
+      "sourceRows": 20584,
+      "detailUrl": null,
+      "sourceUrl": "https://statespending.nebraska.gov/FiscalYearExpenditures"
+    },
+    {
+      "id": "ne-comm-law-enforcement",
+      "name": "NE COMM LAW ENFORCEMENT",
+      "amount": 24760140.3,
+      "sourceAmount": 24760140.3,
+      "detailUrl": "data/state-ne/archive-state-source/state-ne-ne-comm-law-enforcement.json",
+      "sourceUrl": "https://statespending.nebraska.gov/FiscalYearExpenditures"
+    },
+    {
+      "id": "dept-of-insurance",
+      "name": "DEPT OF INSURANCE",
+      "amount": 22149707.89,
+      "sourceAmount": 22149707.89,
+      "detailUrl": "data/state-ne/archive-state-source/state-ne-dept-of-insurance.json",
+      "sourceUrl": "https://statespending.nebraska.gov/FiscalYearExpenditures"
+    },
+    {
+      "id": "dept-of-agriculture",
+      "name": "DEPT OF AGRICULTURE",
+      "amount": 14865683.89,
+      "sourceAmount": 14865683.89,
+      "detailUrl": "data/state-ne/archive-state-source/state-ne-dept-of-agriculture.json",
+      "sourceUrl": "https://statespending.nebraska.gov/FiscalYearExpenditures"
+    },
+    {
+      "id": "legislative-council",
+      "name": "LEGISLATIVE COUNCIL",
+      "amount": 13307443.9,
+      "sourceAmount": 13307443.9,
+      "detailUrl": "data/state-ne/archive-state-source/state-ne-legislative-council.json",
+      "sourceUrl": "https://statespending.nebraska.gov/FiscalYearExpenditures"
+    },
+    {
+      "id": "environmental-quality",
+      "name": "ENVIRONMENTAL QUALITY",
+      "amount": 10697139.97,
+      "sourceAmount": 10697139.97,
+      "program": "ENVIRONMENTAL QUALITY · [privacy-safe aggregate] · ENVIRONMENTAL QUALITY · Net Pay (aggregate)",
+      "sourceRows": 6471,
+      "detailUrl": null,
+      "sourceUrl": "https://statespending.nebraska.gov/FiscalYearExpenditures"
+    },
+    {
+      "id": "ne-oil-gas-conserv-comm",
+      "name": "NE OIL & GAS CONSERV COMM",
+      "amount": 9025060.39,
+      "sourceAmount": 9025060.39,
+      "detailUrl": "data/state-ne/archive-state-source/state-ne-ne-oil-gas-conserv-comm.json",
+      "sourceUrl": "https://statespending.nebraska.gov/FiscalYearExpenditures"
+    },
+    {
+      "id": "attorney-general",
+      "name": "ATTORNEY GENERAL",
+      "amount": 8890615.99,
+      "sourceAmount": 8890615.99,
+      "detailUrl": "data/state-ne/archive-state-source/state-ne-attorney-general.json",
+      "sourceUrl": "https://statespending.nebraska.gov/FiscalYearExpenditures"
+    },
+    {
+      "id": "nebraska-tourism-commission",
+      "name": "NEBRASKA TOURISM COMMISSION",
+      "amount": 8168580.06,
+      "sourceAmount": 8168580.06,
+      "detailUrl": "data/state-ne/archive-state-source/state-ne-nebraska-tourism-commission.json",
+      "sourceUrl": "https://statespending.nebraska.gov/FiscalYearExpenditures"
+    },
+    {
+      "id": "secretary-of-state",
+      "name": "SECRETARY OF STATE",
+      "amount": 7674067.34,
+      "sourceAmount": 7674067.34,
+      "detailUrl": "data/state-ne/archive-state-source/state-ne-secretary-of-state.json",
+      "sourceUrl": "https://statespending.nebraska.gov/FiscalYearExpenditures"
+    },
+    {
+      "id": "board-of-parole-pardons",
+      "name": "BOARD OF PAROLE / PARDONS",
+      "amount": 7089767.73,
+      "sourceAmount": 7089767.73,
+      "detailUrl": "data/state-ne/archive-state-source/state-ne-board-of-parole-pardons.json",
+      "sourceUrl": "https://statespending.nebraska.gov/FiscalYearExpenditures"
+    },
+    {
+      "id": "corn-dev-mktg-bd",
+      "name": "CORN DEV MKTG BD",
+      "amount": 6830117.76,
+      "sourceAmount": 6830117.76,
+      "detailUrl": "data/state-ne/archive-state-source/state-ne-corn-dev-mktg-bd.json",
+      "sourceUrl": "https://statespending.nebraska.gov/FiscalYearExpenditures"
+    },
+    {
+      "id": "ne-library-commission",
+      "name": "NE LIBRARY COMMISSION",
+      "amount": 6386629.18,
+      "sourceAmount": 6386629.18,
+      "detailUrl": "data/state-ne/archive-state-source/state-ne-ne-library-commission.json",
+      "sourceUrl": "https://statespending.nebraska.gov/FiscalYearExpenditures"
+    },
+    {
+      "id": "educat-telecommunications",
+      "name": "EDUCAT TELECOMMUNICATIONS",
+      "amount": 6231546.23,
+      "sourceAmount": 6231546.23,
+      "detailUrl": "data/state-ne/archive-state-source/state-ne-educat-telecommunications.json",
+      "sourceUrl": "https://statespending.nebraska.gov/FiscalYearExpenditures"
+    },
+    {
+      "id": "state-bd-of-agriculture",
+      "name": "STATE BD OF AGRICULTURE",
+      "amount": 6018417.27,
+      "sourceAmount": 6018417.27,
+      "detailUrl": "data/state-ne/archive-state-source/state-ne-state-bd-of-agriculture.json",
+      "sourceUrl": "https://statespending.nebraska.gov/FiscalYearExpenditures"
+    },
+    {
+      "id": "racing-gaming-commission",
+      "name": "RACING & GAMING COMMISSION",
+      "amount": 5591292.36,
+      "sourceAmount": 5591292.36,
+      "detailUrl": "data/state-ne/archive-state-source/state-ne-racing-gaming-commission.json",
+      "sourceUrl": "https://statespending.nebraska.gov/FiscalYearExpenditures"
+    },
+    {
+      "id": "st-historical-society",
+      "name": "ST HISTORICAL SOCIETY",
+      "amount": 4540524.79,
+      "sourceAmount": 4540524.79,
+      "detailUrl": "data/state-ne/archive-state-source/state-ne-st-historical-society.json",
+      "sourceUrl": "https://statespending.nebraska.gov/FiscalYearExpenditures"
+    },
+    {
+      "id": "dept-of-banking",
+      "name": "DEPT OF BANKING",
+      "amount": 3796217.41,
+      "sourceAmount": 3796217.41,
+      "detailUrl": "data/state-ne/archive-state-source/state-ne-dept-of-banking.json",
+      "sourceUrl": "https://statespending.nebraska.gov/FiscalYearExpenditures"
+    },
+    {
+      "id": "blind-vis-impaired-comm",
+      "name": "BLIND/VIS IMPAIRED COMM",
+      "amount": 3761948.56,
+      "sourceAmount": 3761948.56,
+      "detailUrl": "data/state-ne/archive-state-source/state-ne-blind-vis-impaired-comm.json",
+      "sourceUrl": "https://statespending.nebraska.gov/FiscalYearExpenditures"
+    },
+    {
+      "id": "state-fire-marshal",
+      "name": "STATE FIRE MARSHAL",
+      "amount": 3761530.69,
+      "sourceAmount": 3761530.69,
+      "detailUrl": "data/state-ne/archive-state-source/state-ne-state-fire-marshal.json",
+      "sourceUrl": "https://statespending.nebraska.gov/FiscalYearExpenditures"
+    },
+    {
+      "id": "nebr-brand-committee",
+      "name": "NEBR BRAND COMMITTEE",
+      "amount": 3580603.71,
+      "sourceAmount": 3580603.71,
+      "detailUrl": "data/state-ne/archive-state-source/state-ne-nebr-brand-committee.json",
+      "sourceUrl": "https://statespending.nebraska.gov/FiscalYearExpenditures"
+    },
+    {
+      "id": "nebr-arts-council",
+      "name": "NEBR ARTS COUNCIL",
+      "amount": 3401521.13,
+      "sourceAmount": 3401521.13,
+      "detailUrl": "data/state-ne/archive-state-source/state-ne-nebr-arts-council.json",
+      "sourceUrl": "https://statespending.nebraska.gov/FiscalYearExpenditures"
+    },
+    {
+      "id": "auditor-of-public-accts",
+      "name": "AUDITOR OF PUBLIC ACCTS",
+      "amount": 2923361.41,
+      "sourceAmount": 2923361.41,
+      "detailUrl": "data/state-ne/archive-state-source/state-ne-auditor-of-public-accts.json",
+      "sourceUrl": "https://statespending.nebraska.gov/FiscalYearExpenditures"
+    },
+    {
+      "id": "liquor-control-commission",
+      "name": "LIQUOR CONTROL COMMISSION",
+      "amount": 2747589.03,
+      "sourceAmount": 2747589.03,
+      "detailUrl": "data/state-ne/archive-state-source/state-ne-liquor-control-commission.json",
+      "sourceUrl": "https://statespending.nebraska.gov/FiscalYearExpenditures"
+    },
+    {
+      "id": "workers-compensation-cour",
+      "name": "WORKERS COMPENSATION COUR",
+      "amount": 2619488.34,
+      "sourceAmount": 2619488.34,
+      "detailUrl": "data/state-ne/archive-state-source/state-ne-workers-compensation-cour.json",
+      "sourceUrl": "https://statespending.nebraska.gov/FiscalYearExpenditures"
+    },
+    {
+      "id": "foster-care-review-office",
+      "name": "FOSTER CARE REVIEW OFFICE",
+      "amount": 1884277.8,
+      "sourceAmount": 1884277.8,
+      "detailUrl": "data/state-ne/archive-state-source/state-ne-foster-care-review-office.json",
+      "sourceUrl": "https://statespending.nebraska.gov/FiscalYearExpenditures"
+    },
+    {
+      "id": "ne-investment-council",
+      "name": "NE INVESTMENT COUNCIL",
+      "amount": 1542998.68,
+      "sourceAmount": 1542998.68,
+      "detailUrl": "data/state-ne/archive-state-source/state-ne-ne-investment-council.json",
+      "sourceUrl": "https://statespending.nebraska.gov/FiscalYearExpenditures"
+    },
+    {
+      "id": "ne-dairy-ind-dev-board",
+      "name": "NE DAIRY IND DEV BOARD",
+      "amount": 1288278.22,
+      "sourceAmount": 1288278.22,
+      "detailUrl": "data/state-ne/archive-state-source/state-ne-ne-dairy-ind-dev-board.json",
+      "sourceUrl": "https://statespending.nebraska.gov/FiscalYearExpenditures"
+    },
+    {
+      "id": "state-racing-commission",
+      "name": "STATE RACING COMMISSION",
+      "amount": 1220900.31,
+      "sourceAmount": 1220900.31,
+      "program": "STATE RACING COMMISSION · [privacy-safe aggregate] · STATE RACING COMMISSION · Net Pay (aggregate)",
+      "sourceRows": 742,
+      "detailUrl": null,
+      "sourceUrl": "https://statespending.nebraska.gov/FiscalYearExpenditures"
+    },
+    {
+      "id": "governor",
+      "name": "GOVERNOR",
+      "amount": 1061985.53,
+      "sourceAmount": 1061985.53,
+      "detailUrl": "data/state-ne/archive-state-source/state-ne-governor.json",
+      "sourceUrl": "https://statespending.nebraska.gov/FiscalYearExpenditures"
+    },
+    {
+      "id": "equal-opportunity-comm",
+      "name": "EQUAL OPPORTUNITY COMM",
+      "amount": 974173.36,
+      "sourceAmount": 974173.36,
+      "detailUrl": "data/state-ne/archive-state-source/state-ne-equal-opportunity-comm.json",
+      "sourceUrl": "https://statespending.nebraska.gov/FiscalYearExpenditures"
+    },
+    {
+      "id": "nebraska-electrical-board",
+      "name": "NEBRASKA ELECTRICAL BOARD",
+      "amount": 912982.39,
+      "sourceAmount": 912982.39,
+      "detailUrl": "data/state-ne/archive-state-source/state-ne-nebraska-electrical-board.json",
+      "sourceUrl": "https://statespending.nebraska.gov/FiscalYearExpenditures"
+    },
+    {
+      "id": "real-estate-commission",
+      "name": "REAL ESTATE COMMISSION",
+      "amount": 782896.6,
+      "sourceAmount": 782896.6,
+      "detailUrl": "data/state-ne/archive-state-source/state-ne-real-estate-commission.json",
+      "sourceUrl": "https://statespending.nebraska.gov/FiscalYearExpenditures"
+    },
+    {
+      "id": "comm-on-public-advocacy",
+      "name": "COMM ON PUBLIC ADVOCACY",
+      "amount": 743780.68,
+      "sourceAmount": 743780.68,
+      "detailUrl": "data/state-ne/archive-state-source/state-ne-comm-on-public-advocacy.json",
+      "sourceUrl": "https://statespending.nebraska.gov/FiscalYearExpenditures"
+    },
+    {
+      "id": "nebr-wheat-board",
+      "name": "NEBR WHEAT BOARD",
+      "amount": 697311.91,
+      "sourceAmount": 697311.91,
+      "detailUrl": "data/state-ne/archive-state-source/state-ne-nebr-wheat-board.json",
+      "sourceUrl": "https://statespending.nebraska.gov/FiscalYearExpenditures"
+    },
+    {
+      "id": "tax-equalization-review",
+      "name": "TAX EQUALIZATION & REVIEW",
+      "amount": 612942.25,
+      "sourceAmount": 612942.25,
+      "detailUrl": "data/state-ne/archive-state-source/state-ne-tax-equalization-review.json",
+      "sourceUrl": "https://statespending.nebraska.gov/FiscalYearExpenditures"
+    },
+    {
+      "id": "comm-deaf-hard-of-hearing",
+      "name": "COMM DEAF/HARD OF HEARING",
+      "amount": 604180.07,
+      "sourceAmount": 604180.07,
+      "detailUrl": "data/state-ne/archive-state-source/state-ne-comm-deaf-hard-of-hearing.json",
+      "sourceUrl": "https://statespending.nebraska.gov/FiscalYearExpenditures"
+    },
+    {
+      "id": "tourism",
+      "name": "TOURISM",
+      "amount": 528343.1,
+      "sourceAmount": 528343.1,
+      "program": "TOURISM · [privacy-safe aggregate] · TOURISM · Net Pay (aggregate)",
+      "sourceRows": 485,
+      "detailUrl": null,
+      "sourceUrl": "https://statespending.nebraska.gov/FiscalYearExpenditures"
+    },
+    {
+      "id": "ne-actabty-discl-comm",
+      "name": "NE ACTABTY & DISCL COMM",
+      "amount": 397089.62,
+      "sourceAmount": 397089.62,
+      "detailUrl": "data/state-ne/archive-state-source/state-ne-ne-actabty-discl-comm.json",
+      "sourceUrl": "https://statespending.nebraska.gov/FiscalYearExpenditures"
+    },
+    {
+      "id": "ne-power-review-board",
+      "name": "NE POWER REVIEW BOARD",
+      "amount": 375331.05,
+      "sourceAmount": 375331.05,
+      "detailUrl": "data/state-ne/archive-state-source/state-ne-ne-power-review-board.json",
+      "sourceUrl": "https://statespending.nebraska.gov/FiscalYearExpenditures"
+    },
+    {
+      "id": "mtr-veh-indust-license-bd",
+      "name": "MTR VEH INDUST LICENSE BD",
+      "amount": 373128.17,
+      "sourceAmount": 373128.17,
+      "detailUrl": "data/state-ne/archive-state-source/state-ne-mtr-veh-indust-license-bd.json",
+      "sourceUrl": "https://statespending.nebraska.gov/FiscalYearExpenditures"
+    },
+    {
+      "id": "ne-ethanol-board",
+      "name": "NE ETHANOL BOARD",
+      "amount": 329577.34,
+      "sourceAmount": 329577.34,
+      "detailUrl": "data/state-ne/archive-state-source/state-ne-ne-ethanol-board.json",
+      "sourceUrl": "https://statespending.nebraska.gov/FiscalYearExpenditures"
+    },
+    {
+      "id": "st-bd-of-exam-eng-arch",
+      "name": "ST BD OF EXAM ENG & ARCH",
+      "amount": 306610.1,
+      "sourceAmount": 306610.1,
+      "program": "ST BD OF EXAM ENG & ARCH · [privacy-safe aggregate] · ST BD OF EXAM ENG & ARCH · Net Pay (aggregate)",
+      "sourceRows": 267,
+      "detailUrl": null,
+      "sourceUrl": "https://statespending.nebraska.gov/FiscalYearExpenditures"
+    },
+    {
+      "id": "ne-st-bd-pub-accountancy",
+      "name": "NE ST BD PUB ACCOUNTANCY",
+      "amount": 221203.35,
+      "sourceAmount": 221203.35,
+      "detailUrl": "data/state-ne/archive-state-source/state-ne-ne-st-bd-pub-accountancy.json",
+      "sourceUrl": "https://statespending.nebraska.gov/FiscalYearExpenditures"
+    },
+    {
+      "id": "dry-bean-commission",
+      "name": "DRY BEAN COMMISSION",
+      "amount": 209166.22,
+      "sourceAmount": 209166.22,
+      "detailUrl": "data/state-ne/archive-state-source/state-ne-dry-bean-commission.json",
+      "sourceUrl": "https://statespending.nebraska.gov/FiscalYearExpenditures"
+    },
+    {
+      "id": "bd-of-engineers-and-architects",
+      "name": "BD OF ENGINEERS AND ARCHITECTS",
+      "amount": 152477.55,
+      "sourceAmount": 152477.55,
+      "detailUrl": "data/state-ne/archive-state-source/state-ne-bd-of-engineers-and-architects.json",
+      "sourceUrl": "https://statespending.nebraska.gov/FiscalYearExpenditures"
+    },
+    {
+      "id": "real-estate-appraiser-bd",
+      "name": "REAL ESTATE APPRAISER BD",
+      "amount": 151071.37,
+      "sourceAmount": 151071.37,
+      "program": "REAL ESTATE APPRAISER BD · [privacy-safe aggregate] · REAL ESTATE APPRAISER BD · Net Pay (aggregate)",
+      "sourceRows": 149,
+      "detailUrl": null,
+      "sourceUrl": "https://statespending.nebraska.gov/FiscalYearExpenditures"
+    },
+    {
+      "id": "comm-industrial-relations",
+      "name": "COMM INDUSTRIAL RELATIONS",
+      "amount": 127620.52,
+      "sourceAmount": 127620.52,
+      "detailUrl": "data/state-ne/archive-state-source/state-ne-comm-industrial-relations.json",
+      "sourceUrl": "https://statespending.nebraska.gov/FiscalYearExpenditures"
+    },
+    {
+      "id": "mexican-american-comm",
+      "name": "MEXICAN/AMERICAN COMM",
+      "amount": 118484.73,
+      "sourceAmount": 118484.73,
+      "program": "MEXICAN/AMERICAN COMM · [privacy-safe aggregate] · MEXICAN/AMERICAN COMM · Net Pay (aggregate)",
+      "sourceRows": 94,
+      "detailUrl": null,
+      "sourceUrl": "https://statespending.nebraska.gov/FiscalYearExpenditures"
+    },
+    {
+      "id": "comm-on-indian-affairs",
+      "name": "COMM ON INDIAN AFFAIRS",
+      "amount": 118438.74,
+      "sourceAmount": 118438.74,
+      "program": "COMM ON INDIAN AFFAIRS · [privacy-safe aggregate] · COMM ON INDIAN AFFAIRS · Net Pay (aggregate)",
+      "sourceRows": 71,
+      "detailUrl": null,
+      "sourceUrl": "https://statespending.nebraska.gov/FiscalYearExpenditures"
+    },
+    {
+      "id": "real-property-appraiser-bd",
+      "name": "REAL PROPERTY APPRAISER BD",
+      "amount": 96596.19,
+      "sourceAmount": 96596.19,
+      "detailUrl": "data/state-ne/archive-state-source/state-ne-real-property-appraiser-bd.json",
+      "sourceUrl": "https://statespending.nebraska.gov/FiscalYearExpenditures"
+    },
+    {
+      "id": "latino-american-comm",
+      "name": "LATINO AMERICAN COMM",
+      "amount": 79379.68,
+      "sourceAmount": 79379.68,
+      "detailUrl": "data/state-ne/archive-state-source/state-ne-latino-american-comm.json",
+      "sourceUrl": "https://statespending.nebraska.gov/FiscalYearExpenditures"
+    },
+    {
+      "id": "board-of-barber-examiners",
+      "name": "BOARD OF BARBER EXAMINERS",
+      "amount": 72144.99,
+      "sourceAmount": 72144.99,
+      "detailUrl": "data/state-ne/archive-state-source/state-ne-board-of-barber-examiners.json",
+      "sourceUrl": "https://statespending.nebraska.gov/FiscalYearExpenditures"
+    },
+    {
+      "id": "lieutenant-governor",
+      "name": "LIEUTENANT GOVERNOR",
+      "amount": 55318.77,
+      "sourceAmount": 55318.77,
+      "detailUrl": "data/state-ne/archive-state-source/state-ne-lieutenant-governor.json",
+      "sourceUrl": "https://statespending.nebraska.gov/FiscalYearExpenditures"
+    },
+    {
+      "id": "grain-sorghum-board",
+      "name": "GRAIN SORGHUM BOARD",
+      "amount": 52868.48,
+      "sourceAmount": 52868.48,
+      "detailUrl": "data/state-ne/archive-state-source/state-ne-grain-sorghum-board.json",
+      "sourceUrl": "https://statespending.nebraska.gov/FiscalYearExpenditures"
+    },
+    {
+      "id": "indian-affairs-comm",
+      "name": "INDIAN AFFAIRS COMM",
+      "amount": 50067.31,
+      "sourceAmount": 50067.31,
+      "detailUrl": "data/state-ne/archive-state-source/state-ne-indian-affairs-comm.json",
+      "sourceUrl": "https://statespending.nebraska.gov/FiscalYearExpenditures"
+    },
+    {
+      "id": "railway-council",
+      "name": "RAILWAY COUNCIL",
+      "amount": 36057.71,
+      "sourceAmount": 36057.71,
+      "program": "RAILWAY COUNCIL · [privacy-safe aggregate] · RAILWAY COUNCIL · Net Pay (aggregate)",
+      "sourceRows": 55,
+      "detailUrl": null,
+      "sourceUrl": "https://statespending.nebraska.gov/FiscalYearExpenditures"
+    },
+    {
+      "id": "bd-of-exam-abstractors",
+      "name": "BD OF EXAM-ABSTRACTORS",
+      "amount": 32151.41,
+      "sourceAmount": 32151.41,
+      "detailUrl": "data/state-ne/archive-state-source/state-ne-bd-of-exam-abstractors.json",
+      "sourceUrl": "https://statespending.nebraska.gov/FiscalYearExpenditures"
+    },
+    {
+      "id": "african-american-commission",
+      "name": "AFRICAN AMERICAN COMMISSION",
+      "amount": 32090.21,
+      "sourceAmount": 32090.21,
+      "detailUrl": "data/state-ne/archive-state-source/state-ne-african-american-commission.json",
+      "sourceUrl": "https://statespending.nebraska.gov/FiscalYearExpenditures"
+    },
+    {
+      "id": "dry-pea-and-lentil-commission",
+      "name": "DRY PEA AND LENTIL COMMISSION",
+      "amount": 22133.01,
+      "sourceAmount": 22133.01,
+      "detailUrl": "data/state-ne/archive-state-source/state-ne-dry-pea-and-lentil-commission.json",
+      "sourceUrl": "https://statespending.nebraska.gov/FiscalYearExpenditures"
+    },
+    {
+      "id": "board-of-geologists",
+      "name": "BOARD OF GEOLOGISTS",
+      "amount": 11289.26,
+      "sourceAmount": 11289.26,
+      "detailUrl": "data/state-ne/archive-state-source/state-ne-board-of-geologists.json",
+      "sourceUrl": "https://statespending.nebraska.gov/FiscalYearExpenditures"
+    },
+    {
+      "id": "bd-of-exam-land-survey",
+      "name": "BD OF EXAM LAND SURVEY",
+      "amount": 5400.69,
+      "sourceAmount": 5400.69,
+      "detailUrl": "data/state-ne/archive-state-source/state-ne-bd-of-exam-land-survey.json",
+      "sourceUrl": "https://statespending.nebraska.gov/FiscalYearExpenditures"
+    },
+    {
+      "id": "landscape-architects",
+      "name": "LANDSCAPE ARCHITECTS",
+      "amount": 2809.43,
+      "sourceAmount": 2809.43,
+      "detailUrl": "data/state-ne/archive-state-source/state-ne-landscape-architects.json",
+      "sourceUrl": "https://statespending.nebraska.gov/FiscalYearExpenditures"
+    },
+    {
+      "id": "receiver-not-reported",
+      "name": "Receiver not reported (privacy-safe aggregate)",
+      "amount": 229.8,
+      "sourceAmount": 229.8,
+      "program": "Receiver not reported (privacy-safe aggregate) · Net Pay (aggregate)",
+      "sourceRows": 3,
+      "detailUrl": null,
+      "sourceUrl": "https://statespending.nebraska.gov/FiscalYearExpenditures",
+      "note": "The official source uses a period (.) instead of a receiver for three Net Pay rows; the amount is retained as a privacy-safe aggregate."
+    },
+    {
+      "id": "department-not-reported",
+      "name": "Department not reported by source",
+      "amount": 68.87,
+      "sourceAmount": 68.87,
+      "program": "WAGNER TIRE & REPAIR LLC · REP & MAINT-MOTOR VEHICL · Department not reported by source",
+      "sourceRows": 1,
+      "detailUrl": null,
+      "sourceUrl": "https://statespending.nebraska.gov/FiscalYearExpenditures",
+      "note": "The official source identifies the receiver and account but uses a period (.) instead of a department."
+    }
+  ],
+  "itemizedTotal": 8824754417.13,
+  "comparison": {
+    "label": "Census FY2024 state-finance comparator",
+    "url": "https://data.census.gov/table/GOVSSTATEFINTIMESERIES.GS00STATEFIN01?g=040XX00US31&time=2024",
+    "total": 16225476000,
+    "difference": -7400721582.87
+  },
+  "coverageStatus": "official-itemized-source-basis",
+  "archiveNote": "Prior official state layer archived when the complete Census function layer became primary for map reconciliation."
+}

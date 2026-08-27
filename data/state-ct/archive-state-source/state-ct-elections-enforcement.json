@@ -1,0 +1,35 @@
+{
+  "scope": "Connecticut",
+  "code": "ct",
+  "department": "Elections Enforcement",
+  "fiscalYear": 2024,
+  "ledgerAmount": 1587210.64,
+  "sourceTotal": 1691279.56,
+  "sourceUrl": "https://data.ct.gov/resource/ajdm-rvz7.json?$select=department,program,sum(amount)%20as%20amount,count(*)%20as%20records&$where=fiscal_year=2024&$group=department,program",
+  "rowSchema": [
+    "subAgency",
+    "program",
+    "amount",
+    "sourceAmount",
+    "sourceRows"
+  ],
+  "rows": [
+    [
+      "Elections Enforcement",
+      "Elections Enforcement · Citizen Election Fund Grants",
+      1591170.5,
+      1591170.5,
+      70
+    ],
+    [
+      "Elections Enforcement",
+      "Elections Enforcement · Elections Enforcement Commissi",
+      100109.06,
+      100109.06,
+      272
+    ]
+  ],
+  "hierarchyNote": "The source does not identify a separate sub-agency column; direct-managed rows repeat the parent entity.",
+  "sourceBasis": "official source amount",
+  "note": "Amounts are shown on the official source basis; no comparator normalization was applied."
+}

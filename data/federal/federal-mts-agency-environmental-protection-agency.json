@@ -1,0 +1,34 @@
+{
+  "scope": "United States",
+  "code": "federal",
+  "fiscalYear": 2024,
+  "department": "Environmental Protection Agency",
+  "sourceTotal": 13699000000,
+  "sourceUrl": "https://fiscal.treasury.gov/system/files/files/reports-statements/mts/mts0924.pdf",
+  "sourceUrls": [["Treasury FY2024 MTS Table 5", "https://fiscal.treasury.gov/system/files/files/reports-statements/mts/mts0924.pdf"]],
+  "relatedSources": [["USAspending gross research (supporting detail)", "data/federal/archive-agency-source/federal-environmental-protection-agency.json"]],
+  "sourceBasis": "Treasury MTS Table 5 current-fiscal-year gross outlays, applicable receipts, and net outlays; published in $ millions and converted to USD.",
+  "rowSchema": ["subAgency", "program", "amount", "sourceAmount", "sourceRows", "grossOutlays", "applicableReceipts"],
+  "sourceCheck": {"groupRows": 9, "difference": 0, "publishedRoundingAdjustment": 0},
+  "note": "Displayed amounts are net outlays; each row retains its published gross outlays and applicable receipts.",
+  "accountResearch": {"accountCount": 19, "largeAccountCount": 4, "netAccountOutlays": 18333183705.05, "threshold": 1000000000, "sourceUrl": "https://fiscal.treasury.gov/system/files/files/reports-statements/combined-statement/cs2024/c44.xlsx"},
+  "largeAccountSchema": ["treasuryAccount", "title", "netOutlays", "availabilityRows"],
+  "largeAccountBasis": "Exact Combined Statement net outlays by appropriation or fund account. This is a research cross-section of the same department, not another amount to add to MTS classification rows.",
+  "largeAccountRows": [
+    ["068-0103-000", "State and Tribal Assistance Grants, Environmental Protection Agency", 7315405905.68, 6],
+    ["068-4372-000", "Water Infrastructure Finance and Innovation Direct Loan Financing Account, Environmental Protection Agency", 3932788380.75, 1],
+    ["068-0108-000", "Environmental Programs and Management, Environmental Protection Agency", 3211107779.16, 15],
+    ["068-8145-000", "Hazardous Substance Superfund - Treasury Managed. Environmental Protection Agency", 2006448066.47, 9]
+  ],
+  "rows": [
+    ["Environmental Protection Agency", "Science and Technology", 808000000, 808000000, 1, 808000000, 0],
+    ["Environmental Protection Agency", "Environmental Programs and Management", 3211000000, 3211000000, 1, 3211000000, 0],
+    ["Environmental Protection Agency", "State and Tribal Assistance Grants", 7315000000, 7315000000, 1, 7315000000, 0],
+    ["Environmental Protection Agency", "Payment to the Hazardous Substance Superfund", 283000000, 283000000, 1, 283000000, 0],
+    ["Environmental Protection Agency", "Hazardous Substance Superfund", 2006000000, 2006000000, 1, 2006000000, 0],
+    ["Environmental Protection Agency", "Other", 777000000, 777000000, 1, 846000000, 69000000],
+    ["Environmental Protection Agency", "Proprietary Receipts from the Public", -407000000, -407000000, 1, 0, 407000000],
+    ["Environmental Protection Agency", "Intrabudgetary Transactions", -261000000, -261000000, 1, -261000000, 0],
+    ["Environmental Protection Agency", "Offsetting Governmental Receipts", -33000000, -33000000, 1, 0, 33000000]
+  ]
+}

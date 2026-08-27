@@ -1,0 +1,63 @@
+{
+  "scope": "Massachusetts",
+  "code": "ma",
+  "department": "SUPPLIER DIVERSITY OFFICE (SDO)",
+  "fiscalYear": 2024,
+  "ledgerAmount": 3074690.33,
+  "sourceTotal": 3347360.06,
+  "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000",
+  "rowSchema": [
+    "subAgency",
+    "program",
+    "amount",
+    "sourceAmount",
+    "sourceRows"
+  ],
+  "rows": [
+    [
+      "SUPPLIER DIVERSITY OFFICE (SDO)",
+      "SUPPLIER DIVERSITY OFFICE (SDO) · (AA) REGULAR EMPLOYEE COMPENSATION",
+      3057233.27,
+      3057233.27,
+      45
+    ],
+    [
+      "SUPPLIER DIVERSITY OFFICE (SDO)",
+      "SUPPLIER DIVERSITY OFFICE (SDO) · (HH) CONSULTANT SVCS (TO DEPTS)",
+      120679.8,
+      120679.8,
+      13
+    ],
+    [
+      "SUPPLIER DIVERSITY OFFICE (SDO)",
+      "SUPPLIER DIVERSITY OFFICE (SDO) · (UU) IT NON-PAYROLL EXPENSES",
+      118461.42,
+      118461.42,
+      4
+    ],
+    [
+      "SUPPLIER DIVERSITY OFFICE (SDO)",
+      "SUPPLIER DIVERSITY OFFICE (SDO) · (CC) SPECIAL EMPLOYEES",
+      26310,
+      26310,
+      30
+    ],
+    [
+      "SUPPLIER DIVERSITY OFFICE (SDO)",
+      "SUPPLIER DIVERSITY OFFICE (SDO) · (EE) ADMINISTRATIVE EXPENSES",
+      16975.19,
+      16975.19,
+      23
+    ],
+    [
+      "SUPPLIER DIVERSITY OFFICE (SDO)",
+      "SUPPLIER DIVERSITY OFFICE (SDO) · (BB) REGULAR EMPLOYEE RELATED EXPEN",
+      7700.38,
+      7700.38,
+      24
+    ]
+  ],
+  "hierarchyNote": "The source does not identify a separate sub-agency column; direct-managed rows repeat the parent entity.",
+  "sourceBasis": "official source amount",
+  "note": "Amounts are shown on the official source basis; no comparator normalization was applied."
+}

@@ -1,0 +1,84 @@
+{
+  "scope": "Massachusetts",
+  "code": "ma",
+  "department": "DISTRICT ATTORNEY ASSOCIATION (DAA)",
+  "fiscalYear": 2024,
+  "ledgerAmount": 5587324.57,
+  "sourceTotal": 6082819.76,
+  "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000",
+  "rowSchema": [
+    "subAgency",
+    "program",
+    "amount",
+    "sourceAmount",
+    "sourceRows"
+  ],
+  "rows": [
+    [
+      "DISTRICT ATTORNEY ASSOCIATION (DAA)",
+      "DISTRICT ATTORNEY ASSOCIATION (DAA) · (UU) IT NON-PAYROLL EXPENSES",
+      4557130.54,
+      4557130.54,
+      208
+    ],
+    [
+      "DISTRICT ATTORNEY ASSOCIATION (DAA)",
+      "DISTRICT ATTORNEY ASSOCIATION (DAA) · (AA) REGULAR EMPLOYEE COMPENSATION",
+      1107152.38,
+      1107152.38,
+      117
+    ],
+    [
+      "DISTRICT ATTORNEY ASSOCIATION (DAA)",
+      "DISTRICT ATTORNEY ASSOCIATION (DAA) · (EE) ADMINISTRATIVE EXPENSES",
+      221899.18,
+      221899.18,
+      216
+    ],
+    [
+      "DISTRICT ATTORNEY ASSOCIATION (DAA)",
+      "DISTRICT ATTORNEY ASSOCIATION (DAA) · (GG) ENERGY COSTS AND SPACE RENTAL",
+      122541.72,
+      122541.72,
+      12
+    ],
+    [
+      "DISTRICT ATTORNEY ASSOCIATION (DAA)",
+      "DISTRICT ATTORNEY ASSOCIATION (DAA) · (KK) EQUIPMENT PURCHASE",
+      43156.01,
+      43156.01,
+      1
+    ],
+    [
+      "DISTRICT ATTORNEY ASSOCIATION (DAA)",
+      "DISTRICT ATTORNEY ASSOCIATION (DAA) · (HH) CONSULTANT SVCS (TO DEPTS)",
+      19125.67,
+      19125.67,
+      5
+    ],
+    [
+      "DISTRICT ATTORNEY ASSOCIATION (DAA)",
+      "DISTRICT ATTORNEY ASSOCIATION (DAA) · (BB) REGULAR EMPLOYEE RELATED EXPEN",
+      7672.94,
+      7672.94,
+      38
+    ],
+    [
+      "DISTRICT ATTORNEY ASSOCIATION (DAA)",
+      "DISTRICT ATTORNEY ASSOCIATION (DAA) · (LL) EQUIPMENT LEASE-MAINTAIN/REPAR",
+      3421.32,
+      3421.32,
+      12
+    ],
+    [
+      "DISTRICT ATTORNEY ASSOCIATION (DAA)",
+      "DISTRICT ATTORNEY ASSOCIATION (DAA) · (JJ) OPERATIONAL SERVICES",
+      720,
+      720,
+      3
+    ]
+  ],
+  "hierarchyNote": "The source does not identify a separate sub-agency column; direct-managed rows repeat the parent entity.",
+  "sourceBasis": "official source amount",
+  "note": "Amounts are shown on the official source basis; no comparator normalization was applied."
+}

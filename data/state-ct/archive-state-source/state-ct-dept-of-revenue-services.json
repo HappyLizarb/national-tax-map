@@ -1,0 +1,70 @@
+{
+  "scope": "Connecticut",
+  "code": "ct",
+  "department": "Dept. of Revenue Services",
+  "fiscalYear": 2024,
+  "ledgerAmount": 16024132.57,
+  "sourceTotal": 17074789.67,
+  "sourceUrl": "https://data.ct.gov/resource/ajdm-rvz7.json?$select=department,program,sum(amount)%20as%20amount,count(*)%20as%20records&$where=fiscal_year=2024&$group=department,program",
+  "rowSchema": [
+    "subAgency",
+    "program",
+    "amount",
+    "sourceAmount",
+    "sourceRows"
+  ],
+  "rows": [
+    [
+      "Dept. of Revenue Services",
+      "Dept. of Revenue Services · IT Services",
+      7824870.42,
+      7824870.42,
+      396
+    ],
+    [
+      "Dept. of Revenue Services",
+      "Dept. of Revenue Services · IT Capital Investment Program",
+      6736368.75,
+      6736368.75,
+      12
+    ],
+    [
+      "Dept. of Revenue Services",
+      "Dept. of Revenue Services · Other Expenses",
+      3953717.15,
+      3953717.15,
+      2035
+    ],
+    [
+      "Dept. of Revenue Services",
+      "Dept. of Revenue Services · Tobacco Revenue Enforcement",
+      107883.13,
+      107883.13,
+      256
+    ],
+    [
+      "Dept. of Revenue Services",
+      "Dept. of Revenue Services · Motor Fuel Tax Enforcement",
+      33216.51,
+      33216.51,
+      43
+    ],
+    [
+      "Dept. of Revenue Services",
+      "Dept. of Revenue Services · Personal Services",
+      317,
+      317,
+      5
+    ],
+    [
+      "Dept. of Revenue Services",
+      "Dept. of Revenue Services · Child Tax Rebate Funds 2022",
+      -1581583.29,
+      -1581583.29,
+      1
+    ]
+  ],
+  "hierarchyNote": "The source does not identify a separate sub-agency column; direct-managed rows repeat the parent entity.",
+  "sourceBasis": "official source amount",
+  "note": "Amounts are shown on the official source basis; no comparator normalization was applied."
+}

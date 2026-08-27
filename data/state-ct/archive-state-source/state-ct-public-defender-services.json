@@ -1,0 +1,70 @@
+{
+  "scope": "Connecticut",
+  "code": "ct",
+  "department": "Public Defender Services",
+  "fiscalYear": 2024,
+  "ledgerAmount": 33507554.14,
+  "sourceTotal": 35704549.8,
+  "sourceUrl": "https://data.ct.gov/resource/ajdm-rvz7.json?$select=department,program,sum(amount)%20as%20amount,count(*)%20as%20records&$where=fiscal_year=2024&$group=department,program",
+  "rowSchema": [
+    "subAgency",
+    "program",
+    "amount",
+    "sourceAmount",
+    "sourceRows"
+  ],
+  "rows": [
+    [
+      "Public Defender Services",
+      "Public Defender Services · Assigned Counsel-Criminal",
+      31324372.34,
+      31324372.34,
+      9642
+    ],
+    [
+      "Public Defender Services",
+      "Public Defender Services · Expert Witnesses",
+      2585604.96,
+      2585604.96,
+      4790
+    ],
+    [
+      "Public Defender Services",
+      "Public Defender Services · Other Expenses",
+      1408684.98,
+      1408684.98,
+      760
+    ],
+    [
+      "Public Defender Services",
+      "Public Defender Services · Capital Equip Purchase Fund",
+      216918,
+      216918,
+      24
+    ],
+    [
+      "Public Defender Services",
+      "Public Defender Services · Training And Education",
+      111685.39,
+      111685.39,
+      237
+    ],
+    [
+      "Public Defender Services",
+      "Public Defender Services · Court Improvement Program",
+      50182.42,
+      50182.42,
+      32
+    ],
+    [
+      "Public Defender Services",
+      "Public Defender Services · Innocence Project",
+      7101.71,
+      7101.71,
+      13
+    ]
+  ],
+  "hierarchyNote": "The source does not identify a separate sub-agency column; direct-managed rows repeat the parent entity.",
+  "sourceBasis": "official source amount",
+  "note": "Amounts are shown on the official source basis; no comparator normalization was applied."
+}

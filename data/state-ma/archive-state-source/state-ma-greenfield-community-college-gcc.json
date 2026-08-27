@@ -1,0 +1,147 @@
+{
+  "scope": "Massachusetts",
+  "code": "ma",
+  "department": "GREENFIELD COMMUNITY COLLEGE (GCC)",
+  "fiscalYear": 2024,
+  "ledgerAmount": 31884793.76,
+  "sourceTotal": 34712401.43,
+  "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000",
+  "rowSchema": [
+    "subAgency",
+    "program",
+    "amount",
+    "sourceAmount",
+    "sourceRows"
+  ],
+  "rows": [
+    [
+      "GREENFIELD COMMUNITY COLLEGE (GCC)",
+      "GREENFIELD COMMUNITY COLLEGE (GCC) · (AA) REGULAR EMPLOYEE COMPENSATION",
+      15407363.88,
+      15407363.88,
+      605
+    ],
+    [
+      "GREENFIELD COMMUNITY COLLEGE (GCC)",
+      "GREENFIELD COMMUNITY COLLEGE (GCC) · (CC) SPECIAL EMPLOYEES",
+      5994638.92,
+      5994638.92,
+      188
+    ],
+    [
+      "GREENFIELD COMMUNITY COLLEGE (GCC)",
+      "GREENFIELD COMMUNITY COLLEGE (GCC) · (RR) BENEFIT PROGRAMS",
+      5651072.43,
+      5651072.43,
+      36
+    ],
+    [
+      "GREENFIELD COMMUNITY COLLEGE (GCC)",
+      "GREENFIELD COMMUNITY COLLEGE (GCC) · (NN) INFRASTRUCTURE:",
+      1173856.64,
+      1173856.64,
+      16
+    ],
+    [
+      "GREENFIELD COMMUNITY COLLEGE (GCC)",
+      "GREENFIELD COMMUNITY COLLEGE (GCC) · (UU) IT NON-PAYROLL EXPENSES",
+      1159749.35,
+      1159749.35,
+      31
+    ],
+    [
+      "GREENFIELD COMMUNITY COLLEGE (GCC)",
+      "GREENFIELD COMMUNITY COLLEGE (GCC) · (EE) ADMINISTRATIVE EXPENSES",
+      1072193.1,
+      1072193.1,
+      22
+    ],
+    [
+      "GREENFIELD COMMUNITY COLLEGE (GCC)",
+      "GREENFIELD COMMUNITY COLLEGE (GCC) · (GG) ENERGY COSTS AND SPACE RENTAL",
+      912957.85,
+      912957.85,
+      21
+    ],
+    [
+      "GREENFIELD COMMUNITY COLLEGE (GCC)",
+      "GREENFIELD COMMUNITY COLLEGE (GCC) · (JJ) OPERATIONAL SERVICES",
+      857487.12,
+      857487.12,
+      13
+    ],
+    [
+      "GREENFIELD COMMUNITY COLLEGE (GCC)",
+      "GREENFIELD COMMUNITY COLLEGE (GCC) · (HH) CONSULTANT SVCS (TO DEPTS)",
+      708072.88,
+      708072.88,
+      16
+    ],
+    [
+      "GREENFIELD COMMUNITY COLLEGE (GCC)",
+      "GREENFIELD COMMUNITY COLLEGE (GCC) · (FF) FACILITY OPERATIONAL EXPENSES",
+      420163.89,
+      420163.89,
+      15
+    ],
+    [
+      "GREENFIELD COMMUNITY COLLEGE (GCC)",
+      "GREENFIELD COMMUNITY COLLEGE (GCC) · (KK) EQUIPMENT PURCHASE",
+      363717.44,
+      363717.44,
+      14
+    ],
+    [
+      "GREENFIELD COMMUNITY COLLEGE (GCC)",
+      "GREENFIELD COMMUNITY COLLEGE (GCC) · (BB) REGULAR EMPLOYEE RELATED EXPEN",
+      313686.57,
+      313686.57,
+      36
+    ],
+    [
+      "GREENFIELD COMMUNITY COLLEGE (GCC)",
+      "GREENFIELD COMMUNITY COLLEGE (GCC) · (LL) EQUIPMENT LEASE-MAINTAIN/REPAR",
+      258050.41,
+      258050.41,
+      13
+    ],
+    [
+      "GREENFIELD COMMUNITY COLLEGE (GCC)",
+      "GREENFIELD COMMUNITY COLLEGE (GCC) · (DD) PENSION & INSURANCE RELATED EX",
+      228634.14,
+      228634.14,
+      15
+    ],
+    [
+      "GREENFIELD COMMUNITY COLLEGE (GCC)",
+      "GREENFIELD COMMUNITY COLLEGE (GCC) · (TT) LOANS AND SPECIAL PAYMENTS",
+      136455.94,
+      136455.94,
+      41
+    ],
+    [
+      "GREENFIELD COMMUNITY COLLEGE (GCC)",
+      "GREENFIELD COMMUNITY COLLEGE (GCC) · (PP) STATE AID/POL SUB",
+      42346.87,
+      42346.87,
+      3
+    ],
+    [
+      "GREENFIELD COMMUNITY COLLEGE (GCC)",
+      "GREENFIELD COMMUNITY COLLEGE (GCC) · (MM) PURCHASED CLIENT/PROGRAM SVCS",
+      11954,
+      11954,
+      7
+    ],
+    [
+      "GREENFIELD COMMUNITY COLLEGE (GCC)",
+      "GREENFIELD COMMUNITY COLLEGE (GCC) · (99) PAYROLL REJECTS",
+      0,
+      0,
+      6
+    ]
+  ],
+  "hierarchyNote": "The source does not identify a separate sub-agency column; direct-managed rows repeat the parent entity.",
+  "sourceBasis": "official source amount",
+  "note": "Amounts are shown on the official source basis; no comparator normalization was applied."
+}

@@ -1,0 +1,126 @@
+{
+  "scope": "Massachusetts",
+  "code": "ma",
+  "department": "VETERANS' HOME IN CHELSEA (CHE)",
+  "fiscalYear": 2024,
+  "ledgerAmount": 39597022.19,
+  "sourceTotal": 43108565.79,
+  "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000",
+  "rowSchema": [
+    "subAgency",
+    "program",
+    "amount",
+    "sourceAmount",
+    "sourceRows"
+  ],
+  "rows": [
+    [
+      "VETERANS' HOME IN CHELSEA (CHE)",
+      "VETERANS' HOME IN CHELSEA (CHE) · (AA) REGULAR EMPLOYEE COMPENSATION",
+      26702378.33,
+      26702378.33,
+      2729
+    ],
+    [
+      "VETERANS' HOME IN CHELSEA (CHE)",
+      "VETERANS' HOME IN CHELSEA (CHE) · (FF) FACILITY OPERATIONAL EXPENSES",
+      4627811.3,
+      4627811.3,
+      3739
+    ],
+    [
+      "VETERANS' HOME IN CHELSEA (CHE)",
+      "VETERANS' HOME IN CHELSEA (CHE) · (NN) INFRASTRUCTURE:",
+      4453820.14,
+      4453820.14,
+      1288
+    ],
+    [
+      "VETERANS' HOME IN CHELSEA (CHE)",
+      "VETERANS' HOME IN CHELSEA (CHE) · (GG) ENERGY COSTS AND SPACE RENTAL",
+      2775579.43,
+      2775579.43,
+      270
+    ],
+    [
+      "VETERANS' HOME IN CHELSEA (CHE)",
+      "VETERANS' HOME IN CHELSEA (CHE) · (PP) STATE AID/POL SUB",
+      1998427,
+      1998427,
+      15
+    ],
+    [
+      "VETERANS' HOME IN CHELSEA (CHE)",
+      "VETERANS' HOME IN CHELSEA (CHE) · (HH) CONSULTANT SVCS (TO DEPTS)",
+      1020289.15,
+      1020289.15,
+      124
+    ],
+    [
+      "VETERANS' HOME IN CHELSEA (CHE)",
+      "VETERANS' HOME IN CHELSEA (CHE) · (JJ) OPERATIONAL SERVICES",
+      606973.14,
+      606973.14,
+      189
+    ],
+    [
+      "VETERANS' HOME IN CHELSEA (CHE)",
+      "VETERANS' HOME IN CHELSEA (CHE) · (EE) ADMINISTRATIVE EXPENSES",
+      302787.18,
+      302787.18,
+      271
+    ],
+    [
+      "VETERANS' HOME IN CHELSEA (CHE)",
+      "VETERANS' HOME IN CHELSEA (CHE) · (UU) IT NON-PAYROLL EXPENSES",
+      175029.92,
+      175029.92,
+      93
+    ],
+    [
+      "VETERANS' HOME IN CHELSEA (CHE)",
+      "VETERANS' HOME IN CHELSEA (CHE) · (LL) EQUIPMENT LEASE-MAINTAIN/REPAR",
+      149375.83,
+      149375.83,
+      147
+    ],
+    [
+      "VETERANS' HOME IN CHELSEA (CHE)",
+      "VETERANS' HOME IN CHELSEA (CHE) · (KK) EQUIPMENT PURCHASE",
+      114565.7,
+      114565.7,
+      2
+    ],
+    [
+      "VETERANS' HOME IN CHELSEA (CHE)",
+      "VETERANS' HOME IN CHELSEA (CHE) · (MM) PURCHASED CLIENT/PROGRAM SVCS",
+      86910.07,
+      86910.07,
+      103
+    ],
+    [
+      "VETERANS' HOME IN CHELSEA (CHE)",
+      "VETERANS' HOME IN CHELSEA (CHE) · (TT) LOANS AND SPECIAL PAYMENTS",
+      85991.14,
+      85991.14,
+      1
+    ],
+    [
+      "VETERANS' HOME IN CHELSEA (CHE)",
+      "VETERANS' HOME IN CHELSEA (CHE) · (DD) PENSION & INSURANCE RELATED EX",
+      5013.41,
+      5013.41,
+      3
+    ],
+    [
+      "VETERANS' HOME IN CHELSEA (CHE)",
+      "VETERANS' HOME IN CHELSEA (CHE) · (BB) REGULAR EMPLOYEE RELATED EXPEN",
+      3614.05,
+      3614.05,
+      55
+    ]
+  ],
+  "hierarchyNote": "The source does not identify a separate sub-agency column; direct-managed rows repeat the parent entity.",
+  "sourceBasis": "official source amount",
+  "note": "Amounts are shown on the official source basis; no comparator normalization was applied."
+}

@@ -1,0 +1,98 @@
+{
+  "scope": "Massachusetts",
+  "code": "ma",
+  "department": "SHERIFFS DEPARTMENT ASSOCIATION (SDA)",
+  "fiscalYear": 2024,
+  "ledgerAmount": 783432.08,
+  "sourceTotal": 852908.41,
+  "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000",
+  "rowSchema": [
+    "subAgency",
+    "program",
+    "amount",
+    "sourceAmount",
+    "sourceRows"
+  ],
+  "rows": [
+    [
+      "SHERIFFS DEPARTMENT ASSOCIATION (SDA)",
+      "SHERIFFS DEPARTMENT ASSOCIATION (SDA) · (AA) REGULAR EMPLOYEE COMPENSATION",
+      315807.64,
+      315807.64,
+      27
+    ],
+    [
+      "SHERIFFS DEPARTMENT ASSOCIATION (SDA)",
+      "SHERIFFS DEPARTMENT ASSOCIATION (SDA) · (UU) IT NON-PAYROLL EXPENSES",
+      281533.82,
+      281533.82,
+      34
+    ],
+    [
+      "SHERIFFS DEPARTMENT ASSOCIATION (SDA)",
+      "SHERIFFS DEPARTMENT ASSOCIATION (SDA) · (EE) ADMINISTRATIVE EXPENSES",
+      97709.41,
+      97709.41,
+      34
+    ],
+    [
+      "SHERIFFS DEPARTMENT ASSOCIATION (SDA)",
+      "SHERIFFS DEPARTMENT ASSOCIATION (SDA) · (GG) ENERGY COSTS AND SPACE RENTAL",
+      54197.3,
+      54197.3,
+      11
+    ],
+    [
+      "SHERIFFS DEPARTMENT ASSOCIATION (SDA)",
+      "SHERIFFS DEPARTMENT ASSOCIATION (SDA) · (HH) CONSULTANT SVCS (TO DEPTS)",
+      31250,
+      31250,
+      7
+    ],
+    [
+      "SHERIFFS DEPARTMENT ASSOCIATION (SDA)",
+      "SHERIFFS DEPARTMENT ASSOCIATION (SDA) · (FF) FACILITY OPERATIONAL EXPENSES",
+      21647.8,
+      21647.8,
+      7
+    ],
+    [
+      "SHERIFFS DEPARTMENT ASSOCIATION (SDA)",
+      "SHERIFFS DEPARTMENT ASSOCIATION (SDA) · (CC) SPECIAL EMPLOYEES",
+      12730,
+      12730,
+      9
+    ],
+    [
+      "SHERIFFS DEPARTMENT ASSOCIATION (SDA)",
+      "SHERIFFS DEPARTMENT ASSOCIATION (SDA) · (NN) INFRASTRUCTURE:",
+      12500,
+      12500,
+      1
+    ],
+    [
+      "SHERIFFS DEPARTMENT ASSOCIATION (SDA)",
+      "SHERIFFS DEPARTMENT ASSOCIATION (SDA) · (JJ) OPERATIONAL SERVICES",
+      9999,
+      9999,
+      4
+    ],
+    [
+      "SHERIFFS DEPARTMENT ASSOCIATION (SDA)",
+      "SHERIFFS DEPARTMENT ASSOCIATION (SDA) · (KK) EQUIPMENT PURCHASE",
+      9296.84,
+      9296.84,
+      2
+    ],
+    [
+      "SHERIFFS DEPARTMENT ASSOCIATION (SDA)",
+      "SHERIFFS DEPARTMENT ASSOCIATION (SDA) · (BB) REGULAR EMPLOYEE RELATED EXPEN",
+      6236.6,
+      6236.6,
+      14
+    ]
+  ],
+  "hierarchyNote": "The source does not identify a separate sub-agency column; direct-managed rows repeat the parent entity.",
+  "sourceBasis": "official source amount",
+  "note": "Amounts are shown on the official source basis; no comparator normalization was applied."
+}

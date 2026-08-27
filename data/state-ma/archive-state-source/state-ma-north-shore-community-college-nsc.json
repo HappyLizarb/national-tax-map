@@ -1,0 +1,147 @@
+{
+  "scope": "Massachusetts",
+  "code": "ma",
+  "department": "NORTH SHORE COMMUNITY COLLEGE (NSC)",
+  "fiscalYear": 2024,
+  "ledgerAmount": 80308346.8,
+  "sourceTotal": 87430252.58,
+  "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000",
+  "rowSchema": [
+    "subAgency",
+    "program",
+    "amount",
+    "sourceAmount",
+    "sourceRows"
+  ],
+  "rows": [
+    [
+      "NORTH SHORE COMMUNITY COLLEGE (NSC)",
+      "NORTH SHORE COMMUNITY COLLEGE (NSC) · (AA) REGULAR EMPLOYEE COMPENSATION",
+      44769236.09,
+      44769236.09,
+      1278
+    ],
+    [
+      "NORTH SHORE COMMUNITY COLLEGE (NSC)",
+      "NORTH SHORE COMMUNITY COLLEGE (NSC) · (RR) BENEFIT PROGRAMS",
+      13129128,
+      13129128,
+      76
+    ],
+    [
+      "NORTH SHORE COMMUNITY COLLEGE (NSC)",
+      "NORTH SHORE COMMUNITY COLLEGE (NSC) · (CC) SPECIAL EMPLOYEES",
+      9793641.31,
+      9793641.31,
+      1242
+    ],
+    [
+      "NORTH SHORE COMMUNITY COLLEGE (NSC)",
+      "NORTH SHORE COMMUNITY COLLEGE (NSC) · (TT) LOANS AND SPECIAL PAYMENTS",
+      3386967,
+      3386967,
+      12
+    ],
+    [
+      "NORTH SHORE COMMUNITY COLLEGE (NSC)",
+      "NORTH SHORE COMMUNITY COLLEGE (NSC) · (NN) INFRASTRUCTURE:",
+      3363327.28,
+      3363327.28,
+      42
+    ],
+    [
+      "NORTH SHORE COMMUNITY COLLEGE (NSC)",
+      "NORTH SHORE COMMUNITY COLLEGE (NSC) · (UU) IT NON-PAYROLL EXPENSES",
+      3118510,
+      3118510,
+      24
+    ],
+    [
+      "NORTH SHORE COMMUNITY COLLEGE (NSC)",
+      "NORTH SHORE COMMUNITY COLLEGE (NSC) · (EE) ADMINISTRATIVE EXPENSES",
+      2011517.8,
+      2011517.8,
+      56
+    ],
+    [
+      "NORTH SHORE COMMUNITY COLLEGE (NSC)",
+      "NORTH SHORE COMMUNITY COLLEGE (NSC) · (HH) CONSULTANT SVCS (TO DEPTS)",
+      1645836,
+      1645836,
+      31
+    ],
+    [
+      "NORTH SHORE COMMUNITY COLLEGE (NSC)",
+      "NORTH SHORE COMMUNITY COLLEGE (NSC) · (FF) FACILITY OPERATIONAL EXPENSES",
+      1645073,
+      1645073,
+      48
+    ],
+    [
+      "NORTH SHORE COMMUNITY COLLEGE (NSC)",
+      "NORTH SHORE COMMUNITY COLLEGE (NSC) · (GG) ENERGY COSTS AND SPACE RENTAL",
+      1391836.68,
+      1391836.68,
+      14
+    ],
+    [
+      "NORTH SHORE COMMUNITY COLLEGE (NSC)",
+      "NORTH SHORE COMMUNITY COLLEGE (NSC) · (MM) PURCHASED CLIENT/PROGRAM SVCS",
+      1059693,
+      1059693,
+      30
+    ],
+    [
+      "NORTH SHORE COMMUNITY COLLEGE (NSC)",
+      "NORTH SHORE COMMUNITY COLLEGE (NSC) · (JJ) OPERATIONAL SERVICES",
+      781629,
+      781629,
+      28
+    ],
+    [
+      "NORTH SHORE COMMUNITY COLLEGE (NSC)",
+      "NORTH SHORE COMMUNITY COLLEGE (NSC) · (SS) DEBT PAYMENT",
+      424401,
+      424401,
+      12
+    ],
+    [
+      "NORTH SHORE COMMUNITY COLLEGE (NSC)",
+      "NORTH SHORE COMMUNITY COLLEGE (NSC) · (KK) EQUIPMENT PURCHASE",
+      333436,
+      333436,
+      16
+    ],
+    [
+      "NORTH SHORE COMMUNITY COLLEGE (NSC)",
+      "NORTH SHORE COMMUNITY COLLEGE (NSC) · (PP) STATE AID/POL SUB",
+      265389,
+      265389,
+      8
+    ],
+    [
+      "NORTH SHORE COMMUNITY COLLEGE (NSC)",
+      "NORTH SHORE COMMUNITY COLLEGE (NSC) · (LL) EQUIPMENT LEASE-MAINTAIN/REPAR",
+      173651,
+      173651,
+      12
+    ],
+    [
+      "NORTH SHORE COMMUNITY COLLEGE (NSC)",
+      "NORTH SHORE COMMUNITY COLLEGE (NSC) · (BB) REGULAR EMPLOYEE RELATED EXPEN",
+      136980.42,
+      136980.42,
+      232
+    ],
+    [
+      "NORTH SHORE COMMUNITY COLLEGE (NSC)",
+      "NORTH SHORE COMMUNITY COLLEGE (NSC) · (99) PAYROLL REJECTS",
+      0,
+      0,
+      6
+    ]
+  ],
+  "hierarchyNote": "The source does not identify a separate sub-agency column; direct-managed rows repeat the parent entity.",
+  "sourceBasis": "official source amount",
+  "note": "Amounts are shown on the official source basis; no comparator normalization was applied."
+}

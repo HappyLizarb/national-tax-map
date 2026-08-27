@@ -1,0 +1,42 @@
+{
+  "scope": "Connecticut",
+  "code": "ct",
+  "department": "Off of the Healthcare Advocate",
+  "fiscalYear": 2024,
+  "ledgerAmount": 217379.36,
+  "sourceTotal": 231632.31,
+  "sourceUrl": "https://data.ct.gov/resource/ajdm-rvz7.json?$select=department,program,sum(amount)%20as%20amount,count(*)%20as%20records&$where=fiscal_year=2024&$group=department,program",
+  "rowSchema": [
+    "subAgency",
+    "program",
+    "amount",
+    "sourceAmount",
+    "sourceRows"
+  ],
+  "rows": [
+    [
+      "Off of the Healthcare Advocate",
+      "Off of the Healthcare Advocate · Other Expenses",
+      225497.59,
+      225497.59,
+      158
+    ],
+    [
+      "Off of the Healthcare Advocate",
+      "Off of the Healthcare Advocate · Equipment",
+      4239,
+      4239,
+      3
+    ],
+    [
+      "Off of the Healthcare Advocate",
+      "Off of the Healthcare Advocate · IT Services",
+      1895.72,
+      1895.72,
+      10
+    ]
+  ],
+  "hierarchyNote": "The source does not identify a separate sub-agency column; direct-managed rows repeat the parent entity.",
+  "sourceBasis": "official source amount",
+  "note": "Amounts are shown on the official source basis; no comparator normalization was applied."
+}

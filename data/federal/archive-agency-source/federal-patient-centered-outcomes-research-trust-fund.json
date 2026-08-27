@@ -1,0 +1,45 @@
+{
+  "scope": "United States",
+  "code": "federal",
+  "department": "Patient-Centered Outcomes Research Trust Fund",
+  "fiscalYear": 2024,
+  "ledgerAmount": 794971589.78,
+  "sourceTotal": 1083411860.78,
+  "sourceUrl": "https://api.usaspending.gov/api/v2/agency/579/object_class/?fiscal_year=2024&limit=100&page=1",
+  "sourceUrls": [
+    [
+      "FY2024 gross outlays by object class",
+      "https://api.usaspending.gov/api/v2/agency/579/object_class/?fiscal_year=2024&limit=100&page=1"
+    ],
+    [
+      "FY2024 agency budgetary resources total",
+      "https://api.usaspending.gov/api/v2/agency/579/budgetary_resources/?fiscal_year=2024"
+    ]
+  ],
+  "rowSchema": [
+    "subAgency",
+    "program",
+    "amount",
+    "sourceAmount",
+    "sourceRows"
+  ],
+  "rows": [
+    [
+      "Patient-Centered Outcomes Research Trust Fund",
+      "Financial transfers",
+      1083411860.78,
+      1083411860.78,
+      null
+    ]
+  ],
+  "sourceBasis": "official source amount",
+  "sourceCheck": {
+    "objectClassRows": 1,
+    "objectClassTotal": 1083411860.78,
+    "agencyTotal": 1083411860.78,
+    "difference": 0
+  },
+  "normalizationAdjustment": 0,
+  "hierarchyNote": "The source endpoint returns agency-level object-class aggregates; no individual employees or payees are included.",
+  "note": "Amounts are shown on the official source basis; no comparator normalization was applied."
+}

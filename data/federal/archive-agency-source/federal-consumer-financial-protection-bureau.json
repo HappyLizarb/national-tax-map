@@ -1,0 +1,185 @@
+{
+  "scope": "United States",
+  "code": "federal",
+  "department": "Consumer Financial Protection Bureau",
+  "fiscalYear": 2024,
+  "ledgerAmount": 944090161.86,
+  "sourceTotal": 1286635261.12,
+  "sourceUrl": "https://api.usaspending.gov/api/v2/agency/581/object_class/?fiscal_year=2024&limit=100&page=1",
+  "sourceUrls": [
+    [
+      "FY2024 gross outlays by object class",
+      "https://api.usaspending.gov/api/v2/agency/581/object_class/?fiscal_year=2024&limit=100&page=1"
+    ],
+    [
+      "FY2024 agency budgetary resources total",
+      "https://api.usaspending.gov/api/v2/agency/581/budgetary_resources/?fiscal_year=2024"
+    ]
+  ],
+  "rowSchema": [
+    "subAgency",
+    "program",
+    "amount",
+    "sourceAmount",
+    "sourceRows"
+  ],
+  "rows": [
+    [
+      "Consumer Financial Protection Bureau",
+      "Advisory and assistance services",
+      643474051.06,
+      643474051.06,
+      null
+    ],
+    [
+      "Consumer Financial Protection Bureau",
+      "Full-time permanent",
+      325312658.7,
+      325312658.7,
+      null
+    ],
+    [
+      "Consumer Financial Protection Bureau",
+      "Civilian personnel benefits",
+      149817634.72,
+      149817634.72,
+      null
+    ],
+    [
+      "Consumer Financial Protection Bureau",
+      "Other goods and services from Federal sources",
+      61721537.52,
+      61721537.52,
+      null
+    ],
+    [
+      "Consumer Financial Protection Bureau",
+      "Equipment",
+      34153663.5,
+      34153663.5,
+      null
+    ],
+    [
+      "Consumer Financial Protection Bureau",
+      "Other personnel compensation",
+      28203424.65,
+      28203424.65,
+      null
+    ],
+    [
+      "Consumer Financial Protection Bureau",
+      "Other services from non-Federal sources",
+      8852782.41,
+      8852782.41,
+      null
+    ],
+    [
+      "Consumer Financial Protection Bureau",
+      "Travel and transportation of persons",
+      8344576.94,
+      8344576.94,
+      null
+    ],
+    [
+      "Consumer Financial Protection Bureau",
+      "Supplies and materials",
+      8447610.01,
+      8447610.01,
+      null
+    ],
+    [
+      "Consumer Financial Protection Bureau",
+      "Communications, utilities, and miscellaneous charges",
+      5534533.13,
+      5534533.13,
+      null
+    ],
+    [
+      "Consumer Financial Protection Bureau",
+      "Rental payments to GSA",
+      3490983.47,
+      3490983.47,
+      null
+    ],
+    [
+      "Consumer Financial Protection Bureau",
+      "Operation and maintenance of facilities",
+      3787322.16,
+      3787322.16,
+      null
+    ],
+    [
+      "Consumer Financial Protection Bureau",
+      "Printing and reproduction",
+      1781574.48,
+      1781574.48,
+      null
+    ],
+    [
+      "Consumer Financial Protection Bureau",
+      "Other than full-time permanent",
+      1607348.74,
+      1607348.74,
+      null
+    ],
+    [
+      "Consumer Financial Protection Bureau",
+      "Land and structures",
+      1826667.08,
+      1826667.08,
+      null
+    ],
+    [
+      "Consumer Financial Protection Bureau",
+      "Transportation of things",
+      80237.35,
+      80237.35,
+      null
+    ],
+    [
+      "Consumer Financial Protection Bureau",
+      "Operation and maintenance of equipment",
+      152512.19,
+      152512.19,
+      null
+    ],
+    [
+      "Consumer Financial Protection Bureau",
+      "Rental payments to others",
+      38832.85,
+      38832.85,
+      null
+    ],
+    [
+      "Consumer Financial Protection Bureau",
+      "Medical care",
+      5669.23,
+      5669.23,
+      null
+    ],
+    [
+      "Consumer Financial Protection Bureau",
+      "Benefits for former personnel",
+      1480,
+      1480,
+      null
+    ],
+    [
+      "Consumer Financial Protection Bureau",
+      "Interest and dividends",
+      160.93,
+      160.93,
+      null
+    ]
+  ],
+  "sourceBasis": "official source amount",
+  "sourceCheck": {
+    "objectClassRows": 21,
+    "objectClassTotal": 1286635261.12,
+    "agencyTotal": 1286635261.12,
+    "difference": 0
+  },
+  "normalizationAdjustment": 0,
+  "hierarchyNote": "The source endpoint returns agency-level object-class aggregates; no individual employees or payees are included.",
+  "note": "Amounts are shown on the official source basis; no comparator normalization was applied."
+}

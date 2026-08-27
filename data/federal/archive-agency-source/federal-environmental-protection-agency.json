@@ -1,0 +1,246 @@
+{
+  "scope": "United States",
+  "code": "federal",
+  "department": "Environmental Protection Agency",
+  "agencyCode": "068",
+  "fiscalYear": 2024,
+  "ledgerAmount": 11404897612.12,
+  "sourceTotal": 15542947072.28,
+  "sourceUrl": "https://api.usaspending.gov/api/v2/agency/068/object_class/?fiscal_year=2024&limit=100&page=1",
+  "rowSchema": [
+    "subAgency",
+    "program",
+    "amount",
+    "sourceAmount",
+    "sourceRows"
+  ],
+  "rows": [
+    [
+      "Environmental Protection Agency",
+      "Grants, subsidies, and contributions",
+      8026373150.39,
+      8026373150.39,
+      null
+    ],
+    [
+      "Environmental Protection Agency",
+      "Other services from non-Federal sources",
+      2300050118.88,
+      2300050118.88,
+      null
+    ],
+    [
+      "Environmental Protection Agency",
+      "Other goods and services from Federal sources",
+      1527813731.28,
+      1527813731.28,
+      null
+    ],
+    [
+      "Environmental Protection Agency",
+      "Full-time permanent",
+      2019337074.6,
+      2019337074.6,
+      null
+    ],
+    [
+      "Environmental Protection Agency",
+      "Operation and maintenance of equipment",
+      31411249.35,
+      31411249.35,
+      null
+    ],
+    [
+      "Environmental Protection Agency",
+      "Civilian personnel benefits",
+      809878787.78,
+      809878787.78,
+      null
+    ],
+    [
+      "Environmental Protection Agency",
+      "Advisory and assistance services",
+      503160559.98,
+      503160559.98,
+      null
+    ],
+    [
+      "Environmental Protection Agency",
+      "Rental payments to GSA",
+      222270191.85,
+      222270191.85,
+      null
+    ],
+    [
+      "Environmental Protection Agency",
+      "Other than full-time permanent",
+      74609960.37,
+      74609960.37,
+      null
+    ],
+    [
+      "Environmental Protection Agency",
+      "Research and development contracts",
+      65954262.37,
+      65954262.37,
+      null
+    ],
+    [
+      "Environmental Protection Agency",
+      "Land and structures",
+      36127450.98,
+      36127450.98,
+      null
+    ],
+    [
+      "Environmental Protection Agency",
+      "Operation and maintenance of facilities",
+      70149019.49,
+      70149019.49,
+      null
+    ],
+    [
+      "Environmental Protection Agency",
+      "Other personnel compensation",
+      63693289.89,
+      63693289.89,
+      null
+    ],
+    [
+      "Environmental Protection Agency",
+      "Equipment",
+      65663477.28,
+      65663477.28,
+      null
+    ],
+    [
+      "Environmental Protection Agency",
+      "Travel and transportation of persons",
+      54209435.51,
+      54209435.51,
+      null
+    ],
+    [
+      "Environmental Protection Agency",
+      "Communications, utilities, and miscellaneous charges",
+      25267942.15,
+      25267942.15,
+      null
+    ],
+    [
+      "Environmental Protection Agency",
+      "Supplies and materials",
+      23251308.14,
+      23251308.14,
+      null
+    ],
+    [
+      "Environmental Protection Agency",
+      "Insurance claims and indemnities",
+      11415568.76,
+      11415568.76,
+      null
+    ],
+    [
+      "Environmental Protection Agency",
+      "Printing and reproduction",
+      5221703.49,
+      5221703.49,
+      null
+    ],
+    [
+      "Environmental Protection Agency",
+      "Military personnel",
+      6490707.12,
+      6490707.12,
+      null
+    ],
+    [
+      "Environmental Protection Agency",
+      "Benefits for former personnel",
+      5249074.18,
+      5249074.18,
+      null
+    ],
+    [
+      "Environmental Protection Agency",
+      "Rental payments to others",
+      3936228.36,
+      3936228.36,
+      null
+    ],
+    [
+      "Environmental Protection Agency",
+      "Transportation of things",
+      2331307.95,
+      2331307.95,
+      null
+    ],
+    [
+      "Environmental Protection Agency",
+      "Special personal services payments",
+      838927.49,
+      838927.49,
+      null
+    ],
+    [
+      "Environmental Protection Agency",
+      "Military personnel benefits",
+      404745.32,
+      404745.32,
+      null
+    ],
+    [
+      "Environmental Protection Agency",
+      "Financial transfers",
+      95010,
+      95010,
+      null
+    ],
+    [
+      "Environmental Protection Agency",
+      "Subsistence and support of persons",
+      3873.49,
+      3873.49,
+      null
+    ],
+    [
+      "Environmental Protection Agency",
+      "Object class not reported by official source",
+      -412261084.17,
+      -412261084.17,
+      null
+    ]
+  ],
+  "supplementalRows": [],
+  "supplementalSchema": [
+    "subAgency",
+    "program",
+    "amount",
+    "measure",
+    "source"
+  ],
+  "hierarchyNote": "Object-class rows are directly managed; the parent entity is repeated as the sub-agency placeholder.",
+  "sourceUrls": [
+    [
+      "FY2024 gross outlays by object class",
+      "https://api.usaspending.gov/api/v2/agency/068/object_class/?fiscal_year=2024&limit=100&page=1"
+    ],
+    [
+      "FY2024 agency budgetary resources total",
+      "https://api.usaspending.gov/api/v2/agency/068/budgetary_resources/?fiscal_year=2024"
+    ]
+  ],
+  "sourceBasis": "official source amount",
+  "sourceCheck": {
+    "objectClassRows": 28,
+    "objectClassTotal": 15542947072.28,
+    "agencyTotal": 15542947072.28,
+    "difference": 0
+  },
+  "normalizationAdjustment": 0.01,
+  "sourceLabelMap": {
+    "Object class not reported by official source": "Unknown"
+  },
+  "note": "The official USAspending object-class response labels 1 row as Unknown; the display label states that the object class was not reported and no category was inferred. Amounts are shown on the official source basis; no comparator normalization was applied."
+}

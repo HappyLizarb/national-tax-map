@@ -1,0 +1,71 @@
+{
+  "scope": "Maryland",
+  "code": "md",
+  "fiscalYear": 2024,
+  "department": "DHCD-MARYLAND HISTORICAL TRUST -CAPITAL",
+  "sourceUrl": "https://opendata.maryland.gov/Budget/State-of-Maryland-Payments-Data-FY2008-to-FY2024/7syw-q4cy/about_data",
+  "sourceUrls": [
+    [
+      "Maryland payments dataset",
+      "https://opendata.maryland.gov/Budget/State-of-Maryland-Payments-Data-FY2008-to-FY2024/7syw-q4cy/about_data"
+    ],
+    [
+      "FY2024 raw API rows",
+      "https://opendata.maryland.gov/resource/7syw-q4cy.json?%24where=fiscal_year=%272024%27&%24limit=50000"
+    ]
+  ],
+  "sourceBasis": "FY2024 cash payments grouped by official agency, published category code, and privacy-safe receiver label.",
+  "privacyNote": "Organization receiver names are retained; individual or ambiguous vendor names are grouped as [individual recipient omitted]. No person-level payroll fields are retained.",
+  "sourceRows": 5,
+  "sourceTotal": 2528469,
+  "rowSchema": [
+    "subAgency",
+    "program",
+    "amount",
+    "sourceAmount",
+    "sourceRows"
+  ],
+  "rows": [
+    [
+      "DHCD-MARYLAND HISTORICAL TRUST -CAPITAL",
+      "Category code 620 · Receiver ASCENSION HOME INC  , C/O GEDCO",
+      307869,
+      307869,
+      1
+    ],
+    [
+      "DHCD-MARYLAND HISTORICAL TRUST -CAPITAL",
+      "Category code 620 · Receiver CHRYSALIS HOUSE INC",
+      65000,
+      65000,
+      1
+    ],
+    [
+      "DHCD-MARYLAND HISTORICAL TRUST -CAPITAL",
+      "Category code 620 · Receiver SCSFSC, LLC",
+      135768,
+      135768,
+      1
+    ],
+    [
+      "DHCD-MARYLAND HISTORICAL TRUST -CAPITAL",
+      "Category code 620 · Receiver SEXUAL ASSAULT/SPOUSE ABUSE RESOURCE CENTER INC",
+      149999,
+      149999,
+      1
+    ],
+    [
+      "DHCD-MARYLAND HISTORICAL TRUST -CAPITAL",
+      "Category code 620 · Receiver YOUNG WOMEN'S CHRISTIAN ASSOC. OF ANNAPOLIS AND",
+      1869833,
+      1869833,
+      1
+    ]
+  ],
+  "sourceCheck": {
+    "objectClassRows": 5,
+    "sourceRows": 5,
+    "sourceTotal": 2528469,
+    "difference": 0
+  }
+}

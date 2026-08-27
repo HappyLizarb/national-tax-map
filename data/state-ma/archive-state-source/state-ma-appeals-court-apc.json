@@ -1,0 +1,105 @@
+{
+  "scope": "Massachusetts",
+  "code": "ma",
+  "department": "APPEALS COURT (APC)",
+  "fiscalYear": 2024,
+  "ledgerAmount": 12843210.79,
+  "sourceTotal": 13982172.56,
+  "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000",
+  "rowSchema": [
+    "subAgency",
+    "program",
+    "amount",
+    "sourceAmount",
+    "sourceRows"
+  ],
+  "rows": [
+    [
+      "APPEALS COURT (APC)",
+      "APPEALS COURT (APC) · (AA) REGULAR EMPLOYEE COMPENSATION",
+      13289513.99,
+      13289513.99,
+      38
+    ],
+    [
+      "APPEALS COURT (APC)",
+      "APPEALS COURT (APC) · (EE) ADMINISTRATIVE EXPENSES",
+      302747.54,
+      302747.54,
+      119
+    ],
+    [
+      "APPEALS COURT (APC)",
+      "APPEALS COURT (APC) · (UU) IT NON-PAYROLL EXPENSES",
+      117957.21,
+      117957.21,
+      103
+    ],
+    [
+      "APPEALS COURT (APC)",
+      "APPEALS COURT (APC) · (HH) CONSULTANT SVCS (TO DEPTS)",
+      87877.5,
+      87877.5,
+      12
+    ],
+    [
+      "APPEALS COURT (APC)",
+      "APPEALS COURT (APC) · (LL) EQUIPMENT LEASE-MAINTAIN/REPAR",
+      50386.88,
+      50386.88,
+      40
+    ],
+    [
+      "APPEALS COURT (APC)",
+      "APPEALS COURT (APC) · (BB) REGULAR EMPLOYEE RELATED EXPEN",
+      46341.08,
+      46341.08,
+      54
+    ],
+    [
+      "APPEALS COURT (APC)",
+      "APPEALS COURT (APC) · (KK) EQUIPMENT PURCHASE",
+      38574.01,
+      38574.01,
+      12
+    ],
+    [
+      "APPEALS COURT (APC)",
+      "APPEALS COURT (APC) · (DD) PENSION & INSURANCE RELATED EX",
+      35696,
+      35696,
+      5
+    ],
+    [
+      "APPEALS COURT (APC)",
+      "APPEALS COURT (APC) · (JJ) OPERATIONAL SERVICES",
+      5696.92,
+      5696.92,
+      32
+    ],
+    [
+      "APPEALS COURT (APC)",
+      "APPEALS COURT (APC) · (FF) FACILITY OPERATIONAL EXPENSES",
+      4800.03,
+      4800.03,
+      4
+    ],
+    [
+      "APPEALS COURT (APC)",
+      "APPEALS COURT (APC) · (CC) SPECIAL EMPLOYEES",
+      1578,
+      1578,
+      6
+    ],
+    [
+      "APPEALS COURT (APC)",
+      "APPEALS COURT (APC) · (NN) INFRASTRUCTURE:",
+      1003.4,
+      1003.4,
+      4
+    ]
+  ],
+  "hierarchyNote": "The source does not identify a separate sub-agency column; direct-managed rows repeat the parent entity.",
+  "sourceBasis": "official source amount",
+  "note": "Amounts are shown on the official source basis; no comparator normalization was applied."
+}

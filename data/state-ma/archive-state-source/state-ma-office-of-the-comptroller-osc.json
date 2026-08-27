@@ -1,0 +1,98 @@
+{
+  "scope": "Massachusetts",
+  "code": "ma",
+  "department": "OFFICE OF THE COMPTROLLER (OSC)",
+  "fiscalYear": 2024,
+  "ledgerAmount": 15521949.18,
+  "sourceTotal": 16898466.87,
+  "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000",
+  "rowSchema": [
+    "subAgency",
+    "program",
+    "amount",
+    "sourceAmount",
+    "sourceRows"
+  ],
+  "rows": [
+    [
+      "OFFICE OF THE COMPTROLLER (OSC)",
+      "OFFICE OF THE COMPTROLLER (OSC) · (AA) REGULAR EMPLOYEE COMPENSATION",
+      12379377.72,
+      12379377.72,
+      676
+    ],
+    [
+      "OFFICE OF THE COMPTROLLER (OSC)",
+      "OFFICE OF THE COMPTROLLER (OSC) · (HH) CONSULTANT SVCS (TO DEPTS)",
+      2136887.72,
+      2136887.72,
+      33
+    ],
+    [
+      "OFFICE OF THE COMPTROLLER (OSC)",
+      "OFFICE OF THE COMPTROLLER (OSC) · (UU) IT NON-PAYROLL EXPENSES",
+      1965738.59,
+      1965738.59,
+      282
+    ],
+    [
+      "OFFICE OF THE COMPTROLLER (OSC)",
+      "OFFICE OF THE COMPTROLLER (OSC) · (EE) ADMINISTRATIVE EXPENSES",
+      247930.42,
+      247930.42,
+      106
+    ],
+    [
+      "OFFICE OF THE COMPTROLLER (OSC)",
+      "OFFICE OF THE COMPTROLLER (OSC) · (CC) SPECIAL EMPLOYEES",
+      107350,
+      107350,
+      79
+    ],
+    [
+      "OFFICE OF THE COMPTROLLER (OSC)",
+      "OFFICE OF THE COMPTROLLER (OSC) · (BB) REGULAR EMPLOYEE RELATED EXPEN",
+      42623.1,
+      42623.1,
+      208
+    ],
+    [
+      "OFFICE OF THE COMPTROLLER (OSC)",
+      "OFFICE OF THE COMPTROLLER (OSC) · (LL) EQUIPMENT LEASE-MAINTAIN/REPAR",
+      9879.84,
+      9879.84,
+      12
+    ],
+    [
+      "OFFICE OF THE COMPTROLLER (OSC)",
+      "OFFICE OF THE COMPTROLLER (OSC) · (NN) INFRASTRUCTURE:",
+      7877.09,
+      7877.09,
+      5
+    ],
+    [
+      "OFFICE OF THE COMPTROLLER (OSC)",
+      "OFFICE OF THE COMPTROLLER (OSC) · (JJ) OPERATIONAL SERVICES",
+      407.39,
+      407.39,
+      4
+    ],
+    [
+      "OFFICE OF THE COMPTROLLER (OSC)",
+      "OFFICE OF THE COMPTROLLER (OSC) · (FF) FACILITY OPERATIONAL EXPENSES",
+      395,
+      395,
+      2
+    ],
+    [
+      "OFFICE OF THE COMPTROLLER (OSC)",
+      "OFFICE OF THE COMPTROLLER (OSC) · (99) PAYROLL REJECTS",
+      0,
+      0,
+      8
+    ]
+  ],
+  "hierarchyNote": "The source does not identify a separate sub-agency column; direct-managed rows repeat the parent entity.",
+  "sourceBasis": "official source amount",
+  "note": "Amounts are shown on the official source basis; no comparator normalization was applied."
+}

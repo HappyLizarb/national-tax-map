@@ -1,0 +1,47 @@
+{
+  "scope": "Pennsylvania",
+  "code": "pa",
+  "department": "Postage",
+  "fiscalYear": 2024,
+  "ledgerAmount": 1605982.63,
+  "sourceTotal": 1605982.63,
+  "sourceUrl": "https://www.patreasury.gov/openbookpa/checkbook.php",
+  "rowSchema": [
+    "subAgency",
+    "program",
+    "amount",
+    "sourceAmount",
+    "sourceRows"
+  ],
+  "rows": [
+    [
+      "Postage",
+      "U S POSTAL SERVICE   · Postage · 6391010",
+      995020.19,
+      995020.19,
+      9
+    ],
+    [
+      "Postage",
+      "POSTMASTER   · Postage · 6391010",
+      500000,
+      500000,
+      3
+    ],
+    [
+      "Postage",
+      "Data-Pac   · Postage · 6391010",
+      100000,
+      100000,
+      1
+    ],
+    [
+      "Postage",
+      "UNITED PARCEL SERVICE   · Postage · 6391010",
+      10962.44,
+      10962.44,
+      94
+    ]
+  ],
+  "hierarchyNote": "The source does not identify a separate sub-agency column; direct-managed rows repeat the parent entity."
+}

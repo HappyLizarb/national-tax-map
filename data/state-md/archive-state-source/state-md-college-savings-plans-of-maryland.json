@@ -1,0 +1,57 @@
+{
+  "scope": "Maryland",
+  "code": "md",
+  "fiscalYear": 2024,
+  "department": "COLLEGE SAVINGS PLANS OF MARYLAND",
+  "sourceUrl": "https://opendata.maryland.gov/Budget/State-of-Maryland-Payments-Data-FY2008-to-FY2024/7syw-q4cy/about_data",
+  "sourceUrls": [
+    [
+      "Maryland payments dataset",
+      "https://opendata.maryland.gov/Budget/State-of-Maryland-Payments-Data-FY2008-to-FY2024/7syw-q4cy/about_data"
+    ],
+    [
+      "FY2024 raw API rows",
+      "https://opendata.maryland.gov/resource/7syw-q4cy.json?%24where=fiscal_year=%272024%27&%24limit=50000"
+    ]
+  ],
+  "sourceBasis": "FY2024 cash payments grouped by official agency, published category code, and privacy-safe receiver label.",
+  "privacyNote": "Organization receiver names are retained; individual or ambiguous vendor names are grouped as [individual recipient omitted]. No person-level payroll fields are retained.",
+  "sourceRows": 3,
+  "sourceTotal": 36782.04,
+  "rowSchema": [
+    "subAgency",
+    "program",
+    "amount",
+    "sourceAmount",
+    "sourceRows"
+  ],
+  "rows": [
+    [
+      "COLLEGE SAVINGS PLANS OF MARYLAND",
+      "Category code R60 · Receiver FEDERAL EXPRESS CORPORATION",
+      25.5,
+      25.5,
+      1
+    ],
+    [
+      "COLLEGE SAVINGS PLANS OF MARYLAND",
+      "Category code R60 · Receiver STRATEGIC COMMUNICATIONS LLC",
+      4381.54,
+      4381.54,
+      1
+    ],
+    [
+      "COLLEGE SAVINGS PLANS OF MARYLAND",
+      "Category code R60 · Receiver UHY LLP",
+      32375,
+      32375,
+      1
+    ]
+  ],
+  "sourceCheck": {
+    "objectClassRows": 3,
+    "sourceRows": 3,
+    "sourceTotal": 36782.04,
+    "difference": 0
+  }
+}

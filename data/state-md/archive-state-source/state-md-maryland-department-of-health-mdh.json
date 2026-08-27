@@ -1,0 +1,120 @@
+{
+  "scope": "Maryland",
+  "code": "md",
+  "fiscalYear": 2024,
+  "department": "MARYLAND DEPARTMENT OF HEALTH, MDH",
+  "sourceUrl": "https://opendata.maryland.gov/Budget/State-of-Maryland-Payments-Data-FY2008-to-FY2024/7syw-q4cy/about_data",
+  "sourceUrls": [
+    [
+      "Maryland payments dataset",
+      "https://opendata.maryland.gov/Budget/State-of-Maryland-Payments-Data-FY2008-to-FY2024/7syw-q4cy/about_data"
+    ],
+    [
+      "FY2024 raw API rows",
+      "https://opendata.maryland.gov/resource/7syw-q4cy.json?%24where=fiscal_year=%272024%27&%24limit=50000"
+    ]
+  ],
+  "sourceBasis": "FY2024 cash payments grouped by official agency, published category code, and privacy-safe receiver label.",
+  "privacyNote": "Organization receiver names are retained; individual or ambiguous vendor names are grouped as [individual recipient omitted]. No person-level payroll fields are retained.",
+  "sourceRows": 12,
+  "sourceTotal": 8096271,
+  "rowSchema": [
+    "subAgency",
+    "program",
+    "amount",
+    "sourceAmount",
+    "sourceRows"
+  ],
+  "rows": [
+    [
+      "MARYLAND DEPARTMENT OF HEALTH, MDH",
+      "Category code 610 · Receiver [individual recipient omitted]",
+      157819,
+      157819,
+      1
+    ],
+    [
+      "MARYLAND DEPARTMENT OF HEALTH, MDH",
+      "Category code 610 · Receiver BALTIMORE MEDICAL SYSTEM INC",
+      2278902,
+      2278902,
+      1
+    ],
+    [
+      "MARYLAND DEPARTMENT OF HEALTH, MDH",
+      "Category code 610 · Receiver CHOPTANK COMMUNITY HEALTH SYSTEM INC",
+      564671,
+      564671,
+      1
+    ],
+    [
+      "MARYLAND DEPARTMENT OF HEALTH, MDH",
+      "Category code 610 · Receiver CORNERSTONE MONTGOMERY INC",
+      235248,
+      235248,
+      1
+    ],
+    [
+      "MARYLAND DEPARTMENT OF HEALTH, MDH",
+      "Category code 610 · Receiver HOUSING UNLIMITED INC",
+      384054,
+      384054,
+      1
+    ],
+    [
+      "MARYLAND DEPARTMENT OF HEALTH, MDH",
+      "Category code 610 · Receiver KEY POINT HEALTH SERVICES INC",
+      146250,
+      146250,
+      1
+    ],
+    [
+      "MARYLAND DEPARTMENT OF HEALTH, MDH",
+      "Category code 610 · Receiver MOUNTAIN LAUREL MEDICAL CENTER",
+      373849,
+      373849,
+      1
+    ],
+    [
+      "MARYLAND DEPARTMENT OF HEALTH, MDH",
+      "Category code 610 · Receiver PEOPLE ENCOURAGING PEOPLE INC",
+      723779,
+      723779,
+      1
+    ],
+    [
+      "MARYLAND DEPARTMENT OF HEALTH, MDH",
+      "Category code 610 · Receiver PROLOGUE INC",
+      108850,
+      108850,
+      1
+    ],
+    [
+      "MARYLAND DEPARTMENT OF HEALTH, MDH",
+      "Category code 610 · Receiver THE TUERK HOUSE INC",
+      1666237,
+      1666237,
+      1
+    ],
+    [
+      "MARYLAND DEPARTMENT OF HEALTH, MDH",
+      "Category code 610 · Receiver THREE LOWER COUNTIES COMMUNITY SERVICES INC",
+      1045383,
+      1045383,
+      1
+    ],
+    [
+      "MARYLAND DEPARTMENT OF HEALTH, MDH",
+      "Category code 610 · Receiver WAY STATION INC",
+      411229,
+      411229,
+      1
+    ]
+  ],
+  "sourceCheck": {
+    "objectClassRows": 12,
+    "sourceRows": 12,
+    "sourceTotal": 8096271,
+    "difference": 0
+  }
+}

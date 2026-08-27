@@ -1,0 +1,42 @@
+{
+  "scope": "Connecticut",
+  "code": "ct",
+  "department": "CSU - Western",
+  "fiscalYear": 2024,
+  "ledgerAmount": 31435318.6,
+  "sourceTotal": 33496443.64,
+  "sourceUrl": "https://data.ct.gov/resource/ajdm-rvz7.json?$select=department,program,sum(amount)%20as%20amount,count(*)%20as%20records&$where=fiscal_year=2024&$group=department,program",
+  "rowSchema": [
+    "subAgency",
+    "program",
+    "amount",
+    "sourceAmount",
+    "sourceRows"
+  ],
+  "rows": [
+    [
+      "CSU - Western",
+      "CSU - Western · Non-Budgeted Operating Approp",
+      31938715.68,
+      31938715.68,
+      132
+    ],
+    [
+      "CSU - Western",
+      "CSU - Western · Deferred Maintenance all Univ",
+      1016794.26,
+      1016794.26,
+      15
+    ],
+    [
+      "CSU - Western",
+      "CSU - Western · DEFERRED MAINT-ALL UNIVERSITY",
+      540933.7,
+      540933.7,
+      10
+    ]
+  ],
+  "hierarchyNote": "The source does not identify a separate sub-agency column; direct-managed rows repeat the parent entity.",
+  "sourceBasis": "official source amount",
+  "note": "Amounts are shown on the official source basis; no comparator normalization was applied."
+}

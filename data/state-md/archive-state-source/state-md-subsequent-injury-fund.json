@@ -1,0 +1,120 @@
+{
+  "scope": "Maryland",
+  "code": "md",
+  "fiscalYear": 2024,
+  "department": "SUBSEQUENT INJURY FUND",
+  "sourceUrl": "https://opendata.maryland.gov/Budget/State-of-Maryland-Payments-Data-FY2008-to-FY2024/7syw-q4cy/about_data",
+  "sourceUrls": [
+    [
+      "Maryland payments dataset",
+      "https://opendata.maryland.gov/Budget/State-of-Maryland-Payments-Data-FY2008-to-FY2024/7syw-q4cy/about_data"
+    ],
+    [
+      "FY2024 raw API rows",
+      "https://opendata.maryland.gov/resource/7syw-q4cy.json?%24where=fiscal_year=%272024%27&%24limit=50000"
+    ]
+  ],
+  "sourceBasis": "FY2024 cash payments grouped by official agency, published category code, and privacy-safe receiver label.",
+  "privacyNote": "Organization receiver names are retained; individual or ambiguous vendor names are grouped as [individual recipient omitted]. No person-level payroll fields are retained.",
+  "sourceRows": 12,
+  "sourceTotal": 125168.26,
+  "rowSchema": [
+    "subAgency",
+    "program",
+    "amount",
+    "sourceAmount",
+    "sourceRows"
+  ],
+  "rows": [
+    [
+      "SUBSEQUENT INJURY FUND",
+      "Category code C94 · Receiver [individual recipient omitted]",
+      5927.38,
+      5927.38,
+      1
+    ],
+    [
+      "SUBSEQUENT INJURY FUND",
+      "Category code C94 · Receiver 222-224 SCHILLING CIRCLE LLC",
+      96421.05,
+      96421.05,
+      1
+    ],
+    [
+      "SUBSEQUENT INJURY FUND",
+      "Category code C94 · Receiver CREST LOCK CO INC",
+      534,
+      534,
+      1
+    ],
+    [
+      "SUBSEQUENT INJURY FUND",
+      "Category code C94 · Receiver DATA PROCESSING SOLUTIONS",
+      456,
+      456,
+      1
+    ],
+    [
+      "SUBSEQUENT INJURY FUND",
+      "Category code C94 · Receiver GLOBAL MESSENGER CORPORATION",
+      129.58,
+      129.58,
+      1
+    ],
+    [
+      "SUBSEQUENT INJURY FUND",
+      "Category code C94 · Receiver QUADIENT LEASING USA INC",
+      2356.22,
+      2356.22,
+      1
+    ],
+    [
+      "SUBSEQUENT INJURY FUND",
+      "Category code C94 · Receiver RICOH USA INC",
+      3289.05,
+      3289.05,
+      1
+    ],
+    [
+      "SUBSEQUENT INJURY FUND",
+      "Category code C94 · Receiver STERICYCLE INC",
+      804.62,
+      804.62,
+      1
+    ],
+    [
+      "SUBSEQUENT INJURY FUND",
+      "Category code C94 · Receiver VERIZON BUSINESS",
+      145.2,
+      145.2,
+      1
+    ],
+    [
+      "SUBSEQUENT INJURY FUND",
+      "Category code C94 · Receiver VERIZON COMMUNICATIONS INC",
+      980.07,
+      980.07,
+      1
+    ],
+    [
+      "SUBSEQUENT INJURY FUND",
+      "Category code C94 · Receiver VERIZON MARYLAND LLC",
+      6522.63,
+      6522.63,
+      1
+    ],
+    [
+      "SUBSEQUENT INJURY FUND",
+      "Category code C94 · Receiver WELLS FARGO BANK NA",
+      7602.46,
+      7602.46,
+      1
+    ]
+  ],
+  "sourceCheck": {
+    "objectClassRows": 12,
+    "sourceRows": 12,
+    "sourceTotal": 125168.26,
+    "difference": 0
+  }
+}

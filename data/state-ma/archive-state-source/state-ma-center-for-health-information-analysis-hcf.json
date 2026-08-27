@@ -1,0 +1,98 @@
+{
+  "scope": "Massachusetts",
+  "code": "ma",
+  "department": "CENTER FOR HEALTH INFORMATION & ANALYSIS (HCF)",
+  "fiscalYear": 2024,
+  "ledgerAmount": 28486894.53,
+  "sourceTotal": 31013169.66,
+  "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000",
+  "rowSchema": [
+    "subAgency",
+    "program",
+    "amount",
+    "sourceAmount",
+    "sourceRows"
+  ],
+  "rows": [
+    [
+      "CENTER FOR HEALTH INFORMATION & ANALYSIS (HCF)",
+      "CENTER FOR HEALTH INFORMATION & ANALYSIS (HCF) · (AA) REGULAR EMPLOYEE COMPENSATION",
+      17783452.84,
+      17783452.84,
+      923
+    ],
+    [
+      "CENTER FOR HEALTH INFORMATION & ANALYSIS (HCF)",
+      "CENTER FOR HEALTH INFORMATION & ANALYSIS (HCF) · (UU) IT NON-PAYROLL EXPENSES",
+      6545866.15,
+      6545866.15,
+      293
+    ],
+    [
+      "CENTER FOR HEALTH INFORMATION & ANALYSIS (HCF)",
+      "CENTER FOR HEALTH INFORMATION & ANALYSIS (HCF) · (HH) CONSULTANT SVCS (TO DEPTS)",
+      3103615.45,
+      3103615.45,
+      179
+    ],
+    [
+      "CENTER FOR HEALTH INFORMATION & ANALYSIS (HCF)",
+      "CENTER FOR HEALTH INFORMATION & ANALYSIS (HCF) · (CC) SPECIAL EMPLOYEES",
+      1608497.84,
+      1608497.84,
+      235
+    ],
+    [
+      "CENTER FOR HEALTH INFORMATION & ANALYSIS (HCF)",
+      "CENTER FOR HEALTH INFORMATION & ANALYSIS (HCF) · (GG) ENERGY COSTS AND SPACE RENTAL",
+      1520952.09,
+      1520952.09,
+      12
+    ],
+    [
+      "CENTER FOR HEALTH INFORMATION & ANALYSIS (HCF)",
+      "CENTER FOR HEALTH INFORMATION & ANALYSIS (HCF) · (EE) ADMINISTRATIVE EXPENSES",
+      317396.64,
+      317396.64,
+      112
+    ],
+    [
+      "CENTER FOR HEALTH INFORMATION & ANALYSIS (HCF)",
+      "CENTER FOR HEALTH INFORMATION & ANALYSIS (HCF) · (BB) REGULAR EMPLOYEE RELATED EXPEN",
+      51611.21,
+      51611.21,
+      151
+    ],
+    [
+      "CENTER FOR HEALTH INFORMATION & ANALYSIS (HCF)",
+      "CENTER FOR HEALTH INFORMATION & ANALYSIS (HCF) · (MM) PURCHASED CLIENT/PROGRAM SVCS",
+      36500,
+      36500,
+      3
+    ],
+    [
+      "CENTER FOR HEALTH INFORMATION & ANALYSIS (HCF)",
+      "CENTER FOR HEALTH INFORMATION & ANALYSIS (HCF) · (NN) INFRASTRUCTURE:",
+      32032.98,
+      32032.98,
+      23
+    ],
+    [
+      "CENTER FOR HEALTH INFORMATION & ANALYSIS (HCF)",
+      "CENTER FOR HEALTH INFORMATION & ANALYSIS (HCF) · (LL) EQUIPMENT LEASE-MAINTAIN/REPAR",
+      9661.76,
+      9661.76,
+      36
+    ],
+    [
+      "CENTER FOR HEALTH INFORMATION & ANALYSIS (HCF)",
+      "CENTER FOR HEALTH INFORMATION & ANALYSIS (HCF) · (JJ) OPERATIONAL SERVICES",
+      3582.7,
+      3582.7,
+      19
+    ]
+  ],
+  "hierarchyNote": "The source does not identify a separate sub-agency column; direct-managed rows repeat the parent entity.",
+  "sourceBasis": "official source amount",
+  "note": "Amounts are shown on the official source basis; no comparator normalization was applied."
+}

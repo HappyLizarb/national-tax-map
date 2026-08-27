@@ -1,0 +1,119 @@
+{
+  "scope": "Massachusetts",
+  "code": "ma",
+  "department": "EASTERN DISTRICT ATTORNEY (EAS)",
+  "fiscalYear": 2024,
+  "ledgerAmount": 13237572.62,
+  "sourceTotal": 14411507.19,
+  "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000",
+  "rowSchema": [
+    "subAgency",
+    "program",
+    "amount",
+    "sourceAmount",
+    "sourceRows"
+  ],
+  "rows": [
+    [
+      "EASTERN DISTRICT ATTORNEY (EAS)",
+      "EASTERN DISTRICT ATTORNEY (EAS) · (AA) REGULAR EMPLOYEE COMPENSATION",
+      12366113.15,
+      12366113.15,
+      290
+    ],
+    [
+      "EASTERN DISTRICT ATTORNEY (EAS)",
+      "EASTERN DISTRICT ATTORNEY (EAS) · (GG) ENERGY COSTS AND SPACE RENTAL",
+      821959.84,
+      821959.84,
+      60
+    ],
+    [
+      "EASTERN DISTRICT ATTORNEY (EAS)",
+      "EASTERN DISTRICT ATTORNEY (EAS) · (EE) ADMINISTRATIVE EXPENSES",
+      364969.06,
+      364969.06,
+      204
+    ],
+    [
+      "EASTERN DISTRICT ATTORNEY (EAS)",
+      "EASTERN DISTRICT ATTORNEY (EAS) · (UU) IT NON-PAYROLL EXPENSES",
+      293833.05,
+      293833.05,
+      120
+    ],
+    [
+      "EASTERN DISTRICT ATTORNEY (EAS)",
+      "EASTERN DISTRICT ATTORNEY (EAS) · (PP) STATE AID/POL SUB",
+      233878.05,
+      233878.05,
+      8
+    ],
+    [
+      "EASTERN DISTRICT ATTORNEY (EAS)",
+      "EASTERN DISTRICT ATTORNEY (EAS) · (LL) EQUIPMENT LEASE-MAINTAIN/REPAR",
+      80139.6,
+      80139.6,
+      35
+    ],
+    [
+      "EASTERN DISTRICT ATTORNEY (EAS)",
+      "EASTERN DISTRICT ATTORNEY (EAS) · (KK) EQUIPMENT PURCHASE",
+      78095.72,
+      78095.72,
+      8
+    ],
+    [
+      "EASTERN DISTRICT ATTORNEY (EAS)",
+      "EASTERN DISTRICT ATTORNEY (EAS) · (BB) REGULAR EMPLOYEE RELATED EXPEN",
+      61041,
+      61041,
+      49
+    ],
+    [
+      "EASTERN DISTRICT ATTORNEY (EAS)",
+      "EASTERN DISTRICT ATTORNEY (EAS) · (NN) INFRASTRUCTURE:",
+      42246.25,
+      42246.25,
+      27
+    ],
+    [
+      "EASTERN DISTRICT ATTORNEY (EAS)",
+      "EASTERN DISTRICT ATTORNEY (EAS) · (JJ) OPERATIONAL SERVICES",
+      27831.1,
+      27831.1,
+      8
+    ],
+    [
+      "EASTERN DISTRICT ATTORNEY (EAS)",
+      "EASTERN DISTRICT ATTORNEY (EAS) · (HH) CONSULTANT SVCS (TO DEPTS)",
+      19026.25,
+      19026.25,
+      6
+    ],
+    [
+      "EASTERN DISTRICT ATTORNEY (EAS)",
+      "EASTERN DISTRICT ATTORNEY (EAS) · (DD) PENSION & INSURANCE RELATED EX",
+      14890,
+      14890,
+      2
+    ],
+    [
+      "EASTERN DISTRICT ATTORNEY (EAS)",
+      "EASTERN DISTRICT ATTORNEY (EAS) · (FF) FACILITY OPERATIONAL EXPENSES",
+      7484.12,
+      7484.12,
+      2
+    ],
+    [
+      "EASTERN DISTRICT ATTORNEY (EAS)",
+      "EASTERN DISTRICT ATTORNEY (EAS) · (99) PAYROLL REJECTS",
+      0,
+      0,
+      2
+    ]
+  ],
+  "hierarchyNote": "The source does not identify a separate sub-agency column; direct-managed rows repeat the parent entity.",
+  "sourceBasis": "official source amount",
+  "note": "Amounts are shown on the official source basis; no comparator normalization was applied."
+}

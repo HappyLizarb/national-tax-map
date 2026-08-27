@@ -1,0 +1,70 @@
+{
+  "scope": "Massachusetts",
+  "code": "ma",
+  "department": "COMMISSION ON THE STATUS OF PERSONS WITH DISABILITIES (SPD)",
+  "fiscalYear": 2024,
+  "ledgerAmount": 120282.32,
+  "sourceTotal": 130949.2,
+  "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000",
+  "rowSchema": [
+    "subAgency",
+    "program",
+    "amount",
+    "sourceAmount",
+    "sourceRows"
+  ],
+  "rows": [
+    [
+      "COMMISSION ON THE STATUS OF PERSONS WITH DISABILITIES (SPD)",
+      "COMMISSION ON THE STATUS OF PERSONS WITH DISABILITIES (SPD) · (AA) REGULAR EMPLOYEE COMPENSATION",
+      82600.33,
+      82600.33,
+      26
+    ],
+    [
+      "COMMISSION ON THE STATUS OF PERSONS WITH DISABILITIES (SPD)",
+      "COMMISSION ON THE STATUS OF PERSONS WITH DISABILITIES (SPD) · (HH) CONSULTANT SVCS (TO DEPTS)",
+      33659.13,
+      33659.13,
+      7
+    ],
+    [
+      "COMMISSION ON THE STATUS OF PERSONS WITH DISABILITIES (SPD)",
+      "COMMISSION ON THE STATUS OF PERSONS WITH DISABILITIES (SPD) · (JJ) OPERATIONAL SERVICES",
+      12605.1,
+      12605.1,
+      59
+    ],
+    [
+      "COMMISSION ON THE STATUS OF PERSONS WITH DISABILITIES (SPD)",
+      "COMMISSION ON THE STATUS OF PERSONS WITH DISABILITIES (SPD) · (CC) SPECIAL EMPLOYEES",
+      1305,
+      1305,
+      2
+    ],
+    [
+      "COMMISSION ON THE STATUS OF PERSONS WITH DISABILITIES (SPD)",
+      "COMMISSION ON THE STATUS OF PERSONS WITH DISABILITIES (SPD) · (EE) ADMINISTRATIVE EXPENSES",
+      411.6,
+      411.6,
+      1
+    ],
+    [
+      "COMMISSION ON THE STATUS OF PERSONS WITH DISABILITIES (SPD)",
+      "COMMISSION ON THE STATUS OF PERSONS WITH DISABILITIES (SPD) · (UU) IT NON-PAYROLL EXPENSES",
+      218.04,
+      218.04,
+      1
+    ],
+    [
+      "COMMISSION ON THE STATUS OF PERSONS WITH DISABILITIES (SPD)",
+      "COMMISSION ON THE STATUS OF PERSONS WITH DISABILITIES (SPD) · (BB) REGULAR EMPLOYEE RELATED EXPEN",
+      150,
+      150,
+      1
+    ]
+  ],
+  "hierarchyNote": "The source does not identify a separate sub-agency column; direct-managed rows repeat the parent entity.",
+  "sourceBasis": "official source amount",
+  "note": "Amounts are shown on the official source basis; no comparator normalization was applied."
+}

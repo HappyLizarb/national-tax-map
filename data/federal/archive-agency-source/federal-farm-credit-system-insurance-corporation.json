@@ -1,0 +1,146 @@
+{
+  "scope": "United States",
+  "code": "federal",
+  "department": "Farm Credit System Insurance Corporation",
+  "fiscalYear": 2024,
+  "ledgerAmount": 93481589.65,
+  "sourceTotal": 127399600.56,
+  "sourceUrl": "https://api.usaspending.gov/api/v2/agency/7802/object_class/?fiscal_year=2024&limit=100&page=1",
+  "sourceUrls": [
+    [
+      "FY2024 gross outlays by object class",
+      "https://api.usaspending.gov/api/v2/agency/7802/object_class/?fiscal_year=2024&limit=100&page=1"
+    ],
+    [
+      "FY2024 agency budgetary resources total",
+      "https://api.usaspending.gov/api/v2/agency/7802/budgetary_resources/?fiscal_year=2024"
+    ]
+  ],
+  "rowSchema": [
+    "subAgency",
+    "program",
+    "amount",
+    "sourceAmount",
+    "sourceRows"
+  ],
+  "rows": [
+    [
+      "Farm Credit System Insurance Corporation",
+      "Object class not reported by official source",
+      122795347.64,
+      122795347.64,
+      null
+    ],
+    [
+      "Farm Credit System Insurance Corporation",
+      "Full-time permanent",
+      2354332,
+      2354332,
+      null
+    ],
+    [
+      "Farm Credit System Insurance Corporation",
+      "Civilian personnel benefits",
+      955141.9,
+      955141.9,
+      null
+    ],
+    [
+      "Farm Credit System Insurance Corporation",
+      "Other goods and services from Federal sources",
+      680306.9,
+      680306.9,
+      null
+    ],
+    [
+      "Farm Credit System Insurance Corporation",
+      "Advisory and assistance services",
+      172230.08,
+      172230.08,
+      null
+    ],
+    [
+      "Farm Credit System Insurance Corporation",
+      "Land and structures",
+      161559.06,
+      161559.06,
+      null
+    ],
+    [
+      "Farm Credit System Insurance Corporation",
+      "Communications, utilities, and miscellaneous charges",
+      143450.07,
+      143450.07,
+      null
+    ],
+    [
+      "Farm Credit System Insurance Corporation",
+      "Other services from non-Federal sources",
+      59757.43,
+      59757.43,
+      null
+    ],
+    [
+      "Farm Credit System Insurance Corporation",
+      "Other personnel compensation",
+      27894.64,
+      27894.64,
+      null
+    ],
+    [
+      "Farm Credit System Insurance Corporation",
+      "Operation and maintenance of equipment",
+      20687.53,
+      20687.53,
+      null
+    ],
+    [
+      "Farm Credit System Insurance Corporation",
+      "Travel and transportation of persons",
+      19451.45,
+      19451.45,
+      null
+    ],
+    [
+      "Farm Credit System Insurance Corporation",
+      "Supplies and materials",
+      5511.92,
+      5511.92,
+      null
+    ],
+    [
+      "Farm Credit System Insurance Corporation",
+      "Equipment",
+      2523.88,
+      2523.88,
+      null
+    ],
+    [
+      "Farm Credit System Insurance Corporation",
+      "Rental payments to others",
+      1276.6,
+      1276.6,
+      null
+    ],
+    [
+      "Farm Credit System Insurance Corporation",
+      "Printing and reproduction",
+      129.46,
+      129.46,
+      null
+    ]
+  ],
+  "sourceBasis": "official source amount",
+  "sourceCheck": {
+    "objectClassRows": 15,
+    "objectClassTotal": 127399600.56,
+    "agencyTotal": 127399600.56,
+    "difference": 0
+  },
+  "normalizationAdjustment": 0,
+  "hierarchyNote": "The source endpoint returns agency-level object-class aggregates; no individual employees or payees are included.",
+  "sourceLabelMap": {
+    "Object class not reported by official source": "Unknown"
+  },
+  "note": "The official USAspending object-class response labels 1 row as Unknown; the display label states that the object class was not reported and no category was inferred. Amounts are shown on the official source basis; no comparator normalization was applied."
+}

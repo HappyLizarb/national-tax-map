@@ -1,0 +1,130 @@
+{
+  "scope": "New Jersey",
+  "fiscalYear": 2024,
+  "department": "COMMERCE COMMISSION",
+  "sourceUrl": "https://data.nj.gov/Government-Finance/YourMoney-Agency-Expenditures/apet-rp2i",
+  "sourceUrls": [
+    [
+      "Official expenditures catalog",
+      "https://www.nj.gov/transparency/financial-management/expenditures/index.shtml"
+    ],
+    [
+      "FY2024 agency dataset",
+      "https://data.nj.gov/Government-Finance/YourMoney-Agency-Expenditures/apet-rp2i"
+    ],
+    [
+      "Grouped FY2024 API export",
+      "https://data.nj.gov/resource/apet-rp2i.csv?%24select=ibno_agency%2Cstatewide_program%2Cpayee_name%2Csum%28expended_amt%29%20as%20expended%2Csum%28obligation_amt%29%20as%20obligations%2Ccount%28%2A%29%20as%20source_rows&%24where=budget_fiscal_year%3D2024&%24group=ibno_agency%2Cstatewide_program%2Cpayee_name&%24limit=500000"
+    ]
+  ],
+  "sourceBasis": "Official FY2024 Agency Expenditures dataset; pie amount uses expended, with obligations retained as a separate row measure.",
+  "privacyNote": "Individual or ambiguous payee labels are grouped as [individual recipient omitted]; organization receivers are retained. This layer does not expose person-level payroll.",
+  "sourceRows": 18,
+  "sourceTotal": 242248350.53,
+  "obligationTotal": 0,
+  "rowSchema": [
+    "subAgency",
+    "program",
+    "amount",
+    "sourceAmount",
+    "sourceRows",
+    "obligations"
+  ],
+  "rows": [
+    [
+      "COMMERCE COMMISSION",
+      "ECONOMIC PLANNING AND DEVELOPMENT · Receiver NJ ECON DEV AUTHORITY",
+      197143881.53,
+      197143881.53,
+      2,
+      0
+    ],
+    [
+      "COMMERCE COMMISSION",
+      "ECONOMIC PLANNING AND DEVELOPMENT · Receiver [individual recipient omitted]",
+      31758861,
+      31758861,
+      7,
+      0
+    ],
+    [
+      "COMMERCE COMMISSION",
+      "ECONOMIC PLANNING AND DEVELOPMENT · Receiver LINDEN DEVELOPMENT, LLC",
+      7298291,
+      7298291,
+      1,
+      0
+    ],
+    [
+      "COMMERCE COMMISSION",
+      "ECONOMIC PLANNING AND DEVELOPMENT · Receiver HARRISON HOTEL 1 URBAN RENEWAL",
+      1439455,
+      1439455,
+      1,
+      0
+    ],
+    [
+      "COMMERCE COMMISSION",
+      "ECONOMIC PLANNING AND DEVELOPMENT · Receiver LTF REAL ESTATE COMPANY, INC.",
+      1320705,
+      1320705,
+      1,
+      0
+    ],
+    [
+      "COMMERCE COMMISSION",
+      "ECONOMIC PLANNING AND DEVELOPMENT · Receiver DVL, INC.",
+      1299259,
+      1299259,
+      1,
+      0
+    ],
+    [
+      "COMMERCE COMMISSION",
+      "ECONOMIC PLANNING AND DEVELOPMENT · Receiver CHP LAND, LLC",
+      885661,
+      885661,
+      1,
+      0
+    ],
+    [
+      "COMMERCE COMMISSION",
+      "ECONOMIC PLANNING AND DEVELOPMENT · Receiver MSST FIDELCO PROPERTIES LLC",
+      456815,
+      456815,
+      1,
+      0
+    ],
+    [
+      "COMMERCE COMMISSION",
+      "ECONOMIC PLANNING AND DEVELOPMENT · Receiver AC CONFERENCE CENTER NEWCO LLC",
+      365465,
+      365465,
+      1,
+      0
+    ],
+    [
+      "COMMERCE COMMISSION",
+      "ECONOMIC PLANNING AND DEVELOPMENT · Receiver TROPICANA ATLANTIC CITY CORP",
+      157324,
+      157324,
+      1,
+      0
+    ],
+    [
+      "COMMERCE COMMISSION",
+      "ECONOMIC PLANNING AND DEVELOPMENT · Receiver RBH-TRB NEWARK HOLDINGS, LLC",
+      122633,
+      122633,
+      1,
+      0
+    ]
+  ],
+  "sourceCheck": {
+    "objectClassRows": 11,
+    "sourceRows": 18,
+    "sourceTotal": 242248350.53,
+    "obligationTotal": 0,
+    "difference": 0
+  }
+}

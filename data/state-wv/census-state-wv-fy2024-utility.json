@@ -1,0 +1,65 @@
+{
+  "scope": "West Virginia",
+  "code": "wv",
+  "fiscalYear": 2024,
+  "department": "Utility expenditure",
+  "sourceTotal": 13554000,
+  "sourceUrl": "https://www2.census.gov/programs-surveys/state/data/GS00STATEFIN01.zip",
+  "sourceUrls": [
+    [
+      "Census FY2024 data download",
+      "https://www2.census.gov/programs-surveys/state/data/GS00STATEFIN01.zip"
+    ],
+    [
+      "Census FY2024 table",
+      "https://data.census.gov/table/GOVSSTATEFINTIMESERIES.GS00STATEFIN01"
+    ],
+    [
+      "Census technical documentation",
+      "https://www.census.gov/programs-surveys/state/technical-documentation/complete-technical-documentation/2024.html"
+    ]
+  ],
+  "sourceBasis": "Census Annual Survey of State Government Finances; AMOUNT is reported in $1,000 and converted to USD.",
+  "rowSchema": [
+    "subAgency",
+    "program",
+    "amount",
+    "sourceAmount",
+    "sourceRows"
+  ],
+  "rows": [
+    [
+      "Utility expenditure · Census function",
+      "Direct Expenditure - Utility - Total Water Supply",
+      0,
+      0,
+      1
+    ],
+    [
+      "Utility expenditure · Census function",
+      "Direct Expenditure - Utility - Total Electric Power",
+      0,
+      0,
+      1
+    ],
+    [
+      "Utility expenditure · Census function",
+      "Direct Expenditure - Utility - Total Gas Supply",
+      0,
+      0,
+      1
+    ],
+    [
+      "Utility expenditure · Census function",
+      "Direct Expenditure - Utility - Total Public Mass Transit Systems",
+      13554000,
+      13554000,
+      1
+    ]
+  ],
+  "sourceCheck": {
+    "groupRows": 4,
+    "difference": 0
+  },
+  "hierarchyNote": "These rows are mutually exclusive Census expenditure function/category rows within this detail group; they are not vendor or agency transactions."
+}

@@ -1,0 +1,133 @@
+{
+  "scope": "Massachusetts",
+  "code": "ma",
+  "department": "DEPARTMENT OF REVENUE (DOR)",
+  "fiscalYear": 2024,
+  "ledgerAmount": 8128505774.75,
+  "sourceTotal": 8849358022.2,
+  "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000",
+  "rowSchema": [
+    "subAgency",
+    "program",
+    "amount",
+    "sourceAmount",
+    "sourceRows"
+  ],
+  "rows": [
+    [
+      "DEPARTMENT OF REVENUE (DOR)",
+      "DEPARTMENT OF REVENUE (DOR) · (PP) STATE AID/POL SUB",
+      8678701349.45,
+      8678701349.45,
+      27186
+    ],
+    [
+      "DEPARTMENT OF REVENUE (DOR)",
+      "DEPARTMENT OF REVENUE (DOR) · (AA) REGULAR EMPLOYEE COMPENSATION",
+      138426123.72,
+      138426123.72,
+      3654
+    ],
+    [
+      "DEPARTMENT OF REVENUE (DOR)",
+      "DEPARTMENT OF REVENUE (DOR) · (UU) IT NON-PAYROLL EXPENSES",
+      10966522.42,
+      10966522.42,
+      1259
+    ],
+    [
+      "DEPARTMENT OF REVENUE (DOR)",
+      "DEPARTMENT OF REVENUE (DOR) · (EE) ADMINISTRATIVE EXPENSES",
+      8303962.52,
+      8303962.52,
+      1786
+    ],
+    [
+      "DEPARTMENT OF REVENUE (DOR)",
+      "DEPARTMENT OF REVENUE (DOR) · (RR) BENEFIT PROGRAMS",
+      4910264.15,
+      4910264.15,
+      669
+    ],
+    [
+      "DEPARTMENT OF REVENUE (DOR)",
+      "DEPARTMENT OF REVENUE (DOR) · (JJ) OPERATIONAL SERVICES",
+      3380525.85,
+      3380525.85,
+      7686
+    ],
+    [
+      "DEPARTMENT OF REVENUE (DOR)",
+      "DEPARTMENT OF REVENUE (DOR) · (GG) ENERGY COSTS AND SPACE RENTAL",
+      2046203.17,
+      2046203.17,
+      181
+    ],
+    [
+      "DEPARTMENT OF REVENUE (DOR)",
+      "DEPARTMENT OF REVENUE (DOR) · (BB) REGULAR EMPLOYEE RELATED EXPEN",
+      667276.77,
+      667276.77,
+      1293
+    ],
+    [
+      "DEPARTMENT OF REVENUE (DOR)",
+      "DEPARTMENT OF REVENUE (DOR) · (HH) CONSULTANT SVCS (TO DEPTS)",
+      603897.02,
+      603897.02,
+      43
+    ],
+    [
+      "DEPARTMENT OF REVENUE (DOR)",
+      "DEPARTMENT OF REVENUE (DOR) · (LL) EQUIPMENT LEASE-MAINTAIN/REPAR",
+      441307.68,
+      441307.68,
+      359
+    ],
+    [
+      "DEPARTMENT OF REVENUE (DOR)",
+      "DEPARTMENT OF REVENUE (DOR) · (KK) EQUIPMENT PURCHASE",
+      260539.99,
+      260539.99,
+      52
+    ],
+    [
+      "DEPARTMENT OF REVENUE (DOR)",
+      "DEPARTMENT OF REVENUE (DOR) · (CC) SPECIAL EMPLOYEES",
+      253066.58,
+      253066.58,
+      133
+    ],
+    [
+      "DEPARTMENT OF REVENUE (DOR)",
+      "DEPARTMENT OF REVENUE (DOR) · (NN) INFRASTRUCTURE:",
+      213202.83,
+      213202.83,
+      105
+    ],
+    [
+      "DEPARTMENT OF REVENUE (DOR)",
+      "DEPARTMENT OF REVENUE (DOR) · (TT) LOANS AND SPECIAL PAYMENTS",
+      179697.2,
+      179697.2,
+      5
+    ],
+    [
+      "DEPARTMENT OF REVENUE (DOR)",
+      "DEPARTMENT OF REVENUE (DOR) · (DD) PENSION & INSURANCE RELATED EX",
+      3500,
+      3500,
+      1
+    ],
+    [
+      "DEPARTMENT OF REVENUE (DOR)",
+      "DEPARTMENT OF REVENUE (DOR) · (FF) FACILITY OPERATIONAL EXPENSES",
+      582.85,
+      582.85,
+      2
+    ]
+  ],
+  "hierarchyNote": "The source does not identify a separate sub-agency column; direct-managed rows repeat the parent entity.",
+  "sourceBasis": "official source amount",
+  "note": "Amounts are shown on the official source basis; no comparator normalization was applied."
+}

@@ -1,0 +1,98 @@
+{
+  "scope": "Massachusetts",
+  "code": "ma",
+  "department": "HEALTH POLICY COMMISSION (HPC)",
+  "fiscalYear": 2024,
+  "ledgerAmount": 10579031.97,
+  "sourceTotal": 11517201.81,
+  "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000",
+  "rowSchema": [
+    "subAgency",
+    "program",
+    "amount",
+    "sourceAmount",
+    "sourceRows"
+  ],
+  "rows": [
+    [
+      "HEALTH POLICY COMMISSION (HPC)",
+      "HEALTH POLICY COMMISSION (HPC) · (AA) REGULAR EMPLOYEE COMPENSATION",
+      7795442.77,
+      7795442.77,
+      111
+    ],
+    [
+      "HEALTH POLICY COMMISSION (HPC)",
+      "HEALTH POLICY COMMISSION (HPC) · (PP) STATE AID/POL SUB",
+      1299949.77,
+      1299949.77,
+      32
+    ],
+    [
+      "HEALTH POLICY COMMISSION (HPC)",
+      "HEALTH POLICY COMMISSION (HPC) · (HH) CONSULTANT SVCS (TO DEPTS)",
+      1225825.66,
+      1225825.66,
+      114
+    ],
+    [
+      "HEALTH POLICY COMMISSION (HPC)",
+      "HEALTH POLICY COMMISSION (HPC) · (GG) ENERGY COSTS AND SPACE RENTAL",
+      813020.77,
+      813020.77,
+      25
+    ],
+    [
+      "HEALTH POLICY COMMISSION (HPC)",
+      "HEALTH POLICY COMMISSION (HPC) · (EE) ADMINISTRATIVE EXPENSES",
+      171738.19,
+      171738.19,
+      129
+    ],
+    [
+      "HEALTH POLICY COMMISSION (HPC)",
+      "HEALTH POLICY COMMISSION (HPC) · (CC) SPECIAL EMPLOYEES",
+      105120,
+      105120,
+      9
+    ],
+    [
+      "HEALTH POLICY COMMISSION (HPC)",
+      "HEALTH POLICY COMMISSION (HPC) · (UU) IT NON-PAYROLL EXPENSES",
+      49368.22,
+      49368.22,
+      37
+    ],
+    [
+      "HEALTH POLICY COMMISSION (HPC)",
+      "HEALTH POLICY COMMISSION (HPC) · (BB) REGULAR EMPLOYEE RELATED EXPEN",
+      36528.14,
+      36528.14,
+      59
+    ],
+    [
+      "HEALTH POLICY COMMISSION (HPC)",
+      "HEALTH POLICY COMMISSION (HPC) · (LL) EQUIPMENT LEASE-MAINTAIN/REPAR",
+      14406.88,
+      14406.88,
+      15
+    ],
+    [
+      "HEALTH POLICY COMMISSION (HPC)",
+      "HEALTH POLICY COMMISSION (HPC) · (JJ) OPERATIONAL SERVICES",
+      4758.51,
+      4758.51,
+      13
+    ],
+    [
+      "HEALTH POLICY COMMISSION (HPC)",
+      "HEALTH POLICY COMMISSION (HPC) · (NN) INFRASTRUCTURE:",
+      1042.9,
+      1042.9,
+      7
+    ]
+  ],
+  "hierarchyNote": "The source does not identify a separate sub-agency column; direct-managed rows repeat the parent entity.",
+  "sourceBasis": "official source amount",
+  "note": "Amounts are shown on the official source basis; no comparator normalization was applied."
+}

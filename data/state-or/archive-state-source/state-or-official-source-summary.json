@@ -1,0 +1,826 @@
+{
+  "scope": "Oregon",
+  "code": "or",
+  "fiscalYear": 2024,
+  "sourceTotal": 31836364350.07,
+  "sourceUrl": "https://data.oregon.gov/resource/y9g9-xsxs.json?$select=agency_1,sum(expense)%20as%20amount,count(*)%20as%20records&$where=fiscal_year=2024&$group=agency_1&$order=amount%20DESC&$limit=5000",
+  "dimension": "department / agency",
+  "note": "The pie uses one official itemized source layer and never inserts a synthetic residual. Department amounts reconcile to the official itemized source total. sourceAmount preserves the imported itemized basis. The census fy2024 state-finance comparator is retained for comparison only; its lower total is not assigned to a receiver or program.",
+  "reconciliation": {
+    "itemizedDifference": 0,
+    "normalized": false,
+    "scale": 1,
+    "comparisonDifference": -21797669649.93
+  },
+  "departments": [
+    {
+      "id": "education-dept-of",
+      "name": "EDUCATION, DEPT OF",
+      "amount": 12664039620.18,
+      "sourceAmount": 12664039620.18,
+      "program": "EDUCATION, DEPT OF",
+      "sourceRows": 3271,
+      "detailUrl": "data/state-or/archive-state-source/state-or-education-dept-of.json",
+      "sourceUrl": "https://data.oregon.gov/resource/y9g9-xsxs.json?$select=agency_1,sum(expense)%20as%20amount,count(*)%20as%20records&$where=fiscal_year=2024&$group=agency_1&$order=amount%20DESC&$limit=5000"
+    },
+    {
+      "id": "oregon-health-authority",
+      "name": "OREGON HEALTH AUTHORITY",
+      "amount": 4431973862.44,
+      "sourceAmount": 4431973862.44,
+      "program": "OREGON HEALTH AUTHORITY",
+      "sourceRows": 8710,
+      "detailUrl": "data/state-or/archive-state-source/state-or-oregon-health-authority.json",
+      "sourceUrl": "https://data.oregon.gov/resource/y9g9-xsxs.json?$select=agency_1,sum(expense)%20as%20amount,count(*)%20as%20records&$where=fiscal_year=2024&$group=agency_1&$order=amount%20DESC&$limit=5000"
+    },
+    {
+      "id": "human-services-dept-of",
+      "name": "HUMAN SERVICES, DEPT OF",
+      "amount": 3187209292.22,
+      "sourceAmount": 3187209292.22,
+      "program": "HUMAN SERVICES, DEPT OF",
+      "sourceRows": 15720,
+      "detailUrl": "data/state-or/archive-state-source/state-or-human-services-dept-of.json",
+      "sourceUrl": "https://data.oregon.gov/resource/y9g9-xsxs.json?$select=agency_1,sum(expense)%20as%20amount,count(*)%20as%20records&$where=fiscal_year=2024&$group=agency_1&$order=amount%20DESC&$limit=5000"
+    },
+    {
+      "id": "hi-ed-coord-cmsn",
+      "name": "HI-ED COORD CMSN",
+      "amount": 2090241581.73,
+      "sourceAmount": 2090241581.73,
+      "program": "HI-ED COORD CMSN",
+      "sourceRows": 926,
+      "detailUrl": "data/state-or/archive-state-source/state-or-hi-ed-coord-cmsn.json",
+      "sourceUrl": "https://data.oregon.gov/resource/y9g9-xsxs.json?$select=agency_1,sum(expense)%20as%20amount,count(*)%20as%20records&$where=fiscal_year=2024&$group=agency_1&$order=amount%20DESC&$limit=5000"
+    },
+    {
+      "id": "transportation-dept-of",
+      "name": "TRANSPORTATION, DEPT OF",
+      "amount": 1840110531.52,
+      "sourceAmount": 1840110531.52,
+      "program": "TRANSPORTATION, DEPT OF",
+      "sourceRows": 12033,
+      "detailUrl": "data/state-or/archive-state-source/state-or-transportation-dept-of.json",
+      "sourceUrl": "https://data.oregon.gov/resource/y9g9-xsxs.json?$select=agency_1,sum(expense)%20as%20amount,count(*)%20as%20records&$where=fiscal_year=2024&$group=agency_1&$order=amount%20DESC&$limit=5000"
+    },
+    {
+      "id": "administrative-srvcs-dept-of",
+      "name": "ADMINISTRATIVE SRVCS, DEPT OF",
+      "amount": 904990522.63,
+      "sourceAmount": 904990522.63,
+      "program": "ADMINISTRATIVE SRVCS, DEPT OF",
+      "sourceRows": 2224,
+      "detailUrl": "data/state-or/archive-state-source/state-or-administrative-srvcs-dept-of.json",
+      "sourceUrl": "https://data.oregon.gov/resource/y9g9-xsxs.json?$select=agency_1,sum(expense)%20as%20amount,count(*)%20as%20records&$where=fiscal_year=2024&$group=agency_1&$order=amount%20DESC&$limit=5000"
+    },
+    {
+      "id": "housing-comm-srvcs-dept-of",
+      "name": "HOUSING & COMM SRVCS, DEPT OF",
+      "amount": 827623730.2,
+      "sourceAmount": 827623730.2,
+      "program": "HOUSING & COMM SRVCS, DEPT OF",
+      "sourceRows": 1392,
+      "detailUrl": "data/state-or/archive-state-source/state-or-housing-comm-srvcs-dept-of.json",
+      "sourceUrl": "https://data.oregon.gov/resource/y9g9-xsxs.json?$select=agency_1,sum(expense)%20as%20amount,count(*)%20as%20records&$where=fiscal_year=2024&$group=agency_1&$order=amount%20DESC&$limit=5000"
+    },
+    {
+      "id": "public-emps-retirement-sys",
+      "name": "PUBLIC EMPS RETIREMENT SYS",
+      "amount": 818950635.08,
+      "sourceAmount": 818950635.08,
+      "program": "PUBLIC EMPS RETIREMENT SYS",
+      "sourceRows": 319,
+      "detailUrl": "data/state-or/archive-state-source/state-or-public-emps-retirement-sys.json",
+      "sourceUrl": "https://data.oregon.gov/resource/y9g9-xsxs.json?$select=agency_1,sum(expense)%20as%20amount,count(*)%20as%20records&$where=fiscal_year=2024&$group=agency_1&$order=amount%20DESC&$limit=5000"
+    },
+    {
+      "id": "liquor-cannabis-com-or",
+      "name": "LIQUOR & CANNABIS COM, OR",
+      "amount": 613343675.3,
+      "sourceAmount": 613343675.3,
+      "program": "LIQUOR & CANNABIS COM, OR",
+      "sourceRows": 1645,
+      "detailUrl": "data/state-or/archive-state-source/state-or-liquor-cannabis-com-or.json",
+      "sourceUrl": "https://data.oregon.gov/resource/y9g9-xsxs.json?$select=agency_1,sum(expense)%20as%20amount,count(*)%20as%20records&$where=fiscal_year=2024&$group=agency_1&$order=amount%20DESC&$limit=5000"
+    },
+    {
+      "id": "emergency-management-dept-of",
+      "name": "EMERGENCY MANAGEMENT, DEPT OF",
+      "amount": 587754699.44,
+      "sourceAmount": 587754699.44,
+      "program": "EMERGENCY MANAGEMENT, DEPT OF",
+      "sourceRows": 796,
+      "detailUrl": "data/state-or/archive-state-source/state-or-emergency-management-dept-of.json",
+      "sourceUrl": "https://data.oregon.gov/resource/y9g9-xsxs.json?$select=agency_1,sum(expense)%20as%20amount,count(*)%20as%20records&$where=fiscal_year=2024&$group=agency_1&$order=amount%20DESC&$limit=5000"
+    },
+    {
+      "id": "corrections-dept-of",
+      "name": "CORRECTIONS, DEPT OF",
+      "amount": 509725865.92,
+      "sourceAmount": 509725865.92,
+      "program": "CORRECTIONS, DEPT OF",
+      "sourceRows": 5045,
+      "detailUrl": "data/state-or/archive-state-source/state-or-corrections-dept-of.json",
+      "sourceUrl": "https://data.oregon.gov/resource/y9g9-xsxs.json?$select=agency_1,sum(expense)%20as%20amount,count(*)%20as%20records&$where=fiscal_year=2024&$group=agency_1&$order=amount%20DESC&$limit=5000"
+    },
+    {
+      "id": "early-learning-care-dept-of",
+      "name": "EARLY LEARNING & CARE, DEPT OF",
+      "amount": 459690805.29,
+      "sourceAmount": 459690805.29,
+      "program": "EARLY LEARNING & CARE, DEPT OF",
+      "sourceRows": 793,
+      "detailUrl": "data/state-or/archive-state-source/state-or-early-learning-care-dept-of.json",
+      "sourceUrl": "https://data.oregon.gov/resource/y9g9-xsxs.json?$select=agency_1,sum(expense)%20as%20amount,count(*)%20as%20records&$where=fiscal_year=2024&$group=agency_1&$order=amount%20DESC&$limit=5000"
+    },
+    {
+      "id": "business-oregon",
+      "name": "BUSINESS OREGON",
+      "amount": 454369698.22,
+      "sourceAmount": 454369698.22,
+      "program": "BUSINESS OREGON",
+      "sourceRows": 1527,
+      "detailUrl": "data/state-or/archive-state-source/state-or-business-oregon.json",
+      "sourceUrl": "https://data.oregon.gov/resource/y9g9-xsxs.json?$select=agency_1,sum(expense)%20as%20amount,count(*)%20as%20records&$where=fiscal_year=2024&$group=agency_1&$order=amount%20DESC&$limit=5000"
+    },
+    {
+      "id": "public-defense-services",
+      "name": "PUBLIC DEFENSE SERVICES",
+      "amount": 234822311.92,
+      "sourceAmount": 234822311.92,
+      "program": "PUBLIC DEFENSE SERVICES",
+      "sourceRows": 1887,
+      "detailUrl": "data/state-or/archive-state-source/state-or-public-defense-services.json",
+      "sourceUrl": "https://data.oregon.gov/resource/y9g9-xsxs.json?$select=agency_1,sum(expense)%20as%20amount,count(*)%20as%20records&$where=fiscal_year=2024&$group=agency_1&$order=amount%20DESC&$limit=5000"
+    },
+    {
+      "id": "consumer-bus-srvcs-dept",
+      "name": "CONSUMER & BUS SRVCS, DEPT",
+      "amount": 211230461.33,
+      "sourceAmount": 211230461.33,
+      "program": "CONSUMER & BUS SRVCS, DEPT",
+      "sourceRows": 2217,
+      "detailUrl": "data/state-or/archive-state-source/state-or-consumer-bus-srvcs-dept.json",
+      "sourceUrl": "https://data.oregon.gov/resource/y9g9-xsxs.json?$select=agency_1,sum(expense)%20as%20amount,count(*)%20as%20records&$where=fiscal_year=2024&$group=agency_1&$order=amount%20DESC&$limit=5000"
+    },
+    {
+      "id": "justice-dept-of",
+      "name": "JUSTICE, DEPT OF",
+      "amount": 203203347.37,
+      "sourceAmount": 203203347.37,
+      "program": "JUSTICE, DEPT OF",
+      "sourceRows": 2870,
+      "detailUrl": "data/state-or/archive-state-source/state-or-justice-dept-of.json",
+      "sourceUrl": "https://data.oregon.gov/resource/y9g9-xsxs.json?$select=agency_1,sum(expense)%20as%20amount,count(*)%20as%20records&$where=fiscal_year=2024&$group=agency_1&$order=amount%20DESC&$limit=5000"
+    },
+    {
+      "id": "forestry-dept-of",
+      "name": "FORESTRY, DEPT OF",
+      "amount": 197015993.06,
+      "sourceAmount": 197015993.06,
+      "program": "FORESTRY, DEPT OF",
+      "sourceRows": 4293,
+      "detailUrl": "data/state-or/archive-state-source/state-or-forestry-dept-of.json",
+      "sourceUrl": "https://data.oregon.gov/resource/y9g9-xsxs.json?$select=agency_1,sum(expense)%20as%20amount,count(*)%20as%20records&$where=fiscal_year=2024&$group=agency_1&$order=amount%20DESC&$limit=5000"
+    },
+    {
+      "id": "legislative-admin-cmte",
+      "name": "LEGISLATIVE ADMIN CMTE",
+      "amount": 160181183.52,
+      "sourceAmount": 160181183.52,
+      "program": "LEGISLATIVE ADMIN CMTE",
+      "sourceRows": 335,
+      "detailUrl": "data/state-or/archive-state-source/state-or-legislative-admin-cmte.json",
+      "sourceUrl": "https://data.oregon.gov/resource/y9g9-xsxs.json?$select=agency_1,sum(expense)%20as%20amount,count(*)%20as%20records&$where=fiscal_year=2024&$group=agency_1&$order=amount%20DESC&$limit=5000"
+    },
+    {
+      "id": "veterans-affairs-dept-of",
+      "name": "VETERANS AFFAIRS, DEPT OF",
+      "amount": 149481659.54,
+      "sourceAmount": 149481659.54,
+      "program": "VETERANS AFFAIRS, DEPT OF",
+      "sourceRows": 597,
+      "detailUrl": "data/state-or/archive-state-source/state-or-veterans-affairs-dept-of.json",
+      "sourceUrl": "https://data.oregon.gov/resource/y9g9-xsxs.json?$select=agency_1,sum(expense)%20as%20amount,count(*)%20as%20records&$where=fiscal_year=2024&$group=agency_1&$order=amount%20DESC&$limit=5000"
+    },
+    {
+      "id": "envi-quality-dept",
+      "name": "ENVI QUALITY, DEPT",
+      "amount": 131532792.76,
+      "sourceAmount": 131532792.76,
+      "program": "ENVI QUALITY, DEPT",
+      "sourceRows": 2328,
+      "detailUrl": "data/state-or/archive-state-source/state-or-envi-quality-dept.json",
+      "sourceUrl": "https://data.oregon.gov/resource/y9g9-xsxs.json?$select=agency_1,sum(expense)%20as%20amount,count(*)%20as%20records&$where=fiscal_year=2024&$group=agency_1&$order=amount%20DESC&$limit=5000"
+    },
+    {
+      "id": "judicial-dept",
+      "name": "JUDICIAL DEPT",
+      "amount": 127888311.93,
+      "sourceAmount": 127888311.93,
+      "program": "JUDICIAL DEPT",
+      "sourceRows": 3764,
+      "detailUrl": "data/state-or/archive-state-source/state-or-judicial-dept.json",
+      "sourceUrl": "https://data.oregon.gov/resource/y9g9-xsxs.json?$select=agency_1,sum(expense)%20as%20amount,count(*)%20as%20records&$where=fiscal_year=2024&$group=agency_1&$order=amount%20DESC&$limit=5000"
+    },
+    {
+      "id": "police-oregon-state",
+      "name": "POLICE, OREGON STATE",
+      "amount": 111427860.35,
+      "sourceAmount": 111427860.35,
+      "program": "POLICE, OREGON STATE",
+      "sourceRows": 4053,
+      "detailUrl": "data/state-or/archive-state-source/state-or-police-oregon-state.json",
+      "sourceUrl": "https://data.oregon.gov/resource/y9g9-xsxs.json?$select=agency_1,sum(expense)%20as%20amount,count(*)%20as%20records&$where=fiscal_year=2024&$group=agency_1&$order=amount%20DESC&$limit=5000"
+    },
+    {
+      "id": "youth-authority-or",
+      "name": "YOUTH AUTHORITY, OR",
+      "amount": 101514745.3,
+      "sourceAmount": 101514745.3,
+      "program": "YOUTH AUTHORITY, OR",
+      "sourceRows": 1494,
+      "detailUrl": "data/state-or/archive-state-source/state-or-youth-authority-or.json",
+      "sourceUrl": "https://data.oregon.gov/resource/y9g9-xsxs.json?$select=agency_1,sum(expense)%20as%20amount,count(*)%20as%20records&$where=fiscal_year=2024&$group=agency_1&$order=amount%20DESC&$limit=5000"
+    },
+    {
+      "id": "fish-wildlife-dept-of",
+      "name": "FISH & WILDLIFE, DEPT OF",
+      "amount": 93599701.72,
+      "sourceAmount": 93599701.72,
+      "program": "FISH & WILDLIFE, DEPT OF",
+      "sourceRows": 3643,
+      "detailUrl": "data/state-or/archive-state-source/state-or-fish-wildlife-dept-of.json",
+      "sourceUrl": "https://data.oregon.gov/resource/y9g9-xsxs.json?$select=agency_1,sum(expense)%20as%20amount,count(*)%20as%20records&$where=fiscal_year=2024&$group=agency_1&$order=amount%20DESC&$limit=5000"
+    },
+    {
+      "id": "military-dept-of",
+      "name": "MILITARY, DEPT OF",
+      "amount": 90444635.99,
+      "sourceAmount": 90444635.99,
+      "program": "MILITARY, DEPT OF",
+      "sourceRows": 1552,
+      "detailUrl": "data/state-or/archive-state-source/state-or-military-dept-of.json",
+      "sourceUrl": "https://data.oregon.gov/resource/y9g9-xsxs.json?$select=agency_1,sum(expense)%20as%20amount,count(*)%20as%20records&$where=fiscal_year=2024&$group=agency_1&$order=amount%20DESC&$limit=5000"
+    },
+    {
+      "id": "employment-dept",
+      "name": "EMPLOYMENT DEPT",
+      "amount": 82217675.53,
+      "sourceAmount": 82217675.53,
+      "program": "EMPLOYMENT DEPT",
+      "sourceRows": 1551,
+      "detailUrl": "data/state-or/archive-state-source/state-or-employment-dept.json",
+      "sourceUrl": "https://data.oregon.gov/resource/y9g9-xsxs.json?$select=agency_1,sum(expense)%20as%20amount,count(*)%20as%20records&$where=fiscal_year=2024&$group=agency_1&$order=amount%20DESC&$limit=5000"
+    },
+    {
+      "id": "watershed-enh-brd",
+      "name": "WATERSHED ENH BRD",
+      "amount": 75021868.92,
+      "sourceAmount": 75021868.92,
+      "program": "WATERSHED ENH BRD",
+      "sourceRows": 371,
+      "detailUrl": "data/state-or/archive-state-source/state-or-watershed-enh-brd.json",
+      "sourceUrl": "https://data.oregon.gov/resource/y9g9-xsxs.json?$select=agency_1,sum(expense)%20as%20amount,count(*)%20as%20records&$where=fiscal_year=2024&$group=agency_1&$order=amount%20DESC&$limit=5000"
+    },
+    {
+      "id": "parks-recreation-dept-of",
+      "name": "PARKS & RECREATION, DEPT OF",
+      "amount": 70323629.94,
+      "sourceAmount": 70323629.94,
+      "program": "PARKS & RECREATION, DEPT OF",
+      "sourceRows": 2802,
+      "detailUrl": "data/state-or/archive-state-source/state-or-parks-recreation-dept-of.json",
+      "sourceUrl": "https://data.oregon.gov/resource/y9g9-xsxs.json?$select=agency_1,sum(expense)%20as%20amount,count(*)%20as%20records&$where=fiscal_year=2024&$group=agency_1&$order=amount%20DESC&$limit=5000"
+    },
+    {
+      "id": "criminal-justice-cmsn",
+      "name": "CRIMINAL JUSTICE CMSN",
+      "amount": 54702086.59,
+      "sourceAmount": 54702086.59,
+      "program": "CRIMINAL JUSTICE CMSN",
+      "sourceRows": 189,
+      "detailUrl": "data/state-or/archive-state-source/state-or-criminal-justice-cmsn.json",
+      "sourceUrl": "https://data.oregon.gov/resource/y9g9-xsxs.json?$select=agency_1,sum(expense)%20as%20amount,count(*)%20as%20records&$where=fiscal_year=2024&$group=agency_1&$order=amount%20DESC&$limit=5000"
+    },
+    {
+      "id": "energy-dept-of",
+      "name": "ENERGY, DEPT OF",
+      "amount": 38965419.98,
+      "sourceAmount": 38965419.98,
+      "program": "ENERGY, DEPT OF",
+      "sourceRows": 519,
+      "detailUrl": "data/state-or/archive-state-source/state-or-energy-dept-of.json",
+      "sourceUrl": "https://data.oregon.gov/resource/y9g9-xsxs.json?$select=agency_1,sum(expense)%20as%20amount,count(*)%20as%20records&$where=fiscal_year=2024&$group=agency_1&$order=amount%20DESC&$limit=5000"
+    },
+    {
+      "id": "public-utility-cmsn",
+      "name": "PUBLIC UTILITY CMSN",
+      "amount": 37399129.28,
+      "sourceAmount": 37399129.28,
+      "program": "PUBLIC UTILITY CMSN",
+      "sourceRows": 434,
+      "detailUrl": "data/state-or/archive-state-source/state-or-public-utility-cmsn.json",
+      "sourceUrl": "https://data.oregon.gov/resource/y9g9-xsxs.json?$select=agency_1,sum(expense)%20as%20amount,count(*)%20as%20records&$where=fiscal_year=2024&$group=agency_1&$order=amount%20DESC&$limit=5000"
+    },
+    {
+      "id": "revenue-dept-of",
+      "name": "REVENUE, DEPT OF",
+      "amount": 37019811.02,
+      "sourceAmount": 37019811.02,
+      "program": "REVENUE, DEPT OF",
+      "sourceRows": 1143,
+      "detailUrl": "data/state-or/archive-state-source/state-or-revenue-dept-of.json",
+      "sourceUrl": "https://data.oregon.gov/resource/y9g9-xsxs.json?$select=agency_1,sum(expense)%20as%20amount,count(*)%20as%20records&$where=fiscal_year=2024&$group=agency_1&$order=amount%20DESC&$limit=5000"
+    },
+    {
+      "id": "agriculture-dept-of",
+      "name": "AGRICULTURE, DEPT OF",
+      "amount": 27746339.71,
+      "sourceAmount": 27746339.71,
+      "program": "AGRICULTURE, DEPT OF",
+      "sourceRows": 1621,
+      "detailUrl": "data/state-or/archive-state-source/state-or-agriculture-dept-of.json",
+      "sourceUrl": "https://data.oregon.gov/resource/y9g9-xsxs.json?$select=agency_1,sum(expense)%20as%20amount,count(*)%20as%20records&$where=fiscal_year=2024&$group=agency_1&$order=amount%20DESC&$limit=5000"
+    },
+    {
+      "id": "water-resources-dept-of",
+      "name": "WATER RESOURCES, DEPT OF",
+      "amount": 26969527.57,
+      "sourceAmount": 26969527.57,
+      "program": "WATER RESOURCES, DEPT OF",
+      "sourceRows": 579,
+      "detailUrl": "data/state-or/archive-state-source/state-or-water-resources-dept-of.json",
+      "sourceUrl": "https://data.oregon.gov/resource/y9g9-xsxs.json?$select=agency_1,sum(expense)%20as%20amount,count(*)%20as%20records&$where=fiscal_year=2024&$group=agency_1&$order=amount%20DESC&$limit=5000"
+    },
+    {
+      "id": "state-fire-marshal-dept-of",
+      "name": "STATE FIRE MARSHAL, DEPT OF",
+      "amount": 26182141.66,
+      "sourceAmount": 26182141.66,
+      "program": "STATE FIRE MARSHAL, DEPT OF",
+      "sourceRows": 1038,
+      "detailUrl": "data/state-or/archive-state-source/state-or-state-fire-marshal-dept-of.json",
+      "sourceUrl": "https://data.oregon.gov/resource/y9g9-xsxs.json?$select=agency_1,sum(expense)%20as%20amount,count(*)%20as%20records&$where=fiscal_year=2024&$group=agency_1&$order=amount%20DESC&$limit=5000"
+    },
+    {
+      "id": "treasury-oregon-st",
+      "name": "TREASURY, OREGON ST",
+      "amount": 20316170.46,
+      "sourceAmount": 20316170.46,
+      "program": "TREASURY, OREGON ST",
+      "sourceRows": 721,
+      "detailUrl": "data/state-or/archive-state-source/state-or-treasury-oregon-st.json",
+      "sourceUrl": "https://data.oregon.gov/resource/y9g9-xsxs.json?$select=agency_1,sum(expense)%20as%20amount,count(*)%20as%20records&$where=fiscal_year=2024&$group=agency_1&$order=amount%20DESC&$limit=5000"
+    },
+    {
+      "id": "public-safety-standards-trng",
+      "name": "PUBLIC SAFETY STANDARDS & TRNG",
+      "amount": 17095779.07,
+      "sourceAmount": 17095779.07,
+      "program": "PUBLIC SAFETY STANDARDS & TRNG",
+      "sourceRows": 323,
+      "detailUrl": "data/state-or/archive-state-source/state-or-public-safety-standards-trng.json",
+      "sourceUrl": "https://data.oregon.gov/resource/y9g9-xsxs.json?$select=agency_1,sum(expense)%20as%20amount,count(*)%20as%20records&$where=fiscal_year=2024&$group=agency_1&$order=amount%20DESC&$limit=5000"
+    },
+    {
+      "id": "secretary-of-state",
+      "name": "SECRETARY OF STATE",
+      "amount": 16796667.75,
+      "sourceAmount": 16796667.75,
+      "program": "SECRETARY OF STATE",
+      "sourceRows": 596,
+      "detailUrl": "data/state-or/archive-state-source/state-or-secretary-of-state.json",
+      "sourceUrl": "https://data.oregon.gov/resource/y9g9-xsxs.json?$select=agency_1,sum(expense)%20as%20amount,count(*)%20as%20records&$where=fiscal_year=2024&$group=agency_1&$order=amount%20DESC&$limit=5000"
+    },
+    {
+      "id": "lands-dept-of-st",
+      "name": "LANDS, DEPT OF ST",
+      "amount": 15664699.45,
+      "sourceAmount": 15664699.45,
+      "program": "LANDS, DEPT OF ST",
+      "sourceRows": 664,
+      "detailUrl": "data/state-or/archive-state-source/state-or-lands-dept-of-st.json",
+      "sourceUrl": "https://data.oregon.gov/resource/y9g9-xsxs.json?$select=agency_1,sum(expense)%20as%20amount,count(*)%20as%20records&$where=fiscal_year=2024&$group=agency_1&$order=amount%20DESC&$limit=5000"
+    },
+    {
+      "id": "marine-board",
+      "name": "MARINE BOARD",
+      "amount": 14950854.97,
+      "sourceAmount": 14950854.97,
+      "program": "MARINE BOARD",
+      "sourceRows": 354,
+      "detailUrl": "data/state-or/archive-state-source/state-or-marine-board.json",
+      "sourceUrl": "https://data.oregon.gov/resource/y9g9-xsxs.json?$select=agency_1,sum(expense)%20as%20amount,count(*)%20as%20records&$where=fiscal_year=2024&$group=agency_1&$order=amount%20DESC&$limit=5000"
+    },
+    {
+      "id": "labor-ind-bureau-of",
+      "name": "LABOR & IND, BUREAU OF",
+      "amount": 6621671.19,
+      "sourceAmount": 6621671.19,
+      "program": "LABOR & IND, BUREAU OF",
+      "sourceRows": 338,
+      "detailUrl": "data/state-or/archive-state-source/state-or-labor-ind-bureau-of.json",
+      "sourceUrl": "https://data.oregon.gov/resource/y9g9-xsxs.json?$select=agency_1,sum(expense)%20as%20amount,count(*)%20as%20records&$where=fiscal_year=2024&$group=agency_1&$order=amount%20DESC&$limit=5000"
+    },
+    {
+      "id": "land-conserv-dev-dept-of",
+      "name": "LAND CONSERV & DEV, DEPT OF",
+      "amount": 6435441.51,
+      "sourceAmount": 6435441.51,
+      "program": "LAND CONSERV & DEV, DEPT OF",
+      "sourceRows": 464,
+      "detailUrl": "data/state-or/archive-state-source/state-or-land-conserv-dev-dept-of.json",
+      "sourceUrl": "https://data.oregon.gov/resource/y9g9-xsxs.json?$select=agency_1,sum(expense)%20as%20amount,count(*)%20as%20records&$where=fiscal_year=2024&$group=agency_1&$order=amount%20DESC&$limit=5000"
+    },
+    {
+      "id": "blind-cmsn-for-the",
+      "name": "BLIND, CMSN FOR THE",
+      "amount": 5611885.06,
+      "sourceAmount": 5611885.06,
+      "program": "BLIND, CMSN FOR THE",
+      "sourceRows": 447,
+      "detailUrl": "data/state-or/archive-state-source/state-or-blind-cmsn-for-the.json",
+      "sourceUrl": "https://data.oregon.gov/resource/y9g9-xsxs.json?$select=agency_1,sum(expense)%20as%20amount,count(*)%20as%20records&$where=fiscal_year=2024&$group=agency_1&$order=amount%20DESC&$limit=5000"
+    },
+    {
+      "id": "geology-mineral-ind-dept-of",
+      "name": "GEOLOGY & MINERAL IND, DEPT OF",
+      "amount": 5513798.83,
+      "sourceAmount": 5513798.83,
+      "program": "GEOLOGY & MINERAL IND, DEPT OF",
+      "sourceRows": 182,
+      "detailUrl": "data/state-or/archive-state-source/state-or-geology-mineral-ind-dept-of.json",
+      "sourceUrl": "https://data.oregon.gov/resource/y9g9-xsxs.json?$select=agency_1,sum(expense)%20as%20amount,count(*)%20as%20records&$where=fiscal_year=2024&$group=agency_1&$order=amount%20DESC&$limit=5000"
+    },
+    {
+      "id": "nursing-brd-of",
+      "name": "NURSING, BRD OF",
+      "amount": 5008896.12,
+      "sourceAmount": 5008896.12,
+      "program": "NURSING, BRD OF",
+      "sourceRows": 215,
+      "detailUrl": "data/state-or/archive-state-source/state-or-nursing-brd-of.json",
+      "sourceUrl": "https://data.oregon.gov/resource/y9g9-xsxs.json?$select=agency_1,sum(expense)%20as%20amount,count(*)%20as%20records&$where=fiscal_year=2024&$group=agency_1&$order=amount%20DESC&$limit=5000"
+    },
+    {
+      "id": "aviation-dept-of",
+      "name": "AVIATION, DEPT OF",
+      "amount": 4775434.19,
+      "sourceAmount": 4775434.19,
+      "program": "AVIATION, DEPT OF",
+      "sourceRows": 284,
+      "detailUrl": "data/state-or/archive-state-source/state-or-aviation-dept-of.json",
+      "sourceUrl": "https://data.oregon.gov/resource/y9g9-xsxs.json?$select=agency_1,sum(expense)%20as%20amount,count(*)%20as%20records&$where=fiscal_year=2024&$group=agency_1&$order=amount%20DESC&$limit=5000"
+    },
+    {
+      "id": "library-oregon-st",
+      "name": "LIBRARY, OREGON ST",
+      "amount": 4163659.17,
+      "sourceAmount": 4163659.17,
+      "program": "LIBRARY, OREGON ST",
+      "sourceRows": 360,
+      "detailUrl": "data/state-or/archive-state-source/state-or-library-oregon-st.json",
+      "sourceUrl": "https://data.oregon.gov/resource/y9g9-xsxs.json?$select=agency_1,sum(expense)%20as%20amount,count(*)%20as%20records&$where=fiscal_year=2024&$group=agency_1&$order=amount%20DESC&$limit=5000"
+    },
+    {
+      "id": "governor-office-of-the",
+      "name": "GOVERNOR, OFFICE OF THE",
+      "amount": 3851043.42,
+      "sourceAmount": 3851043.42,
+      "program": "GOVERNOR, OFFICE OF THE",
+      "sourceRows": 406,
+      "detailUrl": "data/state-or/archive-state-source/state-or-governor-office-of-the.json",
+      "sourceUrl": "https://data.oregon.gov/resource/y9g9-xsxs.json?$select=agency_1,sum(expense)%20as%20amount,count(*)%20as%20records&$where=fiscal_year=2024&$group=agency_1&$order=amount%20DESC&$limit=5000"
+    },
+    {
+      "id": "legislative-assembly",
+      "name": "LEGISLATIVE ASSEMBLY",
+      "amount": 3552639.69,
+      "sourceAmount": 3552639.69,
+      "program": "LEGISLATIVE ASSEMBLY",
+      "sourceRows": 493,
+      "detailUrl": "data/state-or/archive-state-source/state-or-legislative-assembly.json",
+      "sourceUrl": "https://data.oregon.gov/resource/y9g9-xsxs.json?$select=agency_1,sum(expense)%20as%20amount,count(*)%20as%20records&$where=fiscal_year=2024&$group=agency_1&$order=amount%20DESC&$limit=5000"
+    },
+    {
+      "id": "medical-brd-or",
+      "name": "MEDICAL BRD, OR",
+      "amount": 3087966.36,
+      "sourceAmount": 3087966.36,
+      "program": "MEDICAL BRD, OR",
+      "sourceRows": 144,
+      "detailUrl": "data/state-or/archive-state-source/state-or-medical-brd-or.json",
+      "sourceUrl": "https://data.oregon.gov/resource/y9g9-xsxs.json?$select=agency_1,sum(expense)%20as%20amount,count(*)%20as%20records&$where=fiscal_year=2024&$group=agency_1&$order=amount%20DESC&$limit=5000"
+    },
+    {
+      "id": "forest-resources-inst-or",
+      "name": "FOREST RESOURCES INST, OR",
+      "amount": 2480760.35,
+      "sourceAmount": 2480760.35,
+      "program": "FOREST RESOURCES INST, OR",
+      "sourceRows": 211,
+      "detailUrl": "data/state-or/archive-state-source/state-or-forest-resources-inst-or.json",
+      "sourceUrl": "https://data.oregon.gov/resource/y9g9-xsxs.json?$select=agency_1,sum(expense)%20as%20amount,count(*)%20as%20records&$where=fiscal_year=2024&$group=agency_1&$order=amount%20DESC&$limit=5000"
+    },
+    {
+      "id": "teacher-standards-practices",
+      "name": "TEACHER STANDARDS & PRACTICES",
+      "amount": 2111127.07,
+      "sourceAmount": 2111127.07,
+      "program": "TEACHER STANDARDS & PRACTICES",
+      "sourceRows": 146,
+      "detailUrl": "data/state-or/archive-state-source/state-or-teacher-standards-practices.json",
+      "sourceUrl": "https://data.oregon.gov/resource/y9g9-xsxs.json?$select=agency_1,sum(expense)%20as%20amount,count(*)%20as%20records&$where=fiscal_year=2024&$group=agency_1&$order=amount%20DESC&$limit=5000"
+    },
+    {
+      "id": "parole-post-prison-supv-brd",
+      "name": "PAROLE/POST PRISON SUPV, BRD",
+      "amount": 2030426.04,
+      "sourceAmount": 2030426.04,
+      "program": "PAROLE/POST PRISON SUPV, BRD",
+      "sourceRows": 124,
+      "detailUrl": "data/state-or/archive-state-source/state-or-parole-post-prison-supv-brd.json",
+      "sourceUrl": "https://data.oregon.gov/resource/y9g9-xsxs.json?$select=agency_1,sum(expense)%20as%20amount,count(*)%20as%20records&$where=fiscal_year=2024&$group=agency_1&$order=amount%20DESC&$limit=5000"
+    },
+    {
+      "id": "racing-cmsn",
+      "name": "RACING CMSN",
+      "amount": 2008842.26,
+      "sourceAmount": 2008842.26,
+      "program": "RACING CMSN",
+      "sourceRows": 145,
+      "detailUrl": "data/state-or/archive-state-source/state-or-racing-cmsn.json",
+      "sourceUrl": "https://data.oregon.gov/resource/y9g9-xsxs.json?$select=agency_1,sum(expense)%20as%20amount,count(*)%20as%20records&$where=fiscal_year=2024&$group=agency_1&$order=amount%20DESC&$limit=5000"
+    },
+    {
+      "id": "construction-ctr-brd",
+      "name": "CONSTRUCTION CTR BRD",
+      "amount": 1683009.91,
+      "sourceAmount": 1683009.91,
+      "program": "CONSTRUCTION CTR BRD",
+      "sourceRows": 86,
+      "detailUrl": "data/state-or/archive-state-source/state-or-construction-ctr-brd.json",
+      "sourceUrl": "https://data.oregon.gov/resource/y9g9-xsxs.json?$select=agency_1,sum(expense)%20as%20amount,count(*)%20as%20records&$where=fiscal_year=2024&$group=agency_1&$order=amount%20DESC&$limit=5000"
+    },
+    {
+      "id": "health-related-licensing-brds",
+      "name": "HEALTH RELATED LICENSING BRDs",
+      "amount": 1408584.51,
+      "sourceAmount": 1408584.51,
+      "program": "HEALTH RELATED LICENSING BRDs",
+      "sourceRows": 294,
+      "detailUrl": "data/state-or/archive-state-source/state-or-health-related-licensing-brds.json",
+      "sourceUrl": "https://data.oregon.gov/resource/y9g9-xsxs.json?$select=agency_1,sum(expense)%20as%20amount,count(*)%20as%20records&$where=fiscal_year=2024&$group=agency_1&$order=amount%20DESC&$limit=5000"
+    },
+    {
+      "id": "pharmacy-oregon-brd-of",
+      "name": "PHARMACY, OREGON BRD OF",
+      "amount": 1347905.2,
+      "sourceAmount": 1347905.2,
+      "program": "PHARMACY, OREGON BRD OF",
+      "sourceRows": 129,
+      "detailUrl": "data/state-or/archive-state-source/state-or-pharmacy-oregon-brd-of.json",
+      "sourceUrl": "https://data.oregon.gov/resource/y9g9-xsxs.json?$select=agency_1,sum(expense)%20as%20amount,count(*)%20as%20records&$where=fiscal_year=2024&$group=agency_1&$order=amount%20DESC&$limit=5000"
+    },
+    {
+      "id": "dist-attorneys-deputies",
+      "name": "DIST ATTORNEYS/DEPUTIES",
+      "amount": 988345.42,
+      "sourceAmount": 988345.42,
+      "program": "DIST ATTORNEYS/DEPUTIES",
+      "sourceRows": 28,
+      "detailUrl": "data/state-or/archive-state-source/state-or-dist-attorneys-deputies.json",
+      "sourceUrl": "https://data.oregon.gov/resource/y9g9-xsxs.json?$select=agency_1,sum(expense)%20as%20amount,count(*)%20as%20records&$where=fiscal_year=2024&$group=agency_1&$order=amount%20DESC&$limit=5000"
+    },
+    {
+      "id": "real-estate-agy",
+      "name": "REAL ESTATE AGY",
+      "amount": 984111.22,
+      "sourceAmount": 984111.22,
+      "program": "REAL ESTATE AGY",
+      "sourceRows": 124,
+      "detailUrl": "data/state-or/archive-state-source/state-or-real-estate-agy.json",
+      "sourceUrl": "https://data.oregon.gov/resource/y9g9-xsxs.json?$select=agency_1,sum(expense)%20as%20amount,count(*)%20as%20records&$where=fiscal_year=2024&$group=agency_1&$order=amount%20DESC&$limit=5000"
+    },
+    {
+      "id": "columbia-river-gorge-cmsn",
+      "name": "COLUMBIA RIVER GORGE CMSN",
+      "amount": 972087.17,
+      "sourceAmount": 972087.17,
+      "program": "COLUMBIA RIVER GORGE CMSN",
+      "sourceRows": 15,
+      "detailUrl": "data/state-or/archive-state-source/state-or-columbia-river-gorge-cmsn.json",
+      "sourceUrl": "https://data.oregon.gov/resource/y9g9-xsxs.json?$select=agency_1,sum(expense)%20as%20amount,count(*)%20as%20records&$where=fiscal_year=2024&$group=agency_1&$order=amount%20DESC&$limit=5000"
+    },
+    {
+      "id": "long-term-care-ombud",
+      "name": "LONG TERM CARE OMBUD",
+      "amount": 880263.26,
+      "sourceAmount": 880263.26,
+      "program": "LONG TERM CARE OMBUD",
+      "sourceRows": 156,
+      "detailUrl": "data/state-or/archive-state-source/state-or-long-term-care-ombud.json",
+      "sourceUrl": "https://data.oregon.gov/resource/y9g9-xsxs.json?$select=agency_1,sum(expense)%20as%20amount,count(*)%20as%20records&$where=fiscal_year=2024&$group=agency_1&$order=amount%20DESC&$limit=5000"
+    },
+    {
+      "id": "government-ethics-cmsn",
+      "name": "GOVERNMENT ETHICS CMSN",
+      "amount": 858176.49,
+      "sourceAmount": 858176.49,
+      "program": "GOVERNMENT ETHICS CMSN",
+      "sourceRows": 46,
+      "detailUrl": "data/state-or/archive-state-source/state-or-government-ethics-cmsn.json",
+      "sourceUrl": "https://data.oregon.gov/resource/y9g9-xsxs.json?$select=agency_1,sum(expense)%20as%20amount,count(*)%20as%20records&$where=fiscal_year=2024&$group=agency_1&$order=amount%20DESC&$limit=5000"
+    },
+    {
+      "id": "mental-health-regulatory-agy",
+      "name": "MENTAL HEALTH REGULATORY AGY",
+      "amount": 797088.89,
+      "sourceAmount": 797088.89,
+      "program": "MENTAL HEALTH REGULATORY AGY",
+      "sourceRows": 63,
+      "detailUrl": "data/state-or/archive-state-source/state-or-mental-health-regulatory-agy.json",
+      "sourceUrl": "https://data.oregon.gov/resource/y9g9-xsxs.json?$select=agency_1,sum(expense)%20as%20amount,count(*)%20as%20records&$where=fiscal_year=2024&$group=agency_1&$order=amount%20DESC&$limit=5000"
+    },
+    {
+      "id": "legislative-counsel-office",
+      "name": "LEGISLATIVE COUNSEL OFFICE",
+      "amount": 767406.85,
+      "sourceAmount": 767406.85,
+      "program": "LEGISLATIVE COUNSEL OFFICE",
+      "sourceRows": 84,
+      "detailUrl": "data/state-or/archive-state-source/state-or-legislative-counsel-office.json",
+      "sourceUrl": "https://data.oregon.gov/resource/y9g9-xsxs.json?$select=agency_1,sum(expense)%20as%20amount,count(*)%20as%20records&$where=fiscal_year=2024&$group=agency_1&$order=amount%20DESC&$limit=5000"
+    },
+    {
+      "id": "legislative-pol-research-cmte",
+      "name": "LEGISLATIVE POL & RESEARCH CMTE",
+      "amount": 754553.98,
+      "sourceAmount": 754553.98,
+      "program": "LEGISLATIVE POL & RESEARCH CMTE",
+      "sourceRows": 161,
+      "detailUrl": "data/state-or/archive-state-source/state-or-legislative-pol-research-cmte.json",
+      "sourceUrl": "https://data.oregon.gov/resource/y9g9-xsxs.json?$select=agency_1,sum(expense)%20as%20amount,count(*)%20as%20records&$where=fiscal_year=2024&$group=agency_1&$order=amount%20DESC&$limit=5000"
+    },
+    {
+      "id": "dentistry-brd-of",
+      "name": "DENTISTRY, BRD OF",
+      "amount": 692709.74,
+      "sourceAmount": 692709.74,
+      "program": "DENTISTRY, BRD OF",
+      "sourceRows": 95,
+      "detailUrl": "data/state-or/archive-state-source/state-or-dentistry-brd-of.json",
+      "sourceUrl": "https://data.oregon.gov/resource/y9g9-xsxs.json?$select=agency_1,sum(expense)%20as%20amount,count(*)%20as%20records&$where=fiscal_year=2024&$group=agency_1&$order=amount%20DESC&$limit=5000"
+    },
+    {
+      "id": "chiropractic-exam-brd-of",
+      "name": "CHIROPRACTIC EXAM, BRD OF",
+      "amount": 481826.46,
+      "sourceAmount": 481826.46,
+      "program": "CHIROPRACTIC EXAM, BRD OF",
+      "sourceRows": 86,
+      "detailUrl": "data/state-or/archive-state-source/state-or-chiropractic-exam-brd-of.json",
+      "sourceUrl": "https://data.oregon.gov/resource/y9g9-xsxs.json?$select=agency_1,sum(expense)%20as%20amount,count(*)%20as%20records&$where=fiscal_year=2024&$group=agency_1&$order=amount%20DESC&$limit=5000"
+    },
+    {
+      "id": "psychiatric-security-rev-brd",
+      "name": "PSYCHIATRIC SECURITY REV BRD",
+      "amount": 460577.23,
+      "sourceAmount": 460577.23,
+      "program": "PSYCHIATRIC SECURITY REV BRD",
+      "sourceRows": 33,
+      "detailUrl": "data/state-or/archive-state-source/state-or-psychiatric-security-rev-brd.json",
+      "sourceUrl": "https://data.oregon.gov/resource/y9g9-xsxs.json?$select=agency_1,sum(expense)%20as%20amount,count(*)%20as%20records&$where=fiscal_year=2024&$group=agency_1&$order=amount%20DESC&$limit=5000"
+    },
+    {
+      "id": "accountancy-oregon-brd-of",
+      "name": "ACCOUNTANCY, OREGON BRD OF",
+      "amount": 438581.71,
+      "sourceAmount": 438581.71,
+      "program": "ACCOUNTANCY, OREGON BRD OF",
+      "sourceRows": 70,
+      "detailUrl": "data/state-or/archive-state-source/state-or-accountancy-oregon-brd-of.json",
+      "sourceUrl": "https://data.oregon.gov/resource/y9g9-xsxs.json?$select=agency_1,sum(expense)%20as%20amount,count(*)%20as%20records&$where=fiscal_year=2024&$group=agency_1&$order=amount%20DESC&$limit=5000"
+    },
+    {
+      "id": "licensed-social-workers-brd",
+      "name": "LICENSED SOCIAL WORKERS BRD",
+      "amount": 337260.86,
+      "sourceAmount": 337260.86,
+      "program": "LICENSED SOCIAL WORKERS BRD",
+      "sourceRows": 39,
+      "detailUrl": "data/state-or/archive-state-source/state-or-licensed-social-workers-brd.json",
+      "sourceUrl": "https://data.oregon.gov/resource/y9g9-xsxs.json?$select=agency_1,sum(expense)%20as%20amount,count(*)%20as%20records&$where=fiscal_year=2024&$group=agency_1&$order=amount%20DESC&$limit=5000"
+    },
+    {
+      "id": "employment-relations-brd",
+      "name": "EMPLOYMENT RELATIONS BRD",
+      "amount": 320984.15,
+      "sourceAmount": 320984.15,
+      "program": "EMPLOYMENT RELATIONS BRD",
+      "sourceRows": 37,
+      "detailUrl": "data/state-or/archive-state-source/state-or-employment-relations-brd.json",
+      "sourceUrl": "https://data.oregon.gov/resource/y9g9-xsxs.json?$select=agency_1,sum(expense)%20as%20amount,count(*)%20as%20records&$where=fiscal_year=2024&$group=agency_1&$order=amount%20DESC&$limit=5000"
+    },
+    {
+      "id": "facilites-auth-oregon",
+      "name": "FACILITES AUTH, OREGON",
+      "amount": 285405.94,
+      "sourceAmount": 285405.94,
+      "program": "FACILITES AUTH, OREGON",
+      "sourceRows": 15,
+      "detailUrl": "data/state-or/archive-state-source/state-or-facilites-auth-oregon.json",
+      "sourceUrl": "https://data.oregon.gov/resource/y9g9-xsxs.json?$select=agency_1,sum(expense)%20as%20amount,count(*)%20as%20records&$where=fiscal_year=2024&$group=agency_1&$order=amount%20DESC&$limit=5000"
+    },
+    {
+      "id": "land-use-brd-of-appeals",
+      "name": "LAND USE BRD OF APPEALS",
+      "amount": 188424.41,
+      "sourceAmount": 188424.41,
+      "program": "LAND USE BRD OF APPEALS",
+      "sourceRows": 37,
+      "detailUrl": "data/state-or/archive-state-source/state-or-land-use-brd-of-appeals.json",
+      "sourceUrl": "https://data.oregon.gov/resource/y9g9-xsxs.json?$select=agency_1,sum(expense)%20as%20amount,count(*)%20as%20records&$where=fiscal_year=2024&$group=agency_1&$order=amount%20DESC&$limit=5000"
+    },
+    {
+      "id": "legislative-fiscal-officer",
+      "name": "LEGISLATIVE FISCAL OFFICER",
+      "amount": 186200.24,
+      "sourceAmount": 186200.24,
+      "program": "LEGISLATIVE FISCAL OFFICER",
+      "sourceRows": 100,
+      "detailUrl": "data/state-or/archive-state-source/state-or-legislative-fiscal-officer.json",
+      "sourceUrl": "https://data.oregon.gov/resource/y9g9-xsxs.json?$select=agency_1,sum(expense)%20as%20amount,count(*)%20as%20records&$where=fiscal_year=2024&$group=agency_1&$order=amount%20DESC&$limit=5000"
+    },
+    {
+      "id": "tax-practitioners-st-brd-of",
+      "name": "TAX PRACTITIONERS, ST BRD OF",
+      "amount": 155942.45,
+      "sourceAmount": 155942.45,
+      "program": "TAX PRACTITIONERS, ST BRD OF",
+      "sourceRows": 30,
+      "detailUrl": "data/state-or/archive-state-source/state-or-tax-practitioners-st-brd-of.json",
+      "sourceUrl": "https://data.oregon.gov/resource/y9g9-xsxs.json?$select=agency_1,sum(expense)%20as%20amount,count(*)%20as%20records&$where=fiscal_year=2024&$group=agency_1&$order=amount%20DESC&$limit=5000"
+    },
+    {
+      "id": "advocacy-commissions-or",
+      "name": "ADVOCACY COMMISSIONS, OR",
+      "amount": 153633.76,
+      "sourceAmount": 153633.76,
+      "program": "ADVOCACY COMMISSIONS, OR",
+      "sourceRows": 75,
+      "detailUrl": "data/state-or/archive-state-source/state-or-advocacy-commissions-or.json",
+      "sourceUrl": "https://data.oregon.gov/resource/y9g9-xsxs.json?$select=agency_1,sum(expense)%20as%20amount,count(*)%20as%20records&$where=fiscal_year=2024&$group=agency_1&$order=amount%20DESC&$limit=5000"
+    },
+    {
+      "id": "legislative-rev-office",
+      "name": "LEGISLATIVE REV OFFICE",
+      "amount": 70775.2,
+      "sourceAmount": 70775.2,
+      "program": "LEGISLATIVE REV OFFICE",
+      "sourceRows": 38,
+      "detailUrl": "data/state-or/archive-state-source/state-or-legislative-rev-office.json",
+      "sourceUrl": "https://data.oregon.gov/resource/y9g9-xsxs.json?$select=agency_1,sum(expense)%20as%20amount,count(*)%20as%20records&$where=fiscal_year=2024&$group=agency_1&$order=amount%20DESC&$limit=5000"
+    },
+    {
+      "id": "judicial-fitness-disability",
+      "name": "JUDICIAL FITNESS & DISABILITY",
+      "amount": 68038.35,
+      "sourceAmount": 68038.35,
+      "program": "JUDICIAL FITNESS & DISABILITY",
+      "sourceRows": 35,
+      "detailUrl": "data/state-or/archive-state-source/state-or-judicial-fitness-disability.json",
+      "sourceUrl": "https://data.oregon.gov/resource/y9g9-xsxs.json?$select=agency_1,sum(expense)%20as%20amount,count(*)%20as%20records&$where=fiscal_year=2024&$group=agency_1&$order=amount%20DESC&$limit=5000"
+    },
+    {
+      "id": "public-records-advocate-office-of",
+      "name": "PUBLIC RECORDS ADVOCATE, OFFICE OF",
+      "amount": 47687.22,
+      "sourceAmount": 47687.22,
+      "program": "PUBLIC RECORDS ADVOCATE, OFFICE OF",
+      "sourceRows": 11,
+      "detailUrl": "data/state-or/archive-state-source/state-or-public-records-advocate-office-of.json",
+      "sourceUrl": "https://data.oregon.gov/resource/y9g9-xsxs.json?$select=agency_1,sum(expense)%20as%20amount,count(*)%20as%20records&$where=fiscal_year=2024&$group=agency_1&$order=amount%20DESC&$limit=5000"
+    },
+    {
+      "id": "indian-services-cmsn",
+      "name": "INDIAN SERVICES CMSN",
+      "amount": 41851.33,
+      "sourceAmount": 41851.33,
+      "program": "INDIAN SERVICES CMSN",
+      "sourceRows": 33,
+      "detailUrl": "data/state-or/archive-state-source/state-or-indian-services-cmsn.json",
+      "sourceUrl": "https://data.oregon.gov/resource/y9g9-xsxs.json?$select=agency_1,sum(expense)%20as%20amount,count(*)%20as%20records&$where=fiscal_year=2024&$group=agency_1&$order=amount%20DESC&$limit=5000"
+    }
+  ],
+  "itemizedTotal": 31836364350.07,
+  "comparison": {
+    "label": "Census FY2024 state-finance comparator",
+    "url": "https://data.census.gov/table/GOVSSTATEFINTIMESERIES.GS00STATEFIN01?g=040XX00US41&time=2024",
+    "total": 53634034000,
+    "difference": -21797669649.93
+  },
+  "coverageStatus": "official-itemized-source-basis",
+  "archiveNote": "Prior official state layer archived when the complete Census function layer became primary for map reconciliation."
+}

@@ -1,0 +1,42 @@
+{
+  "scope": "Connecticut",
+  "code": "ct",
+  "department": "Governor's Office",
+  "fiscalYear": 2024,
+  "ledgerAmount": 493070.58,
+  "sourceTotal": 525399.83,
+  "sourceUrl": "https://data.ct.gov/resource/ajdm-rvz7.json?$select=department,program,sum(amount)%20as%20amount,count(*)%20as%20records&$where=fiscal_year=2024&$group=department,program",
+  "rowSchema": [
+    "subAgency",
+    "program",
+    "amount",
+    "sourceAmount",
+    "sourceRows"
+  ],
+  "rows": [
+    [
+      "Governor's Office",
+      "Governor's Office · Other Expenses",
+      401260.59,
+      401260.59,
+      273
+    ],
+    [
+      "Governor's Office",
+      "Governor's Office · National Governors Assoc",
+      101270,
+      101270,
+      1
+    ],
+    [
+      "Governor's Office",
+      "Governor's Office · Workforce Development-WIOA",
+      22869.24,
+      22869.24,
+      3
+    ]
+  ],
+  "hierarchyNote": "The source does not identify a separate sub-agency column; direct-managed rows repeat the parent entity.",
+  "sourceBasis": "official source amount",
+  "note": "Amounts are shown on the official source basis; no comparator normalization was applied."
+}

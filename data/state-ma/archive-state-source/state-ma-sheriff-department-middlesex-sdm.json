@@ -1,0 +1,126 @@
+{
+  "scope": "Massachusetts",
+  "code": "ma",
+  "department": "SHERIFF DEPARTMENT MIDDLESEX (SDM)",
+  "fiscalYear": 2024,
+  "ledgerAmount": 72622718.67,
+  "sourceTotal": 79063047.49,
+  "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000",
+  "rowSchema": [
+    "subAgency",
+    "program",
+    "amount",
+    "sourceAmount",
+    "sourceRows"
+  ],
+  "rows": [
+    [
+      "SHERIFF DEPARTMENT MIDDLESEX (SDM)",
+      "SHERIFF DEPARTMENT MIDDLESEX (SDM) · (AA) REGULAR EMPLOYEE COMPENSATION",
+      60828023.97,
+      60828023.97,
+      693
+    ],
+    [
+      "SHERIFF DEPARTMENT MIDDLESEX (SDM)",
+      "SHERIFF DEPARTMENT MIDDLESEX (SDM) · (MM) PURCHASED CLIENT/PROGRAM SVCS",
+      3112677.79,
+      3112677.79,
+      265
+    ],
+    [
+      "SHERIFF DEPARTMENT MIDDLESEX (SDM)",
+      "SHERIFF DEPARTMENT MIDDLESEX (SDM) · (GG) ENERGY COSTS AND SPACE RENTAL",
+      3041681.34,
+      3041681.34,
+      508
+    ],
+    [
+      "SHERIFF DEPARTMENT MIDDLESEX (SDM)",
+      "SHERIFF DEPARTMENT MIDDLESEX (SDM) · (FF) FACILITY OPERATIONAL EXPENSES",
+      2599502.97,
+      2599502.97,
+      1120
+    ],
+    [
+      "SHERIFF DEPARTMENT MIDDLESEX (SDM)",
+      "SHERIFF DEPARTMENT MIDDLESEX (SDM) · (NN) INFRASTRUCTURE:",
+      2040474.63,
+      2040474.63,
+      1455
+    ],
+    [
+      "SHERIFF DEPARTMENT MIDDLESEX (SDM)",
+      "SHERIFF DEPARTMENT MIDDLESEX (SDM) · (UU) IT NON-PAYROLL EXPENSES",
+      2032109.55,
+      2032109.55,
+      331
+    ],
+    [
+      "SHERIFF DEPARTMENT MIDDLESEX (SDM)",
+      "SHERIFF DEPARTMENT MIDDLESEX (SDM) · (CC) SPECIAL EMPLOYEES",
+      1645744.51,
+      1645744.51,
+      83
+    ],
+    [
+      "SHERIFF DEPARTMENT MIDDLESEX (SDM)",
+      "SHERIFF DEPARTMENT MIDDLESEX (SDM) · (KK) EQUIPMENT PURCHASE",
+      1481500.27,
+      1481500.27,
+      135
+    ],
+    [
+      "SHERIFF DEPARTMENT MIDDLESEX (SDM)",
+      "SHERIFF DEPARTMENT MIDDLESEX (SDM) · (BB) REGULAR EMPLOYEE RELATED EXPEN",
+      646523.97,
+      646523.97,
+      65
+    ],
+    [
+      "SHERIFF DEPARTMENT MIDDLESEX (SDM)",
+      "SHERIFF DEPARTMENT MIDDLESEX (SDM) · (DD) PENSION & INSURANCE RELATED EX",
+      622863.38,
+      622863.38,
+      101
+    ],
+    [
+      "SHERIFF DEPARTMENT MIDDLESEX (SDM)",
+      "SHERIFF DEPARTMENT MIDDLESEX (SDM) · (EE) ADMINISTRATIVE EXPENSES",
+      527404.87,
+      527404.87,
+      726
+    ],
+    [
+      "SHERIFF DEPARTMENT MIDDLESEX (SDM)",
+      "SHERIFF DEPARTMENT MIDDLESEX (SDM) · (HH) CONSULTANT SVCS (TO DEPTS)",
+      205563.28,
+      205563.28,
+      44
+    ],
+    [
+      "SHERIFF DEPARTMENT MIDDLESEX (SDM)",
+      "SHERIFF DEPARTMENT MIDDLESEX (SDM) · (JJ) OPERATIONAL SERVICES",
+      204194.45,
+      204194.45,
+      106
+    ],
+    [
+      "SHERIFF DEPARTMENT MIDDLESEX (SDM)",
+      "SHERIFF DEPARTMENT MIDDLESEX (SDM) · (LL) EQUIPMENT LEASE-MAINTAIN/REPAR",
+      74782.51,
+      74782.51,
+      32
+    ],
+    [
+      "SHERIFF DEPARTMENT MIDDLESEX (SDM)",
+      "SHERIFF DEPARTMENT MIDDLESEX (SDM) · (99) PAYROLL REJECTS",
+      0,
+      0,
+      37
+    ]
+  ],
+  "hierarchyNote": "The source does not identify a separate sub-agency column; direct-managed rows repeat the parent entity.",
+  "sourceBasis": "official source amount",
+  "note": "Amounts are shown on the official source basis; no comparator normalization was applied."
+}

@@ -1,0 +1,48 @@
+{
+  "scope": "Iowa",
+  "code": "ia",
+  "fiscalYear": 2024,
+  "department": "AG- Egg Council",
+  "ledgerAmount": 638358.78,
+  "sourceTotal": 833802.56,
+  "sourceUrl": "https://idh-be.iowa.gov/api/v1/datasets/999/rows.csv",
+  "sourceUrls": [
+    [
+      "Iowa fiscal transparency",
+      "https://dom.iowa.gov/state-government/fiscal-transparency"
+    ],
+    [
+      "Iowa expenditure dataset",
+      "https://data.iowa.gov/catalog/dataset/999"
+    ],
+    [
+      "Iowa Data Hub CSV export",
+      "https://idh-be.iowa.gov/api/v1/datasets/999/rows.csv"
+    ]
+  ],
+  "rowSchema": [
+    "subAgency",
+    "program",
+    "amount",
+    "sourceAmount",
+    "sourceRows"
+  ],
+  "sourceBasis": "official source amount",
+  "privacyNote": "No vendor name, vendor number, invoice number, or person-level identifier is retained.",
+  "rows": [
+    [
+      "Iowa Egg Fund",
+      "AG- Egg Council · Iowa Egg Fund · Blank Appropriation · Refunds-Other",
+      833802.56,
+      833802.56,
+      10
+    ]
+  ],
+  "sourceCheck": {
+    "groupRows": 1,
+    "sourceRows": 10,
+    "sourceTotal": 833802.56,
+    "difference": 0
+  },
+  "note": "Amounts are shown on the official source basis; no comparator normalization was applied."
+}

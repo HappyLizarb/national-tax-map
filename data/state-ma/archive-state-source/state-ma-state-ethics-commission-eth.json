@@ -1,0 +1,91 @@
+{
+  "scope": "Massachusetts",
+  "code": "ma",
+  "department": "STATE ETHICS COMMISSION (ETH)",
+  "fiscalYear": 2024,
+  "ledgerAmount": 3015885.91,
+  "sourceTotal": 3283340.74,
+  "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000",
+  "rowSchema": [
+    "subAgency",
+    "program",
+    "amount",
+    "sourceAmount",
+    "sourceRows"
+  ],
+  "rows": [
+    [
+      "STATE ETHICS COMMISSION (ETH)",
+      "STATE ETHICS COMMISSION (ETH) · (AA) REGULAR EMPLOYEE COMPENSATION",
+      2838726.66,
+      2838726.66,
+      35
+    ],
+    [
+      "STATE ETHICS COMMISSION (ETH)",
+      "STATE ETHICS COMMISSION (ETH) · (UU) IT NON-PAYROLL EXPENSES",
+      276477.01,
+      276477.01,
+      79
+    ],
+    [
+      "STATE ETHICS COMMISSION (ETH)",
+      "STATE ETHICS COMMISSION (ETH) · (EE) ADMINISTRATIVE EXPENSES",
+      48477.94,
+      48477.94,
+      51
+    ],
+    [
+      "STATE ETHICS COMMISSION (ETH)",
+      "STATE ETHICS COMMISSION (ETH) · (KK) EQUIPMENT PURCHASE",
+      35175.81,
+      35175.81,
+      5
+    ],
+    [
+      "STATE ETHICS COMMISSION (ETH)",
+      "STATE ETHICS COMMISSION (ETH) · (CC) SPECIAL EMPLOYEES",
+      33995.47,
+      33995.47,
+      26
+    ],
+    [
+      "STATE ETHICS COMMISSION (ETH)",
+      "STATE ETHICS COMMISSION (ETH) · (JJ) OPERATIONAL SERVICES",
+      26078.94,
+      26078.94,
+      86
+    ],
+    [
+      "STATE ETHICS COMMISSION (ETH)",
+      "STATE ETHICS COMMISSION (ETH) · (BB) REGULAR EMPLOYEE RELATED EXPEN",
+      17107.79,
+      17107.79,
+      47
+    ],
+    [
+      "STATE ETHICS COMMISSION (ETH)",
+      "STATE ETHICS COMMISSION (ETH) · (LL) EQUIPMENT LEASE-MAINTAIN/REPAR",
+      3658.27,
+      3658.27,
+      22
+    ],
+    [
+      "STATE ETHICS COMMISSION (ETH)",
+      "STATE ETHICS COMMISSION (ETH) · (NN) INFRASTRUCTURE:",
+      3547.86,
+      3547.86,
+      4
+    ],
+    [
+      "STATE ETHICS COMMISSION (ETH)",
+      "STATE ETHICS COMMISSION (ETH) · (FF) FACILITY OPERATIONAL EXPENSES",
+      94.99,
+      94.99,
+      1
+    ]
+  ],
+  "hierarchyNote": "The source does not identify a separate sub-agency column; direct-managed rows repeat the parent entity.",
+  "sourceBasis": "official source amount",
+  "note": "Amounts are shown on the official source basis; no comparator normalization was applied."
+}

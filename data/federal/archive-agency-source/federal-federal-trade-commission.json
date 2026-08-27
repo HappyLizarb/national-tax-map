@@ -1,0 +1,185 @@
+{
+  "scope": "United States",
+  "code": "federal",
+  "department": "Federal Trade Commission",
+  "fiscalYear": 2024,
+  "ledgerAmount": 332974544.15,
+  "sourceTotal": 453788003.38,
+  "sourceUrl": "https://api.usaspending.gov/api/v2/agency/029/object_class/?fiscal_year=2024&limit=100&page=1",
+  "sourceUrls": [
+    [
+      "FY2024 gross outlays by object class",
+      "https://api.usaspending.gov/api/v2/agency/029/object_class/?fiscal_year=2024&limit=100&page=1"
+    ],
+    [
+      "FY2024 agency budgetary resources total",
+      "https://api.usaspending.gov/api/v2/agency/029/budgetary_resources/?fiscal_year=2024"
+    ]
+  ],
+  "rowSchema": [
+    "subAgency",
+    "program",
+    "amount",
+    "sourceAmount",
+    "sourceRows"
+  ],
+  "rows": [
+    [
+      "Federal Trade Commission",
+      "Full-time permanent",
+      198248685.12,
+      198248685.12,
+      null
+    ],
+    [
+      "Federal Trade Commission",
+      "Advisory and assistance services",
+      98086776.23,
+      98086776.23,
+      null
+    ],
+    [
+      "Federal Trade Commission",
+      "Civilian personnel benefits",
+      74089221.22,
+      74089221.22,
+      null
+    ],
+    [
+      "Federal Trade Commission",
+      "Rental payments to GSA",
+      25769490.3,
+      25769490.3,
+      null
+    ],
+    [
+      "Federal Trade Commission",
+      "Operation and maintenance of equipment",
+      17170587.79,
+      17170587.79,
+      null
+    ],
+    [
+      "Federal Trade Commission",
+      "Other than full-time permanent",
+      10575234.12,
+      10575234.12,
+      null
+    ],
+    [
+      "Federal Trade Commission",
+      "Other personnel compensation",
+      7519241.66,
+      7519241.66,
+      null
+    ],
+    [
+      "Federal Trade Commission",
+      "Other services from non-Federal sources",
+      5199759.43,
+      5199759.43,
+      null
+    ],
+    [
+      "Federal Trade Commission",
+      "Communications, utilities, and miscellaneous charges",
+      4289136.61,
+      4289136.61,
+      null
+    ],
+    [
+      "Federal Trade Commission",
+      "Printing and reproduction",
+      3447010.05,
+      3447010.05,
+      null
+    ],
+    [
+      "Federal Trade Commission",
+      "Equipment",
+      2650735.41,
+      2650735.41,
+      null
+    ],
+    [
+      "Federal Trade Commission",
+      "Travel and transportation of persons",
+      2353968.56,
+      2353968.56,
+      null
+    ],
+    [
+      "Federal Trade Commission",
+      "Operation and maintenance of facilities",
+      1566602.28,
+      1566602.28,
+      null
+    ],
+    [
+      "Federal Trade Commission",
+      "Land and structures",
+      764530.95,
+      764530.95,
+      null
+    ],
+    [
+      "Federal Trade Commission",
+      "Special personal services payments",
+      647061.5,
+      647061.5,
+      null
+    ],
+    [
+      "Federal Trade Commission",
+      "Benefits for former personnel",
+      51388.38,
+      51388.38,
+      null
+    ],
+    [
+      "Federal Trade Commission",
+      "Supplies and materials",
+      312775.91,
+      312775.91,
+      null
+    ],
+    [
+      "Federal Trade Commission",
+      "Rental payments to others",
+      968797.41,
+      968797.41,
+      null
+    ],
+    [
+      "Federal Trade Commission",
+      "Transportation of things",
+      39453.6,
+      39453.6,
+      null
+    ],
+    [
+      "Federal Trade Commission",
+      "Insurance claims and indemnities",
+      37445,
+      37445,
+      null
+    ],
+    [
+      "Federal Trade Commission",
+      "Other goods and services from Federal sources",
+      101.85,
+      101.85,
+      null
+    ]
+  ],
+  "sourceBasis": "official source amount",
+  "sourceCheck": {
+    "objectClassRows": 21,
+    "objectClassTotal": 453788003.38,
+    "agencyTotal": 453788003.38,
+    "difference": 0
+  },
+  "normalizationAdjustment": 0,
+  "hierarchyNote": "The source endpoint returns agency-level object-class aggregates; no individual employees or payees are included.",
+  "note": "Amounts are shown on the official source basis; no comparator normalization was applied."
+}

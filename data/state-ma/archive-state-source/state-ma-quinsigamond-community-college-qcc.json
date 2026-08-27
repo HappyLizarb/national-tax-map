@@ -1,0 +1,133 @@
+{
+  "scope": "Massachusetts",
+  "code": "ma",
+  "department": "QUINSIGAMOND COMMUNITY COLLEGE (QCC)",
+  "fiscalYear": 2024,
+  "ledgerAmount": 118195542.58,
+  "sourceTotal": 128677361.12,
+  "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000",
+  "rowSchema": [
+    "subAgency",
+    "program",
+    "amount",
+    "sourceAmount",
+    "sourceRows"
+  ],
+  "rows": [
+    [
+      "QUINSIGAMOND COMMUNITY COLLEGE (QCC)",
+      "QUINSIGAMOND COMMUNITY COLLEGE (QCC) · (AA) REGULAR EMPLOYEE COMPENSATION",
+      41634719.52,
+      41634719.52,
+      1020
+    ],
+    [
+      "QUINSIGAMOND COMMUNITY COLLEGE (QCC)",
+      "QUINSIGAMOND COMMUNITY COLLEGE (QCC) · (CC) SPECIAL EMPLOYEES",
+      36844216.47,
+      36844216.47,
+      510
+    ],
+    [
+      "QUINSIGAMOND COMMUNITY COLLEGE (QCC)",
+      "QUINSIGAMOND COMMUNITY COLLEGE (QCC) · (RR) BENEFIT PROGRAMS",
+      26823259.25,
+      26823259.25,
+      39
+    ],
+    [
+      "QUINSIGAMOND COMMUNITY COLLEGE (QCC)",
+      "QUINSIGAMOND COMMUNITY COLLEGE (QCC) · (UU) IT NON-PAYROLL EXPENSES",
+      5477608.28,
+      5477608.28,
+      12
+    ],
+    [
+      "QUINSIGAMOND COMMUNITY COLLEGE (QCC)",
+      "QUINSIGAMOND COMMUNITY COLLEGE (QCC) · (NN) INFRASTRUCTURE:",
+      4562655.22,
+      4562655.22,
+      314
+    ],
+    [
+      "QUINSIGAMOND COMMUNITY COLLEGE (QCC)",
+      "QUINSIGAMOND COMMUNITY COLLEGE (QCC) · (GG) ENERGY COSTS AND SPACE RENTAL",
+      3159743.77,
+      3159743.77,
+      12
+    ],
+    [
+      "QUINSIGAMOND COMMUNITY COLLEGE (QCC)",
+      "QUINSIGAMOND COMMUNITY COLLEGE (QCC) · (EE) ADMINISTRATIVE EXPENSES",
+      2761774.34,
+      2761774.34,
+      26
+    ],
+    [
+      "QUINSIGAMOND COMMUNITY COLLEGE (QCC)",
+      "QUINSIGAMOND COMMUNITY COLLEGE (QCC) · (DD) PENSION & INSURANCE RELATED EX",
+      1512000,
+      1512000,
+      10
+    ],
+    [
+      "QUINSIGAMOND COMMUNITY COLLEGE (QCC)",
+      "QUINSIGAMOND COMMUNITY COLLEGE (QCC) · (JJ) OPERATIONAL SERVICES",
+      1439941.02,
+      1439941.02,
+      12
+    ],
+    [
+      "QUINSIGAMOND COMMUNITY COLLEGE (QCC)",
+      "QUINSIGAMOND COMMUNITY COLLEGE (QCC) · (FF) FACILITY OPERATIONAL EXPENSES",
+      1140208.92,
+      1140208.92,
+      25
+    ],
+    [
+      "QUINSIGAMOND COMMUNITY COLLEGE (QCC)",
+      "QUINSIGAMOND COMMUNITY COLLEGE (QCC) · (HH) CONSULTANT SVCS (TO DEPTS)",
+      1038133.43,
+      1038133.43,
+      19
+    ],
+    [
+      "QUINSIGAMOND COMMUNITY COLLEGE (QCC)",
+      "QUINSIGAMOND COMMUNITY COLLEGE (QCC) · (TT) LOANS AND SPECIAL PAYMENTS",
+      776944.3,
+      776944.3,
+      45
+    ],
+    [
+      "QUINSIGAMOND COMMUNITY COLLEGE (QCC)",
+      "QUINSIGAMOND COMMUNITY COLLEGE (QCC) · (KK) EQUIPMENT PURCHASE",
+      728546.54,
+      728546.54,
+      14
+    ],
+    [
+      "QUINSIGAMOND COMMUNITY COLLEGE (QCC)",
+      "QUINSIGAMOND COMMUNITY COLLEGE (QCC) · (LL) EQUIPMENT LEASE-MAINTAIN/REPAR",
+      505760.38,
+      505760.38,
+      18
+    ],
+    [
+      "QUINSIGAMOND COMMUNITY COLLEGE (QCC)",
+      "QUINSIGAMOND COMMUNITY COLLEGE (QCC) · (BB) REGULAR EMPLOYEE RELATED EXPEN",
+      271849.68,
+      271849.68,
+      104
+    ],
+    [
+      "QUINSIGAMOND COMMUNITY COLLEGE (QCC)",
+      "QUINSIGAMOND COMMUNITY COLLEGE (QCC) · (99) PAYROLL REJECTS",
+      0,
+      0,
+      54
+    ]
+  ],
+  "hierarchyNote": "The source does not identify a separate sub-agency column; direct-managed rows repeat the parent entity.",
+  "sourceBasis": "official source amount",
+  "note": "Amounts are shown on the official source basis; no comparator normalization was applied."
+}

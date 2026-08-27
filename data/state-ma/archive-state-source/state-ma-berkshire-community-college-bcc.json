@@ -1,0 +1,140 @@
+{
+  "scope": "Massachusetts",
+  "code": "ma",
+  "department": "BERKSHIRE COMMUNITY COLLEGE (BCC)",
+  "fiscalYear": 2024,
+  "ledgerAmount": 26531801.82,
+  "sourceTotal": 28884695.39,
+  "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000",
+  "rowSchema": [
+    "subAgency",
+    "program",
+    "amount",
+    "sourceAmount",
+    "sourceRows"
+  ],
+  "rows": [
+    [
+      "BERKSHIRE COMMUNITY COLLEGE (BCC)",
+      "BERKSHIRE COMMUNITY COLLEGE (BCC) · (AA) REGULAR EMPLOYEE COMPENSATION",
+      15870365.57,
+      15870365.57,
+      579
+    ],
+    [
+      "BERKSHIRE COMMUNITY COLLEGE (BCC)",
+      "BERKSHIRE COMMUNITY COLLEGE (BCC) · (CC) SPECIAL EMPLOYEES",
+      4255496.76,
+      4255496.76,
+      267
+    ],
+    [
+      "BERKSHIRE COMMUNITY COLLEGE (BCC)",
+      "BERKSHIRE COMMUNITY COLLEGE (BCC) · (RR) BENEFIT PROGRAMS",
+      3348063.82,
+      3348063.82,
+      14
+    ],
+    [
+      "BERKSHIRE COMMUNITY COLLEGE (BCC)",
+      "BERKSHIRE COMMUNITY COLLEGE (BCC) · (NN) INFRASTRUCTURE:",
+      1160242.03,
+      1160242.03,
+      77
+    ],
+    [
+      "BERKSHIRE COMMUNITY COLLEGE (BCC)",
+      "BERKSHIRE COMMUNITY COLLEGE (BCC) · (HH) CONSULTANT SVCS (TO DEPTS)",
+      819442.12,
+      819442.12,
+      44
+    ],
+    [
+      "BERKSHIRE COMMUNITY COLLEGE (BCC)",
+      "BERKSHIRE COMMUNITY COLLEGE (BCC) · (EE) ADMINISTRATIVE EXPENSES",
+      739396.41,
+      739396.41,
+      63
+    ],
+    [
+      "BERKSHIRE COMMUNITY COLLEGE (BCC)",
+      "BERKSHIRE COMMUNITY COLLEGE (BCC) · (GG) ENERGY COSTS AND SPACE RENTAL",
+      633826.28,
+      633826.28,
+      26
+    ],
+    [
+      "BERKSHIRE COMMUNITY COLLEGE (BCC)",
+      "BERKSHIRE COMMUNITY COLLEGE (BCC) · (UU) IT NON-PAYROLL EXPENSES",
+      604106.11,
+      604106.11,
+      33
+    ],
+    [
+      "BERKSHIRE COMMUNITY COLLEGE (BCC)",
+      "BERKSHIRE COMMUNITY COLLEGE (BCC) · (FF) FACILITY OPERATIONAL EXPENSES",
+      408882.83,
+      408882.83,
+      53
+    ],
+    [
+      "BERKSHIRE COMMUNITY COLLEGE (BCC)",
+      "BERKSHIRE COMMUNITY COLLEGE (BCC) · (JJ) OPERATIONAL SERVICES",
+      288787.88,
+      288787.88,
+      21
+    ],
+    [
+      "BERKSHIRE COMMUNITY COLLEGE (BCC)",
+      "BERKSHIRE COMMUNITY COLLEGE (BCC) · (KK) EQUIPMENT PURCHASE",
+      261338.49,
+      261338.49,
+      24
+    ],
+    [
+      "BERKSHIRE COMMUNITY COLLEGE (BCC)",
+      "BERKSHIRE COMMUNITY COLLEGE (BCC) · (DD) PENSION & INSURANCE RELATED EX",
+      249443.96,
+      249443.96,
+      14
+    ],
+    [
+      "BERKSHIRE COMMUNITY COLLEGE (BCC)",
+      "BERKSHIRE COMMUNITY COLLEGE (BCC) · (TT) LOANS AND SPECIAL PAYMENTS",
+      111686.17,
+      111686.17,
+      17
+    ],
+    [
+      "BERKSHIRE COMMUNITY COLLEGE (BCC)",
+      "BERKSHIRE COMMUNITY COLLEGE (BCC) · (BB) REGULAR EMPLOYEE RELATED EXPEN",
+      75637.35,
+      75637.35,
+      48
+    ],
+    [
+      "BERKSHIRE COMMUNITY COLLEGE (BCC)",
+      "BERKSHIRE COMMUNITY COLLEGE (BCC) · (LL) EQUIPMENT LEASE-MAINTAIN/REPAR",
+      54840.68,
+      54840.68,
+      13
+    ],
+    [
+      "BERKSHIRE COMMUNITY COLLEGE (BCC)",
+      "BERKSHIRE COMMUNITY COLLEGE (BCC) · (SS) DEBT PAYMENT",
+      3138.93,
+      3138.93,
+      1
+    ],
+    [
+      "BERKSHIRE COMMUNITY COLLEGE (BCC)",
+      "BERKSHIRE COMMUNITY COLLEGE (BCC) · (99) PAYROLL REJECTS",
+      0,
+      0,
+      2
+    ]
+  ],
+  "hierarchyNote": "The source does not identify a separate sub-agency column; direct-managed rows repeat the parent entity.",
+  "sourceBasis": "official source amount",
+  "note": "Amounts are shown on the official source basis; no comparator normalization was applied."
+}

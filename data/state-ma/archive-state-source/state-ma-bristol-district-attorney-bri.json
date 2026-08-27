@@ -1,0 +1,105 @@
+{
+  "scope": "Massachusetts",
+  "code": "ma",
+  "department": "BRISTOL DISTRICT ATTORNEY (BRI)",
+  "fiscalYear": 2024,
+  "ledgerAmount": 12840511.9,
+  "sourceTotal": 13979234.33,
+  "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000",
+  "rowSchema": [
+    "subAgency",
+    "program",
+    "amount",
+    "sourceAmount",
+    "sourceRows"
+  ],
+  "rows": [
+    [
+      "BRISTOL DISTRICT ATTORNEY (BRI)",
+      "BRISTOL DISTRICT ATTORNEY (BRI) · (AA) REGULAR EMPLOYEE COMPENSATION",
+      11507369.29,
+      11507369.29,
+      153
+    ],
+    [
+      "BRISTOL DISTRICT ATTORNEY (BRI)",
+      "BRISTOL DISTRICT ATTORNEY (BRI) · (GG) ENERGY COSTS AND SPACE RENTAL",
+      771383.47,
+      771383.47,
+      53
+    ],
+    [
+      "BRISTOL DISTRICT ATTORNEY (BRI)",
+      "BRISTOL DISTRICT ATTORNEY (BRI) · (UU) IT NON-PAYROLL EXPENSES",
+      469655.46,
+      469655.46,
+      66
+    ],
+    [
+      "BRISTOL DISTRICT ATTORNEY (BRI)",
+      "BRISTOL DISTRICT ATTORNEY (BRI) · (NN) INFRASTRUCTURE:",
+      294750.22,
+      294750.22,
+      16
+    ],
+    [
+      "BRISTOL DISTRICT ATTORNEY (BRI)",
+      "BRISTOL DISTRICT ATTORNEY (BRI) · (PP) STATE AID/POL SUB",
+      289450,
+      289450,
+      4
+    ],
+    [
+      "BRISTOL DISTRICT ATTORNEY (BRI)",
+      "BRISTOL DISTRICT ATTORNEY (BRI) · (CC) SPECIAL EMPLOYEES",
+      197753.76,
+      197753.76,
+      70
+    ],
+    [
+      "BRISTOL DISTRICT ATTORNEY (BRI)",
+      "BRISTOL DISTRICT ATTORNEY (BRI) · (EE) ADMINISTRATIVE EXPENSES",
+      182881.16,
+      182881.16,
+      280
+    ],
+    [
+      "BRISTOL DISTRICT ATTORNEY (BRI)",
+      "BRISTOL DISTRICT ATTORNEY (BRI) · (KK) EQUIPMENT PURCHASE",
+      166596.67,
+      166596.67,
+      4
+    ],
+    [
+      "BRISTOL DISTRICT ATTORNEY (BRI)",
+      "BRISTOL DISTRICT ATTORNEY (BRI) · (LL) EQUIPMENT LEASE-MAINTAIN/REPAR",
+      72906.59,
+      72906.59,
+      83
+    ],
+    [
+      "BRISTOL DISTRICT ATTORNEY (BRI)",
+      "BRISTOL DISTRICT ATTORNEY (BRI) · (BB) REGULAR EMPLOYEE RELATED EXPEN",
+      20505.41,
+      20505.41,
+      67
+    ],
+    [
+      "BRISTOL DISTRICT ATTORNEY (BRI)",
+      "BRISTOL DISTRICT ATTORNEY (BRI) · (HH) CONSULTANT SVCS (TO DEPTS)",
+      5648.75,
+      5648.75,
+      3
+    ],
+    [
+      "BRISTOL DISTRICT ATTORNEY (BRI)",
+      "BRISTOL DISTRICT ATTORNEY (BRI) · (JJ) OPERATIONAL SERVICES",
+      333.55,
+      333.55,
+      6
+    ]
+  ],
+  "hierarchyNote": "The source does not identify a separate sub-agency column; direct-managed rows repeat the parent entity.",
+  "sourceBasis": "official source amount",
+  "note": "Amounts are shown on the official source basis; no comparator normalization was applied."
+}

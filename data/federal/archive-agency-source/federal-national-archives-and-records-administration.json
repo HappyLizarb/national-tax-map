@@ -1,0 +1,206 @@
+{
+  "scope": "United States",
+  "code": "federal",
+  "department": "National Archives and Records Administration",
+  "fiscalYear": 2024,
+  "ledgerAmount": 547244189.77,
+  "sourceTotal": 745801301.03,
+  "sourceUrl": "https://api.usaspending.gov/api/v2/agency/088/object_class/?fiscal_year=2024&limit=100&page=1",
+  "sourceUrls": [
+    [
+      "FY2024 gross outlays by object class",
+      "https://api.usaspending.gov/api/v2/agency/088/object_class/?fiscal_year=2024&limit=100&page=1"
+    ],
+    [
+      "FY2024 agency budgetary resources total",
+      "https://api.usaspending.gov/api/v2/agency/088/budgetary_resources/?fiscal_year=2024"
+    ]
+  ],
+  "rowSchema": [
+    "subAgency",
+    "program",
+    "amount",
+    "sourceAmount",
+    "sourceRows"
+  ],
+  "rows": [
+    [
+      "National Archives and Records Administration",
+      "Full-time permanent",
+      248302795.07,
+      248302795.07,
+      null
+    ],
+    [
+      "National Archives and Records Administration",
+      "Civilian personnel benefits",
+      97181064.32,
+      97181064.32,
+      null
+    ],
+    [
+      "National Archives and Records Administration",
+      "Rental payments to GSA",
+      56414513.48,
+      56414513.48,
+      null
+    ],
+    [
+      "National Archives and Records Administration",
+      "Other services from non-Federal sources",
+      45964819.58,
+      45964819.58,
+      null
+    ],
+    [
+      "National Archives and Records Administration",
+      "Operation and maintenance of equipment",
+      48445374.26,
+      48445374.26,
+      null
+    ],
+    [
+      "National Archives and Records Administration",
+      "Grants, subsidies, and contributions",
+      16721537.07,
+      16721537.07,
+      null
+    ],
+    [
+      "National Archives and Records Administration",
+      "Equipment",
+      46043977.92,
+      46043977.92,
+      null
+    ],
+    [
+      "National Archives and Records Administration",
+      "Other goods and services from Federal sources",
+      41589783.01,
+      41589783.01,
+      null
+    ],
+    [
+      "National Archives and Records Administration",
+      "Operation and maintenance of facilities",
+      38955183.46,
+      38955183.46,
+      null
+    ],
+    [
+      "National Archives and Records Administration",
+      "Land and structures",
+      31300594.41,
+      31300594.41,
+      null
+    ],
+    [
+      "National Archives and Records Administration",
+      "Advisory and assistance services",
+      21771028.07,
+      21771028.07,
+      null
+    ],
+    [
+      "National Archives and Records Administration",
+      "Communications, utilities, and miscellaneous charges",
+      18295337.54,
+      18295337.54,
+      null
+    ],
+    [
+      "National Archives and Records Administration",
+      "Other personnel compensation",
+      10319519.69,
+      10319519.69,
+      null
+    ],
+    [
+      "National Archives and Records Administration",
+      "Rental payments to others",
+      6929381.92,
+      6929381.92,
+      null
+    ],
+    [
+      "National Archives and Records Administration",
+      "Investments and loans",
+      5118895.75,
+      5118895.75,
+      null
+    ],
+    [
+      "National Archives and Records Administration",
+      "Supplies and materials",
+      4204690.6,
+      4204690.6,
+      null
+    ],
+    [
+      "National Archives and Records Administration",
+      "Transportation of things",
+      5503746.61,
+      5503746.61,
+      null
+    ],
+    [
+      "National Archives and Records Administration",
+      "Other than full-time permanent",
+      842306.7,
+      842306.7,
+      null
+    ],
+    [
+      "National Archives and Records Administration",
+      "Travel and transportation of persons",
+      679512.67,
+      679512.67,
+      null
+    ],
+    [
+      "National Archives and Records Administration",
+      "Financial transfers",
+      617520.7,
+      617520.7,
+      null
+    ],
+    [
+      "National Archives and Records Administration",
+      "Printing and reproduction",
+      390435.61,
+      390435.61,
+      null
+    ],
+    [
+      "National Archives and Records Administration",
+      "Insurance claims and indemnities",
+      113050,
+      113050,
+      null
+    ],
+    [
+      "National Archives and Records Administration",
+      "Special personal services payments",
+      71451.78,
+      71451.78,
+      null
+    ],
+    [
+      "National Archives and Records Administration",
+      "Benefits for former personnel",
+      24780.81,
+      24780.81,
+      null
+    ]
+  ],
+  "sourceBasis": "official source amount",
+  "sourceCheck": {
+    "objectClassRows": 24,
+    "objectClassTotal": 745801301.03,
+    "agencyTotal": 745801301.03,
+    "difference": 0
+  },
+  "normalizationAdjustment": 0,
+  "hierarchyNote": "The source endpoint returns agency-level object-class aggregates; no individual employees or payees are included.",
+  "note": "Amounts are shown on the official source basis; no comparator normalization was applied."
+}

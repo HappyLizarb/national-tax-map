@@ -1,0 +1,98 @@
+{
+  "scope": "Massachusetts",
+  "code": "ma",
+  "department": "OFFICE FOR REFUGEES AND IMMIGRANTS (ORI)",
+  "fiscalYear": 2024,
+  "ledgerAmount": 33254553.7,
+  "sourceTotal": 36203634.43,
+  "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000",
+  "rowSchema": [
+    "subAgency",
+    "program",
+    "amount",
+    "sourceAmount",
+    "sourceRows"
+  ],
+  "rows": [
+    [
+      "OFFICE FOR REFUGEES AND IMMIGRANTS (ORI)",
+      "OFFICE FOR REFUGEES AND IMMIGRANTS (ORI) · (MM) PURCHASED CLIENT/PROGRAM SVCS",
+      33165021.02,
+      33165021.02,
+      2879
+    ],
+    [
+      "OFFICE FOR REFUGEES AND IMMIGRANTS (ORI)",
+      "OFFICE FOR REFUGEES AND IMMIGRANTS (ORI) · (AA) REGULAR EMPLOYEE COMPENSATION",
+      2102300.58,
+      2102300.58,
+      462
+    ],
+    [
+      "OFFICE FOR REFUGEES AND IMMIGRANTS (ORI)",
+      "OFFICE FOR REFUGEES AND IMMIGRANTS (ORI) · (PP) STATE AID/POL SUB",
+      444585.51,
+      444585.51,
+      53
+    ],
+    [
+      "OFFICE FOR REFUGEES AND IMMIGRANTS (ORI)",
+      "OFFICE FOR REFUGEES AND IMMIGRANTS (ORI) · (JJ) OPERATIONAL SERVICES",
+      262332.53,
+      262332.53,
+      38
+    ],
+    [
+      "OFFICE FOR REFUGEES AND IMMIGRANTS (ORI)",
+      "OFFICE FOR REFUGEES AND IMMIGRANTS (ORI) · (GG) ENERGY COSTS AND SPACE RENTAL",
+      187022.66,
+      187022.66,
+      38
+    ],
+    [
+      "OFFICE FOR REFUGEES AND IMMIGRANTS (ORI)",
+      "OFFICE FOR REFUGEES AND IMMIGRANTS (ORI) · (CC) SPECIAL EMPLOYEES",
+      28800,
+      28800,
+      8
+    ],
+    [
+      "OFFICE FOR REFUGEES AND IMMIGRANTS (ORI)",
+      "OFFICE FOR REFUGEES AND IMMIGRANTS (ORI) · (EE) ADMINISTRATIVE EXPENSES",
+      4866.23,
+      4866.23,
+      15
+    ],
+    [
+      "OFFICE FOR REFUGEES AND IMMIGRANTS (ORI)",
+      "OFFICE FOR REFUGEES AND IMMIGRANTS (ORI) · (LL) EQUIPMENT LEASE-MAINTAIN/REPAR",
+      4303.9,
+      4303.9,
+      24
+    ],
+    [
+      "OFFICE FOR REFUGEES AND IMMIGRANTS (ORI)",
+      "OFFICE FOR REFUGEES AND IMMIGRANTS (ORI) · (BB) REGULAR EMPLOYEE RELATED EXPEN",
+      3311.27,
+      3311.27,
+      63
+    ],
+    [
+      "OFFICE FOR REFUGEES AND IMMIGRANTS (ORI)",
+      "OFFICE FOR REFUGEES AND IMMIGRANTS (ORI) · (UU) IT NON-PAYROLL EXPENSES",
+      1090.73,
+      1090.73,
+      11
+    ],
+    [
+      "OFFICE FOR REFUGEES AND IMMIGRANTS (ORI)",
+      "OFFICE FOR REFUGEES AND IMMIGRANTS (ORI) · (99) PAYROLL REJECTS",
+      0,
+      0,
+      134
+    ]
+  ],
+  "hierarchyNote": "The source does not identify a separate sub-agency column; direct-managed rows repeat the parent entity.",
+  "sourceBasis": "official source amount",
+  "note": "Amounts are shown on the official source basis; no comparator normalization was applied."
+}

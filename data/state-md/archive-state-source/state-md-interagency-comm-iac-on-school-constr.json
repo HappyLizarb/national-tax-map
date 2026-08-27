@@ -1,0 +1,85 @@
+{
+  "scope": "Maryland",
+  "code": "md",
+  "fiscalYear": 2024,
+  "department": "INTERAGENCY COMM. (IAC) ON SCHOOL CONSTR",
+  "sourceUrl": "https://opendata.maryland.gov/Budget/State-of-Maryland-Payments-Data-FY2008-to-FY2024/7syw-q4cy/about_data",
+  "sourceUrls": [
+    [
+      "Maryland payments dataset",
+      "https://opendata.maryland.gov/Budget/State-of-Maryland-Payments-Data-FY2008-to-FY2024/7syw-q4cy/about_data"
+    ],
+    [
+      "FY2024 raw API rows",
+      "https://opendata.maryland.gov/resource/7syw-q4cy.json?%24where=fiscal_year=%272024%27&%24limit=50000"
+    ]
+  ],
+  "sourceBasis": "FY2024 cash payments grouped by official agency, published category code, and privacy-safe receiver label.",
+  "privacyNote": "Organization receiver names are retained; individual or ambiguous vendor names are grouped as [individual recipient omitted]. No person-level payroll fields are retained.",
+  "sourceRows": 7,
+  "sourceTotal": 10757.32,
+  "rowSchema": [
+    "subAgency",
+    "program",
+    "amount",
+    "sourceAmount",
+    "sourceRows"
+  ],
+  "rows": [
+    [
+      "INTERAGENCY COMM. (IAC) ON SCHOOL CONSTR",
+      "Category code D25 · Receiver [individual recipient omitted]",
+      5460,
+      5460,
+      1
+    ],
+    [
+      "INTERAGENCY COMM. (IAC) ON SCHOOL CONSTR",
+      "Category code D25 · Receiver BLUETRITON BRANDS INC",
+      122.01,
+      122.01,
+      1
+    ],
+    [
+      "INTERAGENCY COMM. (IAC) ON SCHOOL CONSTR",
+      "Category code D25 · Receiver CANON USA INC",
+      825,
+      825,
+      1
+    ],
+    [
+      "INTERAGENCY COMM. (IAC) ON SCHOOL CONSTR",
+      "Category code D25 · Receiver FEDERAL EXPRESS CORPORATION",
+      51.52,
+      51.52,
+      1
+    ],
+    [
+      "INTERAGENCY COMM. (IAC) ON SCHOOL CONSTR",
+      "Category code D25 · Receiver OCCUPATIONAL HEALTH CENTERS OF THE SOUTHWEST PA",
+      585,
+      585,
+      1
+    ],
+    [
+      "INTERAGENCY COMM. (IAC) ON SCHOOL CONSTR",
+      "Category code D25 · Receiver STRATEGIC COMMUNICATIONS LLC",
+      843.79,
+      843.79,
+      1
+    ],
+    [
+      "INTERAGENCY COMM. (IAC) ON SCHOOL CONSTR",
+      "Category code D25 · Receiver WALTERS RELOCATIONS INC",
+      2870,
+      2870,
+      1
+    ]
+  ],
+  "sourceCheck": {
+    "objectClassRows": 7,
+    "sourceRows": 7,
+    "sourceTotal": 10757.32,
+    "difference": 0
+  }
+}

@@ -1,0 +1,140 @@
+{
+  "scope": "Massachusetts",
+  "code": "ma",
+  "department": "EXECUTIVE OFFICE OF HEALTH AND HUMAN SERVICES (EHS)",
+  "fiscalYear": 2024,
+  "ledgerAmount": 22063718207.56,
+  "sourceTotal": 24020373132.57,
+  "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000",
+  "rowSchema": [
+    "subAgency",
+    "program",
+    "amount",
+    "sourceAmount",
+    "sourceRows"
+  ],
+  "rows": [
+    [
+      "EXECUTIVE OFFICE OF HEALTH AND HUMAN SERVICES (EHS)",
+      "EXECUTIVE OFFICE OF HEALTH AND HUMAN SERVICES (EHS) · (RR) BENEFIT PROGRAMS",
+      22809057452.21,
+      22809057452.21,
+      1131166
+    ],
+    [
+      "EXECUTIVE OFFICE OF HEALTH AND HUMAN SERVICES (EHS)",
+      "EXECUTIVE OFFICE OF HEALTH AND HUMAN SERVICES (EHS) · (HH) CONSULTANT SVCS (TO DEPTS)",
+      456799837.72,
+      456799837.72,
+      6813
+    ],
+    [
+      "EXECUTIVE OFFICE OF HEALTH AND HUMAN SERVICES (EHS)",
+      "EXECUTIVE OFFICE OF HEALTH AND HUMAN SERVICES (EHS) · (UU) IT NON-PAYROLL EXPENSES",
+      317319160.33,
+      317319160.33,
+      10733
+    ],
+    [
+      "EXECUTIVE OFFICE OF HEALTH AND HUMAN SERVICES (EHS)",
+      "EXECUTIVE OFFICE OF HEALTH AND HUMAN SERVICES (EHS) · (AA) REGULAR EMPLOYEE COMPENSATION",
+      208226519.43,
+      208226519.43,
+      4721
+    ],
+    [
+      "EXECUTIVE OFFICE OF HEALTH AND HUMAN SERVICES (EHS)",
+      "EXECUTIVE OFFICE OF HEALTH AND HUMAN SERVICES (EHS) · (PP) STATE AID/POL SUB",
+      85860028.88,
+      85860028.88,
+      483
+    ],
+    [
+      "EXECUTIVE OFFICE OF HEALTH AND HUMAN SERVICES (EHS)",
+      "EXECUTIVE OFFICE OF HEALTH AND HUMAN SERVICES (EHS) · (TT) LOANS AND SPECIAL PAYMENTS",
+      53502743.17,
+      53502743.17,
+      158
+    ],
+    [
+      "EXECUTIVE OFFICE OF HEALTH AND HUMAN SERVICES (EHS)",
+      "EXECUTIVE OFFICE OF HEALTH AND HUMAN SERVICES (EHS) · (MM) PURCHASED CLIENT/PROGRAM SVCS",
+      38164738.88,
+      38164738.88,
+      131
+    ],
+    [
+      "EXECUTIVE OFFICE OF HEALTH AND HUMAN SERVICES (EHS)",
+      "EXECUTIVE OFFICE OF HEALTH AND HUMAN SERVICES (EHS) · (EE) ADMINISTRATIVE EXPENSES",
+      28454314.43,
+      28454314.43,
+      1667
+    ],
+    [
+      "EXECUTIVE OFFICE OF HEALTH AND HUMAN SERVICES (EHS)",
+      "EXECUTIVE OFFICE OF HEALTH AND HUMAN SERVICES (EHS) · (GG) ENERGY COSTS AND SPACE RENTAL",
+      12847465.19,
+      12847465.19,
+      482
+    ],
+    [
+      "EXECUTIVE OFFICE OF HEALTH AND HUMAN SERVICES (EHS)",
+      "EXECUTIVE OFFICE OF HEALTH AND HUMAN SERVICES (EHS) · (JJ) OPERATIONAL SERVICES",
+      8722371.25,
+      8722371.25,
+      912
+    ],
+    [
+      "EXECUTIVE OFFICE OF HEALTH AND HUMAN SERVICES (EHS)",
+      "EXECUTIVE OFFICE OF HEALTH AND HUMAN SERVICES (EHS) · (NN) INFRASTRUCTURE:",
+      508356.29,
+      508356.29,
+      35
+    ],
+    [
+      "EXECUTIVE OFFICE OF HEALTH AND HUMAN SERVICES (EHS)",
+      "EXECUTIVE OFFICE OF HEALTH AND HUMAN SERVICES (EHS) · (CC) SPECIAL EMPLOYEES",
+      408249.59,
+      408249.59,
+      145
+    ],
+    [
+      "EXECUTIVE OFFICE OF HEALTH AND HUMAN SERVICES (EHS)",
+      "EXECUTIVE OFFICE OF HEALTH AND HUMAN SERVICES (EHS) · (BB) REGULAR EMPLOYEE RELATED EXPEN",
+      312517.81,
+      312517.81,
+      689
+    ],
+    [
+      "EXECUTIVE OFFICE OF HEALTH AND HUMAN SERVICES (EHS)",
+      "EXECUTIVE OFFICE OF HEALTH AND HUMAN SERVICES (EHS) · (LL) EQUIPMENT LEASE-MAINTAIN/REPAR",
+      70628.58,
+      70628.58,
+      243
+    ],
+    [
+      "EXECUTIVE OFFICE OF HEALTH AND HUMAN SERVICES (EHS)",
+      "EXECUTIVE OFFICE OF HEALTH AND HUMAN SERVICES (EHS) · (FF) FACILITY OPERATIONAL EXPENSES",
+      60122.44,
+      60122.44,
+      5
+    ],
+    [
+      "EXECUTIVE OFFICE OF HEALTH AND HUMAN SERVICES (EHS)",
+      "EXECUTIVE OFFICE OF HEALTH AND HUMAN SERVICES (EHS) · (KK) EQUIPMENT PURCHASE",
+      48797.11,
+      48797.11,
+      37
+    ],
+    [
+      "EXECUTIVE OFFICE OF HEALTH AND HUMAN SERVICES (EHS)",
+      "EXECUTIVE OFFICE OF HEALTH AND HUMAN SERVICES (EHS) · (99) PAYROLL REJECTS",
+      9829.26,
+      9829.26,
+      417
+    ]
+  ],
+  "hierarchyNote": "The source does not identify a separate sub-agency column; direct-managed rows repeat the parent entity.",
+  "sourceBasis": "official source amount",
+  "note": "Amounts are shown on the official source basis; no comparator normalization was applied."
+}

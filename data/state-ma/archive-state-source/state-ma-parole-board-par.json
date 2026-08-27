@@ -1,0 +1,126 @@
+{
+  "scope": "Massachusetts",
+  "code": "ma",
+  "department": "PAROLE BOARD (PAR)",
+  "fiscalYear": 2024,
+  "ledgerAmount": 20391002.15,
+  "sourceTotal": 22199317.25,
+  "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000",
+  "rowSchema": [
+    "subAgency",
+    "program",
+    "amount",
+    "sourceAmount",
+    "sourceRows"
+  ],
+  "rows": [
+    [
+      "PAROLE BOARD (PAR)",
+      "PAROLE BOARD (PAR) · (AA) REGULAR EMPLOYEE COMPENSATION",
+      18137139.57,
+      18137139.57,
+      347
+    ],
+    [
+      "PAROLE BOARD (PAR)",
+      "PAROLE BOARD (PAR) · (MM) PURCHASED CLIENT/PROGRAM SVCS",
+      1760213.61,
+      1760213.61,
+      25
+    ],
+    [
+      "PAROLE BOARD (PAR)",
+      "PAROLE BOARD (PAR) · (GG) ENERGY COSTS AND SPACE RENTAL",
+      1165737.75,
+      1165737.75,
+      166
+    ],
+    [
+      "PAROLE BOARD (PAR)",
+      "PAROLE BOARD (PAR) · (KK) EQUIPMENT PURCHASE",
+      215409.32,
+      215409.32,
+      16
+    ],
+    [
+      "PAROLE BOARD (PAR)",
+      "PAROLE BOARD (PAR) · (HH) CONSULTANT SVCS (TO DEPTS)",
+      192995.17,
+      192995.17,
+      5
+    ],
+    [
+      "PAROLE BOARD (PAR)",
+      "PAROLE BOARD (PAR) · (FF) FACILITY OPERATIONAL EXPENSES",
+      182379.47,
+      182379.47,
+      98
+    ],
+    [
+      "PAROLE BOARD (PAR)",
+      "PAROLE BOARD (PAR) · (EE) ADMINISTRATIVE EXPENSES",
+      149539.28,
+      149539.28,
+      333
+    ],
+    [
+      "PAROLE BOARD (PAR)",
+      "PAROLE BOARD (PAR) · (LL) EQUIPMENT LEASE-MAINTAIN/REPAR",
+      144814.9,
+      144814.9,
+      36
+    ],
+    [
+      "PAROLE BOARD (PAR)",
+      "PAROLE BOARD (PAR) · (JJ) OPERATIONAL SERVICES",
+      84184.45,
+      84184.45,
+      99
+    ],
+    [
+      "PAROLE BOARD (PAR)",
+      "PAROLE BOARD (PAR) · (BB) REGULAR EMPLOYEE RELATED EXPEN",
+      59106.63,
+      59106.63,
+      105
+    ],
+    [
+      "PAROLE BOARD (PAR)",
+      "PAROLE BOARD (PAR) · (TT) LOANS AND SPECIAL PAYMENTS",
+      31739.21,
+      31739.21,
+      1
+    ],
+    [
+      "PAROLE BOARD (PAR)",
+      "PAROLE BOARD (PAR) · (CC) SPECIAL EMPLOYEES",
+      25731.1,
+      25731.1,
+      10
+    ],
+    [
+      "PAROLE BOARD (PAR)",
+      "PAROLE BOARD (PAR) · (NN) INFRASTRUCTURE:",
+      25345.06,
+      25345.06,
+      44
+    ],
+    [
+      "PAROLE BOARD (PAR)",
+      "PAROLE BOARD (PAR) · (UU) IT NON-PAYROLL EXPENSES",
+      24981.73,
+      24981.73,
+      28
+    ],
+    [
+      "PAROLE BOARD (PAR)",
+      "PAROLE BOARD (PAR) · (99) PAYROLL REJECTS",
+      0,
+      0,
+      13
+    ]
+  ],
+  "hierarchyNote": "The source does not identify a separate sub-agency column; direct-managed rows repeat the parent entity.",
+  "sourceBasis": "official source amount",
+  "note": "Amounts are shown on the official source basis; no comparator normalization was applied."
+}

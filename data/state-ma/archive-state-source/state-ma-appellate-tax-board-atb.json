@@ -1,0 +1,70 @@
+{
+  "scope": "Massachusetts",
+  "code": "ma",
+  "department": "APPELLATE TAX BOARD (ATB)",
+  "fiscalYear": 2024,
+  "ledgerAmount": 2155830.37,
+  "sourceTotal": 2347013.74,
+  "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000",
+  "rowSchema": [
+    "subAgency",
+    "program",
+    "amount",
+    "sourceAmount",
+    "sourceRows"
+  ],
+  "rows": [
+    [
+      "APPELLATE TAX BOARD (ATB)",
+      "APPELLATE TAX BOARD (ATB) · (AA) REGULAR EMPLOYEE COMPENSATION",
+      2297332.69,
+      2297332.69,
+      28
+    ],
+    [
+      "APPELLATE TAX BOARD (ATB)",
+      "APPELLATE TAX BOARD (ATB) · (EE) ADMINISTRATIVE EXPENSES",
+      38732.44,
+      38732.44,
+      27
+    ],
+    [
+      "APPELLATE TAX BOARD (ATB)",
+      "APPELLATE TAX BOARD (ATB) · (BB) REGULAR EMPLOYEE RELATED EXPEN",
+      7732.07,
+      7732.07,
+      30
+    ],
+    [
+      "APPELLATE TAX BOARD (ATB)",
+      "APPELLATE TAX BOARD (ATB) · (LL) EQUIPMENT LEASE-MAINTAIN/REPAR",
+      1523.46,
+      1523.46,
+      7
+    ],
+    [
+      "APPELLATE TAX BOARD (ATB)",
+      "APPELLATE TAX BOARD (ATB) · (UU) IT NON-PAYROLL EXPENSES",
+      1349.1,
+      1349.1,
+      2
+    ],
+    [
+      "APPELLATE TAX BOARD (ATB)",
+      "APPELLATE TAX BOARD (ATB) · (JJ) OPERATIONAL SERVICES",
+      343.98,
+      343.98,
+      1
+    ],
+    [
+      "APPELLATE TAX BOARD (ATB)",
+      "APPELLATE TAX BOARD (ATB) · (99) PAYROLL REJECTS",
+      0,
+      0,
+      2
+    ]
+  ],
+  "hierarchyNote": "The source does not identify a separate sub-agency column; direct-managed rows repeat the parent entity.",
+  "sourceBasis": "official source amount",
+  "note": "Amounts are shown on the official source basis; no comparator normalization was applied."
+}

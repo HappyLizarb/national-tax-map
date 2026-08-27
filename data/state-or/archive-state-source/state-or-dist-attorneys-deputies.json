@@ -1,0 +1,175 @@
+{
+  "scope": "Oregon",
+  "fiscalYear": 2024,
+  "department": "DIST ATTORNEYS/DEPUTIES",
+  "sourceUrl": "https://data.oregon.gov/resource/y9g9-xsxs.json?$select=agency,agency_1,budget_class,budget_class_1,expend_class,expend_class_1,vendor,sum(expense)%20as%20total,count(*)%20as%20source_rows&$where=fiscal_year=2024&$group=agency,agency_1,budget_class,budget_class_1,expend_class,expend_class_1,vendor&$limit=500000",
+  "sourceUrls": [
+    [
+      "Oregon transparency expenditure catalog",
+      "https://data.oregon.gov/Revenue-Expense/Agency-Expenditures-Multi-Year-Report/y9g9-xsxs"
+    ],
+    [
+      "Grouped FY2024 API export",
+      "https://data.oregon.gov/resource/y9g9-xsxs.json?$select=agency,agency_1,budget_class,budget_class_1,expend_class,expend_class_1,vendor,sum(expense)%20as%20total,count(*)%20as%20source_rows&$where=fiscal_year=2024&$group=agency,agency_1,budget_class,budget_class_1,expend_class,expend_class_1,vendor&$limit=500000"
+    ]
+  ],
+  "sourceBasis": "Official Oregon Agency Expenditures Multi-Year Report; FY2024 cash expense grouped by agency, budget class, expenditure class, and privacy-safe receiver label.",
+  "privacyNote": "Individual or ambiguous vendor labels are grouped as [individual recipient omitted]; organization receivers are retained. This layer does not expose person-level payroll.",
+  "sourceRows": 28,
+  "sourceTotal": 988345.42,
+  "rowSchema": [
+    "subAgency",
+    "program",
+    "amount",
+    "sourceAmount",
+    "sourceRows"
+  ],
+  "rows": [
+    [
+      "DIST ATTORNEYS/DEPUTIES",
+      "4225 · STATE GOVERNMENT SERVICE CHARGES · 4600 · STATE GOVERNMENT SERVICE CHARGES · Receiver DEPARTMENT OF ADMINISTRATIVE SERVICES",
+      579124,
+      579124,
+      1
+    ],
+    [
+      "DIST ATTORNEYS/DEPUTIES",
+      "3110 · CLASS/UNCLASS SALARY & PER DIEM · 3111 · REGULAR EMPLOYEES · Receiver [individual recipient omitted]",
+      249704.97,
+      249704.97,
+      2
+    ],
+    [
+      "DIST ATTORNEYS/DEPUTIES",
+      "3220 · PUBLIC EMPLOYES' RETIREMENT SYSTEM · 3210 · PUBLIC EMPLOYEES RETIREMENT CONTRIBUTION · Receiver [individual recipient omitted]",
+      50588.78,
+      50588.78,
+      2
+    ],
+    [
+      "DIST ATTORNEYS/DEPUTIES",
+      "3270 · FLEXIBLE BENEFITS · 3263 · MEDICAL,DENTAL,LIFE INSURANCE · Receiver [individual recipient omitted]",
+      26480.96,
+      26480.96,
+      2
+    ],
+    [
+      "DIST ATTORNEYS/DEPUTIES",
+      "4300 · PROFESSIONAL SERVICES · 4500 · PROFESSIONAL SERVICES NON-IT · Receiver FREE STATE REPORTING INC",
+      21369.3,
+      21369.3,
+      1
+    ],
+    [
+      "DIST ATTORNEYS/DEPUTIES",
+      "3230 · SOCIAL SECURITY TAX · 3221 · SOCIAL SECURITY TAXES · Receiver [individual recipient omitted]",
+      16878.64,
+      16878.64,
+      2
+    ],
+    [
+      "DIST ATTORNEYS/DEPUTIES",
+      "3221 · PENSION BOND CONTRIBUTION · 3212 · PENSION BOND ASSESSMENT · Receiver [individual recipient omitted]",
+      13576.43,
+      13576.43,
+      2
+    ],
+    [
+      "DIST ATTORNEYS/DEPUTIES",
+      "4575 · AGENCY PROGRAM RELATED SVCS & SUPP · 4975 · AGENCY PROGRAM RELATED SERVICES · Receiver DEPARTMENT OF ADMINISTRATIVE SERVICES",
+      9444.09,
+      9444.09,
+      1
+    ],
+    [
+      "DIST ATTORNEYS/DEPUTIES",
+      "4225 · STATE GOVERNMENT SERVICE CHARGES · 4600 · STATE GOVERNMENT SERVICE CHARGES · Receiver STATE OF OREGON SECRETARY OF STATE",
+      8244,
+      8244,
+      1
+    ],
+    [
+      "DIST ATTORNEYS/DEPUTIES",
+      "4225 · STATE GOVERNMENT SERVICE CHARGES · 4600 · STATE GOVERNMENT SERVICE CHARGES · Receiver STATE OF OREGON - SECRETARY OF STATE",
+      6960,
+      6960,
+      1
+    ],
+    [
+      "DIST ATTORNEYS/DEPUTIES",
+      "4650 · OTHER SERVICES AND SUPPLIES · 4701 · OTHER SERVICES · Receiver DEPARTMENT OF ADMINISTRATIVE SERVICES",
+      2202.17,
+      2202.17,
+      1
+    ],
+    [
+      "DIST ATTORNEYS/DEPUTIES",
+      "4300 · PROFESSIONAL SERVICES · 4500 · PROFESSIONAL SERVICES NON-IT · Receiver ESCRIBERS LLC",
+      1434.9,
+      1434.9,
+      1
+    ],
+    [
+      "DIST ATTORNEYS/DEPUTIES",
+      "4325 · ATTORNEY GENERAL LEGAL FEES · 4550 · ATTORNEY GENERAL LEGAL FEES · Receiver STATE OF OREGON DEPARTMENT OF JUSTICE",
+      825,
+      825,
+      1
+    ],
+    [
+      "DIST ATTORNEYS/DEPUTIES",
+      "3241 · PAID FAMILY MEDICAL LEAVE INSURANCE · 3273 · PAID LEAVE OREGON-EMPLOYER CONTRIBUTIONS · Receiver [individual recipient omitted]",
+      682.08,
+      682.08,
+      2
+    ],
+    [
+      "DIST ATTORNEYS/DEPUTIES",
+      "4225 · STATE GOVERNMENT SERVICE CHARGES · 4600 · STATE GOVERNMENT SERVICE CHARGES · Receiver OREGON GOVERNMENT ETHICS COMMISSION",
+      630.5,
+      630.5,
+      1
+    ],
+    [
+      "DIST ATTORNEYS/DEPUTIES",
+      "3220 · PUBLIC EMPLOYES' RETIREMENT SYSTEM · 3216 · PERS CONTRIBUTION - RHIPA · Receiver [individual recipient omitted]",
+      130.93,
+      130.93,
+      1
+    ],
+    [
+      "DIST ATTORNEYS/DEPUTIES",
+      "3210 · ERB ASSESSMENT · 3291 · EMPLOYMENT RELATIONS BOARD ASSESSMENTS · Receiver [individual recipient omitted]",
+      33.96,
+      33.96,
+      2
+    ],
+    [
+      "DIST ATTORNEYS/DEPUTIES",
+      "3250 · WORKERS' COMPENSATION ASSESSMENT · 3241 · WORKERS' COMPENSATION ASSESSMENTS · Receiver [individual recipient omitted]",
+      25.76,
+      25.76,
+      2
+    ],
+    [
+      "DIST ATTORNEYS/DEPUTIES",
+      "3220 · PUBLIC EMPLOYES' RETIREMENT SYSTEM · 3215 · PERS CONTRIBUTION - RHIA · Receiver [individual recipient omitted]",
+      7.95,
+      7.95,
+      1
+    ],
+    [
+      "DIST ATTORNEYS/DEPUTIES",
+      "4225 · STATE GOVERNMENT SERVICE CHARGES · 4600 · STATE GOVERNMENT SERVICE CHARGES · Receiver OREGON STATE TREASURY",
+      1,
+      1,
+      1
+    ]
+  ],
+  "sourceCheck": {
+    "objectClassRows": 20,
+    "sourceRows": 28,
+    "sourceTotal": 988345.42,
+    "difference": 0
+  }
+}

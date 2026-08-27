@@ -1,0 +1,567 @@
+{
+  "scope": "Oregon",
+  "fiscalYear": 2024,
+  "department": "REAL ESTATE AGY",
+  "sourceUrl": "https://data.oregon.gov/resource/y9g9-xsxs.json?$select=agency,agency_1,budget_class,budget_class_1,expend_class,expend_class_1,vendor,sum(expense)%20as%20total,count(*)%20as%20source_rows&$where=fiscal_year=2024&$group=agency,agency_1,budget_class,budget_class_1,expend_class,expend_class_1,vendor&$limit=500000",
+  "sourceUrls": [
+    [
+      "Oregon transparency expenditure catalog",
+      "https://data.oregon.gov/Revenue-Expense/Agency-Expenditures-Multi-Year-Report/y9g9-xsxs"
+    ],
+    [
+      "Grouped FY2024 API export",
+      "https://data.oregon.gov/resource/y9g9-xsxs.json?$select=agency,agency_1,budget_class,budget_class_1,expend_class,expend_class_1,vendor,sum(expense)%20as%20total,count(*)%20as%20source_rows&$where=fiscal_year=2024&$group=agency,agency_1,budget_class,budget_class_1,expend_class,expend_class_1,vendor&$limit=500000"
+    ]
+  ],
+  "sourceBasis": "Official Oregon Agency Expenditures Multi-Year Report; FY2024 cash expense grouped by agency, budget class, expenditure class, and privacy-safe receiver label.",
+  "privacyNote": "Individual or ambiguous vendor labels are grouped as [individual recipient omitted]; organization receivers are retained. This layer does not expose person-level payroll.",
+  "sourceRows": 124,
+  "sourceTotal": 984111.22,
+  "rowSchema": [
+    "subAgency",
+    "program",
+    "amount",
+    "sourceAmount",
+    "sourceRows"
+  ],
+  "rows": [
+    [
+      "REAL ESTATE AGY",
+      "4225 · STATE GOVERNMENT SERVICE CHARGES · 4600 · STATE GOVERNMENT SERVICE CHARGES · Receiver DEPARTMENT OF ADMINISTRATIVE SERVICES",
+      233021.54,
+      233021.54,
+      1
+    ],
+    [
+      "REAL ESTATE AGY",
+      "4425 · LEASE PAYMENTS & TAXES · 7007 · LEASE PMT FOR BUILDINGS · Receiver THE EQUITABLE CENTER LLC",
+      140981.43,
+      140981.43,
+      1
+    ],
+    [
+      "REAL ESTATE AGY",
+      "4575 · AGENCY PROGRAM RELATED SVCS & SUPP · 4975 · AGENCY PROGRAM RELATED SERVICES · Receiver PSI SERVICES LLC",
+      88050,
+      88050,
+      1
+    ],
+    [
+      "REAL ESTATE AGY",
+      "4325 · ATTORNEY GENERAL LEGAL FEES · 4550 · ATTORNEY GENERAL LEGAL FEES · Receiver STATE OF OREGON DEPARTMENT OF JUSTICE",
+      64194.8,
+      64194.8,
+      1
+    ],
+    [
+      "REAL ESTATE AGY",
+      "4315 · IT PROFESSIONAL SERVICES · 4515 · PROFESSIONAL SERVICES APPLICATION MAINT · Receiver TYLER TECHNOLOGIES INC",
+      62065,
+      62065,
+      1
+    ],
+    [
+      "REAL ESTATE AGY",
+      "4650 · OTHER SERVICES AND SUPPLIES · 4730 · MERCHANT FEES · Receiver US BANK NATIONAL ASSOCIATION",
+      61925.56,
+      61925.56,
+      1
+    ],
+    [
+      "REAL ESTATE AGY",
+      "3110 · CLASS/UNCLASS SALARY & PER DIEM · 3111 · REGULAR EMPLOYEES · Receiver DEPARTMENT OF ADMINISTRATIVE SERVICES",
+      36042.92,
+      36042.92,
+      1
+    ],
+    [
+      "REAL ESTATE AGY",
+      "4250 · DATA PROCESSING · 4375 · COMPUTER TECHNOLOGY COMPUTER PROCESSING · Receiver TYLER TECHNOLOGIES INC",
+      36000,
+      36000,
+      1
+    ],
+    [
+      "REAL ESTATE AGY",
+      "4715 · IT EXPENDABLE PROPERTY · 4365 · COMPUTER TECHNOLOGY PC EQUIPMENT<$5K · Receiver US BANK NATIONAL ASSOCIATION ND",
+      23667.93,
+      23667.93,
+      1
+    ],
+    [
+      "REAL ESTATE AGY",
+      "4200 · TELECOMM/TECH SVC AND SUPPLIES · 4301 · TELECOM/VOICE USAGE · Receiver US BANK NATIONAL ASSOCIATION ND",
+      20785.45,
+      20785.45,
+      1
+    ],
+    [
+      "REAL ESTATE AGY",
+      "4650 · OTHER SERVICES AND SUPPLIES · 4730 · MERCHANT FEES · Receiver OREGON STATE TREASURY",
+      20437.91,
+      20437.91,
+      1
+    ],
+    [
+      "REAL ESTATE AGY",
+      "4225 · STATE GOVERNMENT SERVICE CHARGES · 4600 · STATE GOVERNMENT SERVICE CHARGES · Receiver STATE OF OREGON - SECRETARY OF STATE",
+      17910.04,
+      17910.04,
+      1
+    ],
+    [
+      "REAL ESTATE AGY",
+      "4150 · EMPLOYEE TRAINING · 4406 · PROF DEV INSTATE TUITION/REGISTRATION · Receiver US BANK NATIONAL ASSOCIATION ND",
+      12909.88,
+      12909.88,
+      1
+    ],
+    [
+      "REAL ESTATE AGY",
+      "4475 · FACILITIES MAINTENANCE · 4850 · FACILITIES MAINTENANCE · Receiver THE EQUITABLE CENTER LLC",
+      12089.65,
+      12089.65,
+      1
+    ],
+    [
+      "REAL ESTATE AGY",
+      "4200 · TELECOMM/TECH SVC AND SUPPLIES · 4301 · TELECOM/VOICE USAGE · Receiver KYNDRYL INC",
+      10683.42,
+      10683.42,
+      1
+    ],
+    [
+      "REAL ESTATE AGY",
+      "3270 · FLEXIBLE BENEFITS · 3263 · MEDICAL,DENTAL,LIFE INSURANCE · Receiver DEPARTMENT OF ADMINISTRATIVE SERVICES",
+      9696.14,
+      9696.14,
+      1
+    ],
+    [
+      "REAL ESTATE AGY",
+      "4250 · DATA PROCESSING · 4375 · COMPUTER TECHNOLOGY COMPUTER PROCESSING · Receiver US BANK NATIONAL ASSOCIATION ND",
+      9244.15,
+      9244.15,
+      1
+    ],
+    [
+      "REAL ESTATE AGY",
+      "4715 · IT EXPENDABLE PROPERTY · 4366 · COMPUTER TECHNOLOGY PC SOFTWARE<$5K · Receiver US BANK NATIONAL ASSOCIATION ND",
+      8676.83,
+      8676.83,
+      1
+    ],
+    [
+      "REAL ESTATE AGY",
+      "4250 · DATA PROCESSING · 4375 · COMPUTER TECHNOLOGY COMPUTER PROCESSING · Receiver DEPARTMENT OF ADMINISTRATIVE SERVICES",
+      8673.72,
+      8673.72,
+      1
+    ],
+    [
+      "REAL ESTATE AGY",
+      "4100 · INSTATE TRAVEL · 4101 · INSTATE MEALS WITH OVERNIGHT STAY · Receiver US BANK NATIONAL ASSOCIATION ND",
+      6871.89,
+      6871.89,
+      1
+    ],
+    [
+      "REAL ESTATE AGY",
+      "4225 · STATE GOVERNMENT SERVICE CHARGES · 4600 · STATE GOVERNMENT SERVICE CHARGES · Receiver STATE OF OREGON SECRETARY OF STATE",
+      6600,
+      6600,
+      1
+    ],
+    [
+      "REAL ESTATE AGY",
+      "3220 · PUBLIC EMPLOYES' RETIREMENT SYSTEM · 3210 · PUBLIC EMPLOYEES RETIREMENT CONTRIBUTION · Receiver DEPARTMENT OF ADMINISTRATIVE SERVICES",
+      6542.45,
+      6542.45,
+      1
+    ],
+    [
+      "REAL ESTATE AGY",
+      "4100 · INSTATE TRAVEL · 4106 · INSTATE LODGING · Receiver US BANK NATIONAL ASSOCIATION ND",
+      5948.93,
+      5948.93,
+      1
+    ],
+    [
+      "REAL ESTATE AGY",
+      "4125 · OUT-OF-STATE TRAVEL · 4159 · OUT-OF-STATE AIR TRANSPORTATION · Receiver US BANK NATIONAL ASSOCIATION ND",
+      5501.87,
+      5501.87,
+      1
+    ],
+    [
+      "REAL ESTATE AGY",
+      "4300 · PROFESSIONAL SERVICES · 4500 · PROFESSIONAL SERVICES NON-IT · Receiver EMPLOYMENT DEPARTMENT",
+      5173.2,
+      5173.2,
+      1
+    ],
+    [
+      "REAL ESTATE AGY",
+      "4650 · OTHER SERVICES AND SUPPLIES · 4701 · OTHER SERVICES · Receiver US BANK NATIONAL ASSOCIATION",
+      5145.36,
+      5145.36,
+      1
+    ],
+    [
+      "REAL ESTATE AGY",
+      "4100 · INSTATE TRAVEL · 4109 · INSTATE MILEAGE REIMBURSEMENT-FULL RATE · Receiver [individual recipient omitted]",
+      5048.88,
+      5048.88,
+      20
+    ],
+    [
+      "REAL ESTATE AGY",
+      "4125 · OUT-OF-STATE TRAVEL · 4150 · OUT-OF-STATE LODGING · Receiver US BANK NATIONAL ASSOCIATION ND",
+      4934.5,
+      4934.5,
+      1
+    ],
+    [
+      "REAL ESTATE AGY",
+      "4200 · TELECOMM/TECH SVC AND SUPPLIES · 4305 · TELECOM/NETWORK SERVICES · Receiver DEPARTMENT OF ADMINISTRATIVE SERVICES",
+      3868.12,
+      3868.12,
+      1
+    ],
+    [
+      "REAL ESTATE AGY",
+      "4150 · EMPLOYEE TRAINING · 4411 · PROF DEV OUT-OF-STATE TUITION/REGIST · Receiver US BANK NATIONAL ASSOCIATION ND",
+      3854,
+      3854,
+      1
+    ],
+    [
+      "REAL ESTATE AGY",
+      "4650 · OTHER SERVICES AND SUPPLIES · 4701 · OTHER SERVICES · Receiver THE EQUITABLE CENTER LLC",
+      3801.31,
+      3801.31,
+      1
+    ],
+    [
+      "REAL ESTATE AGY",
+      "3240 · UNEMPLOYMENT ASSESSMENT · 3231 · UNEMPLOYMENT COMPENSATION & ASSESSMENT · Receiver EMPLOYMENT DEPARTMENT",
+      3576,
+      3576,
+      1
+    ],
+    [
+      "REAL ESTATE AGY",
+      "4700 · EXPENDABLE PROPERTY $250-$5000 · 4999 · EXPENDABLE PROPERTY NON-IT<$5K · Receiver US BANK NATIONAL ASSOCIATION ND",
+      3296.55,
+      3296.55,
+      1
+    ],
+    [
+      "REAL ESTATE AGY",
+      "4400 · DUES AND SUBSCRIPTIONS · 4251 · SUBSCRIPTIONS AND PUBLICATIONS · Receiver US BANK NATIONAL ASSOCIATION ND",
+      3264,
+      3264,
+      1
+    ],
+    [
+      "REAL ESTATE AGY",
+      "3230 · SOCIAL SECURITY TAX · 3221 · SOCIAL SECURITY TAXES · Receiver DEPARTMENT OF ADMINISTRATIVE SERVICES",
+      2693.12,
+      2693.12,
+      1
+    ],
+    [
+      "REAL ESTATE AGY",
+      "4125 · OUT-OF-STATE TRAVEL · 4150 · OUT-OF-STATE LODGING · Receiver [individual recipient omitted]",
+      2486.14,
+      2486.14,
+      1
+    ],
+    [
+      "REAL ESTATE AGY",
+      "4475 · FACILITIES MAINTENANCE · 4850 · FACILITIES MAINTENANCE · Receiver US BANK NATIONAL ASSOCIATION ND",
+      2466.47,
+      2466.47,
+      1
+    ],
+    [
+      "REAL ESTATE AGY",
+      "4100 · INSTATE TRAVEL · 4101 · INSTATE MEALS WITH OVERNIGHT STAY · Receiver [individual recipient omitted]",
+      2387.9,
+      2387.9,
+      17
+    ],
+    [
+      "REAL ESTATE AGY",
+      "4715 · IT EXPENDABLE PROPERTY · 4370 · COMPUTER TECH PERIPHERAL EQUIP RENTAL · Receiver US BANK NATIONAL ASSOCIATION ND",
+      2000.28,
+      2000.28,
+      1
+    ],
+    [
+      "REAL ESTATE AGY",
+      "3221 · PENSION BOND CONTRIBUTION · 3212 · PENSION BOND ASSESSMENT · Receiver DEPARTMENT OF ADMINISTRATIVE SERVICES",
+      1856.55,
+      1856.55,
+      1
+    ],
+    [
+      "REAL ESTATE AGY",
+      "4175 · OFFICE EXPENSES · 4200 · OFFICE SUPPLIES · Receiver US BANK NATIONAL ASSOCIATION ND",
+      1596.08,
+      1596.08,
+      1
+    ],
+    [
+      "REAL ESTATE AGY",
+      "4175 · OFFICE EXPENSES · 4201 · OFFICE SERVICES · Receiver US BANK NATIONAL ASSOCIATION ND",
+      1513.94,
+      1513.94,
+      1
+    ],
+    [
+      "REAL ESTATE AGY",
+      "4715 · IT EXPENDABLE PROPERTY · 4372 · COMPUTER TECHNOLOGY PERIPHERAL EQUIP<$5K · Receiver US BANK NATIONAL ASSOCIATION ND",
+      1396.84,
+      1396.84,
+      1
+    ],
+    [
+      "REAL ESTATE AGY",
+      "4575 · AGENCY PROGRAM RELATED SVCS & SUPP · 4975 · AGENCY PROGRAM RELATED SERVICES · Receiver US BANK NATIONAL ASSOCIATION ND",
+      1320,
+      1320,
+      1
+    ],
+    [
+      "REAL ESTATE AGY",
+      "4715 · IT EXPENDABLE PROPERTY · 4304 · TELECOM/VOICE EQUIPMENT<$5K · Receiver DEPARTMENT OF ADMINISTRATIVE SERVICES",
+      1272.48,
+      1272.48,
+      1
+    ],
+    [
+      "REAL ESTATE AGY",
+      "4400 · DUES AND SUBSCRIPTIONS · 4250 · DUES/MEMBERSHIPS · Receiver US BANK NATIONAL ASSOCIATION ND",
+      1245.25,
+      1245.25,
+      1
+    ],
+    [
+      "REAL ESTATE AGY",
+      "4125 · OUT-OF-STATE TRAVEL · 4151 · OUT-OF-STATE MEALS WITH OVERNIGHT STAY · Receiver [individual recipient omitted]",
+      1203.75,
+      1203.75,
+      4
+    ],
+    [
+      "REAL ESTATE AGY",
+      "4175 · OFFICE EXPENSES · 4201 · OFFICE SERVICES · Receiver DEPARTMENT OF ADMINISTRATIVE SERVICES",
+      1201.24,
+      1201.24,
+      1
+    ],
+    [
+      "REAL ESTATE AGY",
+      "4100 · INSTATE TRAVEL · 4108 · INSTATE GROUND TRANSPORTATION · Receiver THE EQUITABLE CENTER LLC",
+      1020,
+      1020,
+      1
+    ],
+    [
+      "REAL ESTATE AGY",
+      "4300 · PROFESSIONAL SERVICES · 4500 · PROFESSIONAL SERVICES NON-IT · Receiver US BANK NATIONAL ASSOCIATION ND",
+      875,
+      875,
+      1
+    ],
+    [
+      "REAL ESTATE AGY",
+      "4175 · OFFICE EXPENSES · 4202 · EQUIPMENT RENTAL · Receiver PACIFIC OFFICE AUTOMATION INC",
+      782.47,
+      782.47,
+      1
+    ],
+    [
+      "REAL ESTATE AGY",
+      "4100 · INSTATE TRAVEL · 4105 · INSTATE MEALS-NO OVERNIGHT STAY · Receiver US BANK NATIONAL ASSOCIATION ND",
+      753.01,
+      753.01,
+      1
+    ],
+    [
+      "REAL ESTATE AGY",
+      "4100 · INSTATE TRAVEL · 4108 · INSTATE GROUND TRANSPORTATION · Receiver [individual recipient omitted]",
+      610.15,
+      610.15,
+      5
+    ],
+    [
+      "REAL ESTATE AGY",
+      "4175 · OFFICE EXPENSES · 4200 · OFFICE SUPPLIES · Receiver DEPARTMENT OF ADMINISTRATIVE SERVICES",
+      608.63,
+      608.63,
+      1
+    ],
+    [
+      "REAL ESTATE AGY",
+      "4225 · STATE GOVERNMENT SERVICE CHARGES · 4600 · STATE GOVERNMENT SERVICE CHARGES · Receiver OREGON GOVERNMENT ETHICS COMMISSION",
+      508,
+      508,
+      1
+    ],
+    [
+      "REAL ESTATE AGY",
+      "4225 · STATE GOVERNMENT SERVICE CHARGES · 4600 · STATE GOVERNMENT SERVICE CHARGES · Receiver OREGON STATE TREASURY",
+      503.6,
+      503.6,
+      1
+    ],
+    [
+      "REAL ESTATE AGY",
+      "4250 · DATA PROCESSING · 4367 · COMPUTER TECHNOLOGY PC SUPPORT · Receiver US BANK NATIONAL ASSOCIATION ND",
+      499.4,
+      499.4,
+      1
+    ],
+    [
+      "REAL ESTATE AGY",
+      "4100 · INSTATE TRAVEL · 4106 · INSTATE LODGING · Receiver [individual recipient omitted]",
+      422.24,
+      422.24,
+      2
+    ],
+    [
+      "REAL ESTATE AGY",
+      "4715 · IT EXPENDABLE PROPERTY · 4304 · TELECOM/VOICE EQUIPMENT<$5K · Receiver US BANK NATIONAL ASSOCIATION ND",
+      339.95,
+      339.95,
+      1
+    ],
+    [
+      "REAL ESTATE AGY",
+      "4125 · OUT-OF-STATE TRAVEL · 4155 · FOREIGN MEALS AND LODGING · Receiver [individual recipient omitted]",
+      336,
+      336,
+      1
+    ],
+    [
+      "REAL ESTATE AGY",
+      "4125 · OUT-OF-STATE TRAVEL · 4160 · OUT-OF-STATE GROUND TRANSPORTATION · Receiver [individual recipient omitted]",
+      322.71,
+      322.71,
+      3
+    ],
+    [
+      "REAL ESTATE AGY",
+      "4150 · EMPLOYEE TRAINING · 4401 · TRAINING, EDUCATION OR INSTRUCTION SRVC · Receiver US BANK NATIONAL ASSOCIATION ND",
+      256.5,
+      256.5,
+      1
+    ],
+    [
+      "REAL ESTATE AGY",
+      "4125 · OUT-OF-STATE TRAVEL · 4159 · OUT-OF-STATE AIR TRANSPORTATION · Receiver [individual recipient omitted]",
+      226.47,
+      226.47,
+      4
+    ],
+    [
+      "REAL ESTATE AGY",
+      "4150 · EMPLOYEE TRAINING · 4437 · PROF DEV DUES/MEMBERSHIP · Receiver US BANK NATIONAL ASSOCIATION ND",
+      200,
+      200,
+      1
+    ],
+    [
+      "REAL ESTATE AGY",
+      "3241 · PAID FAMILY MEDICAL LEAVE INSURANCE · 3273 · PAID LEAVE OREGON-EMPLOYER CONTRIBUTIONS · Receiver DEPARTMENT OF ADMINISTRATIVE SERVICES",
+      140.82,
+      140.82,
+      1
+    ],
+    [
+      "REAL ESTATE AGY",
+      "4575 · AGENCY PROGRAM RELATED SVCS & SUPP · 4975 · AGENCY PROGRAM RELATED SERVICES · Receiver FIELDPRINT INC",
+      100,
+      100,
+      1
+    ],
+    [
+      "REAL ESTATE AGY",
+      "4575 · AGENCY PROGRAM RELATED SVCS & SUPP · 4975 · AGENCY PROGRAM RELATED SERVICES · Receiver DEPT OF STATE POLICE",
+      92.75,
+      92.75,
+      1
+    ],
+    [
+      "REAL ESTATE AGY",
+      "4650 · OTHER SERVICES AND SUPPLIES · 4255 · PRIZES AND AWARDS · Receiver US BANK NATIONAL ASSOCIATION ND",
+      87.12,
+      87.12,
+      1
+    ],
+    [
+      "REAL ESTATE AGY",
+      "4175 · OFFICE EXPENSES · 4200 · OFFICE SUPPLIES · Receiver THE EQUITABLE CENTER LLC",
+      79.37,
+      79.37,
+      1
+    ],
+    [
+      "REAL ESTATE AGY",
+      "4715 · IT EXPENDABLE PROPERTY · 4366 · COMPUTER TECHNOLOGY PC SOFTWARE<$5K · Receiver SHI INTERNATIONAL CORP",
+      76.95,
+      76.95,
+      1
+    ],
+    [
+      "REAL ESTATE AGY",
+      "4100 · INSTATE TRAVEL · 4107 · INSTATE AIR TRANSPORTATION · Receiver [individual recipient omitted]",
+      70,
+      70,
+      1
+    ],
+    [
+      "REAL ESTATE AGY",
+      "4175 · OFFICE EXPENSES · 4201 · OFFICE SERVICES · Receiver [individual recipient omitted]",
+      39.36,
+      39.36,
+      1
+    ],
+    [
+      "REAL ESTATE AGY",
+      "4275 · PUBLICITY & PUBLICATIONS · 4253 · ADVERTISE, PUBLICITY, PUBLISH/PRINT SRVS · Receiver US BANK NATIONAL ASSOCIATION ND",
+      17,
+      17,
+      1
+    ],
+    [
+      "REAL ESTATE AGY",
+      "3210 · ERB ASSESSMENT · 3291 · EMPLOYMENT RELATIONS BOARD ASSESSMENTS · Receiver DEPARTMENT OF ADMINISTRATIVE SERVICES",
+      8.19,
+      8.19,
+      1
+    ],
+    [
+      "REAL ESTATE AGY",
+      "4100 · INSTATE TRAVEL · 4108 · INSTATE GROUND TRANSPORTATION · Receiver US BANK NATIONAL ASSOCIATION ND",
+      6.18,
+      6.18,
+      1
+    ],
+    [
+      "REAL ESTATE AGY",
+      "3250 · WORKERS' COMPENSATION ASSESSMENT · 3241 · WORKERS' COMPENSATION ASSESSMENTS · Receiver DEPARTMENT OF ADMINISTRATIVE SERVICES",
+      5.88,
+      5.88,
+      1
+    ]
+  ],
+  "sourceCheck": {
+    "objectClassRows": 76,
+    "sourceRows": 124,
+    "sourceTotal": 984111.22,
+    "difference": 0
+  }
+}

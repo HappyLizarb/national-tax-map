@@ -1,0 +1,42 @@
+{
+  "scope": "Connecticut",
+  "code": "ct",
+  "department": "Office of State Ethics",
+  "fiscalYear": 2024,
+  "ledgerAmount": 67179.76,
+  "sourceTotal": 71584.55,
+  "sourceUrl": "https://data.ct.gov/resource/ajdm-rvz7.json?$select=department,program,sum(amount)%20as%20amount,count(*)%20as%20records&$where=fiscal_year=2024&$group=department,program",
+  "rowSchema": [
+    "subAgency",
+    "program",
+    "amount",
+    "sourceAmount",
+    "sourceRows"
+  ],
+  "rows": [
+    [
+      "Office of State Ethics",
+      "Office of State Ethics · Office of State Ethics",
+      56039.75,
+      56039.75,
+      247
+    ],
+    [
+      "Office of State Ethics",
+      "Office of State Ethics · Capital Equip Purchase Fund",
+      14293.47,
+      14293.47,
+      11
+    ],
+    [
+      "Office of State Ethics",
+      "Office of State Ethics · IT Capital Investment Program",
+      1251.33,
+      1251.33,
+      1
+    ]
+  ],
+  "hierarchyNote": "The source does not identify a separate sub-agency column; direct-managed rows repeat the parent entity.",
+  "sourceBasis": "official source amount",
+  "note": "Amounts are shown on the official source basis; no comparator normalization was applied."
+}

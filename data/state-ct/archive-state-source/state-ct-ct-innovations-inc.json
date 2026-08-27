@@ -1,0 +1,35 @@
+{
+  "scope": "Connecticut",
+  "code": "ct",
+  "department": "CT Innovations Inc",
+  "fiscalYear": 2024,
+  "ledgerAmount": 4699418.61,
+  "sourceTotal": 5007546.21,
+  "sourceUrl": "https://data.ct.gov/resource/ajdm-rvz7.json?$select=department,program,sum(amount)%20as%20amount,count(*)%20as%20records&$where=fiscal_year=2024&$group=department,program",
+  "rowSchema": [
+    "subAgency",
+    "program",
+    "amount",
+    "sourceAmount",
+    "sourceRows"
+  ],
+  "rows": [
+    [
+      "CT Innovations Inc",
+      "CT Innovations Inc · RECAPITALIZE PROGRAMS OF CII",
+      5000000,
+      5000000,
+      1
+    ],
+    [
+      "CT Innovations Inc",
+      "CT Innovations Inc · Non-Budgeted Operating Approp",
+      7546.21,
+      7546.21,
+      1
+    ]
+  ],
+  "hierarchyNote": "The source does not identify a separate sub-agency column; direct-managed rows repeat the parent entity.",
+  "sourceBasis": "official source amount",
+  "note": "Amounts are shown on the official source basis; no comparator normalization was applied."
+}

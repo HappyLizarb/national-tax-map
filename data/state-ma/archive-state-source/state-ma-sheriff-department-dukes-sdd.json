@@ -1,0 +1,119 @@
+{
+  "scope": "Massachusetts",
+  "code": "ma",
+  "department": "SHERIFF DEPARTMENT DUKES (SDD)",
+  "fiscalYear": 2024,
+  "ledgerAmount": 5704820.79,
+  "sourceTotal": 6210735.78,
+  "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000",
+  "rowSchema": [
+    "subAgency",
+    "program",
+    "amount",
+    "sourceAmount",
+    "sourceRows"
+  ],
+  "rows": [
+    [
+      "SHERIFF DEPARTMENT DUKES (SDD)",
+      "SHERIFF DEPARTMENT DUKES (SDD) · (AA) REGULAR EMPLOYEE COMPENSATION",
+      4653227.22,
+      4653227.22,
+      263
+    ],
+    [
+      "SHERIFF DEPARTMENT DUKES (SDD)",
+      "SHERIFF DEPARTMENT DUKES (SDD) · (NN) INFRASTRUCTURE:",
+      303825.53,
+      303825.53,
+      138
+    ],
+    [
+      "SHERIFF DEPARTMENT DUKES (SDD)",
+      "SHERIFF DEPARTMENT DUKES (SDD) · (UU) IT NON-PAYROLL EXPENSES",
+      301860.99,
+      301860.99,
+      176
+    ],
+    [
+      "SHERIFF DEPARTMENT DUKES (SDD)",
+      "SHERIFF DEPARTMENT DUKES (SDD) · (EE) ADMINISTRATIVE EXPENSES",
+      197238.79,
+      197238.79,
+      98
+    ],
+    [
+      "SHERIFF DEPARTMENT DUKES (SDD)",
+      "SHERIFF DEPARTMENT DUKES (SDD) · (DD) PENSION & INSURANCE RELATED EX",
+      182667.34,
+      182667.34,
+      12
+    ],
+    [
+      "SHERIFF DEPARTMENT DUKES (SDD)",
+      "SHERIFF DEPARTMENT DUKES (SDD) · (FF) FACILITY OPERATIONAL EXPENSES",
+      165576.73,
+      165576.73,
+      108
+    ],
+    [
+      "SHERIFF DEPARTMENT DUKES (SDD)",
+      "SHERIFF DEPARTMENT DUKES (SDD) · (GG) ENERGY COSTS AND SPACE RENTAL",
+      140738.75,
+      140738.75,
+      76
+    ],
+    [
+      "SHERIFF DEPARTMENT DUKES (SDD)",
+      "SHERIFF DEPARTMENT DUKES (SDD) · (HH) CONSULTANT SVCS (TO DEPTS)",
+      96725,
+      96725,
+      11
+    ],
+    [
+      "SHERIFF DEPARTMENT DUKES (SDD)",
+      "SHERIFF DEPARTMENT DUKES (SDD) · (CC) SPECIAL EMPLOYEES",
+      53415.96,
+      53415.96,
+      28
+    ],
+    [
+      "SHERIFF DEPARTMENT DUKES (SDD)",
+      "SHERIFF DEPARTMENT DUKES (SDD) · (LL) EQUIPMENT LEASE-MAINTAIN/REPAR",
+      44942.36,
+      44942.36,
+      6
+    ],
+    [
+      "SHERIFF DEPARTMENT DUKES (SDD)",
+      "SHERIFF DEPARTMENT DUKES (SDD) · (BB) REGULAR EMPLOYEE RELATED EXPEN",
+      29485.9,
+      29485.9,
+      73
+    ],
+    [
+      "SHERIFF DEPARTMENT DUKES (SDD)",
+      "SHERIFF DEPARTMENT DUKES (SDD) · (MM) PURCHASED CLIENT/PROGRAM SVCS",
+      22610.64,
+      22610.64,
+      9
+    ],
+    [
+      "SHERIFF DEPARTMENT DUKES (SDD)",
+      "SHERIFF DEPARTMENT DUKES (SDD) · (KK) EQUIPMENT PURCHASE",
+      18420.57,
+      18420.57,
+      10
+    ],
+    [
+      "SHERIFF DEPARTMENT DUKES (SDD)",
+      "SHERIFF DEPARTMENT DUKES (SDD) · (99) PAYROLL REJECTS",
+      0,
+      0,
+      43
+    ]
+  ],
+  "hierarchyNote": "The source does not identify a separate sub-agency column; direct-managed rows repeat the parent entity.",
+  "sourceBasis": "official source amount",
+  "note": "Amounts are shown on the official source basis; no comparator normalization was applied."
+}

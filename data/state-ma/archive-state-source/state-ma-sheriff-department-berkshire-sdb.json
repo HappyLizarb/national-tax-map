@@ -1,0 +1,133 @@
+{
+  "scope": "Massachusetts",
+  "code": "ma",
+  "department": "SHERIFF DEPARTMENT BERKSHIRE (SDB)",
+  "fiscalYear": 2024,
+  "ledgerAmount": 22950622.71,
+  "sourceTotal": 24985930.11,
+  "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000",
+  "rowSchema": [
+    "subAgency",
+    "program",
+    "amount",
+    "sourceAmount",
+    "sourceRows"
+  ],
+  "rows": [
+    [
+      "SHERIFF DEPARTMENT BERKSHIRE (SDB)",
+      "SHERIFF DEPARTMENT BERKSHIRE (SDB) · (AA) REGULAR EMPLOYEE COMPENSATION",
+      18750498.64,
+      18750498.64,
+      958
+    ],
+    [
+      "SHERIFF DEPARTMENT BERKSHIRE (SDB)",
+      "SHERIFF DEPARTMENT BERKSHIRE (SDB) · (NN) INFRASTRUCTURE:",
+      1390862.73,
+      1390862.73,
+      389
+    ],
+    [
+      "SHERIFF DEPARTMENT BERKSHIRE (SDB)",
+      "SHERIFF DEPARTMENT BERKSHIRE (SDB) · (FF) FACILITY OPERATIONAL EXPENSES",
+      1072547.73,
+      1072547.73,
+      790
+    ],
+    [
+      "SHERIFF DEPARTMENT BERKSHIRE (SDB)",
+      "SHERIFF DEPARTMENT BERKSHIRE (SDB) · (CC) SPECIAL EMPLOYEES",
+      1016900.89,
+      1016900.89,
+      222
+    ],
+    [
+      "SHERIFF DEPARTMENT BERKSHIRE (SDB)",
+      "SHERIFF DEPARTMENT BERKSHIRE (SDB) · (UU) IT NON-PAYROLL EXPENSES",
+      931101.65,
+      931101.65,
+      256
+    ],
+    [
+      "SHERIFF DEPARTMENT BERKSHIRE (SDB)",
+      "SHERIFF DEPARTMENT BERKSHIRE (SDB) · (GG) ENERGY COSTS AND SPACE RENTAL",
+      790856.01,
+      790856.01,
+      306
+    ],
+    [
+      "SHERIFF DEPARTMENT BERKSHIRE (SDB)",
+      "SHERIFF DEPARTMENT BERKSHIRE (SDB) · (KK) EQUIPMENT PURCHASE",
+      481032.11,
+      481032.11,
+      31
+    ],
+    [
+      "SHERIFF DEPARTMENT BERKSHIRE (SDB)",
+      "SHERIFF DEPARTMENT BERKSHIRE (SDB) · (PP) STATE AID/POL SUB",
+      150000,
+      150000,
+      10
+    ],
+    [
+      "SHERIFF DEPARTMENT BERKSHIRE (SDB)",
+      "SHERIFF DEPARTMENT BERKSHIRE (SDB) · (MM) PURCHASED CLIENT/PROGRAM SVCS",
+      128822.88,
+      128822.88,
+      33
+    ],
+    [
+      "SHERIFF DEPARTMENT BERKSHIRE (SDB)",
+      "SHERIFF DEPARTMENT BERKSHIRE (SDB) · (EE) ADMINISTRATIVE EXPENSES",
+      104592.05,
+      104592.05,
+      165
+    ],
+    [
+      "SHERIFF DEPARTMENT BERKSHIRE (SDB)",
+      "SHERIFF DEPARTMENT BERKSHIRE (SDB) · (JJ) OPERATIONAL SERVICES",
+      58019.38,
+      58019.38,
+      36
+    ],
+    [
+      "SHERIFF DEPARTMENT BERKSHIRE (SDB)",
+      "SHERIFF DEPARTMENT BERKSHIRE (SDB) · (BB) REGULAR EMPLOYEE RELATED EXPEN",
+      41201.57,
+      41201.57,
+      90
+    ],
+    [
+      "SHERIFF DEPARTMENT BERKSHIRE (SDB)",
+      "SHERIFF DEPARTMENT BERKSHIRE (SDB) · (LL) EQUIPMENT LEASE-MAINTAIN/REPAR",
+      37658.83,
+      37658.83,
+      253
+    ],
+    [
+      "SHERIFF DEPARTMENT BERKSHIRE (SDB)",
+      "SHERIFF DEPARTMENT BERKSHIRE (SDB) · (HH) CONSULTANT SVCS (TO DEPTS)",
+      17308.33,
+      17308.33,
+      12
+    ],
+    [
+      "SHERIFF DEPARTMENT BERKSHIRE (SDB)",
+      "SHERIFF DEPARTMENT BERKSHIRE (SDB) · (DD) PENSION & INSURANCE RELATED EX",
+      14527.31,
+      14527.31,
+      18
+    ],
+    [
+      "SHERIFF DEPARTMENT BERKSHIRE (SDB)",
+      "SHERIFF DEPARTMENT BERKSHIRE (SDB) · (99) PAYROLL REJECTS",
+      0,
+      0,
+      23
+    ]
+  ],
+  "hierarchyNote": "The source does not identify a separate sub-agency column; direct-managed rows repeat the parent entity.",
+  "sourceBasis": "official source amount",
+  "note": "Amounts are shown on the official source basis; no comparator normalization was applied."
+}

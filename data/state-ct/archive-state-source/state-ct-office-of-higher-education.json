@@ -1,0 +1,154 @@
+{
+  "scope": "Connecticut",
+  "code": "ct",
+  "department": "Office of Higher Education",
+  "fiscalYear": 2024,
+  "ledgerAmount": 66361207.56,
+  "sourceTotal": 70712324.47,
+  "sourceUrl": "https://data.ct.gov/resource/ajdm-rvz7.json?$select=department,program,sum(amount)%20as%20amount,count(*)%20as%20records&$where=fiscal_year=2024&$group=department,program",
+  "rowSchema": [
+    "subAgency",
+    "program",
+    "amount",
+    "sourceAmount",
+    "sourceRows"
+  ],
+  "rows": [
+    [
+      "Office of Higher Education",
+      "Office of Higher Education · ARPA-RWSP Supplement",
+      51646500,
+      51646500,
+      54
+    ],
+    [
+      "Office of Higher Education",
+      "Office of Higher Education · Roberta B. Willis Scholarship",
+      8297280.71,
+      8297280.71,
+      125
+    ],
+    [
+      "Office of Higher Education",
+      "Office of Higher Education · CT Commissn Nat Community Srvc",
+      2490501.51,
+      2490501.51,
+      98
+    ],
+    [
+      "Office of Higher Education",
+      "Office of Higher Education · ARPA-Higher Ed Mental Hlth Srv",
+      2437520,
+      2437520,
+      32
+    ],
+    [
+      "Office of Higher Education",
+      "Office of Higher Education · Minority Advancement Program",
+      1530019.49,
+      1530019.49,
+      34
+    ],
+    [
+      "Office of Higher Education",
+      "Office of Higher Education · Other Expenses",
+      1242420.95,
+      1242420.95,
+      284
+    ],
+    [
+      "Office of Higher Education",
+      "Office of Higher Education · Priv Occup Sch Stud Prtct Acct",
+      670930.81,
+      670930.81,
+      87
+    ],
+    [
+      "Office of Higher Education",
+      "Office of Higher Education · Minority Teach Incentive Prog",
+      448367,
+      448367,
+      57
+    ],
+    [
+      "Office of Higher Education",
+      "Office of Higher Education · Alternate Route To Certificatn",
+      443860.5,
+      443860.5,
+      755
+    ],
+    [
+      "Office of Higher Education",
+      "Office of Higher Education · Comm-National & Community Srvc",
+      356715.4,
+      356715.4,
+      193
+    ],
+    [
+      "Office of Higher Education",
+      "Office of Higher Education · IT Services",
+      338279.06,
+      338279.06,
+      56
+    ],
+    [
+      "Office of Higher Education",
+      "Office of Higher Education · Health Care Adjunct Grant",
+      260000,
+      260000,
+      13
+    ],
+    [
+      "Office of Higher Education",
+      "Office of Higher Education · IT Capital Investment Program",
+      220660,
+      220660,
+      1
+    ],
+    [
+      "Office of Higher Education",
+      "Office of Higher Education · Non-Budgeted Operating Approp",
+      158698.67,
+      158698.67,
+      3
+    ],
+    [
+      "Office of Higher Education",
+      "Office of Higher Education · John J. Justice",
+      88211.66,
+      88211.66,
+      34
+    ],
+    [
+      "Office of Higher Education",
+      "Office of Higher Education · State Approving Agency Admin",
+      60985.01,
+      60985.01,
+      91
+    ],
+    [
+      "Office of Higher Education",
+      "Office of Higher Education · National Service Act",
+      11358.12,
+      11358.12,
+      14
+    ],
+    [
+      "Office of Higher Education",
+      "Office of Higher Education · ST Approving Agency Contract",
+      5293.58,
+      5293.58,
+      12
+    ],
+    [
+      "Office of Higher Education",
+      "Office of Higher Education · Capital Equip Purchase Fund",
+      4722,
+      4722,
+      2
+    ]
+  ],
+  "hierarchyNote": "The source does not identify a separate sub-agency column; direct-managed rows repeat the parent entity.",
+  "sourceBasis": "official source amount",
+  "note": "Amounts are shown on the official source basis; no comparator normalization was applied."
+}

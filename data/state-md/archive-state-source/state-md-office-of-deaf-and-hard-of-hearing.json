@@ -1,0 +1,78 @@
+{
+  "scope": "Maryland",
+  "code": "md",
+  "fiscalYear": 2024,
+  "department": "OFFICE OF DEAF AND HARD OF HEARING",
+  "sourceUrl": "https://opendata.maryland.gov/Budget/State-of-Maryland-Payments-Data-FY2008-to-FY2024/7syw-q4cy/about_data",
+  "sourceUrls": [
+    [
+      "Maryland payments dataset",
+      "https://opendata.maryland.gov/Budget/State-of-Maryland-Payments-Data-FY2008-to-FY2024/7syw-q4cy/about_data"
+    ],
+    [
+      "FY2024 raw API rows",
+      "https://opendata.maryland.gov/resource/7syw-q4cy.json?%24where=fiscal_year=%272024%27&%24limit=50000"
+    ]
+  ],
+  "sourceBasis": "FY2024 cash payments grouped by official agency, published category code, and privacy-safe receiver label.",
+  "privacyNote": "Organization receiver names are retained; individual or ambiguous vendor names are grouped as [individual recipient omitted]. No person-level payroll fields are retained.",
+  "sourceRows": 7,
+  "sourceTotal": 38235.95,
+  "rowSchema": [
+    "subAgency",
+    "program",
+    "amount",
+    "sourceAmount",
+    "sourceRows"
+  ],
+  "rows": [
+    [
+      "OFFICE OF DEAF AND HARD OF HEARING",
+      "Category code D11 · Receiver [individual recipient omitted]",
+      13397.5,
+      13397.5,
+      2
+    ],
+    [
+      "OFFICE OF DEAF AND HARD OF HEARING",
+      "Category code D11 · Receiver EN-NET SERVICES LLC",
+      99.9,
+      99.9,
+      1
+    ],
+    [
+      "OFFICE OF DEAF AND HARD OF HEARING",
+      "Category code D11 · Receiver KEYSTONE INTERPRETING SOLUTIONS OF MARYLAND LLC",
+      21802.5,
+      21802.5,
+      1
+    ],
+    [
+      "OFFICE OF DEAF AND HARD OF HEARING",
+      "Category code D11 · Receiver THE HEARING AND SPEECH AGENCY OF METRO BALTO INC",
+      416.25,
+      416.25,
+      1
+    ],
+    [
+      "OFFICE OF DEAF AND HARD OF HEARING",
+      "Category code D11 · Receiver UNITED BUSINESS MACHINES INC",
+      1112.68,
+      1112.68,
+      1
+    ],
+    [
+      "OFFICE OF DEAF AND HARD OF HEARING",
+      "Category code D11 · Receiver VERIZON COMMUNICATIONS INC",
+      1407.12,
+      1407.12,
+      1
+    ]
+  ],
+  "sourceCheck": {
+    "objectClassRows": 6,
+    "sourceRows": 7,
+    "sourceTotal": 38235.95,
+    "difference": 0
+  }
+}

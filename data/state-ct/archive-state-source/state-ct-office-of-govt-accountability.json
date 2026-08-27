@@ -1,0 +1,77 @@
+{
+  "scope": "Connecticut",
+  "code": "ct",
+  "department": "Office of Govt. Accountability",
+  "fiscalYear": 2024,
+  "ledgerAmount": 140671.47,
+  "sourceTotal": 149894.9,
+  "sourceUrl": "https://data.ct.gov/resource/ajdm-rvz7.json?$select=department,program,sum(amount)%20as%20amount,count(*)%20as%20records&$where=fiscal_year=2024&$group=department,program",
+  "rowSchema": [
+    "subAgency",
+    "program",
+    "amount",
+    "sourceAmount",
+    "sourceRows"
+  ],
+  "rows": [
+    [
+      "Office of Govt. Accountability",
+      "Office of Govt. Accountability · Contracting Standards Board",
+      77859.99,
+      77859.99,
+      152
+    ],
+    [
+      "Office of Govt. Accountability",
+      "Office of Govt. Accountability · Judicial Review Council",
+      19128.12,
+      19128.12,
+      76
+    ],
+    [
+      "Office of Govt. Accountability",
+      "Office of Govt. Accountability · Office of the Child Advocate",
+      14860.46,
+      14860.46,
+      93
+    ],
+    [
+      "Office of Govt. Accountability",
+      "Office of Govt. Accountability · Bd of Firearms Permit Examiner",
+      14412.84,
+      14412.84,
+      156
+    ],
+    [
+      "Office of Govt. Accountability",
+      "Office of Govt. Accountability · Judicial Selection Commission",
+      10674.56,
+      10674.56,
+      103
+    ],
+    [
+      "Office of Govt. Accountability",
+      "Office of Govt. Accountability · Office of the Victim Advocate",
+      7668.93,
+      7668.93,
+      39
+    ],
+    [
+      "Office of Govt. Accountability",
+      "Office of Govt. Accountability · Capital Equip Purchase Fund",
+      5190,
+      5190,
+      4
+    ],
+    [
+      "Office of Govt. Accountability",
+      "Office of Govt. Accountability · Other Expenses",
+      100,
+      100,
+      4
+    ]
+  ],
+  "hierarchyNote": "The source does not identify a separate sub-agency column; direct-managed rows repeat the parent entity.",
+  "sourceBasis": "official source amount",
+  "note": "Amounts are shown on the official source basis; no comparator normalization was applied."
+}

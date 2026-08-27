@@ -1,0 +1,189 @@
+{
+  "scope": "Oregon",
+  "fiscalYear": 2024,
+  "department": "INDIAN SERVICES CMSN",
+  "sourceUrl": "https://data.oregon.gov/resource/y9g9-xsxs.json?$select=agency,agency_1,budget_class,budget_class_1,expend_class,expend_class_1,vendor,sum(expense)%20as%20total,count(*)%20as%20source_rows&$where=fiscal_year=2024&$group=agency,agency_1,budget_class,budget_class_1,expend_class,expend_class_1,vendor&$limit=500000",
+  "sourceUrls": [
+    [
+      "Oregon transparency expenditure catalog",
+      "https://data.oregon.gov/Revenue-Expense/Agency-Expenditures-Multi-Year-Report/y9g9-xsxs"
+    ],
+    [
+      "Grouped FY2024 API export",
+      "https://data.oregon.gov/resource/y9g9-xsxs.json?$select=agency,agency_1,budget_class,budget_class_1,expend_class,expend_class_1,vendor,sum(expense)%20as%20total,count(*)%20as%20source_rows&$where=fiscal_year=2024&$group=agency,agency_1,budget_class,budget_class_1,expend_class,expend_class_1,vendor&$limit=500000"
+    ]
+  ],
+  "sourceBasis": "Official Oregon Agency Expenditures Multi-Year Report; FY2024 cash expense grouped by agency, budget class, expenditure class, and privacy-safe receiver label.",
+  "privacyNote": "Individual or ambiguous vendor labels are grouped as [individual recipient omitted]; organization receivers are retained. This layer does not expose person-level payroll.",
+  "sourceRows": 33,
+  "sourceTotal": 41851.33,
+  "rowSchema": [
+    "subAgency",
+    "program",
+    "amount",
+    "sourceAmount",
+    "sourceRows"
+  ],
+  "rows": [
+    [
+      "INDIAN SERVICES CMSN",
+      "4715 · IT EXPENDABLE PROPERTY · 4366 · COMPUTER TECHNOLOGY PC SOFTWARE<$5K · Receiver DEPARTMENT OF ADMINISTRATIVE SERVICES",
+      12400,
+      12400,
+      1
+    ],
+    [
+      "INDIAN SERVICES CMSN",
+      "4225 · STATE GOVERNMENT SERVICE CHARGES · 4600 · STATE GOVERNMENT SERVICE CHARGES · Receiver DEPARTMENT OF ADMINISTRATIVE SERVICES",
+      11525.48,
+      11525.48,
+      1
+    ],
+    [
+      "INDIAN SERVICES CMSN",
+      "4100 · INSTATE TRAVEL · 4109 · INSTATE MILEAGE REIMBURSEMENT-FULL RATE · Receiver [individual recipient omitted]",
+      4887.7,
+      4887.7,
+      3
+    ],
+    [
+      "INDIAN SERVICES CMSN",
+      "4715 · IT EXPENDABLE PROPERTY · 4365 · COMPUTER TECHNOLOGY PC EQUIPMENT<$5K · Receiver CDW GOVERNMENT INC",
+      3109.4,
+      3109.4,
+      1
+    ],
+    [
+      "INDIAN SERVICES CMSN",
+      "4200 · TELECOMM/TECH SVC AND SUPPLIES · 4301 · TELECOM/VOICE USAGE · Receiver [individual recipient omitted]",
+      1951.16,
+      1951.16,
+      1
+    ],
+    [
+      "INDIAN SERVICES CMSN",
+      "4100 · INSTATE TRAVEL · 4106 · INSTATE LODGING · Receiver [individual recipient omitted]",
+      1854.66,
+      1854.66,
+      3
+    ],
+    [
+      "INDIAN SERVICES CMSN",
+      "4225 · STATE GOVERNMENT SERVICE CHARGES · 4600 · STATE GOVERNMENT SERVICE CHARGES · Receiver STATE OF OREGON SECRETARY OF STATE",
+      1223.25,
+      1223.25,
+      1
+    ],
+    [
+      "INDIAN SERVICES CMSN",
+      "4150 · EMPLOYEE TRAINING · 4437 · PROF DEV DUES/MEMBERSHIP · Receiver [individual recipient omitted]",
+      902,
+      902,
+      2
+    ],
+    [
+      "INDIAN SERVICES CMSN",
+      "4150 · EMPLOYEE TRAINING · 4406 · PROF DEV INSTATE TUITION/REGISTRATION · Receiver [individual recipient omitted]",
+      608.76,
+      608.76,
+      2
+    ],
+    [
+      "INDIAN SERVICES CMSN",
+      "4150 · EMPLOYEE TRAINING · 4450 · PROF DEV INSTATE MILE REIMB-FULL RATE · Receiver [individual recipient omitted]",
+      587.18,
+      587.18,
+      1
+    ],
+    [
+      "INDIAN SERVICES CMSN",
+      "4250 · DATA PROCESSING · 4367 · COMPUTER TECHNOLOGY PC SUPPORT · Receiver CDW GOVERNMENT INC",
+      477.54,
+      477.54,
+      1
+    ],
+    [
+      "INDIAN SERVICES CMSN",
+      "4500 · FOOD AND KITCHEN SUPPLIES · 4875 · FOOD AND KITCHEN SUPPLIES · Receiver [individual recipient omitted]",
+      366,
+      366,
+      2
+    ],
+    [
+      "INDIAN SERVICES CMSN",
+      "4150 · EMPLOYEE TRAINING · 4433 · PROF DEV INSTATE LODGING · Receiver [individual recipient omitted]",
+      353.69,
+      353.69,
+      1
+    ],
+    [
+      "INDIAN SERVICES CMSN",
+      "4650 · OTHER SERVICES AND SUPPLIES · 4704 · OTHER SUPPLIES · Receiver [individual recipient omitted]",
+      352.97,
+      352.97,
+      1
+    ],
+    [
+      "INDIAN SERVICES CMSN",
+      "4700 · EXPENDABLE PROPERTY $250-$5000 · 4999 · EXPENDABLE PROPERTY NON-IT<$5K · Receiver [individual recipient omitted]",
+      275.53,
+      275.53,
+      1
+    ],
+    [
+      "INDIAN SERVICES CMSN",
+      "4715 · IT EXPENDABLE PROPERTY · 4366 · COMPUTER TECHNOLOGY PC SOFTWARE<$5K · Receiver SHI INTERNATIONAL CORP",
+      268.93,
+      268.93,
+      1
+    ],
+    [
+      "INDIAN SERVICES CMSN",
+      "4100 · INSTATE TRAVEL · 4101 · INSTATE MEALS WITH OVERNIGHT STAY · Receiver [individual recipient omitted]",
+      264.43,
+      264.43,
+      2
+    ],
+    [
+      "INDIAN SERVICES CMSN",
+      "4175 · OFFICE EXPENSES · 4200 · OFFICE SUPPLIES · Receiver [individual recipient omitted]",
+      175.21,
+      175.21,
+      1
+    ],
+    [
+      "INDIAN SERVICES CMSN",
+      "4175 · OFFICE EXPENSES · 4201 · OFFICE SERVICES · Receiver [individual recipient omitted]",
+      122.74,
+      122.74,
+      2
+    ],
+    [
+      "INDIAN SERVICES CMSN",
+      "4100 · INSTATE TRAVEL · 4108 · INSTATE GROUND TRANSPORTATION · Receiver [individual recipient omitted]",
+      77.5,
+      77.5,
+      2
+    ],
+    [
+      "INDIAN SERVICES CMSN",
+      "4225 · STATE GOVERNMENT SERVICE CHARGES · 4600 · STATE GOVERNMENT SERVICE CHARGES · Receiver OREGON GOVERNMENT ETHICS COMMISSION",
+      35,
+      35,
+      1
+    ],
+    [
+      "INDIAN SERVICES CMSN",
+      "4100 · INSTATE TRAVEL · 4105 · INSTATE MEALS-NO OVERNIGHT STAY · Receiver [individual recipient omitted]",
+      32.2,
+      32.2,
+      2
+    ]
+  ],
+  "sourceCheck": {
+    "objectClassRows": 22,
+    "sourceRows": 33,
+    "sourceTotal": 41851.33,
+    "difference": 0
+  }
+}

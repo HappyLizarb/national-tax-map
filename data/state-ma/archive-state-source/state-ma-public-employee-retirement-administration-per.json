@@ -1,0 +1,105 @@
+{
+  "scope": "Massachusetts",
+  "code": "ma",
+  "department": "PUBLIC EMPLOYEE RETIREMENT ADMINISTRATION (PER)",
+  "fiscalYear": 2024,
+  "ledgerAmount": 6965163.07,
+  "sourceTotal": 7582847.75,
+  "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000",
+  "rowSchema": [
+    "subAgency",
+    "program",
+    "amount",
+    "sourceAmount",
+    "sourceRows"
+  ],
+  "rows": [
+    [
+      "PUBLIC EMPLOYEE RETIREMENT ADMINISTRATION (PER)",
+      "PUBLIC EMPLOYEE RETIREMENT ADMINISTRATION (PER) · (AA) REGULAR EMPLOYEE COMPENSATION",
+      4855738.48,
+      4855738.48,
+      30
+    ],
+    [
+      "PUBLIC EMPLOYEE RETIREMENT ADMINISTRATION (PER)",
+      "PUBLIC EMPLOYEE RETIREMENT ADMINISTRATION (PER) · (UU) IT NON-PAYROLL EXPENSES",
+      1838689.68,
+      1838689.68,
+      157
+    ],
+    [
+      "PUBLIC EMPLOYEE RETIREMENT ADMINISTRATION (PER)",
+      "PUBLIC EMPLOYEE RETIREMENT ADMINISTRATION (PER) · (GG) ENERGY COSTS AND SPACE RENTAL",
+      539522.83,
+      539522.83,
+      60
+    ],
+    [
+      "PUBLIC EMPLOYEE RETIREMENT ADMINISTRATION (PER)",
+      "PUBLIC EMPLOYEE RETIREMENT ADMINISTRATION (PER) · (EE) ADMINISTRATIVE EXPENSES",
+      172452.12,
+      172452.12,
+      164
+    ],
+    [
+      "PUBLIC EMPLOYEE RETIREMENT ADMINISTRATION (PER)",
+      "PUBLIC EMPLOYEE RETIREMENT ADMINISTRATION (PER) · (BB) REGULAR EMPLOYEE RELATED EXPEN",
+      68413.52,
+      68413.52,
+      44
+    ],
+    [
+      "PUBLIC EMPLOYEE RETIREMENT ADMINISTRATION (PER)",
+      "PUBLIC EMPLOYEE RETIREMENT ADMINISTRATION (PER) · (NN) INFRASTRUCTURE:",
+      35441.84,
+      35441.84,
+      27
+    ],
+    [
+      "PUBLIC EMPLOYEE RETIREMENT ADMINISTRATION (PER)",
+      "PUBLIC EMPLOYEE RETIREMENT ADMINISTRATION (PER) · (LL) EQUIPMENT LEASE-MAINTAIN/REPAR",
+      34578.85,
+      34578.85,
+      41
+    ],
+    [
+      "PUBLIC EMPLOYEE RETIREMENT ADMINISTRATION (PER)",
+      "PUBLIC EMPLOYEE RETIREMENT ADMINISTRATION (PER) · (JJ) OPERATIONAL SERVICES",
+      23755.86,
+      23755.86,
+      25
+    ],
+    [
+      "PUBLIC EMPLOYEE RETIREMENT ADMINISTRATION (PER)",
+      "PUBLIC EMPLOYEE RETIREMENT ADMINISTRATION (PER) · (HH) CONSULTANT SVCS (TO DEPTS)",
+      9606.16,
+      9606.16,
+      11
+    ],
+    [
+      "PUBLIC EMPLOYEE RETIREMENT ADMINISTRATION (PER)",
+      "PUBLIC EMPLOYEE RETIREMENT ADMINISTRATION (PER) · (CC) SPECIAL EMPLOYEES",
+      3510,
+      3510,
+      3
+    ],
+    [
+      "PUBLIC EMPLOYEE RETIREMENT ADMINISTRATION (PER)",
+      "PUBLIC EMPLOYEE RETIREMENT ADMINISTRATION (PER) · (FF) FACILITY OPERATIONAL EXPENSES",
+      662.36,
+      662.36,
+      2
+    ],
+    [
+      "PUBLIC EMPLOYEE RETIREMENT ADMINISTRATION (PER)",
+      "PUBLIC EMPLOYEE RETIREMENT ADMINISTRATION (PER) · (KK) EQUIPMENT PURCHASE",
+      476.05,
+      476.05,
+      1
+    ]
+  ],
+  "hierarchyNote": "The source does not identify a separate sub-agency column; direct-managed rows repeat the parent entity.",
+  "sourceBasis": "official source amount",
+  "note": "Amounts are shown on the official source basis; no comparator normalization was applied."
+}

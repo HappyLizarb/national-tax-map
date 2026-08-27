@@ -1,0 +1,126 @@
+{
+  "scope": "Massachusetts",
+  "code": "ma",
+  "department": "SHERIFF DEPARTMENT HAMPSHIRE (HSD)",
+  "fiscalYear": 2024,
+  "ledgerAmount": 18118198.33,
+  "sourceTotal": 19724956.61,
+  "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000",
+  "rowSchema": [
+    "subAgency",
+    "program",
+    "amount",
+    "sourceAmount",
+    "sourceRows"
+  ],
+  "rows": [
+    [
+      "SHERIFF DEPARTMENT HAMPSHIRE (HSD)",
+      "SHERIFF DEPARTMENT HAMPSHIRE (HSD) · (AA) REGULAR EMPLOYEE COMPENSATION",
+      15884114.92,
+      15884114.92,
+      400
+    ],
+    [
+      "SHERIFF DEPARTMENT HAMPSHIRE (HSD)",
+      "SHERIFF DEPARTMENT HAMPSHIRE (HSD) · (FF) FACILITY OPERATIONAL EXPENSES",
+      1017867.77,
+      1017867.77,
+      851
+    ],
+    [
+      "SHERIFF DEPARTMENT HAMPSHIRE (HSD)",
+      "SHERIFF DEPARTMENT HAMPSHIRE (HSD) · (GG) ENERGY COSTS AND SPACE RENTAL",
+      730065.99,
+      730065.99,
+      269
+    ],
+    [
+      "SHERIFF DEPARTMENT HAMPSHIRE (HSD)",
+      "SHERIFF DEPARTMENT HAMPSHIRE (HSD) · (CC) SPECIAL EMPLOYEES",
+      717338.78,
+      717338.78,
+      285
+    ],
+    [
+      "SHERIFF DEPARTMENT HAMPSHIRE (HSD)",
+      "SHERIFF DEPARTMENT HAMPSHIRE (HSD) · (UU) IT NON-PAYROLL EXPENSES",
+      356872.57,
+      356872.57,
+      208
+    ],
+    [
+      "SHERIFF DEPARTMENT HAMPSHIRE (HSD)",
+      "SHERIFF DEPARTMENT HAMPSHIRE (HSD) · (NN) INFRASTRUCTURE:",
+      244694.78,
+      244694.78,
+      333
+    ],
+    [
+      "SHERIFF DEPARTMENT HAMPSHIRE (HSD)",
+      "SHERIFF DEPARTMENT HAMPSHIRE (HSD) · (HH) CONSULTANT SVCS (TO DEPTS)",
+      178865.46,
+      178865.46,
+      56
+    ],
+    [
+      "SHERIFF DEPARTMENT HAMPSHIRE (HSD)",
+      "SHERIFF DEPARTMENT HAMPSHIRE (HSD) · (BB) REGULAR EMPLOYEE RELATED EXPEN",
+      136631.84,
+      136631.84,
+      61
+    ],
+    [
+      "SHERIFF DEPARTMENT HAMPSHIRE (HSD)",
+      "SHERIFF DEPARTMENT HAMPSHIRE (HSD) · (DD) PENSION & INSURANCE RELATED EX",
+      121114.71,
+      121114.71,
+      40
+    ],
+    [
+      "SHERIFF DEPARTMENT HAMPSHIRE (HSD)",
+      "SHERIFF DEPARTMENT HAMPSHIRE (HSD) · (KK) EQUIPMENT PURCHASE",
+      105012.82,
+      105012.82,
+      24
+    ],
+    [
+      "SHERIFF DEPARTMENT HAMPSHIRE (HSD)",
+      "SHERIFF DEPARTMENT HAMPSHIRE (HSD) · (EE) ADMINISTRATIVE EXPENSES",
+      89773.36,
+      89773.36,
+      307
+    ],
+    [
+      "SHERIFF DEPARTMENT HAMPSHIRE (HSD)",
+      "SHERIFF DEPARTMENT HAMPSHIRE (HSD) · (MM) PURCHASED CLIENT/PROGRAM SVCS",
+      73387.46,
+      73387.46,
+      32
+    ],
+    [
+      "SHERIFF DEPARTMENT HAMPSHIRE (HSD)",
+      "SHERIFF DEPARTMENT HAMPSHIRE (HSD) · (LL) EQUIPMENT LEASE-MAINTAIN/REPAR",
+      52289.15,
+      52289.15,
+      173
+    ],
+    [
+      "SHERIFF DEPARTMENT HAMPSHIRE (HSD)",
+      "SHERIFF DEPARTMENT HAMPSHIRE (HSD) · (JJ) OPERATIONAL SERVICES",
+      16927,
+      16927,
+      7
+    ],
+    [
+      "SHERIFF DEPARTMENT HAMPSHIRE (HSD)",
+      "SHERIFF DEPARTMENT HAMPSHIRE (HSD) · (99) PAYROLL REJECTS",
+      0,
+      0,
+      43
+    ]
+  ],
+  "hierarchyNote": "The source does not identify a separate sub-agency column; direct-managed rows repeat the parent entity.",
+  "sourceBasis": "official source amount",
+  "note": "Amounts are shown on the official source basis; no comparator normalization was applied."
+}

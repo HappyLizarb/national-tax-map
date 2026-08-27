@@ -1,0 +1,77 @@
+{
+  "scope": "Connecticut",
+  "code": "ct",
+  "department": "Chief Medical Examiner's Offc",
+  "fiscalYear": 2024,
+  "ledgerAmount": 2825192.97,
+  "sourceTotal": 3010432.89,
+  "sourceUrl": "https://data.ct.gov/resource/ajdm-rvz7.json?$select=department,program,sum(amount)%20as%20amount,count(*)%20as%20records&$where=fiscal_year=2024&$group=department,program",
+  "rowSchema": [
+    "subAgency",
+    "program",
+    "amount",
+    "sourceAmount",
+    "sourceRows"
+  ],
+  "rows": [
+    [
+      "Chief Medical Examiner's Offc",
+      "Chief Medical Examiner's Offc · Other Expenses",
+      2117677.1,
+      2117677.1,
+      1326
+    ],
+    [
+      "Chief Medical Examiner's Offc",
+      "Chief Medical Examiner's Offc · ARPA-COVID-Related Expenditure",
+      367734.74,
+      367734.74,
+      133
+    ],
+    [
+      "Chief Medical Examiner's Offc",
+      "Chief Medical Examiner's Offc · 15PBJA-21-GG-02943-SLFO",
+      355888,
+      355888,
+      12
+    ],
+    [
+      "Chief Medical Examiner's Offc",
+      "Chief Medical Examiner's Offc · DPH Log # 2023-0096",
+      78768,
+      78768,
+      11
+    ],
+    [
+      "Chief Medical Examiner's Offc",
+      "Chief Medical Examiner's Offc · Equipment",
+      29213,
+      29213,
+      29
+    ],
+    [
+      "Chief Medical Examiner's Offc",
+      "Chief Medical Examiner's Offc · Fellow2020--DQ-BX-0033_FY23",
+      21925.77,
+      21925.77,
+      2
+    ],
+    [
+      "Chief Medical Examiner's Offc",
+      "Chief Medical Examiner's Offc · Medicolegal Investigations",
+      21297.56,
+      21297.56,
+      25
+    ],
+    [
+      "Chief Medical Examiner's Offc",
+      "Chief Medical Examiner's Offc · Capital Equip Purchase Fund",
+      17928.72,
+      17928.72,
+      3
+    ]
+  ],
+  "hierarchyNote": "The source does not identify a separate sub-agency column; direct-managed rows repeat the parent entity.",
+  "sourceBasis": "official source amount",
+  "note": "Amounts are shown on the official source basis; no comparator normalization was applied."
+}

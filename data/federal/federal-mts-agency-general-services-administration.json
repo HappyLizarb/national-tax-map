@@ -1,0 +1,26 @@
+{
+  "scope": "United States",
+  "code": "federal",
+  "fiscalYear": 2024,
+  "department": "General Services Administration",
+  "sourceTotal": -244000000,
+  "sourceUrl": "https://fiscal.treasury.gov/system/files/files/reports-statements/mts/mts0924.pdf",
+  "sourceUrls": [["Treasury FY2024 MTS Table 5", "https://fiscal.treasury.gov/system/files/files/reports-statements/mts/mts0924.pdf"]],
+  "relatedSources": [["USAspending gross research (supporting detail)", "data/federal/archive-agency-source/federal-general-services-administration.json"]],
+  "sourceBasis": "Treasury MTS Table 5 current-fiscal-year gross outlays, applicable receipts, and net outlays; published in $ millions and converted to USD.",
+  "rowSchema": ["subAgency", "program", "amount", "sourceAmount", "sourceRows", "grossOutlays", "applicableReceipts"],
+  "sourceCheck": {"groupRows": 5, "difference": 0, "publishedRoundingAdjustment": 0},
+  "note": "Displayed amounts are net outlays; each row retains its published gross outlays and applicable receipts.",
+  "accountResearch": {"accountCount": 18, "largeAccountCount": 0, "netAccountOutlays": -199867473, "threshold": 1000000000, "sourceUrl": "https://fiscal.treasury.gov/system/files/files/reports-statements/combined-statement/cs2024/c46.xlsx"},
+  "largeAccountSchema": ["treasuryAccount", "title", "netOutlays", "availabilityRows"],
+  "largeAccountBasis": "Exact Combined Statement net outlays by appropriation or fund account. This is a research cross-section of the same department, not another amount to add to MTS classification rows.",
+  "largeAccountRows": [
+  ],
+  "rows": [
+    ["General Services Administration", "Real Property Activities", -633000000, -633000000, 1, -633000000, 0],
+    ["General Services Administration", "Supply and Technology Activities", 126000000, 126000000, 1, 126000000, 0],
+    ["General Services Administration", "General Activities", 307000000, 307000000, 1, 307000000, 0],
+    ["General Services Administration", "Proprietary Receipts from the Public", -25000000, -25000000, 1, 0, 25000000],
+    ["General Services Administration", "Intrabudgetary Transactions", -19000000, -19000000, 1, -19000000, 0]
+  ]
+}

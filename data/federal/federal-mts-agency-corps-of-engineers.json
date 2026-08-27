@@ -1,0 +1,33 @@
+{
+  "scope": "United States",
+  "code": "federal",
+  "fiscalYear": 2024,
+  "department": "Corps of Engineers",
+  "sourceTotal": 11345000000,
+  "sourceUrl": "https://fiscal.treasury.gov/system/files/files/reports-statements/mts/mts0924.pdf",
+  "sourceUrls": [["Treasury FY2024 MTS Table 5", "https://fiscal.treasury.gov/system/files/files/reports-statements/mts/mts0924.pdf"]],
+  "relatedSources": [["USAspending gross research (supporting detail)", "data/federal/archive-agency-source/federal-corps-of-engineers-civil-works.json"]],
+  "sourceBasis": "Treasury MTS Table 5 current-fiscal-year gross outlays, applicable receipts, and net outlays; published in $ millions and converted to USD.",
+  "rowSchema": ["subAgency", "program", "amount", "sourceAmount", "sourceRows", "grossOutlays", "applicableReceipts"],
+  "sourceCheck": {"groupRows": 9, "difference": 0, "publishedRoundingAdjustment": 1000000},
+  "note": "Displayed amounts are net outlays; each row retains its published gross outlays and applicable receipts.",
+  "accountResearch": {"accountCount": 22, "largeAccountCount": 3, "netAccountOutlays": 12273613691.11, "threshold": 1000000000, "sourceUrl": "https://fiscal.treasury.gov/system/files/files/reports-statements/combined-statement/cs2024/c43.xlsx"},
+  "largeAccountSchema": ["treasuryAccount", "title", "netOutlays", "availabilityRows"],
+  "largeAccountBasis": "Exact Combined Statement net outlays by appropriation or fund account. This is a research cross-section of the same department, not another amount to add to MTS classification rows.",
+  "largeAccountRows": [
+    ["096-3122-000", "Construction, Corps of Engineers, Civil", 3999012706.14, 1],
+    ["096-3123-000", "Operation and Maintenance, Corps of Engineers-Civil", 2815105847.04, 2],
+    ["096-8863-000", "Harbor Maintenance Trust Fund - Treasury Managed, Corps of Engineers - Civil", 2696586953.66, 2]
+  ],
+  "rows": [
+    ["Corps of Engineers", "Construction", 3999000000, 3999000000, 1, 3999000000, 0],
+    ["Corps of Engineers", "Operation and Maintenance", 2815000000, 2815000000, 1, 2815000000, 0],
+    ["Corps of Engineers", "Flood Control and Coastal Emergencies", 478000000, 478000000, 1, 478000000, 0],
+    ["Corps of Engineers", "Harbor Maintenance Trust Fund", 2697000000, 2697000000, 1, 2697000000, 0],
+    ["Corps of Engineers", "Rivers and Harbors Contributed Funds", 649000000, 649000000, 1, 649000000, 0],
+    ["Corps of Engineers", "Other", 1635000000, 1635000000, 1, 1635000000, 0],
+    ["Corps of Engineers", "Proprietary Receipts from the Public", -929000000, -929000000, 1, 0, 929000000],
+    ["Corps of Engineers", "Intrabudgetary Transactions", 0, 0, 1, 0, 0],
+    ["Corps of Engineers", "Published Table 5 rounding adjustment", 1000000, 1000000, 0, 1000000, 0]
+  ]
+}

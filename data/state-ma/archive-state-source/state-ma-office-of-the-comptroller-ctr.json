@@ -1,0 +1,133 @@
+{
+  "scope": "Massachusetts",
+  "code": "ma",
+  "department": "OFFICE OF THE COMPTROLLER (CTR)",
+  "fiscalYear": 2024,
+  "ledgerAmount": 237044020.41,
+  "sourceTotal": 258065561.1,
+  "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000",
+  "rowSchema": [
+    "subAgency",
+    "program",
+    "amount",
+    "sourceAmount",
+    "sourceRows"
+  ],
+  "rows": [
+    [
+      "OFFICE OF THE COMPTROLLER (CTR)",
+      "OFFICE OF THE COMPTROLLER (CTR) · (PP) STATE AID/POL SUB",
+      200209424.88,
+      200209424.88,
+      56
+    ],
+    [
+      "OFFICE OF THE COMPTROLLER (CTR)",
+      "OFFICE OF THE COMPTROLLER (CTR) · (DD) PENSION & INSURANCE RELATED EX",
+      23800558.26,
+      23800558.26,
+      9
+    ],
+    [
+      "OFFICE OF THE COMPTROLLER (CTR)",
+      "OFFICE OF THE COMPTROLLER (CTR) · (UU) IT NON-PAYROLL EXPENSES",
+      14584707.95,
+      14584707.95,
+      512
+    ],
+    [
+      "OFFICE OF THE COMPTROLLER (CTR)",
+      "OFFICE OF THE COMPTROLLER (CTR) · (AA) REGULAR EMPLOYEE COMPENSATION",
+      8585276.44,
+      8585276.44,
+      583
+    ],
+    [
+      "OFFICE OF THE COMPTROLLER (CTR)",
+      "OFFICE OF THE COMPTROLLER (CTR) · (MM) PURCHASED CLIENT/PROGRAM SVCS",
+      7807959.46,
+      7807959.46,
+      516
+    ],
+    [
+      "OFFICE OF THE COMPTROLLER (CTR)",
+      "OFFICE OF THE COMPTROLLER (CTR) · (HH) CONSULTANT SVCS (TO DEPTS)",
+      1031068.68,
+      1031068.68,
+      58
+    ],
+    [
+      "OFFICE OF THE COMPTROLLER (CTR)",
+      "OFFICE OF THE COMPTROLLER (CTR) · (JJ) OPERATIONAL SERVICES",
+      542536.93,
+      542536.93,
+      1033
+    ],
+    [
+      "OFFICE OF THE COMPTROLLER (CTR)",
+      "OFFICE OF THE COMPTROLLER (CTR) · (NN) INFRASTRUCTURE:",
+      431734.51,
+      431734.51,
+      193
+    ],
+    [
+      "OFFICE OF THE COMPTROLLER (CTR)",
+      "OFFICE OF THE COMPTROLLER (CTR) · (GG) ENERGY COSTS AND SPACE RENTAL",
+      292740.17,
+      292740.17,
+      17
+    ],
+    [
+      "OFFICE OF THE COMPTROLLER (CTR)",
+      "OFFICE OF THE COMPTROLLER (CTR) · (BB) REGULAR EMPLOYEE RELATED EXPEN",
+      230253.69,
+      230253.69,
+      118
+    ],
+    [
+      "OFFICE OF THE COMPTROLLER (CTR)",
+      "OFFICE OF THE COMPTROLLER (CTR) · (EE) ADMINISTRATIVE EXPENSES",
+      227831.82,
+      227831.82,
+      159
+    ],
+    [
+      "OFFICE OF THE COMPTROLLER (CTR)",
+      "OFFICE OF THE COMPTROLLER (CTR) · (KK) EQUIPMENT PURCHASE",
+      101603.19,
+      101603.19,
+      10
+    ],
+    [
+      "OFFICE OF THE COMPTROLLER (CTR)",
+      "OFFICE OF THE COMPTROLLER (CTR) · (FF) FACILITY OPERATIONAL EXPENSES",
+      77369.6,
+      77369.6,
+      53
+    ],
+    [
+      "OFFICE OF THE COMPTROLLER (CTR)",
+      "OFFICE OF THE COMPTROLLER (CTR) · (LL) EQUIPMENT LEASE-MAINTAIN/REPAR",
+      73335.52,
+      73335.52,
+      102
+    ],
+    [
+      "OFFICE OF THE COMPTROLLER (CTR)",
+      "OFFICE OF THE COMPTROLLER (CTR) · (CC) SPECIAL EMPLOYEES",
+      69160,
+      69160,
+      2
+    ],
+    [
+      "OFFICE OF THE COMPTROLLER (CTR)",
+      "OFFICE OF THE COMPTROLLER (CTR) · (99) PAYROLL REJECTS",
+      0,
+      0,
+      4
+    ]
+  ],
+  "hierarchyNote": "The source does not identify a separate sub-agency column; direct-managed rows repeat the parent entity.",
+  "sourceBasis": "official source amount",
+  "note": "Amounts are shown on the official source basis; no comparator normalization was applied."
+}

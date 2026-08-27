@@ -1,0 +1,244 @@
+{
+  "scope": "United States",
+  "code": "federal",
+  "department": "Agency for International Development",
+  "fiscalYear": 2024,
+  "ledgerAmount": 17359841977.12,
+  "sourceTotal": 23658529362.57,
+  "sourceUrl": "https://api.usaspending.gov/api/v2/agency/072/object_class/?fiscal_year=2024&limit=100&page=1",
+  "sourceUrls": [
+    [
+      "FY2024 gross outlays by object class",
+      "https://api.usaspending.gov/api/v2/agency/072/object_class/?fiscal_year=2024&limit=100&page=1"
+    ],
+    [
+      "FY2024 agency budgetary resources total",
+      "https://api.usaspending.gov/api/v2/agency/072/budgetary_resources/?fiscal_year=2024"
+    ]
+  ],
+  "rowSchema": [
+    "subAgency",
+    "program",
+    "amount",
+    "sourceAmount",
+    "sourceRows"
+  ],
+  "rows": [
+    [
+      "Agency for International Development",
+      "Grants, subsidies, and contributions",
+      27167729203.93,
+      27167729203.93,
+      null
+    ],
+    [
+      "Agency for International Development",
+      "Advisory and assistance services",
+      1084571793.6,
+      1084571793.6,
+      null
+    ],
+    [
+      "Agency for International Development",
+      "Other goods and services from Federal sources",
+      631425031.67,
+      631425031.67,
+      null
+    ],
+    [
+      "Agency for International Development",
+      "Full-time permanent",
+      705537374.93,
+      705537374.93,
+      null
+    ],
+    [
+      "Agency for International Development",
+      "Civilian personnel benefits",
+      344607589,
+      344607589,
+      null
+    ],
+    [
+      "Agency for International Development",
+      "Other than full-time permanent",
+      291681607.65,
+      291681607.65,
+      null
+    ],
+    [
+      "Agency for International Development",
+      "Land and structures",
+      195242158.82,
+      195242158.82,
+      null
+    ],
+    [
+      "Agency for International Development",
+      "Travel and transportation of persons",
+      167672549.79,
+      167672549.79,
+      null
+    ],
+    [
+      "Agency for International Development",
+      "Equipment",
+      101415273.59,
+      101415273.59,
+      null
+    ],
+    [
+      "Agency for International Development",
+      "Other personnel compensation",
+      126128026.69,
+      126128026.69,
+      null
+    ],
+    [
+      "Agency for International Development",
+      "Rental payments to others",
+      58750966.13,
+      58750966.13,
+      null
+    ],
+    [
+      "Agency for International Development",
+      "Other services from non-Federal sources",
+      183491050.95,
+      183491050.95,
+      null
+    ],
+    [
+      "Agency for International Development",
+      "Rental payments to GSA",
+      40317748.7,
+      40317748.7,
+      null
+    ],
+    [
+      "Agency for International Development",
+      "Transportation of things",
+      32565810.86,
+      32565810.86,
+      null
+    ],
+    [
+      "Agency for International Development",
+      "Communications, utilities, and miscellaneous charges",
+      37598972.96,
+      37598972.96,
+      null
+    ],
+    [
+      "Agency for International Development",
+      "Operation and maintenance of equipment",
+      18345142.54,
+      18345142.54,
+      null
+    ],
+    [
+      "Agency for International Development",
+      "Operation and maintenance of facilities",
+      29819865.17,
+      29819865.17,
+      null
+    ],
+    [
+      "Agency for International Development",
+      "Supplies and materials",
+      13499939.71,
+      13499939.71,
+      null
+    ],
+    [
+      "Agency for International Development",
+      "Medical care",
+      1120851.29,
+      1120851.29,
+      null
+    ],
+    [
+      "Agency for International Development",
+      "Benefits for former personnel",
+      697028.46,
+      697028.46,
+      null
+    ],
+    [
+      "Agency for International Development",
+      "Insurance claims and indemnities",
+      1578323,
+      1578323,
+      null
+    ],
+    [
+      "Agency for International Development",
+      "Special personal services payments",
+      666714.07,
+      666714.07,
+      null
+    ],
+    [
+      "Agency for International Development",
+      "Printing and reproduction",
+      578206.63,
+      578206.63,
+      null
+    ],
+    [
+      "Agency for International Development",
+      "Refunds",
+      69493.32,
+      69493.32,
+      null
+    ],
+    [
+      "Agency for International Development",
+      "Subsistence and support of persons",
+      0,
+      0,
+      null
+    ],
+    [
+      "Agency for International Development",
+      "Research and development contracts",
+      860791.92,
+      860791.92,
+      null
+    ],
+    [
+      "Agency for International Development",
+      "Investments and loans",
+      517398.6,
+      517398.6,
+      null
+    ],
+    [
+      "Agency for International Development",
+      "Interest and dividends",
+      2892.43,
+      2892.43,
+      null
+    ],
+    [
+      "Agency for International Development",
+      "Object class not reported by official source",
+      -7577962443.84,
+      -7577962443.84,
+      null
+    ]
+  ],
+  "sourceBasis": "official source amount",
+  "sourceCheck": {
+    "objectClassRows": 29,
+    "objectClassTotal": 23658529362.57,
+    "agencyTotal": 23658529362.57,
+    "difference": 0
+  },
+  "normalizationAdjustment": 0.01,
+  "hierarchyNote": "The source endpoint returns agency-level object-class aggregates; no individual employees or payees are included.",
+  "sourceLabelMap": {
+    "Object class not reported by official source": "Unknown"
+  },
+  "note": "The official USAspending object-class response labels 1 row as Unknown; the display label states that the object class was not reported and no category was inferred. Amounts are shown on the official source basis; no comparator normalization was applied."
+}

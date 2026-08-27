@@ -1,0 +1,98 @@
+{
+  "scope": "Massachusetts",
+  "code": "ma",
+  "department": "CRIMINAL JUSTICE INFORMATION SERVICES DEPARTMENT (CHS)",
+  "fiscalYear": 2024,
+  "ledgerAmount": 4473438.82,
+  "sourceTotal": 4870152.38,
+  "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000",
+  "rowSchema": [
+    "subAgency",
+    "program",
+    "amount",
+    "sourceAmount",
+    "sourceRows"
+  ],
+  "rows": [
+    [
+      "CRIMINAL JUSTICE INFORMATION SERVICES DEPARTMENT (CHS)",
+      "CRIMINAL JUSTICE INFORMATION SERVICES DEPARTMENT (CHS) · (AA) REGULAR EMPLOYEE COMPENSATION",
+      3748635.92,
+      3748635.92,
+      295
+    ],
+    [
+      "CRIMINAL JUSTICE INFORMATION SERVICES DEPARTMENT (CHS)",
+      "CRIMINAL JUSTICE INFORMATION SERVICES DEPARTMENT (CHS) · (UU) IT NON-PAYROLL EXPENSES",
+      562553.47,
+      562553.47,
+      45
+    ],
+    [
+      "CRIMINAL JUSTICE INFORMATION SERVICES DEPARTMENT (CHS)",
+      "CRIMINAL JUSTICE INFORMATION SERVICES DEPARTMENT (CHS) · (EE) ADMINISTRATIVE EXPENSES",
+      366094.25,
+      366094.25,
+      101
+    ],
+    [
+      "CRIMINAL JUSTICE INFORMATION SERVICES DEPARTMENT (CHS)",
+      "CRIMINAL JUSTICE INFORMATION SERVICES DEPARTMENT (CHS) · (CC) SPECIAL EMPLOYEES",
+      125933.49,
+      125933.49,
+      52
+    ],
+    [
+      "CRIMINAL JUSTICE INFORMATION SERVICES DEPARTMENT (CHS)",
+      "CRIMINAL JUSTICE INFORMATION SERVICES DEPARTMENT (CHS) · (LL) EQUIPMENT LEASE-MAINTAIN/REPAR",
+      28404.28,
+      28404.28,
+      76
+    ],
+    [
+      "CRIMINAL JUSTICE INFORMATION SERVICES DEPARTMENT (CHS)",
+      "CRIMINAL JUSTICE INFORMATION SERVICES DEPARTMENT (CHS) · (BB) REGULAR EMPLOYEE RELATED EXPEN",
+      18796.76,
+      18796.76,
+      94
+    ],
+    [
+      "CRIMINAL JUSTICE INFORMATION SERVICES DEPARTMENT (CHS)",
+      "CRIMINAL JUSTICE INFORMATION SERVICES DEPARTMENT (CHS) · (KK) EQUIPMENT PURCHASE",
+      13992.38,
+      13992.38,
+      3
+    ],
+    [
+      "CRIMINAL JUSTICE INFORMATION SERVICES DEPARTMENT (CHS)",
+      "CRIMINAL JUSTICE INFORMATION SERVICES DEPARTMENT (CHS) · (JJ) OPERATIONAL SERVICES",
+      3195.19,
+      3195.19,
+      18
+    ],
+    [
+      "CRIMINAL JUSTICE INFORMATION SERVICES DEPARTMENT (CHS)",
+      "CRIMINAL JUSTICE INFORMATION SERVICES DEPARTMENT (CHS) · (HH) CONSULTANT SVCS (TO DEPTS)",
+      2075,
+      2075,
+      2
+    ],
+    [
+      "CRIMINAL JUSTICE INFORMATION SERVICES DEPARTMENT (CHS)",
+      "CRIMINAL JUSTICE INFORMATION SERVICES DEPARTMENT (CHS) · (GG) ENERGY COSTS AND SPACE RENTAL",
+      471.64,
+      471.64,
+      5
+    ],
+    [
+      "CRIMINAL JUSTICE INFORMATION SERVICES DEPARTMENT (CHS)",
+      "CRIMINAL JUSTICE INFORMATION SERVICES DEPARTMENT (CHS) · (99) PAYROLL REJECTS",
+      0,
+      0,
+      39
+    ]
+  ],
+  "hierarchyNote": "The source does not identify a separate sub-agency column; direct-managed rows repeat the parent entity.",
+  "sourceBasis": "official source amount",
+  "note": "Amounts are shown on the official source basis; no comparator normalization was applied."
+}

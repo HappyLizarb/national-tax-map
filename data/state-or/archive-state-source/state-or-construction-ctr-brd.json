@@ -1,0 +1,462 @@
+{
+  "scope": "Oregon",
+  "fiscalYear": 2024,
+  "department": "CONSTRUCTION CTR BRD",
+  "sourceUrl": "https://data.oregon.gov/resource/y9g9-xsxs.json?$select=agency,agency_1,budget_class,budget_class_1,expend_class,expend_class_1,vendor,sum(expense)%20as%20total,count(*)%20as%20source_rows&$where=fiscal_year=2024&$group=agency,agency_1,budget_class,budget_class_1,expend_class,expend_class_1,vendor&$limit=500000",
+  "sourceUrls": [
+    [
+      "Oregon transparency expenditure catalog",
+      "https://data.oregon.gov/Revenue-Expense/Agency-Expenditures-Multi-Year-Report/y9g9-xsxs"
+    ],
+    [
+      "Grouped FY2024 API export",
+      "https://data.oregon.gov/resource/y9g9-xsxs.json?$select=agency,agency_1,budget_class,budget_class_1,expend_class,expend_class_1,vendor,sum(expense)%20as%20total,count(*)%20as%20source_rows&$where=fiscal_year=2024&$group=agency,agency_1,budget_class,budget_class_1,expend_class,expend_class_1,vendor&$limit=500000"
+    ]
+  ],
+  "sourceBasis": "Official Oregon Agency Expenditures Multi-Year Report; FY2024 cash expense grouped by agency, budget class, expenditure class, and privacy-safe receiver label.",
+  "privacyNote": "Individual or ambiguous vendor labels are grouped as [individual recipient omitted]; organization receivers are retained. This layer does not expose person-level payroll.",
+  "sourceRows": 86,
+  "sourceTotal": 1683009.91,
+  "rowSchema": [
+    "subAgency",
+    "program",
+    "amount",
+    "sourceAmount",
+    "sourceRows"
+  ],
+  "rows": [
+    [
+      "CONSTRUCTION CTR BRD",
+      "4425 · LEASE PAYMENTS & TAXES · 7007 · LEASE PMT FOR BUILDINGS · Receiver BEARDSLEY BUILDING LLC",
+      374232.16,
+      374232.16,
+      1
+    ],
+    [
+      "CONSTRUCTION CTR BRD",
+      "4225 · STATE GOVERNMENT SERVICE CHARGES · 4600 · STATE GOVERNMENT SERVICE CHARGES · Receiver DEPARTMENT OF ADMINISTRATIVE SERVICES",
+      275423,
+      275423,
+      1
+    ],
+    [
+      "CONSTRUCTION CTR BRD",
+      "4650 · OTHER SERVICES AND SUPPLIES · 4730 · MERCHANT FEES · Receiver US BANK NATIONAL ASSOCIATION",
+      146792.36,
+      146792.36,
+      2
+    ],
+    [
+      "CONSTRUCTION CTR BRD",
+      "4175 · OFFICE EXPENSES · 4201 · OFFICE SERVICES · Receiver DEPARTMENT OF ADMINISTRATIVE SERVICES",
+      133555.5,
+      133555.5,
+      1
+    ],
+    [
+      "CONSTRUCTION CTR BRD",
+      "4650 · OTHER SERVICES AND SUPPLIES · 4701 · OTHER SERVICES · Receiver DEPARTMENT OF ADMINISTRATIVE SERVICES",
+      123594.55,
+      123594.55,
+      1
+    ],
+    [
+      "CONSTRUCTION CTR BRD",
+      "4325 · ATTORNEY GENERAL LEGAL FEES · 4550 · ATTORNEY GENERAL LEGAL FEES · Receiver STATE OF OREGON DEPARTMENT OF JUSTICE",
+      111601.38,
+      111601.38,
+      1
+    ],
+    [
+      "CONSTRUCTION CTR BRD",
+      "4100 · INSTATE TRAVEL · 4108 · INSTATE GROUND TRANSPORTATION · Receiver DEPARTMENT OF ADMINISTRATIVE SERVICES",
+      84557.38,
+      84557.38,
+      1
+    ],
+    [
+      "CONSTRUCTION CTR BRD",
+      "4650 · OTHER SERVICES AND SUPPLIES · 4720 · COLLECTION FEES - DOR · Receiver OREGON DEPARTMENT OF REVENUE",
+      64153.17,
+      64153.17,
+      1
+    ],
+    [
+      "CONSTRUCTION CTR BRD",
+      "4715 · IT EXPENDABLE PROPERTY · 4366 · COMPUTER TECHNOLOGY PC SOFTWARE<$5K · Receiver SHI INTERNATIONAL CORP",
+      30055.52,
+      30055.52,
+      1
+    ],
+    [
+      "CONSTRUCTION CTR BRD",
+      "4200 · TELECOMM/TECH SVC AND SUPPLIES · 4301 · TELECOM/VOICE USAGE · Receiver KYNDRYL INC",
+      29808.94,
+      29808.94,
+      1
+    ],
+    [
+      "CONSTRUCTION CTR BRD",
+      "4650 · OTHER SERVICES AND SUPPLIES · 4701 · OTHER SERVICES · Receiver BEARDSLEY BUILDING LLC",
+      28425,
+      28425,
+      1
+    ],
+    [
+      "CONSTRUCTION CTR BRD",
+      "4175 · OFFICE EXPENSES · 4200 · OFFICE SUPPLIES · Receiver US BANK NATIONAL ASSOCIATION ND",
+      27365.43,
+      27365.43,
+      1
+    ],
+    [
+      "CONSTRUCTION CTR BRD",
+      "4475 · FACILITIES MAINTENANCE · 4850 · FACILITIES MAINTENANCE · Receiver BEARDSLEY BUILDING LLC",
+      21491.05,
+      21491.05,
+      1
+    ],
+    [
+      "CONSTRUCTION CTR BRD",
+      "4300 · PROFESSIONAL SERVICES · 4500 · PROFESSIONAL SERVICES NON-IT · Receiver LOGIT US INC",
+      19220,
+      19220,
+      1
+    ],
+    [
+      "CONSTRUCTION CTR BRD",
+      "4315 · IT PROFESSIONAL SERVICES · 4515 · PROFESSIONAL SERVICES APPLICATION MAINT · Receiver QSI 2011 INC",
+      18105.84,
+      18105.84,
+      1
+    ],
+    [
+      "CONSTRUCTION CTR BRD",
+      "4175 · OFFICE EXPENSES · 4202 · EQUIPMENT RENTAL · Receiver CANON FINANCIAL SERVICES INC",
+      16161.62,
+      16161.62,
+      1
+    ],
+    [
+      "CONSTRUCTION CTR BRD",
+      "4275 · PUBLICITY & PUBLICATIONS · 4253 · ADVERTISE, PUBLICITY, PUBLISH/PRINT SRVS · Receiver DEPARTMENT OF ADMINISTRATIVE SERVICES",
+      15485.59,
+      15485.59,
+      1
+    ],
+    [
+      "CONSTRUCTION CTR BRD",
+      "4300 · PROFESSIONAL SERVICES · 4500 · PROFESSIONAL SERVICES NON-IT · Receiver EMPLOYMENT DEPARTMENT",
+      14670.75,
+      14670.75,
+      1
+    ],
+    [
+      "CONSTRUCTION CTR BRD",
+      "4250 · DATA PROCESSING · 4375 · COMPUTER TECHNOLOGY COMPUTER PROCESSING · Receiver DEPARTMENT OF ADMINISTRATIVE SERVICES",
+      14534.58,
+      14534.58,
+      1
+    ],
+    [
+      "CONSTRUCTION CTR BRD",
+      "4425 · LEASE PAYMENTS & TAXES · 7401 · INTEREST-LEASED ASSETS · Receiver BEARDSLEY BUILDING LLC",
+      13626.2,
+      13626.2,
+      1
+    ],
+    [
+      "CONSTRUCTION CTR BRD",
+      "4225 · STATE GOVERNMENT SERVICE CHARGES · 4600 · STATE GOVERNMENT SERVICE CHARGES · Receiver STATE OF OREGON SECRETARY OF STATE",
+      12904,
+      12904,
+      1
+    ],
+    [
+      "CONSTRUCTION CTR BRD",
+      "4225 · STATE GOVERNMENT SERVICE CHARGES · 4600 · STATE GOVERNMENT SERVICE CHARGES · Receiver STATE OF OREGON - SECRETARY OF STATE",
+      11406.52,
+      11406.52,
+      1
+    ],
+    [
+      "CONSTRUCTION CTR BRD",
+      "4250 · DATA PROCESSING · 4375 · COMPUTER TECHNOLOGY COMPUTER PROCESSING · Receiver GOVDELIVERY LLC",
+      10348.6,
+      10348.6,
+      1
+    ],
+    [
+      "CONSTRUCTION CTR BRD",
+      "4275 · PUBLICITY & PUBLICATIONS · 4253 · ADVERTISE, PUBLICITY, PUBLISH/PRINT SRVS · Receiver [individual recipient omitted]",
+      10155.46,
+      10155.46,
+      4
+    ],
+    [
+      "CONSTRUCTION CTR BRD",
+      "4275 · PUBLICITY & PUBLICATIONS · 4253 · ADVERTISE, PUBLICITY, PUBLISH/PRINT SRVS · Receiver PRINTING SOLUTIONS LLC",
+      7870.33,
+      7870.33,
+      1
+    ],
+    [
+      "CONSTRUCTION CTR BRD",
+      "4200 · TELECOMM/TECH SVC AND SUPPLIES · 4301 · TELECOM/VOICE USAGE · Receiver DEPARTMENT OF ADMINISTRATIVE SERVICES",
+      7162.52,
+      7162.52,
+      1
+    ],
+    [
+      "CONSTRUCTION CTR BRD",
+      "4200 · TELECOMM/TECH SVC AND SUPPLIES · 4305 · TELECOM/NETWORK SERVICES · Receiver DEPARTMENT OF ADMINISTRATIVE SERVICES",
+      6352.98,
+      6352.98,
+      1
+    ],
+    [
+      "CONSTRUCTION CTR BRD",
+      "4315 · IT PROFESSIONAL SERVICES · 4519 · PROFESSIONAL SERV/MANAGED SERV PROVIDER · Receiver NICUSA INC",
+      5570,
+      5570,
+      1
+    ],
+    [
+      "CONSTRUCTION CTR BRD",
+      "4100 · INSTATE TRAVEL · 4101 · INSTATE MEALS WITH OVERNIGHT STAY · Receiver [individual recipient omitted]",
+      5201,
+      5201,
+      12
+    ],
+    [
+      "CONSTRUCTION CTR BRD",
+      "4300 · PROFESSIONAL SERVICES · 4500 · PROFESSIONAL SERVICES NON-IT · Receiver PASSPORT TO LANGUAGES INC",
+      4990.51,
+      4990.51,
+      1
+    ],
+    [
+      "CONSTRUCTION CTR BRD",
+      "4200 · TELECOMM/TECH SVC AND SUPPLIES · 4303 · TELECOM/VOICE MAINTENANCE · Receiver KYNDRYL INC",
+      4795.2,
+      4795.2,
+      1
+    ],
+    [
+      "CONSTRUCTION CTR BRD",
+      "4315 · IT PROFESSIONAL SERVICES · 4515 · PROFESSIONAL SERVICES APPLICATION MAINT · Receiver MYTHICS LLC",
+      4319.7,
+      4319.7,
+      1
+    ],
+    [
+      "CONSTRUCTION CTR BRD",
+      "4250 · DATA PROCESSING · 4375 · COMPUTER TECHNOLOGY COMPUTER PROCESSING · Receiver LIGHTSPEED NETWORKS INC",
+      3564.23,
+      3564.23,
+      2
+    ],
+    [
+      "CONSTRUCTION CTR BRD",
+      "4300 · PROFESSIONAL SERVICES · 4500 · PROFESSIONAL SERVICES NON-IT · Receiver CASCADE CENTERS INC",
+      2938.2,
+      2938.2,
+      1
+    ],
+    [
+      "CONSTRUCTION CTR BRD",
+      "4250 · DATA PROCESSING · 4375 · COMPUTER TECHNOLOGY COMPUTER PROCESSING · Receiver SHI INTERNATIONAL CORP",
+      2787.89,
+      2787.89,
+      1
+    ],
+    [
+      "CONSTRUCTION CTR BRD",
+      "4100 · INSTATE TRAVEL · 4109 · INSTATE MILEAGE REIMBURSEMENT-FULL RATE · Receiver [individual recipient omitted]",
+      2771.82,
+      2771.82,
+      4
+    ],
+    [
+      "CONSTRUCTION CTR BRD",
+      "4150 · EMPLOYEE TRAINING · 4406 · PROF DEV INSTATE TUITION/REGISTRATION · Receiver OREGON UNIONS STATE WORKER TRAINING AND EDUCATIONA",
+      2644.56,
+      2644.56,
+      1
+    ],
+    [
+      "CONSTRUCTION CTR BRD",
+      "4175 · OFFICE EXPENSES · 4201 · OFFICE SERVICES · Receiver GARTEN SERVICES INC",
+      2323.38,
+      2323.38,
+      1
+    ],
+    [
+      "CONSTRUCTION CTR BRD",
+      "4100 · INSTATE TRAVEL · 4106 · INSTATE LODGING · Receiver [individual recipient omitted]",
+      2312.17,
+      2312.17,
+      5
+    ],
+    [
+      "CONSTRUCTION CTR BRD",
+      "4315 · IT PROFESSIONAL SERVICES · 4515 · PROFESSIONAL SERVICES APPLICATION MAINT · Receiver MYTHICS INC",
+      2159.85,
+      2159.85,
+      1
+    ],
+    [
+      "CONSTRUCTION CTR BRD",
+      "4225 · STATE GOVERNMENT SERVICE CHARGES · 4600 · STATE GOVERNMENT SERVICE CHARGES · Receiver OREGON GOVERNMENT ETHICS COMMISSION",
+      1033.5,
+      1033.5,
+      1
+    ],
+    [
+      "CONSTRUCTION CTR BRD",
+      "4475 · FACILITIES MAINTENANCE · 4850 · FACILITIES MAINTENANCE · Receiver PUBLIC UTILITY COMMISSION",
+      950.94,
+      950.94,
+      1
+    ],
+    [
+      "CONSTRUCTION CTR BRD",
+      "4125 · OUT-OF-STATE TRAVEL · 4159 · OUT-OF-STATE AIR TRANSPORTATION · Receiver US BANK CORPORATE PAYMENT SYSTEMS",
+      814.08,
+      814.08,
+      1
+    ],
+    [
+      "CONSTRUCTION CTR BRD",
+      "4400 · DUES AND SUBSCRIPTIONS · 4251 · SUBSCRIPTIONS AND PUBLICATIONS · Receiver NATIONAL ASSOCIATION OF STATE CONTRACTORS LICENSIN",
+      702,
+      702,
+      1
+    ],
+    [
+      "CONSTRUCTION CTR BRD",
+      "4200 · TELECOMM/TECH SVC AND SUPPLIES · 4301 · TELECOM/VOICE USAGE · Receiver QWEST",
+      629.85,
+      629.85,
+      1
+    ],
+    [
+      "CONSTRUCTION CTR BRD",
+      "4400 · DUES AND SUBSCRIPTIONS · 4250 · DUES/MEMBERSHIPS · Receiver NATIONAL ASSOCIATION OF STATE CONTRACTORS LICENSIN",
+      475,
+      475,
+      1
+    ],
+    [
+      "CONSTRUCTION CTR BRD",
+      "3240 · UNEMPLOYMENT ASSESSMENT · 3231 · UNEMPLOYMENT COMPENSATION & ASSESSMENT · Receiver EMPLOYMENT DEPARTMENT",
+      466.95,
+      466.95,
+      1
+    ],
+    [
+      "CONSTRUCTION CTR BRD",
+      "4100 · INSTATE TRAVEL · 4106 · INSTATE LODGING · Receiver B-W PIER POINT INN LLC",
+      408.09,
+      408.09,
+      1
+    ],
+    [
+      "CONSTRUCTION CTR BRD",
+      "4300 · PROFESSIONAL SERVICES · 4500 · PROFESSIONAL SERVICES NON-IT · Receiver AVANTPAGE",
+      338.24,
+      338.24,
+      1
+    ],
+    [
+      "CONSTRUCTION CTR BRD",
+      "4575 · AGENCY PROGRAM RELATED SVCS & SUPP · 4976 · AGENCY PROGRAM RELATED SUPPLIES · Receiver CORMARK INC",
+      261.34,
+      261.34,
+      1
+    ],
+    [
+      "CONSTRUCTION CTR BRD",
+      "4150 · EMPLOYEE TRAINING · 4431 · PROF DEV INSTATE MEAL WITH OVERNITE STAY · Receiver [individual recipient omitted]",
+      236,
+      236,
+      2
+    ],
+    [
+      "CONSTRUCTION CTR BRD",
+      "4250 · DATA PROCESSING · 4375 · COMPUTER TECHNOLOGY COMPUTER PROCESSING · Receiver CRAIG WALKER COMMUNICATIONS INC",
+      210,
+      210,
+      1
+    ],
+    [
+      "CONSTRUCTION CTR BRD",
+      "4100 · INSTATE TRAVEL · 4108 · INSTATE GROUND TRANSPORTATION · Receiver [individual recipient omitted]",
+      175.6,
+      175.6,
+      1
+    ],
+    [
+      "CONSTRUCTION CTR BRD",
+      "4225 · STATE GOVERNMENT SERVICE CHARGES · 4600 · STATE GOVERNMENT SERVICE CHARGES · Receiver OREGON STATE TREASURY",
+      170.4,
+      170.4,
+      1
+    ],
+    [
+      "CONSTRUCTION CTR BRD",
+      "4100 · INSTATE TRAVEL · 4111 · INSTATE MILEAGE REIMBURSMNT-VOLUNTEERS · Receiver [individual recipient omitted]",
+      169,
+      169,
+      1
+    ],
+    [
+      "CONSTRUCTION CTR BRD",
+      "4575 · AGENCY PROGRAM RELATED SVCS & SUPP · 4206 · CATERING SERVICES · Receiver [individual recipient omitted]",
+      131.66,
+      131.66,
+      1
+    ],
+    [
+      "CONSTRUCTION CTR BRD",
+      "4100 · INSTATE TRAVEL · 4106 · INSTATE LODGING · Receiver OS INNCO INC",
+      121.17,
+      121.17,
+      1
+    ],
+    [
+      "CONSTRUCTION CTR BRD",
+      "4100 · INSTATE TRAVEL · 4105 · INSTATE MEALS-NO OVERNIGHT STAY · Receiver [individual recipient omitted]",
+      93.5,
+      93.5,
+      2
+    ],
+    [
+      "CONSTRUCTION CTR BRD",
+      "4150 · EMPLOYEE TRAINING · 4441 · PROF DEV OUT-OF-STATE GROUND TRANSPRTATN · Receiver [individual recipient omitted]",
+      80,
+      80,
+      1
+    ],
+    [
+      "CONSTRUCTION CTR BRD",
+      "4150 · EMPLOYEE TRAINING · 4432 · PROF DEV OUT-OF-STATE MEAL W/OVERNITE · Receiver [individual recipient omitted]",
+      80,
+      80,
+      1
+    ],
+    [
+      "CONSTRUCTION CTR BRD",
+      "4175 · OFFICE EXPENSES · 4201 · OFFICE SERVICES · Receiver NATIONAL ASSOCIATION OF STATE CONTRACTORS LICENSIN",
+      23.65,
+      23.65,
+      1
+    ]
+  ],
+  "sourceCheck": {
+    "objectClassRows": 61,
+    "sourceRows": 86,
+    "sourceTotal": 1683009.91,
+    "difference": 0
+  }
+}

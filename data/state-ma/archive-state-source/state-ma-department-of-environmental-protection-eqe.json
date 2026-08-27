@@ -1,0 +1,126 @@
+{
+  "scope": "Massachusetts",
+  "code": "ma",
+  "department": "DEPARTMENT OF ENVIRONMENTAL PROTECTION (EQE)",
+  "fiscalYear": 2024,
+  "ledgerAmount": 149581914.43,
+  "sourceTotal": 162847139.57,
+  "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000",
+  "rowSchema": [
+    "subAgency",
+    "program",
+    "amount",
+    "sourceAmount",
+    "sourceRows"
+  ],
+  "rows": [
+    [
+      "DEPARTMENT OF ENVIRONMENTAL PROTECTION (EQE)",
+      "DEPARTMENT OF ENVIRONMENTAL PROTECTION (EQE) · (AA) REGULAR EMPLOYEE COMPENSATION",
+      86011948.37,
+      86011948.37,
+      15876
+    ],
+    [
+      "DEPARTMENT OF ENVIRONMENTAL PROTECTION (EQE)",
+      "DEPARTMENT OF ENVIRONMENTAL PROTECTION (EQE) · (PP) STATE AID/POL SUB",
+      49493136.53,
+      49493136.53,
+      1152
+    ],
+    [
+      "DEPARTMENT OF ENVIRONMENTAL PROTECTION (EQE)",
+      "DEPARTMENT OF ENVIRONMENTAL PROTECTION (EQE) · (GG) ENERGY COSTS AND SPACE RENTAL",
+      6958532.45,
+      6958532.45,
+      684
+    ],
+    [
+      "DEPARTMENT OF ENVIRONMENTAL PROTECTION (EQE)",
+      "DEPARTMENT OF ENVIRONMENTAL PROTECTION (EQE) · (NN) INFRASTRUCTURE:",
+      6461852.43,
+      6461852.43,
+      744
+    ],
+    [
+      "DEPARTMENT OF ENVIRONMENTAL PROTECTION (EQE)",
+      "DEPARTMENT OF ENVIRONMENTAL PROTECTION (EQE) · (HH) CONSULTANT SVCS (TO DEPTS)",
+      5958128.19,
+      5958128.19,
+      445
+    ],
+    [
+      "DEPARTMENT OF ENVIRONMENTAL PROTECTION (EQE)",
+      "DEPARTMENT OF ENVIRONMENTAL PROTECTION (EQE) · (JJ) OPERATIONAL SERVICES",
+      2387503.56,
+      2387503.56,
+      245
+    ],
+    [
+      "DEPARTMENT OF ENVIRONMENTAL PROTECTION (EQE)",
+      "DEPARTMENT OF ENVIRONMENTAL PROTECTION (EQE) · (KK) EQUIPMENT PURCHASE",
+      2094317.84,
+      2094317.84,
+      108
+    ],
+    [
+      "DEPARTMENT OF ENVIRONMENTAL PROTECTION (EQE)",
+      "DEPARTMENT OF ENVIRONMENTAL PROTECTION (EQE) · (EE) ADMINISTRATIVE EXPENSES",
+      983784.64,
+      983784.64,
+      557
+    ],
+    [
+      "DEPARTMENT OF ENVIRONMENTAL PROTECTION (EQE)",
+      "DEPARTMENT OF ENVIRONMENTAL PROTECTION (EQE) · (UU) IT NON-PAYROLL EXPENSES",
+      837674.39,
+      837674.39,
+      493
+    ],
+    [
+      "DEPARTMENT OF ENVIRONMENTAL PROTECTION (EQE)",
+      "DEPARTMENT OF ENVIRONMENTAL PROTECTION (EQE) · (FF) FACILITY OPERATIONAL EXPENSES",
+      570087.03,
+      570087.03,
+      500
+    ],
+    [
+      "DEPARTMENT OF ENVIRONMENTAL PROTECTION (EQE)",
+      "DEPARTMENT OF ENVIRONMENTAL PROTECTION (EQE) · (LL) EQUIPMENT LEASE-MAINTAIN/REPAR",
+      494104.18,
+      494104.18,
+      534
+    ],
+    [
+      "DEPARTMENT OF ENVIRONMENTAL PROTECTION (EQE)",
+      "DEPARTMENT OF ENVIRONMENTAL PROTECTION (EQE) · (BB) REGULAR EMPLOYEE RELATED EXPEN",
+      302401.25,
+      302401.25,
+      1417
+    ],
+    [
+      "DEPARTMENT OF ENVIRONMENTAL PROTECTION (EQE)",
+      "DEPARTMENT OF ENVIRONMENTAL PROTECTION (EQE) · (CC) SPECIAL EMPLOYEES",
+      292653.71,
+      292653.71,
+      126
+    ],
+    [
+      "DEPARTMENT OF ENVIRONMENTAL PROTECTION (EQE)",
+      "DEPARTMENT OF ENVIRONMENTAL PROTECTION (EQE) · (DD) PENSION & INSURANCE RELATED EX",
+      1015,
+      1015,
+      1
+    ],
+    [
+      "DEPARTMENT OF ENVIRONMENTAL PROTECTION (EQE)",
+      "DEPARTMENT OF ENVIRONMENTAL PROTECTION (EQE) · (99) PAYROLL REJECTS",
+      0,
+      0,
+      109
+    ]
+  ],
+  "hierarchyNote": "The source does not identify a separate sub-agency column; direct-managed rows repeat the parent entity.",
+  "sourceBasis": "official source amount",
+  "note": "Amounts are shown on the official source basis; no comparator normalization was applied."
+}

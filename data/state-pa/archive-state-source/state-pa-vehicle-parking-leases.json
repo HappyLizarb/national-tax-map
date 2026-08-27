@@ -1,0 +1,40 @@
+{
+  "scope": "Pennsylvania",
+  "code": "pa",
+  "department": "Vehicle Parking Leases",
+  "fiscalYear": 2024,
+  "ledgerAmount": 256456.29,
+  "sourceTotal": 256456.29,
+  "sourceUrl": "https://www.patreasury.gov/openbookpa/checkbook.php",
+  "rowSchema": [
+    "subAgency",
+    "program",
+    "amount",
+    "sourceAmount",
+    "sourceRows"
+  ],
+  "rows": [
+    [
+      "Vehicle Parking Leases",
+      "SP PLUS CORPORATION   · Vehicle Parking Leases · 6351240",
+      251078.79,
+      251078.79,
+      12
+    ],
+    [
+      "Vehicle Parking Leases",
+      "PHILADELPHIA PARKING AUTHORITY   · Vehicle Parking Leases · 6351240",
+      5280,
+      5280,
+      12
+    ],
+    [
+      "Vehicle Parking Leases",
+      "COMMONWEALTH OF PENNSYLVANIA   · Vehicle Parking Leases · 6351240",
+      97.5,
+      97.5,
+      1
+    ]
+  ],
+  "hierarchyNote": "The source does not identify a separate sub-agency column; direct-managed rows repeat the parent entity."
+}

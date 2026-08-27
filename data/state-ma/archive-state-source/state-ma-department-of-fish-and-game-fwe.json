@@ -1,0 +1,133 @@
+{
+  "scope": "Massachusetts",
+  "code": "ma",
+  "department": "DEPARTMENT OF FISH AND GAME (FWE)",
+  "fiscalYear": 2024,
+  "ledgerAmount": 73204601.42,
+  "sourceTotal": 79696532.77,
+  "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000",
+  "rowSchema": [
+    "subAgency",
+    "program",
+    "amount",
+    "sourceAmount",
+    "sourceRows"
+  ],
+  "rows": [
+    [
+      "DEPARTMENT OF FISH AND GAME (FWE)",
+      "DEPARTMENT OF FISH AND GAME (FWE) · (AA) REGULAR EMPLOYEE COMPENSATION",
+      28630116.16,
+      28630116.16,
+      1713
+    ],
+    [
+      "DEPARTMENT OF FISH AND GAME (FWE)",
+      "DEPARTMENT OF FISH AND GAME (FWE) · (PP) STATE AID/POL SUB",
+      25108755.82,
+      25108755.82,
+      1347
+    ],
+    [
+      "DEPARTMENT OF FISH AND GAME (FWE)",
+      "DEPARTMENT OF FISH AND GAME (FWE) · (NN) INFRASTRUCTURE:",
+      17023071.24,
+      17023071.24,
+      1475
+    ],
+    [
+      "DEPARTMENT OF FISH AND GAME (FWE)",
+      "DEPARTMENT OF FISH AND GAME (FWE) · (FF) FACILITY OPERATIONAL EXPENSES",
+      2919418.6,
+      2919418.6,
+      847
+    ],
+    [
+      "DEPARTMENT OF FISH AND GAME (FWE)",
+      "DEPARTMENT OF FISH AND GAME (FWE) · (HH) CONSULTANT SVCS (TO DEPTS)",
+      1576641.74,
+      1576641.74,
+      281
+    ],
+    [
+      "DEPARTMENT OF FISH AND GAME (FWE)",
+      "DEPARTMENT OF FISH AND GAME (FWE) · (CC) SPECIAL EMPLOYEES",
+      1013110.27,
+      1013110.27,
+      651
+    ],
+    [
+      "DEPARTMENT OF FISH AND GAME (FWE)",
+      "DEPARTMENT OF FISH AND GAME (FWE) · (EE) ADMINISTRATIVE EXPENSES",
+      917373.69,
+      917373.69,
+      802
+    ],
+    [
+      "DEPARTMENT OF FISH AND GAME (FWE)",
+      "DEPARTMENT OF FISH AND GAME (FWE) · (GG) ENERGY COSTS AND SPACE RENTAL",
+      858441.33,
+      858441.33,
+      877
+    ],
+    [
+      "DEPARTMENT OF FISH AND GAME (FWE)",
+      "DEPARTMENT OF FISH AND GAME (FWE) · (LL) EQUIPMENT LEASE-MAINTAIN/REPAR",
+      616821.26,
+      616821.26,
+      268
+    ],
+    [
+      "DEPARTMENT OF FISH AND GAME (FWE)",
+      "DEPARTMENT OF FISH AND GAME (FWE) · (UU) IT NON-PAYROLL EXPENSES",
+      227921.05,
+      227921.05,
+      263
+    ],
+    [
+      "DEPARTMENT OF FISH AND GAME (FWE)",
+      "DEPARTMENT OF FISH AND GAME (FWE) · (BB) REGULAR EMPLOYEE RELATED EXPEN",
+      215963.77,
+      215963.77,
+      499
+    ],
+    [
+      "DEPARTMENT OF FISH AND GAME (FWE)",
+      "DEPARTMENT OF FISH AND GAME (FWE) · (TT) LOANS AND SPECIAL PAYMENTS",
+      190485,
+      190485,
+      11
+    ],
+    [
+      "DEPARTMENT OF FISH AND GAME (FWE)",
+      "DEPARTMENT OF FISH AND GAME (FWE) · (MM) PURCHASED CLIENT/PROGRAM SVCS",
+      153431.25,
+      153431.25,
+      3
+    ],
+    [
+      "DEPARTMENT OF FISH AND GAME (FWE)",
+      "DEPARTMENT OF FISH AND GAME (FWE) · (JJ) OPERATIONAL SERVICES",
+      146346.79,
+      146346.79,
+      73
+    ],
+    [
+      "DEPARTMENT OF FISH AND GAME (FWE)",
+      "DEPARTMENT OF FISH AND GAME (FWE) · (KK) EQUIPMENT PURCHASE",
+      98634.8,
+      98634.8,
+      33
+    ],
+    [
+      "DEPARTMENT OF FISH AND GAME (FWE)",
+      "DEPARTMENT OF FISH AND GAME (FWE) · (99) PAYROLL REJECTS",
+      0,
+      0,
+      20
+    ]
+  ],
+  "hierarchyNote": "The source does not identify a separate sub-agency column; direct-managed rows repeat the parent entity.",
+  "sourceBasis": "official source amount",
+  "note": "Amounts are shown on the official source basis; no comparator normalization was applied."
+}

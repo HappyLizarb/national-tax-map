@@ -1,0 +1,133 @@
+{
+  "scope": "Massachusetts",
+  "code": "ma",
+  "department": "DEPARTMENT OF AGRICULTURAL RESOURCES (AGR)",
+  "fiscalYear": 2024,
+  "ledgerAmount": 93679745.03,
+  "sourceTotal": 101987453.31,
+  "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000",
+  "rowSchema": [
+    "subAgency",
+    "program",
+    "amount",
+    "sourceAmount",
+    "sourceRows"
+  ],
+  "rows": [
+    [
+      "DEPARTMENT OF AGRICULTURAL RESOURCES (AGR)",
+      "DEPARTMENT OF AGRICULTURAL RESOURCES (AGR) · (PP) STATE AID/POL SUB",
+      46891428.01,
+      46891428.01,
+      1001
+    ],
+    [
+      "DEPARTMENT OF AGRICULTURAL RESOURCES (AGR)",
+      "DEPARTMENT OF AGRICULTURAL RESOURCES (AGR) · (MM) PURCHASED CLIENT/PROGRAM SVCS",
+      38969211.35,
+      38969211.35,
+      110
+    ],
+    [
+      "DEPARTMENT OF AGRICULTURAL RESOURCES (AGR)",
+      "DEPARTMENT OF AGRICULTURAL RESOURCES (AGR) · (AA) REGULAR EMPLOYEE COMPENSATION",
+      9648917.49,
+      9648917.49,
+      2034
+    ],
+    [
+      "DEPARTMENT OF AGRICULTURAL RESOURCES (AGR)",
+      "DEPARTMENT OF AGRICULTURAL RESOURCES (AGR) · (NN) INFRASTRUCTURE:",
+      2672520.56,
+      2672520.56,
+      102
+    ],
+    [
+      "DEPARTMENT OF AGRICULTURAL RESOURCES (AGR)",
+      "DEPARTMENT OF AGRICULTURAL RESOURCES (AGR) · (JJ) OPERATIONAL SERVICES",
+      1331717.28,
+      1331717.28,
+      491
+    ],
+    [
+      "DEPARTMENT OF AGRICULTURAL RESOURCES (AGR)",
+      "DEPARTMENT OF AGRICULTURAL RESOURCES (AGR) · (HH) CONSULTANT SVCS (TO DEPTS)",
+      810231.83,
+      810231.83,
+      76
+    ],
+    [
+      "DEPARTMENT OF AGRICULTURAL RESOURCES (AGR)",
+      "DEPARTMENT OF AGRICULTURAL RESOURCES (AGR) · (CC) SPECIAL EMPLOYEES",
+      486703.43,
+      486703.43,
+      419
+    ],
+    [
+      "DEPARTMENT OF AGRICULTURAL RESOURCES (AGR)",
+      "DEPARTMENT OF AGRICULTURAL RESOURCES (AGR) · (GG) ENERGY COSTS AND SPACE RENTAL",
+      373746.59,
+      373746.59,
+      115
+    ],
+    [
+      "DEPARTMENT OF AGRICULTURAL RESOURCES (AGR)",
+      "DEPARTMENT OF AGRICULTURAL RESOURCES (AGR) · (EE) ADMINISTRATIVE EXPENSES",
+      223466.07,
+      223466.07,
+      361
+    ],
+    [
+      "DEPARTMENT OF AGRICULTURAL RESOURCES (AGR)",
+      "DEPARTMENT OF AGRICULTURAL RESOURCES (AGR) · (UU) IT NON-PAYROLL EXPENSES",
+      218236.62,
+      218236.62,
+      139
+    ],
+    [
+      "DEPARTMENT OF AGRICULTURAL RESOURCES (AGR)",
+      "DEPARTMENT OF AGRICULTURAL RESOURCES (AGR) · (BB) REGULAR EMPLOYEE RELATED EXPEN",
+      177065.62,
+      177065.62,
+      1029
+    ],
+    [
+      "DEPARTMENT OF AGRICULTURAL RESOURCES (AGR)",
+      "DEPARTMENT OF AGRICULTURAL RESOURCES (AGR) · (FF) FACILITY OPERATIONAL EXPENSES",
+      75050.74,
+      75050.74,
+      132
+    ],
+    [
+      "DEPARTMENT OF AGRICULTURAL RESOURCES (AGR)",
+      "DEPARTMENT OF AGRICULTURAL RESOURCES (AGR) · (LL) EQUIPMENT LEASE-MAINTAIN/REPAR",
+      59741.55,
+      59741.55,
+      81
+    ],
+    [
+      "DEPARTMENT OF AGRICULTURAL RESOURCES (AGR)",
+      "DEPARTMENT OF AGRICULTURAL RESOURCES (AGR) · (TT) LOANS AND SPECIAL PAYMENTS",
+      38030,
+      38030,
+      1
+    ],
+    [
+      "DEPARTMENT OF AGRICULTURAL RESOURCES (AGR)",
+      "DEPARTMENT OF AGRICULTURAL RESOURCES (AGR) · (KK) EQUIPMENT PURCHASE",
+      11386.17,
+      11386.17,
+      6
+    ],
+    [
+      "DEPARTMENT OF AGRICULTURAL RESOURCES (AGR)",
+      "DEPARTMENT OF AGRICULTURAL RESOURCES (AGR) · (99) PAYROLL REJECTS",
+      0,
+      0,
+      68
+    ]
+  ],
+  "hierarchyNote": "The source does not identify a separate sub-agency column; direct-managed rows repeat the parent entity.",
+  "sourceBasis": "official source amount",
+  "note": "Amounts are shown on the official source basis; no comparator normalization was applied."
+}

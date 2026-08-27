@@ -1,0 +1,133 @@
+{
+  "scope": "Massachusetts",
+  "code": "ma",
+  "department": "FITCHBURG STATE UNIVERSITY (FSC)",
+  "fiscalYear": 2024,
+  "ledgerAmount": 150036588.74,
+  "sourceTotal": 163342135.32,
+  "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000",
+  "rowSchema": [
+    "subAgency",
+    "program",
+    "amount",
+    "sourceAmount",
+    "sourceRows"
+  ],
+  "rows": [
+    [
+      "FITCHBURG STATE UNIVERSITY (FSC)",
+      "FITCHBURG STATE UNIVERSITY (FSC) · (AA) REGULAR EMPLOYEE COMPENSATION",
+      51338585.73,
+      51338585.73,
+      1137
+    ],
+    [
+      "FITCHBURG STATE UNIVERSITY (FSC)",
+      "FITCHBURG STATE UNIVERSITY (FSC) · (TT) LOANS AND SPECIAL PAYMENTS",
+      39255060.94,
+      39255060.94,
+      42
+    ],
+    [
+      "FITCHBURG STATE UNIVERSITY (FSC)",
+      "FITCHBURG STATE UNIVERSITY (FSC) · (RR) BENEFIT PROGRAMS",
+      21932128.83,
+      21932128.83,
+      58
+    ],
+    [
+      "FITCHBURG STATE UNIVERSITY (FSC)",
+      "FITCHBURG STATE UNIVERSITY (FSC) · (CC) SPECIAL EMPLOYEES",
+      17370786.16,
+      17370786.16,
+      804
+    ],
+    [
+      "FITCHBURG STATE UNIVERSITY (FSC)",
+      "FITCHBURG STATE UNIVERSITY (FSC) · (GG) ENERGY COSTS AND SPACE RENTAL",
+      6069282.5,
+      6069282.5,
+      64
+    ],
+    [
+      "FITCHBURG STATE UNIVERSITY (FSC)",
+      "FITCHBURG STATE UNIVERSITY (FSC) · (JJ) OPERATIONAL SERVICES",
+      5955815.87,
+      5955815.87,
+      27
+    ],
+    [
+      "FITCHBURG STATE UNIVERSITY (FSC)",
+      "FITCHBURG STATE UNIVERSITY (FSC) · (NN) INFRASTRUCTURE:",
+      5155939.57,
+      5155939.57,
+      28
+    ],
+    [
+      "FITCHBURG STATE UNIVERSITY (FSC)",
+      "FITCHBURG STATE UNIVERSITY (FSC) · (UU) IT NON-PAYROLL EXPENSES",
+      5078458.24,
+      5078458.24,
+      19
+    ],
+    [
+      "FITCHBURG STATE UNIVERSITY (FSC)",
+      "FITCHBURG STATE UNIVERSITY (FSC) · (EE) ADMINISTRATIVE EXPENSES",
+      3111974.07,
+      3111974.07,
+      41
+    ],
+    [
+      "FITCHBURG STATE UNIVERSITY (FSC)",
+      "FITCHBURG STATE UNIVERSITY (FSC) · (DD) PENSION & INSURANCE RELATED EX",
+      2200287.6,
+      2200287.6,
+      32
+    ],
+    [
+      "FITCHBURG STATE UNIVERSITY (FSC)",
+      "FITCHBURG STATE UNIVERSITY (FSC) · (HH) CONSULTANT SVCS (TO DEPTS)",
+      2012075.1,
+      2012075.1,
+      16
+    ],
+    [
+      "FITCHBURG STATE UNIVERSITY (FSC)",
+      "FITCHBURG STATE UNIVERSITY (FSC) · (FF) FACILITY OPERATIONAL EXPENSES",
+      1609176.18,
+      1609176.18,
+      33
+    ],
+    [
+      "FITCHBURG STATE UNIVERSITY (FSC)",
+      "FITCHBURG STATE UNIVERSITY (FSC) · (LL) EQUIPMENT LEASE-MAINTAIN/REPAR",
+      901113.87,
+      901113.87,
+      21
+    ],
+    [
+      "FITCHBURG STATE UNIVERSITY (FSC)",
+      "FITCHBURG STATE UNIVERSITY (FSC) · (KK) EQUIPMENT PURCHASE",
+      609515.46,
+      609515.46,
+      13
+    ],
+    [
+      "FITCHBURG STATE UNIVERSITY (FSC)",
+      "FITCHBURG STATE UNIVERSITY (FSC) · (BB) REGULAR EMPLOYEE RELATED EXPEN",
+      439532.59,
+      439532.59,
+      94
+    ],
+    [
+      "FITCHBURG STATE UNIVERSITY (FSC)",
+      "FITCHBURG STATE UNIVERSITY (FSC) · (MM) PURCHASED CLIENT/PROGRAM SVCS",
+      302402.61,
+      302402.61,
+      24
+    ]
+  ],
+  "hierarchyNote": "The source does not identify a separate sub-agency column; direct-managed rows repeat the parent entity.",
+  "sourceBasis": "official source amount",
+  "note": "Amounts are shown on the official source basis; no comparator normalization was applied."
+}

@@ -1,0 +1,112 @@
+{
+  "scope": "Massachusetts",
+  "code": "ma",
+  "department": "DIVISION OF OPERATIONAL SERVICES (OSD)",
+  "fiscalYear": 2024,
+  "ledgerAmount": 22564090.42,
+  "sourceTotal": 24565119.36,
+  "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=department%2Cobject_class%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows%2Ccount%28distinct%20vendor%29%20as%20vendors%2Ccount%28distinct%20payment_id%29%20as%20payments&$where=budget_fiscal_year%3D2024&$group=department%2Cobject_class&$order=amount%20desc&$limit=50000",
+  "rowSchema": [
+    "subAgency",
+    "program",
+    "amount",
+    "sourceAmount",
+    "sourceRows"
+  ],
+  "rows": [
+    [
+      "DIVISION OF OPERATIONAL SERVICES (OSD)",
+      "DIVISION OF OPERATIONAL SERVICES (OSD) · (AA) REGULAR EMPLOYEE COMPENSATION",
+      11364656.48,
+      11364656.48,
+      442
+    ],
+    [
+      "DIVISION OF OPERATIONAL SERVICES (OSD)",
+      "DIVISION OF OPERATIONAL SERVICES (OSD) · (KK) EQUIPMENT PURCHASE",
+      7190344.67,
+      7190344.67,
+      168
+    ],
+    [
+      "DIVISION OF OPERATIONAL SERVICES (OSD)",
+      "DIVISION OF OPERATIONAL SERVICES (OSD) · (LL) EQUIPMENT LEASE-MAINTAIN/REPAR",
+      2489873.51,
+      2489873.51,
+      388
+    ],
+    [
+      "DIVISION OF OPERATIONAL SERVICES (OSD)",
+      "DIVISION OF OPERATIONAL SERVICES (OSD) · (UU) IT NON-PAYROLL EXPENSES",
+      1590926.87,
+      1590926.87,
+      29
+    ],
+    [
+      "DIVISION OF OPERATIONAL SERVICES (OSD)",
+      "DIVISION OF OPERATIONAL SERVICES (OSD) · (EE) ADMINISTRATIVE EXPENSES",
+      1114696.66,
+      1114696.66,
+      532
+    ],
+    [
+      "DIVISION OF OPERATIONAL SERVICES (OSD)",
+      "DIVISION OF OPERATIONAL SERVICES (OSD) · (JJ) OPERATIONAL SERVICES",
+      417866.61,
+      417866.61,
+      145
+    ],
+    [
+      "DIVISION OF OPERATIONAL SERVICES (OSD)",
+      "DIVISION OF OPERATIONAL SERVICES (OSD) · (HH) CONSULTANT SVCS (TO DEPTS)",
+      146026.35,
+      146026.35,
+      6
+    ],
+    [
+      "DIVISION OF OPERATIONAL SERVICES (OSD)",
+      "DIVISION OF OPERATIONAL SERVICES (OSD) · (CC) SPECIAL EMPLOYEES",
+      124567.32,
+      124567.32,
+      42
+    ],
+    [
+      "DIVISION OF OPERATIONAL SERVICES (OSD)",
+      "DIVISION OF OPERATIONAL SERVICES (OSD) · (NN) INFRASTRUCTURE:",
+      78467.26,
+      78467.26,
+      46
+    ],
+    [
+      "DIVISION OF OPERATIONAL SERVICES (OSD)",
+      "DIVISION OF OPERATIONAL SERVICES (OSD) · (BB) REGULAR EMPLOYEE RELATED EXPEN",
+      26197.03,
+      26197.03,
+      66
+    ],
+    [
+      "DIVISION OF OPERATIONAL SERVICES (OSD)",
+      "DIVISION OF OPERATIONAL SERVICES (OSD) · (GG) ENERGY COSTS AND SPACE RENTAL",
+      11399.69,
+      11399.69,
+      38
+    ],
+    [
+      "DIVISION OF OPERATIONAL SERVICES (OSD)",
+      "DIVISION OF OPERATIONAL SERVICES (OSD) · (FF) FACILITY OPERATIONAL EXPENSES",
+      10096.91,
+      10096.91,
+      22
+    ],
+    [
+      "DIVISION OF OPERATIONAL SERVICES (OSD)",
+      "DIVISION OF OPERATIONAL SERVICES (OSD) · (99) PAYROLL REJECTS",
+      0,
+      0,
+      2
+    ]
+  ],
+  "hierarchyNote": "The source does not identify a separate sub-agency column; direct-managed rows repeat the parent entity.",
+  "sourceBasis": "official source amount",
+  "note": "Amounts are shown on the official source basis; no comparator normalization was applied."
+}

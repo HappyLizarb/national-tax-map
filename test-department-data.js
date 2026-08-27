@@ -1,0 +1,227 @@
+const assert = require("node:assert/strict");
+const fs = require("node:fs");
+const path = require("node:path");
+const index = require("./data/department-index.js");
+const ledgerTotals = require("./data/state-ledger-totals.js");
+
+const cents = (value) => Math.round(value * 100);
+const privatePayroll = /^(?:\*?due to employees|net pay|personal vehicle mileage(?: exp(?:en|ense)?|[- ]tryln)?|non-wage employee settlement)(?: \(aggregate\))?$/i;
+const sourceDefinedOtherRows = new Set([
+  "United States:mts-agency-other-defense-civil-programs",
+  "California:sco-bu-9380", "Connecticut:auditors-of-public-accounts", "Connecticut:comm-on-womenchilsenequityopty",
+  "Connecticut:lieutenant-governor-s-office", "Delaware:other-elective-offices", "Georgia:financing-and-investment-commission-georgia-state-other",
+  "Indiana:bu-00322", "Iowa:ag-soybean-promotion", "Iowa:ag-cattle-promotion-board", "Iowa:ag-egg-council",
+  "Iowa:ag-turkey-marketing-council", "Louisiana:other-requirements", "Ohio:employee-benefits-funds",
+  "Ohio:ohio-housing-finance-agency", "Ohio:veterans-organizations", "Oklahoma:bu-92200-oklahoma-housing-finance-agency",
+  "Pennsylvania:other-specialized-se", "Pennsylvania:other-supplies", "Pennsylvania:rentals-other", "Pennsylvania:other-heating-fuel",
+  "South Carolina:j200-dept-of-alcohol-other-drug-abu", "Texas:other-uses"
+]);
+const otherLabel = (row) => [row.id, row.name, row.program, row.note].filter(Boolean).join(" ").match(/\bother(s)?\b/i);
+const censusFunctionRow = (row) => row.id.startsWith("census-");
+const stateItemBreakdowns = [];
+const stateBranchBreakdowns = [];
+const stateSourceBreakdowns = [];
+const stateBranchCoverage = { judiciary: new Set(), legislature: new Set() };
+
+assert.equal(Object.keys(index).length, 51);
+for (const [scope, summaryPath] of Object.entries(index)) {
+  const summary = require("./" + summaryPath);
+  const directory = path.join(__dirname, path.dirname(summaryPath));
+  assert.deepEqual(fs.readdirSync(directory).filter((file) => file.endsWith(".js")), [path.basename(summaryPath)], scope);
+  assert.equal(summary.scope, scope);
+  if (scope !== "United States") assert.equal(summary.coverageStatus, "census-complete-function-basis", scope + " · canonical layer");
+  assert.ok(summary.departments.every((row) => !/\bothers\b/i.test(JSON.stringify(row))), scope);
+  const otherRows = summary.departments.filter(otherLabel);
+  assert.ok(otherRows.every((row) => censusFunctionRow(row) || sourceDefinedOtherRows.has(scope + ":" + row.id)), scope + " · unresolved Other label");
+  assert.ok(otherRows.every((row) => row.detailUrl || row.program || row.note), scope + " · unitemized Other label");
+  assert.equal(Object.hasOwn(summary.reconciliation, "others"), false, scope);
+  assert.equal(Object.hasOwn(summary, "ledgerTotal"), false, scope + " · stale ledger field");
+  assert.equal(cents(summary.itemizedTotal), cents(summary.sourceTotal), scope + " · itemized total");
+  assert.equal(summary.reconciliation.itemizedDifference, 0, scope + " · itemized reconciliation");
+  assert.equal(Object.hasOwn(summary.reconciliation, "coverageGap"), false, scope + " · synthetic coverage gap");
+  assert.equal(summary.departments.filter((row) => row.id === "coverage-gap").length, 0, scope + " · synthetic coverage row");
+  assert.equal(summary.departments.reduce((sum, row) => sum + cents(row.amount), 0), cents(summary.itemizedTotal), scope);
+  assert.match(summary.comparison.url, /^https:\/\//, scope + " · comparator link");
+  assert.equal(cents(summary.comparison.difference), cents(summary.sourceTotal) - cents(summary.comparison.total), scope + " · comparator difference");
+  for (const department of summary.departments) {
+    assert.match(department.sourceUrl, /^https:\/\//, scope + " · " + department.name);
+    assert.equal(cents(department.amount), cents(department.sourceAmount), scope + " · " + department.name + " · source basis");
+    if (!department.detailUrl) {
+      assert.equal(typeof department.program, "string", scope + " · " + department.name);
+      assert.ok(Object.hasOwn(department, "sourceRows"), scope + " · " + department.name);
+      continue;
+    }
+    assert.match(department.detailUrl, new RegExp("^data/" + (scope === "United States" ? "federal/federal-" : "state-[a-z]{2}/(?:state-[a-z]{2}-|census-state-[a-z]{2}-)") + ".+\\.json$"));
+    const detail = JSON.parse(fs.readFileSync(path.join(__dirname, department.detailUrl), "utf8"));
+    assert.match(detail.sourceUrl, /^https:\/\//, scope + " · " + department.name);
+    const baseSchema = ["subAgency", "program", "amount", "sourceAmount", "sourceRows"];
+    const allowedSchemas = [baseSchema, [...baseSchema, "obligations"],
+      [...baseSchema, "grossOutlays", "applicableReceipts"]];
+    assert.ok(allowedSchemas.some((schema) => detail.rowSchema.join("|") === schema.join("|")));
+    assert.equal(detail.rows.reduce((sum, row) => sum + cents(row[2]), 0), cents(department.amount), scope + " · " + department.name);
+    assert.ok(detail.rows.every((row) => Number.isInteger(cents(row[2]))), scope + " · " + department.name + " · cents");
+    if (detail.sourceCheck) {
+      const checkedGroups = detail.sourceCheck.objectClassRows ?? detail.sourceCheck.groupRows;
+      assert.equal(detail.rows.length, checkedGroups, scope + " · " + department.name + " · source rows");
+      assert.equal(detail.rows.reduce((sum, row) => sum + cents(row[3]), 0), cents(detail.sourceTotal), scope + " · " + department.name + " · source total");
+      assert.equal(detail.sourceCheck.difference, 0, scope + " · " + department.name + " · source check");
+      assert.ok(detail.sourceUrls.every(([, url]) => /^https:\/\//.test(url)), scope + " · " + department.name + " · source links");
+    }
+    assert.ok(detail.rows.every((row) => row[0] && row[1]), scope + " · " + department.name);
+    assert.equal(detail.rows.filter((row) => row.some((value) => privatePayroll.test(String(value))) && !row.includes("[privacy-safe aggregate]")).length, 0, scope + " · " + department.name + " · privacy");
+    if (detail.supplementalRows?.length) {
+      assert.deepEqual(detail.supplementalSchema, ["subAgency", "program", "amount", "measure", "source"]);
+      assert.ok(detail.supplementalRows.every((row) => row[0] && row[1] && /^https:\/\//.test(row[4])));
+    }
+    if (scope !== "United States") {
+      stateItemBreakdowns.push(...(detail.itemBreakdowns || []));
+      stateSourceBreakdowns.push(...(detail.sourceBreakdowns || []));
+      const panels = detail.supplementalBreakdowns || [];
+      stateBranchBreakdowns.push(...panels);
+      if (panels.some((item) => /judici|court/i.test(item.title))) stateBranchCoverage.judiciary.add(scope);
+      if (panels.some((item) => /legislat|general assembly/i.test(item.title))) stateBranchCoverage.legislature.add(scope);
+    }
+    assert.ok(detail.rows.length !== 1 || detail.supplementalRows?.length || detail.sourceCheck, scope + " · redundant one-row JSON");
+  }
+}
+
+assert.equal(stateItemBreakdowns.length, 41);
+assert.ok(stateItemBreakdowns.every((item) => item.rowPrefix === "Census" && item.rows.reduce((sum, row) => sum + cents(row[2]), 0) === cents(item.parent[2])));
+const stateCensusCeilings = stateItemBreakdowns.flatMap((item) => item.rows)
+  .filter((row) => Math.abs(row[2]) >= 1e10);
+assert.equal(stateCensusCeilings.length, 38);
+assert.ok(stateCensusCeilings.every((row) => /Census annual disclosure ceiling/.test(row[1])));
+assert.deepEqual([stateSourceBreakdowns.length, stateSourceBreakdowns.reduce((sum, item) => sum + item.rows.length, 0)], [16, 425]);
+assert.ok(stateSourceBreakdowns.every((item) => /^https:\/\//.test(item.sourceUrl)
+  && /not additive|separate|supplemental/.test(item.basis)
+  && item.rows.every((row, index, rows) => !index || Math.abs(rows[index - 1][2]) >= Math.abs(row[2]))
+  && cents(item.rows.reduce((sum, row) => sum + row[2], 0)) === cents(item.sourceTotal)));
+const nyAid = stateSourceBreakdowns.find((item) => item.title === "NYC 2023-24 state-aid payments by funding stream");
+assert.deepEqual([nyAid.rows.length, cents(nyAid.rows.reduce((sum, row) => sum + row[2], 0))], [21, cents(13058457682.74)]);
+assert.ok(nyAid.rows.every((row) => Math.abs(row[2]) < 1e10));
+assert.equal(stateBranchBreakdowns.length, 172);
+assert.equal(stateBranchBreakdowns.reduce((sum, item) => sum + item.rows.length, 0), 2723);
+const archivedBranchBreakdowns = stateBranchBreakdowns.filter((item) => item.title.startsWith("Archived official"));
+assert.equal(archivedBranchBreakdowns.length, 52);
+assert.equal(archivedBranchBreakdowns.filter((item) => item.rows.length > 1).length, 52);
+assert.ok(archivedBranchBreakdowns.every((item) => item.rows.length <= 21));
+assert.deepEqual([stateBranchCoverage.judiciary.size, stateBranchCoverage.legislature.size], [50, 50]);
+const georgiaLegislature = stateBranchBreakdowns.find((item) => item.title === "Georgia General Assembly FY2024 payments by expense description");
+assert.deepEqual([georgiaLegislature.rows.length, georgiaLegislature.rows.reduce((sum, row) => sum + cents(row[2]), 0)], [127, cents(50234240.29)]);
+assert.ok(georgiaLegislature.rows.every((row) => Math.abs(row[2]) < 1e10));
+const kentuckyLegislature = stateBranchBreakdowns.find((item) => item.title === "Kentucky Legislative Branch FY2024 expenditures by department and object code");
+assert.deepEqual([kentuckyLegislature.rows.length, kentuckyLegislature.rows.reduce((sum, row) => sum + cents(row[2]), 0)], [168, cents(91304009.55)]);
+assert.ok(kentuckyLegislature.rows.every((row) => Math.abs(row[2]) < 1e10));
+const rhodeIslandLegislature = stateBranchBreakdowns.find((item) => item.title === "Rhode Island Legislature FY2024 budgetary actual by program");
+assert.deepEqual([rhodeIslandLegislature.rows.length, rhodeIslandLegislature.rows.reduce((sum, row) => sum + row[2], 0)], [6, 50114866]);
+assert.ok(rhodeIslandLegislature.rows.every((row) => Math.abs(row[2]) < 1e10));
+const westVirginiaLegislature = stateBranchBreakdowns.find((item) => item.title === "West Virginia Legislature FY2024 actual expenditures by appropriation");
+assert.deepEqual([westVirginiaLegislature.rows.length, westVirginiaLegislature.rows.reduce((sum, row) => sum + row[2], 0)], [31, 36949652]);
+assert.ok(westVirginiaLegislature.rows.every((row) => Math.abs(row[2]) < 1e10));
+const westVirginiaJudiciary = stateBranchBreakdowns.find((item) => item.title === "West Virginia Judiciary FY2024 expenditures by court division and support function");
+assert.deepEqual([westVirginiaJudiciary.rows.length, westVirginiaJudiciary.rows.reduce((sum, row) => sum + row[2], 0)], [7, 156260632]);
+assert.ok(westVirginiaJudiciary.rows.every((row) => Math.abs(row[2]) < 1e10));
+const iowaLegislature = stateBranchBreakdowns.find((item) => item.title === "Iowa Legislature FY2024 General Fund actuals by appropriation");
+assert.deepEqual([iowaLegislature.rows.length, iowaLegislature.rows.reduce((sum, row) => sum + row[2], 0)], [6, 36985580]);
+assert.ok(iowaLegislature.rows.every((row) => Math.abs(row[2]) < 1e10));
+const wisconsinLegislature = stateBranchBreakdowns.find((item) => item.title === "Wisconsin Legislature FY2024 expenditures by appropriation");
+assert.deepEqual([wisconsinLegislature.rows.length, cents(wisconsinLegislature.rows.reduce((sum, row) => sum + row[2], 0))], [12, cents(91103341.08)]);
+assert.ok(wisconsinLegislature.rows.every((row) => Math.abs(row[2]) < 1e10));
+const minnesotaLegislature = stateBranchBreakdowns.find((item) => item.title === "Minnesota Legislature FY2024 General Fund actuals by appropriation");
+assert.deepEqual([minnesotaLegislature.rows.length, minnesotaLegislature.rows.reduce((sum, row) => sum + row[2], 0)], [8, 114806000]);
+assert.ok(minnesotaLegislature.rows.every((row) => Math.abs(row[2]) < 1e10));
+const californiaTwoPlan = stateBranchBreakdowns.find((item) => item.title === "California FY2024-25 Two-Plan capitation estimate by county");
+assert.deepEqual([californiaTwoPlan.rows.length, californiaTwoPlan.rows.reduce((sum, row) => sum + row[2], 0)], [15, 34029935000]);
+assert.deepEqual(californiaTwoPlan.rows.filter((row) => Math.abs(row[2]) >= 1e10).map((row) => row[0]), ["Los Angeles"]);
+const californiaCohs = stateBranchBreakdowns.find((item) => item.title === "California FY2024-25 COHS and Single-Plan capitation estimate by county or plan");
+assert.deepEqual([californiaCohs.rows.length, californiaCohs.rows.reduce((sum, row) => sum + row[2], 0)], [31, 17624934000]);
+assert.ok(californiaCohs.rows.every((row) => Math.abs(row[2]) < 1e10));
+const iowaMedicaidMlr = stateBranchBreakdowns.find((item) => item.title === "Iowa SFY2024 adjusted Medicaid MLR numerator by health plan and component");
+assert.deepEqual([iowaMedicaidMlr.rows.length, iowaMedicaidMlr.rows.reduce((sum, row) => sum + row[2], 0)], [6, 7885282613]);
+assert.ok(iowaMedicaidMlr.rows.every((row) => Math.abs(row[2]) < 1e10));
+assert.equal(stateBranchBreakdowns.filter((item) => /judici|court|legislat|general assembly/i.test(item.title))
+  .flatMap((item) => item.rows).filter((row) => Math.abs(row[2]) >= 1e10).length, 0);
+assert.ok(stateBranchBreakdowns.every((item) => /not additive|separate|supplemental|subset|unreconciled/.test(item.basis)
+  && item.rows.every((row) => /^https:\/\//.test(row[3]))));
+const nonCmsStateCeilings = stateBranchBreakdowns.filter((item) => !item.title.startsWith("CMS-64"))
+  .flatMap((item) => item.rows).filter((row) => Math.abs(row[2]) >= 1e10);
+assert.deepEqual(nonCmsStateCeilings.map((row) => [row[0], row[1]]),
+  [["Los Angeles", "FY2024-25 Two-Plan accrual estimate · public county ceiling"]]);
+assert.equal(stateBranchBreakdowns.filter((item) => item.title.startsWith("CMS-64")).flatMap((item) => item.rows).filter((row) => Math.abs(row[2]) >= 1e10).length, 13);
+assert.ok(stateBranchBreakdowns.filter((item) => item.title.startsWith("CMS-64")).flatMap((item) => item.rows)
+  .filter((row) => Math.abs(row[2]) >= 1e10).every((row) => /public annual disclosure ceiling/.test(row[1])));
+for (const [title, count, total] of [
+  ["New York FY2024 higher-education cash payments by public entity", 5, 8743115816.08],
+  ["Florida public universities FY2023-24 actual expenditures by institution and program", 29, 15936265029],
+  ["Illinois FY2024 medical-program spending by encounter-allocated provider type", 6, 25705400000],
+  ["New York FY2024 General State Charges by centrally paid cost", 11, 10696000000],
+  ["New York SFY2023-24 Medicaid behavioral-health expense by managed-care plan", 13, 1853735081],
+  ["Michigan FY2023-24 public-university General Fund expenditures by function", 11, 8172698548],
+  ["Michigan FY2024 Medicaid health-services actuals by appropriation", 25, 21655704249],
+  ["Pennsylvania State System FY2024 operating expenses by function", 9, 1811467000],
+  ["North Carolina SFY2024 Medicaid claims expenditures by service category", 32, 27943400000],
+  ["Arizona FY2024 AHCCCS Medicaid Services actuals by subprogram", 9, 16590450500],
+  ["Ohio SFY2024 Medicaid incurred-cost estimate by program", 11, 29489647795],
+  ["Texas FY2024 full-benefit Medicaid expenditures by eligibility group", 4, 22506000000],
+  ["Florida audited Medicaid plan revenue · derived SFY2023-24", 17, 22440629706],
+  ["Kentucky SFY2024 Medicaid benefits actuals by payment type", 7, 18197104900],
+  ["Louisiana SFY2023-24 Medicaid actuals by category of service", 53, 18331693044],
+  ["Pennsylvania FY2023-24 Medicaid capitation available by program and payment month", 17, 21631613874],
+  ["Massachusetts FY2024 EOHHS 4000-series actual expenditures by line item", 30, 20567829135],
+  ["Massachusetts Judiciary FY2024 actual expenditures by appropriation", 35, 1311375344],
+  ["Massachusetts Legislature FY2024 actual expenditures by appropriation", 4, 89582952],
+  ["California FY2024 welfare and health realignment local assistance by subaccount", 9, 13645375933],
+  ["California FY2024 tax relief and shared-revenue local assistance by program", 9, 4083059799],
+  ["New York FY2024 welfare, housing, and employment local-assistance cash by fund", 11, 11621333000],
+  ["SUNY FY2024 audited expenses by function", 9, 13820304000],
+  ["CUNY FY2024 audited expenses by function", 11, 5521644000],
+  ["New Jersey CY2024 Medicaid direct premium by managed-care plan", 5, 15991560638],
+  ["Minnesota CY2024 medical-program payments by eligibility group", 8, 21232314171],
+  ["Virginia SFY2024 Medicaid actual expenditures by service and managed-care population", 9, 21587032536],
+  ["Indiana SFY2024 Medicaid cash expenditures by program and service", 11, 19393340255],
+  ["Oklahoma SFY2024 OHCA expenditures by age and non-age-specific status", 4, 10327062611],
+  ["South Carolina FY2024 DHHS cash expenditures by accounting category", 15, 11145951518.10],
+  ["Tennessee FY2024 TennCare expenditures by program category", 9, 15783559200],
+  ["New Jersey FY2024 Judiciary expenditures by organization and vicinage function", 17, 1013418093.05],
+  ["New Jersey FY2024 Legislature expenditures by organization", 9, 106577326.59],
+  ["California Judiciary FY2024 budgetary/legal expenditures by appropriation and fund", 80, 5049481591],
+  ["California Legislature FY2024 budgetary/legal expenditures by appropriation and operating-fund offset", 11, 727446097],
+  ["Colorado Legislative Department FY2024 General Fund expenditures by organization and committed fund", 10, 70243468],
+  ["Tennessee FY2024 Court System actual expenditures by program", 20, 185374100],
+  ["North Carolina Judicial Branch FY2024 General Fund expenditures by service group", 6, 775164398.58],
+  ["Alabama Legislature FY2024 checkbook payments by agency and category", 39, 88559117.99],
+  ["Iowa Judicial Branch FY2024 actual expenditures by class", 32, 205368894],
+  ["Kentucky Judicial Branch FY2024 General Fund disbursements by program", 49, 461232548],
+  ["Maryland Judiciary FY2024 all-funds actuals by program", 11, 761126756],
+  ["Alaska Judiciary FY2024 actual expenditures by budget component", 6, 135433600],
+  ["Alaska Legislature FY2024 actual expenditures by budget component", 17, 73715100],
+  ["Delaware FY2024 Judicial checkbook payments by expenditure category", 17, 157140897.42],
+  ["Delaware FY2024 Legislative Branch checkbook payments by expenditure category", 10, 70464604.29],
+  ["Maine Judicial Department FY2024 Open Checkbook payments by expenditure object", 24, 30903876.54],
+  ["Maine Legislature and Law Library FY2024 Open Checkbook payments by expenditure object", 16, 5058411.17],
+  ["Utah State Courts FY2024 General Fund actual expenditures by appropriation line item", 5, 209622000],
+  ["Tennessee Legislature FY2024 actual expenditures by object", 19, 64184700],
+  ["Louisiana Legislature FY2024 actual expenditures by agency", 6, 127719586],
+  ["Louisiana court system 2024 expenses by court level and category", 19, 394353800]
+]) {
+  const rows = stateBranchBreakdowns.find((item) => item.title === title).rows;
+  assert.equal(rows.length, count);
+  assert.equal(cents(rows.reduce((sum, row) => sum + row[2], 0)), cents(total));
+  assert.ok(rows.every((row) => Math.abs(row[2]) < 1e10));
+}
+
+// Every state keeps a restorable official ledger that reconciles to its own source total.
+for (const [scope, summaryPath] of Object.entries(index)) {
+  if (scope === "United States") continue;
+  const summary = require("./" + summaryPath);
+  const snapshot = summary.departments[0].relatedSources?.find(([label, url]) =>
+    label === "Prior state layer snapshot" && url.startsWith("data/"));
+  assert.ok(snapshot, scope + " · official ledger snapshot");
+  const restored = JSON.parse(fs.readFileSync(path.join(__dirname, snapshot[1]), "utf8"));
+  assert.equal(restored.coverageStatus, "official-itemized-source-basis", scope + " · restored source basis");
+  assert.match(restored.sourceUrl, /^https:\/\//, scope + " · restored source link");
+  assert.equal(cents(restored.itemizedTotal), cents(restored.sourceTotal), scope + " · restored itemized total");
+  assert.equal(restored.reconciliation.itemizedDifference, 0, scope + " · restored reconciliation");
+  assert.equal(restored.departments.reduce((sum, row) => sum + cents(row.amount), 0), cents(restored.sourceTotal), scope + " · restored source rows");
+  assert.equal(cents(ledgerTotals[scope]), cents(restored.sourceTotal), scope + " · map ledger total");
+}

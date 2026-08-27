@@ -1,0 +1,178 @@
+{
+  "scope": "New Jersey",
+  "fiscalYear": 2024,
+  "department": "PERC",
+  "sourceUrl": "https://data.nj.gov/Government-Finance/YourMoney-Agency-Expenditures/apet-rp2i",
+  "sourceUrls": [
+    [
+      "Official expenditures catalog",
+      "https://www.nj.gov/transparency/financial-management/expenditures/index.shtml"
+    ],
+    [
+      "FY2024 agency dataset",
+      "https://data.nj.gov/Government-Finance/YourMoney-Agency-Expenditures/apet-rp2i"
+    ],
+    [
+      "Grouped FY2024 API export",
+      "https://data.nj.gov/resource/apet-rp2i.csv?%24select=ibno_agency%2Cstatewide_program%2Cpayee_name%2Csum%28expended_amt%29%20as%20expended%2Csum%28obligation_amt%29%20as%20obligations%2Ccount%28%2A%29%20as%20source_rows&%24where=budget_fiscal_year%3D2024&%24group=ibno_agency%2Cstatewide_program%2Cpayee_name&%24limit=500000"
+    ]
+  ],
+  "sourceBasis": "Official FY2024 Agency Expenditures dataset; pie amount uses expended, with obligations retained as a separate row measure.",
+  "privacyNote": "Individual or ambiguous payee labels are grouped as [individual recipient omitted]; organization receivers are retained. This layer does not expose person-level payroll.",
+  "sourceRows": 83,
+  "sourceTotal": 4138874.39,
+  "obligationTotal": 88992.5,
+  "rowSchema": [
+    "subAgency",
+    "program",
+    "amount",
+    "sourceAmount",
+    "sourceRows",
+    "obligations"
+  ],
+  "rows": [
+    [
+      "PERC",
+      "MANPOWER AND EMPLOYMENT SERVICES · Receiver *",
+      3686631.88,
+      3686631.88,
+      10,
+      0
+    ],
+    [
+      "PERC",
+      "MANPOWER AND EMPLOYMENT SERVICES · Receiver [individual recipient omitted]",
+      202039.83,
+      202039.83,
+      53,
+      0
+    ],
+    [
+      "PERC",
+      "MANPOWER AND EMPLOYMENT SERVICES · Receiver YORK TELECOM CORPORATION",
+      140440,
+      140440,
+      2,
+      88992.5
+    ],
+    [
+      "PERC",
+      "MANPOWER AND EMPLOYMENT SERVICES · Receiver 22ND CENTURY TECHNOLOGIES INC",
+      71021.84,
+      71021.84,
+      2,
+      0
+    ],
+    [
+      "PERC",
+      "MANPOWER AND EMPLOYMENT SERVICES · Receiver BANK OF AMERICA N A",
+      14488.87,
+      14488.87,
+      1,
+      0
+    ],
+    [
+      "PERC",
+      "MANPOWER AND EMPLOYMENT SERVICES · Receiver VRC COMPANIES, LLC",
+      10257.82,
+      10257.82,
+      1,
+      0
+    ],
+    [
+      "PERC",
+      "MANPOWER AND EMPLOYMENT SERVICES · Receiver INSIGHT PUBLIC SECTOR INC",
+      3275.51,
+      3275.51,
+      1,
+      0
+    ],
+    [
+      "PERC",
+      "MANPOWER AND EMPLOYMENT SERVICES · Receiver MRA INTERNATIONAL INC",
+      2562.59,
+      2562.59,
+      1,
+      0
+    ],
+    [
+      "PERC",
+      "MANPOWER AND EMPLOYMENT SERVICES · Receiver XEROX CORPORATION",
+      2298.55,
+      2298.55,
+      1,
+      0
+    ],
+    [
+      "PERC",
+      "MANPOWER AND EMPLOYMENT SERVICES · Receiver WB MASON CO INC.",
+      1899.76,
+      1899.76,
+      1,
+      0
+    ],
+    [
+      "PERC",
+      "MANPOWER AND EMPLOYMENT SERVICES · Receiver GRAINGER",
+      1038.21,
+      1038.21,
+      2,
+      0
+    ],
+    [
+      "PERC",
+      "MANPOWER AND EMPLOYMENT SERVICES · Receiver LAWYERS DIARY AND MANUAL LLC",
+      911.75,
+      911.75,
+      1,
+      0
+    ],
+    [
+      "PERC",
+      "MANPOWER AND EMPLOYMENT SERVICES · Receiver NEW JERSEY STATE BAR ASSOCIATI",
+      816,
+      816,
+      1,
+      0
+    ],
+    [
+      "PERC",
+      "MANPOWER AND EMPLOYMENT SERVICES · Receiver STATE OF NJ DEPTCOR STATE USE",
+      750,
+      750,
+      2,
+      0
+    ],
+    [
+      "PERC",
+      "MANPOWER AND EMPLOYMENT SERVICES · Receiver KIMMAGE PUBLISHING LLC",
+      237.9,
+      237.9,
+      1,
+      0
+    ],
+    [
+      "PERC",
+      "MANPOWER AND EMPLOYMENT SERVICES · Receiver FASTENAL",
+      186.94,
+      186.94,
+      2,
+      0
+    ],
+    [
+      "PERC",
+      "MANPOWER AND EMPLOYMENT SERVICES · Receiver FEDEX",
+      16.94,
+      16.94,
+      1,
+      0
+    ]
+  ],
+  "sourceCheck": {
+    "objectClassRows": 17,
+    "sourceRows": 83,
+    "sourceTotal": 4138874.39,
+    "obligationTotal": 88992.5,
+    "difference": 0
+  }
+}
