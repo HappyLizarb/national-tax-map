@@ -12,6 +12,7 @@ const estimates = require("./data/household-tax-estimates.js");
 require("./test-department-data.js");
 require("./test-federal-department-data.js");
 require("./test-federal-presentation-data.js");
+require("./test-state-reconciliation-details.js");
 require("./test-large-row-coverage.js");
 require("./test-offsetting-receipts.js");
 require("./test-tax-estimates.js");
@@ -105,10 +106,19 @@ for (const name of Object.keys(model.states)) {
   assert.match(gaapRow.program, new RegExp(model.financialResultFor(name).auditNote.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")), name);
   if (accountingBases[name]) assert.match(censusRow.program, new RegExp(accountingBases[name].label), name);
 }
+const wyomingCensus = require("./data/state-wy/state-wy.js");
 const wyomingReconciliation = model.reconcileStateArchive("Wyoming", { sourceTotal: 6548654149.67,
   sourceUrl: "https://www.wyopen.gov/search", note: "WyOpen payments.", reconciliation: {},
-  departments: [{ name: "Archive", amount: 6548654149.67 }] });
+  departments: [{ name: "Archive", program: "Published ledger line", amount: 6548654149.67 }] }, wyomingCensus);
 assert.deepEqual(wyomingReconciliation.departments.slice(-2).map((row) => row.amount), [-2212149.6700000763, -1143540063]);
+const [wyomingCensusBridge, wyomingGaapBridge] = wyomingReconciliation.departments.slice(-2);
+assert.equal(wyomingCensusBridge.detailSources.length, 5);
+assert.equal(wyomingCensusBridge.detailSources.reduce((sum, source) => sum + source.fallbackRow[2], 0), wyomingCensusBridge.amount);
+assert.equal(wyomingCensusBridge.detailSources[0].label, "Census · Intergovernmental expenditure");
+assert.equal(wyomingCensusBridge.detailSources.at(-1).label, "Official archive · Archive");
+assert.equal(wyomingGaapBridge.detailSources.length, 5);
+assert.equal(wyomingGaapBridge.detailSources.reduce((sum, source) => sum + source.fallbackRow[2], 0), wyomingGaapBridge.amount);
+assert.equal(wyomingGaapBridge.detailSources[0].label, "GAAP · Primary-government expenses");
 assert.equal(model.formatExactMoney(520734957000), "$520,734,957,000");
 assert.equal(model.formatExactMoney(36131360457.04), "$36,131,360,457.04");
 assert.equal(model.formatMoney(null), "Unavailable");
@@ -253,6 +263,10 @@ for (const pattern of [/DepartmentData\.loadSummary/, /DepartmentData\.loadDetai
 assert.match(app, /reconciliationTarget === "Census"[\s\S]*reconciliationTarget === "GAAP"/);
 assert.match(app, /model\.formatMoney\(department\.amount\) \+ " adjustment"/);
 assert.match(app, /circle\.reconciliation-ring/);
+assert.match(app, /department\.detailSources/);
+assert.match(app, /loadReconciliationDetail/);
+assert.match(app, /model\.expandReconciliationSource/);
+assert.match(app, /showAll/);
 assert.doesNotMatch(app, /model\.scopeData\(state\.scope, state\.allocationSource\)/);
 assert.doesNotMatch(app, /function setAllocationSource|updateAllocationSourceControls/);
 assert.match(html, /receipt-hierarchy\.js/);

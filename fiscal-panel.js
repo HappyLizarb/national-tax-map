@@ -100,6 +100,7 @@ async function updateAllocation(data) {
   state.detailRequest++;
   setText("#allocationTotal", "Loading departments…");
   $("#categoryList").innerHTML = ""; $("#breakdownDetails").textContent = "Choose a department after it loads.";
+  setText("#sourceExplorerTitle", "Agency source explorer");
   $("#agencyRows").innerHTML = ""; setText("#sourceExplorerNote", "Itemized rows load only after a department is selected.");
   try {
     const primary = await DepartmentData.loadSummary(data.name);
@@ -116,7 +117,7 @@ async function allocationSummary(scope, primary) {
   const archiveUrl = primary.departments.flatMap((row) => row.relatedSources || [])
     .find(([label, url]) => label === "Prior state layer snapshot" && url.startsWith("data/"))?.[1];
   if (!archiveUrl) throw new Error("No research archive for " + scope);
-  return model.reconcileStateArchive(scope, await DepartmentData.loadDetail(archiveUrl));
+  return model.reconcileStateArchive(scope, await DepartmentData.loadDetail(archiveUrl), primary);
 }
 function renderAllocation(summary, scopeData) {
   const positiveTotal = summary.departments.reduce((sum, row) => sum + Math.max(row.amount, 0), 0);
@@ -191,38 +192,70 @@ async function showBreakdown(department) {
   const request = ++state.detailRequest;
   const details = $("#breakdownDetails");
   const detailLabel = department.reconciliationTarget ? "signed bridge" : shareLabel(department);
+  setText("#sourceExplorerTitle", department.reconciliationTarget ? "Reconciliation account schedule" : "Agency source explorer");
   details.innerHTML = '<strong>' + escapeHtml(department.name) + '</strong><span>' + model.formatMoney(department.amount) + ' · ' + detailLabel + '</span>' + sourceBasisNote(department) + sourceLink(department.sourceUrl, department.comparisonUrl, department.comparisonLabel, department.relatedSources);
+  if (department.detailSources) {
+    await loadReconciliationDetail(department, request);
+    return;
+  }
   if (department.detailUrl) {
-    setText("#sourceExplorerNote", "Loading itemized rows for " + department.name + "…");
-    try {
-      const [detail, research] = await Promise.all([
-        DepartmentData.loadDetail(department.detailUrl),
-        department.researchDetailUrl ? DepartmentData.loadDetail(department.researchDetailUrl) : null
-      ]);
-      if (request === state.detailRequest) renderDetail(research ? {
-        ...detail,
-        sourceBreakdowns: [...(detail.sourceBreakdowns || []), ...(research.sourceBreakdowns || []),
-          ...(research.supplementalBreakdowns || [])]
-      } : detail);
-    } catch (error) {
-      if (request === state.detailRequest) setText("#sourceExplorerNote", error.message);
-    }
+    await loadDepartmentDetail(department, request);
     return;
   }
-  if (department.program) {
-    renderDetail({
-      department: department.name,
-      rows: [[department.name, department.program, department.amount, department.sourceAmount, department.sourceRows]],
-      sourceUrl: department.sourceUrl,
-      note: department.note
-    });
-    return;
-  }
+  const inlineDetail = department.detailRows ? {
+    department: department.name, rows: department.detailRows, sourceUrl: department.sourceUrl,
+    sourceUrls: [["Target control", department.sourceUrl], ...(department.relatedSources || [])],
+    note: "Signed control rows total " + model.formatMoney(department.amount)
+      + " exactly; the schedule compares published accounts without assigning causes across unlike classifications."
+  } : department.program ? { department: department.name,
+    rows: [[department.name, department.program, department.amount, department.sourceAmount, department.sourceRows]],
+    sourceUrl: department.sourceUrl, note: department.note } : null;
+  if (inlineDetail) { renderDetail(inlineDetail); return; }
   setText("#sourceExplorerNote", department.note || "No additional itemized rows are available for this source group.");
   $("#agencyRows").innerHTML = "";
 }
+
+// Load every leaf row from both published sides of a reconciliation bridge.
+async function loadReconciliationDetail(department, request) {
+  setText("#sourceExplorerNote", "Loading source-native accounts for " + department.name + "…");
+  try {
+    const groups = await Promise.all(department.detailSources.map(async (source) => {
+      const detail = source.detailUrl ? await DepartmentData.loadDetail(source.detailUrl) : null;
+      return model.expandReconciliationSource(source, detail);
+    }));
+    if (request !== state.detailRequest) return;
+    const expanded = groups.reduce((all, group) => {
+      for (const key of ["rows", "itemBreakdowns", "supplementalBreakdowns", "sourceBreakdowns"])
+        all[key].push(...group[key]);
+      return all;
+    }, { rows: [], itemBreakdowns: [], supplementalBreakdowns: [], sourceBreakdowns: [] });
+    renderDetail({ ...expanded, department: department.name, showAll: true, sourceUrl: department.sourceUrl,
+      sourceUrls: [["Target control", department.sourceUrl], ...(department.relatedSources || [])],
+      note: "Signed source-native rows total " + model.formatMoney(department.amount)
+        + " exactly; unlike classifications are not presented as causal account matches." });
+  } catch (error) {
+    if (request === state.detailRequest) setText("#sourceExplorerNote", error.message);
+  }
+}
+
+// Load an ordinary department report and merge its optional research panels.
+async function loadDepartmentDetail(department, request) {
+  setText("#sourceExplorerNote", "Loading itemized rows for " + department.name + "…");
+  try {
+    const [detail, research] = await Promise.all([
+      DepartmentData.loadDetail(department.detailUrl),
+      department.researchDetailUrl ? DepartmentData.loadDetail(department.researchDetailUrl) : null
+    ]);
+    if (request !== state.detailRequest) return;
+    renderDetail(research ? { ...detail,
+      sourceBreakdowns: [...(detail.sourceBreakdowns || []), ...(research.sourceBreakdowns || []),
+        ...(research.supplementalBreakdowns || [])] } : detail);
+  } catch (error) {
+    if (request === state.detailRequest) setText("#sourceExplorerNote", error.message);
+  }
+}
 function renderDetail(detail) {
-  const limit = 500, rows = detail.rows.slice(0, limit);
+  const limit = detail.showAll ? detail.rows.length : 500, rows = detail.rows.slice(0, limit);
   const hierarchy = renderReceiptHierarchy(detail, model.formatMoney, escapeHtml);
   const note = detail.note ? " · " + detail.note : "";
   const rowCount = hierarchy ? detail.sourceFloor.accountCount + " Treasury receipt accounts · 1 MTS rounding bridge"

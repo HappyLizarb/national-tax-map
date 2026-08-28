@@ -45,7 +45,10 @@ Open <http://localhost:4173>, or run `node test.js` to validate the data.
 - State allocation pies start with the official research archive, add a signed
   `Census adjustments` control, then add a signed `GAAP adjustments` control.
   The two rows reconcile published totals without assigning an unsupported
-  difference to a receiver, agency, or program.
+  difference to a receiver, agency, or program. Selecting either adjustment
+  opens its full signed schedule: source-native Census function rows versus
+  official archive account/program rows, then audited GAAP expenses versus the
+  Census function rows. A source without deeper detail stays as its named control.
 - The default state map uses FY2024 full-accrual GAAP total-primary-government
   resources, expenses, and fiscal-year-end net position for all 50 states. Component
   units and fiduciary funds are excluded; qualified audit scopes are disclosed.

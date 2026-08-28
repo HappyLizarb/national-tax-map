@@ -15,10 +15,12 @@
         location: "Statement of Net Position, printed p. 32; Statement of Activities, printed pp. 33–34", sourceUrl: "https://comptroller.alabama.gov/wp-content/uploads/2025/04/ACFR-2024.Alabama.pdf" },
       "Alaska": {
         period: "FY ended 2024-06-30", resources: 15864081000, expenses: 11733030000, changeInNetPosition: 4131051000, netPosition: 97440184000, precision: 1000,
+        expenseDetailUrl: "data/state-ak/archive-state-source/state-ak-acfr-function-context.json",
         auditStatus: "qualified/disclaimed", auditNote: "Qualified governmental-activities opinion for the Medicaid-management-system matter; business-type activities unmodified.", document: "FY2024 Annual Comprehensive Financial Report",
         location: "Statement 1.01, Statement of Net Position, printed pp. 20–21; Statement 1.02, Statement of Activities, printed pp. 22–23", sourceUrl: "https://doa.alaska.gov/dof/reports/resource/2024acfr.pdf" },
       "Arizona": {
         period: "FY ended 2024-06-30", resources: 62808323000, expenses: 62548895000, changeInNetPosition: 259428000, netPosition: 49380980000, precision: 1000,
+        expenseDetailUrl: "data/state-az/archive-state-source/state-az-acfr-function-context.json",
         auditStatus: "qualified/disclaimed", auditNote: "Report gives qualified and unmodified opinions; the total-primary-government tuple is not covered by one clean unmodified opinion.", document: "FY2024 Financial Report",
         location: "Statement of Net Position, printed pp. 48–49; Statement of Activities, printed pp. 50–51", sourceUrl: "https://www.azauditor.gov/sites/default/files/2026-04/StateOfArizonaJune30_2024FinancialReport_1.pdf" },
       "Arkansas": {
@@ -27,10 +29,12 @@
         location: "Statement of Net Position, printed pp. 18–19; Statement of Activities, printed pp. 22–23", sourceUrl: "https://www.dfa.arkansas.gov/wp-content/uploads/cafr2024.pdf" },
       "California": {
         period: "Year ended June 30, 2024", resources: 483640691000, expenses: 478596393000, changeInNetPosition: 5044298000, netPosition: 14644436000, precision: 1000,
+        expenseDetailUrl: "data/state-ca/archive-state-source/state-ca-acfr-functions.json",
         auditStatus: "qualified/disclaimed", auditNote: "Governmental activities received an unmodified opinion; business-type activities received a qualified opinion and the Unemployment Programs Fund received a disclaimer.", document: "State of California FY2024 Annual Comprehensive Financial Report",
         location: "Statement of Net Position, pp. 36–38; Statement of Activities, pp. 40–41", sourceUrl: "https://www.sco.ca.gov/Files-ARD/ACFR/acfr24web.pdf" },
       "Colorado": {
         period: "FY ended 2024-06-30", resources: 55667039000, expenses: 50760292000, changeInNetPosition: 4906747000, netPosition: 28411188000, precision: 1000,
+        expenseDetailUrl: "data/state-co/archive-state-source/state-co-acfr-function-context.json",
         auditStatus: "unmodified", auditNote: "State Auditor issued an unmodified opinion.", document: "FY2024 Annual Comprehensive Financial Report",
         location: "Statement of Net Position, printed pp. 42–43; Statement of Activities, printed pp. 44–45", sourceUrl: "https://content.leg.colorado.gov/sites/default/files/fy2024_acfr_final_1.pdf" },
       "Connecticut": {
@@ -43,6 +47,7 @@
         location: "Statement of Net Position, printed pp. 22–23; Statement of Activities, printed p. 24", sourceUrl: "https://accountingfiles.delaware.gov/docs/2024acfr.pdf" },
       "Florida": {
         period: "FY ended 2024-06-30", resources: 141447490000, expenses: 129071958000, changeInNetPosition: 12375532000, netPosition: 151547318000, precision: 1000,
+        expenseDetailUrl: "data/state-fl/archive-state-source/state-fl-acfr-functions.json",
         auditStatus: "unmodified", auditNote: "Unmodified opinion.", document: "FY2024 Annual Comprehensive Financial Report",
         location: "Statement of Net Position, printed pp. 25–26; Statement of Activities, printed p. 27", sourceUrl: "https://myfloridacfo.com/docs-sf/default-source/transparency-docs/cafr/fye-2024-state-of-florida-annual-comprehensive-financial-report.pdf?sfvrsn=1b01575_4" },
       "Georgia": {
@@ -103,6 +108,7 @@
         location: "Statement of Net Position, printed pp. 31–33; MD&A, Changes in Net Position table", sourceUrl: "https://mn.gov/mmb/assets/2024%20-%20Final%20ACFR%20with%20Cover%202024%20-%20accessible_tcm1059-661432.pdf" },
       "Mississippi": {
         period: "FY ended 2024-06-30", resources: 23883634000, expenses: 23918437000, changeInNetPosition: -34803000, netPosition: 22097785000, precision: 1000,
+        expenseDetailUrl: "data/state-ms/archive-state-source/state-ms-acfr-function-context.json",
         auditStatus: "not independently confirmed", auditNote: "The FY2024 ACFR contains the state independent auditor's report; this file does not restate its opinion wording.", document: "FY2024 Annual Comprehensive Financial Report",
         location: "Statement of Net Position, printed pp. 34–35; Statement of Activities, printed pp. 36–38", sourceUrl: "https://www.dfa.ms.gov/sites/default/files/Financial%20Reporting%20Home/Publications/ACFR/FY24%20%20ACFR%20Final.pdf" },
       "Missouri": {
@@ -135,6 +141,7 @@
         location: "Statement of Net Position, printed pp. 24–25; Statement of Activities, printed p. 26", sourceUrl: "https://www.nmdfa.state.nm.us/wp-content/uploads/2025/04/FINAL-341a-State-of-New-Mexico-FY24-ACFR.pdf" },
       "New York": {
         period: "FY ended 2024-03-31", resources: 290060000000, expenses: 275665000000, changeInNetPosition: 14395000000, netPosition: 45283000000, precision: 1000,
+        expenseDetailUrl: "data/state-ny/archive-state-source/state-ny-acfr-functions.json",
         auditStatus: "unmodified", auditNote: "Unmodified opinions on the State's basic financial statements; no qualification reported.", document: "FY2024 Annual Comprehensive Financial Report",
         location: "Statement of Net Position, printed p. 38; Statement of Activities, printed p. 39; condensed primary-government statement, FCR p. 3", sourceUrl: "https://www.osc.ny.gov/files/reports/finance/pdf/annual-comprehensive-financial-report-2024.pdf" },
       "North Carolina": {
@@ -159,6 +166,7 @@
         location: "Statement of Net Position p. 33; Statement of Activities pp. 34-35", sourceUrl: "https://www.oregon.gov/das/Financial/Acctng/Documents/2024_ACFR.pdf" },
       "Pennsylvania": {
         period: "Year ended June 30, 2024", resources: 118018093000, expenses: 111201827000, changeInNetPosition: 6816266000, netPosition: 34606396000, precision: 1000,
+        expenseDetailUrl: "data/state-pa/archive-state-source/state-pa-acfr-functions.json",
         auditStatus: "unmodified", auditNote: "", document: "Commonwealth of Pennsylvania FY2024 Annual Comprehensive Financial Report",
         location: "Statement of Net Position, pp. 50–51; Statement of Activities, p. 52", sourceUrl: "https://www.pa.gov/content/dam/copapwp-pagov/en/budget/documents/publications-and-reports/annualfinancialreport/june-30-2024%20acfr.pdf" },
       "Rhode Island": {
@@ -175,14 +183,17 @@
         location: "Statement of Net Position p. 34; Statement of Activities p. 36; Changes in Net Position table p. 171", sourceUrl: "https://bfm.sd.gov/ACFR/SD_ACFR_2024.PDF" },
       "Tennessee": {
         period: "FY ended 2024-06-30", resources: 49808432000, expenses: 47759686000, changeInNetPosition: 2048746000, netPosition: 62374609000, precision: 1000,
+        expenseDetailUrl: "data/state-tn/archive-state-source/state-tn-acfr-functions.json",
         auditStatus: "unmodified", auditNote: "Comptroller Division of State Audit clean/unmodified ACFR opinion. Reconciled resources add the $432k permanent-fund contribution to the printed $49,808,000k revenue subtotal, producing $49,808,432k against expenses and printed change.", document: "FY2024 Annual Comprehensive Financial Report",
         location: "Statement of Net Position p. 35; Changes in Net Position p. 25; Statement of Activities p. 36", sourceUrl: "https://www.tn.gov/content/dam/tn/finance/acfr/ACFR_FY24.pdf" },
       "Texas": {
         period: "Year ended August 31, 2024", resources: 250435846000, expenses: 212131483000, changeInNetPosition: 38304363000, netPosition: 240096155000, precision: 1000,
+        expenseDetailUrl: "data/state-tx/archive-state-source/state-tx-acfr-functions.json",
         auditStatus: "unmodified", auditNote: "", document: "State of Texas FY2024 Annual Comprehensive Financial Report",
         location: "Statement of Net Position, pp. 38–40; Statement of Activities, pp. 41–42", sourceUrl: "https://comptroller.texas.gov/transparency/reports/comprehensive-annual-financial/2024/basic.pdf" },
       "Utah": {
         period: "FY ended 2024-06-30", resources: 24829883000, expenses: 22117390000, changeInNetPosition: 2712493000, netPosition: 46470593000, precision: 1000,
+        expenseDetailUrl: "data/state-ut/archive-state-source/state-ut-acfr-function-context.json",
         auditStatus: "audited", auditNote: "Audited ACFR; GASB accounting-error correction/restatement disclosed for beginning net position, not an opinion qualification.", document: "FY2024 Annual Comprehensive Financial Report",
         location: "Statement of Net Position p. 37; Statement of Activities p. 38; MD&A net-position/change tables pp. 23, 25", sourceUrl: "https://finance.utah.gov/wp-content/uploads/FY24-ACFR-Final.pdf" },
       "Vermont": {

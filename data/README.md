@@ -4,7 +4,7 @@ Each jurisdiction directory has one `.js` Census summary module and only the JSO
 
 `[subAgency, program, amount, sourceAmount, sourceRows]`
 
-Each state pie loads its official itemized research archive, adds a signed `Census adjustments` row to reach the FY2024 Census expenditure control, then adds a signed `GAAP adjustments` row to reach audited primary-government expenses. The exact residuals are controls, not invented agency allocations; their notes qualify likely accounting and entity-boundary causes when no official numeric bridge exists. The federal pie uses Treasury FY2024 MTS budget functions. Charts normalize positive slices to 100%, while signed negative adjustments remain visible in the list.
+Each state pie loads its official itemized research archive, adds a signed `Census adjustments` row to reach the FY2024 Census expenditure control, then adds a signed `GAAP adjustments` row to reach audited primary-government expenses. Each adjustment carries `detailSources` that load every available source-native Census function row and official archive account/program row; sources without a detail file remain as named fallback controls. The GAAP bridge adds the audited expense control and reverses the detailed Census rows. These signed rows reproduce each residual exactly but do not invent causal account matches across unlike classifications. The federal pie uses Treasury FY2024 MTS budget functions. Charts normalize positive slices to 100%, while signed negative adjustments remain visible in the list.
 
 `state-financial-results.js` supplies the 50-state government-wide GAAP control:
 resources, expenses, annual change, and fiscal-year-end net position from one

@@ -98,8 +98,56 @@ function archiveQualification(basis, archive) {
   return basis.label + ". " + basis.detail + " " + archiveBasisEffects[basis.kind];
 }
 
+// Describe one source whose detailed rows replace its signed fallback control.
+function bridgeDetailSource(row, prefix, direction, description) {
+  const label = prefix + " · " + row.name, amount = direction * row.amount;
+  const verb = direction < 0 ? "Removed" : "Added";
+  return { label, direction, detailUrl: row.detailUrl || null,
+    fallbackRow: [label, verb + " " + description + " · " + (row.program || "Published control"),
+      amount, amount, row.sourceRows || 1] };
+}
+
+// Preserve every published Census function as a loadable signed source.
+function censusDetailSources(censusSummary, total, direction) {
+  const rows = censusSummary?.departments?.length ? censusSummary.departments
+    : [{ name: "Total expenditure", program: "Published Census control", amount: total }];
+  return rows.map((row) => bridgeDetailSource(row, "Census", direction, "published Census account"));
+}
+
+// Apply a bridge sign and source prefix to one source-native base row.
+function signedDetailRow(source, row) {
+  const ceiling = source.label.startsWith("GAAP") && Math.abs(row[2]) >= 1e10
+    ? " · official publication ceiling" : "";
+  const signed = [source.label + " › " + row[0], row[1] + ceiling, source.direction * row[2], ...row.slice(3)];
+  if (Number.isFinite(row[3])) signed[3] = source.direction * row[3];
+  return signed;
+}
+
+// Carry one researched child panel onto its signed reconciliation parent.
+function signedDetailPanel(source, panel) {
+  const signed = { ...panel, rows: panel.rows.map((row) =>
+    [row[0], row[1], source.direction * row[2], source.direction * (row[3] ?? row[2]), ...row.slice(4)]) };
+  if (panel.title) signed.title = source.label + " · " + panel.title;
+  if (panel.parent) signed.parent = signedDetailRow(source, panel.parent);
+  if (panel.covers) signed.covers = panel.covers.map((row) => signedDetailRow(source, row));
+  if (Number.isFinite(panel.sourceTotal)) signed.sourceTotal = source.direction * panel.sourceTotal;
+  return signed;
+}
+
+// Expand a bridge source without discarding its previously researched panels.
+function expandReconciliationSource(source, detail) {
+  if (!detail) return { rows: [source.fallbackRow], itemBreakdowns: [],
+    supplementalBreakdowns: [], sourceBreakdowns: [] };
+  const rows = detail.rows || detail.departments.map((row) =>
+    [row.name, row.program, row.amount, row.sourceAmount, row.sourceRows]);
+  const expand = (key) => (detail[key] || []).map((panel) => signedDetailPanel(source, panel));
+  return { rows: rows.map((row) => signedDetailRow(source, row)),
+    itemBreakdowns: expand("itemBreakdowns"), supplementalBreakdowns: expand("supplementalBreakdowns"),
+    sourceBreakdowns: expand("sourceBreakdowns") };
+}
+
 // Add two sequential signed bridges without assigning unsupported amounts to agencies.
-function reconcileStateArchive(dataset, census, accountingBases, financialResults, name, archive) {
+function reconcileStateArchive(dataset, census, accountingBases, financialResults, name, archive, censusSummary) {
   const raw = dataset.states[name], financial = financialResults?.states?.[name];
   if (!raw || !financial) return archive;
   const archiveTotal = archive.itemizedTotal ?? archive.sourceTotal;
@@ -109,10 +157,19 @@ function reconcileStateArchive(dataset, census, accountingBases, financialResult
   const gaapQualification = financialResults.basis + ". " + financialResults.boundary + ". "
     + financial.auditNote + " " + financial.document + ", " + financial.location + ".";
   const gaapNote = gaapQualification + " " + name + " publishes no numeric Census-to-GAAP bridge, so the difference remains an unallocated boundary control. Potential mechanisms are capitalization versus depreciation or amortization, asset sales or liquidations, pension/OPEB and other accruals, debt and transfer eliminations, and primary-government business-type consumer activity; none is assigned a numeric share without state evidence.";
-  const censusRow = adjustmentRow("census-adjustments", "Census adjustments", raw.total - archiveTotal,
-    archiveTotal, raw.total, censusUrl, censusNote, [["Research archive source", archive.sourceUrl]]);
-  const gaapRow = adjustmentRow("gaap-adjustments", "GAAP adjustments", financial.expenses - raw.total,
-    raw.total, financial.expenses, financial.sourceUrl, gaapNote, [["Census FY2024 table", censusUrl], ["Research archive source", archive.sourceUrl]]);
+  const gaapContextUrl = archive.departments.flatMap((row) => row.relatedSources || [])
+    .find(([label, url]) => /ACFR function/i.test(label) && url.startsWith("data/"))?.[1];
+  const censusRow = { ...adjustmentRow("census-adjustments", "Census adjustments", raw.total - archiveTotal,
+    archiveTotal, raw.total, censusUrl, censusNote, [["Research archive source", archive.sourceUrl]]),
+    detailSources: [...censusDetailSources(censusSummary, raw.total, 1),
+      ...archive.departments.map((row) => bridgeDetailSource(row, "Official archive", -1,
+        "official research-archive account"))] };
+  const gaapRow = { ...adjustmentRow("gaap-adjustments", "GAAP adjustments", financial.expenses - raw.total,
+    raw.total, financial.expenses, financial.sourceUrl, gaapNote, [["Census FY2024 table", censusUrl], ["Research archive source", archive.sourceUrl]]),
+    detailSources: [bridgeDetailSource({ name: "Primary-government expenses", amount: financial.expenses,
+      program: "Audited Statement of Activities control", detailUrl: financial.expenseDetailUrl || gaapContextUrl },
+      "GAAP", 1, "audited expense control"),
+      ...censusDetailSources(censusSummary, raw.total, -1)] };
   return { ...archive, sourceTotal: financial.expenses, itemizedTotal: financial.expenses,
     sourceUrl: financial.sourceUrl,
     sourceUrls: [["Research archive", archive.sourceUrl], ["Census FY2024 table", censusUrl],
@@ -214,7 +271,8 @@ function createModel(dataset, stateSources, alternates, federalSources, ledgerTo
     formatMoney,
     formatExactMoney,
     sourceLinks: (name, _layer, fips = "") => sourceLinksFor(stateSources, alternates, sources, name, fips),
-    reconcileStateArchive: (name, archive) => reconcileStateArchive(dataset, sources[0], accountingBases || {}, financialResults || {}, name, archive),
+    reconcileStateArchive: (name, archive, censusSummary) => reconcileStateArchive(dataset, sources[0], accountingBases || {}, financialResults || {}, name, archive, censusSummary),
+    expandReconciliationSource,
     federalSourceRows: () => federalSources || [],
     taxOverviewFor: (name) => taxOverviewFor(taxRates, incomeTiers, estimates, name)
   };
