@@ -5,191 +5,29 @@
   "fiscalYear": 2024,
   "ledgerAmount": 12537196126.72,
   "sourceTotal": 17086078495.37,
-  "sourceUrl": "https://api.usaspending.gov/api/v2/agency/060/object_class/?fiscal_year=2024&limit=100&page=1",
+  "sourceUrl": "https://api.usaspending.gov/api/v2/agency/060/program_activity/?fiscal_year=2024&limit=100&page=1",
   "sourceUrls": [
-    [
-      "FY2024 gross outlays by object class",
-      "https://api.usaspending.gov/api/v2/agency/060/object_class/?fiscal_year=2024&limit=100&page=1"
-    ],
-    [
-      "FY2024 agency budgetary resources total",
-      "https://api.usaspending.gov/api/v2/agency/060/budgetary_resources/?fiscal_year=2024"
-    ]
+    ["FY2024 gross outlays by program activity · page 1", "https://api.usaspending.gov/api/v2/agency/060/program_activity/?fiscal_year=2024&limit=100&page=1"],
+    ["FY2024 agency budgetary resources total", "https://api.usaspending.gov/api/v2/agency/060/budgetary_resources/?fiscal_year=2024"]
   ],
-  "rowSchema": [
-    "subAgency",
-    "program",
-    "amount",
-    "sourceAmount",
-    "sourceRows"
-  ],
+  "rowSchema": ["subAgency", "program", "amount", "sourceAmount", "sourceRows"],
   "rows": [
-    [
-      "Railroad Retirement Board",
-      "Insurance claims and indemnities",
-      14396710276.73,
-      14396710276.73,
-      null
-    ],
-    [
-      "Railroad Retirement Board",
-      "Financial transfers",
-      2332619787.72,
-      2332619787.72,
-      null
-    ],
-    [
-      "Railroad Retirement Board",
-      "Interest and dividends",
-      150136443.49,
-      150136443.49,
-      null
-    ],
-    [
-      "Railroad Retirement Board",
-      "Full-time permanent",
-      86537588.55,
-      86537588.55,
-      null
-    ],
-    [
-      "Railroad Retirement Board",
-      "Medical care",
-      47229217.77,
-      47229217.77,
-      null
-    ],
-    [
-      "Railroad Retirement Board",
-      "Civilian personnel benefits",
-      34179798.08,
-      34179798.08,
-      null
-    ],
-    [
-      "Railroad Retirement Board",
-      "Other goods and services from Federal sources",
-      10152581.27,
-      10152581.27,
-      null
-    ],
-    [
-      "Railroad Retirement Board",
-      "Communications, utilities, and miscellaneous charges",
-      5721331.14,
-      5721331.14,
-      null
-    ],
-    [
-      "Railroad Retirement Board",
-      "Refunds",
-      4933029.2,
-      4933029.2,
-      null
-    ],
-    [
-      "Railroad Retirement Board",
-      "Rental payments to GSA",
-      3541908.78,
-      3541908.78,
-      null
-    ],
-    [
-      "Railroad Retirement Board",
-      "Operation and maintenance of equipment",
-      3866599.09,
-      3866599.09,
-      null
-    ],
-    [
-      "Railroad Retirement Board",
-      "Operation and maintenance of facilities",
-      2320763.99,
-      2320763.99,
-      null
-    ],
-    [
-      "Railroad Retirement Board",
-      "Other personnel compensation",
-      2459175.51,
-      2459175.51,
-      null
-    ],
-    [
-      "Railroad Retirement Board",
-      "Other than full-time permanent",
-      2257011.74,
-      2257011.74,
-      null
-    ],
-    [
-      "Railroad Retirement Board",
-      "Travel and transportation of persons",
-      868414.64,
-      868414.64,
-      null
-    ],
-    [
-      "Railroad Retirement Board",
-      "Undistributed",
-      492369.78,
-      492369.78,
-      null
-    ],
-    [
-      "Railroad Retirement Board",
-      "Printing and reproduction",
-      289258.63,
-      289258.63,
-      null
-    ],
-    [
-      "Railroad Retirement Board",
-      "Equipment",
-      844818.4,
-      844818.4,
-      null
-    ],
-    [
-      "Railroad Retirement Board",
-      "Supplies and materials",
-      351502.15,
-      351502.15,
-      null
-    ],
-    [
-      "Railroad Retirement Board",
-      "Object class not reported by official source",
-      334886.34,
-      334886.34,
-      null
-    ],
-    [
-      "Railroad Retirement Board",
-      "Benefits for former personnel",
-      227852.35,
-      227852.35,
-      null
-    ],
-    [
-      "Railroad Retirement Board",
-      "Transportation of things",
-      3880.02,
-      3880.02,
-      null
-    ]
+    ["Railroad Retirement Board", "RAILROAD SOCIAL SECURITY EQUIVALENT BENEFIT ACCOUNT (DIRECT)", 8705160183.57, 8705160183.57, null],
+    ["Railroad Retirement Board", "RAIL INDUSTRY PENSION FUND (DIRECT)", 5875637936.24, 5875637936.24, null],
+    ["Railroad Retirement Board", "NRRIT EXPENSES", 1240788274.68, 1240788274.68, null],
+    ["Railroad Retirement Board", "FEDERAL PAYMENTS TO RAILROAD RETIREMENT ACCOUNTS (DIRECT)", 962522079.33, 962522079.33, null],
+    ["Railroad Retirement Board", "RAIL INDUSTRY PENSION FUND", 160053158.86, 160053158.86, null],
+    ["Railroad Retirement Board", "RAILROAD UNEMPLOYMENT INSURANCE TRUST FUND (DIRECT)", 100609304.16, 100609304.16, null],
+    ["Railroad Retirement Board", "MEDICARE AND OTHER REIMBURSEMENTS", 34683419.81, 34683419.81, null],
+    ["Railroad Retirement Board", "DUAL BENEFITS PAYMENTS ACCOUNT (DIRECT)", 6184367.57, 6184367.57, null],
+    ["Railroad Retirement Board", "RAILROAD UNEMPLOYMENT INSURANCE ENHANCED BENEFIT PAYMENTS", 191417.58, 191417.58, null],
+    ["Railroad Retirement Board", "RAILROAD UNEMPLOYMENT INSURANCE WAIVER OF 7 DAY PERIOD", 185592.52, 185592.52, null],
+    ["Railroad Retirement Board", "RAILROAD UNEMPLOYMENT INSURANCE EXTENDED BENEFIT PAYMENTS", 62761.05, 62761.05, null]
   ],
   "sourceBasis": "official source amount",
-  "sourceCheck": {
-    "objectClassRows": 22,
-    "objectClassTotal": 17086078495.37,
-    "agencyTotal": 17086078495.37,
-    "difference": 0
-  },
+  "sourceCheck": {"groupRows": 11, "programActivityTotal": 17086078495.37, "agencyTotal": 17086078495.37, "difference": 0},
   "normalizationAdjustment": -0.01,
-  "hierarchyNote": "The source endpoint returns agency-level object-class aggregates; no individual employees or payees are included.",
-  "sourceLabelMap": {
-    "Object class not reported by official source": "Unknown"
-  },
-  "note": "The official USAspending object-class response labels 1 row as Unknown; the display label states that the object class was not reported and no category was inferred. Amounts are shown on the official source basis; no comparator normalization was applied."
+  "hierarchyNote": "USAspending program-activity rows preserve the agency gross-outlay control; the parent entity is repeated as the sub-agency placeholder.",
+  "sourceLabelMap": {"Object class not reported by official source": "Unknown"},
+  "note": "Program activities replace the former generic object-class view and remain on USAspending gross-outlay basis; no comparator normalization was applied."
 }

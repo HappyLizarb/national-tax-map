@@ -5,202 +5,46 @@
   "fiscalYear": 2024,
   "ledgerAmount": 23499457921.01,
   "sourceTotal": 32025787790.09,
-  "sourceUrl": "https://api.usaspending.gov/api/v2/agency/096/object_class/?fiscal_year=2024&limit=100&page=1",
+  "sourceUrl": "https://api.usaspending.gov/api/v2/agency/096/program_activity/?fiscal_year=2024&limit=100&page=1",
   "sourceUrls": [
-    [
-      "FY2024 gross outlays by object class",
-      "https://api.usaspending.gov/api/v2/agency/096/object_class/?fiscal_year=2024&limit=100&page=1"
-    ],
-    [
-      "FY2024 agency budgetary resources total",
-      "https://api.usaspending.gov/api/v2/agency/096/budgetary_resources/?fiscal_year=2024"
-    ]
+    ["FY2024 gross outlays by program activity · page 1", "https://api.usaspending.gov/api/v2/agency/096/program_activity/?fiscal_year=2024&limit=100&page=1"],
+    ["FY2024 agency budgetary resources total", "https://api.usaspending.gov/api/v2/agency/096/budgetary_resources/?fiscal_year=2024"]
   ],
-  "rowSchema": [
-    "subAgency",
-    "program",
-    "amount",
-    "sourceAmount",
-    "sourceRows"
-  ],
+  "rowSchema": ["subAgency", "program", "amount", "sourceAmount", "sourceRows"],
   "rows": [
-    [
-      "Corps of Engineers - Civil Works",
-      "Land and structures",
-      7935596589.79,
-      7935596589.79,
-      null
-    ],
-    [
-      "Corps of Engineers - Civil Works",
-      "Other goods and services from Federal sources",
-      9666413629.54,
-      9666413629.54,
-      null
-    ],
-    [
-      "Corps of Engineers - Civil Works",
-      "Other services from non-Federal sources",
-      5250761980.92,
-      5250761980.92,
-      null
-    ],
-    [
-      "Corps of Engineers - Civil Works",
-      "Full-time permanent",
-      4414144288.09,
-      4414144288.09,
-      null
-    ],
-    [
-      "Corps of Engineers - Civil Works",
-      "Civilian personnel benefits",
-      1132663912.24,
-      1132663912.24,
-      null
-    ],
-    [
-      "Corps of Engineers - Civil Works",
-      "Operation and maintenance of facilities",
-      924251187.78,
-      924251187.78,
-      null
-    ],
-    [
-      "Corps of Engineers - Civil Works",
-      "Advisory and assistance services",
-      1319386639.86,
-      1319386639.86,
-      null
-    ],
-    [
-      "Corps of Engineers - Civil Works",
-      "Other personnel compensation",
-      285742134.55,
-      285742134.55,
-      null
-    ],
-    [
-      "Corps of Engineers - Civil Works",
-      "Rental payments to GSA",
-      281648875.22,
-      281648875.22,
-      null
-    ],
-    [
-      "Corps of Engineers - Civil Works",
-      "Travel and transportation of persons",
-      242366829.86,
-      242366829.86,
-      null
-    ],
-    [
-      "Corps of Engineers - Civil Works",
-      "Supplies and materials",
-      189114297.89,
-      189114297.89,
-      null
-    ],
-    [
-      "Corps of Engineers - Civil Works",
-      "Communications, utilities, and miscellaneous charges",
-      120676642.1,
-      120676642.1,
-      null
-    ],
-    [
-      "Corps of Engineers - Civil Works",
-      "Operation and maintenance of equipment",
-      66503833.05,
-      66503833.05,
-      null
-    ],
-    [
-      "Corps of Engineers - Civil Works",
-      "Other than full-time permanent",
-      71898056.23,
-      71898056.23,
-      null
-    ],
-    [
-      "Corps of Engineers - Civil Works",
-      "Equipment",
-      67154084.24,
-      67154084.24,
-      null
-    ],
-    [
-      "Corps of Engineers - Civil Works",
-      "Rental payments to others",
-      41988790.38,
-      41988790.38,
-      null
-    ],
-    [
-      "Corps of Engineers - Civil Works",
-      "Transportation of things",
-      13019177.13,
-      13019177.13,
-      null
-    ],
-    [
-      "Corps of Engineers - Civil Works",
-      "Grants, subsidies, and contributions",
-      587142.85,
-      587142.85,
-      null
-    ],
-    [
-      "Corps of Engineers - Civil Works",
-      "Printing and reproduction",
-      644379.21,
-      644379.21,
-      null
-    ],
-    [
-      "Corps of Engineers - Civil Works",
-      "Interest and dividends",
-      438708.26,
-      438708.26,
-      null
-    ],
-    [
-      "Corps of Engineers - Civil Works",
-      "Medical care",
-      638511.14,
-      638511.14,
-      null
-    ],
-    [
-      "Corps of Engineers - Civil Works",
-      "Insurance claims and indemnities",
-      47788.73,
-      47788.73,
-      null
-    ],
-    [
-      "Corps of Engineers - Civil Works",
-      "Subsistence and support of persons",
-      100311.03,
-      100311.03,
-      null
-    ],
-    [
-      "Corps of Engineers - Civil Works",
-      "Research and development contracts",
-      0,
-      0,
-      null
-    ]
+    ["Corps of Engineers - Civil Works", "INTRA-CORPS", 13283840296.36, 13283840296.36, null],
+    ["Corps of Engineers - Civil Works", "COMMERCIAL NAVIGATION", 4106838777.02, 4106838777.02, null],
+    ["Corps of Engineers - Civil Works", "MULTIPURPOSE AND OTHER PROGRAMS", 2881097919.48, 2881097919.48, null],
+    ["Corps of Engineers - Civil Works", "HARBOR MAINTENANCE TRUST FUND", 2696586953.66, 2696586953.66, null],
+    ["Corps of Engineers - Civil Works", "FLOOD RISK MANAGEMENT", 2444652609.04, 2444652609.04, null],
+    ["Corps of Engineers - Civil Works", "DEPARTMENT OF HOMELAND SECURITY", 2116464501.86, 2116464501.86, null],
+    ["Corps of Engineers - Civil Works", "DEPARTMENT OF VETERAN AFFAIRS", 1005442248.54, 1005442248.54, null],
+    ["Corps of Engineers - Civil Works", "AQUATIC ECOSYSTEM RESTORATION", 576222730.69, 576222730.69, null],
+    ["Corps of Engineers - Civil Works", "EMERGENCY MANAGEMENT", 526612672.56, 526612672.56, null],
+    ["Corps of Engineers - Civil Works", "FLOOD RISK MANAGMENT", 405347043.16, 405347043.16, null],
+    ["Corps of Engineers - Civil Works", "ENVIROMENTAL PROTECTION AGENCY", 402476380.47, 402476380.47, null],
+    ["Corps of Engineers - Civil Works", "EXECUTIVE DIRECTION AND MANAGEMENT", 266096953.5, 266096953.5, null],
+    ["Corps of Engineers - Civil Works", "REGULATORY", 266057039.08, 266057039.08, null],
+    ["Corps of Engineers - Civil Works", "FORMERLY UTILIZED SITE REMEDIAL ACTION PROGRAM", 250019674.61, 250019674.61, null],
+    ["Corps of Engineers - Civil Works", "OTHER FEDERAL AGENCIES", 246702407.55, 246702407.55, null],
+    ["Corps of Engineers - Civil Works", "NON-FEDERAL AGENCIES", 193766613.67, 193766613.67, null],
+    ["Corps of Engineers - Civil Works", "WASHINGTON AQUEDUCT", 100190758.16, 100190758.16, null],
+    ["Corps of Engineers - Civil Works", "DEPARTMENT OF ENERGY", 69782095.13, 69782095.13, null],
+    ["Corps of Engineers - Civil Works", "INLAND WATERWAYS TRUST FUND", 56044783.2, 56044783.2, null],
+    ["Corps of Engineers - Civil Works", "COASTAL WETLANDS RESTORATION TRUST FUND", 42565647.57, 42565647.57, null],
+    ["Corps of Engineers - Civil Works", "NATIONAL AERONAUTICS AND SPACE ADMINISTRATION", 32073374.76, 32073374.76, null],
+    ["Corps of Engineers - Civil Works", "MAINTENANCE AND OPERATION OF DAMS AND OTHER IMPROVEMENTS OF NAVIGABLE WATERS", 30449243.55, 30449243.55, null],
+    ["Corps of Engineers - Civil Works", "OFFICE OF ASSISTANT SECRETARY OF THE ARMY (CIVIL WORKS)", 6258745.25, 6258745.25, null],
+    ["Corps of Engineers - Civil Works", "ADMINISTRATIVE EXPENSES", 6165691.39, 6165691.39, null],
+    ["Corps of Engineers - Civil Works", "HYDROPOWER", 6003457.53, 6003457.53, null],
+    ["Corps of Engineers - Civil Works", "WILDLIFE HABITAT RESTORATION", 4000000, 4000000, null],
+    ["Corps of Engineers - Civil Works", "INTERAGENCY AMERICA THE BEAUTIFUL PASS REVENUES", 2727721.11, 2727721.11, null],
+    ["Corps of Engineers - Civil Works", "RECREATION RESOURCES", 1244413.75, 1244413.75, null],
+    ["Corps of Engineers - Civil Works", "SUPPORT ACTIVITIES", 57037.44, 57037.44, null]
   ],
   "sourceBasis": "official source amount",
-  "sourceCheck": {
-    "objectClassRows": 24,
-    "objectClassTotal": 32025787790.09,
-    "agencyTotal": 32025787790.09,
-    "difference": 0
-  },
+  "sourceCheck": {"groupRows": 29, "programActivityTotal": 32025787790.09, "agencyTotal": 32025787790.09, "difference": 0},
   "normalizationAdjustment": -0.02,
-  "hierarchyNote": "The source endpoint returns agency-level object-class aggregates; no individual employees or payees are included.",
-  "note": "Amounts are shown on the official source basis; no comparator normalization was applied."
+  "hierarchyNote": "USAspending program-activity rows preserve the agency gross-outlay control; the parent entity is repeated as the sub-agency placeholder.",
+  "note": "Program activities replace the former generic object-class view and remain on USAspending gross-outlay basis; no comparator normalization was applied."
 }

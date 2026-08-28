@@ -5,146 +5,22 @@
   "fiscalYear": 2024,
   "ledgerAmount": 31905722.6,
   "sourceTotal": 43482105.19,
-  "sourceUrl": "https://api.usaspending.gov/api/v2/agency/513/object_class/?fiscal_year=2024&limit=100&page=1",
+  "sourceUrl": "https://api.usaspending.gov/api/v2/agency/513/program_activity/?fiscal_year=2024&limit=100&page=1",
   "sourceUrls": [
-    [
-      "FY2024 gross outlays by object class",
-      "https://api.usaspending.gov/api/v2/agency/513/object_class/?fiscal_year=2024&limit=100&page=1"
-    ],
-    [
-      "FY2024 agency budgetary resources total",
-      "https://api.usaspending.gov/api/v2/agency/513/budgetary_resources/?fiscal_year=2024"
-    ]
+    ["FY2024 gross outlays by program activity · page 1", "https://api.usaspending.gov/api/v2/agency/513/program_activity/?fiscal_year=2024&limit=100&page=1"],
+    ["FY2024 agency budgetary resources total", "https://api.usaspending.gov/api/v2/agency/513/budgetary_resources/?fiscal_year=2024"]
   ],
-  "rowSchema": [
-    "subAgency",
-    "program",
-    "amount",
-    "sourceAmount",
-    "sourceRows"
-  ],
+  "rowSchema": ["subAgency", "program", "amount", "sourceAmount", "sourceRows"],
   "rows": [
-    [
-      "Denali Commission",
-      "Grants, subsidies, and contributions",
-      38415888.88,
-      38415888.88,
-      null
-    ],
-    [
-      "Denali Commission",
-      "Full-time permanent",
-      2338648.4,
-      2338648.4,
-      null
-    ],
-    [
-      "Denali Commission",
-      "Other goods and services from Federal sources",
-      942817.47,
-      942817.47,
-      null
-    ],
-    [
-      "Denali Commission",
-      "Civilian personnel benefits",
-      840973.74,
-      840973.74,
-      null
-    ],
-    [
-      "Denali Commission",
-      "Advisory and assistance services",
-      391690.19,
-      391690.19,
-      null
-    ],
-    [
-      "Denali Commission",
-      "Travel and transportation of persons",
-      105788.55,
-      105788.55,
-      null
-    ],
-    [
-      "Denali Commission",
-      "Rental payments to others",
-      123236.16,
-      123236.16,
-      null
-    ],
-    [
-      "Denali Commission",
-      "Other personnel compensation",
-      98982.04,
-      98982.04,
-      null
-    ],
-    [
-      "Denali Commission",
-      "Communications, utilities, and miscellaneous charges",
-      47520.29,
-      47520.29,
-      null
-    ],
-    [
-      "Denali Commission",
-      "Special personal services payments",
-      113071,
-      113071,
-      null
-    ],
-    [
-      "Denali Commission",
-      "Equipment",
-      23388.01,
-      23388.01,
-      null
-    ],
-    [
-      "Denali Commission",
-      "Printing and reproduction",
-      15856.32,
-      15856.32,
-      null
-    ],
-    [
-      "Denali Commission",
-      "Other services from non-Federal sources",
-      12987.28,
-      12987.28,
-      null
-    ],
-    [
-      "Denali Commission",
-      "Operation and maintenance of facilities",
-      7022.07,
-      7022.07,
-      null
-    ],
-    [
-      "Denali Commission",
-      "Supplies and materials",
-      3866.72,
-      3866.72,
-      null
-    ],
-    [
-      "Denali Commission",
-      "Transportation of things",
-      368.07,
-      368.07,
-      null
-    ]
+    ["Denali Commission", "DENALI COMMISSION (DIRECT)", 15069869.28, 15069869.28, null],
+    ["Denali Commission", "DENALI COMMISSION (SHARED SERVICES)", 13277816.32, 13277816.32, null],
+    ["Denali Commission", "DENALI COMMISSION (IIJA - DIRECT)", 10096041.15, 10096041.15, null],
+    ["Denali Commission", "DENALI COMMISSION TRUST FUND (DIRECT)", 4832932.98, 4832932.98, null],
+    ["Denali Commission", "DENALI COMMISSION NON-FEDERAL FUNDS (DIRECT)", 205445.46, 205445.46, null]
   ],
   "sourceBasis": "official source amount",
-  "sourceCheck": {
-    "objectClassRows": 16,
-    "objectClassTotal": 43482105.19,
-    "agencyTotal": 43482105.19,
-    "difference": 0
-  },
+  "sourceCheck": {"groupRows": 5, "programActivityTotal": 43482105.19, "agencyTotal": 43482105.19, "difference": 0},
   "normalizationAdjustment": 0.01,
-  "hierarchyNote": "The source endpoint returns agency-level object-class aggregates; no individual employees or payees are included.",
-  "note": "Amounts are shown on the official source basis; no comparator normalization was applied."
+  "hierarchyNote": "USAspending program-activity rows preserve the agency gross-outlay control; the parent entity is repeated as the sub-agency placeholder.",
+  "note": "Program activities replace the former generic object-class view and remain on USAspending gross-outlay basis; no comparator normalization was applied."
 }

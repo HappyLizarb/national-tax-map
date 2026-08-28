@@ -5,153 +5,24 @@
   "fiscalYear": 2024,
   "ledgerAmount": 537657100.68,
   "sourceTotal": 732735719.61,
-  "sourceUrl": "https://api.usaspending.gov/api/v2/agency/524/object_class/?fiscal_year=2024&limit=100&page=1",
+  "sourceUrl": "https://api.usaspending.gov/api/v2/agency/524/program_activity/?fiscal_year=2024&limit=100&page=1",
   "sourceUrls": [
-    [
-      "FY2024 gross outlays by object class",
-      "https://api.usaspending.gov/api/v2/agency/524/object_class/?fiscal_year=2024&limit=100&page=1"
-    ],
-    [
-      "FY2024 agency budgetary resources total",
-      "https://api.usaspending.gov/api/v2/agency/524/budgetary_resources/?fiscal_year=2024"
-    ]
+    ["FY2024 gross outlays by program activity · page 1", "https://api.usaspending.gov/api/v2/agency/524/program_activity/?fiscal_year=2024&limit=100&page=1"],
+    ["FY2024 agency budgetary resources total", "https://api.usaspending.gov/api/v2/agency/524/budgetary_resources/?fiscal_year=2024"]
   ],
-  "rowSchema": [
-    "subAgency",
-    "program",
-    "amount",
-    "sourceAmount",
-    "sourceRows"
-  ],
+  "rowSchema": ["subAgency", "program", "amount", "sourceAmount", "sourceRows"],
   "rows": [
-    [
-      "Millennium Challenge Corporation",
-      "Grants, subsidies, and contributions",
-      528100747.58,
-      528100747.58,
-      null
-    ],
-    [
-      "Millennium Challenge Corporation",
-      "Other services from non-Federal sources",
-      71158462.41,
-      71158462.41,
-      null
-    ],
-    [
-      "Millennium Challenge Corporation",
-      "Full-time permanent",
-      46585329.99,
-      46585329.99,
-      null
-    ],
-    [
-      "Millennium Challenge Corporation",
-      "Civilian personnel benefits",
-      22155044.15,
-      22155044.15,
-      null
-    ],
-    [
-      "Millennium Challenge Corporation",
-      "Other goods and services from Federal sources",
-      19047126.58,
-      19047126.58,
-      null
-    ],
-    [
-      "Millennium Challenge Corporation",
-      "Communications, utilities, and miscellaneous charges",
-      12393825.46,
-      12393825.46,
-      null
-    ],
-    [
-      "Millennium Challenge Corporation",
-      "Other than full-time permanent",
-      11285388.62,
-      11285388.62,
-      null
-    ],
-    [
-      "Millennium Challenge Corporation",
-      "Travel and transportation of persons",
-      6077690.53,
-      6077690.53,
-      null
-    ],
-    [
-      "Millennium Challenge Corporation",
-      "Operation and maintenance of equipment",
-      2473019.61,
-      2473019.61,
-      null
-    ],
-    [
-      "Millennium Challenge Corporation",
-      "Other personnel compensation",
-      2029065.31,
-      2029065.31,
-      null
-    ],
-    [
-      "Millennium Challenge Corporation",
-      "Advisory and assistance services",
-      2122317.52,
-      2122317.52,
-      null
-    ],
-    [
-      "Millennium Challenge Corporation",
-      "Supplies and materials",
-      1242196.32,
-      1242196.32,
-      null
-    ],
-    [
-      "Millennium Challenge Corporation",
-      "Transportation of things",
-      273413.14,
-      273413.14,
-      null
-    ],
-    [
-      "Millennium Challenge Corporation",
-      "Insurance claims and indemnities",
-      305222.37,
-      305222.37,
-      null
-    ],
-    [
-      "Millennium Challenge Corporation",
-      "Rental payments to others",
-      7459515.91,
-      7459515.91,
-      null
-    ],
-    [
-      "Millennium Challenge Corporation",
-      "Printing and reproduction",
-      26498.8,
-      26498.8,
-      null
-    ],
-    [
-      "Millennium Challenge Corporation",
-      "Interest and dividends",
-      855.31,
-      855.31,
-      null
-    ]
+    ["Millennium Challenge Corporation", "COUNTRY PROGRAMS ASSISTANCE (COMPACTS)", 482725187.51, 482725187.51, null],
+    ["Millennium Challenge Corporation", "ADMINISTRATIVE EXPENSES", 135104925.75, 135104925.75, null],
+    ["Millennium Challenge Corporation", "MONITORING AND EVALUATION (DUE DILIGENCE)", 68603938.69, 68603938.69, null],
+    ["Millennium Challenge Corporation", "609(G) COMPACT ASSISTANCE", 27847114.1, 27847114.1, null],
+    ["Millennium Challenge Corporation", "THRESHOLD PROGRAMS", 14317820.64, 14317820.64, null],
+    ["Millennium Challenge Corporation", "USAID INSPECTOR GENERAL", 2919303.2, 2919303.2, null],
+    ["Millennium Challenge Corporation", "REIMBURSABLE AGREEMENTS", 1217429.72, 1217429.72, null]
   ],
   "sourceBasis": "official source amount",
-  "sourceCheck": {
-    "objectClassRows": 17,
-    "objectClassTotal": 732735719.61,
-    "agencyTotal": 732735719.61,
-    "difference": 0
-  },
+  "sourceCheck": {"groupRows": 7, "programActivityTotal": 732735719.61, "agencyTotal": 732735719.61, "difference": 0},
   "normalizationAdjustment": -0.01,
-  "hierarchyNote": "The source endpoint returns agency-level object-class aggregates; no individual employees or payees are included.",
-  "note": "Amounts are shown on the official source basis; no comparator normalization was applied."
+  "hierarchyNote": "USAspending program-activity rows preserve the agency gross-outlay control; the parent entity is repeated as the sub-agency placeholder.",
+  "note": "Program activities replace the former generic object-class view and remain on USAspending gross-outlay basis; no comparator normalization was applied."
 }

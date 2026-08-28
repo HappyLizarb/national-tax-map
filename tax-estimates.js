@@ -1,10 +1,15 @@
 function estimateLevelsHtml(profile, escapeHtml) {
-  return profile.levels.map((row) => '<span class="tax-estimate-level"><b>' + escapeHtml(row.label)
-    + '</b><em>$' + row.tax.toLocaleString("en-US") + ' total</em><small class="tax-estimate-income">$'
-    + row.income.toLocaleString("en-US") + ' income</small><small class="tax-estimate-breakdown"><span>$'
-    + row.federalIncomeTax.toLocaleString("en-US") + ' federal</span><span>$'
-    + row.stateIncomeTax.toLocaleString("en-US") + ' state</span><span>$'
-    + row.propertyTax.toLocaleString("en-US") + ' property</span></small></span>').join("");
+  return profile.levels.map((row) => {
+    const effectiveRate = (row.tax / row.income * 100).toFixed(1);
+    return '<span class="tax-estimate-level"><b>' + escapeHtml(row.label)
+      + '</b><em>$' + row.tax.toLocaleString("en-US") + ' total</em><small class="tax-estimate-income">$'
+      + row.income.toLocaleString("en-US") + ' income</small><small class="tax-estimate-breakdown"><span>$'
+      + row.federalIncomeTax.toLocaleString("en-US") + ' federal</span><span>$'
+      + row.stateIncomeTax.toLocaleString("en-US") + ' state</span><span>$'
+      + row.propertyTax.toLocaleString("en-US") + ' property</span></small><span class="tax-estimate-net"><small>Post-tax income</small><strong>$'
+      + (row.income - row.tax).toLocaleString("en-US") + '</strong><small>'
+      + effectiveRate + '% effective tax rate</small></span></span>';
+  }).join("");
 }
 
 function estimateProfileHtml(title, profile, sharedAsOf, escapeHtml) {

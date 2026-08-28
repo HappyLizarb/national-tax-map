@@ -6,897 +6,267 @@
   "fiscalYear": 2024,
   "ledgerAmount": 62437507176.21,
   "sourceTotal": 85091765167.06,
-  "sourceUrl": "https://api.usaspending.gov/api/v2/agency/086/object_class/?fiscal_year=2024&limit=100&page=1",
-  "rowSchema": [
-    "subAgency",
-    "program",
-    "amount",
-    "sourceAmount",
-    "sourceRows"
-  ],
+  "sourceUrl": "https://api.usaspending.gov/api/v2/agency/086/program_activity/?fiscal_year=2024&limit=100&page=1",
+  "rowSchema": ["subAgency", "program", "amount", "sourceAmount", "sourceRows"],
   "rows": [
-    [
-      "Department of Housing and Urban Development",
-      "Grants, subsidies, and contributions",
-      81846927038.7,
-      81846927038.7,
-      null
-    ],
-    [
-      "Department of Housing and Urban Development",
-      "Full-time permanent",
-      1207379112.62,
-      1207379112.62,
-      null
-    ],
-    [
-      "Department of Housing and Urban Development",
-      "Advisory and assistance services",
-      574735533.44,
-      574735533.44,
-      null
-    ],
-    [
-      "Department of Housing and Urban Development",
-      "Civilian personnel benefits",
-      452403056.68,
-      452403056.68,
-      null
-    ],
-    [
-      "Department of Housing and Urban Development",
-      "Operation and maintenance of equipment",
-      305735768.3,
-      305735768.3,
-      null
-    ],
-    [
-      "Department of Housing and Urban Development",
-      "Other services from non-Federal sources",
-      223299283.18,
-      223299283.18,
-      null
-    ],
-    [
-      "Department of Housing and Urban Development",
-      "Other goods and services from Federal sources",
-      227100465.1,
-      227100465.1,
-      null
-    ],
-    [
-      "Department of Housing and Urban Development",
-      "Rental payments to GSA",
-      87366918.15,
-      87366918.15,
-      null
-    ],
-    [
-      "Department of Housing and Urban Development",
-      "Equipment",
-      43211287.37,
-      43211287.37,
-      null
-    ],
-    [
-      "Department of Housing and Urban Development",
-      "Other personnel compensation",
-      32625431.05,
-      32625431.05,
-      null
-    ],
-    [
-      "Department of Housing and Urban Development",
-      "Communications, utilities, and miscellaneous charges",
-      13883574.51,
-      13883574.51,
-      null
-    ],
-    [
-      "Department of Housing and Urban Development",
-      "Travel and transportation of persons",
-      20107231.31,
-      20107231.31,
-      null
-    ],
-    [
-      "Department of Housing and Urban Development",
-      "Operation and maintenance of facilities",
-      13690991.61,
-      13690991.61,
-      null
-    ],
-    [
-      "Department of Housing and Urban Development",
-      "Land and structures",
-      5210128.23,
-      5210128.23,
-      null
-    ],
-    [
-      "Department of Housing and Urban Development",
-      "Investments and loans",
-      14577496.85,
-      14577496.85,
-      null
-    ],
-    [
-      "Department of Housing and Urban Development",
-      "Military personnel benefits",
-      7754683.63,
-      7754683.63,
-      null
-    ],
-    [
-      "Department of Housing and Urban Development",
-      "Financial transfers",
-      5992355,
-      5992355,
-      null
-    ],
-    [
-      "Department of Housing and Urban Development",
-      "Other than full-time permanent",
-      3980294.76,
-      3980294.76,
-      null
-    ],
-    [
-      "Department of Housing and Urban Development",
-      "Refunds",
-      546865.33,
-      546865.33,
-      null
-    ],
-    [
-      "Department of Housing and Urban Development",
-      "Supplies and materials",
-      1674672.62,
-      1674672.62,
-      null
-    ],
-    [
-      "Department of Housing and Urban Development",
-      "Printing and reproduction",
-      1321421.65,
-      1321421.65,
-      null
-    ],
-    [
-      "Department of Housing and Urban Development",
-      "Insurance claims and indemnities",
-      1451862.81,
-      1451862.81,
-      null
-    ],
-    [
-      "Department of Housing and Urban Development",
-      "Interest and dividends",
-      136628.92,
-      136628.92,
-      null
-    ],
-    [
-      "Department of Housing and Urban Development",
-      "Rental payments to others",
-      361416.45,
-      361416.45,
-      null
-    ],
-    [
-      "Department of Housing and Urban Development",
-      "Benefits for former personnel",
-      123269.53,
-      123269.53,
-      null
-    ],
-    [
-      "Department of Housing and Urban Development",
-      "Special personal services payments",
-      158175.58,
-      158175.58,
-      null
-    ],
-    [
-      "Department of Housing and Urban Development",
-      "Transportation of things",
-      10203.68,
-      10203.68,
-      null
-    ]
+    ["Department of Housing and Urban Development", "CONTRACT RENEWALS", 38144269382.91, 38144269382.91, null],
+    ["Department of Housing and Urban Development", "DISASTER ASSISTANCE", 5891037340.2, 5891037340.2, null],
+    ["Department of Housing and Urban Development", "OPERATING SUBSIDIES", 5207125807.99, 5207125807.99, null],
+    ["Department of Housing and Urban Development", "REESTIMATES OF LOAN GUARANTEE SUBSIDY", 4719972268.71, 4719972268.71, null],
+    ["Department of Housing and Urban Development", "TENANT-BASED RENTAL ASSISTANCE (EMERGENCY)", 3719156422, 3719156422, null],
+    ["Department of Housing and Urban Development", "COMMUNITY DEVELOPMENT FORMULA GRANTS", 3483158713.86, 3483158713.86, null],
+    ["Department of Housing and Urban Development", "ADMINISTRATIVE FEES", 2670921424, 2670921424, null],
+    ["Department of Housing and Urban Development", "CAPITAL FUNDS GRANTS", 2590058603.36, 2590058603.36, null],
+    ["Department of Housing and Urban Development", "CONTINUUM OF CARE (SPC, SHP, RURAL)", 2465466760.39, 2465466760.39, null],
+    ["Department of Housing and Urban Development", "PROJECT-BASED RENTAL ASSISTANCE (EMERGENCY)", 2117726058.25, 2117726058.25, null],
+    ["Department of Housing and Urban Development", "ADMINISTRATIVE EXPENSES", 1215643827.72, 1215643827.72, null],
+    ["Department of Housing and Urban Development", "HOME INVESTMENT PROGRAM", 1172092648.25, 1172092648.25, null],
+    ["Department of Housing and Urban Development", "EMERGENCY VOUCHERS - INCREMENTALS/RENEWALS (AMERICAN RESCUE PLAN)", 1062466211, 1062466211, null],
+    ["Department of Housing and Urban Development", "INDIAN HOUSING BLOCK GRANTS", 1007965089.02, 1007965089.02, null],
+    ["Department of Housing and Urban Development", "PERSONNEL COSTS", 809750242.69, 809750242.69, null],
+    ["Department of Housing and Urban Development", "SECTION 811 MAINSTREAM VOUCHERS", 766544602, 766544602, null],
+    ["Department of Housing and Urban Development", "PRAC RENEWAL/AMENDMENT", 708480719, 708480719, null],
+    ["Department of Housing and Urban Development", "CAPITAL GRANTS (MODERNIZATION)", 588821115.81, 588821115.81, null],
+    ["Department of Housing and Urban Development", "GRANTS", 482485600.16, 482485600.16, null],
+    ["Department of Housing and Urban Development", "HOPWA FORMULA GRANTS", 443947530.19, 443947530.19, null],
+    ["Department of Housing and Urban Development", "BENEFITS", 409049508.79, 409049508.79, null],
+    ["Department of Housing and Urban Development", "CONTRACT ADMINISTRATORS", 370539403.68, 370539403.68, null],
+    ["Department of Housing and Urban Development", "ECONOMIC DEVELOPMENT INITIATIVE", 364114397.25, 364114397.25, null],
+    ["Department of Housing and Urban Development", "INFORMATION TECHNOLOGY EXPENSES", 340130071.61, 340130071.61, null],
+    ["Department of Housing and Urban Development", "PERSONNEL COMPENSATION", 306556756.28, 306556756.28, null],
+    ["Department of Housing and Urban Development", "EMERGENCY SOLUTIONS GRANTS - FORMULA", 305716959.72, 305716959.72, null],
+    ["Department of Housing and Urban Development", "HOMELESS ASSISTANCE AND SUPPORTIVE SERVICES (ARP)", 293292079.61, 293292079.61, null],
+    ["Department of Housing and Urban Development", "NON-PERSONNEL COSTS", 249254328.87, 249254328.87, null],
+    ["Department of Housing and Urban Development", "TENANT PROTECTION", 216542362, 216542362, null],
+    ["Department of Housing and Urban Development", "PRAC/PAC RENEWALS AND AMENDMENTS", 191916670.03, 191916670.03, null],
+    ["Department of Housing and Urban Development", "SERVICING EXPENSES", 167183292.87, 167183292.87, null],
+    ["Department of Housing and Urban Development", "CHOICE NEIGHBORHOODS GRANTS", 154107803.81, 154107803.81, null],
+    ["Department of Housing and Urban Development", "FAMILY SELF-SUFFICIENCY", 142302535.31, 142302535.31, null],
+    ["Department of Housing and Urban Development", "MOD REHAB AND SRO RENEWALS", 139631695, 139631695, null],
+    ["Department of Housing and Urban Development", "LEAD HAZARD REDUCTION GRANTS", 127125114.02, 127125114.02, null],
+    ["Department of Housing and Urban Development", "ADMINISTRATIVE FEES (AMERICAN RESCUE PLAN)", 120354851, 120354851, null],
+    ["Department of Housing and Urban Development", "OIG SALARIES AND BENEFITS", 115897333.2, 115897333.2, null],
+    ["Department of Housing and Urban Development", "SERVICE COORDINATORS/CONGREGATE SERVICES", 95768206.84, 95768206.84, null],
+    ["Department of Housing and Urban Development", "NATIVE AMERICAN HOUSING BLOCK GRANTS (ARP)", 80830763.76, 80830763.76, null],
+    ["Department of Housing and Urban Development", "CONTRACTS, GRANTS AND COOPERATIVE AGREEMENTS", 79530841.55, 79530841.55, null],
+    ["Department of Housing and Urban Development", "NON-PERSONNEL EXPENSES", 74912663.58, 74912663.58, null],
+    ["Department of Housing and Urban Development", "CAPITAL ADVANCE AMENDMENTS AND EXPENSES", 74763256.5, 74763256.5, null],
+    ["Department of Housing and Urban Development", "INDIAN COMMUNITY DEVELOPMENT BLOCK GRANTS (ARP)", 67540602.69, 67540602.69, null],
+    ["Department of Housing and Urban Development", "WORKING CAPITAL FUND SERVICES", 67012160.68, 67012160.68, null],
+    ["Department of Housing and Urban Development", "HOUSING CERTIFICATE FUND (DIRECT)", 60903413.5, 60903413.5, null],
+    ["Department of Housing and Urban Development", "HEALTHY HOMES", 54193372.69, 54193372.69, null],
+    ["Department of Housing and Urban Development", "YOUTH DEMONSTRATION", 50513518.23, 50513518.23, null],
+    ["Department of Housing and Urban Development", "HOMELESS ASSISTANCE GRANTS (DIRECT)", 50238770.28, 50238770.28, null],
+    ["Department of Housing and Urban Development", "HOUSING COUNSELING ASSISTANCE", 48923314.66, 48923314.66, null],
+    ["Department of Housing and Urban Development", "FAIR HOUSING INITIATIVES", 48429553.09, 48429553.09, null],
+    ["Department of Housing and Urban Development", "INCREMENTAL VOUCHERS", 48340679, 48340679, null],
+    ["Department of Housing and Urban Development", "OIG NON-PERSONNEL COSTS", 42176627.69, 42176627.69, null],
+    ["Department of Housing and Urban Development", "RENTAL ASSISTANCE DEMONSTRATION", 41655939, 41655939, null],
+    ["Department of Housing and Urban Development", "HOPWA COMPETITIVE GRANTS", 40809475.44, 40809475.44, null],
+    ["Department of Housing and Urban Development", "VETERANS AFFAIRS SUPPORTIVE HOUSING VOUCHERS", 35593570, 35593570, null],
+    ["Department of Housing and Urban Development", "RAD CONTRACT RENEWALS", 34870182, 34870182, null],
+    ["Department of Housing and Urban Development", "HOMELESSNESS-DOMESTIC VIOLENCE", 34560365, 34560365, null],
+    ["Department of Housing and Urban Development", "HOMEOWNERSHIP AND RENTAL HOUSING ASSISTANCE (SECTIONS 235 AND 236)", 33637541.77, 33637541.77, null],
+    ["Department of Housing and Urban Development", "TECHNICAL ASSISTANCE", 33539988.37, 33539988.37, null],
+    ["Department of Housing and Urban Development", "CAPACITY BUILDING", 29404640.58, 29404640.58, null],
+    ["Department of Housing and Urban Development", "VICTIMS OF DOMESTIC ABUSE", 28806161.8, 28806161.8, null],
+    ["Department of Housing and Urban Development", "FAMILY UNIFICATION PROGRAM VOUCHERS", 27418234, 27418234, null],
+    ["Department of Housing and Urban Development", "RAD CONVERSIONS FROM SEC 202", 25282383, 25282383, null],
+    ["Department of Housing and Urban Development", "INDIAN HOUSING COMPETITIVE GRANTS", 22908526.44, 22908526.44, null],
+    ["Department of Housing and Urban Development", "SENIOR PRESERVATION RENTAL ASSISTANCE CONTRACTS", 22648520, 22648520, null],
+    ["Department of Housing and Urban Development", "LOAN GUARANTEE SUBSIDY", 21823126.54, 21823126.54, null],
+    ["Department of Housing and Urban Development", "STATE HOUSING PROJECT RENTAL ASSISTANCE", 19812629.7, 19812629.7, null],
+    ["Department of Housing and Urban Development", "SECTION 8 AMENDMENTS", 19695064.61, 19695064.61, null],
+    ["Department of Housing and Urban Development", "INDIAN COMMUNITY DEVELOPMENT BLOCK GRANTS", 19672845.26, 19672845.26, null],
+    ["Department of Housing and Urban Development", "SHORTFALL PREVENTION", 19222165.51, 19222165.51, null],
+    ["Department of Housing and Urban Development", "FAIR HOUSING ASSISTANCE", 17570089.21, 17570089.21, null],
+    ["Department of Housing and Urban Development", "NATIVE AMERICAN PROGRAMS (CARES)", 16827523.95, 16827523.95, null],
+    ["Department of Housing and Urban Development", "RESEARCH AND DEMONSTRATIONS", 16711123.85, 16711123.85, null],
+    ["Department of Housing and Urban Development", "EMERGENCY/DISASTER-RECEIVERSHIPS AND MONITORS", 16610911.73, 16610911.73, null],
+    ["Department of Housing and Urban Development", "HOUSING FOR PERSONS WITH DISABILITIES (DIRECT)", 16546860.02, 16546860.02, null],
+    ["Department of Housing and Urban Development", "RECOVERY HOUSING (SUPPORT)", 14869161.74, 14869161.74, null],
+    ["Department of Housing and Urban Development", "NATIVE HAWAIIAN HOUSING BLOCK GRANT", 13978181.93, 13978181.93, null],
+    ["Department of Housing and Urban Development", "HUD HELD NOTES ESCROW ACTIVITY", 13574487.15, 13574487.15, null],
+    ["Department of Housing and Urban Development", "SELF HELP HOUSING OPPORTUNITY PROGRAM", 12304700.42, 12304700.42, null],
+    ["Department of Housing and Urban Development", "JOBS-PLUS PILOT", 12044998.69, 12044998.69, null],
+    ["Department of Housing and Urban Development", "INDIAN TRIBES", 11773131.13, 11773131.13, null],
+    ["Department of Housing and Urban Development", "ADMINISTRATIVE AND JUDICIAL RECEIVERSHIPS/TROUBLED PHAS", 10728381.61, 10728381.61, null],
+    ["Department of Housing and Urban Development", "SAFETY AND SECURITY", 10549275.41, 10549275.41, null],
+    ["Department of Housing and Urban Development", "FINANCIAL AND PHYSICAL ASSESSMENTS", 10139617.84, 10139617.84, null],
+    ["Department of Housing and Urban Development", "LEAD BASED HAZARDS", 9952719.26, 9952719.26, null],
+    ["Department of Housing and Urban Development", "ALLOCATION ADJUSTMENTS FOR CY 2021 (AMERICAN RESCUE PLAN)", 9562648, 9562648, null],
+    ["Department of Housing and Urban Development", "MANUFACTURED HOUSING PROGRAM COSTS", 9399599.7, 9399599.7, null],
+    ["Department of Housing and Urban Development", "PD&R EVICTION PREVENTION ASSISTANCE", 8544374.48, 8544374.48, null],
+    ["Department of Housing and Urban Development", "AGING IN PLACE HOME MODIFICATION GRANTS", 8117805.02, 8117805.02, null],
+    ["Department of Housing and Urban Development", "ARP EMERGENCY RELATED EXPENSES", 7766175.67, 7766175.67, null],
+    ["Department of Housing and Urban Development", "NATIONAL HOMELESS DATA ANALYSIS PROJECT", 7151372.85, 7151372.85, null],
+    ["Department of Housing and Urban Development", "EMERGENCY/DISASTER RESERVE", 7037177.36, 7037177.36, null],
+    ["Department of Housing and Urban Development", "HOUSING COUNSELING EVICTION PREVENTION ASSISTANCE", 6503007.24, 6503007.24, null],
+    ["Department of Housing and Urban Development", "TRIBAL HUD VASH", 5774184.85, 5774184.85, null],
+    ["Department of Housing and Urban Development", "DISASTER-RELATED EXPENSES", 5592980.94, 5592980.94, null],
+    ["Department of Housing and Urban Development", "EMERGENCY/DISASTER RESERVE (RECEIVERSHIP PHAS)", 5583483.87, 5583483.87, null],
+    ["Department of Housing and Urban Development", "FAMILY MOBILITY DEMONSTRATION", 5496463, 5496463, null],
+    ["Department of Housing and Urban Development", "OPERATING SUBSIDY", 5267802.16, 5267802.16, null],
+    ["Department of Housing and Urban Development", "ADMINISTRATIVE CONTRACT SERVICES", 4446901.83, 4446901.83, null],
+    ["Department of Housing and Urban Development", "RURAL CAPACITY BUILDING", 4184519.64, 4184519.64, null],
+    ["Department of Housing and Urban Development", "OTHER HEALTH HAZARDS", 3796836.5, 3796836.5, null],
+    ["Department of Housing and Urban Development", "VETERAN HOME REHAB AND MOD PILOT", 3660027.66, 3660027.66, null],
+    ["Department of Housing and Urban Development", "LEAD TECHNICAL STUDIES", 3314105.42, 3314105.42, null],
+    ["Department of Housing and Urban Development", "TECHNICAL ASSISTANCE (ARP)", 3255841.18, 3255841.18, null],
+    ["Department of Housing and Urban Development", "HOPE VI/CHOICE NEIGHBORHOODS GRANTS", 3112001.53, 3112001.53, null],
+    ["Department of Housing and Urban Development", "SUPPORT SERVICES DEMONSTRATION", 3051253.52, 3051253.52, null],
+    ["Department of Housing and Urban Development", "LEAD-BASED HAZARDS", 2756854.61, 2756854.61, null],
+    ["Department of Housing and Urban Development", "FAIR HOUSING INITIATIVES (ARP)", 2674878.65, 2674878.65, null],
+    ["Department of Housing and Urban Development", "NATIONAL FAIR HOUSING TRAINING ACADEMY", 2314890.78, 2314890.78, null],
+    ["Department of Housing and Urban Development", "ASSISTED HOUSING INSPECTIONS AND RISK ASSESSEMENTS", 2228504.04, 2228504.04, null],
+    ["Department of Housing and Urban Development", "CAPITALIZED EXPENSES", 2091844, 2091844, null],
+    ["Department of Housing and Urban Development", "NATIONAL AND REGIONAL ORGANIZATIONS", 2063689.9, 2063689.9, null],
+    ["Department of Housing and Urban Development", "RESIDENT OPPORTUNITIES AND SUPPORTIVE SERVICES", 1906902.8, 1906902.8, null],
+    ["Department of Housing and Urban Development", "LOAN MANAGEMENT, LIQUIDATIONS AND PROPERTY DISPOSITIONS", 1485465.46, 1485465.46, null],
+    ["Department of Housing and Urban Development", "GREEN AND RESILIENT GRANTS", 1350000, 1350000, null],
+    ["Department of Housing and Urban Development", "UNKNOWN/OTHER", 1195705.65, 1195705.65, null],
+    ["Department of Housing and Urban Development", "ADMINISTRATIVE SUPPORT OFFICES S&E (REIMBURSABLE)", 1137468.31, 1137468.31, null],
+    ["Department of Housing and Urban Development", "OTHER", 976724.43, 976724.43, null],
+    ["Department of Housing and Urban Development", "GREEN AND RESILIENT PROGRAM BENCHMARKING", 965739.45, 965739.45, null],
+    ["Department of Housing and Urban Development", "ACQUISITION OF REAL PROPERTIES", 923917.92, 923917.92, null],
+    ["Department of Housing and Urban Development", "OIG SALARIES AND BENEFITS (REIMBURSABLE)", 801975.63, 801975.63, null],
+    ["Department of Housing and Urban Development", "REESTIMATES OF DIRECT LOAN SUBSIDY", 777329.34, 777329.34, null],
+    ["Department of Housing and Urban Development", "RAD CONVERSIONS FROM SEC 202 PRAC", 720542, 720542, null],
+    ["Department of Housing and Urban Development", "ADMINISTRATIVE RECEIVERSHIP", 573210.31, 573210.31, null],
+    ["Department of Housing and Urban Development", "FINANCIAL AND PHYSICAL ASSESSMENT SUPPORT", 523532.52, 523532.52, null],
+    ["Department of Housing and Urban Development", "LIMITED ENGLISH PROFICIENCY PROGRAM", 479665.69, 479665.69, null],
+    ["Department of Housing and Urban Development", "HOUSING FOR THE ELDERLY (DIRECT)", 477534, 477534, null],
+    ["Department of Housing and Urban Development", "DOJ VAWA", 327285.7, 327285.7, null],
+    ["Department of Housing and Urban Development", "SECTION 8 MODERATE REHABILITATION", 299695, 299695, null],
+    ["Department of Housing and Urban Development", "TENANT INFORMATION AND OUTREACH", 291547.69, 291547.69, null],
+    ["Department of Housing and Urban Development", "LEAD HAZARD REDUCTION (DIRECT)", 248302.11, 248302.11, null],
+    ["Department of Housing and Urban Development", "RADON TESTING", 222787.16, 222787.16, null],
+    ["Department of Housing and Urban Development", "OLHCHH REIMBURSABLE S&E (REIMBURSABLE)", 207403.46, 207403.46, null],
+    ["Department of Housing and Urban Development", "INTEREST ON REESTIMATES OF DIRECT LOAN SUBSIDY", 186747.76, 186747.76, null],
+    ["Department of Housing and Urban Development", "PROGRAM OFFICES S&E (REIMBURSABLE)", 139167.01, 139167.01, null],
+    ["Department of Housing and Urban Development", "ADMINISTRATIVE CONTRACTS", 114558.96, 114558.96, null],
+    ["Department of Housing and Urban Development", "OPERATING EXPENSES", 48070.99, 48070.99, null],
+    ["Department of Housing and Urban Development", "EXECUTIVE OFFICES S&E (REIMBURSABLE)", 46404.63, 46404.63, null],
+    ["Department of Housing and Urban Development", "TECHNICAL ASSISTANCE TO CDC", 46219.11, 46219.11, null],
+    ["Department of Housing and Urban Development", "TRAINING AND TECHNICAL ASSISTANCE", 31320.36, 31320.36, null],
+    ["Department of Housing and Urban Development", "ASSIGNMENT AND PROPERTY ACQUISITION CLAIMS", 26285.27, 26285.27, null],
+    ["Department of Housing and Urban Development", "OTHER OPERATION EXPENSES", 25933.74, 25933.74, null],
+    ["Department of Housing and Urban Development", "BJA PAY FOR SUCCESS EVALUATION", 20039.68, 20039.68, null],
+    ["Department of Housing and Urban Development", "FAIR HOUSING INITIATIVES (CARES)", 10000, 10000, null],
+    ["Department of Housing and Urban Development", "NON-PERSONNEL SERVICES", 1275.31, 1275.31, null],
+    ["Department of Housing and Urban Development", "REVOLVING FUND LIQUIDATING PROGRAMS (DIRECT)", 1257.96, 1257.96, null],
+    ["Department of Housing and Urban Development", "BJA PAY FOR SUCCESS DEMONSTRATION", 128.99, 128.99, null],
+    ["Department of Housing and Urban Development", "DIRECT LOAN SUBSIDY", 0, 0, null],
+    ["Department of Housing and Urban Development", "YES IN MY BACKYARD", 0, 0, null],
+    ["Department of Housing and Urban Development", "MOBILITY RELATED SERVICES", 0, 0, null],
+    ["Department of Housing and Urban Development", "INTEREST ON REESTIMATES OF LOAN GUARANTEE SUBSIDY", 0, 0, null]
   ],
   "supplementalRows": [
-    [
-      "Department of Housing and Urban Development",
-      "HUD Preservation and Reinvestment Initiative for Community Enhancement · Boise City",
-      6773702.72,
-      "FY2024 PRICE grant awards",
-      "https://www.hud.gov/hud-partners/community-price-awards"
-    ],
-    [
-      "Department of Housing and Urban Development",
-      "HUD Preservation and Reinvestment Initiative for Community Enhancement · Burns Paiute Tribe",
-      5992170.57,
-      "FY2024 PRICE grant awards",
-      "https://www.hud.gov/hud-partners/community-price-awards"
-    ],
-    [
-      "Department of Housing and Urban Development",
-      "HUD Preservation and Reinvestment Initiative for Community Enhancement · City of Tucson",
-      11519567.21,
-      "FY2024 PRICE grant awards",
-      "https://www.hud.gov/hud-partners/community-price-awards"
-    ],
-    [
-      "Department of Housing and Urban Development",
-      "HUD Preservation and Reinvestment Initiative for Community Enhancement · Commonwealth of Kentucky",
-      28276690.63,
-      "FY2024 PRICE grant awards",
-      "https://www.hud.gov/hud-partners/community-price-awards"
-    ],
-    [
-      "Department of Housing and Urban Development",
-      "HUD Preservation and Reinvestment Initiative for Community Enhancement · Cooperative Development Institute",
-      17890795.25,
-      "FY2024 PRICE grant awards",
-      "https://www.hud.gov/hud-partners/community-price-awards"
-    ],
-    [
-      "Department of Housing and Urban Development",
-      "HUD Preservation and Reinvestment Initiative for Community Enhancement · Dance with Todd Inc",
-      8329974.95,
-      "FY2024 PRICE grant awards",
-      "https://www.hud.gov/hud-partners/community-price-awards"
-    ],
-    [
-      "Department of Housing and Urban Development",
-      "HUD Preservation and Reinvestment Initiative for Community Enhancement · Elevation Community Land Trust",
-      5000000,
-      "FY2024 PRICE grant awards",
-      "https://www.hud.gov/hud-partners/community-price-awards"
-    ],
-    [
-      "Department of Housing and Urban Development",
-      "HUD Preservation and Reinvestment Initiative for Community Enhancement · Greater Charlottesville Habitat for Humanity Inc",
-      29151778.41,
-      "FY2024 PRICE grant awards",
-      "https://www.hud.gov/hud-partners/community-price-awards"
-    ],
-    [
-      "Department of Housing and Urban Development",
-      "HUD Preservation and Reinvestment Initiative for Community Enhancement · Kashia Band of Pomo Indians of the Stewarts Point Rancheria",
-      5000000,
-      "FY2024 PRICE grant awards",
-      "https://www.hud.gov/hud-partners/community-price-awards"
-    ],
-    [
-      "Department of Housing and Urban Development",
-      "HUD Preservation and Reinvestment Initiative for Community Enhancement · Keweenaw Bay Indian Community",
-      7155231.4,
-      "FY2024 PRICE grant awards",
-      "https://www.hud.gov/hud-partners/community-price-awards"
-    ],
-    [
-      "Department of Housing and Urban Development",
-      "HUD Preservation and Reinvestment Initiative for Community Enhancement · Minnesota Housing Partnership",
-      20284998.88,
-      "FY2024 PRICE grant awards",
-      "https://www.hud.gov/hud-partners/community-price-awards"
-    ],
-    [
-      "Department of Housing and Urban Development",
-      "HUD Preservation and Reinvestment Initiative for Community Enhancement · Oregon Department of Housing & Community Services",
-      13750000,
-      "FY2024 PRICE grant awards",
-      "https://www.hud.gov/hud-partners/community-price-awards"
-    ],
-    [
-      "Department of Housing and Urban Development",
-      "HUD Preservation and Reinvestment Initiative for Community Enhancement · Pleasant Point Passamaquoddy Reservation Housing Authority",
-      5000000,
-      "FY2024 PRICE grant awards",
-      "https://www.hud.gov/hud-partners/community-price-awards"
-    ],
-    [
-      "Department of Housing and Urban Development",
-      "HUD Preservation and Reinvestment Initiative for Community Enhancement · Red Cliff Band of Lake Superior Chippewa",
-      5000000,
-      "FY2024 PRICE grant awards",
-      "https://www.hud.gov/hud-partners/community-price-awards"
-    ],
-    [
-      "Department of Housing and Urban Development",
-      "HUD Preservation and Reinvestment Initiative for Community Enhancement · ROC USA LLC",
-      38125875,
-      "FY2024 PRICE grant awards",
-      "https://www.hud.gov/hud-partners/community-price-awards"
-    ],
-    [
-      "Department of Housing and Urban Development",
-      "HUD Preservation and Reinvestment Initiative for Community Enhancement · Tule River Economic Development Corporation",
-      14920944.98,
-      "FY2024 PRICE grant awards",
-      "https://www.hud.gov/hud-partners/community-price-awards"
-    ],
-    [
-      "Department of Housing and Urban Development",
-      "HUD Preservation and Reinvestment Initiative for Community Enhancement · Yurok Indian Housing Authority",
-      2828270,
-      "FY2024 PRICE grant awards",
-      "https://www.hud.gov/hud-partners/community-price-awards"
-    ],
-    [
-      "Department of Housing and Urban Development",
-      "HUD Section 811 Project Rental Assistance · California Housing Finance Agency",
-      8000000,
-      "FY2024 Section 811 awards",
-      "https://archives.hud.gov/news/2024/pr24-207.cfm"
-    ],
-    [
-      "Department of Housing and Urban Development",
-      "HUD Section 811 Project Rental Assistance · Ohio Housing Finance Agency",
-      8000000,
-      "FY2024 Section 811 awards",
-      "https://archives.hud.gov/news/2024/pr24-207.cfm"
-    ],
-    [
-      "Department of Housing and Urban Development",
-      "HUD Section 811 Project Rental Assistance · Wisconsin Housing and Economic Development Authority",
-      8000000,
-      "FY2024 Section 811 awards",
-      "https://archives.hud.gov/news/2024/pr24-207.cfm"
-    ],
-    [
-      "Department of Housing and Urban Development",
-      "HUD Section 811 Project Rental Assistance · Executive Office of Housing and Livable Communities (MA)",
-      8000000,
-      "FY2024 Section 811 awards",
-      "https://archives.hud.gov/news/2024/pr24-207.cfm"
-    ],
-    [
-      "Department of Housing and Urban Development",
-      "HUD Section 811 Project Rental Assistance · Department of Housing, State of Connecticut",
-      7994908,
-      "FY2024 Section 811 awards",
-      "https://archives.hud.gov/news/2024/pr24-207.cfm"
-    ],
-    [
-      "Department of Housing and Urban Development",
-      "HUD Section 811 Project Rental Assistance · New Hampshire Housing Finance Authority",
-      4169966,
-      "FY2024 Section 811 awards",
-      "https://archives.hud.gov/news/2024/pr24-207.cfm"
-    ],
-    [
-      "Department of Housing and Urban Development",
-      "HUD Section 811 Project Rental Assistance · Pennsylvania Housing Finance Agency",
-      6584328,
-      "FY2024 Section 811 awards",
-      "https://archives.hud.gov/news/2024/pr24-207.cfm"
-    ],
-    [
-      "Department of Housing and Urban Development",
-      "HUD Section 811 Project Rental Assistance · North Carolina Housing Finance Agency",
-      7999786,
-      "FY2024 Section 811 awards",
-      "https://archives.hud.gov/news/2024/pr24-207.cfm"
-    ],
-    [
-      "Department of Housing and Urban Development",
-      "HUD Section 811 Project Rental Assistance · Indiana Housing and Community Development Authority",
-      8000000,
-      "FY2024 Section 811 awards",
-      "https://archives.hud.gov/news/2024/pr24-207.cfm"
-    ],
-    [
-      "Department of Housing and Urban Development",
-      "HUD Section 811 Project Rental Assistance · Nebraska Investment Finance Authority",
-      8000000,
-      "FY2024 Section 811 awards",
-      "https://archives.hud.gov/news/2024/pr24-207.cfm"
-    ],
-    [
-      "Department of Housing and Urban Development",
-      "HUD Section 811 Project Rental Assistance · Kansas Housing Resources Corporation",
-      8000000,
-      "FY2024 Section 811 awards",
-      "https://archives.hud.gov/news/2024/pr24-207.cfm"
-    ],
-    [
-      "Department of Housing and Urban Development",
-      "HUD Section 811 Project Rental Assistance · Texas Department of Housing and Community Affairs",
-      8000000,
-      "FY2024 Section 811 awards",
-      "https://archives.hud.gov/news/2024/pr24-207.cfm"
-    ],
-    [
-      "Department of Housing and Urban Development",
-      "HUD Section 811 Project Rental Assistance · Minnesota Housing Finance Agency",
-      7986651,
-      "FY2024 Section 811 awards",
-      "https://archives.hud.gov/news/2024/pr24-207.cfm"
-    ],
-    [
-      "Department of Housing and Urban Development",
-      "HUD Section 811 Project Rental Assistance · Washington State Department of Commerce",
-      8000000,
-      "FY2024 Section 811 awards",
-      "https://archives.hud.gov/news/2024/pr24-207.cfm"
-    ],
-    [
-      "Department of Housing and Urban Development",
-      "HUD Section 811 Project Rental Assistance · Michigan State Housing Development Authority",
-      7798186,
-      "FY2024 Section 811 awards",
-      "https://archives.hud.gov/news/2024/pr24-207.cfm"
-    ],
-    [
-      "Department of Housing and Urban Development",
-      "HUD Section 811 Project Rental Assistance · Kentucky Housing Corporation",
-      8000000,
-      "FY2024 Section 811 awards",
-      "https://archives.hud.gov/news/2024/pr24-207.cfm"
-    ],
-    [
-      "Department of Housing and Urban Development",
-      "HUD Section 811 Project Rental Assistance · State of Utah, Department of Workforce Services",
-      8000000,
-      "FY2024 Section 811 awards",
-      "https://archives.hud.gov/news/2024/pr24-207.cfm"
-    ],
-    [
-      "Department of Housing and Urban Development",
-      "HUD Section 811 Project Rental Assistance · Oregon Housing and Community Service",
-      8000000,
-      "FY2024 Section 811 awards",
-      "https://archives.hud.gov/news/2024/pr24-207.cfm"
-    ],
-    [
-      "Department of Housing and Urban Development",
-      "HUD Jobs Plus · Eufaula Housing Authority",
-      1600000,
-      "FY2024 Jobs Plus grant awards",
-      "https://archives.hud.gov/news/2024/pr24-172.cfm"
-    ],
-    [
-      "Department of Housing and Urban Development",
-      "HUD Jobs Plus · Selma Housing Authority",
-      2300000,
-      "FY2024 Jobs Plus grant awards",
-      "https://archives.hud.gov/news/2024/pr24-172.cfm"
-    ],
-    [
-      "Department of Housing and Urban Development",
-      "HUD Jobs Plus · Housing Authority County of San Joaquin",
-      1600000,
-      "FY2024 Jobs Plus grant awards",
-      "https://archives.hud.gov/news/2024/pr24-172.cfm"
-    ],
-    [
-      "Department of Housing and Urban Development",
-      "HUD Jobs Plus · Jacksonville Housing Authority",
-      2300000,
-      "FY2024 Jobs Plus grant awards",
-      "https://archives.hud.gov/news/2024/pr24-172.cfm"
-    ],
-    [
-      "Department of Housing and Urban Development",
-      "HUD Jobs Plus · Housing Authority of City of Valdosta",
-      3000000,
-      "FY2024 Jobs Plus grant awards",
-      "https://archives.hud.gov/news/2024/pr24-172.cfm"
-    ],
-    [
-      "Department of Housing and Urban Development",
-      "HUD Jobs Plus · Peoria Housing Authority",
-      1600000,
-      "FY2024 Jobs Plus grant awards",
-      "https://archives.hud.gov/news/2024/pr24-172.cfm"
-    ],
-    [
-      "Department of Housing and Urban Development",
-      "HUD Jobs Plus · Fort Wayne Housing Authority",
-      2300000,
-      "FY2024 Jobs Plus grant awards",
-      "https://archives.hud.gov/news/2024/pr24-172.cfm"
-    ],
-    [
-      "Department of Housing and Urban Development",
-      "HUD Jobs Plus · New Albany Housing Authority",
-      1911572,
-      "FY2024 Jobs Plus grant awards",
-      "https://archives.hud.gov/news/2024/pr24-172.cfm"
-    ],
-    [
-      "Department of Housing and Urban Development",
-      "HUD Jobs Plus · Housing Authority of New Orleans",
-      1422850,
-      "FY2024 Jobs Plus grant awards",
-      "https://archives.hud.gov/news/2024/pr24-172.cfm"
-    ],
-    [
-      "Department of Housing and Urban Development",
-      "HUD Jobs Plus · Southern Nevada Regional Housing Authority",
-      3000000,
-      "FY2024 Jobs Plus grant awards",
-      "https://archives.hud.gov/news/2024/pr24-172.cfm"
-    ],
-    [
-      "Department of Housing and Urban Development",
-      "HUD Jobs Plus · New York City Housing Authority",
-      3700000,
-      "FY2024 Jobs Plus grant awards",
-      "https://archives.hud.gov/news/2024/pr24-172.cfm"
-    ],
-    [
-      "Department of Housing and Urban Development",
-      "HUD Jobs Plus · City of Providence Housing Authority",
-      2299981,
-      "FY2024 Jobs Plus grant awards",
-      "https://archives.hud.gov/news/2024/pr24-172.cfm"
-    ],
-    [
-      "Department of Housing and Urban Development",
-      "HUD Jobs Plus · Jackson Housing Authority",
-      2300000,
-      "FY2024 Jobs Plus grant awards",
-      "https://archives.hud.gov/news/2024/pr24-172.cfm"
-    ],
-    [
-      "Department of Housing and Urban Development",
-      "HUD Jobs Plus · Charlottesville Redevelopment and Housing Authority",
-      1600000,
-      "FY2024 Jobs Plus grant awards",
-      "https://archives.hud.gov/news/2024/pr24-172.cfm"
-    ],
-    [
-      "Department of Housing and Urban Development",
-      "HUD Community Compass technical assistance · ABT Global",
-      12609720.45,
-      "FY2024 Community Compass awards",
-      "https://archives.hud.gov/news/2024/pr24-306.cfm"
-    ],
-    [
-      "Department of Housing and Urban Development",
-      "HUD Community Compass technical assistance · Alaska Municipal League",
-      250000,
-      "FY2024 Community Compass awards",
-      "https://archives.hud.gov/news/2024/pr24-306.cfm"
-    ],
-    [
-      "Department of Housing and Urban Development",
-      "HUD Community Compass technical assistance · BCT Partners",
-      665265,
-      "FY2024 Community Compass awards",
-      "https://archives.hud.gov/news/2024/pr24-306.cfm"
-    ],
-    [
-      "Department of Housing and Urban Development",
-      "HUD Community Compass technical assistance · Capital Access",
-      317000,
-      "FY2024 Community Compass awards",
-      "https://archives.hud.gov/news/2024/pr24-306.cfm"
-    ],
-    [
-      "Department of Housing and Urban Development",
-      "HUD Community Compass technical assistance · Cloudburst",
-      5837115,
-      "FY2024 Community Compass awards",
-      "https://archives.hud.gov/news/2024/pr24-306.cfm"
-    ],
-    [
-      "Department of Housing and Urban Development",
-      "HUD Community Compass technical assistance · Collaborative Solutions",
-      1498824,
-      "FY2024 Community Compass awards",
-      "https://archives.hud.gov/news/2024/pr24-306.cfm"
-    ],
-    [
-      "Department of Housing and Urban Development",
-      "HUD Community Compass technical assistance · Corporate FACTS",
-      982059,
-      "FY2024 Community Compass awards",
-      "https://archives.hud.gov/news/2024/pr24-306.cfm"
-    ],
-    [
-      "Department of Housing and Urban Development",
-      "HUD Community Compass technical assistance · Corporation for Supportive Housing",
-      3929353,
-      "FY2024 Community Compass awards",
-      "https://archives.hud.gov/news/2024/pr24-306.cfm"
-    ],
-    [
-      "Department of Housing and Urban Development",
-      "HUD Community Compass technical assistance · Council of Large Public Housing Authorities",
-      682613.3,
-      "FY2024 Community Compass awards",
-      "https://archives.hud.gov/news/2024/pr24-306.cfm"
-    ],
-    [
-      "Department of Housing and Urban Development",
-      "HUD Community Compass technical assistance · CVR Associates",
-      1596597.7,
-      "FY2024 Community Compass awards",
-      "https://archives.hud.gov/news/2024/pr24-306.cfm"
-    ],
-    [
-      "Department of Housing and Urban Development",
-      "HUD Community Compass technical assistance · Du & Associates",
-      775000.76,
-      "FY2024 Community Compass awards",
-      "https://archives.hud.gov/news/2024/pr24-306.cfm"
-    ],
-    [
-      "Department of Housing and Urban Development",
-      "HUD Community Compass technical assistance · Econometrica",
-      1187424.7,
-      "FY2024 Community Compass awards",
-      "https://archives.hud.gov/news/2024/pr24-306.cfm"
-    ],
-    [
-      "Department of Housing and Urban Development",
-      "HUD Community Compass technical assistance · Enterprise Community Partners",
-      2335696.7,
-      "FY2024 Community Compass awards",
-      "https://archives.hud.gov/news/2024/pr24-306.cfm"
-    ],
-    [
-      "Department of Housing and Urban Development",
-      "HUD Community Compass technical assistance · First Pic",
-      3283500,
-      "FY2024 Community Compass awards",
-      "https://archives.hud.gov/news/2024/pr24-306.cfm"
-    ],
-    [
-      "Department of Housing and Urban Development",
-      "HUD Community Compass technical assistance · Fletcher Group",
-      1150000,
-      "FY2024 Community Compass awards",
-      "https://archives.hud.gov/news/2024/pr24-306.cfm"
-    ],
-    [
-      "Department of Housing and Urban Development",
-      "HUD Community Compass technical assistance · HomeBase",
-      2408824,
-      "FY2024 Community Compass awards",
-      "https://archives.hud.gov/news/2024/pr24-306.cfm"
-    ],
-    [
-      "Department of Housing and Urban Development",
-      "HUD Community Compass technical assistance · HomeFree USA",
-      450000,
-      "FY2024 Community Compass awards",
-      "https://archives.hud.gov/news/2024/pr24-306.cfm"
-    ],
-    [
-      "Department of Housing and Urban Development",
-      "HUD Community Compass technical assistance · Horne",
-      773000,
-      "FY2024 Community Compass awards",
-      "https://archives.hud.gov/news/2024/pr24-306.cfm"
-    ],
-    [
-      "Department of Housing and Urban Development",
-      "HUD Community Compass technical assistance · ICF Incorporated",
-      13049276.15,
-      "FY2024 Community Compass awards",
-      "https://archives.hud.gov/news/2024/pr24-306.cfm"
-    ],
-    [
-      "Department of Housing and Urban Development",
-      "HUD Community Compass technical assistance · IEM International",
-      250000,
-      "FY2024 Community Compass awards",
-      "https://archives.hud.gov/news/2024/pr24-306.cfm"
-    ],
-    [
-      "Department of Housing and Urban Development",
-      "HUD Community Compass technical assistance · International Development and Planning",
-      300000,
-      "FY2024 Community Compass awards",
-      "https://archives.hud.gov/news/2024/pr24-306.cfm"
-    ],
-    [
-      "Department of Housing and Urban Development",
-      "HUD Community Compass technical assistance · Local Initiatives Support Corp",
-      2728000,
-      "FY2024 Community Compass awards",
-      "https://archives.hud.gov/news/2024/pr24-306.cfm"
-    ],
-    [
-      "Department of Housing and Urban Development",
-      "HUD Community Compass technical assistance · MAYA Consulting",
-      250000,
-      "FY2024 Community Compass awards",
-      "https://archives.hud.gov/news/2024/pr24-306.cfm"
-    ],
-    [
-      "Department of Housing and Urban Development",
-      "HUD Community Compass technical assistance · Midwest Evaluation and Research",
-      250000,
-      "FY2024 Community Compass awards",
-      "https://archives.hud.gov/news/2024/pr24-306.cfm"
-    ],
-    [
-      "Department of Housing and Urban Development",
-      "HUD Community Compass technical assistance · National American Indian Housing Council",
-      2705500,
-      "FY2024 Community Compass awards",
-      "https://archives.hud.gov/news/2024/pr24-306.cfm"
-    ],
-    [
-      "Department of Housing and Urban Development",
-      "HUD Community Compass technical assistance · National Association for Latino Community Asset Builders",
-      993000,
-      "FY2024 Community Compass awards",
-      "https://archives.hud.gov/news/2024/pr24-306.cfm"
-    ],
-    [
-      "Department of Housing and Urban Development",
-      "HUD Community Compass technical assistance · Point Source Youth",
-      500000,
-      "FY2024 Community Compass awards",
-      "https://archives.hud.gov/news/2024/pr24-306.cfm"
-    ],
-    [
-      "Department of Housing and Urban Development",
-      "HUD Community Compass technical assistance · Training and Development Associates",
-      1340471,
-      "FY2024 Community Compass awards",
-      "https://archives.hud.gov/news/2024/pr24-306.cfm"
-    ],
-    [
-      "Department of Housing and Urban Development",
-      "HUD Community Compass technical assistance · Technical Assistance Collaborative",
-      6486774,
-      "FY2024 Community Compass awards",
-      "https://archives.hud.gov/news/2024/pr24-306.cfm"
-    ],
-    [
-      "Department of Housing and Urban Development",
-      "HUD Community Compass technical assistance · Association of Alaska Housing Authorities",
-      750000,
-      "FY2024 Community Compass awards",
-      "https://archives.hud.gov/news/2024/pr24-306.cfm"
-    ],
-    [
-      "Department of Housing and Urban Development",
-      "HUD Community Compass technical assistance · The Council of State Governments",
-      400000,
-      "FY2024 Community Compass awards",
-      "https://archives.hud.gov/news/2024/pr24-306.cfm"
-    ],
-    [
-      "Department of Housing and Urban Development",
-      "HUD Community Compass technical assistance · The Partnership Center",
-      2046412,
-      "FY2024 Community Compass awards",
-      "https://archives.hud.gov/news/2024/pr24-306.cfm"
-    ],
-    [
-      "Department of Housing and Urban Development",
-      "HUD Community Compass technical assistance · The St. Bernard Project",
-      298000,
-      "FY2024 Community Compass awards",
-      "https://archives.hud.gov/news/2024/pr24-306.cfm"
-    ],
-    [
-      "Department of Housing and Urban Development",
-      "HUD Community Compass technical assistance · Youth Collaboratory",
-      625000,
-      "FY2024 Community Compass awards",
-      "https://archives.hud.gov/news/2024/pr24-306.cfm"
-    ],
-    [
-      "Department of Housing and Urban Development",
-      "HUD Indian Community Development Block Grant · Keweenaw Bay Indian Community",
-      2000000,
-      "FY2024 ICDBG grant awards",
-      "https://archives.hud.gov/news/2024/pr24-022.cfm"
-    ],
-    [
-      "Department of Housing and Urban Development",
-      "HUD Indian Community Development Block Grant · Mattaponi Indian Reservation",
-      1699933,
-      "FY2024 ICDBG grant awards",
-      "https://archives.hud.gov/news/2024/pr24-022.cfm"
-    ],
-    [
-      "Department of Housing and Urban Development",
-      "HUD Indian Community Development Block Grant · Seneca Nation of Indians",
-      1591200,
-      "FY2024 ICDBG grant awards",
-      "https://archives.hud.gov/news/2024/pr24-022.cfm"
-    ],
-    [
-      "Department of Housing and Urban Development",
-      "HUD Indian Community Development Block Grant · Salish & Kootenai Housing Authority",
-      2000000,
-      "FY2024 ICDBG grant awards",
-      "https://archives.hud.gov/news/2024/pr24-022.cfm"
-    ],
-    [
-      "Department of Housing and Urban Development",
-      "HUD Indian Community Development Block Grant · Fort Peck Housing Authority",
-      2000000,
-      "FY2024 ICDBG grant awards",
-      "https://archives.hud.gov/news/2024/pr24-022.cfm"
-    ],
-    [
-      "Department of Housing and Urban Development",
-      "HUD Indian Community Development Block Grant · Crow Creek Housing Authority · Project 1",
-      1125000,
-      "FY2024 ICDBG grant awards",
-      "https://archives.hud.gov/news/2024/pr24-022.cfm"
-    ],
-    [
-      "Department of Housing and Urban Development",
-      "HUD Indian Community Development Block Grant · Northern Cheyenne Tribal Housing Authority",
-      2000000,
-      "FY2024 ICDBG grant awards",
-      "https://archives.hud.gov/news/2024/pr24-022.cfm"
-    ],
-    [
-      "Department of Housing and Urban Development",
-      "HUD Indian Community Development Block Grant · Crow Creek Housing Authority · Project 2",
-      875000,
-      "FY2024 ICDBG grant awards",
-      "https://archives.hud.gov/news/2024/pr24-022.cfm"
-    ],
-    [
-      "Department of Housing and Urban Development",
-      "HUD Indian Community Development Block Grant · Lower Brule Housing Authority",
-      2000000,
-      "FY2024 ICDBG grant awards",
-      "https://archives.hud.gov/news/2024/pr24-022.cfm"
-    ],
-    [
-      "Department of Housing and Urban Development",
-      "HUD Indian Community Development Block Grant · Cheyenne River Housing Authority",
-      681888,
-      "FY2024 ICDBG grant awards",
-      "https://archives.hud.gov/news/2024/pr24-022.cfm"
-    ],
-    [
-      "Department of Housing and Urban Development",
-      "HUD Indian Community Development Block Grant · Quinault Housing Authority",
-      1968241,
-      "FY2024 ICDBG grant awards",
-      "https://archives.hud.gov/news/2024/pr24-022.cfm"
-    ],
-    [
-      "Department of Housing and Urban Development",
-      "HUD Indian Community Development Block Grant · Chehalis Tribal Housing Authority",
-      1605356,
-      "FY2024 ICDBG grant awards",
-      "https://archives.hud.gov/news/2024/pr24-022.cfm"
-    ]
+    ["Department of Housing and Urban Development", "HUD Preservation and Reinvestment Initiative for Community Enhancement · Boise City", 6773702.72, "FY2024 PRICE grant awards", "https://www.hud.gov/hud-partners/community-price-awards"],
+    ["Department of Housing and Urban Development", "HUD Preservation and Reinvestment Initiative for Community Enhancement · Burns Paiute Tribe", 5992170.57, "FY2024 PRICE grant awards", "https://www.hud.gov/hud-partners/community-price-awards"],
+    ["Department of Housing and Urban Development", "HUD Preservation and Reinvestment Initiative for Community Enhancement · City of Tucson", 11519567.21, "FY2024 PRICE grant awards", "https://www.hud.gov/hud-partners/community-price-awards"],
+    ["Department of Housing and Urban Development", "HUD Preservation and Reinvestment Initiative for Community Enhancement · Commonwealth of Kentucky", 28276690.63, "FY2024 PRICE grant awards", "https://www.hud.gov/hud-partners/community-price-awards"],
+    ["Department of Housing and Urban Development", "HUD Preservation and Reinvestment Initiative for Community Enhancement · Cooperative Development Institute", 17890795.25, "FY2024 PRICE grant awards", "https://www.hud.gov/hud-partners/community-price-awards"],
+    ["Department of Housing and Urban Development", "HUD Preservation and Reinvestment Initiative for Community Enhancement · Dance with Todd Inc", 8329974.95, "FY2024 PRICE grant awards", "https://www.hud.gov/hud-partners/community-price-awards"],
+    ["Department of Housing and Urban Development", "HUD Preservation and Reinvestment Initiative for Community Enhancement · Elevation Community Land Trust", 5000000, "FY2024 PRICE grant awards", "https://www.hud.gov/hud-partners/community-price-awards"],
+    ["Department of Housing and Urban Development", "HUD Preservation and Reinvestment Initiative for Community Enhancement · Greater Charlottesville Habitat for Humanity Inc", 29151778.41, "FY2024 PRICE grant awards", "https://www.hud.gov/hud-partners/community-price-awards"],
+    ["Department of Housing and Urban Development", "HUD Preservation and Reinvestment Initiative for Community Enhancement · Kashia Band of Pomo Indians of the Stewarts Point Rancheria", 5000000, "FY2024 PRICE grant awards", "https://www.hud.gov/hud-partners/community-price-awards"],
+    ["Department of Housing and Urban Development", "HUD Preservation and Reinvestment Initiative for Community Enhancement · Keweenaw Bay Indian Community", 7155231.4, "FY2024 PRICE grant awards", "https://www.hud.gov/hud-partners/community-price-awards"],
+    ["Department of Housing and Urban Development", "HUD Preservation and Reinvestment Initiative for Community Enhancement · Minnesota Housing Partnership", 20284998.88, "FY2024 PRICE grant awards", "https://www.hud.gov/hud-partners/community-price-awards"],
+    ["Department of Housing and Urban Development", "HUD Preservation and Reinvestment Initiative for Community Enhancement · Oregon Department of Housing & Community Services", 13750000, "FY2024 PRICE grant awards", "https://www.hud.gov/hud-partners/community-price-awards"],
+    ["Department of Housing and Urban Development", "HUD Preservation and Reinvestment Initiative for Community Enhancement · Pleasant Point Passamaquoddy Reservation Housing Authority", 5000000, "FY2024 PRICE grant awards", "https://www.hud.gov/hud-partners/community-price-awards"],
+    ["Department of Housing and Urban Development", "HUD Preservation and Reinvestment Initiative for Community Enhancement · Red Cliff Band of Lake Superior Chippewa", 5000000, "FY2024 PRICE grant awards", "https://www.hud.gov/hud-partners/community-price-awards"],
+    ["Department of Housing and Urban Development", "HUD Preservation and Reinvestment Initiative for Community Enhancement · ROC USA LLC", 38125875, "FY2024 PRICE grant awards", "https://www.hud.gov/hud-partners/community-price-awards"],
+    ["Department of Housing and Urban Development", "HUD Preservation and Reinvestment Initiative for Community Enhancement · Tule River Economic Development Corporation", 14920944.98, "FY2024 PRICE grant awards", "https://www.hud.gov/hud-partners/community-price-awards"],
+    ["Department of Housing and Urban Development", "HUD Preservation and Reinvestment Initiative for Community Enhancement · Yurok Indian Housing Authority", 2828270, "FY2024 PRICE grant awards", "https://www.hud.gov/hud-partners/community-price-awards"],
+    ["Department of Housing and Urban Development", "HUD Section 811 Project Rental Assistance · California Housing Finance Agency", 8000000, "FY2024 Section 811 awards", "https://archives.hud.gov/news/2024/pr24-207.cfm"],
+    ["Department of Housing and Urban Development", "HUD Section 811 Project Rental Assistance · Ohio Housing Finance Agency", 8000000, "FY2024 Section 811 awards", "https://archives.hud.gov/news/2024/pr24-207.cfm"],
+    ["Department of Housing and Urban Development", "HUD Section 811 Project Rental Assistance · Wisconsin Housing and Economic Development Authority", 8000000, "FY2024 Section 811 awards", "https://archives.hud.gov/news/2024/pr24-207.cfm"],
+    ["Department of Housing and Urban Development", "HUD Section 811 Project Rental Assistance · Executive Office of Housing and Livable Communities (MA)", 8000000, "FY2024 Section 811 awards", "https://archives.hud.gov/news/2024/pr24-207.cfm"],
+    ["Department of Housing and Urban Development", "HUD Section 811 Project Rental Assistance · Department of Housing, State of Connecticut", 7994908, "FY2024 Section 811 awards", "https://archives.hud.gov/news/2024/pr24-207.cfm"],
+    ["Department of Housing and Urban Development", "HUD Section 811 Project Rental Assistance · New Hampshire Housing Finance Authority", 4169966, "FY2024 Section 811 awards", "https://archives.hud.gov/news/2024/pr24-207.cfm"],
+    ["Department of Housing and Urban Development", "HUD Section 811 Project Rental Assistance · Pennsylvania Housing Finance Agency", 6584328, "FY2024 Section 811 awards", "https://archives.hud.gov/news/2024/pr24-207.cfm"],
+    ["Department of Housing and Urban Development", "HUD Section 811 Project Rental Assistance · North Carolina Housing Finance Agency", 7999786, "FY2024 Section 811 awards", "https://archives.hud.gov/news/2024/pr24-207.cfm"],
+    ["Department of Housing and Urban Development", "HUD Section 811 Project Rental Assistance · Indiana Housing and Community Development Authority", 8000000, "FY2024 Section 811 awards", "https://archives.hud.gov/news/2024/pr24-207.cfm"],
+    ["Department of Housing and Urban Development", "HUD Section 811 Project Rental Assistance · Nebraska Investment Finance Authority", 8000000, "FY2024 Section 811 awards", "https://archives.hud.gov/news/2024/pr24-207.cfm"],
+    ["Department of Housing and Urban Development", "HUD Section 811 Project Rental Assistance · Kansas Housing Resources Corporation", 8000000, "FY2024 Section 811 awards", "https://archives.hud.gov/news/2024/pr24-207.cfm"],
+    ["Department of Housing and Urban Development", "HUD Section 811 Project Rental Assistance · Texas Department of Housing and Community Affairs", 8000000, "FY2024 Section 811 awards", "https://archives.hud.gov/news/2024/pr24-207.cfm"],
+    ["Department of Housing and Urban Development", "HUD Section 811 Project Rental Assistance · Minnesota Housing Finance Agency", 7986651, "FY2024 Section 811 awards", "https://archives.hud.gov/news/2024/pr24-207.cfm"],
+    ["Department of Housing and Urban Development", "HUD Section 811 Project Rental Assistance · Washington State Department of Commerce", 8000000, "FY2024 Section 811 awards", "https://archives.hud.gov/news/2024/pr24-207.cfm"],
+    ["Department of Housing and Urban Development", "HUD Section 811 Project Rental Assistance · Michigan State Housing Development Authority", 7798186, "FY2024 Section 811 awards", "https://archives.hud.gov/news/2024/pr24-207.cfm"],
+    ["Department of Housing and Urban Development", "HUD Section 811 Project Rental Assistance · Kentucky Housing Corporation", 8000000, "FY2024 Section 811 awards", "https://archives.hud.gov/news/2024/pr24-207.cfm"],
+    ["Department of Housing and Urban Development", "HUD Section 811 Project Rental Assistance · State of Utah, Department of Workforce Services", 8000000, "FY2024 Section 811 awards", "https://archives.hud.gov/news/2024/pr24-207.cfm"],
+    ["Department of Housing and Urban Development", "HUD Section 811 Project Rental Assistance · Oregon Housing and Community Service", 8000000, "FY2024 Section 811 awards", "https://archives.hud.gov/news/2024/pr24-207.cfm"],
+    ["Department of Housing and Urban Development", "HUD Jobs Plus · Eufaula Housing Authority", 1600000, "FY2024 Jobs Plus grant awards", "https://archives.hud.gov/news/2024/pr24-172.cfm"],
+    ["Department of Housing and Urban Development", "HUD Jobs Plus · Selma Housing Authority", 2300000, "FY2024 Jobs Plus grant awards", "https://archives.hud.gov/news/2024/pr24-172.cfm"],
+    ["Department of Housing and Urban Development", "HUD Jobs Plus · Housing Authority County of San Joaquin", 1600000, "FY2024 Jobs Plus grant awards", "https://archives.hud.gov/news/2024/pr24-172.cfm"],
+    ["Department of Housing and Urban Development", "HUD Jobs Plus · Jacksonville Housing Authority", 2300000, "FY2024 Jobs Plus grant awards", "https://archives.hud.gov/news/2024/pr24-172.cfm"],
+    ["Department of Housing and Urban Development", "HUD Jobs Plus · Housing Authority of City of Valdosta", 3000000, "FY2024 Jobs Plus grant awards", "https://archives.hud.gov/news/2024/pr24-172.cfm"],
+    ["Department of Housing and Urban Development", "HUD Jobs Plus · Peoria Housing Authority", 1600000, "FY2024 Jobs Plus grant awards", "https://archives.hud.gov/news/2024/pr24-172.cfm"],
+    ["Department of Housing and Urban Development", "HUD Jobs Plus · Fort Wayne Housing Authority", 2300000, "FY2024 Jobs Plus grant awards", "https://archives.hud.gov/news/2024/pr24-172.cfm"],
+    ["Department of Housing and Urban Development", "HUD Jobs Plus · New Albany Housing Authority", 1911572, "FY2024 Jobs Plus grant awards", "https://archives.hud.gov/news/2024/pr24-172.cfm"],
+    ["Department of Housing and Urban Development", "HUD Jobs Plus · Housing Authority of New Orleans", 1422850, "FY2024 Jobs Plus grant awards", "https://archives.hud.gov/news/2024/pr24-172.cfm"],
+    ["Department of Housing and Urban Development", "HUD Jobs Plus · Southern Nevada Regional Housing Authority", 3000000, "FY2024 Jobs Plus grant awards", "https://archives.hud.gov/news/2024/pr24-172.cfm"],
+    ["Department of Housing and Urban Development", "HUD Jobs Plus · New York City Housing Authority", 3700000, "FY2024 Jobs Plus grant awards", "https://archives.hud.gov/news/2024/pr24-172.cfm"],
+    ["Department of Housing and Urban Development", "HUD Jobs Plus · City of Providence Housing Authority", 2299981, "FY2024 Jobs Plus grant awards", "https://archives.hud.gov/news/2024/pr24-172.cfm"],
+    ["Department of Housing and Urban Development", "HUD Jobs Plus · Jackson Housing Authority", 2300000, "FY2024 Jobs Plus grant awards", "https://archives.hud.gov/news/2024/pr24-172.cfm"],
+    ["Department of Housing and Urban Development", "HUD Jobs Plus · Charlottesville Redevelopment and Housing Authority", 1600000, "FY2024 Jobs Plus grant awards", "https://archives.hud.gov/news/2024/pr24-172.cfm"],
+    ["Department of Housing and Urban Development", "HUD Community Compass technical assistance · ABT Global", 12609720.45, "FY2024 Community Compass awards", "https://archives.hud.gov/news/2024/pr24-306.cfm"],
+    ["Department of Housing and Urban Development", "HUD Community Compass technical assistance · Alaska Municipal League", 250000, "FY2024 Community Compass awards", "https://archives.hud.gov/news/2024/pr24-306.cfm"],
+    ["Department of Housing and Urban Development", "HUD Community Compass technical assistance · BCT Partners", 665265, "FY2024 Community Compass awards", "https://archives.hud.gov/news/2024/pr24-306.cfm"],
+    ["Department of Housing and Urban Development", "HUD Community Compass technical assistance · Capital Access", 317000, "FY2024 Community Compass awards", "https://archives.hud.gov/news/2024/pr24-306.cfm"],
+    ["Department of Housing and Urban Development", "HUD Community Compass technical assistance · Cloudburst", 5837115, "FY2024 Community Compass awards", "https://archives.hud.gov/news/2024/pr24-306.cfm"],
+    ["Department of Housing and Urban Development", "HUD Community Compass technical assistance · Collaborative Solutions", 1498824, "FY2024 Community Compass awards", "https://archives.hud.gov/news/2024/pr24-306.cfm"],
+    ["Department of Housing and Urban Development", "HUD Community Compass technical assistance · Corporate FACTS", 982059, "FY2024 Community Compass awards", "https://archives.hud.gov/news/2024/pr24-306.cfm"],
+    ["Department of Housing and Urban Development", "HUD Community Compass technical assistance · Corporation for Supportive Housing", 3929353, "FY2024 Community Compass awards", "https://archives.hud.gov/news/2024/pr24-306.cfm"],
+    ["Department of Housing and Urban Development", "HUD Community Compass technical assistance · Council of Large Public Housing Authorities", 682613.3, "FY2024 Community Compass awards", "https://archives.hud.gov/news/2024/pr24-306.cfm"],
+    ["Department of Housing and Urban Development", "HUD Community Compass technical assistance · CVR Associates", 1596597.7, "FY2024 Community Compass awards", "https://archives.hud.gov/news/2024/pr24-306.cfm"],
+    ["Department of Housing and Urban Development", "HUD Community Compass technical assistance · Du & Associates", 775000.76, "FY2024 Community Compass awards", "https://archives.hud.gov/news/2024/pr24-306.cfm"],
+    ["Department of Housing and Urban Development", "HUD Community Compass technical assistance · Econometrica", 1187424.7, "FY2024 Community Compass awards", "https://archives.hud.gov/news/2024/pr24-306.cfm"],
+    ["Department of Housing and Urban Development", "HUD Community Compass technical assistance · Enterprise Community Partners", 2335696.7, "FY2024 Community Compass awards", "https://archives.hud.gov/news/2024/pr24-306.cfm"],
+    ["Department of Housing and Urban Development", "HUD Community Compass technical assistance · First Pic", 3283500, "FY2024 Community Compass awards", "https://archives.hud.gov/news/2024/pr24-306.cfm"],
+    ["Department of Housing and Urban Development", "HUD Community Compass technical assistance · Fletcher Group", 1150000, "FY2024 Community Compass awards", "https://archives.hud.gov/news/2024/pr24-306.cfm"],
+    ["Department of Housing and Urban Development", "HUD Community Compass technical assistance · HomeBase", 2408824, "FY2024 Community Compass awards", "https://archives.hud.gov/news/2024/pr24-306.cfm"],
+    ["Department of Housing and Urban Development", "HUD Community Compass technical assistance · HomeFree USA", 450000, "FY2024 Community Compass awards", "https://archives.hud.gov/news/2024/pr24-306.cfm"],
+    ["Department of Housing and Urban Development", "HUD Community Compass technical assistance · Horne", 773000, "FY2024 Community Compass awards", "https://archives.hud.gov/news/2024/pr24-306.cfm"],
+    ["Department of Housing and Urban Development", "HUD Community Compass technical assistance · ICF Incorporated", 13049276.15, "FY2024 Community Compass awards", "https://archives.hud.gov/news/2024/pr24-306.cfm"],
+    ["Department of Housing and Urban Development", "HUD Community Compass technical assistance · IEM International", 250000, "FY2024 Community Compass awards", "https://archives.hud.gov/news/2024/pr24-306.cfm"],
+    ["Department of Housing and Urban Development", "HUD Community Compass technical assistance · International Development and Planning", 300000, "FY2024 Community Compass awards", "https://archives.hud.gov/news/2024/pr24-306.cfm"],
+    ["Department of Housing and Urban Development", "HUD Community Compass technical assistance · Local Initiatives Support Corp", 2728000, "FY2024 Community Compass awards", "https://archives.hud.gov/news/2024/pr24-306.cfm"],
+    ["Department of Housing and Urban Development", "HUD Community Compass technical assistance · MAYA Consulting", 250000, "FY2024 Community Compass awards", "https://archives.hud.gov/news/2024/pr24-306.cfm"],
+    ["Department of Housing and Urban Development", "HUD Community Compass technical assistance · Midwest Evaluation and Research", 250000, "FY2024 Community Compass awards", "https://archives.hud.gov/news/2024/pr24-306.cfm"],
+    ["Department of Housing and Urban Development", "HUD Community Compass technical assistance · National American Indian Housing Council", 2705500, "FY2024 Community Compass awards", "https://archives.hud.gov/news/2024/pr24-306.cfm"],
+    ["Department of Housing and Urban Development", "HUD Community Compass technical assistance · National Association for Latino Community Asset Builders", 993000, "FY2024 Community Compass awards", "https://archives.hud.gov/news/2024/pr24-306.cfm"],
+    ["Department of Housing and Urban Development", "HUD Community Compass technical assistance · Point Source Youth", 500000, "FY2024 Community Compass awards", "https://archives.hud.gov/news/2024/pr24-306.cfm"],
+    ["Department of Housing and Urban Development", "HUD Community Compass technical assistance · Training and Development Associates", 1340471, "FY2024 Community Compass awards", "https://archives.hud.gov/news/2024/pr24-306.cfm"],
+    ["Department of Housing and Urban Development", "HUD Community Compass technical assistance · Technical Assistance Collaborative", 6486774, "FY2024 Community Compass awards", "https://archives.hud.gov/news/2024/pr24-306.cfm"],
+    ["Department of Housing and Urban Development", "HUD Community Compass technical assistance · Association of Alaska Housing Authorities", 750000, "FY2024 Community Compass awards", "https://archives.hud.gov/news/2024/pr24-306.cfm"],
+    ["Department of Housing and Urban Development", "HUD Community Compass technical assistance · The Council of State Governments", 400000, "FY2024 Community Compass awards", "https://archives.hud.gov/news/2024/pr24-306.cfm"],
+    ["Department of Housing and Urban Development", "HUD Community Compass technical assistance · The Partnership Center", 2046412, "FY2024 Community Compass awards", "https://archives.hud.gov/news/2024/pr24-306.cfm"],
+    ["Department of Housing and Urban Development", "HUD Community Compass technical assistance · The St. Bernard Project", 298000, "FY2024 Community Compass awards", "https://archives.hud.gov/news/2024/pr24-306.cfm"],
+    ["Department of Housing and Urban Development", "HUD Community Compass technical assistance · Youth Collaboratory", 625000, "FY2024 Community Compass awards", "https://archives.hud.gov/news/2024/pr24-306.cfm"],
+    ["Department of Housing and Urban Development", "HUD Indian Community Development Block Grant · Keweenaw Bay Indian Community", 2000000, "FY2024 ICDBG grant awards", "https://archives.hud.gov/news/2024/pr24-022.cfm"],
+    ["Department of Housing and Urban Development", "HUD Indian Community Development Block Grant · Mattaponi Indian Reservation", 1699933, "FY2024 ICDBG grant awards", "https://archives.hud.gov/news/2024/pr24-022.cfm"],
+    ["Department of Housing and Urban Development", "HUD Indian Community Development Block Grant · Seneca Nation of Indians", 1591200, "FY2024 ICDBG grant awards", "https://archives.hud.gov/news/2024/pr24-022.cfm"],
+    ["Department of Housing and Urban Development", "HUD Indian Community Development Block Grant · Salish & Kootenai Housing Authority", 2000000, "FY2024 ICDBG grant awards", "https://archives.hud.gov/news/2024/pr24-022.cfm"],
+    ["Department of Housing and Urban Development", "HUD Indian Community Development Block Grant · Fort Peck Housing Authority", 2000000, "FY2024 ICDBG grant awards", "https://archives.hud.gov/news/2024/pr24-022.cfm"],
+    ["Department of Housing and Urban Development", "HUD Indian Community Development Block Grant · Crow Creek Housing Authority · Project 1", 1125000, "FY2024 ICDBG grant awards", "https://archives.hud.gov/news/2024/pr24-022.cfm"],
+    ["Department of Housing and Urban Development", "HUD Indian Community Development Block Grant · Northern Cheyenne Tribal Housing Authority", 2000000, "FY2024 ICDBG grant awards", "https://archives.hud.gov/news/2024/pr24-022.cfm"],
+    ["Department of Housing and Urban Development", "HUD Indian Community Development Block Grant · Crow Creek Housing Authority · Project 2", 875000, "FY2024 ICDBG grant awards", "https://archives.hud.gov/news/2024/pr24-022.cfm"],
+    ["Department of Housing and Urban Development", "HUD Indian Community Development Block Grant · Lower Brule Housing Authority", 2000000, "FY2024 ICDBG grant awards", "https://archives.hud.gov/news/2024/pr24-022.cfm"],
+    ["Department of Housing and Urban Development", "HUD Indian Community Development Block Grant · Cheyenne River Housing Authority", 681888, "FY2024 ICDBG grant awards", "https://archives.hud.gov/news/2024/pr24-022.cfm"],
+    ["Department of Housing and Urban Development", "HUD Indian Community Development Block Grant · Quinault Housing Authority", 1968241, "FY2024 ICDBG grant awards", "https://archives.hud.gov/news/2024/pr24-022.cfm"],
+    ["Department of Housing and Urban Development", "HUD Indian Community Development Block Grant · Chehalis Tribal Housing Authority", 1605356, "FY2024 ICDBG grant awards", "https://archives.hud.gov/news/2024/pr24-022.cfm"]
   ],
-  "supplementalSchema": [
-    "subAgency",
-    "program",
-    "amount",
-    "measure",
-    "source"
-  ],
-  "hierarchyNote": "Object-class rows are directly managed; the parent entity is repeated as the sub-agency placeholder.",
+  "supplementalSchema": ["subAgency", "program", "amount", "measure", "source"],
+  "hierarchyNote": "USAspending program-activity rows preserve the agency gross-outlay control; the parent entity is repeated as the sub-agency placeholder.",
   "sourceUrls": [
-    [
-      "FY2024 gross outlays by object class",
-      "https://api.usaspending.gov/api/v2/agency/086/object_class/?fiscal_year=2024&limit=100&page=1"
-    ],
-    [
-      "FY2024 agency budgetary resources total",
-      "https://api.usaspending.gov/api/v2/agency/086/budgetary_resources/?fiscal_year=2024"
-    ]
+    ["FY2024 gross outlays by program activity · page 1", "https://api.usaspending.gov/api/v2/agency/086/program_activity/?fiscal_year=2024&limit=100&page=1"],
+    ["FY2024 gross outlays by program activity · page 2", "https://api.usaspending.gov/api/v2/agency/086/program_activity/?fiscal_year=2024&limit=100&page=2"],
+    ["FY2024 agency budgetary resources total", "https://api.usaspending.gov/api/v2/agency/086/budgetary_resources/?fiscal_year=2024"]
   ],
   "sourceBasis": "official source amount",
-  "sourceCheck": {
-    "objectClassRows": 27,
-    "objectClassTotal": 85091765167.06,
-    "agencyTotal": 85091765167.06,
-    "difference": 0
-  },
+  "sourceCheck": {"groupRows": 151, "programActivityTotal": 85091765167.06, "agencyTotal": 85091765167.06, "difference": 0},
   "normalizationAdjustment": 0,
-  "note": "Amounts are shown on the official source basis; no comparator normalization was applied."
+  "note": "Program activities replace the former generic object-class view and remain on USAspending gross-outlay basis; no comparator normalization was applied."
 }

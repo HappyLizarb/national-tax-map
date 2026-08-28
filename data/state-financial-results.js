@@ -8,12 +8,6 @@
     basis: "Full-accrual GAAP economic-resources reporting",
     boundary: "Total primary government; governmental and business-type activities included; component units and fiduciary funds excluded",
     resultLabel: "Net position (GAAP)",
-    researchCommentary: [
-      "data/research/state-balance-cohort-a.json",
-      "data/research/state-balance-cohort-b.json",
-      "data/research/state-balance-cohort-c.json",
-      "data/research/state-balance-pilot-states.json"
-    ],
     states: {
       "Alabama": {
         period: "FY ended 2024-09-30", resources: 36887315000, expenses: 34823126000, changeInNetPosition: 2064189000, netPosition: 34021393000, precision: 1000,

@@ -5,209 +5,28 @@
   "fiscalYear": 2024,
   "ledgerAmount": 13523638931.46,
   "sourceTotal": 18430433247.63,
-  "sourceUrl": "https://api.usaspending.gov/api/v2/agency/027/object_class/?fiscal_year=2024&limit=100&page=1",
+  "sourceUrl": "https://api.usaspending.gov/api/v2/agency/027/program_activity/?fiscal_year=2024&limit=100&page=1",
   "sourceUrls": [
-    [
-      "FY2024 gross outlays by object class",
-      "https://api.usaspending.gov/api/v2/agency/027/object_class/?fiscal_year=2024&limit=100&page=1"
-    ],
-    [
-      "FY2024 agency budgetary resources total",
-      "https://api.usaspending.gov/api/v2/agency/027/budgetary_resources/?fiscal_year=2024"
-    ]
+    ["FY2024 gross outlays by program activity · page 1", "https://api.usaspending.gov/api/v2/agency/027/program_activity/?fiscal_year=2024&limit=100&page=1"],
+    ["FY2024 agency budgetary resources total", "https://api.usaspending.gov/api/v2/agency/027/budgetary_resources/?fiscal_year=2024"]
   ],
-  "rowSchema": [
-    "subAgency",
-    "program",
-    "amount",
-    "sourceAmount",
-    "sourceRows"
-  ],
+  "rowSchema": ["subAgency", "program", "amount", "sourceAmount", "sourceRows"],
   "rows": [
-    [
-      "Federal Communications Commission",
-      "Grants, subsidies, and contributions",
-      17425286503.92,
-      17425286503.92,
-      null
-    ],
-    [
-      "Federal Communications Commission",
-      "Other services from non-Federal sources",
-      484051996.84,
-      484051996.84,
-      null
-    ],
-    [
-      "Federal Communications Commission",
-      "Full-time permanent",
-      253948642.1,
-      253948642.1,
-      null
-    ],
-    [
-      "Federal Communications Commission",
-      "Civilian personnel benefits",
-      91574847.05,
-      91574847.05,
-      null
-    ],
-    [
-      "Federal Communications Commission",
-      "Operation and maintenance of equipment",
-      102725521.04,
-      102725521.04,
-      null
-    ],
-    [
-      "Federal Communications Commission",
-      "Rental payments to GSA",
-      29995962.23,
-      29995962.23,
-      null
-    ],
-    [
-      "Federal Communications Commission",
-      "Other goods and services from Federal sources",
-      10513212.04,
-      10513212.04,
-      null
-    ],
-    [
-      "Federal Communications Commission",
-      "Equipment",
-      11071071.42,
-      11071071.42,
-      null
-    ],
-    [
-      "Federal Communications Commission",
-      "Communications, utilities, and miscellaneous charges",
-      4266713.16,
-      4266713.16,
-      null
-    ],
-    [
-      "Federal Communications Commission",
-      "Other personnel compensation",
-      6137822.98,
-      6137822.98,
-      null
-    ],
-    [
-      "Federal Communications Commission",
-      "Travel and transportation of persons",
-      2342183.7,
-      2342183.7,
-      null
-    ],
-    [
-      "Federal Communications Commission",
-      "Other than full-time permanent",
-      2013482.05,
-      2013482.05,
-      null
-    ],
-    [
-      "Federal Communications Commission",
-      "Printing and reproduction",
-      1960577.55,
-      1960577.55,
-      null
-    ],
-    [
-      "Federal Communications Commission",
-      "Rental payments to others",
-      1013116.01,
-      1013116.01,
-      null
-    ],
-    [
-      "Federal Communications Commission",
-      "Special personal services payments",
-      1113557.33,
-      1113557.33,
-      null
-    ],
-    [
-      "Federal Communications Commission",
-      "Supplies and materials",
-      941212.07,
-      941212.07,
-      null
-    ],
-    [
-      "Federal Communications Commission",
-      "Land and structures",
-      501338.75,
-      501338.75,
-      null
-    ],
-    [
-      "Federal Communications Commission",
-      "Insurance claims and indemnities",
-      202881.96,
-      202881.96,
-      null
-    ],
-    [
-      "Federal Communications Commission",
-      "Operation and maintenance of facilities",
-      348470.03,
-      348470.03,
-      null
-    ],
-    [
-      "Federal Communications Commission",
-      "Military personnel benefits",
-      271364.9,
-      271364.9,
-      null
-    ],
-    [
-      "Federal Communications Commission",
-      "Transportation of things",
-      91066.49,
-      91066.49,
-      null
-    ],
-    [
-      "Federal Communications Commission",
-      "Medical care",
-      62651.4,
-      62651.4,
-      null
-    ],
-    [
-      "Federal Communications Commission",
-      "Interest and dividends",
-      5422.93,
-      5422.93,
-      null
-    ],
-    [
-      "Federal Communications Commission",
-      "Benefits for former personnel",
-      8909,
-      8909,
-      null
-    ],
-    [
-      "Federal Communications Commission",
-      "Refunds",
-      -15279.32,
-      -15279.32,
-      null
-    ]
+    ["Federal Communications Commission", "UNIVERSAL SERVICE FUND (USF)", 8455000820.88, 8455000820.88, null],
+    ["Federal Communications Commission", "EMERGENCY BROADBAND BENEFIT PROGRAM", 6040733383.09, 6040733383.09, null],
+    ["Federal Communications Commission", "TELECOMMUNICATION RELAY SERVICE (TRS)", 1382730620.8, 1382730620.8, null],
+    ["Federal Communications Commission", "EMERGENCY CONNECTIVITY FUND PROGRAM", 1004044311.07, 1004044311.07, null],
+    ["Federal Communications Commission", "SECURE AND TRUSTED NETWORK COMMUNICATIONS", 625002312.94, 625002312.94, null],
+    ["Federal Communications Commission", "SALARIES AND EXPENSES (REIMBURSABLE)", 548619150.19, 548619150.19, null],
+    ["Federal Communications Commission", "PROGRAM SUPPORT-USF", 287632640.89, 287632640.89, null],
+    ["Federal Communications Commission", "COVID-19 TELEHEALTH", 32597196.52, 32597196.52, null],
+    ["Federal Communications Commission", "BROADBAND DATA ACT", 27910576.57, 27910576.57, null],
+    ["Federal Communications Commission", "PROGRAM SUPPORT-TRS", 21887187.93, 21887187.93, null],
+    ["Federal Communications Commission", "TV BROADCASTER RELOCATION", 4275046.75, 4275046.75, null]
   ],
   "sourceBasis": "official source amount",
-  "sourceCheck": {
-    "objectClassRows": 25,
-    "objectClassTotal": 18430433247.63,
-    "agencyTotal": 18430433247.63,
-    "difference": 0
-  },
+  "sourceCheck": {"groupRows": 11, "programActivityTotal": 18430433247.63, "agencyTotal": 18430433247.63, "difference": 0},
   "normalizationAdjustment": 0,
-  "hierarchyNote": "The source endpoint returns agency-level object-class aggregates; no individual employees or payees are included.",
-  "note": "Amounts are shown on the official source basis; no comparator normalization was applied."
+  "hierarchyNote": "USAspending program-activity rows preserve the agency gross-outlay control; the parent entity is repeated as the sub-agency placeholder.",
+  "note": "Program activities replace the former generic object-class view and remain on USAspending gross-outlay basis; no comparator normalization was applied."
 }

@@ -6,267 +6,148 @@
   "fiscalYear": 2024,
   "ledgerAmount": 200955482631.1,
   "sourceTotal": 273868344692.55,
-  "sourceUrl": "https://api.usaspending.gov/api/v2/agency/091/object_class/?fiscal_year=2024&limit=100&page=1",
-  "rowSchema": [
-    "subAgency",
-    "program",
-    "amount",
-    "sourceAmount",
-    "sourceRows"
-  ],
+  "sourceUrl": "https://api.usaspending.gov/api/v2/agency/091/program_activity/?fiscal_year=2024&limit=100&page=1",
+  "rowSchema": ["subAgency", "program", "amount", "sourceAmount", "sourceRows"],
   "rows": [
-    [
-      "Department of Education",
-      "Grants, subsidies, and contributions",
-      270075513602.13,
-      270075513602.13,
-      null
-    ],
-    [
-      "Department of Education",
-      "Other services from non-Federal sources",
-      1210044287.72,
-      1210044287.72,
-      null
-    ],
-    [
-      "Department of Education",
-      "Operation and maintenance of equipment",
-      1176191081.76,
-      1176191081.76,
-      null
-    ],
-    [
-      "Department of Education",
-      "Full-time permanent",
-      559632778.23,
-      559632778.23,
-      null
-    ],
-    [
-      "Department of Education",
-      "Undistributed",
-      299722189.39,
-      299722189.39,
-      null
-    ],
-    [
-      "Department of Education",
-      "Civilian personnel benefits",
-      219750917.96,
-      219750917.96,
-      null
-    ],
-    [
-      "Department of Education",
-      "Research and development contracts",
-      80133385.78,
-      80133385.78,
-      null
-    ],
-    [
-      "Department of Education",
-      "Other goods and services from Federal sources",
-      54375387.87,
-      54375387.87,
-      null
-    ],
-    [
-      "Department of Education",
-      "Advisory and assistance services",
-      63714951.91,
-      63714951.91,
-      null
-    ],
-    [
-      "Department of Education",
-      "Rental payments to GSA",
-      51174218.77,
-      51174218.77,
-      null
-    ],
-    [
-      "Department of Education",
-      "Other than full-time permanent",
-      34180921,
-      34180921,
-      null
-    ],
-    [
-      "Department of Education",
-      "Other personnel compensation",
-      15457533.61,
-      15457533.61,
-      null
-    ],
-    [
-      "Department of Education",
-      "Land and structures",
-      12357707.54,
-      12357707.54,
-      null
-    ],
-    [
-      "Department of Education",
-      "Equipment",
-      1977793.87,
-      1977793.87,
-      null
-    ],
-    [
-      "Department of Education",
-      "Insurance claims and indemnities",
-      6126798.74,
-      6126798.74,
-      null
-    ],
-    [
-      "Department of Education",
-      "Travel and transportation of persons",
-      4284536.22,
-      4284536.22,
-      null
-    ],
-    [
-      "Department of Education",
-      "Communications, utilities, and miscellaneous charges",
-      1396433.68,
-      1396433.68,
-      null
-    ],
-    [
-      "Department of Education",
-      "Printing and reproduction",
-      958869.3,
-      958869.3,
-      null
-    ],
-    [
-      "Department of Education",
-      "Supplies and materials",
-      414707.69,
-      414707.69,
-      null
-    ],
-    [
-      "Department of Education",
-      "Special personal services payments",
-      176585.78,
-      176585.78,
-      null
-    ],
-    [
-      "Department of Education",
-      "Transportation of things",
-      35600.4,
-      35600.4,
-      null
-    ],
-    [
-      "Department of Education",
-      "Benefits for former personnel",
-      22794.44,
-      22794.44,
-      null
-    ],
-    [
-      "Department of Education",
-      "Interest and dividends",
-      35121.15,
-      35121.15,
-      null
-    ],
-    [
-      "Department of Education",
-      "Military personnel benefits",
-      1125.32,
-      1125.32,
-      null
-    ],
-    [
-      "Department of Education",
-      "Operation and maintenance of facilities",
-      3049,
-      3049,
-      null
-    ],
-    [
-      "Department of Education",
-      "Investments and loans",
-      662313.29,
-      662313.29,
-      null
-    ]
+    ["Department of Education", "REESTIMATES OF DIRECT LOAN SUBSIDY", 115472907854, 115472907854, null],
+    ["Department of Education", "EDUCATION STABILIZATION FUND", 54489565061.68, 54489565061.68, null],
+    ["Department of Education", "FEDERAL PELL GRANTS", 32996425882.47, 32996425882.47, null],
+    ["Department of Education", "GRANTS TO LOCAL EDUCATIONAL AGENCIES", 18240814605.03, 18240814605.03, null],
+    ["Department of Education", "GRANTS TO STATES", 14889696344.91, 14889696344.91, null],
+    ["Department of Education", "VOCATIONAL REHABILITATION STATE GRANTS", 3945119534.96, 3945119534.96, null],
+    ["Department of Education", "INTEREST ON REESTIMATES OF LOAN GUARANTEE SUBSIDY", 3231157563, 3231157563, null],
+    ["Department of Education", "UNKNOWN/OTHER", 2557789723.1, 2557789723.1, null],
+    ["Department of Education", "SUPPORTING EFFECTIVE INSTRUCTION STATE GRANTS", 2225645616.11, 2225645616.11, null],
+    ["Department of Education", "SUBSIDY FOR MODIFICATIONS OF DIRECT LOANS", 1747168755, 1747168755, null],
+    ["Department of Education", "REESTIMATES OF LOAN GUARANTEE SUBSIDY", 1744512821, 1744512821, null],
+    ["Department of Education", "BASIC SUPPORT PAYMENTS", 1700105721, 1700105721, null],
+    ["Department of Education", "STUDENT SUPPORT AND ACADEMIC ENRICHMENT", 1522600486.86, 1522600486.86, null],
+    ["Department of Education", "CAREER AND TECHNICAL EDUCATION STATE GRANTS", 1406696647.56, 1406696647.56, null],
+    ["Department of Education", "21ST CENTURY COMMUNITY LEARNING CENTERS", 1292038000.42, 1292038000.42, null],
+    ["Department of Education", "FEDERAL TRIO PROGRAMS", 1136989092.91, 1136989092.91, null],
+    ["Department of Education", "FEDERAL WORK-STUDY", 1103473557.34, 1103473557.34, null],
+    ["Department of Education", "SERVICING ACTIVITIES", 1061356113.07, 1061356113.07, null],
+    ["Department of Education", "STUDENT AID ADMINISTRATION", 1046132390.64, 1046132390.64, null],
+    ["Department of Education", "ENGLISH LANGUAGE ACQUISITION GRANTS", 912035879.45, 912035879.45, null],
+    ["Department of Education", "FEDERAL SUPPLEMENTAL EDUCATIONAL OPPORTUNITY GRANTS (SEOG)", 871494093.33, 871494093.33, null],
+    ["Department of Education", "ADULT BASIC AND LITERACY EDUCATION STATE GRANTS", 742128677.38, 742128677.38, null],
+    ["Department of Education", "GRANTS FOR INFANTS AND FAMILIES", 635764675.67, 635764675.67, null],
+    ["Department of Education", "STRENGTHENING HISTORICALLY BLACK COLLEGES AND UNIVERSITIES (HBCUS)", 480177658.51, 480177658.51, null],
+    ["Department of Education", "PRESCHOOL GRANTS", 465812966.06, 465812966.06, null],
+    ["Department of Education", "PROGRAM ADMINISTRATION", 444822664.96, 444822664.96, null],
+    ["Department of Education", "STATE ASSESSMENTS", 418171587.63, 418171587.63, null],
+    ["Department of Education", "STATE AGENCY PROGRAMS: MIGRANTS", 394023476.78, 394023476.78, null],
+    ["Department of Education", "GAINING EARLY AWARENESS AND READINESS FOR UNDERGRADUATE PROGRAMS (GEAR UP)", 382213536.35, 382213536.35, null],
+    ["Department of Education", "CHARTER SCHOOLS", 342774801.56, 342774801.56, null],
+    ["Department of Education", "SCHOOL SAFETY NATIONAL ACTIVITIES", 326701706.21, 326701706.21, null],
+    ["Department of Education", "OBLIGATIONS, NON-FEDERAL", 299467023, 299467023, null],
+    ["Department of Education", "RESEARCH, DEVELOPMENT, AND DISSEMINATION", 275593215.03, 275593215.03, null],
+    ["Department of Education", "COMPREHENSIVE LITERACY DEVELOPMENT GRANTS", 248970871.77, 248970871.77, null],
+    ["Department of Education", "OPERATIONS", 240491129.55, 240491129.55, null],
+    ["Department of Education", "GENERAL SUPPORT", 226693000, 226693000, null],
+    ["Department of Education", "RURAL EDUCATION", 210069579.5, 210069579.5, null],
+    ["Department of Education", "NATIONAL ASSESSMENT", 207462610.17, 207462610.17, null],
+    ["Department of Education", "FUND FOR THE IMPROVEMENT OF POSTSECONDARY EDUCATION (FIPSE)", 205878124.45, 205878124.45, null],
+    ["Department of Education", "DEVELOPING HISPANIC-SERVING INSTITUTIONS", 197074719.26, 197074719.26, null],
+    ["Department of Education", "EDUCATION, INNOVATION AND RESEARCH", 174889708.07, 174889708.07, null],
+    ["Department of Education", "TEACHER AND SCHOOL LEADER INCENTIVE FUND", 165570653.8, 165570653.8, null],
+    ["Department of Education", "CIVIL RIGHTS", 141102204, 141102204, null],
+    ["Department of Education", "STATISTICS", 126838392.84, 126838392.84, null],
+    ["Department of Education", "STRENGTHENING HISTORICALLY BLACK GRADUATE INSTITUTIONS", 115346488.74, 115346488.74, null],
+    ["Department of Education", "STRENGTHENING INSTITUTIONS", 113541843.66, 113541843.66, null],
+    ["Department of Education", "PAYMENTS FOR FEDERAL PROPERTY", 103349251, 103349251, null],
+    ["Department of Education", "MAGNET SCHOOLS", 101829193.72, 101829193.72, null],
+    ["Department of Education", "EDUCATION FOR HOMELESS CHILDREN AND YOUTHS", 101533113.7, 101533113.7, null],
+    ["Department of Education", "PROMISE NEIGHBORHOODS", 99932407.06, 99932407.06, null],
+    ["Department of Education", "PERSONNEL PREPARATION", 99422591.2, 99422591.2, null],
+    ["Department of Education", "DEVELOPING HISPANIC-SERVING INSTITUTION STEM AND ARTICULATION PROGRAMS", 95351046.41, 95351046.41, null],
+    ["Department of Education", "SUPPORTING EFFECTIVE EDUCATOR DEVELOPMENT (SEED)", 90928144.86, 90928144.86, null],
+    ["Department of Education", "INNOVATIVE APPROACHES TO LITERACY", 83948706.09, 83948706.09, null],
+    ["Department of Education", "INTERNATIONAL EDUCATION AND FOREIGN LANGUAGE STUDIES", 81621921.46, 81621921.46, null],
+    ["Department of Education", "FULL-SERVICE COMMUNITY SCHOOLS", 79900853.31, 79900853.31, null],
+    ["Department of Education", "STRENGTHENING TRIBALLY CONTROLLED COLLEGES AND UNIVERSITIES", 73614652.7, 73614652.7, null],
+    ["Department of Education", "TEACHER QUALITY PARTNERSHIPS", 70401419.81, 70401419.81, null],
+    ["Department of Education", "CHILD CARE ACCESS MEANS PARENTS IN SCHOOL", 70278040.68, 70278040.68, null],
+    ["Department of Education", "INSPECTOR GENERAL", 68394409.92, 68394409.92, null],
+    ["Department of Education", "SPECIAL PROGRAMS FOR INDIAN CHILDREN", 67962197.41, 67962197.41, null],
+    ["Department of Education", "ALASKA NATIVE EDUCATION", 66575279.57, 66575279.57, null],
+    ["Department of Education", "RESEARCH IN SPECIAL EDUCATION", 65968266.96, 65968266.96, null],
+    ["Department of Education", "REGIONAL EDUCATIONAL LABORATORIES", 59900225.7, 59900225.7, null],
+    ["Department of Education", "NATIVE HAWAIIANS EDUCATION", 59361562.05, 59361562.05, null],
+    ["Department of Education", "COMPREHENSIVE CENTERS", 58448915.22, 58448915.22, null],
+    ["Department of Education", "HURRICANE EDUCATION RECOVERY", 57828408.57, 57828408.57, null],
+    ["Department of Education", "PAYMENTS FOR CHILDREN WITH DISABILITIES", 54421205.5, 54421205.5, null],
+    ["Department of Education", "HOWARD UNIVERSITY HOSPITAL", 50689511.97, 50689511.97, null],
+    ["Department of Education", "STATE AGENCY PROGRAMS: NEGLECTED, DELINQUENT, AND AT RISK CHILDREN AND YOUTH", 48952831.99, 48952831.99, null],
+    ["Department of Education", "TECHNICAL ASSISTANCE AND DISSEMINATION", 44620323.74, 44620323.74, null],
+    ["Department of Education", "AMERICAN PRINTING HOUSE FOR THE BLIND", 43297385.24, 43297385.24, null],
+    ["Department of Education", "READY TO LEARN PROGRAMMING", 38205683.88, 38205683.88, null],
+    ["Department of Education", "SPECIAL OLYMPICS EDUCATION PROGRAM", 38055618.38, 38055618.38, null],
+    ["Department of Education", "STATE PERSONNEL DEVELOPMENT", 37015662.06, 37015662.06, null],
+    ["Department of Education", "DC SCHOOLS/SOAR ACT", 35173386.83, 35173386.83, null],
+    ["Department of Education", "DIRECT LOAN SUBSIDY", 34831318, 34831318, null],
+    ["Department of Education", "INDEPENDENT LIVING SERVICES FOR OLDER BLIND INDIVIDUALS", 32333885.15, 32333885.15, null],
+    ["Department of Education", "PARENT INFORMATION CENTERS", 31990633.22, 31990633.22, null],
+    ["Department of Education", "ARTS IN EDUCATION", 31977147.9, 31977147.9, null],
+    ["Department of Education", "EDUCATIONAL TECHNOLOGY, MEDIA, AND MATERIALS", 31305732.73, 31305732.73, null],
+    ["Department of Education", "CONSTRUCTION", 30879065.6, 30879065.6, null],
+    ["Department of Education", "TRAINING", 29195358.84, 29195358.84, null],
+    ["Department of Education", "STATEWIDE LONGITUDINAL DATA SYSTEMS", 27100232.81, 27100232.81, null],
+    ["Department of Education", "HELEN KELLER NATIONAL CENTER", 21190396.98, 21190396.98, null],
+    ["Department of Education", "PROTECTION AND ADVOCACY OF INDIVIDUAL RIGHTS", 20408604.82, 20408604.82, null],
+    ["Department of Education", "GRADUATE ASSISTANCE IN AREAS OF NATIONAL NEED", 20186886.99, 20186886.99, null],
+    ["Department of Education", "PROMOTING BACCALAUREATE OPPORTUNITIES FOR HISPANIC AMERICANS", 20017119.63, 20017119.63, null],
+    ["Department of Education", "TRIBALLY CONTROLLED POSTSECONDARY CAREER AND TECHNICAL INSTITUTIONS", 19990184.73, 19990184.73, null],
+    ["Department of Education", "SUPPORTED EMPLOYMENT STATE GRANTS", 19274540.56, 19274540.56, null],
+    ["Department of Education", "AMERICAN HISTORY AND CIVICS", 18474881.85, 18474881.85, null],
+    ["Department of Education", "STRENGTHENING ASIAN AMERICAN- AND NATIVE AMERICAN PACIFIC ISLANDER-SERVING INSTITUTIONS", 17481079.03, 17481079.03, null],
+    ["Department of Education", "STATEWIDE FAMILY ENGAGEMENT CENTERS", 17089282.6, 17089282.6, null],
+    ["Department of Education", "JAVITS GIFTED AND TALENTED EDUCATION", 16803646.32, 16803646.32, null],
+    ["Department of Education", "MINORITY SCIENCE AND ENGINEERING IMPROVEMENT", 16384050.52, 16384050.52, null],
+    ["Department of Education", "ADULT EDUCATION NATIONAL LEADERSHIP ACTIVITIES", 14745807.83, 14745807.83, null],
+    ["Department of Education", "CLIENT ASSISTANCE STATE GRANTS", 14202792.48, 14202792.48, null],
+    ["Department of Education", "STRENGTHENING PREDOMINANTLY BLACK INSTITUTIONS", 14190968.12, 14190968.12, null],
+    ["Department of Education", "SPECIAL EDUCATION STUDIES AND EVALUATIONS", 14033173.04, 14033173.04, null],
+    ["Department of Education", "STRENGTHENING HISTORICALLY BLACK MASTERS PROGRAMS", 13672408.73, 13672408.73, null],
+    ["Department of Education", "STRENGTHENING ALASKA NATIVE- AND NATIVE HAWAIIAN-SERVING INSTITUTIONS", 13287510.61, 13287510.61, null],
+    ["Department of Education", "MODEL TRANSITION PROGRAMS FOR STUDENTS WITH INTELLECTUAL DISABILITIES", 13102266.13, 13102266.13, null],
+    ["Department of Education", "POOLED EVALUATION", 11828857.02, 11828857.02, null],
+    ["Department of Education", "STRENGTHENING NATIVE AMERICAN-SERVING NONTRIBAL INSTITUTIONS", 11646921.75, 11646921.75, null],
+    ["Department of Education", "DEMONSTRATION AND TRAINING PROGRAMS", 10587254.25, 10587254.25, null],
+    ["Department of Education", "NATIONAL ACTIVITIES", 10014515.53, 10014515.53, null],
+    ["Department of Education", "CAREER AND TECHNICAL EDUCATION NATIONAL ACTIVITIES", 9994166.09, 9994166.09, null],
+    ["Department of Education", "STRENGTHENING ALASKA NATIVE AND NATIVE HAWAIIAN-SERVING INSTITUTIONS", 8158304.4, 8158304.4, null],
+    ["Department of Education", "TRAINING AND ADVISORY SERVICES", 6761260.69, 6761260.69, null],
+    ["Department of Education", "DEATH, DISABILITY, AND BANKRUPTCY CLAIMS", 6126798.74, 6126798.74, null],
+    ["Department of Education", "SPECIAL PROGRAMS FOR MIGRANT STUDENTS", 4664256.03, 4664256.03, null],
+    ["Department of Education", "NATIONAL ASSESSMENT GOVERNING BOARD", 4522733.8, 4522733.8, null],
+    ["Department of Education", "FACILITIES MAINTENANCE", 2334441.65, 2334441.65, null],
+    ["Department of Education", "REIMBURSABLE PROGRAM ACTIVITY", 1501306.21, 1501306.21, null],
+    ["Department of Education", "INTEREST BENEFITS, NET OF ORIGINATION FEES", 846841.93, 846841.93, null],
+    ["Department of Education", "DEFAULT CLAIMS", 662260.29, 662260.29, null],
+    ["Department of Education", "HAWKINS CENTERS OF EXCELLENCE", 633564.35, 633564.35, null],
+    ["Department of Education", "CONTRACT COLLECTION COSTS", 557000.82, 557000.82, null],
+    ["Department of Education", "DEFAULT COLLECTIONS COSTS", 540823, 540823, null],
+    ["Department of Education", "ADMINISTRATIVE EXPENSES", 270001.77, 270001.77, null],
+    ["Department of Education", "STUDENT FINANCIAL ASSISTANCE DEBT COLLECTION", 255133.23, 255133.23, null]
   ],
   "supplementalRows": [
-    [
-      "Federal Student Aid",
-      "FSA FY2024 aid disbursements · Direct Loan",
-      85802400000,
-      "student-aid disbursement",
-      "https://studentaid.gov/sites/default/files/fy2024-fsa-annual-report-508.pdf"
-    ],
-    [
-      "Federal Student Aid",
-      "FSA FY2024 aid disbursements · Pell",
-      32995699999.999996,
-      "student-aid disbursement",
-      "https://studentaid.gov/sites/default/files/fy2024-fsa-annual-report-508.pdf"
-    ],
-    [
-      "Federal Student Aid",
-      "FSA FY2024 aid disbursements · FSEOG",
-      871500000,
-      "student-aid disbursement",
-      "https://studentaid.gov/sites/default/files/fy2024-fsa-annual-report-508.pdf"
-    ],
-    [
-      "Federal Student Aid",
-      "FSA FY2024 aid disbursements · TEACH",
-      42300000,
-      "student-aid disbursement",
-      "https://studentaid.gov/sites/default/files/fy2024-fsa-annual-report-508.pdf"
-    ],
-    [
-      "Federal Student Aid",
-      "FSA FY2024 aid disbursements · IASG",
-      700000,
-      "student-aid disbursement",
-      "https://studentaid.gov/sites/default/files/fy2024-fsa-annual-report-508.pdf"
-    ],
-    [
-      "Federal Student Aid",
-      "FSA FY2024 aid disbursements · Federal Work-Study",
-      1103500000,
-      "student-aid disbursement",
-      "https://studentaid.gov/sites/default/files/fy2024-fsa-annual-report-508.pdf"
-    ]
+    ["Federal Student Aid", "FSA FY2024 aid disbursements · Direct Loan", 85802400000, "student-aid disbursement", "https://studentaid.gov/sites/default/files/fy2024-fsa-annual-report-508.pdf"],
+    ["Federal Student Aid", "FSA FY2024 aid disbursements · Pell", 32995699999.999996, "student-aid disbursement", "https://studentaid.gov/sites/default/files/fy2024-fsa-annual-report-508.pdf"],
+    ["Federal Student Aid", "FSA FY2024 aid disbursements · FSEOG", 871500000, "student-aid disbursement", "https://studentaid.gov/sites/default/files/fy2024-fsa-annual-report-508.pdf"],
+    ["Federal Student Aid", "FSA FY2024 aid disbursements · TEACH", 42300000, "student-aid disbursement", "https://studentaid.gov/sites/default/files/fy2024-fsa-annual-report-508.pdf"],
+    ["Federal Student Aid", "FSA FY2024 aid disbursements · IASG", 700000, "student-aid disbursement", "https://studentaid.gov/sites/default/files/fy2024-fsa-annual-report-508.pdf"],
+    ["Federal Student Aid", "FSA FY2024 aid disbursements · Federal Work-Study", 1103500000, "student-aid disbursement", "https://studentaid.gov/sites/default/files/fy2024-fsa-annual-report-508.pdf"]
   ],
-  "supplementalSchema": [
-    "subAgency",
-    "program",
-    "amount",
-    "measure",
-    "source"
-  ],
-  "hierarchyNote": "Object-class rows are directly managed; the parent entity is repeated as the sub-agency placeholder.",
+  "supplementalSchema": ["subAgency", "program", "amount", "measure", "source"],
+  "hierarchyNote": "USAspending program-activity rows preserve the agency gross-outlay control; the parent entity is repeated as the sub-agency placeholder.",
   "sourceUrls": [
-    [
-      "FY2024 gross outlays by object class",
-      "https://api.usaspending.gov/api/v2/agency/091/object_class/?fiscal_year=2024&limit=100&page=1"
-    ],
-    [
-      "FY2024 agency budgetary resources total",
-      "https://api.usaspending.gov/api/v2/agency/091/budgetary_resources/?fiscal_year=2024"
-    ]
+    ["FY2024 gross outlays by program activity · page 1", "https://api.usaspending.gov/api/v2/agency/091/program_activity/?fiscal_year=2024&limit=100&page=1"],
+    ["FY2024 gross outlays by program activity · page 2", "https://api.usaspending.gov/api/v2/agency/091/program_activity/?fiscal_year=2024&limit=100&page=2"],
+    ["FY2024 agency budgetary resources total", "https://api.usaspending.gov/api/v2/agency/091/budgetary_resources/?fiscal_year=2024"]
   ],
   "sourceBasis": "official source amount",
-  "sourceCheck": {
-    "objectClassRows": 26,
-    "objectClassTotal": 273868344692.55,
-    "agencyTotal": 273868344692.55,
-    "difference": 0
-  },
+  "sourceCheck": {"groupRows": 121, "programActivityTotal": 273868344692.55, "agencyTotal": 273868344692.55, "difference": 0},
   "normalizationAdjustment": 0.03,
-  "note": "Amounts are shown on the official source basis; no comparator normalization was applied."
+  "note": "Program activities replace the former generic object-class view and remain on USAspending gross-outlay basis; no comparator normalization was applied."
 }

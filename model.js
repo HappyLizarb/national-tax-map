@@ -83,8 +83,23 @@ const basisExplanations = {
   cash: "The state-source total uses cash reporting, recognizing activity when money moves within the covered treasury funds."
 };
 
-function accountingComparisonFor(dataset, census, ledgerTotals, accountingBases, budgetActuals, name) {
+function comparisonReferences(basis, financial, censusUrl) {
+  const censusReferences = [
+    ["Census FY2024 table", censusUrl],
+    ["Census methodology", "https://www.census.gov/programs-surveys/state/technical-documentation/methodology.html"]
+  ];
+  return basis ? [
+    ["Official state-source data", basis.ledgerUrl],
+    ["FY2024 audited ACFR", basis.acfrUrl],
+    ...censusReferences,
+    ["Census classification manual", "https://www2.census.gov/govs/class/classfull.pdf"]
+  ] : [["FY2024 audited ACFR", financial.sourceUrl], ...censusReferences];
+}
+
+// Compare Census with the canonical non-Census control available for each state.
+function accountingComparisonFor(dataset, census, ledgerTotals, accountingBases, budgetActuals, financialResults, name) {
   const raw = dataset.states[name], actual = budgetActuals?.[name], basis = accountingBases?.[name];
+  const financial = financialResults?.states?.[name];
   if (!raw) return null;
   const censusUrl = census.url + "?g=040XX00US" + raw.fips + "&time=2024";
   if (actual) return {
@@ -102,21 +117,17 @@ function accountingComparisonFor(dataset, census, ledgerTotals, accountingBases,
     references: [["Official budget-basis source", actual.sourceUrl],
       ["Pilot source audit", "data/research/pilot-legislative-budget-actuals.md"], ["Census comparison", censusUrl]]
   };
-  if (!basis) return null;
+  if (!basis && !financial) return null;
+  const stateTotal = basis ? ledgerTotals[name] : financial.expenses;
   return {
-    kind: "legacy-comparison",
+    kind: basis ? "legacy-comparison" : "gaap-comparison",
     censusTotal: raw.total,
-    stateTotal: ledgerTotals[name],
-    difference: raw.total - ledgerTotals[name],
-    label: basis.label,
-    statement: basisExplanations[basis.kind] + " " + basis.detail,
-    references: [
-      ["Official state-source data", basis.ledgerUrl],
-      ["FY2024 audited ACFR", basis.acfrUrl],
-      ["Census FY2024 table", censusUrl],
-      ["Census methodology", "https://www.census.gov/programs-surveys/state/technical-documentation/methodology.html"],
-      ["Census classification manual", "https://www2.census.gov/govs/class/classfull.pdf"]
-    ]
+    stateTotal,
+    difference: raw.total - stateTotal,
+    label: basis?.label || "Audited primary-government GAAP expenses",
+    statement: basis ? basisExplanations[basis.kind] + " " + basis.detail
+      : financialResults.basis + ". " + financialResults.boundary + ".",
+    references: comparisonReferences(basis, financial, censusUrl)
   };
 }
 
@@ -210,7 +221,7 @@ function createModel(dataset, stateSources, alternates, federalSources, ledgerTo
     formatMoney,
     formatExactMoney,
     sourceLinks: (name, _layer, fips = "") => sourceLinksFor(stateSources, alternates, sources, name, fips),
-    accountingComparisonFor: (name) => accountingComparisonFor(dataset, sources[0], ledgerTotals || {}, accountingBases || {}, budgetActuals || {}, name),
+    accountingComparisonFor: (name) => accountingComparisonFor(dataset, sources[0], ledgerTotals || {}, accountingBases || {}, budgetActuals || {}, financialResults || {}, name),
     federalSourceRows: () => federalSources || [],
     taxOverviewFor: (name) => taxOverviewFor(taxRates, incomeTiers, estimates, name)
   };

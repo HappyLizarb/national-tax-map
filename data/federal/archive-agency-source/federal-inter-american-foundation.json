@@ -5,146 +5,21 @@
   "fiscalYear": 2024,
   "ledgerAmount": 33100209.29,
   "sourceTotal": 45109988.58,
-  "sourceUrl": "https://api.usaspending.gov/api/v2/agency/164/object_class/?fiscal_year=2024&limit=100&page=1",
+  "sourceUrl": "https://api.usaspending.gov/api/v2/agency/164/program_activity/?fiscal_year=2024&limit=100&page=1",
   "sourceUrls": [
-    [
-      "FY2024 gross outlays by object class",
-      "https://api.usaspending.gov/api/v2/agency/164/object_class/?fiscal_year=2024&limit=100&page=1"
-    ],
-    [
-      "FY2024 agency budgetary resources total",
-      "https://api.usaspending.gov/api/v2/agency/164/budgetary_resources/?fiscal_year=2024"
-    ]
+    ["FY2024 gross outlays by program activity · page 1", "https://api.usaspending.gov/api/v2/agency/164/program_activity/?fiscal_year=2024&limit=100&page=1"],
+    ["FY2024 agency budgetary resources total", "https://api.usaspending.gov/api/v2/agency/164/budgetary_resources/?fiscal_year=2024"]
   ],
-  "rowSchema": [
-    "subAgency",
-    "program",
-    "amount",
-    "sourceAmount",
-    "sourceRows"
-  ],
+  "rowSchema": ["subAgency", "program", "amount", "sourceAmount", "sourceRows"],
   "rows": [
-    [
-      "Inter-American Foundation",
-      "Grants, subsidies, and contributions",
-      26647829.55,
-      26647829.55,
-      null
-    ],
-    [
-      "Inter-American Foundation",
-      "Full-time permanent",
-      5921836.87,
-      5921836.87,
-      null
-    ],
-    [
-      "Inter-American Foundation",
-      "Advisory and assistance services",
-      5914809.44,
-      5914809.44,
-      null
-    ],
-    [
-      "Inter-American Foundation",
-      "Civilian personnel benefits",
-      2344663.79,
-      2344663.79,
-      null
-    ],
-    [
-      "Inter-American Foundation",
-      "Other goods and services from Federal sources",
-      2056629.55,
-      2056629.55,
-      null
-    ],
-    [
-      "Inter-American Foundation",
-      "Travel and transportation of persons",
-      369900.1,
-      369900.1,
-      null
-    ],
-    [
-      "Inter-American Foundation",
-      "Rental payments to others",
-      742470.54,
-      742470.54,
-      null
-    ],
-    [
-      "Inter-American Foundation",
-      "Communications, utilities, and miscellaneous charges",
-      277313.37,
-      277313.37,
-      null
-    ],
-    [
-      "Inter-American Foundation",
-      "Other than full-time permanent",
-      224620.34,
-      224620.34,
-      null
-    ],
-    [
-      "Inter-American Foundation",
-      "Special personal services payments",
-      188197.4,
-      188197.4,
-      null
-    ],
-    [
-      "Inter-American Foundation",
-      "Other personnel compensation",
-      158247.04,
-      158247.04,
-      null
-    ],
-    [
-      "Inter-American Foundation",
-      "Equipment",
-      147559.24,
-      147559.24,
-      null
-    ],
-    [
-      "Inter-American Foundation",
-      "Supplies and materials",
-      48002.96,
-      48002.96,
-      null
-    ],
-    [
-      "Inter-American Foundation",
-      "Printing and reproduction",
-      29303.99,
-      29303.99,
-      null
-    ],
-    [
-      "Inter-American Foundation",
-      "Other services from non-Federal sources",
-      30514.59,
-      30514.59,
-      null
-    ],
-    [
-      "Inter-American Foundation",
-      "Operation and maintenance of equipment",
-      8089.81,
-      8089.81,
-      null
-    ]
+    ["Inter-American Foundation", "DEVELOPMENT GRANTS", 25587477.38, 25587477.38, null],
+    ["Inter-American Foundation", "PROGRAM IMPLEMENTATION EXPENSES", 9576011.31, 9576011.31, null],
+    ["Inter-American Foundation", "ADMINISTRATIVE EXPENSES", 8886147.72, 8886147.72, null],
+    ["Inter-American Foundation", "DEVELOPMENT GRANTS (SPTF)", 1060352.17, 1060352.17, null]
   ],
   "sourceBasis": "official source amount",
-  "sourceCheck": {
-    "objectClassRows": 16,
-    "objectClassTotal": 45109988.58,
-    "agencyTotal": 45109988.58,
-    "difference": 0
-  },
+  "sourceCheck": {"groupRows": 4, "programActivityTotal": 45109988.58, "agencyTotal": 45109988.58, "difference": 0},
   "normalizationAdjustment": 0.02,
-  "hierarchyNote": "The source endpoint returns agency-level object-class aggregates; no individual employees or payees are included.",
-  "note": "Amounts are shown on the official source basis; no comparator normalization was applied."
+  "hierarchyNote": "USAspending program-activity rows preserve the agency gross-outlay control; the parent entity is repeated as the sub-agency placeholder.",
+  "note": "Program activities replace the former generic object-class view and remain on USAspending gross-outlay basis; no comparator normalization was applied."
 }

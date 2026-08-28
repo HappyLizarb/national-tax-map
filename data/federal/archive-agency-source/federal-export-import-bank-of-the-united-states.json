@@ -5,156 +5,20 @@
   "fiscalYear": 2024,
   "ledgerAmount": 157452267.77,
   "sourceTotal": 214580818.48,
-  "sourceUrl": "https://api.usaspending.gov/api/v2/agency/083/object_class/?fiscal_year=2024&limit=100&page=1",
+  "sourceUrl": "https://api.usaspending.gov/api/v2/agency/083/program_activity/?fiscal_year=2024&limit=100&page=1",
   "sourceUrls": [
-    [
-      "FY2024 gross outlays by object class",
-      "https://api.usaspending.gov/api/v2/agency/083/object_class/?fiscal_year=2024&limit=100&page=1"
-    ],
-    [
-      "FY2024 agency budgetary resources total",
-      "https://api.usaspending.gov/api/v2/agency/083/budgetary_resources/?fiscal_year=2024"
-    ]
+    ["FY2024 gross outlays by program activity · page 1", "https://api.usaspending.gov/api/v2/agency/083/program_activity/?fiscal_year=2024&limit=100&page=1"],
+    ["FY2024 agency budgetary resources total", "https://api.usaspending.gov/api/v2/agency/083/budgetary_resources/?fiscal_year=2024"]
   ],
-  "rowSchema": [
-    "subAgency",
-    "program",
-    "amount",
-    "sourceAmount",
-    "sourceRows"
-  ],
+  "rowSchema": ["subAgency", "program", "amount", "sourceAmount", "sourceRows"],
   "rows": [
-    [
-      "Export-Import Bank of the United States",
-      "Full-time permanent",
-      83972683.38,
-      83972683.38,
-      null
-    ],
-    [
-      "Export-Import Bank of the United States",
-      "Object class not reported by official source",
-      57864723.1,
-      57864723.1,
-      null
-    ],
-    [
-      "Export-Import Bank of the United States",
-      "Operation and maintenance of equipment",
-      28121172.86,
-      28121172.86,
-      null
-    ],
-    [
-      "Export-Import Bank of the United States",
-      "Grants, subsidies, and contributions",
-      158895.63,
-      158895.63,
-      null
-    ],
-    [
-      "Export-Import Bank of the United States",
-      "Other services from non-Federal sources",
-      13181652.31,
-      13181652.31,
-      null
-    ],
-    [
-      "Export-Import Bank of the United States",
-      "Advisory and assistance services",
-      11193271.48,
-      11193271.48,
-      null
-    ],
-    [
-      "Export-Import Bank of the United States",
-      "Rental payments to GSA",
-      7776922.68,
-      7776922.68,
-      null
-    ],
-    [
-      "Export-Import Bank of the United States",
-      "Supplies and materials",
-      4310813.75,
-      4310813.75,
-      null
-    ],
-    [
-      "Export-Import Bank of the United States",
-      "Other goods and services from Federal sources",
-      2883132.73,
-      2883132.73,
-      null
-    ],
-    [
-      "Export-Import Bank of the United States",
-      "Travel and transportation of persons",
-      2824135.38,
-      2824135.38,
-      null
-    ],
-    [
-      "Export-Import Bank of the United States",
-      "Communications, utilities, and miscellaneous charges",
-      931930.96,
-      931930.96,
-      null
-    ],
-    [
-      "Export-Import Bank of the United States",
-      "Rental payments to others",
-      577891.91,
-      577891.91,
-      null
-    ],
-    [
-      "Export-Import Bank of the United States",
-      "Other personnel compensation",
-      285000,
-      285000,
-      null
-    ],
-    [
-      "Export-Import Bank of the United States",
-      "Civilian personnel benefits",
-      31102.2,
-      31102.2,
-      null
-    ],
-    [
-      "Export-Import Bank of the United States",
-      "Printing and reproduction",
-      55830.97,
-      55830.97,
-      null
-    ],
-    [
-      "Export-Import Bank of the United States",
-      "Operation and maintenance of facilities",
-      383102.76,
-      383102.76,
-      null
-    ],
-    [
-      "Export-Import Bank of the United States",
-      "Equipment",
-      28556.38,
-      28556.38,
-      null
-    ]
+    ["Export-Import Bank of the United States", "ADMINISTRATIVE EXPENSES", 214421922.85, 214421922.85, null],
+    ["Export-Import Bank of the United States", "LOAN GUARANTEE SUBSIDY", 158895.63, 158895.63, null]
   ],
   "sourceBasis": "official source amount",
-  "sourceCheck": {
-    "objectClassRows": 17,
-    "objectClassTotal": 214580818.48,
-    "agencyTotal": 214580818.48,
-    "difference": 0
-  },
+  "sourceCheck": {"groupRows": 2, "programActivityTotal": 214580818.48, "agencyTotal": 214580818.48, "difference": 0},
   "normalizationAdjustment": 0.02,
-  "hierarchyNote": "The source endpoint returns agency-level object-class aggregates; no individual employees or payees are included.",
-  "sourceLabelMap": {
-    "Object class not reported by official source": "Unknown"
-  },
-  "note": "The official USAspending object-class response labels 1 row as Unknown; the display label states that the object class was not reported and no category was inferred. Amounts are shown on the official source basis; no comparator normalization was applied."
+  "hierarchyNote": "USAspending program-activity rows preserve the agency gross-outlay control; the parent entity is repeated as the sub-agency placeholder.",
+  "sourceLabelMap": {"Object class not reported by official source": "Unknown"},
+  "note": "Program activities replace the former generic object-class view and remain on USAspending gross-outlay basis; no comparator normalization was applied."
 }

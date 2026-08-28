@@ -6,648 +6,289 @@
   "fiscalYear": 2024,
   "ledgerAmount": 934401157946.54,
   "sourceTotal": 1273430787033.52,
-  "sourceUrl": "https://api.usaspending.gov/api/v2/agency/097/object_class/?fiscal_year=2024&limit=100&page=1",
-  "rowSchema": [
-    "subAgency",
-    "program",
-    "amount",
-    "sourceAmount",
-    "sourceRows"
-  ],
+  "sourceUrl": "https://api.usaspending.gov/api/v2/agency/097/program_activity/?fiscal_year=2024&limit=100&page=1",
+  "rowSchema": ["subAgency", "program", "amount", "sourceAmount", "sourceRows"],
   "rows": [
-    [
-      "Department of Defense",
-      "Benefits for former personnel",
-      245823878064.75,
-      245823878064.75,
-      null
-    ],
-    [
-      "Department of Defense",
-      "Equipment",
-      164037838796.85,
-      164037838796.85,
-      null
-    ],
-    [
-      "Department of Defense",
-      "Supplies and materials",
-      119546908209.82,
-      119546908209.82,
-      null
-    ],
-    [
-      "Department of Defense",
-      "Research and development contracts",
-      90483964845.69,
-      90483964845.69,
-      null
-    ],
-    [
-      "Department of Defense",
-      "Military personnel",
-      72569359908.98,
-      72569359908.98,
-      null
-    ],
-    [
-      "Department of Defense",
-      "Full-time permanent",
-      117348214787.52,
-      117348214787.52,
-      null
-    ],
-    [
-      "Department of Defense",
-      "Other goods and services from Federal sources",
-      68653938366.59,
-      68653938366.59,
-      null
-    ],
-    [
-      "Department of Defense",
-      "Military personnel benefits",
-      65408726179.78,
-      65408726179.78,
-      null
-    ],
-    [
-      "Department of Defense",
-      "Operation and maintenance of equipment",
-      63636385501.56,
-      63636385501.56,
-      null
-    ],
-    [
-      "Department of Defense",
-      "Other services from non-Federal sources",
-      44722264156.74,
-      44722264156.74,
-      null
-    ],
-    [
-      "Department of Defense",
-      "Advisory and assistance services",
-      43857579491.23,
-      43857579491.23,
-      null
-    ],
-    [
-      "Department of Defense",
-      "Land and structures",
-      27014620247.84,
-      27014620247.84,
-      null
-    ],
-    [
-      "Department of Defense",
-      "Operation and maintenance of facilities",
-      27582985734.55,
-      27582985734.55,
-      null
-    ],
-    [
-      "Department of Defense",
-      "Civilian personnel benefits",
-      25930530116.89,
-      25930530116.89,
-      null
-    ],
-    [
-      "Department of Defense",
-      "Communications, utilities, and miscellaneous charges",
-      17184513137.44,
-      17184513137.44,
-      null
-    ],
-    [
-      "Department of Defense",
-      "Medical care",
-      20382957163.56,
-      20382957163.56,
-      null
-    ],
-    [
-      "Department of Defense",
-      "Transportation of things",
-      12317392971.66,
-      12317392971.66,
-      null
-    ],
-    [
-      "Department of Defense",
-      "Military personnel - basic allowance for housing",
-      9444297948.29,
-      9444297948.29,
-      null
-    ],
-    [
-      "Department of Defense",
-      "Travel and transportation of persons",
-      11481868717.68,
-      11481868717.68,
-      null
-    ],
-    [
-      "Department of Defense",
-      "Grants, subsidies, and contributions",
-      6983136243.07,
-      6983136243.07,
-      null
-    ],
-    [
-      "Department of Defense",
-      "Other personnel compensation",
-      4231493386.75,
-      4231493386.75,
-      null
-    ],
-    [
-      "Department of Defense",
-      "Object class not reported by official source",
-      5509730333.78,
-      5509730333.78,
-      null
-    ],
-    [
-      "Department of Defense",
-      "Rental payments to others",
-      2561839946.53,
-      2561839946.53,
-      null
-    ],
-    [
-      "Department of Defense",
-      "Other than full-time permanent",
-      1992342637.6,
-      1992342637.6,
-      null
-    ],
-    [
-      "Department of Defense",
-      "Subsistence and support of persons",
-      1446318604.64,
-      1446318604.64,
-      null
-    ],
-    [
-      "Department of Defense",
-      "Printing and reproduction",
-      1732253596.96,
-      1732253596.96,
-      null
-    ],
-    [
-      "Department of Defense",
-      "Rental payments to GSA",
-      719655871.13,
-      719655871.13,
-      null
-    ],
-    [
-      "Department of Defense",
-      "Undistributed",
-      368556809.29,
-      368556809.29,
-      null
-    ],
-    [
-      "Department of Defense",
-      "Refunds",
-      545562211.9,
-      545562211.9,
-      null
-    ],
-    [
-      "Department of Defense",
-      "Special personal services payments",
-      230422113.92,
-      230422113.92,
-      null
-    ],
-    [
-      "Department of Defense",
-      "Interest and dividends",
-      18083756.6,
-      18083756.6,
-      null
-    ],
-    [
-      "Department of Defense",
-      "Financial transfers",
-      4210809.42,
-      4210809.42,
-      null
-    ],
-    [
-      "Department of Defense",
-      "Investments and loans",
-      974007.69,
-      974007.69,
-      null
-    ],
-    [
-      "Department of Defense",
-      "Unvouchered",
-      -514950684.87,
-      -514950684.87,
-      null
-    ],
-    [
-      "Department of Defense",
-      "Insurance claims and indemnities",
-      172933041.69,
-      172933041.69,
-      null
-    ]
+    ["Department of Defense", "N/A", 277133179406.07, 277133179406.07, null],
+    ["Department of Defense", "OPERATING FORCES", 196146346816.95, 196146346816.95, null],
+    ["Department of Defense", "REIMBURSABLE", 192267466598.63, 192267466598.63, null],
+    ["Department of Defense", "ADMINISTRATION AND SERVICE-WIDE ACTIVITIES", 73572976062.22, 73572976062.22, null],
+    ["Department of Defense", "OPERATION AND MAINTENANCE", 38723985658.45, 38723985658.45, null],
+    ["Department of Defense", "OPERATIONAL SYSTEM DEVELOPMENT", 33457720396.18, 33457720396.18, null],
+    ["Department of Defense", "ENLISTED PAY AND ALLOWANCES", 30993835858.38, 30993835858.38, null],
+    ["Department of Defense", "PAY AND ALLOWANCES OF ENLISTED", 30726199846.02, 30726199846.02, null],
+    ["Department of Defense", "OTHER BASE MAINTENANCE AND SUPPORT EQUIPMENT", 30530625200.53, 30530625200.53, null],
+    ["Department of Defense", "ADVANCED COMPONENT DEVELOPMENT AND PROTOTYPES", 24160920966.4, 24160920966.4, null],
+    ["Department of Defense", "PAY & ALLOWANCES OF ENLISTED", 23284801731.51, 23284801731.51, null],
+    ["Department of Defense", "OFFICER PAY & ALLOWANCES", 15699536185.45, 15699536185.45, null],
+    ["Department of Defense", "PAY AND ALLOWANCES OF OFFICERS", 14981000120.77, 14981000120.77, null],
+    ["Department of Defense", "OTHER WARSHIPS", 14816446496.57, 14816446496.57, null],
+    ["Department of Defense", "COMBAT AIRCRAFT", 14785109592.08, 14785109592.08, null],
+    ["Department of Defense", "TRAINING AND RECRUITING", 13222945350.78, 13222945350.78, null],
+    ["Department of Defense", "ADVANCED COMPONENT DEVELOPMENT & PROTOTYPES", 12365247761.68, 12365247761.68, null],
+    ["Department of Defense", "SYSTEM DEVELOPMENT AND DEMONSTRATION", 11896040261.46, 11896040261.46, null],
+    ["Department of Defense", "UNIT AND INDIVIDUAL TRAINING", 10624393546.88, 10624393546.88, null],
+    ["Department of Defense", "ADVANCED TECHNOLOGY DEVELOPMENT", 10544333830.56, 10544333830.56, null],
+    ["Department of Defense", "MAJOR CONSTRUCTION", 10273812072.12, 10273812072.12, null],
+    ["Department of Defense", "PAY & ALLOWANCES OF OFFICERS", 9718456975.55, 9718456975.55, null],
+    ["Department of Defense", "MANAGEMENT SUPPORT", 9604551443.35, 9604551443.35, null],
+    ["Department of Defense", "APPLIED RESEARCH", 9397378116.54, 9397378116.54, null],
+    ["Department of Defense", "OTHER MISSILES", 8229321115.61, 8229321115.61, null],
+    ["Department of Defense", "RESERVE COMPONENT TRAINING AND SUPPORT", 8032456009.44, 8032456009.44, null],
+    ["Department of Defense", "MOBILIZATION", 6585256734.33, 6585256734.33, null],
+    ["Department of Defense", "OPERATIONAL SYSTEMS DEVELOPMENT", 6557150162.63, 6557150162.63, null],
+    ["Department of Defense", "SYSTEM DEVELOPMENT & DEMON", 6374927275.59, 6374927275.59, null],
+    ["Department of Defense", "FLEET BALLISTIC MISSILE SHIPS", 6112617275.21, 6112617275.21, null],
+    ["Department of Defense", "RESERVE COMPONENT TRAINING & SUPPORT", 5193590060.27, 5193590060.27, null],
+    ["Department of Defense", "TRACKED COMBAT VEHICLES", 4365135041.7, 4365135041.7, null],
+    ["Department of Defense", "SHIPS SUPPORT EQUIPMENT", 4323883503.74, 4323883503.74, null],
+    ["Department of Defense", "MODIFICATION OF AIRCRAFT", 4198869709.09, 4198869709.09, null],
+    ["Department of Defense", "COMMUNICATIONS AND ELECTRONICS EQUIPMENT", 3700112363.78, 3700112363.78, null],
+    ["Department of Defense", "AMMUNITION", 3599937265.64, 3599937265.64, null],
+    ["Department of Defense", "HEALTH CARE CONTRIBUTION - ENLISTED", 3470018000, 3470018000, null],
+    ["Department of Defense", "AIRLIFT AIRCRAFT", 3371270527.37, 3371270527.37, null],
+    ["Department of Defense", "MODIFICATION OF INSERVICE AIRCRAFT", 3255606524.12, 3255606524.12, null],
+    ["Department of Defense", "COMMUNICATION AND ELECTRONIES EQUIPMENT", 3210494438.52, 3210494438.52, null],
+    ["Department of Defense", "AIRCRAFT SPARES AND REPAIR PARTS", 3074656053.13, 3074656053.13, null],
+    ["Department of Defense", "PERMANENT CHANGE OF STATION TRAVEL", 3039682035.77, 3039682035.77, null],
+    ["Department of Defense", "SUBSISTENCE OF ENLISTED PERSONNEL", 3034433818.59, 3034433818.59, null],
+    ["Department of Defense", "SYSTEM DEVELOPMENT & DEMONSTRATION", 2911615849.35, 2911615849.35, null],
+    ["Department of Defense", "BASIC RESEARCH", 2796630374.57, 2796630374.57, null],
+    ["Department of Defense", "AIRCRAFT SUPPORT EQUIPMENT AND FACILITIES", 2713867238.03, 2713867238.03, null],
+    ["Department of Defense", "OTHER AIRCRAFT", 2634200477.94, 2634200477.94, null],
+    ["Department of Defense", "RES COMPONENT TNG & SUPPORT", 2419958544.95, 2419958544.95, null],
+    ["Department of Defense", "SPACE PROCUREMENT  SPACE FORCE", 2388957638.72, 2388957638.72, null],
+    ["Department of Defense", "ENLISTED PERSONNEL SUBSISTENCE", 2385458219.25, 2385458219.25, null],
+    ["Department of Defense", "AMPHIBIOUS SHIPS", 2317073054.06, 2317073054.06, null],
+    ["Department of Defense", "AUX CRAFT AND PY PGM COST", 2308866715.3, 2308866715.3, null],
+    ["Department of Defense", "AIRCRAFT", 2298019459.69, 2298019459.69, null],
+    ["Department of Defense", "MAJOR EQUIPMENT", 2297691060.81, 2297691060.81, null],
+    ["Department of Defense", "ELECTRONICS AND TELECOMMUNICATIONS EQUIPMENT", 2025282339.53, 2025282339.53, null],
+    ["Department of Defense", "RDT&E MANAGEMENT SUPPORT", 2020719696.99, 2020719696.99, null],
+    ["Department of Defense", "COMMUNICATIONS & ELECTRONIES EQUIPMENT", 1958575904.99, 1958575904.99, null],
+    ["Department of Defense", "UNDISTRIBUTED", 1953164388.81, 1953164388.81, null],
+    ["Department of Defense", "SPECIAL OPERATIONS COMMAND", 1865769133.49, 1865769133.49, null],
+    ["Department of Defense", "NA", 1794353418.54, 1794353418.54, null],
+    ["Department of Defense", "PERMANENT CHANGE OF STATION (PCS) TRAVEL", 1741158162.35, 1741158162.35, null],
+    ["Department of Defense", "TRACKED AND SUPPORT VEHICLES", 1705786001.17, 1705786001.17, null],
+    ["Department of Defense", "COMMUNICATIONS & ELECTRONICS EQUIPMENT", 1701466044.55, 1701466044.55, null],
+    ["Department of Defense", "SUPPORT EQUIPMENT & FACILITIES", 1174536486.53, 1174536486.53, null],
+    ["Department of Defense", "BALLISTIC MISSILES", 1173342291.82, 1173342291.82, null],
+    ["Department of Defense", "ORDNANCE SUPPORT EQUIPMENT", 1136430148.3, 1136430148.3, null],
+    ["Department of Defense", "SUPPORT EQUIPMENT AND FACILITIES", 1066532881.53, 1066532881.53, null],
+    ["Department of Defense", "RESEARCH & DEVELOPMENT", 1006271526.38, 1006271526.38, null],
+    ["Department of Defense", "HEALTH CARE CONTRIBUTION- ENLISTED", 993793000, 993793000, null],
+    ["Department of Defense", "AMMO PRODUCTION BASE SPT", 895447692.75, 895447692.75, null],
+    ["Department of Defense", "HEALTH CARE CONTRIBUTION - OFFICERS", 892236000, 892236000, null],
+    ["Department of Defense", "SUBSISTENCE IN KIND", 881277166.7, 881277166.7, null],
+    ["Department of Defense", "HEALTH CARE CONTRIBUTION - RESERVE COMPONENT", 847927000, 847927000, null],
+    ["Department of Defense", "AVIATION SUPPORT EQUIPMENT", 829535375.88, 829535375.88, null],
+    ["Department of Defense", "PLANNING & DESIGN", 823431778.45, 823431778.45, null],
+    ["Department of Defense", "ADMIN & SRVWD ACTIVITIES", 758031668.92, 758031668.92, null],
+    ["Department of Defense", "MODIFICATION OF MISSILES", 753389585.52, 753389585.52, null],
+    ["Department of Defense", "WEAPONS AND COMBAT VEHICLES", 750092717.77, 750092717.77, null],
+    ["Department of Defense", "PROCUREMENT", 727243068.62, 727243068.62, null],
+    ["Department of Defense", "SUPPLY SUPPORT EQUIPMENT", 694345021.91, 694345021.91, null],
+    ["Department of Defense", "OTHER SUPPORT", 653745525.5, 653745525.5, null],
+    ["Department of Defense", "SPARES AND REPAIR PARTS", 637510452.83, 637510452.83, null],
+    ["Department of Defense", "PERSONNEL & COMMAND SUPPORT EQUIP", 593296782.29, 593296782.29, null],
+    ["Department of Defense", "OFFICER PAY AND ALLOWANCES", 592533000, 592533000, null],
+    ["Department of Defense", "PROC AMMO NAVY", 573288408.94, 573288408.94, null],
+    ["Department of Defense", "UNIT & INDIVIDUAL TRAINING", 510346000, 510346000, null],
+    ["Department of Defense", "OPERATIONS AND MAINTENANCE", 508304333.85, 508304333.85, null],
+    ["Department of Defense", "DISASTER ASSISTANCE AND CIVIC AID", 471325376.27, 471325376.27, null],
+    ["Department of Defense", "GUIDED MISSILES AND EQUIPMENT", 449129227.42, 449129227.42, null],
+    ["Department of Defense", "OTHER MILITARY PERSONNEL COSTS", 446379566.43, 446379566.43, null],
+    ["Department of Defense", "ENGINEER AND OTHER EQUIPMENT", 444771504.61, 444771504.61, null],
+    ["Department of Defense", "NATIONAL GUARD EQUIPMENT", 439930125.97, 439930125.97, null],
+    ["Department of Defense", "TORPEDOES AND RELATED EQUIPMENT", 427667381.81, 427667381.81, null],
+    ["Department of Defense", "PROC AMMO MC", 417369041.62, 417369041.62, null],
+    ["Department of Defense", "OTHER SUPPORT EQUIPMENT", 408820473.97, 408820473.97, null],
+    ["Department of Defense", "PLANNING AND DESIGN", 406032243.37, 406032243.37, null],
+    ["Department of Defense", "WEAPONS AND OTHER COMBAT VEHICLES", 368208546.09, 368208546.09, null],
+    ["Department of Defense", "RDT&E", 360881440.72, 360881440.72, null],
+    ["Department of Defense", "SUPPORT VEHICLES", 348143855.45, 348143855.45, null],
+    ["Department of Defense", "PLANNING", 336376903.81, 336376903.81, null],
+    ["Department of Defense", "ADVANCED", 324442875.92, 324442875.92, null],
+    ["Department of Defense", "MINOR CONSTRUCTION", 321801288.88, 321801288.88, null],
+    ["Department of Defense", "TRAINER AIRCRAFT", 321379045.17, 321379045.17, null],
+    ["Department of Defense", "VEHICULAR EQUIPMENT", 317004485.22, 317004485.22, null],
+    ["Department of Defense", "COUNTER-ISIL TRAIN AND EQUIP", 309864844.74, 309864844.74, null],
+    ["Department of Defense", "CHEMICAL/BIOLOGICAL DEFENSE", 297706457.16, 297706457.16, null],
+    ["Department of Defense", "RESERVE EQUIPMENT", 251426944.21, 251426944.21, null],
+    ["Department of Defense", "ADMINISTRATION AND SERVICEWIDE ACTIVITIES", 248809423.12, 248809423.12, null],
+    ["Department of Defense", "ENVIRONMENTAL", 239390871.54, 239390871.54, null],
+    ["Department of Defense", "OPERATION", 216842791.62, 216842791.62, null],
+    ["Department of Defense", "OTHER WEAPONS", 216127272.98, 216127272.98, null],
+    ["Department of Defense", "ADVANCE PAYMENTS TO OTHERS", 198383892.1, 198383892.1, null],
+    ["Department of Defense", "UTILITIES", 182760599.47, 182760599.47, null],
+    ["Department of Defense", "MODIFICATION OF INSERVICE MISSILES", 179241977.78, 179241977.78, null],
+    ["Department of Defense", "SPACE PROCUREMENT  AF", 172756267.17, 172756267.17, null],
+    ["Department of Defense", "MANAGEMENT ACCOUNT", 167944882.8, 167944882.8, null],
+    ["Department of Defense", "ADMIN & SRVWIDE ACTIVITIES", 160206913.14, 160206913.14, null],
+    ["Department of Defense", "CIVIL ENGINEERING SUPP EQUIP", 155465969.68, 155465969.68, null],
+    ["Department of Defense", "BASE REALIGNMENT AND CLOSURE ACCOUNT", 144251442.64, 144251442.64, null],
+    ["Department of Defense", "MAINTENANCE AND REPAIR", 127168111.49, 127168111.49, null],
+    ["Department of Defense", "MAINTENANCE", 116039836.76, 116039836.76, null],
+    ["Department of Defense", "SOFTWARE AND DIGITAL TECHNOLOGY PILOT PROGRAMS", 113856956.85, 113856956.85, null],
+    ["Department of Defense", "CADETS PAY AND ALLOWANCES", 110475880.64, 110475880.64, null],
+    ["Department of Defense", "PAY & ALLOWANCES OF MIDSHIPMEN", 105783652.67, 105783652.67, null],
+    ["Department of Defense", "CONSTRUCTION IMPROVEMENTS", 103999499.45, 103999499.45, null],
+    ["Department of Defense", "CEMETERIAL EXPENSES", 95069158.84, 95069158.84, null],
+    ["Department of Defense", "MAINTENANCE OF REAL PROPERTY", 94255682.72, 94255682.72, null],
+    ["Department of Defense", "ADMINISTRATION & SERVICEWIDE ACTIVITIES", 91988540.31, 91988540.31, null],
+    ["Department of Defense", "PAY AND ALLOWANCES OF CADETS", 88845821.41, 88845821.41, null],
+    ["Department of Defense", "MANGEMENT ACCOUNT", 72953023.81, 72953023.81, null],
+    ["Department of Defense", "NEW CONSTRUCTION", 72755662.62, 72755662.62, null],
+    ["Department of Defense", "GFEBS UNDISTRIBUTED", 72600000, 72600000, null],
+    ["Department of Defense", "MISSILES SPARES AND REPAIR PARTS", 71425138.9, 71425138.9, null],
+    ["Department of Defense", "HOUSING PVT SUPPORT", 67154942.01, 67154942.01, null],
+    ["Department of Defense", "LEASING", 66496173.65, 66496173.65, null],
+    ["Department of Defense", "FAMILY ASSISTANCE PROGRAM  NAVY", 55547811.7, 55547811.7, null],
+    ["Department of Defense", "CHEM AGENTS - O & M", 54644178.81, 54644178.81, null],
+    ["Department of Defense", "UNDISTRIBUTED GFEBS", 53342485.71, 53342485.71, null],
+    ["Department of Defense", "IMPROVEMENTS", 51998415.15, 51998415.15, null],
+    ["Department of Defense", "TACTICAL AND SPT VEHICLES", 39514113.71, 39514113.71, null],
+    ["Department of Defense", "RESERVE COMPENTENT TRAINING & SUPPORT", 37606364, 37606364, null],
+    ["Department of Defense", "SPARE AND REPAIR PARTS", 35114230.37, 35114230.37, null],
+    ["Department of Defense", "HOUSING PRIVATIZATION SUPPORT", 35001500.51, 35001500.51, null],
+    ["Department of Defense", "WEAPONS", 30287907.52, 30287907.52, null],
+    ["Department of Defense", "HEALTH CARE CONTRIBUTION- OFFICERS", 28547000, 28547000, null],
+    ["Department of Defense", "OPERATION & MAINTENANCE", 26447558.19, 26447558.19, null],
+    ["Department of Defense", "ADVANCED TECHNOLOGY", 25669728.76, 25669728.76, null],
+    ["Department of Defense", "OPERATIONS  MAINTENANCE AND LEASE", 23507219.29, 23507219.29, null],
+    ["Department of Defense", "NONE", 20755876.22, 20755876.22, null],
+    ["Department of Defense", "O&M DEFENSE WIDE", 17591832.55, 17591832.55, null],
+    ["Department of Defense", "UNIT AND INVIDUAL TRAINING", 15865428.37, 15865428.37, null],
+    ["Department of Defense", "COMM-SATELLITE COMMUNICATIONS", 13721083.78, 13721083.78, null],
+    ["Department of Defense", "RDT & E MANAGEMENT SUPPORT", 13322169.27, 13322169.27, null],
+    ["Department of Defense", "SHIPS STORES", 10763835.33, 10763835.33, null],
+    ["Department of Defense", "DISA 5-YEAR - WHITE HOUSE COMMUNICATION AGENCY TECHNOLOGY MODERNIZATION FUND", 9907064.57, 9907064.57, null],
+    ["Department of Defense", "3 YR RDT&E", 9674199.52, 9674199.52, null],
+    ["Department of Defense", "OPERATIONS & MAINTENANCE", 7328239.03, 7328239.03, null],
+    ["Department of Defense", "LEASE OF DOD REAL PROPERTY", 6864898.48, 6864898.48, null],
+    ["Department of Defense", "ACQUISITION WORKFORCE DEVELOPMENT", 5987636.05, 5987636.05, null],
+    ["Department of Defense", "AF GIFT FUND", 4343692.87, 4343692.87, null],
+    ["Department of Defense", "HOUSING PRIVATIZATION", 3826504.56, 3826504.56, null],
+    ["Department of Defense", "CANCELLED ACCOUNT ADJUSTMENT", 3622519.18, 3622519.18, null],
+    ["Department of Defense", "UNKNOWN/OTHER", 3122782.94, 3122782.94, null],
+    ["Department of Defense", "OTHER MILITARY PERSONNEL", 3001926.14, 3001926.14, null],
+    ["Department of Defense", "SUPPORT ACTIVITIES", 2799625.29, 2799625.29, null],
+    ["Department of Defense", "OTHER", 1872187.52, 1872187.52, null],
+    ["Department of Defense", "AMERICAN SECTIONS, INTERNATIONAL COMMISSIONS (DIRECT)", 1595600.46, 1595600.46, null],
+    ["Department of Defense", "MINOR CONSTRCTION", 1447163.17, 1447163.17, null],
+    ["Department of Defense", "AF WILDLIFE CONSERVATION", 1252516.45, 1252516.45, null],
+    ["Department of Defense", "PAYMENTS TO HOMEOWNERS", 972179.75, 972179.75, null],
+    ["Department of Defense", "ADMINISTRATION AND SERVICE-WIDE ACTIVITES", 959533.2, 959533.2, null],
+    ["Department of Defense", "SPARES", 901749.68, 901749.68, null],
+    ["Department of Defense", "ENHANCED FORCE PROTECTION", 528769, 528769, null],
+    ["Department of Defense", "TRAINING & RECRUITING", 484373.63, 484373.63, null],
+    ["Department of Defense", "AVIATION  SUPPORT EQUIPMENT", 408119.79, 408119.79, null],
+    ["Department of Defense", "OPERATIONS", 392205.23, 392205.23, null],
+    ["Department of Defense", "SPACE PROCUREMENT  SPARES", 373553.34, 373553.34, null],
+    ["Department of Defense", "RESEARCH AND DEVELOPMENT", 275808.54, 275808.54, null],
+    ["Department of Defense", "ADMINISTRATION AND SERVICE WIDE ACTIVITIES", 157723.18, 157723.18, null],
+    ["Department of Defense", "CEMETARIAL EXPENSES", 125264.12, 125264.12, null],
+    ["Department of Defense", "DISPOSAL OF DOD REAL PROPERTY", 125016.15, 125016.15, null],
+    ["Department of Defense", "REIMBURSABLE CONSTRUCTION", 82237.06, 82237.06, null],
+    ["Department of Defense", "UNIDENTIFIED", 63821.72, 63821.72, null],
+    ["Department of Defense", "CONSTRUCTION AND CONVERSION", 27104.7, 27104.7, null],
+    ["Department of Defense", "RESEARCH  DEVELOPMENT  TEST  & EVALUATION", 18747.18, 18747.18, null],
+    ["Department of Defense", "WILDLIFE CONSERVATION", 9308.02, 9308.02, null],
+    ["Department of Defense", "RESERVE COMPONENT", 5911.14, 5911.14, null],
+    ["Department of Defense", "MUNITIONS", 5198.75, 5198.75, null],
+    ["Department of Defense", "PRIVATIZATION", 3537.82, 3537.82, null],
+    ["Department of Defense", "MINOR CONSTRUCTIONS", 2256.75, 2256.75, null],
+    ["Department of Defense", "USUHS", 441.07, 441.07, null],
+    ["Department of Defense", "OTHER BASE MAINTENANCE AND SUPPORT EQUIPMEN", 0, 0, null],
+    ["Department of Defense", "FORMER SOVIET UNION THREAT REDUCTION DEFENSE", 0, 0, null],
+    ["Department of Defense", "BUDGET ACTIVITY NOT APPLICABLE", 0, 0, null],
+    ["Department of Defense", "RECERT OR LIMITED LIAB", 0, 0, null],
+    ["Department of Defense", "FOREIGN CURRENCY FLUCT", 0, 0, null],
+    ["Department of Defense", "INCREASED WORLDWIDE POSTURE", 0, 0, null],
+    ["Department of Defense", "INCREASED SITUATIONAL AWARENESS", 0, 0, null],
+    ["Department of Defense", "DOD/VA INCENTIVE FUND", 0, 0, null],
+    ["Department of Defense", "IMPROVED COMMAND & CONTROL", 0, 0, null],
+    ["Department of Defense", "OTA REIMBURSABLE PROGRAMS", 0, 0, null],
+    ["Department of Defense", "MISCELLANEOUS", -1233.44, -1233.44, null],
+    ["Department of Defense", "NETWORK ATTACK", -3664.33, -3664.33, null],
+    ["Department of Defense", "PURCUREMENT", -202277.4, -202277.4, null],
+    ["Department of Defense", "ENVRIONMENTAL", -433530.14, -433530.14, null],
+    ["Department of Defense", "CONTRIBUTIONS", -4426579.44, -4426579.44, null],
+    ["Department of Defense", "REIMBURSABLE PROGRAM", -6569157.86, -6569157.86, null],
+    ["Department of Defense", "COUNTER-ISIL TRAIN AND EQUIP FUND", -15647250.53, -15647250.53, null],
+    ["Department of Defense", "AFGHAN SPECIAL SECURITY FORCES", -20273490.13, -20273490.13, null],
+    ["Department of Defense", "AFGHAN NATIONAL POLICE", -21801653.09, -21801653.09, null],
+    ["Department of Defense", "FOREIGN CURRENCY FLUCTUATION", -33662322.32, -33662322.32, null],
+    ["Department of Defense", "UNMATCHED", -64220615.54, -64220615.54, null],
+    ["Department of Defense", "AFGHAN AIR FORCE", -108110067.29, -108110067.29, null],
+    ["Department of Defense", "AFGHAN NATIONAL ARMY", -130130331.13, -130130331.13, null],
+    ["Department of Defense", "UNSPECIFIED", -415490811.38, -415490811.38, null]
   ],
   "supplementalRows": [
-    [
-      "Department of the Air Force",
-      "DoD FY2024 O&M budget execution — Air Force · 01 · N/A · N/A",
-      616000,
-      "obligations",
-      "https://comptroller.defense.gov/Portals/45/Documents/OM_Reports/FY2024/FY_2024_4st_quarter_execution.pdf"
-    ],
-    [
-      "Department of the Air Force",
-      "DoD FY2024 O&M budget execution — Air Force · 01 · 011A · PRIMARY COMBAT FORCES",
-      1114884000,
-      "obligations",
-      "https://comptroller.defense.gov/Portals/45/Documents/OM_Reports/FY2024/FY_2024_4st_quarter_execution.pdf"
-    ],
-    [
-      "Department of the Air Force",
-      "DoD FY2024 O&M budget execution — Air Force · 01 · 011C · COMBAT ENHANCEMENT FORCES",
-      2683700000,
-      "obligations",
-      "https://comptroller.defense.gov/Portals/45/Documents/OM_Reports/FY2024/FY_2024_4st_quarter_execution.pdf"
-    ],
-    [
-      "Department of the Air Force",
-      "DoD FY2024 O&M budget execution — Air Force · 01 · 011D · AIR OPERATIONS TRAINING (OJT, MAINTAIN SKILLS)",
-      1580191000,
-      "obligations",
-      "https://comptroller.defense.gov/Portals/45/Documents/OM_Reports/FY2024/FY_2024_4st_quarter_execution.pdf"
-    ],
-    [
-      "Department of the Air Force",
-      "DoD FY2024 O&M budget execution — Air Force · 01 · 011M · DEPOT PURCHASE EQUIPMENT MAINTENANCE",
-      4234899000,
-      "obligations",
-      "https://comptroller.defense.gov/Portals/45/Documents/OM_Reports/FY2024/FY_2024_4st_quarter_execution.pdf"
-    ],
-    [
-      "Department of the Air Force",
-      "DoD FY2024 O&M budget execution — Air Force · 01 · 011R · FACILITIES SUSTAINMENT, RESTORATION & MODERNIZATION",
-      4488841000,
-      "obligations",
-      "https://comptroller.defense.gov/Portals/45/Documents/OM_Reports/FY2024/FY_2024_4st_quarter_execution.pdf"
-    ],
-    [
-      "Department of the Air Force",
-      "DoD FY2024 O&M budget execution — Air Force · 01 · 011V · CYBERSPACE SUSTAINMENT",
-      231131000,
-      "obligations",
-      "https://comptroller.defense.gov/Portals/45/Documents/OM_Reports/FY2024/FY_2024_4st_quarter_execution.pdf"
-    ],
-    [
-      "Department of the Air Force",
-      "DoD FY2024 O&M budget execution — Air Force · 01 · 011W · CONTRACTOR LOGISTICS SUPPORT AND SYSTEM SUPPORT",
-      9686470000,
-      "obligations",
-      "https://comptroller.defense.gov/Portals/45/Documents/OM_Reports/FY2024/FY_2024_4st_quarter_execution.pdf"
-    ],
-    [
-      "Department of the Air Force",
-      "DoD FY2024 O&M budget execution — Air Force · 01 · 011Y · FLYING HOUR PROGRAM",
-      6582927000,
-      "obligations",
-      "https://comptroller.defense.gov/Portals/45/Documents/OM_Reports/FY2024/FY_2024_4st_quarter_execution.pdf"
-    ],
-    [
-      "Department of the Air Force",
-      "DoD FY2024 O&M budget execution — Air Force · 01 · 011Z · BASE SUPPORT",
-      11044876000,
-      "obligations",
-      "https://comptroller.defense.gov/Portals/45/Documents/OM_Reports/FY2024/FY_2024_4st_quarter_execution.pdf"
-    ],
-    [
-      "Department of the Air Force",
-      "DoD FY2024 O&M budget execution — Air Force · 01 · 012A · GLOBAL C3I AND EARLY WARNING",
-      1359242000,
-      "obligations",
-      "https://comptroller.defense.gov/Portals/45/Documents/OM_Reports/FY2024/FY_2024_4st_quarter_execution.pdf"
-    ],
-    [
-      "Department of the Air Force",
-      "DoD FY2024 O&M budget execution — Air Force · 01 · 012C · OTHER COMBAT OPS SPT PROGRAMS",
-      1885728000,
-      "obligations",
-      "https://comptroller.defense.gov/Portals/45/Documents/OM_Reports/FY2024/FY_2024_4st_quarter_execution.pdf"
-    ],
-    [
-      "Department of the Air Force",
-      "DoD FY2024 O&M budget execution — Air Force · 01 · 012D · CYBERSPACE ACTIVITIES",
-      847579000,
-      "obligations",
-      "https://comptroller.defense.gov/Portals/45/Documents/OM_Reports/FY2024/FY_2024_4st_quarter_execution.pdf"
-    ],
-    [
-      "Department of the Air Force",
-      "DoD FY2024 O&M budget execution — Air Force · 01 · 012Q · MEDICAL READINESS",
-      500049000,
-      "obligations",
-      "https://comptroller.defense.gov/Portals/45/Documents/OM_Reports/FY2024/FY_2024_4st_quarter_execution.pdf"
-    ],
-    [
-      "Department of the Air Force",
-      "DoD FY2024 O&M budget execution — Air Force · 01 · 015C · US NORTHCOM/NORAD",
-      278259000,
-      "obligations",
-      "https://comptroller.defense.gov/Portals/45/Documents/OM_Reports/FY2024/FY_2024_4st_quarter_execution.pdf"
-    ],
-    [
-      "Department of the Air Force",
-      "DoD FY2024 O&M budget execution — Air Force · 01 · 015D · US STRATCOM",
-      529948000,
-      "obligations",
-      "https://comptroller.defense.gov/Portals/45/Documents/OM_Reports/FY2024/FY_2024_4st_quarter_execution.pdf"
-    ],
-    [
-      "Department of the Air Force",
-      "DoD FY2024 O&M budget execution — Air Force · 01 · 015E · COMBATANT COMMANDERS MISSION OPERATIONS - USCYBERCOM",
-      -1000,
-      "obligations",
-      "https://comptroller.defense.gov/Portals/45/Documents/OM_Reports/FY2024/FY_2024_4st_quarter_execution.pdf"
-    ],
-    [
-      "Department of the Air Force",
-      "DoD FY2024 O&M budget execution — Air Force · 01 · 015F · US CENTCOM",
-      355543000,
-      "obligations",
-      "https://comptroller.defense.gov/Portals/45/Documents/OM_Reports/FY2024/FY_2024_4st_quarter_execution.pdf"
-    ],
-    [
-      "Department of the Air Force",
-      "DoD FY2024 O&M budget execution — Air Force · 01 · 015G · US SOCOM",
-      32345000,
-      "obligations",
-      "https://comptroller.defense.gov/Portals/45/Documents/OM_Reports/FY2024/FY_2024_4st_quarter_execution.pdf"
-    ],
-    [
-      "Department of the Air Force",
-      "DoD FY2024 O&M budget execution — Air Force · 01 · 015H · US TRANSCOM",
-      221000,
-      "obligations",
-      "https://comptroller.defense.gov/Portals/45/Documents/OM_Reports/FY2024/FY_2024_4st_quarter_execution.pdf"
-    ],
-    [
-      "Department of the Air Force",
-      "DoD FY2024 O&M budget execution — Air Force · 01 · 015U · CENTCOM CYBERSPACE SUSTAINMENT",
-      1457000,
-      "obligations",
-      "https://comptroller.defense.gov/Portals/45/Documents/OM_Reports/FY2024/FY_2024_4st_quarter_execution.pdf"
-    ],
-    [
-      "Department of the Air Force",
-      "DoD FY2024 O&M budget execution — Air Force · 01 · 015X · USSPACECOM",
-      363758000,
-      "obligations",
-      "https://comptroller.defense.gov/Portals/45/Documents/OM_Reports/FY2024/FY_2024_4st_quarter_execution.pdf"
-    ],
-    [
-      "Department of the Air Force",
-      "DoD FY2024 O&M budget execution — Air Force · 01 · 9999 · CLASSIFIED PROGRAMS",
-      1737858000,
-      "obligations",
-      "https://comptroller.defense.gov/Portals/45/Documents/OM_Reports/FY2024/FY_2024_4st_quarter_execution.pdf"
-    ],
-    [
-      "Department of the Air Force",
-      "DoD FY2024 O&M budget execution — Air Force · 02 · N/A · N/A",
-      32000,
-      "obligations",
-      "https://comptroller.defense.gov/Portals/45/Documents/OM_Reports/FY2024/FY_2024_4st_quarter_execution.pdf"
-    ],
-    [
-      "Department of the Air Force",
-      "DoD FY2024 O&M budget execution — Air Force · 02 · 021A · AIRLIFT OPERATIONS",
-      3574537000,
-      "obligations",
-      "https://comptroller.defense.gov/Portals/45/Documents/OM_Reports/FY2024/FY_2024_4st_quarter_execution.pdf"
-    ],
-    [
-      "Department of the Air Force",
-      "DoD FY2024 O&M budget execution — Air Force · 02 · 021D · MOBILIZATION PREPAREDNESS",
-      240079000,
-      "obligations",
-      "https://comptroller.defense.gov/Portals/45/Documents/OM_Reports/FY2024/FY_2024_4st_quarter_execution.pdf"
-    ],
-    [
-      "Department of the Air Force",
-      "DoD FY2024 O&M budget execution — Air Force · 03 · N/A · N/A",
-      2000,
-      "obligations",
-      "https://comptroller.defense.gov/Portals/45/Documents/OM_Reports/FY2024/FY_2024_4st_quarter_execution.pdf"
-    ],
-    [
-      "Department of the Air Force",
-      "DoD FY2024 O&M budget execution — Air Force · 03 · 031A · OFFICER ACQUISITION",
-      219515000,
-      "obligations",
-      "https://comptroller.defense.gov/Portals/45/Documents/OM_Reports/FY2024/FY_2024_4st_quarter_execution.pdf"
-    ],
-    [
-      "Department of the Air Force",
-      "DoD FY2024 O&M budget execution — Air Force · 03 · 031B · RECRUIT TRAINING",
-      31085000,
-      "obligations",
-      "https://comptroller.defense.gov/Portals/45/Documents/OM_Reports/FY2024/FY_2024_4st_quarter_execution.pdf"
-    ],
-    [
-      "Department of the Air Force",
-      "DoD FY2024 O&M budget execution — Air Force · 03 · 031D · RESERVE OFFICERS TRAINING CORPS (ROTC)",
-      130311000,
-      "obligations",
-      "https://comptroller.defense.gov/Portals/45/Documents/OM_Reports/FY2024/FY_2024_4st_quarter_execution.pdf"
-    ],
-    [
-      "Department of the Air Force",
-      "DoD FY2024 O&M budget execution — Air Force · 03 · 032A · SPECIALIZED SKILL TRAINING",
-      602741000,
-      "obligations",
-      "https://comptroller.defense.gov/Portals/45/Documents/OM_Reports/FY2024/FY_2024_4st_quarter_execution.pdf"
-    ],
-    [
-      "Department of the Air Force",
-      "DoD FY2024 O&M budget execution — Air Force · 03 · 032B · FLIGHT TRAINING",
-      774975000,
-      "obligations",
-      "https://comptroller.defense.gov/Portals/45/Documents/OM_Reports/FY2024/FY_2024_4st_quarter_execution.pdf"
-    ],
-    [
-      "Department of the Air Force",
-      "DoD FY2024 O&M budget execution — Air Force · 03 · 032C · PROFESSIONAL DEVELOPMENT EDUCATION",
-      291013000,
-      "obligations",
-      "https://comptroller.defense.gov/Portals/45/Documents/OM_Reports/FY2024/FY_2024_4st_quarter_execution.pdf"
-    ],
-    [
-      "Department of the Air Force",
-      "DoD FY2024 O&M budget execution — Air Force · 03 · 032D · TRAINING SUPPORT",
-      216245000,
-      "obligations",
-      "https://comptroller.defense.gov/Portals/45/Documents/OM_Reports/FY2024/FY_2024_4st_quarter_execution.pdf"
-    ],
-    [
-      "Department of the Air Force",
-      "DoD FY2024 O&M budget execution — Air Force · 03 · 033A · RECRUITING AND ADVERTISING",
-      235612000,
-      "obligations",
-      "https://comptroller.defense.gov/Portals/45/Documents/OM_Reports/FY2024/FY_2024_4st_quarter_execution.pdf"
-    ],
-    [
-      "Department of the Air Force",
-      "DoD FY2024 O&M budget execution — Air Force · 03 · 033B · EXAMINING",
-      7718000,
-      "obligations",
-      "https://comptroller.defense.gov/Portals/45/Documents/OM_Reports/FY2024/FY_2024_4st_quarter_execution.pdf"
-    ],
-    [
-      "Department of the Air Force",
-      "DoD FY2024 O&M budget execution — Air Force · 03 · 033C · OFF-DUTY AND VOLUNTARY EDUCATION",
-      227669000,
-      "obligations",
-      "https://comptroller.defense.gov/Portals/45/Documents/OM_Reports/FY2024/FY_2024_4st_quarter_execution.pdf"
-    ],
-    [
-      "Department of the Air Force",
-      "DoD FY2024 O&M budget execution — Air Force · 03 · 033D · CIVILIAN EDUCATION AND TRAINING",
-      366654000,
-      "obligations",
-      "https://comptroller.defense.gov/Portals/45/Documents/OM_Reports/FY2024/FY_2024_4st_quarter_execution.pdf"
-    ],
-    [
-      "Department of the Air Force",
-      "DoD FY2024 O&M budget execution — Air Force · 03 · 033E · JUNIOR ROTC",
-      75867000,
-      "obligations",
-      "https://comptroller.defense.gov/Portals/45/Documents/OM_Reports/FY2024/FY_2024_4st_quarter_execution.pdf"
-    ],
-    [
-      "Department of the Air Force",
-      "DoD FY2024 O&M budget execution — Air Force · 04 · N/A · N/A",
-      1000,
-      "obligations",
-      "https://comptroller.defense.gov/Portals/45/Documents/OM_Reports/FY2024/FY_2024_4st_quarter_execution.pdf"
-    ],
-    [
-      "Department of the Air Force",
-      "DoD FY2024 O&M budget execution — Air Force · 04 · 041A · LOGISTICS OPERATIONS",
-      1007721000,
-      "obligations",
-      "https://comptroller.defense.gov/Portals/45/Documents/OM_Reports/FY2024/FY_2024_4st_quarter_execution.pdf"
-    ],
-    [
-      "Department of the Air Force",
-      "DoD FY2024 O&M budget execution — Air Force · 04 · 041B · TECHNICAL SUPPORT ACTIVITIES",
-      174854000,
-      "obligations",
-      "https://comptroller.defense.gov/Portals/45/Documents/OM_Reports/FY2024/FY_2024_4st_quarter_execution.pdf"
-    ],
-    [
-      "Department of the Air Force",
-      "DoD FY2024 O&M budget execution — Air Force · 04 · 042A · ADMINISTRATION",
-      1273631000,
-      "obligations",
-      "https://comptroller.defense.gov/Portals/45/Documents/OM_Reports/FY2024/FY_2024_4st_quarter_execution.pdf"
-    ],
-    [
-      "Department of the Air Force",
-      "DoD FY2024 O&M budget execution — Air Force · 04 · 042B · SERVICEWIDE COMMUNICATIONS",
-      43927000,
-      "obligations",
-      "https://comptroller.defense.gov/Portals/45/Documents/OM_Reports/FY2024/FY_2024_4st_quarter_execution.pdf"
-    ],
-    [
-      "Department of the Air Force",
-      "DoD FY2024 O&M budget execution — Air Force · 04 · 042D · DEFENSE ENVIRONMENTAL RESTORATION ACCOUNT (DERA)",
-      383665000,
-      "obligations",
-      "https://comptroller.defense.gov/Portals/45/Documents/OM_Reports/FY2024/FY_2024_4st_quarter_execution.pdf"
-    ],
-    [
-      "Department of the Air Force",
-      "DoD FY2024 O&M budget execution — Air Force · 04 · 042G · OTHER SERVICEWIDE ACTIVITIES",
-      1808071000,
-      "obligations",
-      "https://comptroller.defense.gov/Portals/45/Documents/OM_Reports/FY2024/FY_2024_4st_quarter_execution.pdf"
-    ],
-    [
-      "Department of the Air Force",
-      "DoD FY2024 O&M budget execution — Air Force · 04 · 042I · CIVIL AIR PATROL",
-      55099000,
-      "obligations",
-      "https://comptroller.defense.gov/Portals/45/Documents/OM_Reports/FY2024/FY_2024_4st_quarter_execution.pdf"
-    ],
-    [
-      "Department of the Air Force",
-      "DoD FY2024 O&M budget execution — Air Force · 04 · 042W · DEF ACQUISITION WORKFORCE DEVELOPMENT ACCOUNT",
-      46448000,
-      "obligations",
-      "https://comptroller.defense.gov/Portals/45/Documents/OM_Reports/FY2024/FY_2024_4st_quarter_execution.pdf"
-    ],
-    [
-      "Department of the Air Force",
-      "DoD FY2024 O&M budget execution — Air Force · 04 · 044A · INTERNATIONAL SUPPORT",
-      82923000,
-      "obligations",
-      "https://comptroller.defense.gov/Portals/45/Documents/OM_Reports/FY2024/FY_2024_4st_quarter_execution.pdf"
-    ],
-    [
-      "Department of the Air Force",
-      "DoD FY2024 O&M budget execution — Air Force · 04 · 9999 · CLASSIFIED PROGRAMS",
-      1507305000,
-      "obligations",
-      "https://comptroller.defense.gov/Portals/45/Documents/OM_Reports/FY2024/FY_2024_4st_quarter_execution.pdf"
-    ],
-    [
-      "Department of the Air Force",
-      "DoD FY2024 O&M budget execution — Air Force · 00 · 000 · UNDISTRIBUTED",
-      -84000,
-      "obligations",
-      "https://comptroller.defense.gov/Portals/45/Documents/OM_Reports/FY2024/FY_2024_4st_quarter_execution.pdf"
-    ]
+    ["Department of the Air Force", "DoD FY2024 O&M budget execution — Air Force · 01 · N/A · N/A", 616000, "obligations", "https://comptroller.defense.gov/Portals/45/Documents/OM_Reports/FY2024/FY_2024_4st_quarter_execution.pdf"],
+    ["Department of the Air Force", "DoD FY2024 O&M budget execution — Air Force · 01 · 011A · PRIMARY COMBAT FORCES", 1114884000, "obligations", "https://comptroller.defense.gov/Portals/45/Documents/OM_Reports/FY2024/FY_2024_4st_quarter_execution.pdf"],
+    ["Department of the Air Force", "DoD FY2024 O&M budget execution — Air Force · 01 · 011C · COMBAT ENHANCEMENT FORCES", 2683700000, "obligations", "https://comptroller.defense.gov/Portals/45/Documents/OM_Reports/FY2024/FY_2024_4st_quarter_execution.pdf"],
+    ["Department of the Air Force", "DoD FY2024 O&M budget execution — Air Force · 01 · 011D · AIR OPERATIONS TRAINING (OJT, MAINTAIN SKILLS)", 1580191000, "obligations", "https://comptroller.defense.gov/Portals/45/Documents/OM_Reports/FY2024/FY_2024_4st_quarter_execution.pdf"],
+    ["Department of the Air Force", "DoD FY2024 O&M budget execution — Air Force · 01 · 011M · DEPOT PURCHASE EQUIPMENT MAINTENANCE", 4234899000, "obligations", "https://comptroller.defense.gov/Portals/45/Documents/OM_Reports/FY2024/FY_2024_4st_quarter_execution.pdf"],
+    ["Department of the Air Force", "DoD FY2024 O&M budget execution — Air Force · 01 · 011R · FACILITIES SUSTAINMENT, RESTORATION & MODERNIZATION", 4488841000, "obligations", "https://comptroller.defense.gov/Portals/45/Documents/OM_Reports/FY2024/FY_2024_4st_quarter_execution.pdf"],
+    ["Department of the Air Force", "DoD FY2024 O&M budget execution — Air Force · 01 · 011V · CYBERSPACE SUSTAINMENT", 231131000, "obligations", "https://comptroller.defense.gov/Portals/45/Documents/OM_Reports/FY2024/FY_2024_4st_quarter_execution.pdf"],
+    ["Department of the Air Force", "DoD FY2024 O&M budget execution — Air Force · 01 · 011W · CONTRACTOR LOGISTICS SUPPORT AND SYSTEM SUPPORT", 9686470000, "obligations", "https://comptroller.defense.gov/Portals/45/Documents/OM_Reports/FY2024/FY_2024_4st_quarter_execution.pdf"],
+    ["Department of the Air Force", "DoD FY2024 O&M budget execution — Air Force · 01 · 011Y · FLYING HOUR PROGRAM", 6582927000, "obligations", "https://comptroller.defense.gov/Portals/45/Documents/OM_Reports/FY2024/FY_2024_4st_quarter_execution.pdf"],
+    ["Department of the Air Force", "DoD FY2024 O&M budget execution — Air Force · 01 · 011Z · BASE SUPPORT", 11044876000, "obligations", "https://comptroller.defense.gov/Portals/45/Documents/OM_Reports/FY2024/FY_2024_4st_quarter_execution.pdf"],
+    ["Department of the Air Force", "DoD FY2024 O&M budget execution — Air Force · 01 · 012A · GLOBAL C3I AND EARLY WARNING", 1359242000, "obligations", "https://comptroller.defense.gov/Portals/45/Documents/OM_Reports/FY2024/FY_2024_4st_quarter_execution.pdf"],
+    ["Department of the Air Force", "DoD FY2024 O&M budget execution — Air Force · 01 · 012C · OTHER COMBAT OPS SPT PROGRAMS", 1885728000, "obligations", "https://comptroller.defense.gov/Portals/45/Documents/OM_Reports/FY2024/FY_2024_4st_quarter_execution.pdf"],
+    ["Department of the Air Force", "DoD FY2024 O&M budget execution — Air Force · 01 · 012D · CYBERSPACE ACTIVITIES", 847579000, "obligations", "https://comptroller.defense.gov/Portals/45/Documents/OM_Reports/FY2024/FY_2024_4st_quarter_execution.pdf"],
+    ["Department of the Air Force", "DoD FY2024 O&M budget execution — Air Force · 01 · 012Q · MEDICAL READINESS", 500049000, "obligations", "https://comptroller.defense.gov/Portals/45/Documents/OM_Reports/FY2024/FY_2024_4st_quarter_execution.pdf"],
+    ["Department of the Air Force", "DoD FY2024 O&M budget execution — Air Force · 01 · 015C · US NORTHCOM/NORAD", 278259000, "obligations", "https://comptroller.defense.gov/Portals/45/Documents/OM_Reports/FY2024/FY_2024_4st_quarter_execution.pdf"],
+    ["Department of the Air Force", "DoD FY2024 O&M budget execution — Air Force · 01 · 015D · US STRATCOM", 529948000, "obligations", "https://comptroller.defense.gov/Portals/45/Documents/OM_Reports/FY2024/FY_2024_4st_quarter_execution.pdf"],
+    ["Department of the Air Force", "DoD FY2024 O&M budget execution — Air Force · 01 · 015E · COMBATANT COMMANDERS MISSION OPERATIONS - USCYBERCOM", -1000, "obligations", "https://comptroller.defense.gov/Portals/45/Documents/OM_Reports/FY2024/FY_2024_4st_quarter_execution.pdf"],
+    ["Department of the Air Force", "DoD FY2024 O&M budget execution — Air Force · 01 · 015F · US CENTCOM", 355543000, "obligations", "https://comptroller.defense.gov/Portals/45/Documents/OM_Reports/FY2024/FY_2024_4st_quarter_execution.pdf"],
+    ["Department of the Air Force", "DoD FY2024 O&M budget execution — Air Force · 01 · 015G · US SOCOM", 32345000, "obligations", "https://comptroller.defense.gov/Portals/45/Documents/OM_Reports/FY2024/FY_2024_4st_quarter_execution.pdf"],
+    ["Department of the Air Force", "DoD FY2024 O&M budget execution — Air Force · 01 · 015H · US TRANSCOM", 221000, "obligations", "https://comptroller.defense.gov/Portals/45/Documents/OM_Reports/FY2024/FY_2024_4st_quarter_execution.pdf"],
+    ["Department of the Air Force", "DoD FY2024 O&M budget execution — Air Force · 01 · 015U · CENTCOM CYBERSPACE SUSTAINMENT", 1457000, "obligations", "https://comptroller.defense.gov/Portals/45/Documents/OM_Reports/FY2024/FY_2024_4st_quarter_execution.pdf"],
+    ["Department of the Air Force", "DoD FY2024 O&M budget execution — Air Force · 01 · 015X · USSPACECOM", 363758000, "obligations", "https://comptroller.defense.gov/Portals/45/Documents/OM_Reports/FY2024/FY_2024_4st_quarter_execution.pdf"],
+    ["Department of the Air Force", "DoD FY2024 O&M budget execution — Air Force · 01 · 9999 · CLASSIFIED PROGRAMS", 1737858000, "obligations", "https://comptroller.defense.gov/Portals/45/Documents/OM_Reports/FY2024/FY_2024_4st_quarter_execution.pdf"],
+    ["Department of the Air Force", "DoD FY2024 O&M budget execution — Air Force · 02 · N/A · N/A", 32000, "obligations", "https://comptroller.defense.gov/Portals/45/Documents/OM_Reports/FY2024/FY_2024_4st_quarter_execution.pdf"],
+    ["Department of the Air Force", "DoD FY2024 O&M budget execution — Air Force · 02 · 021A · AIRLIFT OPERATIONS", 3574537000, "obligations", "https://comptroller.defense.gov/Portals/45/Documents/OM_Reports/FY2024/FY_2024_4st_quarter_execution.pdf"],
+    ["Department of the Air Force", "DoD FY2024 O&M budget execution — Air Force · 02 · 021D · MOBILIZATION PREPAREDNESS", 240079000, "obligations", "https://comptroller.defense.gov/Portals/45/Documents/OM_Reports/FY2024/FY_2024_4st_quarter_execution.pdf"],
+    ["Department of the Air Force", "DoD FY2024 O&M budget execution — Air Force · 03 · N/A · N/A", 2000, "obligations", "https://comptroller.defense.gov/Portals/45/Documents/OM_Reports/FY2024/FY_2024_4st_quarter_execution.pdf"],
+    ["Department of the Air Force", "DoD FY2024 O&M budget execution — Air Force · 03 · 031A · OFFICER ACQUISITION", 219515000, "obligations", "https://comptroller.defense.gov/Portals/45/Documents/OM_Reports/FY2024/FY_2024_4st_quarter_execution.pdf"],
+    ["Department of the Air Force", "DoD FY2024 O&M budget execution — Air Force · 03 · 031B · RECRUIT TRAINING", 31085000, "obligations", "https://comptroller.defense.gov/Portals/45/Documents/OM_Reports/FY2024/FY_2024_4st_quarter_execution.pdf"],
+    ["Department of the Air Force", "DoD FY2024 O&M budget execution — Air Force · 03 · 031D · RESERVE OFFICERS TRAINING CORPS (ROTC)", 130311000, "obligations", "https://comptroller.defense.gov/Portals/45/Documents/OM_Reports/FY2024/FY_2024_4st_quarter_execution.pdf"],
+    ["Department of the Air Force", "DoD FY2024 O&M budget execution — Air Force · 03 · 032A · SPECIALIZED SKILL TRAINING", 602741000, "obligations", "https://comptroller.defense.gov/Portals/45/Documents/OM_Reports/FY2024/FY_2024_4st_quarter_execution.pdf"],
+    ["Department of the Air Force", "DoD FY2024 O&M budget execution — Air Force · 03 · 032B · FLIGHT TRAINING", 774975000, "obligations", "https://comptroller.defense.gov/Portals/45/Documents/OM_Reports/FY2024/FY_2024_4st_quarter_execution.pdf"],
+    ["Department of the Air Force", "DoD FY2024 O&M budget execution — Air Force · 03 · 032C · PROFESSIONAL DEVELOPMENT EDUCATION", 291013000, "obligations", "https://comptroller.defense.gov/Portals/45/Documents/OM_Reports/FY2024/FY_2024_4st_quarter_execution.pdf"],
+    ["Department of the Air Force", "DoD FY2024 O&M budget execution — Air Force · 03 · 032D · TRAINING SUPPORT", 216245000, "obligations", "https://comptroller.defense.gov/Portals/45/Documents/OM_Reports/FY2024/FY_2024_4st_quarter_execution.pdf"],
+    ["Department of the Air Force", "DoD FY2024 O&M budget execution — Air Force · 03 · 033A · RECRUITING AND ADVERTISING", 235612000, "obligations", "https://comptroller.defense.gov/Portals/45/Documents/OM_Reports/FY2024/FY_2024_4st_quarter_execution.pdf"],
+    ["Department of the Air Force", "DoD FY2024 O&M budget execution — Air Force · 03 · 033B · EXAMINING", 7718000, "obligations", "https://comptroller.defense.gov/Portals/45/Documents/OM_Reports/FY2024/FY_2024_4st_quarter_execution.pdf"],
+    ["Department of the Air Force", "DoD FY2024 O&M budget execution — Air Force · 03 · 033C · OFF-DUTY AND VOLUNTARY EDUCATION", 227669000, "obligations", "https://comptroller.defense.gov/Portals/45/Documents/OM_Reports/FY2024/FY_2024_4st_quarter_execution.pdf"],
+    ["Department of the Air Force", "DoD FY2024 O&M budget execution — Air Force · 03 · 033D · CIVILIAN EDUCATION AND TRAINING", 366654000, "obligations", "https://comptroller.defense.gov/Portals/45/Documents/OM_Reports/FY2024/FY_2024_4st_quarter_execution.pdf"],
+    ["Department of the Air Force", "DoD FY2024 O&M budget execution — Air Force · 03 · 033E · JUNIOR ROTC", 75867000, "obligations", "https://comptroller.defense.gov/Portals/45/Documents/OM_Reports/FY2024/FY_2024_4st_quarter_execution.pdf"],
+    ["Department of the Air Force", "DoD FY2024 O&M budget execution — Air Force · 04 · N/A · N/A", 1000, "obligations", "https://comptroller.defense.gov/Portals/45/Documents/OM_Reports/FY2024/FY_2024_4st_quarter_execution.pdf"],
+    ["Department of the Air Force", "DoD FY2024 O&M budget execution — Air Force · 04 · 041A · LOGISTICS OPERATIONS", 1007721000, "obligations", "https://comptroller.defense.gov/Portals/45/Documents/OM_Reports/FY2024/FY_2024_4st_quarter_execution.pdf"],
+    ["Department of the Air Force", "DoD FY2024 O&M budget execution — Air Force · 04 · 041B · TECHNICAL SUPPORT ACTIVITIES", 174854000, "obligations", "https://comptroller.defense.gov/Portals/45/Documents/OM_Reports/FY2024/FY_2024_4st_quarter_execution.pdf"],
+    ["Department of the Air Force", "DoD FY2024 O&M budget execution — Air Force · 04 · 042A · ADMINISTRATION", 1273631000, "obligations", "https://comptroller.defense.gov/Portals/45/Documents/OM_Reports/FY2024/FY_2024_4st_quarter_execution.pdf"],
+    ["Department of the Air Force", "DoD FY2024 O&M budget execution — Air Force · 04 · 042B · SERVICEWIDE COMMUNICATIONS", 43927000, "obligations", "https://comptroller.defense.gov/Portals/45/Documents/OM_Reports/FY2024/FY_2024_4st_quarter_execution.pdf"],
+    ["Department of the Air Force", "DoD FY2024 O&M budget execution — Air Force · 04 · 042D · DEFENSE ENVIRONMENTAL RESTORATION ACCOUNT (DERA)", 383665000, "obligations", "https://comptroller.defense.gov/Portals/45/Documents/OM_Reports/FY2024/FY_2024_4st_quarter_execution.pdf"],
+    ["Department of the Air Force", "DoD FY2024 O&M budget execution — Air Force · 04 · 042G · OTHER SERVICEWIDE ACTIVITIES", 1808071000, "obligations", "https://comptroller.defense.gov/Portals/45/Documents/OM_Reports/FY2024/FY_2024_4st_quarter_execution.pdf"],
+    ["Department of the Air Force", "DoD FY2024 O&M budget execution — Air Force · 04 · 042I · CIVIL AIR PATROL", 55099000, "obligations", "https://comptroller.defense.gov/Portals/45/Documents/OM_Reports/FY2024/FY_2024_4st_quarter_execution.pdf"],
+    ["Department of the Air Force", "DoD FY2024 O&M budget execution — Air Force · 04 · 042W · DEF ACQUISITION WORKFORCE DEVELOPMENT ACCOUNT", 46448000, "obligations", "https://comptroller.defense.gov/Portals/45/Documents/OM_Reports/FY2024/FY_2024_4st_quarter_execution.pdf"],
+    ["Department of the Air Force", "DoD FY2024 O&M budget execution — Air Force · 04 · 044A · INTERNATIONAL SUPPORT", 82923000, "obligations", "https://comptroller.defense.gov/Portals/45/Documents/OM_Reports/FY2024/FY_2024_4st_quarter_execution.pdf"],
+    ["Department of the Air Force", "DoD FY2024 O&M budget execution — Air Force · 04 · 9999 · CLASSIFIED PROGRAMS", 1507305000, "obligations", "https://comptroller.defense.gov/Portals/45/Documents/OM_Reports/FY2024/FY_2024_4st_quarter_execution.pdf"],
+    ["Department of the Air Force", "DoD FY2024 O&M budget execution — Air Force · 00 · 000 · UNDISTRIBUTED", -84000, "obligations", "https://comptroller.defense.gov/Portals/45/Documents/OM_Reports/FY2024/FY_2024_4st_quarter_execution.pdf"]
   ],
-  "supplementalSchema": [
-    "subAgency",
-    "program",
-    "amount",
-    "measure",
-    "source"
-  ],
-  "hierarchyNote": "Object-class rows are directly managed; the parent entity is repeated as the sub-agency placeholder.",
+  "supplementalSchema": ["subAgency", "program", "amount", "measure", "source"],
+  "hierarchyNote": "USAspending program-activity rows preserve the agency gross-outlay control; the parent entity is repeated as the sub-agency placeholder.",
   "sourceUrls": [
-    [
-      "FY2024 gross outlays by object class",
-      "https://api.usaspending.gov/api/v2/agency/097/object_class/?fiscal_year=2024&limit=100&page=1"
-    ],
-    [
-      "FY2024 agency budgetary resources total",
-      "https://api.usaspending.gov/api/v2/agency/097/budgetary_resources/?fiscal_year=2024"
-    ]
+    ["FY2024 gross outlays by program activity · page 1", "https://api.usaspending.gov/api/v2/agency/097/program_activity/?fiscal_year=2024&limit=100&page=1"],
+    ["FY2024 gross outlays by program activity · page 2", "https://api.usaspending.gov/api/v2/agency/097/program_activity/?fiscal_year=2024&limit=100&page=2"],
+    ["FY2024 gross outlays by program activity · page 3", "https://api.usaspending.gov/api/v2/agency/097/program_activity/?fiscal_year=2024&limit=100&page=3"],
+    ["FY2024 agency budgetary resources total", "https://api.usaspending.gov/api/v2/agency/097/budgetary_resources/?fiscal_year=2024"]
   ],
   "sourceBasis": "official source amount",
-  "sourceCheck": {
-    "objectClassRows": 35,
-    "objectClassTotal": 1273430787033.52,
-    "agencyTotal": 1273430787033.52,
-    "difference": 0
-  },
+  "sourceCheck": {"groupRows": 215, "programActivityTotal": 1273430787033.52, "agencyTotal": 1273430787033.52, "difference": 0},
   "normalizationAdjustment": -0.02,
-  "sourceLabelMap": {
-    "Object class not reported by official source": "Unknown"
-  },
-  "note": "The official USAspending object-class response labels 1 row as Unknown; the display label states that the object class was not reported and no category was inferred. Amounts are shown on the official source basis; no comparator normalization was applied."
+  "sourceLabelMap": {"Object class not reported by official source": "Unknown"},
+  "note": "Program activities replace the former generic object-class view and remain on USAspending gross-outlay basis; no comparator normalization was applied."
 }

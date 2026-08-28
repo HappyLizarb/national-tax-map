@@ -5,153 +5,19 @@
   "fiscalYear": 2024,
   "ledgerAmount": 152378706.5,
   "sourceTotal": 207666412.33,
-  "sourceUrl": "https://api.usaspending.gov/api/v2/agency/418/object_class/?fiscal_year=2024&limit=100&page=1",
+  "sourceUrl": "https://api.usaspending.gov/api/v2/agency/418/program_activity/?fiscal_year=2024&limit=100&page=1",
   "sourceUrls": [
-    [
-      "FY2024 gross outlays by object class",
-      "https://api.usaspending.gov/api/v2/agency/418/object_class/?fiscal_year=2024&limit=100&page=1"
-    ],
-    [
-      "FY2024 agency budgetary resources total",
-      "https://api.usaspending.gov/api/v2/agency/418/budgetary_resources/?fiscal_year=2024"
-    ]
+    ["FY2024 gross outlays by program activity · page 1", "https://api.usaspending.gov/api/v2/agency/418/program_activity/?fiscal_year=2024&limit=100&page=1"],
+    ["FY2024 agency budgetary resources total", "https://api.usaspending.gov/api/v2/agency/418/budgetary_resources/?fiscal_year=2024"]
   ],
-  "rowSchema": [
-    "subAgency",
-    "program",
-    "amount",
-    "sourceAmount",
-    "sourceRows"
-  ],
+  "rowSchema": ["subAgency", "program", "amount", "sourceAmount", "sourceRows"],
   "rows": [
-    [
-      "National Endowment for the Humanities",
-      "Grants, subsidies, and contributions",
-      164377375.83,
-      164377375.83,
-      null
-    ],
-    [
-      "National Endowment for the Humanities",
-      "Full-time permanent",
-      22426086.51,
-      22426086.51,
-      null
-    ],
-    [
-      "National Endowment for the Humanities",
-      "Civilian personnel benefits",
-      8334273.48,
-      8334273.48,
-      null
-    ],
-    [
-      "National Endowment for the Humanities",
-      "Other goods and services from Federal sources",
-      4111174.21,
-      4111174.21,
-      null
-    ],
-    [
-      "National Endowment for the Humanities",
-      "Rental payments to GSA",
-      3109483.39,
-      3109483.39,
-      null
-    ],
-    [
-      "National Endowment for the Humanities",
-      "Advisory and assistance services",
-      1655441.42,
-      1655441.42,
-      null
-    ],
-    [
-      "National Endowment for the Humanities",
-      "Operation and maintenance of equipment",
-      1401752.08,
-      1401752.08,
-      null
-    ],
-    [
-      "National Endowment for the Humanities",
-      "Other personnel compensation",
-      774454.3,
-      774454.3,
-      null
-    ],
-    [
-      "National Endowment for the Humanities",
-      "Other than full-time permanent",
-      589633.85,
-      589633.85,
-      null
-    ],
-    [
-      "National Endowment for the Humanities",
-      "Travel and transportation of persons",
-      440620.06,
-      440620.06,
-      null
-    ],
-    [
-      "National Endowment for the Humanities",
-      "Supplies and materials",
-      119949.18,
-      119949.18,
-      null
-    ],
-    [
-      "National Endowment for the Humanities",
-      "Special personal services payments",
-      138410.53,
-      138410.53,
-      null
-    ],
-    [
-      "National Endowment for the Humanities",
-      "Communications, utilities, and miscellaneous charges",
-      84811.94,
-      84811.94,
-      null
-    ],
-    [
-      "National Endowment for the Humanities",
-      "Printing and reproduction",
-      8105.36,
-      8105.36,
-      null
-    ],
-    [
-      "National Endowment for the Humanities",
-      "Equipment",
-      32891.44,
-      32891.44,
-      null
-    ],
-    [
-      "National Endowment for the Humanities",
-      "Other services from non-Federal sources",
-      53980.75,
-      53980.75,
-      null
-    ],
-    [
-      "National Endowment for the Humanities",
-      "Benefits for former personnel",
-      7968,
-      7968,
-      null
-    ]
+    ["National Endowment for the Humanities", "PROMOTION OF THE HUMANITIES", 165858842.77, 165858842.77, null],
+    ["National Endowment for the Humanities", "ADMINISTRATION", 41807569.56, 41807569.56, null]
   ],
   "sourceBasis": "official source amount",
-  "sourceCheck": {
-    "objectClassRows": 17,
-    "objectClassTotal": 207666412.33,
-    "agencyTotal": 207666412.33,
-    "difference": 0
-  },
+  "sourceCheck": {"groupRows": 2, "programActivityTotal": 207666412.33, "agencyTotal": 207666412.33, "difference": 0},
   "normalizationAdjustment": 0.01,
-  "hierarchyNote": "The source endpoint returns agency-level object-class aggregates; no individual employees or payees are included.",
-  "note": "Amounts are shown on the official source basis; no comparator normalization was applied."
+  "hierarchyNote": "USAspending program-activity rows preserve the agency gross-outlay control; the parent entity is repeated as the sub-agency placeholder.",
+  "note": "Program activities replace the former generic object-class view and remain on USAspending gross-outlay basis; no comparator normalization was applied."
 }

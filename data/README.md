@@ -22,3 +22,5 @@ The former root-level research notes are preserved losslessly as structured reco
 - `household-estimate.json`: household percentile and simplified tax-estimate methodology.
 
 These files are commentary/evidence datasets, not numerical inputs loaded into the map. `relatedDatasets` records where each note applies; the applicable numerical datasets also expose a `researchCommentary` path where doing so does not change their jurisdiction-key schema.
+
+Imported source-native panels live only in their jurisdiction detail JSON. Intermediate context files and dated research notes are removed once their rows, source links, and accounting-basis notes are embedded there.

@@ -6,14 +6,12 @@ const model = require("./model.js");
 const ledgerTotals = require("./data/state-ledger-totals.js");
 const accountingBases = require("./data/state-accounting-bases.js");
 const financialResults = require("./data/state-financial-results.js");
-const financialResearch = Object.assign({}, ...["a", "b", "c"]
-  .map((cohort) => require("./data/research/state-balance-cohort-" + cohort + ".json")),
-  require("./data/research/state-balance-pilot-states.json"));
 const taxRates = require("./data/tax-rates.js");
 const incomeTiers = require("./data/income-tiers.js");
 const estimates = require("./data/household-tax-estimates.js");
 require("./test-department-data.js");
 require("./test-federal-department-data.js");
+require("./test-large-row-coverage.js");
 require("./test-offsetting-receipts.js");
 require("./test-tax-estimates.js");
 require("./test-kpi-disclosures.js");
@@ -46,12 +44,9 @@ assert.equal(Object.keys(model.states).length, 50);
 assert.equal(Object.keys(ledgerTotals).length, 50);
 assert.equal(Object.keys(financialResults.states).length, 50);
 assert.deepEqual(Object.keys(financialResults.states).sort(), Object.keys(model.states).sort());
-assert.deepEqual(Object.keys(financialResearch).sort(), Object.keys(model.states).sort());
 for (const [name, result] of Object.entries(financialResults.states)) {
   assert.equal(result.resources - result.expenses, result.changeInNetPosition, name + " GAAP reconciliation");
   assert.ok(Number.isFinite(result.netPosition), name + " fiscal-year-end GAAP net position");
-  assert.equal(result.netPosition, financialResearch[name].netPosition, name + " researched net-position control");
-  assert.equal(result.location, financialResearch[name].location, name + " researched statement location");
   assert.ok(Number.isFinite(result.precision) && result.precision >= 1, name + " source precision");
   assert.match(result.sourceUrl, /^https:\/\//, name + " official financial source");
   const financial = model.scopeData(name, "financial");
@@ -110,7 +105,12 @@ for (const [name, [amount, status]] of Object.entries(pilotControls)) {
   assert.match(comparison.statement, /Transfer treatment:/, name);
   assert.match(comparison.provenance, /Exact amount: .* Source precision: .* Revision:/, name);
 }
-for (const name of sameAcfrBasis) assert.equal(model.accountingComparisonFor(name), null, name);
+for (const name of sameAcfrBasis) {
+  const comparison = model.accountingComparisonFor(name);
+  assert.equal(comparison.kind, "gaap-comparison", name);
+  assert.equal(comparison.stateTotal, model.financialResultFor(name).expenses, name);
+  assert.equal(comparison.difference, model.states[name].total - comparison.stateTotal, name);
+}
 assert.equal(model.formatExactMoney(520734957000), "$520,734,957,000");
 assert.equal(model.formatExactMoney(36131360457.04), "$36,131,360,457.04");
 assert.equal(model.formatMoney(null), "Unavailable");
@@ -235,9 +235,7 @@ assert.equal(mapFeatures.find((feature) => feature.properties.name === "Californ
 for (const pattern of [/id="themeToggle"/, /id="taxRateRows"/, /id="accountingComparison"/, /id="budgetStatus"/, /id="budgetDisclosure"/, /id="outsideBudgetDisclosure"/, /data\/state-accounting-bases\.js/, /data\/state-budget-actuals\.js/, /data\/state-financial-results\.js/, /data\/tax-rates\.js/, /data\/income-tiers\.js/, /data\/household-tax-estimates\.js/, /data\/department-index\.js/, /department-loader\.js/, /fiscal-panel\.js/]) assert.match(html, pattern);
 assert.doesNotMatch(html + app, /data-layer|scopeSelect|setLayer|populateScopeSelect/);
 assert.doesNotMatch(html + app + styles, /data-metric|map-metric-switch|setMetric|updateMetricControls|state\.metric/);
-assert.match(html, />Audited state GAAP</);
-assert.match(html, />Treasury agencies &amp; programs</);
-assert.match(html, />Standardized Census comparison</);
+assert.doesNotMatch(html, /allocation-source-switch|data-allocation-source|Audited state GAAP|Standardized Census comparison|USAspending gross research/);
 assert.ok(html.indexOf('class="kpi-grid"') > detailPanelStart && html.indexOf('class="kpi-grid"') < detailPanelEnd);
 assert.ok(html.indexOf('aria-labelledby="gapTitle"') > detailPanelStart && html.indexOf('aria-labelledby="gapTitle"') < detailPanelEnd);
 assert.ok(html.indexOf('id="incomeTaxTiersTitle"') > detailPanelStart && html.indexOf('id="incomeTaxTiersTitle"') < detailPanelEnd);
@@ -250,8 +248,11 @@ assert.doesNotMatch(html, /trendChart|stateLocal|Official itemized ledger|Compar
 assert.doesNotMatch(html, /All levels|data-layer="consolidated"/);
 for (const pattern of [/:root\[data-theme="dark"\]/, /\.tax-tiers/, /\.tax-estimate-window/]) assert.match(styles, pattern);
 assert.match(html, /tax-estimates\.js/);
+assert.match(html, /class="methodology-disclaimer"[\s\S]*Maps and headline state totals use published GAAP[\s\S]*researched published archives[\s\S]*Census figures are shown only for comparison/);
 for (const pattern of [/\.accounting-total-grid/, /\.budget-disclaimer/, /\.outside-budget-disclaimer/]) assert.match(details, pattern);
-for (const pattern of [/DepartmentData\.loadSummary/, /DepartmentData\.loadDetail/, /budgetPresentationFor/, /financialResultFor/, /comparison\.kind === "budget-standard"/, /updateAccountingComparison\(canonical\.name\)/, /updateKpis\(canonical, budget\)/, /const canonical = view/, /const federal = state\.layer === "federal"/, /state\.allocationSource = state\.layer === "federal" \? "itemized" : "financial"/, /scope === state\.scope && scope !== "United States"/, /element\.animate/, /themePreference\.addEventListener\("change", followSystemTheme\)/, /color\("--map-neutral"\)/, /prefers-reduced-motion: reduce/, /easeCubicInOut/, /Working individual/]) assert.match(app, pattern);
+for (const pattern of [/DepartmentData\.loadSummary/, /DepartmentData\.loadDetail/, /budgetPresentationFor/, /financialResultFor/, /comparison\.kind === "budget-standard"/, /updateAccountingComparison\(canonical\.name\)/, /updateKpis\(canonical, null\)/, /const canonical = model\.scopeData\(state\.scope, state\.layer === "federal" \? "itemized" : "financial"\)/, /const allocation = model\.scopeData\(state\.scope, "itemized"\)/, /scope === state\.scope && scope !== "United States"/, /element\.animate/, /themePreference\.addEventListener\("change", followSystemTheme\)/, /color\("--map-neutral"\)/, /prefers-reduced-motion: reduce/, /easeCubicInOut/, /Working individual/]) assert.match(app, pattern);
+assert.doesNotMatch(app, /model\.scopeData\(state\.scope, state\.allocationSource\)/);
+assert.doesNotMatch(app, /function setAllocationSource|updateAllocationSourceControls/);
 assert.match(html, /receipt-hierarchy\.js/);
 assert.match(app, /renderReceiptHierarchy/);
 assert.match(app, /mapMetric\(name, "stateGovernment", "balance", "financial"\)/);
@@ -259,7 +260,6 @@ assert.match(app, /targetTransform = "translate\(0 0\) scale\(1\)"/);
 assert.match(app, /fitExtent\(\[\[30, 28\], \[814, 455\]\]/);
 assert.match(app, /No validated itemization yet/);
 assert.match(app, /budget\.itemizedAmount \/ budget\.amount/);
-assert.match(app, /nested evidence against the canonical control/);
 assert.doesNotMatch(app, /state spending map use a state-specific official ledger/);
 assert.match(app, /Net position \(GAAP\)/);
 assert.match(app, /financial\.changeInNetPosition\) \+ " annual change in net position"/);

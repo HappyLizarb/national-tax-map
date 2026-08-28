@@ -5,174 +5,29 @@
   "fiscalYear": 2024,
   "ledgerAmount": 667571175.42,
   "sourceTotal": 909786637.23,
-  "sourceUrl": "https://api.usaspending.gov/api/v2/agency/005/object_class/?fiscal_year=2024&limit=100&page=1",
+  "sourceUrl": "https://api.usaspending.gov/api/v2/agency/005/program_activity/?fiscal_year=2024&limit=100&page=1",
   "sourceUrls": [
-    [
-      "FY2024 gross outlays by object class",
-      "https://api.usaspending.gov/api/v2/agency/005/object_class/?fiscal_year=2024&limit=100&page=1"
-    ],
-    [
-      "FY2024 agency budgetary resources total",
-      "https://api.usaspending.gov/api/v2/agency/005/budgetary_resources/?fiscal_year=2024"
-    ]
+    ["FY2024 gross outlays by program activity · page 1", "https://api.usaspending.gov/api/v2/agency/005/program_activity/?fiscal_year=2024&limit=100&page=1"],
+    ["FY2024 agency budgetary resources total", "https://api.usaspending.gov/api/v2/agency/005/budgetary_resources/?fiscal_year=2024"]
   ],
-  "rowSchema": [
-    "subAgency",
-    "program",
-    "amount",
-    "sourceAmount",
-    "sourceRows"
-  ],
+  "rowSchema": ["subAgency", "program", "amount", "sourceAmount", "sourceRows"],
   "rows": [
-    [
-      "Government Accountability Office",
-      "Full-time permanent",
-      526243963.14,
-      526243963.14,
-      null
-    ],
-    [
-      "Government Accountability Office",
-      "Civilian personnel benefits",
-      198880262.95,
-      198880262.95,
-      null
-    ],
-    [
-      "Government Accountability Office",
-      "Operation and maintenance of equipment",
-      76360903.98,
-      76360903.98,
-      null
-    ],
-    [
-      "Government Accountability Office",
-      "Other services from non-Federal sources",
-      19369886.62,
-      19369886.62,
-      null
-    ],
-    [
-      "Government Accountability Office",
-      "Other than full-time permanent",
-      21960160.89,
-      21960160.89,
-      null
-    ],
-    [
-      "Government Accountability Office",
-      "Operation and maintenance of facilities",
-      12057406.85,
-      12057406.85,
-      null
-    ],
-    [
-      "Government Accountability Office",
-      "Land and structures",
-      11617752.57,
-      11617752.57,
-      null
-    ],
-    [
-      "Government Accountability Office",
-      "Communications, utilities, and miscellaneous charges",
-      8259475.44,
-      8259475.44,
-      null
-    ],
-    [
-      "Government Accountability Office",
-      "Other personnel compensation",
-      9074875.82,
-      9074875.82,
-      null
-    ],
-    [
-      "Government Accountability Office",
-      "Travel and transportation of persons",
-      7293876.17,
-      7293876.17,
-      null
-    ],
-    [
-      "Government Accountability Office",
-      "Rental payments to GSA",
-      6432082.89,
-      6432082.89,
-      null
-    ],
-    [
-      "Government Accountability Office",
-      "Advisory and assistance services",
-      4838357.95,
-      4838357.95,
-      null
-    ],
-    [
-      "Government Accountability Office",
-      "Equipment",
-      3660378.07,
-      3660378.07,
-      null
-    ],
-    [
-      "Government Accountability Office",
-      "Other goods and services from Federal sources",
-      2256410.08,
-      2256410.08,
-      null
-    ],
-    [
-      "Government Accountability Office",
-      "Medical care",
-      531525.34,
-      531525.34,
-      null
-    ],
-    [
-      "Government Accountability Office",
-      "Insurance claims and indemnities",
-      447026.96,
-      447026.96,
-      null
-    ],
-    [
-      "Government Accountability Office",
-      "Supplies and materials",
-      319223.3,
-      319223.3,
-      null
-    ],
-    [
-      "Government Accountability Office",
-      "Benefits for former personnel",
-      127339.14,
-      127339.14,
-      null
-    ],
-    [
-      "Government Accountability Office",
-      "Printing and reproduction",
-      46659.07,
-      46659.07,
-      null
-    ],
-    [
-      "Government Accountability Office",
-      "Rental payments to others",
-      9070,
-      9070,
-      null
-    ]
+    ["Government Accountability Office", "GOAL 1-ADDRESS CURRENT AND EMERGING CHALLENGES TO THE WELL-BEING AND FINANCIAL SECURITY OF THE AMERICAN PEOPLE", 320760848.16, 320760848.16, null],
+    ["Government Accountability Office", "GOAL 2-RESPOND TO CHANGING SECURITY THREATS AND THE CHALLENGES OF GLOBAL INTERDEPENDENCE", 236451622.97, 236451622.97, null],
+    ["Government Accountability Office", "GOAL 3-HELP TRANSFORM THE FEDERAL GOVERNMENT TO ADDRESS NATIONAL CHALLENGES", 207905172.48, 207905172.48, null],
+    ["Government Accountability Office", "GOAL 8-OTHER COSTS IN SUPPORT OF THE CONGRESS", 76662684.97, 76662684.97, null],
+    ["Government Accountability Office", "REIMBURSABLE PROGRAM ACTIVITY GOAL 3", 39693987.39, 39693987.39, null],
+    ["Government Accountability Office", "GOAL 4-MAXIMIZE THE VALUE OF GAO BY ENABLING QUALITY, TIMELY SERVICE TO THE CONGRESS, AND BY BEING A LEADING PRACTICES FEDERAL AGENCY", 23559508.75, 23559508.75, null],
+    ["Government Accountability Office", "REIMBURSABLE PROGRAM ACTIVITY GOAL 1", 3546683.39, 3546683.39, null],
+    ["Government Accountability Office", "REIMBURSABLE PROGRAM ACTIVITY GOAL 2", 1933576.82, 1933576.82, null],
+    ["Government Accountability Office", "REIMBURSABLE PROGRAM ACTIVITY GOAL 8", 1296679.73, 1296679.73, null],
+    ["Government Accountability Office", "REIMBURSABLE PROGRAM ACTIVITY GOAL 4", 15960.72, 15960.72, null],
+    ["Government Accountability Office", "PROGRAM SUPPORT REIMBURSABLE", 0, 0, null],
+    ["Government Accountability Office", "PROGRAM SUPPORT", -2040088.15, -2040088.15, null]
   ],
   "sourceBasis": "official source amount",
-  "sourceCheck": {
-    "objectClassRows": 20,
-    "objectClassTotal": 909786637.23,
-    "agencyTotal": 909786637.23,
-    "difference": 0
-  },
+  "sourceCheck": {"groupRows": 12, "programActivityTotal": 909786637.23, "agencyTotal": 909786637.23, "difference": 0},
   "normalizationAdjustment": 0,
-  "hierarchyNote": "The source endpoint returns agency-level object-class aggregates; no individual employees or payees are included.",
-  "note": "Amounts are shown on the official source basis; no comparator normalization was applied."
+  "hierarchyNote": "USAspending program-activity rows preserve the agency gross-outlay control; the parent entity is repeated as the sub-agency placeholder.",
+  "note": "Program activities replace the former generic object-class view and remain on USAspending gross-outlay basis; no comparator normalization was applied."
 }

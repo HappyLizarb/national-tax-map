@@ -6,1474 +6,344 @@
   "fiscalYear": 2024,
   "ledgerAmount": 49600266723.6,
   "sourceTotal": 67596776987.86,
-  "sourceUrl": "https://api.usaspending.gov/api/v2/agency/1601/object_class/?fiscal_year=2024&limit=100&page=1",
-  "rowSchema": [
-    "subAgency",
-    "program",
-    "amount",
-    "sourceAmount",
-    "sourceRows"
-  ],
+  "sourceUrl": "https://api.usaspending.gov/api/v2/agency/1601/program_activity/?fiscal_year=2024&limit=100&page=1",
+  "rowSchema": ["subAgency", "program", "amount", "sourceAmount", "sourceRows"],
   "rows": [
-    [
-      "Department of Labor",
-      "Insurance claims and indemnities",
-      42579119976.6,
-      42579119976.6,
-      null
-    ],
-    [
-      "Department of Labor",
-      "Grants, subsidies, and contributions",
-      13791594765.44,
-      13791594765.44,
-      null
-    ],
-    [
-      "Department of Labor",
-      "Financial transfers",
-      2632881503.53,
-      2632881503.53,
-      null
-    ],
-    [
-      "Department of Labor",
-      "Full-time permanent",
-      1855794349.65,
-      1855794349.65,
-      null
-    ],
-    [
-      "Department of Labor",
-      "Other services from non-Federal sources",
-      1730499506.64,
-      1730499506.64,
-      null
-    ],
-    [
-      "Department of Labor",
-      "Other goods and services from Federal sources",
-      1510067080.92,
-      1510067080.92,
-      null
-    ],
-    [
-      "Department of Labor",
-      "Interest and dividends",
-      822902463.78,
-      822902463.78,
-      null
-    ],
-    [
-      "Department of Labor",
-      "Civilian personnel benefits",
-      742022861.93,
-      742022861.93,
-      null
-    ],
-    [
-      "Department of Labor",
-      "Object class not reported by official source",
-      711014917.83,
-      711014917.83,
-      null
-    ],
-    [
-      "Department of Labor",
-      "Operation and maintenance of equipment",
-      337366293.92,
-      337366293.92,
-      null
-    ],
-    [
-      "Department of Labor",
-      "Advisory and assistance services",
-      222059867.49,
-      222059867.49,
-      null
-    ],
-    [
-      "Department of Labor",
-      "Rental payments to GSA",
-      142612815.3,
-      142612815.3,
-      null
-    ],
-    [
-      "Department of Labor",
-      "Equipment",
-      134775195.67,
-      134775195.67,
-      null
-    ],
-    [
-      "Department of Labor",
-      "Other personnel compensation",
-      63353652.18,
-      63353652.18,
-      null
-    ],
-    [
-      "Department of Labor",
-      "Operation and maintenance of facilities",
-      58747045.44,
-      58747045.44,
-      null
-    ],
-    [
-      "Department of Labor",
-      "Land and structures",
-      84317507.27,
-      84317507.27,
-      null
-    ],
-    [
-      "Department of Labor",
-      "Travel and transportation of persons",
-      43293347.48,
-      43293347.48,
-      null
-    ],
-    [
-      "Department of Labor",
-      "Communications, utilities, and miscellaneous charges",
-      43500052.57,
-      43500052.57,
-      null
-    ],
-    [
-      "Department of Labor",
-      "Supplies and materials",
-      26436884.83,
-      26436884.83,
-      null
-    ],
-    [
-      "Department of Labor",
-      "Research and development contracts",
-      17753108.26,
-      17753108.26,
-      null
-    ],
-    [
-      "Department of Labor",
-      "Other than full-time permanent",
-      19275961.17,
-      19275961.17,
-      null
-    ],
-    [
-      "Department of Labor",
-      "Rental payments to others",
-      8313539.75,
-      8313539.75,
-      null
-    ],
-    [
-      "Department of Labor",
-      "Transportation of things",
-      6957560.99,
-      6957560.99,
-      null
-    ],
-    [
-      "Department of Labor",
-      "Medical care",
-      5300423.74,
-      5300423.74,
-      null
-    ],
-    [
-      "Department of Labor",
-      "Printing and reproduction",
-      5737112.6,
-      5737112.6,
-      null
-    ],
-    [
-      "Department of Labor",
-      "Benefits for former personnel",
-      675932.82,
-      675932.82,
-      null
-    ],
-    [
-      "Department of Labor",
-      "Special personal services payments",
-      412399.77,
-      412399.77,
-      null
-    ],
-    [
-      "Department of Labor",
-      "Refunds",
-      -9139.71,
-      -9139.71,
-      null
-    ]
+    ["Department of Labor", "BENEFIT PAYMENTS BY STATES", 36356896585.46, 36356896585.46, null],
+    ["Department of Labor", "STATE ADMINISTRATIVE EXPENSES", 4745582125.65, 4745582125.65, null],
+    ["Department of Labor", "INTEREST ON GENERAL FUND ADVANCES", 3139548909.03, 3139548909.03, null],
+    ["Department of Labor", "FEDERAL EMPLOYEES' COMPENSATION ACT BENEFITS", 3085999151.13, 3085999151.13, null],
+    ["Department of Labor", "STATE UI ADMINISTRATION", 2937948697.08, 2937948697.08, null],
+    ["Department of Labor", "PART B BENEFITS", 2182297323.89, 2182297323.89, null],
+    ["Department of Labor", "JOB CORPS OPERATIONS", 1533357655.51, 1533357655.51, null],
+    ["Department of Labor", "DISLOCATED WORKER EMPLOYMENT AND TRAINING ACTIVITIES", 1391077368.57, 1391077368.57, null],
+    ["Department of Labor", "YOUTH ACTIVITIES", 1025280001.57, 1025280001.57, null],
+    ["Department of Labor", "ADULT EMPLOYMENT AND TRAINING ACTIVITIES", 864434713.95, 864434713.95, null],
+    ["Department of Labor", "LSHW BENEFITS", 700000000, 700000000, null],
+    ["Department of Labor", "ES GRANTS TO STATES", 638810532.05, 638810532.05, null],
+    ["Department of Labor", "FINANCIAL AND ADMINISTRATIVE SERVICES (INCLUDES CORE FINANCIAL)", 612824322.36, 612824322.36, null],
+    ["Department of Labor", "PART E BENEFITS", 527605448.98, 527605448.98, null],
+    ["Department of Labor", "FEDERAL EMPLOYEES' UNEMPLOYMENT COMPENSATION", 510920788.26, 510920788.26, null],
+    ["Department of Labor", "DISABLED COAL MINERS BENEFITS", 397878892.69, 397878892.69, null],
+    ["Department of Labor", "LABOR FORCE STATISTICS", 321822080.68, 321822080.68, null],
+    ["Department of Labor", "COMMUNITY SERVICE EMPLOYMENT FOR OLDER AMERICANS - MINORITY NATIONAL SPONSORS", 299025461.99, 299025461.99, null],
+    ["Department of Labor", "MINE SAFETY HEALTH ENFORCEMENT", 270592937.69, 270592937.69, null],
+    ["Department of Labor", "WAGE AND HOUR SALARIES AND EXPENSES", 265292939.44, 265292939.44, null],
+    ["Department of Labor", "FEDERAL ENFORCEMENT", 264342732.66, 264342732.66, null],
+    ["Department of Labor", "PRICES AND COST OF LIVING", 248666061.49, 248666061.49, null],
+    ["Department of Labor", "APPRENTICESHIP STATE FUNDS", 223351327.07, 223351327.07, null],
+    ["Department of Labor", "JOBS FOR VETERANS' STATE GRANTS (JVSG)", 185534916.48, 185534916.48, null],
+    ["Department of Labor", "OPERATIONS", 173222001.04, 173222001.04, null],
+    ["Department of Labor", "PANDEMIC UNEMPLOYMENT ASSISTANCE ADMIN", 162262521.59, 162262521.59, null],
+    ["Department of Labor", "ENFORCEMENT AND PARTICIPANT ASSISTANCE", 160777994.23, 160777994.23, null],
+    ["Department of Labor", "UI INTEGRITY STAFF AND CONTRACT STAFF", 147954268.32, 147954268.32, null],
+    ["Department of Labor", "LEGAL SERVICES", 145635221.76, 145635221.76, null],
+    ["Department of Labor", "DIRECT EXPENSES", 128164000, 128164000, null],
+    ["Department of Labor", "STATE PROGRAM GRANTS", 123742315.08, 123742315.08, null],
+    ["Department of Labor", "FEDERAL PROGRAMS FOR WORKERS' COMPENSATION", 123341740.77, 123341740.77, null],
+    ["Department of Labor", "INTERNATIONAL LABOR AFFAIRS", 122644349.09, 122644349.09, null],
+    ["Department of Labor", "CONSTRUCTION, REHABILITATION, AND ACQUISITION (CRA)", 122541648.67, 122541648.67, null],
+    ["Department of Labor", "H-1B NON IMMIGRANT PETITIONER ACCOUNT (TRAINING)", 115942760.93, 115942760.93, null],
+    ["Department of Labor", "FEDERAL CONTRACTOR EEO STANDARDS ENFORCEMENT", 114583246.44, 114583246.44, null],
+    ["Department of Labor", "PROGRAM AND TRUST FUNDS", 108344163.56, 108344163.56, null],
+    ["Department of Labor", "REIMBURSEMENTS TO THE DEPARTMENT OF THE TREASURY", 106745899.27, 106745899.27, null],
+    ["Department of Labor", "COMMUNITY SERVICE EMPLOYMENT FOR OLDER AMERICANS - STATE AGENCIES", 106110949.89, 106110949.89, null],
+    ["Department of Labor", "COMPENSATION AND WORKING CONDITIONS", 96988933.88, 96988933.88, null],
+    ["Department of Labor", "TRADE ADJUSTMENT ASSISTANCE TRAINING AND OTHER ACTIVITIES", 92024366.67, 92024366.67, null],
+    ["Department of Labor", "MIGRANT AND SEASONAL FARMWORKERS", 91901843.07, 91901843.07, null],
+    ["Department of Labor", "REINTEGRATION OF EX-OFFENDERS", 91317184.01, 91317184.01, null],
+    ["Department of Labor", "LONGSHORE AND HARBOR WORKERS' COMPENSATION ACT, AS AMENDED", 89061524.41, 89061524.41, null],
+    ["Department of Labor", "TRAINING AND EMPLOYMENT SERVICES", 85764043.77, 85764043.77, null],
+    ["Department of Labor", "FECA FAIR SHARE (ADMINISTRATIVE EXPENSES)", 85449641.02, 85449641.02, null],
+    ["Department of Labor", "COMPLIANCE ASSISTANCE - FEDERAL", 81151627.22, 81151627.22, null],
+    ["Department of Labor", "ENERGY PART E", 78119551.78, 78119551.78, null],
+    ["Department of Labor", "PANDEMIC EMERGENCY UNEMPLOYMENT COMPENSATION ADMIN", 75738376.85, 75738376.85, null],
+    ["Department of Labor", "HUMAN RESOURCES SERVICES", 72215058.4, 72215058.4, null],
+    ["Department of Labor", "COMMUNITY PROJECTS", 66659186.79, 66659186.79, null],
+    ["Department of Labor", "ADJUDICATION", 65822550.42, 65822550.42, null],
+    ["Department of Labor", "UC NATIONAL ACTIVITIES", 64605007.96, 64605007.96, null],
+    ["Department of Labor", "TECHNICAL SUPPORT", 63939550.89, 63939550.89, null],
+    ["Department of Labor", "ENERGY PART B", 63623817.07, 63623817.07, null],
+    ["Department of Labor", "ONE-STOP - WORKFORCE INFO GRANTS", 61446361.5, 61446361.5, null],
+    ["Department of Labor", "COMPLIANCE ASSISTANCE - STATE", 59710015.73, 59710015.73, null],
+    ["Department of Labor", "HOMELESS VETERANS PROGRAM", 56327883.32, 56327883.32, null],
+    ["Department of Labor", "NATIVE AMERICANS", 55289273.38, 55289273.38, null],
+    ["Department of Labor", "FEDERAL ADMINISTRATION", 55206215.26, 55206215.26, null],
+    ["Department of Labor", "SALARIES AND EXPENSES (REIMBURSABLE)", 54643001.98, 54643001.98, null],
+    ["Department of Labor", "H-1 B AND L FRAUD PREVENTION AND DETECTION", 52420893.77, 52420893.77, null],
+    ["Department of Labor", "LABOR-MANAGEMENT STANDARDS", 52104083.09, 52104083.09, null],
+    ["Department of Labor", "WORKFORCE SECURITY", 50609522.93, 50609522.93, null],
+    ["Department of Labor", "TRUST FUNDS, FEDERAL PROGRAMS FOR WORKERS' COMPENSATION", 45088247.05, 45088247.05, null],
+    ["Department of Labor", "BLDTF ADMIN", 42367820, 42367820, null],
+    ["Department of Labor", "REIMBURSABLE PROGRAM DUA ADMINISTRATION", 41882749.65, 41882749.65, null],
+    ["Department of Labor", "OFFICE OF DISABILITY EMPLOYMENT POLICY", 40434276.36, 40434276.36, null],
+    ["Department of Labor", "ADMINISTRATION", 40334194.68, 40334194.68, null],
+    ["Department of Labor", "APPRENTICESHIP TRAINING, EMPLOYER AND LABOR SERVICES", 39539840.21, 39539840.21, null],
+    ["Department of Labor", "EDUCATIONAL POLICY AND DEVELOPMENT", 39077275.02, 39077275.02, null],
+    ["Department of Labor", "EXECUTIVE DIRECTION AND STAFF SERVICES", 38434493.19, 38434493.19, null],
+    ["Department of Labor", "BENEFITS", 38012948.67, 38012948.67, null],
+    ["Department of Labor", "USMCA TECHNICAL ASSISTANCE", 37817056.6, 37817056.6, null],
+    ["Department of Labor", "TRANSITION ASSISTANCE PROGRAM (TAP) - REIMBURSABLE", 37045920.99, 37045920.99, null],
+    ["Department of Labor", "SAFETY AND HEALTH STATISTICS", 35515746.36, 35515746.36, null],
+    ["Department of Labor", "PROGRAM DIRECTION AND SUPPORT", 35319393.86, 35319393.86, null],
+    ["Department of Labor", "ADMINISTRATION AND MANAGEMENT", 31791315.56, 31791315.56, null],
+    ["Department of Labor", "ES NATIONAL ACTIVITIES", 27529138.64, 27529138.64, null],
+    ["Department of Labor", "IT INFRASTRUCTURE MODERNIZATION", 27139757.62, 27139757.62, null],
+    ["Department of Labor", "HEADQUARTERS RELOCATION", 25920145.91, 25920145.91, null],
+    ["Department of Labor", "SAFETY AND HEALTH STANDARDS", 25890008.18, 25890008.18, null],
+    ["Department of Labor", "WHISTLEBLOWER PROTECTION", 25424062.86, 25424062.86, null],
+    ["Department of Labor", "FEDERAL PANDEMIC UNEMPLOYMENT COMPENSATION ADMIN", 24175119.47, 24175119.47, null],
+    ["Department of Labor", "EMPLOYMENT SECURITY", 23432342.56, 23432342.56, null],
+    ["Department of Labor", "FIELD SERVICES", 22320035.53, 22320035.53, null],
+    ["Department of Labor", "UI INTEGRITY GRANTS", 21899372.84, 21899372.84, null],
+    ["Department of Labor", "FOREIGN LABOR CERTIFICATION - STATE GRANTS", 21257479.66, 21257479.66, null],
+    ["Department of Labor", "WOMEN'S BUREAU", 20975276.39, 20975276.39, null],
+    ["Department of Labor", "POLICY AND COMPLIANCE ASSISTANCE", 20635914.32, 20635914.32, null],
+    ["Department of Labor", "PROGRAM EVALUATION AND INFORMATION RESOURCES", 18004279.77, 18004279.77, null],
+    ["Department of Labor", "REIMBURSABLE - SOL", 16512642.35, 16512642.35, null],
+    ["Department of Labor", "PROGRAM ADMINISTRATION", 16493714.86, 16493714.86, null],
+    ["Department of Labor", "UI NATIONAL ACTIVITIES", 16354570.12, 16354570.12, null],
+    ["Department of Labor", "CARES ACT DWGS", 16278602.27, 16278602.27, null],
+    ["Department of Labor", "ODEP RETAIN GRANTS (REIMBURSABLE)", 15991528.83, 15991528.83, null],
+    ["Department of Labor", "TELECOMMUNICATIONS", 14396270.26, 14396270.26, null],
+    ["Department of Labor", "DEPARTMENTAL PROGRAM EVALUATION", 13597260.17, 13597260.17, null],
+    ["Department of Labor", "OASAM REIMBURSABLE", 13480081.19, 13480081.19, null],
+    ["Department of Labor", "PRODUCTIVITY AND TECHNOLOGY", 12768537.61, 12768537.61, null],
+    ["Department of Labor", "TECHNOLOGY MODERNIZATION FUND", 12630187.16, 12630187.16, null],
+    ["Department of Labor", "TRAINING GRANTS", 12331089.1, 12331089.1, null],
+    ["Department of Labor", "UNOBLIGATED BALANCE TRANSFER IT PROJECTS", 12279461.54, 12279461.54, null],
+    ["Department of Labor", "TRADE ADJUSTMENT ASSISTANCE BENEFITS", 11908943.42, 11908943.42, null],
+    ["Department of Labor", "REIMBURSABLE PROGRAM - MULTI YEAR", 11093571.36, 11093571.36, null],
+    ["Department of Labor", "RECA SECTION 5 BENEFITS", 10968333.34, 10968333.34, null],
+    ["Department of Labor", "RENTRY AND EMPLOYMENT OPPORTUNITIES REIMBURSABLE", 10699339.18, 10699339.18, null],
+    ["Department of Labor", "EXECUTIVE LEADERSHIP, PROGRAM OVERSIGHT AND ADMINISTRATION", 10424048.78, 10424048.78, null],
+    ["Department of Labor", "EXECUTIVE DIRECTION AND ADMINISTRATION", 10404929.62, 10404929.62, null],
+    ["Department of Labor", "EXECUTIVE DIRECTION", 9932002.38, 9932002.38, null],
+    ["Department of Labor", "ASSESSMENTS", 7473788.5, 7473788.5, null],
+    ["Department of Labor", "CIVIL RIGHTS", 7189504.6, 7189504.6, null],
+    ["Department of Labor", "DEPARTMENTAL SUPPORT SYSTEMS", 5925943.77, 5925943.77, null],
+    ["Department of Labor", "CHIEF FINANCIAL OFFICER", 5890082.91, 5890082.91, null],
+    ["Department of Labor", "STANDARDS DEVELOPMENT", 5582942.53, 5582942.53, null],
+    ["Department of Labor", "REIMBURSABLE PROGRAMS", 5483722.66, 5483722.66, null],
+    ["Department of Labor", "INTEREST ON FUTA REFUNDS", 5193262.92, 5193262.92, null],
+    ["Department of Labor", "DISTRICT OF COLUMBIA COMPENSATION ACT", 4961810.21, 4961810.21, null],
+    ["Department of Labor", "USMCA S AND E", 4517937.31, 4517937.31, null],
+    ["Department of Labor", "DATA QUALITY INITIATIVE", 4054962.28, 4054962.28, null],
+    ["Department of Labor", "NATIONAL VETERANS TRAINING INSTITUTE (NVTI)", 3377147.88, 3377147.88, null],
+    ["Department of Labor", "MIXED EARNER UNEMPLOYMENT COMPENSATION ADMIN (MEUC)", 2463235.99, 2463235.99, null],
+    ["Department of Labor", "WIOA CONSOLIDATED ACTIVITIES OUTLYING AREAS", 2417844.96, 2417844.96, null],
+    ["Department of Labor", "PANDEMIC UNEMPLOYMENT ASSISTANCE BENEFITS", 2310171.42, 2310171.42, null],
+    ["Department of Labor", "ILAB REIMBURSABLE", 1800000, 1800000, null],
+    ["Department of Labor", "UI MODERNIZATION", 1591809.24, 1591809.24, null],
+    ["Department of Labor", "TECHNICAL SUPPORT - REIMBURSABLE", 1110907, 1110907, null],
+    ["Department of Labor", "REIMBURSABLE MULTI YEAR OUIM", 1060196.94, 1060196.94, null],
+    ["Department of Labor", "TWO YEAR EXPERT WITNESS FUNDING", 661192.44, 661192.44, null],
+    ["Department of Labor", "ARPA UNEMPLOYMENT INSURANCE", 587501.32, 587501.32, null],
+    ["Department of Labor", "REIMBURSABLE PROGRAM", 358263.68, 358263.68, null],
+    ["Department of Labor", "WAGE INSURANCE PAYMENTS", 346913.54, 346913.54, null],
+    ["Department of Labor", "MIXED EARNER UNEMPLOYMENT COMPENSATION BENEFITS (MEUC)", 299557.63, 299557.63, null],
+    ["Department of Labor", "REIMBURSABLE MULTI YEAR APPRENTICESHIP", 253902.98, 253902.98, null],
+    ["Department of Labor", "NON-DOL REIMBURSEMENTS", 175998.5, 175998.5, null],
+    ["Department of Labor", "PDS REIMBURSABLE", 164825.97, 164825.97, null],
+    ["Department of Labor", "HIREVETS MEDALLION PROGRAM", 159799.22, 159799.22, null],
+    ["Department of Labor", "REIMBURSABLE PROGRAM SWIS", 74746, 74746, null],
+    ["Department of Labor", "EDUCATIONAL POLICY AND DEVELOPMENT - REIMBURSABLE", 74355.06, 74355.06, null],
+    ["Department of Labor", "SUTA DEPOSITS", 15760.48, 15760.48, null],
+    ["Department of Labor", "FIRST WEEK COMPENSABLE UC ADMIN", 12062.91, 12062.91, null],
+    ["Department of Labor", "FEDERAL ADDITIONAL UNEMPLOYMENT COMPENSATION PROGRAM, RECOVERY (DIRECT)", 7601, 7601, null],
+    ["Department of Labor", "WCF NON-DOL MISC COLLECTIONS", 283.18, 283.18, null],
+    ["Department of Labor", "SHORT TIME COMPENSATION CARES ACT FULL BENEFITS", 0, 0, null],
+    ["Department of Labor", "UNKNOWN/OTHER", -928428.06, -928428.06, null],
+    ["Department of Labor", "FEDERAL PANDEMIC UNEMPLOYMENT COMPENSATION BENEFITS", -26945514.09, -26945514.09, null]
   ],
   "supplementalRows": [
-    [
-      "Employment and Training Administration",
-      "DOL WIOA state allotments · Youth",
-      944073800,
-      "Program Year 2024 allotments",
-      "https://www.dol.gov/node/183816"
-    ],
-    [
-      "Employment and Training Administration",
-      "DOL WIOA state allotments · Adult",
-      883298000,
-      "Program Year 2024 allotments",
-      "https://www.dol.gov/node/183817"
-    ],
-    [
-      "Employment and Training Administration",
-      "DOL WIOA state allotments · Dislocated Worker",
-      1393572000,
-      "Program Year 2024 allotments",
-      "https://www.dol.gov/node/183819"
-    ],
-    [
-      "Employment and Training Administration",
-      "DOL WIOA Youth Activities state and recipient allotments · Alabama",
-      9375648,
-      "Program Year 2024 state allotments",
-      "https://www.dol.gov/node/183816"
-    ],
-    [
-      "Employment and Training Administration",
-      "DOL WIOA Youth Activities state and recipient allotments · Alaska",
-      3444195,
-      "Program Year 2024 state allotments",
-      "https://www.dol.gov/node/183816"
-    ],
-    [
-      "Employment and Training Administration",
-      "DOL WIOA Youth Activities state and recipient allotments · Arizona",
-      22893156,
-      "Program Year 2024 state allotments",
-      "https://www.dol.gov/node/183816"
-    ],
-    [
-      "Employment and Training Administration",
-      "DOL WIOA Youth Activities state and recipient allotments · Arkansas",
-      5253909,
-      "Program Year 2024 state allotments",
-      "https://www.dol.gov/node/183816"
-    ],
-    [
-      "Employment and Training Administration",
-      "DOL WIOA Youth Activities state and recipient allotments · California",
-      146040343,
-      "Program Year 2024 state allotments",
-      "https://www.dol.gov/node/183816"
-    ],
-    [
-      "Employment and Training Administration",
-      "DOL WIOA Youth Activities state and recipient allotments · Colorado",
-      11281542,
-      "Program Year 2024 state allotments",
-      "https://www.dol.gov/node/183816"
-    ],
-    [
-      "Employment and Training Administration",
-      "DOL WIOA Youth Activities state and recipient allotments · Connecticut",
-      10865114,
-      "Program Year 2024 state allotments",
-      "https://www.dol.gov/node/183816"
-    ],
-    [
-      "Employment and Training Administration",
-      "DOL WIOA Youth Activities state and recipient allotments · Delaware",
-      3525562,
-      "Program Year 2024 state allotments",
-      "https://www.dol.gov/node/183816"
-    ],
-    [
-      "Employment and Training Administration",
-      "DOL WIOA Youth Activities state and recipient allotments · District of Columbia",
-      4090376,
-      "Program Year 2024 state allotments",
-      "https://www.dol.gov/node/183816"
-    ],
-    [
-      "Employment and Training Administration",
-      "DOL WIOA Youth Activities state and recipient allotments · Florida",
-      35321069,
-      "Program Year 2024 state allotments",
-      "https://www.dol.gov/node/183816"
-    ],
-    [
-      "Employment and Training Administration",
-      "DOL WIOA Youth Activities state and recipient allotments · Georgia",
-      15822523,
-      "Program Year 2024 state allotments",
-      "https://www.dol.gov/node/183816"
-    ],
-    [
-      "Employment and Training Administration",
-      "DOL WIOA Youth Activities state and recipient allotments · Hawaii",
-      3385865,
-      "Program Year 2024 state allotments",
-      "https://www.dol.gov/node/183816"
-    ],
-    [
-      "Employment and Training Administration",
-      "DOL WIOA Youth Activities state and recipient allotments · Idaho",
-      2366901,
-      "Program Year 2024 state allotments",
-      "https://www.dol.gov/node/183816"
-    ],
-    [
-      "Employment and Training Administration",
-      "DOL WIOA Youth Activities state and recipient allotments · Illinois",
-      49301027,
-      "Program Year 2024 state allotments",
-      "https://www.dol.gov/node/183816"
-    ],
-    [
-      "Employment and Training Administration",
-      "DOL WIOA Youth Activities state and recipient allotments · Indiana",
-      14430689,
-      "Program Year 2024 state allotments",
-      "https://www.dol.gov/node/183816"
-    ],
-    [
-      "Employment and Training Administration",
-      "DOL WIOA Youth Activities state and recipient allotments · Iowa",
-      5089513,
-      "Program Year 2024 state allotments",
-      "https://www.dol.gov/node/183816"
-    ],
-    [
-      "Employment and Training Administration",
-      "DOL WIOA Youth Activities state and recipient allotments · Kansas",
-      4670333,
-      "Program Year 2024 state allotments",
-      "https://www.dol.gov/node/183816"
-    ],
-    [
-      "Employment and Training Administration",
-      "DOL WIOA Youth Activities state and recipient allotments · Kentucky",
-      14858922,
-      "Program Year 2024 state allotments",
-      "https://www.dol.gov/node/183816"
-    ],
-    [
-      "Employment and Training Administration",
-      "DOL WIOA Youth Activities state and recipient allotments · Louisiana",
-      12996041,
-      "Program Year 2024 state allotments",
-      "https://www.dol.gov/node/183816"
-    ],
-    [
-      "Employment and Training Administration",
-      "DOL WIOA Youth Activities state and recipient allotments · Maine",
-      2540388,
-      "Program Year 2024 state allotments",
-      "https://www.dol.gov/node/183816"
-    ],
-    [
-      "Employment and Training Administration",
-      "DOL WIOA Youth Activities state and recipient allotments · Maryland",
-      16228876,
-      "Program Year 2024 state allotments",
-      "https://www.dol.gov/node/183816"
-    ],
-    [
-      "Employment and Training Administration",
-      "DOL WIOA Youth Activities state and recipient allotments · Massachusetts",
-      18926398,
-      "Program Year 2024 state allotments",
-      "https://www.dol.gov/node/183816"
-    ],
-    [
-      "Employment and Training Administration",
-      "DOL WIOA Youth Activities state and recipient allotments · Michigan",
-      34257716,
-      "Program Year 2024 state allotments",
-      "https://www.dol.gov/node/183816"
-    ],
-    [
-      "Employment and Training Administration",
-      "DOL WIOA Youth Activities state and recipient allotments · Minnesota",
-      8642444,
-      "Program Year 2024 state allotments",
-      "https://www.dol.gov/node/183816"
-    ],
-    [
-      "Employment and Training Administration",
-      "DOL WIOA Youth Activities state and recipient allotments · Mississippi",
-      8614181,
-      "Program Year 2024 state allotments",
-      "https://www.dol.gov/node/183816"
-    ],
-    [
-      "Employment and Training Administration",
-      "DOL WIOA Youth Activities state and recipient allotments · Missouri",
-      10088379,
-      "Program Year 2024 state allotments",
-      "https://www.dol.gov/node/183816"
-    ],
-    [
-      "Employment and Training Administration",
-      "DOL WIOA Youth Activities state and recipient allotments · Montana",
-      2318970,
-      "Program Year 2024 state allotments",
-      "https://www.dol.gov/node/183816"
-    ],
-    [
-      "Employment and Training Administration",
-      "DOL WIOA Youth Activities state and recipient allotments · Nebraska",
-      2787681,
-      "Program Year 2024 state allotments",
-      "https://www.dol.gov/node/183816"
-    ],
-    [
-      "Employment and Training Administration",
-      "DOL WIOA Youth Activities state and recipient allotments · Nevada",
-      14059914,
-      "Program Year 2024 state allotments",
-      "https://www.dol.gov/node/183816"
-    ],
-    [
-      "Employment and Training Administration",
-      "DOL WIOA Youth Activities state and recipient allotments · New Hampshire",
-      2318970,
-      "Program Year 2024 state allotments",
-      "https://www.dol.gov/node/183816"
-    ],
-    [
-      "Employment and Training Administration",
-      "DOL WIOA Youth Activities state and recipient allotments · New Jersey",
-      23935505,
-      "Program Year 2024 state allotments",
-      "https://www.dol.gov/node/183816"
-    ],
-    [
-      "Employment and Training Administration",
-      "DOL WIOA Youth Activities state and recipient allotments · New Mexico",
-      7799659,
-      "Program Year 2024 state allotments",
-      "https://www.dol.gov/node/183816"
-    ],
-    [
-      "Employment and Training Administration",
-      "DOL WIOA Youth Activities state and recipient allotments · New York",
-      68357497,
-      "Program Year 2024 state allotments",
-      "https://www.dol.gov/node/183816"
-    ],
-    [
-      "Employment and Training Administration",
-      "DOL WIOA Youth Activities state and recipient allotments · North Carolina",
-      27096137,
-      "Program Year 2024 state allotments",
-      "https://www.dol.gov/node/183816"
-    ],
-    [
-      "Employment and Training Administration",
-      "DOL WIOA Youth Activities state and recipient allotments · North Dakota",
-      2318970,
-      "Program Year 2024 state allotments",
-      "https://www.dol.gov/node/183816"
-    ],
-    [
-      "Employment and Training Administration",
-      "DOL WIOA Youth Activities state and recipient allotments · Ohio",
-      37831696,
-      "Program Year 2024 state allotments",
-      "https://www.dol.gov/node/183816"
-    ],
-    [
-      "Employment and Training Administration",
-      "DOL WIOA Youth Activities state and recipient allotments · Oklahoma",
-      6192386,
-      "Program Year 2024 state allotments",
-      "https://www.dol.gov/node/183816"
-    ],
-    [
-      "Employment and Training Administration",
-      "DOL WIOA Youth Activities state and recipient allotments · Oregon",
-      12363539,
-      "Program Year 2024 state allotments",
-      "https://www.dol.gov/node/183816"
-    ],
-    [
-      "Employment and Training Administration",
-      "DOL WIOA Youth Activities state and recipient allotments · Pennsylvania",
-      43332595,
-      "Program Year 2024 state allotments",
-      "https://www.dol.gov/node/183816"
-    ],
-    [
-      "Employment and Training Administration",
-      "DOL WIOA Youth Activities state and recipient allotments · Puerto Rico",
-      19409685,
-      "Program Year 2024 state allotments",
-      "https://www.dol.gov/node/183816"
-    ],
-    [
-      "Employment and Training Administration",
-      "DOL WIOA Youth Activities state and recipient allotments · Rhode Island",
-      2991317,
-      "Program Year 2024 state allotments",
-      "https://www.dol.gov/node/183816"
-    ],
-    [
-      "Employment and Training Administration",
-      "DOL WIOA Youth Activities state and recipient allotments · South Carolina",
-      8960487,
-      "Program Year 2024 state allotments",
-      "https://www.dol.gov/node/183816"
-    ],
-    [
-      "Employment and Training Administration",
-      "DOL WIOA Youth Activities state and recipient allotments · South Dakota",
-      2318970,
-      "Program Year 2024 state allotments",
-      "https://www.dol.gov/node/183816"
-    ],
-    [
-      "Employment and Training Administration",
-      "DOL WIOA Youth Activities state and recipient allotments · Tennessee",
-      14716454,
-      "Program Year 2024 state allotments",
-      "https://www.dol.gov/node/183816"
-    ],
-    [
-      "Employment and Training Administration",
-      "DOL WIOA Youth Activities state and recipient allotments · Texas",
-      96383731,
-      "Program Year 2024 state allotments",
-      "https://www.dol.gov/node/183816"
-    ],
-    [
-      "Employment and Training Administration",
-      "DOL WIOA Youth Activities state and recipient allotments · Utah",
-      3273389,
-      "Program Year 2024 state allotments",
-      "https://www.dol.gov/node/183816"
-    ],
-    [
-      "Employment and Training Administration",
-      "DOL WIOA Youth Activities state and recipient allotments · Vermont",
-      2318970,
-      "Program Year 2024 state allotments",
-      "https://www.dol.gov/node/183816"
-    ],
-    [
-      "Employment and Training Administration",
-      "DOL WIOA Youth Activities state and recipient allotments · Virginia",
-      13102764,
-      "Program Year 2024 state allotments",
-      "https://www.dol.gov/node/183816"
-    ],
-    [
-      "Employment and Training Administration",
-      "DOL WIOA Youth Activities state and recipient allotments · Washington",
-      22795157,
-      "Program Year 2024 state allotments",
-      "https://www.dol.gov/node/183816"
-    ],
-    [
-      "Employment and Training Administration",
-      "DOL WIOA Youth Activities state and recipient allotments · West Virginia",
-      4952293,
-      "Program Year 2024 state allotments",
-      "https://www.dol.gov/node/183816"
-    ],
-    [
-      "Employment and Training Administration",
-      "DOL WIOA Youth Activities state and recipient allotments · Wisconsin",
-      9021095,
-      "Program Year 2024 state allotments",
-      "https://www.dol.gov/node/183816"
-    ],
-    [
-      "Employment and Training Administration",
-      "DOL WIOA Youth Activities state and recipient allotments · Wyoming",
-      2318970,
-      "Program Year 2024 state allotments",
-      "https://www.dol.gov/node/183816"
-    ],
-    [
-      "Employment and Training Administration",
-      "DOL WIOA Youth Activities state and recipient allotments · American Samoa",
-      335753,
-      "Program Year 2024 state allotments",
-      "https://www.dol.gov/node/183816"
-    ],
-    [
-      "Employment and Training Administration",
-      "DOL WIOA Youth Activities state and recipient allotments · Guam",
-      921426,
-      "Program Year 2024 state allotments",
-      "https://www.dol.gov/node/183816"
-    ],
-    [
-      "Employment and Training Administration",
-      "DOL WIOA Youth Activities state and recipient allotments · Northern Mariana Islands",
-      430280,
-      "Program Year 2024 state allotments",
-      "https://www.dol.gov/node/183816"
-    ],
-    [
-      "Employment and Training Administration",
-      "DOL WIOA Youth Activities state and recipient allotments · Palau",
-      75000,
-      "Program Year 2024 state allotments",
-      "https://www.dol.gov/node/183816"
-    ],
-    [
-      "Employment and Training Administration",
-      "DOL WIOA Youth Activities state and recipient allotments · Virgin Islands",
-      562323,
-      "Program Year 2024 state allotments",
-      "https://www.dol.gov/node/183816"
-    ],
-    [
-      "Employment and Training Administration",
-      "DOL WIOA Youth Activities state and recipient allotments · Native American recipients",
-      14161107,
-      "Program Year 2024 state allotments",
-      "https://www.dol.gov/node/183816"
-    ],
-    [
-      "Employment and Training Administration",
-      "DOL WIOA Adult Activities state allotments · Alabama",
-      9097195,
-      "Program Year 2024 Adult state allotments",
-      "https://www.dol.gov/node/183817"
-    ],
-    [
-      "Employment and Training Administration",
-      "DOL WIOA Adult Activities state allotments · Alaska",
-      3235035,
-      "Program Year 2024 Adult state allotments",
-      "https://www.dol.gov/node/183817"
-    ],
-    [
-      "Employment and Training Administration",
-      "DOL WIOA Adult Activities state allotments · Arizona",
-      21688667,
-      "Program Year 2024 Adult state allotments",
-      "https://www.dol.gov/node/183817"
-    ],
-    [
-      "Employment and Training Administration",
-      "DOL WIOA Adult Activities state allotments · Arkansas",
-      5096827,
-      "Program Year 2024 Adult state allotments",
-      "https://www.dol.gov/node/183817"
-    ],
-    [
-      "Employment and Training Administration",
-      "DOL WIOA Adult Activities state allotments · California",
-      141158847,
-      "Program Year 2024 Adult state allotments",
-      "https://www.dol.gov/node/183817"
-    ],
-    [
-      "Employment and Training Administration",
-      "DOL WIOA Adult Activities state allotments · Colorado",
-      10254891,
-      "Program Year 2024 Adult state allotments",
-      "https://www.dol.gov/node/183817"
-    ],
-    [
-      "Employment and Training Administration",
-      "DOL WIOA Adult Activities state allotments · Connecticut",
-      9862090,
-      "Program Year 2024 Adult state allotments",
-      "https://www.dol.gov/node/183817"
-    ],
-    [
-      "Employment and Training Administration",
-      "DOL WIOA Adult Activities state allotments · Delaware",
-      3396064,
-      "Program Year 2024 Adult state allotments",
-      "https://www.dol.gov/node/183817"
-    ],
-    [
-      "Employment and Training Administration",
-      "DOL WIOA Adult Activities state allotments · District of Columbia",
-      3702153,
-      "Program Year 2024 Adult state allotments",
-      "https://www.dol.gov/node/183817"
-    ],
-    [
-      "Employment and Training Administration",
-      "DOL WIOA Adult Activities state allotments · Florida",
-      36129189,
-      "Program Year 2024 Adult state allotments",
-      "https://www.dol.gov/node/183817"
-    ],
-    [
-      "Employment and Training Administration",
-      "DOL WIOA Adult Activities state allotments · Georgia",
-      15139316,
-      "Program Year 2024 Adult state allotments",
-      "https://www.dol.gov/node/183817"
-    ],
-    [
-      "Employment and Training Administration",
-      "DOL WIOA Adult Activities state allotments · Hawaii",
-      3424347,
-      "Program Year 2024 Adult state allotments",
-      "https://www.dol.gov/node/183817"
-    ],
-    [
-      "Employment and Training Administration",
-      "DOL WIOA Adult Activities state allotments · Idaho",
-      2202724,
-      "Program Year 2024 Adult state allotments",
-      "https://www.dol.gov/node/183817"
-    ],
-    [
-      "Employment and Training Administration",
-      "DOL WIOA Adult Activities state allotments · Illinois",
-      46792452,
-      "Program Year 2024 Adult state allotments",
-      "https://www.dol.gov/node/183817"
-    ],
-    [
-      "Employment and Training Administration",
-      "DOL WIOA Adult Activities state allotments · Indiana",
-      12605374,
-      "Program Year 2024 Adult state allotments",
-      "https://www.dol.gov/node/183817"
-    ],
-    [
-      "Employment and Training Administration",
-      "DOL WIOA Adult Activities state allotments · Iowa",
-      3674183,
-      "Program Year 2024 Adult state allotments",
-      "https://www.dol.gov/node/183817"
-    ],
-    [
-      "Employment and Training Administration",
-      "DOL WIOA Adult Activities state allotments · Kansas",
-      3476436,
-      "Program Year 2024 Adult state allotments",
-      "https://www.dol.gov/node/183817"
-    ],
-    [
-      "Employment and Training Administration",
-      "DOL WIOA Adult Activities state allotments · Kentucky",
-      14461637,
-      "Program Year 2024 Adult state allotments",
-      "https://www.dol.gov/node/183817"
-    ],
-    [
-      "Employment and Training Administration",
-      "DOL WIOA Adult Activities state allotments · Louisiana",
-      12836147,
-      "Program Year 2024 Adult state allotments",
-      "https://www.dol.gov/node/183817"
-    ],
-    [
-      "Employment and Training Administration",
-      "DOL WIOA Adult Activities state allotments · Maine",
-      2332926,
-      "Program Year 2024 Adult state allotments",
-      "https://www.dol.gov/node/183817"
-    ],
-    [
-      "Employment and Training Administration",
-      "DOL WIOA Adult Activities state allotments · Maryland",
-      15663684,
-      "Program Year 2024 Adult state allotments",
-      "https://www.dol.gov/node/183817"
-    ],
-    [
-      "Employment and Training Administration",
-      "DOL WIOA Adult Activities state allotments · Massachusetts",
-      16243206,
-      "Program Year 2024 Adult state allotments",
-      "https://www.dol.gov/node/183817"
-    ],
-    [
-      "Employment and Training Administration",
-      "DOL WIOA Adult Activities state allotments · Michigan",
-      31901181,
-      "Program Year 2024 Adult state allotments",
-      "https://www.dol.gov/node/183817"
-    ],
-    [
-      "Employment and Training Administration",
-      "DOL WIOA Adult Activities state allotments · Minnesota",
-      7311724,
-      "Program Year 2024 Adult state allotments",
-      "https://www.dol.gov/node/183817"
-    ],
-    [
-      "Employment and Training Administration",
-      "DOL WIOA Adult Activities state allotments · Mississippi",
-      8257765,
-      "Program Year 2024 Adult state allotments",
-      "https://www.dol.gov/node/183817"
-    ],
-    [
-      "Employment and Training Administration",
-      "DOL WIOA Adult Activities state allotments · Missouri",
-      9351637,
-      "Program Year 2024 Adult state allotments",
-      "https://www.dol.gov/node/183817"
-    ],
-    [
-      "Employment and Training Administration",
-      "DOL WIOA Adult Activities state allotments · Montana",
-      2202724,
-      "Program Year 2024 Adult state allotments",
-      "https://www.dol.gov/node/183817"
-    ],
-    [
-      "Employment and Training Administration",
-      "DOL WIOA Adult Activities state allotments · Nebraska",
-      2202724,
-      "Program Year 2024 Adult state allotments",
-      "https://www.dol.gov/node/183817"
-    ],
-    [
-      "Employment and Training Administration",
-      "DOL WIOA Adult Activities state allotments · Nevada",
-      13730754,
-      "Program Year 2024 Adult state allotments",
-      "https://www.dol.gov/node/183817"
-    ],
-    [
-      "Employment and Training Administration",
-      "DOL WIOA Adult Activities state allotments · New Hampshire",
-      2202724,
-      "Program Year 2024 Adult state allotments",
-      "https://www.dol.gov/node/183817"
-    ],
-    [
-      "Employment and Training Administration",
-      "DOL WIOA Adult Activities state allotments · New Jersey",
-      23365082,
-      "Program Year 2024 Adult state allotments",
-      "https://www.dol.gov/node/183817"
-    ],
-    [
-      "Employment and Training Administration",
-      "DOL WIOA Adult Activities state allotments · New Mexico",
-      7515876,
-      "Program Year 2024 Adult state allotments",
-      "https://www.dol.gov/node/183817"
-    ],
-    [
-      "Employment and Training Administration",
-      "DOL WIOA Adult Activities state allotments · New York",
-      66698940,
-      "Program Year 2024 Adult state allotments",
-      "https://www.dol.gov/node/183817"
-    ],
-    [
-      "Employment and Training Administration",
-      "DOL WIOA Adult Activities state allotments · North Carolina",
-      25763380,
-      "Program Year 2024 Adult state allotments",
-      "https://www.dol.gov/node/183817"
-    ],
-    [
-      "Employment and Training Administration",
-      "DOL WIOA Adult Activities state allotments · North Dakota",
-      2202724,
-      "Program Year 2024 Adult state allotments",
-      "https://www.dol.gov/node/183817"
-    ],
-    [
-      "Employment and Training Administration",
-      "DOL WIOA Adult Activities state allotments · Ohio",
-      35199578,
-      "Program Year 2024 Adult state allotments",
-      "https://www.dol.gov/node/183817"
-    ],
-    [
-      "Employment and Training Administration",
-      "DOL WIOA Adult Activities state allotments · Oklahoma",
-      5866843,
-      "Program Year 2024 Adult state allotments",
-      "https://www.dol.gov/node/183817"
-    ],
-    [
-      "Employment and Training Administration",
-      "DOL WIOA Adult Activities state allotments · Oregon",
-      12043057,
-      "Program Year 2024 Adult state allotments",
-      "https://www.dol.gov/node/183817"
-    ],
-    [
-      "Employment and Training Administration",
-      "DOL WIOA Adult Activities state allotments · Pennsylvania",
-      40343724,
-      "Program Year 2024 Adult state allotments",
-      "https://www.dol.gov/node/183817"
-    ],
-    [
-      "Employment and Training Administration",
-      "DOL WIOA Adult Activities state allotments · Puerto Rico",
-      20155589,
-      "Program Year 2024 Adult state allotments",
-      "https://www.dol.gov/node/183817"
-    ],
-    [
-      "Employment and Training Administration",
-      "DOL WIOA Adult Activities state allotments · Rhode Island",
-      2585364,
-      "Program Year 2024 Adult state allotments",
-      "https://www.dol.gov/node/183817"
-    ],
-    [
-      "Employment and Training Administration",
-      "DOL WIOA Adult Activities state allotments · South Carolina",
-      8672410,
-      "Program Year 2024 Adult state allotments",
-      "https://www.dol.gov/node/183817"
-    ],
-    [
-      "Employment and Training Administration",
-      "DOL WIOA Adult Activities state allotments · South Dakota",
-      2202724,
-      "Program Year 2024 Adult state allotments",
-      "https://www.dol.gov/node/183817"
-    ],
-    [
-      "Employment and Training Administration",
-      "DOL WIOA Adult Activities state allotments · Tennessee",
-      14430633,
-      "Program Year 2024 Adult state allotments",
-      "https://www.dol.gov/node/183817"
-    ],
-    [
-      "Employment and Training Administration",
-      "DOL WIOA Adult Activities state allotments · Texas",
-      90806962,
-      "Program Year 2024 Adult state allotments",
-      "https://www.dol.gov/node/183817"
-    ],
-    [
-      "Employment and Training Administration",
-      "DOL WIOA Adult Activities state allotments · Utah",
-      2464341,
-      "Program Year 2024 Adult state allotments",
-      "https://www.dol.gov/node/183817"
-    ],
-    [
-      "Employment and Training Administration",
-      "DOL WIOA Adult Activities state allotments · Vermont",
-      2202724,
-      "Program Year 2024 Adult state allotments",
-      "https://www.dol.gov/node/183817"
-    ],
-    [
-      "Employment and Training Administration",
-      "DOL WIOA Adult Activities state allotments · Virginia",
-      12249134,
-      "Program Year 2024 Adult state allotments",
-      "https://www.dol.gov/node/183817"
-    ],
-    [
-      "Employment and Training Administration",
-      "DOL WIOA Adult Activities state allotments · Washington",
-      21854025,
-      "Program Year 2024 Adult state allotments",
-      "https://www.dol.gov/node/183817"
-    ],
-    [
-      "Employment and Training Administration",
-      "DOL WIOA Adult Activities state allotments · West Virginia",
-      4846038,
-      "Program Year 2024 Adult state allotments",
-      "https://www.dol.gov/node/183817"
-    ],
-    [
-      "Employment and Training Administration",
-      "DOL WIOA Adult Activities state allotments · Wisconsin",
-      7783260,
-      "Program Year 2024 Adult state allotments",
-      "https://www.dol.gov/node/183817"
-    ],
-    [
-      "Employment and Training Administration",
-      "DOL WIOA Adult Activities state allotments · Wyoming",
-      2202724,
-      "Program Year 2024 Adult state allotments",
-      "https://www.dol.gov/node/183817"
-    ],
-    [
-      "Employment and Training Administration",
-      "DOL WIOA Adult Activities state allotments · American Samoa",
-      318370,
-      "Program Year 2024 Adult state allotments",
-      "https://www.dol.gov/node/183817"
-    ],
-    [
-      "Employment and Training Administration",
-      "DOL WIOA Adult Activities state allotments · Guam",
-      873724,
-      "Program Year 2024 Adult state allotments",
-      "https://www.dol.gov/node/183817"
-    ],
-    [
-      "Employment and Training Administration",
-      "DOL WIOA Adult Activities state allotments · Northern Mariana Islands",
-      408004,
-      "Program Year 2024 Adult state allotments",
-      "https://www.dol.gov/node/183817"
-    ],
-    [
-      "Employment and Training Administration",
-      "DOL WIOA Adult Activities state allotments · Palau",
-      75000,
-      "Program Year 2024 Adult state allotments",
-      "https://www.dol.gov/node/183817"
-    ],
-    [
-      "Employment and Training Administration",
-      "DOL WIOA Adult Activities state allotments · Virgin Islands",
-      533147,
-      "Program Year 2024 Adult state allotments",
-      "https://www.dol.gov/node/183817"
-    ],
-    [
-      "Employment and Training Administration",
-      "DOL WIOA Dislocated Worker state allotments · Alabama",
-      12337631,
-      "Program Year 2024 Dislocated Worker allotments",
-      "https://www.dol.gov/node/183819"
-    ],
-    [
-      "Employment and Training Administration",
-      "DOL WIOA Dislocated Worker state allotments · Alaska",
-      5876555,
-      "Program Year 2024 Dislocated Worker allotments",
-      "https://www.dol.gov/node/183819"
-    ],
-    [
-      "Employment and Training Administration",
-      "DOL WIOA Dislocated Worker state allotments · Arizona",
-      28315755,
-      "Program Year 2024 Dislocated Worker allotments",
-      "https://www.dol.gov/node/183819"
-    ],
-    [
-      "Employment and Training Administration",
-      "DOL WIOA Dislocated Worker state allotments · Arkansas",
-      4522192,
-      "Program Year 2024 Dislocated Worker allotments",
-      "https://www.dol.gov/node/183819"
-    ],
-    [
-      "Employment and Training Administration",
-      "DOL WIOA Dislocated Worker state allotments · California",
-      158507519,
-      "Program Year 2024 Dislocated Worker allotments",
-      "https://www.dol.gov/node/183819"
-    ],
-    [
-      "Employment and Training Administration",
-      "DOL WIOA Dislocated Worker state allotments · Colorado",
-      14090453,
-      "Program Year 2024 Dislocated Worker allotments",
-      "https://www.dol.gov/node/183819"
-    ],
-    [
-      "Employment and Training Administration",
-      "DOL WIOA Dislocated Worker state allotments · Connecticut",
-      11806402,
-      "Program Year 2024 Dislocated Worker allotments",
-      "https://www.dol.gov/node/183819"
-    ],
-    [
-      "Employment and Training Administration",
-      "DOL WIOA Dislocated Worker state allotments · Delaware",
-      2517108,
-      "Program Year 2024 Dislocated Worker allotments",
-      "https://www.dol.gov/node/183819"
-    ],
-    [
-      "Employment and Training Administration",
-      "DOL WIOA Dislocated Worker state allotments · District of Columbia",
-      12090836,
-      "Program Year 2024 Dislocated Worker allotments",
-      "https://www.dol.gov/node/183819"
-    ],
-    [
-      "Employment and Training Administration",
-      "DOL WIOA Dislocated Worker state allotments · Florida",
-      41440429,
-      "Program Year 2024 Dislocated Worker allotments",
-      "https://www.dol.gov/node/183819"
-    ],
-    [
-      "Employment and Training Administration",
-      "DOL WIOA Dislocated Worker state allotments · Georgia",
-      26713274,
-      "Program Year 2024 Dislocated Worker allotments",
-      "https://www.dol.gov/node/183819"
-    ],
-    [
-      "Employment and Training Administration",
-      "DOL WIOA Dislocated Worker state allotments · Hawaii",
-      2534139,
-      "Program Year 2024 Dislocated Worker allotments",
-      "https://www.dol.gov/node/183819"
-    ],
-    [
-      "Employment and Training Administration",
-      "DOL WIOA Dislocated Worker state allotments · Idaho",
-      2611276,
-      "Program Year 2024 Dislocated Worker allotments",
-      "https://www.dol.gov/node/183819"
-    ],
-    [
-      "Employment and Training Administration",
-      "DOL WIOA Dislocated Worker state allotments · Illinois",
-      58810914,
-      "Program Year 2024 Dislocated Worker allotments",
-      "https://www.dol.gov/node/183819"
-    ],
-    [
-      "Employment and Training Administration",
-      "DOL WIOA Dislocated Worker state allotments · Indiana",
-      12352607,
-      "Program Year 2024 Dislocated Worker allotments",
-      "https://www.dol.gov/node/183819"
-    ],
-    [
-      "Employment and Training Administration",
-      "DOL WIOA Dislocated Worker state allotments · Iowa",
-      5363928,
-      "Program Year 2024 Dislocated Worker allotments",
-      "https://www.dol.gov/node/183819"
-    ],
-    [
-      "Employment and Training Administration",
-      "DOL WIOA Dislocated Worker state allotments · Kansas",
-      3797394,
-      "Program Year 2024 Dislocated Worker allotments",
-      "https://www.dol.gov/node/183819"
-    ],
-    [
-      "Employment and Training Administration",
-      "DOL WIOA Dislocated Worker state allotments · Kentucky",
-      11706885,
-      "Program Year 2024 Dislocated Worker allotments",
-      "https://www.dol.gov/node/183819"
-    ],
-    [
-      "Employment and Training Administration",
-      "DOL WIOA Dislocated Worker state allotments · Louisiana",
-      14645250,
-      "Program Year 2024 Dislocated Worker allotments",
-      "https://www.dol.gov/node/183819"
-    ],
-    [
-      "Employment and Training Administration",
-      "DOL WIOA Dislocated Worker state allotments · Maine",
-      2027635,
-      "Program Year 2024 Dislocated Worker allotments",
-      "https://www.dol.gov/node/183819"
-    ],
-    [
-      "Employment and Training Administration",
-      "DOL WIOA Dislocated Worker state allotments · Maryland",
-      14981809,
-      "Program Year 2024 Dislocated Worker allotments",
-      "https://www.dol.gov/node/183819"
-    ],
-    [
-      "Employment and Training Administration",
-      "DOL WIOA Dislocated Worker state allotments · Massachusetts",
-      19860355,
-      "Program Year 2024 Dislocated Worker allotments",
-      "https://www.dol.gov/node/183819"
-    ],
-    [
-      "Employment and Training Administration",
-      "DOL WIOA Dislocated Worker state allotments · Michigan",
-      27746873,
-      "Program Year 2024 Dislocated Worker allotments",
-      "https://www.dol.gov/node/183819"
-    ],
-    [
-      "Employment and Training Administration",
-      "DOL WIOA Dislocated Worker state allotments · Minnesota",
-      8545279,
-      "Program Year 2024 Dislocated Worker allotments",
-      "https://www.dol.gov/node/183819"
-    ],
-    [
-      "Employment and Training Administration",
-      "DOL WIOA Dislocated Worker state allotments · Mississippi",
-      11917714,
-      "Program Year 2024 Dislocated Worker allotments",
-      "https://www.dol.gov/node/183819"
-    ],
-    [
-      "Employment and Training Administration",
-      "DOL WIOA Dislocated Worker state allotments · Missouri",
-      9804128,
-      "Program Year 2024 Dislocated Worker allotments",
-      "https://www.dol.gov/node/183819"
-    ],
-    [
-      "Employment and Training Administration",
-      "DOL WIOA Dislocated Worker state allotments · Montana",
-      1435624,
-      "Program Year 2024 Dislocated Worker allotments",
-      "https://www.dol.gov/node/183819"
-    ],
-    [
-      "Employment and Training Administration",
-      "DOL WIOA Dislocated Worker state allotments · Nebraska",
-      1827388,
-      "Program Year 2024 Dislocated Worker allotments",
-      "https://www.dol.gov/node/183819"
-    ],
-    [
-      "Employment and Training Administration",
-      "DOL WIOA Dislocated Worker state allotments · Nevada",
-      25833014,
-      "Program Year 2024 Dislocated Worker allotments",
-      "https://www.dol.gov/node/183819"
-    ],
-    [
-      "Employment and Training Administration",
-      "DOL WIOA Dislocated Worker state allotments · New Hampshire",
-      1911623,
-      "Program Year 2024 Dislocated Worker allotments",
-      "https://www.dol.gov/node/183819"
-    ],
-    [
-      "Employment and Training Administration",
-      "DOL WIOA Dislocated Worker state allotments · New Jersey",
-      32469628,
-      "Program Year 2024 Dislocated Worker allotments",
-      "https://www.dol.gov/node/183819"
-    ],
-    [
-      "Employment and Training Administration",
-      "DOL WIOA Dislocated Worker state allotments · New Mexico",
-      17841270,
-      "Program Year 2024 Dislocated Worker allotments",
-      "https://www.dol.gov/node/183819"
-    ],
-    [
-      "Employment and Training Administration",
-      "DOL WIOA Dislocated Worker state allotments · New York",
-      101745387,
-      "Program Year 2024 Dislocated Worker allotments",
-      "https://www.dol.gov/node/183819"
-    ],
-    [
-      "Employment and Training Administration",
-      "DOL WIOA Dislocated Worker state allotments · North Carolina",
-      21045970,
-      "Program Year 2024 Dislocated Worker allotments",
-      "https://www.dol.gov/node/183819"
-    ],
-    [
-      "Employment and Training Administration",
-      "DOL WIOA Dislocated Worker state allotments · North Dakota",
-      740881,
-      "Program Year 2024 Dislocated Worker allotments",
-      "https://www.dol.gov/node/183819"
-    ],
-    [
-      "Employment and Training Administration",
-      "DOL WIOA Dislocated Worker state allotments · Ohio",
-      27235792,
-      "Program Year 2024 Dislocated Worker allotments",
-      "https://www.dol.gov/node/183819"
-    ],
-    [
-      "Employment and Training Administration",
-      "DOL WIOA Dislocated Worker state allotments · Oklahoma",
-      5580181,
-      "Program Year 2024 Dislocated Worker allotments",
-      "https://www.dol.gov/node/183819"
-    ],
-    [
-      "Employment and Training Administration",
-      "DOL WIOA Dislocated Worker state allotments · Oregon",
-      9412925,
-      "Program Year 2024 Dislocated Worker allotments",
-      "https://www.dol.gov/node/183819"
-    ],
-    [
-      "Employment and Training Administration",
-      "DOL WIOA Dislocated Worker state allotments · Pennsylvania",
-      52261354,
-      "Program Year 2024 Dislocated Worker allotments",
-      "https://www.dol.gov/node/183819"
-    ],
-    [
-      "Employment and Training Administration",
-      "DOL WIOA Dislocated Worker state allotments · Puerto Rico",
-      108379632,
-      "Program Year 2024 Dislocated Worker allotments",
-      "https://www.dol.gov/node/183819"
-    ],
-    [
-      "Employment and Training Administration",
-      "DOL WIOA Dislocated Worker state allotments · Rhode Island",
-      3120263,
-      "Program Year 2024 Dislocated Worker allotments",
-      "https://www.dol.gov/node/183819"
-    ],
-    [
-      "Employment and Training Administration",
-      "DOL WIOA Dislocated Worker state allotments · South Carolina",
-      10522345,
-      "Program Year 2024 Dislocated Worker allotments",
-      "https://www.dol.gov/node/183819"
-    ],
-    [
-      "Employment and Training Administration",
-      "DOL WIOA Dislocated Worker state allotments · South Dakota",
-      1159463,
-      "Program Year 2024 Dislocated Worker allotments",
-      "https://www.dol.gov/node/183819"
-    ],
-    [
-      "Employment and Training Administration",
-      "DOL WIOA Dislocated Worker state allotments · Tennessee",
-      12944745,
-      "Program Year 2024 Dislocated Worker allotments",
-      "https://www.dol.gov/node/183819"
-    ],
-    [
-      "Employment and Training Administration",
-      "DOL WIOA Dislocated Worker state allotments · Texas",
-      74893848,
-      "Program Year 2024 Dislocated Worker allotments",
-      "https://www.dol.gov/node/183819"
-    ],
-    [
-      "Employment and Training Administration",
-      "DOL WIOA Dislocated Worker state allotments · Utah",
-      4196235,
-      "Program Year 2024 Dislocated Worker allotments",
-      "https://www.dol.gov/node/183819"
-    ],
-    [
-      "Employment and Training Administration",
-      "DOL WIOA Dislocated Worker state allotments · Vermont",
-      896318,
-      "Program Year 2024 Dislocated Worker allotments",
-      "https://www.dol.gov/node/183819"
-    ],
-    [
-      "Employment and Training Administration",
-      "DOL WIOA Dislocated Worker state allotments · Virginia",
-      12811909,
-      "Program Year 2024 Dislocated Worker allotments",
-      "https://www.dol.gov/node/183819"
-    ],
-    [
-      "Employment and Training Administration",
-      "DOL WIOA Dislocated Worker state allotments · Washington",
-      19751767,
-      "Program Year 2024 Dislocated Worker allotments",
-      "https://www.dol.gov/node/183819"
-    ],
-    [
-      "Employment and Training Administration",
-      "DOL WIOA Dislocated Worker state allotments · West Virginia",
-      9022367,
-      "Program Year 2024 Dislocated Worker allotments",
-      "https://www.dol.gov/node/183819"
-    ],
-    [
-      "Employment and Training Administration",
-      "DOL WIOA Dislocated Worker state allotments · Wisconsin",
-      9838615,
-      "Program Year 2024 Dislocated Worker allotments",
-      "https://www.dol.gov/node/183819"
-    ],
-    [
-      "Employment and Training Administration",
-      "DOL WIOA Dislocated Worker state allotments · Wyoming",
-      910116,
-      "Program Year 2024 Dislocated Worker allotments",
-      "https://www.dol.gov/node/183819"
-    ],
-    [
-      "Employment and Training Administration",
-      "DOL WIOA Dislocated Worker state allotments · American Samoa",
-      502290,
-      "Program Year 2024 Dislocated Worker allotments",
-      "https://www.dol.gov/node/183819"
-    ],
-    [
-      "Employment and Training Administration",
-      "DOL WIOA Dislocated Worker state allotments · Guam",
-      1378467,
-      "Program Year 2024 Dislocated Worker allotments",
-      "https://www.dol.gov/node/183819"
-    ],
-    [
-      "Employment and Training Administration",
-      "DOL WIOA Dislocated Worker state allotments · Northern Mariana Islands",
-      643704,
-      "Program Year 2024 Dislocated Worker allotments",
-      "https://www.dol.gov/node/183819"
-    ],
-    [
-      "Employment and Training Administration",
-      "DOL WIOA Dislocated Worker state allotments · Palau",
-      118327,
-      "Program Year 2024 Dislocated Worker allotments",
-      "https://www.dol.gov/node/183819"
-    ],
-    [
-      "Employment and Training Administration",
-      "DOL WIOA Dislocated Worker state allotments · Virgin Islands",
-      841142,
-      "Program Year 2024 Dislocated Worker allotments",
-      "https://www.dol.gov/node/183819"
-    ],
-    [
-      "Employment and Training Administration",
-      "DOL WIOA Dislocated Worker state allotments · National Reserve",
-      297375070,
-      "Program Year 2024 Dislocated Worker allotments",
-      "https://www.dol.gov/node/183819"
-    ]
+    ["Employment and Training Administration", "DOL WIOA state allotments · Youth", 944073800, "Program Year 2024 allotments", "https://www.dol.gov/node/183816"],
+    ["Employment and Training Administration", "DOL WIOA state allotments · Adult", 883298000, "Program Year 2024 allotments", "https://www.dol.gov/node/183817"],
+    ["Employment and Training Administration", "DOL WIOA state allotments · Dislocated Worker", 1393572000, "Program Year 2024 allotments", "https://www.dol.gov/node/183819"],
+    ["Employment and Training Administration", "DOL WIOA Youth Activities state and recipient allotments · Alabama", 9375648, "Program Year 2024 state allotments", "https://www.dol.gov/node/183816"],
+    ["Employment and Training Administration", "DOL WIOA Youth Activities state and recipient allotments · Alaska", 3444195, "Program Year 2024 state allotments", "https://www.dol.gov/node/183816"],
+    ["Employment and Training Administration", "DOL WIOA Youth Activities state and recipient allotments · Arizona", 22893156, "Program Year 2024 state allotments", "https://www.dol.gov/node/183816"],
+    ["Employment and Training Administration", "DOL WIOA Youth Activities state and recipient allotments · Arkansas", 5253909, "Program Year 2024 state allotments", "https://www.dol.gov/node/183816"],
+    ["Employment and Training Administration", "DOL WIOA Youth Activities state and recipient allotments · California", 146040343, "Program Year 2024 state allotments", "https://www.dol.gov/node/183816"],
+    ["Employment and Training Administration", "DOL WIOA Youth Activities state and recipient allotments · Colorado", 11281542, "Program Year 2024 state allotments", "https://www.dol.gov/node/183816"],
+    ["Employment and Training Administration", "DOL WIOA Youth Activities state and recipient allotments · Connecticut", 10865114, "Program Year 2024 state allotments", "https://www.dol.gov/node/183816"],
+    ["Employment and Training Administration", "DOL WIOA Youth Activities state and recipient allotments · Delaware", 3525562, "Program Year 2024 state allotments", "https://www.dol.gov/node/183816"],
+    ["Employment and Training Administration", "DOL WIOA Youth Activities state and recipient allotments · District of Columbia", 4090376, "Program Year 2024 state allotments", "https://www.dol.gov/node/183816"],
+    ["Employment and Training Administration", "DOL WIOA Youth Activities state and recipient allotments · Florida", 35321069, "Program Year 2024 state allotments", "https://www.dol.gov/node/183816"],
+    ["Employment and Training Administration", "DOL WIOA Youth Activities state and recipient allotments · Georgia", 15822523, "Program Year 2024 state allotments", "https://www.dol.gov/node/183816"],
+    ["Employment and Training Administration", "DOL WIOA Youth Activities state and recipient allotments · Hawaii", 3385865, "Program Year 2024 state allotments", "https://www.dol.gov/node/183816"],
+    ["Employment and Training Administration", "DOL WIOA Youth Activities state and recipient allotments · Idaho", 2366901, "Program Year 2024 state allotments", "https://www.dol.gov/node/183816"],
+    ["Employment and Training Administration", "DOL WIOA Youth Activities state and recipient allotments · Illinois", 49301027, "Program Year 2024 state allotments", "https://www.dol.gov/node/183816"],
+    ["Employment and Training Administration", "DOL WIOA Youth Activities state and recipient allotments · Indiana", 14430689, "Program Year 2024 state allotments", "https://www.dol.gov/node/183816"],
+    ["Employment and Training Administration", "DOL WIOA Youth Activities state and recipient allotments · Iowa", 5089513, "Program Year 2024 state allotments", "https://www.dol.gov/node/183816"],
+    ["Employment and Training Administration", "DOL WIOA Youth Activities state and recipient allotments · Kansas", 4670333, "Program Year 2024 state allotments", "https://www.dol.gov/node/183816"],
+    ["Employment and Training Administration", "DOL WIOA Youth Activities state and recipient allotments · Kentucky", 14858922, "Program Year 2024 state allotments", "https://www.dol.gov/node/183816"],
+    ["Employment and Training Administration", "DOL WIOA Youth Activities state and recipient allotments · Louisiana", 12996041, "Program Year 2024 state allotments", "https://www.dol.gov/node/183816"],
+    ["Employment and Training Administration", "DOL WIOA Youth Activities state and recipient allotments · Maine", 2540388, "Program Year 2024 state allotments", "https://www.dol.gov/node/183816"],
+    ["Employment and Training Administration", "DOL WIOA Youth Activities state and recipient allotments · Maryland", 16228876, "Program Year 2024 state allotments", "https://www.dol.gov/node/183816"],
+    ["Employment and Training Administration", "DOL WIOA Youth Activities state and recipient allotments · Massachusetts", 18926398, "Program Year 2024 state allotments", "https://www.dol.gov/node/183816"],
+    ["Employment and Training Administration", "DOL WIOA Youth Activities state and recipient allotments · Michigan", 34257716, "Program Year 2024 state allotments", "https://www.dol.gov/node/183816"],
+    ["Employment and Training Administration", "DOL WIOA Youth Activities state and recipient allotments · Minnesota", 8642444, "Program Year 2024 state allotments", "https://www.dol.gov/node/183816"],
+    ["Employment and Training Administration", "DOL WIOA Youth Activities state and recipient allotments · Mississippi", 8614181, "Program Year 2024 state allotments", "https://www.dol.gov/node/183816"],
+    ["Employment and Training Administration", "DOL WIOA Youth Activities state and recipient allotments · Missouri", 10088379, "Program Year 2024 state allotments", "https://www.dol.gov/node/183816"],
+    ["Employment and Training Administration", "DOL WIOA Youth Activities state and recipient allotments · Montana", 2318970, "Program Year 2024 state allotments", "https://www.dol.gov/node/183816"],
+    ["Employment and Training Administration", "DOL WIOA Youth Activities state and recipient allotments · Nebraska", 2787681, "Program Year 2024 state allotments", "https://www.dol.gov/node/183816"],
+    ["Employment and Training Administration", "DOL WIOA Youth Activities state and recipient allotments · Nevada", 14059914, "Program Year 2024 state allotments", "https://www.dol.gov/node/183816"],
+    ["Employment and Training Administration", "DOL WIOA Youth Activities state and recipient allotments · New Hampshire", 2318970, "Program Year 2024 state allotments", "https://www.dol.gov/node/183816"],
+    ["Employment and Training Administration", "DOL WIOA Youth Activities state and recipient allotments · New Jersey", 23935505, "Program Year 2024 state allotments", "https://www.dol.gov/node/183816"],
+    ["Employment and Training Administration", "DOL WIOA Youth Activities state and recipient allotments · New Mexico", 7799659, "Program Year 2024 state allotments", "https://www.dol.gov/node/183816"],
+    ["Employment and Training Administration", "DOL WIOA Youth Activities state and recipient allotments · New York", 68357497, "Program Year 2024 state allotments", "https://www.dol.gov/node/183816"],
+    ["Employment and Training Administration", "DOL WIOA Youth Activities state and recipient allotments · North Carolina", 27096137, "Program Year 2024 state allotments", "https://www.dol.gov/node/183816"],
+    ["Employment and Training Administration", "DOL WIOA Youth Activities state and recipient allotments · North Dakota", 2318970, "Program Year 2024 state allotments", "https://www.dol.gov/node/183816"],
+    ["Employment and Training Administration", "DOL WIOA Youth Activities state and recipient allotments · Ohio", 37831696, "Program Year 2024 state allotments", "https://www.dol.gov/node/183816"],
+    ["Employment and Training Administration", "DOL WIOA Youth Activities state and recipient allotments · Oklahoma", 6192386, "Program Year 2024 state allotments", "https://www.dol.gov/node/183816"],
+    ["Employment and Training Administration", "DOL WIOA Youth Activities state and recipient allotments · Oregon", 12363539, "Program Year 2024 state allotments", "https://www.dol.gov/node/183816"],
+    ["Employment and Training Administration", "DOL WIOA Youth Activities state and recipient allotments · Pennsylvania", 43332595, "Program Year 2024 state allotments", "https://www.dol.gov/node/183816"],
+    ["Employment and Training Administration", "DOL WIOA Youth Activities state and recipient allotments · Puerto Rico", 19409685, "Program Year 2024 state allotments", "https://www.dol.gov/node/183816"],
+    ["Employment and Training Administration", "DOL WIOA Youth Activities state and recipient allotments · Rhode Island", 2991317, "Program Year 2024 state allotments", "https://www.dol.gov/node/183816"],
+    ["Employment and Training Administration", "DOL WIOA Youth Activities state and recipient allotments · South Carolina", 8960487, "Program Year 2024 state allotments", "https://www.dol.gov/node/183816"],
+    ["Employment and Training Administration", "DOL WIOA Youth Activities state and recipient allotments · South Dakota", 2318970, "Program Year 2024 state allotments", "https://www.dol.gov/node/183816"],
+    ["Employment and Training Administration", "DOL WIOA Youth Activities state and recipient allotments · Tennessee", 14716454, "Program Year 2024 state allotments", "https://www.dol.gov/node/183816"],
+    ["Employment and Training Administration", "DOL WIOA Youth Activities state and recipient allotments · Texas", 96383731, "Program Year 2024 state allotments", "https://www.dol.gov/node/183816"],
+    ["Employment and Training Administration", "DOL WIOA Youth Activities state and recipient allotments · Utah", 3273389, "Program Year 2024 state allotments", "https://www.dol.gov/node/183816"],
+    ["Employment and Training Administration", "DOL WIOA Youth Activities state and recipient allotments · Vermont", 2318970, "Program Year 2024 state allotments", "https://www.dol.gov/node/183816"],
+    ["Employment and Training Administration", "DOL WIOA Youth Activities state and recipient allotments · Virginia", 13102764, "Program Year 2024 state allotments", "https://www.dol.gov/node/183816"],
+    ["Employment and Training Administration", "DOL WIOA Youth Activities state and recipient allotments · Washington", 22795157, "Program Year 2024 state allotments", "https://www.dol.gov/node/183816"],
+    ["Employment and Training Administration", "DOL WIOA Youth Activities state and recipient allotments · West Virginia", 4952293, "Program Year 2024 state allotments", "https://www.dol.gov/node/183816"],
+    ["Employment and Training Administration", "DOL WIOA Youth Activities state and recipient allotments · Wisconsin", 9021095, "Program Year 2024 state allotments", "https://www.dol.gov/node/183816"],
+    ["Employment and Training Administration", "DOL WIOA Youth Activities state and recipient allotments · Wyoming", 2318970, "Program Year 2024 state allotments", "https://www.dol.gov/node/183816"],
+    ["Employment and Training Administration", "DOL WIOA Youth Activities state and recipient allotments · American Samoa", 335753, "Program Year 2024 state allotments", "https://www.dol.gov/node/183816"],
+    ["Employment and Training Administration", "DOL WIOA Youth Activities state and recipient allotments · Guam", 921426, "Program Year 2024 state allotments", "https://www.dol.gov/node/183816"],
+    ["Employment and Training Administration", "DOL WIOA Youth Activities state and recipient allotments · Northern Mariana Islands", 430280, "Program Year 2024 state allotments", "https://www.dol.gov/node/183816"],
+    ["Employment and Training Administration", "DOL WIOA Youth Activities state and recipient allotments · Palau", 75000, "Program Year 2024 state allotments", "https://www.dol.gov/node/183816"],
+    ["Employment and Training Administration", "DOL WIOA Youth Activities state and recipient allotments · Virgin Islands", 562323, "Program Year 2024 state allotments", "https://www.dol.gov/node/183816"],
+    ["Employment and Training Administration", "DOL WIOA Youth Activities state and recipient allotments · Native American recipients", 14161107, "Program Year 2024 state allotments", "https://www.dol.gov/node/183816"],
+    ["Employment and Training Administration", "DOL WIOA Adult Activities state allotments · Alabama", 9097195, "Program Year 2024 Adult state allotments", "https://www.dol.gov/node/183817"],
+    ["Employment and Training Administration", "DOL WIOA Adult Activities state allotments · Alaska", 3235035, "Program Year 2024 Adult state allotments", "https://www.dol.gov/node/183817"],
+    ["Employment and Training Administration", "DOL WIOA Adult Activities state allotments · Arizona", 21688667, "Program Year 2024 Adult state allotments", "https://www.dol.gov/node/183817"],
+    ["Employment and Training Administration", "DOL WIOA Adult Activities state allotments · Arkansas", 5096827, "Program Year 2024 Adult state allotments", "https://www.dol.gov/node/183817"],
+    ["Employment and Training Administration", "DOL WIOA Adult Activities state allotments · California", 141158847, "Program Year 2024 Adult state allotments", "https://www.dol.gov/node/183817"],
+    ["Employment and Training Administration", "DOL WIOA Adult Activities state allotments · Colorado", 10254891, "Program Year 2024 Adult state allotments", "https://www.dol.gov/node/183817"],
+    ["Employment and Training Administration", "DOL WIOA Adult Activities state allotments · Connecticut", 9862090, "Program Year 2024 Adult state allotments", "https://www.dol.gov/node/183817"],
+    ["Employment and Training Administration", "DOL WIOA Adult Activities state allotments · Delaware", 3396064, "Program Year 2024 Adult state allotments", "https://www.dol.gov/node/183817"],
+    ["Employment and Training Administration", "DOL WIOA Adult Activities state allotments · District of Columbia", 3702153, "Program Year 2024 Adult state allotments", "https://www.dol.gov/node/183817"],
+    ["Employment and Training Administration", "DOL WIOA Adult Activities state allotments · Florida", 36129189, "Program Year 2024 Adult state allotments", "https://www.dol.gov/node/183817"],
+    ["Employment and Training Administration", "DOL WIOA Adult Activities state allotments · Georgia", 15139316, "Program Year 2024 Adult state allotments", "https://www.dol.gov/node/183817"],
+    ["Employment and Training Administration", "DOL WIOA Adult Activities state allotments · Hawaii", 3424347, "Program Year 2024 Adult state allotments", "https://www.dol.gov/node/183817"],
+    ["Employment and Training Administration", "DOL WIOA Adult Activities state allotments · Idaho", 2202724, "Program Year 2024 Adult state allotments", "https://www.dol.gov/node/183817"],
+    ["Employment and Training Administration", "DOL WIOA Adult Activities state allotments · Illinois", 46792452, "Program Year 2024 Adult state allotments", "https://www.dol.gov/node/183817"],
+    ["Employment and Training Administration", "DOL WIOA Adult Activities state allotments · Indiana", 12605374, "Program Year 2024 Adult state allotments", "https://www.dol.gov/node/183817"],
+    ["Employment and Training Administration", "DOL WIOA Adult Activities state allotments · Iowa", 3674183, "Program Year 2024 Adult state allotments", "https://www.dol.gov/node/183817"],
+    ["Employment and Training Administration", "DOL WIOA Adult Activities state allotments · Kansas", 3476436, "Program Year 2024 Adult state allotments", "https://www.dol.gov/node/183817"],
+    ["Employment and Training Administration", "DOL WIOA Adult Activities state allotments · Kentucky", 14461637, "Program Year 2024 Adult state allotments", "https://www.dol.gov/node/183817"],
+    ["Employment and Training Administration", "DOL WIOA Adult Activities state allotments · Louisiana", 12836147, "Program Year 2024 Adult state allotments", "https://www.dol.gov/node/183817"],
+    ["Employment and Training Administration", "DOL WIOA Adult Activities state allotments · Maine", 2332926, "Program Year 2024 Adult state allotments", "https://www.dol.gov/node/183817"],
+    ["Employment and Training Administration", "DOL WIOA Adult Activities state allotments · Maryland", 15663684, "Program Year 2024 Adult state allotments", "https://www.dol.gov/node/183817"],
+    ["Employment and Training Administration", "DOL WIOA Adult Activities state allotments · Massachusetts", 16243206, "Program Year 2024 Adult state allotments", "https://www.dol.gov/node/183817"],
+    ["Employment and Training Administration", "DOL WIOA Adult Activities state allotments · Michigan", 31901181, "Program Year 2024 Adult state allotments", "https://www.dol.gov/node/183817"],
+    ["Employment and Training Administration", "DOL WIOA Adult Activities state allotments · Minnesota", 7311724, "Program Year 2024 Adult state allotments", "https://www.dol.gov/node/183817"],
+    ["Employment and Training Administration", "DOL WIOA Adult Activities state allotments · Mississippi", 8257765, "Program Year 2024 Adult state allotments", "https://www.dol.gov/node/183817"],
+    ["Employment and Training Administration", "DOL WIOA Adult Activities state allotments · Missouri", 9351637, "Program Year 2024 Adult state allotments", "https://www.dol.gov/node/183817"],
+    ["Employment and Training Administration", "DOL WIOA Adult Activities state allotments · Montana", 2202724, "Program Year 2024 Adult state allotments", "https://www.dol.gov/node/183817"],
+    ["Employment and Training Administration", "DOL WIOA Adult Activities state allotments · Nebraska", 2202724, "Program Year 2024 Adult state allotments", "https://www.dol.gov/node/183817"],
+    ["Employment and Training Administration", "DOL WIOA Adult Activities state allotments · Nevada", 13730754, "Program Year 2024 Adult state allotments", "https://www.dol.gov/node/183817"],
+    ["Employment and Training Administration", "DOL WIOA Adult Activities state allotments · New Hampshire", 2202724, "Program Year 2024 Adult state allotments", "https://www.dol.gov/node/183817"],
+    ["Employment and Training Administration", "DOL WIOA Adult Activities state allotments · New Jersey", 23365082, "Program Year 2024 Adult state allotments", "https://www.dol.gov/node/183817"],
+    ["Employment and Training Administration", "DOL WIOA Adult Activities state allotments · New Mexico", 7515876, "Program Year 2024 Adult state allotments", "https://www.dol.gov/node/183817"],
+    ["Employment and Training Administration", "DOL WIOA Adult Activities state allotments · New York", 66698940, "Program Year 2024 Adult state allotments", "https://www.dol.gov/node/183817"],
+    ["Employment and Training Administration", "DOL WIOA Adult Activities state allotments · North Carolina", 25763380, "Program Year 2024 Adult state allotments", "https://www.dol.gov/node/183817"],
+    ["Employment and Training Administration", "DOL WIOA Adult Activities state allotments · North Dakota", 2202724, "Program Year 2024 Adult state allotments", "https://www.dol.gov/node/183817"],
+    ["Employment and Training Administration", "DOL WIOA Adult Activities state allotments · Ohio", 35199578, "Program Year 2024 Adult state allotments", "https://www.dol.gov/node/183817"],
+    ["Employment and Training Administration", "DOL WIOA Adult Activities state allotments · Oklahoma", 5866843, "Program Year 2024 Adult state allotments", "https://www.dol.gov/node/183817"],
+    ["Employment and Training Administration", "DOL WIOA Adult Activities state allotments · Oregon", 12043057, "Program Year 2024 Adult state allotments", "https://www.dol.gov/node/183817"],
+    ["Employment and Training Administration", "DOL WIOA Adult Activities state allotments · Pennsylvania", 40343724, "Program Year 2024 Adult state allotments", "https://www.dol.gov/node/183817"],
+    ["Employment and Training Administration", "DOL WIOA Adult Activities state allotments · Puerto Rico", 20155589, "Program Year 2024 Adult state allotments", "https://www.dol.gov/node/183817"],
+    ["Employment and Training Administration", "DOL WIOA Adult Activities state allotments · Rhode Island", 2585364, "Program Year 2024 Adult state allotments", "https://www.dol.gov/node/183817"],
+    ["Employment and Training Administration", "DOL WIOA Adult Activities state allotments · South Carolina", 8672410, "Program Year 2024 Adult state allotments", "https://www.dol.gov/node/183817"],
+    ["Employment and Training Administration", "DOL WIOA Adult Activities state allotments · South Dakota", 2202724, "Program Year 2024 Adult state allotments", "https://www.dol.gov/node/183817"],
+    ["Employment and Training Administration", "DOL WIOA Adult Activities state allotments · Tennessee", 14430633, "Program Year 2024 Adult state allotments", "https://www.dol.gov/node/183817"],
+    ["Employment and Training Administration", "DOL WIOA Adult Activities state allotments · Texas", 90806962, "Program Year 2024 Adult state allotments", "https://www.dol.gov/node/183817"],
+    ["Employment and Training Administration", "DOL WIOA Adult Activities state allotments · Utah", 2464341, "Program Year 2024 Adult state allotments", "https://www.dol.gov/node/183817"],
+    ["Employment and Training Administration", "DOL WIOA Adult Activities state allotments · Vermont", 2202724, "Program Year 2024 Adult state allotments", "https://www.dol.gov/node/183817"],
+    ["Employment and Training Administration", "DOL WIOA Adult Activities state allotments · Virginia", 12249134, "Program Year 2024 Adult state allotments", "https://www.dol.gov/node/183817"],
+    ["Employment and Training Administration", "DOL WIOA Adult Activities state allotments · Washington", 21854025, "Program Year 2024 Adult state allotments", "https://www.dol.gov/node/183817"],
+    ["Employment and Training Administration", "DOL WIOA Adult Activities state allotments · West Virginia", 4846038, "Program Year 2024 Adult state allotments", "https://www.dol.gov/node/183817"],
+    ["Employment and Training Administration", "DOL WIOA Adult Activities state allotments · Wisconsin", 7783260, "Program Year 2024 Adult state allotments", "https://www.dol.gov/node/183817"],
+    ["Employment and Training Administration", "DOL WIOA Adult Activities state allotments · Wyoming", 2202724, "Program Year 2024 Adult state allotments", "https://www.dol.gov/node/183817"],
+    ["Employment and Training Administration", "DOL WIOA Adult Activities state allotments · American Samoa", 318370, "Program Year 2024 Adult state allotments", "https://www.dol.gov/node/183817"],
+    ["Employment and Training Administration", "DOL WIOA Adult Activities state allotments · Guam", 873724, "Program Year 2024 Adult state allotments", "https://www.dol.gov/node/183817"],
+    ["Employment and Training Administration", "DOL WIOA Adult Activities state allotments · Northern Mariana Islands", 408004, "Program Year 2024 Adult state allotments", "https://www.dol.gov/node/183817"],
+    ["Employment and Training Administration", "DOL WIOA Adult Activities state allotments · Palau", 75000, "Program Year 2024 Adult state allotments", "https://www.dol.gov/node/183817"],
+    ["Employment and Training Administration", "DOL WIOA Adult Activities state allotments · Virgin Islands", 533147, "Program Year 2024 Adult state allotments", "https://www.dol.gov/node/183817"],
+    ["Employment and Training Administration", "DOL WIOA Dislocated Worker state allotments · Alabama", 12337631, "Program Year 2024 Dislocated Worker allotments", "https://www.dol.gov/node/183819"],
+    ["Employment and Training Administration", "DOL WIOA Dislocated Worker state allotments · Alaska", 5876555, "Program Year 2024 Dislocated Worker allotments", "https://www.dol.gov/node/183819"],
+    ["Employment and Training Administration", "DOL WIOA Dislocated Worker state allotments · Arizona", 28315755, "Program Year 2024 Dislocated Worker allotments", "https://www.dol.gov/node/183819"],
+    ["Employment and Training Administration", "DOL WIOA Dislocated Worker state allotments · Arkansas", 4522192, "Program Year 2024 Dislocated Worker allotments", "https://www.dol.gov/node/183819"],
+    ["Employment and Training Administration", "DOL WIOA Dislocated Worker state allotments · California", 158507519, "Program Year 2024 Dislocated Worker allotments", "https://www.dol.gov/node/183819"],
+    ["Employment and Training Administration", "DOL WIOA Dislocated Worker state allotments · Colorado", 14090453, "Program Year 2024 Dislocated Worker allotments", "https://www.dol.gov/node/183819"],
+    ["Employment and Training Administration", "DOL WIOA Dislocated Worker state allotments · Connecticut", 11806402, "Program Year 2024 Dislocated Worker allotments", "https://www.dol.gov/node/183819"],
+    ["Employment and Training Administration", "DOL WIOA Dislocated Worker state allotments · Delaware", 2517108, "Program Year 2024 Dislocated Worker allotments", "https://www.dol.gov/node/183819"],
+    ["Employment and Training Administration", "DOL WIOA Dislocated Worker state allotments · District of Columbia", 12090836, "Program Year 2024 Dislocated Worker allotments", "https://www.dol.gov/node/183819"],
+    ["Employment and Training Administration", "DOL WIOA Dislocated Worker state allotments · Florida", 41440429, "Program Year 2024 Dislocated Worker allotments", "https://www.dol.gov/node/183819"],
+    ["Employment and Training Administration", "DOL WIOA Dislocated Worker state allotments · Georgia", 26713274, "Program Year 2024 Dislocated Worker allotments", "https://www.dol.gov/node/183819"],
+    ["Employment and Training Administration", "DOL WIOA Dislocated Worker state allotments · Hawaii", 2534139, "Program Year 2024 Dislocated Worker allotments", "https://www.dol.gov/node/183819"],
+    ["Employment and Training Administration", "DOL WIOA Dislocated Worker state allotments · Idaho", 2611276, "Program Year 2024 Dislocated Worker allotments", "https://www.dol.gov/node/183819"],
+    ["Employment and Training Administration", "DOL WIOA Dislocated Worker state allotments · Illinois", 58810914, "Program Year 2024 Dislocated Worker allotments", "https://www.dol.gov/node/183819"],
+    ["Employment and Training Administration", "DOL WIOA Dislocated Worker state allotments · Indiana", 12352607, "Program Year 2024 Dislocated Worker allotments", "https://www.dol.gov/node/183819"],
+    ["Employment and Training Administration", "DOL WIOA Dislocated Worker state allotments · Iowa", 5363928, "Program Year 2024 Dislocated Worker allotments", "https://www.dol.gov/node/183819"],
+    ["Employment and Training Administration", "DOL WIOA Dislocated Worker state allotments · Kansas", 3797394, "Program Year 2024 Dislocated Worker allotments", "https://www.dol.gov/node/183819"],
+    ["Employment and Training Administration", "DOL WIOA Dislocated Worker state allotments · Kentucky", 11706885, "Program Year 2024 Dislocated Worker allotments", "https://www.dol.gov/node/183819"],
+    ["Employment and Training Administration", "DOL WIOA Dislocated Worker state allotments · Louisiana", 14645250, "Program Year 2024 Dislocated Worker allotments", "https://www.dol.gov/node/183819"],
+    ["Employment and Training Administration", "DOL WIOA Dislocated Worker state allotments · Maine", 2027635, "Program Year 2024 Dislocated Worker allotments", "https://www.dol.gov/node/183819"],
+    ["Employment and Training Administration", "DOL WIOA Dislocated Worker state allotments · Maryland", 14981809, "Program Year 2024 Dislocated Worker allotments", "https://www.dol.gov/node/183819"],
+    ["Employment and Training Administration", "DOL WIOA Dislocated Worker state allotments · Massachusetts", 19860355, "Program Year 2024 Dislocated Worker allotments", "https://www.dol.gov/node/183819"],
+    ["Employment and Training Administration", "DOL WIOA Dislocated Worker state allotments · Michigan", 27746873, "Program Year 2024 Dislocated Worker allotments", "https://www.dol.gov/node/183819"],
+    ["Employment and Training Administration", "DOL WIOA Dislocated Worker state allotments · Minnesota", 8545279, "Program Year 2024 Dislocated Worker allotments", "https://www.dol.gov/node/183819"],
+    ["Employment and Training Administration", "DOL WIOA Dislocated Worker state allotments · Mississippi", 11917714, "Program Year 2024 Dislocated Worker allotments", "https://www.dol.gov/node/183819"],
+    ["Employment and Training Administration", "DOL WIOA Dislocated Worker state allotments · Missouri", 9804128, "Program Year 2024 Dislocated Worker allotments", "https://www.dol.gov/node/183819"],
+    ["Employment and Training Administration", "DOL WIOA Dislocated Worker state allotments · Montana", 1435624, "Program Year 2024 Dislocated Worker allotments", "https://www.dol.gov/node/183819"],
+    ["Employment and Training Administration", "DOL WIOA Dislocated Worker state allotments · Nebraska", 1827388, "Program Year 2024 Dislocated Worker allotments", "https://www.dol.gov/node/183819"],
+    ["Employment and Training Administration", "DOL WIOA Dislocated Worker state allotments · Nevada", 25833014, "Program Year 2024 Dislocated Worker allotments", "https://www.dol.gov/node/183819"],
+    ["Employment and Training Administration", "DOL WIOA Dislocated Worker state allotments · New Hampshire", 1911623, "Program Year 2024 Dislocated Worker allotments", "https://www.dol.gov/node/183819"],
+    ["Employment and Training Administration", "DOL WIOA Dislocated Worker state allotments · New Jersey", 32469628, "Program Year 2024 Dislocated Worker allotments", "https://www.dol.gov/node/183819"],
+    ["Employment and Training Administration", "DOL WIOA Dislocated Worker state allotments · New Mexico", 17841270, "Program Year 2024 Dislocated Worker allotments", "https://www.dol.gov/node/183819"],
+    ["Employment and Training Administration", "DOL WIOA Dislocated Worker state allotments · New York", 101745387, "Program Year 2024 Dislocated Worker allotments", "https://www.dol.gov/node/183819"],
+    ["Employment and Training Administration", "DOL WIOA Dislocated Worker state allotments · North Carolina", 21045970, "Program Year 2024 Dislocated Worker allotments", "https://www.dol.gov/node/183819"],
+    ["Employment and Training Administration", "DOL WIOA Dislocated Worker state allotments · North Dakota", 740881, "Program Year 2024 Dislocated Worker allotments", "https://www.dol.gov/node/183819"],
+    ["Employment and Training Administration", "DOL WIOA Dislocated Worker state allotments · Ohio", 27235792, "Program Year 2024 Dislocated Worker allotments", "https://www.dol.gov/node/183819"],
+    ["Employment and Training Administration", "DOL WIOA Dislocated Worker state allotments · Oklahoma", 5580181, "Program Year 2024 Dislocated Worker allotments", "https://www.dol.gov/node/183819"],
+    ["Employment and Training Administration", "DOL WIOA Dislocated Worker state allotments · Oregon", 9412925, "Program Year 2024 Dislocated Worker allotments", "https://www.dol.gov/node/183819"],
+    ["Employment and Training Administration", "DOL WIOA Dislocated Worker state allotments · Pennsylvania", 52261354, "Program Year 2024 Dislocated Worker allotments", "https://www.dol.gov/node/183819"],
+    ["Employment and Training Administration", "DOL WIOA Dislocated Worker state allotments · Puerto Rico", 108379632, "Program Year 2024 Dislocated Worker allotments", "https://www.dol.gov/node/183819"],
+    ["Employment and Training Administration", "DOL WIOA Dislocated Worker state allotments · Rhode Island", 3120263, "Program Year 2024 Dislocated Worker allotments", "https://www.dol.gov/node/183819"],
+    ["Employment and Training Administration", "DOL WIOA Dislocated Worker state allotments · South Carolina", 10522345, "Program Year 2024 Dislocated Worker allotments", "https://www.dol.gov/node/183819"],
+    ["Employment and Training Administration", "DOL WIOA Dislocated Worker state allotments · South Dakota", 1159463, "Program Year 2024 Dislocated Worker allotments", "https://www.dol.gov/node/183819"],
+    ["Employment and Training Administration", "DOL WIOA Dislocated Worker state allotments · Tennessee", 12944745, "Program Year 2024 Dislocated Worker allotments", "https://www.dol.gov/node/183819"],
+    ["Employment and Training Administration", "DOL WIOA Dislocated Worker state allotments · Texas", 74893848, "Program Year 2024 Dislocated Worker allotments", "https://www.dol.gov/node/183819"],
+    ["Employment and Training Administration", "DOL WIOA Dislocated Worker state allotments · Utah", 4196235, "Program Year 2024 Dislocated Worker allotments", "https://www.dol.gov/node/183819"],
+    ["Employment and Training Administration", "DOL WIOA Dislocated Worker state allotments · Vermont", 896318, "Program Year 2024 Dislocated Worker allotments", "https://www.dol.gov/node/183819"],
+    ["Employment and Training Administration", "DOL WIOA Dislocated Worker state allotments · Virginia", 12811909, "Program Year 2024 Dislocated Worker allotments", "https://www.dol.gov/node/183819"],
+    ["Employment and Training Administration", "DOL WIOA Dislocated Worker state allotments · Washington", 19751767, "Program Year 2024 Dislocated Worker allotments", "https://www.dol.gov/node/183819"],
+    ["Employment and Training Administration", "DOL WIOA Dislocated Worker state allotments · West Virginia", 9022367, "Program Year 2024 Dislocated Worker allotments", "https://www.dol.gov/node/183819"],
+    ["Employment and Training Administration", "DOL WIOA Dislocated Worker state allotments · Wisconsin", 9838615, "Program Year 2024 Dislocated Worker allotments", "https://www.dol.gov/node/183819"],
+    ["Employment and Training Administration", "DOL WIOA Dislocated Worker state allotments · Wyoming", 910116, "Program Year 2024 Dislocated Worker allotments", "https://www.dol.gov/node/183819"],
+    ["Employment and Training Administration", "DOL WIOA Dislocated Worker state allotments · American Samoa", 502290, "Program Year 2024 Dislocated Worker allotments", "https://www.dol.gov/node/183819"],
+    ["Employment and Training Administration", "DOL WIOA Dislocated Worker state allotments · Guam", 1378467, "Program Year 2024 Dislocated Worker allotments", "https://www.dol.gov/node/183819"],
+    ["Employment and Training Administration", "DOL WIOA Dislocated Worker state allotments · Northern Mariana Islands", 643704, "Program Year 2024 Dislocated Worker allotments", "https://www.dol.gov/node/183819"],
+    ["Employment and Training Administration", "DOL WIOA Dislocated Worker state allotments · Palau", 118327, "Program Year 2024 Dislocated Worker allotments", "https://www.dol.gov/node/183819"],
+    ["Employment and Training Administration", "DOL WIOA Dislocated Worker state allotments · Virgin Islands", 841142, "Program Year 2024 Dislocated Worker allotments", "https://www.dol.gov/node/183819"],
+    ["Employment and Training Administration", "DOL WIOA Dislocated Worker state allotments · National Reserve", 297375070, "Program Year 2024 Dislocated Worker allotments", "https://www.dol.gov/node/183819"]
   ],
-  "supplementalSchema": [
-    "subAgency",
-    "program",
-    "amount",
-    "measure",
-    "source"
-  ],
-  "hierarchyNote": "Object-class rows are directly managed; the parent entity is repeated as the sub-agency placeholder.",
+  "supplementalSchema": ["subAgency", "program", "amount", "measure", "source"],
+  "hierarchyNote": "USAspending program-activity rows preserve the agency gross-outlay control; the parent entity is repeated as the sub-agency placeholder.",
   "sourceUrls": [
-    [
-      "FY2024 gross outlays by object class",
-      "https://api.usaspending.gov/api/v2/agency/1601/object_class/?fiscal_year=2024&limit=100&page=1"
-    ],
-    [
-      "FY2024 agency budgetary resources total",
-      "https://api.usaspending.gov/api/v2/agency/1601/budgetary_resources/?fiscal_year=2024"
-    ]
+    ["FY2024 gross outlays by program activity · page 1", "https://api.usaspending.gov/api/v2/agency/1601/program_activity/?fiscal_year=2024&limit=100&page=1"],
+    ["FY2024 gross outlays by program activity · page 2", "https://api.usaspending.gov/api/v2/agency/1601/program_activity/?fiscal_year=2024&limit=100&page=2"],
+    ["FY2024 agency budgetary resources total", "https://api.usaspending.gov/api/v2/agency/1601/budgetary_resources/?fiscal_year=2024"]
   ],
   "sourceBasis": "official source amount",
-  "sourceCheck": {
-    "objectClassRows": 28,
-    "objectClassTotal": 67596776987.86,
-    "agencyTotal": 67596776987.86,
-    "difference": 0
-  },
+  "sourceCheck": {"groupRows": 146, "programActivityTotal": 67596776987.86, "agencyTotal": 67596776987.86, "difference": 0},
   "normalizationAdjustment": 0.01,
-  "sourceLabelMap": {
-    "Object class not reported by official source": "Unknown"
-  },
-  "note": "The official USAspending object-class response labels 1 row as Unknown; the display label states that the object class was not reported and no category was inferred. Amounts are shown on the official source basis; no comparator normalization was applied."
+  "sourceLabelMap": {"Object class not reported by official source": "Unknown"},
+  "note": "Program activities replace the former generic object-class view and remain on USAspending gross-outlay basis; no comparator normalization was applied."
 }

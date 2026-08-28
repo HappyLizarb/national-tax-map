@@ -5,223 +5,48 @@
   "fiscalYear": 2024,
   "ledgerAmount": 26835146882.93,
   "sourceTotal": 36571767837.26,
-  "sourceUrl": "https://api.usaspending.gov/api/v2/agency/073/object_class/?fiscal_year=2024&limit=100&page=1",
+  "sourceUrl": "https://api.usaspending.gov/api/v2/agency/073/program_activity/?fiscal_year=2024&limit=100&page=1",
   "sourceUrls": [
-    [
-      "FY2024 gross outlays by object class",
-      "https://api.usaspending.gov/api/v2/agency/073/object_class/?fiscal_year=2024&limit=100&page=1"
-    ],
-    [
-      "FY2024 agency budgetary resources total",
-      "https://api.usaspending.gov/api/v2/agency/073/budgetary_resources/?fiscal_year=2024"
-    ]
+    ["FY2024 gross outlays by program activity · page 1", "https://api.usaspending.gov/api/v2/agency/073/program_activity/?fiscal_year=2024&limit=100&page=1"],
+    ["FY2024 agency budgetary resources total", "https://api.usaspending.gov/api/v2/agency/073/budgetary_resources/?fiscal_year=2024"]
   ],
-  "rowSchema": [
-    "subAgency",
-    "program",
-    "amount",
-    "sourceAmount",
-    "sourceRows"
-  ],
+  "rowSchema": ["subAgency", "program", "amount", "sourceAmount", "sourceRows"],
   "rows": [
-    [
-      "Small Business Administration",
-      "Grants, subsidies, and contributions",
-      34780147036.67,
-      34780147036.67,
-      null
-    ],
-    [
-      "Small Business Administration",
-      "Other goods and services from Federal sources",
-      357055081.23,
-      357055081.23,
-      null
-    ],
-    [
-      "Small Business Administration",
-      "Other than full-time permanent",
-      313684387.92,
-      313684387.92,
-      null
-    ],
-    [
-      "Small Business Administration",
-      "Full-time permanent",
-      298518929.24,
-      298518929.24,
-      null
-    ],
-    [
-      "Small Business Administration",
-      "Other services from non-Federal sources",
-      309923988.62,
-      309923988.62,
-      null
-    ],
-    [
-      "Small Business Administration",
-      "Civilian personnel benefits",
-      207691867.77,
-      207691867.77,
-      null
-    ],
-    [
-      "Small Business Administration",
-      "Rental payments to GSA",
-      41557279.54,
-      41557279.54,
-      null
-    ],
-    [
-      "Small Business Administration",
-      "Operation and maintenance of equipment",
-      39553445.92,
-      39553445.92,
-      null
-    ],
-    [
-      "Small Business Administration",
-      "Travel and transportation of persons",
-      34485340.11,
-      34485340.11,
-      null
-    ],
-    [
-      "Small Business Administration",
-      "Equipment",
-      51601300.24,
-      51601300.24,
-      null
-    ],
-    [
-      "Small Business Administration",
-      "Special personal services payments",
-      36012581.79,
-      36012581.79,
-      null
-    ],
-    [
-      "Small Business Administration",
-      "Other personnel compensation",
-      33540361.22,
-      33540361.22,
-      null
-    ],
-    [
-      "Small Business Administration",
-      "Advisory and assistance services",
-      30895674.36,
-      30895674.36,
-      null
-    ],
-    [
-      "Small Business Administration",
-      "Communications, utilities, and miscellaneous charges",
-      14656034.72,
-      14656034.72,
-      null
-    ],
-    [
-      "Small Business Administration",
-      "Benefits for former personnel",
-      6066867.05,
-      6066867.05,
-      null
-    ],
-    [
-      "Small Business Administration",
-      "Supplies and materials",
-      8607313.57,
-      8607313.57,
-      null
-    ],
-    [
-      "Small Business Administration",
-      "Printing and reproduction",
-      6546236.54,
-      6546236.54,
-      null
-    ],
-    [
-      "Small Business Administration",
-      "Investments and loans",
-      222084.34,
-      222084.34,
-      null
-    ],
-    [
-      "Small Business Administration",
-      "Research and development contracts",
-      677483.8,
-      677483.8,
-      null
-    ],
-    [
-      "Small Business Administration",
-      "Interest and dividends",
-      113046.43,
-      113046.43,
-      null
-    ],
-    [
-      "Small Business Administration",
-      "Insurance claims and indemnities",
-      109046.74,
-      109046.74,
-      null
-    ],
-    [
-      "Small Business Administration",
-      "Refunds",
-      51428.48,
-      51428.48,
-      null
-    ],
-    [
-      "Small Business Administration",
-      "Undistributed",
-      13269.68,
-      13269.68,
-      null
-    ],
-    [
-      "Small Business Administration",
-      "Rental payments to others",
-      3563.35,
-      3563.35,
-      null
-    ],
-    [
-      "Small Business Administration",
-      "Operation and maintenance of facilities",
-      32769.1,
-      32769.1,
-      null
-    ],
-    [
-      "Small Business Administration",
-      "Land and structures",
-      531.43,
-      531.43,
-      null
-    ],
-    [
-      "Small Business Administration",
-      "Transportation of things",
-      887.4,
-      887.4,
-      null
-    ]
+    ["Small Business Administration", "REESTIMATES OF DIRECT LOAN SUBSIDY", 33680836997, 33680836997, null],
+    ["Small Business Administration", "DISASTER", 662106864.58, 662106864.58, null],
+    ["Small Business Administration", "NON-CREDIT PROGRAMS", 371603754.96, 371603754.96, null],
+    ["Small Business Administration", "ADMINISTRATIVE EXPENSES", 360705007.89, 360705007.89, null],
+    ["Small Business Administration", "REESTIMATES OF LOAN GUARANTEE SUBSIDY", 360064713, 360064713, null],
+    ["Small Business Administration", "DIRECT LOAN SUBSIDY", 270959400.48, 270959400.48, null],
+    ["Small Business Administration", "CAPITAL ACCESS", 178572992.42, 178572992.42, null],
+    ["Small Business Administration", "CONGRESSIONAL INITIATIVES", 112874000, 112874000, null],
+    ["Small Business Administration", "REGIONAL & DISTRICT OFFICES", 101659214.26, 101659214.26, null],
+    ["Small Business Administration", "EXECUTIVE DIRECTION", 92688793.83, 92688793.83, null],
+    ["Small Business Administration", "OFFICE OF CHIEF INFORMATION OFFICER", 58551231.18, 58551231.18, null],
+    ["Small Business Administration", "GOV. CONTRACTING/ BUS. DEVELOPMENT", 55639691.61, 55639691.61, null],
+    ["Small Business Administration", "AGENCY WIDE COSTS", 49159469.49, 49159469.49, null],
+    ["Small Business Administration", "CHIEF OPERATING OFFICE", 36682105.31, 36682105.31, null],
+    ["Small Business Administration", "SBG PROGRAM ACTIVITY", 31578566.65, 31578566.65, null],
+    ["Small Business Administration", "INVESTIGATIONS", 28471200.95, 28471200.95, null],
+    ["Small Business Administration", "INVESTMENT & INNOVATION", 25697803.27, 25697803.27, null],
+    ["Small Business Administration", "LOAN GUARANTEE SUBSIDY", 22406019.43, 22406019.43, null],
+    ["Small Business Administration", "ENTREPRENEURIAL DEVELOPMENT", 18485906.04, 18485906.04, null],
+    ["Small Business Administration", "AUDIT", 15184720.97, 15184720.97, null],
+    ["Small Business Administration", "IT WORKING CAPITAL FUND", 12242442.14, 12242442.14, null],
+    ["Small Business Administration", "OFFICE OF ADVOCACY (DIRECT)", 8959708.14, 8959708.14, null],
+    ["Small Business Administration", "INTERNATIONAL TRADE", 7785071.92, 7785071.92, null],
+    ["Small Business Administration", "MANAGEMENT AND OPERATIONS", 4009391.25, 4009391.25, null],
+    ["Small Business Administration", "IMMEDIATE OFFICE AND COUNSEL", 2589832.25, 2589832.25, null],
+    ["Small Business Administration", "TECHNOLOGY SOLUTIONS DIVISION", 1941547.26, 1941547.26, null],
+    ["Small Business Administration", "OTHER EXPENSES", 222084.34, 222084.34, null],
+    ["Small Business Administration", "INTEREST EXPENSE TO TREASURY", 69170.01, 69170.01, null],
+    ["Small Business Administration", "RESTAURANT REVITALIZATION FUND", 12076.62, 12076.62, null],
+    ["Small Business Administration", "EIDL ADVANCE", 6784.06, 6784.06, null],
+    ["Small Business Administration", "OIG-EIDL ADVANCE", 1275.95, 1275.95, null]
   ],
   "sourceBasis": "official source amount",
-  "sourceCheck": {
-    "objectClassRows": 27,
-    "objectClassTotal": 36571767837.26,
-    "agencyTotal": 36571767837.26,
-    "difference": 0
-  },
+  "sourceCheck": {"groupRows": 31, "programActivityTotal": 36571767837.26, "agencyTotal": 36571767837.26, "difference": 0},
   "normalizationAdjustment": -0.01,
-  "hierarchyNote": "The source endpoint returns agency-level object-class aggregates; no individual employees or payees are included.",
-  "note": "Amounts are shown on the official source basis; no comparator normalization was applied."
+  "hierarchyNote": "USAspending program-activity rows preserve the agency gross-outlay control; the parent entity is repeated as the sub-agency placeholder.",
+  "note": "Program activities replace the former generic object-class view and remain on USAspending gross-outlay basis; no comparator normalization was applied."
 }

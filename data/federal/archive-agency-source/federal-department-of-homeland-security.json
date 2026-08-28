@@ -6,1457 +6,412 @@
   "fiscalYear": 2024,
   "ledgerAmount": 93437156640.47,
   "sourceTotal": 127339045876.54,
-  "sourceUrl": "https://api.usaspending.gov/api/v2/agency/070/object_class/?fiscal_year=2024&limit=100&page=1",
-  "rowSchema": [
-    "subAgency",
-    "program",
-    "amount",
-    "sourceAmount",
-    "sourceRows"
-  ],
+  "sourceUrl": "https://api.usaspending.gov/api/v2/agency/070/program_activity/?fiscal_year=2024&limit=100&page=1",
+  "rowSchema": ["subAgency", "program", "amount", "sourceAmount", "sourceRows"],
   "rows": [
-    [
-      "Department of Homeland Security",
-      "Grants, subsidies, and contributions",
-      27728508795.95,
-      27728508795.95,
-      null
-    ],
-    [
-      "Department of Homeland Security",
-      "Full-time permanent",
-      23184578021.91,
-      23184578021.91,
-      null
-    ],
-    [
-      "Department of Homeland Security",
-      "Civilian personnel benefits",
-      12586613618.83,
-      12586613618.83,
-      null
-    ],
-    [
-      "Department of Homeland Security",
-      "Other services from non-Federal sources",
-      8053243587.11,
-      8053243587.11,
-      null
-    ],
-    [
-      "Department of Homeland Security",
-      "Other goods and services from Federal sources",
-      5664552526.78,
-      5664552526.78,
-      null
-    ],
-    [
-      "Department of Homeland Security",
-      "Refunds",
-      6778321448.05,
-      6778321448.05,
-      null
-    ],
-    [
-      "Department of Homeland Security",
-      "Advisory and assistance services",
-      6278693939.75,
-      6278693939.75,
-      null
-    ],
-    [
-      "Department of Homeland Security",
-      "Other personnel compensation",
-      4298863273.93,
-      4298863273.93,
-      null
-    ],
-    [
-      "Department of Homeland Security",
-      "Operation and maintenance of facilities",
-      3566330405.86,
-      3566330405.86,
-      null
-    ],
-    [
-      "Department of Homeland Security",
-      "Insurance claims and indemnities",
-      3218310392.41,
-      3218310392.41,
-      null
-    ],
-    [
-      "Department of Homeland Security",
-      "Equipment",
-      3521886585.07,
-      3521886585.07,
-      null
-    ],
-    [
-      "Department of Homeland Security",
-      "Operation and maintenance of equipment",
-      3169529547.54,
-      3169529547.54,
-      null
-    ],
-    [
-      "Department of Homeland Security",
-      "Supplies and materials",
-      2535901200.26,
-      2535901200.26,
-      null
-    ],
-    [
-      "Department of Homeland Security",
-      "Travel and transportation of persons",
-      2408250161.69,
-      2408250161.69,
-      null
-    ],
-    [
-      "Department of Homeland Security",
-      "Rental payments to GSA",
-      1884748366,
-      1884748366,
-      null
-    ],
-    [
-      "Department of Homeland Security",
-      "Military personnel - basic allowance for housing",
-      877582138.43,
-      877582138.43,
-      null
-    ],
-    [
-      "Department of Homeland Security",
-      "Subsistence and support of persons",
-      1675160855.8,
-      1675160855.8,
-      null
-    ],
-    [
-      "Department of Homeland Security",
-      "Military personnel",
-      2601693324.87,
-      2601693324.87,
-      null
-    ],
-    [
-      "Department of Homeland Security",
-      "Land and structures",
-      1149132584.98,
-      1149132584.98,
-      null
-    ],
-    [
-      "Department of Homeland Security",
-      "Communications, utilities, and miscellaneous charges",
-      683548031.54,
-      683548031.54,
-      null
-    ],
-    [
-      "Department of Homeland Security",
-      "Benefits for former personnel",
-      703129274.37,
-      703129274.37,
-      null
-    ],
-    [
-      "Department of Homeland Security",
-      "Interest and dividends",
-      646138660.11,
-      646138660.11,
-      null
-    ],
-    [
-      "Department of Homeland Security",
-      "Other than full-time permanent",
-      645752972.65,
-      645752972.65,
-      null
-    ],
-    [
-      "Department of Homeland Security",
-      "Military personnel benefits",
-      533194657.54,
-      533194657.54,
-      null
-    ],
-    [
-      "Department of Homeland Security",
-      "Research and development contracts",
-      442636833.29,
-      442636833.29,
-      null
-    ],
-    [
-      "Department of Homeland Security",
-      "Special personal services payments",
-      395537531.48,
-      395537531.48,
-      null
-    ],
-    [
-      "Department of Homeland Security",
-      "Transportation of things",
-      303818052.96,
-      303818052.96,
-      null
-    ],
-    [
-      "Department of Homeland Security",
-      "Rental payments to others",
-      226418752.65,
-      226418752.65,
-      null
-    ],
-    [
-      "Department of Homeland Security",
-      "Investments and loans",
-      36574666.2,
-      36574666.2,
-      null
-    ],
-    [
-      "Department of Homeland Security",
-      "Printing and reproduction",
-      111071190.15,
-      111071190.15,
-      null
-    ],
-    [
-      "Department of Homeland Security",
-      "Unvouchered",
-      15911485.72,
-      15911485.72,
-      null
-    ],
-    [
-      "Department of Homeland Security",
-      "Financial transfers",
-      5304827.25,
-      5304827.25,
-      null
-    ],
-    [
-      "Department of Homeland Security",
-      "Undistributed",
-      -112800.07,
-      -112800.07,
-      null
-    ],
-    [
-      "Department of Homeland Security",
-      "Medical care",
-      1408220965.48,
-      1408220965.48,
-      null
-    ]
+    ["Department of Homeland Security", "BASE/NON-MAJOR DISASTERS", 27658858478.44, 27658858478.44, null],
+    ["Department of Homeland Security", "CAS - MISSION SUPPORT", 7723739583.36, 7723739583.36, null],
+    ["Department of Homeland Security", "CAS - AVIATION SCREENING OPERATIONS", 7467245760.3, 7467245760.3, null],
+    ["Department of Homeland Security", "REFUNDS/DRAWBACKS - APPOR CAT C", 6734935527.25, 6734935527.25, null],
+    ["Department of Homeland Security", "CAS - BORDER SECURITY OPERATIONS", 6338436152.55, 6338436152.55, null],
+    ["Department of Homeland Security", "CAS - TRADE AND TRAVEL OPERATIONS", 6120065007.41, 6120065007.41, null],
+    ["Department of Homeland Security", "CITIZENSHIP AND IMMIGRATION SERVICES (DIRECT)", 5602195782.54, 5602195782.54, null],
+    ["Department of Homeland Security", "CAS - ENFORCEMENT AND REMOVAL OPERTIONS", 5262842692.98, 5262842692.98, null],
+    ["Department of Homeland Security", "MILITARY PAY AND ALLOWANCES", 4934848574.33, 4934848574.33, null],
+    ["Department of Homeland Security", "OPERATING FUNDS AND UNIT LEVEL MAINTENANCE", 4441092655.83, 4441092655.83, null],
+    ["Department of Homeland Security", "NFIP MANDATORY - INSURANCE", 3472940711.64, 3472940711.64, null],
+    ["Department of Homeland Security", "CAS - GRANTS", 3287021974.2, 3287021974.2, null],
+    ["Department of Homeland Security", "REIMBURSABLE ACTIVITY", 2742700502.07, 2742700502.07, null],
+    ["Department of Homeland Security", "CAS - HOMELAND SECURITY INVESTIGATIONS", 2122687139.7, 2122687139.7, null],
+    ["Department of Homeland Security", "DISASTER RELIEF", 2072153881.03, 2072153881.03, null],
+    ["Department of Homeland Security", "CAS - INTEGRATED OPERATIONS", 1916038472.92, 1916038472.92, null],
+    ["Department of Homeland Security", "CAS - CYBERSECURITY", 1845219851.4, 1845219851.4, null],
+    ["Department of Homeland Security", "P.L. 117-328, DIV. F., TITLE V, SEC. 546 - BORDER MANAGEMENT", 1744155070.01, 1744155070.01, null],
+    ["Department of Homeland Security", "CAS - OTHER OPERATIONS AND ENFORCEMENT", 1582540603.35, 1582540603.35, null],
+    ["Department of Homeland Security", "HERMIT'S PEAK", 1485921576.24, 1485921576.24, null],
+    ["Department of Homeland Security", "FEDERAL PROTECTIVE SERVICE (REIMBURSABLE)", 1375381035.96, 1375381035.96, null],
+    ["Department of Homeland Security", "CAS - PROTECTIVE OPERATIONS", 1324714560.73, 1324714560.73, null],
+    ["Department of Homeland Security", "RETIRED PAY", 1056231602.84, 1056231602.84, null],
+    ["Department of Homeland Security", "CUSTOMS USER FEES", 905555958.12, 905555958.12, null],
+    ["Department of Homeland Security", "IMMIGRATION USER FEE", 855568976.89, 855568976.89, null],
+    ["Department of Homeland Security", "CAS - FIELD OPERATIONS", 758366480.73, 758366480.73, null],
+    ["Department of Homeland Security", "CAS - OFFICE OF THE CHIEF INFORMATION OFFICER", 677619052.56, 677619052.56, null],
+    ["Department of Homeland Security", "BORDER SECURITY, AT POES", 673192708.87, 673192708.87, null],
+    ["Department of Homeland Security", "VESSELS", 640369612.09, 640369612.09, null],
+    ["Department of Homeland Security", "CAS - BORDER SECURITY ASSETS AND INFRASTRUCTURE", 567491698.99, 567491698.99, null],
+    ["Department of Homeland Security", "CENTRALLY MANAGED ACCOUNTS", 472160566.06, 472160566.06, null],
+    ["Department of Homeland Security", "OTHER ACQUISITION PROGRAMS", 458586564.34, 458586564.34, null],
+    ["Department of Homeland Security", "CAS - FPS OPERATIONS", 457801948.24, 457801948.24, null],
+    ["Department of Homeland Security", "CAS - RESEARCH, DEVELOPMENT AND INNOVATION", 457439745.67, 457439745.67, null],
+    ["Department of Homeland Security", "REFUNDS, TRANSFERS, AND EXPENSES OF OPERATION, PUERTO RICO (DIRECT)", 423486043.8, 423486043.8, null],
+    ["Department of Homeland Security", "CAS - OFFICE OF THE PRINCIPAL LEGAL ADVISOR", 422418719.24, 422418719.24, null],
+    ["Department of Homeland Security", "AIRCRAFT", 379945306.89, 379945306.89, null],
+    ["Department of Homeland Security", "CAS - EDUCATION, TRAINING, AND EXERCISES (INCL USFA)", 346733949.66, 346733949.66, null],
+    ["Department of Homeland Security", "ANALYSIS AND OPERATIONS", 338382117.37, 338382117.37, null],
+    ["Department of Homeland Security", "OPERATING EXPENSES (REIMBURSABLE)", 331073716.21, 331073716.21, null],
+    ["Department of Homeland Security", "CAS - LAW ENFORCEMENT TRAINING", 319299601.19, 319299601.19, null],
+    ["Department of Homeland Security", "NFIP CLAIMS PAYMENTS FROM RESERVE FUND", 308709522.52, 308709522.52, null],
+    ["Department of Homeland Security", "CAS - RESPONSE AND RECOVERY", 304544169.86, 304544169.86, null],
+    ["Department of Homeland Security", "MANDATORY-DC ANNUITY", 283389718.54, 283389718.54, null],
+    ["Department of Homeland Security", "CAS - PREPAREDNESS AND PROTECTION", 276407294.4, 276407294.4, null],
+    ["Department of Homeland Security", "AVIATION SECURITY CAPITAL FUND (DIRECT)", 269104231.24, 269104231.24, null],
+    ["Department of Homeland Security", "MEDICARE-ELIGIBLE RETIREE HEALTH CARE FUND (MERHCF)", 265320552, 265320552, null],
+    ["Department of Homeland Security", "INTERNATIONAL REGISTERED TRAVELER (DIRECT)", 250383604.8, 250383604.8, null],
+    ["Department of Homeland Security", "CAS - OFFICE OF BIOMETRIC IDENTITY MANAGEMENT", 247751449.12, 247751449.12, null],
+    ["Department of Homeland Security", "CAS - CONSTRUCTION AND FACILITY IMPROVEMENTS", 235321185.27, 235321185.27, null],
+    ["Department of Homeland Security", "CAS - OFFICE OF THE CHIEF READINESS SUPPORT OFFICER", 228030590.15, 228030590.15, null],
+    ["Department of Homeland Security", "CAS FLOODPLAIN MANAGEMENT & MAPPING", 213750553.1, 213750553.1, null],
+    ["Department of Homeland Security", "CAS - REGIONAL OPERATIONS", 212405394.48, 212405394.48, null],
+    ["Department of Homeland Security", "CAS - OFFICE OF THE CHIEF SECURITY OFFICER", 206094570.62, 206094570.62, null],
+    ["Department of Homeland Security", "IMMIGRATION AND CUSTOMS ENFORCEMENT (REIMBURSABLE)", 199947276.66, 199947276.66, null],
+    ["Department of Homeland Security", "SHORE FACILITIES AND AIDS TO NAVIGATION", 194874912.66, 194874912.66, null],
+    ["Department of Homeland Security", "CAS - INFRASTRUCTURE SECURITY", 192082477.54, 192082477.54, null],
+    ["Department of Homeland Security", "CAS - EMERGENCY COMMUNICATIONS", 187039962.49, 187039962.49, null],
+    ["Department of Homeland Security", "SALARIES AND EXPENSES (REIMBURSABLE)", 185241208.56, 185241208.56, null],
+    ["Department of Homeland Security", "CAS - IMMIGRATION AND CUSTOMS ENFORCEMENT", 182481384.68, 182481384.68, null],
+    ["Department of Homeland Security", "CAS - TRADE AND TRAVEL ASSETS AND INFRASTRUCTURE", 165409829.46, 165409829.46, null],
+    ["Department of Homeland Security", "IMMIGRATION AND CUSTOMS ENFORCEMENT (DIRECT)", 164507585.88, 164507585.88, null],
+    ["Department of Homeland Security", "CAS - OFFICE OF THE CHIEF HUMAN CAPITAL OFFICER", 163611902.9, 163611902.9, null],
+    ["Department of Homeland Security", "MISSION SUPPORT", 159525674.66, 159525674.66, null],
+    ["Department of Homeland Security", "CAS - RISK MANAGEMENT OPERATIONS", 156540943.95, 156540943.95, null],
+    ["Department of Homeland Security", "APPLICATION PROCESSING", 154578525.37, 154578525.37, null],
+    ["Department of Homeland Security", "STATE RECREATIONAL BOATING SAFETY PROGRAMS", 149890864.51, 149890864.51, null],
+    ["Department of Homeland Security", "CAS - MISSION SUPPORT ASSETS AND INFRASTRUCTURE", 147042414.34, 147042414.34, null],
+    ["Department of Homeland Security", "CAS - OFFICE OF THE CHIEF FINANCIAL OFFICER", 135435595.28, 135435595.28, null],
+    ["Department of Homeland Security", "RESERVE TRAINING", 132204503.77, 132204503.77, null],
+    ["Department of Homeland Security", "YARD FUND", 131790845.4, 131790845.4, null],
+    ["Department of Homeland Security", "CAS - LABORATORY FACILITIES", 131476584.37, 131476584.37, null],
+    ["Department of Homeland Security", "USM/CFO REIMBURSABLE PROGRAM ACTIVITY", 125096027.28, 125096027.28, null],
+    ["Department of Homeland Security", "CIO - REIMBURSABLE PROGRAM ACTIVITY", 124709846.31, 124709846.31, null],
+    ["Department of Homeland Security", "CAS - BASIC AND IN-SERVICE TRAINING AND PROFESSIONAL DEVELOPMENT", 124569099.44, 124569099.44, null],
+    ["Department of Homeland Security", "EMPLOYMENT STATUS VERIFICATION", 107267153.69, 107267153.69, null],
+    ["Department of Homeland Security", "CAS - INTEGRATED OPERATIONS ASSETS AND INFRASTRUCTURE", 104082057.55, 104082057.55, null],
+    ["Department of Homeland Security", "CAS - CHIEF PROCUREMENT OFFICER", 101869061.77, 101869061.77, null],
+    ["Department of Homeland Security", "CAS - STAKEHOLDER ENGAGEMENT AND REQUIREMENTS", 98148033.28, 98148033.28, null],
+    ["Department of Homeland Security", "CAS - OFFICE OF POLICY", 96834661.28, 96834661.28, null],
+    ["Department of Homeland Security", "CAS - PROTECTIVE COUNTERMEASURES", 92481074.3, 92481074.3, null],
+    ["Department of Homeland Security", "CAS - AVIATION SCREENING INFRASTRUCTURE", 91106623.39, 91106623.39, null],
+    ["Department of Homeland Security", "CAS - MITIGATION", 90156682.57, 90156682.57, null],
+    ["Department of Homeland Security", "CAS - ACQUISTION AND OPERATIONS ANALYSIS", 78359723.48, 78359723.48, null],
+    ["Department of Homeland Security", "SUPPLY FUND (REIMBURSABLE)", 76785566.84, 76785566.84, null],
+    ["Department of Homeland Security", "BIOLOGICAL SUPPORT", 76666242.11, 76666242.11, null],
+    ["Department of Homeland Security", "RESEARCH, DEVELOPMENT, ACQUISITIONS AND OPERATIONS (REIMBURSABLE)", 75516820.48, 75516820.48, null],
+    ["Department of Homeland Security", "LAND BORDER INSPECTION FEE", 68469648.07, 68469648.07, null],
+    ["Department of Homeland Security", "CAS - PROTECTION ASSETS AND INFRASTRUCTURE", 63816355.18, 63816355.18, null],
+    ["Department of Homeland Security", "LARGE SCALE DETECTION SYSTEMS", 63690509.89, 63690509.89, null],
+    ["Department of Homeland Security", "ACQUISITIONS, CONSTRUCTION, IMPROVEMENTS AND RELATED EXPENSES (DIRECT)", 63423845.33, 63423845.33, null],
+    ["Department of Homeland Security", "CITIZENSHIP AND IMMIGRATION SERVICES (REIMBURSABLE)", 58744566.57, 58744566.57, null],
+    ["Department of Homeland Security", "AVIATION SECURITY (REIMBURSABLE)", 57771544.48, 57771544.48, null],
+    ["Department of Homeland Security", "CAS - UNIVERSITY PROGRAMS", 56115900.08, 56115900.08, null],
+    ["Department of Homeland Security", "INTERMEDIATE AND DEPOT LEVEL MAINTENANCE", 52071777.65, 52071777.65, null],
+    ["Department of Homeland Security", "CAS - OFFICE OF CIVIL RIGHTS AND LIBERTIES", 50452568.18, 50452568.18, null],
+    ["Department of Homeland Security", "EMERGENCY FUND", 49360196.53, 49360196.53, null],
+    ["Department of Homeland Security", "ENHANCED INSPECTIONAL SERVICES (REIMBURSABLE)", 45390284.02, 45390284.02, null],
+    ["Department of Homeland Security", "TFSE - TRUST FUND SHARE OF EXPENSES", 45000000, 45000000, null],
+    ["Department of Homeland Security", "ELECTRONIC SYSTEM FOR TRAVEL AUTHORIZATION (ESTA) (DIRECT)", 42292129.53, 42292129.53, null],
+    ["Department of Homeland Security", "DISASTER ASSISTANCE DIRECT LOAN PROGRAM ACCOUNT", 40447412.15, 40447412.15, null],
+    ["Department of Homeland Security", "OFFICES OF THE SECRETARY AND EXECUTIVE MANAGEMENT", 38412079.42, 38412079.42, null],
+    ["Department of Homeland Security", "9-11 RESPONSE AND BIOMETRIC EXIT ACCOUNT", 37819976.43, 37819976.43, null],
+    ["Department of Homeland Security", "CAS - SECURING THE CITIES", 37466387.29, 37466387.29, null],
+    ["Department of Homeland Security", "TRANSFORMATIONAL RESEARCH AND DEVELOPMENT", 36368611.25, 36368611.25, null],
+    ["Department of Homeland Security", "CAS - MISSION SUPPORT ASSETS AND INFRASTRUCTURE - FSM", 35790290.73, 35790290.73, null],
+    ["Department of Homeland Security", "RESEARCH AND DEVELOPMENT", 35626135.41, 35626135.41, null],
+    ["Department of Homeland Security", "CAS - SUPPORT FOR COMPUTER FORENSICS TRAINING", 35260021.98, 35260021.98, null],
+    ["Department of Homeland Security", "RADIOLOGICAL EMERGENCY PREPAREDNESS", 33564590.19, 33564590.19, null],
+    ["Department of Homeland Security", "INFLATION REDUCTION ACT", 32774139.39, 32774139.39, null],
+    ["Department of Homeland Security", "CAS - OFFICE OF THE SECRETARY", 32215277.08, 32215277.08, null],
+    ["Department of Homeland Security", "CAS - OFFICE OF GENERAL COUNSEL", 31103289.65, 31103289.65, null],
+    ["Department of Homeland Security", "CAS - OFFICE OF IMMIGRATION DETENTION OMBUDSMAN", 30155318.45, 30155318.45, null],
+    ["Department of Homeland Security", "CIVILIAN PAY AND BENEFITS", 28628447.48, 28628447.48, null],
+    ["Department of Homeland Security", "ANALYSIS AND OPERATIONS (REIMBURSABLE)", 25539190.99, 25539190.99, null],
+    ["Department of Homeland Security", "CAS - OPERATIONAL COMMUNICATIONS/INFORMATION TECHNOLOGY", 24443631.6, 24443631.6, null],
+    ["Department of Homeland Security", "OTHER BORDER PROTECTION", 23535183.53, 23535183.53, null],
+    ["Department of Homeland Security", "CAS - PRIVACY OFFICE", 21697814.53, 21697814.53, null],
+    ["Department of Homeland Security", "CAS - OSEM O&S REIMBURSABLE PROGRAM ACTIVITY", 20390066.65, 20390066.65, null],
+    ["Department of Homeland Security", "CAS - OFFICE OF PROGRAM ACCOUNTABILITY AND RISK MANAGEMENT", 20366470.92, 20366470.92, null],
+    ["Department of Homeland Security", "PROCUREMENT, CONSTRUCTION, AND IMPROVEMENTS", 20273949.89, 20273949.89, null],
+    ["Department of Homeland Security", "OTHER BORDER PROTECTION REIMBURSABLE ACTIVITY", 19065449.67, 19065449.67, null],
+    ["Department of Homeland Security", "UNDER SECRETARY FOR MANAGEMENT", 18631287.34, 18631287.34, null],
+    ["Department of Homeland Security", "DETECTION CAPABILITY DEVELOPMENT", 17534402.76, 17534402.76, null],
+    ["Department of Homeland Security", "RESEARCH AND DEVELOPMENT (REIMBURSABLE)", 17234770.97, 17234770.97, null],
+    ["Department of Homeland Security", "FEDERAL ASSISTANCE", 17035540.36, 17035540.36, null],
+    ["Department of Homeland Security", "OBIM-HART", 16722106.55, 16722106.55, null],
+    ["Department of Homeland Security", "CAS - FEDERAL ASSISTANCE", 15922282.19, 15922282.19, null],
+    ["Department of Homeland Security", "PROCUREMENT, CONSTRUCTION, AND IMPROVEMENTS (REIMBURSABLE)", 15760163.97, 15760163.97, null],
+    ["Department of Homeland Security", "WORKFORCE HEALTH AND SAFETY PROGRAM", 15314946.3, 15314946.3, null],
+    ["Department of Homeland Security", "CAS - FPS TECHNICAL COUNTERMEASURES", 14866732.77, 14866732.77, null],
+    ["Department of Homeland Security", "CIO - SPECTRUM RELOCATION FUND", 14773469.48, 14773469.48, null],
+    ["Department of Homeland Security", "2023 HURRICANE SUPPLEMENTAL", 14201626.24, 14201626.24, null],
+    ["Department of Homeland Security", "CAS - OFFICE OF PARTNERSHIP AND ENGAGEMENT", 14054985.29, 14054985.29, null],
+    ["Department of Homeland Security", "PAYMENT OF CLAIMS", 12465712.38, 12465712.38, null],
+    ["Department of Homeland Security", "APPLIED R&D", 11390576.4, 11390576.4, null],
+    ["Department of Homeland Security", "CAS - OFFICE OF CITIZENSHIP AND IMMIGRATION SERVICES OMBUDSMAN", 11362959.52, 11362959.52, null],
+    ["Department of Homeland Security", "CAS - OFFICE OF PUBLIC AFFAIRS", 10668993.47, 10668993.47, null],
+    ["Department of Homeland Security", "CAS - MISSION SUPPORT (DISCRETIONARY)", 10499152.88, 10499152.88, null],
+    ["Department of Homeland Security", "GIFTS/DONATIONS", 10273358, 10273358, null],
+    ["Department of Homeland Security", "PORTABLE DETECTION SYSTEMS", 9933959.41, 9933959.41, null],
+    ["Department of Homeland Security", "CAS - MISSION SUPPORT ASSETS AND INFRASTRUCTURE - HRIT", 9452115.42, 9452115.42, null],
+    ["Department of Homeland Security", "PC&I PL 117-328 - HURRICANE SUPPLEMENTS FOR FIONA AND IAN IAW THE CONSOLIDATED APPROPRIATIONS ACT OF 2023", 9427749.2, 9427749.2, null],
+    ["Department of Homeland Security", "FY2022 INFRASTRUCTURE INVESTMENT & JOBS ACT (PL 117-58; 135 STAT 1384)", 9240098.78, 9240098.78, null],
+    ["Department of Homeland Security", "IMMIGRATION USER FEE REIMBURSABLE ACTIVITY", 8936074.14, 8936074.14, null],
+    ["Department of Homeland Security", "PC&I PL 117-58 - INFRASTRUCTURE, INVESTMENT AND JOB ACT", 8665369.25, 8665369.25, null],
+    ["Department of Homeland Security", "OHS MEDICAL INFORMATION EXCHANGE", 7423395, 7423395, null],
+    ["Department of Homeland Security", "CAS - OFFICE OF LEGISLATIVE AFFAIRS", 7396415.75, 7396415.75, null],
+    ["Department of Homeland Security", "PRE-DISASTER MITIGATION", 7318705.07, 7318705.07, null],
+    ["Department of Homeland Security", "CAS - INFRASTRUCTURE PROTECTION", 7130177.77, 7130177.77, null],
+    ["Department of Homeland Security", "CAS - IMMEDIATE OFFICE OF THE UNDER SECRETARY OF MANAGEMENT", 6729975.36, 6729975.36, null],
+    ["Department of Homeland Security", "EXPIRED FUNDS ACTIVITY", 6271964.57, 6271964.57, null],
+    ["Department of Homeland Security", "CAS - RESEARCH AND DEVELOPMENT", 5326346.65, 5326346.65, null],
+    ["Department of Homeland Security", "DHS NONRECURRING  EXPENSES", 5279251.6, 5279251.6, null],
+    ["Department of Homeland Security", "SECRETARY'S ENFORCEMENT FUND", 5075773.05, 5075773.05, null],
+    ["Department of Homeland Security", "OPERATION ALLIES WELCOME", 4852922.13, 4852922.13, null],
+    ["Department of Homeland Security", "CAS - RISK MANAGEMENT R&D", 4771046.16, 4771046.16, null],
+    ["Department of Homeland Security", "IIJA FLOOD MITIGATION ASSISTANCE", 4421141.03, 4421141.03, null],
+    ["Department of Homeland Security", "INFLATION REDUCTION ACT - (PL 117-169, 136 STAT 2086, SEC. 70001)", 4388802.87, 4388802.87, null],
+    ["Department of Homeland Security", "EMERGENCY HURRICANE SUPPLEMENTAL", 4379385.23, 4379385.23, null],
+    ["Department of Homeland Security", "COAST GUARD HOUSING FUND", 4356902.6, 4356902.6, null],
+    ["Department of Homeland Security", "TRAINING AND RECRUITING", 4192436.48, 4192436.48, null],
+    ["Department of Homeland Security", "OPERATIONS AND MAINTENANCE", 3839848.96, 3839848.96, null],
+    ["Department of Homeland Security", "REIMBURSABLE PROGRAM ACTIVITY", 3565438.74, 3565438.74, null],
+    ["Department of Homeland Security", "GIFT FUND", 3390432.23, 3390432.23, null],
+    ["Department of Homeland Security", "SEC. 543 SWB", 3381380.82, 3381380.82, null],
+    ["Department of Homeland Security", "NUCLEAR FORENSICS", 3306127.32, 3306127.32, null],
+    ["Department of Homeland Security", "HARBOR MAINTENANCE FEE COLLECTION", 3274000, 3274000, null],
+    ["Department of Homeland Security", "APEC", 2862665.66, 2862665.66, null],
+    ["Department of Homeland Security", "RESEARCH, DEVELOPMENT, TEST, AND EVALUATION (REIMBURSABLE)", 2549411.08, 2549411.08, null],
+    ["Department of Homeland Security", "CAS - DOMESTIC AND INTERNATIONAL FIELD OPERATIONS", 2510099.35, 2510099.35, null],
+    ["Department of Homeland Security", "FACILITIES CONSTRUCTION AND SUSTAINMENT", 2505029.81, 2505029.81, null],
+    ["Department of Homeland Security", "COVID-19 SUPPLEMENTAL, PL 116-136", 2310085.08, 2310085.08, null],
+    ["Department of Homeland Security", "RESEARCH, DEVELOPMENT, ACQUISITION, AND OPERATIONS", 2178835.68, 2178835.68, null],
+    ["Department of Homeland Security", "UNKNOWN/OTHER", 2016167.76, 2016167.76, null],
+    ["Department of Homeland Security", "TFF STRATEGIC SUPPORT", 1900630.98, 1900630.98, null],
+    ["Department of Homeland Security", "U.S. CUSTOMS REFUNDS, TRANSFERS AND EXPENSES, UNCLAIMED AND ABAN (DIRECT)", 1823546.93, 1823546.93, null],
+    ["Department of Homeland Security", "CAS - INFRASTRUCTURE SECURITY R&D", 1653880.93, 1653880.93, null],
+    ["Department of Homeland Security", "CAS - OPERATIONAL COMMUNICATIONS/INFORMATION TECHNOLOGY END ITEMS", 1639672.16, 1639672.16, null],
+    ["Department of Homeland Security", "CONSTRUCTION CARRYOVER", 1505668.98, 1505668.98, null],
+    ["Department of Homeland Security", "CAS - EDUCATION, TRAINING, AND EXERCISES REIMBURSABLE", 1329724.22, 1329724.22, null],
+    ["Department of Homeland Security", "WORKING CAPITAL FUND (REIMBURSABLE)", 1275472.76, 1275472.76, null],
+    ["Department of Homeland Security", "RAPID CAPABILITIES", 1170440.74, 1170440.74, null],
+    ["Department of Homeland Security", "LOOSE CHANGE COLLECTED AT CHECKPOINT (DIRECT)", 1116096.4, 1116096.4, null],
+    ["Department of Homeland Security", "PC&I - GENERAL REIMBURSABLE", 1099380.98, 1099380.98, null],
+    ["Department of Homeland Security", "ENVIRONMENTAL COMPLIANCE AND RESTORATION", 1064381.41, 1064381.41, null],
+    ["Department of Homeland Security", "FLOOD HAZARD MAPPING AND RISK ANALYSIS", 1040616.9, 1040616.9, null],
+    ["Department of Homeland Security", "DISASTER RELIEF REIMBURSABLE ACTIVITY", 976847.29, 976847.29, null],
+    ["Department of Homeland Security", "IMMIGRATION SUPPORT", 922158, 922158, null],
+    ["Department of Homeland Security", "TECHNOLOGY MODERNIZATION FUND (TMF)", 909496.29, 909496.29, null],
+    ["Department of Homeland Security", "IMMIGRATION AND CUSTOMS ENFORCEMENT", 746838, 746838, null],
+    ["Department of Homeland Security", "SYSTEM DEVELOPMENT AND DEPLOYMENT", 581507.63, 581507.63, null],
+    ["Department of Homeland Security", "LAW ENFORCEMENT TRAINING", 481157.94, 481157.94, null],
+    ["Department of Homeland Security", "FY20 COVID-19 SUPPLEMENTAL (PL 116-136)", 454224.78, 454224.78, null],
+    ["Department of Homeland Security", "O&S PL 117-58 - INFRASTRUCTURE, INVESTMENT AND JOB ACT", 426337.27, 426337.27, null],
+    ["Department of Homeland Security", "INTEGRATED OPERATIONS ASSETS AND INFRASTRUCTURE", 398821.96, 398821.96, null],
+    ["Department of Homeland Security", "CAS - CONSTRUCTION & FACILITY IMPROVEMENTS REIMBURSABLE", 268449.86, 268449.86, null],
+    ["Department of Homeland Security", "AIR AND MARINE INTERDICTION, OPERATIONS, MAINTENANCE, AND PROCUR (REIMBURSABLE)", 194903.18, 194903.18, null],
+    ["Department of Homeland Security", "FEES", 174502.64, 174502.64, null],
+    ["Department of Homeland Security", "OSLTF - OIL SPILL LIABILITY TRUST FUND", 165000, 165000, null],
+    ["Department of Homeland Security", "AVIATION SECURITY (DIRECT)", 99702.88, 99702.88, null],
+    ["Department of Homeland Security", "CIO - HOMELAND SECURE DATA NETWORK", 92057.8, 92057.8, null],
+    ["Department of Homeland Security", "CAS - PROTECTION OF PERSONS AND FACILITIES", 85393.38, 85393.38, null],
+    ["Department of Homeland Security", "CONSTRUCTION (DIRECT)", 84272.06, 84272.06, null],
+    ["Department of Homeland Security", "NO YEAR CARRYOVER", 82708.21, 82708.21, null],
+    ["Department of Homeland Security", "ACQUISITIONS, CONSTRUCTION, IMPROVEMENTS AND RELATED EXPENSES (REIMBURSABLE)", 73331, 73331, null],
+    ["Department of Homeland Security", "HEADQUARTERS, MANAGEMENT AND ADMINISTRATION", 67777.32, 67777.32, null],
+    ["Department of Homeland Security", "FY 2022 OPERATIONS ALLIES WELCOME (PL 117-70)", 57908.17, 57908.17, null],
+    ["Department of Homeland Security", "CIO - INFRASTRUCTURE SECURITY ACTIVITIES", 53801, 53801, null],
+    ["Department of Homeland Security", "HEADQUARTERS M&A", 29795.93, 29795.93, null],
+    ["Department of Homeland Security", "CIO - INFORMATION TECHNOLOGY SERVICES", 22694.5, 22694.5, null],
+    ["Department of Homeland Security", "DETECTION CAPABILITY ASSESSMENTS", 18698.51, 18698.51, null],
+    ["Department of Homeland Security", "NO-YEAR CARRYOVER", 16980.33, 16980.33, null],
+    ["Department of Homeland Security", "SEC. 542 USER FEE SHORTFALL", 15007.39, 15007.39, null],
+    ["Department of Homeland Security", "AIRPORT CHECKPOINT SECURITY FUND (DIRECT)", 5690.96, 5690.96, null],
+    ["Department of Homeland Security", "HEALTH LIFE AND SAFETY ISSUES AT EXISTING BORDER PATROL FACILITIES", 2416.58, 2416.58, null],
+    ["Department of Homeland Security", "PROTECTION OF PERSONS AND FACILITIES", 0.21, 0.21, null],
+    ["Department of Homeland Security", "CONSTRUCTION AND FACILITIES IMPROVEMENT", 0, 0, null],
+    ["Department of Homeland Security", "ADMINISTRATIVE AND REGIONAL OFFICES", 0, 0, null],
+    ["Department of Homeland Security", "HUMANITARIAN CARE", 0, 0, null],
+    ["Department of Homeland Security", "CAS - INFRASTRUCTURE FOR OTHER OPERATIONS", -75.89, -75.89, null],
+    ["Department of Homeland Security", "ARCHITECTURE PLANNING AND ANALYSIS", -1665.45, -1665.45, null]
   ],
   "supplementalRows": [
-    [
-      "Federal Emergency Management Agency",
-      "FEMA State and Local Cybersecurity Grant Program · Alabama",
-      5910794,
-      "FY2024 SLCGP updated allocations",
-      "https://www.fema.gov/sites/default/files/documents/fema_gpd_fy24-slcgp-ib-updated-allocations_01082025.pdf"
-    ],
-    [
-      "Federal Emergency Management Agency",
-      "FEMA State and Local Cybersecurity Grant Program · Alaska",
-      3410486,
-      "FY2024 SLCGP updated allocations",
-      "https://www.fema.gov/sites/default/files/documents/fema_gpd_fy24-slcgp-ib-updated-allocations_01082025.pdf"
-    ],
-    [
-      "Federal Emergency Management Agency",
-      "FEMA State and Local Cybersecurity Grant Program · Arizona",
-      5091462,
-      "FY2024 SLCGP updated allocations",
-      "https://www.fema.gov/sites/default/files/documents/fema_gpd_fy24-slcgp-ib-updated-allocations_01082025.pdf"
-    ],
-    [
-      "Federal Emergency Management Agency",
-      "FEMA State and Local Cybersecurity Grant Program · Arkansas",
-      4831568,
-      "FY2024 SLCGP updated allocations",
-      "https://www.fema.gov/sites/default/files/documents/fema_gpd_fy24-slcgp-ib-updated-allocations_01082025.pdf"
-    ],
-    [
-      "Federal Emergency Management Agency",
-      "FEMA State and Local Cybersecurity Grant Program · California",
-      12102976,
-      "FY2024 SLCGP updated allocations",
-      "https://www.fema.gov/sites/default/files/documents/fema_gpd_fy24-slcgp-ib-updated-allocations_01082025.pdf"
-    ],
-    [
-      "Federal Emergency Management Agency",
-      "FEMA State and Local Cybersecurity Grant Program · Colorado",
-      4843598,
-      "FY2024 SLCGP updated allocations",
-      "https://www.fema.gov/sites/default/files/documents/fema_gpd_fy24-slcgp-ib-updated-allocations_01082025.pdf"
-    ],
-    [
-      "Federal Emergency Management Agency",
-      "FEMA State and Local Cybersecurity Grant Program · Connecticut",
-      4154342,
-      "FY2024 SLCGP updated allocations",
-      "https://www.fema.gov/sites/default/files/documents/fema_gpd_fy24-slcgp-ib-updated-allocations_01082025.pdf"
-    ],
-    [
-      "Federal Emergency Management Agency",
-      "FEMA State and Local Cybersecurity Grant Program · Delaware",
-      3387232,
-      "FY2024 SLCGP updated allocations",
-      "https://www.fema.gov/sites/default/files/documents/fema_gpd_fy24-slcgp-ib-updated-allocations_01082025.pdf"
-    ],
-    [
-      "Federal Emergency Management Agency",
-      "FEMA State and Local Cybersecurity Grant Program · District of Columbia",
-      3169761,
-      "FY2024 SLCGP updated allocations",
-      "https://www.fema.gov/sites/default/files/documents/fema_gpd_fy24-slcgp-ib-updated-allocations_01082025.pdf"
-    ],
-    [
-      "Federal Emergency Management Agency",
-      "FEMA State and Local Cybersecurity Grant Program · Florida",
-      8784903,
-      "FY2024 SLCGP updated allocations",
-      "https://www.fema.gov/sites/default/files/documents/fema_gpd_fy24-slcgp-ib-updated-allocations_01082025.pdf"
-    ],
-    [
-      "Federal Emergency Management Agency",
-      "FEMA State and Local Cybersecurity Grant Program · Georgia",
-      7590000,
-      "FY2024 SLCGP updated allocations",
-      "https://www.fema.gov/sites/default/files/documents/fema_gpd_fy24-slcgp-ib-updated-allocations_01082025.pdf"
-    ],
-    [
-      "Federal Emergency Management Agency",
-      "FEMA State and Local Cybersecurity Grant Program · Hawaii",
-      3481823,
-      "FY2024 SLCGP updated allocations",
-      "https://www.fema.gov/sites/default/files/documents/fema_gpd_fy24-slcgp-ib-updated-allocations_01082025.pdf"
-    ],
-    [
-      "Federal Emergency Management Agency",
-      "FEMA State and Local Cybersecurity Grant Program · Idaho",
-      3924878,
-      "FY2024 SLCGP updated allocations",
-      "https://www.fema.gov/sites/default/files/documents/fema_gpd_fy24-slcgp-ib-updated-allocations_01082025.pdf"
-    ],
-    [
-      "Federal Emergency Management Agency",
-      "FEMA State and Local Cybersecurity Grant Program · Illinois",
-      6833696,
-      "FY2024 SLCGP updated allocations",
-      "https://www.fema.gov/sites/default/files/documents/fema_gpd_fy24-slcgp-ib-updated-allocations_01082025.pdf"
-    ],
-    [
-      "Federal Emergency Management Agency",
-      "FEMA State and Local Cybersecurity Grant Program · Indiana",
-      6076862,
-      "FY2024 SLCGP updated allocations",
-      "https://www.fema.gov/sites/default/files/documents/fema_gpd_fy24-slcgp-ib-updated-allocations_01082025.pdf"
-    ],
-    [
-      "Federal Emergency Management Agency",
-      "FEMA State and Local Cybersecurity Grant Program · Iowa",
-      4703963,
-      "FY2024 SLCGP updated allocations",
-      "https://www.fema.gov/sites/default/files/documents/fema_gpd_fy24-slcgp-ib-updated-allocations_01082025.pdf"
-    ],
-    [
-      "Federal Emergency Management Agency",
-      "FEMA State and Local Cybersecurity Grant Program · Kansas",
-      4326591,
-      "FY2024 SLCGP updated allocations",
-      "https://www.fema.gov/sites/default/files/documents/fema_gpd_fy24-slcgp-ib-updated-allocations_01082025.pdf"
-    ],
-    [
-      "Federal Emergency Management Agency",
-      "FEMA State and Local Cybersecurity Grant Program · Kentucky",
-      5564421,
-      "FY2024 SLCGP updated allocations",
-      "https://www.fema.gov/sites/default/files/documents/fema_gpd_fy24-slcgp-ib-updated-allocations_01082025.pdf"
-    ],
-    [
-      "Federal Emergency Management Agency",
-      "FEMA State and Local Cybersecurity Grant Program · Louisiana",
-      5077130,
-      "FY2024 SLCGP updated allocations",
-      "https://www.fema.gov/sites/default/files/documents/fema_gpd_fy24-slcgp-ib-updated-allocations_01082025.pdf"
-    ],
-    [
-      "Federal Emergency Management Agency",
-      "FEMA State and Local Cybersecurity Grant Program · Maine",
-      4069238,
-      "FY2024 SLCGP updated allocations",
-      "https://www.fema.gov/sites/default/files/documents/fema_gpd_fy24-slcgp-ib-updated-allocations_01082025.pdf"
-    ],
-    [
-      "Federal Emergency Management Agency",
-      "FEMA State and Local Cybersecurity Grant Program · Maryland",
-      4980182,
-      "FY2024 SLCGP updated allocations",
-      "https://www.fema.gov/sites/default/files/documents/fema_gpd_fy24-slcgp-ib-updated-allocations_01082025.pdf"
-    ],
-    [
-      "Federal Emergency Management Agency",
-      "FEMA State and Local Cybersecurity Grant Program · Massachusetts",
-      4868352,
-      "FY2024 SLCGP updated allocations",
-      "https://www.fema.gov/sites/default/files/documents/fema_gpd_fy24-slcgp-ib-updated-allocations_01082025.pdf"
-    ],
-    [
-      "Federal Emergency Management Agency",
-      "FEMA State and Local Cybersecurity Grant Program · Michigan",
-      7303610,
-      "FY2024 SLCGP updated allocations",
-      "https://www.fema.gov/sites/default/files/documents/fema_gpd_fy24-slcgp-ib-updated-allocations_01082025.pdf"
-    ],
-    [
-      "Federal Emergency Management Agency",
-      "FEMA State and Local Cybersecurity Grant Program · Minnesota",
-      5548026,
-      "FY2024 SLCGP updated allocations",
-      "https://www.fema.gov/sites/default/files/documents/fema_gpd_fy24-slcgp-ib-updated-allocations_01082025.pdf"
-    ],
-    [
-      "Federal Emergency Management Agency",
-      "FEMA State and Local Cybersecurity Grant Program · Mississippi",
-      5034487,
-      "FY2024 SLCGP updated allocations",
-      "https://www.fema.gov/sites/default/files/documents/fema_gpd_fy24-slcgp-ib-updated-allocations_01082025.pdf"
-    ],
-    [
-      "Federal Emergency Management Agency",
-      "FEMA State and Local Cybersecurity Grant Program · Missouri",
-      5889477,
-      "FY2024 SLCGP updated allocations",
-      "https://www.fema.gov/sites/default/files/documents/fema_gpd_fy24-slcgp-ib-updated-allocations_01082025.pdf"
-    ],
-    [
-      "Federal Emergency Management Agency",
-      "FEMA State and Local Cybersecurity Grant Program · Montana",
-      3715508,
-      "FY2024 SLCGP updated allocations",
-      "https://www.fema.gov/sites/default/files/documents/fema_gpd_fy24-slcgp-ib-updated-allocations_01082025.pdf"
-    ],
-    [
-      "Federal Emergency Management Agency",
-      "FEMA State and Local Cybersecurity Grant Program · Nebraska",
-      3888856,
-      "FY2024 SLCGP updated allocations",
-      "https://www.fema.gov/sites/default/files/documents/fema_gpd_fy24-slcgp-ib-updated-allocations_01082025.pdf"
-    ],
-    [
-      "Federal Emergency Management Agency",
-      "FEMA State and Local Cybersecurity Grant Program · Nevada",
-      3792609,
-      "FY2024 SLCGP updated allocations",
-      "https://www.fema.gov/sites/default/files/documents/fema_gpd_fy24-slcgp-ib-updated-allocations_01082025.pdf"
-    ],
-    [
-      "Federal Emergency Management Agency",
-      "FEMA State and Local Cybersecurity Grant Program · New Hampshire",
-      3831884,
-      "FY2024 SLCGP updated allocations",
-      "https://www.fema.gov/sites/default/files/documents/fema_gpd_fy24-slcgp-ib-updated-allocations_01082025.pdf"
-    ],
-    [
-      "Federal Emergency Management Agency",
-      "FEMA State and Local Cybersecurity Grant Program · New Jersey",
-      5247180,
-      "FY2024 SLCGP updated allocations",
-      "https://www.fema.gov/sites/default/files/documents/fema_gpd_fy24-slcgp-ib-updated-allocations_01082025.pdf"
-    ],
-    [
-      "Federal Emergency Management Agency",
-      "FEMA State and Local Cybersecurity Grant Program · New Mexico",
-      3919423,
-      "FY2024 SLCGP updated allocations",
-      "https://www.fema.gov/sites/default/files/documents/fema_gpd_fy24-slcgp-ib-updated-allocations_01082025.pdf"
-    ],
-    [
-      "Federal Emergency Management Agency",
-      "FEMA State and Local Cybersecurity Grant Program · New York",
-      8892219,
-      "FY2024 SLCGP updated allocations",
-      "https://www.fema.gov/sites/default/files/documents/fema_gpd_fy24-slcgp-ib-updated-allocations_01082025.pdf"
-    ],
-    [
-      "Federal Emergency Management Agency",
-      "FEMA State and Local Cybersecurity Grant Program · North Carolina",
-      8189359,
-      "FY2024 SLCGP updated allocations",
-      "https://www.fema.gov/sites/default/files/documents/fema_gpd_fy24-slcgp-ib-updated-allocations_01082025.pdf"
-    ],
-    [
-      "Federal Emergency Management Agency",
-      "FEMA State and Local Cybersecurity Grant Program · North Dakota",
-      3467145,
-      "FY2024 SLCGP updated allocations",
-      "https://www.fema.gov/sites/default/files/documents/fema_gpd_fy24-slcgp-ib-updated-allocations_01082025.pdf"
-    ],
-    [
-      "Federal Emergency Management Agency",
-      "FEMA State and Local Cybersecurity Grant Program · Ohio",
-      7736398,
-      "FY2024 SLCGP updated allocations",
-      "https://www.fema.gov/sites/default/files/documents/fema_gpd_fy24-slcgp-ib-updated-allocations_01082025.pdf"
-    ],
-    [
-      "Federal Emergency Management Agency",
-      "FEMA State and Local Cybersecurity Grant Program · Oklahoma",
-      5065376,
-      "FY2024 SLCGP updated allocations",
-      "https://www.fema.gov/sites/default/files/documents/fema_gpd_fy24-slcgp-ib-updated-allocations_01082025.pdf"
-    ],
-    [
-      "Federal Emergency Management Agency",
-      "FEMA State and Local Cybersecurity Grant Program · Oregon",
-      4559670,
-      "FY2024 SLCGP updated allocations",
-      "https://www.fema.gov/sites/default/files/documents/fema_gpd_fy24-slcgp-ib-updated-allocations_01082025.pdf"
-    ],
-    [
-      "Federal Emergency Management Agency",
-      "FEMA State and Local Cybersecurity Grant Program · Pennsylvania",
-      8165829,
-      "FY2024 SLCGP updated allocations",
-      "https://www.fema.gov/sites/default/files/documents/fema_gpd_fy24-slcgp-ib-updated-allocations_01082025.pdf"
-    ],
-    [
-      "Federal Emergency Management Agency",
-      "FEMA State and Local Cybersecurity Grant Program · Rhode Island",
-      3335047,
-      "FY2024 SLCGP updated allocations",
-      "https://www.fema.gov/sites/default/files/documents/fema_gpd_fy24-slcgp-ib-updated-allocations_01082025.pdf"
-    ],
-    [
-      "Federal Emergency Management Agency",
-      "FEMA State and Local Cybersecurity Grant Program · South Carolina",
-      5527716,
-      "FY2024 SLCGP updated allocations",
-      "https://www.fema.gov/sites/default/files/documents/fema_gpd_fy24-slcgp-ib-updated-allocations_01082025.pdf"
-    ],
-    [
-      "Federal Emergency Management Agency",
-      "FEMA State and Local Cybersecurity Grant Program · South Dakota",
-      0,
-      "FY2024 SLCGP updated allocations",
-      "https://www.fema.gov/sites/default/files/documents/fema_gpd_fy24-slcgp-ib-updated-allocations_01082025.pdf"
-    ],
-    [
-      "Federal Emergency Management Agency",
-      "FEMA State and Local Cybersecurity Grant Program · Tennessee",
-      6469777,
-      "FY2024 SLCGP updated allocations",
-      "https://www.fema.gov/sites/default/files/documents/fema_gpd_fy24-slcgp-ib-updated-allocations_01082025.pdf"
-    ],
-    [
-      "Federal Emergency Management Agency",
-      "FEMA State and Local Cybersecurity Grant Program · Texas",
-      12903025,
-      "FY2024 SLCGP updated allocations",
-      "https://www.fema.gov/sites/default/files/documents/fema_gpd_fy24-slcgp-ib-updated-allocations_01082025.pdf"
-    ],
-    [
-      "Federal Emergency Management Agency",
-      "FEMA State and Local Cybersecurity Grant Program · Utah",
-      3974410,
-      "FY2024 SLCGP updated allocations",
-      "https://www.fema.gov/sites/default/files/documents/fema_gpd_fy24-slcgp-ib-updated-allocations_01082025.pdf"
-    ],
-    [
-      "Federal Emergency Management Agency",
-      "FEMA State and Local Cybersecurity Grant Program · Vermont",
-      3545618,
-      "FY2024 SLCGP updated allocations",
-      "https://www.fema.gov/sites/default/files/documents/fema_gpd_fy24-slcgp-ib-updated-allocations_01082025.pdf"
-    ],
-    [
-      "Federal Emergency Management Agency",
-      "FEMA State and Local Cybersecurity Grant Program · Virginia",
-      6548801,
-      "FY2024 SLCGP updated allocations",
-      "https://www.fema.gov/sites/default/files/documents/fema_gpd_fy24-slcgp-ib-updated-allocations_01082025.pdf"
-    ],
-    [
-      "Federal Emergency Management Agency",
-      "FEMA State and Local Cybersecurity Grant Program · Washington",
-      5621825,
-      "FY2024 SLCGP updated allocations",
-      "https://www.fema.gov/sites/default/files/documents/fema_gpd_fy24-slcgp-ib-updated-allocations_01082025.pdf"
-    ],
-    [
-      "Federal Emergency Management Agency",
-      "FEMA State and Local Cybersecurity Grant Program · West Virginia",
-      4268863,
-      "FY2024 SLCGP updated allocations",
-      "https://www.fema.gov/sites/default/files/documents/fema_gpd_fy24-slcgp-ib-updated-allocations_01082025.pdf"
-    ],
-    [
-      "Federal Emergency Management Agency",
-      "FEMA State and Local Cybersecurity Grant Program · Wisconsin",
-      5890643,
-      "FY2024 SLCGP updated allocations",
-      "https://www.fema.gov/sites/default/files/documents/fema_gpd_fy24-slcgp-ib-updated-allocations_01082025.pdf"
-    ],
-    [
-      "Federal Emergency Management Agency",
-      "FEMA State and Local Cybersecurity Grant Program · Wyoming",
-      3354614,
-      "FY2024 SLCGP updated allocations",
-      "https://www.fema.gov/sites/default/files/documents/fema_gpd_fy24-slcgp-ib-updated-allocations_01082025.pdf"
-    ],
-    [
-      "Federal Emergency Management Agency",
-      "FEMA State and Local Cybersecurity Grant Program · Puerto Rico",
-      3853356,
-      "FY2024 SLCGP updated allocations",
-      "https://www.fema.gov/sites/default/files/documents/fema_gpd_fy24-slcgp-ib-updated-allocations_01082025.pdf"
-    ],
-    [
-      "Federal Emergency Management Agency",
-      "FEMA State and Local Cybersecurity Grant Program · U.S. Virgin Islands",
-      781511,
-      "FY2024 SLCGP updated allocations",
-      "https://www.fema.gov/sites/default/files/documents/fema_gpd_fy24-slcgp-ib-updated-allocations_01082025.pdf"
-    ],
-    [
-      "Federal Emergency Management Agency",
-      "FEMA State and Local Cybersecurity Grant Program · American Samoa",
-      781921,
-      "FY2024 SLCGP updated allocations",
-      "https://www.fema.gov/sites/default/files/documents/fema_gpd_fy24-slcgp-ib-updated-allocations_01082025.pdf"
-    ],
-    [
-      "Federal Emergency Management Agency",
-      "FEMA State and Local Cybersecurity Grant Program · Guam",
-      805143,
-      "FY2024 SLCGP updated allocations",
-      "https://www.fema.gov/sites/default/files/documents/fema_gpd_fy24-slcgp-ib-updated-allocations_01082025.pdf"
-    ],
-    [
-      "Federal Emergency Management Agency",
-      "FEMA State and Local Cybersecurity Grant Program · Northern Mariana Islands",
-      779978,
-      "FY2024 SLCGP updated allocations",
-      "https://www.fema.gov/sites/default/files/documents/fema_gpd_fy24-slcgp-ib-updated-allocations_01082025.pdf"
-    ],
-    [
-      "Federal Emergency Management Agency",
-      "FEMA State Homeland Security Program · Alabama",
-      4362750,
-      "FY2024 SHSP allocations",
-      "https://www.fema.gov/sites/default/files/documents/fema_gpd_ib-517a.pdf"
-    ],
-    [
-      "Federal Emergency Management Agency",
-      "FEMA State Homeland Security Program · Alaska",
-      4362750,
-      "FY2024 SHSP allocations",
-      "https://www.fema.gov/sites/default/files/documents/fema_gpd_ib-517a.pdf"
-    ],
-    [
-      "Federal Emergency Management Agency",
-      "FEMA State Homeland Security Program · American Samoa",
-      997200,
-      "FY2024 SHSP allocations",
-      "https://www.fema.gov/sites/default/files/documents/fema_gpd_ib-517a.pdf"
-    ],
-    [
-      "Federal Emergency Management Agency",
-      "FEMA State Homeland Security Program · Arizona",
-      4362750,
-      "FY2024 SHSP allocations",
-      "https://www.fema.gov/sites/default/files/documents/fema_gpd_ib-517a.pdf"
-    ],
-    [
-      "Federal Emergency Management Agency",
-      "FEMA State Homeland Security Program · Arkansas",
-      4362750,
-      "FY2024 SHSP allocations",
-      "https://www.fema.gov/sites/default/files/documents/fema_gpd_ib-517a.pdf"
-    ],
-    [
-      "Federal Emergency Management Agency",
-      "FEMA State Homeland Security Program · California",
-      51332060,
-      "FY2024 SHSP allocations",
-      "https://www.fema.gov/sites/default/files/documents/fema_gpd_ib-517a.pdf"
-    ],
-    [
-      "Federal Emergency Management Agency",
-      "FEMA State Homeland Security Program · Colorado",
-      4362750,
-      "FY2024 SHSP allocations",
-      "https://www.fema.gov/sites/default/files/documents/fema_gpd_ib-517a.pdf"
-    ],
-    [
-      "Federal Emergency Management Agency",
-      "FEMA State Homeland Security Program · Connecticut",
-      4362750,
-      "FY2024 SHSP allocations",
-      "https://www.fema.gov/sites/default/files/documents/fema_gpd_ib-517a.pdf"
-    ],
-    [
-      "Federal Emergency Management Agency",
-      "FEMA State Homeland Security Program · Delaware",
-      4362750,
-      "FY2024 SHSP allocations",
-      "https://www.fema.gov/sites/default/files/documents/fema_gpd_ib-517a.pdf"
-    ],
-    [
-      "Federal Emergency Management Agency",
-      "FEMA State Homeland Security Program · District of Columbia",
-      4576849,
-      "FY2024 SHSP allocations",
-      "https://www.fema.gov/sites/default/files/documents/fema_gpd_ib-517a.pdf"
-    ],
-    [
-      "Federal Emergency Management Agency",
-      "FEMA State Homeland Security Program · Florida",
-      8409514,
-      "FY2024 SHSP allocations",
-      "https://www.fema.gov/sites/default/files/documents/fema_gpd_ib-517a.pdf"
-    ],
-    [
-      "Federal Emergency Management Agency",
-      "FEMA State Homeland Security Program · Georgia",
-      4759790,
-      "FY2024 SHSP allocations",
-      "https://www.fema.gov/sites/default/files/documents/fema_gpd_ib-517a.pdf"
-    ],
-    [
-      "Federal Emergency Management Agency",
-      "FEMA State Homeland Security Program · Guam",
-      997200,
-      "FY2024 SHSP allocations",
-      "https://www.fema.gov/sites/default/files/documents/fema_gpd_ib-517a.pdf"
-    ],
-    [
-      "Federal Emergency Management Agency",
-      "FEMA State Homeland Security Program · Hawaii",
-      4362750,
-      "FY2024 SHSP allocations",
-      "https://www.fema.gov/sites/default/files/documents/fema_gpd_ib-517a.pdf"
-    ],
-    [
-      "Federal Emergency Management Agency",
-      "FEMA State Homeland Security Program · Idaho",
-      4362750,
-      "FY2024 SHSP allocations",
-      "https://www.fema.gov/sites/default/files/documents/fema_gpd_ib-517a.pdf"
-    ],
-    [
-      "Federal Emergency Management Agency",
-      "FEMA State Homeland Security Program · Illinois",
-      12505419,
-      "FY2024 SHSP allocations",
-      "https://www.fema.gov/sites/default/files/documents/fema_gpd_ib-517a.pdf"
-    ],
-    [
-      "Federal Emergency Management Agency",
-      "FEMA State Homeland Security Program · Indiana",
-      4362750,
-      "FY2024 SHSP allocations",
-      "https://www.fema.gov/sites/default/files/documents/fema_gpd_ib-517a.pdf"
-    ],
-    [
-      "Federal Emergency Management Agency",
-      "FEMA State Homeland Security Program · Iowa",
-      4362750,
-      "FY2024 SHSP allocations",
-      "https://www.fema.gov/sites/default/files/documents/fema_gpd_ib-517a.pdf"
-    ],
-    [
-      "Federal Emergency Management Agency",
-      "FEMA State Homeland Security Program · Kansas",
-      4362750,
-      "FY2024 SHSP allocations",
-      "https://www.fema.gov/sites/default/files/documents/fema_gpd_ib-517a.pdf"
-    ],
-    [
-      "Federal Emergency Management Agency",
-      "FEMA State Homeland Security Program · Kentucky",
-      4362750,
-      "FY2024 SHSP allocations",
-      "https://www.fema.gov/sites/default/files/documents/fema_gpd_ib-517a.pdf"
-    ],
-    [
-      "Federal Emergency Management Agency",
-      "FEMA State Homeland Security Program · Louisiana",
-      4362750,
-      "FY2024 SHSP allocations",
-      "https://www.fema.gov/sites/default/files/documents/fema_gpd_ib-517a.pdf"
-    ],
-    [
-      "Federal Emergency Management Agency",
-      "FEMA State Homeland Security Program · Maine",
-      4362750,
-      "FY2024 SHSP allocations",
-      "https://www.fema.gov/sites/default/files/documents/fema_gpd_ib-517a.pdf"
-    ],
-    [
-      "Federal Emergency Management Agency",
-      "FEMA State Homeland Security Program · Maryland",
-      6367357,
-      "FY2024 SHSP allocations",
-      "https://www.fema.gov/sites/default/files/documents/fema_gpd_ib-517a.pdf"
-    ],
-    [
-      "Federal Emergency Management Agency",
-      "FEMA State Homeland Security Program · Massachusetts",
-      5571852,
-      "FY2024 SHSP allocations",
-      "https://www.fema.gov/sites/default/files/documents/fema_gpd_ib-517a.pdf"
-    ],
-    [
-      "Federal Emergency Management Agency",
-      "FEMA State Homeland Security Program · Michigan",
-      4576849,
-      "FY2024 SHSP allocations",
-      "https://www.fema.gov/sites/default/files/documents/fema_gpd_ib-517a.pdf"
-    ],
-    [
-      "Federal Emergency Management Agency",
-      "FEMA State Homeland Security Program · Minnesota",
-      4362750,
-      "FY2024 SHSP allocations",
-      "https://www.fema.gov/sites/default/files/documents/fema_gpd_ib-517a.pdf"
-    ],
-    [
-      "Federal Emergency Management Agency",
-      "FEMA State Homeland Security Program · Mississippi",
-      4362750,
-      "FY2024 SHSP allocations",
-      "https://www.fema.gov/sites/default/files/documents/fema_gpd_ib-517a.pdf"
-    ],
-    [
-      "Federal Emergency Management Agency",
-      "FEMA State Homeland Security Program · Missouri",
-      4362750,
-      "FY2024 SHSP allocations",
-      "https://www.fema.gov/sites/default/files/documents/fema_gpd_ib-517a.pdf"
-    ],
-    [
-      "Federal Emergency Management Agency",
-      "FEMA State Homeland Security Program · Montana",
-      4362750,
-      "FY2024 SHSP allocations",
-      "https://www.fema.gov/sites/default/files/documents/fema_gpd_ib-517a.pdf"
-    ],
-    [
-      "Federal Emergency Management Agency",
-      "FEMA State Homeland Security Program · Nebraska",
-      4362750,
-      "FY2024 SHSP allocations",
-      "https://www.fema.gov/sites/default/files/documents/fema_gpd_ib-517a.pdf"
-    ],
-    [
-      "Federal Emergency Management Agency",
-      "FEMA State Homeland Security Program · Nevada",
-      4362750,
-      "FY2024 SHSP allocations",
-      "https://www.fema.gov/sites/default/files/documents/fema_gpd_ib-517a.pdf"
-    ],
-    [
-      "Federal Emergency Management Agency",
-      "FEMA State Homeland Security Program · New Hampshire",
-      4362750,
-      "FY2024 SHSP allocations",
-      "https://www.fema.gov/sites/default/files/documents/fema_gpd_ib-517a.pdf"
-    ],
-    [
-      "Federal Emergency Management Agency",
-      "FEMA State Homeland Security Program · New Jersey",
-      6367357,
-      "FY2024 SHSP allocations",
-      "https://www.fema.gov/sites/default/files/documents/fema_gpd_ib-517a.pdf"
-    ],
-    [
-      "Federal Emergency Management Agency",
-      "FEMA State Homeland Security Program · New Mexico",
-      4362750,
-      "FY2024 SHSP allocations",
-      "https://www.fema.gov/sites/default/files/documents/fema_gpd_ib-517a.pdf"
-    ],
-    [
-      "Federal Emergency Management Agency",
-      "FEMA State Homeland Security Program · New York",
-      61229940,
-      "FY2024 SHSP allocations",
-      "https://www.fema.gov/sites/default/files/documents/fema_gpd_ib-517a.pdf"
-    ],
-    [
-      "Federal Emergency Management Agency",
-      "FEMA State Homeland Security Program · North Carolina",
-      4576849,
-      "FY2024 SHSP allocations",
-      "https://www.fema.gov/sites/default/files/documents/fema_gpd_ib-517a.pdf"
-    ],
-    [
-      "Federal Emergency Management Agency",
-      "FEMA State Homeland Security Program · North Dakota",
-      4362750,
-      "FY2024 SHSP allocations",
-      "https://www.fema.gov/sites/default/files/documents/fema_gpd_ib-517a.pdf"
-    ],
-    [
-      "Federal Emergency Management Agency",
-      "FEMA State Homeland Security Program · Northern Mariana Islands",
-      997200,
-      "FY2024 SHSP allocations",
-      "https://www.fema.gov/sites/default/files/documents/fema_gpd_ib-517a.pdf"
-    ],
-    [
-      "Federal Emergency Management Agency",
-      "FEMA State Homeland Security Program · Ohio",
-      5571852,
-      "FY2024 SHSP allocations",
-      "https://www.fema.gov/sites/default/files/documents/fema_gpd_ib-517a.pdf"
-    ],
-    [
-      "Federal Emergency Management Agency",
-      "FEMA State Homeland Security Program · Oklahoma",
-      4362750,
-      "FY2024 SHSP allocations",
-      "https://www.fema.gov/sites/default/files/documents/fema_gpd_ib-517a.pdf"
-    ],
-    [
-      "Federal Emergency Management Agency",
-      "FEMA State Homeland Security Program · Oregon",
-      4362750,
-      "FY2024 SHSP allocations",
-      "https://www.fema.gov/sites/default/files/documents/fema_gpd_ib-517a.pdf"
-    ],
-    [
-      "Federal Emergency Management Agency",
-      "FEMA State Homeland Security Program · Pennsylvania",
-      7322627,
-      "FY2024 SHSP allocations",
-      "https://www.fema.gov/sites/default/files/documents/fema_gpd_ib-517a.pdf"
-    ],
-    [
-      "Federal Emergency Management Agency",
-      "FEMA State Homeland Security Program · Puerto Rico",
-      4362750,
-      "FY2024 SHSP allocations",
-      "https://www.fema.gov/sites/default/files/documents/fema_gpd_ib-517a.pdf"
-    ],
-    [
-      "Federal Emergency Management Agency",
-      "FEMA State Homeland Security Program · Rhode Island",
-      4362750,
-      "FY2024 SHSP allocations",
-      "https://www.fema.gov/sites/default/files/documents/fema_gpd_ib-517a.pdf"
-    ],
-    [
-      "Federal Emergency Management Agency",
-      "FEMA State Homeland Security Program · South Carolina",
-      4362750,
-      "FY2024 SHSP allocations",
-      "https://www.fema.gov/sites/default/files/documents/fema_gpd_ib-517a.pdf"
-    ],
-    [
-      "Federal Emergency Management Agency",
-      "FEMA State Homeland Security Program · South Dakota",
-      4362750,
-      "FY2024 SHSP allocations",
-      "https://www.fema.gov/sites/default/files/documents/fema_gpd_ib-517a.pdf"
-    ],
-    [
-      "Federal Emergency Management Agency",
-      "FEMA State Homeland Security Program · Tennessee",
-      4362750,
-      "FY2024 SHSP allocations",
-      "https://www.fema.gov/sites/default/files/documents/fema_gpd_ib-517a.pdf"
-    ],
-    [
-      "Federal Emergency Management Agency",
-      "FEMA State Homeland Security Program · Texas",
-      16389406,
-      "FY2024 SHSP allocations",
-      "https://www.fema.gov/sites/default/files/documents/fema_gpd_ib-517a.pdf"
-    ],
-    [
-      "Federal Emergency Management Agency",
-      "FEMA State Homeland Security Program · U.S. Virgin Islands",
-      997200,
-      "FY2024 SHSP allocations",
-      "https://www.fema.gov/sites/default/files/documents/fema_gpd_ib-517a.pdf"
-    ],
-    [
-      "Federal Emergency Management Agency",
-      "FEMA State Homeland Security Program · Utah",
-      4362750,
-      "FY2024 SHSP allocations",
-      "https://www.fema.gov/sites/default/files/documents/fema_gpd_ib-517a.pdf"
-    ],
-    [
-      "Federal Emergency Management Agency",
-      "FEMA State Homeland Security Program · Vermont",
-      4362750,
-      "FY2024 SHSP allocations",
-      "https://www.fema.gov/sites/default/files/documents/fema_gpd_ib-517a.pdf"
-    ],
-    [
-      "Federal Emergency Management Agency",
-      "FEMA State Homeland Security Program · Virginia",
-      7322627,
-      "FY2024 SHSP allocations",
-      "https://www.fema.gov/sites/default/files/documents/fema_gpd_ib-517a.pdf"
-    ],
-    [
-      "Federal Emergency Management Agency",
-      "FEMA State Homeland Security Program · Washington",
-      5571852,
-      "FY2024 SHSP allocations",
-      "https://www.fema.gov/sites/default/files/documents/fema_gpd_ib-517a.pdf"
-    ],
-    [
-      "Federal Emergency Management Agency",
-      "FEMA State Homeland Security Program · West Virginia",
-      4362750,
-      "FY2024 SHSP allocations",
-      "https://www.fema.gov/sites/default/files/documents/fema_gpd_ib-517a.pdf"
-    ],
-    [
-      "Federal Emergency Management Agency",
-      "FEMA State Homeland Security Program · Wisconsin",
-      4362750,
-      "FY2024 SHSP allocations",
-      "https://www.fema.gov/sites/default/files/documents/fema_gpd_ib-517a.pdf"
-    ],
-    [
-      "Federal Emergency Management Agency",
-      "FEMA State Homeland Security Program · Wyoming",
-      4362750,
-      "FY2024 SHSP allocations",
-      "https://www.fema.gov/sites/default/files/documents/fema_gpd_ib-517a.pdf"
-    ],
-    [
-      "Federal Emergency Management Agency",
-      "FEMA Emergency Management Performance Grant · Alabama",
-      5289642,
-      "FY2024 EMPG allocations",
-      "https://www.fema.gov/sites/default/files/documents/fema_gpd_ib-517a.pdf"
-    ],
-    [
-      "Federal Emergency Management Agency",
-      "FEMA Emergency Management Performance Grant · Alaska",
-      2811645,
-      "FY2024 EMPG allocations",
-      "https://www.fema.gov/sites/default/files/documents/fema_gpd_ib-517a.pdf"
-    ],
-    [
-      "Federal Emergency Management Agency",
-      "FEMA Emergency Management Performance Grant · American Samoa",
-      826905,
-      "FY2024 EMPG allocations",
-      "https://www.fema.gov/sites/default/files/documents/fema_gpd_ib-517a.pdf"
-    ],
-    [
-      "Federal Emergency Management Agency",
-      "FEMA Emergency Management Performance Grant · Arizona",
-      6605298,
-      "FY2024 EMPG allocations",
-      "https://www.fema.gov/sites/default/files/documents/fema_gpd_ib-517a.pdf"
-    ],
-    [
-      "Federal Emergency Management Agency",
-      "FEMA Emergency Management Performance Grant · Arkansas",
-      4133787,
-      "FY2024 EMPG allocations",
-      "https://www.fema.gov/sites/default/files/documents/fema_gpd_ib-517a.pdf"
-    ],
-    [
-      "Federal Emergency Management Agency",
-      "FEMA Emergency Management Performance Grant · California",
-      24465792,
-      "FY2024 EMPG allocations",
-      "https://www.fema.gov/sites/default/files/documents/fema_gpd_ib-517a.pdf"
-    ],
-    [
-      "Federal Emergency Management Agency",
-      "FEMA Emergency Management Performance Grant · Colorado",
-      5725277,
-      "FY2024 EMPG allocations",
-      "https://www.fema.gov/sites/default/files/documents/fema_gpd_ib-517a.pdf"
-    ],
-    [
-      "Federal Emergency Management Agency",
-      "FEMA Emergency Management Performance Grant · Connecticut",
-      4444987,
-      "FY2024 EMPG allocations",
-      "https://www.fema.gov/sites/default/files/documents/fema_gpd_ib-517a.pdf"
-    ],
-    [
-      "Federal Emergency Management Agency",
-      "FEMA Emergency Management Performance Grant · Delaware",
-      2980703,
-      "FY2024 EMPG allocations",
-      "https://www.fema.gov/sites/default/files/documents/fema_gpd_ib-517a.pdf"
-    ],
-    [
-      "Federal Emergency Management Agency",
-      "FEMA Emergency Management Performance Grant · District of Columbia",
-      2780814,
-      "FY2024 EMPG allocations",
-      "https://www.fema.gov/sites/default/files/documents/fema_gpd_ib-517a.pdf"
-    ],
-    [
-      "Federal Emergency Management Agency",
-      "FEMA Emergency Management Performance Grant · Florida",
-      15202768,
-      "FY2024 EMPG allocations",
-      "https://www.fema.gov/sites/default/files/documents/fema_gpd_ib-517a.pdf"
-    ],
-    [
-      "Federal Emergency Management Agency",
-      "FEMA Emergency Management Performance Grant · Georgia",
-      8643108,
-      "FY2024 EMPG allocations",
-      "https://www.fema.gov/sites/default/files/documents/fema_gpd_ib-517a.pdf"
-    ],
-    [
-      "Federal Emergency Management Agency",
-      "FEMA Emergency Management Performance Grant · Guam",
-      885881,
-      "FY2024 EMPG allocations",
-      "https://www.fema.gov/sites/default/files/documents/fema_gpd_ib-517a.pdf"
-    ],
-    [
-      "Federal Emergency Management Agency",
-      "FEMA Emergency Management Performance Grant · Hawaii",
-      3209100,
-      "FY2024 EMPG allocations",
-      "https://www.fema.gov/sites/default/files/documents/fema_gpd_ib-517a.pdf"
-    ],
-    [
-      "Federal Emergency Management Agency",
-      "FEMA Emergency Management Performance Grant · Idaho",
-      3509054,
-      "FY2024 EMPG allocations",
-      "https://www.fema.gov/sites/default/files/documents/fema_gpd_ib-517a.pdf"
-    ],
-    [
-      "Federal Emergency Management Agency",
-      "FEMA Emergency Management Performance Grant · Illinois",
-      9504284,
-      "FY2024 EMPG allocations",
-      "https://www.fema.gov/sites/default/files/documents/fema_gpd_ib-517a.pdf"
-    ],
-    [
-      "Federal Emergency Management Agency",
-      "FEMA Emergency Management Performance Grant · Indiana",
-      6282940,
-      "FY2024 EMPG allocations",
-      "https://www.fema.gov/sites/default/files/documents/fema_gpd_ib-517a.pdf"
-    ],
-    [
-      "Federal Emergency Management Agency",
-      "FEMA Emergency Management Performance Grant · Iowa",
-      4212669,
-      "FY2024 EMPG allocations",
-      "https://www.fema.gov/sites/default/files/documents/fema_gpd_ib-517a.pdf"
-    ],
-    [
-      "Federal Emergency Management Agency",
-      "FEMA Emergency Management Performance Grant · Kansas",
-      4061750,
-      "FY2024 EMPG allocations",
-      "https://www.fema.gov/sites/default/files/documents/fema_gpd_ib-517a.pdf"
-    ],
-    [
-      "Federal Emergency Management Agency",
-      "FEMA Emergency Management Performance Grant · Kentucky",
-      4959824,
-      "FY2024 EMPG allocations",
-      "https://www.fema.gov/sites/default/files/documents/fema_gpd_ib-517a.pdf"
-    ],
-    [
-      "Federal Emergency Management Agency",
-      "FEMA Emergency Management Performance Grant · Louisiana",
-      4986782,
-      "FY2024 EMPG allocations",
-      "https://www.fema.gov/sites/default/files/documents/fema_gpd_ib-517a.pdf"
-    ],
-    [
-      "Federal Emergency Management Agency",
-      "FEMA Emergency Management Performance Grant · Maine",
-      3186775,
-      "FY2024 EMPG allocations",
-      "https://www.fema.gov/sites/default/files/documents/fema_gpd_ib-517a.pdf"
-    ],
-    [
-      "Federal Emergency Management Agency",
-      "FEMA Emergency Management Performance Grant · Maryland",
-      5896691,
-      "FY2024 EMPG allocations",
-      "https://www.fema.gov/sites/default/files/documents/fema_gpd_ib-517a.pdf"
-    ],
-    [
-      "Federal Emergency Management Agency",
-      "FEMA Emergency Management Performance Grant · Massachusetts",
-      6361781,
-      "FY2024 EMPG allocations",
-      "https://www.fema.gov/sites/default/files/documents/fema_gpd_ib-517a.pdf"
-    ],
-    [
-      "Federal Emergency Management Agency",
-      "FEMA Emergency Management Performance Grant · Michigan",
-      8081267,
-      "FY2024 EMPG allocations",
-      "https://www.fema.gov/sites/default/files/documents/fema_gpd_ib-517a.pdf"
-    ],
-    [
-      "Federal Emergency Management Agency",
-      "FEMA Emergency Management Performance Grant · Minnesota",
-      5646155,
-      "FY2024 EMPG allocations",
-      "https://www.fema.gov/sites/default/files/documents/fema_gpd_ib-517a.pdf"
-    ],
-    [
-      "Federal Emergency Management Agency",
-      "FEMA Emergency Management Performance Grant · Mississippi",
-      4061265,
-      "FY2024 EMPG allocations",
-      "https://www.fema.gov/sites/default/files/documents/fema_gpd_ib-517a.pdf"
-    ],
-    [
-      "Federal Emergency Management Agency",
-      "FEMA Emergency Management Performance Grant · Missouri",
-      5905699,
-      "FY2024 EMPG allocations",
-      "https://www.fema.gov/sites/default/files/documents/fema_gpd_ib-517a.pdf"
-    ],
-    [
-      "Federal Emergency Management Agency",
-      "FEMA Emergency Management Performance Grant · Montana",
-      3037865,
-      "FY2024 EMPG allocations",
-      "https://www.fema.gov/sites/default/files/documents/fema_gpd_ib-517a.pdf"
-    ],
-    [
-      "Federal Emergency Management Agency",
-      "FEMA Emergency Management Performance Grant · Nebraska",
-      3516787,
-      "FY2024 EMPG allocations",
-      "https://www.fema.gov/sites/default/files/documents/fema_gpd_ib-517a.pdf"
-    ],
-    [
-      "Federal Emergency Management Agency",
-      "FEMA Emergency Management Performance Grant · Nevada",
-      4205403,
-      "FY2024 EMPG allocations",
-      "https://www.fema.gov/sites/default/files/documents/fema_gpd_ib-517a.pdf"
-    ],
-    [
-      "Federal Emergency Management Agency",
-      "FEMA Emergency Management Performance Grant · New Hampshire",
-      3190361,
-      "FY2024 EMPG allocations",
-      "https://www.fema.gov/sites/default/files/documents/fema_gpd_ib-517a.pdf"
-    ],
-    [
-      "Federal Emergency Management Agency",
-      "FEMA Emergency Management Performance Grant · New Jersey",
-      7658501,
-      "FY2024 EMPG allocations",
-      "https://www.fema.gov/sites/default/files/documents/fema_gpd_ib-517a.pdf"
-    ],
-    [
-      "Federal Emergency Management Agency",
-      "FEMA Emergency Management Performance Grant · New Mexico",
-      3593811,
-      "FY2024 EMPG allocations",
-      "https://www.fema.gov/sites/default/files/documents/fema_gpd_ib-517a.pdf"
-    ],
-    [
-      "Federal Emergency Management Agency",
-      "FEMA Emergency Management Performance Grant · New York",
-      13481216,
-      "FY2024 EMPG allocations",
-      "https://www.fema.gov/sites/default/files/documents/fema_gpd_ib-517a.pdf"
-    ],
-    [
-      "Federal Emergency Management Agency",
-      "FEMA Emergency Management Performance Grant · North Carolina",
-      8533378,
-      "FY2024 EMPG allocations",
-      "https://www.fema.gov/sites/default/files/documents/fema_gpd_ib-517a.pdf"
-    ],
-    [
-      "Federal Emergency Management Agency",
-      "FEMA Emergency Management Performance Grant · North Dakota",
-      2840259,
-      "FY2024 EMPG allocations",
-      "https://www.fema.gov/sites/default/files/documents/fema_gpd_ib-517a.pdf"
-    ],
-    [
-      "Federal Emergency Management Agency",
-      "FEMA Emergency Management Performance Grant · Northern Mariana Islands",
-      825557,
-      "FY2024 EMPG allocations",
-      "https://www.fema.gov/sites/default/files/documents/fema_gpd_ib-517a.pdf"
-    ],
-    [
-      "Federal Emergency Management Agency",
-      "FEMA Emergency Management Performance Grant · Ohio",
-      9071701,
-      "FY2024 EMPG allocations",
-      "https://www.fema.gov/sites/default/files/documents/fema_gpd_ib-517a.pdf"
-    ],
-    [
-      "Federal Emergency Management Agency",
-      "FEMA Emergency Management Performance Grant · Oklahoma",
-      4692301,
-      "FY2024 EMPG allocations",
-      "https://www.fema.gov/sites/default/files/documents/fema_gpd_ib-517a.pdf"
-    ],
-    [
-      "Federal Emergency Management Agency",
-      "FEMA Emergency Management Performance Grant · Oregon",
-      4793987,
-      "FY2024 EMPG allocations",
-      "https://www.fema.gov/sites/default/files/documents/fema_gpd_ib-517a.pdf"
-    ],
-    [
-      "Federal Emergency Management Agency",
-      "FEMA Emergency Management Performance Grant · Pennsylvania",
-      9737634,
-      "FY2024 EMPG allocations",
-      "https://www.fema.gov/sites/default/files/documents/fema_gpd_ib-517a.pdf"
-    ],
-    [
-      "Federal Emergency Management Agency",
-      "FEMA Emergency Management Performance Grant · Puerto Rico",
-      4211925,
-      "FY2024 EMPG allocations",
-      "https://www.fema.gov/sites/default/files/documents/fema_gpd_ib-517a.pdf"
-    ],
-    [
-      "Federal Emergency Management Agency",
-      "FEMA Emergency Management Performance Grant · Rhode Island",
-      3016993,
-      "FY2024 EMPG allocations",
-      "https://www.fema.gov/sites/default/files/documents/fema_gpd_ib-517a.pdf"
-    ],
-    [
-      "Federal Emergency Management Agency",
-      "FEMA Emergency Management Performance Grant · South Carolina",
-      5439785,
-      "FY2024 EMPG allocations",
-      "https://www.fema.gov/sites/default/files/documents/fema_gpd_ib-517a.pdf"
-    ],
-    [
-      "Federal Emergency Management Agency",
-      "FEMA Emergency Management Performance Grant · South Dakota",
-      2916944,
-      "FY2024 EMPG allocations",
-      "https://www.fema.gov/sites/default/files/documents/fema_gpd_ib-517a.pdf"
-    ],
-    [
-      "Federal Emergency Management Agency",
-      "FEMA Emergency Management Performance Grant · Tennessee",
-      6432631,
-      "FY2024 EMPG allocations",
-      "https://www.fema.gov/sites/default/files/documents/fema_gpd_ib-517a.pdf"
-    ],
-    [
-      "Federal Emergency Management Agency",
-      "FEMA Emergency Management Performance Grant · Texas",
-      19673053,
-      "FY2024 EMPG allocations",
-      "https://www.fema.gov/sites/default/files/documents/fema_gpd_ib-517a.pdf"
-    ],
-    [
-      "Federal Emergency Management Agency",
-      "FEMA Emergency Management Performance Grant · U.S. Virgin Islands",
-      848109,
-      "FY2024 EMPG allocations",
-      "https://www.fema.gov/sites/default/files/documents/fema_gpd_ib-517a.pdf"
-    ],
-    [
-      "Federal Emergency Management Agency",
-      "FEMA Emergency Management Performance Grant · Utah",
-      4332025,
-      "FY2024 EMPG allocations",
-      "https://www.fema.gov/sites/default/files/documents/fema_gpd_ib-517a.pdf"
-    ],
-    [
-      "Federal Emergency Management Agency",
-      "FEMA Emergency Management Performance Grant · Vermont",
-      2762968,
-      "FY2024 EMPG allocations",
-      "https://www.fema.gov/sites/default/files/documents/fema_gpd_ib-517a.pdf"
-    ],
-    [
-      "Federal Emergency Management Agency",
-      "FEMA Emergency Management Performance Grant · Virginia",
-      7332745,
-      "FY2024 EMPG allocations",
-      "https://www.fema.gov/sites/default/files/documents/fema_gpd_ib-517a.pdf"
-    ],
-    [
-      "Federal Emergency Management Agency",
-      "FEMA Emergency Management Performance Grant · Washington",
-      6821397,
-      "FY2024 EMPG allocations",
-      "https://www.fema.gov/sites/default/files/documents/fema_gpd_ib-517a.pdf"
-    ],
-    [
-      "Federal Emergency Management Agency",
-      "FEMA Emergency Management Performance Grant · West Virginia",
-      3398803,
-      "FY2024 EMPG allocations",
-      "https://www.fema.gov/sites/default/files/documents/fema_gpd_ib-517a.pdf"
-    ],
-    [
-      "Federal Emergency Management Agency",
-      "FEMA Emergency Management Performance Grant · Wisconsin",
-      5744163,
-      "FY2024 EMPG allocations",
-      "https://www.fema.gov/sites/default/files/documents/fema_gpd_ib-517a.pdf"
-    ],
-    [
-      "Federal Emergency Management Agency",
-      "FEMA Emergency Management Performance Grant · Wyoming",
-      2727055,
-      "FY2024 EMPG allocations",
-      "https://www.fema.gov/sites/default/files/documents/fema_gpd_ib-517a.pdf"
-    ]
+    ["Federal Emergency Management Agency", "FEMA State and Local Cybersecurity Grant Program · Alabama", 5910794, "FY2024 SLCGP updated allocations", "https://www.fema.gov/sites/default/files/documents/fema_gpd_fy24-slcgp-ib-updated-allocations_01082025.pdf"],
+    ["Federal Emergency Management Agency", "FEMA State and Local Cybersecurity Grant Program · Alaska", 3410486, "FY2024 SLCGP updated allocations", "https://www.fema.gov/sites/default/files/documents/fema_gpd_fy24-slcgp-ib-updated-allocations_01082025.pdf"],
+    ["Federal Emergency Management Agency", "FEMA State and Local Cybersecurity Grant Program · Arizona", 5091462, "FY2024 SLCGP updated allocations", "https://www.fema.gov/sites/default/files/documents/fema_gpd_fy24-slcgp-ib-updated-allocations_01082025.pdf"],
+    ["Federal Emergency Management Agency", "FEMA State and Local Cybersecurity Grant Program · Arkansas", 4831568, "FY2024 SLCGP updated allocations", "https://www.fema.gov/sites/default/files/documents/fema_gpd_fy24-slcgp-ib-updated-allocations_01082025.pdf"],
+    ["Federal Emergency Management Agency", "FEMA State and Local Cybersecurity Grant Program · California", 12102976, "FY2024 SLCGP updated allocations", "https://www.fema.gov/sites/default/files/documents/fema_gpd_fy24-slcgp-ib-updated-allocations_01082025.pdf"],
+    ["Federal Emergency Management Agency", "FEMA State and Local Cybersecurity Grant Program · Colorado", 4843598, "FY2024 SLCGP updated allocations", "https://www.fema.gov/sites/default/files/documents/fema_gpd_fy24-slcgp-ib-updated-allocations_01082025.pdf"],
+    ["Federal Emergency Management Agency", "FEMA State and Local Cybersecurity Grant Program · Connecticut", 4154342, "FY2024 SLCGP updated allocations", "https://www.fema.gov/sites/default/files/documents/fema_gpd_fy24-slcgp-ib-updated-allocations_01082025.pdf"],
+    ["Federal Emergency Management Agency", "FEMA State and Local Cybersecurity Grant Program · Delaware", 3387232, "FY2024 SLCGP updated allocations", "https://www.fema.gov/sites/default/files/documents/fema_gpd_fy24-slcgp-ib-updated-allocations_01082025.pdf"],
+    ["Federal Emergency Management Agency", "FEMA State and Local Cybersecurity Grant Program · District of Columbia", 3169761, "FY2024 SLCGP updated allocations", "https://www.fema.gov/sites/default/files/documents/fema_gpd_fy24-slcgp-ib-updated-allocations_01082025.pdf"],
+    ["Federal Emergency Management Agency", "FEMA State and Local Cybersecurity Grant Program · Florida", 8784903, "FY2024 SLCGP updated allocations", "https://www.fema.gov/sites/default/files/documents/fema_gpd_fy24-slcgp-ib-updated-allocations_01082025.pdf"],
+    ["Federal Emergency Management Agency", "FEMA State and Local Cybersecurity Grant Program · Georgia", 7590000, "FY2024 SLCGP updated allocations", "https://www.fema.gov/sites/default/files/documents/fema_gpd_fy24-slcgp-ib-updated-allocations_01082025.pdf"],
+    ["Federal Emergency Management Agency", "FEMA State and Local Cybersecurity Grant Program · Hawaii", 3481823, "FY2024 SLCGP updated allocations", "https://www.fema.gov/sites/default/files/documents/fema_gpd_fy24-slcgp-ib-updated-allocations_01082025.pdf"],
+    ["Federal Emergency Management Agency", "FEMA State and Local Cybersecurity Grant Program · Idaho", 3924878, "FY2024 SLCGP updated allocations", "https://www.fema.gov/sites/default/files/documents/fema_gpd_fy24-slcgp-ib-updated-allocations_01082025.pdf"],
+    ["Federal Emergency Management Agency", "FEMA State and Local Cybersecurity Grant Program · Illinois", 6833696, "FY2024 SLCGP updated allocations", "https://www.fema.gov/sites/default/files/documents/fema_gpd_fy24-slcgp-ib-updated-allocations_01082025.pdf"],
+    ["Federal Emergency Management Agency", "FEMA State and Local Cybersecurity Grant Program · Indiana", 6076862, "FY2024 SLCGP updated allocations", "https://www.fema.gov/sites/default/files/documents/fema_gpd_fy24-slcgp-ib-updated-allocations_01082025.pdf"],
+    ["Federal Emergency Management Agency", "FEMA State and Local Cybersecurity Grant Program · Iowa", 4703963, "FY2024 SLCGP updated allocations", "https://www.fema.gov/sites/default/files/documents/fema_gpd_fy24-slcgp-ib-updated-allocations_01082025.pdf"],
+    ["Federal Emergency Management Agency", "FEMA State and Local Cybersecurity Grant Program · Kansas", 4326591, "FY2024 SLCGP updated allocations", "https://www.fema.gov/sites/default/files/documents/fema_gpd_fy24-slcgp-ib-updated-allocations_01082025.pdf"],
+    ["Federal Emergency Management Agency", "FEMA State and Local Cybersecurity Grant Program · Kentucky", 5564421, "FY2024 SLCGP updated allocations", "https://www.fema.gov/sites/default/files/documents/fema_gpd_fy24-slcgp-ib-updated-allocations_01082025.pdf"],
+    ["Federal Emergency Management Agency", "FEMA State and Local Cybersecurity Grant Program · Louisiana", 5077130, "FY2024 SLCGP updated allocations", "https://www.fema.gov/sites/default/files/documents/fema_gpd_fy24-slcgp-ib-updated-allocations_01082025.pdf"],
+    ["Federal Emergency Management Agency", "FEMA State and Local Cybersecurity Grant Program · Maine", 4069238, "FY2024 SLCGP updated allocations", "https://www.fema.gov/sites/default/files/documents/fema_gpd_fy24-slcgp-ib-updated-allocations_01082025.pdf"],
+    ["Federal Emergency Management Agency", "FEMA State and Local Cybersecurity Grant Program · Maryland", 4980182, "FY2024 SLCGP updated allocations", "https://www.fema.gov/sites/default/files/documents/fema_gpd_fy24-slcgp-ib-updated-allocations_01082025.pdf"],
+    ["Federal Emergency Management Agency", "FEMA State and Local Cybersecurity Grant Program · Massachusetts", 4868352, "FY2024 SLCGP updated allocations", "https://www.fema.gov/sites/default/files/documents/fema_gpd_fy24-slcgp-ib-updated-allocations_01082025.pdf"],
+    ["Federal Emergency Management Agency", "FEMA State and Local Cybersecurity Grant Program · Michigan", 7303610, "FY2024 SLCGP updated allocations", "https://www.fema.gov/sites/default/files/documents/fema_gpd_fy24-slcgp-ib-updated-allocations_01082025.pdf"],
+    ["Federal Emergency Management Agency", "FEMA State and Local Cybersecurity Grant Program · Minnesota", 5548026, "FY2024 SLCGP updated allocations", "https://www.fema.gov/sites/default/files/documents/fema_gpd_fy24-slcgp-ib-updated-allocations_01082025.pdf"],
+    ["Federal Emergency Management Agency", "FEMA State and Local Cybersecurity Grant Program · Mississippi", 5034487, "FY2024 SLCGP updated allocations", "https://www.fema.gov/sites/default/files/documents/fema_gpd_fy24-slcgp-ib-updated-allocations_01082025.pdf"],
+    ["Federal Emergency Management Agency", "FEMA State and Local Cybersecurity Grant Program · Missouri", 5889477, "FY2024 SLCGP updated allocations", "https://www.fema.gov/sites/default/files/documents/fema_gpd_fy24-slcgp-ib-updated-allocations_01082025.pdf"],
+    ["Federal Emergency Management Agency", "FEMA State and Local Cybersecurity Grant Program · Montana", 3715508, "FY2024 SLCGP updated allocations", "https://www.fema.gov/sites/default/files/documents/fema_gpd_fy24-slcgp-ib-updated-allocations_01082025.pdf"],
+    ["Federal Emergency Management Agency", "FEMA State and Local Cybersecurity Grant Program · Nebraska", 3888856, "FY2024 SLCGP updated allocations", "https://www.fema.gov/sites/default/files/documents/fema_gpd_fy24-slcgp-ib-updated-allocations_01082025.pdf"],
+    ["Federal Emergency Management Agency", "FEMA State and Local Cybersecurity Grant Program · Nevada", 3792609, "FY2024 SLCGP updated allocations", "https://www.fema.gov/sites/default/files/documents/fema_gpd_fy24-slcgp-ib-updated-allocations_01082025.pdf"],
+    ["Federal Emergency Management Agency", "FEMA State and Local Cybersecurity Grant Program · New Hampshire", 3831884, "FY2024 SLCGP updated allocations", "https://www.fema.gov/sites/default/files/documents/fema_gpd_fy24-slcgp-ib-updated-allocations_01082025.pdf"],
+    ["Federal Emergency Management Agency", "FEMA State and Local Cybersecurity Grant Program · New Jersey", 5247180, "FY2024 SLCGP updated allocations", "https://www.fema.gov/sites/default/files/documents/fema_gpd_fy24-slcgp-ib-updated-allocations_01082025.pdf"],
+    ["Federal Emergency Management Agency", "FEMA State and Local Cybersecurity Grant Program · New Mexico", 3919423, "FY2024 SLCGP updated allocations", "https://www.fema.gov/sites/default/files/documents/fema_gpd_fy24-slcgp-ib-updated-allocations_01082025.pdf"],
+    ["Federal Emergency Management Agency", "FEMA State and Local Cybersecurity Grant Program · New York", 8892219, "FY2024 SLCGP updated allocations", "https://www.fema.gov/sites/default/files/documents/fema_gpd_fy24-slcgp-ib-updated-allocations_01082025.pdf"],
+    ["Federal Emergency Management Agency", "FEMA State and Local Cybersecurity Grant Program · North Carolina", 8189359, "FY2024 SLCGP updated allocations", "https://www.fema.gov/sites/default/files/documents/fema_gpd_fy24-slcgp-ib-updated-allocations_01082025.pdf"],
+    ["Federal Emergency Management Agency", "FEMA State and Local Cybersecurity Grant Program · North Dakota", 3467145, "FY2024 SLCGP updated allocations", "https://www.fema.gov/sites/default/files/documents/fema_gpd_fy24-slcgp-ib-updated-allocations_01082025.pdf"],
+    ["Federal Emergency Management Agency", "FEMA State and Local Cybersecurity Grant Program · Ohio", 7736398, "FY2024 SLCGP updated allocations", "https://www.fema.gov/sites/default/files/documents/fema_gpd_fy24-slcgp-ib-updated-allocations_01082025.pdf"],
+    ["Federal Emergency Management Agency", "FEMA State and Local Cybersecurity Grant Program · Oklahoma", 5065376, "FY2024 SLCGP updated allocations", "https://www.fema.gov/sites/default/files/documents/fema_gpd_fy24-slcgp-ib-updated-allocations_01082025.pdf"],
+    ["Federal Emergency Management Agency", "FEMA State and Local Cybersecurity Grant Program · Oregon", 4559670, "FY2024 SLCGP updated allocations", "https://www.fema.gov/sites/default/files/documents/fema_gpd_fy24-slcgp-ib-updated-allocations_01082025.pdf"],
+    ["Federal Emergency Management Agency", "FEMA State and Local Cybersecurity Grant Program · Pennsylvania", 8165829, "FY2024 SLCGP updated allocations", "https://www.fema.gov/sites/default/files/documents/fema_gpd_fy24-slcgp-ib-updated-allocations_01082025.pdf"],
+    ["Federal Emergency Management Agency", "FEMA State and Local Cybersecurity Grant Program · Rhode Island", 3335047, "FY2024 SLCGP updated allocations", "https://www.fema.gov/sites/default/files/documents/fema_gpd_fy24-slcgp-ib-updated-allocations_01082025.pdf"],
+    ["Federal Emergency Management Agency", "FEMA State and Local Cybersecurity Grant Program · South Carolina", 5527716, "FY2024 SLCGP updated allocations", "https://www.fema.gov/sites/default/files/documents/fema_gpd_fy24-slcgp-ib-updated-allocations_01082025.pdf"],
+    ["Federal Emergency Management Agency", "FEMA State and Local Cybersecurity Grant Program · South Dakota", 0, "FY2024 SLCGP updated allocations", "https://www.fema.gov/sites/default/files/documents/fema_gpd_fy24-slcgp-ib-updated-allocations_01082025.pdf"],
+    ["Federal Emergency Management Agency", "FEMA State and Local Cybersecurity Grant Program · Tennessee", 6469777, "FY2024 SLCGP updated allocations", "https://www.fema.gov/sites/default/files/documents/fema_gpd_fy24-slcgp-ib-updated-allocations_01082025.pdf"],
+    ["Federal Emergency Management Agency", "FEMA State and Local Cybersecurity Grant Program · Texas", 12903025, "FY2024 SLCGP updated allocations", "https://www.fema.gov/sites/default/files/documents/fema_gpd_fy24-slcgp-ib-updated-allocations_01082025.pdf"],
+    ["Federal Emergency Management Agency", "FEMA State and Local Cybersecurity Grant Program · Utah", 3974410, "FY2024 SLCGP updated allocations", "https://www.fema.gov/sites/default/files/documents/fema_gpd_fy24-slcgp-ib-updated-allocations_01082025.pdf"],
+    ["Federal Emergency Management Agency", "FEMA State and Local Cybersecurity Grant Program · Vermont", 3545618, "FY2024 SLCGP updated allocations", "https://www.fema.gov/sites/default/files/documents/fema_gpd_fy24-slcgp-ib-updated-allocations_01082025.pdf"],
+    ["Federal Emergency Management Agency", "FEMA State and Local Cybersecurity Grant Program · Virginia", 6548801, "FY2024 SLCGP updated allocations", "https://www.fema.gov/sites/default/files/documents/fema_gpd_fy24-slcgp-ib-updated-allocations_01082025.pdf"],
+    ["Federal Emergency Management Agency", "FEMA State and Local Cybersecurity Grant Program · Washington", 5621825, "FY2024 SLCGP updated allocations", "https://www.fema.gov/sites/default/files/documents/fema_gpd_fy24-slcgp-ib-updated-allocations_01082025.pdf"],
+    ["Federal Emergency Management Agency", "FEMA State and Local Cybersecurity Grant Program · West Virginia", 4268863, "FY2024 SLCGP updated allocations", "https://www.fema.gov/sites/default/files/documents/fema_gpd_fy24-slcgp-ib-updated-allocations_01082025.pdf"],
+    ["Federal Emergency Management Agency", "FEMA State and Local Cybersecurity Grant Program · Wisconsin", 5890643, "FY2024 SLCGP updated allocations", "https://www.fema.gov/sites/default/files/documents/fema_gpd_fy24-slcgp-ib-updated-allocations_01082025.pdf"],
+    ["Federal Emergency Management Agency", "FEMA State and Local Cybersecurity Grant Program · Wyoming", 3354614, "FY2024 SLCGP updated allocations", "https://www.fema.gov/sites/default/files/documents/fema_gpd_fy24-slcgp-ib-updated-allocations_01082025.pdf"],
+    ["Federal Emergency Management Agency", "FEMA State and Local Cybersecurity Grant Program · Puerto Rico", 3853356, "FY2024 SLCGP updated allocations", "https://www.fema.gov/sites/default/files/documents/fema_gpd_fy24-slcgp-ib-updated-allocations_01082025.pdf"],
+    ["Federal Emergency Management Agency", "FEMA State and Local Cybersecurity Grant Program · U.S. Virgin Islands", 781511, "FY2024 SLCGP updated allocations", "https://www.fema.gov/sites/default/files/documents/fema_gpd_fy24-slcgp-ib-updated-allocations_01082025.pdf"],
+    ["Federal Emergency Management Agency", "FEMA State and Local Cybersecurity Grant Program · American Samoa", 781921, "FY2024 SLCGP updated allocations", "https://www.fema.gov/sites/default/files/documents/fema_gpd_fy24-slcgp-ib-updated-allocations_01082025.pdf"],
+    ["Federal Emergency Management Agency", "FEMA State and Local Cybersecurity Grant Program · Guam", 805143, "FY2024 SLCGP updated allocations", "https://www.fema.gov/sites/default/files/documents/fema_gpd_fy24-slcgp-ib-updated-allocations_01082025.pdf"],
+    ["Federal Emergency Management Agency", "FEMA State and Local Cybersecurity Grant Program · Northern Mariana Islands", 779978, "FY2024 SLCGP updated allocations", "https://www.fema.gov/sites/default/files/documents/fema_gpd_fy24-slcgp-ib-updated-allocations_01082025.pdf"],
+    ["Federal Emergency Management Agency", "FEMA State Homeland Security Program · Alabama", 4362750, "FY2024 SHSP allocations", "https://www.fema.gov/sites/default/files/documents/fema_gpd_ib-517a.pdf"],
+    ["Federal Emergency Management Agency", "FEMA State Homeland Security Program · Alaska", 4362750, "FY2024 SHSP allocations", "https://www.fema.gov/sites/default/files/documents/fema_gpd_ib-517a.pdf"],
+    ["Federal Emergency Management Agency", "FEMA State Homeland Security Program · American Samoa", 997200, "FY2024 SHSP allocations", "https://www.fema.gov/sites/default/files/documents/fema_gpd_ib-517a.pdf"],
+    ["Federal Emergency Management Agency", "FEMA State Homeland Security Program · Arizona", 4362750, "FY2024 SHSP allocations", "https://www.fema.gov/sites/default/files/documents/fema_gpd_ib-517a.pdf"],
+    ["Federal Emergency Management Agency", "FEMA State Homeland Security Program · Arkansas", 4362750, "FY2024 SHSP allocations", "https://www.fema.gov/sites/default/files/documents/fema_gpd_ib-517a.pdf"],
+    ["Federal Emergency Management Agency", "FEMA State Homeland Security Program · California", 51332060, "FY2024 SHSP allocations", "https://www.fema.gov/sites/default/files/documents/fema_gpd_ib-517a.pdf"],
+    ["Federal Emergency Management Agency", "FEMA State Homeland Security Program · Colorado", 4362750, "FY2024 SHSP allocations", "https://www.fema.gov/sites/default/files/documents/fema_gpd_ib-517a.pdf"],
+    ["Federal Emergency Management Agency", "FEMA State Homeland Security Program · Connecticut", 4362750, "FY2024 SHSP allocations", "https://www.fema.gov/sites/default/files/documents/fema_gpd_ib-517a.pdf"],
+    ["Federal Emergency Management Agency", "FEMA State Homeland Security Program · Delaware", 4362750, "FY2024 SHSP allocations", "https://www.fema.gov/sites/default/files/documents/fema_gpd_ib-517a.pdf"],
+    ["Federal Emergency Management Agency", "FEMA State Homeland Security Program · District of Columbia", 4576849, "FY2024 SHSP allocations", "https://www.fema.gov/sites/default/files/documents/fema_gpd_ib-517a.pdf"],
+    ["Federal Emergency Management Agency", "FEMA State Homeland Security Program · Florida", 8409514, "FY2024 SHSP allocations", "https://www.fema.gov/sites/default/files/documents/fema_gpd_ib-517a.pdf"],
+    ["Federal Emergency Management Agency", "FEMA State Homeland Security Program · Georgia", 4759790, "FY2024 SHSP allocations", "https://www.fema.gov/sites/default/files/documents/fema_gpd_ib-517a.pdf"],
+    ["Federal Emergency Management Agency", "FEMA State Homeland Security Program · Guam", 997200, "FY2024 SHSP allocations", "https://www.fema.gov/sites/default/files/documents/fema_gpd_ib-517a.pdf"],
+    ["Federal Emergency Management Agency", "FEMA State Homeland Security Program · Hawaii", 4362750, "FY2024 SHSP allocations", "https://www.fema.gov/sites/default/files/documents/fema_gpd_ib-517a.pdf"],
+    ["Federal Emergency Management Agency", "FEMA State Homeland Security Program · Idaho", 4362750, "FY2024 SHSP allocations", "https://www.fema.gov/sites/default/files/documents/fema_gpd_ib-517a.pdf"],
+    ["Federal Emergency Management Agency", "FEMA State Homeland Security Program · Illinois", 12505419, "FY2024 SHSP allocations", "https://www.fema.gov/sites/default/files/documents/fema_gpd_ib-517a.pdf"],
+    ["Federal Emergency Management Agency", "FEMA State Homeland Security Program · Indiana", 4362750, "FY2024 SHSP allocations", "https://www.fema.gov/sites/default/files/documents/fema_gpd_ib-517a.pdf"],
+    ["Federal Emergency Management Agency", "FEMA State Homeland Security Program · Iowa", 4362750, "FY2024 SHSP allocations", "https://www.fema.gov/sites/default/files/documents/fema_gpd_ib-517a.pdf"],
+    ["Federal Emergency Management Agency", "FEMA State Homeland Security Program · Kansas", 4362750, "FY2024 SHSP allocations", "https://www.fema.gov/sites/default/files/documents/fema_gpd_ib-517a.pdf"],
+    ["Federal Emergency Management Agency", "FEMA State Homeland Security Program · Kentucky", 4362750, "FY2024 SHSP allocations", "https://www.fema.gov/sites/default/files/documents/fema_gpd_ib-517a.pdf"],
+    ["Federal Emergency Management Agency", "FEMA State Homeland Security Program · Louisiana", 4362750, "FY2024 SHSP allocations", "https://www.fema.gov/sites/default/files/documents/fema_gpd_ib-517a.pdf"],
+    ["Federal Emergency Management Agency", "FEMA State Homeland Security Program · Maine", 4362750, "FY2024 SHSP allocations", "https://www.fema.gov/sites/default/files/documents/fema_gpd_ib-517a.pdf"],
+    ["Federal Emergency Management Agency", "FEMA State Homeland Security Program · Maryland", 6367357, "FY2024 SHSP allocations", "https://www.fema.gov/sites/default/files/documents/fema_gpd_ib-517a.pdf"],
+    ["Federal Emergency Management Agency", "FEMA State Homeland Security Program · Massachusetts", 5571852, "FY2024 SHSP allocations", "https://www.fema.gov/sites/default/files/documents/fema_gpd_ib-517a.pdf"],
+    ["Federal Emergency Management Agency", "FEMA State Homeland Security Program · Michigan", 4576849, "FY2024 SHSP allocations", "https://www.fema.gov/sites/default/files/documents/fema_gpd_ib-517a.pdf"],
+    ["Federal Emergency Management Agency", "FEMA State Homeland Security Program · Minnesota", 4362750, "FY2024 SHSP allocations", "https://www.fema.gov/sites/default/files/documents/fema_gpd_ib-517a.pdf"],
+    ["Federal Emergency Management Agency", "FEMA State Homeland Security Program · Mississippi", 4362750, "FY2024 SHSP allocations", "https://www.fema.gov/sites/default/files/documents/fema_gpd_ib-517a.pdf"],
+    ["Federal Emergency Management Agency", "FEMA State Homeland Security Program · Missouri", 4362750, "FY2024 SHSP allocations", "https://www.fema.gov/sites/default/files/documents/fema_gpd_ib-517a.pdf"],
+    ["Federal Emergency Management Agency", "FEMA State Homeland Security Program · Montana", 4362750, "FY2024 SHSP allocations", "https://www.fema.gov/sites/default/files/documents/fema_gpd_ib-517a.pdf"],
+    ["Federal Emergency Management Agency", "FEMA State Homeland Security Program · Nebraska", 4362750, "FY2024 SHSP allocations", "https://www.fema.gov/sites/default/files/documents/fema_gpd_ib-517a.pdf"],
+    ["Federal Emergency Management Agency", "FEMA State Homeland Security Program · Nevada", 4362750, "FY2024 SHSP allocations", "https://www.fema.gov/sites/default/files/documents/fema_gpd_ib-517a.pdf"],
+    ["Federal Emergency Management Agency", "FEMA State Homeland Security Program · New Hampshire", 4362750, "FY2024 SHSP allocations", "https://www.fema.gov/sites/default/files/documents/fema_gpd_ib-517a.pdf"],
+    ["Federal Emergency Management Agency", "FEMA State Homeland Security Program · New Jersey", 6367357, "FY2024 SHSP allocations", "https://www.fema.gov/sites/default/files/documents/fema_gpd_ib-517a.pdf"],
+    ["Federal Emergency Management Agency", "FEMA State Homeland Security Program · New Mexico", 4362750, "FY2024 SHSP allocations", "https://www.fema.gov/sites/default/files/documents/fema_gpd_ib-517a.pdf"],
+    ["Federal Emergency Management Agency", "FEMA State Homeland Security Program · New York", 61229940, "FY2024 SHSP allocations", "https://www.fema.gov/sites/default/files/documents/fema_gpd_ib-517a.pdf"],
+    ["Federal Emergency Management Agency", "FEMA State Homeland Security Program · North Carolina", 4576849, "FY2024 SHSP allocations", "https://www.fema.gov/sites/default/files/documents/fema_gpd_ib-517a.pdf"],
+    ["Federal Emergency Management Agency", "FEMA State Homeland Security Program · North Dakota", 4362750, "FY2024 SHSP allocations", "https://www.fema.gov/sites/default/files/documents/fema_gpd_ib-517a.pdf"],
+    ["Federal Emergency Management Agency", "FEMA State Homeland Security Program · Northern Mariana Islands", 997200, "FY2024 SHSP allocations", "https://www.fema.gov/sites/default/files/documents/fema_gpd_ib-517a.pdf"],
+    ["Federal Emergency Management Agency", "FEMA State Homeland Security Program · Ohio", 5571852, "FY2024 SHSP allocations", "https://www.fema.gov/sites/default/files/documents/fema_gpd_ib-517a.pdf"],
+    ["Federal Emergency Management Agency", "FEMA State Homeland Security Program · Oklahoma", 4362750, "FY2024 SHSP allocations", "https://www.fema.gov/sites/default/files/documents/fema_gpd_ib-517a.pdf"],
+    ["Federal Emergency Management Agency", "FEMA State Homeland Security Program · Oregon", 4362750, "FY2024 SHSP allocations", "https://www.fema.gov/sites/default/files/documents/fema_gpd_ib-517a.pdf"],
+    ["Federal Emergency Management Agency", "FEMA State Homeland Security Program · Pennsylvania", 7322627, "FY2024 SHSP allocations", "https://www.fema.gov/sites/default/files/documents/fema_gpd_ib-517a.pdf"],
+    ["Federal Emergency Management Agency", "FEMA State Homeland Security Program · Puerto Rico", 4362750, "FY2024 SHSP allocations", "https://www.fema.gov/sites/default/files/documents/fema_gpd_ib-517a.pdf"],
+    ["Federal Emergency Management Agency", "FEMA State Homeland Security Program · Rhode Island", 4362750, "FY2024 SHSP allocations", "https://www.fema.gov/sites/default/files/documents/fema_gpd_ib-517a.pdf"],
+    ["Federal Emergency Management Agency", "FEMA State Homeland Security Program · South Carolina", 4362750, "FY2024 SHSP allocations", "https://www.fema.gov/sites/default/files/documents/fema_gpd_ib-517a.pdf"],
+    ["Federal Emergency Management Agency", "FEMA State Homeland Security Program · South Dakota", 4362750, "FY2024 SHSP allocations", "https://www.fema.gov/sites/default/files/documents/fema_gpd_ib-517a.pdf"],
+    ["Federal Emergency Management Agency", "FEMA State Homeland Security Program · Tennessee", 4362750, "FY2024 SHSP allocations", "https://www.fema.gov/sites/default/files/documents/fema_gpd_ib-517a.pdf"],
+    ["Federal Emergency Management Agency", "FEMA State Homeland Security Program · Texas", 16389406, "FY2024 SHSP allocations", "https://www.fema.gov/sites/default/files/documents/fema_gpd_ib-517a.pdf"],
+    ["Federal Emergency Management Agency", "FEMA State Homeland Security Program · U.S. Virgin Islands", 997200, "FY2024 SHSP allocations", "https://www.fema.gov/sites/default/files/documents/fema_gpd_ib-517a.pdf"],
+    ["Federal Emergency Management Agency", "FEMA State Homeland Security Program · Utah", 4362750, "FY2024 SHSP allocations", "https://www.fema.gov/sites/default/files/documents/fema_gpd_ib-517a.pdf"],
+    ["Federal Emergency Management Agency", "FEMA State Homeland Security Program · Vermont", 4362750, "FY2024 SHSP allocations", "https://www.fema.gov/sites/default/files/documents/fema_gpd_ib-517a.pdf"],
+    ["Federal Emergency Management Agency", "FEMA State Homeland Security Program · Virginia", 7322627, "FY2024 SHSP allocations", "https://www.fema.gov/sites/default/files/documents/fema_gpd_ib-517a.pdf"],
+    ["Federal Emergency Management Agency", "FEMA State Homeland Security Program · Washington", 5571852, "FY2024 SHSP allocations", "https://www.fema.gov/sites/default/files/documents/fema_gpd_ib-517a.pdf"],
+    ["Federal Emergency Management Agency", "FEMA State Homeland Security Program · West Virginia", 4362750, "FY2024 SHSP allocations", "https://www.fema.gov/sites/default/files/documents/fema_gpd_ib-517a.pdf"],
+    ["Federal Emergency Management Agency", "FEMA State Homeland Security Program · Wisconsin", 4362750, "FY2024 SHSP allocations", "https://www.fema.gov/sites/default/files/documents/fema_gpd_ib-517a.pdf"],
+    ["Federal Emergency Management Agency", "FEMA State Homeland Security Program · Wyoming", 4362750, "FY2024 SHSP allocations", "https://www.fema.gov/sites/default/files/documents/fema_gpd_ib-517a.pdf"],
+    ["Federal Emergency Management Agency", "FEMA Emergency Management Performance Grant · Alabama", 5289642, "FY2024 EMPG allocations", "https://www.fema.gov/sites/default/files/documents/fema_gpd_ib-517a.pdf"],
+    ["Federal Emergency Management Agency", "FEMA Emergency Management Performance Grant · Alaska", 2811645, "FY2024 EMPG allocations", "https://www.fema.gov/sites/default/files/documents/fema_gpd_ib-517a.pdf"],
+    ["Federal Emergency Management Agency", "FEMA Emergency Management Performance Grant · American Samoa", 826905, "FY2024 EMPG allocations", "https://www.fema.gov/sites/default/files/documents/fema_gpd_ib-517a.pdf"],
+    ["Federal Emergency Management Agency", "FEMA Emergency Management Performance Grant · Arizona", 6605298, "FY2024 EMPG allocations", "https://www.fema.gov/sites/default/files/documents/fema_gpd_ib-517a.pdf"],
+    ["Federal Emergency Management Agency", "FEMA Emergency Management Performance Grant · Arkansas", 4133787, "FY2024 EMPG allocations", "https://www.fema.gov/sites/default/files/documents/fema_gpd_ib-517a.pdf"],
+    ["Federal Emergency Management Agency", "FEMA Emergency Management Performance Grant · California", 24465792, "FY2024 EMPG allocations", "https://www.fema.gov/sites/default/files/documents/fema_gpd_ib-517a.pdf"],
+    ["Federal Emergency Management Agency", "FEMA Emergency Management Performance Grant · Colorado", 5725277, "FY2024 EMPG allocations", "https://www.fema.gov/sites/default/files/documents/fema_gpd_ib-517a.pdf"],
+    ["Federal Emergency Management Agency", "FEMA Emergency Management Performance Grant · Connecticut", 4444987, "FY2024 EMPG allocations", "https://www.fema.gov/sites/default/files/documents/fema_gpd_ib-517a.pdf"],
+    ["Federal Emergency Management Agency", "FEMA Emergency Management Performance Grant · Delaware", 2980703, "FY2024 EMPG allocations", "https://www.fema.gov/sites/default/files/documents/fema_gpd_ib-517a.pdf"],
+    ["Federal Emergency Management Agency", "FEMA Emergency Management Performance Grant · District of Columbia", 2780814, "FY2024 EMPG allocations", "https://www.fema.gov/sites/default/files/documents/fema_gpd_ib-517a.pdf"],
+    ["Federal Emergency Management Agency", "FEMA Emergency Management Performance Grant · Florida", 15202768, "FY2024 EMPG allocations", "https://www.fema.gov/sites/default/files/documents/fema_gpd_ib-517a.pdf"],
+    ["Federal Emergency Management Agency", "FEMA Emergency Management Performance Grant · Georgia", 8643108, "FY2024 EMPG allocations", "https://www.fema.gov/sites/default/files/documents/fema_gpd_ib-517a.pdf"],
+    ["Federal Emergency Management Agency", "FEMA Emergency Management Performance Grant · Guam", 885881, "FY2024 EMPG allocations", "https://www.fema.gov/sites/default/files/documents/fema_gpd_ib-517a.pdf"],
+    ["Federal Emergency Management Agency", "FEMA Emergency Management Performance Grant · Hawaii", 3209100, "FY2024 EMPG allocations", "https://www.fema.gov/sites/default/files/documents/fema_gpd_ib-517a.pdf"],
+    ["Federal Emergency Management Agency", "FEMA Emergency Management Performance Grant · Idaho", 3509054, "FY2024 EMPG allocations", "https://www.fema.gov/sites/default/files/documents/fema_gpd_ib-517a.pdf"],
+    ["Federal Emergency Management Agency", "FEMA Emergency Management Performance Grant · Illinois", 9504284, "FY2024 EMPG allocations", "https://www.fema.gov/sites/default/files/documents/fema_gpd_ib-517a.pdf"],
+    ["Federal Emergency Management Agency", "FEMA Emergency Management Performance Grant · Indiana", 6282940, "FY2024 EMPG allocations", "https://www.fema.gov/sites/default/files/documents/fema_gpd_ib-517a.pdf"],
+    ["Federal Emergency Management Agency", "FEMA Emergency Management Performance Grant · Iowa", 4212669, "FY2024 EMPG allocations", "https://www.fema.gov/sites/default/files/documents/fema_gpd_ib-517a.pdf"],
+    ["Federal Emergency Management Agency", "FEMA Emergency Management Performance Grant · Kansas", 4061750, "FY2024 EMPG allocations", "https://www.fema.gov/sites/default/files/documents/fema_gpd_ib-517a.pdf"],
+    ["Federal Emergency Management Agency", "FEMA Emergency Management Performance Grant · Kentucky", 4959824, "FY2024 EMPG allocations", "https://www.fema.gov/sites/default/files/documents/fema_gpd_ib-517a.pdf"],
+    ["Federal Emergency Management Agency", "FEMA Emergency Management Performance Grant · Louisiana", 4986782, "FY2024 EMPG allocations", "https://www.fema.gov/sites/default/files/documents/fema_gpd_ib-517a.pdf"],
+    ["Federal Emergency Management Agency", "FEMA Emergency Management Performance Grant · Maine", 3186775, "FY2024 EMPG allocations", "https://www.fema.gov/sites/default/files/documents/fema_gpd_ib-517a.pdf"],
+    ["Federal Emergency Management Agency", "FEMA Emergency Management Performance Grant · Maryland", 5896691, "FY2024 EMPG allocations", "https://www.fema.gov/sites/default/files/documents/fema_gpd_ib-517a.pdf"],
+    ["Federal Emergency Management Agency", "FEMA Emergency Management Performance Grant · Massachusetts", 6361781, "FY2024 EMPG allocations", "https://www.fema.gov/sites/default/files/documents/fema_gpd_ib-517a.pdf"],
+    ["Federal Emergency Management Agency", "FEMA Emergency Management Performance Grant · Michigan", 8081267, "FY2024 EMPG allocations", "https://www.fema.gov/sites/default/files/documents/fema_gpd_ib-517a.pdf"],
+    ["Federal Emergency Management Agency", "FEMA Emergency Management Performance Grant · Minnesota", 5646155, "FY2024 EMPG allocations", "https://www.fema.gov/sites/default/files/documents/fema_gpd_ib-517a.pdf"],
+    ["Federal Emergency Management Agency", "FEMA Emergency Management Performance Grant · Mississippi", 4061265, "FY2024 EMPG allocations", "https://www.fema.gov/sites/default/files/documents/fema_gpd_ib-517a.pdf"],
+    ["Federal Emergency Management Agency", "FEMA Emergency Management Performance Grant · Missouri", 5905699, "FY2024 EMPG allocations", "https://www.fema.gov/sites/default/files/documents/fema_gpd_ib-517a.pdf"],
+    ["Federal Emergency Management Agency", "FEMA Emergency Management Performance Grant · Montana", 3037865, "FY2024 EMPG allocations", "https://www.fema.gov/sites/default/files/documents/fema_gpd_ib-517a.pdf"],
+    ["Federal Emergency Management Agency", "FEMA Emergency Management Performance Grant · Nebraska", 3516787, "FY2024 EMPG allocations", "https://www.fema.gov/sites/default/files/documents/fema_gpd_ib-517a.pdf"],
+    ["Federal Emergency Management Agency", "FEMA Emergency Management Performance Grant · Nevada", 4205403, "FY2024 EMPG allocations", "https://www.fema.gov/sites/default/files/documents/fema_gpd_ib-517a.pdf"],
+    ["Federal Emergency Management Agency", "FEMA Emergency Management Performance Grant · New Hampshire", 3190361, "FY2024 EMPG allocations", "https://www.fema.gov/sites/default/files/documents/fema_gpd_ib-517a.pdf"],
+    ["Federal Emergency Management Agency", "FEMA Emergency Management Performance Grant · New Jersey", 7658501, "FY2024 EMPG allocations", "https://www.fema.gov/sites/default/files/documents/fema_gpd_ib-517a.pdf"],
+    ["Federal Emergency Management Agency", "FEMA Emergency Management Performance Grant · New Mexico", 3593811, "FY2024 EMPG allocations", "https://www.fema.gov/sites/default/files/documents/fema_gpd_ib-517a.pdf"],
+    ["Federal Emergency Management Agency", "FEMA Emergency Management Performance Grant · New York", 13481216, "FY2024 EMPG allocations", "https://www.fema.gov/sites/default/files/documents/fema_gpd_ib-517a.pdf"],
+    ["Federal Emergency Management Agency", "FEMA Emergency Management Performance Grant · North Carolina", 8533378, "FY2024 EMPG allocations", "https://www.fema.gov/sites/default/files/documents/fema_gpd_ib-517a.pdf"],
+    ["Federal Emergency Management Agency", "FEMA Emergency Management Performance Grant · North Dakota", 2840259, "FY2024 EMPG allocations", "https://www.fema.gov/sites/default/files/documents/fema_gpd_ib-517a.pdf"],
+    ["Federal Emergency Management Agency", "FEMA Emergency Management Performance Grant · Northern Mariana Islands", 825557, "FY2024 EMPG allocations", "https://www.fema.gov/sites/default/files/documents/fema_gpd_ib-517a.pdf"],
+    ["Federal Emergency Management Agency", "FEMA Emergency Management Performance Grant · Ohio", 9071701, "FY2024 EMPG allocations", "https://www.fema.gov/sites/default/files/documents/fema_gpd_ib-517a.pdf"],
+    ["Federal Emergency Management Agency", "FEMA Emergency Management Performance Grant · Oklahoma", 4692301, "FY2024 EMPG allocations", "https://www.fema.gov/sites/default/files/documents/fema_gpd_ib-517a.pdf"],
+    ["Federal Emergency Management Agency", "FEMA Emergency Management Performance Grant · Oregon", 4793987, "FY2024 EMPG allocations", "https://www.fema.gov/sites/default/files/documents/fema_gpd_ib-517a.pdf"],
+    ["Federal Emergency Management Agency", "FEMA Emergency Management Performance Grant · Pennsylvania", 9737634, "FY2024 EMPG allocations", "https://www.fema.gov/sites/default/files/documents/fema_gpd_ib-517a.pdf"],
+    ["Federal Emergency Management Agency", "FEMA Emergency Management Performance Grant · Puerto Rico", 4211925, "FY2024 EMPG allocations", "https://www.fema.gov/sites/default/files/documents/fema_gpd_ib-517a.pdf"],
+    ["Federal Emergency Management Agency", "FEMA Emergency Management Performance Grant · Rhode Island", 3016993, "FY2024 EMPG allocations", "https://www.fema.gov/sites/default/files/documents/fema_gpd_ib-517a.pdf"],
+    ["Federal Emergency Management Agency", "FEMA Emergency Management Performance Grant · South Carolina", 5439785, "FY2024 EMPG allocations", "https://www.fema.gov/sites/default/files/documents/fema_gpd_ib-517a.pdf"],
+    ["Federal Emergency Management Agency", "FEMA Emergency Management Performance Grant · South Dakota", 2916944, "FY2024 EMPG allocations", "https://www.fema.gov/sites/default/files/documents/fema_gpd_ib-517a.pdf"],
+    ["Federal Emergency Management Agency", "FEMA Emergency Management Performance Grant · Tennessee", 6432631, "FY2024 EMPG allocations", "https://www.fema.gov/sites/default/files/documents/fema_gpd_ib-517a.pdf"],
+    ["Federal Emergency Management Agency", "FEMA Emergency Management Performance Grant · Texas", 19673053, "FY2024 EMPG allocations", "https://www.fema.gov/sites/default/files/documents/fema_gpd_ib-517a.pdf"],
+    ["Federal Emergency Management Agency", "FEMA Emergency Management Performance Grant · U.S. Virgin Islands", 848109, "FY2024 EMPG allocations", "https://www.fema.gov/sites/default/files/documents/fema_gpd_ib-517a.pdf"],
+    ["Federal Emergency Management Agency", "FEMA Emergency Management Performance Grant · Utah", 4332025, "FY2024 EMPG allocations", "https://www.fema.gov/sites/default/files/documents/fema_gpd_ib-517a.pdf"],
+    ["Federal Emergency Management Agency", "FEMA Emergency Management Performance Grant · Vermont", 2762968, "FY2024 EMPG allocations", "https://www.fema.gov/sites/default/files/documents/fema_gpd_ib-517a.pdf"],
+    ["Federal Emergency Management Agency", "FEMA Emergency Management Performance Grant · Virginia", 7332745, "FY2024 EMPG allocations", "https://www.fema.gov/sites/default/files/documents/fema_gpd_ib-517a.pdf"],
+    ["Federal Emergency Management Agency", "FEMA Emergency Management Performance Grant · Washington", 6821397, "FY2024 EMPG allocations", "https://www.fema.gov/sites/default/files/documents/fema_gpd_ib-517a.pdf"],
+    ["Federal Emergency Management Agency", "FEMA Emergency Management Performance Grant · West Virginia", 3398803, "FY2024 EMPG allocations", "https://www.fema.gov/sites/default/files/documents/fema_gpd_ib-517a.pdf"],
+    ["Federal Emergency Management Agency", "FEMA Emergency Management Performance Grant · Wisconsin", 5744163, "FY2024 EMPG allocations", "https://www.fema.gov/sites/default/files/documents/fema_gpd_ib-517a.pdf"],
+    ["Federal Emergency Management Agency", "FEMA Emergency Management Performance Grant · Wyoming", 2727055, "FY2024 EMPG allocations", "https://www.fema.gov/sites/default/files/documents/fema_gpd_ib-517a.pdf"]
   ],
-  "supplementalSchema": [
-    "subAgency",
-    "program",
-    "amount",
-    "measure",
-    "source"
-  ],
-  "hierarchyNote": "Object-class rows are directly managed; the parent entity is repeated as the sub-agency placeholder.",
+  "supplementalSchema": ["subAgency", "program", "amount", "measure", "source"],
+  "hierarchyNote": "USAspending program-activity rows preserve the agency gross-outlay control; the parent entity is repeated as the sub-agency placeholder.",
   "sourceUrls": [
-    [
-      "FY2024 gross outlays by object class",
-      "https://api.usaspending.gov/api/v2/agency/070/object_class/?fiscal_year=2024&limit=100&page=1"
-    ],
-    [
-      "FY2024 agency budgetary resources total",
-      "https://api.usaspending.gov/api/v2/agency/070/budgetary_resources/?fiscal_year=2024"
-    ]
+    ["FY2024 gross outlays by program activity · page 1", "https://api.usaspending.gov/api/v2/agency/070/program_activity/?fiscal_year=2024&limit=100&page=1"],
+    ["FY2024 gross outlays by program activity · page 2", "https://api.usaspending.gov/api/v2/agency/070/program_activity/?fiscal_year=2024&limit=100&page=2"],
+    ["FY2024 gross outlays by program activity · page 3", "https://api.usaspending.gov/api/v2/agency/070/program_activity/?fiscal_year=2024&limit=100&page=3"],
+    ["FY2024 agency budgetary resources total", "https://api.usaspending.gov/api/v2/agency/070/budgetary_resources/?fiscal_year=2024"]
   ],
   "sourceBasis": "official source amount",
-  "sourceCheck": {
-    "objectClassRows": 34,
-    "objectClassTotal": 127339045876.54,
-    "agencyTotal": 127339045876.54,
-    "difference": 0
-  },
+  "sourceCheck": {"groupRows": 222, "programActivityTotal": 127339045876.54, "agencyTotal": 127339045876.54, "difference": 0},
   "normalizationAdjustment": -0.03,
-  "note": "Amounts are shown on the official source basis; no comparator normalization was applied."
+  "note": "Program activities replace the former generic object-class view and remain on USAspending gross-outlay basis; no comparator normalization was applied."
 }

@@ -6,628 +6,249 @@
   "fiscalYear": 2024,
   "ledgerAmount": 255349660745.36,
   "sourceTotal": 347998412337.48,
-  "sourceUrl": "https://api.usaspending.gov/api/v2/agency/036/object_class/?fiscal_year=2024&limit=100&page=1",
-  "rowSchema": [
-    "subAgency",
-    "program",
-    "amount",
-    "sourceAmount",
-    "sourceRows"
-  ],
+  "sourceUrl": "https://api.usaspending.gov/api/v2/agency/036/program_activity/?fiscal_year=2024&limit=100&page=1",
+  "rowSchema": ["subAgency", "program", "amount", "sourceAmount", "sourceRows"],
   "rows": [
-    [
-      "Department of Veterans Affairs",
-      "Insurance claims and indemnities",
-      164122766026.59,
-      164122766026.59,
-      null
-    ],
-    [
-      "Department of Veterans Affairs",
-      "Full-time permanent",
-      47421473152.29,
-      47421473152.29,
-      null
-    ],
-    [
-      "Department of Veterans Affairs",
-      "Medical care",
-      44471257025.89,
-      44471257025.89,
-      null
-    ],
-    [
-      "Department of Veterans Affairs",
-      "Supplies and materials",
-      21438567666.13,
-      21438567666.13,
-      null
-    ],
-    [
-      "Department of Veterans Affairs",
-      "Civilian personnel benefits",
-      19193551929.65,
-      19193551929.65,
-      null
-    ],
-    [
-      "Department of Veterans Affairs",
-      "Grants, subsidies, and contributions",
-      18671537002.55,
-      18671537002.55,
-      null
-    ],
-    [
-      "Department of Veterans Affairs",
-      "Advisory and assistance services",
-      6272813201.2,
-      6272813201.2,
-      null
-    ],
-    [
-      "Department of Veterans Affairs",
-      "Other services from non-Federal sources",
-      6145291982.61,
-      6145291982.61,
-      null
-    ],
-    [
-      "Department of Veterans Affairs",
-      "Land and structures",
-      4048164419.78,
-      4048164419.78,
-      null
-    ],
-    [
-      "Department of Veterans Affairs",
-      "Communications, utilities, and miscellaneous charges",
-      3361528294.04,
-      3361528294.04,
-      null
-    ],
-    [
-      "Department of Veterans Affairs",
-      "Other personnel compensation",
-      3486248745.41,
-      3486248745.41,
-      null
-    ],
-    [
-      "Department of Veterans Affairs",
-      "Travel and transportation of persons",
-      2368611690.11,
-      2368611690.11,
-      null
-    ],
-    [
-      "Department of Veterans Affairs",
-      "Equipment",
-      2675009003.94,
-      2675009003.94,
-      null
-    ],
-    [
-      "Department of Veterans Affairs",
-      "Rental payments to others",
-      1021156201.83,
-      1021156201.83,
-      null
-    ],
-    [
-      "Department of Veterans Affairs",
-      "Operation and maintenance of facilities",
-      838854256.42,
-      838854256.42,
-      null
-    ],
-    [
-      "Department of Veterans Affairs",
-      "Operation and maintenance of equipment",
-      683085034.24,
-      683085034.24,
-      null
-    ],
-    [
-      "Department of Veterans Affairs",
-      "Other than full-time permanent",
-      679610898.5,
-      679610898.5,
-      null
-    ],
-    [
-      "Department of Veterans Affairs",
-      "Refunds",
-      307396653.89,
-      307396653.89,
-      null
-    ],
-    [
-      "Department of Veterans Affairs",
-      "Rental payments to GSA",
-      254687299.31,
-      254687299.31,
-      null
-    ],
-    [
-      "Department of Veterans Affairs",
-      "Other goods and services from Federal sources",
-      224910223.11,
-      224910223.11,
-      null
-    ],
-    [
-      "Department of Veterans Affairs",
-      "Financial transfers",
-      141353561.42,
-      141353561.42,
-      null
-    ],
-    [
-      "Department of Veterans Affairs",
-      "Transportation of things",
-      107630811.78,
-      107630811.78,
-      null
-    ],
-    [
-      "Department of Veterans Affairs",
-      "Printing and reproduction",
-      56719085.01,
-      56719085.01,
-      null
-    ],
-    [
-      "Department of Veterans Affairs",
-      "Benefits for former personnel",
-      7966744.04,
-      7966744.04,
-      null
-    ],
-    [
-      "Department of Veterans Affairs",
-      "Special personal services payments",
-      7806526.75,
-      7806526.75,
-      null
-    ],
-    [
-      "Department of Veterans Affairs",
-      "Interest and dividends",
-      239168,
-      239168,
-      null
-    ],
-    [
-      "Department of Veterans Affairs",
-      "Investments and loans",
-      93742.87,
-      93742.87,
-      null
-    ],
-    [
-      "Department of Veterans Affairs",
-      "Object class not reported by official source",
-      -9918009.88,
-      -9918009.88,
-      null
-    ]
+    ["Department of Veterans Affairs", "VETERANS", 149893642690.33, 149893642690.33, null],
+    ["Department of Veterans Affairs", "HEALTH CARE SERVICES", 50131068309.97, 50131068309.97, null],
+    ["Department of Veterans Affairs", "SURVIVORS", 11872110538.05, 11872110538.05, null],
+    ["Department of Veterans Affairs", "VHA MEDICAL SERVICES", 11705950993, 11705950993, null],
+    ["Department of Veterans Affairs", "AMBULATORY", 10016494811.96, 10016494811.96, null],
+    ["Department of Veterans Affairs", "ALL-VOLUNTEER ASSISTANCE:  BASIC BENEFITS AND ALL OTHER", 9183428886, 9183428886, null],
+    ["Department of Veterans Affairs", "INPATIENT CARE", 9030068237.41, 9030068237.41, null],
+    ["Department of Veterans Affairs", "PHARMACEUTICAL INGREDIENTS", 8053379160, 8053379160, null],
+    ["Department of Veterans Affairs", "COMPENSATION AND PENSIONS", 7503945768.83, 7503945768.83, null],
+    ["Department of Veterans Affairs", "VAMCS & OTHER FIELD ACTIVITIES", 4985406462.07, 4985406462.07, null],
+    ["Department of Veterans Affairs", "PROSTHETIC SUPPLIES AND SERVICES", 4887670423.03, 4887670423.03, null],
+    ["Department of Veterans Affairs", "VHA MEDICAL COMMUNITY CARE", 4800000000, 4800000000, null],
+    ["Department of Veterans Affairs", "OPERATIONS AND MAINTENANCE", 4670284833.61, 4670284833.61, null],
+    ["Department of Veterans Affairs", "LTSS: HOME & COMMUNITY BASED SERVICES", 4191738289.13, 4191738289.13, null],
+    ["Department of Veterans Affairs", "PLANT OPERATION", 2325833040.04, 2325833040.04, null],
+    ["Department of Veterans Affairs", "NON-RECURRING MAINTENANCE", 2260165850.73, 2260165850.73, null],
+    ["Department of Veterans Affairs", "CAREGIVERS SUPPORT PROGRAM", 2100607174.2, 2100607174.2, null],
+    ["Department of Veterans Affairs", "CHAMPVA & OTHER DEPENDENT PROGRAMS", 1978093756.16, 1978093756.16, null],
+    ["Department of Veterans Affairs", "FRANCHISE FUND (REIMBURSABLE)", 1932746107.79, 1932746107.79, null],
+    ["Department of Veterans Affairs", "HOMELESS PROGRAMS GRANTS", 1864101470.46, 1864101470.46, null],
+    ["Department of Veterans Affairs", "LTSS: FACILITY BASED SERVICES", 1855963880.04, 1855963880.04, null],
+    ["Department of Veterans Affairs", "STATE HOME PROGRAMS", 1777488799.61, 1777488799.61, null],
+    ["Department of Veterans Affairs", "SONS AND DAUGHTERS", 1723139304, 1723139304, null],
+    ["Department of Veterans Affairs", "ADMINISTRATIVE AND SALARIES", 1664182356.83, 1664182356.83, null],
+    ["Department of Veterans Affairs", "VISN HEADQUARTERS", 1658942840.06, 1658942840.06, null],
+    ["Department of Veterans Affairs", "EQUIPMENT", 1651383383.21, 1651383383.21, null],
+    ["Department of Veterans Affairs", "REIMBURSABLE PROGRAM-MERCHANDIZING", 1641524396.06, 1641524396.06, null],
+    ["Department of Veterans Affairs", "ENGINEERING & ENVIRONMENTAL MANAGEMENT SERVICES", 1321720780.58, 1321720780.58, null],
+    ["Department of Veterans Affairs", "ALL OTHER SUPPORT AND PROGRAM OFFICES", 1290508926.38, 1290508926.38, null],
+    ["Department of Veterans Affairs", "BENEFICIARY TRAVEL", 1254948287.89, 1254948287.89, null],
+    ["Department of Veterans Affairs", "VBA GENERAL OPERATING EXPENSE", 1247410496.06, 1247410496.06, null],
+    ["Department of Veterans Affairs", "OFFICE OF INFORMATION TECHNOLOGY", 1206907218.92, 1206907218.92, null],
+    ["Department of Veterans Affairs", "DENTAL", 1133153736.85, 1133153736.85, null],
+    ["Department of Veterans Affairs", "LOAN GUARANTEE SUBSIDY", 1095604740, 1095604740, null],
+    ["Department of Veterans Affairs", "ENGINEERING SERVICE", 1031985852.73, 1031985852.73, null],
+    ["Department of Veterans Affairs", "VOCATIONAL REHABILITATION TRAINING", 1023095236, 1023095236, null],
+    ["Department of Veterans Affairs", "SUBSISTENCE ALLOWANCE", 934857958.8, 934857958.8, null],
+    ["Department of Veterans Affairs", "VHA MEDICAL SUPPORT AND COMPLIANCE", 847649776.72, 847649776.72, null],
+    ["Department of Veterans Affairs", "NETWORK DEVELOPMENT & MAINTENANCE", 845964365.58, 845964365.58, null],
+    ["Department of Veterans Affairs", "PREMIUM PAYMENTS", 815933592, 815933592, null],
+    ["Department of Veterans Affairs", "MENTAL HEALTH", 776338835.9, 776338835.9, null],
+    ["Department of Veterans Affairs", "JOINT DOD-VA MEDICAL FACILITY DEMONSTRATION FUND (DIRECT)", 688632110.91, 688632110.91, null],
+    ["Department of Veterans Affairs", "MEDICAL PROGRAMS", 681779976.38, 681779976.38, null],
+    ["Department of Veterans Affairs", "RECURRING MAINTENANCE & REPAIR", 599186486.67, 599186486.67, null],
+    ["Department of Veterans Affairs", "EHR CONTRACT", 597738540.73, 597738540.73, null],
+    ["Department of Veterans Affairs", "OPERATING EQUIPMENT MAINTENANCE & REPAIR", 585959452.4, 585959452.4, null],
+    ["Department of Veterans Affairs", "CHAMPVA (EXCLUDING CAREGIVERS)", 545228963.18, 545228963.18, null],
+    ["Department of Veterans Affairs", "GENERAL ADMINISTRATION, REIMBURSABLE PROGRAM", 534243676.11, 534243676.11, null],
+    ["Department of Veterans Affairs", "GENERAL ADMINISTRATION", 486012151.74, 486012151.74, null],
+    ["Department of Veterans Affairs", "MEDICAL FACILITIES", 470796350.64, 470796350.64, null],
+    ["Department of Veterans Affairs", "INTEGRATED VETERANS CARE", 460231797.34, 460231797.34, null],
+    ["Department of Veterans Affairs", "REIMBURSABLE PROGRAM-OPERATIONS", 457103581.66, 457103581.66, null],
+    ["Department of Veterans Affairs", "DEATH CLAIMS", 434879707.55, 434879707.55, null],
+    ["Department of Veterans Affairs", "EDUCATION", 432739074.73, 432739074.73, null],
+    ["Department of Veterans Affairs", "COMMUNITY CARE", 431710264.98, 431710264.98, null],
+    ["Department of Veterans Affairs", "REIMBURSABLE OPERATING EXPENSES", 427235140.13, 427235140.13, null],
+    ["Department of Veterans Affairs", "REESTIMATES OF LOAN GUARANTEE SUBSIDY", 420319776.8, 420319776.8, null],
+    ["Department of Veterans Affairs", "HUMAN CAPITAL MANAGEMENT", 403805283.4, 403805283.4, null],
+    ["Department of Veterans Affairs", "BIO-MEDICAL LABORATORY SCIENCE RESEARCH (821)", 398461825.29, 398461825.29, null],
+    ["Department of Veterans Affairs", "INFRASTRUCTURE READINESS", 392514037.91, 392514037.91, null],
+    ["Department of Veterans Affairs", "SPOUSES", 381369878.3, 381369878.3, null],
+    ["Department of Veterans Affairs", "VRE", 345960640.92, 345960640.92, null],
+    ["Department of Veterans Affairs", "HEALTH INFORMATICS", 323757613.09, 323757613.09, null],
+    ["Department of Veterans Affairs", "HOUSING", 304484270.96, 304484270.96, null],
+    ["Department of Veterans Affairs", "PMO SUPPORT", 294815210.46, 294815210.46, null],
+    ["Department of Veterans Affairs", "OFFICE OF INSPECTOR GENERAL (DIRECT)", 292609666.55, 292609666.55, null],
+    ["Department of Veterans Affairs", "BOARD OF VETERANS' APPEALS", 275452093.73, 275452093.73, null],
+    ["Department of Veterans Affairs", "TRANSPORTATION", 263144514, 263144514, null],
+    ["Department of Veterans Affairs", "READJUSTMENT COUNSELING SERVICE", 258452469.61, 258452469.61, null],
+    ["Department of Veterans Affairs", "GRANTS FOR CONSTRUCTION OF STATE EXTENDED CARE FACILITIES", 254216018.41, 254216018.41, null],
+    ["Department of Veterans Affairs", "TEXTILE CARE PROCESSING & MANAGEMENT", 243324907.52, 243324907.52, null],
+    ["Department of Veterans Affairs", "CLINICAL SCIENCE RESEARCH (829)", 224073862.11, 224073862.11, null],
+    ["Department of Veterans Affairs", "NATIONAL CEMETERIES", 219522389.14, 219522389.14, null],
+    ["Department of Veterans Affairs", "PATIENT CARE SERVICES", 217118444.93, 217118444.93, null],
+    ["Department of Veterans Affairs", "MEDICAL SERVICES", 204254462.07, 204254462.07, null],
+    ["Department of Veterans Affairs", "SUPPORT SERVICES", 190758553.79, 190758553.79, null],
+    ["Department of Veterans Affairs", "IT SYSTEMS, REIMBURSABLE OBLIGATIONS", 180693759.96, 180693759.96, null],
+    ["Department of Veterans Affairs", "QUALITY AND PATIENT SAFETY", 172714178.7, 172714178.7, null],
+    ["Department of Veterans Affairs", "OTHER FACILITIES OPERATION SUPPORT", 170911026.05, 170911026.05, null],
+    ["Department of Veterans Affairs", "CLOTHING ALLOWANCE", 168070364.08, 168070364.08, null],
+    ["Department of Veterans Affairs", "CLINICAL SERVICES", 163035428.15, 163035428.15, null],
+    ["Department of Veterans Affairs", "GROUNDS MAINTENANCE & FIRE PROTECTION", 162019406.6, 162019406.6, null],
+    ["Department of Veterans Affairs", "RECURRING EXPENSES TRANSFORMATIONAL FUND", 156598172.31, 156598172.31, null],
+    ["Department of Veterans Affairs", "HOUSING GRANTS", 147457772, 147457772, null],
+    ["Department of Veterans Affairs", "MEDICAL SERVICES (REIMBURSABLE)", 145554448.33, 145554448.33, null],
+    ["Department of Veterans Affairs", "AUTOMOBILES AND ADAPTIVE EQUIPMENT", 136033160.1, 136033160.1, null],
+    ["Department of Veterans Affairs", "DEVELOPMENT", 130727322.61, 130727322.61, null],
+    ["Department of Veterans Affairs", "HEALTH SERVICES RESEARCH (824)", 122343264.71, 122343264.71, null],
+    ["Department of Veterans Affairs", "ADMINISTRATIVE EXPENSES", 120131496.23, 120131496.23, null],
+    ["Department of Veterans Affairs", "REHABILITATION RESEARCH (822)", 119969203.2, 119969203.2, null],
+    ["Department of Veterans Affairs", "CHAPTER 1606 RESERVISTS BENEFITS", 117226775.6, 117226775.6, null],
+    ["Department of Veterans Affairs", "SERVICE-CONNECTED DEATHS", 113141037.3, 113141037.3, null],
+    ["Department of Veterans Affairs", "PAYMENT TO SERVICE-DISABLED VETERANS INSURANCE", 108562767.82, 108562767.82, null],
+    ["Department of Veterans Affairs", "CASH SURRENDERS", 103273784.39, 103273784.39, null],
+    ["Department of Veterans Affairs", "TRANSITION AND ECONOMIC DEVELOPMENT", 94634447.83, 94634447.83, null],
+    ["Department of Veterans Affairs", "MILLION VETERANS PROGRAM (826)", 93215329.12, 93215329.12, null],
+    ["Department of Veterans Affairs", "DISCOVERY, EDUCATION AND AFFILIATED NETWORKS", 87437012.83, 87437012.83, null],
+    ["Department of Veterans Affairs", "UNKNOWN/OTHER", 80252641.95, 80252641.95, null],
+    ["Department of Veterans Affairs", "STAFF OFFICES", 69553167.48, 69553167.48, null],
+    ["Department of Veterans Affairs", "INSURANCE", 67083135.31, 67083135.31, null],
+    ["Department of Veterans Affairs", "MEDICAL SUPPORT AND COMPLIANCE (REIMBURSABLE)", 63946558.49, 63946558.49, null],
+    ["Department of Veterans Affairs", "HEADSTONES AND MARKERS", 62581983.57, 62581983.57, null],
+    ["Department of Veterans Affairs", "GRANTS FOR CONSTRUCTION OF STATE VETERANS CEMETERIES", 59409557.48, 59409557.48, null],
+    ["Department of Veterans Affairs", "INTEREST ON REESTIMATES OF LOAN GUARANTEE SUBSIDY", 58740284.04, 58740284.04, null],
+    ["Department of Veterans Affairs", "REGIONAL OFFICES", 51668725.96, 51668725.96, null],
+    ["Department of Veterans Affairs", "MEDICAL AND PROSTHETIC RESEARCH (REIMBURSABLE)", 48070732.35, 48070732.35, null],
+    ["Department of Veterans Affairs", "MISC ASSISTANCE (EAJ, SAFD)", 44921527.42, 44921527.42, null],
+    ["Department of Veterans Affairs", "BURIAL PLOTS", 39292140.64, 39292140.64, null],
+    ["Department of Veterans Affairs", "BURIAL ALLOWANCE", 38868058.45, 38868058.45, null],
+    ["Department of Veterans Affairs", "OPERATIONS", 38743221.76, 38743221.76, null],
+    ["Department of Veterans Affairs", "MATURED ENDOWMENTS", 37383616.78, 37383616.78, null],
+    ["Department of Veterans Affairs", "CAPITAL INVESTMENT", 35391961.67, 35391961.67, null],
+    ["Department of Veterans Affairs", "CHAPTER 33 DOD REIMBURSEMENTS", 35307632.81, 35307632.81, null],
+    ["Department of Veterans Affairs", "VMLI DEATH CLAIMS", 33720629.23, 33720629.23, null],
+    ["Department of Veterans Affairs", "PAYMENTS TO GOE AND IT", 32097805.29, 32097805.29, null],
+    ["Department of Veterans Affairs", "INDIAN HEALTH SERVICES", 31480532.82, 31480532.82, null],
+    ["Department of Veterans Affairs", "PAYMENTS TO STATES", 26958524.68, 26958524.68, null],
+    ["Department of Veterans Affairs", "GRAVELINERS", 23813367.35, 23813367.35, null],
+    ["Department of Veterans Affairs", "CHAPTER 18", 22833927.3, 22833927.3, null],
+    ["Department of Veterans Affairs", "MEDICAL FACILITIES (REIMBURSABLE)", 21309398.1, 21309398.1, null],
+    ["Department of Veterans Affairs", "WORK STUDY", 20462906.59, 20462906.59, null],
+    ["Department of Veterans Affairs", "MEDICAL SUPPORT AND COMPLIANCE", 17694063.1, 17694063.1, null],
+    ["Department of Veterans Affairs", "VHA RESEARCH", 15976237.24, 15976237.24, null],
+    ["Department of Veterans Affairs", "DOD-VA HEALTH CARE SHARING INCENTIVE FUND", 15958233.42, 15958233.42, null],
+    ["Department of Veterans Affairs", "ALL OTHER", 15597597.15, 15597597.15, null],
+    ["Department of Veterans Affairs", "RETF - MINOR CONSTRUCTION", 14538657.19, 14538657.19, null],
+    ["Department of Veterans Affairs", "N/A", 12196825.59, 12196825.59, null],
+    ["Department of Veterans Affairs", "RELIGIOUS, RECREATIONAL, AND ENTERTAINMENT ACTIVITIES", 11469957.39, 11469957.39, null],
+    ["Department of Veterans Affairs", "CAMP LEJEUNE, VETERANS FAMILIES", 11452787.99, 11452787.99, null],
+    ["Department of Veterans Affairs", "REESTIMATES OF DIRECT LOAN SUBSIDY", 11203399.61, 11203399.61, null],
+    ["Department of Veterans Affairs", "RETF - MAJOR CONSTRUCTION", 10599607.35, 10599607.35, null],
+    ["Department of Veterans Affairs", "INTEREST ON REESTIMATES OF DIRECT LOAN SUBSIDY", 10524541.49, 10524541.49, null],
+    ["Department of Veterans Affairs", "P.L. 116-136, CARES ACT - OM", 10396607.24, 10396607.24, null],
+    ["Department of Veterans Affairs", "JOINT DOD-VA MEDICAL FACILITY DEMONSTRATION FUND (REIMBURSABLE)", 9546043.59, 9546043.59, null],
+    ["Department of Veterans Affairs", "DIVIDENDS", 8686558.37, 8686558.37, null],
+    ["Department of Veterans Affairs", "THERAPEUTIC RESIDENCE MAINTENANCE", 8445907.47, 8445907.47, null],
+    ["Department of Veterans Affairs", "CONTRACT COUNSELING", 5428458.73, 5428458.73, null],
+    ["Department of Veterans Affairs", "MEDICAL EXAM PILOT PROGRAM", 5150039, 5150039, null],
+    ["Department of Veterans Affairs", "PAYMENT TO GOE", 4933801.32, 4933801.32, null],
+    ["Department of Veterans Affairs", "DISENROLLMENTS", 2967490.92, 2967490.92, null],
+    ["Department of Veterans Affairs", "RESEARCH", 2720622.05, 2720622.05, null],
+    ["Department of Veterans Affairs", "PAYMENTS TO GOE", 2078000, 2078000, null],
+    ["Department of Veterans Affairs", "TUITION ASSISTANCE", 1973508.29, 1973508.29, null],
+    ["Department of Veterans Affairs", "ADMINISTRATION AND SERVICE-WIDE ACTIVITIES", 1844742.75, 1844742.75, null],
+    ["Department of Veterans Affairs", "P.L. 117-2, ARP, SECTION 8003", 1581739.8, 1581739.8, null],
+    ["Department of Veterans Affairs", "CHAPTER 1606 RESERVISTS SUPPLEMENTARY BENEFITS", 1256594.82, 1256594.82, null],
+    ["Department of Veterans Affairs", "CAPITAL INVESTMENT: POLICY LOANS", 1190507, 1190507, null],
+    ["Department of Veterans Affairs", "VETERANS AND SERVICEPERSONS SUPPLEMENTARY BENEFITS", 953870.27, 953870.27, null],
+    ["Department of Veterans Affairs", "HOUSING TECHNOLOGY GRANTS", 815578.31, 815578.31, null],
+    ["Department of Veterans Affairs", "INTEREST PAID ON DIVIDEND CREDITS AND DEPOSITS", 480110.02, 480110.02, null],
+    ["Department of Veterans Affairs", "CASKETS AND URNS", 386415.06, 386415.06, null],
+    ["Department of Veterans Affairs", "CHOICE ACT, P.L. 113-146, SEC. 801", 343015.88, 343015.88, null],
+    ["Department of Veterans Affairs", "VETERANS CHOICE FUND - PROGRAM", 298965.2, 298965.2, null],
+    ["Department of Veterans Affairs", "PAYMENTS TO CARRIER", 270000, 270000, null],
+    ["Department of Veterans Affairs", "REIMBURSEMENT TO GOE", 243405.48, 243405.48, null],
+    ["Department of Veterans Affairs", "GIFTS AND DONATIONS, NATIONAL CEMETERY GIFT FUND", 209979.7, 209979.7, null],
+    ["Department of Veterans Affairs", "CAPITAL INVESTMENTS, GUARANTEED CLAIMS PAYMENTS, AND OTHER OPERATING EXPENSES", 183771.19, 183771.19, null],
+    ["Department of Veterans Affairs", "LICENSING AND CERTIFICATION", 148561.78, 148561.78, null],
+    ["Department of Veterans Affairs", "DIRECT LOAN SUBSIDY", 106857.18, 106857.18, null],
+    ["Department of Veterans Affairs", "DISCOVERY, EDUCATION AND AFFILIATE NETWORKS", 89307.5, 89307.5, null],
+    ["Department of Veterans Affairs", "OTHER COSTS", 38728.34, 38728.34, null],
+    ["Department of Veterans Affairs", "FACILITIES OPERATION FUND", 31176.45, 31176.45, null],
+    ["Department of Veterans Affairs", "CHAPTER 1607 RESERVISTS BENEFITS", 16755.43, 16755.43, null],
+    ["Department of Veterans Affairs", "OFFICE OF INSPECTOR GENERAL (REIMBURSABLE)", 2000, 2000, null],
+    ["Department of Veterans Affairs", "P.L. 116-136, CARES ACT - PAY", 1119.41, 1119.41, null],
+    ["Department of Veterans Affairs", "PAYMENT TO INSURANCE ACCOUNT", 0, 0, null],
+    ["Department of Veterans Affairs", "MILLION VETERANS PROGRAM 5-YEAR (826)", 0, 0, null],
+    ["Department of Veterans Affairs", "VETERANS CHOICE FUND - ADMINISTRATIVE", 0, 0, null],
+    ["Department of Veterans Affairs", "EMERGENCY NON-VA CARE", -7380.82, -7380.82, null],
+    ["Department of Veterans Affairs", "UNDISTRIBUTED", -20159.95, -20159.95, null],
+    ["Department of Veterans Affairs", "REIMBURSABLE CAPITAL INVESTMENT: SALES PROGRAM: PURCHASE OF EQUIPMENT AND LEASEHOLD", -1754181.98, -1754181.98, null],
+    ["Department of Veterans Affairs", "VETERANS RAPID RETRAINING ASSISTANCE PROGRAM", -4815042.41, -4815042.41, null]
   ],
   "supplementalRows": [
-    [
-      "Veterans Benefits Administration",
-      "VA Veteran Pension expenditures by state of residence · Alabama",
-      51471499.32,
-      "program-expenditure",
-      "https://www.data.va.gov/dataset/Veteran-Pension-Expenditures-By-State-of-Residence/sbtk-kfnm"
-    ],
-    [
-      "Veterans Benefits Administration",
-      "VA Veteran Pension expenditures by state of residence · Alaska",
-      1869324,
-      "program-expenditure",
-      "https://www.data.va.gov/dataset/Veteran-Pension-Expenditures-By-State-of-Residence/sbtk-kfnm"
-    ],
-    [
-      "Veterans Benefits Administration",
-      "VA Veteran Pension expenditures by state of residence · Arizona",
-      45418104.48,
-      "program-expenditure",
-      "https://www.data.va.gov/dataset/Veteran-Pension-Expenditures-By-State-of-Residence/sbtk-kfnm"
-    ],
-    [
-      "Veterans Benefits Administration",
-      "VA Veteran Pension expenditures by state of residence · Arkansas",
-      31648161.48,
-      "program-expenditure",
-      "https://www.data.va.gov/dataset/Veteran-Pension-Expenditures-By-State-of-Residence/sbtk-kfnm"
-    ],
-    [
-      "Veterans Benefits Administration",
-      "VA Veteran Pension expenditures by state of residence · California",
-      192466488.24,
-      "program-expenditure",
-      "https://www.data.va.gov/dataset/Veteran-Pension-Expenditures-By-State-of-Residence/sbtk-kfnm"
-    ],
-    [
-      "Veterans Benefits Administration",
-      "VA Veteran Pension expenditures by state of residence · Colorado",
-      27731860.68,
-      "program-expenditure",
-      "https://www.data.va.gov/dataset/Veteran-Pension-Expenditures-By-State-of-Residence/sbtk-kfnm"
-    ],
-    [
-      "Veterans Benefits Administration",
-      "VA Veteran Pension expenditures by state of residence · Connecticut",
-      11534856.72,
-      "program-expenditure",
-      "https://www.data.va.gov/dataset/Veteran-Pension-Expenditures-By-State-of-Residence/sbtk-kfnm"
-    ],
-    [
-      "Veterans Benefits Administration",
-      "VA Veteran Pension expenditures by state of residence · Delaware",
-      3637800,
-      "program-expenditure",
-      "https://www.data.va.gov/dataset/Veteran-Pension-Expenditures-By-State-of-Residence/sbtk-kfnm"
-    ],
-    [
-      "Veterans Benefits Administration",
-      "VA Veteran Pension expenditures by state of residence · District of Columbia",
-      3992304,
-      "program-expenditure",
-      "https://www.data.va.gov/dataset/Veteran-Pension-Expenditures-By-State-of-Residence/sbtk-kfnm"
-    ],
-    [
-      "Veterans Benefits Administration",
-      "VA Veteran Pension expenditures by state of residence · Florida",
-      187572293.16,
-      "program-expenditure",
-      "https://www.data.va.gov/dataset/Veteran-Pension-Expenditures-By-State-of-Residence/sbtk-kfnm"
-    ],
-    [
-      "Veterans Benefits Administration",
-      "VA Veteran Pension expenditures by state of residence · Georgia",
-      74150657.88,
-      "program-expenditure",
-      "https://www.data.va.gov/dataset/Veteran-Pension-Expenditures-By-State-of-Residence/sbtk-kfnm"
-    ],
-    [
-      "Veterans Benefits Administration",
-      "VA Veteran Pension expenditures by state of residence · Hawaii",
-      4732425.96,
-      "program-expenditure",
-      "https://www.data.va.gov/dataset/Veteran-Pension-Expenditures-By-State-of-Residence/sbtk-kfnm"
-    ],
-    [
-      "Veterans Benefits Administration",
-      "VA Veteran Pension expenditures by state of residence · Idaho",
-      10233195.84,
-      "program-expenditure",
-      "https://www.data.va.gov/dataset/Veteran-Pension-Expenditures-By-State-of-Residence/sbtk-kfnm"
-    ],
-    [
-      "Veterans Benefits Administration",
-      "VA Veteran Pension expenditures by state of residence · Illinois",
-      55152851.4,
-      "program-expenditure",
-      "https://www.data.va.gov/dataset/Veteran-Pension-Expenditures-By-State-of-Residence/sbtk-kfnm"
-    ],
-    [
-      "Veterans Benefits Administration",
-      "VA Veteran Pension expenditures by state of residence · Indiana",
-      36340696.92,
-      "program-expenditure",
-      "https://www.data.va.gov/dataset/Veteran-Pension-Expenditures-By-State-of-Residence/sbtk-kfnm"
-    ],
-    [
-      "Veterans Benefits Administration",
-      "VA Veteran Pension expenditures by state of residence · Iowa",
-      16622415.6,
-      "program-expenditure",
-      "https://www.data.va.gov/dataset/Veteran-Pension-Expenditures-By-State-of-Residence/sbtk-kfnm"
-    ],
-    [
-      "Veterans Benefits Administration",
-      "VA Veteran Pension expenditures by state of residence · Kansas",
-      16307582.76,
-      "program-expenditure",
-      "https://www.data.va.gov/dataset/Veteran-Pension-Expenditures-By-State-of-Residence/sbtk-kfnm"
-    ],
-    [
-      "Veterans Benefits Administration",
-      "VA Veteran Pension expenditures by state of residence · Kentucky",
-      33445001.64,
-      "program-expenditure",
-      "https://www.data.va.gov/dataset/Veteran-Pension-Expenditures-By-State-of-Residence/sbtk-kfnm"
-    ],
-    [
-      "Veterans Benefits Administration",
-      "VA Veteran Pension expenditures by state of residence · Louisiana",
-      41918275.56,
-      "program-expenditure",
-      "https://www.data.va.gov/dataset/Veteran-Pension-Expenditures-By-State-of-Residence/sbtk-kfnm"
-    ],
-    [
-      "Veterans Benefits Administration",
-      "VA Veteran Pension expenditures by state of residence · Maine",
-      8903277.96,
-      "program-expenditure",
-      "https://www.data.va.gov/dataset/Veteran-Pension-Expenditures-By-State-of-Residence/sbtk-kfnm"
-    ],
-    [
-      "Veterans Benefits Administration",
-      "VA Veteran Pension expenditures by state of residence · Maryland",
-      24418554.72,
-      "program-expenditure",
-      "https://www.data.va.gov/dataset/Veteran-Pension-Expenditures-By-State-of-Residence/sbtk-kfnm"
-    ],
-    [
-      "Veterans Benefits Administration",
-      "VA Veteran Pension expenditures by state of residence · Massachusetts",
-      21295095.72,
-      "program-expenditure",
-      "https://www.data.va.gov/dataset/Veteran-Pension-Expenditures-By-State-of-Residence/sbtk-kfnm"
-    ],
-    [
-      "Veterans Benefits Administration",
-      "VA Veteran Pension expenditures by state of residence · Michigan",
-      68354503.44,
-      "program-expenditure",
-      "https://www.data.va.gov/dataset/Veteran-Pension-Expenditures-By-State-of-Residence/sbtk-kfnm"
-    ],
-    [
-      "Veterans Benefits Administration",
-      "VA Veteran Pension expenditures by state of residence · Minnesota",
-      22236107.76,
-      "program-expenditure",
-      "https://www.data.va.gov/dataset/Veteran-Pension-Expenditures-By-State-of-Residence/sbtk-kfnm"
-    ],
-    [
-      "Veterans Benefits Administration",
-      "VA Veteran Pension expenditures by state of residence · Mississippi",
-      21648581.4,
-      "program-expenditure",
-      "https://www.data.va.gov/dataset/Veteran-Pension-Expenditures-By-State-of-Residence/sbtk-kfnm"
-    ],
-    [
-      "Veterans Benefits Administration",
-      "VA Veteran Pension expenditures by state of residence · Missouri",
-      50649935.52,
-      "program-expenditure",
-      "https://www.data.va.gov/dataset/Veteran-Pension-Expenditures-By-State-of-Residence/sbtk-kfnm"
-    ],
-    [
-      "Veterans Benefits Administration",
-      "VA Veteran Pension expenditures by state of residence · Montana",
-      8331096.84,
-      "program-expenditure",
-      "https://www.data.va.gov/dataset/Veteran-Pension-Expenditures-By-State-of-Residence/sbtk-kfnm"
-    ],
-    [
-      "Veterans Benefits Administration",
-      "VA Veteran Pension expenditures by state of residence · Nebraska",
-      9509827.8,
-      "program-expenditure",
-      "https://www.data.va.gov/dataset/Veteran-Pension-Expenditures-By-State-of-Residence/sbtk-kfnm"
-    ],
-    [
-      "Veterans Benefits Administration",
-      "VA Veteran Pension expenditures by state of residence · Nevada",
-      20515158.72,
-      "program-expenditure",
-      "https://www.data.va.gov/dataset/Veteran-Pension-Expenditures-By-State-of-Residence/sbtk-kfnm"
-    ],
-    [
-      "Veterans Benefits Administration",
-      "VA Veteran Pension expenditures by state of residence · New Hampshire",
-      5713608,
-      "program-expenditure",
-      "https://www.data.va.gov/dataset/Veteran-Pension-Expenditures-By-State-of-Residence/sbtk-kfnm"
-    ],
-    [
-      "Veterans Benefits Administration",
-      "VA Veteran Pension expenditures by state of residence · New Jersey",
-      30848210.88,
-      "program-expenditure",
-      "https://www.data.va.gov/dataset/Veteran-Pension-Expenditures-By-State-of-Residence/sbtk-kfnm"
-    ],
-    [
-      "Veterans Benefits Administration",
-      "VA Veteran Pension expenditures by state of residence · New Mexico",
-      16178561.16,
-      "program-expenditure",
-      "https://www.data.va.gov/dataset/Veteran-Pension-Expenditures-By-State-of-Residence/sbtk-kfnm"
-    ],
-    [
-      "Veterans Benefits Administration",
-      "VA Veteran Pension expenditures by state of residence · New York",
-      70092028.8,
-      "program-expenditure",
-      "https://www.data.va.gov/dataset/Veteran-Pension-Expenditures-By-State-of-Residence/sbtk-kfnm"
-    ],
-    [
-      "Veterans Benefits Administration",
-      "VA Veteran Pension expenditures by state of residence · North Carolina",
-      53467479.12,
-      "program-expenditure",
-      "https://www.data.va.gov/dataset/Veteran-Pension-Expenditures-By-State-of-Residence/sbtk-kfnm"
-    ],
-    [
-      "Veterans Benefits Administration",
-      "VA Veteran Pension expenditures by state of residence · North Dakota",
-      2943267.96,
-      "program-expenditure",
-      "https://www.data.va.gov/dataset/Veteran-Pension-Expenditures-By-State-of-Residence/sbtk-kfnm"
-    ],
-    [
-      "Veterans Benefits Administration",
-      "VA Veteran Pension expenditures by state of residence · Ohio",
-      99229107.12,
-      "program-expenditure",
-      "https://www.data.va.gov/dataset/Veteran-Pension-Expenditures-By-State-of-Residence/sbtk-kfnm"
-    ],
-    [
-      "Veterans Benefits Administration",
-      "VA Veteran Pension expenditures by state of residence · Oklahoma",
-      29917867.8,
-      "program-expenditure",
-      "https://www.data.va.gov/dataset/Veteran-Pension-Expenditures-By-State-of-Residence/sbtk-kfnm"
-    ],
-    [
-      "Veterans Benefits Administration",
-      "VA Veteran Pension expenditures by state of residence · Oregon",
-      33924451.44,
-      "program-expenditure",
-      "https://www.data.va.gov/dataset/Veteran-Pension-Expenditures-By-State-of-Residence/sbtk-kfnm"
-    ],
-    [
-      "Veterans Benefits Administration",
-      "VA Veteran Pension expenditures by state of residence · Other Foreign",
-      4594228.92,
-      "program-expenditure",
-      "https://www.data.va.gov/dataset/Veteran-Pension-Expenditures-By-State-of-Residence/sbtk-kfnm"
-    ],
-    [
-      "Veterans Benefits Administration",
-      "VA Veteran Pension expenditures by state of residence · Pennsylvania",
-      86253187.08,
-      "program-expenditure",
-      "https://www.data.va.gov/dataset/Veteran-Pension-Expenditures-By-State-of-Residence/sbtk-kfnm"
-    ],
-    [
-      "Veterans Benefits Administration",
-      "VA Veteran Pension expenditures by state of residence · Philippines",
-      3647280,
-      "program-expenditure",
-      "https://www.data.va.gov/dataset/Veteran-Pension-Expenditures-By-State-of-Residence/sbtk-kfnm"
-    ],
-    [
-      "Veterans Benefits Administration",
-      "VA Veteran Pension expenditures by state of residence · Puerto Rico",
-      49244202.6,
-      "program-expenditure",
-      "https://www.data.va.gov/dataset/Veteran-Pension-Expenditures-By-State-of-Residence/sbtk-kfnm"
-    ],
-    [
-      "Veterans Benefits Administration",
-      "VA Veteran Pension expenditures by state of residence · Rhode Island",
-      4479768,
-      "program-expenditure",
-      "https://www.data.va.gov/dataset/Veteran-Pension-Expenditures-By-State-of-Residence/sbtk-kfnm"
-    ],
-    [
-      "Veterans Benefits Administration",
-      "VA Veteran Pension expenditures by state of residence · South Carolina",
-      38404852.68,
-      "program-expenditure",
-      "https://www.data.va.gov/dataset/Veteran-Pension-Expenditures-By-State-of-Residence/sbtk-kfnm"
-    ],
-    [
-      "Veterans Benefits Administration",
-      "VA Veteran Pension expenditures by state of residence · South Dakota",
-      5796496.92,
-      "program-expenditure",
-      "https://www.data.va.gov/dataset/Veteran-Pension-Expenditures-By-State-of-Residence/sbtk-kfnm"
-    ],
-    [
-      "Veterans Benefits Administration",
-      "VA Veteran Pension expenditures by state of residence · Tennessee",
-      52285156.32,
-      "program-expenditure",
-      "https://www.data.va.gov/dataset/Veteran-Pension-Expenditures-By-State-of-Residence/sbtk-kfnm"
-    ],
-    [
-      "Veterans Benefits Administration",
-      "VA Veteran Pension expenditures by state of residence · Texas",
-      164650698.84,
-      "program-expenditure",
-      "https://www.data.va.gov/dataset/Veteran-Pension-Expenditures-By-State-of-Residence/sbtk-kfnm"
-    ],
-    [
-      "Veterans Benefits Administration",
-      "VA Veteran Pension expenditures by state of residence · State of residence not reported by official source",
-      49548,
-      "program-expenditure",
-      "https://www.data.va.gov/dataset/Veteran-Pension-Expenditures-By-State-of-Residence/sbtk-kfnm"
-    ],
-    [
-      "Veterans Benefits Administration",
-      "VA Veteran Pension expenditures by state of residence · Utah",
-      14154727.8,
-      "program-expenditure",
-      "https://www.data.va.gov/dataset/Veteran-Pension-Expenditures-By-State-of-Residence/sbtk-kfnm"
-    ],
-    [
-      "Veterans Benefits Administration",
-      "VA Veteran Pension expenditures by state of residence · Vermont",
-      2212164,
-      "program-expenditure",
-      "https://www.data.va.gov/dataset/Veteran-Pension-Expenditures-By-State-of-Residence/sbtk-kfnm"
-    ],
-    [
-      "Veterans Benefits Administration",
-      "VA Veteran Pension expenditures by state of residence · Virginia",
-      38842976.52,
-      "program-expenditure",
-      "https://www.data.va.gov/dataset/Veteran-Pension-Expenditures-By-State-of-Residence/sbtk-kfnm"
-    ],
-    [
-      "Veterans Benefits Administration",
-      "VA Veteran Pension expenditures by state of residence · Washington",
-      38558051.28,
-      "program-expenditure",
-      "https://www.data.va.gov/dataset/Veteran-Pension-Expenditures-By-State-of-Residence/sbtk-kfnm"
-    ],
-    [
-      "Veterans Benefits Administration",
-      "VA Veteran Pension expenditures by state of residence · West Virginia",
-      15689758.68,
-      "program-expenditure",
-      "https://www.data.va.gov/dataset/Veteran-Pension-Expenditures-By-State-of-Residence/sbtk-kfnm"
-    ],
-    [
-      "Veterans Benefits Administration",
-      "VA Veteran Pension expenditures by state of residence · Wisconsin",
-      30338616.72,
-      "program-expenditure",
-      "https://www.data.va.gov/dataset/Veteran-Pension-Expenditures-By-State-of-Residence/sbtk-kfnm"
-    ],
-    [
-      "Veterans Benefits Administration",
-      "VA Veteran Pension expenditures by state of residence · Wyoming",
-      2750271.84,
-      "program-expenditure",
-      "https://www.data.va.gov/dataset/Veteran-Pension-Expenditures-By-State-of-Residence/sbtk-kfnm"
-    ]
+    ["Veterans Benefits Administration", "VA Veteran Pension expenditures by state of residence · Alabama", 51471499.32, "program-expenditure", "https://www.data.va.gov/dataset/Veteran-Pension-Expenditures-By-State-of-Residence/sbtk-kfnm"],
+    ["Veterans Benefits Administration", "VA Veteran Pension expenditures by state of residence · Alaska", 1869324, "program-expenditure", "https://www.data.va.gov/dataset/Veteran-Pension-Expenditures-By-State-of-Residence/sbtk-kfnm"],
+    ["Veterans Benefits Administration", "VA Veteran Pension expenditures by state of residence · Arizona", 45418104.48, "program-expenditure", "https://www.data.va.gov/dataset/Veteran-Pension-Expenditures-By-State-of-Residence/sbtk-kfnm"],
+    ["Veterans Benefits Administration", "VA Veteran Pension expenditures by state of residence · Arkansas", 31648161.48, "program-expenditure", "https://www.data.va.gov/dataset/Veteran-Pension-Expenditures-By-State-of-Residence/sbtk-kfnm"],
+    ["Veterans Benefits Administration", "VA Veteran Pension expenditures by state of residence · California", 192466488.24, "program-expenditure", "https://www.data.va.gov/dataset/Veteran-Pension-Expenditures-By-State-of-Residence/sbtk-kfnm"],
+    ["Veterans Benefits Administration", "VA Veteran Pension expenditures by state of residence · Colorado", 27731860.68, "program-expenditure", "https://www.data.va.gov/dataset/Veteran-Pension-Expenditures-By-State-of-Residence/sbtk-kfnm"],
+    ["Veterans Benefits Administration", "VA Veteran Pension expenditures by state of residence · Connecticut", 11534856.72, "program-expenditure", "https://www.data.va.gov/dataset/Veteran-Pension-Expenditures-By-State-of-Residence/sbtk-kfnm"],
+    ["Veterans Benefits Administration", "VA Veteran Pension expenditures by state of residence · Delaware", 3637800, "program-expenditure", "https://www.data.va.gov/dataset/Veteran-Pension-Expenditures-By-State-of-Residence/sbtk-kfnm"],
+    ["Veterans Benefits Administration", "VA Veteran Pension expenditures by state of residence · District of Columbia", 3992304, "program-expenditure", "https://www.data.va.gov/dataset/Veteran-Pension-Expenditures-By-State-of-Residence/sbtk-kfnm"],
+    ["Veterans Benefits Administration", "VA Veteran Pension expenditures by state of residence · Florida", 187572293.16, "program-expenditure", "https://www.data.va.gov/dataset/Veteran-Pension-Expenditures-By-State-of-Residence/sbtk-kfnm"],
+    ["Veterans Benefits Administration", "VA Veteran Pension expenditures by state of residence · Georgia", 74150657.88, "program-expenditure", "https://www.data.va.gov/dataset/Veteran-Pension-Expenditures-By-State-of-Residence/sbtk-kfnm"],
+    ["Veterans Benefits Administration", "VA Veteran Pension expenditures by state of residence · Hawaii", 4732425.96, "program-expenditure", "https://www.data.va.gov/dataset/Veteran-Pension-Expenditures-By-State-of-Residence/sbtk-kfnm"],
+    ["Veterans Benefits Administration", "VA Veteran Pension expenditures by state of residence · Idaho", 10233195.84, "program-expenditure", "https://www.data.va.gov/dataset/Veteran-Pension-Expenditures-By-State-of-Residence/sbtk-kfnm"],
+    ["Veterans Benefits Administration", "VA Veteran Pension expenditures by state of residence · Illinois", 55152851.4, "program-expenditure", "https://www.data.va.gov/dataset/Veteran-Pension-Expenditures-By-State-of-Residence/sbtk-kfnm"],
+    ["Veterans Benefits Administration", "VA Veteran Pension expenditures by state of residence · Indiana", 36340696.92, "program-expenditure", "https://www.data.va.gov/dataset/Veteran-Pension-Expenditures-By-State-of-Residence/sbtk-kfnm"],
+    ["Veterans Benefits Administration", "VA Veteran Pension expenditures by state of residence · Iowa", 16622415.6, "program-expenditure", "https://www.data.va.gov/dataset/Veteran-Pension-Expenditures-By-State-of-Residence/sbtk-kfnm"],
+    ["Veterans Benefits Administration", "VA Veteran Pension expenditures by state of residence · Kansas", 16307582.76, "program-expenditure", "https://www.data.va.gov/dataset/Veteran-Pension-Expenditures-By-State-of-Residence/sbtk-kfnm"],
+    ["Veterans Benefits Administration", "VA Veteran Pension expenditures by state of residence · Kentucky", 33445001.64, "program-expenditure", "https://www.data.va.gov/dataset/Veteran-Pension-Expenditures-By-State-of-Residence/sbtk-kfnm"],
+    ["Veterans Benefits Administration", "VA Veteran Pension expenditures by state of residence · Louisiana", 41918275.56, "program-expenditure", "https://www.data.va.gov/dataset/Veteran-Pension-Expenditures-By-State-of-Residence/sbtk-kfnm"],
+    ["Veterans Benefits Administration", "VA Veteran Pension expenditures by state of residence · Maine", 8903277.96, "program-expenditure", "https://www.data.va.gov/dataset/Veteran-Pension-Expenditures-By-State-of-Residence/sbtk-kfnm"],
+    ["Veterans Benefits Administration", "VA Veteran Pension expenditures by state of residence · Maryland", 24418554.72, "program-expenditure", "https://www.data.va.gov/dataset/Veteran-Pension-Expenditures-By-State-of-Residence/sbtk-kfnm"],
+    ["Veterans Benefits Administration", "VA Veteran Pension expenditures by state of residence · Massachusetts", 21295095.72, "program-expenditure", "https://www.data.va.gov/dataset/Veteran-Pension-Expenditures-By-State-of-Residence/sbtk-kfnm"],
+    ["Veterans Benefits Administration", "VA Veteran Pension expenditures by state of residence · Michigan", 68354503.44, "program-expenditure", "https://www.data.va.gov/dataset/Veteran-Pension-Expenditures-By-State-of-Residence/sbtk-kfnm"],
+    ["Veterans Benefits Administration", "VA Veteran Pension expenditures by state of residence · Minnesota", 22236107.76, "program-expenditure", "https://www.data.va.gov/dataset/Veteran-Pension-Expenditures-By-State-of-Residence/sbtk-kfnm"],
+    ["Veterans Benefits Administration", "VA Veteran Pension expenditures by state of residence · Mississippi", 21648581.4, "program-expenditure", "https://www.data.va.gov/dataset/Veteran-Pension-Expenditures-By-State-of-Residence/sbtk-kfnm"],
+    ["Veterans Benefits Administration", "VA Veteran Pension expenditures by state of residence · Missouri", 50649935.52, "program-expenditure", "https://www.data.va.gov/dataset/Veteran-Pension-Expenditures-By-State-of-Residence/sbtk-kfnm"],
+    ["Veterans Benefits Administration", "VA Veteran Pension expenditures by state of residence · Montana", 8331096.84, "program-expenditure", "https://www.data.va.gov/dataset/Veteran-Pension-Expenditures-By-State-of-Residence/sbtk-kfnm"],
+    ["Veterans Benefits Administration", "VA Veteran Pension expenditures by state of residence · Nebraska", 9509827.8, "program-expenditure", "https://www.data.va.gov/dataset/Veteran-Pension-Expenditures-By-State-of-Residence/sbtk-kfnm"],
+    ["Veterans Benefits Administration", "VA Veteran Pension expenditures by state of residence · Nevada", 20515158.72, "program-expenditure", "https://www.data.va.gov/dataset/Veteran-Pension-Expenditures-By-State-of-Residence/sbtk-kfnm"],
+    ["Veterans Benefits Administration", "VA Veteran Pension expenditures by state of residence · New Hampshire", 5713608, "program-expenditure", "https://www.data.va.gov/dataset/Veteran-Pension-Expenditures-By-State-of-Residence/sbtk-kfnm"],
+    ["Veterans Benefits Administration", "VA Veteran Pension expenditures by state of residence · New Jersey", 30848210.88, "program-expenditure", "https://www.data.va.gov/dataset/Veteran-Pension-Expenditures-By-State-of-Residence/sbtk-kfnm"],
+    ["Veterans Benefits Administration", "VA Veteran Pension expenditures by state of residence · New Mexico", 16178561.16, "program-expenditure", "https://www.data.va.gov/dataset/Veteran-Pension-Expenditures-By-State-of-Residence/sbtk-kfnm"],
+    ["Veterans Benefits Administration", "VA Veteran Pension expenditures by state of residence · New York", 70092028.8, "program-expenditure", "https://www.data.va.gov/dataset/Veteran-Pension-Expenditures-By-State-of-Residence/sbtk-kfnm"],
+    ["Veterans Benefits Administration", "VA Veteran Pension expenditures by state of residence · North Carolina", 53467479.12, "program-expenditure", "https://www.data.va.gov/dataset/Veteran-Pension-Expenditures-By-State-of-Residence/sbtk-kfnm"],
+    ["Veterans Benefits Administration", "VA Veteran Pension expenditures by state of residence · North Dakota", 2943267.96, "program-expenditure", "https://www.data.va.gov/dataset/Veteran-Pension-Expenditures-By-State-of-Residence/sbtk-kfnm"],
+    ["Veterans Benefits Administration", "VA Veteran Pension expenditures by state of residence · Ohio", 99229107.12, "program-expenditure", "https://www.data.va.gov/dataset/Veteran-Pension-Expenditures-By-State-of-Residence/sbtk-kfnm"],
+    ["Veterans Benefits Administration", "VA Veteran Pension expenditures by state of residence · Oklahoma", 29917867.8, "program-expenditure", "https://www.data.va.gov/dataset/Veteran-Pension-Expenditures-By-State-of-Residence/sbtk-kfnm"],
+    ["Veterans Benefits Administration", "VA Veteran Pension expenditures by state of residence · Oregon", 33924451.44, "program-expenditure", "https://www.data.va.gov/dataset/Veteran-Pension-Expenditures-By-State-of-Residence/sbtk-kfnm"],
+    ["Veterans Benefits Administration", "VA Veteran Pension expenditures by state of residence · Other Foreign", 4594228.92, "program-expenditure", "https://www.data.va.gov/dataset/Veteran-Pension-Expenditures-By-State-of-Residence/sbtk-kfnm"],
+    ["Veterans Benefits Administration", "VA Veteran Pension expenditures by state of residence · Pennsylvania", 86253187.08, "program-expenditure", "https://www.data.va.gov/dataset/Veteran-Pension-Expenditures-By-State-of-Residence/sbtk-kfnm"],
+    ["Veterans Benefits Administration", "VA Veteran Pension expenditures by state of residence · Philippines", 3647280, "program-expenditure", "https://www.data.va.gov/dataset/Veteran-Pension-Expenditures-By-State-of-Residence/sbtk-kfnm"],
+    ["Veterans Benefits Administration", "VA Veteran Pension expenditures by state of residence · Puerto Rico", 49244202.6, "program-expenditure", "https://www.data.va.gov/dataset/Veteran-Pension-Expenditures-By-State-of-Residence/sbtk-kfnm"],
+    ["Veterans Benefits Administration", "VA Veteran Pension expenditures by state of residence · Rhode Island", 4479768, "program-expenditure", "https://www.data.va.gov/dataset/Veteran-Pension-Expenditures-By-State-of-Residence/sbtk-kfnm"],
+    ["Veterans Benefits Administration", "VA Veteran Pension expenditures by state of residence · South Carolina", 38404852.68, "program-expenditure", "https://www.data.va.gov/dataset/Veteran-Pension-Expenditures-By-State-of-Residence/sbtk-kfnm"],
+    ["Veterans Benefits Administration", "VA Veteran Pension expenditures by state of residence · South Dakota", 5796496.92, "program-expenditure", "https://www.data.va.gov/dataset/Veteran-Pension-Expenditures-By-State-of-Residence/sbtk-kfnm"],
+    ["Veterans Benefits Administration", "VA Veteran Pension expenditures by state of residence · Tennessee", 52285156.32, "program-expenditure", "https://www.data.va.gov/dataset/Veteran-Pension-Expenditures-By-State-of-Residence/sbtk-kfnm"],
+    ["Veterans Benefits Administration", "VA Veteran Pension expenditures by state of residence · Texas", 164650698.84, "program-expenditure", "https://www.data.va.gov/dataset/Veteran-Pension-Expenditures-By-State-of-Residence/sbtk-kfnm"],
+    ["Veterans Benefits Administration", "VA Veteran Pension expenditures by state of residence · State of residence not reported by official source", 49548, "program-expenditure", "https://www.data.va.gov/dataset/Veteran-Pension-Expenditures-By-State-of-Residence/sbtk-kfnm"],
+    ["Veterans Benefits Administration", "VA Veteran Pension expenditures by state of residence · Utah", 14154727.8, "program-expenditure", "https://www.data.va.gov/dataset/Veteran-Pension-Expenditures-By-State-of-Residence/sbtk-kfnm"],
+    ["Veterans Benefits Administration", "VA Veteran Pension expenditures by state of residence · Vermont", 2212164, "program-expenditure", "https://www.data.va.gov/dataset/Veteran-Pension-Expenditures-By-State-of-Residence/sbtk-kfnm"],
+    ["Veterans Benefits Administration", "VA Veteran Pension expenditures by state of residence · Virginia", 38842976.52, "program-expenditure", "https://www.data.va.gov/dataset/Veteran-Pension-Expenditures-By-State-of-Residence/sbtk-kfnm"],
+    ["Veterans Benefits Administration", "VA Veteran Pension expenditures by state of residence · Washington", 38558051.28, "program-expenditure", "https://www.data.va.gov/dataset/Veteran-Pension-Expenditures-By-State-of-Residence/sbtk-kfnm"],
+    ["Veterans Benefits Administration", "VA Veteran Pension expenditures by state of residence · West Virginia", 15689758.68, "program-expenditure", "https://www.data.va.gov/dataset/Veteran-Pension-Expenditures-By-State-of-Residence/sbtk-kfnm"],
+    ["Veterans Benefits Administration", "VA Veteran Pension expenditures by state of residence · Wisconsin", 30338616.72, "program-expenditure", "https://www.data.va.gov/dataset/Veteran-Pension-Expenditures-By-State-of-Residence/sbtk-kfnm"],
+    ["Veterans Benefits Administration", "VA Veteran Pension expenditures by state of residence · Wyoming", 2750271.84, "program-expenditure", "https://www.data.va.gov/dataset/Veteran-Pension-Expenditures-By-State-of-Residence/sbtk-kfnm"]
   ],
-  "supplementalSchema": [
-    "subAgency",
-    "program",
-    "amount",
-    "measure",
-    "source"
-  ],
-  "hierarchyNote": "Object-class rows are directly managed; the parent entity is repeated as the sub-agency placeholder.",
+  "supplementalSchema": ["subAgency", "program", "amount", "measure", "source"],
+  "hierarchyNote": "USAspending program-activity rows preserve the agency gross-outlay control; the parent entity is repeated as the sub-agency placeholder.",
   "sourceUrls": [
-    [
-      "FY2024 gross outlays by object class",
-      "https://api.usaspending.gov/api/v2/agency/036/object_class/?fiscal_year=2024&limit=100&page=1"
-    ],
-    [
-      "FY2024 agency budgetary resources total",
-      "https://api.usaspending.gov/api/v2/agency/036/budgetary_resources/?fiscal_year=2024"
-    ]
+    ["FY2024 gross outlays by program activity · page 1", "https://api.usaspending.gov/api/v2/agency/036/program_activity/?fiscal_year=2024&limit=100&page=1"],
+    ["FY2024 gross outlays by program activity · page 2", "https://api.usaspending.gov/api/v2/agency/036/program_activity/?fiscal_year=2024&limit=100&page=2"],
+    ["FY2024 agency budgetary resources total", "https://api.usaspending.gov/api/v2/agency/036/budgetary_resources/?fiscal_year=2024"]
   ],
   "sourceBasis": "official source amount",
-  "sourceCheck": {
-    "objectClassRows": 28,
-    "objectClassTotal": 347998412337.48,
-    "agencyTotal": 347998412337.48,
-    "difference": 0
-  },
+  "sourceCheck": {"groupRows": 172, "programActivityTotal": 347998412337.48, "agencyTotal": 347998412337.48, "difference": 0},
   "normalizationAdjustment": 0.01,
-  "sourceLabelMap": {
-    "Object class not reported by official source": "Unknown",
-    "State of residence not reported by official source": "VA Veteran Pension expenditures by state of residence · Unknown"
-  },
-  "note": "The official USAspending object-class response labels 1 row as Unknown; the display label states that the object class was not reported and no category was inferred. The official VA pension source includes one row whose state of residence is Unknown; the display label states that the field was not reported and no state was inferred. Amounts are shown on the official source basis; no comparator normalization was applied."
+  "sourceLabelMap": {"Object class not reported by official source": "Unknown", "State of residence not reported by official source": "VA Veteran Pension expenditures by state of residence · Unknown"},
+  "note": "Program activities replace the former generic object-class view and remain on USAspending gross-outlay basis; no comparator normalization was applied."
 }

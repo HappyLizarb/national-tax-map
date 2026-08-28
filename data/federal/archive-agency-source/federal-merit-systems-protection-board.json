@@ -5,167 +5,21 @@
   "fiscalYear": 2024,
   "ledgerAmount": 38724284.29,
   "sourceTotal": 52774651.87,
-  "sourceUrl": "https://api.usaspending.gov/api/v2/agency/389/object_class/?fiscal_year=2024&limit=100&page=1",
+  "sourceUrl": "https://api.usaspending.gov/api/v2/agency/389/program_activity/?fiscal_year=2024&limit=100&page=1",
   "sourceUrls": [
-    [
-      "FY2024 gross outlays by object class",
-      "https://api.usaspending.gov/api/v2/agency/389/object_class/?fiscal_year=2024&limit=100&page=1"
-    ],
-    [
-      "FY2024 agency budgetary resources total",
-      "https://api.usaspending.gov/api/v2/agency/389/budgetary_resources/?fiscal_year=2024"
-    ]
+    ["FY2024 gross outlays by program activity · page 1", "https://api.usaspending.gov/api/v2/agency/389/program_activity/?fiscal_year=2024&limit=100&page=1"],
+    ["FY2024 agency budgetary resources total", "https://api.usaspending.gov/api/v2/agency/389/budgetary_resources/?fiscal_year=2024"]
   ],
-  "rowSchema": [
-    "subAgency",
-    "program",
-    "amount",
-    "sourceAmount",
-    "sourceRows"
-  ],
+  "rowSchema": ["subAgency", "program", "amount", "sourceAmount", "sourceRows"],
   "rows": [
-    [
-      "Merit Systems Protection Board",
-      "Full-time permanent",
-      29841977.3,
-      29841977.3,
-      null
-    ],
-    [
-      "Merit Systems Protection Board",
-      "Civilian personnel benefits",
-      10921375.82,
-      10921375.82,
-      null
-    ],
-    [
-      "Merit Systems Protection Board",
-      "Rental payments to GSA",
-      3812089.85,
-      3812089.85,
-      null
-    ],
-    [
-      "Merit Systems Protection Board",
-      "Other goods and services from Federal sources",
-      1850521.76,
-      1850521.76,
-      null
-    ],
-    [
-      "Merit Systems Protection Board",
-      "Advisory and assistance services",
-      1410924.24,
-      1410924.24,
-      null
-    ],
-    [
-      "Merit Systems Protection Board",
-      "Operation and maintenance of equipment",
-      823800.49,
-      823800.49,
-      null
-    ],
-    [
-      "Merit Systems Protection Board",
-      "Other personnel compensation",
-      775200.45,
-      775200.45,
-      null
-    ],
-    [
-      "Merit Systems Protection Board",
-      "Equipment",
-      688648.84,
-      688648.84,
-      null
-    ],
-    [
-      "Merit Systems Protection Board",
-      "Communications, utilities, and miscellaneous charges",
-      1142178.89,
-      1142178.89,
-      null
-    ],
-    [
-      "Merit Systems Protection Board",
-      "Other services from non-Federal sources",
-      453192.69,
-      453192.69,
-      null
-    ],
-    [
-      "Merit Systems Protection Board",
-      "Other than full-time permanent",
-      562060,
-      562060,
-      null
-    ],
-    [
-      "Merit Systems Protection Board",
-      "Supplies and materials",
-      271931.47,
-      271931.47,
-      null
-    ],
-    [
-      "Merit Systems Protection Board",
-      "Travel and transportation of persons",
-      64582.4,
-      64582.4,
-      null
-    ],
-    [
-      "Merit Systems Protection Board",
-      "Rental payments to others",
-      85698.24,
-      85698.24,
-      null
-    ],
-    [
-      "Merit Systems Protection Board",
-      "Operation and maintenance of facilities",
-      38155.68,
-      38155.68,
-      null
-    ],
-    [
-      "Merit Systems Protection Board",
-      "Printing and reproduction",
-      25000,
-      25000,
-      null
-    ],
-    [
-      "Merit Systems Protection Board",
-      "Transportation of things",
-      3417.78,
-      3417.78,
-      null
-    ],
-    [
-      "Merit Systems Protection Board",
-      "Benefits for former personnel",
-      3838.92,
-      3838.92,
-      null
-    ],
-    [
-      "Merit Systems Protection Board",
-      "Interest and dividends",
-      57.05,
-      57.05,
-      null
-    ]
+    ["Merit Systems Protection Board", "ADJUDICATION", 44864116.85, 44864116.85, null],
+    ["Merit Systems Protection Board", "MANAGEMENT SUPPORT", 5602372.75, 5602372.75, null],
+    ["Merit Systems Protection Board", "MERIT SYSTEMS STUDIES", 1891651.48, 1891651.48, null],
+    ["Merit Systems Protection Board", "SALARIES AND EXPENSES (REIMBURSABLE)", 416510.79, 416510.79, null]
   ],
   "sourceBasis": "official source amount",
-  "sourceCheck": {
-    "objectClassRows": 19,
-    "objectClassTotal": 52774651.87,
-    "agencyTotal": 52774651.87,
-    "difference": 0
-  },
+  "sourceCheck": {"groupRows": 4, "programActivityTotal": 52774651.87, "agencyTotal": 52774651.87, "difference": 0},
   "normalizationAdjustment": 0.01,
-  "hierarchyNote": "The source endpoint returns agency-level object-class aggregates; no individual employees or payees are included.",
-  "note": "Amounts are shown on the official source basis; no comparator normalization was applied."
+  "hierarchyNote": "USAspending program-activity rows preserve the agency gross-outlay control; the parent entity is repeated as the sub-agency placeholder.",
+  "note": "Program activities replace the former generic object-class view and remain on USAspending gross-outlay basis; no comparator normalization was applied."
 }

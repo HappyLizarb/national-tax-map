@@ -5,146 +5,20 @@
   "fiscalYear": 2024,
   "ledgerAmount": 214190248.68,
   "sourceTotal": 291905093.05,
-  "sourceUrl": "https://api.usaspending.gov/api/v2/agency/474/object_class/?fiscal_year=2024&limit=100&page=1",
+  "sourceUrl": "https://api.usaspending.gov/api/v2/agency/474/program_activity/?fiscal_year=2024&limit=100&page=1",
   "sourceUrls": [
-    [
-      "FY2024 gross outlays by object class",
-      "https://api.usaspending.gov/api/v2/agency/474/object_class/?fiscal_year=2024&limit=100&page=1"
-    ],
-    [
-      "FY2024 agency budgetary resources total",
-      "https://api.usaspending.gov/api/v2/agency/474/budgetary_resources/?fiscal_year=2024"
-    ]
+    ["FY2024 gross outlays by program activity · page 1", "https://api.usaspending.gov/api/v2/agency/474/program_activity/?fiscal_year=2024&limit=100&page=1"],
+    ["FY2024 agency budgetary resources total", "https://api.usaspending.gov/api/v2/agency/474/budgetary_resources/?fiscal_year=2024"]
   ],
-  "rowSchema": [
-    "subAgency",
-    "program",
-    "amount",
-    "sourceAmount",
-    "sourceRows"
-  ],
+  "rowSchema": ["subAgency", "program", "amount", "sourceAmount", "sourceRows"],
   "rows": [
-    [
-      "Institute of Museum and Library Services",
-      "Grants, subsidies, and contributions",
-      261876749.14,
-      261876749.14,
-      null
-    ],
-    [
-      "Institute of Museum and Library Services",
-      "Advisory and assistance services",
-      11006887.06,
-      11006887.06,
-      null
-    ],
-    [
-      "Institute of Museum and Library Services",
-      "Full-time permanent",
-      9412472.62,
-      9412472.62,
-      null
-    ],
-    [
-      "Institute of Museum and Library Services",
-      "Civilian personnel benefits",
-      3726636.06,
-      3726636.06,
-      null
-    ],
-    [
-      "Institute of Museum and Library Services",
-      "Other goods and services from Federal sources",
-      2130769.4,
-      2130769.4,
-      null
-    ],
-    [
-      "Institute of Museum and Library Services",
-      "Rental payments to GSA",
-      1276835.33,
-      1276835.33,
-      null
-    ],
-    [
-      "Institute of Museum and Library Services",
-      "Other than full-time permanent",
-      930546.82,
-      930546.82,
-      null
-    ],
-    [
-      "Institute of Museum and Library Services",
-      "Travel and transportation of persons",
-      475394.76,
-      475394.76,
-      null
-    ],
-    [
-      "Institute of Museum and Library Services",
-      "Communications, utilities, and miscellaneous charges",
-      459276.65,
-      459276.65,
-      null
-    ],
-    [
-      "Institute of Museum and Library Services",
-      "Other personnel compensation",
-      299246.41,
-      299246.41,
-      null
-    ],
-    [
-      "Institute of Museum and Library Services",
-      "Equipment",
-      22213.52,
-      22213.52,
-      null
-    ],
-    [
-      "Institute of Museum and Library Services",
-      "Other services from non-Federal sources",
-      123730.39,
-      123730.39,
-      null
-    ],
-    [
-      "Institute of Museum and Library Services",
-      "Supplies and materials",
-      88195.12,
-      88195.12,
-      null
-    ],
-    [
-      "Institute of Museum and Library Services",
-      "Special personal services payments",
-      56908.8,
-      56908.8,
-      null
-    ],
-    [
-      "Institute of Museum and Library Services",
-      "Operation and maintenance of equipment",
-      11341.27,
-      11341.27,
-      null
-    ],
-    [
-      "Institute of Museum and Library Services",
-      "Printing and reproduction",
-      7889.7,
-      7889.7,
-      null
-    ]
+    ["Institute of Museum and Library Services", "ASSISTANCE FOR LIBRARIES", 204850948.98, 204850948.98, null],
+    ["Institute of Museum and Library Services", "ASSISTANCE FOR MUSEUMS", 55901135.52, 55901135.52, null],
+    ["Institute of Museum and Library Services", "ADMINISTRATION", 31153008.55, 31153008.55, null]
   ],
   "sourceBasis": "official source amount",
-  "sourceCheck": {
-    "objectClassRows": 16,
-    "objectClassTotal": 291905093.05,
-    "agencyTotal": 291905093.05,
-    "difference": 0
-  },
+  "sourceCheck": {"groupRows": 3, "programActivityTotal": 291905093.05, "agencyTotal": 291905093.05, "difference": 0},
   "normalizationAdjustment": -0.01,
-  "hierarchyNote": "The source endpoint returns agency-level object-class aggregates; no individual employees or payees are included.",
-  "note": "Amounts are shown on the official source basis; no comparator normalization was applied."
+  "hierarchyNote": "USAspending program-activity rows preserve the agency gross-outlay control; the parent entity is repeated as the sub-agency placeholder.",
+  "note": "Program activities replace the former generic object-class view and remain on USAspending gross-outlay basis; no comparator normalization was applied."
 }

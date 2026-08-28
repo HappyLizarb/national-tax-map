@@ -89,10 +89,7 @@ and a SHA-256 checksum:
 - [USAspending methods and object classes](data/research/federal-methods.json)
 - [2026 brackets and tax-rate evidence](data/research/tax-policy.json)
 - [Household estimate method](data/research/household-estimate.json)
-- [State GAAP controls A](data/research/state-balance-cohort-a.json),
-  [B](data/research/state-balance-cohort-b.json),
-  [C](data/research/state-balance-cohort-c.json), and
-  [pilot states](data/research/state-balance-pilot-states.json)
+- [State GAAP controls](data/state-financial-results.js)
 
 See [the data layout](data/README.md) for the commentary schema and its relation
 to numerical inputs.

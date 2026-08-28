@@ -14,6 +14,38 @@
   "accountResearch": {"accountCount": 215, "largeAccountCount": 9, "netAccountOutlays": 91817483868.97, "threshold": 1000000000, "sourceUrl": "https://fiscal.treasury.gov/system/files/files/reports-statements/combined-statement/cs2024/c55.xlsx"},
   "largeAccountSchema": ["treasuryAccount", "title", "netOutlays", "availabilityRows"],
   "largeAccountBasis": "Exact Combined Statement net outlays by appropriation or fund account. This is a research cross-section of the same department, not another amount to add to MTS classification rows.",
+  "sourceBreakdowns": [
+    {
+      "title": "FDIC Deposit Insurance Fund FY2024 audited revenue by source",
+      "sourceTotal": 15688773000,
+      "basis": "The FDIC's GAO-audited FY2024 Deposit Insurance Fund statement reports $15.688773B of calendar-year GAAP revenue across three sources. The rows reconcile exactly at the statement's $1,000 precision. Revenue is not a spending subtotal and is not additive to Treasury's $37.102B Deposit Insurance Fund cash outlay or USAspending's $71.607B gross program-activity flow; assessment revenue is expanded by quarter in the companion panel.",
+      "sourceLabel": "FDIC 2024 Annual Report · Deposit Insurance Fund Statement of Income and Fund Balance",
+      "sourceUrl": "https://www.fdic.gov/financial-reports/2024-annual-report-full-report.pdf",
+      "rows": [
+        ["Assessments", "Audited FY2024 GAAP revenue · expanded by quarter in companion panel", 11643463000],
+        ["Interest on U.S. Treasury securities", "Audited FY2024 GAAP revenue", 3951021000],
+        ["Other revenue", "Audited FY2024 GAAP revenue", 94289000]
+      ],
+      "covers": [["Federal Deposit Insurance Corporation", "Deposit Insurance Fund", 37102000000]]
+    },
+    {
+      "title": "FDIC Deposit Insurance Fund FY2024 assessment revenue by quarter",
+      "sourceTotal": 11643000000,
+      "basis": "FDIC's quarterly income statements publish assessment revenue in rounded $ millions. Q3 uses the revised $8.255B September cumulative value in the fourth-quarter report less the $5.204B June cumulative value; the four rows total $11.643B. The audited annual statement reports $11.643463B, leaving only its undisclosed $463,000 rounding remainder rather than a fabricated allocation.",
+      "sourceLabel": "FDIC CFO Report · DIF Income Statement, fourth quarter 2024",
+      "sourceUrl": "https://www.fdic.gov/financial-reports/dif-income-statement-fourth-quarter-2024",
+      "rows": [
+        ["Fourth quarter", "Quarterly assessment revenue · FDIC-published change", 3388000000, "https://www.fdic.gov/financial-reports/dif-income-statement-fourth-quarter-2024"],
+        ["Second quarter", "Quarterly assessment revenue · FDIC-published change", 3200000000, "https://www.fdic.gov/financial-reports/dif-income-statement-second-quarter-2024"],
+        ["Third quarter", "Quarterly assessment revenue · revised September cumulative less June cumulative", 3051000000, "https://www.fdic.gov/financial-reports/dif-income-statement-fourth-quarter-2024"],
+        ["First quarter", "Quarterly assessment revenue · FDIC-published year-to-date amount", 2004000000, "https://www.fdic.gov/financial-reports/dif-income-statement-9"]
+      ],
+      "covers": [
+        ["Federal Deposit Insurance Corporation", "Deposit Insurance Fund", 37102000000],
+        ["Assessments", "Audited FY2024 GAAP revenue · expanded by quarter in companion panel", 11643463000]
+      ]
+    }
+  ],
   "largeAccountRows": [
     ["051-4596-000", "Deposit Insurance Fund, Federal Deposit Insurance Corporation", 37102073524.99, 1],
     ["027-5183-000", "Universal Service Fund, Federal Communications Commission", 8718823106.86, 1],

@@ -22,6 +22,8 @@ assert.equal((html.match(/class="tax-estimate-profile"/g) || []).length, 2);
 assert.equal((html.match(/class="tax-estimate-level"/g) || []).length, 8);
 assert.equal((html.match(/class="tax-estimate-income"/g) || []).length, 8);
 assert.equal((html.match(/class="tax-estimate-breakdown"/g) || []).length, 8);
+assert.equal((html.match(/class="tax-estimate-net"/g) || []).length, 8);
+assert.match(html, /Post-tax income<\/small><strong>\$41,000<\/strong><small>18\.0% effective tax rate/);
 for (const source of ["federal", "method", "property"])
   assert.equal((html.match(new RegExp('href="https://example.com/' + source + '"', "g")) || []).length, 1);
 assert.equal((html.match(/Estimated 2026/g) || []).length, 1);

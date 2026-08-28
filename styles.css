@@ -235,10 +235,6 @@ h1 { max-width: none; white-space: nowrap; font-size: clamp(44px, 4.4vw, 68px); 
 .source-catalog div { display: grid; gap: 3px; padding: 6px 0 2px 8px; }
 .source-catalog a { color: var(--pine); font-size: 11px; text-decoration: none; }
 .source-catalog a:hover { color: var(--sage); }
-.allocation-heading-actions { display: flex; align-items: center; justify-content: flex-end; flex-wrap: wrap; gap: 8px; }
-.allocation-source-switch { display: flex; flex-wrap: wrap; padding: 2px; border: 1px solid var(--line); border-radius: 8px; background: var(--surface-subtle); }
-.allocation-source-switch button { padding: 4px 6px; border: 0; border-radius: 5px; background: transparent; color: var(--muted); font: 600 9px var(--mono); letter-spacing: .02em; cursor: pointer; }
-.allocation-source-switch button[aria-pressed="true"] { background: var(--surface); color: var(--pine); box-shadow: 0 1px 2px color-mix(in srgb, var(--ink) 10%, transparent); }
 .program-heading { margin: 12px 0 5px; color: var(--muted); font: 600 10px var(--mono); text-transform: uppercase; letter-spacing: .08em; }
 
 .secondary-metrics { display: grid; grid-template-columns: repeat(3, 1fr); padding: 18px 0; border-bottom: 1px solid var(--line); }
@@ -249,6 +245,9 @@ h1 { max-width: none; white-space: nowrap; font-size: clamp(44px, 4.4vw, 68px); 
 .secondary-metrics span { min-height: 25px; color: var(--muted); font-size: 12px; line-height: 1.5; }
 .secondary-metrics strong { margin-top: 8px; font: 600 17px var(--mono); }
 .panel-footer p { margin: 18px 0 0; color: var(--muted); font-size: 12px; line-height: 1.6; }
+.methodology-disclaimer { width: min(100%, 1560px); margin: 0 auto; padding: 28px clamp(26px, 5vw, 74px) 36px; border-top: 1px solid var(--line); color: var(--muted); }
+.methodology-disclaimer strong { color: var(--sage); font: 700 11px var(--mono); text-transform: uppercase; letter-spacing: .1em; }
+.methodology-disclaimer p { max-width: 90ch; margin: 8px 0 0; font-size: 12px; line-height: 1.7; text-wrap: pretty; }
 
 :root[data-theme="dark"] .category-row:hover { color: var(--sage); }
 :root[data-theme="dark"] .source-catalog a, :root[data-theme="dark"] .breakdown-details a { color: var(--sage); }
@@ -287,6 +286,5 @@ h1 { max-width: none; white-space: nowrap; font-size: clamp(44px, 4.4vw, 68px); 
   .kpi-grid { grid-template-columns: 1fr; gap: 14px; }
   .kpi-grid article { padding: 0; border-left: 0; }
   .allocation-layout { grid-template-columns: 100px 1fr; }
-  .allocation-heading-actions { justify-content: flex-start; }
   .donut { width: 94px; }
 }

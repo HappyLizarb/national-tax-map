@@ -5,188 +5,27 @@
   "fiscalYear": 2024,
   "ledgerAmount": 2152953082.31,
   "sourceTotal": 2934111023.66,
-  "sourceUrl": "https://api.usaspending.gov/api/v2/agency/050/object_class/?fiscal_year=2024&limit=100&page=1",
+  "sourceUrl": "https://api.usaspending.gov/api/v2/agency/050/program_activity/?fiscal_year=2024&limit=100&page=1",
   "sourceUrls": [
-    [
-      "FY2024 gross outlays by object class",
-      "https://api.usaspending.gov/api/v2/agency/050/object_class/?fiscal_year=2024&limit=100&page=1"
-    ],
-    [
-      "FY2024 agency budgetary resources total",
-      "https://api.usaspending.gov/api/v2/agency/050/budgetary_resources/?fiscal_year=2024"
-    ]
+    ["FY2024 gross outlays by program activity · page 1", "https://api.usaspending.gov/api/v2/agency/050/program_activity/?fiscal_year=2024&limit=100&page=1"],
+    ["FY2024 agency budgetary resources total", "https://api.usaspending.gov/api/v2/agency/050/budgetary_resources/?fiscal_year=2024"]
   ],
-  "rowSchema": [
-    "subAgency",
-    "program",
-    "amount",
-    "sourceAmount",
-    "sourceRows"
-  ],
+  "rowSchema": ["subAgency", "program", "amount", "sourceAmount", "sourceRows"],
   "rows": [
-    [
-      "Securities and Exchange Commission",
-      "Full-time permanent",
-      1081535610.72,
-      1081535610.72,
-      null
-    ],
-    [
-      "Securities and Exchange Commission",
-      "Civilian personnel benefits",
-      424259099.25,
-      424259099.25,
-      null
-    ],
-    [
-      "Securities and Exchange Commission",
-      "Operation and maintenance of equipment",
-      386491939.21,
-      386491939.21,
-      null
-    ],
-    [
-      "Securities and Exchange Commission",
-      "Special personal services payments",
-      577741331.27,
-      577741331.27,
-      null
-    ],
-    [
-      "Securities and Exchange Commission",
-      "Other services from non-Federal sources",
-      85552480.09,
-      85552480.09,
-      null
-    ],
-    [
-      "Securities and Exchange Commission",
-      "Equipment",
-      83436682.02,
-      83436682.02,
-      null
-    ],
-    [
-      "Securities and Exchange Commission",
-      "Rental payments to others",
-      63790741.02,
-      63790741.02,
-      null
-    ],
-    [
-      "Securities and Exchange Commission",
-      "Other goods and services from Federal sources",
-      60971858.54,
-      60971858.54,
-      null
-    ],
-    [
-      "Securities and Exchange Commission",
-      "Advisory and assistance services",
-      50828038.17,
-      50828038.17,
-      null
-    ],
-    [
-      "Securities and Exchange Commission",
-      "Other than full-time permanent",
-      35624056.87,
-      35624056.87,
-      null
-    ],
-    [
-      "Securities and Exchange Commission",
-      "Rental payments to GSA",
-      30311498.66,
-      30311498.66,
-      null
-    ],
-    [
-      "Securities and Exchange Commission",
-      "Operation and maintenance of facilities",
-      14350351.53,
-      14350351.53,
-      null
-    ],
-    [
-      "Securities and Exchange Commission",
-      "Communications, utilities, and miscellaneous charges",
-      10501244.78,
-      10501244.78,
-      null
-    ],
-    [
-      "Securities and Exchange Commission",
-      "Printing and reproduction",
-      9621643.81,
-      9621643.81,
-      null
-    ],
-    [
-      "Securities and Exchange Commission",
-      "Travel and transportation of persons",
-      5671286.04,
-      5671286.04,
-      null
-    ],
-    [
-      "Securities and Exchange Commission",
-      "Insurance claims and indemnities",
-      2321706.63,
-      2321706.63,
-      null
-    ],
-    [
-      "Securities and Exchange Commission",
-      "Land and structures",
-      10190157.46,
-      10190157.46,
-      null
-    ],
-    [
-      "Securities and Exchange Commission",
-      "Supplies and materials",
-      690767.99,
-      690767.99,
-      null
-    ],
-    [
-      "Securities and Exchange Commission",
-      "Other personnel compensation",
-      156360.41,
-      156360.41,
-      null
-    ],
-    [
-      "Securities and Exchange Commission",
-      "Benefits for former personnel",
-      44487.21,
-      44487.21,
-      null
-    ],
-    [
-      "Securities and Exchange Commission",
-      "Transportation of things",
-      19681.98,
-      19681.98,
-      null
-    ],
-    [
-      "Securities and Exchange Commission",
-      "Research and development contracts",
-      0,
-      0,
-      null
-    ]
+    ["Securities and Exchange Commission", "ENFORCEMENT", 1098793389.66, 1098793389.66, null],
+    ["Securities and Exchange Commission", "AGENCY DIRECTION AND ADMINISTRATIVE SUPPORT", 887848099.47, 887848099.47, null],
+    ["Securities and Exchange Commission", "EXAMINATIONS", 385716490.21, 385716490.21, null],
+    ["Securities and Exchange Commission", "CORPORATION FINANCE", 136434935.56, 136434935.56, null],
+    ["Securities and Exchange Commission", "OTHER PROGRAM OFFICES", 117677945.7, 117677945.7, null],
+    ["Securities and Exchange Commission", "TRADING AND MARKETS", 92741320.55, 92741320.55, null],
+    ["Securities and Exchange Commission", "ECONOMIC AND RISK ANALYSIS", 73265479.41, 73265479.41, null],
+    ["Securities and Exchange Commission", "INVESTMENT MANAGEMENT", 70297756.87, 70297756.87, null],
+    ["Securities and Exchange Commission", "GENERAL COUNSEL", 53377279.97, 53377279.97, null],
+    ["Securities and Exchange Commission", "INSPECTOR GENERAL", 17958326.26, 17958326.26, null]
   ],
   "sourceBasis": "official source amount",
-  "sourceCheck": {
-    "objectClassRows": 22,
-    "objectClassTotal": 2934111023.66,
-    "agencyTotal": 2934111023.66,
-    "difference": 0
-  },
+  "sourceCheck": {"groupRows": 10, "programActivityTotal": 2934111023.66, "agencyTotal": 2934111023.66, "difference": 0},
   "normalizationAdjustment": -0.01,
-  "hierarchyNote": "The source endpoint returns agency-level object-class aggregates; no individual employees or payees are included.",
-  "note": "Amounts are shown on the official source basis; no comparator normalization was applied."
+  "hierarchyNote": "USAspending program-activity rows preserve the agency gross-outlay control; the parent entity is repeated as the sub-agency placeholder.",
+  "note": "Program activities replace the former generic object-class view and remain on USAspending gross-outlay basis; no comparator normalization was applied."
 }

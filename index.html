@@ -17,8 +17,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,500;6..72,600;6..72,700&family=Public+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=16">
-  <link rel="stylesheet" href="details.css?v=8">
+  <link rel="stylesheet" href="styles.css?v=18">
+  <link rel="stylesheet" href="details.css?v=9">
 </head>
 <body>
   <header class="topbar">
@@ -196,15 +196,7 @@
       <section class="panel-section fiscal-card fiscal-card-wide" aria-labelledby="allocationTitle">
         <div class="section-heading">
           <h3 id="allocationTitle"><a class="section-source" data-source-link href="https://www.bea.gov/data/government/receipts-and-expenditures" target="_blank" rel="noopener noreferrer">Where spending goes</a></h3>
-          <div class="allocation-heading-actions">
-            <span id="allocationTotal">$10.37T total</span>
-            <div class="allocation-source-switch" aria-label="Spending view">
-              <button type="button" data-allocation-source="financial" aria-pressed="false" hidden disabled>Audited state GAAP</button>
-              <button type="button" data-allocation-source="itemized" aria-pressed="true">Treasury agencies &amp; programs</button>
-              <button type="button" data-allocation-source="function" aria-pressed="false" hidden disabled>Standardized Census comparison</button>
-              <button type="button" data-allocation-source="archive" aria-pressed="false" hidden disabled>USAspending gross research</button>
-            </div>
-          </div>
+          <span id="allocationTotal">$10.37T total</span>
         </div>
         <div class="allocation-layout">
           <div class="donut" id="allocationDonut" role="img" aria-label="Spending allocation chart">
@@ -237,6 +229,11 @@
     </section>
   </main>
 
+  <footer class="methodology-disclaimer" aria-label="Data methodology">
+    <strong>Methodology note</strong>
+    <p>Maps and headline state totals use published GAAP financial statements. Itemized spending breakdowns use researched published archives and agency records. Census figures are shown only for comparison; differences reflect accounting bases and reporting boundaries and are not additive.</p>
+  </footer>
+
   <script src="https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js"></script>
   <script src="vendor/topojson-client-3.1.0.min.js"></script>
   <script src="data/spending.js"></script>
@@ -251,12 +248,12 @@
   <script src="data/income-tiers.js"></script>
   <script src="data/household-tax-estimates.js?v=2"></script>
   <script src="data/department-index.js"></script>
-  <script src="department-loader.js?v=5"></script>
-  <script src="model.js?v=7"></script>
+  <script src="department-loader.js?v=6"></script>
+  <script src="model.js?v=8"></script>
   <script src="receipt-hierarchy.js?v=1"></script>
-  <script src="tax-estimates.js?v=3"></script>
+  <script src="tax-estimates.js?v=4"></script>
   <script src="kpi-disclosure.js?v=1"></script>
-  <script src="fiscal-panel.js?v=14"></script>
-  <script src="app.js?v=18"></script>
+  <script src="fiscal-panel.js?v=17"></script>
+  <script src="app.js?v=20"></script>
 </body>
 </html>

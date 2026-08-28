@@ -6,276 +6,107 @@
   "fiscalYear": 2024,
   "ledgerAmount": 39721104411.84,
   "sourceTotal": 54133149154.23,
-  "sourceUrl": "https://api.usaspending.gov/api/v2/agency/019/object_class/?fiscal_year=2024&limit=100&page=1",
-  "rowSchema": [
-    "subAgency",
-    "program",
-    "amount",
-    "sourceAmount",
-    "sourceRows"
-  ],
+  "sourceUrl": "https://api.usaspending.gov/api/v2/agency/019/program_activity/?fiscal_year=2024&limit=100&page=1",
+  "rowSchema": ["subAgency", "program", "amount", "sourceAmount", "sourceRows"],
   "rows": [
-    [
-      "Department of State",
-      "Grants, subsidies, and contributions",
-      25421931148.13,
-      25421931148.13,
-      null
-    ],
-    [
-      "Department of State",
-      "Advisory and assistance services",
-      7277414890.05,
-      7277414890.05,
-      null
-    ],
-    [
-      "Department of State",
-      "Full-time permanent",
-      5572305532.63,
-      5572305532.63,
-      null
-    ],
-    [
-      "Department of State",
-      "Other goods and services from Federal sources",
-      4302970666.13,
-      4302970666.13,
-      null
-    ],
-    [
-      "Department of State",
-      "Civilian personnel benefits",
-      3076102774.1,
-      3076102774.1,
-      null
-    ],
-    [
-      "Department of State",
-      "Land and structures",
-      1555228327.6,
-      1555228327.6,
-      null
-    ],
-    [
-      "Department of State",
-      "Supplies and materials",
-      1977828901.03,
-      1977828901.03,
-      null
-    ],
-    [
-      "Department of State",
-      "Operation and maintenance of equipment",
-      1748862198.95,
-      1748862198.95,
-      null
-    ],
-    [
-      "Department of State",
-      "Rental payments to others",
-      1291983762.08,
-      1291983762.08,
-      null
-    ],
-    [
-      "Department of State",
-      "Equipment",
-      1167221939.09,
-      1167221939.09,
-      null
-    ],
-    [
-      "Department of State",
-      "Insurance claims and indemnities",
-      1229986634.48,
-      1229986634.48,
-      null
-    ],
-    [
-      "Department of State",
-      "Communications, utilities, and miscellaneous charges",
-      869622803.6,
-      869622803.6,
-      null
-    ],
-    [
-      "Department of State",
-      "Object class not reported by official source",
-      -5081324033.34,
-      -5081324033.34,
-      null
-    ],
-    [
-      "Department of State",
-      "Transportation of things",
-      726014740.02,
-      726014740.02,
-      null
-    ],
-    [
-      "Department of State",
-      "Travel and transportation of persons",
-      646468201.28,
-      646468201.28,
-      null
-    ],
-    [
-      "Department of State",
-      "Printing and reproduction",
-      555507908.58,
-      555507908.58,
-      null
-    ],
-    [
-      "Department of State",
-      "Operation and maintenance of facilities",
-      617048914.29,
-      617048914.29,
-      null
-    ],
-    [
-      "Department of State",
-      "Other than full-time permanent",
-      346257512.23,
-      346257512.23,
-      null
-    ],
-    [
-      "Department of State",
-      "Other personnel compensation",
-      346051284.51,
-      346051284.51,
-      null
-    ],
-    [
-      "Department of State",
-      "Rental payments to GSA",
-      140464717.12,
-      140464717.12,
-      null
-    ],
-    [
-      "Department of State",
-      "Other services from non-Federal sources",
-      128623562.01,
-      128623562.01,
-      null
-    ],
-    [
-      "Department of State",
-      "Medical care",
-      56582537.16,
-      56582537.16,
-      null
-    ],
-    [
-      "Department of State",
-      "Benefits for former personnel",
-      50627453.01,
-      50627453.01,
-      null
-    ],
-    [
-      "Department of State",
-      "Refunds",
-      35841535.43,
-      35841535.43,
-      null
-    ],
-    [
-      "Department of State",
-      "Unvouchered",
-      40749040.67,
-      40749040.67,
-      null
-    ],
-    [
-      "Department of State",
-      "Subsistence and support of persons",
-      40838.66,
-      40838.66,
-      null
-    ],
-    [
-      "Department of State",
-      "Special personal services payments",
-      8733214.61,
-      8733214.61,
-      null
-    ],
-    [
-      "Department of State",
-      "Research and development contracts",
-      11761108.46,
-      11761108.46,
-      null
-    ],
-    [
-      "Department of State",
-      "Military personnel",
-      4750384.57,
-      4750384.57,
-      null
-    ],
-    [
-      "Department of State",
-      "Military personnel benefits",
-      4415962.38,
-      4415962.38,
-      null
-    ],
-    [
-      "Department of State",
-      "Investments and loans",
-      3031028.29,
-      3031028.29,
-      null
-    ],
-    [
-      "Department of State",
-      "Interest and dividends",
-      31379.36,
-      31379.36,
-      null
-    ],
-    [
-      "Department of State",
-      "Military personnel - basic allowance for housing",
-      12287.06,
-      12287.06,
-      null
-    ]
+    ["Department of State", "UNKNOWN/OTHER", 10238881269.74, 10238881269.74, null],
+    ["Department of State", "DIRECT GLOBAL HEALTH PROGRAM ACTIVITY", 9460889414.86, 9460889414.86, null],
+    ["Department of State", "CONSULAR AND BORDER SECURITY PROGRAMS", 4081142690.02, 4081142690.02, null],
+    ["Department of State", "SECURITY-WORLDWIDE SECURITY PROTECTION", 4063541286.43, 4063541286.43, null],
+    ["Department of State", "INTERNATIONAL COOPERATIVE ADMINISTRATIVE SUPPORT SERVICES (ICASS)", 3738566066.35, 3738566066.35, null],
+    ["Department of State", "HUMAN RESOURCES", 2825048710.66, 2825048710.66, null],
+    ["Department of State", "OVERSEAS ASSISTANCE", 2199611685.3, 2199611685.3, null],
+    ["Department of State", "CONTRIBUTIONS FOR INTERNATIONAL PEACEKEEPING ACTIVITIES (DIRECT)", 1816568797, 1816568797, null],
+    ["Department of State", "OVERSEAS PROGRAMS", 1548049825.81, 1548049825.81, null],
+    ["Department of State", "CONTRIBUTIONS TO INTERNATIONAL ORGANIZATIONS", 1507394614.25, 1507394614.25, null],
+    ["Department of State", "PAYMENTS TO BENEFICIARIES", 1198078238, 1198078238, null],
+    ["Department of State", "COUNTERDRUG AND ANTI-CRIME PROGRAMS", 1055422346.65, 1055422346.65, null],
+    ["Department of State", "CAPITAL SECURITY CONSTRUCTION", 966850753.59, 966850753.59, null],
+    ["Department of State", "WORKING CAPITAL FUND PROGRAMS", 953261513.99, 953261513.99, null],
+    ["Department of State", "DIPLOMATIC POLICY AND SUPPORT", 837612460.92, 837612460.92, null],
+    ["Department of State", "EDUCATIONAL AND CULTURAL EXCHANGE PROGRAMS (DIRECT)", 803484267.69, 803484267.69, null],
+    ["Department of State", "CAPITAL SECURITY COST SHARING", 715086357.37, 715086357.37, null],
+    ["Department of State", "PAYMENT TO FOREIGN SERVICE RETIREMENT AND DISABILITY FUND", 609200000, 609200000, null],
+    ["Department of State", "NONPROLIFERATION, ANTI-TERRORISM, DEMINING & RELATED PROGRAMS (DIRECT)", 599952458.13, 599952458.13, null],
+    ["Department of State", "HEALTH CARE CONTRIBUTION - RESERVE COMPONENT", 508249853, 508249853, null],
+    ["Department of State", "CAPITAL INVESTMENT FUND", 419384970.24, 419384970.24, null],
+    ["Department of State", "OCO", 345201486.52, 345201486.52, null],
+    ["Department of State", "MEDICAL SERVICES", 331893737.33, 331893737.33, null],
+    ["Department of State", "NATIONAL ENDOWMENT FOR DEMOCRACY (DIRECT)", 322459789, 322459789, null],
+    ["Department of State", "PEACEKEEPING OPERATIONS (DIRECT)", 294611745.02, 294611745.02, null],
+    ["Department of State", "DEMOCRACY FUND (DIRECT)", 292832232.6, 292832232.6, null],
+    ["Department of State", "OVERSEAS PROGRAMS - PUBLIC DIPLOMACY", 284511040.13, 284511040.13, null],
+    ["Department of State", "OFFICE OF FOREIGN MISSIONS", 252060617.92, 252060617.92, null],
+    ["Department of State", "U.S. REFUGEE ADMISSIONS PROGRAM", 250605697.11, 250605697.11, null],
+    ["Department of State", "OVERSEAS CONTINGENCY OPERATIONS", 143812665.05, 143812665.05, null],
+    ["Department of State", "N/A", 135281544.2, 135281544.2, null],
+    ["Department of State", "DIPLOMATIC AND CONSULAR PROGRAMS (REIMBURSABLE)", 129071394.54, 129071394.54, null],
+    ["Department of State", "COMPOUND SECURITY", 124466727.89, 124466727.89, null],
+    ["Department of State", "OFFICE OF THE INSPECTOR GENERAL (DIRECT)", 96982196.32, 96982196.32, null],
+    ["Department of State", "ADMINISTRATIVE EXPENSES", 88518366.28, 88518366.28, null],
+    ["Department of State", "EMERGENCIES IN THE DIPLOMATIC AND CONSULAR SERVICE", 82004876.5, 82004876.5, null],
+    ["Department of State", "AVIATION SERVICES", 79753112.19, 79753112.19, null],
+    ["Department of State", "OTHER COMMISSIONS AND MARINE SCIENCE ORGANIZATIONS", 64688071.16, 64688071.16, null],
+    ["Department of State", "INTERNATIONAL BOUNDARY AND WATER COMMISSION-SALARIES AND EXPENSES", 60209497.2, 60209497.2, null],
+    ["Department of State", "REPAIR AND CONSTRUCTION", 56319848.64, 56319848.64, null],
+    ["Department of State", "PAYMENT TO THE AMERICAN INSTITUTE IN TAIWAN (DIRECT)", 42776006.94, 42776006.94, null],
+    ["Department of State", "MISSIONS AND OFFICIALS TO UNITED NATIONS", 42319322.23, 42319322.23, null],
+    ["Department of State", "INTERNATIONAL BOUNDARY AND WATER COMMISSION-CONSTRUCTION", 36394310.46, 36394310.46, null],
+    ["Department of State", "PAYMENTS TO BENEFICIARIES - LOCALLY ENGAGED STAFF", 34624883.43, 34624883.43, null],
+    ["Department of State", "IT DESKTOP", 31130561.31, 31130561.31, null],
+    ["Department of State", "DIRECT GLOBAL HEALTH PROGRAM", 27642990.35, 27642990.35, null],
+    ["Department of State", "NA", 24239651.1, 24239651.1, null],
+    ["Department of State", "OTHER REIMBURSABLE", 24122106.86, 24122106.86, null],
+    ["Department of State", "SECURITY", 23532870.9, 23532870.9, null],
+    ["Department of State", "OPERATIONS", 23428236.85, 23428236.85, null],
+    ["Department of State", "EAST-WEST CENTER (DIRECT)", 23110079, 23110079, null],
+    ["Department of State", "CONDITIONAL GIFT FUND", 22328128.78, 22328128.78, null],
+    ["Department of State", "PAYMENT TO THE ASIA FOUNDATION (DIRECT)", 21293790.98, 21293790.98, null],
+    ["Department of State", "INTERNATIONAL NARCOTICS CONTROL AND LAW ENFORCEMENT (REIMBURSABLE)", 20787106.94, 20787106.94, null],
+    ["Department of State", "RETIREE PAYMENTS", 18731607.1, 18731607.1, null],
+    ["Department of State", "ASSET MANAGEMENT", 16914443.13, 16914443.13, null],
+    ["Department of State", "AMERICAN SECTIONS, INTERNATIONAL COMMISSIONS (DIRECT)", 15862069.68, 15862069.68, null],
+    ["Department of State", "UNITED STATES EMERGENCY REFUGEE AND MIGRATION ASSISTANCE FUND (DIRECT)", 15296366.45, 15296366.45, null],
+    ["Department of State", "NONPROLIFERATION, ANTI-TERRORISM, DEMINING & RELATED PROGRAMS (REIMBURSABLE)", 14101536.86, 14101536.86, null],
+    ["Department of State", "EDUCATIONAL AND CULTURAL EXCHANGE PROGRAMS (REIMBURSABLE)", 14031795.66, 14031795.66, null],
+    ["Department of State", "SALARIES AND EXPENSES, IBWC (REIMBURSABLE)", 12243528.94, 12243528.94, null],
+    ["Department of State", "REFUGEES TO ISRAEL", 11625166.57, 11625166.57, null],
+    ["Department of State", "REPRESENTATION EXPENSES", 7498808.85, 7498808.85, null],
+    ["Department of State", "CONSTRUCTION, IBWC (REIMBURSABLE)", 4920042.4, 4920042.4, null],
+    ["Department of State", "MISSIONS AND OFFICIALS IN UNITED STATES", 4530147, 4530147, null],
+    ["Department of State", "INTERNATIONAL LITIGATION FUND", 4132425.17, 4132425.17, null],
+    ["Department of State", "INTERNATIONAL CENTER, WASHINGTON, D.C. (REIMBURSABLE)", 3691282.92, 3691282.92, null],
+    ["Department of State", "DIRECT LOAN SUBSIDY", 2945455.1, 2945455.1, null],
+    ["Department of State", "SUPPLEMENTAL APPROPRIATIONS", 2732482.17, 2732482.17, null],
+    ["Department of State", "ADMINISTRATION AND SERVICE-WIDE ACTIVITIES", 2638720.21, 2638720.21, null],
+    ["Department of State", "GLOBAL HIV/AIDS INITIATIVE", 732261.99, 732261.99, null],
+    ["Department of State", "CENTER FOR MIDDLE EASTERN-WESTERN DIALOGUE TRUST FUND (DIRECT)", 717700, 717700, null],
+    ["Department of State", "INTERNATIONAL CENTER, WASHINGTON, D.C. (DIRECT)", 665384, 665384, null],
+    ["Department of State", "COVID-19", 540052.18, 540052.18, null],
+    ["Department of State", "CONTRIBUTIONS TO INTERNATIONAL ORGANIZATIONS - OCO", 236609.66, 236609.66, null],
+    ["Department of State", "PEACEKEEPING OPERATIONS (REIMBURSABLE)", 73854.62, 73854.62, null],
+    ["Department of State", "REIMBURSABLE PROGRAM ACTIVITY - WCF", 66600, 66600, null],
+    ["Department of State", "OFFICE OF THE INSPECTOR GENERAL (SIGAR)-OCO", 26406.71, 26406.71, null],
+    ["Department of State", "MIGRATION AND REFUGEE ASSISTANCE (REIMBURSABLE)", 5600.24, 5600.24, null],
+    ["Department of State", "MISCELLANEOUS TRUST FUNDS (REIMBURSABLE)", 3737.54, 3737.54, null],
+    ["Department of State", "SECURITY - WORLDWIDE SECURITY PROTECTION (REIMBURSABLE)", 215.06, 215.06, null],
+    ["Department of State", "POST ASSIGNMENT TRAVEL", 0, 0, null],
+    ["Department of State", "GLOBAL SECURITY CONTINGENCY FUND (DIRECT)", -2155.12, -2155.12, null],
+    ["Department of State", "CONFLICT STABILIZATION OPERATIONS", -2878.77, -2878.77, null],
+    ["Department of State", "CONFLICT STABILIZATION OPERATIONS - OCO", -4107.54, -4107.54, null],
+    ["Department of State", "TOTAL: PROGRAM ACTIVITY", -25288.34, -25288.34, null],
+    ["Department of State", "UNDISTRIBUTED", -1072987.94, -1072987.94, null]
   ],
   "supplementalRows": [],
-  "supplementalSchema": [
-    "subAgency",
-    "program",
-    "amount",
-    "measure",
-    "source"
-  ],
-  "hierarchyNote": "Object-class rows are directly managed; the parent entity is repeated as the sub-agency placeholder.",
+  "supplementalSchema": ["subAgency", "program", "amount", "measure", "source"],
+  "hierarchyNote": "USAspending program-activity rows preserve the agency gross-outlay control; the parent entity is repeated as the sub-agency placeholder.",
   "sourceUrls": [
-    [
-      "FY2024 gross outlays by object class",
-      "https://api.usaspending.gov/api/v2/agency/019/object_class/?fiscal_year=2024&limit=100&page=1"
-    ],
-    [
-      "FY2024 agency budgetary resources total",
-      "https://api.usaspending.gov/api/v2/agency/019/budgetary_resources/?fiscal_year=2024"
-    ]
+    ["FY2024 gross outlays by program activity · page 1", "https://api.usaspending.gov/api/v2/agency/019/program_activity/?fiscal_year=2024&limit=100&page=1"],
+    ["FY2024 agency budgetary resources total", "https://api.usaspending.gov/api/v2/agency/019/budgetary_resources/?fiscal_year=2024"]
   ],
   "sourceBasis": "official source amount",
-  "sourceCheck": {
-    "objectClassRows": 33,
-    "objectClassTotal": 54133149154.23,
-    "agencyTotal": 54133149154.23,
-    "difference": 0
-  },
+  "sourceCheck": {"groupRows": 87, "programActivityTotal": 54133149154.23, "agencyTotal": 54133149154.23, "difference": 0},
   "normalizationAdjustment": -0.01,
-  "sourceLabelMap": {
-    "Object class not reported by official source": "Unknown"
-  },
-  "note": "The official USAspending object-class response labels 1 row as Unknown; the display label states that the object class was not reported and no category was inferred. Amounts are shown on the official source basis; no comparator normalization was applied."
+  "sourceLabelMap": {"Object class not reported by official source": "Unknown"},
+  "note": "Program activities replace the former generic object-class view and remain on USAspending gross-outlay basis; no comparator normalization was applied."
 }

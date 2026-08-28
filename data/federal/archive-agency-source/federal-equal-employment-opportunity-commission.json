@@ -5,181 +5,21 @@
   "fiscalYear": 2024,
   "ledgerAmount": 345620996.67,
   "sourceTotal": 471022979.86,
-  "sourceUrl": "https://api.usaspending.gov/api/v2/agency/045/object_class/?fiscal_year=2024&limit=100&page=1",
+  "sourceUrl": "https://api.usaspending.gov/api/v2/agency/045/program_activity/?fiscal_year=2024&limit=100&page=1",
   "sourceUrls": [
-    [
-      "FY2024 gross outlays by object class",
-      "https://api.usaspending.gov/api/v2/agency/045/object_class/?fiscal_year=2024&limit=100&page=1"
-    ],
-    [
-      "FY2024 agency budgetary resources total",
-      "https://api.usaspending.gov/api/v2/agency/045/budgetary_resources/?fiscal_year=2024"
-    ]
+    ["FY2024 gross outlays by program activity · page 1", "https://api.usaspending.gov/api/v2/agency/045/program_activity/?fiscal_year=2024&limit=100&page=1"],
+    ["FY2024 agency budgetary resources total", "https://api.usaspending.gov/api/v2/agency/045/budgetary_resources/?fiscal_year=2024"]
   ],
-  "rowSchema": [
-    "subAgency",
-    "program",
-    "amount",
-    "sourceAmount",
-    "sourceRows"
-  ],
+  "rowSchema": ["subAgency", "program", "amount", "sourceAmount", "sourceRows"],
   "rows": [
-    [
-      "Equal Employment Opportunity Commission",
-      "Full-time permanent",
-      250481932.52,
-      250481932.52,
-      null
-    ],
-    [
-      "Equal Employment Opportunity Commission",
-      "Civilian personnel benefits",
-      93628615.81,
-      93628615.81,
-      null
-    ],
-    [
-      "Equal Employment Opportunity Commission",
-      "Rental payments to GSA",
-      33404408.71,
-      33404408.71,
-      null
-    ],
-    [
-      "Equal Employment Opportunity Commission",
-      "Advisory and assistance services",
-      37272048.51,
-      37272048.51,
-      null
-    ],
-    [
-      "Equal Employment Opportunity Commission",
-      "Other services from non-Federal sources",
-      33158704.21,
-      33158704.21,
-      null
-    ],
-    [
-      "Equal Employment Opportunity Commission",
-      "Other goods and services from Federal sources",
-      7707461.88,
-      7707461.88,
-      null
-    ],
-    [
-      "Equal Employment Opportunity Commission",
-      "Communications, utilities, and miscellaneous charges",
-      4179451.06,
-      4179451.06,
-      null
-    ],
-    [
-      "Equal Employment Opportunity Commission",
-      "Other personnel compensation",
-      4073487.97,
-      4073487.97,
-      null
-    ],
-    [
-      "Equal Employment Opportunity Commission",
-      "Supplies and materials",
-      3636452.21,
-      3636452.21,
-      null
-    ],
-    [
-      "Equal Employment Opportunity Commission",
-      "Travel and transportation of persons",
-      1343373.08,
-      1343373.08,
-      null
-    ],
-    [
-      "Equal Employment Opportunity Commission",
-      "Other than full-time permanent",
-      979128.74,
-      979128.74,
-      null
-    ],
-    [
-      "Equal Employment Opportunity Commission",
-      "Equipment",
-      553554.22,
-      553554.22,
-      null
-    ],
-    [
-      "Equal Employment Opportunity Commission",
-      "Insurance claims and indemnities",
-      380267.75,
-      380267.75,
-      null
-    ],
-    [
-      "Equal Employment Opportunity Commission",
-      "Printing and reproduction",
-      154753.85,
-      154753.85,
-      null
-    ],
-    [
-      "Equal Employment Opportunity Commission",
-      "Benefits for former personnel",
-      55657.66,
-      55657.66,
-      null
-    ],
-    [
-      "Equal Employment Opportunity Commission",
-      "Special personal services payments",
-      4936.77,
-      4936.77,
-      null
-    ],
-    [
-      "Equal Employment Opportunity Commission",
-      "Subsistence and support of persons",
-      3875,
-      3875,
-      null
-    ],
-    [
-      "Equal Employment Opportunity Commission",
-      "Refunds",
-      2708.24,
-      2708.24,
-      null
-    ],
-    [
-      "Equal Employment Opportunity Commission",
-      "Operation and maintenance of facilities",
-      1872.27,
-      1872.27,
-      null
-    ],
-    [
-      "Equal Employment Opportunity Commission",
-      "Rental payments to others",
-      259.4,
-      259.4,
-      null
-    ],
-    [
-      "Equal Employment Opportunity Commission",
-      "Transportation of things",
-      30,
-      30,
-      null
-    ]
+    ["Equal Employment Opportunity Commission", "PRIVATE SECTOR", 383379500.03, 383379500.03, null],
+    ["Equal Employment Opportunity Commission", "FEDERAL SECTOR", 51861532.87, 51861532.87, null],
+    ["Equal Employment Opportunity Commission", "STATE AND LOCAL", 30333335.85, 30333335.85, null],
+    ["Equal Employment Opportunity Commission", "EEOC EDUCATION, TECHNICAL ASSISTANCE, AND TRAINING REVOLVING FUN (REIMBURSABLE)", 5448611.11, 5448611.11, null]
   ],
   "sourceBasis": "official source amount",
-  "sourceCheck": {
-    "objectClassRows": 21,
-    "objectClassTotal": 471022979.86,
-    "agencyTotal": 471022979.86,
-    "difference": 0
-  },
+  "sourceCheck": {"groupRows": 4, "programActivityTotal": 471022979.86, "agencyTotal": 471022979.86, "difference": 0},
   "normalizationAdjustment": -0.02,
-  "hierarchyNote": "The source endpoint returns agency-level object-class aggregates; no individual employees or payees are included.",
-  "note": "Amounts are shown on the official source basis; no comparator normalization was applied."
+  "hierarchyNote": "USAspending program-activity rows preserve the agency gross-outlay control; the parent entity is repeated as the sub-agency placeholder.",
+  "note": "Program activities replace the former generic object-class view and remain on USAspending gross-outlay basis; no comparator normalization was applied."
 }

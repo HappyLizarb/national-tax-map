@@ -5,153 +5,23 @@
   "fiscalYear": 2024,
   "ledgerAmount": 15935078934.58,
   "sourceTotal": 21716818238.65,
-  "sourceUrl": "https://api.usaspending.gov/api/v2/agency/1602/object_class/?fiscal_year=2024&limit=100&page=1",
+  "sourceUrl": "https://api.usaspending.gov/api/v2/agency/1602/program_activity/?fiscal_year=2024&limit=100&page=1",
   "sourceUrls": [
-    [
-      "FY2024 gross outlays by object class",
-      "https://api.usaspending.gov/api/v2/agency/1602/object_class/?fiscal_year=2024&limit=100&page=1"
-    ],
-    [
-      "FY2024 agency budgetary resources total",
-      "https://api.usaspending.gov/api/v2/agency/1602/budgetary_resources/?fiscal_year=2024"
-    ]
+    ["FY2024 gross outlays by program activity · page 1", "https://api.usaspending.gov/api/v2/agency/1602/program_activity/?fiscal_year=2024&limit=100&page=1"],
+    ["FY2024 agency budgetary resources total", "https://api.usaspending.gov/api/v2/agency/1602/budgetary_resources/?fiscal_year=2024"]
   ],
-  "rowSchema": [
-    "subAgency",
-    "program",
-    "amount",
-    "sourceAmount",
-    "sourceRows"
-  ],
+  "rowSchema": ["subAgency", "program", "amount", "sourceAmount", "sourceRows"],
   "rows": [
-    [
-      "Pension Benefit Guaranty Corporation",
-      "Investments and loans",
-      14801549024.16,
-      14801549024.16,
-      null
-    ],
-    [
-      "Pension Benefit Guaranty Corporation",
-      "Insurance claims and indemnities",
-      6326977799.62,
-      6326977799.62,
-      null
-    ],
-    [
-      "Pension Benefit Guaranty Corporation",
-      "Other services from non-Federal sources",
-      251932801.32,
-      251932801.32,
-      null
-    ],
-    [
-      "Pension Benefit Guaranty Corporation",
-      "Full-time permanent",
-      138484319.62,
-      138484319.62,
-      null
-    ],
-    [
-      "Pension Benefit Guaranty Corporation",
-      "Advisory and assistance services",
-      91755747.49,
-      91755747.49,
-      null
-    ],
-    [
-      "Pension Benefit Guaranty Corporation",
-      "Civilian personnel benefits",
-      51793431.08,
-      51793431.08,
-      null
-    ],
-    [
-      "Pension Benefit Guaranty Corporation",
-      "Other goods and services from Federal sources",
-      36536685.54,
-      36536685.54,
-      null
-    ],
-    [
-      "Pension Benefit Guaranty Corporation",
-      "Other personnel compensation",
-      3898089.61,
-      3898089.61,
-      null
-    ],
-    [
-      "Pension Benefit Guaranty Corporation",
-      "Communications, utilities, and miscellaneous charges",
-      3692937.8,
-      3692937.8,
-      null
-    ],
-    [
-      "Pension Benefit Guaranty Corporation",
-      "Other than full-time permanent",
-      3107351.79,
-      3107351.79,
-      null
-    ],
-    [
-      "Pension Benefit Guaranty Corporation",
-      "Equipment",
-      3594019.23,
-      3594019.23,
-      null
-    ],
-    [
-      "Pension Benefit Guaranty Corporation",
-      "Rental payments to others",
-      1000886.55,
-      1000886.55,
-      null
-    ],
-    [
-      "Pension Benefit Guaranty Corporation",
-      "Travel and transportation of persons",
-      618257.87,
-      618257.87,
-      null
-    ],
-    [
-      "Pension Benefit Guaranty Corporation",
-      "Supplies and materials",
-      445671.52,
-      445671.52,
-      null
-    ],
-    [
-      "Pension Benefit Guaranty Corporation",
-      "Rental payments to GSA",
-      1436156.4,
-      1436156.4,
-      null
-    ],
-    [
-      "Pension Benefit Guaranty Corporation",
-      "Printing and reproduction",
-      -9393.11,
-      -9393.11,
-      null
-    ],
-    [
-      "Pension Benefit Guaranty Corporation",
-      "Benefits for former personnel",
-      4452.16,
-      4452.16,
-      null
-    ]
+    ["Pension Benefit Guaranty Corporation", "MULTIEMPLOYER - SPECIAL FINANCIAL ASSISTANCE", 14638485324.16, 14638485324.16, null],
+    ["Pension Benefit Guaranty Corporation", "SINGLE-EMPLOYER BENEFIT PAYMENT", 6326977799.62, 6326977799.62, null],
+    ["Pension Benefit Guaranty Corporation", "ADMINISTRATIVE EXPENSES", 476958255.76, 476958255.76, null],
+    ["Pension Benefit Guaranty Corporation", "MULTIEMPLOYER FINANCIAL ASSISTANCE", 163063700, 163063700, null],
+    ["Pension Benefit Guaranty Corporation", "INVESTMENT MANAGEMENT FEES", 91755747.49, 91755747.49, null],
+    ["Pension Benefit Guaranty Corporation", "MULTIEMPLOYER - ADMINISTRATIVE EXPENSES - SPECIAL FINANCIAL ASSISTANCE", 19577411.62, 19577411.62, null]
   ],
   "sourceBasis": "official source amount",
-  "sourceCheck": {
-    "objectClassRows": 17,
-    "objectClassTotal": 21716818238.65,
-    "agencyTotal": 21716818238.65,
-    "difference": 0
-  },
+  "sourceCheck": {"groupRows": 6, "programActivityTotal": 21716818238.65, "agencyTotal": 21716818238.65, "difference": 0},
   "normalizationAdjustment": -0.01,
-  "hierarchyNote": "The source endpoint returns agency-level object-class aggregates; no individual employees or payees are included.",
-  "note": "Amounts are shown on the official source basis; no comparator normalization was applied."
+  "hierarchyNote": "USAspending program-activity rows preserve the agency gross-outlay control; the parent entity is repeated as the sub-agency placeholder.",
+  "note": "Program activities replace the former generic object-class view and remain on USAspending gross-outlay basis; no comparator normalization was applied."
 }

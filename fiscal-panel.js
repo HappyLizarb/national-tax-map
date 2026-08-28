@@ -1,18 +1,16 @@
 function updatePanel() {
-  const view = model.scopeData(state.scope, state.allocationSource);
-  const canonical = view;
-  const budget = canonical.budgetStatus ? model.budgetPresentationFor(canonical.name) : null;
+  const canonical = model.scopeData(state.scope, state.layer === "federal" ? "itemized" : "financial");
+  const allocation = model.scopeData(state.scope, "itemized");
   const financial = canonical.financialResult;
   const status = canonical.kind === "federal" ? "Source-backed"
     : financial ? (hasAuditCaveat(financial) ? "Official GAAP · audit caveat" : "Audited GAAP")
-      : budget?.statusLabel || (canonical.comparable ? "Census comparison" : "Separate source basis");
+      : canonical.comparable ? "Census comparison" : "Separate source basis";
   animatePanelChange();
   setText("#scopeTitle", canonical.name);
   setText("#scopeContext", (canonical.kind === "federal" ? "Federal outlays" : status) + " · FY 2024");
   setText("#budgetStatus", status);
-  updateSources(canonical.name); updateKpis(canonical, budget); updateAccountingComparison(canonical.name); updateTaxRates(canonical.name);
-  updateComparison(view); updateAllocation(view); updateSecondary(view);
-  updateAllocationSourceControls();
+  updateSources(canonical); updateKpis(canonical, null); updateAccountingComparison(canonical.name); updateTaxRates(canonical.name);
+  updateComparison(canonical); updateAllocation(allocation); updateSecondary(canonical);
   setText("#dataBasis", canonical.basis);
 }
 // Briefly soften state changes while respecting reduced-motion preferences.
@@ -23,11 +21,12 @@ function animatePanelChange() {
     { duration: 320, easing: "ease-in-out" }
   ));
 }
-function updateSources(name) {
+function updateSources(data) {
+  const name = data.name;
   const feature = state.features.find((item) => item.properties.name === name);
   const sources = model.sourceLinks(name, state.layer, feature?.id);
-  const budget = state.allocationSource === "itemized" ? model.budgetActualFor(name) : null;
-  const financial = state.allocationSource === "financial" ? model.financialResultFor(name) : null;
+  const budget = data.budgetActual;
+  const financial = data.financialResult;
   const primary = financial?.sourceUrl || budget?.sourceUrl || sources.primary;
   const references = (budget ? [{ label: budget.document, url: budget.sourceUrl }, ...sources.references]
     : financial ? [{ label: financial.document, url: financial.sourceUrl }, ...sources.references] : sources.references)
@@ -65,21 +64,24 @@ function updateKpis(data, budget) {
 // Describe the canonical budget standard without treating Census as additive.
 function updateAccountingComparison(name) {
   const section = $("#accountingComparison");
-  if (state.allocationSource === "financial") { section.hidden = true; return; }
   const comparison = model.accountingComparisonFor(name);
   section.hidden = !comparison;
   if (!comparison) return;
   const budgetStandard = comparison.kind === "budget-standard";
-  setText("#accountingComparisonTitle", budgetStandard ? "Official legislative-budget standard" : "Two reported totals, different measurement boundaries");
+  const gaapComparison = comparison.kind === "gaap-comparison";
+  setText("#accountingComparisonTitle", budgetStandard ? "Official legislative-budget standard"
+    : gaapComparison ? "Census and audited GAAP comparison" : "Two reported totals, different measurement boundaries");
   setText("#accountingComparisonAsOf", budgetStandard ? "FY 2024 · state-specific basis" : "FY 2024 · not additive");
   setText("#censusReportedLabel", budgetStandard ? "Standardized Census comparison" : "Census statistical total");
   setText("#censusReportedBasis", "Standardized functions and Census-defined state-government coverage");
   setText("#censusReportedTotal", model.formatExactMoney(comparison.censusTotal));
   setText("#stateReportedTotal", model.formatExactMoney(comparison.stateTotal));
-  setText("#stateReportedLabel", budgetStandard ? model.budgetPresentationFor(name).statusLabel : "Official state-source total");
+  setText("#stateReportedLabel", budgetStandard ? model.budgetPresentationFor(name).statusLabel
+    : gaapComparison ? "Audited GAAP expenses" : "Official state-source total");
   setText("#stateReportedBasis", comparison.label);
   const difference = budgetStandard ? model.formatExactMoney(comparison.itemizedTotal) : model.formatExactMoney(comparison.difference);
-  setText("#accountingThirdLabel", budgetStandard ? "Itemized coverage" : "Census minus state source");
+  setText("#accountingThirdLabel", budgetStandard ? "Itemized coverage"
+    : gaapComparison ? "Census minus GAAP" : "Census minus state source");
   setText("#accountingDifference", budgetStandard || comparison.difference <= 0 ? difference : "+" + difference);
   setText("#accountingThirdBasis", budgetStandard ? comparison.coveragePercent.toFixed(1) + "% of the canonical control" : "Diagnostic difference—not missing or excess spending");
   setText("#accountingStatement", (comparison.provenance ? comparison.provenance + " " : "") + comparison.statement);
@@ -151,7 +153,14 @@ async function allocationSummary(scope, primary) {
       label === "Prior state layer snapshot" && url.startsWith("data/"))?.[1];
   if (state.allocationSource === "archive") {
     if (!archiveUrl) throw new Error("No archived source ledger for " + scope);
-    return DepartmentData.loadDetail(archiveUrl);
+    const archive = await DepartmentData.loadDetail(archiveUrl);
+    if (scope !== "United States") return archive;
+    const researchByArchive = new Map(primary.departments.flatMap((department) =>
+      (department.relatedSources || []).filter(([, url]) => url !== archiveUrl)
+        .map(([, url]) => [url, department.detailUrl])));
+    return { ...archive, departments: archive.departments.map((department) => ({
+      ...department, researchDetailUrl: researchByArchive.get(department.detailUrl)
+    })) };
   }
   if (scope === "United States") return primary;
   const budget = model.budgetActualFor(scope);
@@ -187,7 +196,7 @@ function renderAllocation(summary, scopeData) {
   setText("#coverageShare", budget ? coverage.toFixed(1) + "%" : hasAdjustments ? "100% of positive allocations" : "100%");
   setText("#sourceExplorerNote", summary.note || "Itemized rows load only after a department is selected.");
   if (scopeData.kind === "federal") $("#agencyRows").innerHTML = federalResearchCatalog();
-  updateAllocationSources(summary, scopeData);
+  $("#allocationTitle a").href = summary.departments[0]?.sourceUrl || summary.sourceUrl;
 }
 function allocationLabel(summary, total, scopeData) {
   if (state.allocationSource === "financial") return model.formatMoney(total) + " government-wide expenses";
@@ -199,23 +208,6 @@ function allocationLabel(summary, total, scopeData) {
   const label = summary.coverageStatus === "official-itemized-source-basis"
     ? "official itemized allocations" : "function allocations";
   return model.formatMoney(total) + " " + label;
-}
-function updateAllocationSources(summary, scopeData) {
-  $("#allocationTitle a").href = summary.departments[0]?.sourceUrl || summary.sourceUrl;
-  if (state.allocationSource === "archive") {
-    setText("#dataBasis", scopeData.kind === "federal"
-      ? "Archived USAspending agency and object-class amounts are gross supporting research, not a substitute for Treasury net outlays."
-      : scopeData.basis);
-    return;
-  }
-  if (summary.coverageStatus !== "official-itemized-source-basis") {
-    updateSources(scopeData.name);
-    setText("#dataBasis", scopeData.basis);
-    return;
-  }
-  setText("#dataBasis", scopeData.budgetActual
-    ? "Department rows are nested evidence against the canonical control and are never added to it. Itemized coverage is disclosed above."
-    : "This source-specific itemization remains research evidence; no canonical legislative-budget actual has been validated for this state.");
 }
 function federalResearchCatalog() {
   return model.federalSourceRows().map((source) => '<details class="source-catalog"><summary><strong>'
@@ -249,8 +241,15 @@ async function showBreakdown(department) {
   if (department.detailUrl) {
     setText("#sourceExplorerNote", "Loading itemized rows for " + department.name + "…");
     try {
-      const detail = await DepartmentData.loadDetail(department.detailUrl);
-      if (request === state.detailRequest) renderDetail(detail);
+      const [detail, research] = await Promise.all([
+        DepartmentData.loadDetail(department.detailUrl),
+        department.researchDetailUrl ? DepartmentData.loadDetail(department.researchDetailUrl) : null
+      ]);
+      if (request === state.detailRequest) renderDetail(research ? {
+        ...detail,
+        sourceBreakdowns: [...(detail.sourceBreakdowns || []), ...(research.sourceBreakdowns || []),
+          ...(research.supplementalBreakdowns || [])]
+      } : detail);
     } catch (error) {
       if (request === state.detailRequest) setText("#sourceExplorerNote", error.message);
     }

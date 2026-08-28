@@ -5,160 +5,19 @@
   "fiscalYear": 2024,
   "ledgerAmount": 61418410.8,
   "sourceTotal": 83702909.12,
-  "sourceUrl": "https://api.usaspending.gov/api/v2/agency/360/object_class/?fiscal_year=2024&limit=100&page=1",
+  "sourceUrl": "https://api.usaspending.gov/api/v2/agency/360/program_activity/?fiscal_year=2024&limit=100&page=1",
   "sourceUrls": [
-    [
-      "FY2024 gross outlays by object class",
-      "https://api.usaspending.gov/api/v2/agency/360/object_class/?fiscal_year=2024&limit=100&page=1"
-    ],
-    [
-      "FY2024 agency budgetary resources total",
-      "https://api.usaspending.gov/api/v2/agency/360/budgetary_resources/?fiscal_year=2024"
-    ]
+    ["FY2024 gross outlays by program activity · page 1", "https://api.usaspending.gov/api/v2/agency/360/program_activity/?fiscal_year=2024&limit=100&page=1"],
+    ["FY2024 agency budgetary resources total", "https://api.usaspending.gov/api/v2/agency/360/budgetary_resources/?fiscal_year=2024"]
   ],
-  "rowSchema": [
-    "subAgency",
-    "program",
-    "amount",
-    "sourceAmount",
-    "sourceRows"
-  ],
+  "rowSchema": ["subAgency", "program", "amount", "sourceAmount", "sourceRows"],
   "rows": [
-    [
-      "Federal Election Commission",
-      "Full-time permanent",
-      40185939.53,
-      40185939.53,
-      null
-    ],
-    [
-      "Federal Election Commission",
-      "Civilian personnel benefits",
-      15859228.93,
-      15859228.93,
-      null
-    ],
-    [
-      "Federal Election Commission",
-      "Equipment",
-      4931789.08,
-      4931789.08,
-      null
-    ],
-    [
-      "Federal Election Commission",
-      "Operation and maintenance of equipment",
-      8688810.4,
-      8688810.4,
-      null
-    ],
-    [
-      "Federal Election Commission",
-      "Rental payments to GSA",
-      5269371.18,
-      5269371.18,
-      null
-    ],
-    [
-      "Federal Election Commission",
-      "Other than full-time permanent",
-      2660245.27,
-      2660245.27,
-      null
-    ],
-    [
-      "Federal Election Commission",
-      "Other goods and services from Federal sources",
-      2367914.56,
-      2367914.56,
-      null
-    ],
-    [
-      "Federal Election Commission",
-      "Advisory and assistance services",
-      1804523.23,
-      1804523.23,
-      null
-    ],
-    [
-      "Federal Election Commission",
-      "Other personnel compensation",
-      651462.07,
-      651462.07,
-      null
-    ],
-    [
-      "Federal Election Commission",
-      "Supplies and materials",
-      614783.61,
-      614783.61,
-      null
-    ],
-    [
-      "Federal Election Commission",
-      "Communications, utilities, and miscellaneous charges",
-      340921.45,
-      340921.45,
-      null
-    ],
-    [
-      "Federal Election Commission",
-      "Other services from non-Federal sources",
-      114646.45,
-      114646.45,
-      null
-    ],
-    [
-      "Federal Election Commission",
-      "Printing and reproduction",
-      109814.06,
-      109814.06,
-      null
-    ],
-    [
-      "Federal Election Commission",
-      "Travel and transportation of persons",
-      61418.17,
-      61418.17,
-      null
-    ],
-    [
-      "Federal Election Commission",
-      "Insurance claims and indemnities",
-      25000,
-      25000,
-      null
-    ],
-    [
-      "Federal Election Commission",
-      "Benefits for former personnel",
-      13426,
-      13426,
-      null
-    ],
-    [
-      "Federal Election Commission",
-      "Transportation of things",
-      300,
-      300,
-      null
-    ],
-    [
-      "Federal Election Commission",
-      "Operation and maintenance of facilities",
-      3315.13,
-      3315.13,
-      null
-    ]
+    ["Federal Election Commission", "FEDERAL ELECTION COMMISSION", 83499956.45, 83499956.45, null],
+    ["Federal Election Commission", "SALARIES AND EXPENSES", 202952.67, 202952.67, null]
   ],
   "sourceBasis": "official source amount",
-  "sourceCheck": {
-    "objectClassRows": 18,
-    "objectClassTotal": 83702909.12,
-    "agencyTotal": 83702909.12,
-    "difference": 0
-  },
+  "sourceCheck": {"groupRows": 2, "programActivityTotal": 83702909.12, "agencyTotal": 83702909.12, "difference": 0},
   "normalizationAdjustment": -0.01,
-  "hierarchyNote": "The source endpoint returns agency-level object-class aggregates; no individual employees or payees are included.",
-  "note": "Amounts are shown on the official source basis; no comparator normalization was applied."
+  "hierarchyNote": "USAspending program-activity rows preserve the agency gross-outlay control; the parent entity is repeated as the sub-agency placeholder.",
+  "note": "Program activities replace the former generic object-class view and remain on USAspending gross-outlay basis; no comparator normalization was applied."
 }

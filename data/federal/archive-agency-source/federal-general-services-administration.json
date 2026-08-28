@@ -5,240 +5,54 @@
   "fiscalYear": 2024,
   "ledgerAmount": 29641542389.91,
   "sourceTotal": 40396410399.82,
-  "sourceUrl": "https://api.usaspending.gov/api/v2/agency/047/object_class/?fiscal_year=2024&limit=100&page=1",
+  "sourceUrl": "https://api.usaspending.gov/api/v2/agency/047/program_activity/?fiscal_year=2024&limit=100&page=1",
   "sourceUrls": [
-    [
-      "FY2024 gross outlays by object class",
-      "https://api.usaspending.gov/api/v2/agency/047/object_class/?fiscal_year=2024&limit=100&page=1"
-    ],
-    [
-      "FY2024 agency budgetary resources total",
-      "https://api.usaspending.gov/api/v2/agency/047/budgetary_resources/?fiscal_year=2024"
-    ]
+    ["FY2024 gross outlays by program activity · page 1", "https://api.usaspending.gov/api/v2/agency/047/program_activity/?fiscal_year=2024&limit=100&page=1"],
+    ["FY2024 agency budgetary resources total", "https://api.usaspending.gov/api/v2/agency/047/budgetary_resources/?fiscal_year=2024"]
   ],
-  "rowSchema": [
-    "subAgency",
-    "program",
-    "amount",
-    "sourceAmount",
-    "sourceRows"
-  ],
+  "rowSchema": ["subAgency", "program", "amount", "sourceAmount", "sourceRows"],
   "rows": [
-    [
-      "General Services Administration",
-      "Advisory and assistance services",
-      20289574701.85,
-      20289574701.85,
-      null
-    ],
-    [
-      "General Services Administration",
-      "Rental payments to others",
-      5777807396.5,
-      5777807396.5,
-      null
-    ],
-    [
-      "General Services Administration",
-      "Equipment",
-      4161228500.99,
-      4161228500.99,
-      null
-    ],
-    [
-      "General Services Administration",
-      "Operation and maintenance of facilities",
-      2451461610.29,
-      2451461610.29,
-      null
-    ],
-    [
-      "General Services Administration",
-      "Supplies and materials",
-      1937426819.05,
-      1937426819.05,
-      null
-    ],
-    [
-      "General Services Administration",
-      "Land and structures",
-      1019459458.54,
-      1019459458.54,
-      null
-    ],
-    [
-      "General Services Administration",
-      "Full-time permanent",
-      1589767380.28,
-      1589767380.28,
-      null
-    ],
-    [
-      "General Services Administration",
-      "Other goods and services from Federal sources",
-      1080757087.11,
-      1080757087.11,
-      null
-    ],
-    [
-      "General Services Administration",
-      "Communications, utilities, and miscellaneous charges",
-      615617261.76,
-      615617261.76,
-      null
-    ],
-    [
-      "General Services Administration",
-      "Civilian personnel benefits",
-      628632120.07,
-      628632120.07,
-      null
-    ],
-    [
-      "General Services Administration",
-      "Operation and maintenance of equipment",
-      324988256.14,
-      324988256.14,
-      null
-    ],
-    [
-      "General Services Administration",
-      "Transportation of things",
-      212650891.43,
-      212650891.43,
-      null
-    ],
-    [
-      "General Services Administration",
-      "Other services from non-Federal sources",
-      79337145.49,
-      79337145.49,
-      null
-    ],
-    [
-      "General Services Administration",
-      "Other than full-time permanent",
-      60572579.88,
-      60572579.88,
-      null
-    ],
-    [
-      "General Services Administration",
-      "Rental payments to GSA",
-      40067724.2,
-      40067724.2,
-      null
-    ],
-    [
-      "General Services Administration",
-      "Other personnel compensation",
-      42086738.61,
-      42086738.61,
-      null
-    ],
-    [
-      "General Services Administration",
-      "Interest and dividends",
-      29815210.76,
-      29815210.76,
-      null
-    ],
-    [
-      "General Services Administration",
-      "Travel and transportation of persons",
-      26588232.16,
-      26588232.16,
-      null
-    ],
-    [
-      "General Services Administration",
-      "Insurance claims and indemnities",
-      9832699.01,
-      9832699.01,
-      null
-    ],
-    [
-      "General Services Administration",
-      "Object class not reported by official source",
-      10221867.3,
-      10221867.3,
-      null
-    ],
-    [
-      "General Services Administration",
-      "Special personal services payments",
-      1885543.98,
-      1885543.98,
-      null
-    ],
-    [
-      "General Services Administration",
-      "Printing and reproduction",
-      2381545.67,
-      2381545.67,
-      null
-    ],
-    [
-      "General Services Administration",
-      "Financial transfers",
-      2248392.75,
-      2248392.75,
-      null
-    ],
-    [
-      "General Services Administration",
-      "Benefits for former personnel",
-      1612504.32,
-      1612504.32,
-      null
-    ],
-    [
-      "General Services Administration",
-      "Refunds",
-      364125.55,
-      364125.55,
-      null
-    ],
-    [
-      "General Services Administration",
-      "Research and development contracts",
-      14280.61,
-      14280.61,
-      null
-    ],
-    [
-      "General Services Administration",
-      "Medical care",
-      9879.46,
-      9879.46,
-      null
-    ],
-    [
-      "General Services Administration",
-      "Grants, subsidies, and contributions",
-      537.76,
-      537.76,
-      null
-    ],
-    [
-      "General Services Administration",
-      "Unvouchered",
-      -91.7,
-      -91.7,
-      null
-    ]
+    ["General Services Administration", "ASSISTED ACQUISITION SERVICES (AAS) - FLOW-THRU", 18429344479.62, 18429344479.62, null],
+    ["General Services Administration", "RENTAL OF SPACE", 5783468913.34, 5783468913.34, null],
+    ["General Services Administration", "TRAVEL, TRANSPORTATION, AND LOGISTICS CATEGORIES (TTL) FLOW-THRU", 5118839451.24, 5118839451.24, null],
+    ["General Services Administration", "BUILDING OPERATIONS", 3217997667.14, 3217997667.14, null],
+    ["General Services Administration", "SPECIAL SERVICES AND IMPROVEMENTS", 1632546294.79, 1632546294.79, null],
+    ["General Services Administration", "GENERAL SUPPLIES AND SERVICES (GSS) - FLOW-THRU", 1538769507.2, 1538769507.2, null],
+    ["General Services Administration", "ACQUISITION SERVICES FUND - OPERATING (TOTAL OPERATING EXP + RESERVES)", 1498413484.86, 1498413484.86, null],
+    ["General Services Administration", "WORKING CAPITAL FUND (REIMBURSABLE)", 822454625.05, 822454625.05, null],
+    ["General Services Administration", "REPAIRS AND ALTERATIONS", 779538379.42, 779538379.42, null],
+    ["General Services Administration", "INFORMATION TECHNOLOGY CATEGORY (ITC) - FLOW-THRU", 498396349.02, 498396349.02, null],
+    ["General Services Administration", "CONSTRUCTION AND ACQUISITION OF FACILITIES", 208474301.9, 208474301.9, null],
+    ["General Services Administration", "INTEGRATED AWARD ENVIRONMENT (TOTAL OPERATING EXP + RESERVES)", 142732739.07, 142732739.07, null],
+    ["General Services Administration", "OFFICE OF PRODUCTS AND PROGRAMS", 133370714.97, 133370714.97, null],
+    ["General Services Administration", "INFLATION REDUCTION ACT", 90322112.54, 90322112.54, null],
+    ["General Services Administration", "TECHNOLOGY TRANSFORMATION SERVICES (TTS) - FLOW THRU", 70691314.46, 70691314.46, null],
+    ["General Services Administration", "OFFICE OF INSPECTOR GENERAL (DIRECT)", 70520889.58, 70520889.58, null],
+    ["General Services Administration", "GOVERNMENT-WIDE POLICY", 67025558.02, 67025558.02, null],
+    ["General Services Administration", "OPERATING EXPENSES (DIRECT)", 50204543.32, 50204543.32, null],
+    ["General Services Administration", "INFRASTRUCTURE INVESTMENT AND JOBS ACT", 44553475.09, 44553475.09, null],
+    ["General Services Administration", "FEDERAL CITIZEN SERVICES FUND (REIMBURSABLE)", 38133913.4, 38133913.4, null],
+    ["General Services Administration", "GOVERNMENT-WIDE POLICY (REIMBURSABLE)", 37536377.35, 37536377.35, null],
+    ["General Services Administration", "MULTIYEAR 2021-2025 ARP TRANSFERRED FUNDS", 28742138.13, 28742138.13, null],
+    ["General Services Administration", "IT MODERNIZATION AND DEVELOPMENT", 16457424.86, 16457424.86, null],
+    ["General Services Administration", "AUDIT CONTRACTS AND CONTRACT ADMINISTRATION", 14915239.1, 14915239.1, null],
+    ["General Services Administration", "ACQUISITION WORKFORCE TRAINING", 11249130.15, 11249130.15, null],
+    ["General Services Administration", "SPACE MANAGEMENT", 10812080.34, 10812080.34, null],
+    ["General Services Administration", "DISASTER EMERGENCY FUNDS", 9852054.74, 9852054.74, null],
+    ["General Services Administration", "DIRECT PROGRAM ACTIVITY", 9471036.5, 9471036.5, null],
+    ["General Services Administration", "WORKING CAPITAL FUND (DIRECT)", 8469433.25, 8469433.25, null],
+    ["General Services Administration", "DIGITAL SERVICES", 5283606.31, 5283606.31, null],
+    ["General Services Administration", "ALLOWANCES, PENSIONS, AND OFFICE STAFF", 4631680.9, 4631680.9, null],
+    ["General Services Administration", "OPERATING EXPENSES (REIMBURSABLE)", 2075088.02, 2075088.02, null],
+    ["General Services Administration", "PRE-ELECTION TRANSITION", 409192.67, 409192.67, null],
+    ["General Services Administration", "REAL PROPERTY UTILIZATION AND DISPOSAL", 357325.51, 357325.51, null],
+    ["General Services Administration", "OFFICE OF INSPECTOR GENERAL (REIMBURSABLE)", 349877.96, 349877.96, null],
+    ["General Services Administration", "PROFESSIONAL SERVICES AND HUMAN CAPITAL (PSHC) FLOW-THRU", 0, 0, null]
   ],
   "sourceBasis": "official source amount",
-  "sourceCheck": {
-    "objectClassRows": 29,
-    "objectClassTotal": 40396410399.82,
-    "agencyTotal": 40396410399.82,
-    "difference": 0
-  },
+  "sourceCheck": {"groupRows": 36, "programActivityTotal": 40396410399.82, "agencyTotal": 40396410399.82, "difference": 0},
   "normalizationAdjustment": 0.01,
-  "hierarchyNote": "The source endpoint returns agency-level object-class aggregates; no individual employees or payees are included.",
-  "sourceLabelMap": {
-    "Object class not reported by official source": "Unknown"
-  },
-  "note": "The official USAspending object-class response labels 1 row as Unknown; the display label states that the object class was not reported and no category was inferred. Amounts are shown on the official source basis; no comparator normalization was applied."
+  "hierarchyNote": "USAspending program-activity rows preserve the agency gross-outlay control; the parent entity is repeated as the sub-agency placeholder.",
+  "sourceLabelMap": {"Object class not reported by official source": "Unknown"},
+  "note": "Program activities replace the former generic object-class view and remain on USAspending gross-outlay basis; no comparator normalization was applied."
 }

@@ -6,904 +6,328 @@
   "fiscalYear": 2024,
   "ledgerAmount": 1288322432059.43,
   "sourceTotal": 1755765641617.74,
-  "sourceUrl": "https://api.usaspending.gov/api/v2/agency/020/object_class/?fiscal_year=2024&limit=100&page=1",
-  "rowSchema": [
-    "subAgency",
-    "program",
-    "amount",
-    "sourceAmount",
-    "sourceRows"
-  ],
+  "sourceUrl": "https://api.usaspending.gov/api/v2/agency/020/program_activity/?fiscal_year=2024&limit=100&page=1",
+  "rowSchema": ["subAgency", "program", "amount", "sourceAmount", "sourceRows"],
   "rows": [
-    [
-      "Department of the Treasury",
-      "Interest and dividends",
-      1153272478244.86,
-      1153272478244.86,
-      null
-    ],
-    [
-      "Department of the Treasury",
-      "Refunds",
-      334342392948.5,
-      334342392948.5,
-      null
-    ],
-    [
-      "Department of the Treasury",
-      "Insurance claims and indemnities",
-      123298565564.29,
-      123298565564.29,
-      null
-    ],
-    [
-      "Department of the Treasury",
-      "Grants, subsidies, and contributions",
-      111185768036.58,
-      111185768036.58,
-      null
-    ],
-    [
-      "Department of the Treasury",
-      "Investments and loans",
-      2660329772.29,
-      2660329772.29,
-      null
-    ],
-    [
-      "Department of the Treasury",
-      "Full-time permanent",
-      10267729374.07,
-      10267729374.07,
-      null
-    ],
-    [
-      "Department of the Treasury",
-      "Civilian personnel benefits",
-      4316428137.16,
-      4316428137.16,
-      null
-    ],
-    [
-      "Department of the Treasury",
-      "Advisory and assistance services",
-      3740446543.27,
-      3740446543.27,
-      null
-    ],
-    [
-      "Department of the Treasury",
-      "Supplies and materials",
-      3097500258.48,
-      3097500258.48,
-      null
-    ],
-    [
-      "Department of the Treasury",
-      "Other goods and services from Federal sources",
-      1489278284.75,
-      1489278284.75,
-      null
-    ],
-    [
-      "Department of the Treasury",
-      "Other services from non-Federal sources",
-      2239744226.19,
-      2239744226.19,
-      null
-    ],
-    [
-      "Department of the Treasury",
-      "Equipment",
-      1465820948.81,
-      1465820948.81,
-      null
-    ],
-    [
-      "Department of the Treasury",
-      "Rental payments to GSA",
-      720953854.77,
-      720953854.77,
-      null
-    ],
-    [
-      "Department of the Treasury",
-      "Benefits for former personnel",
-      711872904.78,
-      711872904.78,
-      null
-    ],
-    [
-      "Department of the Treasury",
-      "Communications, utilities, and miscellaneous charges",
-      610442364.97,
-      610442364.97,
-      null
-    ],
-    [
-      "Department of the Treasury",
-      "Other personnel compensation",
-      621097796.57,
-      621097796.57,
-      null
-    ],
-    [
-      "Department of the Treasury",
-      "Financial transfers",
-      369279680.13,
-      369279680.13,
-      null
-    ],
-    [
-      "Department of the Treasury",
-      "Operation and maintenance of equipment",
-      262771310.74,
-      262771310.74,
-      null
-    ],
-    [
-      "Department of the Treasury",
-      "Operation and maintenance of facilities",
-      307457177.35,
-      307457177.35,
-      null
-    ],
-    [
-      "Department of the Treasury",
-      "Travel and transportation of persons",
-      211425683.4,
-      211425683.4,
-      null
-    ],
-    [
-      "Department of the Treasury",
-      "Land and structures",
-      107795525.95,
-      107795525.95,
-      null
-    ],
-    [
-      "Department of the Treasury",
-      "Unvouchered",
-      103665266.65,
-      103665266.65,
-      null
-    ],
-    [
-      "Department of the Treasury",
-      "Special personal services payments",
-      61234763.85,
-      61234763.85,
-      null
-    ],
-    [
-      "Department of the Treasury",
-      "Other than full-time permanent",
-      98454035.22,
-      98454035.22,
-      null
-    ],
-    [
-      "Department of the Treasury",
-      "Rental payments to others",
-      79112728.25,
-      79112728.25,
-      null
-    ],
-    [
-      "Department of the Treasury",
-      "Transportation of things",
-      61835546.06,
-      61835546.06,
-      null
-    ],
-    [
-      "Department of the Treasury",
-      "Printing and reproduction",
-      40547962.63,
-      40547962.63,
-      null
-    ],
-    [
-      "Department of the Treasury",
-      "Medical care",
-      21111604.4,
-      21111604.4,
-      null
-    ],
-    [
-      "Department of the Treasury",
-      "Subsistence and support of persons",
-      85948.67,
-      85948.67,
-      null
-    ],
-    [
-      "Department of the Treasury",
-      "Research and development contracts",
-      15124.1,
-      15124.1,
-      null
-    ]
+    ["Department of the Treasury", "INTEREST ON TREASURY DEBT SECURITIES", 1133036890149.16, 1133036890149.16, null],
+    ["Department of the Treasury", "REDUCES THE GOVERNMENT WIDE RECEIPTS", 333930628921.56, 333930628921.56, null],
+    ["Department of the Treasury", "PREMIUM ASSISTANCE TAX CREDIT", 117815912580.46, 117815912580.46, null],
+    ["Department of the Treasury", "PAYMENT WHERE EARNED INCOME CREDIT EXCEEDS LIABILITY FOR TAX DIRECT", 59282574117.09, 59282574117.09, null],
+    ["Department of the Treasury", "PAYMENT WHERE CHILD TAX CREDIT EXCEEDS LIABILITY FOR TAX DIRECT", 26155531445.41, 26155531445.41, null],
+    ["Department of the Treasury", "INTEREST PAID TO CREDIT FINANCING ACCOUNTS", 10246777547.49, 10246777547.49, null],
+    ["Department of the Treasury", "STATE INNOVATION WAIVERS", 8107809690.89, 8107809690.89, null],
+    ["Department of the Treasury", "EXAM AND COLLECTIONS", 5404012022.1, 5404012022.1, null],
+    ["Department of the Treasury", "REFUNDING INTERNAL REVENUE COLLECTIONS INTEREST DIRECT", 5308375954.03, 5308375954.03, null],
+    ["Department of the Treasury", "INTEREST ON BORROWINGS FROM TREASURY", 3919903412.27, 3919903412.27, null],
+    ["Department of the Treasury", "INFORMATION SERVICES", 3853005711.92, 3853005711.92, null],
+    ["Department of the Treasury", "BASIC HEALTH PROGRAM", 3349869788, 3349869788, null],
+    ["Department of the Treasury", "FILING AND ACCOUNT SERVICES", 3310302411.16, 3310302411.16, null],
+    ["Department of the Treasury", "TOTAL OPERATING", 3209720281.08, 3209720281.08, null],
+    ["Department of the Treasury", "PAYMENT WHERE AMERICAN OPPORTUNITY CREDIT EXCEEDS LIABILITY FOR DIRECT", 2474111206.36, 2474111206.36, null],
+    ["Department of the Treasury", "BUILD AMERICA BOND PAYMENTS RECOVERY ACT DIRECT", 2137579691.17, 2137579691.17, null],
+    ["Department of the Treasury", "CLEAN VEHICLE CREDIT", 1902600000, 1902600000, null],
+    ["Department of the Treasury", "INTERNATIONAL DEVELOPMENT ASSOCIATION", 1630256000, 1630256000, null],
+    ["Department of the Treasury", "SHARED SERVICES AND SUPPORT", 1411575837.01, 1411575837.01, null],
+    ["Department of the Treasury", "FINANCIAL AGENT SERVICES", 1338061340.48, 1338061340.48, null],
+    ["Department of the Treasury", "BANK SUPERVISION", 1292206093.81, 1292206093.81, null],
+    ["Department of the Treasury", "BUSINESS SYSTEMS MODERNIZATION", 1128203554.64, 1128203554.64, null],
+    ["Department of the Treasury", "EMPLOYEE RETENTION CREDIT", 1084056255.54, 1084056255.54, null],
+    ["Department of the Treasury", "INVESTIGATIONS", 1073569223.43, 1073569223.43, null],
+    ["Department of the Treasury", "CURRENCY PROGRAM", 1033604068.74, 1033604068.74, null],
+    ["Department of the Treasury", "INFRASTRUCTURE", 979461697.74, 979461697.74, null],
+    ["Department of the Treasury", "PAYMENT TO THE RESOLUTION FUNDING CORPORATION (DIRECT)", 919663271.33, 919663271.33, null],
+    ["Department of the Treasury", "JUDGMENTS COURT OF CLAIMS", 918065116.92, 918065116.92, null],
+    ["Department of the Treasury", "MANDATORY", 904540544.84, 904540544.84, null],
+    ["Department of the Treasury", "PRE FILING TAXPAYER ASSISTANCE AND EDUCATION", 891695302.53, 891695302.53, null],
+    ["Department of the Treasury", "JUDGMENTS U S COURTS", 847421421.91, 847421421.91, null],
+    ["Department of the Treasury", "CREDIT FOR PRIOR YEAR MINIMUM TAX LIABILITY OF CORPORATIONS", 821412227, 821412227, null],
+    ["Department of the Treasury", "PAYMENT WHERE EIC EXCEEDS LIABILITY FOR TAX TERRITORY PAYMENT", 728432435.13, 728432435.13, null],
+    ["Department of the Treasury", "SHARED SERVICES PROGRAM", 704151713.17, 704151713.17, null],
+    ["Department of the Treasury", "PAYMENT TO FEDERAL PENSION FUND", 680788000, 680788000, null],
+    ["Department of the Treasury", "FEDERAL RESERVE BANK SERVICES", 609361906.31, 609361906.31, null],
+    ["Department of the Treasury", "GENERAL PROGRAMMING", 585000000, 585000000, null],
+    ["Department of the Treasury", "RETIREMENT PAYMENTS", 583393055.45, 583393055.45, null],
+    ["Department of the Treasury", "PAYMENT TO LEGAL SERVICES CORPORATION", 563000000, 563000000, null],
+    ["Department of the Treasury", "PAYMENT TO ISSUER OF QUALIFIED SCHOOL CONSTRUCTION BONDS DIRECT", 562271928.65, 562271928.65, null],
+    ["Department of the Treasury", "STATE CAPITAL PROJECTS", 561794642.32, 561794642.32, null],
+    ["Department of the Treasury", "ADVANCED MANUFACTURING PRODUCTION CREDIT", 464745101.01, 464745101.01, null],
+    ["Department of the Treasury", "INTERNAL REVENUE COLLECTIONS FOR PUERTO RICO", 393907569.58, 393907569.58, null],
+    ["Department of the Treasury", "RETIREMENT PAYMENTS (REIMBURSABLE)", 369458169, 369458169, null],
+    ["Department of the Treasury", "SSBCI PROGRAM", 347069290, 347069290, null],
+    ["Department of the Treasury", "RECOVERY REBATE CREDIT TAX YEAR 2021", 329667427.31, 329667427.31, null],
+    ["Department of the Treasury", "PAYMENT TO UNITED STATES SECRET SERVICE", 320000000, 320000000, null],
+    ["Department of the Treasury", "CDFI ALLOCATIONS", 316735225, 316735225, null],
+    ["Department of the Treasury", "CDFI GRANTS ECONOMIC IMPACT UNDERSERVED COMMUNITIES", 303126556, 303126556, null],
+    ["Department of the Treasury", "RECOVERY REBATE CREDIT", 275234729.51, 275234729.51, null],
+    ["Department of the Treasury", "IBRD REIMBURSABLE", 255000000, 255000000, null],
+    ["Department of the Treasury", "TERRORISM AND FINANCIAL INTELLIGENCE", 251973399.76, 251973399.76, null],
+    ["Department of the Treasury", "SALARIES AND EXPENSES REIMBURSABLE", 250965885.49, 250965885.49, null],
+    ["Department of the Treasury", "FINANCIAL MANAGEMENT ADMINISTRATIVE SUPPORT SERVICE", 249692017.66, 249692017.66, null],
+    ["Department of the Treasury", "INFORMATION TECHNOLOGY SERVICES", 232399708.36, 232399708.36, null],
+    ["Department of the Treasury", "PREVIOUSLY OWNED CLEAN VEHICLES CREDIT", 215342027, 215342027, null],
+    ["Department of the Treasury", "INTERNATIONAL BANK FOR RECONSTRUCTION AND DEVELOPMENT", 211495754.9, 211495754.9, null],
+    ["Department of the Treasury", "REGULATORY", 202485226.51, 202485226.51, null],
+    ["Department of the Treasury", "BSA ADMINISTRATION AND ANALYSIS", 201407462.27, 201407462.27, null],
+    ["Department of the Treasury", "FUND", 197000000, 197000000, null],
+    ["Department of the Treasury", "REIMBURSEMENTS TO FEDERAL RESERVE BANKS (DIRECT)", 188461055.58, 188461055.58, null],
+    ["Department of the Treasury", "DEBT COLLECTION", 180763085, 180763085, null],
+    ["Department of the Treasury", "CENTRALIZED TREASURY ADMINISTRATIVE SERVICES", 154437539.07, 154437539.07, null],
+    ["Department of the Treasury", "GLOBAL ENVIRONMENT FACILITY", 150200000, 150200000, null],
+    ["Department of the Treasury", "CLAIMS FOR CONTRACT DISPUTES", 143860051.29, 143860051.29, null],
+    ["Department of the Treasury", "OIL SPILL RESTORATION IMPACT COMPONENT", 139959607.86, 139959607.86, null],
+    ["Department of the Treasury", "INTEREST ON BORROWINGS FROM CRSDF", 138376091.13, 138376091.13, null],
+    ["Department of the Treasury", "PAYMENTS", 134346554.82, 134346554.82, null],
+    ["Department of the Treasury", "SECRETARY S PRIORITIES", 120518137, 120518137, null],
+    ["Department of the Treasury", "PAID FAMILY AND SICK LEAVE CREDITS", 115608030.19, 115608030.19, null],
+    ["Department of the Treasury", "SPECIAL COMPLIANCE PERSONNEL", 112418853.18, 112418853.18, null],
+    ["Department of the Treasury", "PAYMENT WHERE CERTAIN TAX CREDITS EXCEED LIABILITY FOR CORPORATE DIRECT", 110990678.66, 110990678.66, null],
+    ["Department of the Treasury", "OFR", 107077980.62, 107077980.62, null],
+    ["Department of the Treasury", "ACCOUNTING AND REPORTING", 103860749.42, 103860749.42, null],
+    ["Department of the Treasury", "DOMESTIC FINANCE AND TAX POLICY", 101101143.48, 101101143.48, null],
+    ["Department of the Treasury", "FEDERAL PAYMENT FOR WATER AND SEWER SERVICES REIMBURSABLE", 97273993.15, 97273993.15, null],
+    ["Department of the Treasury", "TRIBAL GOVERNMENTS", 96800041.97, 96800041.97, null],
+    ["Department of the Treasury", "PAYMENTS TO PRIVATE COLLECTION AGENCIES", 95237539.22, 95237539.22, null],
+    ["Department of the Treasury", "PAYMENT WHERE CHILD TAX CREDIT EXCEEDS LIABILITY FOR TAX TERRITORY PAYMENT", 92522839.61, 92522839.61, null],
+    ["Department of the Treasury", "TRIBAL CONSISTENCY", 92028919.87, 92028919.87, null],
+    ["Department of the Treasury", "RETAIL SECURITIES SERVICES", 91057218.17, 91057218.17, null],
+    ["Department of the Treasury", "INFORMANT PAYMENTS", 87812073.35, 87812073.35, null],
+    ["Department of the Treasury", "COLLECT REVENUE", 87359544.56, 87359544.56, null],
+    ["Department of the Treasury", "ASIAN DEVELOPMENT FUND", 87220000, 87220000, null],
+    ["Department of the Treasury", "CYBERSECURITY ENHANCEMENT ACCOUNT", 84523119.22, 84523119.22, null],
+    ["Department of the Treasury", "AUDIT", 80929943.17, 80929943.17, null],
+    ["Department of the Treasury", "INTERNATIONAL AFFAIRS AND ECONOMIC POLICY", 77185629.17, 77185629.17, null],
+    ["Department of the Treasury", "PROTECT THE PUBLIC", 73111774.86, 73111774.86, null],
+    ["Department of the Treasury", "OPERATIONS SUPPORT REIMBURSABLE", 70784765.47, 70784765.47, null],
+    ["Department of the Treasury", "BANK ENTERPRISE AWARD", 69924897, 69924897, null],
+    ["Department of the Treasury", "ADMINISTRATIVE COSTS", 61612370.39, 61612370.39, null],
+    ["Department of the Treasury", "DIRECT COMPONENT", 60471713.04, 60471713.04, null],
+    ["Department of the Treasury", "COMPREHENSIVE PLAN COMPONENT", 60062420, 60062420, null],
+    ["Department of the Treasury", "ENERGY SECURITY", 59135343.58, 59135343.58, null],
+    ["Department of the Treasury", "PAYMENT TO ELECTION ASSISTANCE COMMISSION", 55000000, 55000000, null],
+    ["Department of the Treasury", "BANK", 54648752, 54648752, null],
+    ["Department of the Treasury", "CHECK FORGERY INSURANCE FUND REIMBURSABLE", 50101393.85, 50101393.85, null],
+    ["Department of the Treasury", "COLLECTIONS", 48675249, 48675249, null],
+    ["Department of the Treasury", "EXECUTIVE DIRECTION", 48356801.12, 48356801.12, null],
+    ["Department of the Treasury", "CDFI REINVESTMENTS", 46118538.14, 46118538.14, null],
+    ["Department of the Treasury", "TREASURY WIDE MANAGEMENT AND PROGRAMS", 46091722.39, 46091722.39, null],
+    ["Department of the Treasury", "ADMINISTRATIVE EXPENSES", 43379844.96, 43379844.96, null],
+    ["Department of the Treasury", "CONTRIBUTIONS TO THE INTERNATIONAL FUND FOR AGRICULTURAL DEVELOP DIRECT", 43000000, 43000000, null],
+    ["Department of the Treasury", "CFIUS", 42738260.58, 42738260.58, null],
+    ["Department of the Treasury", "ENFORCEMENT REIMBURSABLE", 42625268.28, 42625268.28, null],
+    ["Department of the Treasury", "CIRCULATING AND PROTECTION CAPITAL", 41811082.19, 41811082.19, null],
+    ["Department of the Treasury", "STATES AND OTHER ENTITIES ARP", 41135146.33, 41135146.33, null],
+    ["Department of the Treasury", "GENERAL ADMINISTRATIVE EXPENSES", 40222601.11, 40222601.11, null],
+    ["Department of the Treasury", "OBLIGATIONS BY PROGRAM ACTIVITY", 37420130.01, 37420130.01, null],
+    ["Department of the Treasury", "AUDITS", 36483505.73, 36483505.73, null],
+    ["Department of the Treasury", "LOCAL ASSISTANCE", 35111731.32, 35111731.32, null],
+    ["Department of the Treasury", "PAYMENT TO ISSUER OF NEW CLEAN RENEWABLE ENERGY BONDS DIRECT", 35083171.49, 35083171.49, null],
+    ["Department of the Treasury", "PAYMENT TO ISSUER OF QUALIFIED ZONE ACADEMY BONDS DIRECT", 33930814.15, 33930814.15, null],
+    ["Department of the Treasury", "WHOLESALE SECURITIES SERVICES", 32570190.69, 32570190.69, null],
+    ["Department of the Treasury", "PAYMENTS TO TRIBES", 32323028.27, 32323028.27, null],
+    ["Department of the Treasury", "NUMISMATIC CAPITAL", 29253554.84, 29253554.84, null],
+    ["Department of the Treasury", "PAYMENT TO ISSUER OF QUALIFIED ENERGY CONSERVATION BONDS DIRECT", 29083152.65, 29083152.65, null],
+    ["Department of the Treasury", "DIRECT LOAN SUBSIDY", 28832246.74, 28832246.74, null],
+    ["Department of the Treasury", "TAXPAYER SERVICES REIMBURSABLE", 27497373.37, 27497373.37, null],
+    ["Department of the Treasury", "PAYMENT TO JUDICIAL RETIREMENT FUND", 26806000, 26806000, null],
+    ["Department of the Treasury", "PAYMENT TO OFFICE OF JUSTICE PROGRAMS", 25000000, 25000000, null],
+    ["Department of the Treasury", "INTEREST OF UNINVESTED FUNDS", 23139514.28, 23139514.28, null],
+    ["Department of the Treasury", "TRIBAL GOVERNMENT CAPITAL PROJECTS", 21815276.36, 21815276.36, null],
+    ["Department of the Treasury", "FEDERAL PAYMENT FOR RESIDENT TUITION SUPPORT (DIRECT)", 19016000, 19016000, null],
+    ["Department of the Treasury", "CONTINUED DUMPING AND SUBSIDY OFFSET", 18422352.71, 18422352.71, null],
+    ["Department of the Treasury", "SMALL DOLLAR LOAN PROGRAM", 17942479, 17942479, null],
+    ["Department of the Treasury", "DC PUBLIC CHARTER SCHOOLS", 17500000, 17500000, null],
+    ["Department of the Treasury", "DEPARTMENT OF EDUCATION ALLOCATION ACCOUNT", 17500000, 17500000, null],
+    ["Department of the Treasury", "DC PUBLIC SCHOOLS", 17500000, 17500000, null],
+    ["Department of the Treasury", "TRANSFER TO DEPARTMENTAL OFFICES", 16000000, 16000000, null],
+    ["Department of the Treasury", "FINANCIAL ASSISTANCE", 15650548.52, 15650548.52, null],
+    ["Department of the Treasury", "HIPC BILATERAL DEBT REDUCTION", 15609312.34, 15609312.34, null],
+    ["Department of the Treasury", "EMERGENCY PLANNING FUND", 14262000, 14262000, null],
+    ["Department of the Treasury", "TERRITORIES ARP", 14201392.71, 14201392.71, null],
+    ["Department of the Treasury", "IRA TAX REGULATION PROMULGATION", 13657075.16, 13657075.16, null],
+    ["Department of the Treasury", "SPECIAL INSPECTOR GENERAL FOR PANDEMIC RECOVERY", 11913303.33, 11913303.33, null],
+    ["Department of the Treasury", "EBRD REIMBURSABLE", 11498289, 11498289, null],
+    ["Department of the Treasury", "REESTIMATES OF DIRECT LOAN SUBSIDY", 11062347.8, 11062347.8, null],
+    ["Department of the Treasury", "FSOC", 11051254.62, 11051254.62, null],
+    ["Department of the Treasury", "ADVANCED MANUFACTURING INVESTMENT CREDIT", 10425531, 10425531, null],
+    ["Department of the Treasury", "NOAA RESTORE ACT SCIENCE PROGRAM", 10390926, 10390926, null],
+    ["Department of the Treasury", "DEPARTMENT WIDE SYSTEMS AND CAPITAL INVESTMENTS PROGRAMS DIRECT", 10241667.79, 10241667.79, null],
+    ["Department of the Treasury", "GLOBAL AGRICULTURE AND FOOD SECURITY PROGRAM DIRECT", 10000000, 10000000, null],
+    ["Department of the Treasury", "CORONAVIRUS RELIEF FUND OVERSIGHT", 9164008.81, 9164008.81, null],
+    ["Department of the Treasury", "CONTRIBUTIONS TO IFAD REIMBURSABLE", 8915242, 8915242, null],
+    ["Department of the Treasury", "IRA OVERSIGHT AND IMPLEMENTATION", 8508247.36, 8508247.36, null],
+    ["Department of the Treasury", "WATER AND SEWER AUTHORITY", 8285240, 8285240, null],
+    ["Department of the Treasury", "PAYMENTS TO HIGH NEED GRANTEES ARP", 7803154.03, 7803154.03, null],
+    ["Department of the Treasury", "OFFICE OF INSPECTOR GENERAL REIMBURSABLE", 7731966.32, 7731966.32, null],
+    ["Department of the Treasury", "CHECK FORGERY INSURANCE FUND DIRECT", 7620229.02, 7620229.02, null],
+    ["Department of the Treasury", "TRIBAL GOVERNMENTS ARP", 7519028.29, 7519028.29, null],
+    ["Department of the Treasury", "DIRECT EFILE TASKFORCE", 7427400.31, 7427400.31, null],
+    ["Department of the Treasury", "CENTERS OF EXCELLENCE RESEARCH GRANTS", 6472983.2, 6472983.2, null],
+    ["Department of the Treasury", "NATIVE AMERICAN HAWAIIAN PROGRAM", 6199567.74, 6199567.74, null],
+    ["Department of the Treasury", "INTERNATIONAL AFFAIRS TECHNICAL ASSISTANCE PROGRAM REIMBURSABLE", 6171573.04, 6171573.04, null],
+    ["Department of the Treasury", "BASE ADMINISTRATIVE EXPENSES", 6008304.91, 6008304.91, null],
+    ["Department of the Treasury", "COBRA CREDITS", 5663492.17, 5663492.17, null],
+    ["Department of the Treasury", "MOTOR COACH COMPANIES", 4978848.49, 4978848.49, null],
+    ["Department of the Treasury", "OFFICE OF FINANCIAL STABILITY DIRECT", 4483947.04, 4483947.04, null],
+    ["Department of the Treasury", "SPECIAL INSPECTOR GENERAL FOR THE TROUBLED ASSET RELIEF PROGRAM (DIRECT)", 3771385.65, 3771385.65, null],
+    ["Department of the Treasury", "PAYMENTS TO TERRITORIES", 3358989.9, 3358989.9, null],
+    ["Department of the Treasury", "PRESIDENTIAL ELECTION CAMPAIGNS", 3355727.84, 3355727.84, null],
+    ["Department of the Treasury", "FDIC PAYMENTS", 3201431, 3201431, null],
+    ["Department of the Treasury", "ENERGY PROPERTY CREDIT", 3122597.53, 3122597.53, null],
+    ["Department of the Treasury", "CDFI GRANTS ECONOMIC IMPACT RAPID RESPONSE", 3075060, 3075060, null],
+    ["Department of the Treasury", "ADMINISTRATIVE COSTS (REIMBURSABLE)", 2970344.82, 2970344.82, null],
+    ["Department of the Treasury", "CMF ADMINISTRATION", 2859139.12, 2859139.12, null],
+    ["Department of the Treasury", "REIMBURSABLE PROGRAM", 2736305.62, 2736305.62, null],
+    ["Department of the Treasury", "IRS MISCELLANEOUS RETAINED FEES DIRECT", 2619191.98, 2619191.98, null],
+    ["Department of the Treasury", "ADMINISTRATION", 2066041.01, 2066041.01, null],
+    ["Department of the Treasury", "TERRITORIES CAPITAL PROJECTS", 2017903.45, 2017903.45, null],
+    ["Department of the Treasury", "HIV AIDS PREVENTION", 1901600, 1901600, null],
+    ["Department of the Treasury", "INTEREST ON REESTIMATES OF DIRECT LOAN SUBSIDY", 1650846, 1650846, null],
+    ["Department of the Treasury", "TRIBAL GOVERNMENTS AND HAWAIIAN HOME LANDS", 1580770.52, 1580770.52, null],
+    ["Department of the Treasury", "LOCAL NONENTITLEMENT UNITS ARP", 1483956.17, 1483956.17, null],
+    ["Department of the Treasury", "STATE AND LOCAL GOVERNMENTS AND THE DC", 1444442.65, 1444442.65, null],
+    ["Department of the Treasury", "CLAIMS FOR DAMAGES", 1353641.71, 1353641.71, null],
+    ["Department of the Treasury", "EMERGENCY RENTAL ASSISTANCE OVERSIGHT", 1255226.11, 1255226.11, null],
+    ["Department of the Treasury", "PAYMENT WHERE CDCTC EXCEEDS LIABILITY FOR TAX DIRECT", 1247122.09, 1247122.09, null],
+    ["Department of the Treasury", "UKRAINE RESPONSE", 1221145.09, 1221145.09, null],
+    ["Department of the Treasury", "PASSENGER AIR CARRIER WORKER RELIEF", 1183965.22, 1183965.22, null],
+    ["Department of the Treasury", "CHEYENNE RIVER SIOUX TRIBE TERRESTRIAL WILDLIFE HABITAT RESTORAT DIRECT", 1167261.05, 1167261.05, null],
+    ["Department of the Treasury", "CRIMINAL JUSTICE COORDINATING COUNCIL", 1164730, 1164730, null],
+    ["Department of the Treasury", "ECONOMIC MOBILITY CORPS", 850918.81, 850918.81, null],
+    ["Department of the Treasury", "FEDERAL TAX LIEN REVOLVING FUND", 841451.22, 841451.22, null],
+    ["Department of the Treasury", "HOMEOWNER ASSISTANCE OVERSIGHT", 822967.36, 822967.36, null],
+    ["Department of the Treasury", "CARBON OXIDE SEQUESTRATION CREDIT", 700890.75, 700890.75, null],
+    ["Department of the Treasury", "HEALTHY FOOD INITIATIVE", 650000, 650000, null],
+    ["Department of the Treasury", "TREASURY INSPECTOR GENERAL FOR TAX ADMINISTRATION REIMBURSABLE", 433650.82, 433650.82, null],
+    ["Department of the Treasury", "FEDERAL INTEREST LIABILITIES TO STATES", 311990, 311990, null],
+    ["Department of the Treasury", "JUDICIAL COMMISSIONS", 299502, 299502, null],
+    ["Department of the Treasury", "GUAM WORLD WAR II CLAIMS", 278413.78, 278413.78, null],
+    ["Department of the Treasury", "SPECIAL INSPECTOR GENERAL FOR THE TROUBLED ASSET RELIEF PROGRAM DIRECT", 262323.47, 262323.47, null],
+    ["Department of the Treasury", "SALARIES AND EXPENSES  REIMBURSABLE", 244590.45, 244590.45, null],
+    ["Department of the Treasury", "TRANSFER TO MEMBER AGENCIES", 186789, 186789, null],
+    ["Department of the Treasury", "NATIVE AMERICAN/HAWAIIAN PROGRAM", 150000, 150000, null],
+    ["Department of the Treasury", "PAYMENT WHERE HEALTH COVERAGE TAX CREDIT EXCEEDS LIABILITY FOR T DIRECT", 106312.51, 106312.51, null],
+    ["Department of the Treasury", "OFFICE OF INSPECTOR GENERAL (REIMBURSABLE)", 78761.63, 78761.63, null],
+    ["Department of the Treasury", "STATE AND LOCAL GOVERNMENTS", 47451.25, 47451.25, null],
+    ["Department of the Treasury", "PAYMENT WHERE SMALL BUSINESS HEALTH INSURANCE TAX CREDIT EXCEEDS DIRECT", 47186.77, 47186.77, null],
+    ["Department of the Treasury", "SIPPRA S AND E", 43709, 43709, null],
+    ["Department of the Treasury", "SALARIES AND EXPENSES (REIMBURSABLE)", 26386.1, 26386.1, null],
+    ["Department of the Treasury", "QUALIFIED COMMERCIAL CLEAN VEHICLES CREDIT", 22500, 22500, null],
+    ["Department of the Treasury", "REIMBURSABLE SERVICES", 17958.64, 17958.64, null],
+    ["Department of the Treasury", "ALTERNATIVE FUEL VEHICLE REFUELING PROPERTY CREDIT", 13016.99, 13016.99, null],
+    ["Department of the Treasury", "GIFTS AND BEQUESTS", 6278.29, 6278.29, null],
+    ["Department of the Treasury", "ADMIN EXPENSES", 4199.56, 4199.56, null],
+    ["Department of the Treasury", "CLEAN HYDROGEN PRODUCTION CREDIT", 2940, 2940, null],
+    ["Department of the Treasury", "TREASURY-WIDE MANAGEMENT AND PROGRAMS", 546.4, 546.4, null],
+    ["Department of the Treasury", "INTERNATIONAL AFFAIRS TECHNICAL ASSISTANCE PROGRAM (REIMBURSABLE)", 176.29, 176.29, null],
+    ["Department of the Treasury", "EXCHANGE STABILIZATION FUND ESF", 0, 0, null],
+    ["Department of the Treasury", "TROPICAL FOREST CONSERVATION INITIATIVE", 0, 0, null],
+    ["Department of the Treasury", "CLEAN TECHNOLOGY FUND DIRECT", 0, 0, null]
   ],
   "supplementalRows": [
-    [
-      "Internal Revenue Service",
-      "IRS refunds by state · United States, total",
-      552661058000,
-      "refund control",
-      "https://www.irs.gov/pub/irs-soi/24dbs01t08rf.xlsx"
-    ],
-    [
-      "Internal Revenue Service",
-      "IRS refunds by state · Alabama",
-      5248754000,
-      "refund geography",
-      "https://www.irs.gov/pub/irs-soi/24dbs01t08rf.xlsx"
-    ],
-    [
-      "Internal Revenue Service",
-      "IRS refunds by state · Alaska",
-      812714000,
-      "refund geography",
-      "https://www.irs.gov/pub/irs-soi/24dbs01t08rf.xlsx"
-    ],
-    [
-      "Internal Revenue Service",
-      "IRS refunds by state · Arizona",
-      8940457000,
-      "refund geography",
-      "https://www.irs.gov/pub/irs-soi/24dbs01t08rf.xlsx"
-    ],
-    [
-      "Internal Revenue Service",
-      "IRS refunds by state · Arkansas",
-      3109620000,
-      "refund geography",
-      "https://www.irs.gov/pub/irs-soi/24dbs01t08rf.xlsx"
-    ],
-    [
-      "Internal Revenue Service",
-      "IRS refunds by state · California",
-      47387316000,
-      "refund geography",
-      "https://www.irs.gov/pub/irs-soi/24dbs01t08rf.xlsx"
-    ],
-    [
-      "Internal Revenue Service",
-      "IRS refunds by state · Colorado",
-      6848753000,
-      "refund geography",
-      "https://www.irs.gov/pub/irs-soi/24dbs01t08rf.xlsx"
-    ],
-    [
-      "Internal Revenue Service",
-      "IRS refunds by state · Connecticut",
-      5481234000,
-      "refund geography",
-      "https://www.irs.gov/pub/irs-soi/24dbs01t08rf.xlsx"
-    ],
-    [
-      "Internal Revenue Service",
-      "IRS refunds by state · Delaware",
-      1665136000,
-      "refund geography",
-      "https://www.irs.gov/pub/irs-soi/24dbs01t08rf.xlsx"
-    ],
-    [
-      "Internal Revenue Service",
-      "IRS refunds by state · District of Columbia",
-      980788000,
-      "refund geography",
-      "https://www.irs.gov/pub/irs-soi/24dbs01t08rf.xlsx"
-    ],
-    [
-      "Internal Revenue Service",
-      "IRS refunds by state · Florida",
-      33136312000,
-      "refund geography",
-      "https://www.irs.gov/pub/irs-soi/24dbs01t08rf.xlsx"
-    ],
-    [
-      "Internal Revenue Service",
-      "IRS refunds by state · Georgia",
-      12168745000,
-      "refund geography",
-      "https://www.irs.gov/pub/irs-soi/24dbs01t08rf.xlsx"
-    ],
-    [
-      "Internal Revenue Service",
-      "IRS refunds by state · Hawaii",
-      1574116000,
-      "refund geography",
-      "https://www.irs.gov/pub/irs-soi/24dbs01t08rf.xlsx"
-    ],
-    [
-      "Internal Revenue Service",
-      "IRS refunds by state · Idaho",
-      1909304000,
-      "refund geography",
-      "https://www.irs.gov/pub/irs-soi/24dbs01t08rf.xlsx"
-    ],
-    [
-      "Internal Revenue Service",
-      "IRS refunds by state · Illinois",
-      16326272000,
-      "refund geography",
-      "https://www.irs.gov/pub/irs-soi/24dbs01t08rf.xlsx"
-    ],
-    [
-      "Internal Revenue Service",
-      "IRS refunds by state · Indiana",
-      7584854000,
-      "refund geography",
-      "https://www.irs.gov/pub/irs-soi/24dbs01t08rf.xlsx"
-    ],
-    [
-      "Internal Revenue Service",
-      "IRS refunds by state · Iowa",
-      3638062000,
-      "refund geography",
-      "https://www.irs.gov/pub/irs-soi/24dbs01t08rf.xlsx"
-    ],
-    [
-      "Internal Revenue Service",
-      "IRS refunds by state · Kansas",
-      3161694000,
-      "refund geography",
-      "https://www.irs.gov/pub/irs-soi/24dbs01t08rf.xlsx"
-    ],
-    [
-      "Internal Revenue Service",
-      "IRS refunds by state · Kentucky",
-      4525354000,
-      "refund geography",
-      "https://www.irs.gov/pub/irs-soi/24dbs01t08rf.xlsx"
-    ],
-    [
-      "Internal Revenue Service",
-      "IRS refunds by state · Louisiana",
-      6060941000,
-      "refund geography",
-      "https://www.irs.gov/pub/irs-soi/24dbs01t08rf.xlsx"
-    ],
-    [
-      "Internal Revenue Service",
-      "IRS refunds by state · Maine",
-      1440606000,
-      "refund geography",
-      "https://www.irs.gov/pub/irs-soi/24dbs01t08rf.xlsx"
-    ],
-    [
-      "Internal Revenue Service",
-      "IRS refunds by state · Maryland",
-      7163291000,
-      "refund geography",
-      "https://www.irs.gov/pub/irs-soi/24dbs01t08rf.xlsx"
-    ],
-    [
-      "Internal Revenue Service",
-      "IRS refunds by state · Massachusetts",
-      9997913000,
-      "refund geography",
-      "https://www.irs.gov/pub/irs-soi/24dbs01t08rf.xlsx"
-    ],
-    [
-      "Internal Revenue Service",
-      "IRS refunds by state · Michigan",
-      11182053000,
-      "refund geography",
-      "https://www.irs.gov/pub/irs-soi/24dbs01t08rf.xlsx"
-    ],
-    [
-      "Internal Revenue Service",
-      "IRS refunds by state · Minnesota",
-      9247383000,
-      "refund geography",
-      "https://www.irs.gov/pub/irs-soi/24dbs01t08rf.xlsx"
-    ],
-    [
-      "Internal Revenue Service",
-      "IRS refunds by state · Mississippi",
-      3183504000,
-      "refund geography",
-      "https://www.irs.gov/pub/irs-soi/24dbs01t08rf.xlsx"
-    ],
-    [
-      "Internal Revenue Service",
-      "IRS refunds by state · Missouri",
-      6528331000,
-      "refund geography",
-      "https://www.irs.gov/pub/irs-soi/24dbs01t08rf.xlsx"
-    ],
-    [
-      "Internal Revenue Service",
-      "IRS refunds by state · Montana",
-      1069833000,
-      "refund geography",
-      "https://www.irs.gov/pub/irs-soi/24dbs01t08rf.xlsx"
-    ],
-    [
-      "Internal Revenue Service",
-      "IRS refunds by state · Nebraska",
-      2055608000,
-      "refund geography",
-      "https://www.irs.gov/pub/irs-soi/24dbs01t08rf.xlsx"
-    ],
-    [
-      "Internal Revenue Service",
-      "IRS refunds by state · Nevada",
-      4551330000,
-      "refund geography",
-      "https://www.irs.gov/pub/irs-soi/24dbs01t08rf.xlsx"
-    ],
-    [
-      "Internal Revenue Service",
-      "IRS refunds by state · New Hampshire",
-      1746749000,
-      "refund geography",
-      "https://www.irs.gov/pub/irs-soi/24dbs01t08rf.xlsx"
-    ],
-    [
-      "Internal Revenue Service",
-      "IRS refunds by state · New Jersey",
-      13506245000,
-      "refund geography",
-      "https://www.irs.gov/pub/irs-soi/24dbs01t08rf.xlsx"
-    ],
-    [
-      "Internal Revenue Service",
-      "IRS refunds by state · New Mexico",
-      2031070000,
-      "refund geography",
-      "https://www.irs.gov/pub/irs-soi/24dbs01t08rf.xlsx"
-    ],
-    [
-      "Internal Revenue Service",
-      "IRS refunds by state · New York",
-      27245912000,
-      "refund geography",
-      "https://www.irs.gov/pub/irs-soi/24dbs01t08rf.xlsx"
-    ],
-    [
-      "Internal Revenue Service",
-      "IRS refunds by state · North Carolina",
-      10914031000,
-      "refund geography",
-      "https://www.irs.gov/pub/irs-soi/24dbs01t08rf.xlsx"
-    ],
-    [
-      "Internal Revenue Service",
-      "IRS refunds by state · North Dakota",
-      861163000,
-      "refund geography",
-      "https://www.irs.gov/pub/irs-soi/24dbs01t08rf.xlsx"
-    ],
-    [
-      "Internal Revenue Service",
-      "IRS refunds by state · Ohio",
-      13384903000,
-      "refund geography",
-      "https://www.irs.gov/pub/irs-soi/24dbs01t08rf.xlsx"
-    ],
-    [
-      "Internal Revenue Service",
-      "IRS refunds by state · Oklahoma",
-      4375293000,
-      "refund geography",
-      "https://www.irs.gov/pub/irs-soi/24dbs01t08rf.xlsx"
-    ],
-    [
-      "Internal Revenue Service",
-      "IRS refunds by state · Oregon",
-      3979133000,
-      "refund geography",
-      "https://www.irs.gov/pub/irs-soi/24dbs01t08rf.xlsx"
-    ],
-    [
-      "Internal Revenue Service",
-      "IRS refunds by state · Pennsylvania",
-      15408402000,
-      "refund geography",
-      "https://www.irs.gov/pub/irs-soi/24dbs01t08rf.xlsx"
-    ],
-    [
-      "Internal Revenue Service",
-      "IRS refunds by state · Rhode Island",
-      1357628000,
-      "refund geography",
-      "https://www.irs.gov/pub/irs-soi/24dbs01t08rf.xlsx"
-    ],
-    [
-      "Internal Revenue Service",
-      "IRS refunds by state · South Carolina",
-      5272970000,
-      "refund geography",
-      "https://www.irs.gov/pub/irs-soi/24dbs01t08rf.xlsx"
-    ],
-    [
-      "Internal Revenue Service",
-      "IRS refunds by state · South Dakota",
-      1146381000,
-      "refund geography",
-      "https://www.irs.gov/pub/irs-soi/24dbs01t08rf.xlsx"
-    ],
-    [
-      "Internal Revenue Service",
-      "IRS refunds by state · Tennessee",
-      8454953000,
-      "refund geography",
-      "https://www.irs.gov/pub/irs-soi/24dbs01t08rf.xlsx"
-    ],
-    [
-      "Internal Revenue Service",
-      "IRS refunds by state · Texas",
-      45390968000,
-      "refund geography",
-      "https://www.irs.gov/pub/irs-soi/24dbs01t08rf.xlsx"
-    ],
-    [
-      "Internal Revenue Service",
-      "IRS refunds by state · Utah",
-      3811742000,
-      "refund geography",
-      "https://www.irs.gov/pub/irs-soi/24dbs01t08rf.xlsx"
-    ],
-    [
-      "Internal Revenue Service",
-      "IRS refunds by state · Vermont",
-      759192000,
-      "refund geography",
-      "https://www.irs.gov/pub/irs-soi/24dbs01t08rf.xlsx"
-    ],
-    [
-      "Internal Revenue Service",
-      "IRS refunds by state · Virginia",
-      10387099000,
-      "refund geography",
-      "https://www.irs.gov/pub/irs-soi/24dbs01t08rf.xlsx"
-    ],
-    [
-      "Internal Revenue Service",
-      "IRS refunds by state · Washington",
-      9134041000,
-      "refund geography",
-      "https://www.irs.gov/pub/irs-soi/24dbs01t08rf.xlsx"
-    ],
-    [
-      "Internal Revenue Service",
-      "IRS refunds by state · West Virginia",
-      1735123000,
-      "refund geography",
-      "https://www.irs.gov/pub/irs-soi/24dbs01t08rf.xlsx"
-    ],
-    [
-      "Internal Revenue Service",
-      "IRS refunds by state · Wisconsin",
-      7382338000,
-      "refund geography",
-      "https://www.irs.gov/pub/irs-soi/24dbs01t08rf.xlsx"
-    ],
-    [
-      "Internal Revenue Service",
-      "IRS refunds by state · Wyoming",
-      829486000,
-      "refund geography",
-      "https://www.irs.gov/pub/irs-soi/24dbs01t08rf.xlsx"
-    ],
-    [
-      "Internal Revenue Service",
-      "IRS refunds by state · U.S. Armed Services overseas and territories other than Puerto Rico",
-      331180000,
-      "refund geography",
-      "https://www.irs.gov/pub/irs-soi/24dbs01t08rf.xlsx"
-    ],
-    [
-      "Internal Revenue Service",
-      "IRS refunds by state · Puerto Rico",
-      520375000,
-      "refund geography",
-      "https://www.irs.gov/pub/irs-soi/24dbs01t08rf.xlsx"
-    ],
-    [
-      "Internal Revenue Service",
-      "IRS refunds by state · International",
-      3848039000,
-      "refund geography",
-      "https://www.irs.gov/pub/irs-soi/24dbs01t08rf.xlsx"
-    ],
-    [
-      "Internal Revenue Service",
-      "IRS refunds by state · Advance Premium Tax Credit/\nCost Sharing Reduction/Basic Health Program [6]",
-      128471563000,
-      "refund program",
-      "https://www.irs.gov/pub/irs-soi/24dbs01t08rf.xlsx"
-    ],
-    [
-      "Internal Revenue Service",
-      "IRS refunds by state · Undistributed [7]",
-      3394801000,
-      "refund program",
-      "https://www.irs.gov/pub/irs-soi/24dbs01t08rf.xlsx"
-    ],
-    [
-      "Internal Revenue Service",
-      "IRS refunds by state · Child tax credit [8]",
-      26155531000,
-      "refund program",
-      "https://www.irs.gov/pub/irs-soi/24dbs01t08rf.xlsx"
-    ],
-    [
-      "Internal Revenue Service",
-      "IRS refunds by state · Earned income tax credits [8]",
-      59282574000,
-      "refund program",
-      "https://www.irs.gov/pub/irs-soi/24dbs01t08rf.xlsx"
-    ],
-    [
-      "Internal Revenue Service",
-      "IRS costs by budget activity · Total obligations against appropriated funds",
-      18198029000,
-      "cost control",
-      "https://www.irs.gov/pub/irs-soi/24dbs06t32cs.xlsx"
-    ],
-    [
-      "Internal Revenue Service",
-      "IRS costs by budget activity · Total",
-      4109763000,
-      "cost subtotal",
-      "https://www.irs.gov/pub/irs-soi/24dbs06t32cs.xlsx"
-    ],
-    [
-      "Internal Revenue Service",
-      "IRS costs by budget activity · Prefiling taxpayer assistance and education",
-      891617000,
-      "cost leaf",
-      "https://www.irs.gov/pub/irs-soi/24dbs06t32cs.xlsx"
-    ],
-    [
-      "Internal Revenue Service",
-      "IRS costs by budget activity · Filing and account services",
-      3218146000,
-      "cost leaf",
-      "https://www.irs.gov/pub/irs-soi/24dbs06t32cs.xlsx"
-    ],
-    [
-      "Internal Revenue Service",
-      "IRS costs by budget activity · Total",
-      6502342000,
-      "cost subtotal",
-      "https://www.irs.gov/pub/irs-soi/24dbs06t32cs.xlsx"
-    ],
-    [
-      "Internal Revenue Service",
-      "IRS costs by budget activity · Investigations",
-      959370000,
-      "cost leaf",
-      "https://www.irs.gov/pub/irs-soi/24dbs06t32cs.xlsx"
-    ],
-    [
-      "Internal Revenue Service",
-      "IRS costs by budget activity · Examinations and collections",
-      5343726000,
-      "cost leaf",
-      "https://www.irs.gov/pub/irs-soi/24dbs06t32cs.xlsx"
-    ],
-    [
-      "Internal Revenue Service",
-      "IRS costs by budget activity · Regulatory",
-      199246000,
-      "cost leaf",
-      "https://www.irs.gov/pub/irs-soi/24dbs06t32cs.xlsx"
-    ],
-    [
-      "Internal Revenue Service",
-      "IRS costs by budget activity · Total",
-      6241344000,
-      "cost subtotal",
-      "https://www.irs.gov/pub/irs-soi/24dbs06t32cs.xlsx"
-    ],
-    [
-      "Internal Revenue Service",
-      "IRS costs by budget activity · Infrastructure",
-      1053727000,
-      "cost leaf",
-      "https://www.irs.gov/pub/irs-soi/24dbs06t32cs.xlsx"
-    ],
-    [
-      "Internal Revenue Service",
-      "IRS costs by budget activity · Shared services and support",
-      1423664000,
-      "cost leaf",
-      "https://www.irs.gov/pub/irs-soi/24dbs06t32cs.xlsx"
-    ],
-    [
-      "Internal Revenue Service",
-      "IRS costs by budget activity · Information services",
-      3763953000,
-      "cost leaf",
-      "https://www.irs.gov/pub/irs-soi/24dbs06t32cs.xlsx"
-    ],
-    [
-      "Internal Revenue Service",
-      "IRS costs by budget activity · Business Systems Modernization [7]:",
-      1285445000,
-      "cost leaf",
-      "https://www.irs.gov/pub/irs-soi/24dbs06t32cs.xlsx"
-    ],
-    [
-      "Internal Revenue Service",
-      "IRS costs by budget activity · Direct File [8]:",
-      0,
-      "cost leaf",
-      "https://www.irs.gov/pub/irs-soi/24dbs06t32cs.xlsx"
-    ],
-    [
-      "Internal Revenue Service",
-      "IRS costs by budget activity · Energy Security [9]:",
-      59135000,
-      "cost leaf",
-      "https://www.irs.gov/pub/irs-soi/24dbs06t32cs.xlsx"
-    ],
-    [
-      "Department of the Treasury",
-      "Treasury FY2024 MTS budget functions · National Defense",
-      874041000000,
-      "treasury-function",
-      "https://fiscal.treasury.gov/system/files/files/reports-statements/mts/mts0924.pdf"
-    ],
-    [
-      "Department of the Treasury",
-      "Treasury FY2024 MTS budget functions · International Affairs",
-      71992000000,
-      "treasury-function",
-      "https://fiscal.treasury.gov/system/files/files/reports-statements/mts/mts0924.pdf"
-    ],
-    [
-      "Department of the Treasury",
-      "Treasury FY2024 MTS budget functions · General Science, Space, and Technology",
-      41562000000,
-      "treasury-function",
-      "https://fiscal.treasury.gov/system/files/files/reports-statements/mts/mts0924.pdf"
-    ],
-    [
-      "Department of the Treasury",
-      "Treasury FY2024 MTS budget functions · Energy",
-      13790000000,
-      "treasury-function",
-      "https://fiscal.treasury.gov/system/files/files/reports-statements/mts/mts0924.pdf"
-    ],
-    [
-      "Department of the Treasury",
-      "Treasury FY2024 MTS budget functions · Natural Resources and Environment",
-      56892000000,
-      "treasury-function",
-      "https://fiscal.treasury.gov/system/files/files/reports-statements/mts/mts0924.pdf"
-    ],
-    [
-      "Department of the Treasury",
-      "Treasury FY2024 MTS budget functions · Agriculture",
-      34747000000,
-      "treasury-function",
-      "https://fiscal.treasury.gov/system/files/files/reports-statements/mts/mts0924.pdf"
-    ],
-    [
-      "Department of the Treasury",
-      "Treasury FY2024 MTS budget functions · Commerce and Housing Credit",
-      35568000000,
-      "treasury-function",
-      "https://fiscal.treasury.gov/system/files/files/reports-statements/mts/mts0924.pdf"
-    ],
-    [
-      "Department of the Treasury",
-      "Treasury FY2024 MTS budget functions · Transportation",
-      137122000000,
-      "treasury-function",
-      "https://fiscal.treasury.gov/system/files/files/reports-statements/mts/mts0924.pdf"
-    ],
-    [
-      "Department of the Treasury",
-      "Treasury FY2024 MTS budget functions · Community and Regional Development",
-      87766000000,
-      "treasury-function",
-      "https://fiscal.treasury.gov/system/files/files/reports-statements/mts/mts0924.pdf"
-    ],
-    [
-      "Department of the Treasury",
-      "Treasury FY2024 MTS budget functions · Education, Training, Employment, and Social Services",
-      305026000000,
-      "treasury-function",
-      "https://fiscal.treasury.gov/system/files/files/reports-statements/mts/mts0924.pdf"
-    ],
-    [
-      "Department of the Treasury",
-      "Treasury FY2024 MTS budget functions · Health",
-      911684000000,
-      "treasury-function",
-      "https://fiscal.treasury.gov/system/files/files/reports-statements/mts/mts0924.pdf"
-    ],
-    [
-      "Department of the Treasury",
-      "Treasury FY2024 MTS budget functions · Medicare",
-      874134000000,
-      "treasury-function",
-      "https://fiscal.treasury.gov/system/files/files/reports-statements/mts/mts0924.pdf"
-    ],
-    [
-      "Department of the Treasury",
-      "Treasury FY2024 MTS budget functions · Income Security",
-      671076000000,
-      "treasury-function",
-      "https://fiscal.treasury.gov/system/files/files/reports-statements/mts/mts0924.pdf"
-    ],
-    [
-      "Department of the Treasury",
-      "Treasury FY2024 MTS budget functions · Social Security",
-      1460914000000,
-      "treasury-function",
-      "https://fiscal.treasury.gov/system/files/files/reports-statements/mts/mts0924.pdf"
-    ],
-    [
-      "Department of the Treasury",
-      "Treasury FY2024 MTS budget functions · Veterans Benefits and Services",
-      325363000000,
-      "treasury-function",
-      "https://fiscal.treasury.gov/system/files/files/reports-statements/mts/mts0924.pdf"
-    ],
-    [
-      "Department of the Treasury",
-      "Treasury FY2024 MTS budget functions · Administration of Justice",
-      85034000000,
-      "treasury-function",
-      "https://fiscal.treasury.gov/system/files/files/reports-statements/mts/mts0924.pdf"
-    ],
-    [
-      "Department of the Treasury",
-      "Treasury FY2024 MTS budget functions · General Government",
-      29928000000,
-      "treasury-function",
-      "https://fiscal.treasury.gov/system/files/files/reports-statements/mts/mts0924.pdf"
-    ],
-    [
-      "Department of the Treasury",
-      "Treasury FY2024 MTS budget functions · Net Interest",
-      881651000000,
-      "treasury-function",
-      "https://fiscal.treasury.gov/system/files/files/reports-statements/mts/mts0924.pdf"
-    ],
-    [
-      "Department of the Treasury",
-      "Treasury FY2024 MTS budget functions · Undistributed Offsetting Receipts",
-      -146738000000,
-      "treasury-function",
-      "https://fiscal.treasury.gov/system/files/files/reports-statements/mts/mts0924.pdf"
-    ]
+    ["Internal Revenue Service", "IRS refunds by state · United States, total", 552661058000, "refund control", "https://www.irs.gov/pub/irs-soi/24dbs01t08rf.xlsx"],
+    ["Internal Revenue Service", "IRS refunds by state · Alabama", 5248754000, "refund geography", "https://www.irs.gov/pub/irs-soi/24dbs01t08rf.xlsx"],
+    ["Internal Revenue Service", "IRS refunds by state · Alaska", 812714000, "refund geography", "https://www.irs.gov/pub/irs-soi/24dbs01t08rf.xlsx"],
+    ["Internal Revenue Service", "IRS refunds by state · Arizona", 8940457000, "refund geography", "https://www.irs.gov/pub/irs-soi/24dbs01t08rf.xlsx"],
+    ["Internal Revenue Service", "IRS refunds by state · Arkansas", 3109620000, "refund geography", "https://www.irs.gov/pub/irs-soi/24dbs01t08rf.xlsx"],
+    ["Internal Revenue Service", "IRS refunds by state · California", 47387316000, "refund geography", "https://www.irs.gov/pub/irs-soi/24dbs01t08rf.xlsx"],
+    ["Internal Revenue Service", "IRS refunds by state · Colorado", 6848753000, "refund geography", "https://www.irs.gov/pub/irs-soi/24dbs01t08rf.xlsx"],
+    ["Internal Revenue Service", "IRS refunds by state · Connecticut", 5481234000, "refund geography", "https://www.irs.gov/pub/irs-soi/24dbs01t08rf.xlsx"],
+    ["Internal Revenue Service", "IRS refunds by state · Delaware", 1665136000, "refund geography", "https://www.irs.gov/pub/irs-soi/24dbs01t08rf.xlsx"],
+    ["Internal Revenue Service", "IRS refunds by state · District of Columbia", 980788000, "refund geography", "https://www.irs.gov/pub/irs-soi/24dbs01t08rf.xlsx"],
+    ["Internal Revenue Service", "IRS refunds by state · Florida", 33136312000, "refund geography", "https://www.irs.gov/pub/irs-soi/24dbs01t08rf.xlsx"],
+    ["Internal Revenue Service", "IRS refunds by state · Georgia", 12168745000, "refund geography", "https://www.irs.gov/pub/irs-soi/24dbs01t08rf.xlsx"],
+    ["Internal Revenue Service", "IRS refunds by state · Hawaii", 1574116000, "refund geography", "https://www.irs.gov/pub/irs-soi/24dbs01t08rf.xlsx"],
+    ["Internal Revenue Service", "IRS refunds by state · Idaho", 1909304000, "refund geography", "https://www.irs.gov/pub/irs-soi/24dbs01t08rf.xlsx"],
+    ["Internal Revenue Service", "IRS refunds by state · Illinois", 16326272000, "refund geography", "https://www.irs.gov/pub/irs-soi/24dbs01t08rf.xlsx"],
+    ["Internal Revenue Service", "IRS refunds by state · Indiana", 7584854000, "refund geography", "https://www.irs.gov/pub/irs-soi/24dbs01t08rf.xlsx"],
+    ["Internal Revenue Service", "IRS refunds by state · Iowa", 3638062000, "refund geography", "https://www.irs.gov/pub/irs-soi/24dbs01t08rf.xlsx"],
+    ["Internal Revenue Service", "IRS refunds by state · Kansas", 3161694000, "refund geography", "https://www.irs.gov/pub/irs-soi/24dbs01t08rf.xlsx"],
+    ["Internal Revenue Service", "IRS refunds by state · Kentucky", 4525354000, "refund geography", "https://www.irs.gov/pub/irs-soi/24dbs01t08rf.xlsx"],
+    ["Internal Revenue Service", "IRS refunds by state · Louisiana", 6060941000, "refund geography", "https://www.irs.gov/pub/irs-soi/24dbs01t08rf.xlsx"],
+    ["Internal Revenue Service", "IRS refunds by state · Maine", 1440606000, "refund geography", "https://www.irs.gov/pub/irs-soi/24dbs01t08rf.xlsx"],
+    ["Internal Revenue Service", "IRS refunds by state · Maryland", 7163291000, "refund geography", "https://www.irs.gov/pub/irs-soi/24dbs01t08rf.xlsx"],
+    ["Internal Revenue Service", "IRS refunds by state · Massachusetts", 9997913000, "refund geography", "https://www.irs.gov/pub/irs-soi/24dbs01t08rf.xlsx"],
+    ["Internal Revenue Service", "IRS refunds by state · Michigan", 11182053000, "refund geography", "https://www.irs.gov/pub/irs-soi/24dbs01t08rf.xlsx"],
+    ["Internal Revenue Service", "IRS refunds by state · Minnesota", 9247383000, "refund geography", "https://www.irs.gov/pub/irs-soi/24dbs01t08rf.xlsx"],
+    ["Internal Revenue Service", "IRS refunds by state · Mississippi", 3183504000, "refund geography", "https://www.irs.gov/pub/irs-soi/24dbs01t08rf.xlsx"],
+    ["Internal Revenue Service", "IRS refunds by state · Missouri", 6528331000, "refund geography", "https://www.irs.gov/pub/irs-soi/24dbs01t08rf.xlsx"],
+    ["Internal Revenue Service", "IRS refunds by state · Montana", 1069833000, "refund geography", "https://www.irs.gov/pub/irs-soi/24dbs01t08rf.xlsx"],
+    ["Internal Revenue Service", "IRS refunds by state · Nebraska", 2055608000, "refund geography", "https://www.irs.gov/pub/irs-soi/24dbs01t08rf.xlsx"],
+    ["Internal Revenue Service", "IRS refunds by state · Nevada", 4551330000, "refund geography", "https://www.irs.gov/pub/irs-soi/24dbs01t08rf.xlsx"],
+    ["Internal Revenue Service", "IRS refunds by state · New Hampshire", 1746749000, "refund geography", "https://www.irs.gov/pub/irs-soi/24dbs01t08rf.xlsx"],
+    ["Internal Revenue Service", "IRS refunds by state · New Jersey", 13506245000, "refund geography", "https://www.irs.gov/pub/irs-soi/24dbs01t08rf.xlsx"],
+    ["Internal Revenue Service", "IRS refunds by state · New Mexico", 2031070000, "refund geography", "https://www.irs.gov/pub/irs-soi/24dbs01t08rf.xlsx"],
+    ["Internal Revenue Service", "IRS refunds by state · New York", 27245912000, "refund geography", "https://www.irs.gov/pub/irs-soi/24dbs01t08rf.xlsx"],
+    ["Internal Revenue Service", "IRS refunds by state · North Carolina", 10914031000, "refund geography", "https://www.irs.gov/pub/irs-soi/24dbs01t08rf.xlsx"],
+    ["Internal Revenue Service", "IRS refunds by state · North Dakota", 861163000, "refund geography", "https://www.irs.gov/pub/irs-soi/24dbs01t08rf.xlsx"],
+    ["Internal Revenue Service", "IRS refunds by state · Ohio", 13384903000, "refund geography", "https://www.irs.gov/pub/irs-soi/24dbs01t08rf.xlsx"],
+    ["Internal Revenue Service", "IRS refunds by state · Oklahoma", 4375293000, "refund geography", "https://www.irs.gov/pub/irs-soi/24dbs01t08rf.xlsx"],
+    ["Internal Revenue Service", "IRS refunds by state · Oregon", 3979133000, "refund geography", "https://www.irs.gov/pub/irs-soi/24dbs01t08rf.xlsx"],
+    ["Internal Revenue Service", "IRS refunds by state · Pennsylvania", 15408402000, "refund geography", "https://www.irs.gov/pub/irs-soi/24dbs01t08rf.xlsx"],
+    ["Internal Revenue Service", "IRS refunds by state · Rhode Island", 1357628000, "refund geography", "https://www.irs.gov/pub/irs-soi/24dbs01t08rf.xlsx"],
+    ["Internal Revenue Service", "IRS refunds by state · South Carolina", 5272970000, "refund geography", "https://www.irs.gov/pub/irs-soi/24dbs01t08rf.xlsx"],
+    ["Internal Revenue Service", "IRS refunds by state · South Dakota", 1146381000, "refund geography", "https://www.irs.gov/pub/irs-soi/24dbs01t08rf.xlsx"],
+    ["Internal Revenue Service", "IRS refunds by state · Tennessee", 8454953000, "refund geography", "https://www.irs.gov/pub/irs-soi/24dbs01t08rf.xlsx"],
+    ["Internal Revenue Service", "IRS refunds by state · Texas", 45390968000, "refund geography", "https://www.irs.gov/pub/irs-soi/24dbs01t08rf.xlsx"],
+    ["Internal Revenue Service", "IRS refunds by state · Utah", 3811742000, "refund geography", "https://www.irs.gov/pub/irs-soi/24dbs01t08rf.xlsx"],
+    ["Internal Revenue Service", "IRS refunds by state · Vermont", 759192000, "refund geography", "https://www.irs.gov/pub/irs-soi/24dbs01t08rf.xlsx"],
+    ["Internal Revenue Service", "IRS refunds by state · Virginia", 10387099000, "refund geography", "https://www.irs.gov/pub/irs-soi/24dbs01t08rf.xlsx"],
+    ["Internal Revenue Service", "IRS refunds by state · Washington", 9134041000, "refund geography", "https://www.irs.gov/pub/irs-soi/24dbs01t08rf.xlsx"],
+    ["Internal Revenue Service", "IRS refunds by state · West Virginia", 1735123000, "refund geography", "https://www.irs.gov/pub/irs-soi/24dbs01t08rf.xlsx"],
+    ["Internal Revenue Service", "IRS refunds by state · Wisconsin", 7382338000, "refund geography", "https://www.irs.gov/pub/irs-soi/24dbs01t08rf.xlsx"],
+    ["Internal Revenue Service", "IRS refunds by state · Wyoming", 829486000, "refund geography", "https://www.irs.gov/pub/irs-soi/24dbs01t08rf.xlsx"],
+    ["Internal Revenue Service", "IRS refunds by state · U.S. Armed Services overseas and territories other than Puerto Rico", 331180000, "refund geography", "https://www.irs.gov/pub/irs-soi/24dbs01t08rf.xlsx"],
+    ["Internal Revenue Service", "IRS refunds by state · Puerto Rico", 520375000, "refund geography", "https://www.irs.gov/pub/irs-soi/24dbs01t08rf.xlsx"],
+    ["Internal Revenue Service", "IRS refunds by state · International", 3848039000, "refund geography", "https://www.irs.gov/pub/irs-soi/24dbs01t08rf.xlsx"],
+    ["Internal Revenue Service", "IRS refunds by state · Advance Premium Tax Credit/\nCost Sharing Reduction/Basic Health Program [6]", 128471563000, "refund program", "https://www.irs.gov/pub/irs-soi/24dbs01t08rf.xlsx"],
+    ["Internal Revenue Service", "IRS refunds by state · Undistributed [7]", 3394801000, "refund program", "https://www.irs.gov/pub/irs-soi/24dbs01t08rf.xlsx"],
+    ["Internal Revenue Service", "IRS refunds by state · Child tax credit [8]", 26155531000, "refund program", "https://www.irs.gov/pub/irs-soi/24dbs01t08rf.xlsx"],
+    ["Internal Revenue Service", "IRS refunds by state · Earned income tax credits [8]", 59282574000, "refund program", "https://www.irs.gov/pub/irs-soi/24dbs01t08rf.xlsx"],
+    ["Internal Revenue Service", "IRS costs by budget activity · Total obligations against appropriated funds", 18198029000, "cost control", "https://www.irs.gov/pub/irs-soi/24dbs06t32cs.xlsx"],
+    ["Internal Revenue Service", "IRS costs by budget activity · Total", 4109763000, "cost subtotal", "https://www.irs.gov/pub/irs-soi/24dbs06t32cs.xlsx"],
+    ["Internal Revenue Service", "IRS costs by budget activity · Prefiling taxpayer assistance and education", 891617000, "cost leaf", "https://www.irs.gov/pub/irs-soi/24dbs06t32cs.xlsx"],
+    ["Internal Revenue Service", "IRS costs by budget activity · Filing and account services", 3218146000, "cost leaf", "https://www.irs.gov/pub/irs-soi/24dbs06t32cs.xlsx"],
+    ["Internal Revenue Service", "IRS costs by budget activity · Total", 6502342000, "cost subtotal", "https://www.irs.gov/pub/irs-soi/24dbs06t32cs.xlsx"],
+    ["Internal Revenue Service", "IRS costs by budget activity · Investigations", 959370000, "cost leaf", "https://www.irs.gov/pub/irs-soi/24dbs06t32cs.xlsx"],
+    ["Internal Revenue Service", "IRS costs by budget activity · Examinations and collections", 5343726000, "cost leaf", "https://www.irs.gov/pub/irs-soi/24dbs06t32cs.xlsx"],
+    ["Internal Revenue Service", "IRS costs by budget activity · Regulatory", 199246000, "cost leaf", "https://www.irs.gov/pub/irs-soi/24dbs06t32cs.xlsx"],
+    ["Internal Revenue Service", "IRS costs by budget activity · Total", 6241344000, "cost subtotal", "https://www.irs.gov/pub/irs-soi/24dbs06t32cs.xlsx"],
+    ["Internal Revenue Service", "IRS costs by budget activity · Infrastructure", 1053727000, "cost leaf", "https://www.irs.gov/pub/irs-soi/24dbs06t32cs.xlsx"],
+    ["Internal Revenue Service", "IRS costs by budget activity · Shared services and support", 1423664000, "cost leaf", "https://www.irs.gov/pub/irs-soi/24dbs06t32cs.xlsx"],
+    ["Internal Revenue Service", "IRS costs by budget activity · Information services", 3763953000, "cost leaf", "https://www.irs.gov/pub/irs-soi/24dbs06t32cs.xlsx"],
+    ["Internal Revenue Service", "IRS costs by budget activity · Business Systems Modernization [7]:", 1285445000, "cost leaf", "https://www.irs.gov/pub/irs-soi/24dbs06t32cs.xlsx"],
+    ["Internal Revenue Service", "IRS costs by budget activity · Direct File [8]:", 0, "cost leaf", "https://www.irs.gov/pub/irs-soi/24dbs06t32cs.xlsx"],
+    ["Internal Revenue Service", "IRS costs by budget activity · Energy Security [9]:", 59135000, "cost leaf", "https://www.irs.gov/pub/irs-soi/24dbs06t32cs.xlsx"],
+    ["Department of the Treasury", "Treasury FY2024 MTS budget functions · National Defense", 874041000000, "treasury-function", "https://fiscal.treasury.gov/system/files/files/reports-statements/mts/mts0924.pdf"],
+    ["Department of the Treasury", "Treasury FY2024 MTS budget functions · International Affairs", 71992000000, "treasury-function", "https://fiscal.treasury.gov/system/files/files/reports-statements/mts/mts0924.pdf"],
+    ["Department of the Treasury", "Treasury FY2024 MTS budget functions · General Science, Space, and Technology", 41562000000, "treasury-function", "https://fiscal.treasury.gov/system/files/files/reports-statements/mts/mts0924.pdf"],
+    ["Department of the Treasury", "Treasury FY2024 MTS budget functions · Energy", 13790000000, "treasury-function", "https://fiscal.treasury.gov/system/files/files/reports-statements/mts/mts0924.pdf"],
+    ["Department of the Treasury", "Treasury FY2024 MTS budget functions · Natural Resources and Environment", 56892000000, "treasury-function", "https://fiscal.treasury.gov/system/files/files/reports-statements/mts/mts0924.pdf"],
+    ["Department of the Treasury", "Treasury FY2024 MTS budget functions · Agriculture", 34747000000, "treasury-function", "https://fiscal.treasury.gov/system/files/files/reports-statements/mts/mts0924.pdf"],
+    ["Department of the Treasury", "Treasury FY2024 MTS budget functions · Commerce and Housing Credit", 35568000000, "treasury-function", "https://fiscal.treasury.gov/system/files/files/reports-statements/mts/mts0924.pdf"],
+    ["Department of the Treasury", "Treasury FY2024 MTS budget functions · Transportation", 137122000000, "treasury-function", "https://fiscal.treasury.gov/system/files/files/reports-statements/mts/mts0924.pdf"],
+    ["Department of the Treasury", "Treasury FY2024 MTS budget functions · Community and Regional Development", 87766000000, "treasury-function", "https://fiscal.treasury.gov/system/files/files/reports-statements/mts/mts0924.pdf"],
+    ["Department of the Treasury", "Treasury FY2024 MTS budget functions · Education, Training, Employment, and Social Services", 305026000000, "treasury-function", "https://fiscal.treasury.gov/system/files/files/reports-statements/mts/mts0924.pdf"],
+    ["Department of the Treasury", "Treasury FY2024 MTS budget functions · Health", 911684000000, "treasury-function", "https://fiscal.treasury.gov/system/files/files/reports-statements/mts/mts0924.pdf"],
+    ["Department of the Treasury", "Treasury FY2024 MTS budget functions · Medicare", 874134000000, "treasury-function", "https://fiscal.treasury.gov/system/files/files/reports-statements/mts/mts0924.pdf"],
+    ["Department of the Treasury", "Treasury FY2024 MTS budget functions · Income Security", 671076000000, "treasury-function", "https://fiscal.treasury.gov/system/files/files/reports-statements/mts/mts0924.pdf"],
+    ["Department of the Treasury", "Treasury FY2024 MTS budget functions · Social Security", 1460914000000, "treasury-function", "https://fiscal.treasury.gov/system/files/files/reports-statements/mts/mts0924.pdf"],
+    ["Department of the Treasury", "Treasury FY2024 MTS budget functions · Veterans Benefits and Services", 325363000000, "treasury-function", "https://fiscal.treasury.gov/system/files/files/reports-statements/mts/mts0924.pdf"],
+    ["Department of the Treasury", "Treasury FY2024 MTS budget functions · Administration of Justice", 85034000000, "treasury-function", "https://fiscal.treasury.gov/system/files/files/reports-statements/mts/mts0924.pdf"],
+    ["Department of the Treasury", "Treasury FY2024 MTS budget functions · General Government", 29928000000, "treasury-function", "https://fiscal.treasury.gov/system/files/files/reports-statements/mts/mts0924.pdf"],
+    ["Department of the Treasury", "Treasury FY2024 MTS budget functions · Net Interest", 881651000000, "treasury-function", "https://fiscal.treasury.gov/system/files/files/reports-statements/mts/mts0924.pdf"],
+    ["Department of the Treasury", "Treasury FY2024 MTS budget functions · Undistributed Offsetting Receipts", -146738000000, "treasury-function", "https://fiscal.treasury.gov/system/files/files/reports-statements/mts/mts0924.pdf"]
   ],
-  "supplementalSchema": [
-    "subAgency",
-    "program",
-    "amount",
-    "measure",
-    "source"
-  ],
-  "hierarchyNote": "Object-class rows are directly managed; the parent entity is repeated as the sub-agency placeholder.",
+  "supplementalSchema": ["subAgency", "program", "amount", "measure", "source"],
+  "hierarchyNote": "USAspending program-activity rows preserve the agency gross-outlay control; the parent entity is repeated as the sub-agency placeholder.",
   "sourceUrls": [
-    [
-      "FY2024 gross outlays by object class",
-      "https://api.usaspending.gov/api/v2/agency/020/object_class/?fiscal_year=2024&limit=100&page=1"
-    ],
-    [
-      "FY2024 agency budgetary resources total",
-      "https://api.usaspending.gov/api/v2/agency/020/budgetary_resources/?fiscal_year=2024"
-    ]
+    ["FY2024 gross outlays by program activity · page 1", "https://api.usaspending.gov/api/v2/agency/020/program_activity/?fiscal_year=2024&limit=100&page=1"],
+    ["FY2024 gross outlays by program activity · page 2", "https://api.usaspending.gov/api/v2/agency/020/program_activity/?fiscal_year=2024&limit=100&page=2"],
+    ["FY2024 gross outlays by program activity · page 3", "https://api.usaspending.gov/api/v2/agency/020/program_activity/?fiscal_year=2024&limit=100&page=3"],
+    ["FY2024 agency budgetary resources total", "https://api.usaspending.gov/api/v2/agency/020/budgetary_resources/?fiscal_year=2024"]
   ],
   "sourceBasis": "official source amount",
-  "sourceCheck": {
-    "objectClassRows": 30,
-    "objectClassTotal": 1755765641617.74,
-    "agencyTotal": 1755765641617.74,
-    "difference": 0
-  },
+  "sourceCheck": {"groupRows": 213, "programActivityTotal": 1755765641617.74, "agencyTotal": 1755765641617.74, "difference": 0},
   "normalizationAdjustment": -0.01,
-  "note": "Amounts are shown on the official source basis; no comparator normalization was applied."
+  "note": "Program activities replace the former generic object-class view and remain on USAspending gross-outlay basis; no comparator normalization was applied."
 }

@@ -16,35 +16,15 @@ async function initialize() {
   }
 }
 function bindControls() {
-  $$('[data-allocation-source]').forEach((button) => button.addEventListener("click", () => setAllocationSource(button.dataset.allocationSource)));
   $("#nationalButton").addEventListener("click", () => setScope("United States"));
   $("#themeToggle").addEventListener("click", toggleTheme);
   themePreference.addEventListener("change", followSystemTheme);
   setTheme(document.documentElement.dataset.theme);
   addEventListener("resize", () => state.features.length && drawMap());
 }
-function setAllocationSource(source) {
-  state.allocationSource = source;
-  updateAllocationSourceControls();
-  updatePanel();
-}
-function updateAllocationSourceControls() {
-  const federal = state.layer === "federal";
-  $$('[data-allocation-source]').forEach((button) => {
-    const source = button.dataset.allocationSource;
-    const labels = federal
-      ? { financial: "Audited state GAAP", itemized: "Treasury agencies & programs", function: "Census comparison", archive: "USAspending gross research" }
-      : { financial: "Audited GAAP", itemized: "Budget standard", function: "Census comparison", archive: "Research archive" };
-    button.textContent = labels[source];
-    button.hidden = federal && source !== "itemized";
-    button.disabled = button.hidden;
-    button.setAttribute("aria-pressed", !button.disabled && source === state.allocationSource);
-  });
-}
 function setScope(scope) {
   state.scope = scope === state.scope && scope !== "United States" ? "United States" : scope;
   state.layer = state.scope === "United States" ? "federal" : "stateGovernment";
-  state.allocationSource = state.layer === "federal" ? "itemized" : "financial";
   drawMap(); updatePanel();
 }
 function toggleTheme() {
