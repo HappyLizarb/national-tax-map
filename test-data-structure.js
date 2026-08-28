@@ -117,8 +117,20 @@ for (const detailUrl of activeDetails) {
 }
 
 const failures = JSON.parse(fs.readFileSync(path.join(dataRoot, "source-failures.json"), "utf8"));
-const failureStatuses = new Set(["deferred", "access-blocked", "corrupted", "wrong-period", "scope-limited"]);
-assert.ok(failures.entries.length > 0);
-assert.ok(failures.entries.every((entry) => /^https:\/\//.test(entry.sourceUrl) && failureStatuses.has(entry.status) && entry.reason), "invalid source failure record");
+assert.deepEqual(failures.entries, [], "active source failures remain");
+assert.equal(failures.resolutions.length, 25);
+assert.ok(failures.resolutions.every((entry) => /^https:\/\//.test(entry.attemptedSourceUrl)
+  && entry.status === "number-restored" && entry.replacementUrl && entry.result), "invalid source resolution record");
+for (const entry of failures.resolutions.filter((item) => item.replacementUrl.startsWith("data/"))) {
+  assert.ok(fs.existsSync(path.join(root, entry.replacementUrl)), `missing source resolution ${entry.scope}`);
+  const replacement = JSON.parse(fs.readFileSync(path.join(root, entry.replacementUrl), "utf8"));
+  if (entry.scope === "EPA Exchange Network") {
+    const awards = replacement.sourceBreakdowns.find((item) => item.title === "EPA FY2024 Exchange Network awards by recipient");
+    assert.equal(awards.rows.reduce((sum, row) => sum + cents(row[2]), 0), cents(awards.sourceTotal));
+  } else {
+    assert.ok(replacement.departments.length > 0, `${entry.scope} restored rows`);
+    assert.equal(cents(replacement.itemizedTotal), cents(replacement.sourceTotal), `${entry.scope} restored total`);
+  }
+}
 
 console.log(`Data structure, source deduplication, readable labels, archive manifests, and 100% pie checks passed (${jsonFiles.length} JSON files).`);

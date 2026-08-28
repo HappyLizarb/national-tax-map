@@ -1,5 +1,5 @@
 const model = window.TaxModel;
-const state = { layer: "federal", scope: "United States", allocationSource: "itemized", features: [], request: 0, detailRequest: 0 };
+const state = { layer: "federal", scope: "United States", features: [], request: 0, detailRequest: 0 };
 const $ = (selector) => document.querySelector(selector);
 const $$ = (selector) => [...document.querySelectorAll(selector)];
 const themePreference = matchMedia("(prefers-color-scheme: dark)");
@@ -106,6 +106,8 @@ function sourceLink(url, comparisonUrl, comparisonLabel, relatedSources = []) {
 
 // Show original-source dollars when the pie uses a normalized presentation amount.
 function sourceBasisNote(department) {
+  if (department.reconciliationTarget) return "<small>Signed bridge to "
+    + escapeHtml(department.reconciliationTarget) + " total: " + model.formatMoney(department.targetTotal) + "</small>";
   if (Number.isFinite(department.grossOutlays)) {
     const parts = [["Treasury gross", department.grossOutlays], ["applicable receipts", department.applicableReceipts]]
       .filter(([, value]) => Number(value)).map(([label, value]) => label + ": " + model.formatMoney(value));
@@ -184,7 +186,9 @@ function renderSourceBreakdown(match) {
 }
 
 function shareLabel(department) {
-  return department.amount < 0 ? "accounting adjustment" : formatShare(department.share);
+  return department.reconciliationTarget ? (department.amount > 0 ? "+" : "")
+    + model.formatMoney(department.amount) + " adjustment"
+    : department.amount < 0 ? "accounting adjustment" : formatShare(department.share);
 }
 
 function formatShare(value) { return value > 0 && value < 0.1 ? "<0.1%" : value.toFixed(1) + "%"; }

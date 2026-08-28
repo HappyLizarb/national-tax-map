@@ -74,61 +74,54 @@ function budgetPresentationFor(budgetActuals, name) {
   };
 }
 
-const basisExplanations = {
-  payments: "The state-source total measures checks, ACH, vendor payments, or transaction spending when recorded by the payment system.",
-  budget: "The state-source total uses a budgetary, statutory, or administrative-fund measure rather than a consolidated economic-resources statement.",
-  fund: "The state-source total uses the governmental-fund/current-financial-resources measurement focus rather than full-accrual primary-government expense.",
-  administrative: "The state-source total is an agency or accounting-system aggregation, not a consolidated government-wide Statement of Activities.",
-  purchase: "The state-source total measures purchase orders or contracts, which are commitments rather than audited expense when incurred.",
-  cash: "The state-source total uses cash reporting, recognizing activity when money moves within the covered treasury funds."
+const archiveBasisEffects = {
+  payments: "Payment timing, unpaid costs, protected payments, payroll, refunds, and off-system activity can change coverage.",
+  budget: "Encumbrances, statutory fund scope, transfers, capital outlay, and debt service differ from economic-resources expense.",
+  fund: "Current-financial-resources reporting treats capital outlay, debt, and long-term liabilities differently from full accrual.",
+  administrative: "System coverage, internal transfers, eliminations, protected activity, and noncash accruals can differ.",
+  purchase: "Purchase orders measure commitments; cancellations, payment timing, and capitalization prevent direct conversion to expense.",
+  cash: "Cash movement can include financing, transfers, investments, or asset transactions while omitting unpaid accruals."
 };
 
-function comparisonReferences(basis, financial, censusUrl) {
-  const censusReferences = [
-    ["Census FY2024 table", censusUrl],
-    ["Census methodology", "https://www.census.gov/programs-surveys/state/technical-documentation/methodology.html"]
-  ];
-  return basis ? [
-    ["Official state-source data", basis.ledgerUrl],
-    ["FY2024 audited ACFR", basis.acfrUrl],
-    ...censusReferences,
-    ["Census classification manual", "https://www2.census.gov/govs/class/classfull.pdf"]
-  ] : [["FY2024 audited ACFR", financial.sourceUrl], ...censusReferences];
+// Preserve a published checkpoint difference as a signed, unassigned row.
+function adjustmentRow(id, name, amount, fromTotal, targetTotal, sourceUrl, note, relatedSources) {
+  const direction = amount < 0 ? "removes " : "adds ";
+  return { id, name, amount, sourceAmount: amount, sourceUrl, relatedSources, fromTotal,
+    reconciliationTarget: name.replace(" adjustments", ""), targetTotal,
+    program: direction + formatExactMoney(Math.abs(amount)) + " to move from "
+      + formatExactMoney(fromTotal) + " to " + formatExactMoney(targetTotal) + ". " + note };
 }
 
-// Compare Census with the canonical non-Census control available for each state.
-function accountingComparisonFor(dataset, census, ledgerTotals, accountingBases, budgetActuals, financialResults, name) {
-  const raw = dataset.states[name], actual = budgetActuals?.[name], basis = accountingBases?.[name];
-  const financial = financialResults?.states?.[name];
-  if (!raw) return null;
+// Explain the archive's source-native boundary before listing possible bridge causes.
+function archiveQualification(basis, archive) {
+  if (!basis) return archive.note || "The archive retains its official source-native reporting boundary.";
+  return basis.label + ". " + basis.detail + " " + archiveBasisEffects[basis.kind];
+}
+
+// Add two sequential signed bridges without assigning unsupported amounts to agencies.
+function reconcileStateArchive(dataset, census, accountingBases, financialResults, name, archive) {
+  const raw = dataset.states[name], financial = financialResults?.states?.[name];
+  if (!raw || !financial) return archive;
+  const archiveTotal = archive.itemizedTotal ?? archive.sourceTotal;
   const censusUrl = census.url + "?g=040XX00US" + raw.fips + "&time=2024";
-  if (actual) return {
-    kind: "budget-standard", censusTotal: raw.total,
-    stateTotal: actual.amount, difference: null,
-    itemizedTotal: actual.itemizedAmount,
-    coveragePercent: actual.itemizedAmount / actual.amount * 100,
-    status: actual.status, label: actual.basis,
-    provenance: actual.issuer + ". " + actual.document + ", " + actual.location + ". Period: "
-      + actual.period + ". Exact amount: " + formatExactMoney(actual.amount) + " " + actual.unit
-      + ". Source precision: " + formatExactMoney(actual.precision) + ". Revision: " + actual.revisionDate
-      + ". Published: " + actual.publicationDate + ". Audit status: " + actual.auditStatus + ".",
-    statement: "Entity boundary: " + actual.boundary + ". Transfer treatment: " + actual.transfers
-      + ". Known exclusions: " + actual.exclusions + ".",
-    references: [["Official budget-basis source", actual.sourceUrl],
-      ["Pilot source audit", "data/research/pilot-legislative-budget-actuals.md"], ["Census comparison", censusUrl]]
-  };
-  if (!basis && !financial) return null;
-  const stateTotal = basis ? ledgerTotals[name] : financial.expenses;
-  return {
-    kind: basis ? "legacy-comparison" : "gaap-comparison",
-    censusTotal: raw.total,
-    stateTotal,
-    difference: raw.total - stateTotal,
-    label: basis?.label || "Audited primary-government GAAP expenses",
-    statement: basis ? basisExplanations[basis.kind] + " " + basis.detail
-      : financialResults.basis + ". " + financialResults.boundary + ".",
-    references: comparisonReferences(basis, financial, censusUrl)
-  };
+  const qualification = archiveQualification(accountingBases?.[name], archive);
+  const censusNote = qualification + " The Census bridge can also reflect standardized entity/function coverage, intergovernmental payments, capital outlay, utilities, and liquor activity; no published bridge supports an agency split.";
+  const gaapQualification = financialResults.basis + ". " + financialResults.boundary + ". "
+    + financial.auditNote + " " + financial.document + ", " + financial.location + ".";
+  const gaapNote = gaapQualification + " " + name + " publishes no numeric Census-to-GAAP bridge, so the difference remains an unallocated boundary control. Potential mechanisms are capitalization versus depreciation or amortization, asset sales or liquidations, pension/OPEB and other accruals, debt and transfer eliminations, and primary-government business-type consumer activity; none is assigned a numeric share without state evidence.";
+  const censusRow = adjustmentRow("census-adjustments", "Census adjustments", raw.total - archiveTotal,
+    archiveTotal, raw.total, censusUrl, censusNote, [["Research archive source", archive.sourceUrl]]);
+  const gaapRow = adjustmentRow("gaap-adjustments", "GAAP adjustments", financial.expenses - raw.total,
+    raw.total, financial.expenses, financial.sourceUrl, gaapNote, [["Census FY2024 table", censusUrl], ["Research archive source", archive.sourceUrl]]);
+  return { ...archive, sourceTotal: financial.expenses, itemizedTotal: financial.expenses,
+    sourceUrl: financial.sourceUrl,
+    sourceUrls: [["Research archive", archive.sourceUrl], ["Census FY2024 table", censusUrl],
+      [financial.document, financial.sourceUrl]],
+    coverageStatus: "gaap-reconciled-research-archive",
+    note: "Research archive rows plus signed Census and GAAP adjustments reconcile to audited GAAP expenses; qualified causes remain unallocated without a published bridge.",
+    reconciliation: { ...archive.reconciliation, archiveTotal, censusTotal: raw.total, gaapTotal: financial.expenses,
+      censusAdjustment: censusRow.amount, gaapAdjustment: gaapRow.amount },
+    departments: [...archive.departments, censusRow, gaapRow] };
 }
 
 function sourceLinksFor(stateSources, alternates, sources, name, fips) {
@@ -221,7 +214,7 @@ function createModel(dataset, stateSources, alternates, federalSources, ledgerTo
     formatMoney,
     formatExactMoney,
     sourceLinks: (name, _layer, fips = "") => sourceLinksFor(stateSources, alternates, sources, name, fips),
-    accountingComparisonFor: (name) => accountingComparisonFor(dataset, sources[0], ledgerTotals || {}, accountingBases || {}, budgetActuals || {}, financialResults || {}, name),
+    reconcileStateArchive: (name, archive) => reconcileStateArchive(dataset, sources[0], accountingBases || {}, financialResults || {}, name, archive),
     federalSourceRows: () => federalSources || [],
     taxOverviewFor: (name) => taxOverviewFor(taxRates, incomeTiers, estimates, name)
   };

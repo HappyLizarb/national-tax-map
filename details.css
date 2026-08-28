@@ -12,17 +12,6 @@
 .outside-budget-disclaimer { color: var(--sage); }
 .outside-budget-disclaimer b, .outside-budget-disclaimer span { display: block; }
 .budget-disclaimer[hidden], .outside-budget-disclaimer[hidden] { display: none; }
-.accounting-comparison { margin-top: 24px; padding: 28px; border: 1px solid color-mix(in srgb, var(--line) 82%, transparent); border-radius: 22px; background: color-mix(in srgb, var(--panel) 92%, var(--soft-clay)); box-shadow: 0 16px 44px #344f430b; }
-.accounting-total-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); margin-top: 22px; }
-.accounting-total-grid article { min-width: 0; padding: 0 24px; border-left: 1px solid var(--line); }
-.accounting-total-grid article:first-child { padding-left: 0; border-left: 0; }
-.accounting-total-grid article:last-child { padding-right: 0; }
-.accounting-total-grid span, .accounting-total-grid small { display: block; color: var(--muted); font-size: 12px; line-height: 1.5; }
-.accounting-total-grid strong { display: block; margin: 7px 0; overflow-wrap: anywhere; font: 600 clamp(20px, 2vw, 30px) var(--mono); letter-spacing: -.045em; }
-.accounting-comparison > p { max-width: 96ch; margin: 18px 0 0; color: var(--ink); font-size: 14px; line-height: 1.7; }
-.accounting-comparison > .accounting-method-note { color: var(--muted); }
-.accounting-evidence { margin-top: 16px; color: var(--muted); font-size: 12px; line-height: 1.7; }
-.accounting-evidence a { color: var(--sage); text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 3px; }
 .fiscal-detail-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; margin-top: 24px; }
 .fiscal-card { min-width: 0; padding: 28px; border: 1px solid color-mix(in srgb, var(--line) 82%, transparent); border-radius: 20px; background: var(--panel); box-shadow: 0 16px 44px #344f430b; }
 .fiscal-card-wide { grid-column: 1 / -1; }
@@ -59,8 +48,6 @@
 .tax-estimate-net small:last-child { color: var(--sage); font-weight: 700; }
 
 @media (max-width: 820px) {
-  .accounting-total-grid { grid-template-columns: 1fr; gap: 18px; }
-  .accounting-total-grid article { padding: 0; border-left: 0; }
   .fiscal-detail-grid { grid-template-columns: 1fr; }
   .fiscal-card-wide { grid-column: auto; }
 }

@@ -4,12 +4,12 @@ Each jurisdiction directory has one `.js` Census summary module and only the JSO
 
 `[subAgency, program, amount, sourceAmount, sourceRows]`
 
-Each pie uses the raw amount from one official itemized source layer. `itemizedTotal` is the exact sum of the summary rows; `comparison` links to a separate source layer without allocating a difference to an invented receiver. All 50 state pies use the Census FY2024 function/category file; former state-specific layers are archived under `archive-state-source/`. The federal pie uses Treasury FY2024 MTS budget functions; the former USAspending agency layer is archived under `data/federal/archive-agency-source/`. The chart normalizes positive slices to 100%; signed negative adjustments remain listed in the source layer. A canonical budget record names newly validated partial coverage with `itemizedAmount` and `itemizationUrl`. Archived state-source layers may be loaded only as nested itemization evidence when a canonical budget record names a validated `itemizedAmount`; they never replace or add to the canonical headline.
+Each state pie loads its official itemized research archive, adds a signed `Census adjustments` row to reach the FY2024 Census expenditure control, then adds a signed `GAAP adjustments` row to reach audited primary-government expenses. The exact residuals are controls, not invented agency allocations; their notes qualify likely accounting and entity-boundary causes when no official numeric bridge exists. The federal pie uses Treasury FY2024 MTS budget functions. Charts normalize positive slices to 100%, while signed negative adjustments remain visible in the list.
 
-`state-financial-results.js` is the separate 50-state government-wide GAAP
-control: resources, expenses, annual change, and fiscal-year-end net position
-from one primary-government boundary per state. It is not mixed with Census or
-itemized source rows.
+`state-financial-results.js` supplies the 50-state government-wide GAAP control:
+resources, expenses, annual change, and fiscal-year-end net position from one
+primary-government boundary per state. Only its expense control is used as the
+final signed allocation checkpoint.
 
 ## Research commentary
 

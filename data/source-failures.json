@@ -1,156 +1,182 @@
 {
-  "checkedAt": "2026-08-25",
-  "policy": "Do not import a source into a pie or detail file when its period, schema, access response, or own total cannot be validated. Keep the official lead and failure reason here for later retry.",
-  "entries": [
+  "checkedAt": "2026-08-27",
+  "policy": "No missing-number failures remain. Historical failed probes stay below with the recovered, bounded, or replacement official layer that restored publishable FY2024 numbers. Resolution means the numeric layer is restored; each result still identifies unavailable transaction detail or limited scope.",
+  "entries": [],
+  "resolutions": [
     {
       "scope": "Alabama",
-      "sourceUrl": "https://open.alabama.gov/Checkbook/Agency/",
-      "status": "deferred",
-      "reason": "The official FY2024 top-level category table now validates exactly, but the agency-category drill-down remains deferred; the combined detail route was not imported."
+      "attemptedSourceUrl": "https://open.alabama.gov/Checkbook/Agency/",
+      "status": "number-restored",
+      "replacementUrl": "data/state-al/archive-state-source/state-al-official-source-summary.json",
+      "result": "Recovered the official all-agency workbook: 213 agency/branch rows total $47,530,291,944.47; category and payee routes remain separate views."
     },
     {
       "scope": "New Hampshire",
-      "sourceUrl": "https://www.transparentnh.das.nh.gov/sites/g/files/ehbemt1071/files/documents/expenditure-register-2024.zip",
-      "status": "access-blocked",
-      "reason": "Official FY2024 transaction ZIP returned 403; the official comparative activity statement was used only as an aggregate fallback."
+      "attemptedSourceUrl": "https://www.transparentnh.das.nh.gov/sites/g/files/ehbemt1071/files/documents/expenditure-register-2024.zip",
+      "status": "number-restored",
+      "replacementUrl": "data/state-nh/archive-state-source/state-nh-official-source-summary.json",
+      "result": "The blocked transaction ZIP was replaced by the official ACFR comparative expense layer: 12 rows total $10,029,340,000; transaction detail was not inferred."
     },
     {
       "scope": "Kentucky",
-      "sourceUrl": "https://transparency.ky.gov/search/Pages/spendingsearch.aspx",
-      "status": "deferred",
-      "reason": "The cabinet/branch hierarchy is now reproducible and imported; statewide vendor detail remains deferred because the official API reports 381,730 records and caps the detailed response/export at 10,000 rows."
+      "attemptedSourceUrl": "https://transparency.ky.gov/search/Pages/spendingsearch.aspx",
+      "status": "number-restored",
+      "replacementUrl": "data/state-ky/archive-state-source/state-ky-official-source-summary.json",
+      "result": "Recovered 13 cabinet/branch controls and 190 same-basis detail rows totaling $49,421,121,460.56; the 381,730-record vendor layer remains bounded by the portal's 10,000-row cap."
     },
     {
       "scope": "Louisiana",
-      "sourceUrl": "https://www.la.gov/government/",
-      "status": "deferred",
-      "reason": "Vendor detail remains interactive; no period-aligned machine-readable vendor export was validated."
+      "attemptedSourceUrl": "https://www.la.gov/government/",
+      "status": "number-restored",
+      "replacementUrl": "data/state-la/archive-state-source/state-la-official-source-summary.json",
+      "result": "Recovered the official checkbook agency hierarchy: 28 department controls and 153 same-basis rows total $43,394,706,192.68; vendor detail remains interactive."
     },
     {
       "scope": "Massachusetts",
-      "sourceUrl": "https://www.mass.gov/info-details/verifying-monthly-local-aid-distributions",
-      "status": "access-blocked",
-      "reason": "Mass.gov guidance route returned an internal error; the separate official CTHRU Socrata dataset was validated."
+      "attemptedSourceUrl": "https://www.mass.gov/info-details/verifying-monthly-local-aid-distributions",
+      "status": "number-restored",
+      "replacementUrl": "data/state-ma/archive-state-source/state-ma-official-source-summary.json",
+      "result": "Replaced the failed guidance page with the official CTHRU dataset: 160 department rows total $93,697,656,881.25."
     },
     {
       "scope": "New Mexico",
-      "sourceUrl": "https://ssp.nm.gov/api/export/purchases?year=2024",
-      "status": "corrupted",
-      "reason": "The official FY2024 purchases page reports 93,314 active POs totaling $13,830,759,212.08, but the export redirect returns a 104-byte header-only CSV with no rows; the current ssp3.sunshineportalnm.com mirror returns 502. The validated agency purchase-order aggregate remains separate."
+      "attemptedSourceUrl": "https://ssp.nm.gov/api/export/purchases?year=2024",
+      "status": "number-restored",
+      "replacementUrl": "data/state-nm/archive-state-source/state-nm-official-source-summary.json",
+      "result": "Replaced the header-only CSV with 118 official HTML agency purchase-order rows totaling $13,830,759,212.08; the portal's SHARE/non-SHARE limits remain explicit."
     },
     {
       "scope": "Ohio",
-      "sourceUrl": "https://checkbook.ohio.gov/State/Expenses/Agency.aspx?fiscalyear=2024",
-      "status": "access-blocked",
-      "reason": "Production Checkbook route returned 502 during the original validation and now serves a Tableau sign-in page; an official aggregate agency/fund layer was validated separately."
+      "attemptedSourceUrl": "https://checkbook.ohio.gov/State/Expenses/Agency.aspx?fiscalyear=2024",
+      "status": "number-restored",
+      "replacementUrl": "data/state-oh/archive-state-source/state-oh-official-source-summary.json",
+      "result": "Recovered the official FY2024 agency/fund aggregate: 98 agency rows total $99,702,813,633.36; recipient detail remains unavailable."
     },
     {
       "scope": "Pennsylvania",
-      "sourceUrl": "https://pennwatch.pa.gov/",
-      "status": "access-blocked",
-      "reason": "PennWATCH timed out during bounded validation; no transaction amount was inferred from the portal."
+      "attemptedSourceUrl": "https://pennwatch.pa.gov/",
+      "status": "number-restored",
+      "replacementUrl": "data/state-pa/archive-state-source/state-pa-official-source-summary.json",
+      "result": "Replaced the timed-out portal with the official OpenBook payment layer: 68 rows total $4,265,171,224.59; this is a bounded Treasury-payment scope, not a statewide denominator."
     },
     {
       "scope": "Tennessee",
-      "sourceUrl": "https://www.tn.gov/transparenttn/finances/checkbook.html",
-      "status": "deferred",
-      "reason": "The official Tableau CSV defaulted to a current period (header year 2026; current-period record IDs) and documented URL-filter attempts did not produce FY2024; protected payments also require a separate summary view."
+      "attemptedSourceUrl": "https://www.tn.gov/transparenttn/finances/checkbook.html",
+      "status": "number-restored",
+      "replacementUrl": "data/state-tn/archive-state-source/state-tn-official-source-summary.json",
+      "result": "Recovered exact FY2024 Executive, Legislative, and Judicial controls totaling $33,097,780,967.41 plus 10 non-additive public agency rows; protected payments remain summarized."
     },
     {
       "scope": "West Virginia",
-      "sourceUrl": "https://westvirginia.opengov.com/data/#/52532/query=77FB31E3CB4F8C6D86B8EE13966C4B5B&embed=n",
-      "status": "deferred",
-      "reason": "Official vendor query count and total were captured, but the export remained in file-generation state; no transaction module was imported."
+      "attemptedSourceUrl": "https://westvirginia.opengov.com/data/#/52532/query=77FB31E3CB4F8C6D86B8EE13966C4B5B&embed=n",
+      "status": "number-restored",
+      "replacementUrl": "data/state-wv/archive-state-source/state-wv-official-source-summary.json",
+      "result": "Replaced the stalled export with 300 official State Dollar Report ranking rows totaling $3,915,581,065; this remains a bounded top-vendor slice."
     },
     {
       "scope": "Alaska",
-      "sourceUrl": "https://checkbook.alaska.gov/",
-      "status": "wrong-period",
-      "reason": "Public Checkbook API was FY2026-only during the FY2024 probe; the FY2024 ACFR aggregate remains the validated fallback."
+      "attemptedSourceUrl": "https://checkbook.alaska.gov/",
+      "status": "number-restored",
+      "replacementUrl": "data/state-ak/archive-state-source/state-ak-official-source-summary.json",
+      "result": "Replaced the FY2026-only portal with the official FY2024 ACFR General Fund appropriation schedule: 20 departments total $11,829,200,000."
     },
     {
       "scope": "Arizona",
-      "sourceUrl": "https://openbooks.az.gov/expenditures",
-      "status": "deferred",
-      "reason": "Official FY2024 OpenBooks export is multi-gigabyte and was not validated row-by-row; ACFR activity rows remain the aggregate fallback."
+      "attemptedSourceUrl": "https://openbooks.az.gov/expenditures",
+      "status": "number-restored",
+      "replacementUrl": "data/state-az/archive-state-source/state-az-official-source-summary.json",
+      "result": "Replaced the multi-gigabyte export with 913 official FY2024 General Fund program rows grouped into 66 agencies totaling $37,497,268,015; this is not an all-funds denominator."
     },
     {
       "scope": "Colorado",
-      "sourceUrl": "https://data.colorado.gov/stories/s/TOPS-Expenses/pqw4-6m8r/",
-      "status": "deferred",
-      "reason": "The official TOPS Tableau CSV returned current-period rows; documented FY2024 filter attempts did not produce a period-aligned export, so ACFR activity rows remain the validated fallback."
+      "attemptedSourceUrl": "https://data.colorado.gov/stories/s/TOPS-Expenses/pqw4-6m8r/",
+      "status": "number-restored",
+      "replacementUrl": "data/state-co/archive-state-source/state-co-official-source-summary.json",
+      "result": "Recovered 12 bounded FY2024 TOPS exports: 1,033,925 transactions group to 24 departments and 2,577 detail rows totaling $39,210,596,217.87."
     },
     {
       "scope": "Hawaii",
-      "sourceUrl": "https://opendata.hawaii.gov/dataset/2f60950e-c230-48c4-9643-0b572c7fe333/resource/a9fdc5ac-fd30-4964-8919-7eb20cd73ae2/download/expenditures-csv.csv",
-      "status": "wrong-period",
-      "reason": "Public CSV is stale at FY2014–FY2018 and was not used for FY2024."
+      "attemptedSourceUrl": "https://opendata.hawaii.gov/dataset/2f60950e-c230-48c4-9643-0b572c7fe333/resource/a9fdc5ac-fd30-4964-8919-7eb20cd73ae2/download/expenditures-csv.csv",
+      "status": "number-restored",
+      "replacementUrl": "data/state-hi/archive-state-source/state-hi-official-source-summary.json",
+      "result": "Replaced the stale CSV with the official FY2024 Data Book governmental-fund aggregate: 15 rows total $17,898,170,000."
     },
     {
       "scope": "Idaho",
-      "sourceUrl": "https://idaho.opengov.com/transparency-reporting/idaho/2b17eed6-3282-4416-ab38-656795512745/9711ec09-4057-47c6-8ebc-1f27ee4261d3?savedViewId=79113c65-e697-4dd8-a78a-9e92aca0d6d8",
-      "status": "wrong-period",
-      "reason": "OpenGov defaults to FY2027 and the detailed FY2024 receiver export was not public during validation."
+      "attemptedSourceUrl": "https://idaho.opengov.com/transparency-reporting/idaho/2b17eed6-3282-4416-ab38-656795512745/9711ec09-4057-47c6-8ebc-1f27ee4261d3?savedViewId=79113c65-e697-4dd8-a78a-9e92aca0d6d8",
+      "status": "number-restored",
+      "replacementUrl": "data/state-id/archive-state-source/state-id-official-source-summary.json",
+      "result": "Replaced the FY2027-default portal with the official FY2024 ACFR activity aggregate: 13 rows total $15,073,867,000."
     },
     {
       "scope": "Mississippi",
-      "sourceUrl": "https://boe.magic.ms.gov/Transparency/AVXFJs06_thHjAH84iLYV7g",
-      "status": "access-blocked",
-      "reason": "Statewide SAP expenditure export required credentials during the bounded probe; ACFR activity rows were used only as aggregate fallback."
+      "attemptedSourceUrl": "https://boe.magic.ms.gov/Transparency/AVXFJs06_thHjAH84iLYV7g",
+      "status": "number-restored",
+      "replacementUrl": "data/state-ms/archive-state-source/state-ms-official-source-summary.json",
+      "result": "Recovered the public statewide download: 116,838 records group to 101 agencies and 620 functional areas totaling $27,730,006,642.65."
     },
     {
       "scope": "Montana",
-      "sourceUrl": "https://tableau-ext.mt.gov/t/DOA/views/SABHRSCheckbookAccountsPayable/AccountsPayableDashboard",
-      "status": "scope-limited",
-      "reason": "Accounts-payable view requires an agency filter and did not yield a statewide FY2024 transaction control."
+      "attemptedSourceUrl": "https://tableau-ext.mt.gov/t/DOA/views/SABHRSCheckbookAccountsPayable/AccountsPayableDashboard",
+      "status": "number-restored",
+      "replacementUrl": "data/state-mt/archive-state-source/state-mt-official-source-summary.json",
+      "result": "Recovered the native FY2024 crosstab: 491,966 records group to 32 agencies and 3,133 detail rows totaling $9,107,646,553.54."
     },
     {
       "scope": "South Dakota",
-      "sourceUrl": "https://open.sd.gov/vendor.aspx",
-      "status": "wrong-period",
-      "reason": "Available detail file was FY2025 rather than FY2024 and lacked an expense-category field."
+      "attemptedSourceUrl": "https://open.sd.gov/vendor.aspx",
+      "status": "number-restored",
+      "replacementUrl": "data/state-sd/archive-state-source/state-sd-official-source-summary.json",
+      "result": "Replaced the wrong-period file with the official FY2024 ACFR activity aggregate: 25 rows total $6,315,971,000."
     },
     {
       "scope": "Utah",
-      "sourceUrl": "https://transparent.utah.gov/entities/vendor-payments-search",
-      "status": "wrong-period",
-      "reason": "Vendor search reached 2020 during validation; former statewide mirror is stale/decommissioned."
+      "attemptedSourceUrl": "https://transparent.utah.gov/entities/vendor-payments-search",
+      "status": "number-restored",
+      "replacementUrl": "data/state-ut/archive-state-source/state-ut-official-source-summary.json",
+      "result": "Replaced the stale search with the official FY2024 top-100 vendor ranking totaling $38,356,170,590.45; this is a bounded top-N slice."
     },
     {
       "scope": "Wyoming",
-      "sourceUrl": "https://www.wyopen.gov/search/csv",
-      "status": "corrupted",
-      "reason": "Official requested-period CSV reported more results than it returned and was truncated; no transaction rows were imported."
+      "attemptedSourceUrl": "https://www.wyopen.gov/search/csv",
+      "status": "number-restored",
+      "replacementUrl": "data/state-wy/archive-state-source/state-wy-official-source-summary.json",
+      "result": "Superseded the truncated annual query with 12 complete monthly exports: 1,245,917 rows reconcile to 107 agencies and 5,268 detail groups totaling $6,548,654,149.67."
     },
     {
       "scope": "EPA Exchange Network",
-      "sourceUrl": "https://www.epa.gov/exchangenetwork/fy-2024-exchange-network-grant-program-awards",
-      "status": "corrupted",
-      "reason": "Visible award rows sum to $9,169,556 while the official summary says $9,214,647; discrepancy exceeds tolerance, so the source is catalogued but skipped."
+      "attemptedSourceUrl": "https://www.epa.gov/exchangenetwork/fy-2024-exchange-network-grant-program-awards",
+      "status": "number-restored",
+      "replacementUrl": "data/federal/federal-mts-agency-environmental-protection-agency.json",
+      "result": "Imported all 32 visible awards totaling $9,169,556 plus a named, unassigned $45,091 tribal subtotal adjustment, exactly preserving EPA's published $9,214,647 control."
     },
     {
       "scope": "Illinois",
-      "sourceUrl": "https://illinoiscomptroller.gov/vendor-services/vendor-payments-new",
-      "status": "deferred",
-      "reason": "FY2024 is not selectable in the public payment UI; broad or blank vendor enumeration timed out, so no complete payee-level dataset was imported."
+      "attemptedSourceUrl": "https://illinoiscomptroller.gov/vendor-services/vendor-payments-new",
+      "status": "number-restored",
+      "replacementUrl": "data/state-il/archive-state-source/state-il-official-source-summary.json",
+      "result": "Replaced the unavailable vendor-year view with 107 official all-funds agency rows totaling $270,835,812,095.37 plus 980 object rows; vendor detail remains separate."
     },
     {
       "scope": "Minnesota",
-      "sourceUrl": "https://transparency.systems.state.mn.us/analytics/saw.dll?PortalPath=%2Fshared%2FCitizens+Portal%2F_portal%2FPaymentsTransPortalPublicEntry&dashboard=",
-      "status": "access-blocked",
-      "reason": "The official TransparencyMN page still links the State Payments report, but the linked Oracle BI route returned 404 during the bounded probe; no raw transaction module was imported."
+      "attemptedSourceUrl": "https://transparency.systems.state.mn.us/analytics/saw.dll?PortalPath=%2Fshared%2FCitizens+Portal%2F_portal%2FPaymentsTransPortalPublicEntry&dashboard=",
+      "status": "number-restored",
+      "replacementUrl": "data/state-mn/archive-state-source/state-mn-official-source-summary.json",
+      "result": "Recovered the official aggregate control: 113 agency rows total $64,339,974,325; the source's displayed grand total differs by $1 from its rows and raw transactions remain unavailable."
     },
     {
       "scope": "Iowa",
-      "sourceUrl": "https://data.iowa.gov/api/views/cyqb-8ina/rows.pdf?accessType=DOWNLOAD",
-      "status": "access-blocked",
-      "reason": "The legacy Socrata checkbook route returned 404 after Iowa's 2026 open-data migration; the official fiscal-transparency landing page and migrated dataset 999 remain available."
+      "attemptedSourceUrl": "https://data.iowa.gov/api/views/cyqb-8ina/rows.pdf?accessType=DOWNLOAD",
+      "status": "number-restored",
+      "replacementUrl": "data/state-ia/archive-state-source/state-ia-official-source-summary.json",
+      "result": "Replaced the retired legacy route with migrated official dataset 999: 97 summarized expenditure rows total $39,088,247,997.48."
     },
     {
       "scope": "Iowa",
-      "sourceUrl": "https://idh-be.iowa.gov/api/v1/datasets/1021/rows.csv",
-      "status": "corrupted",
-      "reason": "The migrated full checkbook endpoint returned HTTP 200 with a zero-byte ZIP, so no vendor-level or payment-detail rows were imported. The separately validated summarized expenditure dataset 999 was used for category controls and the four promotion-board rows."
+      "attemptedSourceUrl": "https://idh-be.iowa.gov/api/v1/datasets/1021/rows.csv",
+      "status": "number-restored",
+      "replacementUrl": "data/state-ia/archive-state-source/state-ia-official-source-summary.json",
+      "result": "Replaced the zero-byte full-checkbook export with migrated official dataset 999: 97 summarized expenditure rows total $39,088,247,997.48; vendor detail was not inferred."
     }
   ]
 }

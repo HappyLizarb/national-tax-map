@@ -164,33 +164,6 @@
         <div class="tax-rate-grid" id="taxRateRows"></div>
       </section>
 
-      <section class="panel-section accounting-comparison" id="accountingComparison" aria-labelledby="accountingComparisonTitle" aria-live="polite" hidden>
-        <div class="section-heading">
-          <h3 id="accountingComparisonTitle">Two reported totals, different measurement boundaries</h3>
-          <span id="accountingComparisonAsOf">FY 2024 · not additive</span>
-        </div>
-        <div class="accounting-total-grid">
-          <article>
-            <span id="censusReportedLabel">Census statistical total</span>
-            <strong id="censusReportedTotal">—</strong>
-            <small id="censusReportedBasis">Standardized functions and Census-defined state-government coverage</small>
-          </article>
-          <article>
-            <span id="stateReportedLabel">Official state-source total</span>
-            <strong id="stateReportedTotal">—</strong>
-            <small id="stateReportedBasis">Source-specific accounting basis</small>
-          </article>
-          <article class="accounting-difference">
-            <span id="accountingThirdLabel">Census minus state source</span>
-            <strong id="accountingDifference">—</strong>
-            <small id="accountingThirdBasis">Diagnostic difference—not missing or excess spending</small>
-          </article>
-        </div>
-        <p class="accounting-method-note">Census is a statistical presentation, not a single GAAP accrual ledger: it standardizes functions and entity coverage while generally retaining the basis used in the underlying government records.</p>
-        <p id="accountingStatement"></p>
-        <div class="accounting-evidence" id="accountingEvidence" aria-label="Accounting comparison evidence"></div>
-      </section>
-
       <div class="fiscal-detail-grid">
 
       <section class="panel-section fiscal-card fiscal-card-wide" aria-labelledby="allocationTitle">
@@ -231,7 +204,7 @@
 
   <footer class="methodology-disclaimer" aria-label="Data methodology">
     <strong>Methodology note</strong>
-    <p>Maps and headline state totals use published GAAP financial statements. Itemized spending breakdowns use researched published archives and agency records. Census figures are shown only for comparison; differences reflect accounting bases and reporting boundaries and are not additive.</p>
+    <p>Maps and headline state totals use published GAAP financial statements. State pies begin with researched official archives, add a signed Census bridge, then add a signed GAAP bridge. These qualified controls reconcile published totals without assigning unsupported differences to agencies.</p>
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js"></script>

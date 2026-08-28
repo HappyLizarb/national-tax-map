@@ -42,25 +42,23 @@ Open <http://localhost:4173>, or run `node test.js` to validate the data.
 - Summary and detail amounts reconcile in cents to one official itemized source
   layer per jurisdiction. No synthetic `Others`, `coverage-gap`, or unnamed
   residual row is inserted into a pie.
-- Each summary records the source total as `itemizedTotal` and keeps the
-  Census/CBO figure separately as `comparison.total` with a link. Differences
-  between accounting scopes are shown as metadata only; they are never assigned
-  to a receiver, agency, or program without source rows.
+- State allocation pies start with the official research archive, add a signed
+  `Census adjustments` control, then add a signed `GAAP adjustments` control.
+  The two rows reconcile published totals without assigning an unsupported
+  difference to a receiver, agency, or program.
 - The default state map uses FY2024 full-accrual GAAP total-primary-government
   resources, expenses, and fiscal-year-end net position for all 50 states. Component
   units and fiduciary funds are excluded; qualified audit scopes are disclosed.
-- The Census view remains a separate standardized 50-state revenue and
-  expenditure comparison and does not calculate a surplus or deficit.
-- California, Pennsylvania, Texas, and Washington retain separately selectable
-  legislative-budget actual pilots; other state-specific budget standards remain
-  unavailable until researched.
+- California, Pennsylvania, Texas, and Washington retain legislative-budget
+  actual pilots as supporting research; they do not replace the signed
+  archive-to-GAAP allocation.
 - Official totals remain the headline. Documented lower bounds use `≥` and a
   star; unreconciled off-budget entities are disclosed without inventing an
   expanded total. State-specific budget and archive maps remain neutral because
   their standards are not comparable.
-- Department rows are nested evidence against the canonical control and are
-  never added to it. The allocation panel reports exact itemized coverage.
-  Census functions remain a separate standardized comparison.
+- Department rows retain their research-archive amounts. Signed reconciliation
+  rows establish the Census and GAAP checkpoints; qualified causes remain
+  unallocated when no official line-item bridge exists.
 - The federal allocation uses the precise FY2024 Treasury MTS net-outlay
   function total. USAspending agency/account and award-recipient data remain
   separately labeled drill-down layers because they use a different scope.
@@ -74,9 +72,9 @@ organization/category aggregate and source-record count; that count is not
 presented as a unique employee count. Public congressional office names may
 appear in the House disbursement data; staff names are not imported.
 
-Deferred, wrong-period, access-blocked, scope-limited, and corrupted sources
-are recorded in `data/source-failures.json` and the research catalog rather
-than being silently omitted or promoted into a pie.
+Historical failed probes and their recovered, bounded, or replacement layers
+are recorded in `data/source-failures.json`. Unavailable detail is qualified;
+it is never inferred or silently promoted into a pie.
 
 ## Research
 
