@@ -10,7 +10,7 @@ function updatePanel() {
   setText("#scopeContext", (canonical.kind === "federal" ? "Federal outlays" : status) + " · FY 2024");
   setText("#budgetStatus", status);
   updateSources(canonical); updateKpis(canonical, null); updateTaxRates(canonical.name);
-  updateComparison(canonical); updateAllocation(allocation); updateSecondary(canonical);
+  updateComparison(canonical); updateAllocation(allocation);
   setText("#dataBasis", canonical.basis);
 }
 // Briefly soften state changes while respecting reduced-motion preferences.
@@ -135,14 +135,12 @@ function renderAllocation(summary, scopeData) {
     return aOrder - bOrder || (aOrder ? 0 : b.chartAmount - a.chartAmount || Math.abs(b.amount) - Math.abs(a.amount));
   }).map((row, index) => ({ ...row, chartColor: row.reconciliationTarget
     ? row.amount < 0 ? palette[3] : palette[0] : palette[index % palette.length] }));
-  const hasAdjustments = departments.some((row) => row.amount < 0);
   setText("#allocationTotal", allocationLabel(summary, sourceTotal, scopeData));
   $("#categoryList").innerHTML = departments.map((row, index) => '<button class="category-row" type="button" data-category="' + index + '"><span><i style="background:' + row.chartColor + '"></i>' + escapeHtml(row.name) + '</span><b>' + shareLabel(row) + '</b></button>').join("");
   $("#categoryList").querySelectorAll('[data-category]').forEach((button) =>
     button.addEventListener("click", () => showBreakdown(departments[Number(button.dataset.category)])));
   const reconciled = summary.coverageStatus === "gaap-reconciled-research-archive";
   drawDonut(departments, reconciled ? "GAAP" : "100%", reconciled ? "signed reconciliation" : "itemized allocations");
-  setText("#coverageShare", reconciled ? "Reconciles to GAAP" : hasAdjustments ? "100% of positive allocations" : "100%");
   setText("#sourceExplorerNote", summary.note || "Itemized rows load only after a department is selected.");
   if (scopeData.kind === "federal") $("#agencyRows").innerHTML = federalResearchCatalog();
   $("#allocationTitle a").href = summary.departments[0]?.sourceUrl || summary.sourceUrl;
@@ -270,9 +268,4 @@ function detailSourceLinks(detail) {
   const sources = [...(detail.sourceUrls || [["Official source", detail.sourceUrl]]), ...(detail.relatedSources || [])];
   return '<div class="source-catalog"><strong>Sources</strong><div>' + sources.map(([label, url]) =>
     '<a href="' + escapeHtml(url) + '" target="_blank" rel="noopener noreferrer">' + escapeHtml(label) + ' ↗</a>').join("") + '</div></div>' + largeAccountCatalog(detail);
-}
-
-function updateSecondary(data) {
-  setText("#interestShare", data.salariesWages ? model.formatMoney(data.salariesWages) : "Not reported");
-  setText("#transferShare", data.financialResult ? "Included as reported" : "See department files"); setText("#coverageShare", "Loading");
 }

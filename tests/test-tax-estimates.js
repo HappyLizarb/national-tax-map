@@ -1,6 +1,6 @@
 const assert = require("node:assert/strict");
 const fs = require("node:fs");
-const renderTaxEstimates = require("./tax-estimates.js");
+const renderTaxEstimates = require("../src/tax-estimates.js");
 
 const escapeHtml = (value) => String(value ?? "").replace(/[&<>"']/g, (character) =>
   ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" })[character]);
@@ -15,6 +15,7 @@ const profile = (incomeUrl) => ({
 const tax = { incomeUrl: "https://example.com/state", incomeSource: "State schedule",
   household: profile("https://example.com/household"),
   individual: profile("https://example.com/individual") };
+tax.individual.levels = tax.individual.levels.map((row) => ({ ...row, tax: 6500, propertyTax: null }));
 const html = renderTaxEstimates(tax, escapeHtml);
 
 assert.equal((html.match(/class="tax-estimate-window"/g) || []).length, 1);
@@ -23,7 +24,9 @@ assert.equal((html.match(/class="tax-estimate-level"/g) || []).length, 8);
 assert.equal((html.match(/class="tax-estimate-income"/g) || []).length, 8);
 assert.equal((html.match(/class="tax-estimate-breakdown"/g) || []).length, 8);
 assert.equal((html.match(/class="tax-estimate-net"/g) || []).length, 8);
-assert.match(html, /Post-tax income<\/small><strong>\$41,000<\/strong><small>18\.0% effective tax rate/);
+assert.equal((html.match(/ property<\/span>/g) || []).length, 4);
+assert.match(html, /Post-tax income<\/small><strong>\$41,000 <span>\(\$3,417\/month\)<\/span><\/strong><small>18\.0% effective tax rate/);
+assert.match(html, /Post-tax income<\/small><strong>\$43,500 <span>\(\$3,625\/month\)<\/span><\/strong><small>13\.0% effective tax rate/);
 for (const source of ["federal", "method", "property"])
   assert.equal((html.match(new RegExp('href="https://example.com/' + source + '"', "g")) || []).length, 1);
 assert.equal((html.match(/Estimated 2026/g) || []).length, 1);
@@ -33,4 +36,4 @@ assert.doesNotMatch(html, /Not tax advice/);
 assert.doesNotMatch(html, /<strong>Illustrative<\/strong>/);
 assert.match(html, /&lt;strong&gt;Illustrative&lt;\/strong&gt;/);
 assert.equal(renderTaxEstimates({ household: null }, escapeHtml), "");
-assert.match(fs.readFileSync("details.css", "utf8"), /\.household-estimate-grid\s*\{[^}]*grid-template-columns:\s*1fr/);
+assert.match(fs.readFileSync("styles/details.css", "utf8"), /\.household-estimate-grid\s*\{[^}]*grid-template-columns:\s*1fr/);

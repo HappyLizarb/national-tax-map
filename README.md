@@ -9,7 +9,15 @@ and household income/property-tax estimates.
 python3 -m http.server 4173
 ```
 
-Open <http://localhost:4173>, or run `node test.js` to validate the data.
+Open <http://localhost:4173>, or run `node tests/test.js` to validate the data.
+
+## Repository layout
+
+- `src/` contains the browser application and fiscal model.
+- `styles/` contains the page stylesheets.
+- `tests/` contains the dependency-free Node validation suite.
+- `data/` contains the source-linked fiscal and tax datasets.
+- `vendor/` contains the pinned map assets and their licenses.
 
 ## What it shows
 
@@ -26,8 +34,8 @@ Open <http://localhost:4173>, or run `node test.js` to validate the data.
 
 ## Data layout
 
-- `data/spending.js` is the small ledger shell loaded with the map.
-- `data/state-financial-results.js` holds the 50 audited state government-wide
+- `data/fiscal/spending.js` is the small ledger shell loaded with the map.
+- `data/fiscal/state-financial-results.js` holds the 50 audited state government-wide
   controls and preserves each report's precision and audit caveat.
 - `data/department-index.js` maps each jurisdiction to its lazy summary.
 - `data/federal/federal.js` and `data/state-xx/state-xx.js` contain only the
@@ -76,7 +84,7 @@ presented as a unique employee count. Public congressional office names may
 appear in the House disbursement data; staff names are not imported.
 
 Historical failed probes and their recovered, bounded, or replacement layers
-are recorded in `data/source-failures.json`. Unavailable detail is qualified;
+are recorded in `data/research/source-failures.json`. Unavailable detail is qualified;
 it is never inferred or silently promoted into a pie.
 
 ## Research
@@ -85,12 +93,14 @@ Research is stored with the datasets as lossless structured commentary. Each
 record retains the original Markdown, evidence links, applicable dataset paths,
 and a SHA-256 checksum:
 
-- [Federal and state source audits](data/research/source-audits.json)
-- [Accounting reconciliations and audited controls](data/research/accounting-controls.json)
+- [Federal and state source audits](data/research/spending-source-audits.json)
+- [Accounting reconciliations and audited controls](data/research/spending-accounting-controls.json)
 - [USAspending methods and object classes](data/research/federal-methods.json)
-- [2026 brackets and tax-rate evidence](data/research/tax-policy.json)
-- [Household estimate method](data/research/household-estimate.json)
-- [State GAAP controls](data/state-financial-results.js)
+- [Legislative-budget actuals evidence](data/research/legislative-budget-actuals-evidence.md)
+- [State reconciliation rows at or above $10 billion](data/research/state-reconciliation-large-row-decomposition.md)
+- [2026 brackets and tax-rate evidence](data/research/tax-policy-evidence.json)
+- [Household estimate method](data/research/household-tax-estimate-evidence.json)
+- [State GAAP controls](data/fiscal/state-financial-results.js)
 
 See [the data layout](data/README.md) for the commentary schema and its relation
 to numerical inputs.
@@ -102,8 +112,8 @@ can reappear in state receipts. Congress currently includes House calendar-2024
 disbursements; Senate reports are linked but kept non-additive.
 
 Tax cards are estimates, not tax advice. Family cards assume married filing
-jointly with two qualifying children; individual cards assume a single filer
-age 18–64 with no dependents. Both use wage income, standard deductions, and
-an owner-occupied home worth about 10× income. They exclude payroll and local
-income taxes, mortgage effects, refundable credits, and individualized
-deductions.
+jointly with two qualifying children and an owner-occupied home worth about
+10× income; individual cards assume a single filer age 18–64 with no
+dependents and exclude property tax. Both use wage income and standard
+deductions. They exclude payroll and local income taxes, refundable credits,
+and individualized deductions.

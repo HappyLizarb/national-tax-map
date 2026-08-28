@@ -1,5 +1,5 @@
 // Keep audited, budget, archive, and Census controls on their own accounting bases.
-function scopeFor(dataset, census, budgetActuals, ledgerTotals, financialResults, name, sourceLayer = "function") {
+function scopeFor(dataset, census, budgetActuals, financialResults, name, sourceLayer = "function") {
   const isFederal = name === "United States" || !dataset.states[name];
   const raw = isFederal ? dataset.federal : dataset.states[name];
   const financialLayer = !isFederal && sourceLayer === "financial";
@@ -13,7 +13,7 @@ function scopeFor(dataset, census, budgetActuals, ledgerTotals, financialResults
     kind: isFederal ? "federal" : "state",
     revenue: financialLayer ? financialResult?.resources ?? null : comparable ? raw.revenue : null,
     spending: financialLayer ? financialResult?.expenses ?? null
-      : archiveLayer ? ledgerTotals[name] ?? null : budgetLayer ? budgetActual?.amount ?? null : raw.total,
+      : archiveLayer ? null : budgetLayer ? budgetActual?.amount ?? null : raw.total,
     balance: financialLayer ? financialResult?.netPosition ?? null : comparable ? raw.balance ?? null : null,
     comparable,
     budgetStatus: budgetLayer ? budgetActual?.status || "unavailable" : null,
@@ -219,16 +219,17 @@ function estimateProfile(profile, name, labels, rate, schedule, sources) {
     const income = estimate.incomes[index];
     const federalIncomeTax = federalTax(income, schedule);
     const stateIncomeTax = estimate.taxes[index];
-    const propertyTax = Math.round(income * 10 * rate);
+    const propertyTax = rate == null ? null : Math.round(income * 10 * rate);
     return { label, income, federalIncomeTax, stateIncomeTax, propertyTax,
-      tax: federalIncomeTax + stateIncomeTax + propertyTax };
+      tax: federalIncomeTax + stateIncomeTax + (propertyTax || 0) };
   });
   return { asOf: profile.asOfByJurisdiction?.[name] || profile.asOf,
     assumptions: profile.assumptions, note: profile.note, levels,
     incomeSource: profile.incomeSource[0], incomeUrl: profile.incomeSource[1],
     methodSource: sources.method[0], methodUrl: sources.method[1],
     federalSource: sources.federal[0], federalUrl: sources.federal[1],
-    propertySource: sources.property[0], propertyUrl: sources.property[1] };
+    propertySource: rate == null ? null : sources.property[0],
+    propertyUrl: rate == null ? null : sources.property[1] };
 }
 
 function taxOverviewFor(taxRates, incomeTiers, estimates, name) {
@@ -248,13 +249,13 @@ function taxOverviewFor(taxRates, incomeTiers, estimates, name) {
   const sources = { method: estimates.methodSource, federal: estimates.federalSource, property: propertySource };
   return { ...overview,
     household: estimateProfile(estimates, name, estimates.levels, rate, estimates.federalSchedules.joint, sources),
-    individual: estimateProfile(estimates.individual, name, estimates.levels, rate, estimates.federalSchedules.single, sources) };
+    individual: estimateProfile(estimates.individual, name, estimates.levels, null, estimates.federalSchedules.single, sources) };
 }
 
-function createModel(dataset, stateSources, alternates, federalSources, ledgerTotals, accountingBases, budgetActuals, financialResults, taxRates, incomeTiers, estimates) {
+function createModel(dataset, stateSources, alternates, federalSources, accountingBases, budgetActuals, financialResults, taxRates, incomeTiers, estimates) {
   const find = (id) => dataset.metadata.sources.find((source) => source.id === id);
   const sources = [find("census-state-finance"), find("federal-outlays"), find("treasury-mts"), find("usaspending")];
-  const scopeData = (name, sourceLayer) => scopeFor(dataset, sources[0], budgetActuals || {}, ledgerTotals || {}, financialResults || {}, name, sourceLayer);
+  const scopeData = (name, sourceLayer) => scopeFor(dataset, sources[0], budgetActuals || {}, financialResults || {}, name, sourceLayer);
   return {
     metadata: dataset.metadata,
     states: dataset.states,
@@ -282,17 +283,16 @@ function createModel(dataset, stateSources, alternates, federalSources, ledgerTo
   const load = (file, globalName) => typeof module === "object" && module.exports
     ? require(file) : root[globalName];
   const model = createModel(
-    load("./data/spending.js", "TaxSpendingData"),
-    load("./data/state-sources.js", "stateSourceData"),
-    load("./data/state-source-alternates.js", "stateSourceAlternates"),
-    load("./data/federal-sources.js", "FederalSourceResearch"),
-    load("./data/state-ledger-totals.js", "StateLedgerTotals"),
-    load("./data/state-accounting-bases.js", "StateAccountingBases"),
-    load("./data/state-budget-actuals.js", "StateBudgetActuals"),
-    load("./data/state-financial-results.js", "StateFinancialResults"),
-    load("./data/tax-rates.js", "taxRateData"),
-    load("./data/income-tiers.js", "incomeTierData"),
-    load("./data/household-tax-estimates.js", "householdTaxEstimateData")
+    load("../data/fiscal/spending.js", "TaxSpendingData"),
+    load("../data/fiscal/state-sources.js", "stateSourceData"),
+    load("../data/fiscal/state-source-alternates.js", "stateSourceAlternates"),
+    load("../data/fiscal/federal-sources.js", "FederalSourceResearch"),
+    load("../data/fiscal/state-accounting-bases.js", "StateAccountingBases"),
+    load("../data/fiscal/state-budget-actuals.js", "StateBudgetActuals"),
+    load("../data/fiscal/state-financial-results.js", "StateFinancialResults"),
+    load("../data/tax/tax-rates.js", "taxRateData"),
+    load("../data/tax/income-tiers.js", "incomeTierData"),
+    load("../data/tax/household-tax-estimates.js", "householdTaxEstimateData")
   );
   if (typeof module === "object" && module.exports) module.exports = model;
   else root.TaxModel = model;

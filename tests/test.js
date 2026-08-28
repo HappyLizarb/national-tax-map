@@ -2,13 +2,22 @@ const assert = require("node:assert/strict");
 const fs = require("node:fs");
 const crypto = require("node:crypto");
 const vm = require("node:vm");
-const model = require("./model.js");
-const ledgerTotals = require("./data/state-ledger-totals.js");
-const accountingBases = require("./data/state-accounting-bases.js");
-const financialResults = require("./data/state-financial-results.js");
-const taxRates = require("./data/tax-rates.js");
-const incomeTiers = require("./data/income-tiers.js");
-const estimates = require("./data/household-tax-estimates.js");
+const model = require("../src/model.js");
+const departmentIndex = require("../data/department-index.js");
+const accountingBases = require("../data/fiscal/state-accounting-bases.js");
+const financialResults = require("../data/fiscal/state-financial-results.js");
+const taxRates = require("../data/tax/tax-rates.js");
+const incomeTiers = require("../data/tax/income-tiers.js");
+const estimates = require("../data/tax/household-tax-estimates.js");
+
+// Load the sole authoritative archived summary for a state.
+function archiveFor(name) {
+  const summary = require("../" + departmentIndex[name]);
+  const snapshot = summary.departments.flatMap((row) => row.relatedSources || [])
+    .find(([label, url]) => label === "Prior state layer snapshot" && url.startsWith("data/"));
+  assert.ok(snapshot, name + " archive snapshot");
+  return JSON.parse(fs.readFileSync(snapshot[1], "utf8"));
+}
 require("./test-department-data.js");
 require("./test-federal-department-data.js");
 require("./test-federal-presentation-data.js");
@@ -17,18 +26,20 @@ require("./test-large-row-coverage.js");
 require("./test-offsetting-receipts.js");
 require("./test-tax-estimates.js");
 require("./test-kpi-disclosures.js");
+require("./test-source-explorer-layout.js");
 require("./test-data-structure.js");
 require("./test-research-data.js");
-
 const national = model.scopeData("United States");
 assert.deepEqual(model.metadata.researchCommentary, [
-  "data/research/source-audits.json",
-  "data/research/accounting-controls.json",
-  "data/research/federal-methods.json"
+  "data/research/spending-source-audits.json",
+  "data/research/spending-accounting-controls.json",
+  "data/research/federal-methods.json",
+  "data/research/legislative-budget-actuals-evidence.md",
+  "data/research/state-reconciliation-large-row-decomposition.md"
 ]);
-assert.equal(taxRates.researchCommentary, "data/research/tax-policy.json");
-assert.equal(incomeTiers.researchCommentary, "data/research/tax-policy.json");
-assert.equal(estimates.researchCommentary, "data/research/household-estimate.json");
+assert.equal(taxRates.researchCommentary, "data/research/tax-policy-evidence.json");
+assert.equal(incomeTiers.researchCommentary, "data/research/tax-policy-evidence.json");
+assert.equal(estimates.researchCommentary, "data/research/household-tax-estimate-evidence.json");
 assert.equal(estimates.methodSource[1], estimates.researchCommentary);
 for (const target of [...model.metadata.researchCommentary, taxRates.researchCommentary, estimates.researchCommentary]) assert.ok(fs.existsSync(target), target);
 assert.equal(national.revenue, 4918736000000);
@@ -43,7 +54,6 @@ assert.deepEqual(model.metadata.reconciliations.find((item) => item.id === "fede
   deficit: 1832816000000, result: "pass: final FY2024 MTS Table 1/2 controls reconcile exactly as net outlays less receipts"
 });
 assert.equal(Object.keys(model.states).length, 50);
-assert.equal(Object.keys(ledgerTotals).length, 50);
 assert.equal(Object.keys(financialResults.states).length, 50);
 assert.deepEqual(Object.keys(financialResults.states).sort(), Object.keys(model.states).sort());
 for (const [name, result] of Object.entries(financialResults.states)) {
@@ -68,7 +78,7 @@ const pilotControls = {
   "Texas": [171533710000, "documented-lower-bound"],
   "Washington": [71260282662, "documented-lower-bound"]
 };
-for (const name of Object.keys(ledgerTotals)) {
+for (const name of Object.keys(model.states)) {
   const itemized = model.scopeData(name, "itemized");
   const expected = pilotControls[name];
   assert.equal(itemized.spending, expected?.[0] ?? null, name + " canonical budget actual");
@@ -80,7 +90,7 @@ for (const name of Object.keys(ledgerTotals)) {
   assert.equal(model.scopeData(name, "function").revenue, model.states[name].revenue, name + " Census revenue retained");
   assert.ok(Number.isFinite(model.mapMetric(name, "stateGovernment", "spending", "function")), name + " Census map spending");
   assert.ok(Number.isFinite(model.mapMetric(name, "stateGovernment", "revenue", "function")), name + " Census map revenue");
-  assert.equal(model.scopeData(name, "archive").spending, ledgerTotals[name], name + " archive total retained");
+  assert.equal(model.scopeData(name, "archive").spending, null, name + " archive total loads with its summary");
   assert.equal(model.scopeData(name, "archive").comparable, false, name + " archive basis remains separate");
 }
 
@@ -88,16 +98,15 @@ const sameAcfrBasis = ["Alaska", "Arizona", "Colorado", "Idaho", "Montana", "Mis
 assert.equal(Object.keys(accountingBases).length, 40);
 assert.deepEqual(Object.keys(model.states).filter((name) => !accountingBases[name]).sort(), sameAcfrBasis.sort());
 for (const name of Object.keys(model.states)) {
-  const archive = { sourceTotal: ledgerTotals[name], itemizedTotal: ledgerTotals[name],
-    sourceUrl: accountingBases[name]?.ledgerUrl || model.financialResultFor(name).sourceUrl,
-    note: name + " official archive basis.", reconciliation: {},
-    departments: [{ name: "Official archive", amount: ledgerTotals[name] }] };
+  const archive = archiveFor(name);
+  const archiveTotal = archive.itemizedTotal ?? archive.sourceTotal;
   const reconciled = model.reconcileStateArchive(name, archive);
   const [censusRow, gaapRow] = reconciled.departments.slice(-2);
   assert.deepEqual([censusRow.name, gaapRow.name], ["Census adjustments", "GAAP adjustments"], name);
-  assert.equal(censusRow.amount, model.states[name].total - ledgerTotals[name], name + " Census bridge");
+  assert.equal(censusRow.amount, model.states[name].total - archiveTotal, name + " Census bridge");
   assert.equal(gaapRow.amount, model.financialResultFor(name).expenses - model.states[name].total, name + " GAAP bridge");
-  assert.equal(reconciled.departments.reduce((sum, row) => sum + row.amount, 0), reconciled.itemizedTotal, name);
+  assert.equal(Math.round(reconciled.departments.reduce((sum, row) => sum + row.amount, 0) * 100),
+    Math.round(reconciled.itemizedTotal * 100), name);
   assert.equal(reconciled.itemizedTotal, model.financialResultFor(name).expenses, name + " GAAP control");
   assert.match(censusRow.program, /no published bridge supports an agency split/, name);
   assert.match(gaapRow.program, new RegExp(name + " publishes no numeric Census-to-GAAP bridge"), name);
@@ -106,7 +115,7 @@ for (const name of Object.keys(model.states)) {
   assert.match(gaapRow.program, new RegExp(model.financialResultFor(name).auditNote.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")), name);
   if (accountingBases[name]) assert.match(censusRow.program, new RegExp(accountingBases[name].label), name);
 }
-const wyomingCensus = require("./data/state-wy/state-wy.js");
+const wyomingCensus = require("../data/state-wy/state-wy.js");
 const wyomingReconciliation = model.reconcileStateArchive("Wyoming", { sourceTotal: 6548654149.67,
   sourceUrl: "https://www.wyopen.gov/search", note: "WyOpen payments.", reconciliation: {},
   departments: [{ name: "Archive", program: "Published ledger line", amount: 6548654149.67 }] }, wyomingCensus);
@@ -150,7 +159,7 @@ for (const [name, amount, status, precision] of [
   assert.match(budget.sourceUrl, /^https:\/\//, name + " primary source");
 }
 const pennsylvaniaBudget = model.budgetActualFor("Pennsylvania");
-const pennsylvaniaItemization = require("./data/state-pa/budget-actual-fy2024.json");
+const pennsylvaniaItemization = require("../data/state-pa/budget-actual-fy2024.json");
 assert.equal(pennsylvaniaBudget.amount, 116815965000);
 assert.equal(pennsylvaniaBudget.status, "official");
 assert.equal(pennsylvaniaBudget.precision, 1000);
@@ -158,7 +167,7 @@ assert.equal(pennsylvaniaBudget.itemizedAmount, 48930674451.45);
 assert.equal(pennsylvaniaBudget.itemizationUrl, "data/state-pa/budget-actual-fy2024.json");
 assert.equal(Math.round(pennsylvaniaItemization.departments.reduce((sum, row) => sum + row.amount, 0) * 100), 4893067445145);
 const washingtonBudget = model.budgetActualFor("Washington");
-const washingtonItemization = require("./data/state-wa/budget-actual-fy2024.json");
+const washingtonItemization = require("../data/state-wa/budget-actual-fy2024.json");
 assert.equal(washingtonBudget.amount, 71260282662);
 assert.equal(washingtonBudget.status, "documented-lower-bound");
 assert.equal(washingtonBudget.precision, 1);
@@ -206,7 +215,9 @@ for (const name of ["United States", "District of Columbia", ...Object.keys(mode
   assert.match(tax.household.propertyUrl, /^https:\/\//, name);
   assert.deepEqual(tax.individual.levels.map((row) => row.income), estimates.individual.jurisdictions[name].incomes, name);
   assert.deepEqual(tax.individual.levels.map((row) => row.stateIncomeTax), estimates.individual.jurisdictions[name].taxes, name);
-  assert.ok(tax.individual.levels.every((row) => row.federalIncomeTax > 0 && row.tax === row.federalIncomeTax + row.stateIncomeTax + row.propertyTax), name);
+  assert.ok(tax.individual.levels.every((row) => row.federalIncomeTax > 0
+    && row.propertyTax === null && row.tax === row.federalIncomeTax + row.stateIncomeTax), name);
+  assert.equal(tax.individual.propertyUrl, null, name);
 }
 
 assert.equal(Object.keys(estimates.jurisdictions).length, 52);
@@ -227,20 +238,20 @@ for (const name of Object.keys(model.states)) {
 }
 
 const html = fs.readFileSync("index.html", "utf8");
-const styles = fs.readFileSync("styles.css", "utf8");
-const details = fs.readFileSync("details.css", "utf8");
-const app = ["app.js", "fiscal-panel.js", "receipt-hierarchy.js", "tax-estimates.js"]
+const styles = fs.readFileSync("styles/styles.css", "utf8");
+const details = fs.readFileSync("styles/details.css", "utf8");
+const app = ["src/app.js", "src/fiscal-panel.js", "src/receipt-hierarchy.js", "src/tax-estimates.js"]
   .map((file) => fs.readFileSync(file, "utf8")).join("\n");
 const detailPanelStart = html.indexOf('<aside class="detail-panel"');
 const detailPanelEnd = html.indexOf("</aside>", detailPanelStart);
 const fiscalDetailStart = html.indexOf('<section class="fiscal-detail"');
 assert.ok(fs.existsSync("vendor/us-atlas-3-states-10m.json"));
 assert.ok(fs.existsSync("vendor/topojson-client-3.1.0.min.js"));
-const mapTopology = require("./vendor/us-atlas-3-states-10m.json");
-const mapFeatures = require("./vendor/topojson-client-3.1.0.min.js")
+const mapTopology = require("../vendor/us-atlas-3-states-10m.json");
+const mapFeatures = require("../vendor/topojson-client-3.1.0.min.js")
   .feature(mapTopology, mapTopology.objects.states).features;
 assert.equal(mapFeatures.find((feature) => feature.properties.name === "California").id, "06");
-for (const pattern of [/id="themeToggle"/, /id="taxRateRows"/, /id="budgetStatus"/, /id="budgetDisclosure"/, /id="outsideBudgetDisclosure"/, /data\/state-accounting-bases\.js/, /data\/state-budget-actuals\.js/, /data\/state-financial-results\.js/, /data\/tax-rates\.js/, /data\/income-tiers\.js/, /data\/household-tax-estimates\.js/, /data\/department-index\.js/, /department-loader\.js/, /fiscal-panel\.js/]) assert.match(html, pattern);
+for (const pattern of [/id="themeToggle"/, /id="taxRateRows"/, /id="budgetStatus"/, /id="budgetDisclosure"/, /id="outsideBudgetDisclosure"/, /data\/fiscal\/state-accounting-bases\.js/, /data\/fiscal\/state-budget-actuals\.js/, /data\/fiscal\/state-financial-results\.js/, /data\/tax\/tax-rates\.js/, /data\/tax\/income-tiers\.js/, /data\/tax\/household-tax-estimates\.js/, /data\/department-index\.js/, /department-loader\.js/, /fiscal-panel\.js/]) assert.match(html, pattern);
 assert.doesNotMatch(html + app + details, /accountingComparison|accounting-comparison|accounting-total-grid/);
 assert.doesNotMatch(html + app, /data-layer|scopeSelect|setLayer|populateScopeSelect/);
 assert.doesNotMatch(html + app + styles, /data-metric|map-metric-switch|setMetric|updateMetricControls|state\.metric/);
@@ -275,7 +286,6 @@ assert.match(app, /mapMetric\(name, "stateGovernment", "balance", "financial"\)/
 assert.match(app, /targetTransform = "translate\(0 0\) scale\(1\)"/);
 assert.match(app, /fitExtent\(\[\[30, 28\], \[814, 455\]\]/);
 assert.match(app, /GAAP-reconciled total/);
-assert.match(app, /Reconciles to GAAP/);
 assert.doesNotMatch(app, /state spending map use a state-specific official ledger/);
 assert.match(app, /Net position \(GAAP\)/);
 assert.match(app, /financial\.changeInNetPosition\) \+ " annual change in net position"/);
@@ -286,7 +296,7 @@ const loaderScope = { DepartmentSpendingData: { Audit: {
   departments: [{ amount: 0 }, { amount: -1 }],
   sourceBreakdowns: [{ rows: [["zero", "source", 0], ["kept", "source", 2]] }]
 } } };
-vm.runInNewContext(fs.readFileSync("department-loader.js", "utf8"), loaderScope);
+vm.runInNewContext(fs.readFileSync("src/department-loader.js", "utf8"), loaderScope);
 loaderScope.DepartmentData.loadSummary("Audit").then((report) => {
   assert.equal(report.departments.length, 1);
   assert.equal(report.departments[0].amount, -1);

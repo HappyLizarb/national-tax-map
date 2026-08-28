@@ -1,9 +1,9 @@
 const assert = require("node:assert/strict");
 const fs = require("node:fs");
 const path = require("node:path");
-const index = require("./data/department-index.js");
-const ledgerTotals = require("./data/state-ledger-totals.js");
+const index = require("../data/department-index.js");
 
+const root = path.resolve(__dirname, "..");
 const cents = (value) => Math.round(value * 100);
 const privatePayroll = /^(?:\*?due to employees|net pay|personal vehicle mileage(?: exp(?:en|ense)?|[- ]tryln)?|non-wage employee settlement)(?: \(aggregate\))?$/i;
 const sourceDefinedOtherRows = new Set([
@@ -25,8 +25,8 @@ const stateBranchCoverage = { judiciary: new Set(), legislature: new Set() };
 
 assert.equal(Object.keys(index).length, 51);
 for (const [scope, summaryPath] of Object.entries(index)) {
-  const summary = require("./" + summaryPath);
-  const directory = path.join(__dirname, path.dirname(summaryPath));
+  const summary = require(path.join(root, summaryPath));
+  const directory = path.join(root, path.dirname(summaryPath));
   assert.deepEqual(fs.readdirSync(directory).filter((file) => file.endsWith(".js")), [path.basename(summaryPath)], scope);
   assert.equal(summary.scope, scope);
   if (scope !== "United States") assert.equal(summary.coverageStatus, "census-complete-function-basis", scope + " · canonical layer");
@@ -52,7 +52,7 @@ for (const [scope, summaryPath] of Object.entries(index)) {
       continue;
     }
     assert.match(department.detailUrl, new RegExp("^data/" + (scope === "United States" ? "federal/federal-" : "state-[a-z]{2}/(?:state-[a-z]{2}-|census-state-[a-z]{2}-)") + ".+\\.json$"));
-    const detail = JSON.parse(fs.readFileSync(path.join(__dirname, department.detailUrl), "utf8"));
+    const detail = JSON.parse(fs.readFileSync(path.join(root, department.detailUrl), "utf8"));
     assert.match(detail.sourceUrl, /^https:\/\//, scope + " · " + department.name);
     const baseSchema = ["subAgency", "program", "amount", "sourceAmount", "sourceRows"];
     const allowedSchemas = [baseSchema, [...baseSchema, "obligations"],
@@ -257,15 +257,14 @@ for (const [title, count, total] of [
 // Every state keeps a restorable official ledger that reconciles to its own source total.
 for (const [scope, summaryPath] of Object.entries(index)) {
   if (scope === "United States") continue;
-  const summary = require("./" + summaryPath);
+  const summary = require(path.join(root, summaryPath));
   const snapshot = summary.departments[0].relatedSources?.find(([label, url]) =>
     label === "Prior state layer snapshot" && url.startsWith("data/"));
   assert.ok(snapshot, scope + " · official ledger snapshot");
-  const restored = JSON.parse(fs.readFileSync(path.join(__dirname, snapshot[1]), "utf8"));
+  const restored = JSON.parse(fs.readFileSync(path.join(root, snapshot[1]), "utf8"));
   assert.equal(restored.coverageStatus, "official-itemized-source-basis", scope + " · restored source basis");
   assert.match(restored.sourceUrl, /^https:\/\//, scope + " · restored source link");
   assert.equal(cents(restored.itemizedTotal), cents(restored.sourceTotal), scope + " · restored itemized total");
   assert.equal(restored.reconciliation.itemizedDifference, 0, scope + " · restored reconciliation");
   assert.equal(restored.departments.reduce((sum, row) => sum + cents(row.amount), 0), cents(restored.sourceTotal), scope + " · restored source rows");
-  assert.equal(cents(ledgerTotals[scope]), cents(restored.sourceTotal), scope + " · map ledger total");
 }

@@ -1,7 +1,7 @@
 const assert = require("node:assert/strict");
 const fs = require("node:fs");
-const model = require("./model.js");
-const index = require("./data/department-index.js");
+const model = require("../src/model.js");
+const index = require("../data/department-index.js");
 const detailCache = new Map();
 
 // Convert dollars to integer cents for exact reconciliation assertions.
@@ -43,7 +43,7 @@ function expandedRows(source) {
 
 for (const [scope, summaryPath] of Object.entries(index)) {
   if (scope === "United States") continue;
-  const census = require("./" + summaryPath);
+  const census = require("../" + summaryPath);
   const archiveUrl = census.departments[0].relatedSources.find(([label, url]) =>
     label === "Prior state layer snapshot" && url.startsWith("data/"))[1];
   const archive = JSON.parse(fs.readFileSync(archiveUrl, "utf8"));

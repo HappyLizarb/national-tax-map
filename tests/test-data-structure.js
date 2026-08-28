@@ -2,10 +2,10 @@ const assert = require("node:assert/strict");
 const crypto = require("node:crypto");
 const fs = require("node:fs");
 const path = require("node:path");
-const index = require("./data/department-index.js");
-const budgetActuals = require("./data/state-budget-actuals.js");
+const index = require("../data/department-index.js");
+const budgetActuals = require("../data/fiscal/state-budget-actuals.js");
 
-const root = __dirname;
+const root = path.resolve(__dirname, "..");
 const cents = (value) => Math.round(Number(value) * 100);
 const ambiguous = /^(?:unknown|unassigned|unspecified|unallocated|not provided|n\/a|none|\.)$/i;
 
@@ -116,7 +116,7 @@ for (const detailUrl of activeDetails) {
   }
 }
 
-const failures = JSON.parse(fs.readFileSync(path.join(dataRoot, "source-failures.json"), "utf8"));
+const failures = JSON.parse(fs.readFileSync(path.join(dataRoot, "research/source-failures.json"), "utf8"));
 assert.deepEqual(failures.entries, [], "active source failures remain");
 assert.equal(failures.resolutions.length, 25);
 assert.ok(failures.resolutions.every((entry) => /^https:\/\//.test(entry.attemptedSourceUrl)

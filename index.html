@@ -17,8 +17,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,500;6..72,600;6..72,700&family=Public+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=18">
-  <link rel="stylesheet" href="details.css?v=9">
+  <link rel="stylesheet" href="styles/styles.css?v=19">
+  <link rel="stylesheet" href="styles/details.css?v=11">
 </head>
 <body>
   <header class="topbar">
@@ -189,11 +189,6 @@
         <div id="agencyRows" class="agency-rows"></div>
       </section>
 
-      <section class="secondary-metrics fiscal-card-wide" aria-label="Additional indicators">
-        <article><span>Salaries & wages</span><strong id="interestShare">Not reported</strong></article>
-        <article><span>Intergovernmental transfers</span><strong id="transferShare">Not separated</strong></article>
-        <article><span>Pie reconciliation</span><strong id="coverageShare">100%</strong></article>
-      </section>
       </div>
 
       <footer class="panel-footer">
@@ -209,24 +204,23 @@
 
   <script src="https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js"></script>
   <script src="vendor/topojson-client-3.1.0.min.js"></script>
-  <script src="data/spending.js"></script>
-  <script src="data/state-sources.js"></script>
-  <script src="data/state-ledger-totals.js"></script>
-  <script src="data/state-source-alternates.js"></script>
-  <script src="data/state-accounting-bases.js"></script>
-  <script src="data/state-budget-actuals.js?v=2"></script>
-  <script src="data/state-financial-results.js?v=2"></script>
-  <script src="data/federal-sources.js"></script>
-  <script src="data/tax-rates.js?v=2"></script>
-  <script src="data/income-tiers.js"></script>
-  <script src="data/household-tax-estimates.js?v=2"></script>
+  <script src="data/fiscal/spending.js"></script>
+  <script src="data/fiscal/state-sources.js"></script>
+  <script src="data/fiscal/state-source-alternates.js"></script>
+  <script src="data/fiscal/state-accounting-bases.js"></script>
+  <script src="data/fiscal/state-budget-actuals.js?v=2"></script>
+  <script src="data/fiscal/state-financial-results.js?v=2"></script>
+  <script src="data/fiscal/federal-sources.js"></script>
+  <script src="data/tax/tax-rates.js?v=2"></script>
+  <script src="data/tax/income-tiers.js"></script>
+  <script src="data/tax/household-tax-estimates.js?v=3"></script>
   <script src="data/department-index.js"></script>
-  <script src="department-loader.js?v=6"></script>
-  <script src="model.js?v=8"></script>
-  <script src="receipt-hierarchy.js?v=1"></script>
-  <script src="tax-estimates.js?v=4"></script>
-  <script src="kpi-disclosure.js?v=1"></script>
-  <script src="fiscal-panel.js?v=17"></script>
-  <script src="app.js?v=20"></script>
+  <script src="src/department-loader.js?v=6"></script>
+  <script src="src/model.js?v=9"></script>
+  <script src="src/receipt-hierarchy.js?v=1"></script>
+  <script src="src/tax-estimates.js?v=6"></script>
+  <script src="src/kpi-disclosure.js?v=1"></script>
+  <script src="src/fiscal-panel.js?v=18"></script>
+  <script src="src/app.js?v=20"></script>
 </body>
 </html>

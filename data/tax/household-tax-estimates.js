@@ -2,14 +2,14 @@ var householdTaxEstimateData = {
   "asOf": "Estimated 2026 annual federal + state income + property tax",
   "assumptions": "Married filing jointly · four-person married-couple family · two qualifying children under 17 · owner-occupied home ≈ 10× annual income",
   "note": "Income benchmarks are weighted 2024 ACS 1-year PUMS percentiles for four-person married-couple families with children. Totals combine simplified 2026 federal and state income-tax estimates with annual property tax at the jurisdiction's 2024 effective rate applied to a home ≈10× income; mortgage interest, itemized deductions, payroll, local income, refundable, and situation-specific items are excluded. Not tax advice.",
-  "researchCommentary": "data/research/household-estimate.json",
+  "researchCommentary": "data/research/household-tax-estimate-evidence.json",
   "incomeSource": [
     "Census Bureau 2024 ACS 1-year PUMS",
     "https://api.census.gov/data/2024/acs/acs1/pums.html"
   ],
   "methodSource": [
     "Estimate method & jurisdiction sources",
-    "data/research/household-estimate.json"
+    "data/research/household-tax-estimate-evidence.json"
   ],
   "federalSource": [
     "IRS 2026 brackets and standard deductions",
@@ -42,9 +42,9 @@ var householdTaxEstimateData = {
     ["90th percentile",90]
   ],
   "individual": {
-    "asOf": "Estimated 2026 annual federal + state income + property tax",
-    "assumptions": "Single filer · working age 18–64 · no dependents · wage income only · owner-occupied home ≈ 10× annual income",
-    "note": "Income benchmarks are weighted 2024 ACS 1-year PUMS wage percentiles for adults age 18–64 with positive wage income. State liabilities use simplified single-filer schedules; totals add the official 2026 federal schedule and estimated property tax. Payroll, local income, itemized deductions, refundable credits, and situation-specific items are excluded. Not tax advice.",
+    "asOf": "Estimated 2026 annual federal + state income tax",
+    "assumptions": "Single filer · working age 18–64 · no dependents · wage income only",
+    "note": "Income benchmarks are weighted 2024 ACS 1-year PUMS wage percentiles for adults age 18–64 with positive wage income. State liabilities use simplified single-filer schedules; totals add the official 2026 federal schedule. Property, payroll, local income, itemized deductions, refundable credits, and situation-specific items are excluded. Not tax advice.",
     "incomeSource": [
       "Census Bureau 2024 ACS 1-year PUMS person records",
       "https://www.census.gov/programs-surveys/acs/microdata/access/2024.html"

@@ -2,7 +2,8 @@ const assert = require("node:assert/strict");
 const fs = require("node:fs");
 const path = require("node:path");
 
-const index = require("./data/department-index.js");
+const index = require("../data/department-index.js");
+const root = path.resolve(__dirname, "..");
 const threshold = 10_000_000_000;
 const key = (row) => JSON.stringify(row.slice(0, 3));
 const panels = (detail) => ["itemBreakdowns", "supplementalBreakdowns", "sourceBreakdowns"]
@@ -24,9 +25,9 @@ const unresolvedLeaves = [];
 let largeLeaves = 0;
 
 for (const [scope, summaryPath] of Object.entries(index)) {
-  const summary = require(`./${summaryPath}`);
+  const summary = require(path.join(root, summaryPath));
   for (const department of summary.departments.filter((row) => row.detailUrl)) {
-    const detail = JSON.parse(fs.readFileSync(path.join(__dirname, department.detailUrl), "utf8"));
+    const detail = JSON.parse(fs.readFileSync(path.join(root, department.detailUrl), "utf8"));
     const direct = new Set([...(detail.itemBreakdowns || []), ...(detail.supplementalBreakdowns || [])].map((panel) => key(panel.parent)));
     const sourced = new Set((detail.sourceBreakdowns || []).flatMap((panel) => panel.covers || []).map(key));
     const covered = new Set(panels(detail).flatMap((panel) => panel.covers || []).map(key));

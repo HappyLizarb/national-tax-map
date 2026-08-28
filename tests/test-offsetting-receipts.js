@@ -1,6 +1,6 @@
 const assert = require("node:assert/strict");
 const fs = require("node:fs");
-const renderReceiptHierarchy = require("./receipt-hierarchy.js");
+const renderReceiptHierarchy = require("../src/receipt-hierarchy.js");
 
 const detail = JSON.parse(fs.readFileSync(
   "data/federal/federal-mts-agency-undistributed-offsetting-receipts.json", "utf8"));

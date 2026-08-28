@@ -237,13 +237,6 @@ h1 { max-width: none; white-space: nowrap; font-size: clamp(44px, 4.4vw, 68px); 
 .source-catalog a:hover { color: var(--sage); }
 .program-heading { margin: 12px 0 5px; color: var(--muted); font: 600 10px var(--mono); text-transform: uppercase; letter-spacing: .08em; }
 
-.secondary-metrics { display: grid; grid-template-columns: repeat(3, 1fr); padding: 18px 0; border-bottom: 1px solid var(--line); }
-.secondary-metrics article { padding: 0 10px; border-left: 1px solid var(--line); }
-.secondary-metrics article:first-child { padding-left: 0; border-left: 0; }
-.secondary-metrics article:last-child { padding-right: 0; }
-.secondary-metrics span, .secondary-metrics strong { display: block; }
-.secondary-metrics span { min-height: 25px; color: var(--muted); font-size: 12px; line-height: 1.5; }
-.secondary-metrics strong { margin-top: 8px; font: 600 17px var(--mono); }
 .panel-footer p { margin: 18px 0 0; color: var(--muted); font-size: 12px; line-height: 1.6; }
 .methodology-disclaimer { width: min(100%, 1560px); margin: 0 auto; padding: 28px clamp(26px, 5vw, 74px) 36px; border-top: 1px solid var(--line); color: var(--muted); }
 .methodology-disclaimer strong { color: var(--sage); font: 700 11px var(--mono); text-transform: uppercase; letter-spacing: .1em; }

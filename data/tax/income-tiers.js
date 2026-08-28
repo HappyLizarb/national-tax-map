@@ -1,7 +1,7 @@
 var incomeTierData = {
   "asOf": "2026 single-filer taxable-income tiers",
   "note": "Each rate starts above the listed threshold. Joint, head-of-household, deductions, credits, recapture, and local taxes can differ; state brackets use the Tax Foundation's Jan. 1, 2026 table unless a later 2026 state update is noted.",
-  "researchCommentary": "data/research/tax-policy.json",
+  "researchCommentary": "data/research/tax-policy-evidence.json",
   "source": [
     "Tax Foundation 2026 state brackets",
     "https://taxfoundation.org/data/all/state/state-income-tax-rates-2026/"

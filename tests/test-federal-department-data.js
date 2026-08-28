@@ -2,7 +2,7 @@ const assert = require("node:assert/strict");
 const fs = require("node:fs");
 
 const cents = (value) => Math.round(value * 100);
-const federal = require("./data/federal/federal.js");
+const federal = require("../data/federal/federal.js");
 assert.equal(federal.coverageStatus, "treasury-complete-agency-program-basis");
 assert.equal(federal.departments.reduce((sum, row) => sum + row.amount, 0), 6751552000000);
 assert.ok(federal.departments.some((row) => row.id === "mts-agency-department-of-defense-military-programs"));
