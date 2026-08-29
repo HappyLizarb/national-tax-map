@@ -38,9 +38,12 @@ function updateSources(data) {
 }
 function updateKpis(data, budget) {
   const financial = data.financialResult;
+  const result = financial?.changeInNetPosition ?? data.balance;
   setText("#revenueLabel", financial ? "GAAP resources" : "Receipts / revenue");
   setText("#spendingLabel", financial ? "GAAP expenses" : "Spending");
-  setText("#balanceLabel", financial ? "Net position" : "Balance");
+  setText("#balanceLabel", financial ? "Change in net position" : "Balance");
+  setText("#netPositionValue", financial ? model.formatMoney(financial.netPosition) : "");
+  $("#netPositionSummary").hidden = !financial;
   setText("#spendingValue", budget?.headline || model.formatMoney(data.spending));
   const disclosure = kpiDisclosureFor(budget, financial);
   $$('[data-kpi-disclosure]').forEach((mark) => {
@@ -55,11 +58,11 @@ function updateKpis(data, budget) {
   $("#outsideBudgetDisclosure").hidden = !budget?.outsideBudget;
   if (!data.comparable) {
     setText("#revenueValue", "Not comparable"); setText("#balanceValue", "Not comparable");
-    $(".balance-kpi").classList.remove("surplus");
+    $(".result-kpi").classList.remove("surplus");
     return;
   }
-  setText("#revenueValue", model.formatMoney(data.revenue)); setText("#balanceValue", model.formatMoney(data.balance));
-  $(".balance-kpi").classList.toggle("surplus", data.balance != null && data.balance >= 0);
+  setText("#revenueValue", model.formatMoney(data.revenue)); setText("#balanceValue", model.formatMoney(result));
+  $(".result-kpi").classList.toggle("surplus", result != null && result >= 0);
 }
 function updateTaxRates(name) {
   const tax = model.taxOverviewFor(name);
@@ -74,7 +77,7 @@ function updateTaxRates(name) {
   }).join("");
   $("#incomeTaxTiersSource").href = tax.incomeUrl;
   setText("#incomeTaxTiersSource", tax.incomeSource + " ↗");
-  $("#taxEstimateSection").hidden = !tax.household;
+  $("#taxEstimateSection").hidden = !tax.household && !tax.costs;
   $("#householdTaxRows").innerHTML = renderTaxEstimates(tax, escapeHtml);
   $("#taxRateRows").innerHTML = tax.rows.map((row) => '<article class="tax-rate-card"><span>' + row.label + '</span><strong>' + row.value + '</strong><small>' + row.note + '</small><a href="' + row.url + '" target="_blank" rel="noopener noreferrer">' + row.source + ' ↗</a></article>').join("");
 }

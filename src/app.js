@@ -16,7 +16,6 @@ async function initialize() {
   }
 }
 function bindControls() {
-  $("#nationalButton").addEventListener("click", () => setScope("United States"));
   $("#themeToggle").addEventListener("click", toggleTheme);
   themePreference.addEventListener("change", followSystemTheme);
   setTheme(document.documentElement.dataset.theme);
@@ -48,7 +47,7 @@ function drawMap() {
   const svg = d3.select("#usMap");
   const previousTransform = svg.select(".map-layer").node()?.getAttribute("transform");
   // Center the contiguous states optically; Aleutian outliers otherwise pull the visible map right.
-  const projection = d3.geoAlbersUsa().fitExtent([[30, 28], [814, 455]], { type: "FeatureCollection", features: state.features });
+  const projection = d3.geoAlbersUsa().fitExtent([[18, 18], [882, 485]], { type: "FeatureCollection", features: state.features });
   const path = d3.geoPath(projection);
   const values = state.features.map((feature) => mapValue(feature.properties.name));
   const color = createColorScale(values);

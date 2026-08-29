@@ -9,7 +9,7 @@ const financialResults = require("../data/fiscal/state-financial-results.js");
 const taxRates = require("../data/tax/tax-rates.js");
 const incomeTiers = require("../data/tax/income-tiers.js");
 const estimates = require("../data/tax/household-tax-estimates.js");
-
+const consumerCosts = require("../data/tax/consumer-costs.js");
 // Load the sole authoritative archived summary for a state.
 function archiveFor(name) {
   const summary = require("../" + departmentIndex[name]);
@@ -41,6 +41,8 @@ assert.equal(taxRates.researchCommentary, "data/research/tax-policy-evidence.jso
 assert.equal(incomeTiers.researchCommentary, "data/research/tax-policy-evidence.json");
 assert.equal(estimates.researchCommentary, "data/research/household-tax-estimate-evidence.json");
 assert.equal(estimates.methodSource[1], estimates.researchCommentary);
+assert.equal(Object.keys(consumerCosts.jurisdictions).length, 51);
+assert.equal(model.taxOverviewFor("United States").costs.jurisdiction, "United States");
 for (const target of [...model.metadata.researchCommentary, taxRates.researchCommentary, estimates.researchCommentary]) assert.ok(fs.existsSync(target), target);
 assert.equal(national.revenue, 4918736000000);
 assert.equal(national.spending, 6751552000000);
@@ -93,7 +95,6 @@ for (const name of Object.keys(model.states)) {
   assert.equal(model.scopeData(name, "archive").spending, null, name + " archive total loads with its summary");
   assert.equal(model.scopeData(name, "archive").comparable, false, name + " archive basis remains separate");
 }
-
 const sameAcfrBasis = ["Alaska", "Arizona", "Colorado", "Idaho", "Montana", "Mississippi", "New Hampshire", "South Dakota", "Utah", "Wyoming"];
 assert.equal(Object.keys(accountingBases).length, 40);
 assert.deepEqual(Object.keys(model.states).filter((name) => !accountingBases[name]).sort(), sameAcfrBasis.sort());
@@ -134,7 +135,6 @@ assert.equal(model.formatMoney(null), "Unavailable");
 assert.equal(model.formatMoney(0.54), "$0.54");
 assert.equal(model.formatMoney(-0.01), "−$0.01");
 assert.equal(model.formatMoney(9967115943.91), "$9.97B");
-
 const california = model.scopeData("California");
 assert.equal(california.name, "California");
 assert.ok(california.salariesWages > 0);
@@ -186,14 +186,12 @@ assert.deepEqual(model.budgetPresentationFor("Texas"), {
 assert.equal(model.budgetPresentationFor("California").headline, "$295.91B");
 assert.equal(model.budgetPresentationFor("California").statusLabel, "Official");
 assert.equal(model.budgetPresentationFor("Alabama").statusLabel, "Unavailable");
-
 const federalSource = model.sourceLinks("United States");
 assert.equal(federalSource.primary, "https://fiscal.treasury.gov/system/files/files/reports-statements/mts/mts0924.pdf");
 const localSource = model.sourceLinks("California", "stateGovernment", "06");
 assert.match(localSource.primary, /040XX00US06/);
 assert.ok(localSource.references.length >= 2);
 assert.ok(model.federalSourceRows().length >= 15);
-
 const taxLabels = ["Individual income", "Corporate / business", "Sales / use", "Property", "Estate / inheritance", "Pension / retirement", "Investment gains", "Automobiles", "Fuel / environment", "Special goods"];
 for (const name of ["United States", "District of Columbia", ...Object.keys(model.states)]) {
   assert.ok(taxRates.jurisdictions[name], name);
@@ -219,7 +217,6 @@ for (const name of ["United States", "District of Columbia", ...Object.keys(mode
     && row.propertyTax === null && row.tax === row.federalIncomeTax + row.stateIncomeTax), name);
   assert.equal(tax.individual.propertyUrl, null, name);
 }
-
 assert.equal(Object.keys(estimates.jurisdictions).length, 52);
 assert.equal(Object.keys(estimates.individual.jurisdictions).length, 52);
 assert.equal(crypto.createHash("sha256").update(JSON.stringify(estimates.jurisdictions)).digest("hex"), "f0f135251b76a06124d02fe1e95e0978bd2bb87585a84771ed1703b41bf70c1d");
@@ -230,7 +227,6 @@ for (const name of ["Alaska", "Florida", "Nevada", "New Hampshire", "South Dakot
   assert.deepEqual(model.taxOverviewFor(name).household.levels.map((row) => row.stateIncomeTax), [0, 0, 0, 0]);
   assert.deepEqual(model.taxOverviewFor(name).individual.levels.map((row) => row.stateIncomeTax), [0, 0, 0, 0]);
 }
-
 for (const name of Object.keys(model.states)) {
   const links = model.sourceLinks(name).references;
   assert.ok(links.length >= 2, name);
@@ -259,6 +255,8 @@ assert.doesNotMatch(html, /allocation-source-switch|data-allocation-source|Audit
 assert.ok(html.indexOf('class="kpi-grid"') > detailPanelStart && html.indexOf('class="kpi-grid"') < detailPanelEnd);
 assert.ok(html.indexOf('aria-labelledby="gapTitle"') > detailPanelStart && html.indexOf('aria-labelledby="gapTitle"') < detailPanelEnd);
 assert.ok(html.indexOf('id="incomeTaxTiersTitle"') > detailPanelStart && html.indexOf('id="incomeTaxTiersTitle"') < detailPanelEnd);
+assert.ok(html.indexOf('id="netPositionSummary"') > html.indexOf('id="incomeTaxTiersTitle"') && html.indexOf('id="netPositionSummary"') < detailPanelEnd);
+assert.doesNotMatch(html + app + styles, /nationalButton|national-button|National view/);
 assert.doesNotMatch(html + app, /revenuePerCapita|spendingPerCapita|balancePerCapita|Exact single-filer tiers|<details class="tax-tiers"/);
 assert.ok(html.indexOf('class="tax-rate-detail"') > html.indexOf('id="taxEstimateSection"') && html.indexOf('class="tax-rate-detail"') > fiscalDetailStart);
 assert.match(html, /src="vendor\/topojson-client-3\.1\.0\.min\.js"/);
@@ -284,11 +282,13 @@ assert.match(html, /receipt-hierarchy\.js/);
 assert.match(app, /renderReceiptHierarchy/);
 assert.match(app, /mapMetric\(name, "stateGovernment", "balance", "financial"\)/);
 assert.match(app, /targetTransform = "translate\(0 0\) scale\(1\)"/);
-assert.match(app, /fitExtent\(\[\[30, 28\], \[814, 455\]\]/);
+assert.match(app, /fitExtent\(\[\[18, 18\], \[882, 485\]\]/);
 assert.match(app, /GAAP-reconciled total/);
 assert.doesNotMatch(app, /state spending map use a state-specific official ledger/);
 assert.match(app, /Net position \(GAAP\)/);
 assert.match(app, /financial\.changeInNetPosition\) \+ " annual change in net position"/);
+assert.match(app, /financial\?\.changeInNetPosition \?\? data\.balance/);
+assert.match(app, /financial \? "Change in net position" : "Balance"/);
 assert.doesNotMatch(app, /data\.balance \/ data\.spending/);
 assert.doesNotMatch(app, /2019|0\.72|stateLocal|No researched multi-year actual series/);
 

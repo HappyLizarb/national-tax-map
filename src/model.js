@@ -232,7 +232,7 @@ function estimateProfile(profile, name, labels, rate, schedule, sources) {
     propertyUrl: rate == null ? null : sources.property[1] };
 }
 
-function taxOverviewFor(taxRates, incomeTiers, estimates, name) {
+function taxOverviewFor(taxRates, incomeTiers, estimates, consumerCosts, name) {
   const values = taxRates.jurisdictions[name] || taxRates.jurisdictions["United States"];
   const tiers = incomeTiers.jurisdictions[name] || incomeTiers.jurisdictions["United States"];
   const rows = taxRates.categories.map(([label, key, defaultNote], index) => {
@@ -242,6 +242,7 @@ function taxOverviewFor(taxRates, incomeTiers, estimates, name) {
   }).filter((row) => name !== "United States" || !["Sales / use", "Property"].includes(row.label));
   const overview = { asOf: name === "United States" ? "2026 federal rates" : taxRates.asOf,
     note: taxRates.note, rows, incomeTiers: tiers.tiers,
+    costs: consumerCosts ? { ...consumerCosts, jurisdiction: name } : null,
     incomeSource: (tiers.source || incomeTiers.source)[0], incomeUrl: (tiers.source || incomeTiers.source)[1] };
   if (name === "United States") return { ...overview, household: null, individual: null };
   const rate = propertyRateFor(taxRates, name);
@@ -252,7 +253,7 @@ function taxOverviewFor(taxRates, incomeTiers, estimates, name) {
     individual: estimateProfile(estimates.individual, name, estimates.levels, null, estimates.federalSchedules.single, sources) };
 }
 
-function createModel(dataset, stateSources, alternates, federalSources, accountingBases, budgetActuals, financialResults, taxRates, incomeTiers, estimates) {
+function createModel(dataset, stateSources, alternates, federalSources, accountingBases, budgetActuals, financialResults, taxRates, incomeTiers, estimates, consumerCosts) {
   const find = (id) => dataset.metadata.sources.find((source) => source.id === id);
   const sources = [find("census-state-finance"), find("federal-outlays"), find("treasury-mts"), find("usaspending")];
   const scopeData = (name, sourceLayer) => scopeFor(dataset, sources[0], budgetActuals || {}, financialResults || {}, name, sourceLayer);
@@ -275,10 +276,9 @@ function createModel(dataset, stateSources, alternates, federalSources, accounti
     reconcileStateArchive: (name, archive, censusSummary) => reconcileStateArchive(dataset, sources[0], accountingBases || {}, financialResults || {}, name, archive, censusSummary),
     expandReconciliationSource,
     federalSourceRows: () => federalSources || [],
-    taxOverviewFor: (name) => taxOverviewFor(taxRates, incomeTiers, estimates, name)
+    taxOverviewFor: (name) => taxOverviewFor(taxRates, incomeTiers, estimates, consumerCosts, name)
   };
 }
-
 (function initModel(root) {
   const load = (file, globalName) => typeof module === "object" && module.exports
     ? require(file) : root[globalName];
@@ -292,7 +292,8 @@ function createModel(dataset, stateSources, alternates, federalSources, accounti
     load("../data/fiscal/state-financial-results.js", "StateFinancialResults"),
     load("../data/tax/tax-rates.js", "taxRateData"),
     load("../data/tax/income-tiers.js", "incomeTierData"),
-    load("../data/tax/household-tax-estimates.js", "householdTaxEstimateData")
+    load("../data/tax/household-tax-estimates.js", "householdTaxEstimateData"),
+    load("../data/tax/consumer-costs.js", "consumerCostData")
   );
   if (typeof module === "object" && module.exports) module.exports = model;
   else root.TaxModel = model;

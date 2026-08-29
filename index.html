@@ -17,8 +17,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,500;6..72,600;6..72,700&family=Public+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles/styles.css?v=19">
-  <link rel="stylesheet" href="styles/details.css?v=11">
+  <link rel="stylesheet" href="styles/styles.css?v=20">
+  <link rel="stylesheet" href="styles/details.css?v=14">
 </head>
 <body>
   <header class="topbar">
@@ -50,9 +50,8 @@
         <div>
           <p class="eyebrow">United States · Fiscal year 2024</p>
           <h1 id="map-title">Follow the public dollar.</h1>
-        <p class="lede">Trace reported federal outlays and state-government expenditures to the programs and people receiving them.</p>
+          <p class="lede">Trace reported federal outlays and state-government expenditures to the programs and people receiving them.</p>
         </div>
-        <button class="national-button" id="nationalButton" type="button">National view</button>
       </div>
 
       <div class="map-stage">
@@ -98,7 +97,7 @@
             <span id="outsideBudgetText"></span>
           </small>
         </article>
-        <article class="balance-kpi">
+        <article class="result-kpi">
           <p id="balanceLabel">Balance</p>
           <strong><span id="balanceValue">−$1.95T</span><sup class="kpi-disclosure-mark" data-kpi-disclosure="balance" aria-hidden="true" hidden>*</sup></strong>
         </article>
@@ -137,6 +136,11 @@
           <a id="incomeTaxTiersSource" href="#" target="_blank" rel="noopener noreferrer">Open official source ↗</a>
         </div>
       </section>
+
+      <footer class="net-position-summary" id="netPositionSummary" hidden>
+        <span><b>Fiscal-year-end net position</b><small>Accumulated GAAP balance-sheet position</small></span>
+        <strong id="netPositionValue"></strong>
+      </footer>
     </aside>
     </div>
 
@@ -149,8 +153,8 @@
 
       <section class="household-tax-detail" id="taxEstimateSection" aria-labelledby="householdTaxTitle">
         <div class="section-heading">
-          <h3 id="householdTaxTitle">Income and property tax estimates</h3>
-          <span>Illustrative · not tax advice</span>
+          <h3 id="householdTaxTitle">Tax estimates &amp; everyday costs</h3>
+          <span>Illustrative · sources linked</span>
         </div>
         <div class="tax-rate-grid" id="householdTaxRows"></div>
       </section>
@@ -214,13 +218,14 @@
   <script src="data/tax/tax-rates.js?v=2"></script>
   <script src="data/tax/income-tiers.js"></script>
   <script src="data/tax/household-tax-estimates.js?v=3"></script>
+  <script src="data/tax/consumer-costs.js?v=2"></script>
   <script src="data/department-index.js"></script>
   <script src="src/department-loader.js?v=6"></script>
-  <script src="src/model.js?v=9"></script>
+  <script src="src/model.js?v=10"></script>
   <script src="src/receipt-hierarchy.js?v=1"></script>
-  <script src="src/tax-estimates.js?v=6"></script>
+  <script src="src/tax-estimates.js?v=9"></script>
   <script src="src/kpi-disclosure.js?v=1"></script>
-  <script src="src/fiscal-panel.js?v=18"></script>
-  <script src="src/app.js?v=20"></script>
+  <script src="src/fiscal-panel.js?v=19"></script>
+  <script src="src/app.js?v=22"></script>
 </body>
 </html>
