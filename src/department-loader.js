@@ -21,7 +21,8 @@
   function loadSummary(scope) {
     if (summaries[scope]) return Promise.resolve(visibleReport(summaries[scope]));
     if (pending.has(scope)) return pending.get(scope);
-    const url = root.DepartmentDataIndex?.[scope];
+    const url = scope === "United States"
+      ? root.JurisdictionData?.federal?.summaryPath : root.JurisdictionData?.states?.[scope]?.summaryPath;
     if (!url) return Promise.reject(new Error("No department summary for " + scope));
     const request = loadScript(url).then(() => {
       if (!summaries[scope]) throw new Error("Invalid department summary for " + scope);

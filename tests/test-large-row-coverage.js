@@ -1,7 +1,9 @@
 const assert = require("node:assert/strict");
 const fs = require("node:fs");
 
-const index = require("../data/department-index.js");
+const jurisdictions = require("../data/jurisdictions.js");
+const index = Object.fromEntries(Object.entries(jurisdictions.states)
+  .map(([name, row]) => [name, row.summaryPath]));
 const model = require("../src/model.js");
 const threshold = 5_000_000_000;
 const cents = (value) => Math.round(value * 100);
@@ -93,5 +95,63 @@ for (const file of [
   }
 }
 
-assert.deepEqual(counts, { large: 483, breakdowns: 141, ceilings: 342 });
+assert.deepEqual(counts, { large: 483, breakdowns: 173, ceilings: 310 });
+
+const healthFunctions = /Total (Health|Hospitals|Public Welfare|Federal and State Veterans' Services)$/;
+const healthCoverage = { states: 0, parents: 0, children: 0, functionTotal: 0, cmsPanels: 0, cmsRows: 0 };
+const defenseCoverage = { states: 0, rows: 0, cents: 0 };
+const cmsControls = {};
+for (const directory of fs.readdirSync("data").filter((name) => /^state-[a-z]{2}$/.test(name))) {
+  const detail = readJson(`data/${directory}/census-${directory}-fy2024-direct-general.json`);
+  for (const row of detail.rows.filter((item) => item[2] && healthFunctions.test(item[1]))) {
+    const panel = detail.itemBreakdowns.find((item) => key(item.parent) === key(row));
+    assert.ok(panel, directory + " healthcare/veterans function breakdown");
+    assert.equal(panel.rows.reduce((sum, item) => sum + item[2], 0), row[2]);
+    healthCoverage.parents += 1;
+    healthCoverage.children += panel.rows.length;
+    healthCoverage.functionTotal += row[2];
+  }
+  const cms = detail.supplementalBreakdowns.filter((item) => item.dataset?.startsWith("cms-fy2024-"));
+  assert.equal(cms.length, 6, directory + " Medicaid/CHIP financing panels");
+  for (const panel of cms) {
+    assert.equal(panel.rows.reduce((sum, item) => sum + item[2], 0), panel.sourceTotal);
+    cmsControls[panel.dataset] = (cmsControls[panel.dataset] || 0) + panel.sourceTotal;
+    healthCoverage.cmsRows += panel.rows.length;
+  }
+  healthCoverage.states += 1;
+  healthCoverage.cmsPanels += cms.length;
+  const defenseRows = detail.supplementalRows || [];
+  if (defenseRows.length) defenseCoverage.states += 1;
+  defenseCoverage.rows += defenseRows.length;
+  defenseCoverage.cents += defenseRows.reduce((sum, row) => sum + cents(row[2]), 0);
+  assert.ok(defenseRows.every((row) => /Official state-ledger defense topic view/.test(row[1])
+    && /separate, non-additive/.test(row[3]) && /^https:\/\//.test(row[4])));
+  assert.ok(defenseRows.every((row) => !/indigent defense|public defender|military academy|military institute/i.test(row[0])));
+}
+assert.deepEqual(healthCoverage, { states: 50, parents: 196, children: 466,
+  functionTotal: 1242647928000, cmsPanels: 300, cmsRows: 17213 });
+assert.deepEqual(defenseCoverage, { states: 41, rows: 92, cents: 722282887865 });
+assert.deepEqual(cmsControls, {
+  "cms-fy2024-medicaid-total-computable": 939446973929.1,
+  "cms-fy2024-medicaid-federal-share": 604736585664,
+  "cms-fy2024-medicaid-nonfederal-share": 334710388265.1,
+  "cms-fy2024-chip-total-computable": 27969514721,
+  "cms-fy2024-chip-federal-share": 19806035303,
+  "cms-fy2024-chip-nonfederal-share": 8163479418
+});
+const federalFunctionControls = {
+  "national-defense": [211, 873523000000, 874041000000, ["051", "053", "054"]],
+  health: [124, 911290000000, 911684000000, ["551", "552", "554"]],
+  medicare: [31, 874133000000, 874134000000, ["571"]],
+  "veterans-benefits-and-services": [84, 325645000000, 325363000000, ["701", "702", "703", "704", "705"]]
+};
+for (const [name, [publishedRows, publishedTotal, treasuryTotal, subfunctions]] of Object.entries(federalFunctionControls)) {
+  const detail = readJson(`data/federal/archive-function-source/federal-treasury-function-${name}.json`);
+  const panel = detail.sourceBreakdowns.find((item) => item.dataset === "omb-public-budget-database-fy2024");
+  assert.equal(panel.rows.length, publishedRows + 1, name);
+  assert.equal(panel.publishedSourceTotal, publishedTotal, name);
+  assert.equal(panel.rows.reduce((sum, item) => sum + item[2], 0), treasuryTotal, name);
+  assert.deepEqual([...new Set(panel.rows.map((row) => row[0].match(/^\d{3}/)?.[0]).filter(Boolean))].sort(),
+    subfunctions, name);
+}
 console.log("All browser-visible $5 billion rows are exact breakdowns or labeled source ceilings.");

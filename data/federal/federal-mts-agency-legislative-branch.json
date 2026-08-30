@@ -14,6 +14,80 @@
   "accountResearch": {"accountCount": 116, "largeAccountCount": 1, "netAccountOutlays": 6881657982.03, "threshold": 1000000000, "sourceUrl": "https://fiscal.treasury.gov/system/files/files/reports-statements/combined-statement/cs2024/c01.xlsx"},
   "largeAccountSchema": ["treasuryAccount", "title", "netOutlays", "availabilityRows"],
   "largeAccountBasis": "Exact Combined Statement net outlays by appropriation or fund account. This is a research cross-section of the same department, not another amount to add to MTS classification rows.",
+  "sourceBreakdowns": [
+    {
+      "title": "000-0400-000 FY2024 net outlays by period of availability",
+      "sourceTotal": 1839820690.6,
+      "basis": "Exact FY2024 Treasury Combined Statement availability rows. Published net outlays sum to the parent account in integer cents; rows are a source-native cash schedule, not additional spending.",
+      "sourceLabel": "Treasury FY2024 Combined Statement account table",
+      "sourceUrl": "https://fiscal.treasury.gov/system/files/files/reports-statements/combined-statement/cs2024/c01.xlsx",
+      "combinedStatementAvailability": true,
+      "covers": [
+        [
+          "000-0400-000",
+          "Salaries and Expenses, House of Representatives",
+          1839820690.6
+        ]
+      ],
+      "rows": [
+        [
+          "Fund resources · 2024",
+          "Combined Statement FY2024 net outlays · period-of-availability publication ceiling",
+          1037629134.19
+        ],
+        [
+          "Fund resources · 2024-2025",
+          "Combined Statement FY2024 net outlays · period-of-availability row",
+          535311890.88
+        ],
+        [
+          "Fund resources · 2023-2024",
+          "Combined Statement FY2024 net outlays · period-of-availability row",
+          87930145.77
+        ],
+        [
+          "Fund resources · 2023",
+          "Combined Statement FY2024 net outlays · period-of-availability row",
+          85783300.54
+        ],
+        [
+          "Fund resources · No Year",
+          "Combined Statement FY2024 net outlays · period-of-availability row",
+          68647259.91
+        ],
+        [
+          "Fund resources · 2023-2025",
+          "Combined Statement FY2024 net outlays · period-of-availability row",
+          14417704.79
+        ],
+        [
+          "Fund resources · 2022",
+          "Combined Statement FY2024 net outlays · period-of-availability row",
+          9826068.23
+        ],
+        [
+          "Fund resources · 2022-2023",
+          "Combined Statement FY2024 net outlays · period-of-availability row",
+          194593.34
+        ],
+        [
+          "Fund resources · 2021-2023",
+          "Combined Statement FY2024 net outlays · period-of-availability row",
+          74562.5
+        ],
+        [
+          "Fund resources · 2021-2022",
+          "Combined Statement FY2024 net outlays · period-of-availability row",
+          6030.45
+        ],
+        [
+          "Fund resources · 2021",
+          "Combined Statement FY2024 net outlays · period-of-availability row",
+          0
+        ]
+      ]
+    }
+  ],
   "largeAccountRows": [["000-0400-000", "Salaries and Expenses, House of Representatives", 1839820690.6, 11]],
   "supplementalBreakdowns": [
     {

@@ -1,7 +1,6 @@
 var taxRateData = {
   "asOf": "2026 rates · 2024 property effective rate",
   "note": "Headline rates only. See the right-panel income-tax tiers for thresholds; each rate starts above its listed taxable-income amount. Joint filers, deductions, local levies, and taxpayer facts can differ.",
-  "researchCommentary": "data/research/tax-policy-evidence.json",
   "sources": {
     "income": ["2026 state bracket table","https://taxfoundation.org/data/all/state/state-income-tax-rates-2026/"],
     "corporate": ["2026 rate table","https://taxfoundation.org/wp-content/uploads/2026/05/TaxFoundation_FactsFigures26-5-28.pdf"],

@@ -1,7 +1,7 @@
 const assert = require("node:assert/strict");
 const fs = require("node:fs");
 const model = require("../src/model.js");
-const financialResults = require("../data/fiscal/state-financial-results.js");
+const jurisdictions = require("../data/jurisdictions.js");
 const { hasAuditCaveat, kpiDisclosureFor } = require("../src/kpi-disclosure.js");
 
 const html = fs.readFileSync("index.html", "utf8");
@@ -15,7 +15,7 @@ assert.match(html, /id="gapPercentText"[\s\S]*id="auditCaveatMark"[\s\S]*id="aud
 assert.match(panel, /hasAuditCaveat\(financial\) \? financial\.auditNote[\s\S]*#auditCaveatMark[\s\S]*#auditCaveatText/);
 assert.match(panel, /function updateNetPosition/);
 assert.deepEqual(kpiDisclosureFor(model.budgetPresentationFor("Texas"), null).targets, ["spending"]);
-assert.deepEqual(kpiDisclosureFor(null, financialResults.states.California).targets,
+assert.deepEqual(kpiDisclosureFor(null, jurisdictions.states.California.financial).targets,
   ["revenue", "spending", "balance"]);
-assert.equal(hasAuditCaveat(financialResults.states["Rhode Island"]), false);
-assert.deepEqual(kpiDisclosureFor(null, financialResults.states["Rhode Island"]), { text: "", targets: [] });
+assert.equal(hasAuditCaveat(jurisdictions.states["Rhode Island"].financial), false);
+assert.deepEqual(kpiDisclosureFor(null, jurisdictions.states["Rhode Island"].financial), { text: "", targets: [] });

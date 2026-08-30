@@ -2,8 +2,11 @@ const assert = require("node:assert/strict");
 const crypto = require("node:crypto");
 const fs = require("node:fs");
 const path = require("node:path");
-const index = require("../data/department-index.js");
-const budgetActuals = require("../data/fiscal/state-budget-actuals.js");
+const jurisdictions = require("../data/jurisdictions.js");
+const index = { ...Object.fromEntries(Object.entries(jurisdictions.states)
+  .map(([name, row]) => [name, row.summaryPath])), "United States": jurisdictions.federal.summaryPath };
+const budgetActuals = Object.fromEntries(Object.entries(jurisdictions.states)
+  .filter(([, row]) => row.budget).map(([name, row]) => [name, row.budget]));
 
 const root = path.resolve(__dirname, "..");
 const cents = (value) => Math.round(Number(value) * 100);
@@ -78,6 +81,8 @@ for (const [scope, summaryPath] of Object.entries(index)) {
     if (department.detailUrl) {
       activeDetails.add(department.detailUrl);
       activeReferences.add(department.detailUrl);
+      if (department.id === "census-direct-general") activeReferences.add(department.detailUrl
+        .replace(/census-state-[a-z]{2}-fy2024-direct-general\.json$/, "ipeds-public-university-fy2024.json"));
     }
     addLocalReferences(department.relatedSources, activeReferences);
     for (const value of [department.id, department.name, department.program]) {
@@ -116,21 +121,11 @@ for (const detailUrl of activeDetails) {
   }
 }
 
-const failures = JSON.parse(fs.readFileSync(path.join(dataRoot, "research/source-failures.json"), "utf8"));
-assert.deepEqual(failures.entries, [], "active source failures remain");
-assert.equal(failures.resolutions.length, 25);
-assert.ok(failures.resolutions.every((entry) => /^https:\/\//.test(entry.attemptedSourceUrl)
-  && entry.status === "number-restored" && entry.replacementUrl && entry.result), "invalid source resolution record");
-for (const entry of failures.resolutions.filter((item) => item.replacementUrl.startsWith("data/"))) {
-  assert.ok(fs.existsSync(path.join(root, entry.replacementUrl)), `missing source resolution ${entry.scope}`);
-  const replacement = JSON.parse(fs.readFileSync(path.join(root, entry.replacementUrl), "utf8"));
-  if (entry.scope === "EPA Exchange Network") {
-    const awards = replacement.sourceBreakdowns.find((item) => item.title === "EPA FY2024 Exchange Network awards by recipient");
-    assert.equal(awards.rows.reduce((sum, row) => sum + cents(row[2]), 0), cents(awards.sourceTotal));
-  } else {
-    assert.ok(replacement.departments.length > 0, `${entry.scope} restored rows`);
-    assert.equal(cents(replacement.itemizedTotal), cents(replacement.sourceTotal), `${entry.scope} restored total`);
-  }
+assert.equal(Object.keys(jurisdictions.states).length, 50);
+for (const [scope, row] of Object.entries(jurisdictions.states)) {
+  assert.match(row.financial.sourceUrl, /^https:\/\//, `${scope} GAAP source`);
+  assert.ok(row.sources.length >= 1 && row.sources.every((source) => /^https:\/\//.test(source.url)),
+    `${scope} source catalog`);
 }
 
 console.log(`Data structure, source deduplication, readable labels, archive manifests, and 100% pie checks passed (${jsonFiles.length} JSON files).`);

@@ -3,9 +3,13 @@ const fs = require("node:fs");
 const crypto = require("node:crypto");
 const vm = require("node:vm");
 const model = require("../src/model.js");
-const departmentIndex = require("../data/department-index.js");
-const accountingBases = require("../data/fiscal/state-accounting-bases.js");
-const financialResults = require("../data/fiscal/state-financial-results.js");
+const jurisdictions = require("../data/jurisdictions.js");
+const departmentIndex = { ...Object.fromEntries(Object.entries(jurisdictions.states)
+  .map(([name, row]) => [name, row.summaryPath])), "United States": jurisdictions.federal.summaryPath };
+const accountingBases = Object.fromEntries(Object.entries(jurisdictions.states)
+  .filter(([, row]) => row.archiveBasis).map(([name, row]) => [name, row.archiveBasis]));
+const financialResults = { states: Object.fromEntries(Object.entries(jurisdictions.states)
+  .map(([name, row]) => [name, row.financial])) };
 const taxRates = require("../data/tax/tax-rates.js");
 const incomeTiers = require("../data/tax/income-tiers.js");
 const estimates = require("../data/tax/household-tax-estimates.js");
@@ -28,23 +32,18 @@ require("./test-tax-estimates.js");
 require("./test-kpi-disclosures.js");
 require("./test-source-explorer-layout.js");
 require("./test-source-breakdown-placement.js");
+require("./test-public-university-spending.js");
 require("./test-data-structure.js");
-require("./test-research-data.js");
+require("./test-dataset-evidence.js");
 const national = model.scopeData("United States");
-assert.deepEqual(model.metadata.researchCommentary, [
-  "data/research/spending-source-audits.json",
-  "data/research/spending-accounting-controls.json",
-  "data/research/federal-methods.json",
-  "data/research/legislative-budget-actuals-evidence.md",
-  "data/research/state-reconciliation-large-row-decomposition.md"
-]);
-assert.equal(taxRates.researchCommentary, "data/research/tax-policy-evidence.json");
-assert.equal(incomeTiers.researchCommentary, "data/research/tax-policy-evidence.json");
-assert.equal(estimates.researchCommentary, "data/research/household-tax-estimate-evidence.json");
-assert.equal(estimates.methodSource[1], estimates.researchCommentary);
+assert.match(model.metadata.methodology.federal, /Treasury Monthly Treasury Statement/);
+assert.match(model.metadata.methodology.exactBreakdowns, /integer cents/);
+assert.equal(Object.hasOwn(taxRates, "researchCommentary"), false);
+assert.equal(Object.hasOwn(incomeTiers, "researchCommentary"), false);
+assert.equal(Object.hasOwn(estimates, "researchCommentary"), false);
+assert.equal(estimates.methodSource[1], "data/tax/household-tax-estimates.js");
 assert.equal(Object.keys(consumerCosts.jurisdictions).length, 51);
 assert.equal(model.taxOverviewFor("United States").costs.jurisdiction, "United States");
-for (const target of [...model.metadata.researchCommentary, taxRates.researchCommentary, estimates.researchCommentary]) assert.ok(fs.existsSync(target), target);
 assert.equal(national.revenue, 4918736000000);
 assert.equal(national.spending, 6751552000000);
 assert.equal(national.balance, -1832816000000);
@@ -52,10 +51,7 @@ assert.equal(national.source, "https://fiscal.treasury.gov/system/files/files/re
 assert.ok(Math.abs(national.revenue - national.spending - national.balance) < 1);
 assert.equal(model.scopeData("California", "function").balance, null);
 assert.equal(model.mapMetric("California", "stateGovernment", "balance", "function"), null);
-assert.deepEqual(model.metadata.reconciliations.find((item) => item.id === "federal-mts-receipts-outlays"), {
-  id: "federal-mts-receipts-outlays", receipts: 4918736000000, netOutlays: 6751552000000,
-  deficit: 1832816000000, result: "pass: final FY2024 MTS Table 1/2 controls reconcile exactly as net outlays less receipts"
-});
+assert.equal(national.spending - national.revenue, -national.balance);
 assert.equal(Object.keys(model.states).length, 50);
 assert.equal(Object.keys(financialResults.states).length, 50);
 assert.deepEqual(Object.keys(financialResults.states).sort(), Object.keys(model.states).sort());
@@ -248,7 +244,8 @@ const mapTopology = require("../vendor/us-atlas-3-states-10m.json");
 const mapFeatures = require("../vendor/topojson-client-3.1.0.min.js")
   .feature(mapTopology, mapTopology.objects.states).features;
 assert.equal(mapFeatures.find((feature) => feature.properties.name === "California").id, "06");
-for (const pattern of [/id="themeToggle"/, /id="taxRateRows"/, /data\/fiscal\/state-accounting-bases\.js/, /data\/fiscal\/state-budget-actuals\.js/, /data\/fiscal\/state-financial-results\.js/, /data\/tax\/tax-rates\.js/, /data\/tax\/income-tiers\.js/, /data\/tax\/household-tax-estimates\.js/, /data\/department-index\.js/, /department-loader\.js/, /fiscal-panel\.js/]) assert.match(html, pattern);
+for (const pattern of [/id="themeToggle"/, /id="taxRateRows"/, /data\/jurisdictions\.js/, /data\/tax\/tax-rates\.js/, /data\/tax\/income-tiers\.js/, /data\/tax\/household-tax-estimates\.js/, /department-loader\.js/, /fiscal-panel\.js/]) assert.match(html, pattern);
+assert.doesNotMatch(html, /data\/(?:fiscal|research)\//);
 assert.doesNotMatch(html + app + styles, /budgetStatus|data-status/);
 assert.doesNotMatch(html + app + details, /accountingComparison|accounting-comparison|accounting-total-grid/);
 assert.doesNotMatch(html + app, /data-layer|scopeSelect|setLayer|populateScopeSelect/);

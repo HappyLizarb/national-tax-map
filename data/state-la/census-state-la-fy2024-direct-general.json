@@ -17,6 +17,10 @@
     [
       "Census technical documentation",
       "https://www.census.gov/programs-surveys/state/technical-documentation/complete-technical-documentation/2024.html"
+    ],
+    [
+      "Official state defense-related agency ledger",
+      "https://checkbook.la.gov/expenditures2.cfm"
     ]
   ],
   "sourceBasis": "Census Annual Survey of State Government Finances; AMOUNT is reported in $1,000 and converted to USD.",
@@ -72,14 +76,14 @@
     ],
     [
       "Direct general expenditure · Census function",
-      "Direct Expenditure - General Expenditure - Total Other Higher Education Other",
+      "Direct Expenditure - General Expenditure - Public degree-granting higher education excluding auxiliary enterprises (Census code 18)",
       4226639000,
       4226639000,
       1
     ],
     [
       "Direct general expenditure · Census function",
-      "Direct Expenditure - General Expenditure - Total Federal and State Other Education",
+      "Direct Expenditure - General Expenditure - Federal and state other education programs (Census code 21)",
       497031000,
       497031000,
       1
@@ -285,6 +289,54 @@
     {
       "parent": [
         "Direct general expenditure · Census function",
+        "Direct Expenditure - General Expenditure - Total Health",
+        689087000
+      ],
+      "accountCount": 2,
+      "rows": [
+        [
+          "SF0265",
+          "Expenditure - Direct Expenditure - General Expenditure - Health - Current Operations",
+          667548000
+        ],
+        [
+          "SF0266",
+          "Expenditure - Direct Expenditure - General Expenditure - Health - Capital Outlay",
+          21539000
+        ]
+      ],
+      "sourceUrl": "https://www2.census.gov/programs-surveys/state/data/GS00STATEFIN01.zip",
+      "sourceLabel": "official Census data download",
+      "rowPrefix": "Census",
+      "basis": "Exact FY2024 Census current-operations and capital components that reconcile to this healthcare or veterans function total."
+    },
+    {
+      "parent": [
+        "Direct general expenditure · Census function",
+        "Direct Expenditure - General Expenditure - Total Hospitals",
+        535303000
+      ],
+      "accountCount": 2,
+      "rows": [
+        [
+          "SF0276",
+          "Expenditure - Direct Expenditure - General Expenditure - Hospitals - Current Operations",
+          528605000
+        ],
+        [
+          "SF0277",
+          "Expenditure - Direct Expenditure - General Expenditure - Hospitals - Capital Outlay",
+          6698000
+        ]
+      ],
+      "sourceUrl": "https://www2.census.gov/programs-surveys/state/data/GS00STATEFIN01.zip",
+      "sourceLabel": "official Census data download",
+      "rowPrefix": "Census",
+      "basis": "Exact FY2024 Census current-operations and capital components that reconcile to this healthcare or veterans function total."
+    },
+    {
+      "parent": [
+        "Direct general expenditure · Census function",
         "Direct Expenditure - General Expenditure - Total Public Welfare",
         18702378000
       ],
@@ -292,29 +344,53 @@
       "rows": [
         [
           "SF0358",
-          "Direct Expenditure - General Expenditure - Public Welfare - Other - Current Operations · Census annual disclosure ceiling",
+          "Expenditure - Direct Expenditure - General Expenditure - Public Welfare - Other - Current Operations · Census annual disclosure ceiling",
           18627063000
         ],
         [
           "SF0357",
-          "Direct Expenditure - General Expenditure - Public Welfare - Institutions",
+          "Expenditure - Direct Expenditure - General Expenditure - Public Welfare - Institutions",
           66077000
         ],
         [
           "SF0361",
-          "Direct Expenditure - General Expenditure - Public Welfare - Other - Capital Outlay",
+          "Expenditure - Direct Expenditure - General Expenditure - Public Welfare - Other - Capital Outlay",
           9034000
         ],
         [
           "SF0359",
-          "Direct Expenditure - General Expenditure - Public Welfare - Institutions - Capital Outlay",
+          "Expenditure - Direct Expenditure - General Expenditure - Public Welfare - Institutions - Capital Outlay",
           204000
         ]
       ],
       "sourceUrl": "https://www2.census.gov/programs-surveys/state/data/GS00STATEFIN01.zip",
       "sourceLabel": "official Census data download",
       "rowPrefix": "Census",
-      "basis": "Exact FY2024 Census current-operations/capital components that reconcile to this function total."
+      "basis": "Exact FY2024 Census current-operations and capital components that reconcile to this healthcare or veterans function total."
+    },
+    {
+      "parent": [
+        "Direct general expenditure · Census function",
+        "Direct Expenditure - General Expenditure - Total Federal and State Veterans' Services",
+        13486000
+      ],
+      "accountCount": 2,
+      "rows": [
+        [
+          "SF0383",
+          "Expenditure - Direct Expenditure - General Expenditure - Federal and State Veterans' Services - Current Operations",
+          13365000
+        ],
+        [
+          "SF0384",
+          "Expenditure - Direct Expenditure - General Expenditure - Federal and State Veterans' Services - Capital Outlay",
+          121000
+        ]
+      ],
+      "sourceUrl": "https://www2.census.gov/programs-surveys/state/data/GS00STATEFIN01.zip",
+      "sourceLabel": "official Census data download",
+      "rowPrefix": "Census",
+      "basis": "Exact FY2024 Census current-operations and capital components that reconcile to this healthcare or veterans function total."
     }
   ],
   "supplementalBreakdowns": [
@@ -493,31 +569,6 @@
       ],
       "sourceLabel": "Louisiana FY2025-26 Executive Budget · FY2023-24 prior-year actuals",
       "sourceUrl": "https://doa.la.gov/media/p12nniam/24-legi.pdf"
-    },
-    {
-      "parent": [
-        "Direct general expenditure · Census function",
-        "Direct Expenditure - General Expenditure - Total Public Welfare",
-        18702378000
-      ],
-      "title": "CMS-64 federal Medicaid share by service · 2 rows",
-      "basis": "Final FY2024 CMS-64 rows total $13,075,510,694 for Louisiana's federal Medicaid share. CMS does not publicly release category-of-service quarters, so any annual row still above $10B is an explicit public disclosure ceiling rather than an invented split. Medicaid is a major component of public welfare, but this federal-share boundary is supplemental—not additive—to the broader Census state-government function.",
-      "rows": [
-        [
-          "Medicaid - MCO",
-          "CMS-64 federal share · public annual disclosure ceiling",
-          10739429486,
-          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
-        ],
-        [
-          "Other services and administration",
-          "CMS-64 federal share below $1B per source category",
-          2336081208,
-          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
-        ]
-      ],
-      "sourceLabel": "CMS MBES/CBES FY2024 Financial Management Report",
-      "sourceUrl": "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
     },
     {
       "parent": [
@@ -849,11 +900,2724 @@
       ],
       "sourceLabel": "Louisiana Medicaid 2024 Annual Report, Tables 4-5",
       "sourceUrl": "https://ldh.la.gov/assets/medicaid/AnnualReports/MedicaidAnnualReport2024.pdf"
+    },
+    {
+      "parent": [
+        "Direct general expenditure · Census function",
+        "Direct Expenditure - General Expenditure - Total Public Welfare",
+        18702378000
+      ],
+      "title": "CMS-64 FY2024 federal Medicaid share by service and administration · 87 rows",
+      "basis": "Final FY2024 CMS-64 actual expenditures total $13,075,510,694 of federal share for Louisiana. All 87 nonzero medical-assistance and administration categories are shown, including signed collections and adjustments. Federal share only—not total computable or state share. This source boundary is supplemental—not additive—to Census public welfare, which also includes state/local financing and non-Medicaid programs.",
+      "rows": [
+        [
+          "Medical assistance · Medicaid - MCO",
+          "CMS-64 federal share · public annual category disclosure ceiling",
+          10739429486,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Medical assistance · Nursing Facility Services - Reg. Payments",
+          "CMS-64 federal share · actual expenditure category",
+          978468869,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Medical assistance · MCO - National Agreement",
+          "CMS-64 federal share · actual expenditure category",
+          -888304582,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Medical assistance · Home & Community-Based Services - Regular Payment (1915(c) Waiver)",
+          "CMS-64 federal share · actual expenditure category",
+          596567221,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Medical assistance · Medicare - Part B",
+          "CMS-64 federal share · actual expenditure category",
+          288832348,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Medical assistance · MCO - State Sidebar Agreement",
+          "CMS-64 federal share · actual expenditure category",
+          -212081280,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Medical assistance · Collections",
+          "CMS-64 federal share · actual expenditure category",
+          -177479703,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Medical assistance · Intermediate Care - Private",
+          "CMS-64 federal share · actual expenditure category",
+          174906485,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Medical assistance · Inpatient Hospital - DSH",
+          "CMS-64 federal share · actual expenditure category",
+          159339776,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Medical assistance · Personal Care Services - Reg. Payments",
+          "CMS-64 federal share · actual expenditure category",
+          138594163,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Medical assistance · Prepaid Ambulatory Health Plan",
+          "CMS-64 federal share · actual expenditure category",
+          119235459,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Medical assistance · Intermediate Care Facility - Public",
+          "CMS-64 federal share · actual expenditure category",
+          110096480,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Medical assistance · Mental Health Facility - DSH",
+          "CMS-64 federal share · actual expenditure category",
+          91485665,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Medical assistance · Prescribed Drugs",
+          "CMS-64 federal share · actual expenditure category",
+          91189727,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Administration · Other Financial Participation",
+          "CMS-64 federal share · actual expenditure category",
+          87517383,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Medical assistance · Hospice Benefits",
+          "CMS-64 federal share · actual expenditure category",
+          78134648,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Medical assistance · Medicaid MCO - Preventive Services Grade A OR B, ACIP Vaccines and their Admin",
+          "CMS-64 federal share · actual expenditure category",
+          70185398,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Medical assistance · School Based Services",
+          "CMS-64 federal share · actual expenditure category",
+          68441679,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Medical assistance · Increased ACA OFFSET - MCO",
+          "CMS-64 federal share · actual expenditure category",
+          -61005196,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Medical assistance · Other Care Services",
+          "CMS-64 federal share · actual expenditure category",
+          55897852,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Medical assistance · Inpatient Hospital - Reg. Payments",
+          "CMS-64 federal share · actual expenditure category",
+          55837412,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Medical assistance · Coinsurance",
+          "CMS-64 federal share · actual expenditure category",
+          52283868,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Medical assistance · Targeted Case Management Services - Com. Case-Man.",
+          "CMS-64 federal share · actual expenditure category",
+          45472172,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Medical assistance · 120% - 134% Of Poverty",
+          "CMS-64 federal share · actual expenditure category",
+          42872546,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Medical assistance · Medicare - Part A",
+          "CMS-64 federal share · actual expenditure category",
+          41986009,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Medical assistance · Prepaid Inpatient Health Plan",
+          "CMS-64 federal share · actual expenditure category",
+          40605652,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Administration · Design Development/Installation of Medicaid Elig. Determ. Sys. – Cost of Private Sec. Contractors",
+          "CMS-64 federal share · actual expenditure category",
+          39887115,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Administration · Eligibility Determination Staff – Cost of In-house Activities",
+          "CMS-64 federal share · actual expenditure category",
+          38038112,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Administration · Approved MMIS: Private",
+          "CMS-64 federal share · actual expenditure category",
+          35579106,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Medical assistance · OUD MAT DRUG REBATE MCO /National Agreement",
+          "CMS-64 federal share · actual expenditure category",
+          -30206618,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Medical assistance · Drug Rebate Offset - National",
+          "CMS-64 federal share · actual expenditure category",
+          -29551594,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Administration · MMIS - Private Sector",
+          "CMS-64 federal share · actual expenditure category",
+          29152937,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Medical assistance · Inpatient Hospital - Sup. Payments",
+          "CMS-64 federal share · actual expenditure category",
+          28706256,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Medical assistance · Case Management - State Wide",
+          "CMS-64 federal share · actual expenditure category",
+          -26697743,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Administration · School Based Administration",
+          "CMS-64 federal share · actual expenditure category",
+          24296254,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Administration · Operation of an Approved Medicaid Eligibility Determination Sys. – Cost of Private Sec. Contractors",
+          "CMS-64 federal share · actual expenditure category",
+          23042301,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Medical assistance · Outpatient Hospital Services - Reg. Payments",
+          "CMS-64 federal share · actual expenditure category",
+          20265671,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Medical assistance · Inpatient Hospital – GME Sup. Payments",
+          "CMS-64 federal share · actual expenditure category",
+          17629713,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Medical assistance · OUD MAT DRUG REBATE MCO /State Sidebar",
+          "CMS-64 federal share · actual expenditure category",
+          -14439848,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Medical assistance · All-Inclusive Care Elderly",
+          "CMS-64 federal share · actual expenditure category",
+          13993114,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Medical assistance · Physician & Surgical Services - Reg. Payments",
+          "CMS-64 federal share · actual expenditure category",
+          13740097,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Administration · Operation of an Approved Medicaid Eligibility Determination Systems – Cost of In-house Activities",
+          "CMS-64 federal share · actual expenditure category",
+          12244171,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Administration · Approved MMIS: Inhouse",
+          "CMS-64 federal share · actual expenditure category",
+          11254093,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Medical assistance · Home Health Services",
+          "CMS-64 federal share · actual expenditure category",
+          10877505,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Medical assistance · Emergency Hospital Services",
+          "CMS-64 federal share · actual expenditure category",
+          10182675,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Medical assistance · Emergency Services for Undocumented Aliens",
+          "CMS-64 federal share · actual expenditure category",
+          9813958,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Administration · Eligibility Determination Staff – Cost of Private Sector Contractors",
+          "CMS-64 federal share · actual expenditure category",
+          6215282,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Medical assistance · Drug Rebate Offset - State Sidebar Agreement",
+          "CMS-64 federal share · actual expenditure category",
+          -5224968,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Medical assistance · Increased ACA OFFSET - Fee for Service",
+          "CMS-64 federal share · actual expenditure category",
+          -4855139,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Medical assistance · Outpatient Hospital Services - Sup. Payments",
+          "CMS-64 federal share · actual expenditure category",
+          4627536,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Medical assistance · Nursing Facility Services - Sup. Payments",
+          "CMS-64 federal share · actual expenditure category",
+          4610999,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Administration · Design Development/Installation of Medicaid Elig. Determ. Sys. – Cost of In-house Activities",
+          "CMS-64 federal share · actual expenditure category",
+          4282522,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Administration · Interagency Costs (State Level)",
+          "CMS-64 federal share · actual expenditure category",
+          4259480,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Medical assistance · Mental Health Facility Services - Reg. Payments",
+          "CMS-64 federal share · actual expenditure category",
+          4076362,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Administration · Eligibility Determination Staff – Cost of In-house Activities – 50% FFP",
+          "CMS-64 federal share · actual expenditure category",
+          3742383,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Medical assistance · Clinic Services - Reg. Payments",
+          "CMS-64 federal share · actual expenditure category",
+          3569772,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Medical assistance · Rural Health",
+          "CMS-64 federal share · actual expenditure category",
+          3531738,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Administration · Eligibility Determination Staff – Cost of Private Sector Contractors – 50% FFP",
+          "CMS-64 federal share · actual expenditure category",
+          3138841,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Administration · Preadmission Screening",
+          "CMS-64 federal share · actual expenditure category",
+          2806905,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Medical assistance · EPSDT Screening",
+          "CMS-64 federal share · actual expenditure category",
+          2767880,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Administration · Program Integrity/Fraud, Waste, and Abuse Activities",
+          "CMS-64 federal share · actual expenditure category",
+          2496817,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Medical assistance · Laboratory/Radiological",
+          "CMS-64 federal share · actual expenditure category",
+          2146211,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Medical assistance · OUD MAT DRUG REBATE/Increased ACA Offset MCO – 100%",
+          "CMS-64 federal share · actual expenditure category",
+          -2119550,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Administration · External Review",
+          "CMS-64 federal share · actual expenditure category",
+          1641413,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Administration · Mechanized Systems: Private Sector",
+          "CMS-64 federal share · actual expenditure category",
+          1482249,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Medical assistance · Federally-Qualified Health Center",
+          "CMS-64 federal share · actual expenditure category",
+          1312469,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Medical assistance · Medicaid - Group Health",
+          "CMS-64 federal share · actual expenditure category",
+          1066848,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Administration · Skilled Professional Medical Personnel - Single State Agency",
+          "CMS-64 federal share · actual expenditure category",
+          779641,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Administration · Resident Review",
+          "CMS-64 federal share · actual expenditure category",
+          547500,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Administration · MMIS - Inhouse Activities",
+          "CMS-64 federal share · actual expenditure category",
+          527864,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Medical assistance · ARP Section 9813 Qualified Community Based Mobile Crisis Intervention – 85%",
+          "CMS-64 federal share · actual expenditure category",
+          494411,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Medical assistance · Non-Emergency Medical Transportation – Reg. Payments",
+          "CMS-64 federal share · actual expenditure category",
+          468585,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Medical assistance · Other Practitioners Services - Reg. Payments",
+          "CMS-64 federal share · actual expenditure category",
+          375268,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Medical assistance · Dental Services",
+          "CMS-64 federal share · actual expenditure category",
+          190764,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Medical assistance · OUD Medicaid Assisted Treatment – Drugs",
+          "CMS-64 federal share · actual expenditure category",
+          181989,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Administration · County/Local ADM Costs",
+          "CMS-64 federal share · actual expenditure category",
+          172547,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Medical assistance · OUD MAT DRUG REBATE/National Agreement",
+          "CMS-64 federal share · actual expenditure category",
+          -94465,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Administration · Collections",
+          "CMS-64 federal share · actual expenditure category",
+          -71010,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Administration · TPL - Recovery",
+          "CMS-64 federal share · actual expenditure category",
+          41441,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Medical assistance · OUD MAT DRUG REBATE/State Sidebar",
+          "CMS-64 federal share · actual expenditure category",
+          -39166,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Medical assistance · ARP Section 9811 COVID Vaccine/Vaccine Administration",
+          "CMS-64 federal share · actual expenditure category",
+          28426,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Medical assistance · Rehabilitative Services (non-school-based)",
+          "CMS-64 federal share · actual expenditure category",
+          8821,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Medical assistance · Physical Therapy",
+          "CMS-64 federal share · actual expenditure category",
+          8243,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Medical assistance · OUD MAT DRUG REBATE/Increased ACA Offset Fee for Service - 100%",
+          "CMS-64 federal share · actual expenditure category",
+          -7808,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Administration · TPL - Assignment Of Rights",
+          "CMS-64 federal share · actual expenditure category",
+          6686,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Medical assistance · Medicaid MCO - Community First Choice",
+          "CMS-64 federal share · actual expenditure category",
+          -3198,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Medical assistance · Occupational Therapy",
+          "CMS-64 federal share · actual expenditure category",
+          1293,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ]
+      ],
+      "sourceTotal": 13075510694,
+      "sourceLabel": "CMS MBES/CBES FY2024 Financial Management Report",
+      "sourceUrl": "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+    },
+    {
+      "parent": [
+        "Direct general expenditure · Census function",
+        "Direct Expenditure - General Expenditure - Total Public Welfare",
+        18702378000
+      ],
+      "title": "CMS FY2024 Medicaid total computable spending by service and administration · 86 rows",
+      "dataset": "cms-fy2024-medicaid-total-computable",
+      "basis": "Final FY2024 CMS actual expenditures total $17,179,873,718 for Louisiana. All 86 nonzero published categories are shown, including signed collections and adjustments. Gross Medicaid program spending across federal and non-federal financing. This source boundary is supplemental—not additive—to Census public welfare or the other CMS financing views.",
+      "rows": [
+        [
+          "Medical assistance · Medicaid - MCO",
+          "CMS FY2024 actual total computable spending · public annual category disclosure ceiling",
+          13483921354,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Medical assistance · Nursing Facility Services - Reg. Payments",
+          "CMS FY2024 actual total computable spending",
+          1437877345,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Medical assistance · MCO - National Agreement",
+          "CMS FY2024 actual total computable spending",
+          -1084158556,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Medical assistance · Home & Community-Based Services - Regular Payment (1915(c) Waiver)",
+          "CMS FY2024 actual total computable spending",
+          876763313,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Medical assistance · Medicare - Part B",
+          "CMS FY2024 actual total computable spending",
+          424534293,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Medical assistance · MCO - State Sidebar Agreement",
+          "CMS FY2024 actual total computable spending",
+          -271884004,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Medical assistance · Intermediate Care - Private",
+          "CMS FY2024 actual total computable spending",
+          256996897,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Medical assistance · Collections",
+          "CMS FY2024 actual total computable spending",
+          -253112418,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Medical assistance · Inpatient Hospital - DSH",
+          "CMS FY2024 actual total computable spending",
+          230456244,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Medical assistance · Personal Care Services - Reg. Payments",
+          "CMS FY2024 actual total computable spending",
+          198331276,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Administration · Other Financial Participation",
+          "CMS FY2024 actual total computable spending",
+          175034745,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Medical assistance · Prepaid Ambulatory Health Plan",
+          "CMS FY2024 actual total computable spending",
+          172560288,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Medical assistance · Intermediate Care Facility - Public",
+          "CMS FY2024 actual total computable spending",
+          161883259,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Medical assistance · Mental Health Facility - DSH",
+          "CMS FY2024 actual total computable spending",
+          132359625,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Medical assistance · Prescribed Drugs",
+          "CMS FY2024 actual total computable spending",
+          129900969,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Medical assistance · Hospice Benefits",
+          "CMS FY2024 actual total computable spending",
+          114785812,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Medical assistance · School Based Services",
+          "CMS FY2024 actual total computable spending",
+          93326922,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Medical assistance · Medicaid MCO - Preventive Services Grade A OR B, ACIP Vaccines and their Admin",
+          "CMS FY2024 actual total computable spending",
+          84418896,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Medical assistance · Other Care Services",
+          "CMS FY2024 actual total computable spending",
+          80383523,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Medical assistance · Inpatient Hospital - Reg. Payments",
+          "CMS FY2024 actual total computable spending",
+          77043187,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Medical assistance · Coinsurance",
+          "CMS FY2024 actual total computable spending",
+          73739036,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Medical assistance · Targeted Case Management Services - Com. Case-Man.",
+          "CMS FY2024 actual total computable spending",
+          64317820,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Medical assistance · Medicare - Part A",
+          "CMS FY2024 actual total computable spending",
+          61712287,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Medical assistance · Increased ACA OFFSET - MCO",
+          "CMS FY2024 actual total computable spending",
+          -61005196,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Medical assistance · Prepaid Inpatient Health Plan",
+          "CMS FY2024 actual total computable spending",
+          59666850,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Administration · Eligibility Determination Staff – Cost of In-house Activities",
+          "CMS FY2024 actual total computable spending",
+          50717478,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Administration · School Based Administration",
+          "CMS FY2024 actual total computable spending",
+          48592508,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Administration · Approved MMIS: Private",
+          "CMS FY2024 actual total computable spending",
+          47438806,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Administration · Design Development/Installation of Medicaid Elig. Determ. Sys. – Cost of Private Sec. Contractors",
+          "CMS FY2024 actual total computable spending",
+          44319016,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Medical assistance · 120% - 134% Of Poverty",
+          "CMS FY2024 actual total computable spending",
+          42872546,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Medical assistance · Inpatient Hospital - Sup. Payments",
+          "CMS FY2024 actual total computable spending",
+          41637443,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Medical assistance · Drug Rebate Offset - National",
+          "CMS FY2024 actual total computable spending",
+          -40554784,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Medical assistance · Case Management - State Wide",
+          "CMS FY2024 actual total computable spending",
+          -36776933,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Medical assistance · OUD MAT DRUG REBATE MCO /National Agreement",
+          "CMS FY2024 actual total computable spending",
+          -35325801,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Administration · MMIS - Private Sector",
+          "CMS FY2024 actual total computable spending",
+          32392148,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Administration · Operation of an Approved Medicaid Eligibility Determination Sys. – Cost of Private Sec. Contractors",
+          "CMS FY2024 actual total computable spending",
+          30723060,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Medical assistance · Outpatient Hospital Services - Reg. Payments",
+          "CMS FY2024 actual total computable spending",
+          29272174,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Medical assistance · Inpatient Hospital – GME Sup. Payments",
+          "CMS FY2024 actual total computable spending",
+          24871976,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Medical assistance · All-Inclusive Care Elderly",
+          "CMS FY2024 actual total computable spending",
+          20482430,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Medical assistance · Physician & Surgical Services - Reg. Payments",
+          "CMS FY2024 actual total computable spending",
+          19470624,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Medical assistance · OUD MAT DRUG REBATE MCO /State Sidebar",
+          "CMS FY2024 actual total computable spending",
+          -16886891,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Administration · Operation of an Approved Medicaid Eligibility Determination Systems – Cost of In-house Activities",
+          "CMS FY2024 actual total computable spending",
+          16325558,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Medical assistance · Home Health Services",
+          "CMS FY2024 actual total computable spending",
+          15562359,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Administration · Approved MMIS: Inhouse",
+          "CMS FY2024 actual total computable spending",
+          15005451,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Medical assistance · Emergency Hospital Services",
+          "CMS FY2024 actual total computable spending",
+          14794493,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Medical assistance · Emergency Services for Undocumented Aliens",
+          "CMS FY2024 actual total computable spending",
+          14396499,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Administration · Interagency Costs (State Level)",
+          "CMS FY2024 actual total computable spending",
+          8518958,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Administration · Eligibility Determination Staff – Cost of Private Sector Contractors",
+          "CMS FY2024 actual total computable spending",
+          8287037,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Administration · Eligibility Determination Staff – Cost of In-house Activities – 50% FFP",
+          "CMS FY2024 actual total computable spending",
+          7484743,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Medical assistance · Drug Rebate Offset - State Sidebar Agreement",
+          "CMS FY2024 actual total computable spending",
+          -7087374,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Medical assistance · Outpatient Hospital Services - Sup. Payments",
+          "CMS FY2024 actual total computable spending",
+          6748384,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Medical assistance · Nursing Facility Services - Sup. Payments",
+          "CMS FY2024 actual total computable spending",
+          6724268,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Administration · Eligibility Determination Staff – Cost of Private Sector Contractors – 50% FFP",
+          "CMS FY2024 actual total computable spending",
+          6277663,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Administration · Preadmission Screening",
+          "CMS FY2024 actual total computable spending",
+          5658540,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Medical assistance · Clinic Services - Reg. Payments",
+          "CMS FY2024 actual total computable spending",
+          5346138,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Medical assistance · Rural Health",
+          "CMS FY2024 actual total computable spending",
+          5187201,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Administration · Program Integrity/Fraud, Waste, and Abuse Activities",
+          "CMS FY2024 actual total computable spending",
+          4993619,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Medical assistance · Increased ACA OFFSET - Fee for Service",
+          "CMS FY2024 actual total computable spending",
+          -4855139,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Administration · Design Development/Installation of Medicaid Elig. Determ. Sys. – Cost of In-house Activities",
+          "CMS FY2024 actual total computable spending",
+          4758357,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Medical assistance · Mental Health Facility Services - Reg. Payments",
+          "CMS FY2024 actual total computable spending",
+          4379724,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Medical assistance · EPSDT Screening",
+          "CMS FY2024 actual total computable spending",
+          3957228,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Medical assistance · Laboratory/Radiological",
+          "CMS FY2024 actual total computable spending",
+          3074318,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Administration · Mechanized Systems: Private Sector",
+          "CMS FY2024 actual total computable spending",
+          2964496,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Administration · External Review",
+          "CMS FY2024 actual total computable spending",
+          2459131,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Medical assistance · OUD MAT DRUG REBATE/Increased ACA Offset MCO – 100%",
+          "CMS FY2024 actual total computable spending",
+          -2119550,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Medical assistance · Federally-Qualified Health Center",
+          "CMS FY2024 actual total computable spending",
+          1908685,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Medical assistance · Medicaid - Group Health",
+          "CMS FY2024 actual total computable spending",
+          1458649,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Administration · Skilled Professional Medical Personnel - Single State Agency",
+          "CMS FY2024 actual total computable spending",
+          1075322,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Administration · Resident Review",
+          "CMS FY2024 actual total computable spending",
+          729998,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Medical assistance · Non-Emergency Medical Transportation – Reg. Payments",
+          "CMS FY2024 actual total computable spending",
+          687339,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Administration · MMIS - Inhouse Activities",
+          "CMS FY2024 actual total computable spending",
+          586515,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Medical assistance · ARP Section 9813 Qualified Community Based Mobile Crisis Intervention – 85%",
+          "CMS FY2024 actual total computable spending",
+          581658,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Medical assistance · Other Practitioners Services - Reg. Payments",
+          "CMS FY2024 actual total computable spending",
+          503910,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Administration · County/Local ADM Costs",
+          "CMS FY2024 actual total computable spending",
+          345092,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Medical assistance · OUD Medicaid Assisted Treatment – Drugs",
+          "CMS FY2024 actual total computable spending",
+          214834,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Administration · Collections",
+          "CMS FY2024 actual total computable spending",
+          -142021,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Medical assistance · OUD MAT DRUG REBATE/National Agreement",
+          "CMS FY2024 actual total computable spending",
+          -111517,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Administration · TPL - Recovery",
+          "CMS FY2024 actual total computable spending",
+          82882,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Medical assistance · OUD MAT DRUG REBATE/State Sidebar",
+          "CMS FY2024 actual total computable spending",
+          -46115,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Medical assistance · ARP Section 9811 COVID Vaccine/Vaccine Administration",
+          "CMS FY2024 actual total computable spending",
+          28426,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Administration · TPL - Assignment Of Rights",
+          "CMS FY2024 actual total computable spending",
+          13372,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Medical assistance · Physical Therapy",
+          "CMS FY2024 actual total computable spending",
+          12819,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Medical assistance · Rehabilitative Services (non-school-based)",
+          "CMS FY2024 actual total computable spending",
+          12271,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Medical assistance · OUD MAT DRUG REBATE/Increased ACA Offset Fee for Service - 100%",
+          "CMS FY2024 actual total computable spending",
+          -7808,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Medical assistance · Medicaid MCO - Community First Choice",
+          "CMS FY2024 actual total computable spending",
+          -4220,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Medical assistance · Occupational Therapy",
+          "CMS FY2024 actual total computable spending",
+          1958,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ]
+      ],
+      "sourceTotal": 17179873718,
+      "sourceLabel": "CMS MBES/CBES FY2024 Financial Management Report",
+      "sourceUrl": "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+    },
+    {
+      "parent": [
+        "Direct general expenditure · Census function",
+        "Direct Expenditure - General Expenditure - Total Public Welfare",
+        18702378000
+      ],
+      "title": "CMS FY2024 Medicaid federal share by service and administration · 87 rows",
+      "dataset": "cms-fy2024-medicaid-federal-share",
+      "basis": "Final FY2024 CMS actual expenditures total $13,075,510,694 for Louisiana. All 87 nonzero published categories are shown, including signed collections and adjustments. Federal program financing only. This source boundary is supplemental—not additive—to Census public welfare or the other CMS financing views.",
+      "rows": [
+        [
+          "Medical assistance · Medicaid - MCO",
+          "CMS FY2024 actual federal share · public annual category disclosure ceiling",
+          10739429486,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Medical assistance · Nursing Facility Services - Reg. Payments",
+          "CMS FY2024 actual federal share",
+          978468869,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Medical assistance · MCO - National Agreement",
+          "CMS FY2024 actual federal share",
+          -888304582,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Medical assistance · Home & Community-Based Services - Regular Payment (1915(c) Waiver)",
+          "CMS FY2024 actual federal share",
+          596567221,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Medical assistance · Medicare - Part B",
+          "CMS FY2024 actual federal share",
+          288832348,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Medical assistance · MCO - State Sidebar Agreement",
+          "CMS FY2024 actual federal share",
+          -212081280,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Medical assistance · Intermediate Care - Private",
+          "CMS FY2024 actual federal share",
+          174906485,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Medical assistance · Collections",
+          "CMS FY2024 actual federal share",
+          -177479703,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Medical assistance · Inpatient Hospital - DSH",
+          "CMS FY2024 actual federal share",
+          159339776,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Medical assistance · Personal Care Services - Reg. Payments",
+          "CMS FY2024 actual federal share",
+          138594163,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Administration · Other Financial Participation",
+          "CMS FY2024 actual federal share",
+          87517383,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Medical assistance · Prepaid Ambulatory Health Plan",
+          "CMS FY2024 actual federal share",
+          119235459,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Medical assistance · Intermediate Care Facility - Public",
+          "CMS FY2024 actual federal share",
+          110096480,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Medical assistance · Mental Health Facility - DSH",
+          "CMS FY2024 actual federal share",
+          91485665,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Medical assistance · Prescribed Drugs",
+          "CMS FY2024 actual federal share",
+          91189727,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Medical assistance · Hospice Benefits",
+          "CMS FY2024 actual federal share",
+          78134648,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Medical assistance · School Based Services",
+          "CMS FY2024 actual federal share",
+          68441679,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Medical assistance · Medicaid MCO - Preventive Services Grade A OR B, ACIP Vaccines and their Admin",
+          "CMS FY2024 actual federal share",
+          70185398,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Medical assistance · Other Care Services",
+          "CMS FY2024 actual federal share",
+          55897852,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Medical assistance · Inpatient Hospital - Reg. Payments",
+          "CMS FY2024 actual federal share",
+          55837412,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Medical assistance · Coinsurance",
+          "CMS FY2024 actual federal share",
+          52283868,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Medical assistance · Targeted Case Management Services - Com. Case-Man.",
+          "CMS FY2024 actual federal share",
+          45472172,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Medical assistance · Medicare - Part A",
+          "CMS FY2024 actual federal share",
+          41986009,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Medical assistance · Increased ACA OFFSET - MCO",
+          "CMS FY2024 actual federal share",
+          -61005196,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Medical assistance · Prepaid Inpatient Health Plan",
+          "CMS FY2024 actual federal share",
+          40605652,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Administration · Eligibility Determination Staff – Cost of In-house Activities",
+          "CMS FY2024 actual federal share",
+          38038112,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Administration · School Based Administration",
+          "CMS FY2024 actual federal share",
+          24296254,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Administration · Approved MMIS: Private",
+          "CMS FY2024 actual federal share",
+          35579106,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Administration · Design Development/Installation of Medicaid Elig. Determ. Sys. – Cost of Private Sec. Contractors",
+          "CMS FY2024 actual federal share",
+          39887115,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Medical assistance · 120% - 134% Of Poverty",
+          "CMS FY2024 actual federal share",
+          42872546,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Medical assistance · Inpatient Hospital - Sup. Payments",
+          "CMS FY2024 actual federal share",
+          28706256,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Medical assistance · Drug Rebate Offset - National",
+          "CMS FY2024 actual federal share",
+          -29551594,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Medical assistance · Case Management - State Wide",
+          "CMS FY2024 actual federal share",
+          -26697743,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Medical assistance · OUD MAT DRUG REBATE MCO /National Agreement",
+          "CMS FY2024 actual federal share",
+          -30206618,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Administration · MMIS - Private Sector",
+          "CMS FY2024 actual federal share",
+          29152937,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Administration · Operation of an Approved Medicaid Eligibility Determination Sys. – Cost of Private Sec. Contractors",
+          "CMS FY2024 actual federal share",
+          23042301,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Medical assistance · Outpatient Hospital Services - Reg. Payments",
+          "CMS FY2024 actual federal share",
+          20265671,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Medical assistance · Inpatient Hospital – GME Sup. Payments",
+          "CMS FY2024 actual federal share",
+          17629713,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Medical assistance · All-Inclusive Care Elderly",
+          "CMS FY2024 actual federal share",
+          13993114,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Medical assistance · Physician & Surgical Services - Reg. Payments",
+          "CMS FY2024 actual federal share",
+          13740097,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Medical assistance · OUD MAT DRUG REBATE MCO /State Sidebar",
+          "CMS FY2024 actual federal share",
+          -14439848,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Administration · Operation of an Approved Medicaid Eligibility Determination Systems – Cost of In-house Activities",
+          "CMS FY2024 actual federal share",
+          12244171,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Medical assistance · Home Health Services",
+          "CMS FY2024 actual federal share",
+          10877505,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Administration · Approved MMIS: Inhouse",
+          "CMS FY2024 actual federal share",
+          11254093,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Medical assistance · Emergency Hospital Services",
+          "CMS FY2024 actual federal share",
+          10182675,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Medical assistance · Emergency Services for Undocumented Aliens",
+          "CMS FY2024 actual federal share",
+          9813958,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Administration · Interagency Costs (State Level)",
+          "CMS FY2024 actual federal share",
+          4259480,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Administration · Eligibility Determination Staff – Cost of Private Sector Contractors",
+          "CMS FY2024 actual federal share",
+          6215282,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Administration · Eligibility Determination Staff – Cost of In-house Activities – 50% FFP",
+          "CMS FY2024 actual federal share",
+          3742383,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Medical assistance · Drug Rebate Offset - State Sidebar Agreement",
+          "CMS FY2024 actual federal share",
+          -5224968,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Medical assistance · Outpatient Hospital Services - Sup. Payments",
+          "CMS FY2024 actual federal share",
+          4627536,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Medical assistance · Nursing Facility Services - Sup. Payments",
+          "CMS FY2024 actual federal share",
+          4610999,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Administration · Eligibility Determination Staff – Cost of Private Sector Contractors – 50% FFP",
+          "CMS FY2024 actual federal share",
+          3138841,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Administration · Preadmission Screening",
+          "CMS FY2024 actual federal share",
+          2806905,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Medical assistance · Clinic Services - Reg. Payments",
+          "CMS FY2024 actual federal share",
+          3569772,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Medical assistance · Rural Health",
+          "CMS FY2024 actual federal share",
+          3531738,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Administration · Program Integrity/Fraud, Waste, and Abuse Activities",
+          "CMS FY2024 actual federal share",
+          2496817,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Medical assistance · Increased ACA OFFSET - Fee for Service",
+          "CMS FY2024 actual federal share",
+          -4855139,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Administration · Design Development/Installation of Medicaid Elig. Determ. Sys. – Cost of In-house Activities",
+          "CMS FY2024 actual federal share",
+          4282522,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Medical assistance · Mental Health Facility Services - Reg. Payments",
+          "CMS FY2024 actual federal share",
+          4076362,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Medical assistance · EPSDT Screening",
+          "CMS FY2024 actual federal share",
+          2767880,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Medical assistance · Laboratory/Radiological",
+          "CMS FY2024 actual federal share",
+          2146211,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Administration · Mechanized Systems: Private Sector",
+          "CMS FY2024 actual federal share",
+          1482249,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Administration · External Review",
+          "CMS FY2024 actual federal share",
+          1641413,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Medical assistance · OUD MAT DRUG REBATE/Increased ACA Offset MCO – 100%",
+          "CMS FY2024 actual federal share",
+          -2119550,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Medical assistance · Federally-Qualified Health Center",
+          "CMS FY2024 actual federal share",
+          1312469,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Medical assistance · Medicaid - Group Health",
+          "CMS FY2024 actual federal share",
+          1066848,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Administration · Skilled Professional Medical Personnel - Single State Agency",
+          "CMS FY2024 actual federal share",
+          779641,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Administration · Resident Review",
+          "CMS FY2024 actual federal share",
+          547500,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Medical assistance · Non-Emergency Medical Transportation – Reg. Payments",
+          "CMS FY2024 actual federal share",
+          468585,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Administration · MMIS - Inhouse Activities",
+          "CMS FY2024 actual federal share",
+          527864,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Medical assistance · ARP Section 9813 Qualified Community Based Mobile Crisis Intervention – 85%",
+          "CMS FY2024 actual federal share",
+          494411,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Medical assistance · Other Practitioners Services - Reg. Payments",
+          "CMS FY2024 actual federal share",
+          375268,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Administration · County/Local ADM Costs",
+          "CMS FY2024 actual federal share",
+          172547,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Medical assistance · OUD Medicaid Assisted Treatment – Drugs",
+          "CMS FY2024 actual federal share",
+          181989,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Administration · Collections",
+          "CMS FY2024 actual federal share",
+          -71010,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Medical assistance · OUD MAT DRUG REBATE/National Agreement",
+          "CMS FY2024 actual federal share",
+          -94465,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Administration · TPL - Recovery",
+          "CMS FY2024 actual federal share",
+          41441,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Medical assistance · OUD MAT DRUG REBATE/State Sidebar",
+          "CMS FY2024 actual federal share",
+          -39166,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Medical assistance · ARP Section 9811 COVID Vaccine/Vaccine Administration",
+          "CMS FY2024 actual federal share",
+          28426,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Administration · TPL - Assignment Of Rights",
+          "CMS FY2024 actual federal share",
+          6686,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Medical assistance · Physical Therapy",
+          "CMS FY2024 actual federal share",
+          8243,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Medical assistance · Rehabilitative Services (non-school-based)",
+          "CMS FY2024 actual federal share",
+          8821,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Medical assistance · OUD MAT DRUG REBATE/Increased ACA Offset Fee for Service - 100%",
+          "CMS FY2024 actual federal share",
+          -7808,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Medical assistance · Medicaid MCO - Community First Choice",
+          "CMS FY2024 actual federal share",
+          -3198,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Medical assistance · Occupational Therapy",
+          "CMS FY2024 actual federal share",
+          1293,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Medical assistance · Dental Services",
+          "CMS FY2024 actual federal share",
+          190764,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ]
+      ],
+      "sourceTotal": 13075510694,
+      "sourceLabel": "CMS MBES/CBES FY2024 Financial Management Report",
+      "sourceUrl": "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+    },
+    {
+      "parent": [
+        "Direct general expenditure · Census function",
+        "Direct Expenditure - General Expenditure - Total Public Welfare",
+        18702378000
+      ],
+      "title": "CMS FY2024 Medicaid State Share (non-federal financing) by service and administration · 81 rows",
+      "dataset": "cms-fy2024-medicaid-nonfederal-share",
+      "basis": "Final FY2024 CMS actual expenditures total $4,104,363,024 for Louisiana. All 81 nonzero published categories are shown, including signed collections and adjustments. CMS's State Share label can include state appropriations, local intergovernmental transfers, and certified public expenditures; it is not a state-tax-only measure. This source boundary is supplemental—not additive—to Census public welfare or the other CMS financing views.",
+      "rows": [
+        [
+          "Medical assistance · Medicaid - MCO",
+          "CMS FY2024 actual State Share (non-federal financing)",
+          2744491868,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Medical assistance · Nursing Facility Services - Reg. Payments",
+          "CMS FY2024 actual State Share (non-federal financing)",
+          459408476,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Medical assistance · MCO - National Agreement",
+          "CMS FY2024 actual State Share (non-federal financing)",
+          -195853974,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Medical assistance · Home & Community-Based Services - Regular Payment (1915(c) Waiver)",
+          "CMS FY2024 actual State Share (non-federal financing)",
+          280196092,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Medical assistance · Medicare - Part B",
+          "CMS FY2024 actual State Share (non-federal financing)",
+          135701945,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Medical assistance · MCO - State Sidebar Agreement",
+          "CMS FY2024 actual State Share (non-federal financing)",
+          -59802724,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Medical assistance · Intermediate Care - Private",
+          "CMS FY2024 actual State Share (non-federal financing)",
+          82090412,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Medical assistance · Collections",
+          "CMS FY2024 actual State Share (non-federal financing)",
+          -75632715,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Medical assistance · Inpatient Hospital - DSH",
+          "CMS FY2024 actual State Share (non-federal financing)",
+          71116468,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Medical assistance · Personal Care Services - Reg. Payments",
+          "CMS FY2024 actual State Share (non-federal financing)",
+          59737113,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Administration · Other Financial Participation",
+          "CMS FY2024 actual State Share (non-federal financing)",
+          87517362,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Medical assistance · Prepaid Ambulatory Health Plan",
+          "CMS FY2024 actual State Share (non-federal financing)",
+          53324829,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Medical assistance · Intermediate Care Facility - Public",
+          "CMS FY2024 actual State Share (non-federal financing)",
+          51786779,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Medical assistance · Mental Health Facility - DSH",
+          "CMS FY2024 actual State Share (non-federal financing)",
+          40873960,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Medical assistance · Prescribed Drugs",
+          "CMS FY2024 actual State Share (non-federal financing)",
+          38711242,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Medical assistance · Hospice Benefits",
+          "CMS FY2024 actual State Share (non-federal financing)",
+          36651164,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Medical assistance · School Based Services",
+          "CMS FY2024 actual State Share (non-federal financing)",
+          24885243,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Medical assistance · Medicaid MCO - Preventive Services Grade A OR B, ACIP Vaccines and their Admin",
+          "CMS FY2024 actual State Share (non-federal financing)",
+          14233498,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Medical assistance · Other Care Services",
+          "CMS FY2024 actual State Share (non-federal financing)",
+          24485671,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Medical assistance · Inpatient Hospital - Reg. Payments",
+          "CMS FY2024 actual State Share (non-federal financing)",
+          21205775,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Medical assistance · Coinsurance",
+          "CMS FY2024 actual State Share (non-federal financing)",
+          21455168,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Medical assistance · Targeted Case Management Services - Com. Case-Man.",
+          "CMS FY2024 actual State Share (non-federal financing)",
+          18845648,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Medical assistance · Medicare - Part A",
+          "CMS FY2024 actual State Share (non-federal financing)",
+          19726278,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Medical assistance · Prepaid Inpatient Health Plan",
+          "CMS FY2024 actual State Share (non-federal financing)",
+          19061198,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Administration · Eligibility Determination Staff – Cost of In-house Activities",
+          "CMS FY2024 actual State Share (non-federal financing)",
+          12679366,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Administration · School Based Administration",
+          "CMS FY2024 actual State Share (non-federal financing)",
+          24296254,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Administration · Approved MMIS: Private",
+          "CMS FY2024 actual State Share (non-federal financing)",
+          11859700,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Administration · Design Development/Installation of Medicaid Elig. Determ. Sys. – Cost of Private Sec. Contractors",
+          "CMS FY2024 actual State Share (non-federal financing)",
+          4431901,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Medical assistance · Inpatient Hospital - Sup. Payments",
+          "CMS FY2024 actual State Share (non-federal financing)",
+          12931187,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Medical assistance · Drug Rebate Offset - National",
+          "CMS FY2024 actual State Share (non-federal financing)",
+          -11003190,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Medical assistance · Case Management - State Wide",
+          "CMS FY2024 actual State Share (non-federal financing)",
+          -10079190,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Medical assistance · OUD MAT DRUG REBATE MCO /National Agreement",
+          "CMS FY2024 actual State Share (non-federal financing)",
+          -5119183,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Administration · MMIS - Private Sector",
+          "CMS FY2024 actual State Share (non-federal financing)",
+          3239211,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Administration · Operation of an Approved Medicaid Eligibility Determination Sys. – Cost of Private Sec. Contractors",
+          "CMS FY2024 actual State Share (non-federal financing)",
+          7680759,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Medical assistance · Outpatient Hospital Services - Reg. Payments",
+          "CMS FY2024 actual State Share (non-federal financing)",
+          9006503,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Medical assistance · Inpatient Hospital – GME Sup. Payments",
+          "CMS FY2024 actual State Share (non-federal financing)",
+          7242263,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Medical assistance · All-Inclusive Care Elderly",
+          "CMS FY2024 actual State Share (non-federal financing)",
+          6489316,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Medical assistance · Physician & Surgical Services - Reg. Payments",
+          "CMS FY2024 actual State Share (non-federal financing)",
+          5730527,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Medical assistance · OUD MAT DRUG REBATE MCO /State Sidebar",
+          "CMS FY2024 actual State Share (non-federal financing)",
+          -2447043,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Administration · Operation of an Approved Medicaid Eligibility Determination Systems – Cost of In-house Activities",
+          "CMS FY2024 actual State Share (non-federal financing)",
+          4081387,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Medical assistance · Home Health Services",
+          "CMS FY2024 actual State Share (non-federal financing)",
+          4684854,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Administration · Approved MMIS: Inhouse",
+          "CMS FY2024 actual State Share (non-federal financing)",
+          3751358,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Medical assistance · Emergency Hospital Services",
+          "CMS FY2024 actual State Share (non-federal financing)",
+          4611818,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Medical assistance · Emergency Services for Undocumented Aliens",
+          "CMS FY2024 actual State Share (non-federal financing)",
+          4582541,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Administration · Interagency Costs (State Level)",
+          "CMS FY2024 actual State Share (non-federal financing)",
+          4259478,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Administration · Eligibility Determination Staff – Cost of Private Sector Contractors",
+          "CMS FY2024 actual State Share (non-federal financing)",
+          2071755,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Administration · Eligibility Determination Staff – Cost of In-house Activities – 50% FFP",
+          "CMS FY2024 actual State Share (non-federal financing)",
+          3742360,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Medical assistance · Drug Rebate Offset - State Sidebar Agreement",
+          "CMS FY2024 actual State Share (non-federal financing)",
+          -1862406,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Medical assistance · Outpatient Hospital Services - Sup. Payments",
+          "CMS FY2024 actual State Share (non-federal financing)",
+          2120848,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Medical assistance · Nursing Facility Services - Sup. Payments",
+          "CMS FY2024 actual State Share (non-federal financing)",
+          2113269,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Administration · Eligibility Determination Staff – Cost of Private Sector Contractors – 50% FFP",
+          "CMS FY2024 actual State Share (non-federal financing)",
+          3138822,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Administration · Preadmission Screening",
+          "CMS FY2024 actual State Share (non-federal financing)",
+          2851635,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Medical assistance · Clinic Services - Reg. Payments",
+          "CMS FY2024 actual State Share (non-federal financing)",
+          1776366,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Medical assistance · Rural Health",
+          "CMS FY2024 actual State Share (non-federal financing)",
+          1655463,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Administration · Program Integrity/Fraud, Waste, and Abuse Activities",
+          "CMS FY2024 actual State Share (non-federal financing)",
+          2496802,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Administration · Design Development/Installation of Medicaid Elig. Determ. Sys. – Cost of In-house Activities",
+          "CMS FY2024 actual State Share (non-federal financing)",
+          475835,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Medical assistance · Mental Health Facility Services - Reg. Payments",
+          "CMS FY2024 actual State Share (non-federal financing)",
+          303362,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Medical assistance · EPSDT Screening",
+          "CMS FY2024 actual State Share (non-federal financing)",
+          1189348,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Medical assistance · Laboratory/Radiological",
+          "CMS FY2024 actual State Share (non-federal financing)",
+          928107,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Administration · Mechanized Systems: Private Sector",
+          "CMS FY2024 actual State Share (non-federal financing)",
+          1482247,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Administration · External Review",
+          "CMS FY2024 actual State Share (non-federal financing)",
+          817718,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Medical assistance · Federally-Qualified Health Center",
+          "CMS FY2024 actual State Share (non-federal financing)",
+          596216,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Medical assistance · Medicaid - Group Health",
+          "CMS FY2024 actual State Share (non-federal financing)",
+          391801,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Administration · Skilled Professional Medical Personnel - Single State Agency",
+          "CMS FY2024 actual State Share (non-federal financing)",
+          295681,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Administration · Resident Review",
+          "CMS FY2024 actual State Share (non-federal financing)",
+          182498,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Medical assistance · Non-Emergency Medical Transportation – Reg. Payments",
+          "CMS FY2024 actual State Share (non-federal financing)",
+          218754,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Administration · MMIS - Inhouse Activities",
+          "CMS FY2024 actual State Share (non-federal financing)",
+          58651,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Medical assistance · ARP Section 9813 Qualified Community Based Mobile Crisis Intervention – 85%",
+          "CMS FY2024 actual State Share (non-federal financing)",
+          87247,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Medical assistance · Other Practitioners Services - Reg. Payments",
+          "CMS FY2024 actual State Share (non-federal financing)",
+          128642,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Administration · County/Local ADM Costs",
+          "CMS FY2024 actual State Share (non-federal financing)",
+          172545,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Medical assistance · OUD Medicaid Assisted Treatment – Drugs",
+          "CMS FY2024 actual State Share (non-federal financing)",
+          32845,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Administration · Collections",
+          "CMS FY2024 actual State Share (non-federal financing)",
+          -71011,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Medical assistance · OUD MAT DRUG REBATE/National Agreement",
+          "CMS FY2024 actual State Share (non-federal financing)",
+          -17052,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Administration · TPL - Recovery",
+          "CMS FY2024 actual State Share (non-federal financing)",
+          41441,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Medical assistance · OUD MAT DRUG REBATE/State Sidebar",
+          "CMS FY2024 actual State Share (non-federal financing)",
+          -6949,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Administration · TPL - Assignment Of Rights",
+          "CMS FY2024 actual State Share (non-federal financing)",
+          6686,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Medical assistance · Physical Therapy",
+          "CMS FY2024 actual State Share (non-federal financing)",
+          4576,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Medical assistance · Rehabilitative Services (non-school-based)",
+          "CMS FY2024 actual State Share (non-federal financing)",
+          3450,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Medical assistance · Medicaid MCO - Community First Choice",
+          "CMS FY2024 actual State Share (non-federal financing)",
+          -1022,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Medical assistance · Occupational Therapy",
+          "CMS FY2024 actual State Share (non-federal financing)",
+          665,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Medical assistance · Dental Services",
+          "CMS FY2024 actual State Share (non-federal financing)",
+          -190764,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ]
+      ],
+      "sourceTotal": 4104363024,
+      "sourceLabel": "CMS MBES/CBES FY2024 Financial Management Report",
+      "sourceUrl": "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+    },
+    {
+      "parent": [
+        "Direct general expenditure · Census function",
+        "Direct Expenditure - General Expenditure - Total Public Welfare",
+        18702378000
+      ],
+      "title": "CMS FY2024 CHIP total computable spending by service and administration · 31 rows",
+      "dataset": "cms-fy2024-chip-total-computable",
+      "basis": "Final FY2024 CMS actual expenditures total $757,997,409 for Louisiana. All 31 nonzero published categories are shown, including signed collections and adjustments. Gross CHIP program spending across federal and non-federal financing. This source boundary is supplemental—not additive—to Census public welfare or the other CMS financing views.",
+      "rows": [
+        [
+          "Medicaid-expansion CHIP · C-Other Services",
+          "CMS FY2024 actual total computable spending",
+          664647033,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Separate CHIP · Other Services",
+          "CMS FY2024 actual total computable spending",
+          74263628,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Medicaid-expansion CHIP · C-Dental Services",
+          "CMS FY2024 actual total computable spending",
+          42359293,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Medicaid-expansion CHIP · C-MCO - National",
+          "CMS FY2024 actual total computable spending",
+          -37485036,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Separate CHIP · Administration",
+          "CMS FY2024 actual total computable spending",
+          24964039,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Medicaid-expansion CHIP · C-MCO - State Sidebar Agreement",
+          "CMS FY2024 actual total computable spending",
+          -12697016,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Medicaid-expansion CHIP · C-Screening Services",
+          "CMS FY2024 actual total computable spending",
+          3778342,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Separate CHIP · Drug Rebate",
+          "CMS FY2024 actual total computable spending",
+          -3401432,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Medicaid-expansion CHIP · C-Prescribed Drugs",
+          "CMS FY2024 actual total computable spending",
+          2229069,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Medicaid-expansion CHIP · C-Drug Rebate - National",
+          "CMS FY2024 actual total computable spending",
+          -1437622,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Separate CHIP · Less: Collection",
+          "CMS FY2024 actual total computable spending",
+          -1328255,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Separate CHIP · Premiums - Over 150%: Cost Sharing Offset",
+          "CMS FY2024 actual total computable spending",
+          -935191,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Separate CHIP · Dental Services",
+          "CMS FY2024 actual total computable spending",
+          884597,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Separate CHIP · Inpatient Hospital",
+          "CMS FY2024 actual total computable spending",
+          747031,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Medicaid-expansion CHIP · C-Case Management",
+          "CMS FY2024 actual total computable spending",
+          549710,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Medicaid-expansion CHIP · C-Inpatient Hospital Services - Reg. Payments",
+          "CMS FY2024 actual total computable spending",
+          300401,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Separate CHIP · Physician/Surgical",
+          "CMS FY2024 actual total computable spending",
+          203989,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Medicaid-expansion CHIP · C-Drug Rebate - State",
+          "CMS FY2024 actual total computable spending",
+          -195510,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Separate CHIP · Outpatient Hospital ",
+          "CMS FY2024 actual total computable spending",
+          170514,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Medicaid-expansion CHIP · C-Outpatient Hospital Services",
+          "CMS FY2024 actual total computable spending",
+          156187,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Medicaid-expansion CHIP · C-Physician/Surgical",
+          "CMS FY2024 actual total computable spending",
+          89650,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Separate CHIP · Prescribed Drugs",
+          "CMS FY2024 actual total computable spending",
+          46648,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Separate CHIP · Case Management",
+          "CMS FY2024 actual total computable spending",
+          28759,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Separate CHIP · Laboratory/Radiological",
+          "CMS FY2024 actual total computable spending",
+          23586,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Separate CHIP · Medical Transportation",
+          "CMS FY2024 actual total computable spending",
+          12232,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Medicaid-expansion CHIP · C-Medical Transport",
+          "CMS FY2024 actual total computable spending",
+          12191,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Medicaid-expansion CHIP · C-Laboratory/Radiological Services",
+          "CMS FY2024 actual total computable spending",
+          8743,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Medicaid-expansion CHIP · C-ARP Section 9821 COVID Vaccine/Vaccine Administration",
+          "CMS FY2024 actual total computable spending",
+          1643,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Separate CHIP · Screening Services",
+          "CMS FY2024 actual total computable spending",
+          102,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Medicaid-expansion CHIP · C-Home Health",
+          "CMS FY2024 actual total computable spending",
+          47,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Separate CHIP · ARP Section 9821 COVID Vaccine/Vaccine Administration",
+          "CMS FY2024 actual total computable spending",
+          37,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ]
+      ],
+      "sourceTotal": 757997409,
+      "sourceLabel": "CMS MBES/CBES FY2024 Financial Management Report",
+      "sourceUrl": "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+    },
+    {
+      "parent": [
+        "Direct general expenditure · Census function",
+        "Direct Expenditure - General Expenditure - Total Public Welfare",
+        18702378000
+      ],
+      "title": "CMS FY2024 CHIP federal share by service and administration · 31 rows",
+      "dataset": "cms-fy2024-chip-federal-share",
+      "basis": "Final FY2024 CMS actual expenditures total $587,135,403 for Louisiana. All 31 nonzero published categories are shown, including signed collections and adjustments. Federal program financing only, including the MCHIP 20% reclassification. This source boundary is supplemental—not additive—to Census public welfare or the other CMS financing views.",
+      "rows": [
+        [
+          "Medicaid-expansion CHIP · C-Other Services",
+          "CMS FY2024 actual federal share",
+          514834881,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Separate CHIP · Other Services",
+          "CMS FY2024 actual federal share",
+          57455031,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Medicaid-expansion CHIP · C-Dental Services",
+          "CMS FY2024 actual federal share",
+          32895590,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Medicaid-expansion CHIP · C-MCO - National",
+          "CMS FY2024 actual federal share",
+          -29122824,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Separate CHIP · Administration",
+          "CMS FY2024 actual federal share",
+          19371437,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Medicaid-expansion CHIP · C-MCO - State Sidebar Agreement",
+          "CMS FY2024 actual federal share",
+          -9845408,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Medicaid-expansion CHIP · C-Screening Services",
+          "CMS FY2024 actual federal share",
+          2979127,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Separate CHIP · Drug Rebate",
+          "CMS FY2024 actual federal share",
+          -2644819,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Medicaid-expansion CHIP · C-Prescribed Drugs",
+          "CMS FY2024 actual federal share",
+          1735704,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Medicaid-expansion CHIP · C-Drug Rebate - National",
+          "CMS FY2024 actual federal share",
+          -1120991,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Separate CHIP · Less: Collection",
+          "CMS FY2024 actual federal share",
+          -1037650,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Separate CHIP · Premiums - Over 150%: Cost Sharing Offset",
+          "CMS FY2024 actual federal share",
+          -725034,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Separate CHIP · Dental Services",
+          "CMS FY2024 actual federal share",
+          686214,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Separate CHIP · Inpatient Hospital",
+          "CMS FY2024 actual federal share",
+          579612,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Medicaid-expansion CHIP · C-Case Management",
+          "CMS FY2024 actual federal share",
+          426372,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Medicaid-expansion CHIP · C-Inpatient Hospital Services - Reg. Payments",
+          "CMS FY2024 actual federal share",
+          234209,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Separate CHIP · Physician/Surgical",
+          "CMS FY2024 actual federal share",
+          158273,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Medicaid-expansion CHIP · C-Drug Rebate - State",
+          "CMS FY2024 actual federal share",
+          -152299,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Separate CHIP · Outpatient Hospital ",
+          "CMS FY2024 actual federal share",
+          132494,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Medicaid-expansion CHIP · C-Outpatient Hospital Services",
+          "CMS FY2024 actual federal share",
+          121280,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Medicaid-expansion CHIP · C-Physician/Surgical",
+          "CMS FY2024 actual federal share",
+          69635,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Separate CHIP · Prescribed Drugs",
+          "CMS FY2024 actual federal share",
+          36477,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Separate CHIP · Case Management",
+          "CMS FY2024 actual federal share",
+          22301,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Separate CHIP · Laboratory/Radiological",
+          "CMS FY2024 actual federal share",
+          18306,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Separate CHIP · Medical Transportation",
+          "CMS FY2024 actual federal share",
+          9469,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Medicaid-expansion CHIP · C-Medical Transport",
+          "CMS FY2024 actual federal share",
+          9436,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Medicaid-expansion CHIP · C-Laboratory/Radiological Services",
+          "CMS FY2024 actual federal share",
+          6790,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Medicaid-expansion CHIP · C-ARP Section 9821 COVID Vaccine/Vaccine Administration",
+          "CMS FY2024 actual federal share",
+          1643,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Separate CHIP · Screening Services",
+          "CMS FY2024 actual federal share",
+          74,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Medicaid-expansion CHIP · C-Home Health",
+          "CMS FY2024 actual federal share",
+          36,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Separate CHIP · ARP Section 9821 COVID Vaccine/Vaccine Administration",
+          "CMS FY2024 actual federal share",
+          37,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ]
+      ],
+      "sourceTotal": 587135403,
+      "sourceLabel": "CMS MBES/CBES FY2024 Financial Management Report",
+      "sourceUrl": "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+    },
+    {
+      "parent": [
+        "Direct general expenditure · Census function",
+        "Direct Expenditure - General Expenditure - Total Public Welfare",
+        18702378000
+      ],
+      "title": "CMS FY2024 CHIP State Share (non-federal financing) by service and administration · 29 rows",
+      "dataset": "cms-fy2024-chip-nonfederal-share",
+      "basis": "Final FY2024 CMS actual expenditures total $170,862,006 for Louisiana. All 29 nonzero published categories are shown, including signed collections and adjustments. CMS's State Share label is non-federal program financing, not a state-tax-only measure; MCHIP 20% reclassifications are preserved. This source boundary is supplemental—not additive—to Census public welfare or the other CMS financing views.",
+      "rows": [
+        [
+          "Medicaid-expansion CHIP · C-Other Services",
+          "CMS FY2024 actual State Share (non-federal financing)",
+          149812152,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Separate CHIP · Other Services",
+          "CMS FY2024 actual State Share (non-federal financing)",
+          16808597,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Medicaid-expansion CHIP · C-Dental Services",
+          "CMS FY2024 actual State Share (non-federal financing)",
+          9463703,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Medicaid-expansion CHIP · C-MCO - National",
+          "CMS FY2024 actual State Share (non-federal financing)",
+          -8362212,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Separate CHIP · Administration",
+          "CMS FY2024 actual State Share (non-federal financing)",
+          5592602,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Medicaid-expansion CHIP · C-MCO - State Sidebar Agreement",
+          "CMS FY2024 actual State Share (non-federal financing)",
+          -2851608,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Medicaid-expansion CHIP · C-Screening Services",
+          "CMS FY2024 actual State Share (non-federal financing)",
+          799215,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Separate CHIP · Drug Rebate",
+          "CMS FY2024 actual State Share (non-federal financing)",
+          -756613,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Medicaid-expansion CHIP · C-Prescribed Drugs",
+          "CMS FY2024 actual State Share (non-federal financing)",
+          493365,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Medicaid-expansion CHIP · C-Drug Rebate - National",
+          "CMS FY2024 actual State Share (non-federal financing)",
+          -316631,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Separate CHIP · Less: Collection",
+          "CMS FY2024 actual State Share (non-federal financing)",
+          -290605,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Separate CHIP · Premiums - Over 150%: Cost Sharing Offset",
+          "CMS FY2024 actual State Share (non-federal financing)",
+          -210157,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Separate CHIP · Dental Services",
+          "CMS FY2024 actual State Share (non-federal financing)",
+          198383,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Separate CHIP · Inpatient Hospital",
+          "CMS FY2024 actual State Share (non-federal financing)",
+          167419,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Medicaid-expansion CHIP · C-Case Management",
+          "CMS FY2024 actual State Share (non-federal financing)",
+          123338,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Medicaid-expansion CHIP · C-Inpatient Hospital Services - Reg. Payments",
+          "CMS FY2024 actual State Share (non-federal financing)",
+          66192,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Separate CHIP · Physician/Surgical",
+          "CMS FY2024 actual State Share (non-federal financing)",
+          45716,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Medicaid-expansion CHIP · C-Drug Rebate - State",
+          "CMS FY2024 actual State Share (non-federal financing)",
+          -43211,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Separate CHIP · Outpatient Hospital ",
+          "CMS FY2024 actual State Share (non-federal financing)",
+          38020,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Medicaid-expansion CHIP · C-Outpatient Hospital Services",
+          "CMS FY2024 actual State Share (non-federal financing)",
+          34907,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Medicaid-expansion CHIP · C-Physician/Surgical",
+          "CMS FY2024 actual State Share (non-federal financing)",
+          20015,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Separate CHIP · Prescribed Drugs",
+          "CMS FY2024 actual State Share (non-federal financing)",
+          10171,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Separate CHIP · Case Management",
+          "CMS FY2024 actual State Share (non-federal financing)",
+          6458,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Separate CHIP · Laboratory/Radiological",
+          "CMS FY2024 actual State Share (non-federal financing)",
+          5280,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Separate CHIP · Medical Transportation",
+          "CMS FY2024 actual State Share (non-federal financing)",
+          2763,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Medicaid-expansion CHIP · C-Medical Transport",
+          "CMS FY2024 actual State Share (non-federal financing)",
+          2755,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Medicaid-expansion CHIP · C-Laboratory/Radiological Services",
+          "CMS FY2024 actual State Share (non-federal financing)",
+          1953,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Separate CHIP · Screening Services",
+          "CMS FY2024 actual State Share (non-federal financing)",
+          28,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ],
+        [
+          "Medicaid-expansion CHIP · C-Home Health",
+          "CMS FY2024 actual State Share (non-federal financing)",
+          11,
+          "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+        ]
+      ],
+      "sourceTotal": 170862006,
+      "sourceLabel": "CMS MBES/CBES FY2024 Financial Management Report",
+      "sourceUrl": "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
     }
   ],
   "sourceCheck": {
     "groupRows": 36,
     "difference": 0
   },
-  "hierarchyNote": "These rows are mutually exclusive Census expenditure function/category rows within this detail group; they are not vendor or agency transactions."
+  "hierarchyNote": "These rows are mutually exclusive Census expenditure function/category rows within this detail group; they are not vendor or agency transactions.",
+  "note": "Rows labeled as an official state-ledger defense topic view are separate, non-additive agency totals; they may include emergency-management activity and federal pass-throughs, and are not a uniform Census defense function. Rows labeled as an official state-ledger defense topic view are separate, non-additive agency totals; they may include emergency-management activity and federal pass-throughs, and are not a uniform Census defense function.",
+  "supplementalSchema": [
+    "subAgency",
+    "program",
+    "amount",
+    "measure",
+    "source"
+  ],
+  "supplementalRows": [
+    [
+      "DEPT OF VETERANS AFFAIRS",
+      "Official state-ledger defense topic view · Veterans",
+      85991572.55,
+      "separate, non-additive agency total; source may include federal pass-throughs",
+      "https://checkbook.la.gov/expenditures2.cfm"
+    ]
+  ]
 }

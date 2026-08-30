@@ -216,7 +216,8 @@ function nestedSourceBreakdowns(detail, parent, rendered) {
 function rowHasExactBreakdown(detail, parent) {
   return (detail.itemBreakdowns || []).some((item) => sameAccount(item.parent, parent))
     || (detail.sourceBreakdowns || []).some((item) => sourceBreakdownMatches(item, parent))
-    || (detail.supplementalBreakdowns || []).some((item) => exactSourceBreakdown(item, parent));
+    || (detail.supplementalBreakdowns || []).some((item) => sameAccount(item.parent, parent)
+      || exactSourceBreakdown(item, parent));
 }
 
 function renderSourceBreakdown(match, detail, rendered) {

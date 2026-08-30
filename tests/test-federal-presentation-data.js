@@ -72,9 +72,9 @@ assert.equal(archivedIndiana.sourceTotal, 59513417253.4);
 assert.equal(archivedIndiana.reconciliation.normalized, false);
 
 const html = fs.readFileSync("index.html", "utf8");
-assert.match(html, /data\/department-index\.js/);
+assert.match(html, /data\/jurisdictions\.js/);
 assert.match(html, /department-loader\.js/);
-assert.match(html, /data\/fiscal\/state-financial-results\.js/);
+assert.doesNotMatch(html, /data\/fiscal\//);
 assert.doesNotMatch(html, /state-ledger-totals/);
 assert.doesNotMatch(html, /data\/(?:federal|state-[a-z]{2})\/(?:federal|state-[a-z]{2})\.js/);
 assert.doesNotMatch(html, /data\/state-(?:al|ar|ca|ks|me|ne|nv|sc|vt)\.js/);
@@ -84,7 +84,7 @@ assert.doesNotMatch(html, /data-allocation-source|allocation-source-switch/);
 const app = fs.readFileSync("src/app.js", "utf8") + fs.readFileSync("src/fiscal-panel.js", "utf8");
 const styles = fs.readFileSync("styles/styles.css", "utf8") + fs.readFileSync("styles/details.css", "utf8");
 const browserModel = fs.readFileSync("src/model.js", "utf8");
-assert.match(browserModel, /FederalSourceResearch/);
+assert.match(browserModel, /JurisdictionData/);
 assert.doesNotMatch(app, /allocationSource/, "the viewer has one reconciled allocation path");
 assert.doesNotMatch(app, /setAllocationSource|updateAllocationSourceControls/,
   "the spending source is fixed instead of exposed as a tab switcher");
@@ -94,7 +94,7 @@ assert.match(app, /reconcileStateArchive/);
 assert.match(fs.readFileSync("data/federal/federal.js", "utf8"),
   /International Assistance Programs.+federal-department-of-state\.json/,
   "archive State agency exposes the official arms-transfer research panels");
-assert.match(app, /federalResearchCatalog/);
+assert.match(app, /federalSourceCatalog/);
 assert.match(app, /mapMetric\(name, "stateGovernment", "balance", "financial"\)/);
 assert.match(app, /department\.program/);
 assert.match(app, /comparisonLabel/);

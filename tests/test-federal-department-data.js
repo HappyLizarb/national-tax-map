@@ -51,19 +51,33 @@ const tenBillionAccountRows = accountResearch.flatMap((detail) => detail.largeAc
   .filter((row) => Math.abs(row[2]) >= 1e10).map((row) => [detail, row]));
 assert.equal(tenBillionAccountRows.length, 85);
 assert.ok(tenBillionAccountRows.every(([detail, row]) => hasExactSourceBreakdown(detail, row)));
+const billionAccountRows = accountResearch.flatMap((detail) => detail.largeAccountRows.map((row) => [detail, row]));
+assert.equal(billionAccountRows.filter(([detail, row]) => hasExactSourceBreakdown(detail, row)).length, 260);
+assert.equal(billionAccountRows.filter(([, row]) => /publication ceiling/i.test(row[1])).length, 66);
+assert.ok(billionAccountRows.every(([detail, row]) => hasExactSourceBreakdown(detail, row)
+  || /publication ceiling/i.test(row[1])));
 assert.ok(itemBreakdowns.filter((item) => item.accountCount === 1).every((item) => {
   const detail = federalDetails.find((candidate) => candidate.itemBreakdowns?.includes(item));
   return item.rows.filter((row) => row[0] !== "MTS-rounding")
     .every((row) => hasExactSourceBreakdown(detail, row));
 }));
 const availabilityBreakdowns = sourceViews.filter((item) => item.combinedStatementAvailability);
-assert.equal(availabilityBreakdowns.length, 59);
-assert.equal(availabilityBreakdowns.filter((item) => item.rows.every((row) => Math.abs(row[2]) <= 1e10)).length, 19);
+assert.equal(availabilityBreakdowns.length, 234);
+assert.equal(availabilityBreakdowns.filter((item) => item.rows.every((row) => Math.abs(row[2]) <= 1e10)).length, 194);
 for (const item of availabilityBreakdowns) {
   assert.ok(item.rows.filter((row) => row[2]).length > 1);
   assert.equal(item.rows.reduce((sum, row) => sum + cents(row[2]), 0), cents(item.sourceTotal));
   assert.equal(item.covers.reduce((sum, row) => sum + cents(row[2]), 0), cents(item.sourceTotal));
 }
+const billionAvailabilityRows = accountResearch.flatMap((detail) => [
+  ...(detail.sourceBreakdowns || []), ...(detail.supplementalBreakdowns || [])]
+  .filter((item) => item.combinedStatementAvailability)
+  .flatMap((item) => item.rows.filter((row) => Math.abs(row[2]) >= 1e9).map((row) => [detail, row])));
+assert.equal(billionAvailabilityRows.length, 327);
+assert.equal(billionAvailabilityRows.filter(([detail, row]) => hasExactSourceBreakdown(detail, row)).length, 49);
+assert.equal(billionAvailabilityRows.filter(([, row]) => /publication ceiling/i.test(row[1])).length, 278);
+assert.ok(billionAvailabilityRows.every(([detail, row]) => hasExactSourceBreakdown(detail, row)
+  || /publication ceiling/i.test(row[1])));
 const sourceView = (title) => sourceViews.find((item) => item.title === title);
 const epaAwards = sourceView("EPA FY2024 Exchange Network awards by recipient");
 assert.deepEqual([epaAwards.rows.length, epaAwards.rows.reduce((sum, row) => sum + row[2], 0)], [33, 9214647]);

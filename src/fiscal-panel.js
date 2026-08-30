@@ -92,7 +92,7 @@ async function allocationSummary(scope, primary) {
   if (scope === "United States") return primary;
   const archiveUrl = primary.departments.flatMap((row) => row.relatedSources || [])
     .find(([label, url]) => label === "Prior state layer snapshot" && url.startsWith("data/"))?.[1];
-  if (!archiveUrl) throw new Error("No research archive for " + scope);
+  if (!archiveUrl) throw new Error("No official archive for " + scope);
   return model.reconcileStateArchive(scope, await DepartmentData.loadDetail(archiveUrl), primary);
 }
 function renderAllocation(summary, scopeData) {
@@ -115,20 +115,20 @@ function renderAllocation(summary, scopeData) {
   $("#categoryList").innerHTML = departments.map((row, index) => '<button class="category-row" type="button" data-category="' + index + '"><span><i style="background:' + row.chartColor + '"></i>' + escapeHtml(row.name) + '</span><b>' + shareLabel(row) + '</b></button>').join("");
   $("#categoryList").querySelectorAll('[data-category]').forEach((button) =>
     button.addEventListener("click", () => showBreakdown(departments[Number(button.dataset.category)])));
-  const reconciled = summary.coverageStatus === "gaap-reconciled-research-archive";
+  const reconciled = summary.coverageStatus === "gaap-reconciled-official-archive";
   drawDonut(departments, reconciled ? "GAAP" : "100%", reconciled ? "signed reconciliation" : "itemized allocations");
   setText("#sourceExplorerNote", summary.note || "Itemized rows load only after a department is selected.");
-  if (scopeData.kind === "federal") $("#agencyRows").innerHTML = federalResearchCatalog();
+  if (scopeData.kind === "federal") $("#agencyRows").innerHTML = federalSourceCatalog();
   $("#allocationTitle a").href = summary.departments[0]?.sourceUrl || summary.sourceUrl;
 }
 function allocationLabel(summary, total, scopeData) {
-  if (summary.coverageStatus === "gaap-reconciled-research-archive") return model.formatMoney(total) + " GAAP-reconciled total";
+  if (summary.coverageStatus === "gaap-reconciled-official-archive") return model.formatMoney(total) + " GAAP-reconciled total";
   if (scopeData.kind === "federal") return model.formatMoney(total) + " net agency/program outlays";
   const label = summary.coverageStatus === "official-itemized-source-basis"
     ? "official itemized allocations" : "function allocations";
   return model.formatMoney(total) + " " + label;
 }
-function federalResearchCatalog() {
+function federalSourceCatalog() {
   return model.federalSourceRows().map((source) => '<details class="source-catalog"><summary><strong>'
     + escapeHtml(source.label) + '</strong><small>' + escapeHtml(source.status + " · " + source.decision)
     + '</small></summary><div>' + source.links.map((link) => sourceAnchor(link.url, link.label + " ↗")).join("")
@@ -216,12 +216,17 @@ async function loadReconciliationDetail(department, request) {
 async function loadDepartmentDetail(department, request) {
   setText("#sourceExplorerNote", "Loading itemized rows for " + department.name + "…");
   try {
+    const researchUrl = department.id === "census-direct-general"
+      ? department.detailUrl.replace(/census-state-[a-z]{2}-fy2024-direct-general\.json$/, "ipeds-public-university-fy2024.json")
+      : department.researchDetailUrl;
     const [detail, research] = await Promise.all([
       DepartmentData.loadDetail(department.detailUrl),
-      department.researchDetailUrl ? DepartmentData.loadDetail(department.researchDetailUrl) : null
+      researchUrl ? DepartmentData.loadDetail(researchUrl) : null
     ]);
     if (request !== state.detailRequest) return;
     renderDetail(research ? { ...detail,
+      budgetCoverageLabel: research.budgetCoverageLabel,
+      budgetSources: research.budgetSources,
       sourceBreakdowns: [...(detail.sourceBreakdowns || []), ...(research.sourceBreakdowns || [])],
       supplementalBreakdowns: [...(detail.supplementalBreakdowns || []),
         ...(research.supplementalBreakdowns || [])] } : detail);
@@ -232,12 +237,14 @@ async function loadDepartmentDetail(department, request) {
 function renderDetail(detail) {
   const limit = detail.showAll ? detail.rows.length : 500, rows = detail.rows.slice(0, limit);
   const hierarchy = renderReceiptHierarchy(detail, model.formatMoney, escapeHtml);
+  const supplementalCount = (detail.supplementalRows || []).length;
   const flatSingleton = !hierarchy && rows.length === 1 && !rowHasExactBreakdown(detail, rows[0])
-    && !(detail.supplementalRows || []).length;
+    && !supplementalCount;
   const note = detail.note ? " · " + detail.note : "";
   const rowCount = hierarchy ? detail.sourceFloor.accountCount + " Treasury receipt accounts · 1 MTS rounding bridge"
     : flatSingleton ? "leaf account · redundant one-row wrapper removed"
-      : detail.rows.length.toLocaleString() + " itemized rows";
+      : detail.rows.length.toLocaleString() + " itemized rows"
+        + (supplementalCount ? " · " + supplementalCount.toLocaleString() + " separate topic rows" : "");
   setText("#sourceExplorerNote", detail.department + " · " + rowCount + (detail.rows.length > limit ? " · first 500 shown" : "") + note);
   const rendered = new Set(), rowHtml = hierarchy || flatSingleton ? "" : rows.map((row) => {
     const subAgency = row[0], program = row[1], amount = row[2];
@@ -249,5 +256,15 @@ function renderDetail(detail) {
 function detailSourceLinks(detail, rendered) {
   const sources = [...(detail.sourceUrls || [["Official source", detail.sourceUrl]]), ...(detail.relatedSources || [])];
   return '<div class="source-catalog"><strong>Sources</strong><div>' + sources.map(([label, url]) =>
-    '<a href="' + escapeHtml(url) + '" target="_blank" rel="noopener noreferrer">' + escapeHtml(label) + ' ↗</a>').join("") + '</div></div>' + largeAccountCatalog(detail, rendered);
+    '<a href="' + escapeHtml(url) + '" target="_blank" rel="noopener noreferrer">' + escapeHtml(label) + ' ↗</a>').join("")
+    + '</div></div>' + budgetSourceCatalog(detail) + largeAccountCatalog(detail, rendered);
+}
+// Distinguish adopted operating plans from legal appropriation ceilings.
+function budgetSourceCatalog(detail) {
+  if (!detail.budgetSources?.length) return "";
+  return '<div class="source-catalog"><strong>Official FY2024 budget coverage · ' + escapeHtml(detail.budgetCoverageLabel)
+    + '</strong><div>' + detail.budgetSources.map((source) => '<a href="' + escapeHtml(source.sourceUrl)
+      + '" target="_blank" rel="noopener noreferrer"><b>' + escapeHtml(source.scope) + ' ↗</b><small>'
+      + escapeHtml(source.status + ' · ' + source.fiscalPeriod + ' · ' + source.budgetScope
+        + ' Publication ceiling: ' + source.publicationCeiling) + '</small></a>').join("") + '</div></div>';
 }

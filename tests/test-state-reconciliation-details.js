@@ -1,7 +1,9 @@
 const assert = require("node:assert/strict");
 const fs = require("node:fs");
 const model = require("../src/model.js");
-const index = require("../data/department-index.js");
+const jurisdictions = require("../data/jurisdictions.js");
+const index = Object.fromEntries(Object.entries(jurisdictions.states)
+  .map(([name, row]) => [name, row.summaryPath]));
 const detailCache = new Map();
 
 // Convert dollars to integer cents for exact reconciliation assertions.
@@ -31,6 +33,30 @@ const arizonaGaap = JSON.parse(fs.readFileSync(
 const arizonaSigned = model.expandReconciliationSource({ label: "GAAP", direction: 1 }, arizonaGaap);
 assert.ok(arizonaSigned.rows.filter((row) => Math.abs(row[2]) >= 5e9)
   .every((row) => row[1].endsWith("official publication ceiling")));
+
+const illinoisEducation = JSON.parse(fs.readFileSync(
+  "data/state-il/archive-state-source/state-il-state-board-of-education.json", "utf8"));
+const illinoisTransfers = JSON.parse(fs.readFileSync(
+  "data/state-il/archive-state-source/state-il-statutory-transfers.json", "utf8"));
+for (const panel of [...illinoisEducation.itemBreakdowns, ...illinoisTransfers.itemBreakdowns]) {
+  assert.equal(panel.rows.reduce((sum, row) => sum + cents(row[2]), 0), cents(panel.parent[2]));
+  assert.match(panel.sourceUrl, /GroupBy=Fund/);
+}
+assert.deepEqual([illinoisEducation.itemBreakdowns.length, illinoisTransfers.itemBreakdowns.length], [2, 4]);
+assert.ok(illinoisTransfers.rows.slice(0, 4).every((row) => /Statutory Transfers Out/.test(row[1])));
+
+const utah = JSON.parse(fs.readFileSync(
+  "data/state-ut/archive-state-source/state-ut-official-source-summary.json", "utf8"));
+assert.match(utah.departments[0].name, /not a vendor/);
+assert.match(utah.departments[0].program, /data-quality ceiling/);
+const kentuckyUniversities = JSON.parse(fs.readFileSync(
+  "data/state-ky/archive-state-source/state-ky-cabinet-for-universities.json", "utf8"));
+assert.match(kentuckyUniversities.itemBreakdowns[0].rows[0][1], /E398.+source ceiling/);
+const northCarolinaEducation = JSON.parse(fs.readFileSync(
+  "data/state-nc/archive-state-source/state-nc-department-of-public-instruction.json", "utf8"));
+assert.match(northCarolinaEducation.rows[0][1], /128 source records.+aggregation ceiling/);
+assert.ok(californiaCensus.rows.some((row) => /Census code 18/.test(row[1])));
+assert.ok(californiaCensus.rows.some((row) => /Census code 21/.test(row[1])));
 
 // Reconstruct browser-visible rows, including its zero-row filter.
 function expandedRows(source) {

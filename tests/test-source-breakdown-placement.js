@@ -42,7 +42,7 @@ function placementCounts(detail) {
   const rows = (detail.rows || []).slice(0, detail.showAll ? undefined : 500);
   const hasBreakdown = rows.length === 1 && ((detail.itemBreakdowns || []).some((panel) => sameRow(panel.parent, rows[0]))
     || sources.some((panel) => sameRow(panel.displayParent || panel.covers?.[0], rows[0]))
-    || supplements.some((panel) => exactMatch(panel, rows[0])));
+    || supplements.some((panel) => sameRow(panel.parent, rows[0]) || exactMatch(panel, rows[0])));
   if (!(detail.accountingClasses || []).length && (rows.length !== 1 || hasBreakdown
     || (detail.supplementalRows || []).length)) rows.forEach(visit);
   if (detail.accountResearch) (detail.largeAccountRows || []).forEach(nested);
@@ -76,7 +76,7 @@ for (const file of jsonFiles("data")) {
 
 const app = fs.readFileSync("src/app.js", "utf8");
 const fiscalPanel = fs.readFileSync("src/fiscal-panel.js", "utf8");
-assert.equal(panelCount, 309);
+assert.equal(panelCount, 2068);
 assert.equal(renderedPanelCount, panelCount);
 assert.match(app, /function sourceBreakdownParent/);
 assert.match(app, /return sameAccount\(sourceBreakdownParent\(item\), parent\)/);

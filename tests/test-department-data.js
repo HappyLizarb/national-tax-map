@@ -1,7 +1,9 @@
 const assert = require("node:assert/strict");
 const fs = require("node:fs");
 const path = require("node:path");
-const index = require("../data/department-index.js");
+const jurisdictions = require("../data/jurisdictions.js");
+const index = { ...Object.fromEntries(Object.entries(jurisdictions.states)
+  .map(([name, row]) => [name, row.summaryPath])), "United States": jurisdictions.federal.summaryPath };
 
 const root = path.resolve(__dirname, "..");
 const cents = (value) => Math.round(value * 100);
@@ -85,7 +87,7 @@ for (const [scope, summaryPath] of Object.entries(index)) {
   }
 }
 
-assert.equal(stateItemBreakdowns.length, 41);
+assert.equal(stateItemBreakdowns.length, 206);
 assert.ok(stateItemBreakdowns.every((item) => item.rowPrefix === "Census" && item.rows.reduce((sum, row) => sum + cents(row[2]), 0) === cents(item.parent[2])));
 const stateCensusCeilings = stateItemBreakdowns.flatMap((item) => item.rows)
   .filter((row) => Math.abs(row[2]) >= 1e10);
@@ -101,8 +103,8 @@ assert.deepEqual([nyAid.rows.length, cents(nyAid.rows.reduce((sum, row) => sum +
 assert.ok(nyAid.rows.every((row) => Math.abs(row[2]) < 1e10));
 const nycFormulaAid = stateSourceBreakdowns.flatMap((item) => item.rows).find((row) => row[2] === 10076459000);
 assert.match(nycFormulaAid[1], /C01\/STRFORM.*disclosure ceiling/);
-assert.equal(stateBranchBreakdowns.length, 176);
-assert.equal(stateBranchBreakdowns.reduce((sum, item) => sum + item.rows.length, 0), 9488);
+assert.equal(stateBranchBreakdowns.length, 497);
+assert.equal(stateBranchBreakdowns.reduce((sum, item) => sum + item.rows.length, 0), 30404);
 const archivedBranchBreakdowns = stateBranchBreakdowns.filter((item) => item.title.startsWith("Archived official"));
 assert.equal(archivedBranchBreakdowns.length, 0);
 assert.equal(archivedBranchBreakdowns.filter((item) => item.rows.length > 1).length, 0);
@@ -148,13 +150,14 @@ assert.ok(iowaMedicaidMlr.rows.every((row) => Math.abs(row[2]) < 1e10));
 assert.equal(namedBranchBreakdowns.flatMap((item) => item.rows).filter((row) => Math.abs(row[2]) >= 1e10).length, 0);
 assert.ok(stateBranchBreakdowns.every((item) => /not additive|separate|supplemental|subset|unreconciled/.test(item.basis)
   && item.rows.every((row) => /^https:\/\//.test(row[3]))));
-const nonCmsStateCeilings = stateBranchBreakdowns.filter((item) => !item.title.startsWith("CMS-64"))
+const cmsStateBreakdown = (item) => item.dataset?.startsWith("cms-fy2024-") || item.title.startsWith("CMS-64");
+const nonCmsStateCeilings = stateBranchBreakdowns.filter((item) => !cmsStateBreakdown(item))
   .flatMap((item) => item.rows).filter((row) => Math.abs(row[2]) >= 1e10);
 assert.deepEqual(nonCmsStateCeilings.map((row) => [row[0], row[1]]),
   [["Los Angeles", "FY2024-25 Two-Plan accrual estimate · public county ceiling"]]);
-assert.equal(stateBranchBreakdowns.filter((item) => item.title.startsWith("CMS-64")).flatMap((item) => item.rows).filter((row) => Math.abs(row[2]) >= 1e10).length, 13);
-assert.ok(stateBranchBreakdowns.filter((item) => item.title.startsWith("CMS-64")).flatMap((item) => item.rows)
-  .filter((row) => Math.abs(row[2]) >= 1e10).every((row) => /public annual disclosure ceiling/.test(row[1])));
+assert.equal(stateBranchBreakdowns.filter(cmsStateBreakdown).flatMap((item) => item.rows).filter((row) => Math.abs(row[2]) >= 1e10).length, 49);
+assert.ok(stateBranchBreakdowns.filter(cmsStateBreakdown).flatMap((item) => item.rows)
+  .filter((row) => Math.abs(row[2]) >= 1e10).every((row) => /public annual (?:category )?disclosure ceiling/.test(row[1])));
 for (const [title, count, total] of [
   ["New York FY2024 higher-education cash payments by public entity", 5, 8743115816.08],
   ["Florida public universities FY2023-24 actual expenditures by institution and program", 29, 15936265029],

@@ -34,10 +34,9 @@ Open <http://localhost:4173>, or run `node tests/test.js` to validate the data.
 
 ## Data layout
 
-- `data/fiscal/spending.js` is the small ledger shell loaded with the map.
-- `data/fiscal/state-financial-results.js` holds the 50 audited state government-wide
-  controls and preserves each report's precision and audit caveat.
-- `data/department-index.js` maps each jurisdiction to its lazy summary.
+- `data/jurisdictions.js` is the startup manifest and fiscal dataset. Each
+  jurisdiction owns its map totals, lazy summary path, audited GAAP control,
+  optional budget actual, accounting qualification, and source catalogue.
 - `data/federal/federal.js` and `data/state-xx/state-xx.js` contain only the
   peer entities used by the pie. Departments, independent agencies, Congress,
   courts, and state legislatures remain peers where reported.
@@ -50,7 +49,7 @@ Open <http://localhost:4173>, or run `node tests/test.js` to validate the data.
 - Summary and detail amounts reconcile in cents to one official itemized source
   layer per jurisdiction. No synthetic `Others`, `coverage-gap`, or unnamed
   residual row is inserted into a pie.
-- State allocation pies start with the official research archive, add a signed
+- State allocation pies start with the official source archive, add a signed
   `Census adjustments` control, then add a signed `GAAP adjustments` control.
   The two rows reconcile published totals without assigning an unsupported
   difference to a receiver, agency, or program. Selecting either adjustment
@@ -61,13 +60,39 @@ Open <http://localhost:4173>, or run `node tests/test.js` to validate the data.
   resources, expenses, and fiscal-year-end net position for all 50 states. Component
   units and fiduciary funds are excluded; qualified audit scopes are disclosed.
 - California, Pennsylvania, Texas, and Washington retain legislative-budget
-  actual pilots as supporting research; they do not replace the signed
+  actual pilots as supporting evidence; they do not replace the signed
   archive-to-GAAP allocation.
+- Every state's Census code-18 higher-education row lazy-loads an NCES/IPEDS
+  FY2024 overlay. Its 790 official reporting records cover 824 of 826 active
+  public four-year institutions; 34 child campuses remain inside nine parent
+  records and two federally operated schools have no Finance expense record.
+  The $438.231B institutional GAAP view also shows $170.575B of recognized
+  federal, state, local, and level-unassigned capital public support. These are
+  actual revenues received—not adopted budgets or an additive component of the
+  Census state-government total.
+- A second nationwide overlay uses SHEEO Grapevine's revised FY2024 state
+  appropriations. It identifies $60.156B of public four-year operating support
+  within $123.616B of total state higher-education support, including $114.228B
+  of tax appropriations. This is a state budget-support ceiling, not an
+  institution-by-institution all-funds operating budget.
+- Every state view also links its verified official FY2024 budget publications
+  with their exact scope and publication ceiling. Only 10 states have complete
+  statewide all-funds operating-budget coverage; 9 are partial, 3 publish
+  narrower adopted budgets, and 28 fall back to appropriation ceilings.
+- Healthcare views preserve all Census health, hospital, public-welfare, and
+  veterans components and add six FY2024 CMS-64/CHIP service panels per state:
+  total computable spending, federal share, and non-federal financing for each
+  program. The three financing views are alternatives, not additive totals.
+- State defense views surface 92 explicitly named military, National Guard,
+  adjutant-general, and veterans agency totals from 41 official state ledgers.
+  They remain separate from Census because no uniform state-defense function
+  exists; absent agency detail is not reported as zero, and legal public-defense
+  offices and military schools are excluded.
 - Official totals remain the headline. Documented lower bounds use `≥` and a
   star; unreconciled off-budget entities are disclosed without inventing an
   expanded total. State-specific budget and archive maps remain neutral because
   their standards are not comparable.
-- Department rows retain their research-archive amounts. Signed reconciliation
+- Department rows retain their official archive amounts. Signed reconciliation
   rows establish the Census and GAAP checkpoints; qualified causes remain
   unallocated when no official line-item bridge exists.
 - The federal allocation uses the precise FY2024 Treasury MTS net-outlay
@@ -83,27 +108,10 @@ organization/category aggregate and source-record count; that count is not
 presented as a unique employee count. Public congressional office names may
 appear in the House disbursement data; staff names are not imported.
 
-Historical failed probes and their recovered, bounded, or replacement layers
-are recorded in `data/research/source-failures.json`. Unavailable detail is qualified;
-it is never inferred or silently promoted into a pie.
-
-## Research
-
-Research is stored with the datasets as lossless structured commentary. Each
-record retains the original Markdown, evidence links, applicable dataset paths,
-and a SHA-256 checksum:
-
-- [Federal and state source audits](data/research/spending-source-audits.json)
-- [Accounting reconciliations and audited controls](data/research/spending-accounting-controls.json)
-- [USAspending methods and object classes](data/research/federal-methods.json)
-- [Legislative-budget actuals evidence](data/research/legislative-budget-actuals-evidence.md)
-- [State reconciliation rows at or above $10 billion](data/research/state-reconciliation-large-row-decomposition.md)
-- [2026 brackets and tax-rate evidence](data/research/tax-policy-evidence.json)
-- [Household estimate method](data/research/household-tax-estimate-evidence.json)
-- [State GAAP controls](data/fiscal/state-financial-results.js)
-
-See [the data layout](data/README.md) for the commentary schema and its relation
-to numerical inputs.
+Source URLs, accounting qualifications, audit status, and reconciliation rules
+live beside the values they explain. Import logs and dated research transcripts
+are intentionally omitted; unavailable detail is qualified in the owning row
+and is never inferred or silently promoted into a pie.
 
 ## Caveats
 

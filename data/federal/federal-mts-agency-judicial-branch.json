@@ -16,9 +16,43 @@
   "largeAccountBasis": "Exact Combined Statement net outlays by appropriation or fund account. This is a research cross-section of the same department, not another amount to add to MTS classification rows.",
   "itemBreakdownSchema": ["treasuryAccount", "title", "netOutlays"],
   "itemBreakdownBasis": "Exact FY2024 Treasury accounts grouped to one MTS row; each final bridge reconciles account cents to the parent published in rounded $ millions.",
+  "sourceBreakdowns": [
+    {
+      "title": "010-0920-000 FY2024 net outlays by period of availability",
+      "sourceTotal": 6509532804.26,
+      "basis": "Exact FY2024 Treasury Combined Statement availability rows. Published net outlays sum to the parent account in integer cents; rows are a source-native cash schedule, not additional spending.",
+      "sourceLabel": "Treasury FY2024 Combined Statement account table",
+      "sourceUrl": "https://fiscal.treasury.gov/system/files/files/reports-statements/combined-statement/cs2024/c02.xlsx",
+      "combinedStatementAvailability": true,
+      "covers": [
+        [
+          "010-0920-000",
+          "Salaries and Expenses, Courts of Appeals, District Courts, and Other Judicial Services, The Judiciary",
+          6509532804.26
+        ]
+      ],
+      "rows": [
+        [
+          "Fund resources · 2024",
+          "Combined Statement FY2024 net outlays · period-of-availability publication ceiling",
+          6232289187.35
+        ],
+        [
+          "Fund resources · 2023",
+          "Combined Statement FY2024 net outlays · period-of-availability row",
+          258308438.89
+        ],
+        [
+          "Fund resources · No Year",
+          "Combined Statement FY2024 net outlays · period-of-availability row",
+          18935178.02
+        ]
+      ]
+    }
+  ],
   "largeAccountRows": [
     ["010-0920-000", "Salaries and Expenses, Courts of Appeals, District Courts, and Other Judicial Services, The Judiciary", 6509532804.26, 3],
-    ["010-0923-000", "Defender Services, Court of Appeals, District Courts, and Other Judicial Services, The Judiciary", 1465940628.71, 1]
+    ["010-0923-000", "Defender Services, Court of Appeals, District Courts, and Other Judicial Services, The Judiciary · official Treasury publication ceiling (one availability row)", 1465940628.71, 1]
   ],
   "itemBreakdowns": [
     {

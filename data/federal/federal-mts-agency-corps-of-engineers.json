@@ -14,10 +14,39 @@
   "accountResearch": {"accountCount": 22, "largeAccountCount": 3, "netAccountOutlays": 12273613691.11, "threshold": 1000000000, "sourceUrl": "https://fiscal.treasury.gov/system/files/files/reports-statements/combined-statement/cs2024/c43.xlsx"},
   "largeAccountSchema": ["treasuryAccount", "title", "netOutlays", "availabilityRows"],
   "largeAccountBasis": "Exact Combined Statement net outlays by appropriation or fund account. This is a research cross-section of the same department, not another amount to add to MTS classification rows.",
+  "sourceBreakdowns": [
+    {
+      "title": "096-3123-000 FY2024 net outlays by period of availability",
+      "sourceTotal": 2815105847.04,
+      "basis": "Exact FY2024 Treasury Combined Statement availability rows. Published net outlays sum to the parent account in integer cents; rows are a source-native cash schedule, not additional spending.",
+      "sourceLabel": "Treasury FY2024 Combined Statement account table",
+      "sourceUrl": "https://fiscal.treasury.gov/system/files/files/reports-statements/combined-statement/cs2024/c43.xlsx",
+      "combinedStatementAvailability": true,
+      "covers": [
+        [
+          "096-3123-000",
+          "Operation and Maintenance, Corps of Engineers-Civil",
+          2815105847.04
+        ]
+      ],
+      "rows": [
+        [
+          "Fund resources · No Year",
+          "Combined Statement FY2024 net outlays · period-of-availability publication ceiling",
+          2814798684.14
+        ],
+        [
+          "Fund resources · 2020-2021",
+          "Combined Statement FY2024 net outlays · period-of-availability row",
+          307162.9
+        ]
+      ]
+    }
+  ],
   "largeAccountRows": [
-    ["096-3122-000", "Construction, Corps of Engineers, Civil", 3999012706.14, 1],
+    ["096-3122-000", "Construction, Corps of Engineers, Civil · official Treasury publication ceiling (one availability row)", 3999012706.14, 1],
     ["096-3123-000", "Operation and Maintenance, Corps of Engineers-Civil", 2815105847.04, 2],
-    ["096-8863-000", "Harbor Maintenance Trust Fund - Treasury Managed, Corps of Engineers - Civil", 2696586953.66, 2]
+    ["096-8863-000", "Harbor Maintenance Trust Fund - Treasury Managed, Corps of Engineers - Civil · official Treasury publication ceiling (multiple availability rows, one nonzero)", 2696586953.66, 2]
   ],
   "rows": [
     ["Corps of Engineers", "Construction", 3999000000, 3999000000, 1, 3999000000, 0],

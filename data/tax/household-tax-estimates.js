@@ -2,14 +2,13 @@ var householdTaxEstimateData = {
   "asOf": "Estimated 2026 annual federal + state income + property tax",
   "assumptions": "Married filing jointly · four-person married-couple family · two qualifying children under 17 · owner-occupied home ≈ 10× annual income",
   "note": "Income benchmarks are weighted 2024 ACS 1-year PUMS percentiles for four-person married-couple families with children. Totals combine simplified 2026 federal and state income-tax estimates with annual property tax at the jurisdiction's 2024 effective rate applied to a home ≈10× income; mortgage interest, itemized deductions, payroll, local income, refundable, and situation-specific items are excluded. Not tax advice.",
-  "researchCommentary": "data/research/household-tax-estimate-evidence.json",
   "incomeSource": [
     "Census Bureau 2024 ACS 1-year PUMS",
     "https://api.census.gov/data/2024/acs/acs1/pums.html"
   ],
   "methodSource": [
-    "Estimate method & jurisdiction sources",
-    "data/research/household-tax-estimate-evidence.json"
+    "Estimate assumptions and jurisdiction inputs",
+    "data/tax/household-tax-estimates.js"
   ],
   "federalSource": [
     "IRS 2026 brackets and standard deductions",

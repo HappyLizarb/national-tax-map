@@ -10,7 +10,7 @@
   "sourceTotal": 32696836000,
   "sourceUrl": "https://www2.census.gov/programs-surveys/state/data/GS00STATEFIN01.zip",
   "dimension": "Census expenditure function/category",
-  "note": "The primary pie uses the Census FY2024 Annual Survey of State Government Finances because its mutually exclusive expenditure function/category rows sum exactly to the map total. Census reports amounts in $1,000 and includes state-government entities defined by its methodology. The prior state-specific layer is retained as a non-additive comparison; its $38,356,170,590.45 total is not assigned to a Census category. Census categories are functions, not payee transactions.",
+  "note": "The primary pie uses the Census FY2024 Annual Survey of State Government Finances because its mutually exclusive expenditure function/category rows sum exactly to the map total. Census reports amounts in $1,000 and includes state-government entities defined by its methodology. The prior state-specific layer is retained as a non-additive comparison; its $38,356,170,590.45 total contains 99 named payee-field groups and one $35.119 billion aggregate for transactions with an empty vendor field. Census categories are functions, not payee transactions.",
   "reconciliation": {
     "itemizedDifference": 0,
     "normalized": false,
@@ -101,7 +101,7 @@
   ],
   "itemizedTotal": 32696836000,
   "comparison": {
-    "label": "Prior official state itemized layer (non-additive)",
+    "label": "Prior payee-field aggregate layer (non-additive)",
     "url": "https://transparent.utah.gov/entities/highest-paid-vendors",
     "total": 38356170590.45,
     "difference": -5659334590.449997
@@ -117,7 +117,7 @@
       "https://www.census.gov/programs-surveys/state/technical-documentation/complete-technical-documentation/2024.html"
     ],
     [
-      "Prior official state itemized layer (non-additive)",
+      "Prior payee-field aggregate layer (non-additive)",
       "https://transparent.utah.gov/entities/highest-paid-vendors"
     ]
   ]
