@@ -7,7 +7,9 @@ function receiptAccountHtml(account, formatMoney, escapeHtml) {
 }
 
 function receiptGroupHtml(group, accounts, formatMoney, escapeHtml) {
-  const rows = accounts.filter((account) => account.group === group.name)
+  const matches = accounts.filter((account) => account.group === group.name);
+  if (matches.length === 1) return receiptAccountHtml(matches[0], formatMoney, escapeHtml);
+  const rows = matches
     .map((account) => receiptAccountHtml(account, formatMoney, escapeHtml)).join("");
   return '<details class="receipt-group" open><summary><span><strong>' + escapeHtml(group.name)
     + '</strong><small>' + escapeHtml(group.accountCount + " accounts · " + group.explanation)
@@ -15,6 +17,8 @@ function receiptGroupHtml(group, accounts, formatMoney, escapeHtml) {
 }
 
 function receiptClassHtml(category, groups, accounts, formatMoney, escapeHtml) {
+  const matches = accounts.filter((account) => category.groupNames.includes(account.group));
+  if (matches.length === 1) return receiptAccountHtml(matches[0], formatMoney, escapeHtml);
   const groupHtml = category.groupNames.map((name) => groups.find((group) => group.name === name))
     .map((group) => receiptGroupHtml(group, accounts, formatMoney, escapeHtml)).join("");
   return '<details class="receipt-class" open><summary><span><strong>' + escapeHtml(category.name)

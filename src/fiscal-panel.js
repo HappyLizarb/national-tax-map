@@ -5,20 +5,11 @@ function updatePanel() {
   const status = canonical.kind === "federal" ? "Source-backed"
     : financial ? (hasAuditCaveat(financial) ? "Official GAAP · audit caveat" : "Audited GAAP")
       : canonical.comparable ? "Census comparison" : "Separate source basis";
-  animatePanelChange();
   setText("#scopeTitle", canonical.name);
   setText("#scopeContext", canonical.kind === "federal" ? "Federal outlays" : status);
   updateSources(canonical); updateNetPosition(canonical); updateTaxRates(canonical.name);
   updateComparison(canonical); updateAllocation(allocation);
   setText("#dataBasis", canonical.basis);
-}
-// Briefly soften state changes while respecting reduced-motion preferences.
-function animatePanelChange() {
-  if (matchMedia("(prefers-reduced-motion: reduce)").matches) return;
-  [$(".detail-panel"), $(".fiscal-detail")].forEach((element) => element.animate(
-    [{ opacity: .65, transform: "translateY(4px)" }, { opacity: 1, transform: "none" }],
-    { duration: 320, easing: "ease-in-out" }
-  ));
 }
 function updateSources(data) {
   const name = data.name;
@@ -42,6 +33,7 @@ function updateNetPosition(data) {
 }
 function updateTaxRates(name) {
   const tax = model.taxOverviewFor(name);
+  const costsOpen = $(".consumer-costs")?.open;
   const tiers = tax.incomeTiers.split(/ · |; |: (?=[+]?\d)/).filter(Boolean);
   setText("#taxRateAsOf", tax.asOf); setText("#taxRateNote", tax.note);
   setText("#incomeTaxTiersAsOf", tax.asOf); $("#incomeTaxTiersRows").innerHTML = tiers.map((tier) => {
@@ -53,8 +45,10 @@ function updateTaxRates(name) {
   }).join("");
   $("#incomeTaxTiersSource").href = tax.incomeUrl;
   setText("#incomeTaxTiersSource", tax.incomeSource + " ↗");
-  $("#taxEstimateSection").hidden = !tax.household && !tax.costs;
+  $("#taxEstimateSection").hidden = !tax.household || !tax.individual;
   $("#householdTaxRows").innerHTML = renderTaxEstimates(tax, escapeHtml);
+  $("#everydayCostsRows").innerHTML = renderEverydayCosts(tax.costs, escapeHtml);
+  if (costsOpen) $(".consumer-costs").open = true;
   $("#taxRateRows").innerHTML = tax.rows.map((row) => '<article class="tax-rate-card"><span>' + row.label + '</span><strong>' + row.value + '</strong><small>' + row.note + '</small><a href="' + row.url + '" target="_blank" rel="noopener noreferrer">' + row.source + ' ↗</a></article>').join("");
 }
 function updateComparison(data) {
@@ -237,13 +231,16 @@ async function loadDepartmentDetail(department, request) {
 function renderDetail(detail) {
   const limit = detail.showAll ? detail.rows.length : 500, rows = detail.rows.slice(0, limit);
   const hierarchy = renderReceiptHierarchy(detail, model.formatMoney, escapeHtml);
+  const flatSingleton = !hierarchy && rows.length === 1 && !rowHasExactBreakdown(detail, rows[0])
+    && !(detail.supplementalRows || []).length;
   const note = detail.note ? " · " + detail.note : "";
   const rowCount = hierarchy ? detail.sourceFloor.accountCount + " Treasury receipt accounts · 1 MTS rounding bridge"
-    : detail.rows.length.toLocaleString() + " itemized rows";
+    : flatSingleton ? "leaf account · redundant one-row wrapper removed"
+      : detail.rows.length.toLocaleString() + " itemized rows";
   setText("#sourceExplorerNote", detail.department + " · " + rowCount + (detail.rows.length > limit ? " · first 500 shown" : "") + note);
-  $("#agencyRows").innerHTML = detailSourceLinks(detail) + sourceBreakdowns(detail) + hierarchy + (hierarchy ? "" : rows.map((row) => {
+  $("#agencyRows").innerHTML = detailSourceLinks(detail) + sourceBreakdowns(detail) + hierarchy + (hierarchy || flatSingleton ? "" : rows.map((row) => {
     const subAgency = row[0], program = row[1], amount = row[2];
-    return '<div class="agency-row"><span><strong>' + escapeHtml(subAgency) + '</strong><small>' + escapeHtml(program) + '</small></span><b>' + detailAmount(row, detail.rowSchema) + '</b></div>' + itemBreakdown(detail, row) + supplementalBreakdown(detail, row);
+    return '<div class="agency-row"><span><strong>' + escapeHtml(subAgency) + '</strong><small>' + escapeHtml(program) + '</small></span><b>' + detailAmount(row, detail.rowSchema) + '</b></div>' + itemBreakdown(detail, row) + supplementalBreakdown(detail, row) + nestedSourceBreakdowns(detail, row);
   }).join("")) + (detail.supplementalRows || []).slice(0, limit).map((row) => '<a class="agency-row" href="' + escapeHtml(row[4]) + '" target="_blank" rel="noopener noreferrer"><span><strong>' + escapeHtml(row[0]) + '</strong><small>' + escapeHtml(row[1]) + ' · ' + escapeHtml(row[3]) + '</small></span><b>' + model.formatMoney(row[2]) + '</b></a>').join("");
 }
 function detailSourceLinks(detail) {

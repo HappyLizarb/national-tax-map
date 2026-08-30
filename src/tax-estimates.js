@@ -135,14 +135,14 @@ function consumerCostsHtml(costs, escapeHtml) {
   const scope = national ? "Across 50 states + DC" : "Across " + costs.jurisdiction;
   const sources = Object.values(costs.sources).map(([label, url]) => '<a href="' + escapeHtml(url)
     + '" target="_blank" rel="noopener noreferrer">' + escapeHtml(label) + ' ↗</a>').join("");
-  return '<details class="consumer-costs detail-disclosure"><summary><h4><span>Common household costs</span><small>'
-    + escapeHtml(scope) + '</small></h4></summary><div class="consumer-cost-list">'
+  return '<details class="household-tax-detail consumer-costs detail-disclosure"><summary><h3><span>Everyday costs</span><small>'
+    + escapeHtml(scope) + '</small></h3></summary><div class="consumer-cost-list">'
     + costs.items.map((item) => costRowHtml(item, costs, escapeHtml)).join("")
     + '</div><div class="tax-estimate-sources consumer-cost-sources">' + sources + '</div></details>';
 }
 
 function renderTaxEstimates(tax, escapeHtml) {
-  if ((!tax.household || !tax.individual) && !tax.costs) return "";
+  if (!tax.household || !tax.individual) return "";
   const sharedAsOf = tax.household?.asOf === tax.individual?.asOf ? tax.household?.asOf : "";
   const profiles = tax.household && tax.individual ? '<div class="tax-estimate-profiles">'
     + estimateProfileHtml("Household of four", tax.household, sharedAsOf, escapeHtml)
@@ -152,7 +152,14 @@ function renderTaxEstimates(tax, escapeHtml) {
   const footer = profiles ? '<footer class="tax-estimate-footer"><small>' + note
     + '</small><div class="tax-estimate-sources">' + estimateSourceLinks(tax, escapeHtml) + "</div></footer>" : "";
   const estimates = profiles ? '<article class="tax-estimate-window">' + asOf + profiles + footer + "</article>" : "";
-  return estimates + consumerCostsHtml(tax.costs, escapeHtml);
+  return estimates;
 }
 
-if (typeof module !== "undefined") module.exports = renderTaxEstimates;
+function renderEverydayCosts(costs, escapeHtml) {
+  return consumerCostsHtml(costs, escapeHtml);
+}
+
+if (typeof module !== "undefined") {
+  module.exports = renderTaxEstimates;
+  module.exports.renderEverydayCosts = renderEverydayCosts;
+}

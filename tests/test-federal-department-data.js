@@ -28,7 +28,7 @@ for (const item of itemBreakdowns) {
   assert.ok(item.rows.slice(0, -1).every((row, index, rows) => !index || Math.abs(rows[index - 1][2]) >= Math.abs(row[2])));
 }
 const supplementalBreakdowns = federalDetails.flatMap((detail) => detail.supplementalBreakdowns || []);
-assert.equal(supplementalBreakdowns.length, 26);
+assert.equal(supplementalBreakdowns.length, 24);
 for (const detail of federalDetails) {
   for (const item of detail.supplementalBreakdowns || []) {
     assert.ok(detail.rows.some((row) => row[0] === item.parent[0] && row[1] === item.parent[1]
@@ -37,7 +37,18 @@ for (const detail of federalDetails) {
   }
 }
 const sourceViews = federalDetails.flatMap((detail) => [...(detail.sourceBreakdowns || []), ...(detail.supplementalBreakdowns || [])]);
+const allBreakdowns = federalDetails.flatMap((detail) => [...(detail.itemBreakdowns || []),
+  ...(detail.sourceBreakdowns || []), ...(detail.supplementalBreakdowns || [])]);
+assert.ok(allBreakdowns.every((item) => item.rows.filter((row) => row[2]).length !== 1));
 assert.ok(sourceViews.every((item) => item.rows.every((row, index, rows) => !index || rows[index - 1][2] >= row[2])));
+const availabilityBreakdowns = sourceViews.filter((item) => item.combinedStatementAvailability);
+assert.equal(availabilityBreakdowns.length, 59);
+assert.equal(availabilityBreakdowns.filter((item) => item.rows.every((row) => Math.abs(row[2]) <= 1e10)).length, 19);
+for (const item of availabilityBreakdowns) {
+  assert.ok(item.rows.filter((row) => row[2]).length > 1);
+  assert.equal(item.rows.reduce((sum, row) => sum + cents(row[2]), 0), cents(item.sourceTotal));
+  assert.equal(item.covers.reduce((sum, row) => sum + cents(row[2]), 0), cents(item.sourceTotal));
+}
 const sourceView = (title) => sourceViews.find((item) => item.title === title);
 const epaAwards = sourceView("EPA FY2024 Exchange Network awards by recipient");
 assert.deepEqual([epaAwards.rows.length, epaAwards.rows.reduce((sum, row) => sum + row[2], 0)], [33, 9214647]);
@@ -60,9 +71,6 @@ const turkiyeF16 = sourceView("Türkiye F-16 notification estimate by statutory 
 assert.deepEqual([turkiyeF16.length, turkiyeF16.reduce((sum, row) => sum + row[2], 0)], [2, 23000000000]);
 assert.equal(turkiyeF16.filter((row) => Math.abs(row[2]) > 1e10).length, 1);
 assert.match(turkiyeF16[0][1], /public disclosure ceiling/);
-const currentTurkiyeF16 = sourceView("Türkiye current F-16 package estimate after scope reduction").rows;
-assert.deepEqual([currentTurkiyeF16.length, currentTurkiyeF16[0][2]], [1, 7000000000]);
-assert.match(currentTurkiyeF16[0][1], /\$1\.4B initial payment disclosed/);
 const marketplaceAptc = sourceView("CMS February 2024 Marketplace advance premium tax credit by state");
 assert.deepEqual([marketplaceAptc.rows.length, marketplaceAptc.rows.reduce((sum, row) => sum + row[2], 0)], [51, 10346293507]);
 assert.ok(marketplaceAptc.rows.every((row) => Math.abs(row[2]) < 1e10));
@@ -255,8 +263,6 @@ assert.equal(cents(sourceView("California CY2024 largest disclosed Medicaid drug
   .reduce((sum, row) => sum + row[2], 0)), cents(2618545457.50));
 assert.equal(sourceView("OASI benefits by beneficiary type").rows.reduce((sum, row) => sum + row[2], 0), 1316424000000);
 assert.equal(sourceView("DI benefits by beneficiary type").rows.reduce((sum, row) => sum + row[2], 0), 154983000000);
-assert.deepEqual(sourceView("Direct Consolidation Loan FY2024 gross-disbursement ceiling").rows,
-  [["Consolidation", "Gross consolidation flow · public national disclosure ceiling", 62156000000]]);
 const vaMedicalOutlays = sourceView("VA Medical Services FY2024 actual-outlay accounts").rows;
 assert.ok(vaMedicalOutlays.filter((row) => Math.abs(row[2]) >= 1e10)
   .every((row) => /public OMB classification ceiling/.test(row[1])));

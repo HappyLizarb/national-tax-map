@@ -37,12 +37,15 @@ for (const record of records) {
 assert.equal(urls.size, 1139);
 const generatedViews = ["agriculture", "health-and-human-services", "defense-military-programs", "education", "homeland-security", "housing-and-urban-development", "justice", "labor", "state", "veterans-affairs"].flatMap((name) =>
   require(`../data/federal/federal-mts-agency-department-of-${name}.json`).sourceBreakdowns || []);
-assert.equal(generatedViews.length, 66);
+assert.equal(generatedViews.filter((view) => !view.combinedStatementAvailability).length, 66);
+assert.equal(generatedViews.filter((view) => view.combinedStatementAvailability).length, 50);
 const gdxViews = generatedViews.filter((view) => /VA FY2024 (?:Compensation and Pension|Medical Care|Education and Veteran Readiness)/.test(view.title));
 assert.equal(gdxViews.length, 9);
 assert.equal(gdxViews.reduce((sum, view) => sum + view.rows.length, 0), 1673);
 assert.equal(gdxViews.flatMap((view) => view.rows).filter((row) => Math.abs(row[2]) >= 1e10).length, 0);
-assert.equal(require("../data/federal/federal-mts-agency-department-of-transportation.json").sourceBreakdowns.length, 3);
+const transportationViews = require("../data/federal/federal-mts-agency-department-of-transportation.json").sourceBreakdowns;
+assert.equal(transportationViews.filter((view) => !view.combinedStatementAvailability).length, 3);
+assert.equal(transportationViews.filter((view) => view.combinedStatementAvailability).length, 1);
 assert.equal(["veterans-affairs", "transportation", "the-treasury"].flatMap((name) =>
   require(`../data/federal/federal-mts-agency-department-of-${name}.json`).supplementalBreakdowns || []).length, 6);
 const supersededResearch = /^(?:HOUSEHOLD_TAX_ESTIMATE_RESEARCH|SOURCE_RESEARCH_.+|TAX_BRACKETS_2026_A_I|TAX_RATE_RESEARCH_.+)\.md$/;

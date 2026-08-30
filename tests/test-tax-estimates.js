@@ -1,6 +1,7 @@
 const assert = require("node:assert/strict");
 const fs = require("node:fs");
 const renderTaxEstimates = require("../src/tax-estimates.js");
+const { renderEverydayCosts } = renderTaxEstimates;
 const consumerCosts = require("../data/tax/consumer-costs.js");
 for (const [name, state] of Object.entries(consumerCosts.jurisdictions)) {
   assert.equal(typeof consumerCosts.minimumWages[state.code], "number", name + " minimum wage");
@@ -26,9 +27,10 @@ const tax = { incomeUrl: "https://example.com/state", incomeSource: "State sched
   individual: profile("https://example.com/individual") };
 tax.individual.levels = tax.individual.levels.map((row) => ({ ...row, tax: 6500, propertyTax: null }));
 const html = renderTaxEstimates(tax, escapeHtml);
+const costsHtml = renderEverydayCosts(tax.costs, escapeHtml);
 
 assert.equal((html.match(/class="tax-estimate-window"/g) || []).length, 1);
-assert.match(html, /<\/article><details class="consumer-costs detail-disclosure"><summary>/);
+assert.doesNotMatch(html, /consumer-costs/);
 assert.equal((html.match(/class="tax-estimate-profile"/g) || []).length, 2);
 assert.equal((html.match(/class="tax-estimate-level"/g) || []).length, 8);
 assert.equal((html.match(/class="tax-estimate-income"/g) || []).length, 8);
@@ -42,23 +44,22 @@ for (const source of ["federal", "method", "property"])
 assert.equal((html.match(/Estimated 2026/g) || []).length, 1);
 assert.match(html, /Household of four/);
 assert.match(html, /Working individual/);
-assert.equal((html.match(/class="consumer-cost-row"/g) || []).length, 9);
-assert.match(html, /ACS median gross rent across places; equal place weight/);
-assert.match(html, /BLS price adjusted with BEA goods parity; equal area weight/);
-assert.match(html, /Statewide standard rate; local and worker-specific rates excluded/);
-assert.doesNotMatch(html, /Product ranges are estimates:/);
-assert.match(html, /Combined average 8\.99%/);
-assert.match(html, /Minimum wage · hour/);
-assert.match(html, /State standard \$16\.90\/hr/);
-assert.equal((html.match(/class="consumer-cost-marker is-state"/g) || []).length, 9);
+assert.match(costsHtml, /^<details class="household-tax-detail consumer-costs detail-disclosure"><summary><h3><span>Everyday costs<\/span>/);
+assert.equal((costsHtml.match(/class="consumer-cost-row"/g) || []).length, 9);
+assert.match(costsHtml, /ACS median gross rent across places; equal place weight/);
+assert.match(costsHtml, /BLS price adjusted with BEA goods parity; equal area weight/);
+assert.match(costsHtml, /Statewide standard rate; local and worker-specific rates excluded/);
+assert.doesNotMatch(costsHtml, /Product ranges are estimates:/);
+assert.match(costsHtml, /Combined average 8\.99%/);
+assert.match(costsHtml, /Minimum wage · hour/);
+assert.match(costsHtml, /State standard \$16\.90\/hr/);
+assert.equal((costsHtml.match(/class="consumer-cost-marker is-state"/g) || []).length, 9);
 assert.doesNotMatch(html, /Not tax advice/);
 assert.doesNotMatch(html, /<strong>Illustrative<\/strong>/);
 assert.match(html, /&lt;strong&gt;Illustrative&lt;\/strong&gt;/);
 assert.equal(renderTaxEstimates({ household: null }, escapeHtml), "");
-const national = renderTaxEstimates({ household: null, individual: null,
-  costs: { ...consumerCosts, jurisdiction: "United States" } }, escapeHtml);
-assert.equal((national.match(/class="tax-estimate-window"/g) || []).length, 0);
-assert.match(national, /^<details class="consumer-costs detail-disclosure"><summary>/);
+const national = renderEverydayCosts({ ...consumerCosts, jurisdiction: "United States" }, escapeHtml);
+assert.match(national, /^<details class="household-tax-detail consumer-costs detail-disclosure"><summary>/);
 assert.equal((national.match(/class="consumer-cost-row"/g) || []).length, 9);
 assert.match(national, /P25 · [A-Z]{2}/);
 assert.doesNotMatch(national, /consumer-cost-marker is-state/);

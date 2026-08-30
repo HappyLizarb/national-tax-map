@@ -24,8 +24,9 @@ assert.equal(detail.rows.reduce((sum, row) => sum + cents(row[2]), 0), cents(-33
 
 const html = render(detail);
 assert.equal((html.match(/class="receipt-class"/g) || []).length, 2);
-assert.equal((html.match(/class="receipt-group"/g) || []).length, 4);
+assert.equal((html.match(/class="receipt-group"/g) || []).length, 3);
 assert.equal((html.match(/class="agency-row receipt-account"/g) || []).length, 107);
+assert.doesNotMatch(html, /<strong>Other Interest<\/strong><small>1 accounts/);
 assert.equal((html.match(/MTS rounded-control bridge/g) || []).length, 1);
 assert.match(html, /107 source-native receipt accounts · 8 audited ≥\$10B accounts/);
 assert.match(html, /TAS 097-X-5472-001 · Internal employer contribution · No public additive children/);

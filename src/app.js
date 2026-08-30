@@ -145,7 +145,8 @@ function largeAccountCatalog(detail) {
     + escapeHtml(summary + " · the same spending regrouped; reference only, not a subtotal")
     + '</small></summary><div>' + rows.map((row) => '<small><b>' + model.formatMoney(row[2])
       + '</b> · TAS ' + escapeHtml(row[0]) + ' · ' + escapeHtml(row[1]) + ' · '
-      + row[3].toLocaleString() + (row[3] === 1 ? ' availability row' : ' availability rows') + '</small>').join("")
+      + row[3].toLocaleString() + (row[3] === 1 ? ' availability row' : ' availability rows') + '</small>'
+      + nestedSourceBreakdowns(detail, row)).join("")
     + '<a href="' + escapeHtml(research.sourceUrl) + '" target="_blank" rel="noopener noreferrer">Open official Treasury account table ↗</a></div></details>';
 }
 
@@ -157,7 +158,8 @@ function itemBreakdown(detail, parent) {
     + match.accountCount.toLocaleString() + ' accounts</summary><small class="item-breakdown-note">'
     + escapeHtml(match.basis || detail.itemBreakdownBasis) + '</small>' + match.rows.map((row) =>
       '<div class="agency-row"><span><strong>' + escapeHtml(row[1]) + '</strong><small>'
-      + escapeHtml((match.rowPrefix || "TAS") + " " + row[0]) + '</small></span><b>' + model.formatMoney(row[2]) + '</b></div>').join("")
+      + escapeHtml((match.rowPrefix || "TAS") + " " + row[0]) + '</small></span><b>' + model.formatMoney(row[2])
+      + '</b></div>' + nestedSourceBreakdowns(detail, row)).join("")
     + '<a href="' + escapeHtml(match.sourceUrl) + '" target="_blank" rel="noopener noreferrer">Open '
     + escapeHtml(match.sourceLabel || "official Treasury account table") + ' ↗</a></details>';
 }
@@ -169,7 +171,29 @@ function supplementalBreakdown(detail, parent) {
 }
 
 function sourceBreakdowns(detail) {
-  return (detail.sourceBreakdowns || []).map(renderSourceBreakdown).join("");
+  return (detail.sourceBreakdowns || []).filter((item) =>
+    !(item.covers || []).some((row) => exactSourceBreakdown(item, row))).map(renderSourceBreakdown).join("");
+}
+
+function sameAccount(left, right) {
+  return left[0] === right[0] && left[1] === right[1]
+    && Math.round(left[2] * 100) === Math.round(right[2] * 100);
+}
+
+function exactSourceBreakdown(item, parent) {
+  const rows = item.rows.reduce((sum, row) => sum + Math.round(row[2] * 100), 0);
+  const covers = (item.covers || []).reduce((sum, row) => sum + Math.round(row[2] * 100), 0);
+  return rows === covers && (item.covers || []).some((row) => sameAccount(row, parent));
+}
+
+function nestedSourceBreakdowns(detail, parent) {
+  return (detail.sourceBreakdowns || []).filter((item) => exactSourceBreakdown(item, parent))
+    .map(renderSourceBreakdown).join("");
+}
+
+function rowHasExactBreakdown(detail, parent) {
+  return (detail.itemBreakdowns || []).some((item) => sameAccount(item.parent, parent))
+    || (detail.sourceBreakdowns || []).some((item) => exactSourceBreakdown(item, parent));
 }
 
 function renderSourceBreakdown(match) {

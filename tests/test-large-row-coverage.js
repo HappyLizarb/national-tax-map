@@ -4,6 +4,7 @@ const fs = require("node:fs");
 const index = require("../data/department-index.js");
 const model = require("../src/model.js");
 const threshold = 5_000_000_000;
+const cents = (value) => Math.round(value * 100);
 const key = (row) => JSON.stringify(row.slice(0, 3));
 const sections = ["itemBreakdowns", "supplementalBreakdowns", "sourceBreakdowns"];
 const counts = { large: 0, breakdowns: 0, ceilings: 0 };
@@ -43,5 +44,27 @@ for (const [scope, summaryPath] of Object.entries(index)) {
     for (const source of bridge.detailSources) auditSource(scope, source);
 }
 
-assert.deepEqual(counts, { large: 483, breakdowns: 117, ceilings: 366 });
+for (const file of [
+  "data/state-mi/archive-state-source/state-mi-health-and-human-services.json",
+  "data/state-mi/archive-state-source/state-mi-education.json"
+]) {
+  const detail = readJson(file), panel = detail.sourceBreakdowns[0], parent = detail.rows.find((row) => key(row) === key(panel.covers[0]));
+  const publishedRows = panel.rows.reduce((sum, row) => sum + Number(row[1].match(/([\d,]+) payment rows/)[1].replaceAll(",", "")), 0);
+  assert.equal(panel.rows.reduce((sum, row) => sum + cents(row[2]), 0), cents(panel.sourceTotal));
+  assert.equal(panel.covers.reduce((sum, row) => sum + cents(row[2]), 0), cents(panel.sourceTotal));
+  assert.equal(publishedRows, parent[4]);
+  assert.ok(panel.rows.every((row) => Math.abs(row[2]) < 1e10));
+}
+
+const ohio = readJson("data/state-oh/archive-state-source/state-oh-department-of-medicaid.json").sourceBreakdowns[0];
+assert.equal(ohio.rows.reduce((sum, row) => sum + cents(row[2]), 0), cents(ohio.sourceTotal));
+assert.equal(ohio.covers.reduce((sum, row) => sum + cents(row[2]), 0), cents(ohio.sourceTotal));
+assert.equal(ohio.rows.length, 34);
+
+const newJersey = readJson("data/state-nj/archive-state-source/state-nj-human-services.json").sourceBreakdowns[0];
+assert.equal(newJersey.rows.reduce((sum, row) => sum + cents(row[2]), 0), cents(newJersey.sourceTotal));
+assert.equal(newJersey.covers.reduce((sum, row) => sum + cents(row[2]), 0), cents(newJersey.sourceTotal));
+assert.equal(newJersey.rows.reduce((sum, row) => sum + Number(row[1].match(/([\d,]+) source rows/)[1].replaceAll(",", "")), 0), 630);
+
+assert.deepEqual(counts, { large: 483, breakdowns: 122, ceilings: 361 });
 console.log("All browser-visible $5 billion rows are exact breakdowns or labeled source ceilings.");
