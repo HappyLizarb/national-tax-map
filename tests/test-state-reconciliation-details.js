@@ -29,7 +29,7 @@ assert.equal(alaskaSigned.rows.reduce((sum, row) => sum + row[2], 0), alaskaGaap
 const arizonaGaap = JSON.parse(fs.readFileSync(
   "data/state-az/archive-state-source/state-az-acfr-function-context.json", "utf8"));
 const arizonaSigned = model.expandReconciliationSource({ label: "GAAP", direction: 1 }, arizonaGaap);
-assert.ok(arizonaSigned.rows.filter((row) => Math.abs(row[2]) >= 1e10)
+assert.ok(arizonaSigned.rows.filter((row) => Math.abs(row[2]) >= 5e9)
   .every((row) => row[1].endsWith("official publication ceiling")));
 
 // Reconstruct browser-visible rows, including its zero-row filter.

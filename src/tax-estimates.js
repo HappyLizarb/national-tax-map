@@ -112,10 +112,11 @@ function costRowHtml(item, costs, escapeHtml) {
   const markers = collapseMarkers(markersFor(item, costs), item.kind);
   const values = markers.map((marker) => marker.value);
   const min = Math.min(...values), max = Math.max(...values);
-  const scope = item.kind === "rent" ? "Observed across Census places · equal place weight"
-    : item.kind === "salesTax" ? "State base · weighted average · published maximum"
-      : item.kind === "minimumWage" ? "Across 50 states + DC · general rates"
-      : "Estimated across metro and nonmetro areas · equal area weight";
+  const scope = item.kind === "rent" ? "ACS median gross rent across places; equal place weight"
+    : item.kind === "salesTax" ? "State base, weighted average and published maximum"
+      : item.kind === "minimumWage" ? "Statewide standard rate; local and worker-specific rates excluded"
+        : item.kind === "electricity" ? "EIA price adjusted with BEA utility parity; equal area weight"
+          : "BLS price adjusted with BEA goods parity; equal area weight";
   const benchmark = state ? (item.kind === "salesTax" ? "Combined average "
     : item.kind === "minimumWage" ? "State standard " : "State benchmark ")
     + formatCost(stateItemBenchmark(item, state, costs), item.kind) : formatCost(min, item.kind) + "–" + formatCost(max, item.kind);
@@ -134,10 +135,10 @@ function consumerCostsHtml(costs, escapeHtml) {
   const scope = national ? "Across 50 states + DC" : "Across " + costs.jurisdiction;
   const sources = Object.values(costs.sources).map(([label, url]) => '<a href="' + escapeHtml(url)
     + '" target="_blank" rel="noopener noreferrer">' + escapeHtml(label) + ' ↗</a>').join("");
-  return '<section class="consumer-costs"><header><h4>Common household costs</h4><span>' + escapeHtml(scope)
-    + '</span></header><p>' + escapeHtml(costs.note) + '</p><div class="consumer-cost-list">'
+  return '<details class="consumer-costs detail-disclosure"><summary><h4><span>Common household costs</span><small>'
+    + escapeHtml(scope) + '</small></h4></summary><div class="consumer-cost-list">'
     + costs.items.map((item) => costRowHtml(item, costs, escapeHtml)).join("")
-    + '</div><div class="tax-estimate-sources consumer-cost-sources">' + sources + '</div></section>';
+    + '</div><div class="tax-estimate-sources consumer-cost-sources">' + sources + '</div></details>';
 }
 
 function renderTaxEstimates(tax, escapeHtml) {
@@ -150,8 +151,8 @@ function renderTaxEstimates(tax, escapeHtml) {
   const asOf = sharedAsOf ? '<p class="tax-estimate-as-of">' + escapeHtml(sharedAsOf) + '</p>' : "";
   const footer = profiles ? '<footer class="tax-estimate-footer"><small>' + note
     + '</small><div class="tax-estimate-sources">' + estimateSourceLinks(tax, escapeHtml) + "</div></footer>" : "";
-  return '<article class="tax-estimate-window">' + asOf + profiles
-    + consumerCostsHtml(tax.costs, escapeHtml) + footer + "</article>";
+  const estimates = profiles ? '<article class="tax-estimate-window">' + asOf + profiles + footer + "</article>" : "";
+  return estimates + consumerCostsHtml(tax.costs, escapeHtml);
 }
 
 if (typeof module !== "undefined") module.exports = renderTaxEstimates;

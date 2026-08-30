@@ -26,5 +26,18 @@
     ["Department For Medicaid Services","Health & Family Services Cabinet · Department For Medicaid Services",279525524.62,279525524.62,92],
     ["Medicaid Services Benefits","Health & Family Services Cabinet · Medicaid Services Benefits",18197104828.94,18197104828.94,6],
     ["Office for Children With Special Health Care Needs","Health & Family Services Cabinet · Office for Children With Special Health Care Needs",21824266.82,21824266.82,101]
-  ]
+  ],
+  "itemBreakdowns": [{
+    "parent": ["Medicaid Services Benefits", "Health & Family Services Cabinet · Medicaid Services Benefits", 18197104828.94],
+    "accountCount": 4,
+    "rows": [
+      ["E463", "Medical Assistance Benefits - 1099 reportable", 4616456598.23],
+      ["E464", "Other Benefits", -740122562.45],
+      ["E466", "Other Benefits - 1099 reportable", 14320770793.16],
+      ["E461", "Aged, Blind & Disabled", 0]
+    ],
+    "sourceUrl": "https://secure2.kentucky.gov/TransparencyWebApi/v1/SpendingAndVendorDetail?dataGroupingView=ObjectView&requestYear=2024&branchCode=EXEC&cabinetCode=53&departmentCode=748&classCode=460&objectCode=&vendorName=&beginDate=&endDate=&maxReturnRows=100&startingIndex=",
+    "sourceLabel": "Kentucky Transparency official object hierarchy",
+    "basis": "Exact FY2024 object rows within Medicaid Services Benefits that reconcile to the department total."
+  }]
 }

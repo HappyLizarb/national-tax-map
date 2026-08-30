@@ -7,6 +7,27 @@
   "sourceTotal": 7327054770.73,
   "sourceUrl": "https://tableau.state.co.us/t/DPA_TOPS/views/TOPSExpenses/TOPSExpenses",
   "rowSchema": ["subAgency","program","amount","sourceAmount","sourceRows"],
+  "itemBreakdowns": [{
+    "parent": ["Expense code 5550", "Distributions - School Districts", 5136116171.89],
+    "accountCount": 12,
+    "rows": [
+      ["2023-07", "July 2023 · 459 transactions", 415028195.10],
+      ["2023-08", "August 2023 · 554 transactions", 456550512.42],
+      ["2023-09", "September 2023 · 331 transactions", 413279842.87],
+      ["2023-10", "October 2023 · 487 transactions", 427839185.66],
+      ["2023-11", "November 2023 · 488 transactions", 479207282.26],
+      ["2023-12", "December 2023 · 478 transactions", 431001644.54],
+      ["2024-01", "January 2024 · 522 transactions", 426765629.50],
+      ["2024-02", "February 2024 · 308 transactions", 402157602.23],
+      ["2024-03", "March 2024 · 770 transactions", 424655732.38],
+      ["2024-04", "April 2024 · 310 transactions", 402166515.02],
+      ["2024-05", "May 2024 · 387 transactions", 407006161.61],
+      ["2024-06", "June 2024 · 638 transactions", 450457868.30]
+    ],
+    "sourceUrl": "https://tableau.state.co.us/t/DPA_TOPS/views/TOPSExpenses/TOPSExpenses",
+    "sourceLabel": "Colorado TOPS FY2024 monthly crosstabs",
+    "basis": "All 5,732 official Department of Education expense-code 5550 transactions are grouped by journal month. The 12 month totals reconcile to the parent amount to the cent and are each below $5 billion."
+  }],
   "hierarchyNote": "Rows group official FY2024 TOPS transactions by expense code and expense-code name across divisions within this department.",
   "sourceCheck": {"sourceRows":38375,"sourceDivisions":3,"groupRows":126,"difference":0},
   "rows": [

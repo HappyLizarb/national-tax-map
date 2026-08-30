@@ -16,11 +16,22 @@
   </script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,500;6..72,600;6..72,700&family=Public+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles/styles.css?v=20">
-  <link rel="stylesheet" href="styles/details.css?v=14">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/styles.css?v=27">
+  <link rel="stylesheet" href="styles/details.css?v=22">
+  <link rel="stylesheet" href="styles/polish.css?v=6">
 </head>
 <body>
+  <a class="skip-link" href="#mainContent">Skip to content</a>
+  <dialog class="entry-disclaimer" id="entryDisclaimer" aria-labelledby="entryDisclaimerTitle" aria-describedby="entryDisclaimerText">
+    <form method="dialog">
+      <p class="eyebrow">Before you explore</p>
+      <h2 id="entryDisclaimerTitle">Illustrative information only</h2>
+      <p id="entryDisclaimerText">Public Ledger is an educational illustration—not legal, financial, tax, investment, accounting, or personal advice. Verify the source material and consult a qualified professional before making decisions.</p>
+      <button type="submit" autofocus>I understand</button>
+    </form>
+  </dialog>
+
   <header class="topbar">
     <a class="brand" href="#" aria-label="Public Ledger home">
       <span class="brand-mark" aria-hidden="true">PL</span>
@@ -43,21 +54,21 @@
     </div>
   </header>
 
-  <main>
+  <main id="mainContent">
     <div class="dashboard">
     <section class="map-pane" aria-labelledby="map-title">
       <div class="map-intro">
         <div>
           <p class="eyebrow">United States · Fiscal year 2024</p>
-          <h1 id="map-title">Follow the public dollar.</h1>
-          <p class="lede">Trace reported federal outlays and state-government expenditures to the programs and people receiving them.</p>
+          <h1 id="map-title">Your tax dollars at work.</h1>
+          <p class="lede">As taxpayers, know how your government spends your money without endless file-digging.</p>
         </div>
       </div>
 
       <div class="map-stage">
-        <svg id="usMap" role="img" aria-labelledby="map-title map-description" viewBox="0 0 900 600">
+        <svg id="usMap" role="img" aria-labelledby="map-title map-description" viewBox="0 0 900 520">
           <desc id="map-description">Select a state to compare audited GAAP fiscal indicators; select it again to return to the national view.</desc>
-          <text class="map-loading" x="450" y="260" text-anchor="middle">Loading map…</text>
+          <text class="map-loading" x="450" y="230" text-anchor="middle">Loading map…</text>
         </svg>
         <div class="map-tooltip" id="mapTooltip" role="tooltip" hidden></div>
         <div class="map-legend" aria-label="Map color scale">
@@ -77,51 +88,36 @@
     <aside class="detail-panel" aria-live="polite" aria-labelledby="scopeTitle">
       <div class="panel-heading">
         <div>
-          <p class="eyebrow" id="scopeContext">Federal outlays · FY 2024</p>
+          <p class="eyebrow" id="scopeContext">Federal outlays</p>
           <h2><a class="scope-title-link" id="scopeLink" href="https://www.bea.gov/data/government/receipts-and-expenditures" target="_blank" rel="noopener noreferrer"><span id="scopeTitle">United States</span></a></h2>
           <div class="source-list" id="sourceList" aria-label="Official sources"></div>
         </div>
-          <span class="data-status" id="budgetStatus">Source-backed</span>
       </div>
-
-      <section class="kpi-grid" aria-label="Fiscal totals">
-        <article>
-          <p id="revenueLabel">Receipts / revenue</p>
-          <strong><span id="revenueValue">$8.42T</span><sup class="kpi-disclosure-mark" data-kpi-disclosure="revenue" aria-hidden="true" hidden>*</sup></strong>
-        </article>
-        <article>
-          <p id="spendingLabel">Spending</p>
-          <strong><span id="spendingValue">$10.37T</span><sup class="kpi-disclosure-mark" data-kpi-disclosure="spending" aria-hidden="true" hidden>*</sup></strong>
-          <small class="outside-budget-disclaimer" id="outsideBudgetDisclosure" hidden>
-            <b>Outside official legislative budget</b>
-            <span id="outsideBudgetText"></span>
-          </small>
-        </article>
-        <article class="result-kpi">
-          <p id="balanceLabel">Balance</p>
-          <strong><span id="balanceValue">−$1.95T</span><sup class="kpi-disclosure-mark" data-kpi-disclosure="balance" aria-hidden="true" hidden>*</sup></strong>
-        </article>
-        <small class="budget-disclaimer" id="budgetDisclosure" hidden></small>
-      </section>
 
       <section class="panel-section" aria-labelledby="gapTitle">
         <div class="section-heading">
           <h3 id="gapTitle"><a class="section-source" data-source-link href="https://www.bea.gov/data/government/receipts-and-expenditures" target="_blank" rel="noopener noreferrer">Revenue–spending gap</a></h3>
-          <span id="gapPercent">18.8% deficit</span>
+          <span id="gapPercent"><span id="gapPercentText">18.8% deficit</span><sup id="auditCaveatMark" hidden>*</sup></span>
         </div>
         <div class="comparison-bars">
           <div class="bar-row">
-            <span id="revenueBarLabel">Receipts / revenue</span>
+            <span id="revenueBarLabel">GAAP Resources</span>
             <div class="bar-track"><i class="bar revenue-bar" id="revenueBar"></i></div>
             <b id="revenueBarValue">$8.42T</b>
           </div>
           <div class="bar-row">
-            <span id="spendingBarLabel">Spending</span>
+            <span id="spendingBarLabel">GAAP Spending</span>
             <div class="bar-track"><i class="bar spending-bar" id="spendingBar"></i></div>
             <b id="spendingBarValue">$10.37T</b>
           </div>
         </div>
+        <p class="audit-caveat" id="auditCaveat" hidden><sup aria-hidden="true">*</sup><span id="auditCaveatText"></span></p>
       </section>
+
+      <footer class="net-position-summary" id="netPositionSummary" hidden>
+        <span><b>Fiscal-year-end GAAP net position</b><small>Accumulated balance-sheet position</small></span>
+        <strong id="netPositionValue"></strong>
+      </footer>
 
       <section class="panel-section income-tier-panel" aria-labelledby="incomeTaxTiersTitle">
         <div class="section-heading">
@@ -137,36 +133,26 @@
         </div>
       </section>
 
-      <footer class="net-position-summary" id="netPositionSummary" hidden>
-        <span><b>Fiscal-year-end net position</b><small>Accumulated GAAP balance-sheet position</small></span>
-        <strong id="netPositionValue"></strong>
-      </footer>
     </aside>
     </div>
 
     <section class="fiscal-detail" aria-labelledby="fiscalDetailTitle">
       <header class="fiscal-detail-heading">
-        <p class="eyebrow">Selected geography · source detail</p>
-        <h2 id="fiscalDetailTitle">Receipts, spending &amp; public programs</h2>
-        <p>Reported totals, spending categories, accounting standards, and the source records behind the selected geography.</p>
+        <p class="eyebrow">Source Details</p>
+        <h2 id="fiscalDetailTitle">Receipts, spending, public programs &amp; costs </h2>
+        <p>Reported totals, spending categories, accounting standards and source records.</p>
       </header>
 
-      <section class="household-tax-detail" id="taxEstimateSection" aria-labelledby="householdTaxTitle">
-        <div class="section-heading">
-          <h3 id="householdTaxTitle">Tax estimates &amp; everyday costs</h3>
-          <span>Illustrative · sources linked</span>
-        </div>
+      <details class="household-tax-detail detail-disclosure" id="taxEstimateSection" aria-labelledby="householdTaxTitle">
+        <summary><h3 id="householdTaxTitle"><span>Tax estimates &amp; everyday costs</span><small>Illustrative · sources linked</small></h3></summary>
         <div class="tax-rate-grid" id="householdTaxRows"></div>
-      </section>
+      </details>
 
-      <section class="tax-rate-detail" aria-labelledby="taxRatesTitle">
-        <div class="section-heading">
-          <h3 id="taxRatesTitle">Key tax rates</h3>
-          <span id="taxRateAsOf">Latest published</span>
-        </div>
+      <details class="tax-rate-detail detail-disclosure" aria-labelledby="taxRatesTitle">
+        <summary><h3 id="taxRatesTitle"><span>Key tax rates</span><small id="taxRateAsOf">Latest published</small></h3></summary>
         <p class="tax-rate-note" id="taxRateNote"></p>
         <div class="tax-rate-grid" id="taxRateRows"></div>
-      </section>
+      </details>
 
       <div class="fiscal-detail-grid">
 
@@ -182,30 +168,33 @@
           <div class="category-list" id="categoryList"></div>
         </div>
         <div class="breakdown-details" id="breakdownDetails" aria-live="polite"></div>
-      </section>
-
-      <section class="panel-section source-explorer fiscal-card fiscal-card-wide" aria-labelledby="sourceExplorerTitle">
-        <div class="section-heading">
-          <h3 id="sourceExplorerTitle">Agency source explorer</h3>
-          <span>Nested view</span>
-        </div>
-        <p class="source-explorer-note" id="sourceExplorerNote">Federal agency outlays and obligations are nested evidence and are not added to the pie.</p>
-        <div id="agencyRows" class="agency-rows"></div>
+        <section class="panel-section source-explorer nested-source-explorer" aria-labelledby="sourceExplorerTitle">
+          <div class="section-heading">
+            <h3 id="sourceExplorerTitle">Agency source explorer</h3>
+            <span>Nested view</span>
+          </div>
+          <p class="source-explorer-note" id="sourceExplorerNote">Federal agency outlays and obligations are nested evidence and are not added to the pie.</p>
+          <div id="agencyRows" class="agency-rows"></div>
+        </section>
       </section>
 
       </div>
 
-      <footer class="panel-footer">
-        <p id="dataBasis">Source basis appears here.</p>
-      </footer>
     </section>
   </main>
 
-  <footer class="methodology-disclaimer" aria-label="Data methodology">
+  <footer class="methodology-disclaimer" aria-label="Methodology and legal disclaimers">
     <strong>Methodology note</strong>
-    <p>Maps and headline state totals use published GAAP financial statements. State pies begin with researched official archives, add a signed Census bridge, then add a signed GAAP bridge. These qualified controls reconcile published totals without assigning unsupported differences to agencies.</p>
+    <p>Maps and headline state totals use published GAAP financial statements. State pies begin with researched official archives, add a signed Census bridge, then add a signed GAAP bridge. These qualified controls reconcile published totals without assigning unsupported differences to agencies. <span id="dataBasis">Source basis appears here.</span></p>
+    <section class="legal-disclaimer" aria-labelledby="legalDisclaimerTitle">
+      <strong id="legalDisclaimerTitle">Disclaimer</strong>
+      <p>Public Ledger is provided solely for general educational and illustrative purposes. Nothing on this site constitutes or should be construed as legal, financial, tax, investment, accounting, or personal advice; a recommendation or solicitation; or a substitute for advice from a qualified professional familiar with your circumstances.</p>
+      <p>Figures, estimates, rates, comparisons, and descriptions are based on cited public sources and simplified assumptions. They may be incomplete, delayed, inaccurate, or inapplicable to a particular person, transaction, or jurisdiction. Verify information against current primary sources before relying on it.</p>
+      <p>The site is provided “as is” without warranties of accuracy, completeness, timeliness, availability, or fitness for a particular purpose. Use does not create an attorney-client, accountant-client, fiduciary, advisory, or other professional relationship. External links are provided for source access and do not imply endorsement.</p>
+    </section>
   </footer>
 
+  <script>document.getElementById("entryDisclaimer").showModal();</script>
   <script src="https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js"></script>
   <script src="vendor/topojson-client-3.1.0.min.js"></script>
   <script src="data/fiscal/spending.js"></script>
@@ -223,9 +212,9 @@
   <script src="src/department-loader.js?v=6"></script>
   <script src="src/model.js?v=10"></script>
   <script src="src/receipt-hierarchy.js?v=1"></script>
-  <script src="src/tax-estimates.js?v=9"></script>
+  <script src="src/tax-estimates.js?v=10"></script>
   <script src="src/kpi-disclosure.js?v=1"></script>
-  <script src="src/fiscal-panel.js?v=19"></script>
-  <script src="src/app.js?v=22"></script>
+  <script src="src/fiscal-panel.js?v=22"></script>
+  <script src="src/app.js?v=25"></script>
 </body>
 </html>

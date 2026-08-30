@@ -3,7 +3,7 @@ const state = { layer: "federal", scope: "United States", features: [], request:
 const $ = (selector) => document.querySelector(selector);
 const $$ = (selector) => [...document.querySelectorAll(selector)];
 const themePreference = matchMedia("(prefers-color-scheme: dark)");
-const palette = ["#4f6b5a", "#7f9278", "#b5a166", "#a86c51", "#929264", "#718782", "#aaa296"];
+const palette = ["#5e7f70", "#88a681", "#c1a55d", "#bf7256", "#7095a4", "#a2828c", "#b5926b"];
 async function initialize() {
   bindControls(); updatePanel();
   try {
@@ -12,7 +12,7 @@ async function initialize() {
       .filter((feature) => Number(feature.id) < 60 && model.states[feature.properties.name]);
     drawMap();
   } catch {
-    d3.select("#usMap").html('<text class="map-error" x="450" y="260" text-anchor="middle">Map unavailable</text>');
+    d3.select("#usMap").html('<text class="map-error" x="450" y="230" text-anchor="middle">Map unavailable</text>');
   }
 }
 function bindControls() {
@@ -24,6 +24,7 @@ function bindControls() {
 function setScope(scope) {
   state.scope = scope === state.scope && scope !== "United States" ? "United States" : scope;
   state.layer = state.scope === "United States" ? "federal" : "stateGovernment";
+  $(".detail-panel").scrollTop = 0;
   drawMap(); updatePanel();
 }
 function toggleTheme() {
@@ -47,7 +48,7 @@ function drawMap() {
   const svg = d3.select("#usMap");
   const previousTransform = svg.select(".map-layer").node()?.getAttribute("transform");
   // Center the contiguous states optically; Aleutian outliers otherwise pull the visible map right.
-  const projection = d3.geoAlbersUsa().fitExtent([[18, 18], [882, 485]], { type: "FeatureCollection", features: state.features });
+  const projection = d3.geoAlbersUsa().fitExtent([[18, 14], [882, 462]], { type: "FeatureCollection", features: state.features });
   const path = d3.geoPath(projection);
   const values = state.features.map((feature) => mapValue(feature.properties.name));
   const color = createColorScale(values);
@@ -63,7 +64,7 @@ function drawMap() {
   let targetTransform = "translate(0 0) scale(1)";
   if (selected) {
     const [[x0, y0], [x1, y1]] = path.bounds(selected);
-    targetTransform = "translate(450 260) scale(1.75) translate(" + -(x0 + x1) / 2 + " " + -(y0 + y1) / 2 + ")";
+    targetTransform = "translate(450 238) scale(1.75) translate(" + -(x0 + x1) / 2 + " " + -(y0 + y1) / 2 + ")";
   }
   const duration = matchMedia("(prefers-reduced-motion: reduce)").matches ? 0 : state.scope === "United States" ? 800 : 650;
   layer.transition().duration(duration)

@@ -114,11 +114,28 @@ function censusDetailSources(censusSummary, total, direction) {
   return rows.map((row) => bridgeDetailSource(row, "Census", direction, "published Census account"));
 }
 
+const largeSourceRow = 5e9;
+const rowKey = (row) => JSON.stringify(row.slice(0, 3));
+
+// Mark a large terminal row without inventing a lower-level allocation.
+function publicationCeiling(row, label = "official publication ceiling") {
+  if (Math.abs(row[2]) < largeSourceRow || /ceiling/i.test(row[1])) return row;
+  return [row[0], row[1] + " · " + label, ...row.slice(2)];
+}
+
+function terminalSourceRow(source, row, covered = new Set()) {
+  const published = source.label.startsWith("GAAP") || source.label.startsWith("Census");
+  const archive = source.label.startsWith("Official archive");
+  if (covered.has(rowKey(row)) || !published && !archive) return row;
+  if (published || row[4] === 1) return publicationCeiling(row);
+  const privacy = row[1].includes("[individual recipient omitted]");
+  return publicationCeiling(row, privacy ? "privacy-preserving publication ceiling"
+    : "source aggregation ceiling · deeper official split not imported");
+}
+
 // Apply a bridge sign and source prefix to one source-native base row.
 function signedDetailRow(source, row) {
-  const ceiling = source.label.startsWith("GAAP") && Math.abs(row[2]) >= 1e10
-    ? " · official publication ceiling" : "";
-  const signed = [source.label + " › " + row[0], row[1] + ceiling, source.direction * row[2], ...row.slice(3)];
+  const signed = [source.label + " › " + row[0], row[1], source.direction * row[2], ...row.slice(3)];
   if (Number.isFinite(row[3])) signed[3] = source.direction * row[3];
   return signed;
 }
@@ -126,7 +143,8 @@ function signedDetailRow(source, row) {
 // Carry one researched child panel onto its signed reconciliation parent.
 function signedDetailPanel(source, panel) {
   const signed = { ...panel, rows: panel.rows.map((row) =>
-    [row[0], row[1], source.direction * row[2], source.direction * (row[3] ?? row[2]), ...row.slice(4)]) };
+    publicationCeiling([row[0], row[1], source.direction * row[2],
+      source.direction * (row[3] ?? row[2]), ...row.slice(4)])) };
   if (panel.title) signed.title = source.label + " · " + panel.title;
   if (panel.parent) signed.parent = signedDetailRow(source, panel.parent);
   if (panel.covers) signed.covers = panel.covers.map((row) => signedDetailRow(source, row));
@@ -136,14 +154,16 @@ function signedDetailPanel(source, panel) {
 
 // Expand a bridge source without discarding its previously researched panels.
 function expandReconciliationSource(source, detail) {
-  if (!detail) return { rows: [source.fallbackRow], itemBreakdowns: [],
+  if (!detail) return { rows: [terminalSourceRow(source, source.fallbackRow)], itemBreakdowns: [],
     supplementalBreakdowns: [], sourceBreakdowns: [] };
   const rows = detail.rows || detail.departments.map((row) =>
     [row.name, row.program, row.amount, row.sourceAmount, row.sourceRows]);
   const expand = (key) => (detail[key] || []).map((panel) => signedDetailPanel(source, panel));
-  return { rows: rows.map((row) => signedDetailRow(source, row)),
-    itemBreakdowns: expand("itemBreakdowns"), supplementalBreakdowns: expand("supplementalBreakdowns"),
-    sourceBreakdowns: expand("sourceBreakdowns") };
+  const itemBreakdowns = expand("itemBreakdowns"), supplementalBreakdowns = expand("supplementalBreakdowns");
+  const sourceBreakdowns = expand("sourceBreakdowns"), panels = [...itemBreakdowns, ...supplementalBreakdowns, ...sourceBreakdowns];
+  const covered = new Set(panels.flatMap((panel) => [panel.parent, ...(panel.covers || [])]).filter(Boolean).map(rowKey));
+  const signedRows = rows.map((row) => terminalSourceRow(source, signedDetailRow(source, row), covered));
+  return { rows: signedRows, itemBreakdowns, supplementalBreakdowns, sourceBreakdowns };
 }
 
 // Add two sequential signed bridges without assigning unsupported amounts to agencies.

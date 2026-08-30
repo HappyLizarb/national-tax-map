@@ -13,6 +13,36 @@
     "sourceAmount",
     "sourceRows"
   ],
+  "itemBreakdowns": [{
+    "parent": ["DEPARTMENT OF REVENUE (DOR)", "DEPARTMENT OF REVENUE (DOR) · (PP) STATE AID/POL SUB", 8678701349.45],
+    "accountCount": 21,
+    "rows": [
+      ["CITY OF SPRINGFIELD", "107 payment rows", 463775826.94],
+      ["CITY OF BOSTON", "85 payment rows", 391318564.16],
+      ["CITY OF WORCESTER", "103 payment rows", 383136737.98],
+      ["CITY OF LYNN", "93 payment rows", 265957062.06],
+      ["CITY OF LAWRENCE", "104 payment rows", 259184317.25],
+      ["CITY OF BROCKTON", "100 payment rows", 244614097.10],
+      ["CITY OF LOWELL", "102 payment rows", 230828473.71],
+      ["CITY OF NEW BEDFORD", "114 payment rows", 230034669.95],
+      ["CITY OF FALL RIVER", "103 payment rows", 193203833.63],
+      ["CITY OF EVERETT", "64 payment rows", 128321739.77],
+      ["CITY OF CHELSEA", "81 payment rows", 112778587.85],
+      ["CITY OF REVERE", "86 payment rows", 100335612.61],
+      ["CITY OF CHICOPEE", "75 payment rows", 98155832.27],
+      ["CITY OF TAUNTON", "102 payment rows", 98015167.48],
+      ["CITY OF FRAMINGHAM", "73 payment rows", 95113987.31],
+      ["CITY OF HOLYOKE", "105 payment rows", 93048943.71],
+      ["CITY OF HAVERHILL", "89 payment rows", 88731721.74],
+      ["CITY OF FITCHBURG", "91 payment rows", 82426341.57],
+      ["CITY OF LEOMINSTER", "82 payment rows", 74472302.33],
+      ["CITY OF QUINCY", "76 payment rows", 70690659.31],
+      ["All other published vendors", "529 vendors · 25,351 payment rows", 4974556870.72]
+    ],
+    "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=vendor%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows&$where=budget_fiscal_year%3D%272024%27%20AND%20department%3D%27DEPARTMENT%20OF%20REVENUE%20%28DOR%29%27%20AND%20object_class%3D%27%28PP%29%20STATE%20AID%2FPOL%20SUB%27&$group=vendor&$order=amount%20desc&$limit=50000",
+    "sourceLabel": "Massachusetts CTHRU official vendor grouping",
+    "basis": "Exact FY2024 vendor groups; the 20 largest are shown separately and the remaining 529 reconcile in one child below $5 billion."
+  }],
   "rows": [
     [
       "DEPARTMENT OF REVENUE (DOR)",

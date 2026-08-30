@@ -1,0 +1,224 @@
+:root {
+  --ease-out: cubic-bezier(.22, 1, .36, 1);
+  --motion-fast: 180ms;
+  --motion-page: 560ms;
+  --surface-shadow: 0 22px 60px color-mix(in srgb, var(--pine) 10%, transparent);
+}
+
+::selection { background: var(--soft-sage); color: var(--ink); }
+
+.skip-link {
+  position: fixed;
+  z-index: 40;
+  top: 10px;
+  left: 10px;
+  padding: 10px 14px;
+  border-radius: 8px;
+  background: var(--panel);
+  color: var(--ink);
+  font-weight: 700;
+  text-decoration: none;
+  transform: translateY(-160%);
+  transition: transform var(--motion-fast) ease;
+}
+
+.skip-link:focus { transform: translateY(0); }
+
+.topbar {
+  position: sticky;
+  z-index: 20;
+  top: 0;
+  min-height: 72px;
+}
+
+.brand { font-size: 18px; }
+.brand-mark { border-radius: 9px; }
+.prototype-label { padding: 0; border: 0; border-radius: 0; }
+
+.dashboard {
+  min-height: calc(100dvh - 72px);
+  grid-template-columns: minmax(0, 1fr) 440px;
+}
+
+.map-pane { display: flex; height: calc(100dvh - 72px); padding-top: 36px; padding-bottom: 32px; flex-direction: column; }
+h1 { white-space: nowrap; font-size: clamp(52px, 5vw, 68px); line-height: .94; text-wrap: balance; }
+.lede { max-width: 70ch; font-size: 18px; line-height: 1.6; }
+
+.map-stage {
+  flex: 1 1 auto;
+  height: clamp(430px, calc(100dvh - 270px), 560px);
+  min-height: 0;
+  margin-top: 24px;
+  border-radius: 24px;
+  box-shadow: inset 0 1px color-mix(in srgb, var(--panel) 75%, white), var(--surface-shadow);
+}
+
+.map-legend {
+  left: 20px;
+  bottom: 20px;
+  width: 270px;
+  padding: 16px;
+  border: 1px solid color-mix(in srgb, var(--line) 70%, transparent);
+  border-radius: 10px;
+  background: color-mix(in srgb, var(--panel) 88%, transparent);
+  backdrop-filter: blur(8px);
+}
+
+.map-footnotes { margin-top: 8px; padding-top: 24px; border-top: 1px solid var(--line); }
+
+.detail-panel {
+  min-height: 0;
+  height: calc(100dvh - 72px);
+  padding: 36px 32px 32px;
+  overflow-y: auto;
+  background: linear-gradient(180deg, var(--panel), color-mix(in srgb, var(--panel) 90%, var(--soft-clay)));
+}
+
+.panel-heading { min-height: 180px; padding-bottom: 24px; }
+.panel-heading h2 { font-size: 48px; }
+.panel-section { padding: 30px 0; }
+
+.section-heading h3 {
+  font-family: var(--display);
+  font-size: clamp(26px, 2vw, 31px);
+  font-weight: 600;
+  line-height: 1.08;
+  letter-spacing: -.025em;
+  text-wrap: balance;
+}
+
+.section-heading span { margin-top: 6px; }
+.bar-track { height: 10px; }
+.bar { transition: width 450ms var(--ease-out); }
+
+.fiscal-detail {
+  padding-top: clamp(72px, 8vw, 118px);
+  padding-bottom: clamp(36px, 4vw, 56px);
+}
+
+.fiscal-detail-heading { max-width: 1080px; }
+.fiscal-detail-heading h2 { font-size: clamp(50px, 5.8vw, 78px); line-height: .96; }
+.fiscal-detail-heading > p:last-child { max-width: 62ch; font-size: 20px; }
+
+.household-tax-detail,
+.tax-rate-detail {
+  margin-top: 44px;
+  padding: clamp(28px, 3vw, 40px);
+}
+
+.household-tax-detail,
+.tax-rate-detail,
+.fiscal-card {
+  border-radius: 16px;
+  box-shadow: var(--surface-shadow);
+}
+
+.fiscal-detail-grid { gap: 28px; margin-top: 28px; }
+.fiscal-card { padding: clamp(28px, 3vw, 40px); }
+.fiscal-detail .section-heading h3 { font-size: clamp(28px, 3vw, 40px); }
+.tax-rate-note, .source-explorer-note { font-size: 16px; }
+
+.tax-rate-card,
+.agency-row,
+.category-row,
+.receipt-class,
+.receipt-group {
+  transition: border-color var(--motion-fast) ease,
+    background-color var(--motion-fast) ease,
+    color var(--motion-fast) ease,
+    box-shadow var(--motion-fast) ease,
+    transform var(--motion-fast) var(--ease-out);
+}
+
+.tax-rate-card:hover { transform: translateY(-2px); box-shadow: 0 12px 26px color-mix(in srgb, var(--pine) 9%, transparent); }
+.agency-row:hover, .category-row:hover { transform: translateX(2px); }
+.theme-toggle:active, .entry-disclaimer button:active, .category-row:active { transform: translateY(1px) scale(.985); }
+
+.methodology-disclaimer { padding-top: 38px; padding-bottom: 48px; }
+.methodology-disclaimer p { font-size: 13px; }
+.legal-disclaimer { margin-top: 30px; padding-top: 28px; }
+
+@keyframes reveal-up {
+  from { opacity: 0; transform: translateY(18px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes settle-in {
+  from { opacity: 0; transform: scale(.985); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+@keyframes fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes dialog-in {
+  from { opacity: 0; transform: translateY(12px) scale(.98); }
+  to { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .entry-disclaimer[open] { animation: dialog-in 360ms var(--ease-out) both; }
+  .entry-disclaimer[open]::backdrop { animation: fade-in 280ms ease both; }
+
+  .topbar,
+  .map-intro > div,
+  .map-stage,
+  .map-footnotes,
+  .detail-panel > *,
+  .fiscal-detail-heading,
+  .household-tax-detail,
+  .tax-rate-detail,
+  .fiscal-card,
+  .panel-footer,
+  .methodology-disclaimer > * {
+    animation: reveal-up var(--motion-page) var(--ease-out) both;
+  }
+
+  .map-stage { animation-name: settle-in; animation-delay: 90ms; }
+  .map-footnotes, .detail-panel > .panel-section:first-of-type { animation-delay: 150ms; }
+  .detail-panel > .panel-section, .fiscal-detail-heading { animation-delay: 210ms; }
+  .household-tax-detail { animation-delay: 270ms; }
+  .tax-rate-detail { animation-delay: 310ms; }
+  .fiscal-card { animation-delay: 350ms; }
+  .panel-footer, .methodology-disclaimer > * { animation-delay: 390ms; }
+  .state-shape { animation: fade-in 420ms var(--ease-out) both; }
+
+  body:has(.entry-disclaimer[open]) :is(
+    .topbar,
+    .map-intro > div,
+    .map-stage,
+    .map-footnotes,
+    .detail-panel > *,
+    .fiscal-detail-heading,
+    .household-tax-detail,
+    .tax-rate-detail,
+    .fiscal-card,
+    .panel-footer,
+    .methodology-disclaimer > *,
+    .state-shape
+  ) { animation-play-state: paused; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { scroll-behavior: auto !important; animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
+}
+
+@media (max-width: 1100px) {
+  .dashboard { display: block; }
+  .map-pane { display: block; height: auto; }
+  .detail-panel { height: auto; min-height: 0; padding-top: 36px; overflow-y: visible; }
+}
+
+@media (max-width: 560px) {
+  .map-pane, .detail-panel, .fiscal-detail { padding-inline: 18px; }
+  .map-pane { padding-top: 28px; }
+  h1 { white-space: normal; font-size: clamp(46px, 13vw, 62px); }
+  .map-stage { height: auto; min-height: 0; margin-top: 20px; }
+  .map-legend { width: auto; }
+  .fiscal-detail { padding-top: 64px; }
+  .fiscal-detail-heading h2 { font-size: clamp(44px, 13vw, 62px); }
+  .fiscal-detail .section-heading h3 { font-size: 28px; }
+  .household-tax-detail, .tax-rate-detail, .fiscal-card { padding: 22px; }
+}

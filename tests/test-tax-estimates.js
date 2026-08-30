@@ -28,6 +28,7 @@ tax.individual.levels = tax.individual.levels.map((row) => ({ ...row, tax: 6500,
 const html = renderTaxEstimates(tax, escapeHtml);
 
 assert.equal((html.match(/class="tax-estimate-window"/g) || []).length, 1);
+assert.match(html, /<\/article><details class="consumer-costs detail-disclosure"><summary>/);
 assert.equal((html.match(/class="tax-estimate-profile"/g) || []).length, 2);
 assert.equal((html.match(/class="tax-estimate-level"/g) || []).length, 8);
 assert.equal((html.match(/class="tax-estimate-income"/g) || []).length, 8);
@@ -42,7 +43,10 @@ assert.equal((html.match(/Estimated 2026/g) || []).length, 1);
 assert.match(html, /Household of four/);
 assert.match(html, /Working individual/);
 assert.equal((html.match(/class="consumer-cost-row"/g) || []).length, 9);
-assert.match(html, /Observed across Census places · equal place weight/);
+assert.match(html, /ACS median gross rent across places; equal place weight/);
+assert.match(html, /BLS price adjusted with BEA goods parity; equal area weight/);
+assert.match(html, /Statewide standard rate; local and worker-specific rates excluded/);
+assert.doesNotMatch(html, /Product ranges are estimates:/);
 assert.match(html, /Combined average 8\.99%/);
 assert.match(html, /Minimum wage · hour/);
 assert.match(html, /State standard \$16\.90\/hr/);
@@ -53,6 +57,8 @@ assert.match(html, /&lt;strong&gt;Illustrative&lt;\/strong&gt;/);
 assert.equal(renderTaxEstimates({ household: null }, escapeHtml), "");
 const national = renderTaxEstimates({ household: null, individual: null,
   costs: { ...consumerCosts, jurisdiction: "United States" } }, escapeHtml);
+assert.equal((national.match(/class="tax-estimate-window"/g) || []).length, 0);
+assert.match(national, /^<details class="consumer-costs detail-disclosure"><summary>/);
 assert.equal((national.match(/class="consumer-cost-row"/g) || []).length, 9);
 assert.match(national, /P25 · [A-Z]{2}/);
 assert.doesNotMatch(national, /consumer-cost-marker is-state/);

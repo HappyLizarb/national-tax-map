@@ -7,9 +7,8 @@ function updatePanel() {
       : canonical.comparable ? "Census comparison" : "Separate source basis";
   animatePanelChange();
   setText("#scopeTitle", canonical.name);
-  setText("#scopeContext", (canonical.kind === "federal" ? "Federal outlays" : status) + " · FY 2024");
-  setText("#budgetStatus", status);
-  updateSources(canonical); updateKpis(canonical, null); updateTaxRates(canonical.name);
+  setText("#scopeContext", canonical.kind === "federal" ? "Federal outlays" : status);
+  updateSources(canonical); updateNetPosition(canonical); updateTaxRates(canonical.name);
   updateComparison(canonical); updateAllocation(allocation);
   setText("#dataBasis", canonical.basis);
 }
@@ -36,33 +35,10 @@ function updateSources(data) {
   $("#sourceList").innerHTML = "Sources: " + references.map((source) =>
     '<a href="' + escapeHtml(source.url) + '" target="_blank" rel="noopener noreferrer">' + escapeHtml(source.label) + "</a>").join(" · ");
 }
-function updateKpis(data, budget) {
+function updateNetPosition(data) {
   const financial = data.financialResult;
-  const result = financial?.changeInNetPosition ?? data.balance;
-  setText("#revenueLabel", financial ? "GAAP resources" : "Receipts / revenue");
-  setText("#spendingLabel", financial ? "GAAP expenses" : "Spending");
-  setText("#balanceLabel", financial ? "Change in net position" : "Balance");
   setText("#netPositionValue", financial ? model.formatMoney(financial.netPosition) : "");
   $("#netPositionSummary").hidden = !financial;
-  setText("#spendingValue", budget?.headline || model.formatMoney(data.spending));
-  const disclosure = kpiDisclosureFor(budget, financial);
-  $$('[data-kpi-disclosure]').forEach((mark) => {
-    const applies = disclosure.targets.includes(mark.dataset.kpiDisclosure);
-    mark.hidden = !applies;
-    if (applies) mark.previousElementSibling.setAttribute("aria-describedby", "budgetDisclosure");
-    else mark.previousElementSibling.removeAttribute("aria-describedby");
-  });
-  setText("#budgetDisclosure", disclosure.text);
-  $("#budgetDisclosure").hidden = !disclosure.text;
-  setText("#outsideBudgetText", budget?.outsideBudget || "");
-  $("#outsideBudgetDisclosure").hidden = !budget?.outsideBudget;
-  if (!data.comparable) {
-    setText("#revenueValue", "Not comparable"); setText("#balanceValue", "Not comparable");
-    $(".result-kpi").classList.remove("surplus");
-    return;
-  }
-  setText("#revenueValue", model.formatMoney(data.revenue)); setText("#balanceValue", model.formatMoney(result));
-  $(".result-kpi").classList.toggle("surplus", result != null && result >= 0);
 }
 function updateTaxRates(name) {
   const tax = model.taxOverviewFor(name);
@@ -83,19 +59,22 @@ function updateTaxRates(name) {
 }
 function updateComparison(data) {
   const financial = data.financialResult;
-  setText("#gapTitle a", financial ? "GAAP resources and expenses" : "Revenue–spending gap");
-  setText("#revenueBarLabel", financial ? "GAAP resources" : "Receipts / revenue");
-  setText("#spendingBarLabel", financial ? "GAAP expenses" : "Spending");
+  const auditNote = financial && hasAuditCaveat(financial) ? financial.auditNote : "";
+  setText("#gapTitle a", financial ? "Resources & expenses" : "Revenue–spending gap");
+  setText("#revenueBarLabel", "GAAP Resources");
+  setText("#spendingBarLabel", "GAAP Spending");
+  $("#auditCaveatMark").hidden = !auditNote; $("#auditCaveat").hidden = !auditNote;
+  setText("#auditCaveatText", auditNote);
   if (!data.comparable) {
     $("#revenueBar").style.width = "0%"; $("#spendingBar").style.width = "100%";
     setText("#revenueBarValue", "Not comparable"); setText("#spendingBarValue", model.formatMoney(data.spending));
-    setText("#gapPercent", "Select comparable function ledger for a revenue comparison");
+    setText("#gapPercentText", "Select comparable function ledger for a revenue comparison");
     return;
   }
   const maximum = Math.max(data.revenue, data.spending);
   $("#revenueBar").style.width = data.revenue / maximum * 100 + "%"; $("#spendingBar").style.width = data.spending / maximum * 100 + "%";
   setText("#revenueBarValue", model.formatMoney(data.revenue)); setText("#spendingBarValue", model.formatMoney(data.spending));
-  setText("#gapPercent", financial ? model.formatMoney(financial.changeInNetPosition) + " annual change in net position"
+  setText("#gapPercentText", financial ? model.formatMoney(financial.changeInNetPosition) + " change in net position"
     : data.balance == null ? "No official same-basis result reported" : model.formatMoney(data.balance) + " officially reported");
 }
 async function updateAllocation(data) {

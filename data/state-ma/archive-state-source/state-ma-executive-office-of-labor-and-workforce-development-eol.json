@@ -13,6 +13,21 @@
     "sourceAmount",
     "sourceRows"
   ],
+  "itemBreakdowns": [{
+    "parent": ["EXECUTIVE OFFICE OF LABOR AND WORKFORCE DEVELOPMENT (EOL)", "EXECUTIVE OFFICE OF LABOR AND WORKFORCE DEVELOPMENT (EOL) · (RR) BENEFIT PROGRAMS", 7967939544.03],
+    "accountCount": 6,
+    "rows": [
+      ["FY2024-EOL0641165002", "Official payment ID", 1334027311.26],
+      ["FY2024-EOL0641UIPYT2", "Official payment ID", 1007943367.18],
+      ["24EOL0641UIASSETSMAY", "Official payment ID", 987591609.23],
+      ["FY2024-EOL0641UIPYMT", "Official payment ID", 955685151.74],
+      ["24EOL0641UIASSETSAUG", "Official payment ID", 275743987.43],
+      ["All other published payment IDs", "92 payment IDs · 93 source rows", 3406948117.19]
+    ],
+    "sourceUrl": "https://cthru.data.socrata.com/resource/pegc-naaa.json?$select=payment_id%2Csum%28amount%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows&$where=budget_fiscal_year%3D%272024%27%20AND%20department%3D%27EXECUTIVE%20OFFICE%20OF%20LABOR%20AND%20WORKFORCE%20DEVELOPMENT%20%28EOL%29%27%20AND%20object_class%3D%27%28RR%29%20BENEFIT%20PROGRAMS%27&$group=payment_id&$order=amount%20desc&$limit=50000",
+    "sourceLabel": "Massachusetts CTHRU official payment-ID grouping",
+    "basis": "Exact FY2024 payment-ID groups; the five largest are shown separately and the remaining 92 reconcile in one child below $5 billion."
+  }],
   "rows": [
     [
       "EXECUTIVE OFFICE OF LABOR AND WORKFORCE DEVELOPMENT (EOL)",

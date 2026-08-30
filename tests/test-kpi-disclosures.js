@@ -8,12 +8,12 @@ const html = fs.readFileSync("index.html", "utf8");
 const panel = fs.readFileSync("src/fiscal-panel.js", "utf8");
 const details = fs.readFileSync("styles/details.css", "utf8");
 
-assert.equal((html.match(/data-kpi-disclosure=/g) || []).length, 3);
-assert.ok(html.indexOf('id="budgetDisclosure"') > html.indexOf('id="balanceValue"'));
-assert.match(panel, /kpiDisclosureFor/);
-assert.match(panel, /aria-describedby/);
-assert.match(details, /\.kpi-disclosure-mark/);
-assert.equal((details.match(/\.kpi-disclosure-mark\s*\{/g) || []).length, 1);
+assert.doesNotMatch(html, /kpi-grid|data-kpi-disclosure|budgetDisclosure|outsideBudgetDisclosure/);
+assert.doesNotMatch(panel, /kpiDisclosureFor|aria-describedby|function updateKpis/);
+assert.doesNotMatch(details, /kpi-disclosure-mark|budget-disclaimer|outside-budget-disclaimer/);
+assert.match(html, /id="gapPercentText"[\s\S]*id="auditCaveatMark"[\s\S]*id="auditCaveat"[\s\S]*id="auditCaveatText"/);
+assert.match(panel, /hasAuditCaveat\(financial\) \? financial\.auditNote[\s\S]*#auditCaveatMark[\s\S]*#auditCaveatText/);
+assert.match(panel, /function updateNetPosition/);
 assert.deepEqual(kpiDisclosureFor(model.budgetPresentationFor("Texas"), null).targets, ["spending"]);
 assert.deepEqual(kpiDisclosureFor(null, financialResults.states.California).targets,
   ["revenue", "spending", "balance"]);

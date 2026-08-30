@@ -1,19 +1,19 @@
 .fiscal-detail { width: min(100%, 1460px); margin: 0 auto; padding: clamp(56px, 6vw, 88px) clamp(26px, 5vw, 74px) clamp(68px, 7vw, 100px); border-top: 1px solid var(--line); background: radial-gradient(circle at 92% 8%, color-mix(in srgb, var(--soft-clay) 40%, transparent), transparent 30rem); }
 .fiscal-detail-heading { max-width: 760px; }
 .fiscal-detail-heading h2 { font-size: clamp(38px, 4.4vw, 58px); line-height: 1; text-wrap: balance; }
-.fiscal-detail-heading > p:last-child { max-width: 65ch; margin: 16px 0 0; color: var(--muted); font-size: 16px; line-height: 1.7; }
-.household-tax-detail, .tax-rate-detail { margin-top: 36px; padding: 28px; border: 1px solid color-mix(in srgb, var(--line) 82%, transparent); border-radius: 22px; background: var(--panel); box-shadow: 0 16px 44px #344f430b; }
+.fiscal-detail-heading > p:last-child { max-width: 62ch; margin: 22px 0 0; color: var(--muted); font-size: 19px; line-height: 1.7; }
+.household-tax-detail, .tax-rate-detail { margin-top: 48px; padding: 36px; border: 1px solid color-mix(in srgb, var(--line) 82%, transparent); border-radius: 22px; background: var(--panel); box-shadow: 0 20px 50px color-mix(in srgb, var(--pine) 10%, transparent); }
+.detail-disclosure > summary { display: flex; align-items: center; gap: 18px; cursor: pointer; list-style: none; }
+.detail-disclosure > summary:focus-visible { border-radius: 8px; outline: 3px solid color-mix(in srgb, var(--sage) 45%, transparent); outline-offset: 6px; }
+.detail-disclosure > summary::-webkit-details-marker { display: none; }
+.detail-disclosure > summary :is(h3, h4) { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; min-width: 0; flex: 1; margin: 0; font-family: var(--display); font-size: clamp(28px, 3vw, 40px); font-weight: 600; line-height: 1.08; letter-spacing: -.025em; text-wrap: balance; }
+.detail-disclosure > summary small, #incomeTaxTiersAsOf { display: none; }
+.detail-disclosure > summary::after { flex: none; padding: 8px 12px; border: 1px solid var(--line); border-radius: 999px; color: var(--sage); font: 700 12px var(--mono); content: "Show +"; }
+.detail-disclosure[open] > summary::after { content: "Hide −"; }
 .household-tax-detail .tax-rate-grid { grid-template-columns: 1fr; margin-top: 16px; }
 .tax-rate-detail .tax-rate-grid { margin-top: 16px; }
-.budget-disclaimer, .outside-budget-disclaimer { display: block; margin-top: 9px; font-size: 11px; line-height: 1.5; }
-.kpi-disclosure-mark { margin-left: 2px; color: var(--clay); font: 600 .45em var(--mono); vertical-align: super; }
-.budget-disclaimer { color: var(--clay); }
-.kpi-grid > .budget-disclaimer { grid-column: 1 / -1; margin-top: 12px; padding-top: 10px; border-top: 1px solid var(--line); }
-.outside-budget-disclaimer { color: var(--sage); }
-.outside-budget-disclaimer b, .outside-budget-disclaimer span { display: block; }
-.budget-disclaimer[hidden], .outside-budget-disclaimer[hidden] { display: none; }
-.fiscal-detail-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; margin-top: 24px; }
-.fiscal-card { min-width: 0; padding: 28px; border: 1px solid color-mix(in srgb, var(--line) 82%, transparent); border-radius: 20px; background: var(--panel); box-shadow: 0 16px 44px #344f430b; }
+.fiscal-detail-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 32px; margin-top: 32px; }
+.fiscal-card { min-width: 0; padding: 36px; border: 1px solid color-mix(in srgb, var(--line) 82%, transparent); border-radius: 20px; background: var(--panel); box-shadow: 0 20px 50px color-mix(in srgb, var(--pine) 10%, transparent); }
 .fiscal-card-wide { grid-column: 1 / -1; }
 .fiscal-detail .panel-section { border-bottom: 0; }
 .fiscal-detail .allocation-layout { grid-template-columns: minmax(168px, .4fr) 1fr; gap: 36px; align-items: start; }
@@ -21,24 +21,29 @@
 .fiscal-detail .donut::after { width: 88px; }
 .fiscal-detail .category-list { max-height: 360px; }
 .fiscal-detail .agency-rows { max-height: 550px; }
+.fiscal-detail .nested-source-explorer { margin-top: 32px; padding: 28px; border: 1px solid var(--line); border-radius: 16px; background: var(--surface-subtle); }
+.fiscal-detail .nested-source-explorer .section-heading h3 { font-size: clamp(24px, 2.5vw, 34px); }
 .fiscal-detail .panel-footer { max-width: 90ch; }
 .receipt-hierarchy { display: grid; gap: 8px; }
-.receipt-hierarchy-note { margin: 0; padding: 10px 11px; border-radius: 10px; background: var(--surface-subtle); color: var(--muted); font-size: 11px; line-height: 1.55; }
+.receipt-hierarchy-note { margin: 0; padding: 12px 14px; border-radius: 10px; background: var(--surface-subtle); color: var(--muted); font-size: 13px; line-height: 1.6; }
 .receipt-class, .receipt-group { border: 1px solid var(--line); border-radius: 12px; }
 .receipt-class > summary, .receipt-group > summary { display: flex; justify-content: space-between; gap: 12px; padding: 10px 11px; cursor: pointer; list-style-position: inside; }
 .receipt-class > summary::before, .receipt-group > summary::before { content: "›"; flex: 0 0 auto; color: var(--sage); font-size: 16px; line-height: 1; transition: transform .15s ease; }
 .receipt-class[open] > summary::before, .receipt-group[open] > summary::before { transform: rotate(90deg); }
 .receipt-class > summary span, .receipt-group > summary span { min-width: 0; flex: 1; }
-.receipt-class > summary small, .receipt-group > summary small { display: block; margin-top: 4px; color: var(--muted); font-size: 10px; line-height: 1.45; }
-.receipt-class > summary b, .receipt-group > summary b { flex: 0 0 auto; color: var(--sage); font: 600 12px var(--mono); font-variant-numeric: tabular-nums; }
+.receipt-class > summary small, .receipt-group > summary small { display: block; margin-top: 5px; color: var(--muted); font-size: 12px; line-height: 1.5; }
+.receipt-class > summary b, .receipt-group > summary b { flex: 0 0 auto; color: var(--sage); font: 700 14px var(--mono); font-variant-numeric: tabular-nums; }
 .receipt-class > div, .receipt-group > div { display: grid; gap: 5px; padding: 0 8px 8px; }
 .receipt-group { background: var(--surface-subtle); }
 .receipt-account { border: 0; background: var(--panel); }
-.household-estimate-grid { display: grid; grid-template-columns: 1fr; gap: 6px; margin: 10px 0; }
-.tax-estimate-level { display: grid; grid-template-columns: minmax(0, .8fr) minmax(92px, .9fr) minmax(118px, 1fr); align-items: center; gap: 3px 12px; min-width: 0; padding: 9px; border-radius: 10px; background: var(--panel); }
+.tax-estimate-profiles { grid-template-rows: repeat(6, auto); row-gap: 6px; }
+.tax-estimate-profile { display: grid; grid-row: 1 / span 6; grid-template-rows: subgrid; }
+.tax-estimate-profile > small { margin-bottom: 4px; }
+.household-estimate-grid { display: contents; }
+.tax-estimate-level { display: grid; grid-template-columns: minmax(0, .8fr) minmax(92px, .9fr) minmax(118px, 1fr); align-items: center; gap: 5px 16px; min-width: 0; padding: 14px; border-radius: 12px; background: var(--panel); }
 .tax-estimate-level b, .tax-estimate-level small, .tax-estimate-level em { display: block; }
-.tax-estimate-level b, .tax-estimate-level small { color: var(--muted); font-size: 11px; }
-.tax-estimate-level em { font: normal 700 15px var(--mono); text-align: right; }
+.tax-estimate-level b, .tax-estimate-level small { color: var(--muted); font-size: 13px; }
+.tax-estimate-level em { font: normal 700 17px var(--mono); text-align: right; }
 .tax-estimate-income { grid-column: 1; }
 .tax-estimate-breakdown { grid-column: 2; grid-row: 2; text-align: right; }
 .tax-estimate-breakdown span { display: block; }
@@ -46,31 +51,34 @@
 .tax-estimate-net strong { display: block; color: var(--ink); font: 700 20px var(--mono); letter-spacing: -.02em; }
 .tax-estimate-net strong span { color: var(--muted); font-size: 11px; font-weight: 600; letter-spacing: 0; }
 .tax-estimate-net small:last-child { color: var(--sage); font-weight: 700; }
-.consumer-costs { margin-top: 18px; padding-top: 18px; border-top: 1px solid var(--line); }
-.consumer-costs > header { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; }
-.consumer-costs h4 { margin: 0; font: 600 20px var(--display); }
-.consumer-costs > header span, .consumer-costs > p { color: var(--muted); font-size: 11px; }
-.consumer-costs > p { max-width: 100ch; margin: 7px 0 0; line-height: 1.55; }
-.consumer-cost-list { display: grid; gap: 8px; margin-top: 14px; }
-.consumer-cost-row { min-width: 0; padding: 12px 12px 8px; border-radius: 12px; background: var(--panel); }
+.consumer-costs { padding: 22px; border: 1px solid color-mix(in srgb, var(--pine) 24%, var(--line)); border-radius: 16px; background: color-mix(in srgb, var(--pine) 5%, var(--panel)); }
+.consumer-costs > summary h4 { font-family: var(--display); }
+.consumer-cost-list { display: grid; gap: 12px; margin-top: 22px; }
+.consumer-cost-row { min-width: 0; padding: 18px 18px 12px; border-radius: 14px; background: var(--panel); }
 .consumer-cost-row > header { display: flex; justify-content: space-between; align-items: start; gap: 14px; }
 .consumer-cost-row header span, .consumer-cost-row header small { display: block; }
-.consumer-cost-row header b { font-size: 12px; }
-.consumer-cost-row header small { margin-top: 3px; color: var(--muted); font-size: 10px; }
-.consumer-cost-row header strong { flex: 0 0 auto; font: 700 12px var(--mono); }
+.consumer-cost-row header b { font-size: 17px; }
+.consumer-cost-row header small { max-width: 58ch; margin-top: 5px; color: var(--muted); font-size: 13px; line-height: 1.5; }
+.consumer-cost-row header strong { flex: 0 0 auto; font: 700 17px var(--mono); }
 .consumer-cost-chart { overflow-x: auto; overflow-y: hidden; scrollbar-width: thin; }
-.consumer-cost-scale { position: relative; min-width: 660px; height: 92px; margin: 8px 48px 0; }
+.consumer-cost-scale { position: relative; min-width: 660px; height: 108px; margin: 8px 48px 0; }
 .consumer-cost-markers { position: absolute; inset: 0 0 auto; height: 53px; }
 .consumer-cost-marker { position: absolute; top: calc(var(--lane) * 23px); display: grid; justify-items: center; transform: translateX(-50%); white-space: nowrap; }
 .consumer-cost-marker::after { width: 1px; height: calc(43px - var(--lane) * 23px); margin-top: 2px; background: var(--pine); content: ""; }
-.consumer-cost-marker b { color: var(--muted); font: 600 9px var(--mono); }
-.consumer-cost-marker em { color: var(--ink); font: normal 700 10px var(--mono); }
+.consumer-cost-marker b { color: var(--muted); font: 600 11px var(--mono); }
+.consumer-cost-marker em { color: var(--ink); font: normal 700 12px var(--mono); }
 .consumer-cost-marker.is-state { top: 66px; z-index: 2; }
 .consumer-cost-marker.is-state::after { position: absolute; bottom: 100%; left: 50%; width: 2px; height: 14px; margin: 0; background: var(--clay); }
 .consumer-cost-marker.is-state b { padding: 2px 5px; border-radius: 999px; background: var(--ink); color: var(--paper); font-weight: 800; }
 .consumer-cost-marker.is-state em { color: var(--clay); }
-.consumer-cost-gradient { position: absolute; inset: 52px 0 auto; height: 9px; border-radius: 999px; background: linear-gradient(90deg, var(--soft-sage), var(--sage), var(--clay)); box-shadow: inset 0 0 0 1px color-mix(in srgb, var(--pine) 15%, transparent); }
+.consumer-cost-gradient { position: absolute; inset: 52px 0 auto; height: 9px; border-radius: 999px; background: linear-gradient(90deg, var(--soft-sage), var(--sage) 32%, var(--ochre) 66%, var(--clay)); box-shadow: inset 0 0 0 1px color-mix(in srgb, var(--pine) 15%, transparent); }
 .consumer-cost-sources { padding-top: 10px; border-top: 1px solid var(--line); }
+
+@media (max-width: 1100px) {
+  .tax-estimate-profiles { grid-template-rows: none; }
+  .tax-estimate-profile { display: block; grid-row: auto; }
+  .household-estimate-grid { display: grid; grid-template-columns: 1fr; gap: 6px; margin: 10px 0; }
+}
 
 @media (max-width: 820px) {
   .fiscal-detail-grid { grid-template-columns: 1fr; }
@@ -79,6 +87,8 @@
 
 @media (max-width: 560px) {
   .fiscal-detail { padding-inline: 18px; }
+  .detail-disclosure > summary :is(h3, h4) { align-items: flex-start; flex-direction: column; gap: 5px; }
+  .detail-disclosure > summary::after { padding: 7px 10px; }
   .fiscal-detail .allocation-layout { grid-template-columns: 1fr; }
   .fiscal-detail .donut { margin-left: 0; }
 }
@@ -88,5 +98,5 @@
   .tax-estimate-net { grid-column: 1 / -1; grid-row: auto; display: grid; grid-template-columns: 1fr auto; gap: 2px 10px; margin-top: 5px; border-top: 1px solid var(--line); border-left: 0; text-align: left; }
   .tax-estimate-net strong { grid-column: 2; grid-row: 1; text-align: right; }
   .tax-estimate-net small:last-child { grid-column: 2; text-align: right; }
-  .consumer-costs > header, .consumer-cost-row > header { align-items: flex-start; flex-direction: column; gap: 5px; }
+  .consumer-cost-row > header { align-items: flex-start; flex-direction: column; gap: 5px; }
 }

@@ -7248,6 +7248,19 @@
       0
     ]
   ],
+  "itemBreakdowns": [{
+    "parent": ["INTER-DEPARTMENTAL ACCOUNTS", "GENERAL GOVERNMENT SERVICES · Receiver *", 5440076216.59],
+    "accountCount": 4,
+    "rows": [
+      ["EMPLOYEE BENEFITS", "State contributions to pension funds · 1 source row", 3170850216.22],
+      ["EMPLOYEE BENEFITS", "Employee benefits on behalf of special-circumstance units · 2 source rows", 1257996261.31],
+      ["EMPLOYEE BENEFITS", "Personal services · employee benefits · 1 source row", 1213271569.29],
+      ["All other organization/category rows", "36 source rows including reimbursements and offsets", -202041830.23]
+    ],
+    "sourceUrl": "https://data.nj.gov/resource/apet-rp2i.json?$select=organization_name%2Cexpenditure_category%2Cexpenditure_desc%2Csum%28expended_amt%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows&$where=budget_fiscal_year%3D%272024%27%20AND%20ibno_agency%3D%27INTER-DEPARTMENTAL%20ACCOUNTS%27%20AND%20statewide_program%3D%27GENERAL%20GOVERNMENT%20SERVICES%27%20AND%20payee_name%3D%27%2A%27&$group=organization_name%2Cexpenditure_category%2Cexpenditure_desc&$order=amount%20desc&$limit=50000",
+    "sourceLabel": "New Jersey YourMoney official organization/category grouping",
+    "basis": "Exact FY2024 organization and expenditure-code rows for the literal '*' payee; every child is below $5 billion."
+  }],
   "sourceCheck": {
     "objectClassRows": 902,
     "sourceRows": 5271,
