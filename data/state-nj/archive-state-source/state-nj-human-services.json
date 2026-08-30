@@ -30,6 +30,24 @@
     "sourceRows",
     "obligations"
   ],
+  "sourceBreakdowns": [
+    {
+      "title": "SPECIAL HEALTH SERVICES omitted recipients by funding category",
+      "sourceTotal": 18670126290.78,
+      "basis": "Exact privacy-safe regrouping of the 630 FY2024 New Jersey Agency Expenditures rows represented by the omitted-recipient parent. Funding category is a non-identifying source field. The four groups reconcile to the parent in integer cents. The Federal group contains one $11.522 billion privacy-sensitive source record and is therefore the final public non-personal disclosure ceiling; no recipient names are exposed.",
+      "sourceLabel": "New Jersey FY2024 Agency Expenditures API",
+      "sourceUrl": "https://data.nj.gov/Government-Finance/YourMoney-Agency-Expenditures/apet-rp2i",
+      "covers": [
+        ["HUMAN SERVICES", "SPECIAL HEALTH SERVICES · Receiver [individual recipient omitted]", 18670126290.78]
+      ],
+      "rows": [
+        ["Federal", "252 source rows · privacy-preserving public disclosure ceiling", 11425089288.8],
+        ["Grant in Aid", "205 source rows · privacy-safe funding category", 6116371320.32],
+        ["Dedicated", "51 source rows · privacy-safe funding category", 1121598977.78],
+        ["Direct State Services - Non-Salary", "122 source rows · privacy-safe funding category", 7066703.88]
+      ]
+    }
+  ],
   "rows": [
     [
       "HUMAN SERVICES",

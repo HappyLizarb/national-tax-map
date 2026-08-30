@@ -17,6 +17,7 @@
   "sourceBreakdowns": [
     {
       "title": "California VA FY2024 Compensation and Pension expenditures by county",
+      "displayParent": ["Public Enterprise Funds", "Compensation and Pensions", 161232000000],
       "sourceTotal": 11639967321,
       "basis": "58 county rows reconcile exactly to the GDX California control of $11.639967321B. Every resulting county leaf is below $10B.",
       "sourceLabel": "VA FY2024 Geographic Distribution of Expenditures (GDX)",
@@ -145,10 +146,11 @@
         ["Other US Territories", "VA Education and Veteran Readiness expenditure", 1425588.0],
         ["Freely Associated States", "VA Education and Veteran Readiness expenditure", 171151.0]
       ],
-      "covers": [["Public Enterprise Funds", "Readjustment Benefits", 13400000000]]
+      "covers": [["VA FY2024 Education and Veteran Readiness expenditures by state", "VA GDX geography schedule used below", 13148953928]]
     },
     {
       "title": "Florida VA FY2024 Compensation and Pension expenditures by county",
+      "displayParent": ["Public Enterprise Funds", "Compensation and Pensions", 161232000000],
       "sourceTotal": 12648628793,
       "basis": "67 county rows reconcile exactly to the GDX Florida control of $12.648628793B. Every resulting county leaf is below $10B.",
       "sourceLabel": "VA FY2024 Geographic Distribution of Expenditures (GDX)",
@@ -225,6 +227,7 @@
     },
     {
       "title": "California VA FY2024 Medical Care expenditures by county",
+      "displayParent": ["Veterans Health Administration", "Medical Services", 101874000000],
       "sourceTotal": 10968069421.4,
       "basis": "58 county rows reconcile exactly to the GDX California control of $10.968069421B. Every resulting county leaf is below $10B.",
       "sourceLabel": "VA FY2024 Geographic Distribution of Expenditures (GDX)",
@@ -292,6 +295,7 @@
     },
     {
       "title": "Florida VA FY2024 Medical Care expenditures by county",
+      "displayParent": ["Veterans Health Administration", "Medical Services", 101874000000],
       "sourceTotal": 10049488343.31,
       "basis": "67 county rows reconcile exactly to the GDX Florida control of $10.049488343B. Every resulting county leaf is below $10B.",
       "sourceLabel": "VA FY2024 Geographic Distribution of Expenditures (GDX)",
@@ -368,6 +372,7 @@
     },
     {
       "title": "VA FY2024 Medical Care expenditures by state",
+      "displayParent": ["Veterans Health Administration", "Medical Services", 101874000000],
       "sourceTotal": 124687751611.66,
       "basis": "429 geographic rows reconcile exactly to the GDX $124.687751612B control. GDX includes clinical care and support plus research, canteen, and prosthetics, and is $22.813751612B above the narrower MTS Medical Services row. This is a separate source view; California, Texas, and Florida are expanded by county.",
       "sourceLabel": "VA FY2024 Geographic Distribution of Expenditures (GDX)",
@@ -806,6 +811,7 @@
     },
     {
       "title": "Texas VA FY2024 Medical Care expenditures by county",
+      "displayParent": ["Veterans Health Administration", "Medical Services", 101874000000],
       "sourceTotal": 10722965874.17,
       "basis": "254 county rows reconcile exactly to the GDX Texas control of $10.722965874B. Every resulting county leaf is below $10B.",
       "sourceLabel": "VA FY2024 Geographic Distribution of Expenditures (GDX)",
@@ -1065,6 +1071,141 @@
         ["McMullen", "VA Medical Care expenditure", 44002],
         ["Kenedy", "VA Medical Care expenditure", 26496],
         ["Loving", "VA Medical Care expenditure", 18736]
+      ]
+    },
+    {
+      "title": "VA Compensation and Pensions no-year fund resources by program activity",
+      "sourceTotal": 161294617435.7,
+      "basis": "USAspending FY2024 P12 custom account data reports 162284812088.55 of gross outlays for TAS 036-X-0102-000. The signed -990194652.85 cross-source bridge reconciles that detailed schedule exactly to Treasury Combined Statement net outlays; no difference is assigned to a program activity.",
+      "sourceLabel": "USAspending FY2024 P12 custom account-data export",
+      "sourceUrl": "https://www.usaspending.gov/download_center/custom_account_data",
+      "rows": [
+        ["VETERANS · object class 42.0 · Insurance claims and indemnities","USAspending FY2024 gross outlays · expanded by the GDX schedule below",149893642690.33],
+        ["SURVIVORS · object class 42.0 · Insurance claims and indemnities","USAspending FY2024 gross outlays · expanded by the GDX schedule below",11872110538.05],
+        ["CLOTHING ALLOWANCE · object class 42.0 · Insurance claims and indemnities","USAspending FY2024 gross outlays",168070364.08],
+        ["SERVICE-CONNECTED DEATHS · object class 42.0 · Insurance claims and indemnities","USAspending FY2024 gross outlays",113141037.3],
+        ["HEADSTONES AND MARKERS · object class 42.0 · Insurance claims and indemnities","USAspending FY2024 gross outlays",62581983.57],
+        ["MISC ASSISTANCE (EAJ, SAFD) · object class 42.0 · Insurance claims and indemnities","USAspending FY2024 gross outlays",44921527.42],
+        ["BURIAL PLOTS · object class 42.0 · Insurance claims and indemnities","USAspending FY2024 gross outlays",39292140.64],
+        ["BURIAL ALLOWANCE · object class 42.0 · Insurance claims and indemnities","USAspending FY2024 gross outlays",38868058.45],
+        ["GRAVELINERS · object class 42.0 · Insurance claims and indemnities","USAspending FY2024 gross outlays",23813367.35],
+        ["CHAPTER 18 · object class 42.0 · Insurance claims and indemnities","USAspending FY2024 gross outlays",22833927.3],
+        ["MEDICAL EXAM PILOT PROGRAM · object class 42.0 · Insurance claims and indemnities","USAspending FY2024 gross outlays",5150039],
+        ["CASKETS AND URNS · object class 42.0 · Insurance claims and indemnities","USAspending FY2024 gross outlays",386415.06],
+        ["Treasury/USAspending net-to-gross basis bridge","Exact arithmetic difference; not allocated to a program activity",-990194652.85]
+      ],
+      "covers": [
+        ["Fund resources · No Year","Combined Statement FY2024 net outlays · period-of-availability row",161294617435.7],
+        ["VA Compensation and Pensions no-year fund resources by program activity","Published Treasury/USAspending schedule · expanded below",161294617435.7]
+      ]
+    },
+    {
+      "title": "VA Compensation actual outlays from the no-year program schedule",
+      "sourceTotal": 158062000000,
+      "basis": "The exact Treasury/USAspending no-year program schedule totals 161294617435.7. The signed -3232617435.7 classification-and-basis bridge reconciles that published schedule to OMB's FY2024 Compensation actual-outlay row; no difference is assigned to a benefit program.",
+      "sourceLabel": "Treasury FY2024 Combined Statement and USAspending FY2024 P12 custom account data",
+      "sourceUrl": "https://www.usaspending.gov/download_center/custom_account_data",
+      "rows": [
+        ["VA Compensation and Pensions no-year fund resources by program activity","Published Treasury/USAspending schedule · expanded below",161294617435.7],
+        ["OMB/Treasury-USAspending classification-and-basis bridge","Exact arithmetic difference; not allocated to a benefit program",-3232617435.7]
+      ],
+      "covers": [
+        ["Compensation", "Account 0153 · mandatory veteran-benefit actual outlay", 158062000000]
+      ]
+    },
+    {
+      "title": "VA Veterans program activity from GDX Compensation and Pension expenditures",
+      "sourceTotal": 149893642690.33,
+      "basis": "VA GDX reports 144281399760 of FY2024 address-linked Compensation and Pension expenditures. The signed 5612242930.33 reporting-basis bridge reconciles that published geographic schedule exactly to USAspending's Veterans program-activity gross-outlay row; no difference is assigned to a geography.",
+      "sourceLabel": "VA FY2024 Geographic Distribution of Expenditures (GDX)",
+      "sourceUrl": "https://www.va.gov/VETDATA/docs/GDX/GDX_FY24.xlsx",
+      "rows": [
+        ["VA FY2024 Compensation and Pension expenditures by state","Published address-linked GDX schedule · expanded below",144281399760],
+        ["USAspending/GDX reporting-basis bridge","Exact arithmetic difference; not allocated to a geography",5612242930.33]
+      ],
+      "covers": [
+        ["VETERANS · object class 42.0 · Insurance claims and indemnities","USAspending FY2024 gross outlays · expanded by the GDX schedule below",149893642690.33]
+      ]
+    },
+    {
+      "title": "VA Survivors program activity from GDX DIC and Survivors Pension expenditures",
+      "sourceTotal": 11872110538.05,
+      "basis": "VA GDX reports 9569100739 of FY2024 address-linked Dependency and Indemnity Compensation and Survivors Pension expenditures. The signed 2303009799.05 reporting-basis bridge reconciles that published geographic schedule exactly to USAspending's Survivors program-activity gross-outlay row; no difference is assigned to a geography.",
+      "sourceLabel": "VA FY2024 Geographic Distribution of Expenditures (GDX)",
+      "sourceUrl": "https://www.va.gov/VETDATA/docs/GDX/GDX_FY24.xlsx",
+      "rows": [
+        ["VA FY2024 DIC and Survivors Pension expenditures by state","Published address-linked GDX schedule · expanded below",9569100739],
+        ["USAspending/GDX reporting-basis bridge","Exact arithmetic difference; not allocated to a geography",2303009799.05]
+      ],
+      "covers": [
+        ["SURVIVORS · object class 42.0 · Insurance claims and indemnities","USAspending FY2024 gross outlays · expanded by the GDX schedule below",11872110538.05]
+      ]
+    },
+    {
+      "title": "VA FY2024 DIC and Survivors Pension expenditures by state",
+      "sourceTotal": 9569100739,
+      "basis": "55 address-linked geographic rows reconcile exactly to the GDX $9.569100739B control. GDX introduced Dependency and Indemnity Compensation and Survivors Pension as a separate FY2024 category; every resulting geographic leaf is below $10B.",
+      "sourceLabel": "VA FY2024 Geographic Distribution of Expenditures (GDX)",
+      "sourceUrl": "https://www.va.gov/VETDATA/docs/GDX/GDX_FY24.xlsx",
+      "rows": [
+        ["Texas", "FY2024 DIC and Survivors Pension expenditure", 876417647],
+        ["Florida", "FY2024 DIC and Survivors Pension expenditure", 818107798],
+        ["California", "FY2024 DIC and Survivors Pension expenditure", 729265451],
+        ["North Carolina", "FY2024 DIC and Survivors Pension expenditure", 446763327],
+        ["Georgia", "FY2024 DIC and Survivors Pension expenditure", 385304749],
+        ["Pennsylvania", "FY2024 DIC and Survivors Pension expenditure", 337952540],
+        ["Ohio", "FY2024 DIC and Survivors Pension expenditure", 326607209],
+        ["Virginia", "FY2024 DIC and Survivors Pension expenditure", 294010292],
+        ["Tennessee", "FY2024 DIC and Survivors Pension expenditure", 278349426],
+        ["New York", "FY2024 DIC and Survivors Pension expenditure", 276986110],
+        ["Michigan", "FY2024 DIC and Survivors Pension expenditure", 270242723],
+        ["Alabama", "FY2024 DIC and Survivors Pension expenditure", 267323519],
+        ["South Carolina", "FY2024 DIC and Survivors Pension expenditure", 259592484],
+        ["Washington", "FY2024 DIC and Survivors Pension expenditure", 232468367],
+        ["Illinois", "FY2024 DIC and Survivors Pension expenditure", 232104572],
+        ["Arizona", "FY2024 DIC and Survivors Pension expenditure", 228887272],
+        ["Oklahoma", "FY2024 DIC and Survivors Pension expenditure", 227537815],
+        ["Missouri", "FY2024 DIC and Survivors Pension expenditure", 204263967],
+        ["Indiana", "FY2024 DIC and Survivors Pension expenditure", 172856723],
+        ["Kentucky", "FY2024 DIC and Survivors Pension expenditure", 165445772],
+        ["Louisiana", "FY2024 DIC and Survivors Pension expenditure", 161876628],
+        ["Wisconsin", "FY2024 DIC and Survivors Pension expenditure", 156155571],
+        ["Colorado", "FY2024 DIC and Survivors Pension expenditure", 151059034],
+        ["Arkansas", "FY2024 DIC and Survivors Pension expenditure", 149681422],
+        ["Minnesota", "FY2024 DIC and Survivors Pension expenditure", 147306613],
+        ["New Jersey", "FY2024 DIC and Survivors Pension expenditure", 144563276],
+        ["Oregon", "FY2024 DIC and Survivors Pension expenditure", 142991454],
+        ["Maryland", "FY2024 DIC and Survivors Pension expenditure", 135177654],
+        ["Massachusetts", "FY2024 DIC and Survivors Pension expenditure", 125110354],
+        ["Mississippi", "FY2024 DIC and Survivors Pension expenditure", 109350376],
+        ["Puerto Rico", "FY2024 DIC and Survivors Pension expenditure", 100138014],
+        ["Nevada", "FY2024 DIC and Survivors Pension expenditure", 99001925],
+        ["West Virginia", "FY2024 DIC and Survivors Pension expenditure", 91017648],
+        ["Iowa", "FY2024 DIC and Survivors Pension expenditure", 88542000],
+        ["New Mexico", "FY2024 DIC and Survivors Pension expenditure", 81364138],
+        ["Kansas", "FY2024 DIC and Survivors Pension expenditure", 80748769],
+        ["Nebraska", "FY2024 DIC and Survivors Pension expenditure", 64353263],
+        ["Maine", "FY2024 DIC and Survivors Pension expenditure", 59746863],
+        ["Idaho", "FY2024 DIC and Survivors Pension expenditure", 56678299],
+        ["Connecticut", "FY2024 DIC and Survivors Pension expenditure", 51605741],
+        ["Utah", "FY2024 DIC and Survivors Pension expenditure", 49077959],
+        ["Hawaii", "FY2024 DIC and Survivors Pension expenditure", 42204135],
+        ["Montana", "FY2024 DIC and Survivors Pension expenditure", 40056874],
+        ["New Hampshire", "FY2024 DIC and Survivors Pension expenditure", 36057052],
+        ["South Dakota", "FY2024 DIC and Survivors Pension expenditure", 31117883],
+        ["Delaware", "FY2024 DIC and Survivors Pension expenditure", 30624698],
+        ["Rhode Island", "FY2024 DIC and Survivors Pension expenditure", 26260111],
+        ["North Dakota", "FY2024 DIC and Survivors Pension expenditure", 21653153],
+        ["Wyoming", "FY2024 DIC and Survivors Pension expenditure", 16869895],
+        ["Alaska", "FY2024 DIC and Survivors Pension expenditure", 16116161],
+        ["Vermont", "FY2024 DIC and Survivors Pension expenditure", 14338064],
+        ["Guam", "FY2024 DIC and Survivors Pension expenditure", 9158350],
+        ["District of Columbia", "FY2024 DIC and Survivors Pension expenditure", 6922305],
+        ["Other US Territories", "FY2024 DIC and Survivors Pension expenditure", 1628280],
+        ["Freely Associated States", "FY2024 DIC and Survivors Pension expenditure", 59014]
+      ],
+      "covers": [
+        ["VA FY2024 DIC and Survivors Pension expenditures by state","Published address-linked GDX schedule · expanded below",9569100739]
       ]
     },
     {
@@ -1505,10 +1646,14 @@
         ["Borden", "VA Compensation and Pension expenditure", 88213],
         ["Loving", "VA Compensation and Pension expenditure", 39275],
         ["King", "VA Compensation and Pension expenditure", 29083]
+      ],
+      "covers": [
+        ["VA FY2024 Compensation and Pension expenditures by state","Published address-linked GDX schedule · expanded below",144281399760]
       ]
     },
     {
       "title": "Texas VA FY2024 Compensation and Pension expenditures by county",
+      "displayParent": ["Public Enterprise Funds", "Compensation and Pensions", 161232000000],
       "sourceTotal": 16924320015,
       "basis": "254 county rows reconcile exactly to the GDX Texas control of $16.924320015B. Every resulting county leaf is below $10B.",
       "sourceLabel": "VA FY2024 Geographic Distribution of Expenditures (GDX)",
@@ -1785,7 +1930,8 @@
         ["Medical Research", "FY2024 actual TEF budget authority", 46000000],
         ["General Administration", "FY2024 actual TEF budget authority", 29000000],
         ["Board of Veterans' Appeals", "FY2024 actual TEF budget authority", 4000000]
-      ]
+      ],
+      "covers": [["VA FY2024 Toxic Exposures Fund operating-category schedule", "Published budget-authority schedule before the authority-to-outlay bridge", 20268000000]]
     },
     {
       "title": "VA Medical Support and Compliance FY2024 obligations by program activity",
@@ -1812,6 +1958,7 @@
     },
     {
       "title": "VA-administered life insurance FY2024 program costs",
+      "displayParent": ["Insurance Funds", "Other", 24301000000],
       "sourceTotal": 560000000,
       "basis": "VA Note 17 reports six administered-program costs totaling $560M under federal GAAP. This is the meaningful insurance-program view; it is not an additive child of Treasury's misleadingly broad Insurance Funds: Other cash classification.",
       "sourceLabel": "VA FY2024 Agency Financial Report, Note 17",
@@ -1823,6 +1970,212 @@
         ["Veterans' Mortgage Life Insurance", "FY2024 program cost", 33000000],
         ["Veterans Affairs Life Insurance", "FY2024 program cost", 8000000],
         ["Veterans Reopened Insurance", "FY2024 program cost", 7000000]
+      ]
+    },
+    {
+      "title": "036-0102-000 FY2024 net outlays by period of availability",
+      "sourceTotal": 161231617435.7,
+      "basis": "Exact FY2024 Treasury Combined Statement availability rows. Nonzero published net outlays sum to the parent account in integer cents.",
+      "sourceLabel": "Treasury FY2024 Combined Statement account table",
+      "sourceUrl": "https://fiscal.treasury.gov/system/files/files/reports-statements/combined-statement/cs2024/c42.xlsx",
+      "combinedStatementAvailability": true,
+      "covers": [
+        ["036-0102-000","Compensation and Pensions, Veterans Benefits Administration, Veterans Affairs",161231617435.7]
+      ],
+      "rows": [
+        ["Fund resources · No Year","Combined Statement FY2024 net outlays · period-of-availability row",161294617435.7],
+        ["Fund resources · 2020","Combined Statement FY2024 net outlays · period-of-availability row",-63000000]
+      ]
+    },
+    {
+      "title": "036-0160-000 FY2024 net outlays by period of availability",
+      "sourceTotal": 70484555946.27,
+      "basis": "Exact FY2024 Treasury Combined Statement availability rows. Nonzero published net outlays sum to the parent account in integer cents.",
+      "sourceLabel": "Treasury FY2024 Combined Statement account table",
+      "sourceUrl": "https://fiscal.treasury.gov/system/files/files/reports-statements/combined-statement/cs2024/c42.xlsx",
+      "combinedStatementAvailability": true,
+      "covers": [
+        ["036-0160-000","Medical Services, Veterans Health Administration, Veterans Affairs",70484555946.27]
+      ],
+      "rows": [
+        ["Fund resources · 2024","Combined Statement FY2024 net outlays · period-of-availability row",61068446450.83],
+        ["Fund resources · 2023","Combined Statement FY2024 net outlays · period-of-availability row",5580242782.37],
+        ["Fund resources · 2024-2025","Combined Statement FY2024 net outlays · period-of-availability row",1656386000.05],
+        ["Fund resources · No Year","Combined Statement FY2024 net outlays · period-of-availability row",1299034233.35],
+        ["Fund resources · 2022","Combined Statement FY2024 net outlays · period-of-availability row",515530952.65],
+        ["Fund resources · 2021","Combined Statement FY2024 net outlays · period-of-availability row",219037699.25],
+        ["Fund resources · 2019","Combined Statement FY2024 net outlays · period-of-availability row",51431217.5],
+        ["Fund resources · 2020","Combined Statement FY2024 net outlays · period-of-availability row",43805703.98],
+        ["Fund resources · 2020-2021","Combined Statement FY2024 net outlays · period-of-availability row",27161631.81],
+        ["Fund resources · 2023-2024","Combined Statement FY2024 net outlays · period-of-availability row",20115104.87],
+        ["Fund resources · 2021-2022","Combined Statement FY2024 net outlays · period-of-availability row",1764505.69],
+        ["Fund resources · 2022-2023","Combined Statement FY2024 net outlays · period-of-availability row",1599663.92]
+      ]
+    },
+    {
+      "title": "VA Medical Services 2024 fund resources by program activity and object class",
+      "sourceTotal": 61068446450.83,
+      "basis": "USAspending File B reports $61.20547677362B of FY2024 gross outlays from the 2024 Medical Services availability. The signed $137.03032279M bridge reconciles that schedule exactly to Treasury's $61.06844645083B net outlay. The full-time health-care personnel and related-benefit rows are the lowest exact public cash classifications and are public USAspending program/activity-object-class disclosure ceilings; VA's occupational tables do not preserve this account-and-outlay basis.",
+      "sourceLabel": "USAspending FY2024 P12 File B and Treasury Combined Statement",
+      "sourceUrl": "https://api.usaspending.gov/api/v2/download/status?file_name=FY2024P01-P12_All_TAS_AccountBreakdownByPA-OC_2026-08-30_H03M46S57415883.zip",
+      "rows": [
+        ["Health Care Services · full-time permanent personnel", "USAspending FY2024 gross outlays · public program/activity-object-class disclosure ceiling", 21603142488.08],
+        ["Health Care Services · civilian personnel benefits", "USAspending FY2024 gross outlays · public program/activity-object-class disclosure ceiling", 12553707062],
+        ["Pharmaceutical Ingredients · supplies and materials", "USAspending FY2024 gross outlays", 7415493873.06],
+        ["Medical care", "USAspending FY2024 gross outlays", 4007643886.22],
+        ["Prosthetic Supplies and Services · supplies and materials", "USAspending FY2024 gross outlays", 3840107575.83],
+        ["Health Care Services · supplies and materials", "USAspending FY2024 gross outlays", 2798945087.53],
+        ["Other personnel compensation", "USAspending FY2024 gross outlays", 2323828219.76],
+        ["Travel and transportation of persons", "USAspending FY2024 gross outlays", 1062926864.18],
+        ["Other services from non-Federal sources", "USAspending FY2024 gross outlays", 971991742.88],
+        ["Other than full-time permanent personnel", "USAspending FY2024 gross outlays", 637528672.82],
+        ["Communications, utilities, and miscellaneous charges", "USAspending FY2024 gross outlays", 629698313.42],
+        ["Homeless Programs Grants · full-time permanent personnel", "USAspending FY2024 gross outlays", 572892250.98],
+        ["CHAMPVA excluding caregivers · supplies and materials", "USAspending FY2024 gross outlays", 517238888.1],
+        ["Equipment", "USAspending FY2024 gross outlays", 432630437.94],
+        ["Grants, subsidies, and contributions", "USAspending FY2024 gross outlays", 419795137.4],
+        ["Caregivers Support Program · full-time permanent personnel", "USAspending FY2024 gross outlays", 270278344.58],
+        ["Operation and maintenance of equipment", "USAspending FY2024 gross outlays", 225133470.53],
+        ["Homeless Programs Grants · civilian personnel benefits", "USAspending FY2024 gross outlays", 195062128.93],
+        ["Readjustment Counseling Service · full-time permanent personnel", "USAspending FY2024 gross outlays", 163040278.5],
+        ["Advisory and assistance services", "USAspending FY2024 gross outlays", 99156680.29],
+        ["Caregivers Support Program · civilian personnel benefits", "USAspending FY2024 gross outlays", 93697532.42],
+        ["Medical Services reimbursable · full-time permanent personnel", "USAspending FY2024 gross outlays", 73193810.71],
+        ["Readjustment Counseling Service · civilian personnel benefits", "USAspending FY2024 gross outlays", 63711190],
+        ["Medical Services reimbursable · supplies and materials", "USAspending FY2024 gross outlays", 49447010.64],
+        ["Operation and maintenance of facilities", "USAspending FY2024 gross outlays", 43007627.12],
+        ["Unknown object class", "USAspending FY2024 gross outlays", 34808804.54],
+        ["Transportation of things", "USAspending FY2024 gross outlays", 25609623.04],
+        ["CHAMPVA excluding caregivers · full-time permanent personnel", "USAspending FY2024 gross outlays", 23857239.07],
+        ["Insurance claims and indemnities", "USAspending FY2024 gross outlays", 13321086.51],
+        ["Medical Services reimbursable · civilian personnel benefits", "USAspending FY2024 gross outlays", 8519626.91],
+        ["Rental payments to others", "USAspending FY2024 gross outlays", 7052577.39],
+        ["Other goods and services from Federal sources", "USAspending FY2024 gross outlays", 6697054.74],
+        ["Printing and reproduction", "USAspending FY2024 gross outlays", 6298115.47],
+        ["Benefits for former personnel", "USAspending FY2024 gross outlays", 4095860.03],
+        ["Special personal services payments", "USAspending FY2024 gross outlays", 3975375.69],
+        ["Readjustment Counseling Service · supplies and materials", "USAspending FY2024 gross outlays", 2929996.96],
+        ["CHAMPVA excluding caregivers · civilian personnel benefits", "USAspending FY2024 gross outlays", 2807468.1],
+        ["Homeless Programs Grants · supplies and materials", "USAspending FY2024 gross outlays", 1327252.84],
+        ["Rental payments to GSA", "USAspending FY2024 gross outlays", 521849.57],
+        ["Caregivers Support Program · supplies and materials", "USAspending FY2024 gross outlays", 305627.2],
+        ["Land and structures", "USAspending FY2024 gross outlays", 39535.2],
+        ["Investments and loans", "USAspending FY2024 gross outlays", 11219.14],
+        ["Prosthetic Supplies and Services · civilian personnel benefits", "USAspending FY2024 gross outlays", -112.7],
+        ["Treasury/USAspending net-to-gross basis bridge", "Exact arithmetic difference; not allocated to a program activity or object class", -137030322.79]
+      ],
+      "covers": [["Fund resources · 2024", "Combined Statement FY2024 net outlays · period-of-availability row", 61068446450.83]]
+    },
+    {
+      "title": "VA Medical Community Care 2024 fund resources by care program",
+      "sourceTotal": 28186323785.97,
+      "basis": "USAspending's FY2024 P12 account submission divides TAS 036-2024/2024-0140-000 gross outlays by care program and object class. Aggregating repeated care programs across object classes reproduces Treasury's FY2024 Combined Statement net-outlay row to the cent, and every resulting program is below $10B.",
+      "sourceLabel": "USAspending FY2024 TAS object-class and program-activity data",
+      "sourceUrl": "https://api.usaspending.gov/api/v2/agency/treasury_account/036-2024%2F2024-0140-000/object_class/?fiscal_year=2024&limit=100",
+      "rows": [
+        ["AMBULATORY", "USAspending FY2024 gross outlays · care program across object classes", 8551959599.27],
+        ["INPATIENT CARE", "USAspending FY2024 gross outlays · care program across object classes", 8092345943.16],
+        ["LTSS: HOME & COMMUNITY BASED SERVICES", "USAspending FY2024 gross outlays · care program across object classes", 3625753281.2],
+        ["CHAMPVA & OTHER DEPENDENT PROGRAMS", "USAspending FY2024 gross outlays · care program across object classes", 1968285687.34],
+        ["STATE HOME PROGRAMS", "USAspending FY2024 gross outlays · care program across object classes", 1766441240.38],
+        ["LTSS: FACILITY BASED SERVICES", "USAspending FY2024 gross outlays · care program across object classes", 1669632973.86],
+        ["DENTAL", "USAspending FY2024 gross outlays · care program across object classes", 979938366.83],
+        ["NETWORK DEVELOPMENT & MAINTENANCE", "USAspending FY2024 gross outlays · care program across object classes", 781233334.7],
+        ["MENTAL HEALTH", "USAspending FY2024 gross outlays · care program across object classes", 710205829.37],
+        ["INDIAN HEALTH SERVICES", "USAspending FY2024 gross outlays · care program across object classes", 30944768.54],
+        ["CAMP LEJEUNE, VETERANS FAMILIES", "USAspending FY2024 gross outlays · care program across object classes", 9582761.32]
+      ],
+      "covers": [["Fund resources · 2024", "Combined Statement FY2024 net outlays · period-of-availability row", 28186323785.97]]
+    },
+    {
+      "title": "036-0140-000 FY2024 net outlays by period of availability",
+      "sourceTotal": 31389012771.75,
+      "basis": "Exact FY2024 Treasury Combined Statement availability rows. Nonzero published net outlays sum to the parent account in integer cents.",
+      "sourceLabel": "Treasury FY2024 Combined Statement account table",
+      "sourceUrl": "https://fiscal.treasury.gov/system/files/files/reports-statements/combined-statement/cs2024/c42.xlsx",
+      "combinedStatementAvailability": true,
+      "covers": [
+        ["036-0140-000","Medical Community Care, Veterans Health Administration, Veterans Affairs",31389012771.75]
+      ],
+      "rows": [
+        ["Fund resources · 2024","Combined Statement FY2024 net outlays · period-of-availability row",28186323785.97],
+        ["Fund resources · 2023-2024","Combined Statement FY2024 net outlays · period-of-availability row",1717554693.14],
+        ["Fund resources · 2024-2025","Combined Statement FY2024 net outlays · period-of-availability row",1099191451.82],
+        ["Fund resources · No Year","Combined Statement FY2024 net outlays · period-of-availability row",516929859.95],
+        ["Fund resources · 2023","Combined Statement FY2024 net outlays · period-of-availability row",64056464.99],
+        ["Fund resources · 2022","Combined Statement FY2024 net outlays · period-of-availability row",8814540.75],
+        ["Fund resources · 2019","Combined Statement FY2024 net outlays · period-of-availability row",649567.83],
+        ["Fund resources · 2019-2022","Combined Statement FY2024 net outlays · period-of-availability row",110579.65],
+        ["Fund resources · 2017-2020","Combined Statement FY2024 net outlays · period-of-availability row",5820.4],
+        ["Fund resources · 2018-2021","Combined Statement FY2024 net outlays · period-of-availability row",-11377.88],
+        ["Fund resources · 2020","Combined Statement FY2024 net outlays · period-of-availability row",-9315364.98],
+        ["Fund resources · 2020-2021","Combined Statement FY2024 net outlays · period-of-availability row",-14647194.9],
+        ["Fund resources · 2021","Combined Statement FY2024 net outlays · period-of-availability row",-28537239.38],
+        ["Fund resources · 2021-2022","Combined Statement FY2024 net outlays · period-of-availability row",-62334055.42],
+        ["Fund resources · 2022-2023","Combined Statement FY2024 net outlays · period-of-availability row",-89778760.19]
+      ]
+    },
+    {
+      "title": "VA Toxic Exposures Fund 2024-2028 resources from operating categories",
+      "sourceTotal": 14974323767.64,
+      "basis": "VA reports $20.268B of FY2024 actual Toxic Exposures Fund budget authority across eight operating categories. The signed $5.29367623236B bridge reconciles that schedule exactly to Treasury's $14.97432376764B 2024-2028 net-outlay row without assigning the authority-to-outlay difference to any operating category.",
+      "sourceLabel": "VA FY2026 Congressional Submission and Treasury Combined Statement",
+      "sourceUrl": "https://department.va.gov/wp-content/uploads/2025/06/2026-Volume-1-Supplemental-Information-Appendices.pdf",
+      "rows": [
+        ["VA FY2024 Toxic Exposures Fund operating-category schedule", "Published budget-authority schedule before the authority-to-outlay bridge", 20268000000],
+        ["VA authority-to-Treasury outlay basis bridge", "Exact arithmetic difference; not allocated to an operating category", -5293676232.36]
+      ],
+      "covers": [["Fund resources · 2024-2028", "Combined Statement FY2024 net outlays · period-of-availability row", 14974323767.64]]
+    },
+    {
+      "title": "036-1126-000 FY2024 net outlays by period of availability",
+      "sourceTotal": 19456685344.86,
+      "basis": "Exact FY2024 Treasury Combined Statement availability rows. Nonzero published net outlays sum to the parent account in integer cents.",
+      "sourceLabel": "Treasury FY2024 Combined Statement account table",
+      "sourceUrl": "https://fiscal.treasury.gov/system/files/files/reports-statements/combined-statement/cs2024/c42.xlsx",
+      "combinedStatementAvailability": true,
+      "covers": [
+        ["036-1126-000","Cost of War Toxic Exposures Fund, Departmental Administration, Veterans Affairs",19456685344.86]
+      ],
+      "rows": [
+        ["Fund resources · 2024-2028","Combined Statement FY2024 net outlays · period-of-availability row",14974323767.64],
+        ["Fund resources · 2023-2027","Combined Statement FY2024 net outlays · period-of-availability row",4308810927.07],
+        ["Fund resources · 2022-2024","Combined Statement FY2024 net outlays · period-of-availability row",173550650.15]
+      ]
+    },
+    {
+      "title": "036-0152-000 FY2024 net outlays by period of availability",
+      "sourceTotal": 10371792080.8,
+      "basis": "Exact FY2024 Treasury Combined Statement availability rows. Nonzero published net outlays sum to the parent account in integer cents.",
+      "sourceLabel": "Treasury FY2024 Combined Statement account table",
+      "sourceUrl": "https://fiscal.treasury.gov/system/files/files/reports-statements/combined-statement/cs2024/c42.xlsx",
+      "combinedStatementAvailability": true,
+      "covers": [
+        ["036-0152-000","Medical Support and Compliance, Veterans Health Administration, Veterans Affairs",10371792080.8]
+      ],
+      "rows": [
+        ["Fund resources · 2024","Combined Statement FY2024 net outlays · period-of-availability row",9006029849.42],
+        ["Fund resources · 2023","Combined Statement FY2024 net outlays · period-of-availability row",1123462061.73],
+        ["Fund resources · 2023-2024","Combined Statement FY2024 net outlays · period-of-availability row",151864230.78],
+        ["Fund resources · 2022","Combined Statement FY2024 net outlays · period-of-availability row",78898704.46],
+        ["Fund resources · 2021","Combined Statement FY2024 net outlays · period-of-availability row",5324257.57],
+        ["Fund resources · No Year","Combined Statement FY2024 net outlays · period-of-availability row",2181902.3],
+        ["Fund resources · 2022-2023","Combined Statement FY2024 net outlays · period-of-availability row",1444724.1],
+        ["Fund resources · 2020","Combined Statement FY2024 net outlays · period-of-availability row",1388055.25],
+        ["Fund resources · 2024-2025","Combined Statement FY2024 net outlays · period-of-availability row",714754.7],
+        ["Fund resources · 2019","Combined Statement FY2024 net outlays · period-of-availability row",483540.49]
+      ]
+    },
+    {
+      "title": "Readjustment Benefits account from VA state expenditures",
+      "sourceTotal": 13400128592.6,
+      "basis": "VA's FY2024 GDX schedule reports $13.148953928B of Education and Veteran Readiness expenditures by state. The signed $251.17466460M program-scope bridge reconciles that official schedule exactly to Treasury's Readjustment Benefits account without assigning the difference to a state.",
+      "sourceLabel": "VA FY2024 Geographic Distribution of Expenditures and Treasury FY2024 Combined Statement",
+      "sourceUrl": "https://www.va.gov/VETDATA/docs/GDX/GDX_FY24.xlsx",
+      "covers": [["036-0137-000","Readjustment Benefits, Veterans Benefits Administration, Veterans Affairs",13400128592.6]],
+      "rows": [
+        ["VA FY2024 Education and Veteran Readiness expenditures by state","VA GDX geography schedule used below",13148953928],
+        ["VA GDX / Treasury program-scope bridge","Exact arithmetic difference; not allocated to a state",251174664.6]
       ]
     }
   ],

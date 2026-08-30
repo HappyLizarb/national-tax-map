@@ -4,6 +4,24 @@
   "sourceUrl": "https://ofm.wa.gov/sites/default/files/public/accounting/report/CAFR/2024/ACFR24.pdf",
   "sourceBasis": "Official FY2024 Statement of Activities, printed pp. 38-39; amounts converted from thousands of dollars.",
   "rowSchema": ["activity", "function", "amount", "sourceAmount", "sourceRows"],
+  "sourceBreakdowns": [
+    {
+      "title": "Higher education expense coverage",
+      "sourceTotal": 10280892000,
+      "basis": "Exact same-statement decomposition from the FY2024 Statement of Activities, printed pp. 38-39. Charges, operating grants, capital grants, and the published net governmental expense reconcile exactly to total higher-education expense. This is funding coverage of the expense, not an allocation to education programs, and every child is below $10 billion.",
+      "sourceLabel": "Washington FY2024 ACFR",
+      "sourceUrl": "https://ofm.wa.gov/sites/default/files/public/accounting/report/CAFR/2024/ACFR24.pdf",
+      "covers": [
+        ["Governmental activities", "Education - higher education", 10280892000]
+      ],
+      "rows": [
+        ["Charges for services", "Program revenue covering expense", 3811556000],
+        ["Operating grants and contributions", "Program revenue covering expense", 3296310000],
+        ["Net governmental expense", "Expense not covered by program revenues", 3138380000],
+        ["Capital grants and contributions", "Program revenue covering expense", 34646000]
+      ]
+    }
+  ],
   "rows": [
     ["Governmental activities", "General government", 3848748000, 3848748000, 1],
     ["Governmental activities", "Education - K-12 education", 17398119000, 17398119000, 1],

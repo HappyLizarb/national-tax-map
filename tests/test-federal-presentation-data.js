@@ -24,7 +24,8 @@ assert.ok(education.itemBreakdowns[0].rows.some((row) => row[0] === "091-0251-00
 const treasuryInterest = itemBreakdowns.filter((item) => /Interest on Treasury Debt Securities/.test(item.parent[0]));
 assert.equal(treasuryInterest.length, 2);
 assert.ok(treasuryInterest.every((item) => /Fiscal Data/.test(item.rowPrefix)));
-assert.equal(treasuryInterest.flatMap((item) => item.rows).filter((row) => /public monthly disclosure ceiling/.test(row[1])).length, 5);
+assert.equal(treasuryInterest.flatMap((item) => item.rows).filter((row) => /public monthly disclosure ceiling/.test(row[1])).length, 1);
+assert.equal(treasuryInterest.flatMap((item) => item.rows).filter((row) => /expanded by month below/.test(row[1])).length, 4);
 const judiciary = federalDetails.find((detail) => detail.department === "Judicial Branch");
 assert.equal(judiciary.itemBreakdowns[0].accountCount, 8);
 assert.ok(judiciary.itemBreakdowns[0].rows.every((row) => Math.abs(row[2]) < 1e10));

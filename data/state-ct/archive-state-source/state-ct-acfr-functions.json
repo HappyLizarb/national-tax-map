@@ -4,6 +4,24 @@
   "sourceUrl": "https://osc.ct.gov/wp-content/uploads/2025/03/State-of-Connecticut-ACFR-FY-24-3-26-25.pdf",
   "sourceBasis": "Official FY2024 Statement of Activities, printed p. 34; amounts converted from thousands of dollars.",
   "rowSchema": ["activity", "function", "amount", "sourceAmount", "sourceRows"],
+  "sourceBreakdowns": [
+    {
+      "title": "Human Services expenses by governmental-fund source",
+      "sourceTotal": 11368256000,
+      "basis": "Exact FY2024 ACFR bridge from the governmental-fund statement, printed p. 37, to the government-wide Statement of Activities. Published modified-accrual Human Services expenditures total $11,447,104,000 across three fund columns. The displayed -$78,848,000 government-wide reconciliation adjustment is the exact arithmetic difference to the $11,368,256,000 accrual expense; it is not an allocated or estimated program amount. Every child is below $10 billion.",
+      "sourceLabel": "Connecticut FY2024 ACFR",
+      "sourceUrl": "https://osc.ct.gov/wp-content/uploads/2025/03/State-of-Connecticut-ACFR-FY-24-3-26-25.pdf",
+      "covers": [
+        ["Governmental activities", "Human Services", 11368256000]
+      ],
+      "rows": [
+        ["General Fund", "Governmental-fund expenditure", 5810175000],
+        ["Restricted grants and grant accounts", "Governmental-fund expenditure", 5635223000],
+        ["Other governmental funds", "Governmental-fund expenditure", 1706000],
+        ["Government-wide reconciliation adjustment", "Computed exactly from the published fund and Statement of Activities totals", -78848000]
+      ]
+    }
+  ],
   "rows": [
     ["Governmental activities", "Legislative", 126982000, 126982000, 1],
     ["Governmental activities", "General Government", 3664597000, 3664597000, 1],

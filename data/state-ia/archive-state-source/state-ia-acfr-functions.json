@@ -4,6 +4,23 @@
   "sourceUrl": "https://publications.iowa.gov/51393/1/FY2024%20ACFR.pdf",
   "sourceBasis": "Official FY2024 Statement of Activities, printed p. 39; amounts converted from thousands of dollars.",
   "rowSchema": ["activity", "function", "amount", "sourceAmount", "sourceRows"],
+  "sourceBreakdowns": [
+    {
+      "title": "Health and human services expense coverage",
+      "sourceTotal": 11735574000,
+      "basis": "Exact same-statement decomposition from the FY2024 Statement of Activities, printed p. 39. Charges, operating grants and contributions, and the published net governmental expense reconcile exactly to total Health and human services expense. This is funding coverage of the expense, not an allocation to service programs, and every child is below $10 billion.",
+      "sourceLabel": "Iowa FY2024 ACFR",
+      "sourceUrl": "https://publications.iowa.gov/51393/1/FY2024%20ACFR.pdf",
+      "covers": [
+        ["Governmental activities", "Health and human services", 11735574000]
+      ],
+      "rows": [
+        ["Operating grants and contributions", "Program revenue covering expense", 8237491000],
+        ["Net governmental expense", "Expense not covered by program revenues", 2564026000],
+        ["Charges for services", "Program revenue covering expense", 934057000]
+      ]
+    }
+  ],
   "rows": [
     ["Governmental activities", "Administration and regulation", 1675764000, 1675764000, 1],
     ["Governmental activities", "Education", 5149935000, 5149935000, 1],

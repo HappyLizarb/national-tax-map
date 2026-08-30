@@ -31,6 +31,24 @@
     ["Business-type activities", "Maryland Correctional Enterprises", 64497000, 64497000, 1],
     ["Statement presentation", "Rounding bridge to published primary-government total", -1000, -1000, 1]
   ],
+  "sourceBreakdowns": [
+    {
+      "title": "Education expense coverage",
+      "sourceTotal": 12066264000,
+      "basis": "Same-statement decomposition from the FY2024 Statement of Activities, printed p. 30. Charges, operating grants, and the published net governmental expense are reported in thousands; a separately labeled -$1,000 arithmetic bridge preserves their exact reconciliation to the printed total. This is funding coverage of the expense, not an allocation to education programs, and every child is below $10 billion.",
+      "sourceLabel": "Maryland FY2024 ACFR",
+      "sourceUrl": "https://www.marylandcomptroller.gov/content/dam/mdcomp/md/reports/financial/acfr2024.pdf",
+      "covers": [
+        ["Governmental activities", "Education", 12066264000]
+      ],
+      "rows": [
+        ["Net governmental expense", "Expense not covered by program revenues", 9216868000],
+        ["Operating grants and contributions", "Program revenue covering expense", 2255949000],
+        ["Charges for services", "Program revenue covering expense", 593448000],
+        ["Printed-thousands arithmetic bridge", "Exact difference to the published government-wide expense control", -1000]
+      ]
+    }
+  ],
   "coverageStatus": "official-itemized-source-basis",
   "note": "Rows preserve the audited function disclosures; any rounding difference from individually reported thousands is carried as an explicit presentation bridge."
 }

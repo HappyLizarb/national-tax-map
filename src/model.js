@@ -147,6 +147,7 @@ function signedDetailPanel(source, panel) {
       source.direction * (row[3] ?? row[2]), ...row.slice(4)])) };
   if (panel.title) signed.title = source.label + " · " + panel.title;
   if (panel.parent) signed.parent = signedDetailRow(source, panel.parent);
+  if (panel.displayParent) signed.displayParent = signedDetailRow(source, panel.displayParent);
   if (panel.covers) signed.covers = panel.covers.map((row) => signedDetailRow(source, row));
   if (Number.isFinite(panel.sourceTotal)) signed.sourceTotal = source.direction * panel.sourceTotal;
   return signed;
@@ -162,6 +163,9 @@ function expandReconciliationSource(source, detail) {
   const itemBreakdowns = expand("itemBreakdowns"), supplementalBreakdowns = expand("supplementalBreakdowns");
   const sourceBreakdowns = expand("sourceBreakdowns"), panels = [...itemBreakdowns, ...supplementalBreakdowns, ...sourceBreakdowns];
   const covered = new Set(panels.flatMap((panel) => [panel.parent, ...(panel.covers || [])]).filter(Boolean).map(rowKey));
+  for (const panel of panels) if (panel.displayParent) {
+    panel.displayParent = terminalSourceRow(source, panel.displayParent, covered);
+  }
   const signedRows = rows.map((row) => terminalSourceRow(source, signedDetailRow(source, row), covered));
   return { rows: signedRows, itemBreakdowns, supplementalBreakdowns, sourceBreakdowns };
 }

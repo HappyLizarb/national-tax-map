@@ -124,19 +124,222 @@
         ["South Dakota", "2024 prorated HCV renewal eligibility after offsets", 4829989],
         ["Northern Mariana Islands", "2024 prorated HCV renewal eligibility after offsets", 3777086]
       ],
-      "covers": [["Public and Indian Housing Programs", "Tenant Based Rental Assistance", 33976000000]]
+      "covers": [["HUD 2024 HCV renewal eligibility schedule", "Authority-level schedule before the eligibility-to-outlay bridge", 26625444529]]
+    },
+    {
+      "title": "HUD Contract Renewals from state eligibility",
+      "sourceTotal": 25216200134,
+      "basis": "HUD's state and territory renewal-eligibility schedule totals $26.625444529B. The signed $1.409244395B bridge reconciles that authority-level schedule to USAspending's $25.216200134B FY2024 Contract Renewals gross-outlay activity for TAS 086-X-0302-000 without assigning the basis difference to any state.",
+      "sourceLabel": "HUD HCV renewal list and USAspending TAS data",
+      "sourceUrl": "https://archives.hud.gov/news/2024/2024-HCV-Contract-Renewals-List.pdf",
+      "rows": [
+        ["HUD 2024 HCV renewal eligibility schedule", "Authority-level schedule before the eligibility-to-outlay bridge", 26625444529],
+        ["HUD eligibility-to-USAspending outlay basis bridge", "Exact arithmetic difference; not allocated to a state or territory", -1409244395]
+      ],
+      "covers": [["CONTRACT RENEWALS", "USAspending FY2024 gross outlays · program activity", 25216200134]]
+    },
+    {
+      "title": "HUD Tenant-Based Rental Assistance no-year fund resources by program activity",
+      "sourceTotal": 32741073747.46,
+      "basis": "USAspending's FY2024 P12 account submission reports $32.74654843985B of gross outlays for TAS 086-X-0302-000. The signed $5.47469239M bridge reconciles those program activities exactly to Treasury's $32.74107374746B Combined Statement net-outlay row; Contract Renewals is expanded through HUD's state eligibility schedule below.",
+      "sourceLabel": "USAspending FY2024 TAS object-class and program-activity data",
+      "sourceUrl": "https://api.usaspending.gov/api/v2/agency/treasury_account/086-X-0302-000/object_class/?fiscal_year=2024&limit=100",
+      "rows": [
+        ["CONTRACT RENEWALS", "USAspending FY2024 gross outlays · program activity", 25216200134],
+        ["TENANT-BASED RENTAL ASSISTANCE (EMERGENCY)", "USAspending FY2024 gross outlays · program activity", 3719156422],
+        ["ADMINISTRATIVE FEES", "USAspending FY2024 gross outlays · program activity", 2670921424],
+        ["SECTION 811 MAINSTREAM VOUCHERS", "USAspending FY2024 gross outlays · program activity", 766544602],
+        ["TENANT PROTECTION", "USAspending FY2024 gross outlays · program activity", 216542362],
+        ["INCREMENTAL VOUCHERS", "USAspending FY2024 gross outlays · program activity", 48340679],
+        ["VETERANS AFFAIRS SUPPORTIVE HOUSING VOUCHERS", "USAspending FY2024 gross outlays · program activity", 35593570],
+        ["HOMELESSNESS-DOMESTIC VIOLENCE", "USAspending FY2024 gross outlays · program activity", 34560365],
+        ["FAMILY UNIFICATION PROGRAM VOUCHERS", "USAspending FY2024 gross outlays · program activity", 27418234],
+        ["TRIBAL HUD VASH", "USAspending FY2024 gross outlays · program activity", 5774184.85],
+        ["FAMILY MOBILITY DEMONSTRATION", "USAspending FY2024 gross outlays · program activity", 5496463],
+        ["Treasury/USAspending net-to-gross basis bridge", "Exact arithmetic difference; not allocated to a program", -5474692.39]
+      ],
+      "covers": [["Fund resources · No Year", "Combined Statement FY2024 net outlays · period-of-availability row", 32741073747.46]]
+    },
+    {
+      "title": "HUD Project-Based Rental Assistance no-year fund resources by program activity",
+      "sourceTotal": 15574107196.27,
+      "basis": "USAspending's FY2024 account submission reports $15.57739154899B of gross outlays for permanent TAS 086-X-0303-000. The signed $3.28435272M bridge reconciles those program activities exactly to Treasury's $15.57410719627B Combined Statement net-outlay row. Contract Renewals is expanded first by object class and then by award place of performance below.",
+      "sourceLabel": "USAspending FY2024 TAS program-activity data",
+      "sourceUrl": "https://api.usaspending.gov/api/v2/agency/treasury_account/086-X-0303-000/program_activity/?fiscal_year=2024&limit=100&page=1",
+      "rows": [
+        ["CONTRACT RENEWALS", "USAspending FY2024 gross outlays · program activity", 12928069248.91],
+        ["PROJECT-BASED RENTAL ASSISTANCE (EMERGENCY)", "USAspending FY2024 gross outlays · program activity", 2117726058.25],
+        ["CONTRACT ADMINISTRATORS", "USAspending FY2024 gross outlays · program activity", 370539403.68],
+        ["MOD REHAB AND SRO RENEWALS", "USAspending FY2024 gross outlays · program activity", 139631695],
+        ["SECTION 8 AMENDMENTS", "USAspending FY2024 gross outlays · program activity", 19695064.61],
+        ["DISASTER ASSISTANCE", "USAspending FY2024 gross outlays · program activity", 1438530.85],
+        ["TENANT INFORMATION AND OUTREACH", "USAspending FY2024 gross outlays · program activity", 291547.69],
+        ["Treasury/USAspending net-to-gross basis bridge", "Exact arithmetic difference; not allocated to a program", -3284352.72]
+      ],
+      "covers": [["Fund resources · No Year", "Combined Statement FY2024 net outlays · period-of-availability row", 15574107196.27]]
+    },
+    {
+      "title": "HUD Project-Based Rental Assistance contract renewals by object class",
+      "sourceTotal": 12928069248.91,
+      "basis": "USAspending's FY2024 TAS endpoint divides the $12.92806924891B Contract Renewals program activity into two object classes exactly. The grants leaf is expanded by award place of performance below.",
+      "sourceLabel": "USAspending FY2024 TAS program-activity data",
+      "sourceUrl": "https://api.usaspending.gov/api/v2/agency/treasury_account/086-X-0303-000/program_activity/?fiscal_year=2024&limit=100&page=1",
+      "rows": [
+        ["Grants and fixed charges", "Contract Renewals · USAspending object class", 12914818968.53],
+        ["Contractual services and supplies", "Contract Renewals · USAspending object class", 13250280.38]
+      ],
+      "covers": [
+        ["CONTRACT RENEWALS", "USAspending FY2024 gross outlays · program activity", 12928069248.91],
+        ["086-X-0303-000 · Project-Based Rental Assistance", "Contract Renewals gross outlay · expanded by object class and award geography", 12928069248.91]
+      ]
+    },
+    {
+      "title": "HUD Project-Based Rental Assistance contract-renewal grants by place of performance",
+      "sourceTotal": 12914818968.53,
+      "basis": "USAspending's FY2024 P12 award-financial assistance rows plus its unlinked File C rows reconcile exactly to the $12.91481896853B Contract Renewals grants object class. Rows aggregate gross outlays by the award's primary place of performance; the separate contract export is excluded because it duplicates $13.20586318M already reported in the contractual-services object class.",
+      "sourceLabel": "USAspending FY2024 account breakdown by award export",
+      "sourceUrl": "https://api.usaspending.gov/api/v2/download/status?file_name=FY2024P01-P12_All_TAS_AccountBreakdownByAward_2026-08-30_H04M10S13248280.zip",
+      "rows": [
+        ["New York", "Contract-renewal grant gross outlays · primary place of performance", 1934268666.89],
+        ["California", "Contract-renewal grant gross outlays · primary place of performance", 1829918709.39],
+        ["Massachusetts", "Contract-renewal grant gross outlays · primary place of performance", 1061779368.78],
+        ["New Jersey", "Contract-renewal grant gross outlays · primary place of performance", 630914749.74],
+        ["Illinois", "Contract-renewal grant gross outlays · primary place of performance", 573492351.31],
+        ["Ohio", "Contract-renewal grant gross outlays · primary place of performance", 505704804.77],
+        ["Pennsylvania", "Contract-renewal grant gross outlays · primary place of performance", 439834524.09],
+        ["Texas", "Contract-renewal grant gross outlays · primary place of performance", 422500255],
+        ["Michigan", "Contract-renewal grant gross outlays · primary place of performance", 420423200.82],
+        ["Tennessee", "Contract-renewal grant gross outlays · primary place of performance", 371338473.67],
+        ["Florida", "Contract-renewal grant gross outlays · primary place of performance", 365686837.6],
+        ["Maryland", "Contract-renewal grant gross outlays · primary place of performance", 336717634.08],
+        ["Minnesota", "Contract-renewal grant gross outlays · primary place of performance", 261642560.3],
+        ["Georgia", "Contract-renewal grant gross outlays · primary place of performance", 241739239.77],
+        ["Maine", "Contract-renewal grant gross outlays · primary place of performance", 218096439.7],
+        ["Virginia", "Contract-renewal grant gross outlays · primary place of performance", 213809498.1],
+        ["Connecticut", "Contract-renewal grant gross outlays · primary place of performance", 212918922.88],
+        ["Colorado", "Contract-renewal grant gross outlays · primary place of performance", 207384863.51],
+        ["Washington", "Contract-renewal grant gross outlays · primary place of performance", 197492197.7],
+        ["Rhode Island", "Contract-renewal grant gross outlays · primary place of performance", 194899645.65],
+        ["Wisconsin", "Contract-renewal grant gross outlays · primary place of performance", 186642174.6],
+        ["Indiana", "Contract-renewal grant gross outlays · primary place of performance", 167978283.99],
+        ["North Carolina", "Contract-renewal grant gross outlays · primary place of performance", 156651963.18],
+        ["Alabama", "Contract-renewal grant gross outlays · primary place of performance", 144042012.78],
+        ["Missouri", "Contract-renewal grant gross outlays · primary place of performance", 126979810.53],
+        ["Kentucky", "Contract-renewal grant gross outlays · primary place of performance", 124958644],
+        ["District of Columbia", "Contract-renewal grant gross outlays · primary place of performance", 123689127.47],
+        ["Puerto Rico", "Contract-renewal grant gross outlays · primary place of performance", 121515041.92],
+        ["Mississippi", "Contract-renewal grant gross outlays · primary place of performance", 110375040.51],
+        ["South Carolina", "Contract-renewal grant gross outlays · primary place of performance", 99416293.15],
+        ["Louisiana", "Contract-renewal grant gross outlays · primary place of performance", 87929449.3],
+        ["Oregon", "Contract-renewal grant gross outlays · primary place of performance", 71743656],
+        ["Arizona", "Contract-renewal grant gross outlays · primary place of performance", 63806104],
+        ["Oklahoma", "Contract-renewal grant gross outlays · primary place of performance", 62262015],
+        ["Utah", "Contract-renewal grant gross outlays · primary place of performance", 60942801.06],
+        ["Delaware", "Contract-renewal grant gross outlays · primary place of performance", 59758123],
+        ["Iowa", "Contract-renewal grant gross outlays · primary place of performance", 49083029],
+        ["Kansas", "Contract-renewal grant gross outlays · primary place of performance", 48959312.83],
+        ["New Hampshire", "Contract-renewal grant gross outlays · primary place of performance", 48299536.23],
+        ["Arkansas", "Contract-renewal grant gross outlays · primary place of performance", 47928290],
+        ["West Virginia", "Contract-renewal grant gross outlays · primary place of performance", 46692639],
+        ["New Mexico", "Contract-renewal grant gross outlays · primary place of performance", 32193258],
+        ["Hawaii", "Contract-renewal grant gross outlays · primary place of performance", 31708861],
+        ["Nebraska", "Contract-renewal grant gross outlays · primary place of performance", 29973606],
+        ["Vermont", "Contract-renewal grant gross outlays · primary place of performance", 28950268.28],
+        ["Idaho", "Contract-renewal grant gross outlays · primary place of performance", 28487151.54],
+        ["Montana", "Contract-renewal grant gross outlays · primary place of performance", 23941531],
+        ["Nevada", "Contract-renewal grant gross outlays · primary place of performance", 19836447],
+        ["South Dakota", "Contract-renewal grant gross outlays · primary place of performance", 19340112.41],
+        ["Virgin Islands", "Contract-renewal grant gross outlays · primary place of performance", 12962936],
+        ["North Dakota", "Contract-renewal grant gross outlays · primary place of performance", 12765992],
+        ["Wyoming", "Contract-renewal grant gross outlays · primary place of performance", 10616779],
+        ["Alaska", "Contract-renewal grant gross outlays · primary place of performance", 7627992],
+        ["Unlinked award records", "USAspending File C records without an award identifier", 4109798],
+        ["Northern Mariana Islands", "Contract-renewal grant gross outlays · primary place of performance", 1499594],
+        ["Guam", "Contract-renewal grant gross outlays · primary place of performance", 588351]
+      ],
+      "covers": [["Grants and fixed charges", "Contract Renewals · USAspending object class", 12914818968.53]]
     },
     {
       "title": "USAspending FY2024 HUD Contract Renewals gross outlays by Treasury account",
       "sourceTotal": 38144269382.91,
-      "basis": "USAspending's FY2024 Contract Renewals program activity reconciles exactly to two permanent-indefinite Treasury accounts after all 15 TAS under HUD accounts 086-0302 and 086-0303 are checked. Both same-basis leaves remain above $10B and the TAS endpoint's only child object class repeats each total, so they are labeled public TAS disclosure ceilings. The separate HCV state panel uses eligibility rather than gross outlays and is not additive here.",
+      "basis": "USAspending's FY2024 Contract Renewals program activity reconciles exactly to two permanent-indefinite Treasury accounts after all 15 TAS under HUD accounts 086-0302 and 086-0303 are checked. The tenant-based leaf remains a public TAS disclosure ceiling after its source-native state eligibility view; the project-based leaf is expanded by object class and award geography above.",
       "sourceLabel": "USAspending HUD Treasury-account program activities",
       "sourceUrl": "https://api.usaspending.gov/api/v2/agency/086/program_activity/?fiscal_year=2024&limit=100&page=1",
       "rows": [
         ["086-X-0302-000 · Tenant-Based Rental Assistance", "Contract Renewals gross outlay · public TAS disclosure ceiling", 25216200134, "https://api.usaspending.gov/api/v2/agency/treasury_account/086-X-0302-000/program_activity/?fiscal_year=2024&limit=100&page=1"],
-        ["086-X-0303-000 · Project-Based Rental Assistance", "Contract Renewals gross outlay · public TAS disclosure ceiling", 12928069248.91, "https://api.usaspending.gov/api/v2/agency/treasury_account/086-X-0303-000/program_activity/?fiscal_year=2024&limit=100&page=1"]
+        ["086-X-0303-000 · Project-Based Rental Assistance", "Contract Renewals gross outlay · expanded by object class and award geography", 12928069248.91, "https://api.usaspending.gov/api/v2/agency/treasury_account/086-X-0303-000/program_activity/?fiscal_year=2024&limit=100&page=1"]
       ],
       "covers": [["Credit Accounts", "HUD Project-Based Rental Assistance", 15634000000]]
+    },
+    {
+      "title": "086-0302-000 FY2024 net outlays by period of availability",
+      "sourceTotal": 33975619395.46,
+      "basis": "Exact FY2024 Treasury Combined Statement availability rows. Nonzero published net outlays sum to the parent account in integer cents.",
+      "sourceLabel": "Treasury FY2024 Combined Statement account table",
+      "sourceUrl": "https://fiscal.treasury.gov/system/files/files/reports-statements/combined-statement/cs2024/c19.xlsx",
+      "combinedStatementAvailability": true,
+      "covers": [
+        ["086-0302-000","Tenant-Based Rental Assistance, Public and Indian Housing, Housing and Urban Development",33975619395.46]
+      ],
+      "rows": [
+        ["Fund resources · No Year","Combined Statement FY2024 net outlays · period-of-availability row",32741073747.46],
+        ["Fund resources · 2021-2030","Combined Statement FY2024 net outlays · period-of-availability row",1192169167],
+        ["Fund resources · 2023-2026","Combined Statement FY2024 net outlays · period-of-availability row",21897224],
+        ["Fund resources · 2024-2027","Combined Statement FY2024 net outlays · period-of-availability row",20477750],
+        ["Fund resources · 2021-2024","Combined Statement FY2024 net outlays · period-of-availability row",1494],
+        ["Fund resources · 2022-2025","Combined Statement FY2024 net outlays · period-of-availability row",4],
+        ["Fund resources · 2019-2020","Combined Statement FY2024 net outlays · period-of-availability row",3],
+        ["Fund resources · 2018-2021","Combined Statement FY2024 net outlays · period-of-availability row",2],
+        ["Fund resources · 2017-2020","Combined Statement FY2024 net outlays · period-of-availability row",2],
+        ["Fund resources · 2020-2021","Combined Statement FY2024 net outlays · period-of-availability row",1],
+        ["Fund resources · 2016-2019","Combined Statement FY2024 net outlays · period-of-availability row",1]
+      ]
+    },
+    {
+      "title": "086-0303-000 FY2024 net outlays by period of availability",
+      "sourceTotal": 15634259761.27,
+      "basis": "Exact FY2024 Treasury Combined Statement availability rows. Nonzero published net outlays sum to the parent account in integer cents.",
+      "sourceLabel": "Treasury FY2024 Combined Statement account table",
+      "sourceUrl": "https://fiscal.treasury.gov/system/files/files/reports-statements/combined-statement/cs2024/c19.xlsx",
+      "combinedStatementAvailability": true,
+      "covers": [
+        ["086-0303-000","Project-Based Rental Assistance, Housing Programs, Housing and Urban Development",15634259761.27]
+      ],
+      "rows": [
+        ["Fund resources · No Year","Combined Statement FY2024 net outlays · period-of-availability row",15574107196.27],
+        ["Fund resources · 2023-2026","Combined Statement FY2024 net outlays · period-of-availability row",51510720],
+        ["Fund resources · 2024-2027","Combined Statement FY2024 net outlays · period-of-availability row",8050551],
+        ["Fund resources · 2022-2025","Combined Statement FY2024 net outlays · period-of-availability row",591294]
+      ]
+    },
+    {
+      "title": "FHA Mutual Mortgage Insurance Capital Reserve by OMB budget category",
+      "sourceTotal": -27414702866.95,
+      "basis": "OMB reports FY2024 mandatory and discretionary outlays separately for the FHA Mutual Mortgage Insurance Capital Reserve Account. The signed $297,133.05 precision bridge reconciles the two rounded OMB rows exactly to Treasury's Combined Statement account.",
+      "sourceLabel": "OMB FY2027 Public Budget Database and Treasury FY2024 Combined Statement",
+      "sourceUrl": "https://www.whitehouse.gov/wp-content/uploads/2026/04/outlays_fy2027.xlsx",
+      "covers": [["086-0236-000","FHA, Mutual Mortgage Insurance Capital Reserve Account, Housing and Urban Development",-27414702866.95]],
+      "rows": [
+        ["OMB / Treasury published-precision bridge","Exact arithmetic difference; not allocated to a budget category",297133.05],
+        ["Discretionary capital-reserve outlays","OMB FY2024 actual",-3440000000],
+        ["Mandatory capital-reserve outlays","OMB FY2024 actual · public OMB account/category disclosure ceiling",-23975000000]
+      ]
+    },
+    {
+      "title": "FHA Mutual Mortgage Insurance financing account by cash-flow line",
+      "sourceTotal": 14784309919.84,
+      "basis": "OMB's FY2026 Budget Appendix reports FY2024 gross financing disbursements and four offsetting-collection lines for account 086-4587. The rounded lines net to $14.784B; the $309,919.84 precision bridge reconciles them exactly to Treasury's Combined Statement account.",
+      "sourceLabel": "OMB FY2026 Budget Appendix and Treasury FY2024 Combined Statement",
+      "sourceUrl": "https://www.whitehouse.gov/wp-content/uploads/2025/05/appendix_fy2026.pdf",
+      "covers": [["086-4587-000","Mutual Mortgage Insurance/Cooperative Management Insurance, Financing Account, Housing and Urban Development",14784309919.84]],
+      "rows": [
+        ["Gross financing disbursements","FY2024 actual · OMB schedule line 4110 · public OMB cash-line disclosure ceiling",38930000000],
+        ["OMB / Treasury published-precision bridge","Exact arithmetic difference; not allocated to a cash-flow line",309919.84],
+        ["Interest on uninvested funds","FY2024 actual offsetting collection",-583000000],
+        ["Upward reestimate from program account","FY2024 actual offsetting collection",-4173000000],
+        ["Recoveries on defaults","FY2024 actual offsetting collection",-5318000000],
+        ["Fees and premiums","FY2024 actual offsetting collection · public OMB cash-line disclosure ceiling",-14072000000]
+      ]
     }
   ],
   "largeAccountRows": [

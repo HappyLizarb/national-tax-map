@@ -19,7 +19,7 @@
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles/styles.css?v=27">
   <link rel="stylesheet" href="styles/details.css?v=22">
-  <link rel="stylesheet" href="styles/polish.css?v=6">
+  <link rel="stylesheet" href="styles/polish.css?v=7">
 </head>
 <body>
   <a class="skip-link" href="#mainContent">Skip to content</a>
@@ -81,7 +81,7 @@
       <div class="map-footnotes">
         <p><span class="dot reported"></span> Reported public-finance data</p>
         <p><span class="dot estimated"></span> State map uses government totals</p>
-        <p class="source-note">Federal outlays and state expenditures are separate ledgers; transfers can appear in both.</p>
+        <p class="source-note">Federal outlays and state expenditures are separate ledgers; transfers can appear in both. This map does not measure tax expenditures—revenue forgone through tax preferences.</p>
       </div>
     </section>
 
@@ -144,9 +144,11 @@
       </header>
 
       <details class="household-tax-detail detail-disclosure" id="taxEstimateSection" aria-labelledby="householdTaxTitle">
-        <summary><h3 id="householdTaxTitle"><span>Tax estimates &amp; everyday costs</span><small>Illustrative · sources linked</small></h3></summary>
+        <summary><h3 id="householdTaxTitle"><span>Tax estimates</span><small>Illustrative · sources linked</small></h3></summary>
         <div class="tax-rate-grid" id="householdTaxRows"></div>
       </details>
+
+      <div id="everydayCostsRows"></div>
 
       <details class="tax-rate-detail detail-disclosure" aria-labelledby="taxRatesTitle">
         <summary><h3 id="taxRatesTitle"><span>Key tax rates</span><small id="taxRateAsOf">Latest published</small></h3></summary>
@@ -189,7 +191,7 @@
     <section class="legal-disclaimer" aria-labelledby="legalDisclaimerTitle">
       <strong id="legalDisclaimerTitle">Disclaimer</strong>
       <p>Public Ledger is provided solely for general educational and illustrative purposes. Nothing on this site constitutes or should be construed as legal, financial, tax, investment, accounting, or personal advice; a recommendation or solicitation; or a substitute for advice from a qualified professional familiar with your circumstances.</p>
-      <p>Figures, estimates, rates, comparisons, and descriptions are based on cited public sources and simplified assumptions. They may be incomplete, delayed, inaccurate, or inapplicable to a particular person, transaction, or jurisdiction. Verify information against current primary sources before relying on it.</p>
+      <p>Figures, estimates, rates, comparisons, and descriptions are based on researched official sources and simplified assumptions. They may not be 100% accurate or correct and may be incomplete, delayed, or inapplicable to a particular person, transaction, or jurisdiction. Verify information against current primary sources before relying on it.</p>
       <p>The site is provided “as is” without warranties of accuracy, completeness, timeliness, availability, or fitness for a particular purpose. Use does not create an attorney-client, accountant-client, fiduciary, advisory, or other professional relationship. External links are provided for source access and do not imply endorsement.</p>
     </section>
   </footer>
@@ -209,12 +211,12 @@
   <script src="data/tax/household-tax-estimates.js?v=3"></script>
   <script src="data/tax/consumer-costs.js?v=2"></script>
   <script src="data/department-index.js"></script>
-  <script src="src/department-loader.js?v=6"></script>
-  <script src="src/model.js?v=10"></script>
-  <script src="src/receipt-hierarchy.js?v=1"></script>
-  <script src="src/tax-estimates.js?v=10"></script>
+  <script src="src/department-loader.js?v=7"></script>
+  <script src="src/model.js?v=11"></script>
+  <script src="src/receipt-hierarchy.js?v=2"></script>
+  <script src="src/tax-estimates.js?v=11"></script>
   <script src="src/kpi-disclosure.js?v=1"></script>
-  <script src="src/fiscal-panel.js?v=22"></script>
-  <script src="src/app.js?v=25"></script>
+  <script src="src/fiscal-panel.js?v=26"></script>
+  <script src="src/app.js?v=27"></script>
 </body>
 </html>

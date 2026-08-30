@@ -16,6 +16,78 @@
   "largeAccountBasis": "Exact Combined Statement net outlays by appropriation or fund account. This is a research cross-section of the same department, not another amount to add to MTS classification rows.",
   "itemBreakdownSchema": ["treasuryAccount", "title", "netOutlays"],
   "itemBreakdownBasis": "Exact FY2024 Treasury accounts grouped to one MTS row; each final bridge reconciles account cents to the parent published in rounded $ millions.",
+  "sourceBreakdowns": [
+    {
+      "title": "FY2024 Military Retirement Fund amortization payment by actuarial source",
+      "sourceTotal": 151521000000,
+      "basis": "The DoD Board of Actuaries' FY2024 meeting materials report the October 1, 2023 amortization payment at $151.521B across six actuarial sources. The initial unfunded-liability, Coast Guard, and assumption components are the public payment-basis disclosure ceilings in the Board schedule.",
+      "sourceLabel": "DoD Board of Actuaries 2024 meeting minutes · Military Retirement Fund payment",
+      "sourceUrl": "https://actuary.defense.gov/Portals/15/Documents/Minutes/Board%20of%20Actuaries%202024%20Meeting%20Minutes%20with%20Attachments.pdf",
+      "rows": [
+        ["Initial unfunded liability", "October 1, 2023 amortization payment · public payment-basis disclosure ceiling", 108303000000],
+        ["Actuarial assumptions", "October 1, 2023 amortization payment · public payment-basis disclosure ceiling", 21608000000],
+        ["Initial Coast Guard unfunded liability", "October 1, 2023 amortization payment · public payment-basis disclosure ceiling", 20953000000],
+        ["Benefit changes", "October 1, 2023 amortization payment", 7768000000],
+        ["Prior-year unpaid contribution", "October 1, 2023 amortization payment", 999000000],
+        ["Actuarial experience", "October 1, 2023 amortization-payment reduction", -8110000000]
+      ],
+      "covers": [["097-0040-000", "Payments to Military Retirement Fund, Defense", 151521000000]]
+    },
+    {
+      "title": "Military Retirement Fund federal-contribution receipt by actuarial source",
+      "sourceTotal": -151521000000,
+      "basis": "This is the receipt-side sign presentation of the DoD Board of Actuaries' exact $151.521B October 1, 2023 amortization schedule. The initial unfunded-liability, Coast Guard, and assumption components are the public payment-basis disclosure ceilings in the Board schedule.",
+      "sourceLabel": "DoD Board of Actuaries 2024 meeting minutes · Military Retirement Fund payment",
+      "sourceUrl": "https://actuary.defense.gov/Portals/15/Documents/Minutes/Board%20of%20Actuaries%202024%20Meeting%20Minutes%20with%20Attachments.pdf",
+      "rows": [
+        ["Actuarial experience", "Receipt-side sign of the October 1, 2023 amortization-payment reduction", 8110000000],
+        ["Prior-year unpaid contribution", "Receipt-side sign of the October 1, 2023 amortization payment", -999000000],
+        ["Benefit changes", "Receipt-side sign of the October 1, 2023 amortization payment", -7768000000],
+        ["Initial Coast Guard unfunded liability", "Receipt-side sign · public payment-basis disclosure ceiling", -20953000000],
+        ["Actuarial assumptions", "Receipt-side sign · public payment-basis disclosure ceiling", -21608000000],
+        ["Initial unfunded liability", "Receipt-side sign · public payment-basis disclosure ceiling", -108303000000]
+      ],
+      "covers": [["097-X-8097-003", "Federal Contribution, Department of Defense Military Retirement Fund", -151521000000]]
+    },
+    {
+      "title": "MERHCF investment-earnings receipt from audited interest income",
+      "sourceTotal": -18647530042.31,
+      "basis": "The audited MERHCF report discloses $16.851768B of FY2024 interest on investments; that aggregate is the report's public audited interest-revenue disclosure ceiling. The signed $1.79576204231B financial-statement-to-Treasury bridge preserves the exact $18.64753004231B intragovernmental receipt without allocating the basis difference to a security type.",
+      "sourceLabel": "DoD FY2024 MERHCF Audited Financial Report · Note 9",
+      "sourceUrl": "https://comptroller.war.gov/Portals/45/Documents/afr/fy2024/DoD_Components/2024_AFR_MERHCF.pdf",
+      "rows": [
+        ["Audited-interest-to-Treasury-receipt bridge", "Exact arithmetic difference; not allocated to a security type", -1795762042.31],
+        ["Interest on investments", "FY2024 audited earned revenue · public audited interest-revenue disclosure ceiling", -16851768000]
+      ],
+      "covers": [["097-X-5472-002", "Earnings on Investments, DOD Medicare-Eligible Retiree Health Care Fund", -18647530042.31]]
+    },
+    {
+      "title": "Military Retirement Fund account by source of mandatory outlays",
+      "sourceTotal": 72160308851.77,
+      "basis": "OMB's FY2026 Budget Appendix reports FY2024 Military Retirement Fund outlays from new mandatory authority and prior mandatory balances. The rounded lines total $72.160B; the $308,851.77 precision bridge reconciles them exactly to Treasury's Combined Statement account.",
+      "sourceLabel": "OMB FY2026 Budget Appendix and Treasury FY2024 Combined Statement",
+      "sourceUrl": "https://www.whitehouse.gov/wp-content/uploads/2025/05/appendix_fy2026.pdf",
+      "covers": [["097-8097-000","Department of Defense Military Retirement Fund",72160308851.77]],
+      "rows": [
+        ["Outlays from new mandatory authority","FY2024 actual · public OMB cash-line disclosure ceiling",71728000000],
+        ["Outlays from prior mandatory balances","FY2024 actual",432000000],
+        ["OMB / Treasury published-precision bridge","Exact arithmetic difference; not allocated to a source of authority",308851.77]
+      ]
+    },
+    {
+      "title": "Medicare-Eligible Retiree Health Care Fund by source of mandatory outlays",
+      "sourceTotal": 12285876340.91,
+      "basis": "OMB's FY2026 Budget Appendix reports FY2024 MERHCF outlays from new mandatory authority and prior mandatory balances. The rounded lines total $12.285B; the $876,340.91 precision bridge reconciles them exactly to Treasury's Combined Statement account.",
+      "sourceLabel": "OMB FY2026 Budget Appendix and Treasury FY2024 Combined Statement",
+      "sourceUrl": "https://www.whitehouse.gov/wp-content/uploads/2025/05/appendix_fy2026.pdf",
+      "covers": [["097-5472-000","Department of Defense, Medicare-Eligible Retiree Health Care Fund",12285876340.91]],
+      "rows": [
+        ["Outlays from new mandatory authority","FY2024 actual · public OMB cash-line disclosure ceiling",11785000000],
+        ["Outlays from prior mandatory balances","FY2024 actual",500000000],
+        ["OMB / Treasury published-precision bridge","Exact arithmetic difference; not allocated to a source of authority",876340.91]
+      ]
+    }
+  ],
   "largeAccountRows": [
     ["097-0040-000", "Payments to Military Retirement Fund, Defense", 151521000000, 1],
     ["097-8097-000", "Department of Defense Military Retirement Fund", 72160308851.77, 1],

@@ -4,6 +4,23 @@
   "sourceUrl": "https://oklahoma.gov/content/dam/ok/en/omes/documents/acfr-2024.pdf",
   "sourceBasis": "Official FY2024 Government-Wide Statement of Activities, printed p. 52; amounts converted from thousands of dollars.",
   "rowSchema": ["activity", "function", "amount", "sourceAmount", "sourceRows"],
+  "sourceBreakdowns": [
+    {
+      "title": "Health Services expense coverage",
+      "sourceTotal": 11101976000,
+      "basis": "Exact same-statement decomposition from the FY2024 Government-Wide Statement of Activities, printed p. 52. Charges, operating grants and contributions, and the published net governmental expense reconcile exactly to total Health Services expense. This is funding coverage of the expense, not an allocation to service programs, and every child is below $10 billion.",
+      "sourceLabel": "Oklahoma FY2024 ACFR",
+      "sourceUrl": "https://oklahoma.gov/content/dam/ok/en/omes/documents/acfr-2024.pdf",
+      "covers": [
+        ["Governmental activities", "Health Services", 11101976000]
+      ],
+      "rows": [
+        ["Operating grants and contributions", "Program revenue covering expense", 7550678000],
+        ["Net governmental expense", "Expense not covered by program revenues", 2116334000],
+        ["Charges for services", "Program revenue covering expense", 1434964000]
+      ]
+    }
+  ],
   "rows": [
     ["Governmental activities", "Education - General", 5749439000, 5749439000, 1],
     ["Governmental activities", "Education - Payment to Higher Education", 1001187000, 1001187000, 1],

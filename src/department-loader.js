@@ -34,7 +34,7 @@
   function loadScript(url) {
     return new Promise((resolve, reject) => {
       const script = document.createElement("script");
-      script.src = url + "?v=4";
+      script.src = url + "?v=5";
       script.onload = () => { script.remove(); resolve(); };
       script.onerror = () => { script.remove(); reject(new Error("Unable to load " + url)); };
       document.head.append(script);
@@ -42,7 +42,7 @@
   }
 
   async function loadDetail(url) {
-    const response = await fetch(url + "?v=4");
+    const response = await fetch(url + "?v=5");
     if (!response.ok) throw new Error("Unable to load " + url);
     return visibleReport(await response.json());
   }

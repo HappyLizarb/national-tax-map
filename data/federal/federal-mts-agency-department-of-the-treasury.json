@@ -19,6 +19,7 @@
   "sourceBreakdowns": [
     {
       "title": "CMS February 2024 Marketplace advance premium tax credit by state",
+      "displayParent": ["Internal Revenue Service", "Refundable Premium Tax Credits and Cost Sharing Reductions", 110195000000],
       "sourceTotal": 10346293507,
       "basis": "A one-month operational Marketplace view, separate from the Treasury FY2024 cash total. Each amount is CMS's state APTC enrollment multiplied by its published average monthly APTC and rounded to the nearest dollar; the $10.346B row total differs slightly from the national product because CMS publishes state averages to cents.",
       "sourceLabel": "CMS February 2024 Effectuated Enrollment workbook",
@@ -79,6 +80,7 @@
     },
     {
       "title": "IRS tax-year 2023 net premium tax credit by adjusted gross income",
+      "displayParent": ["Internal Revenue Service", "Refundable Premium Tax Credits and Cost Sharing Reductions", 110195000000],
       "sourceTotal": 2648231000,
       "basis": "IRS Statistics of Income estimates for tax year 2023 returns filed in 2024. Dollar amounts are published in thousands and converted to dollars. This tax-return view is separate from both CMS monthly advance payments and Treasury FY2024 cash outlays; it is not additive to either.",
       "sourceLabel": "IRS SOI Publication 1304 · Table 3.3",
@@ -159,7 +161,7 @@
         ["Vermont", "Net EITC on TY2023 returns processed in 2024 · published rounded amount", 70000000],
         ["International", "Net EITC on TY2023 returns processed in 2024 · published rounded amount", 26000000]
       ],
-      "covers": [["Internal Revenue Service", "Payment Where Earned Income Credit Exceeds Liability for Tax", 60011000000]]
+      "covers": [["IRS tax-year 2023 net EITC by state", "IRS tax-year filing schedule used below", 63677000000]]
     },
     {
       "title": "IRS tax-year 2023 refundable child tax credit by adjusted gross income",
@@ -183,7 +185,95 @@
         ["$200,000 under $500,000 AGI", "Refundable child tax credit or additional child tax credit · refundable portion", 23923000],
         ["$500,000 under $1,000,000 AGI", "Refundable child tax credit or additional child tax credit · refundable portion", 12000]
       ],
-      "covers": [["Internal Revenue Service", "Payment Where Child Tax Credit Exceeds Liability for Tax", 26247000000]]
+      "covers": [["IRS tax-year 2023 refundable child tax credit", "IRS tax-year filing schedule used below", 32064279000]]
+    },
+    {
+      "title": "Treasury Notes FY2024 accrued interest by month",
+      "sourceTotal": 329708890427.09,
+      "rows": [
+        ["2024-08-31","August 2024 · monthly expense · public monthly disclosure ceiling",31238526107.75],
+        ["2024-09-30","September 2024 · monthly expense · public monthly disclosure ceiling",30786679673.14],
+        ["2024-07-31","July 2024 · monthly expense · public monthly disclosure ceiling",30535314264.87],
+        ["2024-05-31","May 2024 · monthly expense · public monthly disclosure ceiling",28940357295.49],
+        ["2024-06-30","June 2024 · monthly expense · public monthly disclosure ceiling",28765368485.11],
+        ["2024-03-31","March 2024 · monthly expense · public monthly disclosure ceiling",27491997698.1],
+        ["2024-04-30","April 2024 · monthly expense · public monthly disclosure ceiling",27275232188.29],
+        ["2024-01-31","January 2024 · monthly expense · public monthly disclosure ceiling",26092024461.69],
+        ["2023-12-31","December 2023 · monthly expense · public monthly disclosure ceiling",25465764441.04],
+        ["2024-02-29","February 2024 · monthly expense · public monthly disclosure ceiling",25073239982.15],
+        ["2023-10-31","October 2023 · monthly expense · public monthly disclosure ceiling",24045592135.88],
+        ["2023-11-30","November 2023 · monthly expense · public monthly disclosure ceiling",23998793693.58]
+      ],
+      "basis": "Fiscal Data FY2024 monthly interest expense; exact API dollars; signed; generated from one API snapshot. Each month is the lowest public time-period disclosure for this security/type series.",
+      "sourceLabel": "Fiscal Data · Interest Expense on the Public Debt Outstanding",
+      "sourceUrl": "https://api.fiscaldata.treasury.gov/services/api/fiscal_service/v2/accounting/od/interest_expense?fields=record_date%2Cexpense_catg_desc%2Cexpense_group_desc%2Cexpense_type_desc%2Cmonth_expense_amt%2Cfytd_expense_amt%2Csrc_line_nbr&filter=record_fiscal_year%3Aeq%3A2024&sort=record_date%2Csrc_line_nbr&page%5Bsize%5D=10000",
+      "covers": [["ACCRUED INTEREST EXPENSE|Treasury Notes","Treasury Notes · Accrued Interest Expense · expanded by month below",329708890427.09]]
+    },
+    {
+      "title": "Treasury Bills FY2024 amortized discount by month",
+      "sourceTotal": 306434224076.92,
+      "rows": [
+        ["2024-03-31","March 2024 · monthly expense · public monthly disclosure ceiling",27033174525.57],
+        ["2024-08-31","August 2024 · monthly expense · public monthly disclosure ceiling",26609364745.01],
+        ["2024-05-31","May 2024 · monthly expense · public monthly disclosure ceiling",26052449596.55],
+        ["2024-07-31","July 2024 · monthly expense · public monthly disclosure ceiling",25910791210.14],
+        ["2024-04-30","April 2024 · monthly expense · public monthly disclosure ceiling",25715000023.17],
+        ["2024-01-31","January 2024 · monthly expense · public monthly disclosure ceiling",25695416801.27],
+        ["2023-12-31","December 2023 · monthly expense · public monthly disclosure ceiling",25625400416.55],
+        ["2024-09-30","September 2024 · monthly expense · public monthly disclosure ceiling",25559322254.43],
+        ["2024-06-30","June 2024 · monthly expense · public monthly disclosure ceiling",25083618972.22],
+        ["2024-02-29","February 2024 · monthly expense · public monthly disclosure ceiling",24694928041.42],
+        ["2023-11-30","November 2023 · monthly expense · public monthly disclosure ceiling",24383835745.06],
+        ["2023-10-31","October 2023 · monthly expense · public monthly disclosure ceiling",24070921745.53]
+      ],
+      "basis": "Fiscal Data FY2024 monthly interest expense; exact API dollars; signed; generated from one API snapshot. Each month is the lowest public time-period disclosure for this security/type series.",
+      "sourceLabel": "Fiscal Data · Interest Expense on the Public Debt Outstanding",
+      "sourceUrl": "https://api.fiscaldata.treasury.gov/services/api/fiscal_service/v2/accounting/od/interest_expense?fields=record_date%2Cexpense_catg_desc%2Cexpense_group_desc%2Cexpense_type_desc%2Cmonth_expense_amt%2Cfytd_expense_amt%2Csrc_line_nbr&filter=record_fiscal_year%3Aeq%3A2024&sort=record_date%2Csrc_line_nbr&page%5Bsize%5D=10000",
+      "covers": [["AMORTIZED DISCOUNT|Treasury Bills","Treasury Bills · Amortized Discount · expanded by month below",306434224076.92]]
+    },
+    {
+      "title": "Treasury Bonds FY2024 accrued interest by month",
+      "sourceTotal": 137291916890.28,
+      "rows": [
+        ["2024-08-31","August 2024 · monthly expense · public monthly disclosure ceiling",12260006296.77],
+        ["2024-07-31","July 2024 · monthly expense · public monthly disclosure ceiling",12138896919],
+        ["2024-09-30","September 2024 · monthly expense · public monthly disclosure ceiling",11965221171.94],
+        ["2024-05-31","May 2024 · monthly expense · public monthly disclosure ceiling",11868098892.36],
+        ["2024-03-31","March 2024 · monthly expense · public monthly disclosure ceiling",11624964424.42],
+        ["2024-06-30","June 2024 · monthly expense · public monthly disclosure ceiling",11604416166.55],
+        ["2024-04-30","April 2024 · monthly expense · public monthly disclosure ceiling",11372562812.26],
+        ["2024-01-31","January 2024 · monthly expense · public monthly disclosure ceiling",11261344097.79],
+        ["2023-12-31","December 2023 · monthly expense · public monthly disclosure ceiling",11129972167.76],
+        ["2023-10-31","October 2023 · monthly expense · public monthly disclosure ceiling",10777149349.88],
+        ["2024-02-29","February 2024 · monthly expense · public monthly disclosure ceiling",10699910283.13],
+        ["2023-11-30","November 2023 · monthly expense · public monthly disclosure ceiling",10589374308.42]
+      ],
+      "basis": "Fiscal Data FY2024 monthly interest expense; exact API dollars; signed; generated from one API snapshot. Each month is the lowest public time-period disclosure for this security/type series.",
+      "sourceLabel": "Fiscal Data · Interest Expense on the Public Debt Outstanding",
+      "sourceUrl": "https://api.fiscaldata.treasury.gov/services/api/fiscal_service/v2/accounting/od/interest_expense?fields=record_date%2Cexpense_catg_desc%2Cexpense_group_desc%2Cexpense_type_desc%2Cmonth_expense_amt%2Cfytd_expense_amt%2Csrc_line_nbr&filter=record_fiscal_year%3Aeq%3A2024&sort=record_date%2Csrc_line_nbr&page%5Bsize%5D=10000",
+      "covers": [["ACCRUED INTEREST EXPENSE|Treasury Bonds","Treasury Bonds · Accrued Interest Expense · expanded by month below",137291916890.28]]
+    },
+    {
+      "title": "Treasury TIPS FY2024 inflation compensation by month",
+      "sourceTotal": 57060678892.35,
+      "rows": [
+        ["2024-05-31","May 2024 · monthly expense · public monthly disclosure ceiling",12905292232.26],
+        ["2024-04-30","April 2024 · monthly expense · public monthly disclosure ceiling",12896405166.65],
+        ["2024-03-31","March 2024 · monthly expense · public monthly disclosure ceiling",9605929015.73],
+        ["2023-10-31","October 2023 · monthly expense · public monthly disclosure ceiling",8428032835.81],
+        ["2024-06-30","June 2024 · monthly expense · public monthly disclosure ceiling",7517135646.23],
+        ["2023-11-30","November 2023 · monthly expense · public monthly disclosure ceiling",5013633730.59],
+        ["2024-07-31","July 2024 · monthly expense · public monthly disclosure ceiling",4054252578.8],
+        ["2024-09-30","September 2024 · monthly expense · public monthly disclosure ceiling",2325800054.29],
+        ["2024-08-31","August 2024 · monthly expense · public monthly disclosure ceiling",743790508.12],
+        ["2023-12-31","December 2023 · monthly expense · public monthly disclosure ceiling",-524959761.2],
+        ["2024-02-29","February 2024 · monthly expense · public monthly disclosure ceiling",-1992323811],
+        ["2024-01-31","January 2024 · monthly expense · public monthly disclosure ceiling",-3912309303.93]
+      ],
+      "basis": "Fiscal Data FY2024 monthly interest expense; exact API dollars; signed; generated from one API snapshot. Each month is the lowest public time-period disclosure for this security/type series.",
+      "sourceLabel": "Fiscal Data · Interest Expense on the Public Debt Outstanding",
+      "sourceUrl": "https://api.fiscaldata.treasury.gov/services/api/fiscal_service/v2/accounting/od/interest_expense?fields=record_date%2Cexpense_catg_desc%2Cexpense_group_desc%2Cexpense_type_desc%2Cmonth_expense_amt%2Cfytd_expense_amt%2Csrc_line_nbr&filter=record_fiscal_year%3Aeq%3A2024&sort=record_date%2Csrc_line_nbr&page%5Bsize%5D=10000",
+      "covers": [["ACCRUED INTEREST EXPENSE|Interest Expense Inflation Compensation (TIPS)","Interest Expense Inflation Compensation (TIPS) · Accrued Interest Expense · expanded by month below",57060678892.35]]
     },
     {
       "title": "Treasury FRN FY2024 accrued interest by month-end FYTD change",
@@ -274,9 +364,80 @@
       "covers": [["CASH BASIS GAS PAYMENTS|Discount Deferred on Redemptions", "Discount Deferred on Redemptions · Cash Basis Gas Payments", 14317768371.92]]
     },
     {
+      "title": "Treasury FY2024 interest received from credit-financing accounts by payer",
+      "sourceTotal": -47714213250.55,
+      "covers": [["020-1499-000", "Interest Received from Credit Reform Financing Accounts", -47714213250.55]],
+      "basis": "OMB's FY2026 Budget Appendix reports $47.649B of FY2024 actual financing-account payments to Treasury on program-and-financing line 0713. The signed $65.21325055M bridge reconciles those million-dollar schedules exactly to Treasury's $47.71421325055B Combined Statement receipt. Federal Student Aid independently reports the $31.196B Direct Loan interest expense but does not publish a lower cash-payment split, so that one payer remains an explicit public OMB/FSA account-level disclosure ceiling rather than an estimated allocation.",
+      "sourceLabel": "OMB · FY2026 Budget Appendix · FY2024 actual financing-account schedules",
+      "sourceUrl": "https://www.govinfo.gov/content/pkg/BUDGET-2026-APP/pdf/BUDGET-2026-APP.pdf",
+      "rows": [
+        ["MILITARY DEBT REDUCTION FINANCING ACCOUNT", "FY2024 actual payment of interest to Treasury · OMB account 011-4174-0-3", -1000000],
+        ["RURAL ENERGY FOR AMERICA GUARANTEED LOAN FINANCING ACCOUNT", "FY2024 actual payment of interest to Treasury · OMB account 012-4267-0-3", -1000000],
+        ["RURAL MICROENTERPRISE INVESTMENT DIRECT LOAN FINANCING ACCOUNT", "FY2024 actual payment of interest to Treasury · OMB account 012-4354-0-3", -1000000],
+        ["ASSISTANCE TO AMERICAN SAMOA DIRECT LOAN FINANCING ACCOUNT", "FY2024 actual payment of interest to Treasury · OMB account 014-4163-0-3", -1000000],
+        ["SMALL BUSINESS LENDING FUND FINANCING ACCOUNT", "FY2024 actual payment of interest to Treasury · OMB account 020-4349-0-3", -1000000],
+        ["INDIAN HOUSING LOAN GUARANTEE FUND FINANCING ACCOUNT", "FY2024 actual payment of interest to Treasury · OMB account 086-4104-0-3", -1000000],
+        ["GREEN RETROFIT PROGRAM FOR MULTIFAMILY HOUSING FINANCING ACCOUNT", "FY2024 actual payment of interest to Treasury · OMB account 086-4589-0-3", -1000000],
+        ["COLLEGE HOUSING AND ACADEMIC FACILITIES LOANS FINANCING ACCOUNT", "FY2024 actual payment of interest to Treasury · OMB account 091-4252-0-3", -1000000],
+        ["BUREAU OF RECLAMATION DIRECT LOAN FINANCING ACCOUNT", "FY2024 actual payment of interest to Treasury · OMB account 014-4547-0-3", -2000000],
+        ["TIGER TIFIA DIRECT LOAN FINANCING ACCOUNT, RECOVERY ACT", "FY2024 actual payment of interest to Treasury · OMB account 069-4347-0-3", -2000000],
+        ["CONSUMER OPERATED AND ORIENTED PLAN PROGRAM CONTINGENCY FUND FINANCING ACCOUNT", "FY2024 actual payment of interest to Treasury · OMB account 075-4482-0-3", -2000000],
+        ["RURAL TELEPHONE BANK DIRECT LOAN FINANCING ACCOUNT", "FY2024 actual payment of interest to Treasury · OMB account 012-4210-0-3", -3000000],
+        ["RURAL BUSINESS AND INDUSTRY GUARANTEED LOANS FINANCING ACCOUNT", "FY2024 actual payment of interest to Treasury · OMB account 012-4227-0-3", -3000000],
+        ["COMMUNITY DEVELOPMENT FINANCIAL INSTITUTIONS FUND DIRECT LOAN FINANCING ACCOUNT", "FY2024 actual payment of interest to Treasury · OMB account 020-4088-0-3", -3000000],
+        ["NATIVE AMERICAN DIRECT LOAN FINANCING ACCOUNT", "FY2024 actual payment of interest to Treasury · OMB account 036-4130-0-3", -3000000],
+        ["AGRICULTURAL CREDIT INSURANCE FUND GUARANTEED LOAN FINANCING ACCOUNT", "FY2024 actual payment of interest to Treasury · OMB account 012-4213-0-3", -4000000],
+        ["COMMODITY CREDIT CORPORATION EXPORT GUARANTEE FINANCING ACCOUNT", "FY2024 actual payment of interest to Treasury · OMB account 012-4337-0-3", -4000000],
+        ["CLEAN TECHNOLOGY FUND LOANS FINANCING ACCOUNT", "FY2024 actual payment of interest to Treasury · OMB account 020-4618-0-3", -4000000],
+        ["HOUSING GUARANTEED LOAN FINANCING ACCOUNT", "FY2024 actual payment of interest to Treasury · OMB account 036-4129-0-3", -4000000],
+        ["HISTORICALLY BLACK COLLEGE AND UNIVERSITY CAPITAL FINANCING DIRECT LOAN FINANCING ACCOUNT", "FY2024 actual payment of interest to Treasury · OMB account 091-4255-0-3", -4000000],
+        ["RURAL ECONOMIC DEVELOPMENT DIRECT LOAN FINANCING ACCOUNT", "FY2024 actual payment of interest to Treasury · OMB account 012-4176-0-3", -5000000],
+        ["BIOREFINERY ASSISTANCE GUARANTEED LOAN FINANCING ACCOUNT", "FY2024 actual payment of interest to Treasury · OMB account 012-4355-0-3", -7000000],
+        ["BUSINESS DIRECT LOAN FINANCING ACCOUNT", "FY2024 actual payment of interest to Treasury · OMB account 073-4148-0-3", -7000000],
+        ["CONSUMER OPERATED AND ORIENTED PLAN FINANCING ACCOUNT", "FY2024 actual payment of interest to Treasury · OMB account 075-4418-0-3", -8000000],
+        ["GREEN AND RESILIENT RETROFIT PROGRAM FOR MULTIFAMILY HOUSING FINANCING ACCOUNT", "FY2024 actual payment of interest to Treasury · OMB account 086-4616-0-3", -9000000],
+        ["RURAL DEVELOPMENT LOAN FUND DIRECT LOAN FINANCING ACCOUNT", "FY2024 actual payment of interest to Treasury · OMB account 012-4219-0-3", -10000000],
+        ["P.L. 480 DIRECT CREDIT FINANCING ACCOUNT", "FY2024 actual payment of interest to Treasury · OMB account 012-4049-0-3", -12000000],
+        ["FISHERIES FINANCE DIRECT LOAN FINANCING ACCOUNT", "FY2024 actual payment of interest to Treasury · OMB account 013-4324-0-3", -12000000],
+        ["TIFIA GENERAL FUND DIRECT LOAN FINANCING ACCOUNT", "FY2024 actual payment of interest to Treasury · OMB account 069-4348-0-3", -13000000],
+        ["TEACH GRANT FINANCING ACCOUNT", "FY2024 actual payment of interest to Treasury · OMB account 091-4290-0-3", -16000000],
+        ["DISTANCE LEARNING, TELEMEDICINE, BROADBAND DIRECT LOAN FINANCING ACCOUNT", "FY2024 actual payment of interest to Treasury · OMB account 012-4146-0-3", -17000000],
+        ["FHA-GENERAL AND SPECIAL RISK DIRECT LOAN FINANCING ACCOUNT", "FY2024 actual payment of interest to Treasury · OMB account 086-4105-0-3", -20000000],
+        ["TITLE 17 INNOVATIVE TECHNOLOGY DIRECT LOAN FINANCING ACCOUNT", "FY2024 actual payment of interest to Treasury · OMB account 089-4455-0-3", -20000000],
+        ["GUARANTEED LOAN FINANCING ACCOUNT", "FY2024 actual payment of interest to Treasury · OMB account 077-4485-0-3", -28000000],
+        ["EXPORT-IMPORT BANK GUARANTEED LOAN FINANCING ACCOUNT", "FY2024 actual payment of interest to Treasury · OMB account 083-4162-0-3", -41000000],
+        ["STATE HFA DIRECT LOAN FINANCING ACCOUNT", "FY2024 actual payment of interest to Treasury · OMB account 020-4298-0-3", -42000000],
+        ["TEMPORARY STUDENT LOAN PURCHASE AUTHORITY CONDUIT FINANCING ACCOUNT", "FY2024 actual payment of interest to Treasury · OMB account 091-4459-0-3", -42000000],
+        ["FOREIGN MILITARY FINANCING DIRECT LOAN FINANCING ACCOUNT", "FY2024 actual payment of interest to Treasury · OMB account 011-4122-0-3", -45000000],
+        ["FARM STORAGE FACILITY DIRECT LOAN FINANCING ACCOUNT", "FY2024 actual payment of interest to Treasury · OMB account 012-4158-0-3", -60000000],
+        ["RURAL HOUSING INSURANCE FUND GUARANTEED LOAN FINANCING ACCOUNT", "FY2024 actual payment of interest to Treasury · OMB account 012-4216-0-3", -62000000],
+        ["BUSINESS GUARANTEED LOAN FINANCING ACCOUNT", "FY2024 actual payment of interest to Treasury · OMB account 073-4149-0-3", -62000000],
+        ["Treasury/OMB schedule precision-and-timing bridge", "Exact arithmetic difference; not allocated to a financing account", -65213250.55],
+        ["RAILROAD REHABILITATION AND IMPROVEMENT DIRECT LOAN FINANCING ACCOUNT", "FY2024 actual payment of interest to Treasury · OMB account 069-4420-0-3", -76000000],
+        ["ECONOMIC STABILIZATION DIRECT LOAN FINANCING ACCOUNT", "FY2024 actual payment of interest to Treasury · OMB account 020-4447-0-3", -99000000],
+        ["HOUSING DIRECT LOAN FINANCING ACCOUNT", "FY2024 actual payment of interest to Treasury · OMB account 036-4127-0-3", -220000000],
+        ["WATER INFRASTRUCTURE FINANCE AND INNOVATION DIRECT LOAN FINANCING ACCOUNT", "FY2024 actual payment of interest to Treasury · OMB account 068-4372-0-3", -236000000],
+        ["DIRECT LOAN FINANCING ACCOUNT", "FY2024 actual payment of interest to Treasury · OMB account 077-4484-0-3", -277000000],
+        ["STUDENT LOAN ACQUISITION ACCOUNT", "FY2024 actual payment of interest to Treasury · OMB account 091-4449-0-3", -293000000],
+        ["EXPORT-IMPORT BANK DIRECT LOAN FINANCING ACCOUNT", "FY2024 actual payment of interest to Treasury · OMB account 083-4161-0-3", -322000000],
+        ["RURAL COMMUNITY FACILITY DIRECT LOANS FINANCING ACCOUNT", "FY2024 actual payment of interest to Treasury · OMB account 012-4225-0-3", -355000000],
+        ["RURAL ELECTRIFICATION AND TELECOMMUNICATIONS DIRECT LOAN FINANCING ACCOUNT", "FY2024 actual payment of interest to Treasury · OMB account 012-4208-0-3", -369000000],
+        ["RURAL WATER AND WASTE DISPOSAL DIRECT LOANS FINANCING ACCOUNT", "FY2024 actual payment of interest to Treasury · OMB account 012-4226-0-3", -478000000],
+        ["AGRICULTURAL CREDIT INSURANCE FUND DIRECT LOAN FINANCING ACCOUNT", "FY2024 actual payment of interest to Treasury · OMB account 012-4212-0-3", -564000000],
+        ["TIFIA HIGHWAY TRUST FUND DIRECT LOAN FINANCING ACCOUNT", "FY2024 actual payment of interest to Treasury · OMB account 069-4123-0-3", -599000000],
+        ["TEMPORARY STUDENT LOAN PURCHASE AUTHORITY FINANCING ACCOUNT", "FY2024 actual payment of interest to Treasury · OMB account 091-4453-0-3", -628000000],
+        ["RURAL HOUSING INSURANCE FUND DIRECT LOAN FINANCING ACCOUNT", "FY2024 actual payment of interest to Treasury · OMB account 012-4215-0-3", -662000000],
+        ["FHA-GENERAL AND SPECIAL RISK GUARANTEED LOAN FINANCING ACCOUNT", "FY2024 actual payment of interest to Treasury · OMB account 086-4077-0-3", -913000000],
+        ["FEDERAL FAMILY EDUCATION LOAN PROGRAM FINANCING ACCOUNT", "FY2024 actual payment of interest to Treasury · OMB account 091-4251-0-3", -1537000000],
+        ["FHA-MUTUAL MORTGAGE INSURANCE GUARANTEED LOAN FINANCING ACCOUNT", "FY2024 actual payment of interest to Treasury · OMB account 086-4587-0-3", -3291000000],
+        ["DISASTER DIRECT LOAN FINANCING ACCOUNT", "FY2024 actual payment of interest to Treasury · OMB account 073-4150-0-3", -4950000000],
+        ["FEDERAL DIRECT STUDENT LOAN PROGRAM FINANCING ACCOUNT", "FY2024 actual payment of interest to Treasury · public OMB/FSA account-level disclosure ceiling · OMB account 091-4253-0-3-502", -31196000000, "https://www.ed.gov/media/document/2024-fsa-annual-report-108481.pdf"]
+      ]
+    },
+    {
       "title": "OMB FY2024 credit-financing interest received by financing account",
       "sourceTotal": 10245000000,
-      "covers": [["Bureau of the Fiscal Service", "Interest Paid to Credit Financing Accounts", 10247000000]],
+      "covers": [["OMB FY2024 credit-financing interest receipts", "OMB financing-account schedule used below", 10245000000]],
       "basis": "OMB's FY2026 Budget Appendix reports FY2024 actual offsetting collections received by the agency loan-financing accounts on schedule line 4122. Sixty nonzero accounts label the receipt as interest on uninvested funds; SBA's Disaster Direct Loan Financing Account labels its $558M receipt as interest income from Treasury. The published million-dollar rows total $10.245B, $2M below Treasury's rounded $10.247B cash outlay and within the combined rounding of 61 schedules; no balancing residual is invented. These rows are the receiving side of an intragovernmental transfer, not additional federal spending.",
       "sourceLabel": "OMB · FY2026 Budget Appendix · FY2024 actual financing-account schedules",
       "sourceUrl": "https://www.whitehouse.gov/wp-content/uploads/2025/05/appendix_fy2026.pdf",
@@ -342,6 +503,446 @@
         ["URBAN AND ENVIRONMENTAL CREDIT GUARANTEED LOAN FINANCING ACCOUNT", "FY2024 actual interest received · OMB account 077-4344-0-3-151", 1000000],
         ["TIFIA GENERAL FUND DIRECT LOAN FINANCING ACCOUNT", "FY2024 actual interest received · OMB account 069-4348-0-3-401", 1000000],
         ["NATIVE AMERICAN DIRECT LOAN FINANCING ACCOUNT", "FY2024 actual interest received · OMB account 036-4130-0-3-704", 1000000]
+      ]
+    },
+    {
+      "title": "Premium-assistance transfer to CMS by program activity",
+      "sourceTotal": 128472512976.9,
+      "basis": "USAspending's FY2024 P12 File B reports $128.48137897049B of gross outlays for the allocated transfer account. The signed $8.86599359M bridge reconciles that schedule exactly to Treasury's $128.47251297690B transfer-to-CMS row without assigning the cross-source difference to a program.",
+      "sourceLabel": "USAspending FY2024 P12 Account Breakdown by Program Activity and Object Class",
+      "sourceUrl": "https://api.usaspending.gov/api/v2/download/status?file_name=FY2024P01-P12_All_TAS_AccountBreakdownByPA-OC_2026-08-30_H05M21S14583490.zip",
+      "covers": [
+        ["Transfer To · Centers for Medicare and Medicaid Services, Health and Human Services · No Year","Combined Statement FY2024 net outlays · period-of-availability row",128472512976.9]
+      ],
+      "rows": [
+        ["Premium Assistance Tax Credit · insurance claims and indemnities","USAspending FY2024 gross outlays · public program-activity/object-class cash disclosure ceiling",117023928625.03],
+        ["State Innovation Waivers · grants, subsidies, and contributions","USAspending FY2024 gross outlays",8107580557.46],
+        ["Basic Health Program · insurance claims and indemnities","USAspending FY2024 gross outlays",3349869788],
+        ["Treasury/USAspending gross-to-net basis bridge","Exact arithmetic difference; not allocated to a program activity",-8865993.59]
+      ]
+    },
+    {
+      "title": "Earned Income Credit account from IRS tax-year state detail",
+      "sourceTotal": 60011006552.22,
+      "basis": "IRS publishes the tax-year 2023 state schedule at $63.677B and the FY2024 cash account at $60.011B. The signed $3.66599344778B timing-and-scope bridge reconciles those official views exactly to Treasury's account without assigning the difference to a state.",
+      "sourceLabel": "IRS EITC Central and Treasury FY2024 Combined Statement",
+      "sourceUrl": "https://www.irs.gov/tax-professionals/eitc-central/statistics-for-tax-returns-with-the-earned-income-tax-credit-eitc",
+      "covers": [["020-0906-000","Payment Where Earned Income Credit Exceeds Liability for Tax, Internal Revenue Service, Treasury",60011006552.22]],
+      "rows": [
+        ["IRS tax-year 2023 net EITC by state","IRS tax-year filing schedule used below",63677000000],
+        ["IRS tax-year / Treasury fiscal-year bridge","Exact timing-and-scope difference; not allocated to a state",-3665993447.78]
+      ]
+    },
+    {
+      "title": "Child Tax Credit account from IRS tax-year income-band detail",
+      "sourceTotal": 26246884478.8,
+      "basis": "IRS publishes the tax-year 2023 refundable child-credit income-band schedule at $32.064279B. The signed $5.81739452120B timing-and-scope bridge reconciles that schedule exactly to Treasury's FY2024 cash account without assigning the difference to an income band.",
+      "sourceLabel": "IRS SOI Publication 1304 Table 3.3 and Treasury FY2024 Combined Statement",
+      "sourceUrl": "https://www.irs.gov/pub/irs-soi/23in33ar.xls",
+      "covers": [["020-0922-000","Payment Where Child Tax Credit Exceeds Liability for Tax, Internal Revenue Service, Treasury",26246884478.8]],
+      "rows": [
+        ["IRS tax-year 2023 refundable child tax credit","IRS tax-year filing schedule used below",32064279000],
+        ["IRS tax-year / Treasury fiscal-year bridge","Exact timing-and-scope difference; not allocated to an income band",-5817394521.2]
+      ]
+    },
+    {
+      "title": "Credit-financing interest account by receiving financing account",
+      "sourceTotal": 10246777547.49,
+      "basis": "OMB's 61 FY2024 financing-account schedules report $10.245B of interest received from Treasury. The $1.77754749M published-precision bridge reconciles the rounded OMB schedules exactly to Treasury's Combined Statement account.",
+      "sourceLabel": "OMB FY2026 Budget Appendix and Treasury FY2024 Combined Statement",
+      "sourceUrl": "https://www.whitehouse.gov/wp-content/uploads/2025/05/appendix_fy2026.pdf",
+      "covers": [["020-1880-000","Credit Reform:  Interest Paid on Uninvested Funds (Indefinite),  Bureau of the Fiscal Service, Treasury",10246777547.49]],
+      "rows": [
+        ["OMB FY2024 credit-financing interest receipts","OMB financing-account schedule used below",10245000000],
+        ["OMB / Treasury published-precision bridge","Exact arithmetic difference; not allocated to a financing account",1777547.49]
+      ]
+    },
+    {
+      "title": "Premium Tax Credit FY2024 advances and tax-return reconciliation",
+      "sourceTotal": 98746000000,
+      "basis": "The IRS FY2024 Agency Financial Report states that CMS disbursed $117.023B of Premium Tax Credit advances and that the advances were adjusted downward by $18.277B using tax-return information. Those two published rounded cash components reconcile exactly to IRS's $98.746B Premium Tax Credit outlay. IRS publishes no lower additive fiscal-year cash schedule for the reconciliation adjustment.",
+      "sourceLabel": "IRS FY2024 Agency Financial Report · Other Information",
+      "sourceUrl": "https://www.irs.gov/pub/irs-pdf/p5456.pdf",
+      "covers": [
+        ["Premium Tax Credit, including advance amounts","FY2024 actual outlay",98746000000]
+      ],
+      "rows": [
+        ["Advance Premium Tax Credit payments disbursed by CMS","IRS-reported FY2024 cash component · public IRS component disclosure ceiling",117023000000],
+        ["Downward adjustment based on tax-return information","IRS-reported FY2024 cash component · public IRS reconciliation disclosure ceiling",-18277000000]
+      ]
+    },
+    {
+      "title": "Premium-assistance no-year fund resources from tax-return reconciliation",
+      "sourceTotal": -18277256948.77,
+      "basis": "IRS reports a $18.277B downward FY2024 Premium Tax Credit adjustment based on tax-return information. The signed $256,948.77 precision bridge reconciles the rounded IRS component exactly to Treasury's no-year fund-resource row; IRS publishes no lower additive fiscal-year cash schedule for that reconciliation adjustment.",
+      "sourceLabel": "IRS FY2024 Agency Financial Report and Treasury FY2024 Combined Statement",
+      "sourceUrl": "https://www.irs.gov/pub/irs-pdf/p5456.pdf",
+      "covers": [
+        ["Fund resources · No Year","Combined Statement FY2024 net outlays · period-of-availability row",-18277256948.77]
+      ],
+      "rows": [
+        ["IRS/Treasury source-precision bridge","Exact arithmetic difference; not allocated below the published adjustment",-256948.77],
+        ["Downward adjustment based on tax-return information","IRS-reported FY2024 cash component · public IRS reconciliation disclosure ceiling",-18277000000]
+      ]
+    },
+    {
+      "title": "020-0949-000 FY2024 net outlays by period of availability",
+      "sourceTotal": 110195256028.13,
+      "basis": "Exact FY2024 Treasury Combined Statement availability rows. Nonzero published net outlays sum to the parent account in integer cents.",
+      "sourceLabel": "Treasury FY2024 Combined Statement account table",
+      "sourceUrl": "https://fiscal.treasury.gov/system/files/files/reports-statements/combined-statement/cs2024/c40.xlsx",
+      "combinedStatementAvailability": true,
+      "covers": [
+        ["020-0949-000","Refundable Premium Assistance Tax Credit, Internal Revenue Service, Treasury",110195256028.13]
+      ],
+      "rows": [
+        ["Transfer To · Centers for Medicare and Medicaid Services, Health and Human Services · No Year","Combined Statement FY2024 net outlays · period-of-availability row",128472512976.9],
+        ["Fund resources · No Year","Combined Statement FY2024 net outlays · period-of-availability row",-18277256948.77]
+      ]
+    },
+    {
+      "title": "Refunding Internal Revenue Collections from IRS refunds and separately reported outlays",
+      "sourceTotal": 333914315277.14,
+      "basis": "IRS Data Book Table 8 reports $552.661058B of FY2024 refunds issued, including refundable credits and interest. IRS's FY2024 Agency Financial Report separately reports $211.613B of refundable-credit and other outlays. The signed $7.13374272286B source-basis bridge reconciles those independently published scopes and rounded components exactly to Treasury's Combined Statement account; it is not allocated to a tax or credit program.",
+      "sourceLabel": "IRS FY2024 Data Book, IRS FY2024 Agency Financial Report, and Treasury FY2024 Combined Statement",
+      "sourceUrl": "https://www.irs.gov/pub/irs-pdf/p5456.pdf",
+      "covers": [
+        ["020-0903-000","Refunding Internal Revenue Collections (Indefinite), Treasury",333914315277.14]
+      ],
+      "rows": [
+        ["IRS FY2024 refunds issued, including interest","IRS Data Book Table 8 fiscal-year total",552661058000],
+        ["Cost Sharing Reduction","Less IRS FY2024 outlay; IRS reports a $1M offset",1000000],
+        ["Health Coverage Tax Credit","Less IRS FY2024 outlay; published rounded amount",0],
+        ["Child and Dependent Care Tax Credit","Less IRS FY2024 outlay",-1000000],
+        ["Advanced Manufacturing Investment Credit","Less IRS FY2024 outlay",-10000000],
+        ["Qualified Energy Conservation Bond credit","Less IRS FY2024 outlay",-29000000],
+        ["Qualified Zone Academy Bond credit","Less IRS FY2024 outlay",-34000000],
+        ["New Clean Renewable Energy Bond credit","Less IRS FY2024 outlay",-35000000],
+        ["Previously Owned Clean Vehicle Credit","Less IRS FY2024 outlay",-219000000],
+        ["Recovery Rebate Credit","Less IRS FY2024 outlay",-232000000],
+        ["Elective payment for energy property and electricity","Less IRS FY2024 outlay",-469000000],
+        ["Qualified School Construction Bond credit","Less IRS FY2024 outlay",-562000000],
+        ["Sick and family leave, employee retention, and COBRA credits","Less IRS FY2024 outlay",-776000000],
+        ["Corporate Alternative Minimum Tax credit","Less IRS FY2024 outlay",-932000000],
+        ["New Clean Vehicle Credit","Less IRS FY2024 outlay",-1941000000],
+        ["Build America Bond credit","Less IRS FY2024 outlay",-2138000000],
+        ["American Opportunity Tax Credit","Less IRS FY2024 outlay",-2474000000],
+        ["Basic Health Program","Less IRS FY2024 outlay",-3342000000],
+        ["Interest paid on refunds","Less IRS FY2024 outlay",-5308000000],
+        ["IRS/Treasury scope, timing, and precision bridge","Exact arithmetic difference between the two IRS publications and Treasury's account total; not allocated",-7133742722.86],
+        ["State Innovation Waiver Program","Less IRS FY2024 outlay",-8108000000],
+        ["Additional Child Tax Credit","Less IRS FY2024 outlay · public IRS program disclosure ceiling",-26247000000],
+        ["Earned Income Tax Credit","Less IRS FY2024 outlay · public IRS program disclosure ceiling",-60011000000],
+        ["Premium Tax Credit, including advance amounts","Less IRS FY2024 outlay · public IRS program disclosure ceiling",-98746000000]
+      ]
+    },
+    {
+      "title": "IRS FY2024 refunds issued by state or area",
+      "sourceTotal": 552661058000,
+      "basis": "IRS Data Book Table 8 reports fiscal-year refunds issued, including interest, in thousands of dollars. The 56 state-or-area totals reconcile exactly to the published U.S. total; refundable credits shown separately by IRS are already included in these geography totals.",
+      "sourceLabel": "IRS FY2024 Data Book · Table 8",
+      "sourceUrl": "https://www.irs.gov/pub/irs-soi/24dbs01t08rf.xlsx",
+      "covers": [
+        ["IRS FY2024 refunds issued, including interest","IRS Data Book Table 8 fiscal-year total",552661058000]
+      ],
+      "rows": [
+        ["Advance Premium Tax Credit / Cost Sharing Reduction / Basic Health Program","IRS Data Book Table 8 · total refunds issued, including interest",128471563000],
+        ["California","IRS Data Book Table 8 · total refunds issued, including interest",47387316000],
+        ["Texas","IRS Data Book Table 8 · total refunds issued, including interest",45390968000],
+        ["Florida","IRS Data Book Table 8 · total refunds issued, including interest",33136312000],
+        ["New York","IRS Data Book Table 8 · total refunds issued, including interest",27245912000],
+        ["Illinois","IRS Data Book Table 8 · total refunds issued, including interest",16326272000],
+        ["Pennsylvania","IRS Data Book Table 8 · total refunds issued, including interest",15408402000],
+        ["New Jersey","IRS Data Book Table 8 · total refunds issued, including interest",13506245000],
+        ["Ohio","IRS Data Book Table 8 · total refunds issued, including interest",13384903000],
+        ["Georgia","IRS Data Book Table 8 · total refunds issued, including interest",12168745000],
+        ["Michigan","IRS Data Book Table 8 · total refunds issued, including interest",11182053000],
+        ["North Carolina","IRS Data Book Table 8 · total refunds issued, including interest",10914031000],
+        ["Virginia","IRS Data Book Table 8 · total refunds issued, including interest",10387099000],
+        ["Massachusetts","IRS Data Book Table 8 · total refunds issued, including interest",9997913000],
+        ["Minnesota","IRS Data Book Table 8 · total refunds issued, including interest",9247383000],
+        ["Washington","IRS Data Book Table 8 · total refunds issued, including interest",9134041000],
+        ["Arizona","IRS Data Book Table 8 · total refunds issued, including interest",8940457000],
+        ["Tennessee","IRS Data Book Table 8 · total refunds issued, including interest",8454953000],
+        ["Indiana","IRS Data Book Table 8 · total refunds issued, including interest",7584854000],
+        ["Wisconsin","IRS Data Book Table 8 · total refunds issued, including interest",7382338000],
+        ["Maryland","IRS Data Book Table 8 · total refunds issued, including interest",7163291000],
+        ["Colorado","IRS Data Book Table 8 · total refunds issued, including interest",6848753000],
+        ["Missouri","IRS Data Book Table 8 · total refunds issued, including interest",6528331000],
+        ["Louisiana","IRS Data Book Table 8 · total refunds issued, including interest",6060941000],
+        ["Connecticut","IRS Data Book Table 8 · total refunds issued, including interest",5481234000],
+        ["South Carolina","IRS Data Book Table 8 · total refunds issued, including interest",5272970000],
+        ["Alabama","IRS Data Book Table 8 · total refunds issued, including interest",5248754000],
+        ["Nevada","IRS Data Book Table 8 · total refunds issued, including interest",4551330000],
+        ["Kentucky","IRS Data Book Table 8 · total refunds issued, including interest",4525354000],
+        ["Oklahoma","IRS Data Book Table 8 · total refunds issued, including interest",4375293000],
+        ["Oregon","IRS Data Book Table 8 · total refunds issued, including interest",3979133000],
+        ["International","IRS Data Book Table 8 · total refunds issued, including interest",3848039000],
+        ["Utah","IRS Data Book Table 8 · total refunds issued, including interest",3811742000],
+        ["Iowa","IRS Data Book Table 8 · total refunds issued, including interest",3638062000],
+        ["Undistributed","IRS Data Book Table 8 · total refunds issued, including interest",3394801000],
+        ["Mississippi","IRS Data Book Table 8 · total refunds issued, including interest",3183504000],
+        ["Kansas","IRS Data Book Table 8 · total refunds issued, including interest",3161694000],
+        ["Arkansas","IRS Data Book Table 8 · total refunds issued, including interest",3109620000],
+        ["Nebraska","IRS Data Book Table 8 · total refunds issued, including interest",2055608000],
+        ["New Mexico","IRS Data Book Table 8 · total refunds issued, including interest",2031070000],
+        ["Idaho","IRS Data Book Table 8 · total refunds issued, including interest",1909304000],
+        ["New Hampshire","IRS Data Book Table 8 · total refunds issued, including interest",1746749000],
+        ["West Virginia","IRS Data Book Table 8 · total refunds issued, including interest",1735123000],
+        ["Delaware","IRS Data Book Table 8 · total refunds issued, including interest",1665136000],
+        ["Hawaii","IRS Data Book Table 8 · total refunds issued, including interest",1574116000],
+        ["Maine","IRS Data Book Table 8 · total refunds issued, including interest",1440606000],
+        ["Rhode Island","IRS Data Book Table 8 · total refunds issued, including interest",1357628000],
+        ["South Dakota","IRS Data Book Table 8 · total refunds issued, including interest",1146381000],
+        ["Montana","IRS Data Book Table 8 · total refunds issued, including interest",1069833000],
+        ["District of Columbia","IRS Data Book Table 8 · total refunds issued, including interest",980788000],
+        ["North Dakota","IRS Data Book Table 8 · total refunds issued, including interest",861163000],
+        ["Wyoming","IRS Data Book Table 8 · total refunds issued, including interest",829486000],
+        ["Alaska","IRS Data Book Table 8 · total refunds issued, including interest",812714000],
+        ["Vermont","IRS Data Book Table 8 · total refunds issued, including interest",759192000],
+        ["Puerto Rico","IRS Data Book Table 8 · total refunds issued, including interest",520375000],
+        ["U.S. Armed Services overseas and territories other than Puerto Rico","IRS Data Book Table 8 · total refunds issued, including interest",331180000]
+      ]
+    },
+    {
+      "title": "California FY2024 IRS refunds by tax type",
+      "sourceTotal": 47387316000,
+      "basis": "IRS Data Book Table 8 tax-type cells reconcile exactly to the published California total.",
+      "sourceLabel": "IRS FY2024 Data Book · Table 8",
+      "sourceUrl": "https://www.irs.gov/pub/irs-soi/24dbs01t08rf.xlsx",
+      "covers": [["California","IRS Data Book Table 8 · total refunds issued, including interest",47387316000]],
+      "rows": [
+        ["Individual income tax","IRS Data Book Table 8 · published state/type amount · public IRS state/type disclosure ceiling",41257177000],
+        ["Business income taxes","IRS Data Book Table 8 · published state/type amount",3577254000],
+        ["Employment taxes","IRS Data Book Table 8 · published state/type amount",1573949000],
+        ["Estate and trust income tax","IRS Data Book Table 8 · published state/type amount",442040000],
+        ["Excise taxes","IRS Data Book Table 8 · published state/type amount",298925000],
+        ["Estate tax","IRS Data Book Table 8 · published state/type amount",234316000],
+        ["Gift tax","IRS Data Book Table 8 · published state/type amount",3655000]
+      ]
+    },
+    {
+      "title": "Texas FY2024 IRS refunds by tax type",
+      "sourceTotal": 45390968000,
+      "basis": "IRS Data Book Table 8 tax-type cells reconcile to the published Texas total; the signed $1,000 rounding residual is not allocated.",
+      "sourceLabel": "IRS FY2024 Data Book · Table 8",
+      "sourceUrl": "https://www.irs.gov/pub/irs-soi/24dbs01t08rf.xlsx",
+      "covers": [["Texas","IRS Data Book Table 8 · total refunds issued, including interest",45390968000]],
+      "rows": [
+        ["Individual income tax","IRS Data Book Table 8 · published state/type amount · public IRS state/type disclosure ceiling",37229823000],
+        ["Business income taxes","IRS Data Book Table 8 · published state/type amount",4766718000],
+        ["Excise taxes","IRS Data Book Table 8 · published state/type amount",1493274000],
+        ["Employment taxes","IRS Data Book Table 8 · published state/type amount",1114858000],
+        ["Estate and trust income tax","IRS Data Book Table 8 · published state/type amount",689745000],
+        ["Estate tax","IRS Data Book Table 8 · published state/type amount",91596000],
+        ["Gift tax","IRS Data Book Table 8 · published state/type amount",4955000],
+        ["Texas rounding residual","Exact difference between the published area total and tax-type cells; not allocated",-1000]
+      ]
+    },
+    {
+      "title": "Florida FY2024 IRS refunds by tax type",
+      "sourceTotal": 33136312000,
+      "basis": "IRS Data Book Table 8 tax-type cells reconcile exactly to the published Florida total.",
+      "sourceLabel": "IRS FY2024 Data Book · Table 8",
+      "sourceUrl": "https://www.irs.gov/pub/irs-soi/24dbs01t08rf.xlsx",
+      "covers": [["Florida","IRS Data Book Table 8 · total refunds issued, including interest",33136312000]],
+      "rows": [
+        ["Individual income tax","IRS Data Book Table 8 · published state/type amount · public IRS state/type disclosure ceiling",29040636000],
+        ["Employment taxes","IRS Data Book Table 8 · published state/type amount",2042908000],
+        ["Business income taxes","IRS Data Book Table 8 · published state/type amount",1174586000],
+        ["Estate and trust income tax","IRS Data Book Table 8 · published state/type amount",586892000],
+        ["Estate tax","IRS Data Book Table 8 · published state/type amount",147756000],
+        ["Excise taxes","IRS Data Book Table 8 · published state/type amount",136835000],
+        ["Gift tax","IRS Data Book Table 8 · published state/type amount",6699000]
+      ]
+    },
+    {
+      "title": "New York FY2024 IRS refunds by tax type",
+      "sourceTotal": 27245912000,
+      "basis": "IRS Data Book Table 8 tax-type cells reconcile to the published New York total through a signed $1,000 rounding residual; it is not allocated.",
+      "sourceLabel": "IRS FY2024 Data Book · Table 8",
+      "sourceUrl": "https://www.irs.gov/pub/irs-soi/24dbs01t08rf.xlsx",
+      "covers": [["New York","IRS Data Book Table 8 · total refunds issued, including interest",27245912000]],
+      "rows": [
+        ["Individual income tax","IRS Data Book Table 8 · published state/type amount · public IRS state/type disclosure ceiling",22063048000],
+        ["Business income taxes","IRS Data Book Table 8 · published state/type amount",3332761000],
+        ["Employment taxes","IRS Data Book Table 8 · published state/type amount",1188660000],
+        ["Estate and trust income tax","IRS Data Book Table 8 · published state/type amount",439509000],
+        ["Excise taxes","IRS Data Book Table 8 · published state/type amount",124160000],
+        ["Estate tax","IRS Data Book Table 8 · published state/type amount",100374000],
+        ["New York rounding residual","Exact difference between the published area total and tax-type cells; not allocated",1000],
+        ["Gift tax","IRS Data Book Table 8 · published signed state/type amount",-2601000]
+      ]
+    },
+    {
+      "title": "Illinois FY2024 IRS refunds by tax type",
+      "sourceTotal": 16326272000,
+      "basis": "IRS Data Book Table 8 tax-type cells reconcile exactly to the published Illinois total.",
+      "sourceLabel": "IRS FY2024 Data Book · Table 8",
+      "sourceUrl": "https://www.irs.gov/pub/irs-soi/24dbs01t08rf.xlsx",
+      "covers": [["Illinois","IRS Data Book Table 8 · total refunds issued, including interest",16326272000]],
+      "rows": [
+        ["Individual income tax","IRS Data Book Table 8 · published state/type amount · public IRS state/type disclosure ceiling",13900336000],
+        ["Business income taxes","IRS Data Book Table 8 · published state/type amount",1194032000],
+        ["Estate and trust income tax","IRS Data Book Table 8 · published state/type amount",660733000],
+        ["Employment taxes","IRS Data Book Table 8 · published state/type amount",417930000],
+        ["Excise taxes","IRS Data Book Table 8 · published state/type amount",104701000],
+        ["Estate tax","IRS Data Book Table 8 · published state/type amount",48463000],
+        ["Gift tax","IRS Data Book Table 8 · published state/type amount",77000]
+      ]
+    },
+    {
+      "title": "Pennsylvania FY2024 IRS refunds by tax type",
+      "sourceTotal": 15408402000,
+      "basis": "IRS Data Book Table 8 tax-type cells reconcile to the published Pennsylvania total through a signed $1,000 rounding residual; it is not allocated.",
+      "sourceLabel": "IRS FY2024 Data Book · Table 8",
+      "sourceUrl": "https://www.irs.gov/pub/irs-soi/24dbs01t08rf.xlsx",
+      "covers": [["Pennsylvania","IRS Data Book Table 8 · total refunds issued, including interest",15408402000]],
+      "rows": [
+        ["Individual income tax","IRS Data Book Table 8 · published state/type amount · public IRS state/type disclosure ceiling",13335663000],
+        ["Business income taxes","IRS Data Book Table 8 · published state/type amount",1538018000],
+        ["Employment taxes","IRS Data Book Table 8 · published state/type amount",298266000],
+        ["Estate and trust income tax","IRS Data Book Table 8 · published state/type amount",171734000],
+        ["Excise taxes","IRS Data Book Table 8 · published state/type amount",37805000],
+        ["Estate tax","IRS Data Book Table 8 · published state/type amount",26454000],
+        ["Gift tax","IRS Data Book Table 8 · published state/type amount",463000],
+        ["Pennsylvania rounding residual","Exact difference between the published area total and tax-type cells; not allocated",-1000]
+      ]
+    },
+    {
+      "title": "New Jersey FY2024 IRS refunds by tax type",
+      "sourceTotal": 13506245000,
+      "basis": "IRS Data Book Table 8 tax-type cells reconcile exactly to the published New Jersey total.",
+      "sourceLabel": "IRS FY2024 Data Book · Table 8",
+      "sourceUrl": "https://www.irs.gov/pub/irs-soi/24dbs01t08rf.xlsx",
+      "covers": [["New Jersey","IRS Data Book Table 8 · total refunds issued, including interest",13506245000]],
+      "rows": [
+        ["Individual income tax","IRS Data Book Table 8 · published state/type amount · public IRS state/type disclosure ceiling",10301204000],
+        ["Business income taxes","IRS Data Book Table 8 · published state/type amount",2377054000],
+        ["Employment taxes","IRS Data Book Table 8 · published state/type amount",334035000],
+        ["Excise taxes","IRS Data Book Table 8 · published state/type amount",267264000],
+        ["Estate and trust income tax","IRS Data Book Table 8 · published state/type amount",204162000],
+        ["Estate tax","IRS Data Book Table 8 · published state/type amount",20960000],
+        ["Gift tax","IRS Data Book Table 8 · published state/type amount",1566000]
+      ]
+    },
+    {
+      "title": "Ohio FY2024 IRS refunds by tax type",
+      "sourceTotal": 13384903000,
+      "basis": "IRS Data Book Table 8 tax-type cells reconcile to the published Ohio total through a signed $2,000 rounding residual; it is not allocated.",
+      "sourceLabel": "IRS FY2024 Data Book · Table 8",
+      "sourceUrl": "https://www.irs.gov/pub/irs-soi/24dbs01t08rf.xlsx",
+      "covers": [["Ohio","IRS Data Book Table 8 · total refunds issued, including interest",13384903000]],
+      "rows": [
+        ["Individual income tax","IRS Data Book Table 8 · published state/type amount · public IRS state/type disclosure ceiling",11492379000],
+        ["Business income taxes","IRS Data Book Table 8 · published state/type amount",849278000],
+        ["Excise taxes","IRS Data Book Table 8 · published state/type amount",539813000],
+        ["Employment taxes","IRS Data Book Table 8 · published state/type amount",316896000],
+        ["Estate and trust income tax","IRS Data Book Table 8 · published state/type amount",161466000],
+        ["Estate tax","IRS Data Book Table 8 · published state/type amount",25340000],
+        ["Ohio rounding residual","Exact difference between the published area total and tax-type cells; not allocated",-2000],
+        ["Gift tax","IRS Data Book Table 8 · published signed state/type amount",-267000]
+      ]
+    },
+    {
+      "title": "Georgia FY2024 IRS refunds by tax type",
+      "sourceTotal": 12168745000,
+      "basis": "IRS Data Book Table 8 tax-type cells reconcile exactly to the published Georgia total.",
+      "sourceLabel": "IRS FY2024 Data Book · Table 8",
+      "sourceUrl": "https://www.irs.gov/pub/irs-soi/24dbs01t08rf.xlsx",
+      "covers": [["Georgia","IRS Data Book Table 8 · total refunds issued, including interest",12168745000]],
+      "rows": [
+        ["Individual income tax","IRS Data Book Table 8 · published state/type amount · public IRS state/type disclosure ceiling",11302107000],
+        ["Business income taxes","IRS Data Book Table 8 · published state/type amount",519776000],
+        ["Employment taxes","IRS Data Book Table 8 · published state/type amount",166498000],
+        ["Estate and trust income tax","IRS Data Book Table 8 · published state/type amount",95828000],
+        ["Excise taxes","IRS Data Book Table 8 · published state/type amount",49336000],
+        ["Estate tax","IRS Data Book Table 8 · published state/type amount",31991000],
+        ["Gift tax","IRS Data Book Table 8 · published state/type amount",3209000]
+      ]
+    },
+    {
+      "title": "Michigan FY2024 IRS refunds by tax type",
+      "sourceTotal": 11182053000,
+      "basis": "IRS Data Book Table 8 tax-type cells reconcile to the published Michigan total through a signed $1,000 rounding residual; it is not allocated.",
+      "sourceLabel": "IRS FY2024 Data Book · Table 8",
+      "sourceUrl": "https://www.irs.gov/pub/irs-soi/24dbs01t08rf.xlsx",
+      "covers": [["Michigan","IRS Data Book Table 8 · total refunds issued, including interest",11182053000]],
+      "rows": [
+        ["Individual income tax","IRS Data Book Table 8 · published state/type amount · public IRS state/type disclosure ceiling",10018976000],
+        ["Business income taxes","IRS Data Book Table 8 · published state/type amount",710365000],
+        ["Employment taxes","IRS Data Book Table 8 · published state/type amount",161003000],
+        ["Excise taxes","IRS Data Book Table 8 · published state/type amount",148747000],
+        ["Estate and trust income tax","IRS Data Book Table 8 · published state/type amount",123148000],
+        ["Estate tax","IRS Data Book Table 8 · published state/type amount",19268000],
+        ["Gift tax","IRS Data Book Table 8 · published state/type amount",547000],
+        ["Michigan rounding residual","Exact difference between the published area total and tax-type cells; not allocated",-1000]
+      ]
+    },
+    {
+      "title": "North Carolina FY2024 IRS refunds by tax type",
+      "sourceTotal": 10914031000,
+      "basis": "IRS Data Book Table 8 tax-type cells reconcile exactly to the published North Carolina total.",
+      "sourceLabel": "IRS FY2024 Data Book · Table 8",
+      "sourceUrl": "https://www.irs.gov/pub/irs-soi/24dbs01t08rf.xlsx",
+      "covers": [["North Carolina","IRS Data Book Table 8 · total refunds issued, including interest",10914031000]],
+      "rows": [
+        ["Individual income tax","IRS Data Book Table 8 · published state/type amount · public IRS state/type disclosure ceiling",10197208000],
+        ["Business income taxes","IRS Data Book Table 8 · published state/type amount",453758000],
+        ["Employment taxes","IRS Data Book Table 8 · published state/type amount",129584000],
+        ["Estate and trust income tax","IRS Data Book Table 8 · published state/type amount",84826000],
+        ["Excise taxes","IRS Data Book Table 8 · published state/type amount",30199000],
+        ["Estate tax","IRS Data Book Table 8 · published state/type amount",13856000],
+        ["Gift tax","IRS Data Book Table 8 · published state/type amount",4600000]
+      ]
+    },
+    {
+      "title": "Virginia FY2024 IRS refunds by tax type",
+      "sourceTotal": 10387099000,
+      "basis": "IRS Data Book Table 8 tax-type cells reconcile to the published Virginia total through a signed $1,000 rounding residual; it is not allocated.",
+      "sourceLabel": "IRS FY2024 Data Book · Table 8",
+      "sourceUrl": "https://www.irs.gov/pub/irs-soi/24dbs01t08rf.xlsx",
+      "covers": [["Virginia","IRS Data Book Table 8 · total refunds issued, including interest",10387099000]],
+      "rows": [
+        ["Individual income tax","IRS Data Book Table 8 · published state/type amount",8887196000],
+        ["Business income taxes","IRS Data Book Table 8 · published state/type amount",1219386000],
+        ["Employment taxes","IRS Data Book Table 8 · published state/type amount",212286000],
+        ["Estate and trust income tax","IRS Data Book Table 8 · published state/type amount",112566000],
+        ["Excise taxes","IRS Data Book Table 8 · published state/type amount",19456000],
+        ["Gift tax","IRS Data Book Table 8 · published state/type amount",738000],
+        ["Virginia rounding residual","Exact difference between the published area total and tax-type cells; not allocated",1000],
+        ["Estate tax","IRS Data Book Table 8 · published signed state/type amount",-64530000]
+      ]
+    },
+    {
+      "title": "IRS FY2024 ACA refunds by program activity",
+      "sourceTotal": 128471563000,
+      "basis": "USAspending FY2024 File B program-activity rows reconcile to IRS Data Book Table 8's ACA refund total through a signed $9.81597049M source-scope bridge; the bridge is not allocated to a program.",
+      "sourceLabel": "IRS FY2024 Data Book · Table 8 and USAspending FY2024 P12 File B",
+      "sourceUrl": "https://www.irs.gov/pub/irs-soi/24dbs01t08rf.xlsx",
+      "covers": [
+        ["Advance Premium Tax Credit / Cost Sharing Reduction / Basic Health Program","IRS Data Book Table 8 · total refunds issued, including interest",128471563000]
+      ],
+      "rows": [
+        ["Premium Assistance Tax Credit · insurance claims and indemnities","USAspending FY2024 gross outlays · public program-activity/object-class cash disclosure ceiling",117023928625.03],
+        ["State Innovation Waivers · grants, subsidies, and contributions","USAspending FY2024 gross outlays",8107580557.46],
+        ["Basic Health Program · insurance claims and indemnities","USAspending FY2024 gross outlays",3349869788],
+        ["IRS/USAspending source-scope bridge","Exact arithmetic difference; not allocated to a program activity",-9815970.49]
+      ]
+    },
+    {
+      "title": "Interest on the Public Debt by Treasury MTS issue basis",
+      "sourceTotal": 1133036890149.16,
+      "basis": "Treasury MTS reports public-issue interest on an accrual basis and special-issue interest on a cash basis. The signed $109,850.84 precision bridge reconciles the two rounded MTS rows exactly to the Combined Statement account.",
+      "sourceLabel": "Treasury FY2024 MTS Table 5 and FY2024 Combined Statement",
+      "sourceUrl": "https://fiscal.treasury.gov/system/files/files/reports-statements/mts/mts0924.pdf",
+      "covers": [
+        ["020-0550-000","Interest on the Public Debt (Indefinite), Bureau of the Fiscal Service, Treasury",1133036890149.16]
+      ],
+      "rows": [
+        ["Interest on Treasury Debt Securities (Gross)","Public Issues (Accrual Basis)",896007000000],
+        ["Interest on Treasury Debt Securities (Gross)","Special Issues (Cash Basis)",237030000000],
+        ["Treasury MTS / Combined Statement precision bridge","Exact arithmetic difference; not allocated to an issue basis",-109850.84]
       ]
     }
   ],
@@ -509,10 +1110,10 @@
       "parent": ["Interest on Treasury Debt Securities (Gross)", "Public Issues (Accrual Basis)", 896007000000],
       "accountCount": 29,
       "rows": [
-        ["ACCRUED INTEREST EXPENSE|Treasury Notes", "Treasury Notes · Accrued Interest Expense · public monthly disclosure ceiling", 329708890427.09],
-        ["AMORTIZED DISCOUNT|Treasury Bills", "Treasury Bills · Amortized Discount · public monthly disclosure ceiling", 306434224076.92],
-        ["ACCRUED INTEREST EXPENSE|Treasury Bonds", "Treasury Bonds · Accrued Interest Expense · public monthly disclosure ceiling", 137291916890.28],
-        ["ACCRUED INTEREST EXPENSE|Interest Expense Inflation Compensation (TIPS)", "Interest Expense Inflation Compensation (TIPS) · Accrued Interest Expense · public monthly disclosure ceiling", 57060678892.35],
+        ["ACCRUED INTEREST EXPENSE|Treasury Notes", "Treasury Notes · Accrued Interest Expense · expanded by month below", 329708890427.09],
+        ["AMORTIZED DISCOUNT|Treasury Bills", "Treasury Bills · Amortized Discount · expanded by month below", 306434224076.92],
+        ["ACCRUED INTEREST EXPENSE|Treasury Bonds", "Treasury Bonds · Accrued Interest Expense · expanded by month below", 137291916890.28],
+        ["ACCRUED INTEREST EXPENSE|Interest Expense Inflation Compensation (TIPS)", "Interest Expense Inflation Compensation (TIPS) · Accrued Interest Expense · expanded by month below", 57060678892.35],
         ["ACCRUED INTEREST EXPENSE|Treasury Floating Rate Notes (FRN)", "Treasury Floating Rate Notes (FRN) · Accrued Interest Expense", 30852075172.54],
         ["ACCRUED INTEREST EXPENSE|Inflation Protected Securities (TIPS)", "Inflation Protected Securities (TIPS) · Accrued Interest Expense", 17348688470.82],
         ["AMORTIZED DISCOUNT|Treasury Notes", "Treasury Notes · Amortized Discount", 9896419079.07],

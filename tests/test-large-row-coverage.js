@@ -66,5 +66,32 @@ assert.equal(newJersey.rows.reduce((sum, row) => sum + cents(row[2]), 0), cents(
 assert.equal(newJersey.covers.reduce((sum, row) => sum + cents(row[2]), 0), cents(newJersey.sourceTotal));
 assert.equal(newJersey.rows.reduce((sum, row) => sum + Number(row[1].match(/([\d,]+) source rows/)[1].replaceAll(",", "")), 0), 630);
 
-assert.deepEqual(counts, { large: 483, breakdowns: 122, ceilings: 361 });
+for (const file of [
+  "data/state-al/archive-state-source/state-al-acfr-functions.json",
+  "data/state-ar/archive-state-source/state-ar-acfr-functions.json",
+  "data/state-ca/archive-state-source/state-ca-acfr-functions.json",
+  "data/state-ct/archive-state-source/state-ct-acfr-functions.json",
+  "data/state-fl/archive-state-source/state-fl-acfr-functions.json",
+  "data/state-ga/archive-state-source/state-ga-acfr-functions.json",
+  "data/state-ia/archive-state-source/state-ia-acfr-functions.json",
+  "data/state-ma/archive-state-source/state-ma-acfr-functions.json",
+  "data/state-md/archive-state-source/state-md-acfr-functions.json",
+  "data/state-mo/archive-state-source/state-mo-acfr-functions.json",
+  "data/state-nm/archive-state-source/state-nm-acfr-functions.json",
+  "data/state-nj/archive-state-source/state-nj-acfr-functions.json",
+  "data/state-ny/archive-state-source/state-ny-acfr-functions.json",
+  "data/state-ok/archive-state-source/state-ok-acfr-functions.json",
+  "data/state-sc/archive-state-source/state-sc-acfr-functions.json",
+  "data/state-tx/archive-state-source/state-tx-acfr-functions.json",
+  "data/state-wa/archive-state-source/state-wa-acfr-functions.json",
+  "data/state-wi/archive-state-source/state-wi-acfr-functions.json"
+]) {
+  for (const panel of readJson(file).sourceBreakdowns) {
+    assert.equal(panel.rows.reduce((sum, row) => sum + cents(row[2]), 0), cents(panel.sourceTotal));
+    assert.equal(panel.covers.reduce((sum, row) => sum + cents(row[2]), 0), cents(panel.sourceTotal));
+    assert.ok(panel.rows.every((row) => Math.abs(row[2]) < 1e10));
+  }
+}
+
+assert.deepEqual(counts, { large: 483, breakdowns: 141, ceilings: 342 });
 console.log("All browser-visible $5 billion rows are exact breakdowns or labeled source ceilings.");

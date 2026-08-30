@@ -81,7 +81,7 @@
     {
       "title": "PBGC FY2024 Special Financial Assistance payments by pension plan",
       "sourceTotal": 14638485324.16,
-      "basis": "PBGC's live SFA application workbook identifies 27 plan payments dated from October 1, 2023 through September 30, 2024 totaling $14.63848532416B. PBGC's audited FY2024 cash-flow statement reports the same program at $14.638B after rounding to millions. This plan-level SFA view is not additive to Treasury's $11.950B PBGC net outlay, which combines other benefit, assistance, operating, and receipt flows.",
+      "basis": "PBGC's live SFA application workbook identifies 27 plan payments dated from October 1, 2023 through September 30, 2024 totaling $14.63848532416B. That exact total matches USAspending's FY2024 P12 gross-outlay line for the Special Financial Assistance program activity in TAS 016-2021/2030-4204-000.",
       "sourceLabel": "PBGC Special Financial Assistance application status workbook",
       "sourceUrl": "https://www.pbgc.gov/sites/default/files/documents/sfa-application-status-current.xlsx",
       "rows": [
@@ -113,7 +113,52 @@
         ["Teamsters Union Local No. 73 Pension Plan", "Paid 2024-04-08 · Valley View, OH · EIN/PN 510149915/001", 7517017.25],
         ["Plasterers and Cement Masons Local No. 94 Pension Fund", "Paid 2023-10-12 · Camp Hill, PA · EIN/PN 236445411/001", 3884037.13]
       ],
-      "covers": [["Department of Labor", "Pension Benefit Guaranty Corporation", 11950000000]]
+      "covers": [["MULTIEMPLOYER - SPECIAL FINANCIAL ASSISTANCE", "USAspending FY2024 gross outlays · program activity and object class 32.0", 14638485324.16]]
+    },
+    {
+      "title": "PBGC 2021-2030 fund resources by program activity and object class",
+      "sourceTotal": 14658062735.78,
+      "basis": "USAspending's FY2024 P12 account submission divides TAS 016-2021/2030-4204-000 gross outlays into four program-activity/object-class rows. They sum to the cent to Treasury's FY2024 Combined Statement net-outlay row for the same TAS availability; the Special Financial Assistance row is expanded by pension plan below.",
+      "sourceLabel": "USAspending FY2024 TAS object-class and program-activity data",
+      "sourceUrl": "https://api.usaspending.gov/api/v2/agency/treasury_account/016-2021%2F2030-4204-000/object_class/?fiscal_year=2024&limit=100",
+      "rows": [
+        ["MULTIEMPLOYER - SPECIAL FINANCIAL ASSISTANCE", "USAspending FY2024 gross outlays · program activity and object class 32.0", 14638485324.16],
+        ["MULTIEMPLOYER - ADMINISTRATIVE EXPENSES - SPECIAL FINANCIAL ASSISTANCE", "USAspending FY2024 gross outlays · personnel compensation and benefits", 11339381.04],
+        ["MULTIEMPLOYER - ADMINISTRATIVE EXPENSES - SPECIAL FINANCIAL ASSISTANCE", "USAspending FY2024 gross outlays · contractual services and supplies", 8132897.58],
+        ["MULTIEMPLOYER - ADMINISTRATIVE EXPENSES - SPECIAL FINANCIAL ASSISTANCE", "USAspending FY2024 gross outlays · acquisition of assets", 105133]
+      ],
+      "covers": [["Fund resources · 2021-2030", "Combined Statement FY2024 net outlays · period-of-availability row", 14658062735.78]]
+    },
+    {
+      "title": "016-4204-000 FY2024 net outlays by period of availability",
+      "sourceTotal": 11949689250.03,
+      "basis": "Exact FY2024 Treasury Combined Statement availability rows. Nonzero published net outlays sum to the parent account in integer cents.",
+      "sourceLabel": "Treasury FY2024 Combined Statement account table",
+      "sourceUrl": "https://fiscal.treasury.gov/system/files/files/reports-statements/combined-statement/cs2024/c28.xlsx",
+      "combinedStatementAvailability": true,
+      "covers": [
+        ["016-4204-000","Pension Benefit Guaranty Corporation Fund, Pension Benefit Guaranty Corporation, Labor",11949689250.03]
+      ],
+      "rows": [
+        ["Fund resources · 2021-2030","Combined Statement FY2024 net outlays · period-of-availability row",14658062735.78],
+        ["Fund resources · No Year","Combined Statement FY2024 net outlays · period-of-availability row",-2708373485.75]
+      ]
+    },
+    {
+      "title": "Unemployment Trust Fund by OMB function and grant class",
+      "sourceTotal": 44993067331.07,
+      "basis": "OMB reports five nonzero FY2024 actual-outlay classifications for the Unemployment Trust Fund. They total $44.993B; the $67,331.07 precision bridge reconciles the rounded OMB rows exactly to Treasury's Combined Statement account.",
+      "sourceLabel": "OMB FY2027 Public Budget Database and Treasury FY2024 Combined Statement",
+      "sourceUrl": "https://www.whitehouse.gov/wp-content/uploads/2026/04/outlays_fy2027.xlsx",
+      "covers": [["016-8042-000","Unemployment Trust Fund - Treasury Managed, Labor",44993067331.07]],
+      "rows": [
+        ["Unemployment compensation · mandatory nongrant","OMB FY2024 actual · public OMB function/class disclosure ceiling",39508000000],
+        ["Unemployment compensation · discretionary grant","OMB FY2024 actual",4071000000],
+        ["Training and employment · discretionary grant","OMB FY2024 actual",982000000],
+        ["Unemployment compensation · mandatory grant","OMB FY2024 actual",260000000],
+        ["Training and employment · discretionary nongrant","OMB FY2024 actual",172000000],
+        ["OMB / Treasury published-precision bridge","Exact arithmetic difference; not allocated to a function or grant class",67331.07]
+      ]
     }
   ],
   "largeAccountRows": [

@@ -4,6 +4,24 @@
   "sourceUrl": "https://www.dfa.arkansas.gov/wp-content/uploads/cafr2024.pdf",
   "sourceBasis": "Official FY2024 Statement of Activities, printed pp. 22-23; amounts converted from thousands of dollars.",
   "rowSchema": ["activity", "function", "amount", "sourceAmount", "sourceRows"],
+  "sourceBreakdowns": [
+    {
+      "title": "Health and human services expense coverage",
+      "sourceTotal": 11060760000,
+      "basis": "Exact same-statement decomposition from the FY2024 Statement of Activities, printed pp. 22-23. Charges, operating grants, capital grants, and the published net governmental expense reconcile exactly to total Health and human services expense. This is funding coverage of the expense, not an allocation to service programs, and every child is below $10 billion.",
+      "sourceLabel": "Arkansas FY2024 ACFR",
+      "sourceUrl": "https://www.dfa.arkansas.gov/wp-content/uploads/cafr2024.pdf",
+      "covers": [
+        ["Governmental activities", "Health and human services", 11060760000]
+      ],
+      "rows": [
+        ["Operating grants and contributions", "Program revenue covering expense", 7968595000],
+        ["Net governmental expense", "Expense not covered by program revenues", 2623984000],
+        ["Charges for services", "Program revenue covering expense", 466494000],
+        ["Capital grants and contributions", "Program revenue covering expense", 1687000]
+      ]
+    }
+  ],
   "rows": [
     ["Governmental activities", "General government", 1715246000, 1715246000, 1],
     ["Governmental activities", "Education", 4917505000, 4917505000, 1],

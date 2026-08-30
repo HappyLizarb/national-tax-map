@@ -222,7 +222,8 @@ async function loadDepartmentDetail(department, request) {
     ]);
     if (request !== state.detailRequest) return;
     renderDetail(research ? { ...detail,
-      sourceBreakdowns: [...(detail.sourceBreakdowns || []), ...(research.sourceBreakdowns || []),
+      sourceBreakdowns: [...(detail.sourceBreakdowns || []), ...(research.sourceBreakdowns || [])],
+      supplementalBreakdowns: [...(detail.supplementalBreakdowns || []),
         ...(research.supplementalBreakdowns || [])] } : detail);
   } catch (error) {
     if (request === state.detailRequest) setText("#sourceExplorerNote", error.message);
@@ -238,13 +239,15 @@ function renderDetail(detail) {
     : flatSingleton ? "leaf account · redundant one-row wrapper removed"
       : detail.rows.length.toLocaleString() + " itemized rows";
   setText("#sourceExplorerNote", detail.department + " · " + rowCount + (detail.rows.length > limit ? " · first 500 shown" : "") + note);
-  $("#agencyRows").innerHTML = detailSourceLinks(detail) + sourceBreakdowns(detail) + hierarchy + (hierarchy || flatSingleton ? "" : rows.map((row) => {
+  const rendered = new Set(), rowHtml = hierarchy || flatSingleton ? "" : rows.map((row) => {
     const subAgency = row[0], program = row[1], amount = row[2];
-    return '<div class="agency-row"><span><strong>' + escapeHtml(subAgency) + '</strong><small>' + escapeHtml(program) + '</small></span><b>' + detailAmount(row, detail.rowSchema) + '</b></div>' + itemBreakdown(detail, row) + supplementalBreakdown(detail, row) + nestedSourceBreakdowns(detail, row);
-  }).join("")) + (detail.supplementalRows || []).slice(0, limit).map((row) => '<a class="agency-row" href="' + escapeHtml(row[4]) + '" target="_blank" rel="noopener noreferrer"><span><strong>' + escapeHtml(row[0]) + '</strong><small>' + escapeHtml(row[1]) + ' · ' + escapeHtml(row[3]) + '</small></span><b>' + model.formatMoney(row[2]) + '</b></a>').join("");
+    return '<div class="agency-row"><span><strong>' + escapeHtml(subAgency) + '</strong><small>' + escapeHtml(program) + '</small></span><b>' + detailAmount(row, detail.rowSchema) + '</b></div>' + itemBreakdown(detail, row, rendered) + supplementalBreakdown(detail, row, rendered) + nestedSourceBreakdowns(detail, row, rendered);
+  }).join("");
+  $("#agencyRows").innerHTML = detailSourceLinks(detail, rendered) + hierarchy + rowHtml
+    + (detail.supplementalRows || []).slice(0, limit).map((row) => '<a class="agency-row" href="' + escapeHtml(row[4]) + '" target="_blank" rel="noopener noreferrer"><span><strong>' + escapeHtml(row[0]) + '</strong><small>' + escapeHtml(row[1]) + ' · ' + escapeHtml(row[3]) + '</small></span><b>' + model.formatMoney(row[2]) + '</b></a>').join("");
 }
-function detailSourceLinks(detail) {
+function detailSourceLinks(detail, rendered) {
   const sources = [...(detail.sourceUrls || [["Official source", detail.sourceUrl]]), ...(detail.relatedSources || [])];
   return '<div class="source-catalog"><strong>Sources</strong><div>' + sources.map(([label, url]) =>
-    '<a href="' + escapeHtml(url) + '" target="_blank" rel="noopener noreferrer">' + escapeHtml(label) + ' ↗</a>').join("") + '</div></div>' + largeAccountCatalog(detail);
+    '<a href="' + escapeHtml(url) + '" target="_blank" rel="noopener noreferrer">' + escapeHtml(label) + ' ↗</a>').join("") + '</div></div>' + largeAccountCatalog(detail, rendered);
 }

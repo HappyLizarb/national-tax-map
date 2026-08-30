@@ -136,7 +136,7 @@ function detailAmount(row, schema = []) {
   return amount + sourceNote + obligationNote + netNote;
 }
 
-function largeAccountCatalog(detail) {
+function largeAccountCatalog(detail, rendered) {
   const research = detail.accountResearch, rows = detail.largeAccountRows || [];
   if (!research) return "";
   const summary = rows.length + " of " + research.accountCount.toLocaleString()
@@ -146,38 +146,51 @@ function largeAccountCatalog(detail) {
     + '</small></summary><div>' + rows.map((row) => '<small><b>' + model.formatMoney(row[2])
       + '</b> · TAS ' + escapeHtml(row[0]) + ' · ' + escapeHtml(row[1]) + ' · '
       + row[3].toLocaleString() + (row[3] === 1 ? ' availability row' : ' availability rows') + '</small>'
-      + nestedSourceBreakdowns(detail, row)).join("")
+      + nestedSourceBreakdowns(detail, row, rendered)).join("")
     + '<a href="' + escapeHtml(research.sourceUrl) + '" target="_blank" rel="noopener noreferrer">Open official Treasury account table ↗</a></div></details>';
 }
 
-function itemBreakdown(detail, parent) {
+function itemBreakdown(detail, parent, rendered) {
   const match = (detail.itemBreakdowns || []).find((item) => item.parent[0] === parent[0]
     && item.parent[1] === parent[1] && Math.round(item.parent[2] * 100) === Math.round(parent[2] * 100));
   if (!match) return "";
+  if (match.rows.length === 1) {
+    const row = match.rows[0];
+    return '<a class="agency-row" href="' + escapeHtml(match.sourceUrl) + '" target="_blank" rel="noopener noreferrer"><span><strong>'
+      + escapeHtml(row[1]) + '</strong><small>' + escapeHtml((match.rowPrefix || "TAS") + " " + row[0]
+        + " · leaf account · " + (match.title || "Reconciled account"))
+      + '</small></span><b>' + model.formatMoney(row[2]) + '</b></a>'
+      + nestedSourceBreakdowns(detail, row, rendered);
+  }
   return '<details class="item-breakdown"><summary>' + escapeHtml(match.title || "Show reconciled account breakdown") + ' · '
     + match.accountCount.toLocaleString() + ' accounts</summary><small class="item-breakdown-note">'
     + escapeHtml(match.basis || detail.itemBreakdownBasis) + '</small>' + match.rows.map((row) =>
       '<div class="agency-row"><span><strong>' + escapeHtml(row[1]) + '</strong><small>'
       + escapeHtml((match.rowPrefix || "TAS") + " " + row[0]) + '</small></span><b>' + model.formatMoney(row[2])
-      + '</b></div>' + nestedSourceBreakdowns(detail, row)).join("")
+      + '</b></div>' + nestedSourceBreakdowns(detail, row, rendered)).join("")
     + '<a href="' + escapeHtml(match.sourceUrl) + '" target="_blank" rel="noopener noreferrer">Open '
     + escapeHtml(match.sourceLabel || "official Treasury account table") + ' ↗</a></details>';
 }
 
-function supplementalBreakdown(detail, parent) {
+function supplementalBreakdown(detail, parent, rendered) {
   const matches = (detail.supplementalBreakdowns || []).filter((item) => item.parent[0] === parent[0]
-    && item.parent[1] === parent[1] && Math.round(item.parent[2] * 100) === Math.round(parent[2] * 100));
-  return matches.map(renderSourceBreakdown).join("");
-}
-
-function sourceBreakdowns(detail) {
-  return (detail.sourceBreakdowns || []).filter((item) =>
-    !(item.covers || []).some((row) => exactSourceBreakdown(item, row))).map(renderSourceBreakdown).join("");
+    && item.parent[1] === parent[1] && Math.round(item.parent[2] * 100) === Math.round(parent[2] * 100)
+    && !(item.covers || []).some((row) => exactSourceBreakdown(item, row)));
+  return renderSourceBreakdowns(matches, detail, rendered);
 }
 
 function sameAccount(left, right) {
   return left[0] === right[0] && left[1] === right[1]
     && Math.round(left[2] * 100) === Math.round(right[2] * 100);
+}
+
+// Place each source panel once beneath its explicit display parent.
+function sourceBreakdownParent(item) {
+  return item.displayParent || item.covers?.[0];
+}
+
+function sourceBreakdownMatches(item, parent) {
+  return sameAccount(sourceBreakdownParent(item), parent);
 }
 
 function exactSourceBreakdown(item, parent) {
@@ -186,25 +199,44 @@ function exactSourceBreakdown(item, parent) {
   return rows === covers && (item.covers || []).some((row) => sameAccount(row, parent));
 }
 
-function nestedSourceBreakdowns(detail, parent) {
-  return (detail.sourceBreakdowns || []).filter((item) => exactSourceBreakdown(item, parent))
-    .map(renderSourceBreakdown).join("");
+function renderSourceBreakdowns(items, detail, rendered) {
+  return items.filter((item) => !rendered.has(item)).map((item) => {
+    rendered.add(item);
+    return renderSourceBreakdown(item, detail, rendered);
+  }).join("");
+}
+
+function nestedSourceBreakdowns(detail, parent, rendered) {
+  const matches = [...(detail.sourceBreakdowns || []).filter((item) =>
+    sourceBreakdownMatches(item, parent)),
+  ...(detail.supplementalBreakdowns || []).filter((item) => exactSourceBreakdown(item, parent))];
+  return renderSourceBreakdowns(matches, detail, rendered);
 }
 
 function rowHasExactBreakdown(detail, parent) {
   return (detail.itemBreakdowns || []).some((item) => sameAccount(item.parent, parent))
-    || (detail.sourceBreakdowns || []).some((item) => exactSourceBreakdown(item, parent));
+    || (detail.sourceBreakdowns || []).some((item) => sourceBreakdownMatches(item, parent))
+    || (detail.supplementalBreakdowns || []).some((item) => exactSourceBreakdown(item, parent));
 }
 
-function renderSourceBreakdown(match) {
+function renderSourceBreakdown(match, detail, rendered) {
   const count = /\brows$/.test(match.title) ? "" : ' · ' + match.rows.length.toLocaleString() + ' rows';
+  if (match.rows.length === 1) {
+    const row = match.rows[0];
+    return '<a class="agency-row" href="' + escapeHtml(row[3] || match.sourceUrl)
+      + '" target="_blank" rel="noopener noreferrer"><span><strong>' + escapeHtml(row[0])
+      + '</strong><small>' + escapeHtml(row[1] + " · leaf account · " + match.title)
+      + '</small></span><b>' + model.formatMoney(row[2]) + '</b></a>'
+      + nestedSourceBreakdowns(detail, row, rendered);
+  }
   return '<details class="item-breakdown"><summary>' + escapeHtml(match.title)
     + count + '</summary><small class="item-breakdown-note">'
     + escapeHtml(match.basis) + '</small>' + match.rows.map((row) => {
       const content = '<span><strong>' + escapeHtml(row[0]) + '</strong><small>' + escapeHtml(row[1])
         + '</small></span><b>' + model.formatMoney(row[2]) + '</b>';
-      return row[3] ? '<a class="agency-row" href="' + escapeHtml(row[3])
+      const rowHtml = row[3] ? '<a class="agency-row" href="' + escapeHtml(row[3])
         + '" target="_blank" rel="noopener noreferrer">' + content + '</a>' : '<div class="agency-row">' + content + '</div>';
+      return rowHtml + nestedSourceBreakdowns(detail, row, rendered);
     }).join("") + '<a href="' + escapeHtml(match.sourceUrl) + '" target="_blank" rel="noopener noreferrer">Open '
     + escapeHtml(match.sourceLabel) + ' ↗</a></details>';
 }

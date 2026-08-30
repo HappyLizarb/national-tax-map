@@ -135,6 +135,184 @@
         ["Clary Sage", "2024 crop-year indemnity", 2539]
       ],
       "covers": [["Department of Agriculture", "Other", 10403000000]]
+    },
+    {
+      "title": "SNAP 2024 fund resources from FNS benefits",
+      "sourceTotal": 89263314079.06,
+      "basis": "FNS reports $93.475887992B of FY2024 SNAP benefits by geography and month. The signed $4.21257391294B bridge reconciles that benefit schedule exactly to Treasury's $89.26331407906B 2024 availability-row net outlay without assigning the timing and scope difference to any state or month.",
+      "sourceLabel": "USDA FNS SNAP tables and Treasury Combined Statement",
+      "sourceUrl": "https://www.fns.usda.gov/pd/supplemental-nutrition-assistance-program-snap",
+      "rows": [
+        ["FNS FY2024 SNAP benefit schedule", "Published geography-and-month schedule before the benefit-to-outlay bridge", 93475887992],
+        ["FNS benefit-to-Treasury outlay basis bridge", "Exact arithmetic difference; not allocated to a geography or month", -4212573912.94]
+      ],
+      "covers": [["Fund resources · 2024", "Combined Statement FY2024 net outlays · period-of-availability row", 89263314079.06]]
+    },
+    {
+      "title": "SNAP 2023 fund resources by program activity and object class",
+      "sourceTotal": 15990341846.75,
+      "basis": "USAspending File B reports $16.01997064015B of FY2024 gross outlays from the 2023 annual availability. The signed $29.62879340M bridge reconciles that gross schedule exactly to Treasury's $15.99034184675B net outlay without assigning the net-to-gross difference to a program activity.",
+      "sourceLabel": "USAspending FY2024 P12 File B and Treasury Combined Statement",
+      "sourceUrl": "https://api.usaspending.gov/api/v2/download/status?file_name=FY2024P01-P12_All_TAS_AccountBreakdownByPA-OC_2026-08-30_H03M46S59772822.zip",
+      "rows": [
+        ["Benefits issued · grants, subsidies, and contributions", "USAspending FY2024 gross outlays · 2023 annual availability", 14755405202.32],
+        ["State administration · grants, subsidies, and contributions", "USAspending FY2024 gross outlays · 2023 annual availability", 624635810.07],
+        ["Other program costs · grants, subsidies, and contributions", "USAspending FY2024 gross outlays · 2023 annual availability", 309723111.05],
+        ["Other services from non-Federal sources", "USAspending FY2024 gross outlays · 2023 annual availability", 125382885.39],
+        ["Nutrition Assistance for Puerto Rico · grants, subsidies, and contributions", "USAspending FY2024 gross outlays · 2023 annual availability", 99425443.75],
+        ["Employment and Training Program · grants, subsidies, and contributions", "USAspending FY2024 gross outlays · 2023 annual availability", 74833626.65],
+        ["Commonwealth of the Northern Mariana Islands · grants, subsidies, and contributions", "USAspending FY2024 gross outlays · 2023 annual availability", 12355001.56],
+        ["Other goods and services from Federal sources", "USAspending FY2024 gross outlays · 2023 annual availability", 9485364.15],
+        ["Full-time permanent personnel", "USAspending FY2024 gross outlays · 2023 annual availability", 3334506.92],
+        ["Community Food Projects · grants, subsidies, and contributions", "USAspending FY2024 gross outlays · 2023 annual availability", 1322128.55],
+        ["Program Access · grants, subsidies, and contributions", "USAspending FY2024 gross outlays · 2023 annual availability", 1290536.96],
+        ["Civilian personnel benefits", "USAspending FY2024 gross outlays · 2023 annual availability", 1257602.26],
+        ["Other unmapped · grants, subsidies, and contributions", "USAspending FY2024 gross outlays · 2023 annual availability", 497956.5],
+        ["Advisory and assistance services", "USAspending FY2024 gross outlays · 2023 annual availability", 413562.22],
+        ["Communications, utilities, and miscellaneous charges", "USAspending FY2024 gross outlays · 2023 annual availability", 393248.11],
+        ["Food Distribution Program on Indian Reservations · cooperator administrative expense", "USAspending FY2024 gross outlays · 2023 annual availability", 132710.08],
+        ["Travel and transportation of persons", "USAspending FY2024 gross outlays · 2023 annual availability", 64161.57],
+        ["Operation and maintenance of equipment", "USAspending FY2024 gross outlays · 2023 annual availability", 58374.5],
+        ["Supplies and materials", "USAspending FY2024 gross outlays · 2023 annual availability", 18139.69],
+        ["Other personnel compensation", "USAspending FY2024 gross outlays · 2023 annual availability", 16164.54],
+        ["Other than full-time permanent personnel", "USAspending FY2024 gross outlays · 2023 annual availability", 3601.6],
+        ["Interest and dividends", "USAspending FY2024 gross outlays · 2023 annual availability", 13.98],
+        ["Equipment", "USAspending FY2024 gross outlays · 2023 annual availability", -78512.27],
+        ["Treasury/USAspending net-to-gross basis bridge", "Exact arithmetic difference; not allocated to a program activity or object class", -29628793.4]
+      ],
+      "covers": [["Fund resources · 2023", "Combined Statement FY2024 net outlays · period-of-availability row", 15990341846.75]]
+    },
+    {
+      "title": "SNAP 2023 benefits issued by award place of performance",
+      "sourceTotal": 14755405202.32,
+      "basis": "USAspending's final FY2024 P12 award-financial submission reports $14.75332153270B of 2023-availability Benefits Issued gross outlays across 55 places of performance. The $2.08366962M File B/File C linkage bridge reconciles that final-period geography schedule exactly to the File B program/activity-object-class leaf. Earlier P02-P11 rows are cumulative snapshots and are not added.",
+      "sourceLabel": "USAspending FY2024 P12 award-financial File C",
+      "sourceUrl": "https://api.usaspending.gov/api/v2/download/status?file_name=FY2024P01-P12_All_TAS_AccountBreakdownByAward_2026-08-30_H05M01S43258923.zip",
+      "rows": [
+        ["California", "USAspending FY2024 P12 award-financial gross outlays · place of performance", 2252211864.96],
+        ["New York", "USAspending FY2024 P12 award-financial gross outlays · place of performance", 1634633410.92],
+        ["Florida", "USAspending FY2024 P12 award-financial gross outlays · place of performance", 988825368.26],
+        ["Texas", "USAspending FY2024 P12 award-financial gross outlays · place of performance", 913155190.48],
+        ["Illinois", "USAspending FY2024 P12 award-financial gross outlays · place of performance", 663138531.35],
+        ["Pennsylvania", "USAspending FY2024 P12 award-financial gross outlays · place of performance", 645724998.45],
+        ["Michigan", "USAspending FY2024 P12 award-financial gross outlays · place of performance", 606130702.87],
+        ["Georgia", "USAspending FY2024 P12 award-financial gross outlays · place of performance", 443411897.61],
+        ["North Carolina", "USAspending FY2024 P12 award-financial gross outlays · place of performance", 419632078.28],
+        ["Ohio", "USAspending FY2024 P12 award-financial gross outlays · place of performance", 387281030.71],
+        ["Massachusetts", "USAspending FY2024 P12 award-financial gross outlays · place of performance", 351119905.33],
+        ["Kentucky", "USAspending FY2024 P12 award-financial gross outlays · place of performance", 318905843.56],
+        ["Oregon", "USAspending FY2024 P12 award-financial gross outlays · place of performance", 286966412.83],
+        ["Washington", "USAspending FY2024 P12 award-financial gross outlays · place of performance", 269024405.3],
+        ["New Jersey", "USAspending FY2024 P12 award-financial gross outlays · place of performance", 267000537.32],
+        ["Missouri", "USAspending FY2024 P12 award-financial gross outlays · place of performance", 264303191.53],
+        ["Arizona", "USAspending FY2024 P12 award-financial gross outlays · place of performance", 263338305.05],
+        ["Maryland", "USAspending FY2024 P12 award-financial gross outlays · place of performance", 246422165.81],
+        ["Virginia", "USAspending FY2024 P12 award-financial gross outlays · place of performance", 244247920.9],
+        ["Oklahoma", "USAspending FY2024 P12 award-financial gross outlays · place of performance", 244160855.95],
+        ["Louisiana", "USAspending FY2024 P12 award-financial gross outlays · place of performance", 233875028.86],
+        ["Alabama", "USAspending FY2024 P12 award-financial gross outlays · place of performance", 230877332.5],
+        ["Tennessee", "USAspending FY2024 P12 award-financial gross outlays · place of performance", 215885939.99],
+        ["Indiana", "USAspending FY2024 P12 award-financial gross outlays · place of performance", 200531767.36],
+        ["Wisconsin", "USAspending FY2024 P12 award-financial gross outlays · place of performance", 185855544.01],
+        ["Colorado", "USAspending FY2024 P12 award-financial gross outlays · place of performance", 180853133.9],
+        ["South Carolina", "USAspending FY2024 P12 award-financial gross outlays · place of performance", 180498643.26],
+        ["New Mexico", "USAspending FY2024 P12 award-financial gross outlays · place of performance", 156204494.37],
+        ["Nevada", "USAspending FY2024 P12 award-financial gross outlays · place of performance", 155768519.16],
+        ["Minnesota", "USAspending FY2024 P12 award-financial gross outlays · place of performance", 132154413],
+        ["Connecticut", "USAspending FY2024 P12 award-financial gross outlays · place of performance", 130835014.84],
+        ["Hawaii", "USAspending FY2024 P12 award-financial gross outlays · place of performance", 104798894.02],
+        ["Mississippi", "USAspending FY2024 P12 award-financial gross outlays · place of performance", 92823462.81],
+        ["Iowa", "USAspending FY2024 P12 award-financial gross outlays · place of performance", 82260982.26],
+        ["Alaska", "USAspending FY2024 P12 award-financial gross outlays · place of performance", 80560694.26],
+        ["Arkansas", "USAspending FY2024 P12 award-financial gross outlays · place of performance", 73138733.9],
+        ["Maine", "USAspending FY2024 P12 award-financial gross outlays · place of performance", 65906668.64],
+        ["West Virginia", "USAspending FY2024 P12 award-financial gross outlays · place of performance", 65570163.98],
+        ["Utah", "USAspending FY2024 P12 award-financial gross outlays · place of performance", 60395766.52],
+        ["Kansas", "USAspending FY2024 P12 award-financial gross outlays · place of performance", 58357410.38],
+        ["Nebraska", "USAspending FY2024 P12 award-financial gross outlays · place of performance", 56933770.2],
+        ["Delaware", "USAspending FY2024 P12 award-financial gross outlays · place of performance", 42697489.91],
+        ["District of Columbia", "USAspending FY2024 P12 award-financial gross outlays · place of performance", 42032060.26],
+        ["Rhode Island", "USAspending FY2024 P12 award-financial gross outlays · place of performance", 41279794.06],
+        ["Idaho", "USAspending FY2024 P12 award-financial gross outlays · place of performance", 31389837.28],
+        ["New Hampshire", "USAspending FY2024 P12 award-financial gross outlays · place of performance", 24876923.56],
+        ["Montana", "USAspending FY2024 P12 award-financial gross outlays · place of performance", 20058317.47],
+        ["South Dakota", "USAspending FY2024 P12 award-financial gross outlays · place of performance", 19933810.33],
+        ["Guam", "USAspending FY2024 P12 award-financial gross outlays · place of performance", 18473447.01],
+        ["Vermont", "USAspending FY2024 P12 award-financial gross outlays · place of performance", 17694680.56],
+        ["Wyoming", "USAspending FY2024 P12 award-financial gross outlays · place of performance", 16884307.06],
+        ["North Dakota", "USAspending FY2024 P12 award-financial gross outlays · place of performance", 13073591.87],
+        ["Virgin Islands", "USAspending FY2024 P12 award-financial gross outlays · place of performance", 9674720.88],
+        ["File B/File C award-linkage bridge", "Exact arithmetic difference; not allocated to a geography", 2083669.62],
+        ["Puerto Rico", "USAspending FY2024 P12 award-financial gross outlays · place of performance", 1282326.52],
+        ["American Samoa", "USAspending FY2024 P12 award-financial gross outlays · place of performance", 249230.24]
+      ],
+      "covers": [["Benefits issued · grants, subsidies, and contributions", "USAspending FY2024 gross outlays · 2023 annual availability", 14755405202.32]]
+    },
+    {
+      "title": "Child Nutrition 2024-2025 fund resources from FNS program costs",
+      "sourceTotal": 22884098610.26,
+      "basis": "FNS program and geography schedules report $28.39196850344B of FY2024 Child Nutrition cash costs. The signed $5.50786989318B bridge reconciles that source schedule exactly to Treasury's $22.88409861026B 2024-2025 availability-row net outlay without assigning the timing and scope difference to a program or geography.",
+      "sourceLabel": "USDA FNS Child Nutrition tables and Treasury Combined Statement",
+      "sourceUrl": "https://www.fns.usda.gov/pd/child-nutrition-tables",
+      "rows": [
+        ["FNS FY2024 Child Nutrition cost schedule", "Published program-and-geography schedule before the cost-to-outlay bridge", 28391968503.44],
+        ["FNS cost-to-Treasury outlay basis bridge", "Exact arithmetic difference; not allocated to a program or geography", -5507869893.18]
+      ],
+      "covers": [["Fund resources · 2024-2025", "Combined Statement FY2024 net outlays · period-of-availability row", 22884098610.26]]
+    },
+    {
+      "title": "012-3505-000 FY2024 net outlays by period of availability",
+      "sourceTotal": 106754491269.41,
+      "basis": "Exact FY2024 Treasury Combined Statement availability rows. Nonzero published net outlays sum to the parent account in integer cents.",
+      "sourceLabel": "Treasury FY2024 Combined Statement account table",
+      "sourceUrl": "https://fiscal.treasury.gov/system/files/files/reports-statements/combined-statement/cs2024/c07.xlsx",
+      "combinedStatementAvailability": true,
+      "covers": [
+        ["012-3505-000","Supplemental Nutrition Assistance Program, Food and Nutrition Service, Agriculture",106754491269.41]
+      ],
+      "rows": [
+        ["Fund resources · 2024","Combined Statement FY2024 net outlays · period-of-availability row",89263314079.06],
+        ["Fund resources · 2023","Combined Statement FY2024 net outlays · period-of-availability row",15990341846.75],
+        ["Fund resources · 2023-2024","Combined Statement FY2024 net outlays · period-of-availability row",678722473.73],
+        ["Fund resources · 2024-2025","Combined Statement FY2024 net outlays · period-of-availability row",452914746.82],
+        ["Fund resources · 2021-2023","Combined Statement FY2024 net outlays · period-of-availability row",148454061.74],
+        ["Fund resources · 2022-2023","Combined Statement FY2024 net outlays · period-of-availability row",76088202.99],
+        ["Fund resources · 2022","Combined Statement FY2024 net outlays · period-of-availability row",59691579.15],
+        ["Fund resources · 2021","Combined Statement FY2024 net outlays · period-of-availability row",22977347.97],
+        ["Fund resources · 2020","Combined Statement FY2024 net outlays · period-of-availability row",21652161.98],
+        ["Fund resources · 2021-2027","Combined Statement FY2024 net outlays · period-of-availability row",17685683.14],
+        ["Fund resources · 2020-2021","Combined Statement FY2024 net outlays · period-of-availability row",8600440.45],
+        ["Fund resources · 2021-2022","Combined Statement FY2024 net outlays · period-of-availability row",3704450.93],
+        ["Fund resources · 2021-2026","Combined Statement FY2024 net outlays · period-of-availability row",3251883.85],
+        ["Fund resources · 2019-2021","Combined Statement FY2024 net outlays · period-of-availability row",2201946.71],
+        ["Fund resources · 2019-2020","Combined Statement FY2024 net outlays · period-of-availability row",2190305.66],
+        ["Fund resources · 2019","Combined Statement FY2024 net outlays · period-of-availability row",1461608.81],
+        ["Fund resources · No Year","Combined Statement FY2024 net outlays · period-of-availability row",1238449.67]
+      ]
+    },
+    {
+      "title": "012-3539-000 FY2024 net outlays by period of availability",
+      "sourceTotal": 32732684349.3,
+      "basis": "Exact FY2024 Treasury Combined Statement availability rows. Nonzero published net outlays sum to the parent account in integer cents.",
+      "sourceLabel": "Treasury FY2024 Combined Statement account table",
+      "sourceUrl": "https://fiscal.treasury.gov/system/files/files/reports-statements/combined-statement/cs2024/c07.xlsx",
+      "combinedStatementAvailability": true,
+      "covers": [
+        ["012-3539-000","Child Nutrition Programs, Food and Nutrition Service, Agriculture",32732684349.3]
+      ],
+      "rows": [
+        ["Fund resources · 2024-2025","Combined Statement FY2024 net outlays · period-of-availability row",22884098610.26],
+        ["Fund resources · 2023-2024","Combined Statement FY2024 net outlays · period-of-availability row",8901640365.19],
+        ["Fund resources · 2022-2023","Combined Statement FY2024 net outlays · period-of-availability row",610022460.94],
+        ["Fund resources · No Year","Combined Statement FY2024 net outlays · period-of-availability row",287352570.96],
+        ["Fund resources · 2021-2022","Combined Statement FY2024 net outlays · period-of-availability row",32587702.96],
+        ["Fund resources · 2020-2021","Combined Statement FY2024 net outlays · period-of-availability row",8422276.6],
+        ["Fund resources · 2019-2020","Combined Statement FY2024 net outlays · period-of-availability row",6871151.39],
+        ["Fund resources · 2018-2019","Combined Statement FY2024 net outlays · period-of-availability row",2294280.55],
+        ["Fund resources · 2023","Combined Statement FY2024 net outlays · period-of-availability row",205236],
+        ["Fund resources · 2024","Combined Statement FY2024 net outlays · period-of-availability row",54730],
+        ["Fund resources · 2021","Combined Statement FY2024 net outlays · period-of-availability row",-865035.55]
+      ]
     }
   ],
   "largeAccountRows": [
@@ -234,7 +412,8 @@
         ["North Dakota", "FY2024 SNAP benefit cost", 111448901],
         ["Virgin Islands", "FY2024 SNAP benefit cost", 70457505],
         ["Wyoming", "FY2024 SNAP benefit cost", 56701860]
-      ]
+      ],
+      "covers": [["FNS FY2024 SNAP benefit schedule", "Published geography-and-month schedule before the benefit-to-outlay bridge", 93475887992]]
     },
     {
       "parent": ["Food and Nutrition Service", "Child Nutrition Programs", 32733000000],
@@ -306,7 +485,8 @@
         ["National School Lunch · Virgin Islands", "FY2024 cash payments", 4109781.45],
         ["National School Lunch · source rounding", "Difference between rounded geography rows and FNS program total", 0.54],
         ["FNS component rounding", "Difference from combining independently rounded program tables", -0.01]
-      ]
+      ],
+      "covers": [["FNS FY2024 Child Nutrition cost schedule", "Published program-and-geography schedule before the cost-to-outlay bridge", 28391968503.44]]
     }
   ],
   "rows": [

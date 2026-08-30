@@ -148,7 +148,10 @@
         ["Wyoming", "FY2024 federal TANF expenditures reported on ACF-196R", 19301622.47],
         ["Montana", "FY2024 federal TANF expenditures reported on ACF-196R", 18577197]
       ],
-      "covers": [["Administration for Children and Families", "Temporary Assistance for Needy Families", 17640000000]]
+      "covers": [
+        ["Administration for Children and Families", "Temporary Assistance for Needy Families", 17640000000],
+        ["ACF FY2024 federal TANF expenditures by state", "Published federal-only ACF-196R state schedule · expanded below", 14432059408.98]
+      ]
     },
     {
       "title": "CDC FY2024 final program funding by operating-plan program",
@@ -487,6 +490,7 @@
     },
     {
       "title": "Medicare FY2024 budget-function outlays by signed OMB account",
+      "displayParent": ["Federal Supplementary Medical Insurance Trust Fund", "Benefit Payments", 519968000000],
       "basis": "Thirty-one OMB FY2024 actual-outlay rows net $1,572.179B of positive accounts against $519.512B of intrafederal/financing offsets and $178.534B of public/applicable offsets. The $874.133B source total plus a $1M disclosed precision bridge reconciles to the $874.134B MTS Medicare control. OMB publishes no lower program, service, plan, or geography dimension for the three large mandatory accounts, which are public OMB classification ceilings. This is a cash-outlay account hierarchy, not provider or claims spending.",
       "sourceLabel": "OMB FY2027 Public Budget Database outlays workbook",
       "sourceUrl": "https://www.whitehouse.gov/wp-content/uploads/2026/04/outlays_fy2027.xlsx",
@@ -526,7 +530,118 @@
       ]
     },
     {
+      "title": "SMI transfer-to no-year resources from the OMB cash account",
+      "sourceTotal": 519967835979.18,
+      "basis": "OMB reports 521484000000 of FY2024 mandatory actual outlays for the Federal SMI Trust Fund at its lowest public cash-account classification. The signed -1516164020.82 precision-and-basis bridge reconciles that control exactly to Treasury's SMI transfer-to no-year row; no difference is assigned to a service or beneficiary.",
+      "sourceLabel": "OMB FY2027 Public Budget Database outlays workbook",
+      "sourceUrl": "https://www.whitehouse.gov/wp-content/uploads/2026/04/outlays_fy2027.xlsx",
+      "rows": [
+        ["Federal SMI Trust Fund","Account 8004 · mandatory actual outlay · public OMB classification ceiling",521484000000],
+        ["Treasury/OMB precision-and-basis bridge","Exact arithmetic difference; not allocated to a service or beneficiary",-1516164020.82]
+      ],
+      "covers": [
+        ["Transfer To · Health and Human Services · No Year","Combined Statement FY2024 net outlays · period-of-availability row",519967835979.18]
+      ]
+    },
+    {
+      "title": "HI transfer-to no-year resources from the OMB cash account",
+      "sourceTotal": 403423187940.61,
+      "basis": "OMB reports 404291000000 of FY2024 mandatory actual outlays for the Federal HI Trust Fund at its lowest public cash-account classification. The signed -867812059.39 precision-and-basis bridge reconciles that control exactly to Treasury's HI transfer-to no-year row; no difference is assigned to a service or beneficiary.",
+      "sourceLabel": "OMB FY2027 Public Budget Database outlays workbook",
+      "sourceUrl": "https://www.whitehouse.gov/wp-content/uploads/2026/04/outlays_fy2027.xlsx",
+      "rows": [
+        ["Federal HI Trust Fund","Account 8005 · mandatory actual outlay · public OMB classification ceiling",404291000000],
+        ["Treasury/OMB precision-and-basis bridge","Exact arithmetic difference; not allocated to a service or beneficiary",-867812059.39]
+      ],
+      "covers": [
+        ["Transfer To · Health and Human Services · No Year","Combined Statement FY2024 net outlays · period-of-availability row",403423187940.61]
+      ]
+    },
+    {
+      "title": "SMI federal-contribution receipt from the OMB cash offset",
+      "sourceTotal": -375967160931.34,
+      "basis": "OMB reports the FY2024 Federal SMI contribution as a signed -375967000000 intrafederal cash offset at its lowest public account classification. The signed -160931.34 precision bridge reconciles that control exactly to Treasury's receipt account.",
+      "sourceLabel": "OMB FY2027 Public Budget Database outlays workbook",
+      "sourceUrl": "https://www.whitehouse.gov/wp-content/uploads/2026/04/outlays_fy2027.xlsx",
+      "rows": [
+        ["Treasury/OMB precision bridge","Exact arithmetic difference; not allocated below the receipt account",-160931.34],
+        ["Federal contributions, FSMI","Account 800410 · intrafederal offset · public OMB classification ceiling",-375967000000]
+      ],
+      "covers": [
+        ["075-X-8004-001","Federal Contributions, Federal Supplementary Medical Insurance Trust Fund",-375967160931.34]
+      ]
+    },
+    {
+      "title": "Part D federal-contribution receipt from the OMB cash offset",
+      "sourceTotal": -101860622011.88,
+      "basis": "OMB reports the FY2024 Part D benefits contribution as a signed -101861000000 intrafederal cash offset at its lowest public account classification. The signed 377988.12 precision bridge reconciles that control exactly to Treasury's receipt account.",
+      "sourceLabel": "OMB FY2027 Public Budget Database outlays workbook",
+      "sourceUrl": "https://www.whitehouse.gov/wp-content/uploads/2026/04/outlays_fy2027.xlsx",
+      "rows": [
+        ["Treasury/OMB precision bridge","Exact arithmetic difference; not allocated below the receipt account",377988.12],
+        ["Federal contributions for Part D benefits","Account 800447 · intrafederal offset · public OMB classification ceiling",-101861000000]
+      ],
+      "covers": [
+        ["075-X-8004-047","Federal Contributions for Benefits, Medicare Prescription Drug Account, FSMI",-101860622011.88]
+      ]
+    },
+    {
+      "title": "HI taxation-of-OASDI-benefits receipt from the Medicare Trustees control",
+      "sourceTotal": -39794000000,
+      "basis": "The 2025 Medicare Trustees Report states that FY2024/2024 HI income from taxation of OASDI benefits was $39.8B and publishes no lower cash subdivision, making that program-source amount the public Medicare Trustees disclosure ceiling. The signed $6M published-precision bridge reconciles it exactly to Treasury's $39.794B HI receipt account.",
+      "sourceLabel": "2025 Medicare Trustees Report · HI Financial Status",
+      "sourceUrl": "https://www.cms.gov/oact/tr/2025",
+      "rows": [
+        ["CMS-to-Treasury published-precision bridge", "Exact arithmetic difference; not allocated below the tax source", 6000000],
+        ["Income from taxation of OASDI benefits", "FY2024 HI trust-fund income · public Medicare Trustees disclosure ceiling", -39800000000]
+      ],
+      "covers": [["075-X-8005-035", "Federal Hospital Trust Fund, Transfer from General Fund (OASI) Taxes", -39794000000]]
+    },
+    {
+      "title": "Aged SMI premium receipt from the OMB cash offset",
+      "sourceTotal": -124091613735.77,
+      "basis": "OMB reports FY2024 aged SMI premiums as a signed -124092000000 public cash offset at its lowest account classification. The signed 386264.23 precision bridge reconciles that control exactly to Treasury's receipt account.",
+      "sourceLabel": "OMB FY2027 Public Budget Database outlays workbook",
+      "sourceUrl": "https://www.whitehouse.gov/wp-content/uploads/2026/04/outlays_fy2027.xlsx",
+      "rows": [
+        ["Treasury/OMB precision bridge","Exact arithmetic difference; not allocated below the receipt account",386264.23],
+        ["Aged FSMI premiums","Account 800450 · public/applicable offset · public OMB classification ceiling",-124092000000]
+      ],
+      "covers": [
+        ["075-X-8004-005","Premiums Collected for the Aged, Federal Supplementary Medical Insurance Trust Fund",-124091613735.77]
+      ]
+    },
+    {
+      "title": "State Part D payment receipt from the OMB cash offset",
+      "sourceTotal": -17757892575,
+      "basis": "OMB reports FY2024 State payments for Part D as a signed -17758000000 public cash offset at its lowest account classification. The signed 107425 precision bridge reconciles that control exactly to Treasury's receipt account.",
+      "sourceLabel": "OMB FY2027 Public Budget Database outlays workbook",
+      "sourceUrl": "https://www.whitehouse.gov/wp-content/uploads/2026/04/outlays_fy2027.xlsx",
+      "rows": [
+        ["Treasury/OMB precision bridge","Exact arithmetic difference; not allocated below the receipt account",107425],
+        ["State payments for Part D","Account 800436 · public/applicable offset · public OMB classification ceiling",-17758000000]
+      ],
+      "covers": [
+        ["075-X-8004-036","Payments from States, Medicare Prescription Drug Accounts, FSMI",-17757892575]
+      ]
+    },
+    {
+      "title": "Disabled SMI premium receipt from the OMB cash offset",
+      "sourceTotal": -13639973309,
+      "basis": "OMB reports FY2024 disabled SMI premiums as a signed -13640000000 public cash offset at its lowest account classification. The signed 26691 precision bridge reconciles that control exactly to Treasury's receipt account.",
+      "sourceLabel": "OMB FY2027 Public Budget Database outlays workbook",
+      "sourceUrl": "https://www.whitehouse.gov/wp-content/uploads/2026/04/outlays_fy2027.xlsx",
+      "rows": [
+        ["Treasury/OMB precision bridge","Exact arithmetic difference; not allocated below the receipt account",26691],
+        ["Disabled FSMI premiums","Account 800470 · public/applicable offset · public OMB classification ceiling",-13640000000]
+      ],
+      "covers": [
+        ["075-X-8004-007","Premiums Collected for the Disabled, Federal Supplementary Medical Insurance Trust Fund",-13639973309]
+      ]
+    },
+    {
       "title": "Medicare FY2024 service costs (accrual context)",
+      "displayParent": ["Federal Supplementary Medical Insurance Trust Fund", "Benefit Payments", 519968000000],
       "basis": "CMS reports $1,040.112B of FY2024 audited accrual cost by service and $891.524B after earned revenue and eliminations, $17.390B above the MTS cash parent. CMS publishes no same-FY, same-accrual child set below the four Advantage/fee-for-service rows; Part D has only the separate exact gross/state-reimbursement bridge. These rows explain service delivery but are not additive cash-outlay children.",
       "sourceLabel": "CMS FY2024 Financial Report · Note 10",
       "sourceUrl": "https://www.cms.gov/files/document/cms-financial-report-fiscal-year-2024.pdf",
@@ -543,7 +658,27 @@
       ]
     },
     {
+      "title": "Medicare FY2024 earned revenue from audited and OMB premium controls",
+      "sourceTotal": -148741000000,
+      "basis": "CMS Note 5 reports 143616000000 of SMI premiums, 5080000000 of HI premiums, and 45000000 of other earned revenue. OMB separately reports the aged, disabled, and Part D SMI premium cash offsets at $1 million precision; their signed 11000000 bridge reconciles to CMS's audited SMI-premium control. The seven rows sum exactly to the audited earned-revenue offset.",
+      "sourceLabel": "CMS FY2024 Financial Report · Note 5 and OMB FY2027 Public Budget Database",
+      "sourceUrl": "https://www.cms.gov/files/document/cms-financial-report-fiscal-year-2024.pdf",
+      "rows": [
+        ["OMB/CMS SMI-premium basis bridge","Exact arithmetic difference to audited SMI premiums",11000000],
+        ["HI other revenue","CMS FY2024 audited earned revenue",-8000000],
+        ["SMI other revenue","CMS FY2024 audited earned revenue",-37000000],
+        ["HI premiums","CMS FY2024 audited earned revenue",-5080000000],
+        ["Part D premiums","OMB FY2024 cash offset",-5895000000],
+        ["Disabled SMI premiums","OMB FY2024 cash offset · public account-classification ceiling",-13640000000],
+        ["Aged SMI premiums","OMB FY2024 cash offset · public account-classification ceiling",-124092000000]
+      ],
+      "covers": [
+        ["Less earned revenue", "Audited accrual offset", -148741000000]
+      ]
+    },
+    {
       "title": "Original Medicare FY2024 claim payments by geography",
+      "displayParent": ["Federal Supplementary Medical Insurance Trust Fund", "Benefit Payments", 519968000000],
       "sourceTotal": 377094873261,
       "basis": "CMS calendar-year 2024 actual Original Medicare fee-for-service payments. State and territory totals below $10B are retained; larger states are expanded to official county totals, with smaller counties grouped below $9.5B. Los Angeles County is expanded to CMS service categories. Published state/county coverage adjustments remain visible. This claims view excludes Medicare Advantage and does not reconcile to audited fiscal-year accrual expenses.",
       "sourceLabel": "CMS Medicare Geographic Variation 2024",
@@ -815,7 +950,7 @@
     {
       "title": "CMS 2023 benefit-year risk-adjustment payments by state",
       "sourceTotal": 11134108331.54,
-      "covers": [["Centers for Medicare and Medicaid Services", "Other", 12389000000]],
+      "covers": [["CMS 2023 benefit-year risk-adjustment payments by state", "CMS issuer settlement schedule used below", 11134108331.54]],
       "basis": "CMS's issuer-specific 2023 benefit-year Appendices C and D report positive risk-adjustment transfer and high-cost risk-pool payments. Aggregating positive issuer amounts produces $11.13410833154B across 50 states and the District of Columbia; every state is below $10B. This benefit-year settlement view explains the $11.456B Risk Adjustment Program Payments account that dominates Treasury's $12.389B CMS Other row, but it is not an additive cash-outlay bridge because fiscal-year timing and subsequent adjustments differ.",
       "sourceLabel": "CMS · 2023 Benefit Year Risk Adjustment Summary Report · issuer Appendices C and D",
       "sourceUrl": "https://www.cms.gov/marketplace/health-plans-issuers/premium-stabilization-programs",
@@ -908,6 +1043,362 @@
         ["Transportation of things", "FY2024 actual obligations", 17000000],
         ["Operation and maintenance of facilities", "FY2024 actual obligations", 11000000],
         ["Travel and transportation of persons", "FY2024 actual obligations", 3000000]
+      ]
+    },
+    {
+      "title": "075-0512-000 FY2024 net outlays by period of availability",
+      "sourceTotal": 617517206318.9,
+      "basis": "Exact FY2024 Treasury Combined Statement availability rows. Nonzero published net outlays sum to the parent account in integer cents.",
+      "sourceLabel": "Treasury FY2024 Combined Statement account table",
+      "sourceUrl": "https://fiscal.treasury.gov/system/files/files/reports-statements/combined-statement/cs2024/c16.xlsx",
+      "combinedStatementAvailability": true,
+      "covers": [
+        ["075-0512-000","Grants to States for Medicaid, Centers for Medicare and Medicaid Services, Health and Human Services",617517206318.9]
+      ],
+      "rows": [
+        ["Fund resources · No Year","Combined Statement FY2024 net outlays · period-of-availability row",610988009345.29],
+        ["Transfer To · Center for Disease Control · No Year","Combined Statement FY2024 net outlays · period-of-availability row",6529196973.61]
+      ]
+    },
+    {
+      "title": "075-8004-000 FY2024 net outlays by period of availability",
+      "sourceTotal": 525704077286.5,
+      "basis": "Exact FY2024 Treasury Combined Statement availability rows. Nonzero published net outlays sum to the parent account in integer cents.",
+      "sourceLabel": "Treasury FY2024 Combined Statement account table",
+      "sourceUrl": "https://fiscal.treasury.gov/system/files/files/reports-statements/combined-statement/cs2024/c16.xlsx",
+      "combinedStatementAvailability": true,
+      "covers": [
+        ["075-8004-000","Federal Supplementary Medical Insurance Trust Fund-Treasury Managed, Health and Human Services",525704077286.5]
+      ],
+      "rows": [
+        ["Transfer To · Health and Human Services · No Year","Combined Statement FY2024 net outlays · period-of-availability row",519967835979.18],
+        ["Fund resources · No Year","Combined Statement FY2024 net outlays · period-of-availability row",5736241307.32]
+      ]
+    },
+    {
+      "title": "Payments to Health Care Trust Funds 2024 resources by program activity and object class",
+      "sourceTotal": 485990990428.42,
+      "basis": "USAspending's FY2024 P12 File B gross-outlay schedule reconciles exactly to Treasury's 2024 availability row. The SMI premium-match and Part D benefit activities are the lowest same-basis public cash classifications in File B; the FY2026 Budget Appendix corroborates these program activities but reports obligations rather than an additive lower outlay schedule.",
+      "sourceLabel": "USAspending FY2024 P12 Account Breakdown by Program Activity and Object Class",
+      "sourceUrl": "https://api.usaspending.gov/api/v2/download/status?file_name=FY2024P01-P12_All_TAS_AccountBreakdownByPA-OC_2026-08-30_H05M19S43235323.zip",
+      "covers": [
+        ["Fund resources · 2024","Combined Statement FY2024 net outlays · period-of-availability row",485990990428.42]
+      ],
+      "rows": [
+        ["Federal contribution to match premiums (SMI) · grants, subsidies, and contributions","USAspending FY2024 gross outlays · public program-activity/object-class cash disclosure ceiling",382815582528.54],
+        ["Part D benefits (Rx Drug) · financial transfers","USAspending FY2024 gross outlays · public program-activity/object-class cash disclosure ceiling",101860622011.88],
+        ["General fund transfers to HI · grants, subsidies, and contributions","USAspending FY2024 gross outlays",618372088],
+        ["Part D federal administration (Rx Drug) · financial transfers","USAspending FY2024 gross outlays",493000000],
+        ["Federal Bureau of Investigation (HCFAC) · grants, subsidies, and contributions","USAspending FY2024 gross outlays",168346704],
+        ["General fund transfers to HI · financial transfers","USAspending FY2024 gross outlays",35067096]
+      ]
+    },
+    {
+      "title": "075-0580-000 FY2024 net outlays by period of availability",
+      "sourceTotal": 479475394016.22,
+      "basis": "Exact FY2024 Treasury Combined Statement availability rows. Nonzero published net outlays sum to the parent account in integer cents.",
+      "sourceLabel": "Treasury FY2024 Combined Statement account table",
+      "sourceUrl": "https://fiscal.treasury.gov/system/files/files/reports-statements/combined-statement/cs2024/c16.xlsx",
+      "combinedStatementAvailability": true,
+      "covers": [
+        ["075-0580-000","Payments to Healthcare Trust Funds, Center for Medicare and Medicaid Services, Health and Human Services",479475394016.22]
+      ],
+      "rows": [
+        ["Fund resources · 2024","Combined Statement FY2024 net outlays · period-of-availability row",485990990428.42],
+        ["Fund resources · 2023","Combined Statement FY2024 net outlays · period-of-availability row",209058731],
+        ["Fund resources · 2022","Combined Statement FY2024 net outlays · period-of-availability row",101083021],
+        ["Fund resources · 2020","Combined Statement FY2024 net outlays · period-of-availability row",3395412],
+        ["Fund resources · 2019","Combined Statement FY2024 net outlays · period-of-availability row",1985531],
+        ["Fund resources · 2021","Combined Statement FY2024 net outlays · period-of-availability row",-6831119107.2]
+      ]
+    },
+    {
+      "title": "075-8005-000 FY2024 net outlays by period of availability",
+      "sourceTotal": 407377908783.76,
+      "basis": "Exact FY2024 Treasury Combined Statement availability rows. Nonzero published net outlays sum to the parent account in integer cents.",
+      "sourceLabel": "Treasury FY2024 Combined Statement account table",
+      "sourceUrl": "https://fiscal.treasury.gov/system/files/files/reports-statements/combined-statement/cs2024/c16.xlsx",
+      "combinedStatementAvailability": true,
+      "covers": [
+        ["075-8005-000","Federal Hospital Insurance Trust Fund - Treasury Managed, Health and Human Services",407377908783.76]
+      ],
+      "rows": [
+        ["Transfer To · Health and Human Services · No Year","Combined Statement FY2024 net outlays · period-of-availability row",403423187940.61],
+        ["Fund resources · No Year","Combined Statement FY2024 net outlays · period-of-availability row",3954720843.15]
+      ]
+    },
+    {
+      "title": "075-0515-000 FY2024 net outlays by period of availability",
+      "sourceTotal": 19448776714.6,
+      "basis": "Exact FY2024 Treasury Combined Statement availability rows. Nonzero published net outlays sum to the parent account in integer cents.",
+      "sourceLabel": "Treasury FY2024 Combined Statement account table",
+      "sourceUrl": "https://fiscal.treasury.gov/system/files/files/reports-statements/combined-statement/cs2024/c16.xlsx",
+      "combinedStatementAvailability": true,
+      "covers": [
+        ["075-0515-000","State Children's Health Insurance Fund, Centers for Medicare and Medicaid Services, Health and Human Services",19448776714.6]
+      ],
+      "rows": [
+        ["Fund resources · 2024","Combined Statement FY2024 net outlays · period-of-availability row",8884691247.79],
+        ["Fund resources · No Year","Combined Statement FY2024 net outlays · period-of-availability row",5587150682.16],
+        ["Fund resources · 2023","Combined Statement FY2024 net outlays · period-of-availability row",4664518704.28],
+        ["Fund resources · 2022","Combined Statement FY2024 net outlays · period-of-availability row",320611287.5],
+        ["Fund resources · 2020","Combined Statement FY2024 net outlays · period-of-availability row",2.06],
+        ["Fund resources · 2021","Combined Statement FY2024 net outlays · period-of-availability row",-160263],
+        ["Fund resources · 2019","Combined Statement FY2024 net outlays · period-of-availability row",-8034946.19]
+      ]
+    },
+    {
+      "title": "TANF 2024 fund resources by object class",
+      "sourceTotal": 10664099674.49,
+      "basis": "USAspending FY2024 P12 custom account data reports 10728992125.66 of gross outlays for TAS 075-2024/2024-1552-000. The signed -64892451.17 cross-source bridge reconciles that detailed schedule exactly to Treasury Combined Statement net outlays; no difference is assigned to an object class or program activity.",
+      "sourceLabel": "USAspending FY2024 P12 custom account-data export",
+      "sourceUrl": "https://www.usaspending.gov/download_center/custom_account_data",
+      "rows": [
+        ["STATE FAMILY ASSISTANCE GRANT · object class 41.0 · Grants, subsidies, and contributions","USAspending FY2024 gross outlays · expanded by ACF state expenditures below",10645387092.92],
+        ["Object class 25.2 · Other services from non-Federal sources","USAspending FY2024 gross outlays",25345200.16],
+        ["TERRITORIES - FAMILY ASSISTANCE GRANTS · object class 41.0 · Grants, subsidies, and contributions","USAspending FY2024 gross outlays",21057864.23],
+        ["Object class 25.3 · Other goods and services from Federal sources","USAspending FY2024 gross outlays",18793527.81],
+        ["Object class 11.1 · Full-time permanent","USAspending FY2024 gross outlays",12413050.99],
+        ["Object class 12.1 · Civilian personnel benefits","USAspending FY2024 gross outlays",4435101.28],
+        ["Object class 25.1 · Advisory and assistance services","USAspending FY2024 gross outlays",745528.66],
+        ["WELFARE RESEARCH · object class 41.0 · Grants, subsidies, and contributions","USAspending FY2024 gross outlays",253257.38],
+        ["Object class 21.0 · Travel and transportation of persons","USAspending FY2024 gross outlays",189728.49],
+        ["Object class 11.5 · Other personnel compensation","USAspending FY2024 gross outlays",127586.3],
+        ["Object class 11.3 · Other than full-time permanent","USAspending FY2024 gross outlays",122716.56],
+        ["Object class 26.0 · Supplies and materials","USAspending FY2024 gross outlays",73538.93],
+        ["Object class 23.1 · Rental payments to GSA","USAspending FY2024 gross outlays",53436.3],
+        ["TRIBAL WORK PROGRAMS · object class 41.0 · Grants, subsidies, and contributions","USAspending FY2024 gross outlays",35612.67],
+        ["Object class 31.0 · Equipment","USAspending FY2024 gross outlays",1401.98],
+        ["HEALTHY MARRIAGE AND RESPONSIBLE FATHERHOOD GRANTS · object class 41.0 · Grants, subsidies, and contributions","USAspending FY2024 gross outlays",-42519],
+        ["Treasury/USAspending net-to-gross basis bridge","Exact arithmetic difference; not allocated to an object class or program activity",-64892451.17]
+      ],
+      "covers": [
+        ["Fund resources · 2024","Combined Statement FY2024 net outlays · period-of-availability row",10664099674.49]
+      ]
+    },
+    {
+      "title": "TANF State Family Assistance Grant from ACF reported expenditures",
+      "sourceTotal": 10645387092.92,
+      "basis": "ACF Table C.1 reports 14432059408.98 of FY2024 federal TANF expenditures across 50 states and the District of Columbia. The signed -3786672316.06 reporting-basis bridge reconciles that published state schedule exactly to USAspending's State Family Assistance Grant gross-outlay row; no difference is assigned to a state.",
+      "sourceLabel": "ACF Office of Family Assistance · FY2024 TANF Financial Data Table C.1",
+      "sourceUrl": "https://acf.gov/ofa/data/tanf-financial-data-fy-2024",
+      "rows": [
+        ["ACF FY2024 federal TANF expenditures by state","Published federal-only ACF-196R state schedule · expanded below",14432059408.98],
+        ["USAspending/ACF reporting-basis bridge","Exact arithmetic difference; not allocated to a state",-3786672316.06]
+      ],
+      "covers": [
+        ["STATE FAMILY ASSISTANCE GRANT · object class 41.0 · Grants, subsidies, and contributions","USAspending FY2024 gross outlays · expanded by ACF state expenditures below",10645387092.92]
+      ]
+    },
+    {
+      "title": "075-1552-000 FY2024 net outlays by period of availability",
+      "sourceTotal": 17640068729.87,
+      "basis": "Exact FY2024 Treasury Combined Statement availability rows. Nonzero published net outlays sum to the parent account in integer cents.",
+      "sourceLabel": "Treasury FY2024 Combined Statement account table",
+      "sourceUrl": "https://fiscal.treasury.gov/system/files/files/reports-statements/combined-statement/cs2024/c16.xlsx",
+      "combinedStatementAvailability": true,
+      "covers": [
+        ["075-1552-000","Temporary Assistance for Needy Families, Administration for Children and Families, Health and Human Services",17640068729.87]
+      ],
+      "rows": [
+        ["Fund resources · 2024","Combined Statement FY2024 net outlays · period-of-availability row",10664099674.49],
+        ["Fund resources · 2023","Combined Statement FY2024 net outlays · period-of-availability row",5047262053.96],
+        ["Fund resources · 2022","Combined Statement FY2024 net outlays · period-of-availability row",1141394982.96],
+        ["Fund resources · 2021","Combined Statement FY2024 net outlays · period-of-availability row",292065738.52],
+        ["Fund resources · 2018","Combined Statement FY2024 net outlays · period-of-availability row",143539202.51],
+        ["Fund resources · 2020","Combined Statement FY2024 net outlays · period-of-availability row",141556182.94],
+        ["Transfer To · Interior, Bureau of Indian Affairs · 2024","Combined Statement FY2024 net outlays · period-of-availability row",56131186],
+        ["Fund resources · No Year","Combined Statement FY2024 net outlays · period-of-availability row",39033085.71],
+        ["Fund resources · 2016","Combined Statement FY2024 net outlays · period-of-availability row",29912929.23],
+        ["Fund resources · 2014","Combined Statement FY2024 net outlays · period-of-availability row",29884340.98],
+        ["Fund resources · 2017","Combined Statement FY2024 net outlays · period-of-availability row",26089234.01],
+        ["Fund resources · 2019","Combined Statement FY2024 net outlays · period-of-availability row",15659438.9],
+        ["Transfer To · Census, Commerce · 2024","Combined Statement FY2024 net outlays · period-of-availability row",8761265.17],
+        ["Transfer To · Interior, Bureau of Indian Affairs · 2023","Combined Statement FY2024 net outlays · period-of-availability row",1928042],
+        ["Fund resources · 2015","Combined Statement FY2024 net outlays · period-of-availability row",1599438.08],
+        ["Fund resources · 1998","Combined Statement FY2024 net outlays · period-of-availability row",1403372.32],
+        ["Fund resources · 1999","Combined Statement FY2024 net outlays · period-of-availability row",408348.88],
+        ["Transfer To · Census, Commerce · 2023","Combined Statement FY2024 net outlays · period-of-availability row",374258.81],
+        ["Fund resources · 1998-2001","Combined Statement FY2024 net outlays · period-of-availability row",55930.8],
+        ["Fund resources · 2008","Combined Statement FY2024 net outlays · period-of-availability row",7660.64],
+        ["Fund resources · 2003","Combined Statement FY2024 net outlays · period-of-availability row",6473],
+        ["Fund resources · 2010","Combined Statement FY2024 net outlays · period-of-availability row",3776.93],
+        ["Fund resources · 2004","Combined Statement FY2024 net outlays · period-of-availability row",2881],
+        ["Fund resources · 2002","Combined Statement FY2024 net outlays · period-of-availability row",2475.52],
+        ["Transfer To · Census, Commerce · 2020","Combined Statement FY2024 net outlays · period-of-availability row",-338.07],
+        ["Fund resources · 2006","Combined Statement FY2024 net outlays · period-of-availability row",-184078],
+        ["Fund resources · 2007","Combined Statement FY2024 net outlays · period-of-availability row",-928827.42]
+      ]
+    },
+    {
+      "title": "075-1515-000 FY2024 net outlays by period of availability",
+      "sourceTotal": 16298026805.53,
+      "basis": "Exact FY2024 Treasury Combined Statement availability rows. Nonzero published net outlays sum to the parent account in integer cents.",
+      "sourceLabel": "Treasury FY2024 Combined Statement account table",
+      "sourceUrl": "https://fiscal.treasury.gov/system/files/files/reports-statements/combined-statement/cs2024/c16.xlsx",
+      "combinedStatementAvailability": true,
+      "covers": [
+        ["075-1515-000","Payment to States for the Child Care and Development Block Grant, Administration for Children and Families, Health and Human Services",16298026805.53]
+      ],
+      "rows": [
+        ["Fund resources · 2021","Combined Statement FY2024 net outlays · period-of-availability row",9187684480.92],
+        ["Fund resources · 2023","Combined Statement FY2024 net outlays · period-of-availability row",3276913896.53],
+        ["Fund resources · 2024","Combined Statement FY2024 net outlays · period-of-availability row",2492623207.47],
+        ["Fund resources · 2022","Combined Statement FY2024 net outlays · period-of-availability row",1093042817.4],
+        ["Transfer To · Interior, Bureau of Indian Affairs · 2024","Combined Statement FY2024 net outlays · period-of-availability row",187871293],
+        ["Fund resources · 2020","Combined Statement FY2024 net outlays · period-of-availability row",21379887.88],
+        ["Fund resources · 2019","Combined Statement FY2024 net outlays · period-of-availability row",11363740.91],
+        ["Fund resources · 2023-2027","Combined Statement FY2024 net outlays · period-of-availability row",6111229.56],
+        ["Fund resources · 2021-2025","Combined Statement FY2024 net outlays · period-of-availability row",5125224.38],
+        ["Fund resources · 2020-2021","Combined Statement FY2024 net outlays · period-of-availability row",4914544.69],
+        ["Fund resources · 2024-2028","Combined Statement FY2024 net outlays · period-of-availability row",3215734.8],
+        ["Fund resources · 2021-2024","Combined Statement FY2024 net outlays · period-of-availability row",2549966.23],
+        ["Fund resources · 2021-2022","Combined Statement FY2024 net outlays · period-of-availability row",1787112.55],
+        ["Fund resources · 2022-2026","Combined Statement FY2024 net outlays · period-of-availability row",1394963.48],
+        ["Fund resources · 2023-2024","Combined Statement FY2024 net outlays · period-of-availability row",787761.75],
+        ["Fund resources · No Year","Combined Statement FY2024 net outlays · period-of-availability row",518637.72],
+        ["Transfer To · Interior, Bureau of Indian Affairs · 2022-2023","Combined Statement FY2024 net outlays · period-of-availability row",284058],
+        ["Transfer To · Interior, Bureau of Indian Affairs · 2023","Combined Statement FY2024 net outlays · period-of-availability row",211452],
+        ["Fund resources · 2019-2021","Combined Statement FY2024 net outlays · period-of-availability row",115536.5],
+        ["Fund resources · 2022-2023","Combined Statement FY2024 net outlays · period-of-availability row",82142.11],
+        ["Fund resources · 2018-2019","Combined Statement FY2024 net outlays · period-of-availability row",47964.65],
+        ["Transfer To · Interior, Bureau of Indian Affairs · 2021-2022","Combined Statement FY2024 net outlays · period-of-availability row",1153]
+      ]
+    },
+    {
+      "title": "075-1536-000 FY2024 net outlays by period of availability",
+      "sourceTotal": 14804889188,
+      "basis": "Exact FY2024 Treasury Combined Statement availability rows. Nonzero published net outlays sum to the parent account in integer cents.",
+      "sourceLabel": "Treasury FY2024 Combined Statement account table",
+      "sourceUrl": "https://fiscal.treasury.gov/system/files/files/reports-statements/combined-statement/cs2024/c16.xlsx",
+      "combinedStatementAvailability": true,
+      "covers": [
+        ["075-1536-000","Children and Families Services Programs, Administration for Children and Families, Health and Human Services",14804889188]
+      ],
+      "rows": [
+        ["Fund resources · 2023","Combined Statement FY2024 net outlays · period-of-availability row",7543477385.05],
+        ["Fund resources · 2024","Combined Statement FY2024 net outlays · period-of-availability row",5137697580.06],
+        ["Fund resources · 2022","Combined Statement FY2024 net outlays · period-of-availability row",851874993.17],
+        ["Fund resources · 2021","Combined Statement FY2024 net outlays · period-of-availability row",282645710.5],
+        ["Fund resources · No Year","Combined Statement FY2024 net outlays · period-of-availability row",237280583.23],
+        ["Fund resources · 2021-2022","Combined Statement FY2024 net outlays · period-of-availability row",172340634.31],
+        ["Fund resources · 2022-2023","Combined Statement FY2024 net outlays · period-of-availability row",126114745.24],
+        ["Fund resources · 2018-2021","Combined Statement FY2024 net outlays · period-of-availability row",103939705.91],
+        ["Fund resources · 2021-2023","Combined Statement FY2024 net outlays · period-of-availability row",80556045.07],
+        ["Fund resources · 2020","Combined Statement FY2024 net outlays · period-of-availability row",78761572.78],
+        ["Fund resources · 2023-2024","Combined Statement FY2024 net outlays · period-of-availability row",73223229.52],
+        ["Fund resources · 2020-2021","Combined Statement FY2024 net outlays · period-of-availability row",37209595.39],
+        ["Fund resources · 2023-2027","Combined Statement FY2024 net outlays · period-of-availability row",26195990.97],
+        ["Fund resources · 2019","Combined Statement FY2024 net outlays · period-of-availability row",23243993.28],
+        ["Fund resources · 2024-2028","Combined Statement FY2024 net outlays · period-of-availability row",11061092.44],
+        ["Fund resources · 2022-2026","Combined Statement FY2024 net outlays · period-of-availability row",8541327.02],
+        ["Fund resources · 2019-2020","Combined Statement FY2024 net outlays · period-of-availability row",4628527.01],
+        ["Fund resources · 2024-2025","Combined Statement FY2024 net outlays · period-of-availability row",2949412.06],
+        ["Transfer To · Bureau of Indian Affairs and Bureau of Indian Education, Interior · 2024","Combined Statement FY2024 net outlays · period-of-availability row",1702311],
+        ["Fund resources · 2019-2021","Combined Statement FY2024 net outlays · period-of-availability row",388253.31],
+        ["Fund resources · 2018-2019","Combined Statement FY2024 net outlays · period-of-availability row",381318.22],
+        ["Fund resources · 2022-2024","Combined Statement FY2024 net outlays · period-of-availability row",323884.82],
+        ["Fund resources · 2020-2022","Combined Statement FY2024 net outlays · period-of-availability row",226612.36],
+        ["Transfer To · Bureau of Indian Affairs and Bureau of Indian Education, Interior · 2023","Combined Statement FY2024 net outlays · period-of-availability row",123592.28],
+        ["Transfer To · Bureau of Indian Affairs and Bureau of Indian Education, Interior · 2022","Combined Statement FY2024 net outlays · period-of-availability row",1093]
+      ]
+    },
+    {
+      "title": "075-0140-000 FY2024 net outlays by period of availability",
+      "sourceTotal": 13957632240.08,
+      "basis": "Exact FY2024 Treasury Combined Statement availability rows. Nonzero published net outlays sum to the parent account in integer cents.",
+      "sourceLabel": "Treasury FY2024 Combined Statement account table",
+      "sourceUrl": "https://fiscal.treasury.gov/system/files/files/reports-statements/combined-statement/cs2024/c16.xlsx",
+      "combinedStatementAvailability": true,
+      "covers": [
+        ["075-0140-000","Public Health and Social Services Emergency Fund, Office of the Secretary, Health and Human Services",13957632240.08]
+      ],
+      "rows": [
+        ["Fund resources · No Year","Combined Statement FY2024 net outlays · period-of-availability row",6891105161.82],
+        ["Fund resources · 2021-2022","Combined Statement FY2024 net outlays · period-of-availability row",2865217258.56],
+        ["Fund resources · 2021-2024","Combined Statement FY2024 net outlays · period-of-availability row",2144538255.24],
+        ["Fund resources · 2020-2024","Combined Statement FY2024 net outlays · period-of-availability row",1260260738.24],
+        ["Fund resources · 2023","Combined Statement FY2024 net outlays · period-of-availability row",282248485.96],
+        ["Fund resources · 2023-2024","Combined Statement FY2024 net outlays · period-of-availability row",269435810.65],
+        ["Fund resources · 2022-2023","Combined Statement FY2024 net outlays · period-of-availability row",107812169.59],
+        ["Fund resources · 2022","Combined Statement FY2024 net outlays · period-of-availability row",45620869.63],
+        ["Fund resources · 2018-2019","Combined Statement FY2024 net outlays · period-of-availability row",38015057.97],
+        ["Fund resources · 2020-2021","Combined Statement FY2024 net outlays · period-of-availability row",28960007.73],
+        ["Fund resources · 2015-2019","Combined Statement FY2024 net outlays · period-of-availability row",10197953.05],
+        ["Fund resources · 2019-2020","Combined Statement FY2024 net outlays · period-of-availability row",8415852.34],
+        ["Fund resources · 2021","Combined Statement FY2024 net outlays · period-of-availability row",5354295.32],
+        ["Fund resources · 2020","Combined Statement FY2024 net outlays · period-of-availability row",4947986.87],
+        ["Fund resources · 2022-2024","Combined Statement FY2024 net outlays · period-of-availability row",2299923.48],
+        ["Fund resources · 2020-2022","Combined Statement FY2024 net outlays · period-of-availability row",1320036.95],
+        ["Fund resources · 2021-2023","Combined Statement FY2024 net outlays · period-of-availability row",1105680.83],
+        ["Fund resources · 2023-2025","Combined Statement FY2024 net outlays · period-of-availability row",541902.68],
+        ["Fund resources · 2017-2019","Combined Statement FY2024 net outlays · period-of-availability row",152974.6],
+        ["Fund resources · 2018-2020","Combined Statement FY2024 net outlays · period-of-availability row",1854.45],
+        ["Fund resources · 2019-2021","Combined Statement FY2024 net outlays · period-of-availability row",-315.4],
+        ["Fund resources · 2019","Combined Statement FY2024 net outlays · period-of-availability row",-9919720.48]
+      ]
+    },
+    {
+      "title": "075-1545-000 FY2024 net outlays by period of availability",
+      "sourceTotal": 10135425395.53,
+      "basis": "Exact FY2024 Treasury Combined Statement availability rows. Nonzero published net outlays sum to the parent account in integer cents.",
+      "sourceLabel": "Treasury FY2024 Combined Statement account table",
+      "sourceUrl": "https://fiscal.treasury.gov/system/files/files/reports-statements/combined-statement/cs2024/c16.xlsx",
+      "combinedStatementAvailability": true,
+      "covers": [
+        ["075-1545-000","Payments for Foster Care and Permanency, Administration for Children and Families, Health and Human Services",10135425395.53]
+      ],
+      "rows": [
+        ["Fund resources · 2024","Combined Statement FY2024 net outlays · period-of-availability row",8695187876.14],
+        ["Fund resources · 2023","Combined Statement FY2024 net outlays · period-of-availability row",1215632627.47],
+        ["Fund resources · 2020-2023","Combined Statement FY2024 net outlays · period-of-availability row",49608908.47],
+        ["Fund resources · 2021-2024","Combined Statement FY2024 net outlays · period-of-availability row",49425121.54],
+        ["Fund resources · 2022","Combined Statement FY2024 net outlays · period-of-availability row",48300761.53],
+        ["Fund resources · 2021-2023","Combined Statement FY2024 net outlays · period-of-availability row",38783886.02],
+        ["Fund resources · 2021","Combined Statement FY2024 net outlays · period-of-availability row",37937268.87],
+        ["Fund resources · 2022-2024","Combined Statement FY2024 net outlays · period-of-availability row",808146.43],
+        ["Fund resources · 2020-2022","Combined Statement FY2024 net outlays · period-of-availability row",475688.78],
+        ["Fund resources · 2019","Combined Statement FY2024 net outlays · period-of-availability row",341003.84],
+        ["Fund resources · 2023-2027","Combined Statement FY2024 net outlays · period-of-availability row",1118.45],
+        ["Fund resources · 2020","Combined Statement FY2024 net outlays · period-of-availability row",-491586.25],
+        ["Fund resources · 2022-2026","Combined Statement FY2024 net outlays · period-of-availability row",-585425.76]
+      ]
+    },
+    {
+      "title": "Medicare Prescription Drug Account by OMB budget category",
+      "sourceTotal": 116946359672.91,
+      "basis": "OMB reports FY2024 mandatory and discretionary outlays separately at the Medicare Prescription Drug Account. The signed $640,327.09 precision bridge reconciles the two rounded OMB rows exactly to Treasury's Combined Statement account.",
+      "sourceLabel": "OMB FY2027 Public Budget Database and Treasury FY2024 Combined Statement",
+      "sourceUrl": "https://www.whitehouse.gov/wp-content/uploads/2026/04/outlays_fy2027.xlsx",
+      "covers": [["075-8308-000","Medicare Prescription Drug Account, Centers for Medicare and Medicaid Services, Health and Human Services",116946359672.91]],
+      "rows": [
+        ["Mandatory Medicare Prescription Drug Account outlays","OMB FY2024 actual · public OMB account/category disclosure ceiling",116456000000],
+        ["Discretionary Medicare Prescription Drug Account outlays","OMB FY2024 actual",491000000],
+        ["OMB / Treasury published-precision bridge","Exact arithmetic difference; not allocated to a budget category",-640327.09]
+      ]
+    },
+    {
+      "title": "Taxation on OASDI Benefits payment from the Medicare Trustees control",
+      "sourceTotal": 39794000000,
+      "basis": "The 2025 Medicare Trustees Report publishes $39.8B of FY2024 HI income from taxation of OASDI benefits and no lower cash subdivision. The signed $6M precision bridge reconciles that official control exactly to Treasury's payment account.",
+      "sourceLabel": "2025 Medicare Trustees Report and Treasury FY2024 Combined Statement",
+      "sourceUrl": "https://www.cms.gov/oact/tr/2025",
+      "covers": [["075-0585-000","Taxation on OASDI Benefits, HI, Centers for Medicare and Medicaid Services, Health and Human Services",39794000000]],
+      "rows": [
+        ["Income from taxation of OASDI benefits","FY2024 HI trust-fund income · public Medicare Trustees disclosure ceiling",39800000000],
+        ["CMS / Treasury published-precision bridge","Exact arithmetic difference; not allocated below the tax source",-6000000]
+      ]
+    },
+    {
+      "title": "Risk Adjustment Program account from CMS issuer settlements",
+      "sourceTotal": 11455553302.62,
+      "basis": "CMS's issuer schedules report $11.13410833154B of positive 2023 benefit-year risk-adjustment and high-cost-pool payments by state. The signed $321.44497108M timing-and-scope bridge reconciles that settlement schedule exactly to Treasury's FY2024 cash account without assigning the difference to a state.",
+      "sourceLabel": "CMS 2023 Benefit Year Risk Adjustment Summary Report and Treasury FY2024 Combined Statement",
+      "sourceUrl": "https://www.cms.gov/marketplace/health-plans-issuers/premium-stabilization-programs",
+      "covers": [["075-5733-000","Risk Adjustment Program Payments, Centers for Medicare and Medicaid Services, Health and Human Services",11455553302.62]],
+      "rows": [
+        ["CMS 2023 benefit-year risk-adjustment payments by state","CMS issuer settlement schedule used below",11134108331.54],
+        ["CMS benefit-year / Treasury fiscal-year bridge","Exact timing-and-scope difference; not allocated to a state",321444971.08]
       ]
     }
   ],
@@ -1257,6 +1748,24 @@
         ["Texas · Collections", "CMS-64 federal share", -2518726512],
         ["New York · Drug Rebate Offset - National", "CMS-64 federal share", -3502728981],
         ["California · Drug Rebate Offset - National", "CMS-64 federal share", -4002417368]
+      ],
+      "covers": [
+        ["CMS-64 FY2024 federal Medicaid share by state and service","Published federal-share schedule · expanded below",612391730046]
+      ]
+    },
+    {
+      "parent": ["Centers for Medicare and Medicaid Services", "Grants to States for Medicaid", 617517000000],
+      "title": "Medicaid no-year fund resources from CMS-64 federal share",
+      "sourceTotal": 610988009345.29,
+      "basis": "CMS-64 reports 612391730046 of FY2024 federal medical-assistance and administration expenditures by state and service. The signed -1403720700.71 reporting-basis bridge reconciles that published schedule exactly to Treasury's no-year Medicaid net-outlay row; no difference is assigned to a state or service.",
+      "sourceLabel": "CMS MBES/CBES FY2024 Financial Management Report",
+      "sourceUrl": "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip",
+      "rows": [
+        ["CMS-64 FY2024 federal Medicaid share by state and service","Published federal-share schedule · expanded below",612391730046],
+        ["Treasury/CMS-64 reporting-basis bridge","Exact arithmetic difference; not allocated to a state or service",-1403720700.71]
+      ],
+      "covers": [
+        ["Fund resources · No Year","Combined Statement FY2024 net outlays · period-of-availability row",610988009345.29]
       ]
     },
     {

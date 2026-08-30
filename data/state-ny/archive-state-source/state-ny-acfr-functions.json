@@ -4,6 +4,27 @@
   "sourceUrl": "https://www.osc.ny.gov/files/reports/finance/pdf/annual-comprehensive-financial-report-2024.pdf",
   "sourceBasis": "Official FY2024 Statement of Activities, printed p. 39; amounts converted from millions of dollars.",
   "rowSchema": ["activity", "function", "amount", "sourceAmount", "sourceRows"],
+  "sourceBreakdowns": [
+    {
+      "title": "State University of New York expenses by audited class",
+      "sourceTotal": 12515000000,
+      "basis": "Exact same-basis detail from the FY2024 ACFR enterprise-fund statement, printed p. 46. SUNY operating expenses of $12,032 million plus $481 million of interest expense and a $2 million plant and equipment write-off reconcile exactly to the $12,515 million business-type expense in the Statement of Activities. Every published child is below $10 billion.",
+      "sourceLabel": "New York FY2024 ACFR",
+      "sourceUrl": "https://www.osc.ny.gov/files/reports/finance/pdf/annual-comprehensive-financial-report-2024.pdf",
+      "covers": [
+        ["Business-type activities", "State University of New York", 12515000000]
+      ],
+      "rows": [
+        ["Educational and general", "Operating expense", 6295000000],
+        ["Hospitals and clinics", "Operating expense", 4265000000],
+        ["Depreciation and amortization", "Operating expense", 829000000],
+        ["Auxiliary enterprises", "Operating expense", 627000000],
+        ["Interest expense", "Nonoperating expense", 481000000],
+        ["Other", "Operating expense", 16000000],
+        ["Plant and equipment write-off", "Nonoperating expense", 2000000]
+      ]
+    }
+  ],
   "rows": [
     ["Governmental activities", "Education", 48561000000, 48561000000, 1],
     ["Governmental activities", "Public health", 121815000000, 121815000000, 1],

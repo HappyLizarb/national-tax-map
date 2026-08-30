@@ -120,7 +120,10 @@
         ["Disaster Assistance Loans · FY 2023", "OMB Table 7 signed current reestimate amount", -100950000],
         ["Disaster Assistance Loans · FY 2020", "OMB Table 7 signed current reestimate amount", -213252000]
       ],
-      "covers": [["Small Business Administration", "Disaster Loans Program", 34146000000]]
+      "covers": [
+        ["Small Business Administration", "Disaster Loans Program", 34146000000],
+        ["OMB FY2025 Credit Supplement · SBA FY2024 direct-loan current reestimates by program and cohort", "Published signed cohort schedule · expanded below", 33206880000]
+      ]
     },
     {
       "title": "SBA FY2024 audited Disaster Direct Loan net subsidy reestimate by component",
@@ -130,6 +133,50 @@
       "sourceUrl": "https://legacy.sba.gov/sites/default/files/2024-12/24-SBA9708-1666%20SBA%20Publication-2024-12013-508.pdf",
       "rows": [["Interest-rate reestimates", "Audited net subsidy reestimate", 2129000], ["Technical assumptions and default reestimates", "Audited net subsidy reestimate", -1764672000]],
       "covers": [["Small Business Administration", "Disaster Loans Program", 34146000000]]
+    },
+    {
+      "title": "SBA 2024 fund resources from OMB current reestimates",
+      "sourceTotal": 33680448145,
+      "basis": "OMB Table 7 reports 33206880000 of signed FY2024 current reestimates by program, risk category, and cohort. The signed 473568145 cross-source bridge reconciles that published cohort schedule exactly to Treasury's 2024-fund net-outlay row; no difference is assigned to a program or cohort.",
+      "sourceLabel": "OMB FY2025 Federal Credit Supplement Table 7",
+      "sourceUrl": "https://www.govinfo.gov/content/pkg/BUDGET-2025-FCS/xls/BUDGET-2025-FCS.xlsx",
+      "rows": [
+        ["OMB FY2025 Credit Supplement · SBA FY2024 direct-loan current reestimates by program and cohort", "Published signed cohort schedule · expanded below", 33206880000],
+        ["Treasury/OMB current-reestimate basis bridge", "Exact arithmetic difference; not allocated to a program or cohort", 473568145]
+      ],
+      "covers": [
+        ["Fund resources · 2024","Combined Statement FY2024 net outlays · period-of-availability row",33680448145]
+      ]
+    },
+    {
+      "title": "073-1152-000 FY2024 net outlays by period of availability",
+      "sourceTotal": 34146134847.27,
+      "basis": "Exact FY2024 Treasury Combined Statement availability rows. Nonzero published net outlays sum to the parent account in integer cents.",
+      "sourceLabel": "Treasury FY2024 Combined Statement account table",
+      "sourceUrl": "https://fiscal.treasury.gov/system/files/files/reports-statements/combined-statement/cs2024/c51.xlsx",
+      "combinedStatementAvailability": true,
+      "covers": [
+        ["073-1152-000","Disaster Loans Program Account, Small Business Administration",34146134847.27]
+      ],
+      "rows": [
+        ["Fund resources · 2024","Combined Statement FY2024 net outlays · period-of-availability row",33680448145],
+        ["Fund resources · No Year","Combined Statement FY2024 net outlays · period-of-availability row",465686702.27]
+      ]
+    },
+    {
+      "title": "SBA Disaster Direct Loan Financing Account by cash-flow line",
+      "sourceTotal": -49371513715.72,
+      "basis": "OMB's FY2026 Budget Appendix reports FY2024 gross financing disbursements and three offsetting-collection lines for account 073-4150. The rounded lines net to negative $49.371B; the signed $513,715.72 precision bridge reconciles them exactly to Treasury's Combined Statement account.",
+      "sourceLabel": "OMB FY2026 Budget Appendix and Treasury FY2024 Combined Statement",
+      "sourceUrl": "https://www.whitehouse.gov/wp-content/uploads/2025/05/appendix_fy2026.pdf",
+      "covers": [["073-4150-000","Disaster Direct Loan Financing Account, Small Business Administration",-49371513715.72]],
+      "rows": [
+        ["Gross financing disbursements","FY2024 actual · OMB schedule line 4110",6908000000],
+        ["OMB / Treasury published-precision bridge","Exact arithmetic difference; not allocated to a cash-flow line",-513715.72],
+        ["Interest income from Treasury","FY2024 actual offsetting collection",-558000000],
+        ["Repayments of principal, net","FY2024 actual offsetting collection · public OMB cash-line disclosure ceiling",-21773000000],
+        ["Payments from program account","FY2024 actual offsetting collection · public OMB cash-line disclosure ceiling",-33948000000]
+      ]
     }
   ]
 }

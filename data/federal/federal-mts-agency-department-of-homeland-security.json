@@ -55,9 +55,27 @@
         ["Integrated Operations", "Operations and Support PPA · FY2024 enacted", 1655357000]
       ],
       "covers": [
-        ["Department of Homeland Security", "U.S. Customs and Border Protection", 22426000000],
         ["Operations and Support", "FY2024 enacted budget authority · expanded in companion PPA panel", 18426870000]
       ]
+    },
+    {
+      "title": "CBP 2024 fund resources by program activity",
+      "sourceTotal": 14452445623.57,
+      "basis": "USAspending's FY2024 P12 account submission reports $17.04561121195B of gross outlays for TAS 070-2024/2024-0530-000. The eight rows aggregate its published program activities across object classes; the signed $2.59316558838B cross-source bridge reconciles that gross schedule exactly to Treasury's $14.45244562357B Combined Statement net-outlay row without assigning the difference to a program.",
+      "sourceLabel": "USAspending FY2024 TAS object-class and program-activity data",
+      "sourceUrl": "https://api.usaspending.gov/api/v2/agency/treasury_account/070-2024%2F2024-0530-000/object_class/?fiscal_year=2024&limit=100",
+      "rows": [
+        ["CAS - BORDER SECURITY OPERATIONS", "USAspending FY2024 gross outlays · program activity across object classes", 5440628534.08],
+        ["CAS - TRADE AND TRAVEL OPERATIONS", "USAspending FY2024 gross outlays · program activity across object classes", 5023278730.84],
+        ["REIMBURSABLE ACTIVITY", "USAspending FY2024 gross outlays · program activity across object classes", 2592068236.93],
+        ["CAS - MISSION SUPPORT", "USAspending FY2024 gross outlays · program activity across object classes", 1618846524.23],
+        ["P.L. 117-328, DIV. F., TITLE V, SEC. 546 - BORDER MANAGEMENT", "USAspending FY2024 gross outlays · program activity across object classes", 1269760641.12],
+        ["CAS - INTEGRATED OPERATIONS", "USAspending FY2024 gross outlays · program activity across object classes", 1097170396.23],
+        ["SECRETARY'S ENFORCEMENT FUND", "USAspending FY2024 gross outlays · program activity across object classes", 3449272.54],
+        ["TFF STRATEGIC SUPPORT", "USAspending FY2024 gross outlays · program activity across object classes", 408875.98],
+        ["Treasury/USAspending net-to-gross basis bridge", "Exact arithmetic difference; not allocated to a program", -2593165588.38]
+      ],
+      "covers": [["Fund resources · 2024", "Combined Statement FY2024 net outlays · period-of-availability row", 14452445623.57]]
     },
     {
       "title": "Coast Guard FY2024 enacted budget authority by appropriation and fund",
@@ -89,7 +107,6 @@
         ["Mission Support", "Operations and Support PPA · FY2024 enacted", 420206000]
       ],
       "covers": [
-        ["Department of Homeland Security", "United States Coast Guard", 13252000000],
         ["Operations and Support", "FY2024 enacted budget authority · expanded in companion PPA panel", 10054771000]
       ]
     },
@@ -114,6 +131,31 @@
         ["September 2024", "Actual DRF obligations · September 30 pre-closeout snapshot", 1011000000]
       ],
       "covers": [["Federal Emergency Management Agency", "Disaster Relief", 33275000000]]
+    },
+    {
+      "title": "FEMA base and non-major disasters from declaration-level obligations",
+      "sourceTotal": 27653030675.88,
+      "basis": "FEMA's declaration-level catastrophic-disaster schedule totals $33.234B at the report's $1M precision. The signed $5.58096932412B bridge leaves the source-basis difference explicit and reconciles that operational schedule to USAspending's $27.65303067588B FY2024 gross-outlay program activity without assigning the difference to any declaration.",
+      "sourceLabel": "FEMA FY2024 DRF report and USAspending TAS data",
+      "sourceUrl": "https://www.fema.gov/sites/default/files/documents/fema_ocfo_october2024disasterrelieffundreport.pdf",
+      "rows": [
+        ["FEMA FY2024 catastrophic-disaster obligation schedule", "Published declaration-level schedule before the obligation-to-outlay bridge", 33234000000],
+        ["FEMA obligation-to-USAspending outlay basis bridge", "Exact arithmetic difference; not allocated to a declaration", -5580969324.12]
+      ],
+      "covers": [["BASE/NON-MAJOR DISASTERS", "USAspending FY2024 gross outlays · program activity across object classes", 27653030675.88]]
+    },
+    {
+      "title": "FEMA Disaster Relief no-year fund resources by program activity",
+      "sourceTotal": 27455746018.93,
+      "basis": "USAspending's FY2024 P12 account submission reports $27.65358461317B of gross outlays for TAS 070-X-0702-000. The signed $197.83859424M bridge reconciles those program activities exactly to Treasury's $27.45574601893B Combined Statement net-outlay row; the large base/non-major-disasters activity is expanded through FEMA's declaration schedule below.",
+      "sourceLabel": "USAspending FY2024 TAS object-class and program-activity data",
+      "sourceUrl": "https://api.usaspending.gov/api/v2/agency/treasury_account/070-X-0702-000/object_class/?fiscal_year=2024&limit=100",
+      "rows": [
+        ["BASE/NON-MAJOR DISASTERS", "USAspending FY2024 gross outlays · program activity across object classes", 27653030675.88],
+        ["DISASTER RELIEF REIMBURSABLE ACTIVITY", "USAspending FY2024 gross outlays · program activity and contractual services", 553937.29],
+        ["Treasury/USAspending net-to-gross basis bridge", "Exact arithmetic difference; not allocated to a program", -197838594.24]
+      ],
+      "covers": [["Fund resources · No Year", "Combined Statement FY2024 net outlays · period-of-availability row", 27455746018.93]]
     },
     {
       "title": "FEMA FY2024 catastrophic DRF obligations by declaration and geography",
@@ -235,7 +277,54 @@
         ["COVID-19 · 4535-WY", "FY2024 catastrophic DRF obligations · September 30 pre-closeout snapshot", 1000000],
         ["Ida · 4629-CT", "FY2024 catastrophic DRF obligations · September 30 pre-closeout snapshot", 1000000]
       ],
-      "covers": [["Federal Emergency Management Agency", "Disaster Relief", 33275000000]]
+      "covers": [["FEMA FY2024 catastrophic-disaster obligation schedule", "Published declaration-level schedule before the obligation-to-outlay bridge", 33234000000]]
+    },
+    {
+      "title": "070-0702-000 FY2024 net outlays by period of availability",
+      "sourceTotal": 29498413486.08,
+      "basis": "Exact FY2024 Treasury Combined Statement availability rows. Nonzero published net outlays sum to the parent account in integer cents.",
+      "sourceLabel": "Treasury FY2024 Combined Statement account table",
+      "sourceUrl": "https://fiscal.treasury.gov/system/files/files/reports-statements/combined-statement/cs2024/c18.xlsx",
+      "combinedStatementAvailability": true,
+      "covers": [
+        ["070-0702-000","Disaster Relief Fund, Federal Emergency Management Agency, Homeland Security",29498413486.08]
+      ],
+      "rows": [
+        ["Fund resources · No Year","Combined Statement FY2024 net outlays · period-of-availability row",27455746018.93],
+        ["Fund resources · 2021-2025","Combined Statement FY2024 net outlays · period-of-availability row",2071960511.9],
+        ["Fund resources · 2022-2023","Combined Statement FY2024 net outlays · period-of-availability row",4835845],
+        ["Fund resources · 2023-2024","Combined Statement FY2024 net outlays · period-of-availability row",796236.56],
+        ["Fund resources · 2024-2025","Combined Statement FY2024 net outlays · period-of-availability row",-34925126.31]
+      ]
+    },
+    {
+      "title": "070-0530-000 FY2024 net outlays by period of availability",
+      "sourceTotal": 18850459525.09,
+      "basis": "Exact FY2024 Treasury Combined Statement availability rows. Nonzero published net outlays sum to the parent account in integer cents.",
+      "sourceLabel": "Treasury FY2024 Combined Statement account table",
+      "sourceUrl": "https://fiscal.treasury.gov/system/files/files/reports-statements/combined-statement/cs2024/c18.xlsx",
+      "combinedStatementAvailability": true,
+      "covers": [
+        ["070-0530-000","Operations and Support, U.S. Customs and Border Protection, Homeland Security",18850459525.09]
+      ],
+      "rows": [
+        ["Fund resources · 2024","Combined Statement FY2024 net outlays · period-of-availability row",14452445623.57],
+        ["Fund resources · 2023","Combined Statement FY2024 net outlays · period-of-availability row",2885041110.28],
+        ["Fund resources · No Year","Combined Statement FY2024 net outlays · period-of-availability row",672582975.96],
+        ["Fund resources · 2023-2024","Combined Statement FY2024 net outlays · period-of-availability row",300740028.81],
+        ["Fund resources · 2022-2023","Combined Statement FY2024 net outlays · period-of-availability row",151771470.3],
+        ["Fund resources · 2022","Combined Statement FY2024 net outlays · period-of-availability row",142495298.26],
+        ["Fund resources · 2024-2025","Combined Statement FY2024 net outlays · period-of-availability row",108563098.8],
+        ["Fund resources · 2021","Combined Statement FY2024 net outlays · period-of-availability row",38679240.59],
+        ["Fund resources · 2021-2022","Combined Statement FY2024 net outlays · period-of-availability row",29552727.35],
+        ["Fund resources · 2019","Combined Statement FY2024 net outlays · period-of-availability row",19261282.42],
+        ["Fund resources · 2020","Combined Statement FY2024 net outlays · period-of-availability row",18097556.82],
+        ["Fund resources · 2019-2020","Combined Statement FY2024 net outlays · period-of-availability row",10050438.84],
+        ["Fund resources · 2022-2026","Combined Statement FY2024 net outlays · period-of-availability row",9240098.78],
+        ["Fund resources · 2020-2021","Combined Statement FY2024 net outlays · period-of-availability row",7063712.71],
+        ["Fund resources · 2018-2019","Combined Statement FY2024 net outlays · period-of-availability row",4420636.82],
+        ["Fund resources · 2020-2024","Combined Statement FY2024 net outlays · period-of-availability row",454224.78]
+      ]
     }
   ],
   "largeAccountRows": [

@@ -30,19 +30,33 @@
     },
     {
       "title": "FDIC Deposit Insurance Fund FY2024 assessment revenue by quarter",
-      "sourceTotal": 11643000000,
-      "basis": "FDIC's quarterly income statements publish assessment revenue in rounded $ millions. Q3 uses the revised $8.255B September cumulative value in the fourth-quarter report less the $5.204B June cumulative value; the four rows total $11.643B. The audited annual statement reports $11.643463B, leaving only its undisclosed $463,000 rounding remainder rather than a fabricated allocation.",
+      "sourceTotal": 11643463000,
+      "basis": "FDIC's quarterly income statements publish assessment revenue in rounded $ millions. Q3 uses the revised $8.255B September cumulative value in the fourth-quarter report less the $5.204B June cumulative value; a separately labeled $463,000 statement-to-quarter rounding bridge preserves exact reconciliation to the audited $11.643463B annual control without allocating that difference.",
       "sourceLabel": "FDIC CFO Report · DIF Income Statement, fourth quarter 2024",
       "sourceUrl": "https://www.fdic.gov/financial-reports/dif-income-statement-fourth-quarter-2024",
       "rows": [
         ["Fourth quarter", "Quarterly assessment revenue · FDIC-published change", 3388000000, "https://www.fdic.gov/financial-reports/dif-income-statement-fourth-quarter-2024"],
         ["Second quarter", "Quarterly assessment revenue · FDIC-published change", 3200000000, "https://www.fdic.gov/financial-reports/dif-income-statement-second-quarter-2024"],
         ["Third quarter", "Quarterly assessment revenue · revised September cumulative less June cumulative", 3051000000, "https://www.fdic.gov/financial-reports/dif-income-statement-fourth-quarter-2024"],
-        ["First quarter", "Quarterly assessment revenue · FDIC-published year-to-date amount", 2004000000, "https://www.fdic.gov/financial-reports/dif-income-statement-9"]
+        ["First quarter", "Quarterly assessment revenue · FDIC-published year-to-date amount", 2004000000, "https://www.fdic.gov/financial-reports/dif-income-statement-9"],
+        ["Statement-to-quarter rounding bridge", "Exact difference between the audited annual control and quarterly $ millions", 463000]
       ],
       "covers": [
-        ["Federal Deposit Insurance Corporation", "Deposit Insurance Fund", 37102000000],
         ["Assessments", "Audited FY2024 GAAP revenue · expanded by quarter in companion panel", 11643463000]
+      ]
+    },
+    {
+      "title": "FDIC Deposit Insurance Fund account by cash-flow line",
+      "sourceTotal": 37102073524.99,
+      "basis": "OMB's FY2026 Budget Appendix reports $71.559B of FY2024 gross DIF outlays and two offsetting-collection lines. The rounded lines net to $37.102B; the $73,524.99 precision bridge reconciles them exactly to Treasury's Combined Statement account.",
+      "sourceLabel": "OMB FY2026 Budget Appendix and Treasury FY2024 Combined Statement",
+      "sourceUrl": "https://www.whitehouse.gov/wp-content/uploads/2025/05/appendix_fy2026.pdf",
+      "covers": [["051-4596-000","Deposit Insurance Fund, Federal Deposit Insurance Corporation",37102073524.99]],
+      "rows": [
+        ["Gross Deposit Insurance Fund outlays","FY2024 actual · OMB schedule line 4110 · public OMB cash-line disclosure ceiling",71559000000],
+        ["OMB / Treasury published-precision bridge","Exact arithmetic difference; not allocated to a cash-flow line",73524.99],
+        ["Interest on Federal securities","FY2024 actual offsetting collection",-3719000000],
+        ["Non-Federal collections","FY2024 actual offsetting collection · public OMB cash-line disclosure ceiling",-30738000000]
       ]
     }
   ],

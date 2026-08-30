@@ -10,6 +10,25 @@
   ],
   "sourceBasis": "Official FY2024 Statement of Activities, primary-government expenses by function/program, printed pp. 40–41; amounts converted from thousands of dollars.",
   "rowSchema": ["activity", "function", "amount", "sourceAmount", "sourceRows"],
+  "sourceBreakdowns": [
+    {
+      "title": "California State University expenses by audited class",
+      "sourceTotal": 11867582000,
+      "basis": "Exact same-basis detail from the FY2024 ACFR proprietary-fund statement, printed pp. 56–57. CSU operating expenses of $11,510,395,000 plus $357,187,000 of nonoperating interest and fiscal charges reconcile exactly to the $11,867,582,000 business-type expense in the Statement of Activities. Every published child is below $10 billion.",
+      "sourceLabel": "California FY2024 ACFR",
+      "sourceUrl": "https://www.sco.ca.gov/Files-ARD/ACFR/acfr24web.pdf",
+      "covers": [
+        ["Business-type activities", "California State University", 11867582000]
+      ],
+      "rows": [
+        ["Personal services", "Operating expense", 6945782000],
+        ["Supplies", "Operating expense", 2476903000],
+        ["Scholarships and fellowships", "Operating expense", 1451230000],
+        ["Depreciation", "Operating expense", 636480000],
+        ["Interest expense and fiscal charges", "Nonoperating expense", 357187000]
+      ]
+    }
+  ],
   "rows": [
     ["Governmental activities", "General government", 30364857000, 30364857000, 1],
     ["Governmental activities", "Education", 104989072000, 104989072000, 1],

@@ -14,6 +14,72 @@
   "accountResearch": {"accountCount": 89, "largeAccountCount": 9, "netAccountOutlays": 90087255647.83, "threshold": 1000000000, "sourceUrl": "https://fiscal.treasury.gov/system/files/files/reports-statements/combined-statement/cs2024/c04.xlsx"},
   "largeAccountSchema": ["treasuryAccount", "title", "netOutlays", "availabilityRows"],
   "largeAccountBasis": "Exact Combined Statement net outlays by appropriation or fund account. This is a research cross-section of the same department, not another amount to add to MTS classification rows.",
+  "sourceBreakdowns": [
+    {
+      "title": "011-1082-000 FY2024 net outlays by period of availability",
+      "sourceTotal": 11581100363.66,
+      "basis": "Exact FY2024 Treasury Combined Statement availability rows. Nonzero published net outlays sum to the parent account in integer cents.",
+      "sourceLabel": "Treasury FY2024 Combined Statement account table",
+      "sourceUrl": "https://fiscal.treasury.gov/system/files/files/reports-statements/combined-statement/cs2024/c04.xlsx",
+      "combinedStatementAvailability": true,
+      "covers": [
+        ["011-1082-000","Foreign Military Financing Program, Funds Appropriated to the President",11581100363.66]
+      ],
+      "rows": [
+        ["Transfer To · Defense · 2024-2025","Combined Statement FY2024 net outlays · period-of-availability row",3500000000],
+        ["Transfer To · Defense · 2024","Combined Statement FY2024 net outlays · period-of-availability row",3348508517.08],
+        ["Transfer To · Defense · 2022-2024","Combined Statement FY2024 net outlays · period-of-availability row",1215437505],
+        ["Transfer To · Defense · 2023-2024","Combined Statement FY2024 net outlays · period-of-availability row",1018953700.81],
+        ["Transfer To · Defense · 2022-2023","Combined Statement FY2024 net outlays · period-of-availability row",1015547957],
+        ["Transfer To · Defense · 2022","Combined Statement FY2024 net outlays · period-of-availability row",373376367.39],
+        ["Transfer To · Defense · 2023","Combined Statement FY2024 net outlays · period-of-availability row",276033993.39],
+        ["Transfer To · Defense · 2020-2025","Combined Statement FY2024 net outlays · period-of-availability row",156757383],
+        ["Transfer To · Defense · 2021-2022","Combined Statement FY2024 net outlays · period-of-availability row",151827671.26],
+        ["Transfer To · Defense · 2021-2025","Combined Statement FY2024 net outlays · period-of-availability row",63448415.7],
+        ["Transfer To · Defense · 2020-2021","Combined Statement FY2024 net outlays · period-of-availability row",51991696],
+        ["Transfer To · Defense · 2020","Combined Statement FY2024 net outlays · period-of-availability row",49296669.63],
+        ["Transfer To · Defense · 2016-2021","Combined Statement FY2024 net outlays · period-of-availability row",44065725.25],
+        ["Transfer To · Defense · 2020-2024","Combined Statement FY2024 net outlays · period-of-availability row",41154819.82],
+        ["Transfer To · Defense · 2019-2023","Combined Statement FY2024 net outlays · period-of-availability row",40451426.7],
+        ["Transfer To · Defense · 2018-2022","Combined Statement FY2024 net outlays · period-of-availability row",40208948.56],
+        ["Transfer To · Defense · 2021-2026","Combined Statement FY2024 net outlays · period-of-availability row",39191684],
+        ["Transfer To · Defense · 2018-2023","Combined Statement FY2024 net outlays · period-of-availability row",31089235.97],
+        ["Transfer To · Defense · 2019-2024","Combined Statement FY2024 net outlays · period-of-availability row",30802400.49],
+        ["Transfer To · Defense · 2019","Combined Statement FY2024 net outlays · period-of-availability row",21313468.36],
+        ["Transfer To · Defense · 2022-2026","Combined Statement FY2024 net outlays · period-of-availability row",17829884.12],
+        ["Transfer To · Defense · 2015-2020","Combined Statement FY2024 net outlays · period-of-availability row",17512691],
+        ["Transfer To · Defense · 2017-2022","Combined Statement FY2024 net outlays · period-of-availability row",13583522.35],
+        ["Transfer To · Defense · 2021","Combined Statement FY2024 net outlays · period-of-availability row",11610414.13],
+        ["Transfer To · Defense · 2017-2021","Combined Statement FY2024 net outlays · period-of-availability row",2445956.27],
+        ["Transfer To · Defense · 2016-2020","Combined Statement FY2024 net outlays · period-of-availability row",2126182.69],
+        ["Transfer To · State · 2022-2026","Combined Statement FY2024 net outlays · period-of-availability row",1872169.25],
+        ["Transfer To · Defense · 2015-2019","Combined Statement FY2024 net outlays · period-of-availability row",1809707.03],
+        ["Transfer To · State · 2023","Combined Statement FY2024 net outlays · period-of-availability row",1456755.66],
+        ["Transfer To · State · 2019-2020","Combined Statement FY2024 net outlays · period-of-availability row",1222931.02],
+        ["Transfer To · State · 2024","Combined Statement FY2024 net outlays · period-of-availability row",241804.8],
+        ["Transfer To · State · 2020-2024","Combined Statement FY2024 net outlays · period-of-availability row",33181.29],
+        ["Transfer To · Navy · 2018-2022","Combined Statement FY2024 net outlays · period-of-availability row",7085.22],
+        ["Transfer To · State · 2020","Combined Statement FY2024 net outlays · period-of-availability row",-102.41],
+        ["Transfer To · Defense · No Year","Combined Statement FY2024 net outlays · period-of-availability row",-941.76],
+        ["Transfer To · State · 2021","Combined Statement FY2024 net outlays · period-of-availability row",-5396.21],
+        ["Transfer To · State · 2022","Combined Statement FY2024 net outlays · period-of-availability row",-103066.2]
+      ]
+    },
+    {
+      "title": "Foreign Military Sales Trust Fund account by cash-flow source",
+      "sourceTotal": 48726085542.34,
+      "basis": "OMB's FY2026 Budget Appendix reports FY2024 Foreign Military Sales Trust Fund outlays from new mandatory authority, prior mandatory balances, and a non-Federal offset. The rounded lines net to $48.726B; the $85,542.34 precision bridge reconciles them exactly to Treasury's Combined Statement account.",
+      "sourceLabel": "OMB FY2026 Budget Appendix and Treasury FY2024 Combined Statement",
+      "sourceUrl": "https://www.whitehouse.gov/wp-content/uploads/2025/05/appendix_fy2026.pdf",
+      "covers": [["011-8242-000","Advances, Foreign Military Sales, Funds Appropriated to the President",48726085542.34]],
+      "rows": [
+        ["Outlays from prior mandatory balances","FY2024 actual · OMB schedule line 4101 · public OMB cash-line disclosure ceiling",47704000000],
+        ["Outlays from new mandatory authority","FY2024 actual · OMB schedule line 4100",1033000000],
+        ["OMB / Treasury published-precision bridge","Exact arithmetic difference; not allocated to a cash-flow source",85542.34],
+        ["Non-Federal offsetting collections","FY2024 actual",-11000000]
+      ]
+    }
+  ],
   "largeAccountRows": [
     ["011-8242-000", "Advances, Foreign Military Sales, Funds Appropriated to the President", 48726085542.34, 1],
     ["011-1082-000", "Foreign Military Financing Program, Funds Appropriated to the President", 11581100363.66, 57],
@@ -70,16 +136,6 @@
       "rows": [
         ["Major Defense Equipment", "40 new F-16 Block 70 aircraft, 79 modernizations, engines, radars, mission systems and listed missile/bomb families · public disclosure ceiling", 15300000000, "https://www.govinfo.gov/content/pkg/FR-2025-01-06/pdf/2024-31697.pdf"],
         ["Other equipment, integration and support", "Non-MDE communications, protection, software, spares, construction, training, transport and technical/logistics support", 7700000000, "https://www.govinfo.gov/content/pkg/FR-2025-01-06/pdf/2024-31697.pdf"]
-      ]
-    },
-    {
-      "parent": ["Military Sales Program", "Foreign Military Sales Trust Fund", 48726000000],
-      "title": "Türkiye current F-16 package estimate after scope reduction",
-      "basis": "Türkiye's defence minister told Parliament that the 79 imported modernization kits had been dropped, $1.4B had been paid, and the remaining 40 new F-16 Block 70 aircraft plus munitions would total approximately $6.5B-$7B. The displayed $7B is the upper end of that official public estimate, not an exact contract price, booked U.S. receipt, or amount to add to the earlier $23B DSCA maximum notification.",
-      "sourceLabel": "Türkiye Grand National Assembly · 2025 defence-budget committee report",
-      "sourceUrl": "https://www.tbmm.gov.tr/Haber/Detay?Id=c5cf3733-e5c3-4627-b9ad-01936a3234b8",
-      "rows": [
-        ["40 F-16 Block 70 aircraft and munitions", "Approximate $6.5B-$7B current package · $1.4B initial payment disclosed · 79 imported modernization kits removed", 7000000000, "https://www.tbmm.gov.tr/Haber/Detay?Id=c5cf3733-e5c3-4627-b9ad-01936a3234b8"]
       ]
     },
     {

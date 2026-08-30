@@ -4,6 +4,23 @@
   "sourceUrl": "https://www.nmdfa.state.nm.us/wp-content/uploads/2025/04/FINAL-341a-State-of-New-Mexico-FY24-ACFR.pdf",
   "sourceBasis": "Official FY2024 Statement of Activities, printed p. 26; amounts converted from thousands of dollars.",
   "rowSchema": ["activity", "function", "amount", "sourceAmount", "sourceRows"],
+  "sourceBreakdowns": [
+    {
+      "title": "Health and Human Services expense coverage",
+      "sourceTotal": 13075258000,
+      "basis": "Exact same-statement decomposition from the FY2024 Statement of Activities, printed p. 26. Charges, operating grants and contributions, and the published net governmental expense reconcile exactly to total Health and Human Services expense. This is funding coverage of the expense, not an allocation to service programs, and every child is below $10 billion.",
+      "sourceLabel": "New Mexico FY2024 ACFR",
+      "sourceUrl": "https://www.nmdfa.state.nm.us/wp-content/uploads/2025/04/FINAL-341a-State-of-New-Mexico-FY24-ACFR.pdf",
+      "covers": [
+        ["Governmental activities", "Health and Human Services", 13075258000]
+      ],
+      "rows": [
+        ["Operating grants and contributions", "Program revenue covering expense", 9418382000],
+        ["Net governmental expense", "Expense not covered by program revenues", 3388430000],
+        ["Charges for services", "Program revenue covering expense", 268446000]
+      ]
+    }
+  ],
   "rows": [
     ["Governmental activities", "General Control", 2322896000, 2322896000, 1],
     ["Governmental activities", "Culture, Recreation, and Natural Resources", 731495000, 731495000, 1],

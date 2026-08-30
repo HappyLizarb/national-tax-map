@@ -5,8 +5,59 @@
   "department": "Primary-government functions",
   "sourceTotal": 212131483000,
   "sourceUrl": "https://comptroller.texas.gov/transparency/reports/comprehensive-annual-financial/2024/basic.pdf",
+  "sourceUrls": [
+    ["Texas FY2024 ACFR", "https://comptroller.texas.gov/transparency/reports/comprehensive-annual-financial/2024/basic.pdf"],
+    ["Texas FY2024 enterprise-fund schedules", "https://comptroller.texas.gov/transparency/reports/comprehensive-annual-financial/2024/enterprise.pdf"],
+    ["UT System FY2024 audited report", "https://www.utsystem.edu/sites/default/files/documents/report-state/2024/consolidated-annual-financial-report-fy-2024/uts-fy24-and-fy23-audit-report121324final.pdf"]
+  ],
   "sourceBasis": "Official FY2024 Statement of Activities, primary-government expenses by function/program; amounts converted from thousands of dollars.",
   "rowSchema": ["activity", "function", "amount", "sourceAmount", "sourceRows"],
+  "sourceBreakdowns": [
+    {
+      "title": "Business-type education expenses by university system and institution",
+      "sourceTotal": 46073415000,
+      "basis": "Exact accrual-basis detail from the Texas FY2024 ACFR enterprise-fund statements and audited combining schedules. UT System operating expense is replaced by its 16 audited institution schedules; the UT report states that consolidation eliminations are not reflected in those institution schedules, so the exact -$260,668,131.36 difference is shown separately. Published nonoperating expense rows and the exact -$73,193,000 difference to the government-wide Statement of Activities are also retained as explicit reconciliation rows. No amount is allocated or estimated, and every child is below $10 billion.",
+      "sourceLabel": "Texas FY2024 ACFR enterprise schedules",
+      "sourceUrl": "https://comptroller.texas.gov/transparency/reports/comprehensive-annual-financial/2024/enterprise.pdf",
+      "covers": [
+        ["Business-type activities", "Education", 46073415000]
+      ],
+      "rows": [
+        ["UT M. D. Anderson Cancer Center", "UT System institution operating expense", 7118478439.89],
+        ["UT Southwestern Medical Center", "UT System institution operating expense", 5283766589.67],
+        ["UT Austin", "UT System institution operating expense", 4135138490.64],
+        ["UT Medical Branch at Galveston", "UT System institution operating expense", 3226041724.53],
+        ["Texas A&M University System", "Operating expense", 7272919000],
+        ["Texas Tech University System", "Operating expense", 2714316000],
+        ["UT Health Science Center at Houston", "UT System institution operating expense", 2550219059.34],
+        ["Texas State University System", "Operating expense", 1758489000],
+        ["University of Houston System", "Operating expense", 1723679000],
+        ["UT Health Science Center at San Antonio", "UT System institution operating expense", 1451034559.27],
+        ["University of North Texas System", "Operating expense", 1436104000],
+        ["UT System Administration", "UT System institution operating expense", 1016212769.14],
+        ["Interest", "Nonoperating expense", 843426000],
+        ["UT Dallas", "UT System institution operating expense", 830101074.44],
+        ["UT Arlington", "UT System institution operating expense", 828478890.95],
+        ["UT San Antonio", "UT System institution operating expense", 753213523.41],
+        ["UT Rio Grande Valley", "UT System institution operating expense", 692289346.19],
+        ["UT El Paso", "UT System institution operating expense", 565457182.07],
+        ["UT Health Science Center at Tyler", "UT System institution operating expense", 415516835.35],
+        ["Investing activities", "Nonoperating expense", 321136000],
+        ["Texas Woman's University System", "Operating expense", 269786000],
+        ["Texas State Technical College", "Operating expense", 275749000],
+        ["Stephen F. Austin State University", "UT System institution operating expense", 239355223.98],
+        ["UT Tyler", "UT System institution operating expense", 194672533.06],
+        ["Other", "Nonoperating expense", 188196000],
+        ["UT Permian Basin", "UT System institution operating expense", 123032889.43],
+        ["Texas Southern University", "Operating expense", 113291000],
+        ["Loss on sale of capital assets", "Nonoperating expense", 58211000],
+        ["Claims and judgments", "Nonoperating expense", 4725000],
+        ["Borrower rebates and agent fees", "Nonoperating expense", 4240000],
+        ["UT System consolidation eliminations", "Computed exactly from the audited institution and system totals", -260668131.36],
+        ["Government-wide reconciliation adjustment", "Computed exactly from the published enterprise-fund and Statement of Activities totals", -73193000]
+      ]
+    }
+  ],
   "rows": [
     ["Governmental activities", "General government", 121697000, 121697000, 1],
     ["Governmental activities", "Education", 47365189000, 47365189000, 1],

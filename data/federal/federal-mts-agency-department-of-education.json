@@ -85,7 +85,7 @@
         ["Reimagine Workforce Preparation", "FY2024 federal gross outlays", 30788183.14],
         ["Outlying Areas Governor", "FY2024 federal gross outlays", 16440933.41]
       ],
-      "covers": [["091-0251-000", "Education Stabilization Fund, Department of Education", 55516156490.37]]
+      "covers": [["Education Stabilization Fund FY2024 program/state gross-outlay schedule", "Published DATA Act schedule before the gross-to-net bridge", 55516156490.37]]
     },
     {
       "title": "ED FY2024 special-education formula allocations by state and area",
@@ -309,6 +309,7 @@
     },
     {
       "title": "OMB FY2025 Credit Supplement · Education FY2024 direct-loan current reestimates by program and cohort",
+      "displayParent": ["Office of Federal Student Aid", "Federal Direct Student Loans", 110176000000],
       "sourceTotal": 69111220000,
       "basis": "OMB Table 7 reports signed current reestimate amounts to be executed in FY2024 by program, risk category, and cohort, in thousands of dollars. The 60 nonzero rows add exactly to $69.111220B. This is an exact view of OMB's current-reestimate column, not a child of USAspending's $115.472908B gross-outlay activity or Education's $16.889B audited net subsidy expense.",
       "sourceLabel": "OMB FY2025 Federal Credit Supplement Table 7",
@@ -378,6 +379,7 @@
     },
     {
       "title": "Education FY2024 audited Direct Loan net subsidy reestimate by component",
+      "displayParent": ["Office of Federal Student Aid", "Federal Direct Student Loans", 110176000000],
       "sourceTotal": 16889000000,
       "basis": "Education's FY2024 Agency Financial Report gives an exact two-component accrual reconciliation of the $16.889B net upward Direct Loan subsidy reestimate. This audited subsidy expense is not USAspending gross cash outlay. The technical/default component is the report's most detailed additive audited line and remains a public disclosure ceiling.",
       "sourceLabel": "Department of Education FY2024 Agency Financial Report",
@@ -385,6 +387,210 @@
       "rows": [
         ["Technical and default reestimates", "Audited net subsidy reestimate · public audited component disclosure ceiling", 14291000000],
         ["Interest-rate reestimates", "Audited net subsidy reestimate", 2598000000]
+      ]
+    },
+    {
+      "title": "Direct Loan Program 2024 resources by program activity and object class",
+      "sourceTotal": 107980089908,
+      "basis": "USAspending's FY2024 P12 File B gross-outlay schedule reconciles exactly to Treasury's 2024 availability row. Reestimates of Direct Loan Subsidy is the lowest same-basis public cash classification exposed by both File B and the TAS endpoint; OMB cohort reestimates and Education's audited subsidy expense are separate signed measures and cannot be substituted as additive children.",
+      "sourceLabel": "USAspending FY2024 P12 Account Breakdown by Program Activity and Object Class",
+      "sourceUrl": "https://api.usaspending.gov/api/v2/download/status?file_name=FY2024P01-P12_All_TAS_AccountBreakdownByPA-OC_2026-08-30_H03M39S11993374.zip",
+      "covers": [
+        ["Fund resources · 2024","Combined Statement FY2024 net outlays · period-of-availability row",107980089908]
+      ],
+      "rows": [
+        ["Reestimates of Direct Loan Subsidy · grants, subsidies, and contributions","USAspending FY2024 gross outlays · public program-activity/object-class cash disclosure ceiling",106232921153],
+        ["Subsidy for modifications of Direct Loans · grants, subsidies, and contributions","USAspending FY2024 gross outlays",1747168755]
+      ]
+    },
+    {
+      "title": "091-0243-000 FY2024 net outlays by period of availability",
+      "sourceTotal": 110176072447,
+      "basis": "Exact FY2024 Treasury Combined Statement availability rows. Nonzero published net outlays sum to the parent account in integer cents.",
+      "sourceLabel": "Treasury FY2024 Combined Statement account table",
+      "sourceUrl": "https://fiscal.treasury.gov/system/files/files/reports-statements/combined-statement/cs2024/c14.xlsx",
+      "combinedStatementAvailability": true,
+      "covers": [
+        ["091-0243-000","Federal Direct Student Loan Program,  Education",110176072447]
+      ],
+      "rows": [
+        ["Fund resources · 2024","Combined Statement FY2024 net outlays · period-of-availability row",107980089908],
+        ["Fund resources · 2023","Combined Statement FY2024 net outlays · period-of-availability row",2195982539]
+      ]
+    },
+    {
+      "title": "Education Stabilization Fund 2021-2023 resources from program/state outlays",
+      "sourceTotal": 49249109392.89,
+      "basis": "The FY2024 P12 DATA Act program/state schedule reports $55.51615649037B of gross outlays for the Education Stabilization Fund. The signed $6.26704709748B bridge reconciles that detailed schedule exactly to Treasury's $49.24910939289B 2021-2023 net-outlay row without assigning the cross-source difference to a program or state.",
+      "sourceLabel": "Department of Education DATA Act File C and Treasury Combined Statement",
+      "sourceUrl": "https://api.usaspending.gov/api/v2/federal_accounts/6337/fiscal_year_snapshot/2024/",
+      "rows": [
+        ["Education Stabilization Fund FY2024 program/state gross-outlay schedule", "Published DATA Act schedule before the gross-to-net bridge", 55516156490.37],
+        ["Education DATA Act gross-to-Treasury net basis bridge", "Exact arithmetic difference; not allocated to a program or state", -6267047097.48]
+      ],
+      "covers": [["Fund resources · 2021-2023", "Combined Statement FY2024 net outlays · period-of-availability row", 49249109392.89]]
+    },
+    {
+      "title": "091-0251-000 FY2024 net outlays by period of availability",
+      "sourceTotal": 55516156490.37,
+      "basis": "Exact FY2024 Treasury Combined Statement availability rows. Nonzero published net outlays sum to the parent account in integer cents.",
+      "sourceLabel": "Treasury FY2024 Combined Statement account table",
+      "sourceUrl": "https://fiscal.treasury.gov/system/files/files/reports-statements/combined-statement/cs2024/c14.xlsx",
+      "combinedStatementAvailability": true,
+      "covers": [
+        ["091-0251-000","Education Stabilization Fund, Department of Education",55516156490.37]
+      ],
+      "rows": [
+        ["Fund resources · 2021-2023","Combined Statement FY2024 net outlays · period-of-availability row",49249109392.89],
+        ["Fund resources · 2021-2022","Combined Statement FY2024 net outlays · period-of-availability row",6145012594.05],
+        ["Fund resources · 2020-2021","Combined Statement FY2024 net outlays · period-of-availability row",122034503.43]
+      ]
+    },
+    {
+      "title": "Student Financial Assistance 2023-2024 resources by program activity and object class",
+      "sourceTotal": 13630065819.8,
+      "basis": "USAspending's FY2024 P12 File B gross-outlay schedule reconciles exactly to Treasury's 2023-2024 availability row. Federal Pell Grants is already the lowest reconciling public cash classification in this file; FSA's school-level Pell files use award-year disbursements and therefore cannot be substituted as an additive fiscal-year child schedule.",
+      "sourceLabel": "USAspending FY2024 P12 Account Breakdown by Program Activity and Object Class",
+      "sourceUrl": "https://api.usaspending.gov/api/v2/download/status?file_name=FY2024P01-P12_All_TAS_AccountBreakdownByPA-OC_2026-08-30_H03M39S12701112.zip",
+      "covers": [
+        ["Fund resources · 2023-2024","Combined Statement FY2024 net outlays · period-of-availability row",13630065819.8]
+      ],
+      "rows": [
+        ["Federal Pell Grants · grants, subsidies, and contributions","USAspending FY2024 gross outlays · public program-activity/object-class cash disclosure ceiling",12021673125.43],
+        ["Federal Work-Study · grants, subsidies, and contributions","USAspending FY2024 gross outlays",968659229.38],
+        ["Federal Supplemental Educational Opportunity Grants · grants, subsidies, and contributions","USAspending FY2024 gross outlays",639733464.99]
+      ]
+    },
+    {
+      "title": "Student Financial Assistance 2024-2025 resources by program activity and object class",
+      "sourceTotal": 11362696591.95,
+      "basis": "USAspending's FY2024 P12 File B gross-outlay schedule reconciles exactly to Treasury's 2024-2025 availability row. Federal Pell Grants is already the lowest reconciling public cash classification in this file; FSA's school-level Pell files use award-year disbursements and therefore cannot be substituted as an additive fiscal-year child schedule.",
+      "sourceLabel": "USAspending FY2024 P12 Account Breakdown by Program Activity and Object Class",
+      "sourceUrl": "https://api.usaspending.gov/api/v2/download/status?file_name=FY2024P01-P12_All_TAS_AccountBreakdownByPA-OC_2026-08-30_H03M39S12701112.zip",
+      "covers": [
+        ["Fund resources · 2024-2025","Combined Statement FY2024 net outlays · period-of-availability row",11362696591.95]
+      ],
+      "rows": [
+        ["Federal Pell Grants · grants, subsidies, and contributions","USAspending FY2024 gross outlays · public program-activity/object-class cash disclosure ceiling",11121969788.9],
+        ["Federal Supplemental Educational Opportunity Grants · grants, subsidies, and contributions","USAspending FY2024 gross outlays",204108592.99],
+        ["Federal Work-Study · grants, subsidies, and contributions","USAspending FY2024 gross outlays",36618210.06]
+      ]
+    },
+    {
+      "title": "091-0200-000 FY2024 net outlays by period of availability",
+      "sourceTotal": 34719720382.1,
+      "basis": "Exact FY2024 Treasury Combined Statement availability rows. Nonzero published net outlays sum to the parent account in integer cents.",
+      "sourceLabel": "Treasury FY2024 Combined Statement account table",
+      "sourceUrl": "https://fiscal.treasury.gov/system/files/files/reports-statements/combined-statement/cs2024/c14.xlsx",
+      "combinedStatementAvailability": true,
+      "covers": [
+        ["091-0200-000","Student Financial Assistance, Education",34719720382.1]
+      ],
+      "rows": [
+        ["Fund resources · 2023-2024","Combined Statement FY2024 net outlays · period-of-availability row",13630065819.8],
+        ["Fund resources · 2024-2025","Combined Statement FY2024 net outlays · period-of-availability row",11362696591.95],
+        ["Fund resources · 2022-2023","Combined Statement FY2024 net outlays · period-of-availability row",8851225396.95],
+        ["Fund resources · 2021-2022","Combined Statement FY2024 net outlays · period-of-availability row",842385301.79],
+        ["Fund resources · 2018-2019","Combined Statement FY2024 net outlays · period-of-availability row",18455756.58],
+        ["Fund resources · 2020-2021","Combined Statement FY2024 net outlays · period-of-availability row",14471735.59],
+        ["Fund resources · 2019-2020","Combined Statement FY2024 net outlays · period-of-availability row",419779.44]
+      ]
+    },
+    {
+      "title": "091-0900-000 FY2024 net outlays by period of availability",
+      "sourceTotal": 18911824106.1,
+      "basis": "Exact FY2024 Treasury Combined Statement availability rows. Nonzero published net outlays sum to the parent account in integer cents.",
+      "sourceLabel": "Treasury FY2024 Combined Statement account table",
+      "sourceUrl": "https://fiscal.treasury.gov/system/files/files/reports-statements/combined-statement/cs2024/c14.xlsx",
+      "combinedStatementAvailability": true,
+      "covers": [
+        ["091-0900-000","Education for the Disadvantaged, Education",18911824106.1]
+      ],
+      "rows": [
+        ["Fund resources · 2023-2024","Combined Statement FY2024 net outlays · period-of-availability row",7516031833.55],
+        ["Fund resources · 2023","Combined Statement FY2024 net outlays · period-of-availability row",5195341985.87],
+        ["Fund resources · 2024","Combined Statement FY2024 net outlays · period-of-availability row",4621777442.78],
+        ["Fund resources · 2022","Combined Statement FY2024 net outlays · period-of-availability row",647198707.41],
+        ["Fund resources · 2022-2023","Combined Statement FY2024 net outlays · period-of-availability row",371722655.39],
+        ["Fund resources · 2021-2022","Combined Statement FY2024 net outlays · period-of-availability row",164372940.91],
+        ["Fund resources · 2021","Combined Statement FY2024 net outlays · period-of-availability row",133240495.41],
+        ["Fund resources · 2024-2025","Combined Statement FY2024 net outlays · period-of-availability row",112113662.22],
+        ["Fund resources · 2020-2021","Combined Statement FY2024 net outlays · period-of-availability row",94006913.62],
+        ["Fund resources · 2019-2020","Combined Statement FY2024 net outlays · period-of-availability row",28547501.55],
+        ["Fund resources · 2020","Combined Statement FY2024 net outlays · period-of-availability row",27360347.85],
+        ["Fund resources · 2018-2019","Combined Statement FY2024 net outlays · period-of-availability row",111291.74],
+        ["Fund resources · 2019","Combined Statement FY2024 net outlays · period-of-availability row",-1672.2]
+      ]
+    },
+    {
+      "title": "091-0300-000 FY2024 net outlays by period of availability",
+      "sourceTotal": 16273684543.45,
+      "basis": "Exact FY2024 Treasury Combined Statement availability rows. Nonzero published net outlays sum to the parent account in integer cents.",
+      "sourceLabel": "Treasury FY2024 Combined Statement account table",
+      "sourceUrl": "https://fiscal.treasury.gov/system/files/files/reports-statements/combined-statement/cs2024/c14.xlsx",
+      "combinedStatementAvailability": true,
+      "covers": [
+        ["091-0300-000","Special Education, Education",16273684543.45]
+      ],
+      "rows": [
+        ["Fund resources · 2023-2024","Combined Statement FY2024 net outlays · period-of-availability row",5218555631.8],
+        ["Fund resources · 2023","Combined Statement FY2024 net outlays · period-of-availability row",4826332831.69],
+        ["Fund resources · 2024","Combined Statement FY2024 net outlays · period-of-availability row",4111459247.85],
+        ["Fund resources · 2022","Combined Statement FY2024 net outlays · period-of-availability row",699916069.87],
+        ["Fund resources · No Year","Combined Statement FY2024 net outlays · period-of-availability row",695025345.57],
+        ["Fund resources · 2022-2023","Combined Statement FY2024 net outlays · period-of-availability row",464478861.87],
+        ["Fund resources · 2024-2025","Combined Statement FY2024 net outlays · period-of-availability row",166613055.26],
+        ["Fund resources · 2021-2022","Combined Statement FY2024 net outlays · period-of-availability row",65258608.71],
+        ["Fund resources · 2021","Combined Statement FY2024 net outlays · period-of-availability row",20242624.36],
+        ["Fund resources · 2020-2021","Combined Statement FY2024 net outlays · period-of-availability row",3498876.84],
+        ["Fund resources · 2020","Combined Statement FY2024 net outlays · period-of-availability row",1676007.69],
+        ["Fund resources · 2019","Combined Statement FY2024 net outlays · period-of-availability row",427207],
+        ["Fund resources · 2018-2019","Combined Statement FY2024 net outlays · period-of-availability row",200174.94]
+      ]
+    },
+    {
+      "title": "Federal Direct Student Loan Financing Account by cash-flow line",
+      "sourceTotal": -37367696955.47,
+      "basis": "OMB's FY2026 Budget Appendix reports FY2024 gross financing disbursements and sixteen offsetting-collection lines for account 091-4253. The rounded lines net to negative $37.367B; the signed $696,955.47 precision bridge reconciles them exactly to Treasury's Combined Statement account.",
+      "sourceLabel": "OMB FY2026 Budget Appendix and Treasury FY2024 Combined Statement",
+      "sourceUrl": "https://www.whitehouse.gov/wp-content/uploads/2025/05/appendix_fy2026.pdf",
+      "covers": [["091-4253-000","Federal Direct Loan Demonstration Financing Account, Education",-37367696955.47]],
+      "rows": [
+        ["Gross financing disbursements","FY2024 actual · OMB schedule line 4110 · public OMB cash-line disclosure ceiling",181422000000],
+        ["OMB / Treasury published-precision bridge","Exact arithmetic difference; not allocated to a cash-flow line",-696955.47],
+        ["Stafford origination fees","FY2024 actual offsetting collection",-157000000],
+        ["Unsubsidized Stafford origination fees","FY2024 actual offsetting collection",-454000000],
+        ["PLUS origination fees","FY2024 actual offsetting collection",-1121000000],
+        ["Upward loan modifications","FY2024 actual offsetting collection",-1747000000],
+        ["Stafford interest received","FY2024 actual offsetting collection",-2615000000],
+        ["Consolidation interest received","FY2024 actual offsetting collection",-4833000000],
+        ["Interest on uninvested funds","FY2024 actual offsetting collection",-5436000000],
+        ["PLUS interest received","FY2024 actual offsetting collection",-5575000000],
+        ["Unsubsidized Stafford interest received","FY2024 actual offsetting collection",-8561000000],
+        ["Consolidation principal payments","FY2024 actual offsetting collection · public OMB cash-line disclosure ceiling",-10543000000],
+        ["Upward reestimate interest","FY2024 actual offsetting collection · public OMB cash-line disclosure ceiling",-13085000000],
+        ["Stafford principal repayments","FY2024 actual offsetting collection · public OMB cash-line disclosure ceiling",-13301000000],
+        ["PLUS principal repayments","FY2024 actual offsetting collection · public OMB cash-line disclosure ceiling",-22710000000],
+        ["Unsubsidized Stafford principal repayments","FY2024 actual offsetting collection · public OMB cash-line disclosure ceiling",-33307000000],
+        ["Program subsidy","FY2024 actual offsetting collection · public OMB cash-line disclosure ceiling",-42586000000],
+        ["Upward reestimate","FY2024 actual offsetting collection · public OMB cash-line disclosure ceiling",-52758000000]
+      ]
+    },
+    {
+      "title": "Federal Family Education Loan Program Account by subsidy activity",
+      "sourceTotal": 13299696292,
+      "basis": "OMB's FY2026 Budget Appendix reports six nonzero FY2024 subsidy and reestimate activities for account 091-0231. They total the published $13.300B outlay; the signed $303,708 precision bridge reconciles the rounded activities exactly to Treasury's Combined Statement account.",
+      "sourceLabel": "OMB FY2026 Budget Appendix and Treasury FY2024 Combined Statement",
+      "sourceUrl": "https://www.whitehouse.gov/wp-content/uploads/2025/05/appendix_fy2026.pdf",
+      "covers": [["091-0231-000","Federal Family Education Loan Program Account,  Education",13299696292]],
+      "rows": [
+        ["Interest on loan-guarantee subsidy reestimates","FY2024 actual",3835000000],
+        ["Loan-guarantee subsidy reestimates","FY2024 actual",3184000000],
+        ["Direct-loan subsidy reestimates","FY2024 actual",3160000000],
+        ["Interest on direct-loan subsidy reestimates","FY2024 actual",1797000000],
+        ["Subsidy for modifications of loan guarantees","FY2024 actual",1306000000],
+        ["Subsidy for modifications of direct loans","FY2024 actual",18000000],
+        ["OMB / Treasury published-precision bridge","Exact arithmetic difference; not allocated to a subsidy activity",-303708]
       ]
     }
   ],
@@ -703,14 +909,6 @@
         ["VI · Parent PLUS", "Institution-location FY2024 COD disbursements", 126346],
         ["VI · Graduate PLUS", "Institution-location FY2024 COD disbursements", 64792]
       ]
-    },
-    {
-      "parent": ["Office of Federal Student Aid", "Federal Direct Student Loans", 110176000000],
-      "title": "Direct Consolidation Loan FY2024 gross-disbursement ceiling",
-      "basis": "Education's FY2024 financial report shows $62.156B of gross consolidation-loan disbursements. The $110.176B parent is net cash after repayments and other flows, so this gross amount is a related activity view, not an additive child. The separate FSA COD state-and-program panel replaces the three estimated school-originated loan-type headlines; consolidation remains here because the public COD workbooks exclude it and no public national subledger is available.",
-      "sourceLabel": "Department of Education FY2024 Agency Financial Report",
-      "sourceUrl": "https://www.ed.gov/media/document/2024-afr-all-verified-108826.pdf",
-      "rows": [["Consolidation", "Gross consolidation flow · public national disclosure ceiling", 62156000000]]
     }
   ],
   "rows": [

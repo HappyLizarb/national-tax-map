@@ -25,6 +25,24 @@
     ["Business-type activities", "State Universities", 1284954000, 1284954000, 1],
     ["Business-type activities", "Community Colleges (Nonmajor)", 1029525000, 1029525000, 1]
   ],
+  "sourceBreakdowns": [
+    {
+      "title": "Health and human services expense coverage",
+      "sourceTotal": 13886097000,
+      "basis": "Exact same-statement decomposition from the FY2024 Statement of Activities, printed p. 40. Charges, operating grants, capital grants, and the published net governmental expense reconcile exactly to total Health and human services expense. This is funding coverage of the expense, not an allocation to programs, and every child is below $10 billion.",
+      "sourceLabel": "Massachusetts FY2024 ACFR",
+      "sourceUrl": "https://www.macomptroller.org/wp-content/uploads/acfr_fy-2024.pdf",
+      "covers": [
+        ["Governmental activities", "Health and human services", 13886097000]
+      ],
+      "rows": [
+        ["Operating grants and contributions", "Program revenue covering expense", 5455502000],
+        ["Net governmental expense", "Expense not covered by program revenues", 4972733000],
+        ["Charges for services", "Program revenue covering expense", 3410969000],
+        ["Capital grants and contributions", "Program revenue covering expense", 46893000]
+      ]
+    }
+  ],
   "coverageStatus": "official-itemized-source-basis",
   "note": "Rows reconcile exactly to audited total primary-government expenses; remaining large rows are official publication ceilings."
 }

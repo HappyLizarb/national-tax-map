@@ -4,6 +4,40 @@
   "sourceUrl": "https://cg.sc.gov/sites/cg/files/Documents/Publications%20and%20Reports/Annual%20Accountability%20Reports/001-316-ACFR-FY2024.pdf",
   "sourceBasis": "Official FY2024 Statement of Activities, Exhibit A-2, printed pp. 42-43; amounts converted from thousands of dollars.",
   "rowSchema": ["activity", "function", "amount", "sourceAmount", "sourceRows"],
+  "sourceBreakdowns": [
+    {
+      "title": "General government expense coverage",
+      "sourceTotal": 11018645000,
+      "basis": "Exact same-statement decomposition from FY2024 ACFR Exhibit A-2, printed pp. 42-43. Charges, operating grants, capital grants, and the published net governmental expense reconcile exactly to total General government expense. This is funding coverage of the expense, not an allocation to programs, and every child is below $10 billion.",
+      "sourceLabel": "South Carolina FY2024 ACFR",
+      "sourceUrl": "https://cg.sc.gov/sites/cg/files/Documents/Publications%20and%20Reports/Annual%20Accountability%20Reports/001-316-ACFR-FY2024.pdf",
+      "covers": [
+        ["Governmental activities", "General government", 11018645000]
+      ],
+      "rows": [
+        ["Net governmental expense", "Expense not covered by program revenues", 5901609000],
+        ["Charges for services", "Program revenue covering expense", 4073091000],
+        ["Operating grants and contributions", "Program revenue covering expense", 994008000],
+        ["Capital grants and contributions", "Program revenue covering expense", 49937000]
+      ]
+    },
+    {
+      "title": "Health and environment expense coverage",
+      "sourceTotal": 12959759000,
+      "basis": "Exact same-statement decomposition from FY2024 ACFR Exhibit A-2, printed pp. 42-43. Charges, operating grants, capital grants, and the published net governmental expense reconcile exactly to total Health and environment expense. This is funding coverage of the expense, not an allocation to programs, and every child is below $10 billion.",
+      "sourceLabel": "South Carolina FY2024 ACFR",
+      "sourceUrl": "https://cg.sc.gov/sites/cg/files/Documents/Publications%20and%20Reports/Annual%20Accountability%20Reports/001-316-ACFR-FY2024.pdf",
+      "covers": [
+        ["Governmental activities", "Health and environment", 12959759000]
+      ],
+      "rows": [
+        ["Operating grants and contributions", "Program revenue covering expense", 8148888000],
+        ["Net governmental expense", "Expense not covered by program revenues", 4567974000],
+        ["Charges for services", "Program revenue covering expense", 238282000],
+        ["Capital grants and contributions", "Program revenue covering expense", 4615000]
+      ]
+    }
+  ],
   "rows": [
     ["Governmental activities", "General government", 11018645000, 11018645000, 1],
     ["Governmental activities", "Education", 8676056000, 8676056000, 1],

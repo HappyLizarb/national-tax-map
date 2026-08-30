@@ -16,6 +16,62 @@
   "largeAccountBasis": "Exact Combined Statement net outlays by appropriation or fund account. This is a research cross-section of the same department, not another amount to add to MTS classification rows.",
   "itemBreakdownSchema": ["treasuryAccount", "title", "netOutlays"],
   "itemBreakdownBasis": "Exact FY2024 Treasury accounts grouped to one MTS row; each final bridge reconciles account cents to the parent published in rounded $ millions.",
+  "sourceBreakdowns": [
+    {
+      "title": "OPM FY2024 civil-service retirement payment by statutory source",
+      "sourceTotal": 53255231701,
+      "basis": "OPM's FY2026 Congressional Budget Justification reports FY2024 actual payments of $23.314B from the current appropriation, $29.914B from permanent indefinite authority, and $27M for spouse equity. The $231,701 published-million bridge reconciles those statutory components exactly to Treasury's payment account. The two appropriation components are OPM's public payment-account disclosure ceilings.",
+      "sourceLabel": "OPM FY2026 Congressional Budget Justification · Earned Benefits Trust Funds",
+      "sourceUrl": "https://www.opm.gov/about-us/fy-2026-congressional-budget-justification/fy-2026-congressional-budget-justification.pdf",
+      "rows": [
+        ["Permanent indefinite authorization", "FY2024 actual · public payment-account disclosure ceiling", 29914000000],
+        ["Current appropriation", "FY2024 actual · public payment-account disclosure ceiling", 23314000000],
+        ["Payment for spouse equity", "FY2024 actual", 27000000],
+        ["OPM-to-Treasury published-million bridge", "Exact arithmetic difference; not allocated to a statutory source", 231701]
+      ],
+      "covers": [["024-0200-000", "Payment to Civil Service Retirement and Disability Fund, Office of Personnel Management", 53255231701]]
+    },
+    {
+      "title": "Civil-service retirement federal-contribution receipt by statutory source",
+      "sourceTotal": -53255231701,
+      "basis": "This is the receipt-side sign presentation of OPM's FY2024 actual statutory payment schedule. The current and permanent appropriation components are OPM's public payment-account disclosure ceilings; the $231,701 bridge preserves Treasury's exact receipt cents.",
+      "sourceLabel": "OPM FY2026 Congressional Budget Justification · Earned Benefits Trust Funds",
+      "sourceUrl": "https://www.opm.gov/about-us/fy-2026-congressional-budget-justification/fy-2026-congressional-budget-justification.pdf",
+      "rows": [
+        ["OPM-to-Treasury published-million bridge", "Exact arithmetic difference; not allocated to a statutory source", -231701],
+        ["Payment for spouse equity", "Receipt-side sign of FY2024 actual", -27000000],
+        ["Current appropriation", "Receipt-side sign · public payment-account disclosure ceiling", -23314000000],
+        ["Permanent indefinite authorization", "Receipt-side sign · public payment-account disclosure ceiling", -29914000000]
+      ],
+      "covers": [["024-X-8135-005", "Federal Contribution, Civil Service Retirement and Disability Fund", -53255231701]]
+    },
+    {
+      "title": "Civil Service Retirement and Disability Fund by OMB budget category",
+      "sourceTotal": 107734801237.49,
+      "basis": "OMB reports FY2024 mandatory and discretionary outlays separately for the Civil Service Retirement and Disability Fund. The signed $1.19876251M precision bridge reconciles the two rounded OMB rows exactly to Treasury's Combined Statement account.",
+      "sourceLabel": "OMB FY2027 Public Budget Database and Treasury FY2024 Combined Statement",
+      "sourceUrl": "https://www.whitehouse.gov/wp-content/uploads/2026/04/outlays_fy2027.xlsx",
+      "covers": [["024-8135-000","Civil Service Retirement and Disability Fund, Office of Personnel Management",107734801237.49]],
+      "rows": [
+        ["Mandatory retirement and disability fund outlays","OMB FY2024 actual · public OMB account/category disclosure ceiling",107569000000],
+        ["Discretionary retirement and disability fund outlays","OMB FY2024 actual",167000000],
+        ["OMB / Treasury published-precision bridge","Exact arithmetic difference; not allocated to a budget category",-1198762.51]
+      ]
+    },
+    {
+      "title": "Annuitant health-benefit payment by source of budget authority",
+      "sourceTotal": 15031720185.05,
+      "basis": "OMB's FY2026 Budget Appendix reports FY2024 outlays for annuitant health benefits from new mandatory authority and prior mandatory balances. The rounded lines total $15.031B; the $720,185.05 precision bridge reconciles them exactly to Treasury's Combined Statement account.",
+      "sourceLabel": "OMB FY2026 Budget Appendix and Treasury FY2024 Combined Statement",
+      "sourceUrl": "https://www.whitehouse.gov/wp-content/uploads/2025/05/appendix_fy2026.pdf",
+      "covers": [["024-0206-000","Government Payment for Annuitants, Employees' Health Benefits, Office of Personnel Management",15031720185.05]],
+      "rows": [
+        ["Outlays from new mandatory authority","FY2024 actual · public OMB cash-line disclosure ceiling",13350000000],
+        ["Outlays from prior mandatory balances","FY2024 actual",1681000000],
+        ["OMB / Treasury published-precision bridge","Exact arithmetic difference; not allocated to a source of authority",720185.05]
+      ]
+    }
+  ],
   "largeAccountRows": [
     ["024-8135-000", "Civil Service Retirement and Disability Fund, Office of Personnel Management", 107734801237.49, 1],
     ["024-0200-000", "Payment to Civil Service Retirement and Disability Fund, Office of Personnel Management", 53255231701, 1],

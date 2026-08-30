@@ -139,7 +139,8 @@
         ["Delaware", "FHWA Federal-Aid Account expenditure", 195726000],
         ["Dist. of Col.", "FHWA Federal-Aid Account expenditure", 186225000],
         ["New Hampshire", "FHWA Federal-Aid Account expenditure", 148624000]
-      ]
+      ],
+      "covers": [["FHWA FY2024 Federal-Aid Account state expenditure schedule", "Published state schedule before the expenditure-to-outlay bridge", 44150336000]]
     },
     {
       "title": "FAA FY2024 enacted Operations budget by organization",
@@ -156,7 +157,72 @@
         ["NextGen", "FY2024 enacted Operations budget · rounded $ millions", 68000000],
         ["Commercial Space Transportation", "FY2024 enacted Operations budget · rounded $ millions", 42000000]
       ],
-      "covers": [["Airport and Airway Trust Fund", "Trust Fund Share of FAA Operations", 11673000000]]
+      "covers": [["FAA FY2024 enacted Operations budget", "FAA organization schedule used below", 12730000000]]
+    },
+    {
+      "title": "Federal-Aid Highways no-year fund resources from state expenditures",
+      "sourceTotal": 53065227348.22,
+      "basis": "FHWA's state expenditure schedule totals $44.150336B. The signed $8.91489134822B bridge reconciles that schedule exactly to Treasury's $53.06522734822B no-year net-outlay row without assigning the timing and scope difference to any state.",
+      "sourceLabel": "FHWA Highway Statistics 2024 and Treasury Combined Statement",
+      "sourceUrl": "https://www.fhwa.dot.gov/policyinformation/statistics/2024/fa3.cfm",
+      "rows": [
+        ["FHWA FY2024 Federal-Aid Account state expenditure schedule", "Published state schedule before the expenditure-to-outlay bridge", 44150336000],
+        ["FHWA expenditure-to-Treasury outlay basis bridge", "Exact arithmetic difference; not allocated to a state", 8914891348.22]
+      ],
+      "covers": [["Fund resources · No Year", "Combined Statement FY2024 net outlays · period-of-availability row", 53065227348.22]]
+    },
+    {
+      "title": "069-8083-000 FY2024 net outlays by period of availability",
+      "sourceTotal": 53665888798.13,
+      "basis": "Exact FY2024 Treasury Combined Statement availability rows. Nonzero published net outlays sum to the parent account in integer cents.",
+      "sourceLabel": "Treasury FY2024 Combined Statement account table",
+      "sourceUrl": "https://fiscal.treasury.gov/system/files/files/reports-statements/combined-statement/cs2024/c37.xlsx",
+      "combinedStatementAvailability": true,
+      "covers": [
+        ["069-8083-000","Federal-Aid Highways, Liquidation of Contract Authorization, Federal Highway Administration, Transportation",53665888798.13]
+      ],
+      "rows": [
+        ["Fund resources · No Year","Combined Statement FY2024 net outlays · period-of-availability row",53065227348.22],
+        ["Transfer To · Bureau of Indian Affairs, Interior · No Year","Combined Statement FY2024 net outlays · period-of-availability row",307853205.89],
+        ["Transfer To · National Park Service, Interior · No Year","Combined Statement FY2024 net outlays · period-of-availability row",94533500.69],
+        ["Transfer To · Federal-Aid Highways, Liquidation of Contract Authorization, Office of the Secretary, Transportation · No Year","Combined Statement FY2024 net outlays · period-of-availability row",84309778.43],
+        ["Transfer To · Forest Service,  Agriculture · No Year","Combined Statement FY2024 net outlays · period-of-availability row",33707131.87],
+        ["Transfer To · Maritime Administration, Transportation · No Year","Combined Statement FY2024 net outlays · period-of-availability row",28558696.57],
+        ["Transfer To · United States Fish & Wildlife Service, Interior · No Year","Combined Statement FY2024 net outlays · period-of-availability row",14307122.8],
+        ["Transfer To · Federal Railroad Administration, Transportation · No Year","Combined Statement FY2024 net outlays · period-of-availability row",9215693.12],
+        ["Transfer To · Federal Transit Administration, Transportation · No Year","Combined Statement FY2024 net outlays · period-of-availability row",8597941],
+        ["Transfer To · Corps of Engineers · No Year","Combined Statement FY2024 net outlays · period-of-availability row",8257980.49],
+        ["Transfer To · Bureau of Reclamation, Interior · No Year","Combined Statement FY2024 net outlays · period-of-availability row",5599289.49],
+        ["Transfer To · Bureau of Land Management, Interior · No Year","Combined Statement FY2024 net outlays · period-of-availability row",2638611.12],
+        ["Transfer To · Treasury · No Year","Combined Statement FY2024 net outlays · period-of-availability row",1772119.35],
+        ["Transfer To · Appalachian Regional Commission · No Year","Combined Statement FY2024 net outlays · period-of-availability row",1309026.19],
+        ["Transfer To · Denali Commission · No Year","Combined Statement FY2024 net outlays · period-of-availability row",1352.9]
+      ]
+    },
+    {
+      "title": "Transit Formula Grants account by OMB grant class",
+      "sourceTotal": 13685737905.02,
+      "basis": "OMB reports FY2024 Transit Formula Grants separately as grant and nongrant outlays. The signed $262,094.98 precision bridge reconciles the two rounded OMB rows exactly to Treasury's Combined Statement account.",
+      "sourceLabel": "OMB FY2027 Public Budget Database and Treasury FY2024 Combined Statement",
+      "sourceUrl": "https://www.whitehouse.gov/wp-content/uploads/2026/04/outlays_fy2027.xlsx",
+      "covers": [["069-8350-000","Formula and Bus Grants, Liquidation of Contract Authorization, Federal Transit Administration, Transportation",13685737905.02]],
+      "rows": [
+        ["Discretionary grant outlays","OMB FY2024 actual · public OMB account/class disclosure ceiling",13666000000],
+        ["Discretionary nongrant outlays","OMB FY2024 actual",20000000],
+        ["OMB / Treasury published-precision bridge","Exact arithmetic difference; not allocated to a grant class",-262094.98]
+      ]
+    },
+    {
+      "title": "FAA Operations trust-fund account from the enacted organization budget",
+      "sourceTotal": 11672874481,
+      "basis": "FAA's enacted FY2024 Operations organization schedule totals $12.730B. The signed $1.057125519B budget-authority-to-outlay bridge reconciles that official schedule exactly to Treasury's Airport and Airway Trust Fund account without assigning the difference to an organization.",
+      "sourceLabel": "FAA FY2024 enacted Operations presentation and Treasury FY2024 Combined Statement",
+      "sourceUrl": "https://www.faa.gov/media/78756",
+      "covers": [["069-8104-000","Operations, Airport and Airway Trust Fund, Federal Aviation Administration, Transportation",11672874481]],
+      "rows": [
+        ["FAA FY2024 enacted Operations budget","FAA organization schedule used below",12730000000],
+        ["FAA budget-authority / Treasury outlay bridge","Exact timing-and-scope difference; not allocated to an organization",-1057125519]
+      ]
     }
   ],
   "largeAccountRows": [

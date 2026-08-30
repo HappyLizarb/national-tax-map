@@ -4,6 +4,24 @@
   "sourceUrl": "https://doa.wi.gov/DEBFCapitalFinance/2024/FY_2024_ACFR_Final.pdf",
   "sourceBasis": "Official FY2024 Statement of Activities, printed pp. 40-41; amounts converted from thousands of dollars.",
   "rowSchema": ["activity", "function", "amount", "sourceAmount", "sourceRows"],
+  "sourceBreakdowns": [
+    {
+      "title": "Education expense coverage",
+      "sourceTotal": 10411172000,
+      "basis": "Exact same-statement decomposition from the FY2024 Statement of Activities, printed pp. 40-41. Charges, operating grants, capital grants, and the published net governmental expense reconcile exactly to total Education expense. This is funding coverage of the expense, not an allocation to education programs, and every child is below $10 billion.",
+      "sourceLabel": "Wisconsin FY2024 ACFR",
+      "sourceUrl": "https://doa.wi.gov/DEBFCapitalFinance/2024/FY_2024_ACFR_Final.pdf",
+      "covers": [
+        ["Governmental activities", "Education", 10411172000]
+      ],
+      "rows": [
+        ["Net governmental expense", "Expense not covered by program revenues", 8058016000],
+        ["Operating grants and contributions", "Program revenue covering expense", 2337833000],
+        ["Charges for services", "Program revenue covering expense", 15180000],
+        ["Capital grants and contributions", "Program revenue covering expense", 143000]
+      ]
+    }
+  ],
   "rows": [
     ["Governmental activities", "Commerce", 652897000, 652897000, 1],
     ["Governmental activities", "Education", 10411172000, 10411172000, 1],

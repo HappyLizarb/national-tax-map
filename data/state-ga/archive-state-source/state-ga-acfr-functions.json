@@ -4,6 +4,28 @@
   "sourceUrl": "https://gsfic.georgia.gov/document/document/fy2024-annual-comprehensive-financial-report/download",
   "sourceBasis": "Official FY2024 Statement of Activities, printed pp. 34-35; amounts converted from thousands of dollars.",
   "rowSchema": ["activity", "function", "amount", "sourceAmount", "sourceRows"],
+  "sourceBreakdowns": [
+    {
+      "title": "Higher Education expenses by audited class",
+      "sourceTotal": 11592480000,
+      "basis": "Same-year accrual detail from the FY2024 ACFR proprietary-fund statement, printed p. 43. The seven published Higher Education Fund expense classes total $11,617,629,000. The displayed -$25,149,000 government-wide reconciliation adjustment is the exact arithmetic difference to the $11,592,480,000 Statement of Activities expense; it is not an allocated or estimated program amount. Every child is below $10 billion.",
+      "sourceLabel": "Georgia FY2024 ACFR",
+      "sourceUrl": "https://gsfic.georgia.gov/document/document/fy2024-annual-comprehensive-financial-report/download",
+      "covers": [
+        ["Business-type activities", "Higher Education", 11592480000]
+      ],
+      "rows": [
+        ["Personal services", "Operating expense", 6704013000],
+        ["Services and supplies", "Operating expense", 2798448000],
+        ["Amortization and depreciation", "Operating expense", 759514000],
+        ["Scholarships and fellowships", "Operating expense", 563889000],
+        ["Benefits expense", "Operating expense", 494703000],
+        ["Other", "Nonoperating expense", 185783000],
+        ["Interest expense", "Nonoperating expense", 111279000],
+        ["Government-wide reconciliation adjustment", "Computed exactly from the two published ACFR totals", -25149000]
+      ]
+    }
+  ],
   "rows": [
     ["Governmental activities", "General Government", 4707029000, 4707029000, 1],
     ["Governmental activities", "Education", 19703715000, 19703715000, 1],
