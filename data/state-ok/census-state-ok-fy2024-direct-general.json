@@ -344,7 +344,7 @@
       "rows": [
         [
           "SF0358",
-          "Expenditure - Direct Expenditure - General Expenditure - Public Welfare - Other - Current Operations · Census annual disclosure ceiling",
+          "Expenditure - Direct Expenditure - General Expenditure - Public Welfare - Other - Current Operations",
           14411279000
         ],
         [
@@ -391,6 +391,54 @@
       "sourceLabel": "official Census data download",
       "rowPrefix": "Census",
       "basis": "Exact FY2024 Census current-operations and capital components that reconcile to this healthcare or veterans function total."
+    },
+    {
+      "parent": [
+        "Direct general expenditure · Census function",
+        "Direct Expenditure - General Expenditure - Public degree-granting higher education excluding auxiliary enterprises (Census code 18)",
+        3503019000
+      ],
+      "accountCount": 2,
+      "rows": [
+        [
+          "SF0217",
+          "Direct Expenditure - General Expenditure - Public degree-granting higher education excluding auxiliary enterprises (Census code 18) - Current Operations",
+          3107446000
+        ],
+        [
+          "SF0218",
+          "Direct Expenditure - General Expenditure - Public degree-granting higher education excluding auxiliary enterprises (Census code 18) - Capital Outlay",
+          395573000
+        ]
+      ],
+      "sourceUrl": "https://www2.census.gov/programs-surveys/state/data/GS00STATEFIN01.zip",
+      "sourceLabel": "official Census data download",
+      "rowPrefix": "Census",
+      "basis": "Exact FY2024 Census current-operations and capital components; any child at or above $3 billion is the Census annual disclosure ceiling."
+    },
+    {
+      "parent": [
+        "Direct general expenditure · Census function",
+        "Direct Expenditure - General Expenditure - Total Regular Highways",
+        2182338000
+      ],
+      "accountCount": 2,
+      "rows": [
+        [
+          "SF0282",
+          "Expenditure - Direct Expenditure - General Expenditure - Regular Highways - Current Operations",
+          430985000
+        ],
+        [
+          "SF0283",
+          "Expenditure - Direct Expenditure - General Expenditure - Regular Highways - Capital Outlay",
+          1751353000
+        ]
+      ],
+      "sourceUrl": "https://www2.census.gov/programs-surveys/state/data/GS00STATEFIN01.zip",
+      "sourceLabel": "official Census data download",
+      "rowPrefix": "Census",
+      "basis": "Exact FY2024 Census published components that reconcile to this general function total."
     }
   ],
   "supplementalBreakdowns": [
@@ -3303,7 +3351,7 @@
         14575681000
       ],
       "title": "Oklahoma SFY2024 OHCA expenditures by age and non-age-specific status",
-      "basis": "Oklahoma Health Care Authority's SFY2024 annual-report appendix allocates $10.327062611B of expenditures among three mutually exclusive age groups and non-age-specific payments. The four published values reconcile exactly to the report's expenditure control, and every row is below $10B. OHCA describes financial-statement data as actual cash expenditure reported to the Office of State Finance. This Medicaid-agency view is supplemental—not additive—to Census's broader public-welfare function or federal-fiscal-year CMS-64 reporting.",
+      "basis": "Oklahoma Health Care Authority's SFY2024 annual-report appendix allocates $10.327062611B of expenditures among three mutually exclusive age groups and non-age-specific payments. The four published values reconcile exactly to the report's expenditure control, and any row at or above $3B is labeled as a source disclosure ceiling. OHCA describes financial-statement data as actual cash expenditure reported to the Office of State Finance. This Medicaid-agency view is supplemental—not additive—to Census's broader public-welfare function or federal-fiscal-year CMS-64 reporting.",
       "rows": [
         [
           "Adults age 19 to 64",

@@ -1,5 +1,6 @@
 const assert = require("node:assert/strict");
 const fs = require("node:fs");
+const model = require("../src/model.js");
 
 const cents = (value) => Math.round(value * 100);
 const federal = require("../data/federal/federal.js");
@@ -41,8 +42,18 @@ const allBreakdowns = federalDetails.flatMap((detail) => [...(detail.itemBreakdo
   ...(detail.sourceBreakdowns || []), ...(detail.supplementalBreakdowns || [])]);
 assert.ok(allBreakdowns.every((item) => item.rows.filter((row) => row[2]).length !== 1));
 assert.ok(sourceViews.every((item) => item.rows.every((row, index, rows) => !index || rows[index - 1][2] >= row[2])));
-const sameAccount = (left, right) => left[0] === right[0] && left[1] === right[1]
+const accountLabel = (row) => String(row[1]).replace(/ · [^·]*ceiling(?: ·.*)?$/i, "");
+const sameAccount = (left, right) => left[0] === right[0] && accountLabel(left) === accountLabel(right)
   && cents(left[2]) === cents(right[2]);
+const hasExactDisplayBreakdown = (detail, parent) => [
+  ...(detail.itemBreakdowns || []), ...(detail.sourceBreakdowns || []), ...(detail.supplementalBreakdowns || [])]
+  .some((panel) => {
+    const rows = panel.rows.reduce((sum, row) => sum + cents(row[2]), 0);
+    const displayParent = panel.displayParent || panel.parent;
+    if (displayParent && sameAccount(displayParent, parent)) return rows === cents(parent[2]);
+    const covers = (panel.covers || []).reduce((sum, row) => sum + cents(row[2]), 0);
+    return rows === covers && (panel.covers || []).some((row) => sameAccount(row, parent));
+  });
 const hasExactSourceBreakdown = (detail, parent) => [...(detail.sourceBreakdowns || []),
   ...(detail.supplementalBreakdowns || [])].some((item) => item.covers?.some((row) => sameAccount(row, parent))
     && item.rows.reduce((sum, row) => sum + cents(row[2]), 0)
@@ -79,6 +90,18 @@ assert.equal(billionAvailabilityRows.filter(([, row]) => /publication ceiling/i.
 assert.ok(billionAvailabilityRows.every(([detail, row]) => hasExactSourceBreakdown(detail, row)
   || /publication ceiling/i.test(row[1])));
 const sourceView = (title) => sourceViews.find((item) => item.title === title);
+const browserBillionRows = federalDetails.flatMap((detail) => {
+  const panels = ["itemBreakdowns", "sourceBreakdowns", "supplementalBreakdowns"].flatMap((name) => detail[name] || []);
+  const rows = [...(detail.rows || []), ...(detail.largeAccountRows || []), ...(detail.supplementalRows || []),
+    ...panels.flatMap((panel) => panel.rows)];
+  return rows.filter((row) => Math.abs(row[2]) >= 1e9).map((row) => [detail, row]);
+});
+const exactBrowserRows = browserBillionRows.filter(([detail, row]) => hasExactDisplayBreakdown(detail, row));
+const ceilingBrowserRows = browserBillionRows.filter(([detail, row]) =>
+  /ceiling/i.test(model.displayAccountDescription(detail, row)));
+assert.deepEqual([browserBillionRows.length, exactBrowserRows.length, ceilingBrowserRows.length], [2237, 422, 1815]);
+assert.ok(browserBillionRows.every(([detail, row]) => hasExactDisplayBreakdown(detail, row)
+  || /ceiling/i.test(model.displayAccountDescription(detail, row))));
 const epaAwards = sourceView("EPA FY2024 Exchange Network awards by recipient");
 assert.deepEqual([epaAwards.rows.length, epaAwards.rows.reduce((sum, row) => sum + row[2], 0)], [33, 9214647]);
 assert.deepEqual(epaAwards.rows.at(-1), ["Published tribal subtotal adjustment",
@@ -183,7 +206,8 @@ const vaCompResources = sourceView("VA Compensation and Pensions no-year fund re
 const vaCompActualBridge = sourceView("VA Compensation actual outlays from the no-year program schedule");
 const vaVeteransBridge = sourceView("VA Veterans program activity from GDX Compensation and Pension expenditures");
 const vaSurvivorsBridge = sourceView("VA Survivors program activity from GDX DIC and Survivors Pension expenditures");
-const vaCompByState = sourceView("VA FY2024 Compensation and Pension expenditures by state");
+const vaCompByState = sourceView("VA FY2024 Compensation and Pension expenditures by 118th congressional district");
+const vaMedicalByDistrict = sourceView("VA FY2024 Medical Care expenditures by 118th congressional district");
 const vaSurvivorsByState = sourceView("VA FY2024 DIC and Survivors Pension expenditures by state");
 assert.deepEqual([vaCompResources.rows.length, vaCompResources.rows.filter((row) => Math.abs(row[2]) > 1e10).length], [13, 2]);
 assert.equal(vaCompResources.rows.reduce((sum, row) => sum + cents(row[2]), 0), cents(161294617435.7));
@@ -194,6 +218,14 @@ assert.equal(vaSurvivorsBridge.rows.reduce((sum, row) => sum + cents(row[2]), 0)
 assert.deepEqual(vaVeteransBridge.covers, [vaCompResources.rows[0]]);
 assert.deepEqual(vaSurvivorsBridge.covers, [vaCompResources.rows[1]]);
 assert.deepEqual(vaCompByState.covers, [vaVeteransBridge.rows[0]]);
+assert.deepEqual([vaCompByState.rows.length, cents(vaCompByState.rows.reduce((sum, row) => sum + row[2], 0))],
+  [441, cents(144281399760)]);
+assert.equal(vaCompByState.rows.filter((row) => Math.abs(row[2]) >= 1e9).length, 8);
+assert.deepEqual([vaMedicalByDistrict.rows.length, cents(vaMedicalByDistrict.rows.reduce((sum, row) => sum + row[2], 0))],
+  [439, cents(124687751611.66)]);
+assert.equal(vaMedicalByDistrict.rows.filter((row) => Math.abs(row[2]) >= 1e9).length, 1);
+assert.ok([...vaCompByState.rows, ...vaMedicalByDistrict.rows]
+  .filter((row) => Math.abs(row[2]) >= 1e9).every((row) => /GDX district\/category disclosure ceiling/.test(row[1])));
 assert.deepEqual(vaSurvivorsByState.covers, [vaSurvivorsBridge.rows[0]]);
 assert.deepEqual([vaSurvivorsByState.rows.length, vaSurvivorsByState.rows.reduce((sum, row) => sum + row[2], 0)], [55, 9569100739]);
 assert.ok(vaSurvivorsByState.rows.every((row) => Math.abs(row[2]) < 1e10));
@@ -318,12 +350,12 @@ const highwayOutlays = sourceView("Federal-Aid Highways no-year fund resources f
 assert.equal(highwayOutlays.rows.reduce((sum, row) => sum + cents(row[2]), 0), cents(53065227348.22));
 assert.equal(highwayOutlays.rows.filter((row) => Math.abs(row[2]) >= 1e10).length, 1);
 assert.deepEqual(highwayExpenditureView.covers, [highwayOutlays.rows[0]]);
-for (const check of [["Army 2020A FY2024 O&M obligations by budget line", 60, 63912381000, 0], ["Navy 1804N FY2024 O&M obligations by budget line", 81, 74666505000, 0], ["Marine Corps 1106N FY2024 O&M obligations by budget line", 30, 10264362000, 0], ["Air Force 3400F FY2024 O&M obligations by budget line", 58, 62834029000, 0], ["Army FY2024 procurement actuals by P-1 budget activity", 17, 40057534000, 0], ["Navy and Marine Corps FY2024 procurement actuals by P-1 budget activity", 51, 84046939000, 0], ["Air Force and Space Force FY2024 procurement actuals by P-1 budget activity", 36, 66444991000, 1], ["Defense-Wide FY2024 procurement actuals by P-1 budget activity", 6, 14047824000, 0]]) {
+for (const check of [["Army 2020A FY2024 O&M obligations by budget line", 60, 63912381000, 0], ["Navy 1804N FY2024 O&M obligations by budget line", 81, 74666505000, 0], ["Marine Corps 1106N FY2024 O&M obligations by budget line", 30, 10264362000, 0], ["Air Force 3400F FY2024 O&M obligations by budget line", 58, 62834029000, 0], ["Army FY2024 procurement actuals by P-1 line item", 251, 40057534000, 0], ["Navy and Marine Corps FY2024 procurement actuals by P-1 line item", 340, 84046939000, 0], ["Air Force and Space Force FY2024 procurement actuals by P-1 line item", 185, 66444991000, 1], ["Defense-Wide FY2024 procurement actuals by P-1 line item", 69, 14047824000, 0]]) {
   const rows = sourceView(check[0]).rows; assert.deepEqual([rows.length, rows.reduce((sum, row) => sum + row[2], 0), rows.filter((row) => Math.abs(row[2]) >= 1e10).length], check.slice(1));
 }
-for (const title of ["Air Force and Space Force FY2024 procurement actuals by P-1 budget activity",
+for (const title of ["Air Force and Space Force FY2024 procurement actuals by P-1 line item",
   "Air Force FY2024 RDT&E actuals by R-1 program element"]) {
-  assert.match(sourceView(title).rows[0][1], /public classified-program disclosure ceiling/);
+  assert.match(sourceView(title).rows[0][1], /public classified-program .*disclosure ceiling/);
 }
 const defenseAgenciesOm = sourceView("DoD FY2024 Defense-Wide O&M authority by agency and health activity");
 assert.deepEqual([defenseAgenciesOm.rows.length, defenseAgenciesOm.rows.reduce((sum, row) => sum + row[2], 0)],
@@ -528,9 +560,9 @@ assert.deepEqual([vaMedicalResources.rows.length,
   vaMedicalResources.rows.reduce((sum, row) => sum + cents(row[2]), 0)], [44, cents(61068446450.83)]);
 assert.ok(vaMedicalResources.rows.filter((row) => Math.abs(row[2]) >= 1e10)
   .every((row) => /public program\/activity-object-class disclosure ceiling/.test(row[1])));
-const directLoanStates = sourceView("Direct Loan FY2024 COD new-loan disbursements by institution state and loan type");
-assert.deepEqual([directLoanStates.rows.length, directLoanStates.rows.reduce((sum, row) => sum + row[2], 0)], [274, 85964314733]);
-assert.ok(directLoanStates.rows.every((row) => Math.abs(row[2]) < 1e10));
+const directLoanStates = sourceView("Direct Loan FY2024 COD new-loan disbursements by institution, state, and loan type");
+assert.deepEqual([directLoanStates.rows.length, directLoanStates.rows.reduce((sum, row) => sum + row[2], 0)], [3844, 85964314733]);
+assert.ok(directLoanStates.rows.every((row) => Math.abs(row[2]) < 1e9));
 const directLoanResources = sourceView("Direct Loan Program 2024 resources by program activity and object class");
 assert.deepEqual([directLoanResources.rows.length,
   directLoanResources.rows.reduce((sum, row) => sum + cents(row[2]), 0)], [2, cents(107980089908)]);
@@ -548,9 +580,11 @@ assert.ok(educationRelief.rows.every((row) => Math.abs(row[2]) < 1e10));
 const educationReliefOutlays = sourceView("Education Stabilization Fund 2021-2023 resources from program/state outlays");
 assert.equal(educationReliefOutlays.rows.reduce((sum, row) => sum + cents(row[2]), 0), cents(49249109392.89));
 assert.deepEqual(educationRelief.covers, [educationReliefOutlays.rows[0]]);
-const medicareGeography = sourceView("Original Medicare FY2024 claim payments by geography");
-assert.deepEqual([medicareGeography.rows.length, medicareGeography.rows.reduce((sum, row) => sum + row[2], 0)], [164, 377094873261]);
-assert.ok(medicareGeography.rows.every((row) => Math.abs(row[2]) < 1e10));
+const medicareGeography = sourceView("Original Medicare FY2024 claim payments by county and service · 1,521 rows");
+assert.deepEqual([medicareGeography.rows.length, medicareGeography.rows.reduce((sum, row) => sum + row[2], 0)], [1521, 377094873261]);
+assert.equal(medicareGeography.rows.filter((row) => Math.abs(row[2]) >= 1e9).length, 9);
+assert.ok(medicareGeography.rows.filter((row) => Math.abs(row[2]) >= 1e9)
+  .every((row) => /CMS county\/service disclosure ceiling/.test(row[1])));
 const trustFundPayments = sourceView("Payments to Health Care Trust Funds 2024 resources by program activity and object class");
 assert.deepEqual([trustFundPayments.rows.length,
   trustFundPayments.rows.reduce((sum, row) => sum + cents(row[2]), 0)], [6, cents(485990990428.42)]);

@@ -13,66 +13,276 @@
     "sourceAmount",
     "sourceRows"
   ],
-  "itemBreakdowns": [{
-    "parent": ["GRANTS/AID", "AR DEPT OF HUMAN SERVICES · GRANTS/AID", 9051754824.17],
-    "accountCount": 51,
-    "rows": [
-      ["MEDICAID PROVIDER PAYMENTS · Other providers", "7,985 provider labels · 8,022 source rows", 4640766207.52],
-      ["MEDICAID PROVIDER PAYMENTS · ARKANSAS BLUE CROSS BLUE SHIELD", "Top provider · 1 source row", 845299326.25],
-      ["DHS-GRANTS PAYING ACCOUNT", "Official appropriation · 9,672 source rows", 534142837.03],
-      ["MEDICAID PROVIDER PAYMENTS · APC PASSE LLC", "Top provider · 1 source row", 454837896.27],
-      ["MEDICAID PROVIDER PAYMENTS · ARKANSAS TOTAL CARE", "Top provider · 1 source row", 406210007.92],
-      ["MEDICAID PROVIDER PAYMENTS · EMPOWER HEALTHCARE SOLUTIONS LLC", "Top provider · 1 source row", 401538341.21],
-      ["MEDICAID PROVIDER PAYMENTS · ARKANSAS CHILDREN'S HOSPITAL", "Top provider · 1 source row", 394758296.69],
-      ["MEDICAID PROVIDER PAYMENTS · CELTIC INSURANCE COMPANY", "Top provider · 1 source row", 365010780.97],
-      ["MEDICAID PROVIDER PAYMENTS · QCA HEALTH PLAN INC", "Top provider · 1 source row", 222625738.59],
-      ["MEDICAID PROVIDER PAYMENTS · QUALCHOICE LIFE AND HEALTH INSURA", "Top provider · 1 source row", 219015375.50],
-      ["MEDICAID PROVIDER PAYMENTS · HMO PARTNERS INC", "Top provider · 1 source row", 180407937.43],
-      ["MEDICAID PROVIDER PAYMENTS · UNIV HOSPITAL OF ARKANSAS", "Top provider · 1 source row", 163277098.47],
-      ["FOSTER CARE", "Official appropriation · 5,222 source rows", 42307409.69],
-      ["RESIDENTIAL SERVICES", "Official appropriation · 17 source rows", 34023367.11],
-      ["MENTAL HEALTH BLOCK GRANT", "Official appropriation · 35 source rows", 30188200.43],
-      ["ALCOHOL & DRUG ABUSE PREVENTION", "Official appropriation · 44 source rows", 25603974.73],
-      ["TANF BLOCK GRANT PAYING", "Official appropriation · 37 source rows", 18057118.68],
-      ["COMMUNITY SERVICES", "Official appropriation · 13 source rows", 12225142.65],
-      ["FEDERAL CHILD & YOUTH SERVICE GRANTS", "Official appropriation · 26 source rows", 12177825.71],
-      ["STATE RESIDENTIAL TREATMENT", "Official appropriation · 22 source rows", 9719262.63],
-      ["CHILD CARE DEVELOPMENT-DISCRETIONARY", "Official appropriation · 523 source rows", 9693112.39],
-      ["FOOD PROGRAM", "Official appropriation · 306 source rows", 6042261.09],
-      ["ARPA SUBSTANCE ABUSE PREVENT BLOCK GRANT", "Official appropriation · 17 source rows", 4625776.21],
-      ["DHS COUNTY OPER-HOMELESS ASSISTANCE GRNT", "Official appropriation · 39 source rows", 3625585.36],
-      ["COMMUNITY BASED SANCTIONS", "Official appropriation · 10 source rows", 2384285.09],
-      ["ARPA - ASSISTED LIVING FACILITY AID", "Official appropriation · 1 source row", 1999999.99],
-      ["MEALS ON WHEELS", "Official appropriation · 8 source rows", 1930339.68],
-      ["ARPA COMMUNITY MENTAL HEALTH BG", "Official appropriation · 19 source rows", 1540243.79],
-      ["ARPA - CHILD CARE DISCRETIONARY FUNDS", "Official appropriation · 272 source rows", 1064241.50],
-      ["ARP TITLE III-C1 HOME DELIVERED MEALS", "Official appropriation · 3 source rows", 1009428.00],
-      ["HUNGER COALITION", "Official appropriation · 1 source row", 995113.00],
-      ["CHILDREN'S MEDICAL SERVICES", "Official appropriation · 2 source rows", 945459.54],
-      ["ARPA-SOP & SDM STWD TRAINING (CBCAP)", "Official appropriation · 5 source rows", 748052.37],
-      ["ARP TITLE III-B SUPPORT SERVICES-DAABH", "Official appropriation · 2 source rows", 511313.00],
-      ["ARPA - DAABH PH WORKFORCE EXPANSION", "Official appropriation · 7 source rows", 448386.00],
-      ["ARP TITLE III-C2 HOME DELIVERED MEALS", "Official appropriation · 2 source rows", 405964.00],
-      ["COMMUNITY ALCOHOL SAFETY", "Official appropriation · 8 source rows", 363067.27],
-      ["ARP TITLE III-E FAMILY CAREGIVERS", "Official appropriation · 2 source rows", 266833.04],
-      ["SPECIAL OLYMPICS", "Official appropriation · 1 source row", 163870.74],
-      ["ARPA - CHILD CARE STABILIZATION GRANT", "Official appropriation · 9 source rows", 145464.03],
-      ["DHS - CHILDREN'S TRUST FUND", "Official appropriation · 2 source rows", 115340.99],
-      ["ARPA BHA - EBMS", "Official appropriation · 1 source row", 112982.95],
-      ["DHS-COUNTY OPER-REFUGEE RESETTLEMNT PRGM", "Official appropriation · 3 source rows", 110123.45],
-      ["ARP TITLE III-D PREVENTIVE HEALTH", "Official appropriation · 2 source rows", 102970.87],
-      ["SENIOR OLYMPICS", "Official appropriation · 1 source row", 70000.00],
-      ["CHILDREN'S MEDICAL SERVICES-FEDERAL", "Official appropriation · 2 source rows", 60047.55],
-      ["INTER-DIVISIONAL PROGRAMS", "Official appropriation · 16 source rows", 44230.00],
-      ["DAABH COVID MITIGATION", "Official appropriation · 3 source rows", 19743.90],
-      ["ARP TITLE VII - OMBUDSMAN PROGRAM", "Official appropriation · 2 source rows", 11802.89],
-      ["DHS - DDS - STATE OPERATIONS", "Official appropriation · 4 source rows", 3640.00],
-      ["NURSING HOME QUALITY", "Official appropriation · 1 source row", 3000.00]
-    ],
-    "sourceUrl": "https://www.ark.org/dfa/transparency_2024/expenditures.php",
-    "sourceLabel": "Arkansas FY2024 full expenditures CSV",
-    "basis": "All 41 official GRANTS/AID appropriation totals are retained. The $8.29 billion Medicaid Provider Payments appropriation is split into its ten largest organizational providers and an exact privacy-safe remainder below $5 billion."
-  }],
+  "itemBreakdowns": [
+    {
+      "parent": [
+        "GRANTS/AID",
+        "AR DEPT OF HUMAN SERVICES · GRANTS/AID",
+        9051754824.17
+      ],
+      "accountCount": 51,
+      "rows": [
+        [
+          "MEDICAID PROVIDER PAYMENTS · Other providers",
+          "7,985 provider labels · 8,022 source rows",
+          4640766207.52
+        ],
+        [
+          "MEDICAID PROVIDER PAYMENTS · ARKANSAS BLUE CROSS BLUE SHIELD",
+          "Top provider · 1 source row",
+          845299326.25
+        ],
+        [
+          "DHS-GRANTS PAYING ACCOUNT",
+          "Official appropriation · 9,672 source rows",
+          534142837.03
+        ],
+        [
+          "MEDICAID PROVIDER PAYMENTS · APC PASSE LLC",
+          "Top provider · 1 source row",
+          454837896.27
+        ],
+        [
+          "MEDICAID PROVIDER PAYMENTS · ARKANSAS TOTAL CARE",
+          "Top provider · 1 source row",
+          406210007.92
+        ],
+        [
+          "MEDICAID PROVIDER PAYMENTS · EMPOWER HEALTHCARE SOLUTIONS LLC",
+          "Top provider · 1 source row",
+          401538341.21
+        ],
+        [
+          "MEDICAID PROVIDER PAYMENTS · ARKANSAS CHILDREN'S HOSPITAL",
+          "Top provider · 1 source row",
+          394758296.69
+        ],
+        [
+          "MEDICAID PROVIDER PAYMENTS · CELTIC INSURANCE COMPANY",
+          "Top provider · 1 source row",
+          365010780.97
+        ],
+        [
+          "MEDICAID PROVIDER PAYMENTS · QCA HEALTH PLAN INC",
+          "Top provider · 1 source row",
+          222625738.59
+        ],
+        [
+          "MEDICAID PROVIDER PAYMENTS · QUALCHOICE LIFE AND HEALTH INSURA",
+          "Top provider · 1 source row",
+          219015375.5
+        ],
+        [
+          "MEDICAID PROVIDER PAYMENTS · HMO PARTNERS INC",
+          "Top provider · 1 source row",
+          180407937.43
+        ],
+        [
+          "MEDICAID PROVIDER PAYMENTS · UNIV HOSPITAL OF ARKANSAS",
+          "Top provider · 1 source row",
+          163277098.47
+        ],
+        [
+          "FOSTER CARE",
+          "Official appropriation · 5,222 source rows",
+          42307409.69
+        ],
+        [
+          "RESIDENTIAL SERVICES",
+          "Official appropriation · 17 source rows",
+          34023367.11
+        ],
+        [
+          "MENTAL HEALTH BLOCK GRANT",
+          "Official appropriation · 35 source rows",
+          30188200.43
+        ],
+        [
+          "ALCOHOL & DRUG ABUSE PREVENTION",
+          "Official appropriation · 44 source rows",
+          25603974.73
+        ],
+        [
+          "TANF BLOCK GRANT PAYING",
+          "Official appropriation · 37 source rows",
+          18057118.68
+        ],
+        [
+          "COMMUNITY SERVICES",
+          "Official appropriation · 13 source rows",
+          12225142.65
+        ],
+        [
+          "FEDERAL CHILD & YOUTH SERVICE GRANTS",
+          "Official appropriation · 26 source rows",
+          12177825.71
+        ],
+        [
+          "STATE RESIDENTIAL TREATMENT",
+          "Official appropriation · 22 source rows",
+          9719262.63
+        ],
+        [
+          "CHILD CARE DEVELOPMENT-DISCRETIONARY",
+          "Official appropriation · 523 source rows",
+          9693112.39
+        ],
+        [
+          "FOOD PROGRAM",
+          "Official appropriation · 306 source rows",
+          6042261.09
+        ],
+        [
+          "ARPA SUBSTANCE ABUSE PREVENT BLOCK GRANT",
+          "Official appropriation · 17 source rows",
+          4625776.21
+        ],
+        [
+          "DHS COUNTY OPER-HOMELESS ASSISTANCE GRNT",
+          "Official appropriation · 39 source rows",
+          3625585.36
+        ],
+        [
+          "COMMUNITY BASED SANCTIONS",
+          "Official appropriation · 10 source rows",
+          2384285.09
+        ],
+        [
+          "ARPA - ASSISTED LIVING FACILITY AID",
+          "Official appropriation · 1 source row",
+          1999999.99
+        ],
+        [
+          "MEALS ON WHEELS",
+          "Official appropriation · 8 source rows",
+          1930339.68
+        ],
+        [
+          "ARPA COMMUNITY MENTAL HEALTH BG",
+          "Official appropriation · 19 source rows",
+          1540243.79
+        ],
+        [
+          "ARPA - CHILD CARE DISCRETIONARY FUNDS",
+          "Official appropriation · 272 source rows",
+          1064241.5
+        ],
+        [
+          "ARP TITLE III-C1 HOME DELIVERED MEALS",
+          "Official appropriation · 3 source rows",
+          1009428.0
+        ],
+        [
+          "HUNGER COALITION",
+          "Official appropriation · 1 source row",
+          995113.0
+        ],
+        [
+          "CHILDREN'S MEDICAL SERVICES",
+          "Official appropriation · 2 source rows",
+          945459.54
+        ],
+        [
+          "ARPA-SOP & SDM STWD TRAINING (CBCAP)",
+          "Official appropriation · 5 source rows",
+          748052.37
+        ],
+        [
+          "ARP TITLE III-B SUPPORT SERVICES-DAABH",
+          "Official appropriation · 2 source rows",
+          511313.0
+        ],
+        [
+          "ARPA - DAABH PH WORKFORCE EXPANSION",
+          "Official appropriation · 7 source rows",
+          448386.0
+        ],
+        [
+          "ARP TITLE III-C2 HOME DELIVERED MEALS",
+          "Official appropriation · 2 source rows",
+          405964.0
+        ],
+        [
+          "COMMUNITY ALCOHOL SAFETY",
+          "Official appropriation · 8 source rows",
+          363067.27
+        ],
+        [
+          "ARP TITLE III-E FAMILY CAREGIVERS",
+          "Official appropriation · 2 source rows",
+          266833.04
+        ],
+        [
+          "SPECIAL OLYMPICS",
+          "Official appropriation · 1 source row",
+          163870.74
+        ],
+        [
+          "ARPA - CHILD CARE STABILIZATION GRANT",
+          "Official appropriation · 9 source rows",
+          145464.03
+        ],
+        [
+          "DHS - CHILDREN'S TRUST FUND",
+          "Official appropriation · 2 source rows",
+          115340.99
+        ],
+        [
+          "ARPA BHA - EBMS",
+          "Official appropriation · 1 source row",
+          112982.95
+        ],
+        [
+          "DHS-COUNTY OPER-REFUGEE RESETTLEMNT PRGM",
+          "Official appropriation · 3 source rows",
+          110123.45
+        ],
+        [
+          "ARP TITLE III-D PREVENTIVE HEALTH",
+          "Official appropriation · 2 source rows",
+          102970.87
+        ],
+        [
+          "SENIOR OLYMPICS",
+          "Official appropriation · 1 source row",
+          70000.0
+        ],
+        [
+          "CHILDREN'S MEDICAL SERVICES-FEDERAL",
+          "Official appropriation · 2 source rows",
+          60047.55
+        ],
+        [
+          "INTER-DIVISIONAL PROGRAMS",
+          "Official appropriation · 16 source rows",
+          44230.0
+        ],
+        [
+          "DAABH COVID MITIGATION",
+          "Official appropriation · 3 source rows",
+          19743.9
+        ],
+        [
+          "ARP TITLE VII - OMBUDSMAN PROGRAM",
+          "Official appropriation · 2 source rows",
+          11802.89
+        ],
+        [
+          "DHS - DDS - STATE OPERATIONS",
+          "Official appropriation · 4 source rows",
+          3640.0
+        ],
+        [
+          "NURSING HOME QUALITY",
+          "Official appropriation · 1 source row",
+          3000.0
+        ]
+      ],
+      "sourceUrl": "https://www.ark.org/dfa/transparency_2024/expenditures.php",
+      "sourceLabel": "Arkansas FY2024 full expenditures CSV",
+      "basis": "All 41 official GRANTS/AID appropriation totals are retained. The $8.29 billion Medicaid Provider Payments appropriation is split into its ten largest organizational providers and an exact privacy-safe remainder below $5 billion."
+    }
+  ],
   "hierarchyNote": "Rows group official FY2024 transactions by expenditure classification within this agency.",
   "rows": [
     [

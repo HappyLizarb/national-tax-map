@@ -40,5 +40,31 @@
     "groupRows": 1,
     "difference": 0
   },
-  "hierarchyNote": "These rows are mutually exclusive Census expenditure function/category rows within this detail group; they are not vendor or agency transactions."
+  "hierarchyNote": "These rows are mutually exclusive Census expenditure function/category rows within this detail group; they are not vendor or agency transactions.",
+  "itemBreakdowns": [
+    {
+      "parent": [
+        "Liquor stores expenditure · Census function",
+        "Direct Expenditure - Total Liquor Stores",
+        1260523000
+      ],
+      "accountCount": 2,
+      "rows": [
+        [
+          "SF0432",
+          "Expenditure - Direct Expenditure - Liquor Stores - Current Operations",
+          1260523000
+        ],
+        [
+          "SF0433",
+          "Expenditure - Direct Expenditure - Liquor Stores - Capital Outlay",
+          0
+        ]
+      ],
+      "sourceUrl": "https://www2.census.gov/programs-surveys/state/data/GS00STATEFIN01.zip",
+      "sourceLabel": "official Census data download",
+      "rowPrefix": "Census",
+      "basis": "Exact FY2024 Census published components that reconcile to this liquor function total."
+    }
+  ]
 }

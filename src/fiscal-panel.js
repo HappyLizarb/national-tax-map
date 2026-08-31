@@ -247,11 +247,11 @@ function renderDetail(detail) {
         + (supplementalCount ? " · " + supplementalCount.toLocaleString() + " separate topic rows" : "");
   setText("#sourceExplorerNote", detail.department + " · " + rowCount + (detail.rows.length > limit ? " · first 500 shown" : "") + note);
   const rendered = new Set(), rowHtml = hierarchy || flatSingleton ? "" : rows.map((row) => {
-    const subAgency = row[0], program = row[1], amount = row[2];
+    const subAgency = row[0], program = model.displayAccountDescription(detail, row), amount = row[2];
     return '<div class="agency-row"><span><strong>' + escapeHtml(subAgency) + '</strong><small>' + escapeHtml(program) + '</small></span><b>' + detailAmount(row, detail.rowSchema) + '</b></div>' + itemBreakdown(detail, row, rendered) + supplementalBreakdown(detail, row, rendered) + nestedSourceBreakdowns(detail, row, rendered);
   }).join("");
   $("#agencyRows").innerHTML = detailSourceLinks(detail, rendered) + hierarchy + rowHtml
-    + (detail.supplementalRows || []).slice(0, limit).map((row) => '<a class="agency-row" href="' + escapeHtml(row[4]) + '" target="_blank" rel="noopener noreferrer"><span><strong>' + escapeHtml(row[0]) + '</strong><small>' + escapeHtml(row[1]) + ' · ' + escapeHtml(row[3]) + '</small></span><b>' + model.formatMoney(row[2]) + '</b></a>').join("");
+    + (detail.supplementalRows || []).slice(0, limit).map((row) => '<a class="agency-row" href="' + escapeHtml(row[4]) + '" target="_blank" rel="noopener noreferrer"><span><strong>' + escapeHtml(row[0]) + '</strong><small>' + escapeHtml(model.displayAccountDescription(detail, row)) + ' · ' + escapeHtml(row[3]) + '</small></span><b>' + model.formatMoney(row[2]) + '</b></a>').join("");
 }
 function detailSourceLinks(detail, rendered) {
   const sources = [...(detail.sourceUrls || [["Official source", detail.sourceUrl]]), ...(detail.relatedSources || [])];

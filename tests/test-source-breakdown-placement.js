@@ -76,7 +76,7 @@ for (const file of jsonFiles("data")) {
 
 const app = fs.readFileSync("src/app.js", "utf8");
 const fiscalPanel = fs.readFileSync("src/fiscal-panel.js", "utf8");
-assert.equal(panelCount, 2068);
+assert.equal(panelCount, 2097);
 assert.equal(renderedPanelCount, panelCount);
 assert.match(app, /function sourceBreakdownParent/);
 assert.match(app, /return sameAccount\(sourceBreakdownParent\(item\), parent\)/);

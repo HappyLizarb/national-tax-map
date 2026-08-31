@@ -1,6 +1,7 @@
 function receiptAccountHtml(account, formatMoney, escapeHtml) {
   const audit = account.largeAccountAudited ? " · Audited ≥$10B account" : "";
-  const metadata = "TAS " + account.tas + " · " + account.flowType + " · " + account.sourceFloor + audit;
+  const ceiling = Math.abs(account.amount) >= 1e9 ? " · current imported-detail ceiling" : "";
+  const metadata = "TAS " + account.tas + " · " + account.flowType + " · " + account.sourceFloor + audit + ceiling;
   return '<div class="agency-row receipt-account"><span><strong>' + escapeHtml(account.title)
     + '</strong><small>' + escapeHtml(metadata) + '</small></span><b>'
     + formatMoney(account.amount) + '</b></div>';
@@ -30,8 +31,9 @@ function renderReceiptHierarchy(detail, formatMoney, escapeHtml) {
   const classes = detail.accountingClasses || [], groups = detail.accountingGroups || [];
   if (!classes.length) return "";
   const floor = detail.sourceFloor, bridge = detail.rows.find((row) => row[0] === "MTS control bridge");
+  const billionCeilings = detail.accountRows.filter((account) => Math.abs(account.amount) >= 1e9).length;
   const overview = classes.length + " source classes · " + groups.length + " Treasury flows · "
-    + floor.accountCount + " source-native receipt accounts · " + floor.largeAccountCount + " audited ≥$10B accounts";
+    + floor.accountCount + " source-native receipt accounts · " + billionCeilings + " ≥$1B disclosure ceilings";
   const sections = classes.map((category) =>
     receiptClassHtml(category, groups, detail.accountRows, formatMoney, escapeHtml)).join("");
   return '<div class="receipt-hierarchy"><p class="receipt-hierarchy-note">' + escapeHtml(overview + ". " + floor.note)

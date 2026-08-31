@@ -87,13 +87,15 @@ for (const [scope, summaryPath] of Object.entries(index)) {
   }
 }
 
-assert.equal(stateItemBreakdowns.length, 206);
+assert.equal(stateItemBreakdowns.length, 380);
 assert.ok(stateItemBreakdowns.every((item) => item.rowPrefix === "Census" && item.rows.reduce((sum, row) => sum + cents(row[2]), 0) === cents(item.parent[2])));
-const stateCensusCeilings = stateItemBreakdowns.flatMap((item) => item.rows)
-  .filter((row) => Math.abs(row[2]) >= 1e10);
-assert.equal(stateCensusCeilings.length, 38);
+const stateCensusLargeRows = stateItemBreakdowns.flatMap((item) => item.rows)
+  .filter((row) => Math.abs(row[2]) >= 1e9);
+assert.equal(stateCensusLargeRows.length, 290);
+const stateCensusCeilings = stateCensusLargeRows.filter((row) => /ceiling/i.test(row[1]));
+assert.equal(stateCensusCeilings.length, 57);
 assert.ok(stateCensusCeilings.every((row) => /Census annual disclosure ceiling/.test(row[1])));
-assert.deepEqual([stateSourceBreakdowns.length, stateSourceBreakdowns.reduce((sum, item) => sum + item.rows.length, 0)], [16, 425]);
+assert.deepEqual([stateSourceBreakdowns.length, stateSourceBreakdowns.reduce((sum, item) => sum + item.rows.length, 0)], [43, 1389]);
 assert.ok(stateSourceBreakdowns.every((item) => /^https:\/\//.test(item.sourceUrl)
   && /not additive|separate|supplemental/.test(item.basis)
   && item.rows.every((row, index, rows) => !index || Math.abs(rows[index - 1][2]) >= Math.abs(row[2]))
@@ -102,7 +104,11 @@ const nyAid = stateSourceBreakdowns.find((item) => item.title === "NYC 2023-24 s
 assert.deepEqual([nyAid.rows.length, cents(nyAid.rows.reduce((sum, row) => sum + row[2], 0))], [21, cents(13058457682.74)]);
 assert.ok(nyAid.rows.every((row) => Math.abs(row[2]) < 1e10));
 const nycFormulaAid = stateSourceBreakdowns.flatMap((item) => item.rows).find((row) => row[2] === 10076459000);
-assert.match(nycFormulaAid[1], /C01\/STRFORM.*disclosure ceiling/);
+assert.match(nycFormulaAid[1], /C01.*source-native disclosure ceiling/);
+const schoolRecipientPanels = stateSourceBreakdowns.filter((item) => item.sourceUrl.includes("elsec24.xlsx"));
+assert.equal(schoolRecipientPanels.length, 42);
+assert.ok(schoolRecipientPanels.flatMap((item) => item.rows)
+  .every((row) => Math.abs(row[2]) < 1e9 || /ceiling/i.test(row[1])));
 assert.equal(stateBranchBreakdowns.length, 497);
 assert.equal(stateBranchBreakdowns.reduce((sum, item) => sum + item.rows.length, 0), 30404);
 const archivedBranchBreakdowns = stateBranchBreakdowns.filter((item) => item.title.startsWith("Archived official"));

@@ -61,5 +61,36 @@
     "groupRows": 4,
     "difference": 0
   },
-  "hierarchyNote": "These rows are mutually exclusive Census expenditure function/category rows within this detail group; they are not vendor or agency transactions."
+  "hierarchyNote": "These rows are mutually exclusive Census expenditure function/category rows within this detail group; they are not vendor or agency transactions.",
+  "itemBreakdowns": [
+    {
+      "parent": [
+        "Utility expenditure · Census function",
+        "Direct Expenditure - Utility - Total Public Mass Transit Systems",
+        2415735000
+      ],
+      "accountCount": 3,
+      "rows": [
+        [
+          "SF0425",
+          "Expenditure - Direct Expenditure - Utility - Public Mass Transit Systems - Current Operations",
+          1892665000
+        ],
+        [
+          "SF0426",
+          "Expenditure - Direct Expenditure - Utility - Public Mass Transit Systems - Capital Outlay",
+          523070000
+        ],
+        [
+          "SF0430",
+          "Expenditure - Direct Expenditure - Utility - Public Mass Transit Systems - Interest",
+          0
+        ]
+      ],
+      "sourceUrl": "https://www2.census.gov/programs-surveys/state/data/GS00STATEFIN01.zip",
+      "sourceLabel": "official Census data download",
+      "rowPrefix": "Census",
+      "basis": "Exact FY2024 Census published components that reconcile to this utility function total."
+    }
+  ]
 }

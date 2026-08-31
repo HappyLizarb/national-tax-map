@@ -15,29 +15,348 @@
   ],
   "hierarchyNote": "Rows are the official FY2024 departments within this executive cabinet.",
   "rows": [
-    ["CHFS - Office Of The Secretary","Health & Family Services Cabinet · CHFS - Office Of The Secretary",99535939.61,99535939.61,123],
-    ["Office Of Inspector General","Health & Family Services Cabinet · Office Of Inspector General",53260495.16,53260495.16,86],
-    ["CHFS - Department for Aging and Independent Living","Health & Family Services Cabinet · CHFS - Department for Aging and Independent Living",119669389.19,119669389.19,85],
-    ["Department for Income Support","Health & Family Services Cabinet · Department for Income Support",133197489.69,133197489.69,100],
-    ["Department For Public Health","Health & Family Services Cabinet · Department For Public Health",543675350.43,543675350.43,143],
-    ["Behavioral Health, Developmental & Intellectual Disabilities","Health & Family Services Cabinet · Behavioral Health, Developmental & Intellectual Disabilities",533777445.66,533777445.66,152],
-    ["Department for Family Resource Centers & Volunteer Services","Health & Family Services Cabinet · Department for Family Resource Centers & Volunteer Services",88532130.28,88532130.28,59],
-    ["Department For Community Based Services","Health & Family Services Cabinet · Department For Community Based Services",1958510985.6,1958510985.6,154],
-    ["Department For Medicaid Services","Health & Family Services Cabinet · Department For Medicaid Services",279525524.62,279525524.62,92],
-    ["Medicaid Services Benefits","Health & Family Services Cabinet · Medicaid Services Benefits",18197104828.94,18197104828.94,6],
-    ["Office for Children With Special Health Care Needs","Health & Family Services Cabinet · Office for Children With Special Health Care Needs",21824266.82,21824266.82,101]
-  ],
-  "itemBreakdowns": [{
-    "parent": ["Medicaid Services Benefits", "Health & Family Services Cabinet · Medicaid Services Benefits", 18197104828.94],
-    "accountCount": 4,
-    "rows": [
-      ["E463", "Medical Assistance Benefits - 1099 reportable", 4616456598.23],
-      ["E464", "Other Benefits", -740122562.45],
-      ["E466", "Other Benefits - 1099 reportable", 14320770793.16],
-      ["E461", "Aged, Blind & Disabled", 0]
+    [
+      "CHFS - Office Of The Secretary",
+      "Health & Family Services Cabinet \u00b7 CHFS - Office Of The Secretary",
+      99535939.61,
+      99535939.61,
+      123
     ],
-    "sourceUrl": "https://secure2.kentucky.gov/TransparencyWebApi/v1/SpendingAndVendorDetail?dataGroupingView=ObjectView&requestYear=2024&branchCode=EXEC&cabinetCode=53&departmentCode=748&classCode=460&objectCode=&vendorName=&beginDate=&endDate=&maxReturnRows=100&startingIndex=",
-    "sourceLabel": "Kentucky Transparency official object hierarchy",
-    "basis": "Exact FY2024 object rows within Medicaid Services Benefits that reconcile to the department total."
-  }]
+    [
+      "Office Of Inspector General",
+      "Health & Family Services Cabinet \u00b7 Office Of Inspector General",
+      53260495.16,
+      53260495.16,
+      86
+    ],
+    [
+      "CHFS - Department for Aging and Independent Living",
+      "Health & Family Services Cabinet \u00b7 CHFS - Department for Aging and Independent Living",
+      119669389.19,
+      119669389.19,
+      85
+    ],
+    [
+      "Department for Income Support",
+      "Health & Family Services Cabinet \u00b7 Department for Income Support",
+      133197489.69,
+      133197489.69,
+      100
+    ],
+    [
+      "Department For Public Health",
+      "Health & Family Services Cabinet \u00b7 Department For Public Health",
+      543675350.43,
+      543675350.43,
+      143
+    ],
+    [
+      "Behavioral Health, Developmental & Intellectual Disabilities",
+      "Health & Family Services Cabinet \u00b7 Behavioral Health, Developmental & Intellectual Disabilities",
+      533777445.66,
+      533777445.66,
+      152
+    ],
+    [
+      "Department for Family Resource Centers & Volunteer Services",
+      "Health & Family Services Cabinet \u00b7 Department for Family Resource Centers & Volunteer Services",
+      88532130.28,
+      88532130.28,
+      59
+    ],
+    [
+      "Department For Community Based Services",
+      "Health & Family Services Cabinet \u00b7 Department For Community Based Services",
+      1958510985.6,
+      1958510985.6,
+      154
+    ],
+    [
+      "Department For Medicaid Services",
+      "Health & Family Services Cabinet \u00b7 Department For Medicaid Services",
+      279525524.62,
+      279525524.62,
+      92
+    ],
+    [
+      "Medicaid Services Benefits",
+      "Health & Family Services Cabinet \u00b7 Medicaid Services Benefits",
+      18197104828.94,
+      18197104828.94,
+      6
+    ],
+    [
+      "Office for Children With Special Health Care Needs",
+      "Health & Family Services Cabinet \u00b7 Office for Children With Special Health Care Needs",
+      21824266.82,
+      21824266.82,
+      101
+    ]
+  ],
+  "itemBreakdowns": [
+    {
+      "parent": [
+        "Medicaid Services Benefits",
+        "Health & Family Services Cabinet \u00b7 Medicaid Services Benefits",
+        18197104828.94
+      ],
+      "accountCount": 4,
+      "rows": [
+        [
+          "E463",
+          "Medical Assistance Benefits - 1099 reportable",
+          4616456598.23
+        ],
+        [
+          "E464",
+          "Other Benefits",
+          -740122562.45
+        ],
+        [
+          "E466",
+          "Other Benefits - 1099 reportable",
+          14320770793.16
+        ],
+        [
+          "E461",
+          "Aged, Blind & Disabled",
+          0
+        ]
+      ],
+      "sourceUrl": "https://secure2.kentucky.gov/TransparencyWebApi/v1/SpendingAndVendorDetail?dataGroupingView=ObjectView&requestYear=2024&branchCode=EXEC&cabinetCode=53&departmentCode=748&classCode=460&objectCode=&vendorName=&beginDate=&endDate=&maxReturnRows=100&startingIndex=",
+      "sourceLabel": "Kentucky Transparency official object hierarchy",
+      "basis": "Exact FY2024 object rows within Medicaid Services Benefits that reconcile to the department total."
+    },
+    {
+      "parent": [
+        "Department For Community Based Services",
+        "Health & Family Services Cabinet \u00b7 Department For Community Based Services",
+        1958510985.6
+      ],
+      "accountCount": 36,
+      "rowPrefix": "Kentucky",
+      "title": "Kentucky FY2024 spending by class, object, and published drill-down",
+      "basis": "Exact additive official API groups recurse until below $1B or the public drill-down ends.",
+      "sourceUrl": "https://secure2.kentucky.gov/TransparencyWebApi/v1/SpendingAndVendorDetail?dataGroupingView=DepartmentsView&requestYear=2024&branchCode=EXEC&cabinetCode=53&departmentCode=&classCode=&objectCode=&vendorName=&beginDate=&endDate=&maxReturnRows=1&startingIndex=0",
+      "sourceTotal": 1958510985.6,
+      "rows": [
+        [
+          "Department For Community Based Services \u00b7 Care And Support",
+          "Official Kentucky ClassView \u00b7 7 source items",
+          870347462.09,
+          "https://secure2.kentucky.gov/TransparencyWebApi/v1/SpendingAndVendorDetail?dataGroupingView=ObjectView&requestYear=2024&branchCode=EXEC&cabinetCode=53&departmentCode=736&classCode=450&objectCode=&vendorName=&beginDate=&endDate=&maxReturnRows=1&startingIndex=0"
+        ],
+        [
+          "Department For Community Based Services \u00b7 Salaries And Wages",
+          "Official Kentucky ClassView \u00b7 8 source items",
+          277837293.05,
+          "https://secure2.kentucky.gov/TransparencyWebApi/v1/SpendingAndVendorDetail?dataGroupingView=ObjectView&requestYear=2024&branchCode=EXEC&cabinetCode=53&departmentCode=736&classCode=110&objectCode=&vendorName=&beginDate=&endDate=&maxReturnRows=1&startingIndex=0"
+        ],
+        [
+          "Department For Community Based Services \u00b7 Fringe Benefits",
+          "Official Kentucky ClassView \u00b7 6 source items",
+          246712739.55,
+          "https://secure2.kentucky.gov/TransparencyWebApi/v1/SpendingAndVendorDetail?dataGroupingView=ObjectView&requestYear=2024&branchCode=EXEC&cabinetCode=53&departmentCode=736&classCode=120&objectCode=&vendorName=&beginDate=&endDate=&maxReturnRows=1&startingIndex=0"
+        ],
+        [
+          "Department For Community Based Services \u00b7 Grants",
+          "Official Kentucky ClassView \u00b7 4 source items",
+          211983031.11,
+          "https://secure2.kentucky.gov/TransparencyWebApi/v1/SpendingAndVendorDetail?dataGroupingView=ObjectView&requestYear=2024&branchCode=EXEC&cabinetCode=53&departmentCode=736&classCode=410&objectCode=&vendorName=&beginDate=&endDate=&maxReturnRows=1&startingIndex=0"
+        ],
+        [
+          "Department For Community Based Services \u00b7 Subsidies",
+          "Official Kentucky ClassView \u00b7 6 source items",
+          143091824.36,
+          "https://secure2.kentucky.gov/TransparencyWebApi/v1/SpendingAndVendorDetail?dataGroupingView=ObjectView&requestYear=2024&branchCode=EXEC&cabinetCode=53&departmentCode=736&classCode=460&objectCode=&vendorName=&beginDate=&endDate=&maxReturnRows=1&startingIndex=0"
+        ],
+        [
+          "Department For Community Based Services \u00b7 Pro Contract (Inc Per Serv)",
+          "Official Kentucky ClassView \u00b7 7 source items",
+          118332975.89,
+          "https://secure2.kentucky.gov/TransparencyWebApi/v1/SpendingAndVendorDetail?dataGroupingView=ObjectView&requestYear=2024&branchCode=EXEC&cabinetCode=53&departmentCode=736&classCode=140&objectCode=&vendorName=&beginDate=&endDate=&maxReturnRows=1&startingIndex=0"
+        ],
+        [
+          "Department For Community Based Services \u00b7 Rentals",
+          "Official Kentucky ClassView \u00b7 5 source items",
+          19922691.05,
+          "https://secure2.kentucky.gov/TransparencyWebApi/v1/SpendingAndVendorDetail?dataGroupingView=ObjectView&requestYear=2024&branchCode=EXEC&cabinetCode=53&departmentCode=736&classCode=220&objectCode=&vendorName=&beginDate=&endDate=&maxReturnRows=1&startingIndex=0"
+        ],
+        [
+          "Department For Community Based Services \u00b7 Non Pro Contract",
+          "Official Kentucky ClassView \u00b7 11 source items",
+          16582532.96,
+          "https://secure2.kentucky.gov/TransparencyWebApi/v1/SpendingAndVendorDetail?dataGroupingView=ObjectView&requestYear=2024&branchCode=EXEC&cabinetCode=53&departmentCode=736&classCode=150&objectCode=&vendorName=&beginDate=&endDate=&maxReturnRows=1&startingIndex=0"
+        ],
+        [
+          "Department For Community Based Services \u00b7 Internal Computer Services",
+          "Official Kentucky ClassView \u00b7 2 source items",
+          13477639.18,
+          "https://secure2.kentucky.gov/TransparencyWebApi/v1/SpendingAndVendorDetail?dataGroupingView=ObjectView&requestYear=2024&branchCode=EXEC&cabinetCode=53&departmentCode=736&classCode=270&objectCode=&vendorName=&beginDate=&endDate=&maxReturnRows=1&startingIndex=0"
+        ],
+        [
+          "Department For Community Based Services \u00b7 Postage And Related Services",
+          "Official Kentucky ClassView \u00b7 4 source items",
+          10118497.76,
+          "https://secure2.kentucky.gov/TransparencyWebApi/v1/SpendingAndVendorDetail?dataGroupingView=ObjectView&requestYear=2024&branchCode=EXEC&cabinetCode=53&departmentCode=736&classCode=240&objectCode=&vendorName=&beginDate=&endDate=&maxReturnRows=1&startingIndex=0"
+        ],
+        [
+          "Department For Community Based Services \u00b7 Misc Commodities & Other Exp",
+          "Official Kentucky ClassView \u00b7 9 source items",
+          9825792.51,
+          "https://secure2.kentucky.gov/TransparencyWebApi/v1/SpendingAndVendorDetail?dataGroupingView=ObjectView&requestYear=2024&branchCode=EXEC&cabinetCode=53&departmentCode=736&classCode=370&objectCode=&vendorName=&beginDate=&endDate=&maxReturnRows=1&startingIndex=0"
+        ],
+        [
+          "Department For Community Based Services \u00b7 Travel Exp & Exp Allowances",
+          "Official Kentucky ClassView \u00b7 3 source items",
+          4798897.18,
+          "https://secure2.kentucky.gov/TransparencyWebApi/v1/SpendingAndVendorDetail?dataGroupingView=ObjectView&requestYear=2024&branchCode=EXEC&cabinetCode=53&departmentCode=736&classCode=360&objectCode=&vendorName=&beginDate=&endDate=&maxReturnRows=1&startingIndex=0"
+        ],
+        [
+          "Department For Community Based Services \u00b7 Telecommunications",
+          "Official Kentucky ClassView \u00b7 4 source items",
+          4119985.15,
+          "https://secure2.kentucky.gov/TransparencyWebApi/v1/SpendingAndVendorDetail?dataGroupingView=ObjectView&requestYear=2024&branchCode=EXEC&cabinetCode=53&departmentCode=736&classCode=260&objectCode=&vendorName=&beginDate=&endDate=&maxReturnRows=1&startingIndex=0"
+        ],
+        [
+          "Department For Community Based Services \u00b7 Commodities",
+          "Official Kentucky ClassView \u00b7 16 source items",
+          3687270.79,
+          "https://secure2.kentucky.gov/TransparencyWebApi/v1/SpendingAndVendorDetail?dataGroupingView=ObjectView&requestYear=2024&branchCode=EXEC&cabinetCode=53&departmentCode=736&classCode=340&objectCode=&vendorName=&beginDate=&endDate=&maxReturnRows=1&startingIndex=0"
+        ],
+        [
+          "Department For Community Based Services \u00b7 Miscellaneous Services",
+          "Official Kentucky ClassView \u00b7 8 source items",
+          1882237.94,
+          "https://secure2.kentucky.gov/TransparencyWebApi/v1/SpendingAndVendorDetail?dataGroupingView=ObjectView&requestYear=2024&branchCode=EXEC&cabinetCode=53&departmentCode=736&classCode=250&objectCode=&vendorName=&beginDate=&endDate=&maxReturnRows=1&startingIndex=0"
+        ],
+        [
+          "Department For Community Based Services \u00b7 Utilities And Heating Fuels",
+          "Official Kentucky ClassView \u00b7 7 source items",
+          1779638.24,
+          "https://secure2.kentucky.gov/TransparencyWebApi/v1/SpendingAndVendorDetail?dataGroupingView=ObjectView&requestYear=2024&branchCode=EXEC&cabinetCode=53&departmentCode=736&classCode=210&objectCode=&vendorName=&beginDate=&endDate=&maxReturnRows=1&startingIndex=0"
+        ],
+        [
+          "Department For Community Based Services \u00b7 Other Personnel Costs",
+          "Official Kentucky ClassView \u00b7 6 source items",
+          1616084.61,
+          "https://secure2.kentucky.gov/TransparencyWebApi/v1/SpendingAndVendorDetail?dataGroupingView=ObjectView&requestYear=2024&branchCode=EXEC&cabinetCode=53&departmentCode=736&classCode=130&objectCode=&vendorName=&beginDate=&endDate=&maxReturnRows=1&startingIndex=0"
+        ],
+        [
+          "Department For Community Based Services \u00b7 Supplies",
+          "Official Kentucky ClassView \u00b7 12 source items",
+          1506511.87,
+          "https://secure2.kentucky.gov/TransparencyWebApi/v1/SpendingAndVendorDetail?dataGroupingView=ObjectView&requestYear=2024&branchCode=EXEC&cabinetCode=53&departmentCode=736&classCode=320&objectCode=&vendorName=&beginDate=&endDate=&maxReturnRows=1&startingIndex=0"
+        ],
+        [
+          "Department For Community Based Services \u00b7 Fin Assist/Non-State Emp",
+          "Official Kentucky ClassView \u00b7 2 source items",
+          621073.0,
+          "https://secure2.kentucky.gov/TransparencyWebApi/v1/SpendingAndVendorDetail?dataGroupingView=ObjectView&requestYear=2024&branchCode=EXEC&cabinetCode=53&departmentCode=736&classCode=440&objectCode=&vendorName=&beginDate=&endDate=&maxReturnRows=1&startingIndex=0"
+        ],
+        [
+          "Department For Community Based Services \u00b7 Maintenance And Repairs",
+          "Official Kentucky ClassView \u00b7 8 source items",
+          354669.17,
+          "https://secure2.kentucky.gov/TransparencyWebApi/v1/SpendingAndVendorDetail?dataGroupingView=ObjectView&requestYear=2024&branchCode=EXEC&cabinetCode=53&departmentCode=736&classCode=230&objectCode=&vendorName=&beginDate=&endDate=&maxReturnRows=1&startingIndex=0"
+        ],
+        [
+          "Department For Community Based Services \u00b7 Items For Resale",
+          "Official Kentucky ClassView \u00b7 3 source items",
+          25.0,
+          "https://secure2.kentucky.gov/TransparencyWebApi/v1/SpendingAndVendorDetail?dataGroupingView=ObjectView&requestYear=2024&branchCode=EXEC&cabinetCode=53&departmentCode=736&classCode=310&objectCode=&vendorName=&beginDate=&endDate=&maxReturnRows=1&startingIndex=0"
+        ],
+        [
+          "Department For Community Based Services \u00b7 Buildings/Fixed Equipment",
+          "Official Kentucky ClassView \u00b7 1 source items",
+          0.0,
+          "https://secure2.kentucky.gov/TransparencyWebApi/v1/SpendingAndVendorDetail?dataGroupingView=ObjectView&requestYear=2024&branchCode=EXEC&cabinetCode=53&departmentCode=736&classCode=606&objectCode=&vendorName=&beginDate=&endDate=&maxReturnRows=1&startingIndex=0"
+        ],
+        [
+          "Department For Community Based Services \u00b7 Computer Equipment",
+          "Official Kentucky ClassView \u00b7 1 source items",
+          0.0,
+          "https://secure2.kentucky.gov/TransparencyWebApi/v1/SpendingAndVendorDetail?dataGroupingView=ObjectView&requestYear=2024&branchCode=EXEC&cabinetCode=53&departmentCode=736&classCode=620&objectCode=&vendorName=&beginDate=&endDate=&maxReturnRows=1&startingIndex=0"
+        ],
+        [
+          "Department For Community Based Services \u00b7 Depreciation",
+          "Official Kentucky ClassView \u00b7 1 source items",
+          0.0,
+          "https://secure2.kentucky.gov/TransparencyWebApi/v1/SpendingAndVendorDetail?dataGroupingView=ObjectView&requestYear=2024&branchCode=EXEC&cabinetCode=53&departmentCode=736&classCode=509&objectCode=&vendorName=&beginDate=&endDate=&maxReturnRows=1&startingIndex=0"
+        ],
+        [
+          "Department For Community Based Services \u00b7 Furn/Fixt & Office Equip > 500",
+          "Official Kentucky ClassView \u00b7 1 source items",
+          0.0,
+          "https://secure2.kentucky.gov/TransparencyWebApi/v1/SpendingAndVendorDetail?dataGroupingView=ObjectView&requestYear=2024&branchCode=EXEC&cabinetCode=53&departmentCode=736&classCode=601&objectCode=&vendorName=&beginDate=&endDate=&maxReturnRows=1&startingIndex=0"
+        ],
+        [
+          "Department For Community Based Services \u00b7 Interest Paid On Debt",
+          "Official Kentucky ClassView \u00b7 1 source items",
+          0.0,
+          "https://secure2.kentucky.gov/TransparencyWebApi/v1/SpendingAndVendorDetail?dataGroupingView=ObjectView&requestYear=2024&branchCode=EXEC&cabinetCode=53&departmentCode=736&classCode=480&objectCode=&vendorName=&beginDate=&endDate=&maxReturnRows=1&startingIndex=0"
+        ],
+        [
+          "Department For Community Based Services \u00b7 Lease Purchase (Fur/Fix/Equip)",
+          "Official Kentucky ClassView \u00b7 1 source items",
+          0.0,
+          "https://secure2.kentucky.gov/TransparencyWebApi/v1/SpendingAndVendorDetail?dataGroupingView=ObjectView&requestYear=2024&branchCode=EXEC&cabinetCode=53&departmentCode=736&classCode=611&objectCode=&vendorName=&beginDate=&endDate=&maxReturnRows=1&startingIndex=0"
+        ],
+        [
+          "Department For Community Based Services \u00b7 Non-Expense Items",
+          "Official Kentucky ClassView \u00b7 1 source items",
+          0.0,
+          "https://secure2.kentucky.gov/TransparencyWebApi/v1/SpendingAndVendorDetail?dataGroupingView=ObjectView&requestYear=2024&branchCode=EXEC&cabinetCode=53&departmentCode=736&classCode=506&objectCode=&vendorName=&beginDate=&endDate=&maxReturnRows=1&startingIndex=0"
+        ],
+        [
+          "Department For Community Based Services \u00b7 Oper Exp Reimb Rest To Cfc/Chs",
+          "Official Kentucky ClassView \u00b7 1 source items",
+          0.0,
+          "https://secure2.kentucky.gov/TransparencyWebApi/v1/SpendingAndVendorDetail?dataGroupingView=ObjectView&requestYear=2024&branchCode=EXEC&cabinetCode=53&departmentCode=736&classCode=505&objectCode=&vendorName=&beginDate=&endDate=&maxReturnRows=1&startingIndex=0"
+        ],
+        [
+          "Department For Community Based Services \u00b7 Other Capital Outlay",
+          "Official Kentucky ClassView \u00b7 1 source items",
+          0.0,
+          "https://secure2.kentucky.gov/TransparencyWebApi/v1/SpendingAndVendorDetail?dataGroupingView=ObjectView&requestYear=2024&branchCode=EXEC&cabinetCode=53&departmentCode=736&classCode=609&objectCode=&vendorName=&beginDate=&endDate=&maxReturnRows=1&startingIndex=0"
+        ],
+        [
+          "Department For Community Based Services \u00b7 Principal Repayment",
+          "Official Kentucky ClassView \u00b7 1 source items",
+          0.0,
+          "https://secure2.kentucky.gov/TransparencyWebApi/v1/SpendingAndVendorDetail?dataGroupingView=ObjectView&requestYear=2024&branchCode=EXEC&cabinetCode=53&departmentCode=736&classCode=485&objectCode=&vendorName=&beginDate=&endDate=&maxReturnRows=1&startingIndex=0"
+        ],
+        [
+          "Department For Community Based Services \u00b7 Indirect Grant Expense",
+          "Official Kentucky ClassView \u00b7 1 source items",
+          -0.54,
+          "https://secure2.kentucky.gov/TransparencyWebApi/v1/SpendingAndVendorDetail?dataGroupingView=ObjectView&requestYear=2024&branchCode=EXEC&cabinetCode=53&departmentCode=736&classCode=498&objectCode=&vendorName=&beginDate=&endDate=&maxReturnRows=1&startingIndex=0"
+        ],
+        [
+          "Department For Community Based Services \u00b7 Indirect Personnel Costs",
+          "Official Kentucky ClassView \u00b7 1 source items",
+          -40.75,
+          "https://secure2.kentucky.gov/TransparencyWebApi/v1/SpendingAndVendorDetail?dataGroupingView=ObjectView&requestYear=2024&branchCode=EXEC&cabinetCode=53&departmentCode=736&classCode=169&objectCode=&vendorName=&beginDate=&endDate=&maxReturnRows=1&startingIndex=0"
+        ],
+        [
+          "Department For Community Based Services \u00b7 Indirect Operating Expense",
+          "Official Kentucky ClassView \u00b7 2 source items",
+          -1095.16,
+          "https://secure2.kentucky.gov/TransparencyWebApi/v1/SpendingAndVendorDetail?dataGroupingView=ObjectView&requestYear=2024&branchCode=EXEC&cabinetCode=53&departmentCode=736&classCode=508&objectCode=&vendorName=&beginDate=&endDate=&maxReturnRows=1&startingIndex=0"
+        ],
+        [
+          "Department For Community Based Services \u00b7 Other",
+          "Official Kentucky ClassView \u00b7 1 source items",
+          -38317.57,
+          "https://secure2.kentucky.gov/TransparencyWebApi/v1/SpendingAndVendorDetail?dataGroupingView=ObjectView&requestYear=2024&branchCode=EXEC&cabinetCode=53&departmentCode=736&classCode=160&objectCode=&vendorName=&beginDate=&endDate=&maxReturnRows=1&startingIndex=0"
+        ],
+        [
+          "Department For Community Based Services \u00b7 Claims",
+          "Official Kentucky ClassView \u00b7 1 source items",
+          -48432.84,
+          "https://secure2.kentucky.gov/TransparencyWebApi/v1/SpendingAndVendorDetail?dataGroupingView=ObjectView&requestYear=2024&branchCode=EXEC&cabinetCode=53&departmentCode=736&classCode=401&objectCode=&vendorName=&beginDate=&endDate=&maxReturnRows=1&startingIndex=0"
+        ]
+      ]
+    }
+  ]
 }

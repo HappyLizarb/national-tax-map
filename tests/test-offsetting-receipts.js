@@ -28,7 +28,8 @@ assert.equal((html.match(/class="receipt-group"/g) || []).length, 3);
 assert.equal((html.match(/class="agency-row receipt-account"/g) || []).length, 107);
 assert.doesNotMatch(html, /<strong>Other Interest<\/strong><small>1 accounts/);
 assert.equal((html.match(/MTS rounded-control bridge/g) || []).length, 1);
-assert.match(html, /107 source-native receipt accounts · 8 audited ≥\$10B accounts/);
+assert.match(html, /107 source-native receipt accounts · 18 ≥\$1B disclosure ceilings/);
+assert.equal((html.match(/current imported-detail ceiling/g) || []).length, 18);
 assert.match(html, /TAS 097-X-5472-001 · Internal employer contribution · No public additive children/);
 
 const unsafe = structuredClone(detail);

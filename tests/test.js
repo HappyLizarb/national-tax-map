@@ -14,6 +14,13 @@ const taxRates = require("../data/tax/tax-rates.js");
 const incomeTiers = require("../data/tax/income-tiers.js");
 const estimates = require("../data/tax/household-tax-estimates.js");
 const consumerCosts = require("../data/tax/consumer-costs.js");
+assert.deepEqual(model.publicationCeiling(["A", "Below", 999999999]), ["A", "Below", 999999999]);
+assert.deepEqual(model.publicationCeiling(["A", "At limit", 1e9], "current imported-detail ceiling"),
+  ["A", "At limit · current imported-detail ceiling", 1e9]);
+assert.equal(model.displayAccountDescription({}, ["A", "Terminal", 1e9]),
+  "Terminal · current imported-detail ceiling");
+assert.equal(model.displayAccountDescription({ itemBreakdowns: [{ parent: ["A", "Exact", 2e9],
+  rows: [["A1", "Child", 1e9], ["A2", "Child", 1e9]] }] }, ["A", "Exact", 2e9]), "Exact");
 // Load the sole authoritative archived summary for a state.
 function archiveFor(name) {
   const summary = require("../" + departmentIndex[name]);

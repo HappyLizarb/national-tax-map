@@ -28,13 +28,18 @@ assert.equal(estimates.methodSource[1], "data/tax/household-tax-estimates.js");
 const generatedViews = ["agriculture", "health-and-human-services", "defense-military-programs", "education",
   "homeland-security", "housing-and-urban-development", "justice", "labor", "state", "veterans-affairs"]
   .flatMap((name) => require(`../data/federal/federal-mts-agency-department-of-${name}.json`).sourceBreakdowns || []);
-assert.equal(generatedViews.filter((view) => !view.combinedStatementAvailability).length, 137);
+assert.equal(generatedViews.filter((view) => !view.combinedStatementAvailability).length, 131);
 assert.equal(generatedViews.filter((view) => view.combinedStatementAvailability).length, 173);
 const gdxViews = generatedViews.filter((view) =>
   /VA FY2024 (?:Compensation and Pension|Medical Care|Education and Veteran Readiness)/.test(view.title));
-assert.equal(gdxViews.length, 9);
-assert.equal(gdxViews.reduce((sum, view) => sum + view.rows.length, 0), 1673);
-assert.equal(gdxViews.flatMap((view) => view.rows).filter((row) => Math.abs(row[2]) >= 1e10).length, 0);
+assert.equal(gdxViews.length, 3);
+assert.equal(gdxViews.reduce((sum, view) => sum + view.rows.length, 0), 935);
+const largeGdxRows = gdxViews.flatMap((view) => view.rows).filter((row) => Math.abs(row[2]) >= 1e9);
+assert.equal(largeGdxRows.length, 12);
+const districtGdxRows = gdxViews.filter((view) => /congressional district/.test(view.title))
+  .flatMap((view) => view.rows).filter((row) => Math.abs(row[2]) >= 1e9);
+assert.equal(districtGdxRows.length, 9);
+assert.ok(districtGdxRows.every((row) => /ceiling/i.test(row[1])));
 const transportationViews = require("../data/federal/federal-mts-agency-department-of-transportation.json").sourceBreakdowns;
 assert.equal(transportationViews.filter((view) => !view.combinedStatementAvailability).length, 6);
 assert.equal(transportationViews.filter((view) => view.combinedStatementAvailability).length, 8);

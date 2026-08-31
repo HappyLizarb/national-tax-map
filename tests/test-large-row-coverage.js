@@ -5,7 +5,7 @@ const jurisdictions = require("../data/jurisdictions.js");
 const index = Object.fromEntries(Object.entries(jurisdictions.states)
   .map(([name, row]) => [name, row.summaryPath]));
 const model = require("../src/model.js");
-const threshold = 5_000_000_000;
+const threshold = 1_000_000_000;
 const cents = (value) => Math.round(value * 100);
 const key = (row) => JSON.stringify(row.slice(0, 3));
 const sections = ["itemBreakdowns", "supplementalBreakdowns", "sourceBreakdowns"];
@@ -95,7 +95,15 @@ for (const file of [
   }
 }
 
-assert.deepEqual(counts, { large: 483, breakdowns: 173, ceilings: 310 });
+assert.deepEqual(counts, { large: 1691, breakdowns: 718, ceilings: 973 });
+
+const exactLedgerPanels = ["ct", "de", "ma", "vt"].flatMap((state) =>
+  fs.readdirSync(`data/state-${state}/archive-state-source`).filter((file) => file.endsWith(".json"))
+    .flatMap((file) => readJson(`data/state-${state}/archive-state-source/${file}`).itemBreakdowns || [])
+    .filter((panel) => panel.basis.startsWith("Exact additive official")));
+assert.deepEqual([exactLedgerPanels.length, exactLedgerPanels.flatMap((panel) => panel.rows).length], [12, 3570]);
+assert.ok(exactLedgerPanels.every((panel) => panel.rows.reduce((sum, row) => sum + cents(row[2]), 0) === cents(panel.sourceTotal)
+  && panel.rows.every((row) => Math.abs(row[2]) < threshold)));
 
 const healthFunctions = /Total (Health|Hospitals|Public Welfare|Federal and State Veterans' Services)$/;
 const healthCoverage = { states: 0, parents: 0, children: 0, functionTotal: 0, cmsPanels: 0, cmsRows: 0 };
@@ -154,4 +162,4 @@ for (const [name, [publishedRows, publishedTotal, treasuryTotal, subfunctions]] 
   assert.deepEqual([...new Set(panel.rows.map((row) => row[0].match(/^\d{3}/)?.[0]).filter(Boolean))].sort(),
     subfunctions, name);
 }
-console.log("All browser-visible $5 billion rows are exact breakdowns or labeled source ceilings.");
+console.log("All browser-visible $1 billion state rows are exact breakdowns or labeled source ceilings.");

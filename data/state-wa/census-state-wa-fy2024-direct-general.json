@@ -344,7 +344,7 @@
       "rows": [
         [
           "SF0358",
-          "Expenditure - Direct Expenditure - General Expenditure - Public Welfare - Other - Current Operations · Census annual disclosure ceiling",
+          "Expenditure - Direct Expenditure - General Expenditure - Public Welfare - Other - Current Operations",
           19504812000
         ],
         [
@@ -391,6 +391,102 @@
       "sourceLabel": "official Census data download",
       "rowPrefix": "Census",
       "basis": "Exact FY2024 Census current-operations and capital components that reconcile to this healthcare or veterans function total."
+    },
+    {
+      "parent": [
+        "Direct general expenditure · Census function",
+        "Direct Expenditure - General Expenditure - Public degree-granting higher education excluding auxiliary enterprises (Census code 18)",
+        7949414000
+      ],
+      "accountCount": 2,
+      "rows": [
+        [
+          "SF0217",
+          "Direct Expenditure - General Expenditure - Public degree-granting higher education excluding auxiliary enterprises (Census code 18) - Current Operations",
+          7388651000
+        ],
+        [
+          "SF0218",
+          "Direct Expenditure - General Expenditure - Public degree-granting higher education excluding auxiliary enterprises (Census code 18) - Capital Outlay",
+          560763000
+        ]
+      ],
+      "sourceUrl": "https://www2.census.gov/programs-surveys/state/data/GS00STATEFIN01.zip",
+      "sourceLabel": "official Census data download",
+      "rowPrefix": "Census",
+      "basis": "Exact FY2024 Census current-operations and capital components; any child at or above $3 billion is the Census annual disclosure ceiling."
+    },
+    {
+      "parent": [
+        "Direct general expenditure · Census function",
+        "Direct Expenditure - General Expenditure - Total Regular Highways",
+        3122452000
+      ],
+      "accountCount": 2,
+      "rows": [
+        [
+          "SF0283",
+          "Direct Expenditure - General Expenditure - Regular Highways - Capital Outlay · Census annual disclosure ceiling",
+          2116681000
+        ],
+        [
+          "SF0282",
+          "Direct Expenditure - General Expenditure - Regular Highways - Current Operations · Census annual disclosure ceiling",
+          1005771000
+        ]
+      ],
+      "sourceUrl": "https://www2.census.gov/programs-surveys/state/data/GS00STATEFIN01.zip",
+      "sourceLabel": "official Census data download",
+      "rowPrefix": "Census",
+      "basis": "Exact FY2024 Census current-operations and capital components; any child at or above $3 billion is the Census annual disclosure ceiling."
+    },
+    {
+      "parent": [
+        "Direct general expenditure · Census function",
+        "Direct Expenditure - General Expenditure - Total Correctional Institutions",
+        1290982000
+      ],
+      "accountCount": 2,
+      "rows": [
+        [
+          "SF0193",
+          "Expenditure - Direct Expenditure - General Expenditure - Correctional Institutions - Current Operations",
+          1230545000
+        ],
+        [
+          "SF0194",
+          "Expenditure - Direct Expenditure - General Expenditure - Correctional Institutions - Capital Outlay",
+          60437000
+        ]
+      ],
+      "sourceUrl": "https://www2.census.gov/programs-surveys/state/data/GS00STATEFIN01.zip",
+      "sourceLabel": "official Census data download",
+      "rowPrefix": "Census",
+      "basis": "Exact FY2024 Census published components that reconcile to this general function total."
+    },
+    {
+      "parent": [
+        "Direct general expenditure · Census function",
+        "Direct Expenditure - General Expenditure - Total Other and Unallocable",
+        2165216000
+      ],
+      "accountCount": 2,
+      "rows": [
+        [
+          "SF0395",
+          "Expenditure - Direct Expenditure - General Expenditure - Other and Unallocable - Current Operations",
+          2126348000
+        ],
+        [
+          "SF0396",
+          "Expenditure - Direct Expenditure - General Expenditure - Other and Unallocable - Capital Outlay",
+          38868000
+        ]
+      ],
+      "sourceUrl": "https://www2.census.gov/programs-surveys/state/data/GS00STATEFIN01.zip",
+      "sourceLabel": "official Census data download",
+      "rowPrefix": "Census",
+      "basis": "Exact FY2024 Census published components that reconcile to this general function total."
     }
   ],
   "supplementalBreakdowns": [
@@ -1875,7 +1971,7 @@
         19623964000
       ],
       "title": "Washington HCA FY2024 vendor payments · 80 rows",
-      "basis": "Washington's official FY2024 Open Checkbook contains 41,141 Health Care Authority payment rows totaling $13.83567042465B. Forty direct-provider payee strings receiving at least $20M, one exact group of 4,742 smaller payees, and 39 other object/subobject categories form 80 mutually exclusive rows; every displayed row is below $10B. This unaudited, disclosure-limited payment view is supplemental—not additive—to Census public welfare, OFM budgetary charges, or federal-fiscal-year CMS-64 reporting.",
+      "basis": "Washington's official FY2024 Open Checkbook contains 41,141 Health Care Authority payment rows totaling $13.83567042465B. Forty direct-provider payee strings receiving at least $20M, one exact group of 4,742 smaller payees, and 39 other object/subobject categories form 80 mutually exclusive rows; any displayed row at or above $3B is labeled as a source disclosure ceiling. This unaudited, disclosure-limited payment view is supplemental—not additive—to Census public welfare, OFM budgetary charges, or federal-fiscal-year CMS-64 reporting.",
       "rows": [
         [
           "MOLINA HEALTHCARE OF WASHINGTON",
