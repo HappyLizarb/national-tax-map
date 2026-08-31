@@ -6,37 +6,36 @@
   "ledgerAmount": 2505475390.41,
   "sourceTotal": 2564309497.59,
   "sourceUrl": "https://www.datapoint.apa.virginia.gov/dashboard.php?Page=Expenditures",
-  "rowSchema": [
-    "subAgency",
-    "program",
-    "amount",
-    "sourceAmount",
-    "sourceRows"
-  ],
+  "rowSchema": ["subAgency", "program", "amount", "sourceAmount", "sourceRows"],
   "rows": [
-    [
-      "Admin of Health Insurance",
-      "Admin of Health Insurance \u00b7 Personnel Management Services \u00b7 CONTINUOUS CHARGES \u00b7 official grouped-program publication ceiling",
-      1982428290.06,
-      1982428290.06,
-      2770
-    ],
-    [
-      "Admin of Health Insurance",
-      "Admin of Health Insurance \u00b7 Personnel Management Services \u00b7 TRANSFER PAYMENTS",
-      581750320.41,
-      581750320.41,
-      860
-    ],
-    [
-      "Admin of Health Insurance",
-      "Admin of Health Insurance \u00b7 Personnel Management Services \u00b7 CONTRACTUAL SERVICES",
-      130887.12,
-      130887.12,
-      4
-    ]
+    ["Admin of Health Insurance", "Admin of Health Insurance · Personnel Management Services · CONTINUOUS CHARGES · official grouped-program publication ceiling", 1982428290.06, 1982428290.06, 2770],
+    ["Admin of Health Insurance", "Admin of Health Insurance · Personnel Management Services · TRANSFER PAYMENTS", 581750320.41, 581750320.41, 860],
+    ["Admin of Health Insurance", "Admin of Health Insurance · Personnel Management Services · CONTRACTUAL SERVICES", 130887.12, 130887.12, 4]
   ],
   "hierarchyNote": "The source does not identify a separate sub-agency column; direct-managed rows repeat the parent entity.",
   "sourceBasis": "official source amount",
-  "note": "Amounts are shown on the official source basis; no comparator normalization was applied."
+  "note": "Amounts are shown on the official source basis; no comparator normalization was applied.",
+  "itemBreakdowns": [
+    {
+      "parent": ["Admin of Health Insurance", "Admin of Health Insurance · Personnel Management Services · CONTINUOUS CHARGES · official grouped-program publication ceiling", 1982428290.06],
+      "accountCount": 12,
+      "rows": [
+        ["2023-07", "July 2023 · 193 transactions", 185145851.17, "https://www.datapoint.apa.virginia.gov/data/extracts/2024/All%20Expenditures%20for%20Fiscal%20Year%202024.zip"],
+        ["2023-08", "August 2023 · 64 transactions", 144814357.65, "https://www.datapoint.apa.virginia.gov/data/extracts/2024/All%20Expenditures%20for%20Fiscal%20Year%202024.zip"],
+        ["2023-09", "September 2023 · 543 transactions", 169489220.35, "https://www.datapoint.apa.virginia.gov/data/extracts/2024/All%20Expenditures%20for%20Fiscal%20Year%202024.zip"],
+        ["2023-10", "October 2023 · 72 transactions", 104911723.44, "https://www.datapoint.apa.virginia.gov/data/extracts/2024/All%20Expenditures%20for%20Fiscal%20Year%202024.zip"],
+        ["2023-11", "November 2023 · 55 transactions", 151088260.29, "https://www.datapoint.apa.virginia.gov/data/extracts/2024/All%20Expenditures%20for%20Fiscal%20Year%202024.zip"],
+        ["2023-12", "December 2023 · 257 transactions", 156344661.99, "https://www.datapoint.apa.virginia.gov/data/extracts/2024/All%20Expenditures%20for%20Fiscal%20Year%202024.zip"],
+        ["2024-01", "January 2024 · 328 transactions", 187263719.13, "https://www.datapoint.apa.virginia.gov/data/extracts/2024/All%20Expenditures%20for%20Fiscal%20Year%202024.zip"],
+        ["2024-02", "February 2024 · 62 transactions", 247710207.63, "https://www.datapoint.apa.virginia.gov/data/extracts/2024/All%20Expenditures%20for%20Fiscal%20Year%202024.zip"],
+        ["2024-03", "March 2024 · 532 transactions", 204637124.74, "https://www.datapoint.apa.virginia.gov/data/extracts/2024/All%20Expenditures%20for%20Fiscal%20Year%202024.zip"],
+        ["2024-04", "April 2024 · 76 transactions", 172969855.1, "https://www.datapoint.apa.virginia.gov/data/extracts/2024/All%20Expenditures%20for%20Fiscal%20Year%202024.zip"],
+        ["2024-05", "May 2024 · 49 transactions", 109854820.51, "https://www.datapoint.apa.virginia.gov/data/extracts/2024/All%20Expenditures%20for%20Fiscal%20Year%202024.zip"],
+        ["2024-06", "June 2024 · 539 transactions", 148198488.06, "https://www.datapoint.apa.virginia.gov/data/extracts/2024/All%20Expenditures%20for%20Fiscal%20Year%202024.zip"]
+      ],
+      "sourceUrl": "https://www.datapoint.apa.virginia.gov/data/extracts/2024/All%20Expenditures%20for%20Fiscal%20Year%202024.zip",
+      "sourceLabel": "Virginia Data Point FY2024 all-expenditures extract",
+      "basis": "All 2,770 official Personnel Management Services continuous charges transactions are grouped by transaction month. The month totals reconcile to the parent amount to the cent and are each below $1 billion."
+    }
+  ]
 }

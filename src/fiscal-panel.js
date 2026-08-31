@@ -194,8 +194,14 @@ async function loadReconciliationDetail(department, request) {
   setText("#sourceExplorerNote", "Loading source-native accounts for " + department.name + "…");
   try {
     const groups = await Promise.all(department.detailSources.map(async (source) => {
-      const detail = source.detailUrl ? await DepartmentData.loadDetail(source.detailUrl) : null;
-      return model.expandReconciliationSource(source, detail);
+      const [detail, research] = await Promise.all([
+        source.detailUrl ? DepartmentData.loadDetail(source.detailUrl) : null,
+        source.researchDetailUrl ? DepartmentData.loadDetail(source.researchDetailUrl) : null
+      ]);
+      return model.expandReconciliationSource(source, research ? { ...detail,
+        sourceBreakdowns: [...(detail.sourceBreakdowns || []), ...(research.sourceBreakdowns || [])],
+        supplementalBreakdowns: [...(detail.supplementalBreakdowns || []),
+          ...(research.supplementalBreakdowns || [])] } : detail);
     }));
     if (request !== state.detailRequest) return;
     const expanded = groups.reduce((all, group) => {
@@ -235,6 +241,7 @@ async function loadDepartmentDetail(department, request) {
   }
 }
 function renderDetail(detail) {
+  detail = model.withThresholdBreakdowns(detail);
   const limit = detail.showAll ? detail.rows.length : 500, rows = detail.rows.slice(0, limit);
   const hierarchy = renderReceiptHierarchy(detail, model.formatMoney, escapeHtml);
   const supplementalCount = (detail.supplementalRows || []).length;
@@ -251,7 +258,8 @@ function renderDetail(detail) {
     return '<div class="agency-row"><span><strong>' + escapeHtml(subAgency) + '</strong><small>' + escapeHtml(program) + '</small></span><b>' + detailAmount(row, detail.rowSchema) + '</b></div>' + itemBreakdown(detail, row, rendered) + supplementalBreakdown(detail, row, rendered) + nestedSourceBreakdowns(detail, row, rendered);
   }).join("");
   $("#agencyRows").innerHTML = detailSourceLinks(detail, rendered) + hierarchy + rowHtml
-    + (detail.supplementalRows || []).slice(0, limit).map((row) => '<a class="agency-row" href="' + escapeHtml(row[4]) + '" target="_blank" rel="noopener noreferrer"><span><strong>' + escapeHtml(row[0]) + '</strong><small>' + escapeHtml(model.displayAccountDescription(detail, row)) + ' · ' + escapeHtml(row[3]) + '</small></span><b>' + model.formatMoney(row[2]) + '</b></a>').join("");
+    + (detail.supplementalRows || []).slice(0, limit).map((row) => '<a class="agency-row" href="' + escapeHtml(row[4]) + '" target="_blank" rel="noopener noreferrer"><span><strong>' + escapeHtml(row[0]) + '</strong><small>' + escapeHtml(model.displayAccountDescription(detail, row)) + ' · ' + escapeHtml(row[3]) + '</small></span><b>' + model.formatMoney(row[2]) + '</b></a>'
+      + nestedSourceBreakdowns(detail, row, rendered)).join("");
 }
 function detailSourceLinks(detail, rendered) {
   const sources = [...(detail.sourceUrls || [["Official source", detail.sourceUrl]]), ...(detail.relatedSources || [])];

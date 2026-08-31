@@ -103716,4 +103716,28 @@
   "hierarchyNote": "The source does not identify a separate sub-agency column; direct-managed rows repeat the parent entity.",
   "sourceBasis": "official source amount",
   "note": "Amounts are shown on the official source basis; no comparator normalization was applied."
+,
+  "itemBreakdowns": [
+    {
+      "parent": ["Dept of Health & Environment", "Dept of Health & Environment \u00b7 DEPARTMENT ON AGING \u00b7 FED SUBGRANT TRANSFER OUT \u00b7 MEDICAL ASSISTANCE PRG \u00b7 official grouped-ledger publication ceiling", 1524878183.49],
+      "accountCount": 12,
+      "rows": [
+        ["2023-07", "KanView FY2024 vendor payments \u00b7 4 published transactions", 116437617.43],
+        ["2023-08", "KanView FY2024 vendor payments \u00b7 10 published transactions", 93719471.5],
+        ["2023-09", "KanView FY2024 vendor payments \u00b7 13 published transactions", 118467342.38],
+        ["2023-10", "KanView FY2024 vendor payments \u00b7 4 published transactions", 118639559.88],
+        ["2023-11", "KanView FY2024 vendor payments \u00b7 7 published transactions", 120754303.37],
+        ["2023-12", "KanView FY2024 vendor payments \u00b7 7 published transactions", 118215361.39],
+        ["2024-01", "KanView FY2024 vendor payments \u00b7 7 published transactions", 116130095.56],
+        ["2024-02", "KanView FY2024 vendor payments \u00b7 9 published transactions", 133998595.79],
+        ["2024-03", "KanView FY2024 vendor payments \u00b7 7 published transactions", 197903732.24],
+        ["2024-04", "KanView FY2024 vendor payments \u00b7 10 published transactions", 130912389.51],
+        ["2024-05", "KanView FY2024 vendor payments \u00b7 6 published transactions", 130667717.28],
+        ["2024-06", "KanView FY2024 vendor payments \u00b7 13 published transactions", 129031997.16]
+      ],
+      "sourceUrl": "https://kanview.ks.gov/DataDownload.aspx",
+      "sourceLabel": "KanView FY2024 Vendor Payments Data",
+      "basis": "Exact month groups of all 97 FY2024 KanView vendor-payment rows for the same agency, payee, account, and fund. Any group above $1 billion is retained as exact document-level transactions; every displayed row remains below $1 billion."
+    }
+  ]
 }

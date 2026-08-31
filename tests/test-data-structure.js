@@ -84,6 +84,7 @@ for (const [scope, summaryPath] of Object.entries(index)) {
       if (department.id === "census-direct-general") activeReferences.add(department.detailUrl
         .replace(/census-state-[a-z]{2}-fy2024-direct-general\.json$/, "ipeds-public-university-fy2024.json"));
     }
+    if (department.researchDetailUrl) activeReferences.add(department.researchDetailUrl);
     addLocalReferences(department.relatedSources, activeReferences);
     for (const value of [department.id, department.name, department.program]) {
       assert.ok(!ambiguous.test(String(value || "").trim()), `${scope} ambiguous summary label`);

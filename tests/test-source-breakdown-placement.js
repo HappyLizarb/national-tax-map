@@ -50,9 +50,22 @@ function placementCounts(detail) {
 }
 
 let panelCount = 0, renderedPanelCount = 0;
-
-for (const file of jsonFiles("data")) {
+const files = [...jsonFiles("data")];
+const researchBases = new Map();
+for (const file of files) {
   const detail = JSON.parse(fs.readFileSync(file, "utf8"));
+  for (const department of detail.departments || []) if (department.researchDetailUrl)
+    researchBases.set(path.normalize(department.researchDetailUrl), department.detailUrl);
+}
+
+for (const file of files) {
+  const research = JSON.parse(fs.readFileSync(file, "utf8"));
+  const baseUrl = researchBases.get(path.normalize(file));
+  const base = baseUrl ? JSON.parse(fs.readFileSync(baseUrl, "utf8")) : null;
+  const detail = base ? { ...base,
+    sourceBreakdowns: [...(base.sourceBreakdowns || []), ...(research.sourceBreakdowns || [])],
+    supplementalBreakdowns: [...(base.supplementalBreakdowns || []),
+      ...(research.supplementalBreakdowns || [])] } : research;
   const panels = ["itemBreakdowns", "supplementalBreakdowns", "sourceBreakdowns"]
     .flatMap((name) => detail[name] || []);
   const rows = new Set([
@@ -76,22 +89,25 @@ for (const file of jsonFiles("data")) {
 
 const app = fs.readFileSync("src/app.js", "utf8");
 const fiscalPanel = fs.readFileSync("src/fiscal-panel.js", "utf8");
-assert.equal(panelCount, 2097);
+assert.equal(panelCount, 2110);
 assert.equal(renderedPanelCount, panelCount);
 assert.match(app, /function sourceBreakdownParent/);
 assert.match(app, /return sameAccount\(sourceBreakdownParent\(item\), parent\)/);
 assert.match(app, /!rendered\.has\(item\)[\s\S]*rendered\.add\(item\)/);
+assert.match(app, /item\.thresholdSubdivision \|\| !rendered\.has\(item\)/);
 assert.match(fiscalPanel, /const rendered = new Set\(\), rowHtml[\s\S]*detailSourceLinks\(detail, rendered\)/);
 assert.doesNotMatch(fiscalPanel, /detailSourceLinks\(detail\) \+ sourceBreakdowns\(detail\)/);
 
 const expanded = model.expandReconciliationSource({ label: "Census", direction: -1 }, {
   rows: [["Parent", "Other account", 6e9, 6e9, 1], ["Parent", "Account", 6e9, 6e9, 1]],
   sourceBreakdowns: [{ title: "Children", displayParent: ["Parent", "Account", 6e9],
-    rows: [["Child", "Account", 6e9]] }]
+    rows: [["Child", "Account", 6e9, "https://example.gov/child"]] }]
 });
 assert.deepEqual(expanded.sourceBreakdowns[0].displayParent,
   ["Census › Parent", "Account · official publication ceiling", -6e9]);
 assert.deepEqual(expanded.sourceBreakdowns[0].displayParent.slice(0, 3), expanded.rows[1].slice(0, 3));
 assert.notDeepEqual(expanded.sourceBreakdowns[0].displayParent.slice(0, 3), expanded.rows[0].slice(0, 3));
+assert.deepEqual(expanded.sourceBreakdowns[0].rows[0].slice(0, 4),
+  ["Census › Child", "Account", -6e9, "https://example.gov/child"]);
 
-console.log("All source breakdowns render once beneath a corresponding parent row.");
+console.log("All source breakdowns render beneath a corresponding parent row.");

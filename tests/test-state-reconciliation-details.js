@@ -23,6 +23,8 @@ assert.deepEqual(californiaPanel.rows.map((row) => row[2]),
   californiaCensus.itemBreakdowns[0].rows.map((row) => -row[2]));
 assert.deepEqual(californiaPanel.rows.map((row) => row[3]),
   californiaCensus.itemBreakdowns[0].rows.map((row) => -(row[3] ?? row[2])));
+assert.ok(californiaPanel.rows.every((row) =>
+  row[0].startsWith("Census · Direct general expenditure › ")));
 
 const alaskaGaap = JSON.parse(fs.readFileSync(
   "data/state-ak/archive-state-source/state-ak-acfr-function-context.json", "utf8"));
@@ -32,7 +34,8 @@ const arizonaGaap = JSON.parse(fs.readFileSync(
   "data/state-az/archive-state-source/state-az-acfr-function-context.json", "utf8"));
 const arizonaSigned = model.expandReconciliationSource({ label: "GAAP", direction: 1 }, arizonaGaap);
 assert.ok(arizonaSigned.rows.filter((row) => Math.abs(row[2]) >= 5e9)
-  .every((row) => row[1].endsWith("official publication ceiling")));
+  .every((row) => arizonaSigned.sourceBreakdowns.some((panel) => panel.thresholdSubdivision
+    && panel.covers[0][0] === row[0] && cents(panel.covers[0][2]) === cents(row[2]))));
 
 const illinoisEducation = JSON.parse(fs.readFileSync(
   "data/state-il/archive-state-source/state-il-state-board-of-education.json", "utf8"));
@@ -75,12 +78,18 @@ for (const [scope, summaryPath] of Object.entries(index)) {
   const archive = JSON.parse(fs.readFileSync(archiveUrl, "utf8"));
   const reconciled = model.reconcileStateArchive(scope, archive, census);
   const [censusBridge, gaapBridge] = reconciled.departments.slice(-2);
+  const directGeneral = censusBridge.detailSources.find((source) =>
+    source.label === "Census · Direct general expenditure");
+  if (scope === "Michigan") assert.ok(censusBridge.detailSources.some((source) =>
+    source.researchDetailUrl === "data/state-mi/archive-state-source/state-mi-health-and-human-services-transaction-detail.json"));
 
   const censusRows = censusBridge.detailSources.flatMap((source) =>
     source.label.startsWith("Official archive · ") ? [source.fallbackRow] : expandedRows(source));
   const gaapRows = gaapBridge.detailSources.flatMap(expandedRows);
   assert.equal(censusBridge.detailSources.length, census.departments.length + archive.departments.length, scope);
   assert.equal(gaapBridge.detailSources.length, census.departments.length + 1, scope);
+  assert.equal(directGeneral.researchDetailUrl,
+    `data/state-${census.code}/ipeds-public-university-fy2024.json`, scope);
   assert.ok(censusRows.length >= censusBridge.detailSources.length, scope + " expands source accounts");
   assert.equal(censusRows.reduce((sum, row) => sum + cents(row[2]), 0), cents(censusBridge.amount), scope);
   assert.equal(gaapRows.reduce((sum, row) => sum + cents(row[2]), 0), cents(gaapBridge.amount), scope);

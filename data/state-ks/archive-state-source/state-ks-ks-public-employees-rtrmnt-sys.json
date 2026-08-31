@@ -1831,4 +1831,28 @@
   "hierarchyNote": "The source does not identify a separate sub-agency column; direct-managed rows repeat the parent entity.",
   "sourceBasis": "official source amount",
   "note": "Amounts are shown on the official source basis; no comparator normalization was applied."
+,
+  "itemBreakdowns": [
+    {
+      "parent": ["Ks Public Employees Rtrmnt Sys", "Ks Public Employees Rtrmnt Sys \u00b7 STATE STREET BANK & TRUST COMPANY \u00b7 INVESTMENT ADVANCES \u00b7 KS PUB EMP RETIREMENT FD \u00b7 official grouped-ledger publication ceiling", 1326022000],
+      "accountCount": 12,
+      "rows": [
+        ["2023-07", "KanView FY2024 vendor payments \u00b7 18 published transactions", 194450000.0],
+        ["2023-08", "KanView FY2024 vendor payments \u00b7 19 published transactions", 46670000.0],
+        ["2023-09", "KanView FY2024 vendor payments \u00b7 18 published transactions", 70380000.0],
+        ["2023-10", "KanView FY2024 vendor payments \u00b7 19 published transactions", 180150000.0],
+        ["2023-11", "KanView FY2024 vendor payments \u00b7 17 published transactions", 68940000.0],
+        ["2023-12", "KanView FY2024 vendor payments \u00b7 18 published transactions", 71390000.0],
+        ["2024-01", "KanView FY2024 vendor payments \u00b7 18 published transactions", 225890000.0],
+        ["2024-02", "KanView FY2024 vendor payments \u00b7 17 published transactions", 60510000.0],
+        ["2024-03", "KanView FY2024 vendor payments \u00b7 18 published transactions", 67480000.0],
+        ["2024-04", "KanView FY2024 vendor payments \u00b7 21 published transactions", 207252000.0],
+        ["2024-05", "KanView FY2024 vendor payments \u00b7 19 published transactions", 71160000.0],
+        ["2024-06", "KanView FY2024 vendor payments \u00b7 17 published transactions", 61750000.0]
+      ],
+      "sourceUrl": "https://kanview.ks.gov/DataDownload.aspx",
+      "sourceLabel": "KanView FY2024 Vendor Payments Data",
+      "basis": "Exact month groups of all 219 FY2024 KanView vendor-payment rows for the same agency, payee, account, and fund. Any group above $1 billion is retained as exact document-level transactions; every displayed row remains below $1 billion."
+    }
+  ]
 }

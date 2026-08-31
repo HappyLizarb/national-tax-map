@@ -1,3 +1,4 @@
+const thresholdBreakdowns = typeof module === "object" && module.exports ? require("./threshold-breakdowns.js") : globalThis.ThresholdBreakdowns;
 // Keep audited, budget, archive, and Census controls on their own accounting bases.
 function scopeFor(dataset, name, sourceLayer = "function") {
   const isFederal = name === "United States" || !dataset.states[name];
@@ -31,7 +32,6 @@ function scopeFor(dataset, name, sourceLayer = "function") {
       : "FY 2024 Census state-government revenue and expenditure aggregates, in current dollars. Revenue includes taxes, intergovernmental transfers, fees, and other receipts; it is not a tax-payment trail."
   };
 }
-
 function formatMoney(value) {
   if (!Number.isFinite(value)) return "Unavailable";
   const sign = value < 0 ? "−" : "";
@@ -101,7 +101,7 @@ function archiveQualification(basis, archive) {
 function bridgeDetailSource(row, prefix, direction, description) {
   const label = prefix + " · " + row.name, amount = direction * row.amount;
   const verb = direction < 0 ? "Removed" : "Added";
-  return { label, direction, detailUrl: row.detailUrl || null,
+  return { label, direction, detailUrl: row.detailUrl || null, researchDetailUrl: row.researchDetailUrl || null,
     fallbackRow: [label, verb + " " + description + " · " + (row.program || "Published control"),
       amount, amount, row.sourceRows || 1] };
 }
@@ -110,7 +110,12 @@ function bridgeDetailSource(row, prefix, direction, description) {
 function censusDetailSources(censusSummary, total, direction) {
   const rows = censusSummary?.departments?.length ? censusSummary.departments
     : [{ name: "Total expenditure", program: "Published Census control", amount: total }];
-  return rows.map((row) => bridgeDetailSource(row, "Census", direction, "published Census account"));
+  return rows.map((row) => {
+    const source = bridgeDetailSource(row, "Census", direction, "published Census account");
+    if (row.id === "census-direct-general") source.researchDetailUrl = row.detailUrl.replace(
+      /census-state-[a-z]{2}-fy2024-direct-general\.json$/, "ipeds-public-university-fy2024.json");
+    return source;
+  });
 }
 
 const largeSourceRow = 1e9;
@@ -166,9 +171,11 @@ function signedDetailRow(source, row) {
 
 // Carry one researched child panel onto its signed reconciliation parent.
 function signedDetailPanel(source, panel) {
-  const signed = { ...panel, rows: panel.rows.map((row) =>
-    [row[0], row[1], source.direction * row[2],
-      source.direction * (row[3] ?? row[2]), ...row.slice(4)]) };
+  const signed = { ...panel, rows: panel.rows.map((row) => {
+    const child = signedDetailRow(source, row);
+    if (row[3] === undefined) child[3] = child[2];
+    return child;
+  }) };
   if (panel.title) signed.title = source.label + " · " + panel.title;
   if (panel.parent) signed.parent = signedDetailRow(source, panel.parent);
   if (panel.displayParent) signed.displayParent = signedDetailRow(source, panel.displayParent);
@@ -179,10 +186,12 @@ function signedDetailPanel(source, panel) {
 
 // Expand a bridge source without discarding its previously researched panels.
 function expandReconciliationSource(source, detail) {
-  if (!detail) return { rows: [terminalSourceRow(source, source.fallbackRow)], itemBreakdowns: [],
-    supplementalBreakdowns: [], sourceBreakdowns: [] };
+  if (!detail) return thresholdBreakdowns.withThresholdBreakdowns({
+    rows: [terminalSourceRow(source, source.fallbackRow)], sourceUrl: source.detailUrl,
+    itemBreakdowns: [], supplementalBreakdowns: [], sourceBreakdowns: [] });
   const rows = detail.rows || detail.departments.map((row) =>
     [row.name, row.program, row.amount, row.sourceAmount, row.sourceRows]);
+  detail = thresholdBreakdowns.withThresholdBreakdowns({ ...detail, rows });
   const expand = (key) => (detail[key] || []).map((panel) => signedDetailPanel(source, panel));
   const itemBreakdowns = expand("itemBreakdowns"), supplementalBreakdowns = expand("supplementalBreakdowns");
   const sourceBreakdowns = expand("sourceBreakdowns"), panels = [...itemBreakdowns, ...supplementalBreakdowns, ...sourceBreakdowns];
@@ -270,6 +279,7 @@ function createModel(dataset, createTaxOverview, taxRates, incomeTiers, estimate
     sourceLinks: (name, _layer, fips = "") => sourceLinksFor(dataset, name, fips),
     reconcileStateArchive: (name, archive, censusSummary) => reconcileStateArchive(dataset, name, archive, censusSummary),
     expandReconciliationSource,
+    withThresholdBreakdowns: thresholdBreakdowns.withThresholdBreakdowns,
     publicationCeiling,
     displayAccountDescription,
     federalSourceRows: () => dataset.federal.sourceCatalog || [],
@@ -277,8 +287,7 @@ function createModel(dataset, createTaxOverview, taxRates, incomeTiers, estimate
   };
 }
 (function initModel(root) {
-  const load = (file, globalName) => typeof module === "object" && module.exports
-    ? require(file) : root[globalName];
+  const load = (file, globalName) => typeof module === "object" && module.exports ? require(file) : root[globalName];
   const model = createModel(
     load("../data/jurisdictions.js", "JurisdictionData"),
     load("./tax-overview.js", "createTaxOverview"),
@@ -287,6 +296,5 @@ function createModel(dataset, createTaxOverview, taxRates, incomeTiers, estimate
     load("../data/tax/household-tax-estimates.js", "householdTaxEstimateData"),
     load("../data/tax/consumer-costs.js", "consumerCostData")
   );
-  if (typeof module === "object" && module.exports) module.exports = model;
-  else root.TaxModel = model;
+  if (typeof module === "object" && module.exports) module.exports = model; else root.TaxModel = model;
 })(typeof globalThis === "object" ? globalThis : window);

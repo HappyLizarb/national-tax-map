@@ -7,32 +7,45 @@ const index = Object.fromEntries(Object.entries(jurisdictions.states)
 const model = require("../src/model.js");
 const threshold = 1_000_000_000;
 const cents = (value) => Math.round(value * 100);
-const key = (row) => JSON.stringify(row.slice(0, 3));
+const key = (row) => JSON.stringify([row[0], String(row[1]).replace(/ · [^·]*ceiling(?: ·.*)?$/i, ""), row[2]]);
 const sections = ["itemBreakdowns", "supplementalBreakdowns", "sourceBreakdowns"];
-const counts = { large: 0, breakdowns: 0, ceilings: 0 };
+const counts = { large: 0, breakdowns: 0, standalone: 0 };
 
 function readJson(file) {
   return JSON.parse(fs.readFileSync(file, "utf8"));
 }
 
+function exactPanelFor(panels, row) {
+  return panels.find((panel) => {
+    const parent = panel.displayParent || panel.parent || panel.covers?.[0];
+    return parent && key(parent) === key(row)
+      && panel.rows.reduce((sum, child) => sum + cents(child[2]), 0) === cents(row[2]);
+  });
+}
+
+function auditRows(rows, panels, context) {
+  for (const row of rows.filter((item) => Number.isFinite(item[2]) && Math.abs(item[2]) >= threshold)) {
+    counts.large += 1;
+    const panel = exactPanelFor(panels, row);
+    if (!panel) counts.standalone += 1;
+    assert.ok(panel, context + " standalone row: " + row[0] + " · " + row[1]);
+    counts.breakdowns += 1;
+  }
+}
+
 function auditSource(scope, source) {
-  const detail = source.detailUrl ? readJson(source.detailUrl) : null;
+  const base = source.detailUrl ? readJson(source.detailUrl) : null;
+  const research = source.researchDetailUrl ? readJson(source.researchDetailUrl) : null;
+  const detail = research ? { ...base,
+    sourceBreakdowns: [...(base.sourceBreakdowns || []), ...(research.sourceBreakdowns || [])],
+    supplementalBreakdowns: [...(base.supplementalBreakdowns || []),
+      ...(research.supplementalBreakdowns || [])] } : base;
   const expanded = model.expandReconciliationSource(source, detail);
   const panels = sections.flatMap((name) => expanded[name]);
-  const covered = new Set(panels.flatMap((panel) =>
-    [panel.parent, ...(panel.covers || [])]).filter(Boolean).map(key));
-
-  for (const row of expanded.rows.filter((row) => Math.abs(row[2]) >= threshold)) {
-    counts.large += 1;
-    if (covered.has(key(row))) counts.breakdowns += 1;
-    else {
-      counts.ceilings += 1;
-      assert.match(row[1], /ceiling/i, scope + " terminal base row");
-    }
-  }
-  for (const panel of panels) for (const row of panel.rows) {
-    if (Math.abs(row[2]) >= threshold)
-      assert.match(row[1], /ceiling/i, scope + " terminal breakdown row");
+  auditRows([...expanded.rows, ...panels.flatMap((panel) => panel.rows)], panels, scope);
+  for (const panel of panels.filter((item) => item.thresholdSubdivision)) {
+    assert.match(panel.basis, /Exact mechanical subdivision in integer cents/);
+    assert.ok(panel.rows.every((row) => Math.abs(row[2]) < threshold));
   }
 }
 
@@ -46,22 +59,52 @@ for (const [scope, summaryPath] of Object.entries(index)) {
     for (const source of bridge.detailSources) auditSource(scope, source);
 }
 
-for (const file of [
-  "data/state-mi/archive-state-source/state-mi-health-and-human-services.json",
-  "data/state-mi/archive-state-source/state-mi-education.json"
-]) {
-  const detail = readJson(file), panel = detail.sourceBreakdowns[0], parent = detail.rows.find((row) => key(row) === key(panel.covers[0]));
-  const publishedRows = panel.rows.reduce((sum, row) => sum + Number(row[1].match(/([\d,]+) payment rows/)[1].replaceAll(",", "")), 0);
-  assert.equal(panel.rows.reduce((sum, row) => sum + cents(row[2]), 0), cents(panel.sourceTotal));
-  assert.equal(panel.covers.reduce((sum, row) => sum + cents(row[2]), 0), cents(panel.sourceTotal));
-  assert.equal(publishedRows, parent[4]);
-  assert.ok(panel.rows.every((row) => Math.abs(row[2]) < 1e10));
+for (const slug of ["health-and-human-services", "education", "transportation", "treasury",
+  "colleges-and-universities"]) {
+  const base = readJson(`data/state-mi/archive-state-source/state-mi-${slug}.json`);
+  const research = readJson(`data/state-mi/archive-state-source/state-mi-${slug}-transaction-detail.json`);
+  for (const panel of research.sourceBreakdowns) {
+    const parent = base.rows.find((row) => key(row) === key(panel.covers[0]));
+    const publishedRows = panel.rows.reduce((sum, row) => sum
+      + Number(row[1].match(/([\d,]+) payment rows/)[1].replaceAll(",", "")), 0);
+    assert.equal(panel.rows.reduce((sum, row) => sum + cents(row[2]), 0), cents(panel.sourceTotal));
+    assert.equal(panel.covers.reduce((sum, row) => sum + cents(row[2]), 0), cents(panel.sourceTotal));
+    assert.equal(publishedRows, parent[4]);
+    assert.ok(panel.rows.every((row) => Math.abs(row[2]) < threshold));
+  }
 }
 
-const ohio = readJson("data/state-oh/archive-state-source/state-oh-department-of-medicaid.json").sourceBreakdowns[0];
-assert.equal(ohio.rows.reduce((sum, row) => sum + cents(row[2]), 0), cents(ohio.sourceTotal));
-assert.equal(ohio.covers.reduce((sum, row) => sum + cents(row[2]), 0), cents(ohio.sourceTotal));
-assert.equal(ohio.rows.length, 34);
+for (const file of [
+  "data/state-ms/archive-state-source/state-ms-department-of-education-transaction-detail.json",
+  "data/state-ms/archive-state-source/state-ms-ms-dept-of-transportation-1941.json",
+  "data/state-ms/archive-state-source/state-ms-office-of-the-state-treasurer-1171.json",
+  "data/state-ms/archive-state-source/state-ms-finance-administration-1130.json",
+  "data/state-ms/archive-state-source/state-ms-department-of-revenue-1181.json",
+  "data/state-mt/archive-state-source/state-mt-department-of-revenue.json",
+  "data/state-mt/archive-state-source/state-mt-department-of-public-health-and-human-services.json",
+  "data/state-ks/archive-state-source/state-ks-state-treasurer.json",
+  "data/state-ks/archive-state-source/state-ks-pooled-money-investment-board.json",
+  "data/state-ks/archive-state-source/state-ks-dept-of-health-environment.json",
+  "data/state-ks/archive-state-source/state-ks-ks-public-employees-rtrmnt-sys.json",
+  "data/state-ny/archive-state-source/state-ny-transportation-department-of.json",
+  "data/state-ny/archive-state-source/state-ny-budget-division-of-the.json",
+  "data/state-ny/archive-state-source/state-ny-labor-department-of.json",
+  "data/state-ny/archive-state-source/state-ny-homeland-security-and-emergency-services-division-of.json"
+]) {
+  const detail = readJson(file);
+  for (const panel of [...(detail.itemBreakdowns || []), ...(detail.sourceBreakdowns || [])]) {
+    const target = panel.parent?.[2] ?? panel.sourceTotal;
+    assert.equal(panel.rows.reduce((sum, row) => sum + cents(row[2]), 0), cents(target), file);
+    assert.ok(panel.rows.every((row) => Math.abs(row[2]) < threshold), file);
+  }
+}
+
+const ohio = readJson("data/state-oh/archive-state-source/state-oh-department-of-medicaid.json").sourceBreakdowns;
+for (const panel of ohio) {
+  assert.equal(panel.rows.reduce((sum, row) => sum + cents(row[2]), 0), cents(panel.sourceTotal));
+  assert.equal(panel.covers.reduce((sum, row) => sum + cents(row[2]), 0), cents(panel.sourceTotal));
+}
+assert.equal(ohio.flatMap((panel) => panel.rows).length, 34);
 
 const newJersey = readJson("data/state-nj/archive-state-source/state-nj-human-services.json").sourceBreakdowns[0];
 assert.equal(newJersey.rows.reduce((sum, row) => sum + cents(row[2]), 0), cents(newJersey.sourceTotal));
@@ -95,7 +138,42 @@ for (const file of [
   }
 }
 
-assert.deepEqual(counts, { large: 1691, breakdowns: 718, ceilings: 973 });
+assert.ok(counts.large > 3_000);
+assert.deepEqual({ breakdowns: counts.breakdowns, standalone: counts.standalone },
+  { breakdowns: counts.large, standalone: 0 });
+
+const privateDetail = model.withThresholdBreakdowns({ sourceUrl: "https://example.test/source",
+  rows: [["Protected recipient group", "[individual recipient omitted]", 2e9, 2e9, 1]] });
+const privatePanel = privateDetail.sourceBreakdowns[0];
+assert.equal(privateDetail.rows[0][1], "[individual recipient omitted]");
+assert.equal(privatePanel.rows.reduce((sum, row) => sum + cents(row[2]), 0), cents(2e9));
+assert.ok(privatePanel.rows.every((row) => Math.abs(row[2]) < threshold
+  && /Privacy-preserving/.test(row[1]) && /identities remain suppressed/.test(row[1])));
+
+const virginiaMedicaid = readJson(
+  "data/state-va/archive-state-source/state-va-dept-of-med-assistance-svcs.json");
+const virginiaMedicaidPanel = virginiaMedicaid.itemBreakdowns[0];
+assert.equal(virginiaMedicaidPanel.rows.reduce((sum, row) => sum + cents(row[2]), 0),
+  cents(virginiaMedicaidPanel.sourceTotal));
+assert.equal(virginiaMedicaidPanel.sourceTotal, virginiaMedicaidPanel.parent[2]);
+assert.deepEqual([virginiaMedicaidPanel.rows.length,
+  virginiaMedicaidPanel.rows.every((row) => Math.abs(row[2]) < threshold)], [108, true]);
+for (const file of [
+  "data/state-va/archive-state-source/state-va-direct-aid-to-public-education.json",
+  "data/state-va/archive-state-source/state-va-admin-of-health-insurance.json",
+  "data/state-va/archive-state-source/state-va-va-dept-of-transportation.json"
+]) {
+  const panel = readJson(file).itemBreakdowns.at(-1);
+  assert.equal(panel.rows.reduce((sum, row) => sum + cents(row[2]), 0), cents(panel.parent[2]));
+  assert.equal(panel.rows.length, 12);
+  assert.ok(panel.rows.every((row) => Math.abs(row[2]) < threshold));
+}
+const virginiaTreasury = readJson(
+  "data/state-va/archive-state-source/state-va-treasury-board-wbu.json");
+assert.equal(virginiaTreasury.rows.reduce((sum, row) => sum + cents(row[2]), 0),
+  cents(virginiaTreasury.sourceTotal));
+assert.deepEqual([virginiaTreasury.rows.length,
+  virginiaTreasury.rows.every((row) => Math.abs(row[2]) < threshold)], [9, true]);
 
 const exactLedgerPanels = ["ct", "de", "ma", "vt"].flatMap((state) =>
   fs.readdirSync(`data/state-${state}/archive-state-source`).filter((file) => file.endsWith(".json"))
@@ -162,4 +240,4 @@ for (const [name, [publishedRows, publishedTotal, treasuryTotal, subfunctions]] 
   assert.deepEqual([...new Set(panel.rows.map((row) => row[0].match(/^\d{3}/)?.[0]).filter(Boolean))].sort(),
     subfunctions, name);
 }
-console.log("All browser-visible $1 billion state rows are exact breakdowns or labeled source ceilings.");
+console.log("Strict audit passed: no browser-visible state account remains standalone at $1 billion or more.");
