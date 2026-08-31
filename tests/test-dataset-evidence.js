@@ -28,7 +28,7 @@ assert.equal(estimates.methodSource[1], "data/tax/household-tax-estimates.js");
 const generatedViews = ["agriculture", "health-and-human-services", "defense-military-programs", "education",
   "homeland-security", "housing-and-urban-development", "justice", "labor", "state", "veterans-affairs"]
   .flatMap((name) => require(`../data/federal/federal-mts-agency-department-of-${name}.json`).sourceBreakdowns || []);
-assert.equal(generatedViews.filter((view) => !view.combinedStatementAvailability).length, 131);
+assert.equal(generatedViews.filter((view) => !view.combinedStatementAvailability).length, 204);
 assert.equal(generatedViews.filter((view) => view.combinedStatementAvailability).length, 173);
 const gdxViews = generatedViews.filter((view) =>
   /VA FY2024 (?:Compensation and Pension|Medical Care|Education and Veteran Readiness)/.test(view.title));
@@ -49,6 +49,6 @@ assert.equal(["veterans-affairs", "transportation", "the-treasury"].flatMap((nam
 const supersededResearch = /^(?:HOUSEHOLD_TAX_ESTIMATE_RESEARCH|SOURCE_RESEARCH_.+|TAX_BRACKETS_2026_A_I|TAX_RATE_RESEARCH_.+)\.md$/;
 assert.deepEqual(fs.readdirSync(".").filter((file) => supersededResearch.test(file)), []);
 assert.deepEqual(fs.readdirSync("data").filter((file) => /\.(?:js|json|md)$/.test(file)).sort(),
-  ["README.md", "jurisdictions.js"]);
+  ["README.md", "ipeds-public-institution-universe-fy2024.json", "jurisdictions.js"]);
 
 console.log("Methodology and source evidence live with their owning datasets.");

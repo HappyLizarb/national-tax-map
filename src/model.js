@@ -1,4 +1,3 @@
-const thresholdBreakdowns = typeof module === "object" && module.exports ? require("./threshold-breakdowns.js") : globalThis.ThresholdBreakdowns;
 // Keep audited, budget, archive, and Census controls on their own accounting bases.
 function scopeFor(dataset, name, sourceLayer = "function") {
   const isFederal = name === "United States" || !dataset.states[name];
@@ -43,7 +42,6 @@ function formatMoney(value) {
     minimumFractionDigits: Number.isInteger(absolute) ? 0 : 2, maximumFractionDigits: 2
   });
 }
-
 function formatExactMoney(value) {
   return value.toLocaleString("en-US", {
     style: "currency", currency: "USD",
@@ -127,24 +125,27 @@ function publicationCeiling(row, label = "official publication ceiling") {
   if (Math.abs(row[2]) < largeSourceRow || /ceiling/i.test(row[1])) return row;
   return [row[0], row[1] + " · " + label, ...row.slice(2)];
 }
-
 function sameAccount(left, right) {
   return rowKey(left) === rowKey(right);
 }
-
 function exactPanelTotal(panel, parent) {
   const displayParent = panel.displayParent || panel.parent;
   const rows = panel.rows.reduce((sum, row) => sum + Math.round(row[2] * 100), 0);
   return Boolean(displayParent) && sameAccount(displayParent, parent)
     && rows === Math.round(parent[2] * 100);
 }
-
 function exactCoveredTotal(panel, parent) {
   const rows = panel.rows.reduce((sum, row) => sum + Math.round(row[2] * 100), 0);
-  const covers = (panel.covers || []).reduce((sum, row) => sum + Math.round(row[2] * 100), 0);
-  return rows === covers && (panel.covers || []).some((row) => sameAccount(row, parent));
+  const cover = panel.covers?.length === 1 ? panel.covers[0] : null;
+  return cover && rows === Math.round(cover[2] * 100) && sameAccount(cover, parent);
 }
-
+// Return only source parents that this panel reconciles individually.
+function exactPanelParents(panel) {
+  const total = panel.rows.reduce((sum, row) => sum + Math.round(row[2] * 100), 0);
+  const candidates = [panel.parent, panel.displayParent,
+    ...(panel.covers?.length === 1 ? panel.covers : [])];
+  return candidates.filter((parent) => parent && total === Math.round(parent[2] * 100));
+}
 function displayAccountDescription(detail, row) {
   const item = (detail.itemBreakdowns || []).some((panel) => exactPanelTotal(panel, row));
   const sources = [...(detail.sourceBreakdowns || []), ...(detail.supplementalBreakdowns || [])];
@@ -161,7 +162,6 @@ function terminalSourceRow(source, row, covered = new Set()) {
   return publicationCeiling(row, privacy ? "privacy-preserving publication ceiling"
     : "source aggregation ceiling · deeper official split not imported");
 }
-
 // Apply a bridge sign and source prefix to one source-native base row.
 function signedDetailRow(source, row) {
   const signed = [source.label + " › " + row[0], row[1], source.direction * row[2], ...row.slice(3)];
@@ -186,16 +186,16 @@ function signedDetailPanel(source, panel) {
 
 // Expand a bridge source without discarding its previously researched panels.
 function expandReconciliationSource(source, detail) {
-  if (!detail) return thresholdBreakdowns.withThresholdBreakdowns({
+  if (!detail) return {
     rows: [terminalSourceRow(source, source.fallbackRow)], sourceUrl: source.detailUrl,
-    itemBreakdowns: [], supplementalBreakdowns: [], sourceBreakdowns: [] });
+    itemBreakdowns: [], supplementalBreakdowns: [], sourceBreakdowns: [] };
   const rows = detail.rows || detail.departments.map((row) =>
     [row.name, row.program, row.amount, row.sourceAmount, row.sourceRows]);
-  detail = thresholdBreakdowns.withThresholdBreakdowns({ ...detail, rows });
+  detail = { ...detail, rows };
   const expand = (key) => (detail[key] || []).map((panel) => signedDetailPanel(source, panel));
   const itemBreakdowns = expand("itemBreakdowns"), supplementalBreakdowns = expand("supplementalBreakdowns");
   const sourceBreakdowns = expand("sourceBreakdowns"), panels = [...itemBreakdowns, ...supplementalBreakdowns, ...sourceBreakdowns];
-  const covered = new Set(panels.flatMap((panel) => [panel.parent, ...(panel.covers || [])]).filter(Boolean).map(rowKey));
+  const covered = new Set(panels.flatMap(exactPanelParents).map(rowKey));
   for (const panel of panels) panel.rows = panel.rows.map((row) => terminalSourceRow(source, row, covered));
   for (const panel of panels) if (panel.displayParent) {
     panel.displayParent = terminalSourceRow(source, panel.displayParent, covered);
@@ -279,7 +279,6 @@ function createModel(dataset, createTaxOverview, taxRates, incomeTiers, estimate
     sourceLinks: (name, _layer, fips = "") => sourceLinksFor(dataset, name, fips),
     reconcileStateArchive: (name, archive, censusSummary) => reconcileStateArchive(dataset, name, archive, censusSummary),
     expandReconciliationSource,
-    withThresholdBreakdowns: thresholdBreakdowns.withThresholdBreakdowns,
     publicationCeiling,
     displayAccountDescription,
     federalSourceRows: () => dataset.federal.sourceCatalog || [],

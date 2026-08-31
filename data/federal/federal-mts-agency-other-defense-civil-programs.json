@@ -5,16 +5,53 @@
   "department": "Other Defense Civil Programs",
   "sourceTotal": 66220000000,
   "sourceUrl": "https://fiscal.treasury.gov/system/files/files/reports-statements/mts/mts0924.pdf",
-  "sourceUrls": [["Treasury FY2024 MTS Table 5", "https://fiscal.treasury.gov/system/files/files/reports-statements/mts/mts0924.pdf"]],
-  "relatedSources": [["USAspending gross research (supporting detail)", "data/federal/archive-agency-source/federal-official-source-summary.json"]],
+  "sourceUrls": [
+    [
+      "Treasury FY2024 MTS Table 5",
+      "https://fiscal.treasury.gov/system/files/files/reports-statements/mts/mts0924.pdf"
+    ]
+  ],
+  "relatedSources": [
+    [
+      "USAspending gross research (supporting detail)",
+      "data/federal/archive-agency-source/federal-official-source-summary.json"
+    ]
+  ],
   "sourceBasis": "Treasury MTS Table 5 current-fiscal-year gross outlays, applicable receipts, and net outlays; published in $ millions and converted to USD.",
-  "rowSchema": ["subAgency", "program", "amount", "sourceAmount", "sourceRows", "grossOutlays", "applicableReceipts"],
-  "sourceCheck": {"groupRows": 9, "difference": 0, "publishedRoundingAdjustment": -1000000},
+  "rowSchema": [
+    "subAgency",
+    "program",
+    "amount",
+    "sourceAmount",
+    "sourceRows",
+    "grossOutlays",
+    "applicableReceipts"
+  ],
+  "sourceCheck": {
+    "groupRows": 9,
+    "difference": 0,
+    "publishedRoundingAdjustment": -1000000
+  },
   "note": "Displayed amounts are net outlays; each row retains its published gross outlays and applicable receipts.",
-  "accountResearch": {"accountCount": 18, "largeAccountCount": 4, "netAccountOutlays": 246070525036.56, "threshold": 1000000000, "sourceUrl": "https://fiscal.treasury.gov/system/files/files/reports-statements/combined-statement/cs2024/c41.xlsx"},
-  "largeAccountSchema": ["treasuryAccount", "title", "netOutlays", "availabilityRows"],
+  "accountResearch": {
+    "accountCount": 18,
+    "largeAccountCount": 4,
+    "netAccountOutlays": 246070525036.56,
+    "threshold": 1000000000,
+    "sourceUrl": "https://fiscal.treasury.gov/system/files/files/reports-statements/combined-statement/cs2024/c41.xlsx"
+  },
+  "largeAccountSchema": [
+    "treasuryAccount",
+    "title",
+    "netOutlays",
+    "availabilityRows"
+  ],
   "largeAccountBasis": "Exact Combined Statement net outlays by appropriation or fund account. This is a research cross-section of the same department, not another amount to add to MTS classification rows.",
-  "itemBreakdownSchema": ["treasuryAccount", "title", "netOutlays"],
+  "itemBreakdownSchema": [
+    "treasuryAccount",
+    "title",
+    "netOutlays"
+  ],
   "itemBreakdownBasis": "Exact FY2024 Treasury accounts grouped to one MTS row; each final bridge reconciles account cents to the parent published in rounded $ millions.",
   "sourceBreakdowns": [
     {
@@ -24,14 +61,44 @@
       "sourceLabel": "DoD Board of Actuaries 2024 meeting minutes · Military Retirement Fund payment",
       "sourceUrl": "https://actuary.defense.gov/Portals/15/Documents/Minutes/Board%20of%20Actuaries%202024%20Meeting%20Minutes%20with%20Attachments.pdf",
       "rows": [
-        ["Initial unfunded liability", "October 1, 2023 amortization payment · public payment-basis disclosure ceiling", 108303000000],
-        ["Actuarial assumptions", "October 1, 2023 amortization payment · public payment-basis disclosure ceiling", 21608000000],
-        ["Initial Coast Guard unfunded liability", "October 1, 2023 amortization payment · public payment-basis disclosure ceiling", 20953000000],
-        ["Benefit changes", "October 1, 2023 amortization payment", 7768000000],
-        ["Prior-year unpaid contribution", "October 1, 2023 amortization payment", 999000000],
-        ["Actuarial experience", "October 1, 2023 amortization-payment reduction", -8110000000]
+        [
+          "Initial unfunded liability",
+          "October 1, 2023 amortization payment · public payment-basis disclosure ceiling",
+          108303000000
+        ],
+        [
+          "Actuarial assumptions",
+          "October 1, 2023 amortization payment · public payment-basis disclosure ceiling",
+          21608000000
+        ],
+        [
+          "Initial Coast Guard unfunded liability",
+          "October 1, 2023 amortization payment · public payment-basis disclosure ceiling",
+          20953000000
+        ],
+        [
+          "Benefit changes",
+          "October 1, 2023 amortization payment",
+          7768000000
+        ],
+        [
+          "Prior-year unpaid contribution",
+          "October 1, 2023 amortization payment",
+          999000000
+        ],
+        [
+          "Actuarial experience",
+          "October 1, 2023 amortization-payment reduction",
+          -8110000000
+        ]
       ],
-      "covers": [["097-0040-000", "Payments to Military Retirement Fund, Defense", 151521000000]]
+      "covers": [
+        [
+          "097-0040-000",
+          "Payments to Military Retirement Fund, Defense",
+          151521000000
+        ]
+      ]
     },
     {
       "title": "Military Retirement Fund federal-contribution receipt by actuarial source",
@@ -40,14 +107,44 @@
       "sourceLabel": "DoD Board of Actuaries 2024 meeting minutes · Military Retirement Fund payment",
       "sourceUrl": "https://actuary.defense.gov/Portals/15/Documents/Minutes/Board%20of%20Actuaries%202024%20Meeting%20Minutes%20with%20Attachments.pdf",
       "rows": [
-        ["Actuarial experience", "Receipt-side sign of the October 1, 2023 amortization-payment reduction", 8110000000],
-        ["Prior-year unpaid contribution", "Receipt-side sign of the October 1, 2023 amortization payment", -999000000],
-        ["Benefit changes", "Receipt-side sign of the October 1, 2023 amortization payment", -7768000000],
-        ["Initial Coast Guard unfunded liability", "Receipt-side sign · public payment-basis disclosure ceiling", -20953000000],
-        ["Actuarial assumptions", "Receipt-side sign · public payment-basis disclosure ceiling", -21608000000],
-        ["Initial unfunded liability", "Receipt-side sign · public payment-basis disclosure ceiling", -108303000000]
+        [
+          "Actuarial experience",
+          "Receipt-side sign of the October 1, 2023 amortization-payment reduction",
+          8110000000
+        ],
+        [
+          "Prior-year unpaid contribution",
+          "Receipt-side sign of the October 1, 2023 amortization payment",
+          -999000000
+        ],
+        [
+          "Benefit changes",
+          "Receipt-side sign of the October 1, 2023 amortization payment",
+          -7768000000
+        ],
+        [
+          "Initial Coast Guard unfunded liability",
+          "Receipt-side sign · public payment-basis disclosure ceiling",
+          -20953000000
+        ],
+        [
+          "Actuarial assumptions",
+          "Receipt-side sign · public payment-basis disclosure ceiling",
+          -21608000000
+        ],
+        [
+          "Initial unfunded liability",
+          "Receipt-side sign · public payment-basis disclosure ceiling",
+          -108303000000
+        ]
       ],
-      "covers": [["097-X-8097-003", "Federal Contribution, Department of Defense Military Retirement Fund", -151521000000]]
+      "covers": [
+        [
+          "097-X-8097-003",
+          "Federal Contribution, Department of Defense Military Retirement Fund",
+          -151521000000
+        ]
+      ]
     },
     {
       "title": "MERHCF investment-earnings receipt from audited interest income",
@@ -56,10 +153,24 @@
       "sourceLabel": "DoD FY2024 MERHCF Audited Financial Report · Note 9",
       "sourceUrl": "https://comptroller.war.gov/Portals/45/Documents/afr/fy2024/DoD_Components/2024_AFR_MERHCF.pdf",
       "rows": [
-        ["Audited-interest-to-Treasury-receipt bridge", "Exact arithmetic difference; not allocated to a security type", -1795762042.31],
-        ["Interest on investments", "FY2024 audited earned revenue · public audited interest-revenue disclosure ceiling", -16851768000]
+        [
+          "Audited-interest-to-Treasury-receipt bridge",
+          "Exact arithmetic difference; not allocated to a security type",
+          -1795762042.31
+        ],
+        [
+          "Interest on investments",
+          "FY2024 audited earned revenue · public audited interest-revenue disclosure ceiling",
+          -16851768000
+        ]
       ],
-      "covers": [["097-X-5472-002", "Earnings on Investments, DOD Medicare-Eligible Retiree Health Care Fund", -18647530042.31]]
+      "covers": [
+        [
+          "097-X-5472-002",
+          "Earnings on Investments, DOD Medicare-Eligible Retiree Health Care Fund",
+          -18647530042.31
+        ]
+      ]
     },
     {
       "title": "Military Retirement Fund account by source of mandatory outlays",
@@ -67,11 +178,29 @@
       "basis": "OMB's FY2026 Budget Appendix reports FY2024 Military Retirement Fund outlays from new mandatory authority and prior mandatory balances. The rounded lines total $72.160B; the $308,851.77 precision bridge reconciles them exactly to Treasury's Combined Statement account.",
       "sourceLabel": "OMB FY2026 Budget Appendix and Treasury FY2024 Combined Statement",
       "sourceUrl": "https://www.whitehouse.gov/wp-content/uploads/2025/05/appendix_fy2026.pdf",
-      "covers": [["097-8097-000","Department of Defense Military Retirement Fund",72160308851.77]],
+      "covers": [
+        [
+          "097-8097-000",
+          "Department of Defense Military Retirement Fund",
+          72160308851.77
+        ]
+      ],
       "rows": [
-        ["Outlays from new mandatory authority","FY2024 actual · public OMB cash-line disclosure ceiling",71728000000],
-        ["Outlays from prior mandatory balances","FY2024 actual",432000000],
-        ["OMB / Treasury published-precision bridge","Exact arithmetic difference; not allocated to a source of authority",308851.77]
+        [
+          "Outlays from new mandatory authority",
+          "FY2024 actual · public OMB cash-line disclosure ceiling",
+          71728000000
+        ],
+        [
+          "Outlays from prior mandatory balances",
+          "FY2024 actual",
+          432000000
+        ],
+        [
+          "OMB / Treasury published-precision bridge",
+          "Exact arithmetic difference; not allocated to a source of authority",
+          308851.77
+        ]
       ]
     },
     {
@@ -80,32 +209,189 @@
       "basis": "OMB's FY2026 Budget Appendix reports FY2024 MERHCF outlays from new mandatory authority and prior mandatory balances. The rounded lines total $12.285B; the $876,340.91 precision bridge reconciles them exactly to Treasury's Combined Statement account.",
       "sourceLabel": "OMB FY2026 Budget Appendix and Treasury FY2024 Combined Statement",
       "sourceUrl": "https://www.whitehouse.gov/wp-content/uploads/2025/05/appendix_fy2026.pdf",
-      "covers": [["097-5472-000","Department of Defense, Medicare-Eligible Retiree Health Care Fund",12285876340.91]],
+      "covers": [
+        [
+          "097-5472-000",
+          "Department of Defense, Medicare-Eligible Retiree Health Care Fund",
+          12285876340.91
+        ]
+      ],
       "rows": [
-        ["Outlays from new mandatory authority","FY2024 actual · public OMB cash-line disclosure ceiling",11785000000],
-        ["Outlays from prior mandatory balances","FY2024 actual",500000000],
-        ["OMB / Treasury published-precision bridge","Exact arithmetic difference; not allocated to a source of authority",876340.91]
+        [
+          "Outlays from new mandatory authority",
+          "FY2024 actual · public OMB cash-line disclosure ceiling",
+          11785000000
+        ],
+        [
+          "Outlays from prior mandatory balances",
+          "FY2024 actual",
+          500000000
+        ],
+        [
+          "OMB / Treasury published-precision bridge",
+          "Exact arithmetic difference; not allocated to a source of authority",
+          876340.91
+        ]
       ]
     }
   ],
   "largeAccountRows": [
-    ["097-0040-000", "Payments to Military Retirement Fund, Defense", 151521000000, 1],
-    ["097-8097-000", "Department of Defense Military Retirement Fund", 72160308851.77, 1],
-    ["097-5472-000", "Department of Defense, Medicare-Eligible Retiree Health Care Fund", 12285876340.91, 1],
-    ["097-0850-000", "Payment to Department of Defense Medicare-Eligible Retiree Health Care Fund · official Treasury publication ceiling (one availability row)", 9584000000, 1]
+    [
+      "097-0040-000",
+      "Payments to Military Retirement Fund, Defense",
+      151521000000,
+      1
+    ],
+    [
+      "097-8097-000",
+      "Department of Defense Military Retirement Fund",
+      72160308851.77,
+      1
+    ],
+    [
+      "097-5472-000",
+      "Department of Defense, Medicare-Eligible Retiree Health Care Fund",
+      12285876340.91,
+      1
+    ],
+    [
+      "097-0850-000",
+      "Payment to Department of Defense Medicare-Eligible Retiree Health Care Fund · official Treasury publication ceiling (one availability row)",
+      9584000000,
+      1
+    ]
   ],
   "itemBreakdowns": [
-    {"parent": ["Other Defense Civil Programs", "Intrabudgetary Transactions", -179813000000], "accountCount": 6, "rows": [["097-X-8097-003", "Federal Contribution, Department of Defense Military Retirement Fund", -151521000000], ["097-X-5472-002", "Earnings on Investments, DOD Medicare-Eligible Retiree Health Care Fund", -18647530042.31], ["097-X-5472-003", "Federal Contributions, DOD Medicare-Eligible Retiree Health Care Fund", -9584000000], ["097-X-8098-001", "Employing Agency Contributions, Department of Defense, Education Benefits Fund", -35684066], ["084-X-8522-008", "General Fund Payment to the Armed Forces Retirement Home, Armed Forces Retirement Home Trust Fund, Armed Forces Retirement Home", -25000000], ["084-1435-000", "General Fund Proprietary Interest, Not Otherwise Classified, Armed Forces Retirement Home", -143.31], ["MTS-rounding", "Published MTS million-dollar rounding bridge", 214251.62]], "sourceUrl": "https://fiscal.treasury.gov/system/files/files/reports-statements/combined-statement/cs2024/tbb.xlsx", "basis": "Exact intragovernmental receipt accounts shown as negative offsets."}
+    {
+      "parent": [
+        "Other Defense Civil Programs",
+        "Intrabudgetary Transactions",
+        -179813000000
+      ],
+      "accountCount": 6,
+      "rows": [
+        [
+          "097-X-8097-003",
+          "Federal Contribution, Department of Defense Military Retirement Fund",
+          -151521000000
+        ],
+        [
+          "097-X-5472-002",
+          "Earnings on Investments, DOD Medicare-Eligible Retiree Health Care Fund",
+          -18647530042.31
+        ],
+        [
+          "097-X-5472-003",
+          "Federal Contributions, DOD Medicare-Eligible Retiree Health Care Fund",
+          -9584000000
+        ],
+        [
+          "097-X-8098-001",
+          "Employing Agency Contributions, Department of Defense, Education Benefits Fund",
+          -35684066
+        ],
+        [
+          "084-X-8522-008",
+          "General Fund Payment to the Armed Forces Retirement Home, Armed Forces Retirement Home Trust Fund, Armed Forces Retirement Home",
+          -25000000
+        ],
+        [
+          "084-1435-000",
+          "General Fund Proprietary Interest, Not Otherwise Classified, Armed Forces Retirement Home",
+          -143.31
+        ],
+        [
+          "MTS-rounding",
+          "Published MTS million-dollar rounding bridge",
+          214251.62
+        ]
+      ],
+      "sourceUrl": "https://fiscal.treasury.gov/system/files/files/reports-statements/combined-statement/cs2024/tbb.xlsx",
+      "basis": "Exact intragovernmental receipt accounts shown as negative offsets."
+    }
   ],
   "rows": [
-    ["Military Retirement", "Payment to Military Retirement Fund", 151521000000, 151521000000, 1, 151521000000, 0],
-    ["Military Retirement", "Military Retirement Fund", 72160000000, 72160000000, 1, 72160000000, 0],
-    ["Retiree Health Care", "Payment to Department of Defense Medicare-Eligible Retiree Health Care Fund", 9584000000, 9584000000, 1, 9584000000, 0],
-    ["Retiree Health Care", "Department of Defense Medicare-Eligible Retiree Health Care Fund", 12286000000, 12286000000, 1, 12286000000, 0],
-    ["Retiree Health Care", "Educational Benefits", 160000000, 160000000, 1, 160000000, 0],
-    ["Retiree Health Care", "Other", 346000000, 346000000, 1, 346000000, 0],
-    ["Other Defense Civil Programs", "Proprietary Receipts from the Public", -23000000, -23000000, 1, 0, 23000000],
-    ["Other Defense Civil Programs", "Intrabudgetary Transactions", -179813000000, -179813000000, 1, -179813000000, 0],
-    ["Other Defense Civil Programs", "Published Table 5 rounding adjustment", -1000000, -1000000, 0, -1000000, 0]
-  ]
+    [
+      "Military Retirement",
+      "Payment to Military Retirement Fund",
+      151521000000,
+      151521000000,
+      1,
+      151521000000,
+      0
+    ],
+    [
+      "Military Retirement",
+      "Military Retirement Fund",
+      72160000000,
+      72160000000,
+      1,
+      72160000000,
+      0
+    ],
+    [
+      "Retiree Health Care",
+      "Payment to Department of Defense Medicare-Eligible Retiree Health Care Fund",
+      9584000000,
+      9584000000,
+      1,
+      9584000000,
+      0
+    ],
+    [
+      "Retiree Health Care",
+      "Department of Defense Medicare-Eligible Retiree Health Care Fund",
+      12286000000,
+      12286000000,
+      1,
+      12286000000,
+      0
+    ],
+    [
+      "Retiree Health Care",
+      "Educational Benefits",
+      160000000,
+      160000000,
+      1,
+      160000000,
+      0
+    ],
+    [
+      "Retiree Health Care",
+      "Other",
+      346000000,
+      346000000,
+      1,
+      346000000,
+      0
+    ],
+    [
+      "Other Defense Civil Programs",
+      "Proprietary Receipts from the Public",
+      -23000000,
+      -23000000,
+      1,
+      0,
+      23000000
+    ],
+    [
+      "Other Defense Civil Programs",
+      "Intrabudgetary Transactions",
+      -179813000000,
+      -179813000000,
+      1,
+      -179813000000,
+      0
+    ],
+    [
+      "Other Defense Civil Programs",
+      "Published Table 5 rounding adjustment",
+      -1000000,
+      -1000000,
+      0,
+      -1000000,
+      0
+    ]
+  ],
+  "publicationCeiling": "Official source-native publication ceiling at the cited table, account, program, geography, appropriation, or payee level; no lower additive row is published in that same-basis source."
 }

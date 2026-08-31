@@ -5,14 +5,47 @@
   "department": "Legislative Branch",
   "sourceTotal": 6835000000,
   "sourceUrl": "https://fiscal.treasury.gov/system/files/files/reports-statements/mts/mts0924.pdf",
-  "sourceUrls": [["Treasury FY2024 MTS Table 5", "https://fiscal.treasury.gov/system/files/files/reports-statements/mts/mts0924.pdf"]],
-  "relatedSources": [["USAspending gross research (supporting detail)", "data/federal/archive-agency-source/federal-congress.json"]],
+  "sourceUrls": [
+    [
+      "Treasury FY2024 MTS Table 5",
+      "https://fiscal.treasury.gov/system/files/files/reports-statements/mts/mts0924.pdf"
+    ]
+  ],
+  "relatedSources": [
+    [
+      "USAspending gross research (supporting detail)",
+      "data/federal/archive-agency-source/federal-congress.json"
+    ]
+  ],
   "sourceBasis": "Treasury MTS Table 5 current-fiscal-year gross outlays, applicable receipts, and net outlays; published in $ millions and converted to USD.",
-  "rowSchema": ["subAgency", "program", "amount", "sourceAmount", "sourceRows", "grossOutlays", "applicableReceipts"],
-  "sourceCheck": {"groupRows": 13, "difference": 0, "publishedRoundingAdjustment": 0},
+  "rowSchema": [
+    "subAgency",
+    "program",
+    "amount",
+    "sourceAmount",
+    "sourceRows",
+    "grossOutlays",
+    "applicableReceipts"
+  ],
+  "sourceCheck": {
+    "groupRows": 13,
+    "difference": 0,
+    "publishedRoundingAdjustment": 0
+  },
   "note": "Displayed amounts are net outlays; each row retains its published gross outlays and applicable receipts.",
-  "accountResearch": {"accountCount": 116, "largeAccountCount": 1, "netAccountOutlays": 6881657982.03, "threshold": 1000000000, "sourceUrl": "https://fiscal.treasury.gov/system/files/files/reports-statements/combined-statement/cs2024/c01.xlsx"},
-  "largeAccountSchema": ["treasuryAccount", "title", "netOutlays", "availabilityRows"],
+  "accountResearch": {
+    "accountCount": 116,
+    "largeAccountCount": 1,
+    "netAccountOutlays": 6881657982.03,
+    "threshold": 1000000000,
+    "sourceUrl": "https://fiscal.treasury.gov/system/files/files/reports-statements/combined-statement/cs2024/c01.xlsx"
+  },
+  "largeAccountSchema": [
+    "treasuryAccount",
+    "title",
+    "netOutlays",
+    "availabilityRows"
+  ],
   "largeAccountBasis": "Exact Combined Statement net outlays by appropriation or fund account. This is a research cross-section of the same department, not another amount to add to MTS classification rows.",
   "sourceBreakdowns": [
     {
@@ -88,81 +121,365 @@
       ]
     }
   ],
-  "largeAccountRows": [["000-0400-000", "Salaries and Expenses, House of Representatives", 1839820690.6, 11]],
+  "largeAccountRows": [
+    [
+      "000-0400-000",
+      "Salaries and Expenses, House of Representatives",
+      1839820690.6,
+      11
+    ]
+  ],
   "supplementalBreakdowns": [
     {
-      "parent": ["Legislative Branch", "House of Representatives", 1958000000],
+      "parent": [
+        "Legislative Branch",
+        "House of Representatives",
+        1958000000
+      ],
       "title": "House FY2024 disbursements by expense category",
       "basis": "The four House DETAIL files covering Oct. 2023-Sep. 2024 contain 499,328 transactions totaling $1,889,796,892.35. That official source universe is $73,203,107.65 below the $1.963B MTS gross-outlay control, so the gap remains visible rather than being allocated across categories.",
       "sourceLabel": "U.S. House Statement of Disbursements",
       "sourceUrl": "https://www.house.gov/the-house-explained/open-government/statement-of-disbursements/archive",
       "rows": [
-        ["Personnel compensation", "FY2024 House DETAIL transactions", 1028545715.76],
-        ["Personnel benefits", "FY2024 House DETAIL transactions", 385624365.96],
-        ["Other services", "FY2024 House DETAIL transactions", 143828842.66],
-        ["Rent, communications, utilities", "FY2024 House DETAIL transactions", 82078635.26],
-        ["Equipment", "FY2024 House DETAIL transactions", 71093430.13],
-        ["Printing and reproduction", "FY2024 House DETAIL transactions", 58423111.59],
-        ["Supplies and materials", "FY2024 House DETAIL transactions", 47458075.49],
-        ["Travel", "FY2024 House DETAIL transactions", 43465647.62],
-        ["Franked mail", "FY2024 House DETAIL transactions", 27590174.08],
-        ["Benefits to former personnel", "FY2024 House DETAIL transactions", 1519440.6],
-        ["Transportation of things", "FY2024 House DETAIL transactions", 160290.61],
-        ["Insurance claims and indemnities", "FY2024 House DETAIL transactions", 9162.59]
-      ]
+        [
+          "Personnel compensation",
+          "FY2024 House DETAIL transactions",
+          1028545715.76
+        ],
+        [
+          "Personnel benefits",
+          "FY2024 House DETAIL transactions",
+          385624365.96
+        ],
+        [
+          "Other services",
+          "FY2024 House DETAIL transactions",
+          143828842.66
+        ],
+        [
+          "Rent, communications, utilities",
+          "FY2024 House DETAIL transactions",
+          82078635.26
+        ],
+        [
+          "Equipment",
+          "FY2024 House DETAIL transactions",
+          71093430.13
+        ],
+        [
+          "Printing and reproduction",
+          "FY2024 House DETAIL transactions",
+          58423111.59
+        ],
+        [
+          "Supplies and materials",
+          "FY2024 House DETAIL transactions",
+          47458075.49
+        ],
+        [
+          "Travel",
+          "FY2024 House DETAIL transactions",
+          43465647.62
+        ],
+        [
+          "Franked mail",
+          "FY2024 House DETAIL transactions",
+          27590174.08
+        ],
+        [
+          "Benefits to former personnel",
+          "FY2024 House DETAIL transactions",
+          1519440.6
+        ],
+        [
+          "Transportation of things",
+          "FY2024 House DETAIL transactions",
+          160290.61
+        ],
+        [
+          "Insurance claims and indemnities",
+          "FY2024 House DETAIL transactions",
+          9162.59
+        ]
+      ],
+      "publicationCeiling": "Official source-native publication ceiling at the cited table, account, program, geography, appropriation, or payee level; no lower additive row is published in that same-basis source."
     },
     {
-      "parent": ["Legislative Branch", "Senate", 1225000000],
+      "parent": [
+        "Legislative Branch",
+        "Senate",
+        1225000000
+      ],
       "title": "Senate FY2024 expenditures by appropriation",
       "basis": "The two official semiannual reports total $1.227661B of net expenditures across 29 appropriations for Oct. 2023-Sep. 2024. That is $2.661M above the rounded $1.225B MTS Senate row, so this is a fiscal-year source view rather than a forced reconciliation.",
       "sourceLabel": "Secretary of the Senate FY2024 reports",
       "sourceUrl": "https://www.senate.gov/legislative/common/generic/report_secsen.htm",
       "rows": [
-        ["Senators' Official Personnel and Office Expense Account", "Senate appropriation 0130 · two semiannual reports", 561839650.39],
-        ["Salaries, Officers and Employees", "Senate appropriation 0110 · two semiannual reports", 260764120.74],
-        ["Expenses of Inquiries and Investigations", "Senate appropriation 0128 · two semiannual reports", 176827830],
-        ["Sergeant at Arms and Doorkeeper", "Senate appropriation 0127 · two semiannual reports", 145264068.54],
-        ["Compensation of Members", "Senate appropriation 0100 · two semiannual reports", 24261462.09],
-        ["Miscellaneous Items", "Senate appropriation 0123 · two semiannual reports", 22696269.16],
-        ["Secretary of the Senate", "Senate appropriation 0126 · two semiannual reports", 16147525.77],
-        ["Legislative Counsel", "Senate appropriation 0185 · two semiannual reports", 8503137.2],
-        ["Joint Economic Committee", "Senate appropriation 0181 · two semiannual reports", 3375745.66],
-        ["SAA Business Continuity and Disaster Recovery Fund", "Senate appropriation 0175 · two semiannual reports", 1457199.35],
-        ["Congressional Accessibility Services", "Senate appropriation 0190 · two semiannual reports", 1280023.15],
-        ["Stationery Revolving Fund", "Senate appropriation 0140 · two semiannual reports", 1177250.01],
-        ["Senate Legal Counsel", "Senate appropriation 0171 · two semiannual reports", 1131599.28],
-        ["Senate Gift Shop Revolving Fund", "Senate appropriation 4062 · two semiannual reports", 994798.83],
-        ["Caucus on International Narcotics Control", "Senate appropriation 0129 · two semiannual reports", 467100.74],
-        ["Daniel Webster Senate Page Residence Revolving Fund", "Senate appropriation 4101 · two semiannual reports", 396428.42],
-        ["Senate Hair Care Services Revolving Fund", "Senate appropriation 4326 · two semiannual reports", 275080.33],
-        ["Joint Committee on Inaugural Ceremonies", "Senate appropriation 0186 · two semiannual reports", 258401.69],
-        ["Payment to Next of Kin of Senator", "Senate appropriation 0115 · two semiannual reports", 174000],
-        ["Official Mail Allocations and Mass Mail Volumes and Costs", "Senate appropriation 0132 · two semiannual reports", 167118.68],
-        ["Leadership Expense Allowances", "Senate appropriation 0107 · two semiannual reports", 115964],
-        ["Senate Photographic Studio Revolving Fund", "Senate appropriation 4086 · two semiannual reports", 95071.7],
-        ["Secretary and Sergeant at Arms Expense Allowances", "Senate appropriation 0172 · two semiannual reports", 34568.45],
-        ["Representation Allowances for Majority and Minority Leaders", "Senate appropriation 0108 · no net FY2024 expenditure", 0],
-        ["Sergeant at Arms Fellowships Fund", "Senate appropriation 0176 · no net FY2024 expenditure", 0],
-        ["Senate Computer Center Revolving Fund", "Senate appropriation 4046 · no net FY2024 expenditure", 0],
-        ["Senate Health Promotion Revolving Fund", "Senate appropriation 4051 · no net FY2024 expenditure", 0],
-        ["Senate Office of Public Records Revolving Fund", "Senate appropriation 4052 · no net FY2024 expenditure", 0],
-        ["Senate Recording Studio Revolving Fund", "Senate appropriation 4087 · net receipts exceed expenditures", -42968.21]
+        [
+          "Senators' Official Personnel and Office Expense Account",
+          "Senate appropriation 0130 · two semiannual reports",
+          561839650.39
+        ],
+        [
+          "Salaries, Officers and Employees",
+          "Senate appropriation 0110 · two semiannual reports",
+          260764120.74
+        ],
+        [
+          "Expenses of Inquiries and Investigations",
+          "Senate appropriation 0128 · two semiannual reports",
+          176827830
+        ],
+        [
+          "Sergeant at Arms and Doorkeeper",
+          "Senate appropriation 0127 · two semiannual reports",
+          145264068.54
+        ],
+        [
+          "Compensation of Members",
+          "Senate appropriation 0100 · two semiannual reports",
+          24261462.09
+        ],
+        [
+          "Miscellaneous Items",
+          "Senate appropriation 0123 · two semiannual reports",
+          22696269.16
+        ],
+        [
+          "Secretary of the Senate",
+          "Senate appropriation 0126 · two semiannual reports",
+          16147525.77
+        ],
+        [
+          "Legislative Counsel",
+          "Senate appropriation 0185 · two semiannual reports",
+          8503137.2
+        ],
+        [
+          "Joint Economic Committee",
+          "Senate appropriation 0181 · two semiannual reports",
+          3375745.66
+        ],
+        [
+          "SAA Business Continuity and Disaster Recovery Fund",
+          "Senate appropriation 0175 · two semiannual reports",
+          1457199.35
+        ],
+        [
+          "Congressional Accessibility Services",
+          "Senate appropriation 0190 · two semiannual reports",
+          1280023.15
+        ],
+        [
+          "Stationery Revolving Fund",
+          "Senate appropriation 0140 · two semiannual reports",
+          1177250.01
+        ],
+        [
+          "Senate Legal Counsel",
+          "Senate appropriation 0171 · two semiannual reports",
+          1131599.28
+        ],
+        [
+          "Senate Gift Shop Revolving Fund",
+          "Senate appropriation 4062 · two semiannual reports",
+          994798.83
+        ],
+        [
+          "Caucus on International Narcotics Control",
+          "Senate appropriation 0129 · two semiannual reports",
+          467100.74
+        ],
+        [
+          "Daniel Webster Senate Page Residence Revolving Fund",
+          "Senate appropriation 4101 · two semiannual reports",
+          396428.42
+        ],
+        [
+          "Senate Hair Care Services Revolving Fund",
+          "Senate appropriation 4326 · two semiannual reports",
+          275080.33
+        ],
+        [
+          "Joint Committee on Inaugural Ceremonies",
+          "Senate appropriation 0186 · two semiannual reports",
+          258401.69
+        ],
+        [
+          "Payment to Next of Kin of Senator",
+          "Senate appropriation 0115 · two semiannual reports",
+          174000
+        ],
+        [
+          "Official Mail Allocations and Mass Mail Volumes and Costs",
+          "Senate appropriation 0132 · two semiannual reports",
+          167118.68
+        ],
+        [
+          "Leadership Expense Allowances",
+          "Senate appropriation 0107 · two semiannual reports",
+          115964
+        ],
+        [
+          "Senate Photographic Studio Revolving Fund",
+          "Senate appropriation 4086 · two semiannual reports",
+          95071.7
+        ],
+        [
+          "Secretary and Sergeant at Arms Expense Allowances",
+          "Senate appropriation 0172 · two semiannual reports",
+          34568.45
+        ],
+        [
+          "Representation Allowances for Majority and Minority Leaders",
+          "Senate appropriation 0108 · no net FY2024 expenditure",
+          0
+        ],
+        [
+          "Sergeant at Arms Fellowships Fund",
+          "Senate appropriation 0176 · no net FY2024 expenditure",
+          0
+        ],
+        [
+          "Senate Computer Center Revolving Fund",
+          "Senate appropriation 4046 · no net FY2024 expenditure",
+          0
+        ],
+        [
+          "Senate Health Promotion Revolving Fund",
+          "Senate appropriation 4051 · no net FY2024 expenditure",
+          0
+        ],
+        [
+          "Senate Office of Public Records Revolving Fund",
+          "Senate appropriation 4052 · no net FY2024 expenditure",
+          0
+        ],
+        [
+          "Senate Recording Studio Revolving Fund",
+          "Senate appropriation 4087 · net receipts exceed expenditures",
+          -42968.21
+        ]
       ]
     }
   ],
   "rows": [
-    ["Legislative Branch", "Senate", 1225000000, 1225000000, 1, 1228000000, 2000000],
-    ["Legislative Branch", "House of Representatives", 1958000000, 1958000000, 1, 1963000000, 5000000],
-    ["Legislative Branch", "Joint Items", 22000000, 22000000, 1, 22000000, 0],
-    ["Legislative Branch", "Capitol Police", 778000000, 778000000, 1, 778000000, 0],
-    ["Legislative Branch", "Congressional Budget Office", 68000000, 68000000, 1, 68000000, 0],
-    ["Legislative Branch", "Architect of the Capitol", 823000000, 823000000, 1, 832000000, 8000000],
-    ["Legislative Branch", "Library of Congress", 904000000, 904000000, 1, 915000000, 12000000],
-    ["Legislative Branch", "Government Publishing Office", 93000000, 93000000, 1, 93000000, 0],
-    ["Legislative Branch", "Government Accountability Office", 867000000, 867000000, 1, 867000000, 0],
-    ["Legislative Branch", "United States Tax Court", 62000000, 62000000, 1, 62000000, 0],
-    ["Legislative Branch", "Other Legislative Branch Agencies", 81000000, 81000000, 1, 81000000, 0],
-    ["Legislative Branch", "Proprietary Receipts from the Public", -38000000, -38000000, 1, 0, 38000000],
-    ["Legislative Branch", "Intrabudgetary Transactions", -8000000, -8000000, 1, -8000000, 0]
+    [
+      "Legislative Branch",
+      "Senate",
+      1225000000,
+      1225000000,
+      1,
+      1228000000,
+      2000000
+    ],
+    [
+      "Legislative Branch",
+      "House of Representatives",
+      1958000000,
+      1958000000,
+      1,
+      1963000000,
+      5000000
+    ],
+    [
+      "Legislative Branch",
+      "Joint Items",
+      22000000,
+      22000000,
+      1,
+      22000000,
+      0
+    ],
+    [
+      "Legislative Branch",
+      "Capitol Police",
+      778000000,
+      778000000,
+      1,
+      778000000,
+      0
+    ],
+    [
+      "Legislative Branch",
+      "Congressional Budget Office",
+      68000000,
+      68000000,
+      1,
+      68000000,
+      0
+    ],
+    [
+      "Legislative Branch",
+      "Architect of the Capitol",
+      823000000,
+      823000000,
+      1,
+      832000000,
+      8000000
+    ],
+    [
+      "Legislative Branch",
+      "Library of Congress",
+      904000000,
+      904000000,
+      1,
+      915000000,
+      12000000
+    ],
+    [
+      "Legislative Branch",
+      "Government Publishing Office",
+      93000000,
+      93000000,
+      1,
+      93000000,
+      0
+    ],
+    [
+      "Legislative Branch",
+      "Government Accountability Office",
+      867000000,
+      867000000,
+      1,
+      867000000,
+      0
+    ],
+    [
+      "Legislative Branch",
+      "United States Tax Court",
+      62000000,
+      62000000,
+      1,
+      62000000,
+      0
+    ],
+    [
+      "Legislative Branch",
+      "Other Legislative Branch Agencies",
+      81000000,
+      81000000,
+      1,
+      81000000,
+      0
+    ],
+    [
+      "Legislative Branch",
+      "Proprietary Receipts from the Public",
+      -38000000,
+      -38000000,
+      1,
+      0,
+      38000000
+    ],
+    [
+      "Legislative Branch",
+      "Intrabudgetary Transactions",
+      -8000000,
+      -8000000,
+      1,
+      -8000000,
+      0
+    ]
   ]
 }

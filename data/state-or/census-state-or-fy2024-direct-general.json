@@ -308,7 +308,8 @@
       "sourceUrl": "https://www2.census.gov/programs-surveys/state/data/GS00STATEFIN01.zip",
       "sourceLabel": "official Census data download",
       "rowPrefix": "Census",
-      "basis": "Exact FY2024 Census current-operations and capital components that reconcile to this healthcare or veterans function total."
+      "basis": "Exact FY2024 Census current-operations and capital components that reconcile to this healthcare or veterans function total.",
+      "publicationCeiling": "The child rows are the lowest state-level Census finance item codes published on this same basis; the source has no agency, program, payee, or institution dimension."
     },
     {
       "parent": [
@@ -332,7 +333,8 @@
       "sourceUrl": "https://www2.census.gov/programs-surveys/state/data/GS00STATEFIN01.zip",
       "sourceLabel": "official Census data download",
       "rowPrefix": "Census",
-      "basis": "Exact FY2024 Census current-operations and capital components that reconcile to this healthcare or veterans function total."
+      "basis": "Exact FY2024 Census current-operations and capital components that reconcile to this healthcare or veterans function total.",
+      "publicationCeiling": "The child rows are the lowest state-level Census finance item codes published on this same basis; the source has no agency, program, payee, or institution dimension."
     },
     {
       "parent": [
@@ -361,7 +363,8 @@
       "sourceUrl": "https://www2.census.gov/programs-surveys/state/data/GS00STATEFIN01.zip",
       "sourceLabel": "official Census data download",
       "rowPrefix": "Census",
-      "basis": "Exact FY2024 Census current-operations and capital components that reconcile to this healthcare or veterans function total."
+      "basis": "Exact FY2024 Census current-operations and capital components that reconcile to this healthcare or veterans function total.",
+      "publicationCeiling": "The child rows are the lowest state-level Census finance item codes published on this same basis; the source has no agency, program, payee, or institution dimension."
     },
     {
       "parent": [
@@ -380,7 +383,8 @@
       "sourceUrl": "https://www2.census.gov/programs-surveys/state/data/GS00STATEFIN01.zip",
       "sourceLabel": "official Census data download",
       "rowPrefix": "Census",
-      "basis": "Exact FY2024 Census current-operations and capital components that reconcile to this healthcare or veterans function total."
+      "basis": "Exact FY2024 Census current-operations and capital components that reconcile to this healthcare or veterans function total.",
+      "publicationCeiling": "The child rows are the lowest state-level Census finance item codes published on this same basis; the source has no agency, program, payee, or institution dimension."
     },
     {
       "parent": [
@@ -404,7 +408,8 @@
       "sourceUrl": "https://www2.census.gov/programs-surveys/state/data/GS00STATEFIN01.zip",
       "sourceLabel": "official Census data download",
       "rowPrefix": "Census",
-      "basis": "Exact FY2024 Census current-operations and capital components; any child at or above $3 billion is the Census annual disclosure ceiling."
+      "basis": "Exact FY2024 Census current-operations and capital components; any child at or above $3 billion is the Census annual disclosure ceiling.",
+      "publicationCeiling": "The child rows are the lowest state-level Census finance item codes published on this same basis; the source has no agency, program, payee, or institution dimension."
     },
     {
       "parent": [
@@ -428,7 +433,8 @@
       "sourceUrl": "https://www2.census.gov/programs-surveys/state/data/GS00STATEFIN01.zip",
       "sourceLabel": "official Census data download",
       "rowPrefix": "Census",
-      "basis": "Exact FY2024 Census published components that reconcile to this general function total."
+      "basis": "Exact FY2024 Census published components that reconcile to this general function total.",
+      "publicationCeiling": "The child rows are the lowest state-level Census finance item codes published on this same basis; the source has no agency, program, payee, or institution dimension."
     },
     {
       "parent": [
@@ -452,7 +458,8 @@
       "sourceUrl": "https://www2.census.gov/programs-surveys/state/data/GS00STATEFIN01.zip",
       "sourceLabel": "official Census data download",
       "rowPrefix": "Census",
-      "basis": "Exact FY2024 Census published components that reconcile to this general function total."
+      "basis": "Exact FY2024 Census published components that reconcile to this general function total.",
+      "publicationCeiling": "The child rows are the lowest state-level Census finance item codes published on this same basis; the source has no agency, program, payee, or institution dimension."
     },
     {
       "parent": [
@@ -476,7 +483,8 @@
       "sourceUrl": "https://www2.census.gov/programs-surveys/state/data/GS00STATEFIN01.zip",
       "sourceLabel": "official Census data download",
       "rowPrefix": "Census",
-      "basis": "Exact FY2024 Census published components that reconcile to this general function total."
+      "basis": "Exact FY2024 Census published components that reconcile to this general function total.",
+      "publicationCeiling": "The child rows are the lowest state-level Census finance item codes published on this same basis; the source has no agency, program, payee, or institution dimension."
     },
     {
       "parent": [
@@ -500,7 +508,8 @@
       "sourceUrl": "https://www2.census.gov/programs-surveys/state/data/GS00STATEFIN01.zip",
       "sourceLabel": "official Census data download",
       "rowPrefix": "Census",
-      "basis": "Exact FY2024 Census published components that reconcile to this general function total."
+      "basis": "Exact FY2024 Census published components that reconcile to this general function total.",
+      "publicationCeiling": "The child rows are the lowest state-level Census finance item codes published on this same basis; the source has no agency, program, payee, or institution dimension."
     }
   ],
   "supplementalBreakdowns": [
@@ -1272,7 +1281,8 @@
       "sourceLabel": "Oregon FY2024 state expenditures open data",
       "sourceUrl": "https://data.oregon.gov/resource/y9g9-xsxs.json?$select=agency,agency_1,budget_class,budget_class_1,expend_class,expend_class_1,vendor,sum(expense)%20as%20total,count(*)%20as%20source_rows&$where=fiscal_year=2024&$group=agency,agency_1,budget_class,budget_class_1,expend_class,expend_class_1,vendor&$limit=500000",
       "basis": "All 1,017 source-native agency/budget-class/expenditure-class/receiver groups roll up without a catch-all into 126 accounting-class rows and 3,799 official FY2024 payment records totaling $127,956,350.28. Receiver names are aggregated for privacy and readability. This payment-ledger boundary differs from the Census Judicial and Legal function, so it is a separate supplemental—not additive—view.",
-      "sourceTotal": 127956350.28
+      "sourceTotal": 127956350.28,
+      "publicationCeiling": "The child rows are the lowest state-level Census finance item codes published on this same basis; the source has no agency, program, payee, or institution dimension."
     },
     {
       "parent": [
@@ -2720,7 +2730,8 @@
       "sourceLabel": "Oregon FY2024 state expenditures open data",
       "sourceUrl": "https://data.oregon.gov/resource/y9g9-xsxs.json?$select=agency,agency_1,budget_class,budget_class_1,expend_class,expend_class_1,vendor,sum(expense)%20as%20total,count(*)%20as%20source_rows&$where=fiscal_year=2024&$group=agency,agency_1,budget_class,budget_class_1,expend_class,expend_class_1,vendor&$limit=500000",
       "basis": "All 617 source-native agency/budget-class/expenditure-class/receiver groups roll up without a catch-all into 239 accounting-class rows and 1,211 official FY2024 payment records totaling $165,512,759.48. Receiver names are aggregated for privacy and readability. This payment-ledger boundary differs from the Census Federal and State Legislative function, so it is a separate supplemental—not additive—view.",
-      "sourceTotal": 165512759.48
+      "sourceTotal": 165512759.48,
+      "publicationCeiling": "The child rows are the lowest state-level Census finance item codes published on this same basis; the source has no agency, program, payee, or institution dimension."
     },
     {
       "parent": [
@@ -4581,7 +4592,8 @@
         ]
       ],
       "sourceLabel": "Oregon Agency Expenditures Multi-Year Report",
-      "sourceUrl": "https://data.oregon.gov/resource/y9g9-xsxs.json?$select=agency,agency_1,budget_class,budget_class_1,expend_class,expend_class_1,sum%28expense%29%20as%20amount,count%28*%29%20as%20records&$where=fiscal_year=2024%20and%20agency%20in%20%28100%2C443%29&$group=agency,agency_1,budget_class,budget_class_1,expend_class,expend_class_1&$order=agency,amount%20DESC&$limit=5000"
+      "sourceUrl": "https://data.oregon.gov/resource/y9g9-xsxs.json?$select=agency,agency_1,budget_class,budget_class_1,expend_class,expend_class_1,sum%28expense%29%20as%20amount,count%28*%29%20as%20records&$where=fiscal_year=2024%20and%20agency%20in%20%28100%2C443%29&$group=agency,agency_1,budget_class,budget_class_1,expend_class,expend_class_1&$order=agency,amount%20DESC&$limit=5000",
+      "publicationCeiling": "The child rows are the lowest state-level Census finance item codes published on this same basis; the source has no agency, program, payee, or institution dimension."
     },
     {
       "parent": [
@@ -5153,7 +5165,8 @@
       ],
       "sourceTotal": 11954258445,
       "sourceLabel": "CMS MBES/CBES FY2024 Financial Management Report",
-      "sourceUrl": "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+      "sourceUrl": "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip",
+      "publicationCeiling": "The child rows are the lowest state-level Census finance item codes published on this same basis; the source has no agency, program, payee, or institution dimension."
     },
     {
       "parent": [
@@ -5726,7 +5739,8 @@
       ],
       "sourceTotal": 16993042692,
       "sourceLabel": "CMS MBES/CBES FY2024 Financial Management Report",
-      "sourceUrl": "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+      "sourceUrl": "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip",
+      "publicationCeiling": "The child rows are the lowest state-level Census finance item codes published on this same basis; the source has no agency, program, payee, or institution dimension."
     },
     {
       "parent": [
@@ -6299,7 +6313,8 @@
       ],
       "sourceTotal": 11954258445,
       "sourceLabel": "CMS MBES/CBES FY2024 Financial Management Report",
-      "sourceUrl": "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+      "sourceUrl": "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip",
+      "publicationCeiling": "The child rows are the lowest state-level Census finance item codes published on this same basis; the source has no agency, program, payee, or institution dimension."
     },
     {
       "parent": [
@@ -6824,7 +6839,8 @@
       ],
       "sourceTotal": 5038784247,
       "sourceLabel": "CMS MBES/CBES FY2024 Financial Management Report",
-      "sourceUrl": "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+      "sourceUrl": "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip",
+      "publicationCeiling": "The child rows are the lowest state-level Census finance item codes published on this same basis; the source has no agency, program, payee, or institution dimension."
     },
     {
       "parent": [
@@ -7139,7 +7155,8 @@
       ],
       "sourceTotal": 760690210,
       "sourceLabel": "CMS MBES/CBES FY2024 Financial Management Report",
-      "sourceUrl": "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+      "sourceUrl": "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip",
+      "publicationCeiling": "The child rows are the lowest state-level Census finance item codes published on this same basis; the source has no agency, program, payee, or institution dimension."
     },
     {
       "parent": [
@@ -7454,7 +7471,8 @@
       ],
       "sourceTotal": 545799037,
       "sourceLabel": "CMS MBES/CBES FY2024 Financial Management Report",
-      "sourceUrl": "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+      "sourceUrl": "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip",
+      "publicationCeiling": "The child rows are the lowest state-level Census finance item codes published on this same basis; the source has no agency, program, payee, or institution dimension."
     },
     {
       "parent": [
@@ -7745,7 +7763,8 @@
       ],
       "sourceTotal": 214891173,
       "sourceLabel": "CMS MBES/CBES FY2024 Financial Management Report",
-      "sourceUrl": "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip"
+      "sourceUrl": "https://www.medicaid.gov/medicaid/financial-management/downloads/financial-management-report-fy2024.zip",
+      "publicationCeiling": "The child rows are the lowest state-level Census finance item codes published on this same basis; the source has no agency, program, payee, or institution dimension."
     }
   ],
   "sourceCheck": {
@@ -7776,5 +7795,6 @@
       "separate, non-additive agency total; source may include federal pass-throughs",
       "https://data.oregon.gov/resource/y9g9-xsxs.json?$select=agency_1,sum(expense)%20as%20amount,count(*)%20as%20records&$where=fiscal_year=2024&$group=agency_1&$order=amount%20DESC&$limit=5000"
     ]
-  ]
+  ],
+  "publicationCeiling": "Census FY2024 state-government account codes are the lowest cells in the published state-level file; the same-basis source has no agency, program, payee, or institution child dimension."
 }

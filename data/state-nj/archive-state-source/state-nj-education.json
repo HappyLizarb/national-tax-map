@@ -8343,17 +8343,33 @@
       ]
     }
   ],
-  "itemBreakdowns": [{
-    "parent": ["EDUCATION", "EDUCATIONAL SUPPORT SERVICES · Receiver *", 5254763347.62],
-    "accountCount": 2,
-    "rows": [
-      ["TEACHERS PENSION & ANNUITY ASSISTANCE", "Employee-benefit payments for local school districts · 1 source row", 4855287234.93],
-      ["All other organization/category rows", "105 groups · 120 source rows", 399476112.69]
-    ],
-    "sourceUrl": "https://data.nj.gov/resource/apet-rp2i.json?$select=organization_name%2Cexpenditure_category%2Cexpenditure_desc%2Csum%28expended_amt%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows&$where=budget_fiscal_year%3D%272024%27%20AND%20ibno_agency%3D%27EDUCATION%27%20AND%20statewide_program%3D%27EDUCATIONAL%20SUPPORT%20SERVICES%27%20AND%20payee_name%3D%27%2A%27&$group=organization_name%2Cexpenditure_category%2Cexpenditure_desc&$order=amount%20desc&$limit=50000",
-    "sourceLabel": "New Jersey YourMoney official organization/category grouping",
-    "basis": "Exact FY2024 organization and expenditure-code rows for the literal '*' payee; every child is below $5 billion."
-  }],
+  "itemBreakdowns": [
+    {
+      "parent": [
+        "EDUCATION",
+        "EDUCATIONAL SUPPORT SERVICES · Receiver *",
+        5254763347.62
+      ],
+      "accountCount": 2,
+      "rows": [
+        [
+          "TEACHERS PENSION & ANNUITY ASSISTANCE",
+          "Employee-benefit payments for local school districts · 1 source row",
+          4855287234.93,
+          null,
+          1
+        ],
+        [
+          "All other organization/category rows",
+          "105 groups · 120 source rows",
+          399476112.69
+        ]
+      ],
+      "sourceUrl": "https://data.nj.gov/resource/apet-rp2i.json?$select=organization_name%2Cexpenditure_category%2Cexpenditure_desc%2Csum%28expended_amt%29%20as%20amount%2Ccount%28%2A%29%20as%20source_rows&$where=budget_fiscal_year%3D%272024%27%20AND%20ibno_agency%3D%27EDUCATION%27%20AND%20statewide_program%3D%27EDUCATIONAL%20SUPPORT%20SERVICES%27%20AND%20payee_name%3D%27%2A%27&$group=organization_name%2Cexpenditure_category%2Cexpenditure_desc&$order=amount%20desc&$limit=50000",
+      "sourceLabel": "New Jersey YourMoney official organization/category grouping",
+      "basis": "Exact FY2024 organization and expenditure-code rows for the literal '*' payee; every child is below $5 billion."
+    }
+  ],
   "sourceCheck": {
     "objectClassRows": 1014,
     "sourceRows": 6069,

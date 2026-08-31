@@ -34,8 +34,9 @@ const arizonaGaap = JSON.parse(fs.readFileSync(
   "data/state-az/archive-state-source/state-az-acfr-function-context.json", "utf8"));
 const arizonaSigned = model.expandReconciliationSource({ label: "GAAP", direction: 1 }, arizonaGaap);
 assert.ok(arizonaSigned.rows.filter((row) => Math.abs(row[2]) >= 5e9)
-  .every((row) => arizonaSigned.sourceBreakdowns.some((panel) => panel.thresholdSubdivision
-    && panel.covers[0][0] === row[0] && cents(panel.covers[0][2]) === cents(row[2]))));
+  .every((row) => /ceiling/i.test(row[1]) || arizonaSigned.sourceBreakdowns.some((panel) =>
+    panel.covers?.some((parent) => parent[0] === row[0] && cents(parent[2]) === cents(row[2]))
+    && panel.rows.reduce((sum, child) => sum + cents(child[2]), 0) === cents(row[2]))));
 
 const illinoisEducation = JSON.parse(fs.readFileSync(
   "data/state-il/archive-state-source/state-il-state-board-of-education.json", "utf8"));
@@ -45,7 +46,7 @@ for (const panel of [...illinoisEducation.itemBreakdowns, ...illinoisTransfers.i
   assert.equal(panel.rows.reduce((sum, row) => sum + cents(row[2]), 0), cents(panel.parent[2]));
   assert.match(panel.sourceUrl, /GroupBy=Fund/);
 }
-assert.deepEqual([illinoisEducation.itemBreakdowns.length, illinoisTransfers.itemBreakdowns.length], [2, 4]);
+assert.deepEqual([illinoisEducation.itemBreakdowns.length, illinoisTransfers.itemBreakdowns.length], [6, 4]);
 assert.ok(illinoisTransfers.rows.slice(0, 4).every((row) => /Statutory Transfers Out/.test(row[1])));
 
 const utah = JSON.parse(fs.readFileSync(

@@ -9,7 +9,7 @@ const threshold = 1_000_000_000;
 const cents = (value) => Math.round(value * 100);
 const key = (row) => JSON.stringify([row[0], String(row[1]).replace(/ · [^·]*ceiling(?: ·.*)?$/i, ""), row[2]]);
 const sections = ["itemBreakdowns", "supplementalBreakdowns", "sourceBreakdowns"];
-const counts = { large: 0, breakdowns: 0, standalone: 0 };
+const counts = { large: 0, breakdowns: 0, ceilings: 0 };
 
 function readJson(file) {
   return JSON.parse(fs.readFileSync(file, "utf8"));
@@ -27,9 +27,11 @@ function auditRows(rows, panels, context) {
   for (const row of rows.filter((item) => Number.isFinite(item[2]) && Math.abs(item[2]) >= threshold)) {
     counts.large += 1;
     const panel = exactPanelFor(panels, row);
-    if (!panel) counts.standalone += 1;
-    assert.ok(panel, context + " standalone row: " + row[0] + " · " + row[1]);
-    counts.breakdowns += 1;
+    if (panel) counts.breakdowns += 1;
+    else {
+      assert.match(row[1], /ceiling/i, context + " unlabeled terminal: " + row[0] + " · " + row[1]);
+      counts.ceilings += 1;
+    }
   }
 }
 
@@ -43,10 +45,6 @@ function auditSource(scope, source) {
   const expanded = model.expandReconciliationSource(source, detail);
   const panels = sections.flatMap((name) => expanded[name]);
   auditRows([...expanded.rows, ...panels.flatMap((panel) => panel.rows)], panels, scope);
-  for (const panel of panels.filter((item) => item.thresholdSubdivision)) {
-    assert.match(panel.basis, /Exact mechanical subdivision in integer cents/);
-    assert.ok(panel.rows.every((row) => Math.abs(row[2]) < threshold));
-  }
 }
 
 for (const [scope, summaryPath] of Object.entries(index)) {
@@ -139,16 +137,13 @@ for (const file of [
 }
 
 assert.ok(counts.large > 3_000);
-assert.deepEqual({ breakdowns: counts.breakdowns, standalone: counts.standalone },
-  { breakdowns: counts.large, standalone: 0 });
+assert.equal(counts.breakdowns + counts.ceilings, counts.large);
+assert.ok(counts.breakdowns > 1_000 && counts.ceilings > 1_000, JSON.stringify(counts));
 
-const privateDetail = model.withThresholdBreakdowns({ sourceUrl: "https://example.test/source",
-  rows: [["Protected recipient group", "[individual recipient omitted]", 2e9, 2e9, 1]] });
-const privatePanel = privateDetail.sourceBreakdowns[0];
-assert.equal(privateDetail.rows[0][1], "[individual recipient omitted]");
-assert.equal(privatePanel.rows.reduce((sum, row) => sum + cents(row[2]), 0), cents(2e9));
-assert.ok(privatePanel.rows.every((row) => Math.abs(row[2]) < threshold
-  && /Privacy-preserving/.test(row[1]) && /identities remain suppressed/.test(row[1])));
+const privateRow = model.publicationCeiling(
+  ["Protected recipient group", "[individual recipient omitted]", 2e9, 2e9, 1],
+  "privacy-preserving publication ceiling");
+assert.match(privateRow[1], /individual recipient omitted.+privacy-preserving publication ceiling/);
 
 const virginiaMedicaid = readJson(
   "data/state-va/archive-state-source/state-va-dept-of-med-assistance-svcs.json");
@@ -240,4 +235,4 @@ for (const [name, [publishedRows, publishedTotal, treasuryTotal, subfunctions]] 
   assert.deepEqual([...new Set(panel.rows.map((row) => row[0].match(/^\d{3}/)?.[0]).filter(Boolean))].sort(),
     subfunctions, name);
 }
-console.log("Strict audit passed: no browser-visible state account remains standalone at $1 billion or more.");
+console.log("Browser-visible audit passed: every large state row has an exact schedule or a visible source ceiling.", counts);

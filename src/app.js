@@ -201,7 +201,7 @@ function exactSourceBreakdown(item, parent) {
 }
 
 function renderSourceBreakdowns(items, detail, rendered) {
-  return items.filter((item) => item.thresholdSubdivision || !rendered.has(item)).map((item) => {
+  return items.filter((item) => !rendered.has(item)).map((item) => {
     rendered.add(item);
     return renderSourceBreakdown(item, detail, rendered);
   }).join("");

@@ -241,7 +241,6 @@ async function loadDepartmentDetail(department, request) {
   }
 }
 function renderDetail(detail) {
-  detail = model.withThresholdBreakdowns(detail);
   const limit = detail.showAll ? detail.rows.length : 500, rows = detail.rows.slice(0, limit);
   const hierarchy = renderReceiptHierarchy(detail, model.formatMoney, escapeHtml);
   const supplementalCount = (detail.supplementalRows || []).length;

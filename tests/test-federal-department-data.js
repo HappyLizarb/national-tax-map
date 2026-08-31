@@ -29,7 +29,7 @@ for (const item of itemBreakdowns) {
   assert.ok(item.rows.slice(0, -1).every((row, index, rows) => !index || Math.abs(rows[index - 1][2]) >= Math.abs(row[2])));
 }
 const supplementalBreakdowns = federalDetails.flatMap((detail) => detail.supplementalBreakdowns || []);
-assert.equal(supplementalBreakdowns.length, 25);
+assert.equal(supplementalBreakdowns.length, 24);
 for (const detail of federalDetails) {
   for (const item of detail.supplementalBreakdowns || []) {
     assert.ok(detail.rows.some((row) => row[0] === item.parent[0] && row[1] === item.parent[1]
@@ -52,7 +52,7 @@ const hasExactDisplayBreakdown = (detail, parent) => [
     const displayParent = panel.displayParent || panel.parent;
     if (displayParent && sameAccount(displayParent, parent)) return rows === cents(parent[2]);
     const covers = (panel.covers || []).reduce((sum, row) => sum + cents(row[2]), 0);
-    return rows === covers && (panel.covers || []).some((row) => sameAccount(row, parent));
+    return panel.covers?.length === 1 && rows === covers && sameAccount(panel.covers[0], parent);
   });
 const hasExactSourceBreakdown = (detail, parent) => [...(detail.sourceBreakdowns || []),
   ...(detail.supplementalBreakdowns || [])].some((item) => item.covers?.some((row) => sameAccount(row, parent))
@@ -90,6 +90,19 @@ assert.equal(billionAvailabilityRows.filter(([, row]) => /publication ceiling/i.
 assert.ok(billionAvailabilityRows.every(([detail, row]) => hasExactSourceBreakdown(detail, row)
   || /publication ceiling/i.test(row[1])));
 const sourceView = (title) => sourceViews.find((item) => item.title === title);
+const dodea = sourceView("DoD Dependents Education FY2024 actuals by budget-activity subactivity");
+assert.deepEqual([dodea.rows.length, dodea.rows.reduce((sum, row) => sum + row[2], 0)],
+  [9, 3535269000]);
+assert.equal(dodea.rows.filter((row) => Math.abs(row[2]) >= 1e9).length, 1);
+assert.match(dodea.rows.find((row) => Math.abs(row[2]) >= 1e9)[1], /official publication ceiling/);
+const hrsaPrograms = sourceView("HRSA FY2024 awarded grants by program");
+assert.deepEqual([hrsaPrograms.rows.length, cents(hrsaPrograms.rows.reduce((sum, row) => sum + row[2], 0))],
+  [235, cents(11295901925.2)]);
+assert.equal(hrsaPrograms.rows.reduce((sum, row) =>
+  sum + Number(row[1].match(/across ([\d,]+) awards?/)?.[1].replaceAll(",", "") || 0), 0), 6478);
+const hrsaAwardDepth = sourceViews.filter((panel) => panel.dataset === "hrsa-fy2024-award-depth");
+assert.deepEqual(hrsaAwardDepth.map((panel) => panel.rows.length), [1360, 59]);
+assert.ok(hrsaAwardDepth.flatMap((panel) => panel.rows).every((row) => Math.abs(row[2]) < 1e9));
 const browserBillionRows = federalDetails.flatMap((detail) => {
   const panels = ["itemBreakdowns", "sourceBreakdowns", "supplementalBreakdowns"].flatMap((name) => detail[name] || []);
   const rows = [...(detail.rows || []), ...(detail.largeAccountRows || []), ...(detail.supplementalRows || []),
@@ -99,9 +112,17 @@ const browserBillionRows = federalDetails.flatMap((detail) => {
 const exactBrowserRows = browserBillionRows.filter(([detail, row]) => hasExactDisplayBreakdown(detail, row));
 const ceilingBrowserRows = browserBillionRows.filter(([detail, row]) =>
   /ceiling/i.test(model.displayAccountDescription(detail, row)));
-assert.deepEqual([browserBillionRows.length, exactBrowserRows.length, ceilingBrowserRows.length], [2237, 422, 1815]);
+assert.deepEqual([browserBillionRows.length, exactBrowserRows.length, ceilingBrowserRows.length], [2266, 492, 1774]);
 assert.ok(browserBillionRows.every(([detail, row]) => hasExactDisplayBreakdown(detail, row)
   || /ceiling/i.test(model.displayAccountDescription(detail, row))));
+const cmsDepth = sourceViews.filter((panel) =>
+  panel.dataset === "cms-fy2024-medicaid-federal-share-depth");
+assert.deepEqual([cmsDepth.length, cmsDepth.flatMap((panel) => panel.rows).length,
+  cmsDepth.filter((panel) => panel.rows.every((row) => Math.abs(row[2]) < 1e9)).length,
+  cmsDepth.flatMap((panel) => panel.rows).filter((row) => Math.abs(row[2]) >= 1e9).length],
+  [50, 3822, 32, 24]);
+assert.ok(cmsDepth.every((panel) => panel.rows.reduce((sum, row) => sum + cents(row[2]), 0)
+  === cents(panel.sourceTotal)));
 const epaAwards = sourceView("EPA FY2024 Exchange Network awards by recipient");
 assert.deepEqual([epaAwards.rows.length, epaAwards.rows.reduce((sum, row) => sum + row[2], 0)], [33, 9214647]);
 assert.deepEqual(epaAwards.rows.at(-1), ["Published tribal subtotal adjustment",
@@ -146,7 +167,7 @@ assert.deepEqual(creditInterest.rows[0], ["FEDERAL DIRECT STUDENT LOAN PROGRAM F
   "FY2024 actual interest received · OMB account 091-4253-0-3-502", 5436000000]);
 assert.ok(creditInterest.rows.every((row) => Math.abs(row[2]) < 1e10));
 const specialEducationByState = sourceView("ED FY2024 special-education formula allocations by state and area");
-assert.deepEqual([specialEducationByState.rows.length, specialEducationByState.rows.reduce((sum, row) => sum + row[2], 0)], [59, 15153704000]);
+assert.deepEqual([specialEducationByState.rows.length, specialEducationByState.rows.reduce((sum, row) => sum + row[2], 0)], [59, 15173704000]);
 assert.ok(specialEducationByState.rows.every((row) => Math.abs(row[2]) < 1e10));
 const pellByState = sourceView("ED FY2024 estimated Pell Grants by state and area");
 assert.deepEqual([pellByState.rows.length, pellByState.rows.reduce((sum, row) => sum + row[2], 0)], [57, 35498000000]);
@@ -496,11 +517,10 @@ assert.deepEqual(medicaid.covers, [medicaidNoYearBridge.rows[0]]);
 const hiOasdiTax = sourceView("HI taxation-of-OASDI-benefits receipt from the Medicare Trustees control");
 assert.equal(hiOasdiTax.rows.reduce((sum, row) => sum + cents(row[2]), 0), cents(-39794000000));
 assert.match(hiOasdiTax.rows.at(-1)[1], /public Medicare Trustees disclosure ceiling/);
-const caDrugQuarters = sourceView("California CY2024 Medicaid drug reimbursements by quarter").rows;
-assert.equal(cents(caDrugQuarters.reduce((sum, row) => sum + row[2], 0)), cents(15506717427.98));
-assert.ok(caDrugQuarters.every((row) => Math.abs(row[2]) < 1e10));
-assert.equal(cents(sourceView("California CY2024 largest disclosed Medicaid drug products").rows
-  .reduce((sum, row) => sum + row[2], 0)), cents(2618545457.50));
+const caDrugNdcs = sourceView("California CY2024 Medicaid drug reimbursements by NDC").rows;
+assert.equal(caDrugNdcs.length, 24345);
+assert.equal(cents(caDrugNdcs.reduce((sum, row) => sum + row[2], 0)), cents(15506717427.98));
+assert.ok(caDrugNdcs.every((row) => Math.abs(row[2]) < 1e9));
 const ssiByArea = sourceView("SSI no-year fund resources from December congressional-district payments");
 assert.deepEqual([ssiByArea.rows.length, ssiByArea.rows.reduce((sum, row) => sum + cents(row[2]), 0)],
   [53, cents(61849449090.25)]);

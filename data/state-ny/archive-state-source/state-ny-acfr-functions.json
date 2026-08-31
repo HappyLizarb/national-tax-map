@@ -1,9 +1,18 @@
 {
-  "scope": "New York", "code": "ny", "fiscalYear": 2024,
-  "department": "Primary-government functions", "sourceTotal": 275665000000,
+  "scope": "New York",
+  "code": "ny",
+  "fiscalYear": 2024,
+  "department": "Primary-government functions",
+  "sourceTotal": 275665000000,
   "sourceUrl": "https://www.osc.ny.gov/files/reports/finance/pdf/annual-comprehensive-financial-report-2024.pdf",
   "sourceBasis": "Official FY2024 Statement of Activities, printed p. 39; amounts converted from millions of dollars.",
-  "rowSchema": ["activity", "function", "amount", "sourceAmount", "sourceRows"],
+  "rowSchema": [
+    "activity",
+    "function",
+    "amount",
+    "sourceAmount",
+    "sourceRows"
+  ],
   "sourceBreakdowns": [
     {
       "title": "State University of New York expenses by audited class",
@@ -12,33 +21,144 @@
       "sourceLabel": "New York FY2024 ACFR",
       "sourceUrl": "https://www.osc.ny.gov/files/reports/finance/pdf/annual-comprehensive-financial-report-2024.pdf",
       "covers": [
-        ["Business-type activities", "State University of New York", 12515000000]
+        [
+          "Business-type activities",
+          "State University of New York",
+          12515000000
+        ]
       ],
       "rows": [
-        ["Educational and general", "Operating expense", 6295000000],
-        ["Hospitals and clinics", "Operating expense", 4265000000],
-        ["Depreciation and amortization", "Operating expense", 829000000],
-        ["Auxiliary enterprises", "Operating expense", 627000000],
-        ["Interest expense", "Nonoperating expense", 481000000],
-        ["Other", "Operating expense", 16000000],
-        ["Plant and equipment write-off", "Nonoperating expense", 2000000]
-      ]
+        [
+          "Educational and general",
+          "Operating expense",
+          6295000000
+        ],
+        [
+          "Hospitals and clinics",
+          "Operating expense",
+          4265000000
+        ],
+        [
+          "Depreciation and amortization",
+          "Operating expense",
+          829000000
+        ],
+        [
+          "Auxiliary enterprises",
+          "Operating expense",
+          627000000
+        ],
+        [
+          "Interest expense",
+          "Nonoperating expense",
+          481000000
+        ],
+        [
+          "Other",
+          "Operating expense",
+          16000000
+        ],
+        [
+          "Plant and equipment write-off",
+          "Nonoperating expense",
+          2000000
+        ]
+      ],
+      "publicationCeiling": "The cited statewide FY2024 ACFR statement or combining schedule publishes these as its lowest additive audited cells; lower operational reports are not additive to this statewide accrual presentation."
     }
   ],
   "rows": [
-    ["Governmental activities", "Education", 48561000000, 48561000000, 1],
-    ["Governmental activities", "Public health", 121815000000, 121815000000, 1],
-    ["Governmental activities", "Public welfare", 22221000000, 22221000000, 1],
-    ["Governmental activities", "Public safety", 8748000000, 8748000000, 1],
-    ["Governmental activities", "Transportation", 14464000000, 14464000000, 1],
-    ["Governmental activities", "Environment and recreation", 2393000000, 2393000000, 1],
-    ["Governmental activities", "Support and regulate business", 2762000000, 2762000000, 1],
-    ["Governmental activities", "General government", 26618000000, 26618000000, 1],
-    ["Governmental activities", "Interest on long-term debt", 1413000000, 1413000000, 1],
-    ["Business-type activities", "Lottery", 7016000000, 7016000000, 1],
-    ["Business-type activities", "Unemployment insurance", 3158000000, 3158000000, 1],
-    ["Business-type activities", "State University of New York", 12515000000, 12515000000, 1],
-    ["Business-type activities", "City University of New York", 3981000000, 3981000000, 1]
+    [
+      "Governmental activities",
+      "Education",
+      48561000000,
+      48561000000,
+      1
+    ],
+    [
+      "Governmental activities",
+      "Public health",
+      121815000000,
+      121815000000,
+      1
+    ],
+    [
+      "Governmental activities",
+      "Public welfare",
+      22221000000,
+      22221000000,
+      1
+    ],
+    [
+      "Governmental activities",
+      "Public safety",
+      8748000000,
+      8748000000,
+      1
+    ],
+    [
+      "Governmental activities",
+      "Transportation",
+      14464000000,
+      14464000000,
+      1
+    ],
+    [
+      "Governmental activities",
+      "Environment and recreation",
+      2393000000,
+      2393000000,
+      1
+    ],
+    [
+      "Governmental activities",
+      "Support and regulate business",
+      2762000000,
+      2762000000,
+      1
+    ],
+    [
+      "Governmental activities",
+      "General government",
+      26618000000,
+      26618000000,
+      1
+    ],
+    [
+      "Governmental activities",
+      "Interest on long-term debt",
+      1413000000,
+      1413000000,
+      1
+    ],
+    [
+      "Business-type activities",
+      "Lottery",
+      7016000000,
+      7016000000,
+      1
+    ],
+    [
+      "Business-type activities",
+      "Unemployment insurance",
+      3158000000,
+      3158000000,
+      1
+    ],
+    [
+      "Business-type activities",
+      "State University of New York",
+      12515000000,
+      12515000000,
+      1
+    ],
+    [
+      "Business-type activities",
+      "City University of New York",
+      3981000000,
+      3981000000,
+      1
+    ]
   ],
   "coverageStatus": "official-itemized-source-basis",
   "note": "Rows reconcile exactly to audited total primary-government expenses; remaining large rows are published disclosure ceilings."

@@ -34,6 +34,7 @@ require("./test-federal-department-data.js");
 require("./test-federal-presentation-data.js");
 require("./test-state-reconciliation-details.js");
 require("./test-large-row-coverage.js");
+require("./test-strict-threshold-audit.js");
 require("./test-offsetting-receipts.js");
 require("./test-tax-estimates.js");
 require("./test-kpi-disclosures.js");

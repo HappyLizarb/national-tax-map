@@ -48,7 +48,9 @@ Open <http://localhost:4173>, or run `node tests/test.js` to validate the data.
   direct-managed programs repeat the parent name in `subAgency`.
 - Summary and detail amounts reconcile in cents to one official itemized source
   layer per jurisdiction. No synthetic `Others`, `coverage-gap`, or unnamed
-  residual row is inserted into a pie.
+  residual row is inserted into a pie. Large rows are never divided into
+  mechanical threshold slices: they either open an exact same-basis schedule
+  or remain visibly labeled as the current public-source ceiling.
 - State allocation pies start with the official source archive, add a signed
   `Census adjustments` control, then add a signed `GAAP adjustments` control.
   The two rows reconcile published totals without assigning an unsupported
@@ -70,6 +72,10 @@ Open <http://localhost:4173>, or run `node tests/test.js` to validate the data.
   federal, state, local, and level-unassigned capital public support. These are
   actual revenues received—not adopted budgets or an additive component of the
   Census state-government total.
+- Large IPEDS functional rows add 58 exact same-record expense-composition
+  schedules: published salaries and wages plus the reconciled non-salary
+  residual. Thirty-four schedules finish below $1 billion; remaining large
+  natural-class children stay labeled IPEDS publication ceilings.
 - A second nationwide overlay uses SHEEO Grapevine's revised FY2024 state
   appropriations. It identifies $60.156B of public four-year operating support
   within $123.616B of total state higher-education support, including $114.228B
@@ -83,6 +89,10 @@ Open <http://localhost:4173>, or run `node tests/test.js` to validate the data.
   veterans components and add six FY2024 CMS-64/CHIP service panels per state:
   total computable spending, federal share, and non-federal financing for each
   program. The three financing views are alternatives, not additive totals.
+- The federal HHS view expands 50 repository-created CMS federal-share
+  aggregates back to 3,822 already-published FY2024 service and administration
+  rows. Large source categories such as annual Medicaid MCO remain public CMS
+  category ceilings because the public release has no deeper same-basis tier.
 - State defense views surface 92 explicitly named military, National Guard,
   adjutant-general, and veterans agency totals from 41 official state ledgers.
   They remain separate from Census because no uniform state-defense function

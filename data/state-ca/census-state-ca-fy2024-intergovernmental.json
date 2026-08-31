@@ -312,7 +312,8 @@
         ]
       ],
       "sourceLabel": "California Controller FY2024 expenditures supplement",
-      "sourceUrl": "https://www.sco.ca.gov/Files-ARD/BudLeg/Expenditures_Supplement_23_24.xlsx"
+      "sourceUrl": "https://www.sco.ca.gov/Files-ARD/BudLeg/Expenditures_Supplement_23_24.xlsx",
+      "publicationCeiling": "The child rows are the lowest state-level Census finance item codes published on this same basis; the source has no agency, program, payee, or institution dimension."
     },
     {
       "parent": [
@@ -379,7 +380,8 @@
         ]
       ],
       "sourceLabel": "California Controller FY2024 expenditures supplement",
-      "sourceUrl": "https://www.sco.ca.gov/Files-ARD/BudLeg/Expenditures_Supplement_23_24.xlsx"
+      "sourceUrl": "https://www.sco.ca.gov/Files-ARD/BudLeg/Expenditures_Supplement_23_24.xlsx",
+      "publicationCeiling": "The child rows are the lowest state-level Census finance item codes published on this same basis; the source has no agency, program, payee, or institution dimension."
     }
   ],
   "sourceBreakdowns": [
@@ -977,12 +979,14 @@
           799000,
           "https://www2.census.gov/programs-surveys/school-finances/tables/2024/secondary-education-finance/elsec24.xlsx"
         ]
-      ]
+      ],
+      "publicationCeiling": "The child rows are the lowest state-level Census finance item codes published on this same basis; the source has no agency, program, payee, or institution dimension."
     }
   ],
   "sourceCheck": {
     "groupRows": 31,
     "difference": 0
   },
-  "hierarchyNote": "These rows are mutually exclusive Census expenditure function/category rows within this detail group; they are not vendor or agency transactions."
+  "hierarchyNote": "These rows are mutually exclusive Census expenditure function/category rows within this detail group; they are not vendor or agency transactions.",
+  "publicationCeiling": "Census FY2024 state-government account codes are the lowest cells in the published state-level file; the same-basis source has no agency, program, payee, or institution child dimension."
 }

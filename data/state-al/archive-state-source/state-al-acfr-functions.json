@@ -1,9 +1,18 @@
 {
-  "scope": "Alabama", "code": "al", "fiscalYear": 2024,
-  "department": "Primary-government functions", "sourceTotal": 34823126000,
+  "scope": "Alabama",
+  "code": "al",
+  "fiscalYear": 2024,
+  "department": "Primary-government functions",
+  "sourceTotal": 34823126000,
   "sourceUrl": "https://comptroller.alabama.gov/wp-content/uploads/2025/04/ACFR-2024.Alabama.pdf",
   "sourceBasis": "Official FY2024 Statement of Activities, printed pp. 33-34; amounts converted from thousands of dollars.",
-  "rowSchema": ["activity", "function", "amount", "sourceAmount", "sourceRows"],
+  "rowSchema": [
+    "activity",
+    "function",
+    "amount",
+    "sourceAmount",
+    "sourceRows"
+  ],
   "sourceBreakdowns": [
     {
       "title": "Health expense coverage",
@@ -12,29 +21,124 @@
       "sourceLabel": "Alabama FY2024 ACFR",
       "sourceUrl": "https://comptroller.alabama.gov/wp-content/uploads/2025/04/ACFR-2024.Alabama.pdf",
       "covers": [
-        ["Governmental activities", "Health", 10818463000]
+        [
+          "Governmental activities",
+          "Health",
+          10818463000
+        ]
       ],
       "rows": [
-        ["Operating grants and contributions", "Program revenue covering expense", 8207220000],
-        ["Net governmental expense", "Expense not covered by program revenues", 2023943000],
-        ["Charges for services", "Program revenue covering expense", 587300000]
-      ]
+        [
+          "Operating grants and contributions",
+          "Program revenue covering expense",
+          8207220000
+        ],
+        [
+          "Net governmental expense",
+          "Expense not covered by program revenues",
+          2023943000
+        ],
+        [
+          "Charges for services",
+          "Program revenue covering expense",
+          587300000
+        ]
+      ],
+      "publicationCeiling": "The cited statewide FY2024 ACFR statement or combining schedule publishes these as its lowest additive audited cells; lower operational reports are not additive to this statewide accrual presentation."
     }
   ],
   "rows": [
-    ["Governmental activities", "Economic Development and Regulation", 212427000, 212427000, 1],
-    ["Governmental activities", "Education and Cultural Resources", 12806084000, 12806084000, 1],
-    ["Governmental activities", "Natural Resources and Recreation", 238248000, 238248000, 1],
-    ["Governmental activities", "Health", 10818463000, 10818463000, 1],
-    ["Governmental activities", "Social Services", 3581939000, 3581939000, 1],
-    ["Governmental activities", "Protection of Persons and Property", 1736121000, 1736121000, 1],
-    ["Governmental activities", "Transportation", 1446138000, 1446138000, 1],
-    ["Governmental activities", "General Government", 2831463000, 2831463000, 1],
-    ["Governmental activities", "Debt Service - Interest and Other Charges", 177450000, 177450000, 1],
-    ["Business-type activities", "Unemployment Compensation", 103162000, 103162000, 1],
-    ["Business-type activities", "State Port Authority", 214320000, 214320000, 1],
-    ["Business-type activities", "Alcoholic Beverage Control Board", 501349000, 501349000, 1],
-    ["Business-type activities", "Nonmajor Proprietary Funds", 155962000, 155962000, 1]
+    [
+      "Governmental activities",
+      "Economic Development and Regulation",
+      212427000,
+      212427000,
+      1
+    ],
+    [
+      "Governmental activities",
+      "Education and Cultural Resources",
+      12806084000,
+      12806084000,
+      1
+    ],
+    [
+      "Governmental activities",
+      "Natural Resources and Recreation",
+      238248000,
+      238248000,
+      1
+    ],
+    [
+      "Governmental activities",
+      "Health",
+      10818463000,
+      10818463000,
+      1
+    ],
+    [
+      "Governmental activities",
+      "Social Services",
+      3581939000,
+      3581939000,
+      1
+    ],
+    [
+      "Governmental activities",
+      "Protection of Persons and Property",
+      1736121000,
+      1736121000,
+      1
+    ],
+    [
+      "Governmental activities",
+      "Transportation",
+      1446138000,
+      1446138000,
+      1
+    ],
+    [
+      "Governmental activities",
+      "General Government",
+      2831463000,
+      2831463000,
+      1
+    ],
+    [
+      "Governmental activities",
+      "Debt Service - Interest and Other Charges",
+      177450000,
+      177450000,
+      1
+    ],
+    [
+      "Business-type activities",
+      "Unemployment Compensation",
+      103162000,
+      103162000,
+      1
+    ],
+    [
+      "Business-type activities",
+      "State Port Authority",
+      214320000,
+      214320000,
+      1
+    ],
+    [
+      "Business-type activities",
+      "Alcoholic Beverage Control Board",
+      501349000,
+      501349000,
+      1
+    ],
+    [
+      "Business-type activities",
+      "Nonmajor Proprietary Funds",
+      155962000,
+      155962000,
+      1
+    ]
   ],
   "coverageStatus": "official-itemized-source-basis",
   "note": "Rows reconcile exactly to audited total primary-government expenses; remaining large rows are official publication ceilings."

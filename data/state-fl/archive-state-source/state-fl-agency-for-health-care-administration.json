@@ -13,28 +13,86 @@
     "sourceAmount",
     "sourceRows"
   ],
-  "itemBreakdowns": [{
-    "parent": ["AGENCY FOR HEALTH CARE ADMINISTRATION", "680000 · AGENCY FOR HEALTH CARE ADMINISTRATION · 251000 · CARE/SUBSISTENCE - MEDICAL - VENDOR - GENERAL", 37101532427.53],
-    "accountCount": 13,
-    "rows": [
-      ["July 2023", "Official payment settlement month", 2605298898.35],
-      ["August 2023", "Official payment settlement month", 2834140031.39],
-      ["September 2023", "Official payment settlement month", 3039360986.42],
-      ["October 2023", "Official payment settlement month", 2631993750.4],
-      ["November 2023", "Official payment settlement month", 2835871511.25],
-      ["December 2023", "Official payment settlement month", 2871557421.22],
-      ["January 2024", "Official payment settlement month", 2533179026.73],
-      ["February 1–14, 2024", "Official payment settlement date range", 4064270087.59],
-      ["February 15–29, 2024", "Official payment settlement date range", 2226405404.73],
-      ["March 2024", "Official payment settlement month", 3049871221.14],
-      ["April 2024", "Official payment settlement month", 2549533003.69],
-      ["May 2024", "Official payment settlement month", 2923755013.93],
-      ["June 2024", "Official payment settlement month", 2936296070.69]
-    ],
-    "sourceUrl": "https://myfloridacfo.com/docs-sf/default-source/transparency-docs/vendor-payments/fy2024-vendor-payments.zip?sfvrsn=6b8f34a8_1",
-    "sourceLabel": "Florida DFS FY2024 vendor-payment ledger",
-    "basis": "Exact object 251000 payments grouped by public settlement date; February is split in half so every child remains below $5 billion."
-  }],
+  "itemBreakdowns": [
+    {
+      "parent": [
+        "AGENCY FOR HEALTH CARE ADMINISTRATION",
+        "680000 · AGENCY FOR HEALTH CARE ADMINISTRATION · 251000 · CARE/SUBSISTENCE - MEDICAL - VENDOR - GENERAL",
+        37101532427.53
+      ],
+      "accountCount": 13,
+      "rows": [
+        [
+          "July 2023",
+          "Official payment settlement month",
+          2605298898.35
+        ],
+        [
+          "August 2023",
+          "Official payment settlement month",
+          2834140031.39
+        ],
+        [
+          "September 2023",
+          "Official payment settlement month",
+          3039360986.42
+        ],
+        [
+          "October 2023",
+          "Official payment settlement month",
+          2631993750.4
+        ],
+        [
+          "November 2023",
+          "Official payment settlement month",
+          2835871511.25
+        ],
+        [
+          "December 2023",
+          "Official payment settlement month",
+          2871557421.22
+        ],
+        [
+          "January 2024",
+          "Official payment settlement month",
+          2533179026.73
+        ],
+        [
+          "February 1–14, 2024",
+          "Official payment settlement date range",
+          4064270087.59
+        ],
+        [
+          "February 15–29, 2024",
+          "Official payment settlement date range",
+          2226405404.73
+        ],
+        [
+          "March 2024",
+          "Official payment settlement month",
+          3049871221.14
+        ],
+        [
+          "April 2024",
+          "Official payment settlement month",
+          2549533003.69
+        ],
+        [
+          "May 2024",
+          "Official payment settlement month",
+          2923755013.93
+        ],
+        [
+          "June 2024",
+          "Official payment settlement month",
+          2936296070.69
+        ]
+      ],
+      "sourceUrl": "https://myfloridacfo.com/docs-sf/default-source/transparency-docs/vendor-payments/fy2024-vendor-payments.zip?sfvrsn=6b8f34a8_1",
+      "sourceLabel": "Florida DFS FY2024 vendor-payment ledger",
+      "basis": "Exact object 251000 payments grouped by public settlement date; February is split in half so every child remains below $5 billion."
+    }
+  ],
   "rows": [
     [
       "AGENCY FOR HEALTH CARE ADMINISTRATION",
@@ -562,5 +620,6 @@
       1
     ]
   ],
-  "hierarchyNote": "The source does not identify a separate sub-agency column; direct-managed rows repeat the parent entity."
+  "hierarchyNote": "The source does not identify a separate sub-agency column; direct-managed rows repeat the parent entity.",
+  "publicationCeiling": "Official preserved FY2024 settlement-date publication ceiling. The current bulk file is corrupted for this agency and the live historical payment query times out, so no lower current rows can be reconciled to the preserved 2,245-row control."
 }

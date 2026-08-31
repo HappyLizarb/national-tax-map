@@ -5,14 +5,47 @@
   "department": "Department of Agriculture",
   "sourceTotal": 203402000000,
   "sourceUrl": "https://fiscal.treasury.gov/system/files/files/reports-statements/mts/mts0924.pdf",
-  "sourceUrls": [["Treasury FY2024 MTS Table 5", "https://fiscal.treasury.gov/system/files/files/reports-statements/mts/mts0924.pdf"]],
-  "relatedSources": [["USAspending gross research (supporting detail)", "data/federal/archive-agency-source/federal-department-of-agriculture.json"]],
+  "sourceUrls": [
+    [
+      "Treasury FY2024 MTS Table 5",
+      "https://fiscal.treasury.gov/system/files/files/reports-statements/mts/mts0924.pdf"
+    ]
+  ],
+  "relatedSources": [
+    [
+      "USAspending gross research (supporting detail)",
+      "data/federal/archive-agency-source/federal-department-of-agriculture.json"
+    ]
+  ],
   "sourceBasis": "Treasury MTS Table 5 current-fiscal-year gross outlays, applicable receipts, and net outlays; published in $ millions and converted to USD.",
-  "rowSchema": ["subAgency", "program", "amount", "sourceAmount", "sourceRows", "grossOutlays", "applicableReceipts"],
-  "sourceCheck": {"groupRows": 39, "difference": 0, "publishedRoundingAdjustment": -3000000},
+  "rowSchema": [
+    "subAgency",
+    "program",
+    "amount",
+    "sourceAmount",
+    "sourceRows",
+    "grossOutlays",
+    "applicableReceipts"
+  ],
+  "sourceCheck": {
+    "groupRows": 39,
+    "difference": 0,
+    "publishedRoundingAdjustment": -3000000
+  },
   "note": "Displayed amounts are net outlays; each row retains its published gross outlays and applicable receipts.",
-  "accountResearch": {"accountCount": 200, "largeAccountCount": 23, "netAccountOutlays": 216448243524.91, "threshold": 1000000000, "sourceUrl": "https://fiscal.treasury.gov/system/files/files/reports-statements/combined-statement/cs2024/c07.xlsx"},
-  "largeAccountSchema": ["treasuryAccount", "title", "netOutlays", "availabilityRows"],
+  "accountResearch": {
+    "accountCount": 200,
+    "largeAccountCount": 23,
+    "netAccountOutlays": 216448243524.91,
+    "threshold": 1000000000,
+    "sourceUrl": "https://fiscal.treasury.gov/system/files/files/reports-statements/combined-statement/cs2024/c07.xlsx"
+  },
+  "largeAccountSchema": [
+    "treasuryAccount",
+    "title",
+    "netOutlays",
+    "availabilityRows"
+  ],
   "largeAccountBasis": "Exact Combined Statement net outlays by appropriation or fund account. This is a research cross-section of the same department, not another amount to add to MTS classification rows.",
   "sourceBreakdowns": [
     {
@@ -22,119 +55,569 @@
       "sourceLabel": "USDA Risk Management Agency · 2024 State/County/Crop/Coverage Summary of Business",
       "sourceUrl": "https://pubfs-rma.fpac.usda.gov/pub/Web_Data_Files/Summary_of_Business/state_county_crop/sobcov_2024.zip",
       "rows": [
-        ["Corn", "2024 crop-year indemnity", 3463401238],
-        ["Soybeans", "2024 crop-year indemnity", 2815527579],
-        ["Cotton", "2024 crop-year indemnity", 2160942374],
-        ["Pasture,Rangeland,Forage", "2024 crop-year indemnity", 1195370973],
-        ["Wheat", "2024 crop-year indemnity", 1089315733],
-        ["Rice", "2024 crop-year indemnity", 477278441],
-        ["Peanuts", "2024 crop-year indemnity", 383429223],
-        ["All Other Crops", "2024 crop-year indemnity", 345854380],
-        ["Apples", "2024 crop-year indemnity", 276260717],
-        ["Whole Farm Revenue Protection", "2024 crop-year indemnity", 230928150],
-        ["Grain Sorghum", "2024 crop-year indemnity", 220927971],
-        ["Flue Cured Tobacco", "2024 crop-year indemnity", 182915216],
-        ["Annual Forage", "2024 crop-year indemnity", 176058030],
-        ["Grapes", "2024 crop-year indemnity", 173984111],
-        ["Sugarcane", "2024 crop-year indemnity", 131360633],
-        ["Dry Beans", "2024 crop-year indemnity", 128144462],
-        ["Dry Peas", "2024 crop-year indemnity", 120429902],
-        ["Almonds", "2024 crop-year indemnity", 119871226],
-        ["Cherries", "2024 crop-year indemnity", 103418487],
-        ["Pistachios", "2024 crop-year indemnity", 101934267],
-        ["Potatoes", "2024 crop-year indemnity", 98715638],
-        ["Apiculture", "2024 crop-year indemnity", 88959687],
-        ["Oranges", "2024 crop-year indemnity", 87215858],
-        ["Blueberries", "2024 crop-year indemnity", 80124382],
-        ["Canola", "2024 crop-year indemnity", 73589422],
-        ["Cotton Ex Long Staple", "2024 crop-year indemnity", 72186122],
-        ["Peppers", "2024 crop-year indemnity", 62761862],
-        ["Barley", "2024 crop-year indemnity", 54443889],
-        ["Forage Production", "2024 crop-year indemnity", 50664774],
-        ["Pecans", "2024 crop-year indemnity", 50238039],
-        ["Mandarins/Tangerines", "2024 crop-year indemnity", 49115069],
-        ["Sugar Beets", "2024 crop-year indemnity", 41363076],
-        ["Table Grapes", "2024 crop-year indemnity", 41068045],
-        ["Tomatoes", "2024 crop-year indemnity", 37938176],
-        ["Pears", "2024 crop-year indemnity", 35490756],
-        ["Sunflowers", "2024 crop-year indemnity", 29379250],
-        ["Walnuts", "2024 crop-year indemnity", 24785526],
-        ["Nursery (FG&C)", "2024 crop-year indemnity", 20880403],
-        ["Onions", "2024 crop-year indemnity", 18702395],
-        ["Fresh Market Tomatoes", "2024 crop-year indemnity", 18530142],
-        ["Burley Tobacco", "2024 crop-year indemnity", 15117176],
-        ["Hybrid Seed Rice", "2024 crop-year indemnity", 13365379],
-        ["Nursery (NVS)", "2024 crop-year indemnity", 13253755],
-        ["Peaches", "2024 crop-year indemnity", 11847401],
-        ["Avocados", "2024 crop-year indemnity", 11732913],
-        ["Oats", "2024 crop-year indemnity", 9961931],
-        ["Hybrid Corn Seed", "2024 crop-year indemnity", 9709532],
-        ["Silage Sorghum", "2024 crop-year indemnity", 8234137],
-        ["Lemons", "2024 crop-year indemnity", 8198192],
-        ["Green Peas", "2024 crop-year indemnity", 8171846],
-        ["Millet", "2024 crop-year indemnity", 7872516],
-        ["Forage Seeding", "2024 crop-year indemnity", 7769383],
-        ["Prunes", "2024 crop-year indemnity", 7712966],
-        ["Mustard", "2024 crop-year indemnity", 7457458],
-        ["Grapefruit", "2024 crop-year indemnity", 7181290],
-        ["Sweet Corn", "2024 crop-year indemnity", 7038522],
-        ["Processing Beans", "2024 crop-year indemnity", 5280699],
-        ["Flax", "2024 crop-year indemnity", 5220605],
-        ["Cigar Binder Tobacco", "2024 crop-year indemnity", 5064453],
-        ["Strawberries", "2024 crop-year indemnity", 4199455],
-        ["Popcorn", "2024 crop-year indemnity", 3943426],
-        ["Fresh Nectarines", "2024 crop-year indemnity", 2995689],
-        ["Hybrid Sorghum Seed", "2024 crop-year indemnity", 2986001],
-        ["Olives", "2024 crop-year indemnity", 2870507],
-        ["Hybrid Sweet Corn Seed", "2024 crop-year indemnity", 2859659],
-        ["Processing Cling Peaches", "2024 crop-year indemnity", 2579336],
-        ["Fire Cured Tobacco", "2024 crop-year indemnity", 2468331],
-        ["Sesame", "2024 crop-year indemnity", 2414307],
-        ["Clams", "2024 crop-year indemnity", 2384250],
-        ["Plums", "2024 crop-year indemnity", 2353072],
-        ["Grass Seed", "2024 crop-year indemnity", 2326358],
-        ["Cranberries", "2024 crop-year indemnity", 2268641],
-        ["Tangelos", "2024 crop-year indemnity", 2078936],
-        ["Grapefruit Trees", "2024 crop-year indemnity", 2023905],
-        ["Fresh Freestone Peaches", "2024 crop-year indemnity", 1734709],
-        ["Triticale", "2024 crop-year indemnity", 1641064],
-        ["Fresh Apricots", "2024 crop-year indemnity", 1565189],
-        ["Fresh Market Sweet Corn", "2024 crop-year indemnity", 1528087],
-        ["Rye", "2024 crop-year indemnity", 1496247],
-        ["Cucumbers", "2024 crop-year indemnity", 1368482],
-        ["Cabbage", "2024 crop-year indemnity", 1280373],
-        ["Dark Air Tobacco", "2024 crop-year indemnity", 1166791],
-        ["Hybrid Vegetable Seed", "2024 crop-year indemnity", 883770],
-        ["Cultivated Wild Rice", "2024 crop-year indemnity", 809495],
-        ["Pomegranates", "2024 crop-year indemnity", 778319],
-        ["Mint", "2024 crop-year indemnity", 772781],
-        ["Alfalfa Seed", "2024 crop-year indemnity", 758466],
-        ["Safflower", "2024 crop-year indemnity", 729425],
-        ["Coffee", "2024 crop-year indemnity", 717777],
-        ["Buckwheat", "2024 crop-year indemnity", 690971],
-        ["Orange Trees", "2024 crop-year indemnity", 662644],
-        ["Papaya Tree", "2024 crop-year indemnity", 653634],
-        ["Processing Apricots", "2024 crop-year indemnity", 630816],
-        ["Micro Farm", "2024 crop-year indemnity", 619106],
-        ["Sweet Potatoes", "2024 crop-year indemnity", 518403],
-        ["Figs", "2024 crop-year indemnity", 477961],
-        ["Kiwifruit", "2024 crop-year indemnity", 399447],
-        ["Processing Freestone", "2024 crop-year indemnity", 385661],
-        ["Tangors", "2024 crop-year indemnity", 365001],
-        ["Coffee Tree", "2024 crop-year indemnity", 264179],
-        ["Fresh Market Beans", "2024 crop-year indemnity", 148003],
-        ["Papaya", "2024 crop-year indemnity", 123879],
-        ["Raisins", "2024 crop-year indemnity", 106145],
-        ["Hybrid Popcorn Seed", "2024 crop-year indemnity", 84646],
-        ["Camelina", "2024 crop-year indemnity", 83434],
-        ["Lime Trees", "2024 crop-year indemnity", 79324],
-        ["Hemp", "2024 crop-year indemnity", 70702],
-        ["All Other Citrus Trees", "2024 crop-year indemnity", 48581],
-        ["Pumpkins", "2024 crop-year indemnity", 35902],
-        ["Caneberries", "2024 crop-year indemnity", 10140],
-        ["Clary Sage", "2024 crop-year indemnity", 2539]
+        [
+          "Corn",
+          "2024 crop-year indemnity",
+          3463401238
+        ],
+        [
+          "Soybeans",
+          "2024 crop-year indemnity",
+          2815527579
+        ],
+        [
+          "Cotton",
+          "2024 crop-year indemnity",
+          2160942374
+        ],
+        [
+          "Pasture,Rangeland,Forage",
+          "2024 crop-year indemnity",
+          1195370973
+        ],
+        [
+          "Wheat",
+          "2024 crop-year indemnity",
+          1089315733
+        ],
+        [
+          "Rice",
+          "2024 crop-year indemnity",
+          477278441
+        ],
+        [
+          "Peanuts",
+          "2024 crop-year indemnity",
+          383429223
+        ],
+        [
+          "All Other Crops",
+          "2024 crop-year indemnity",
+          345854380
+        ],
+        [
+          "Apples",
+          "2024 crop-year indemnity",
+          276260717
+        ],
+        [
+          "Whole Farm Revenue Protection",
+          "2024 crop-year indemnity",
+          230928150
+        ],
+        [
+          "Grain Sorghum",
+          "2024 crop-year indemnity",
+          220927971
+        ],
+        [
+          "Flue Cured Tobacco",
+          "2024 crop-year indemnity",
+          182915216
+        ],
+        [
+          "Annual Forage",
+          "2024 crop-year indemnity",
+          176058030
+        ],
+        [
+          "Grapes",
+          "2024 crop-year indemnity",
+          173984111
+        ],
+        [
+          "Sugarcane",
+          "2024 crop-year indemnity",
+          131360633
+        ],
+        [
+          "Dry Beans",
+          "2024 crop-year indemnity",
+          128144462
+        ],
+        [
+          "Dry Peas",
+          "2024 crop-year indemnity",
+          120429902
+        ],
+        [
+          "Almonds",
+          "2024 crop-year indemnity",
+          119871226
+        ],
+        [
+          "Cherries",
+          "2024 crop-year indemnity",
+          103418487
+        ],
+        [
+          "Pistachios",
+          "2024 crop-year indemnity",
+          101934267
+        ],
+        [
+          "Potatoes",
+          "2024 crop-year indemnity",
+          98715638
+        ],
+        [
+          "Apiculture",
+          "2024 crop-year indemnity",
+          88959687
+        ],
+        [
+          "Oranges",
+          "2024 crop-year indemnity",
+          87215858
+        ],
+        [
+          "Blueberries",
+          "2024 crop-year indemnity",
+          80124382
+        ],
+        [
+          "Canola",
+          "2024 crop-year indemnity",
+          73589422
+        ],
+        [
+          "Cotton Ex Long Staple",
+          "2024 crop-year indemnity",
+          72186122
+        ],
+        [
+          "Peppers",
+          "2024 crop-year indemnity",
+          62761862
+        ],
+        [
+          "Barley",
+          "2024 crop-year indemnity",
+          54443889
+        ],
+        [
+          "Forage Production",
+          "2024 crop-year indemnity",
+          50664774
+        ],
+        [
+          "Pecans",
+          "2024 crop-year indemnity",
+          50238039
+        ],
+        [
+          "Mandarins/Tangerines",
+          "2024 crop-year indemnity",
+          49115069
+        ],
+        [
+          "Sugar Beets",
+          "2024 crop-year indemnity",
+          41363076
+        ],
+        [
+          "Table Grapes",
+          "2024 crop-year indemnity",
+          41068045
+        ],
+        [
+          "Tomatoes",
+          "2024 crop-year indemnity",
+          37938176
+        ],
+        [
+          "Pears",
+          "2024 crop-year indemnity",
+          35490756
+        ],
+        [
+          "Sunflowers",
+          "2024 crop-year indemnity",
+          29379250
+        ],
+        [
+          "Walnuts",
+          "2024 crop-year indemnity",
+          24785526
+        ],
+        [
+          "Nursery (FG&C)",
+          "2024 crop-year indemnity",
+          20880403
+        ],
+        [
+          "Onions",
+          "2024 crop-year indemnity",
+          18702395
+        ],
+        [
+          "Fresh Market Tomatoes",
+          "2024 crop-year indemnity",
+          18530142
+        ],
+        [
+          "Burley Tobacco",
+          "2024 crop-year indemnity",
+          15117176
+        ],
+        [
+          "Hybrid Seed Rice",
+          "2024 crop-year indemnity",
+          13365379
+        ],
+        [
+          "Nursery (NVS)",
+          "2024 crop-year indemnity",
+          13253755
+        ],
+        [
+          "Peaches",
+          "2024 crop-year indemnity",
+          11847401
+        ],
+        [
+          "Avocados",
+          "2024 crop-year indemnity",
+          11732913
+        ],
+        [
+          "Oats",
+          "2024 crop-year indemnity",
+          9961931
+        ],
+        [
+          "Hybrid Corn Seed",
+          "2024 crop-year indemnity",
+          9709532
+        ],
+        [
+          "Silage Sorghum",
+          "2024 crop-year indemnity",
+          8234137
+        ],
+        [
+          "Lemons",
+          "2024 crop-year indemnity",
+          8198192
+        ],
+        [
+          "Green Peas",
+          "2024 crop-year indemnity",
+          8171846
+        ],
+        [
+          "Millet",
+          "2024 crop-year indemnity",
+          7872516
+        ],
+        [
+          "Forage Seeding",
+          "2024 crop-year indemnity",
+          7769383
+        ],
+        [
+          "Prunes",
+          "2024 crop-year indemnity",
+          7712966
+        ],
+        [
+          "Mustard",
+          "2024 crop-year indemnity",
+          7457458
+        ],
+        [
+          "Grapefruit",
+          "2024 crop-year indemnity",
+          7181290
+        ],
+        [
+          "Sweet Corn",
+          "2024 crop-year indemnity",
+          7038522
+        ],
+        [
+          "Processing Beans",
+          "2024 crop-year indemnity",
+          5280699
+        ],
+        [
+          "Flax",
+          "2024 crop-year indemnity",
+          5220605
+        ],
+        [
+          "Cigar Binder Tobacco",
+          "2024 crop-year indemnity",
+          5064453
+        ],
+        [
+          "Strawberries",
+          "2024 crop-year indemnity",
+          4199455
+        ],
+        [
+          "Popcorn",
+          "2024 crop-year indemnity",
+          3943426
+        ],
+        [
+          "Fresh Nectarines",
+          "2024 crop-year indemnity",
+          2995689
+        ],
+        [
+          "Hybrid Sorghum Seed",
+          "2024 crop-year indemnity",
+          2986001
+        ],
+        [
+          "Olives",
+          "2024 crop-year indemnity",
+          2870507
+        ],
+        [
+          "Hybrid Sweet Corn Seed",
+          "2024 crop-year indemnity",
+          2859659
+        ],
+        [
+          "Processing Cling Peaches",
+          "2024 crop-year indemnity",
+          2579336
+        ],
+        [
+          "Fire Cured Tobacco",
+          "2024 crop-year indemnity",
+          2468331
+        ],
+        [
+          "Sesame",
+          "2024 crop-year indemnity",
+          2414307
+        ],
+        [
+          "Clams",
+          "2024 crop-year indemnity",
+          2384250
+        ],
+        [
+          "Plums",
+          "2024 crop-year indemnity",
+          2353072
+        ],
+        [
+          "Grass Seed",
+          "2024 crop-year indemnity",
+          2326358
+        ],
+        [
+          "Cranberries",
+          "2024 crop-year indemnity",
+          2268641
+        ],
+        [
+          "Tangelos",
+          "2024 crop-year indemnity",
+          2078936
+        ],
+        [
+          "Grapefruit Trees",
+          "2024 crop-year indemnity",
+          2023905
+        ],
+        [
+          "Fresh Freestone Peaches",
+          "2024 crop-year indemnity",
+          1734709
+        ],
+        [
+          "Triticale",
+          "2024 crop-year indemnity",
+          1641064
+        ],
+        [
+          "Fresh Apricots",
+          "2024 crop-year indemnity",
+          1565189
+        ],
+        [
+          "Fresh Market Sweet Corn",
+          "2024 crop-year indemnity",
+          1528087
+        ],
+        [
+          "Rye",
+          "2024 crop-year indemnity",
+          1496247
+        ],
+        [
+          "Cucumbers",
+          "2024 crop-year indemnity",
+          1368482
+        ],
+        [
+          "Cabbage",
+          "2024 crop-year indemnity",
+          1280373
+        ],
+        [
+          "Dark Air Tobacco",
+          "2024 crop-year indemnity",
+          1166791
+        ],
+        [
+          "Hybrid Vegetable Seed",
+          "2024 crop-year indemnity",
+          883770
+        ],
+        [
+          "Cultivated Wild Rice",
+          "2024 crop-year indemnity",
+          809495
+        ],
+        [
+          "Pomegranates",
+          "2024 crop-year indemnity",
+          778319
+        ],
+        [
+          "Mint",
+          "2024 crop-year indemnity",
+          772781
+        ],
+        [
+          "Alfalfa Seed",
+          "2024 crop-year indemnity",
+          758466
+        ],
+        [
+          "Safflower",
+          "2024 crop-year indemnity",
+          729425
+        ],
+        [
+          "Coffee",
+          "2024 crop-year indemnity",
+          717777
+        ],
+        [
+          "Buckwheat",
+          "2024 crop-year indemnity",
+          690971
+        ],
+        [
+          "Orange Trees",
+          "2024 crop-year indemnity",
+          662644
+        ],
+        [
+          "Papaya Tree",
+          "2024 crop-year indemnity",
+          653634
+        ],
+        [
+          "Processing Apricots",
+          "2024 crop-year indemnity",
+          630816
+        ],
+        [
+          "Micro Farm",
+          "2024 crop-year indemnity",
+          619106
+        ],
+        [
+          "Sweet Potatoes",
+          "2024 crop-year indemnity",
+          518403
+        ],
+        [
+          "Figs",
+          "2024 crop-year indemnity",
+          477961
+        ],
+        [
+          "Kiwifruit",
+          "2024 crop-year indemnity",
+          399447
+        ],
+        [
+          "Processing Freestone",
+          "2024 crop-year indemnity",
+          385661
+        ],
+        [
+          "Tangors",
+          "2024 crop-year indemnity",
+          365001
+        ],
+        [
+          "Coffee Tree",
+          "2024 crop-year indemnity",
+          264179
+        ],
+        [
+          "Fresh Market Beans",
+          "2024 crop-year indemnity",
+          148003
+        ],
+        [
+          "Papaya",
+          "2024 crop-year indemnity",
+          123879
+        ],
+        [
+          "Raisins",
+          "2024 crop-year indemnity",
+          106145
+        ],
+        [
+          "Hybrid Popcorn Seed",
+          "2024 crop-year indemnity",
+          84646
+        ],
+        [
+          "Camelina",
+          "2024 crop-year indemnity",
+          83434
+        ],
+        [
+          "Lime Trees",
+          "2024 crop-year indemnity",
+          79324
+        ],
+        [
+          "Hemp",
+          "2024 crop-year indemnity",
+          70702
+        ],
+        [
+          "All Other Citrus Trees",
+          "2024 crop-year indemnity",
+          48581
+        ],
+        [
+          "Pumpkins",
+          "2024 crop-year indemnity",
+          35902
+        ],
+        [
+          "Caneberries",
+          "2024 crop-year indemnity",
+          10140
+        ],
+        [
+          "Clary Sage",
+          "2024 crop-year indemnity",
+          2539
+        ]
       ],
-      "covers": [["Department of Agriculture", "Other", 10403000000]]
+      "covers": [
+        [
+          "Department of Agriculture",
+          "Other",
+          10403000000
+        ]
+      ]
     },
     {
       "title": "SNAP 2024 fund resources from FNS benefits",
@@ -143,10 +626,24 @@
       "sourceLabel": "USDA FNS SNAP tables and Treasury Combined Statement",
       "sourceUrl": "https://www.fns.usda.gov/pd/supplemental-nutrition-assistance-program-snap",
       "rows": [
-        ["FNS FY2024 SNAP benefit schedule", "Published geography-and-month schedule before the benefit-to-outlay bridge", 93475887992],
-        ["FNS benefit-to-Treasury outlay basis bridge", "Exact arithmetic difference; not allocated to a geography or month", -4212573912.94]
+        [
+          "FNS FY2024 SNAP benefit schedule",
+          "Published geography-and-month schedule before the benefit-to-outlay bridge",
+          93475887992
+        ],
+        [
+          "FNS benefit-to-Treasury outlay basis bridge",
+          "Exact arithmetic difference; not allocated to a geography or month",
+          -4212573912.94
+        ]
       ],
-      "covers": [["Fund resources · 2024", "Combined Statement FY2024 net outlays · period-of-availability row", 89263314079.06]]
+      "covers": [
+        [
+          "Fund resources · 2024",
+          "Combined Statement FY2024 net outlays · period-of-availability row",
+          89263314079.06
+        ]
+      ]
     },
     {
       "title": "SNAP 2023 fund resources by program activity and object class",
@@ -155,32 +652,134 @@
       "sourceLabel": "USAspending FY2024 P12 File B and Treasury Combined Statement",
       "sourceUrl": "https://api.usaspending.gov/api/v2/download/status?file_name=FY2024P01-P12_All_TAS_AccountBreakdownByPA-OC_2026-08-30_H03M46S59772822.zip",
       "rows": [
-        ["Benefits issued · grants, subsidies, and contributions", "USAspending FY2024 gross outlays · 2023 annual availability", 14755405202.32],
-        ["State administration · grants, subsidies, and contributions", "USAspending FY2024 gross outlays · 2023 annual availability", 624635810.07],
-        ["Other program costs · grants, subsidies, and contributions", "USAspending FY2024 gross outlays · 2023 annual availability", 309723111.05],
-        ["Other services from non-Federal sources", "USAspending FY2024 gross outlays · 2023 annual availability", 125382885.39],
-        ["Nutrition Assistance for Puerto Rico · grants, subsidies, and contributions", "USAspending FY2024 gross outlays · 2023 annual availability", 99425443.75],
-        ["Employment and Training Program · grants, subsidies, and contributions", "USAspending FY2024 gross outlays · 2023 annual availability", 74833626.65],
-        ["Commonwealth of the Northern Mariana Islands · grants, subsidies, and contributions", "USAspending FY2024 gross outlays · 2023 annual availability", 12355001.56],
-        ["Other goods and services from Federal sources", "USAspending FY2024 gross outlays · 2023 annual availability", 9485364.15],
-        ["Full-time permanent personnel", "USAspending FY2024 gross outlays · 2023 annual availability", 3334506.92],
-        ["Community Food Projects · grants, subsidies, and contributions", "USAspending FY2024 gross outlays · 2023 annual availability", 1322128.55],
-        ["Program Access · grants, subsidies, and contributions", "USAspending FY2024 gross outlays · 2023 annual availability", 1290536.96],
-        ["Civilian personnel benefits", "USAspending FY2024 gross outlays · 2023 annual availability", 1257602.26],
-        ["Other unmapped · grants, subsidies, and contributions", "USAspending FY2024 gross outlays · 2023 annual availability", 497956.5],
-        ["Advisory and assistance services", "USAspending FY2024 gross outlays · 2023 annual availability", 413562.22],
-        ["Communications, utilities, and miscellaneous charges", "USAspending FY2024 gross outlays · 2023 annual availability", 393248.11],
-        ["Food Distribution Program on Indian Reservations · cooperator administrative expense", "USAspending FY2024 gross outlays · 2023 annual availability", 132710.08],
-        ["Travel and transportation of persons", "USAspending FY2024 gross outlays · 2023 annual availability", 64161.57],
-        ["Operation and maintenance of equipment", "USAspending FY2024 gross outlays · 2023 annual availability", 58374.5],
-        ["Supplies and materials", "USAspending FY2024 gross outlays · 2023 annual availability", 18139.69],
-        ["Other personnel compensation", "USAspending FY2024 gross outlays · 2023 annual availability", 16164.54],
-        ["Other than full-time permanent personnel", "USAspending FY2024 gross outlays · 2023 annual availability", 3601.6],
-        ["Interest and dividends", "USAspending FY2024 gross outlays · 2023 annual availability", 13.98],
-        ["Equipment", "USAspending FY2024 gross outlays · 2023 annual availability", -78512.27],
-        ["Treasury/USAspending net-to-gross basis bridge", "Exact arithmetic difference; not allocated to a program activity or object class", -29628793.4]
+        [
+          "Benefits issued · grants, subsidies, and contributions",
+          "USAspending FY2024 gross outlays · 2023 annual availability",
+          14755405202.32
+        ],
+        [
+          "State administration · grants, subsidies, and contributions",
+          "USAspending FY2024 gross outlays · 2023 annual availability",
+          624635810.07
+        ],
+        [
+          "Other program costs · grants, subsidies, and contributions",
+          "USAspending FY2024 gross outlays · 2023 annual availability",
+          309723111.05
+        ],
+        [
+          "Other services from non-Federal sources",
+          "USAspending FY2024 gross outlays · 2023 annual availability",
+          125382885.39
+        ],
+        [
+          "Nutrition Assistance for Puerto Rico · grants, subsidies, and contributions",
+          "USAspending FY2024 gross outlays · 2023 annual availability",
+          99425443.75
+        ],
+        [
+          "Employment and Training Program · grants, subsidies, and contributions",
+          "USAspending FY2024 gross outlays · 2023 annual availability",
+          74833626.65
+        ],
+        [
+          "Commonwealth of the Northern Mariana Islands · grants, subsidies, and contributions",
+          "USAspending FY2024 gross outlays · 2023 annual availability",
+          12355001.56
+        ],
+        [
+          "Other goods and services from Federal sources",
+          "USAspending FY2024 gross outlays · 2023 annual availability",
+          9485364.15
+        ],
+        [
+          "Full-time permanent personnel",
+          "USAspending FY2024 gross outlays · 2023 annual availability",
+          3334506.92
+        ],
+        [
+          "Community Food Projects · grants, subsidies, and contributions",
+          "USAspending FY2024 gross outlays · 2023 annual availability",
+          1322128.55
+        ],
+        [
+          "Program Access · grants, subsidies, and contributions",
+          "USAspending FY2024 gross outlays · 2023 annual availability",
+          1290536.96
+        ],
+        [
+          "Civilian personnel benefits",
+          "USAspending FY2024 gross outlays · 2023 annual availability",
+          1257602.26
+        ],
+        [
+          "Other unmapped · grants, subsidies, and contributions",
+          "USAspending FY2024 gross outlays · 2023 annual availability",
+          497956.5
+        ],
+        [
+          "Advisory and assistance services",
+          "USAspending FY2024 gross outlays · 2023 annual availability",
+          413562.22
+        ],
+        [
+          "Communications, utilities, and miscellaneous charges",
+          "USAspending FY2024 gross outlays · 2023 annual availability",
+          393248.11
+        ],
+        [
+          "Food Distribution Program on Indian Reservations · cooperator administrative expense",
+          "USAspending FY2024 gross outlays · 2023 annual availability",
+          132710.08
+        ],
+        [
+          "Travel and transportation of persons",
+          "USAspending FY2024 gross outlays · 2023 annual availability",
+          64161.57
+        ],
+        [
+          "Operation and maintenance of equipment",
+          "USAspending FY2024 gross outlays · 2023 annual availability",
+          58374.5
+        ],
+        [
+          "Supplies and materials",
+          "USAspending FY2024 gross outlays · 2023 annual availability",
+          18139.69
+        ],
+        [
+          "Other personnel compensation",
+          "USAspending FY2024 gross outlays · 2023 annual availability",
+          16164.54
+        ],
+        [
+          "Other than full-time permanent personnel",
+          "USAspending FY2024 gross outlays · 2023 annual availability",
+          3601.6
+        ],
+        [
+          "Interest and dividends",
+          "USAspending FY2024 gross outlays · 2023 annual availability",
+          13.98
+        ],
+        [
+          "Equipment",
+          "USAspending FY2024 gross outlays · 2023 annual availability",
+          -78512.27
+        ],
+        [
+          "Treasury/USAspending net-to-gross basis bridge",
+          "Exact arithmetic difference; not allocated to a program activity or object class",
+          -29628793.4
+        ]
       ],
-      "covers": [["Fund resources · 2023", "Combined Statement FY2024 net outlays · period-of-availability row", 15990341846.75]]
+      "covers": [
+        [
+          "Fund resources · 2023",
+          "Combined Statement FY2024 net outlays · period-of-availability row",
+          15990341846.75
+        ]
+      ]
     },
     {
       "title": "SNAP 2023 benefits issued by award place of performance",
@@ -189,64 +788,294 @@
       "sourceLabel": "USAspending FY2024 P12 award-financial File C",
       "sourceUrl": "https://api.usaspending.gov/api/v2/download/status?file_name=FY2024P01-P12_All_TAS_AccountBreakdownByAward_2026-08-30_H05M01S43258923.zip",
       "rows": [
-        ["California", "USAspending FY2024 P12 award-financial gross outlays · place of performance", 2252211864.96],
-        ["New York", "USAspending FY2024 P12 award-financial gross outlays · place of performance", 1634633410.92],
-        ["Florida", "USAspending FY2024 P12 award-financial gross outlays · place of performance", 988825368.26],
-        ["Texas", "USAspending FY2024 P12 award-financial gross outlays · place of performance", 913155190.48],
-        ["Illinois", "USAspending FY2024 P12 award-financial gross outlays · place of performance", 663138531.35],
-        ["Pennsylvania", "USAspending FY2024 P12 award-financial gross outlays · place of performance", 645724998.45],
-        ["Michigan", "USAspending FY2024 P12 award-financial gross outlays · place of performance", 606130702.87],
-        ["Georgia", "USAspending FY2024 P12 award-financial gross outlays · place of performance", 443411897.61],
-        ["North Carolina", "USAspending FY2024 P12 award-financial gross outlays · place of performance", 419632078.28],
-        ["Ohio", "USAspending FY2024 P12 award-financial gross outlays · place of performance", 387281030.71],
-        ["Massachusetts", "USAspending FY2024 P12 award-financial gross outlays · place of performance", 351119905.33],
-        ["Kentucky", "USAspending FY2024 P12 award-financial gross outlays · place of performance", 318905843.56],
-        ["Oregon", "USAspending FY2024 P12 award-financial gross outlays · place of performance", 286966412.83],
-        ["Washington", "USAspending FY2024 P12 award-financial gross outlays · place of performance", 269024405.3],
-        ["New Jersey", "USAspending FY2024 P12 award-financial gross outlays · place of performance", 267000537.32],
-        ["Missouri", "USAspending FY2024 P12 award-financial gross outlays · place of performance", 264303191.53],
-        ["Arizona", "USAspending FY2024 P12 award-financial gross outlays · place of performance", 263338305.05],
-        ["Maryland", "USAspending FY2024 P12 award-financial gross outlays · place of performance", 246422165.81],
-        ["Virginia", "USAspending FY2024 P12 award-financial gross outlays · place of performance", 244247920.9],
-        ["Oklahoma", "USAspending FY2024 P12 award-financial gross outlays · place of performance", 244160855.95],
-        ["Louisiana", "USAspending FY2024 P12 award-financial gross outlays · place of performance", 233875028.86],
-        ["Alabama", "USAspending FY2024 P12 award-financial gross outlays · place of performance", 230877332.5],
-        ["Tennessee", "USAspending FY2024 P12 award-financial gross outlays · place of performance", 215885939.99],
-        ["Indiana", "USAspending FY2024 P12 award-financial gross outlays · place of performance", 200531767.36],
-        ["Wisconsin", "USAspending FY2024 P12 award-financial gross outlays · place of performance", 185855544.01],
-        ["Colorado", "USAspending FY2024 P12 award-financial gross outlays · place of performance", 180853133.9],
-        ["South Carolina", "USAspending FY2024 P12 award-financial gross outlays · place of performance", 180498643.26],
-        ["New Mexico", "USAspending FY2024 P12 award-financial gross outlays · place of performance", 156204494.37],
-        ["Nevada", "USAspending FY2024 P12 award-financial gross outlays · place of performance", 155768519.16],
-        ["Minnesota", "USAspending FY2024 P12 award-financial gross outlays · place of performance", 132154413],
-        ["Connecticut", "USAspending FY2024 P12 award-financial gross outlays · place of performance", 130835014.84],
-        ["Hawaii", "USAspending FY2024 P12 award-financial gross outlays · place of performance", 104798894.02],
-        ["Mississippi", "USAspending FY2024 P12 award-financial gross outlays · place of performance", 92823462.81],
-        ["Iowa", "USAspending FY2024 P12 award-financial gross outlays · place of performance", 82260982.26],
-        ["Alaska", "USAspending FY2024 P12 award-financial gross outlays · place of performance", 80560694.26],
-        ["Arkansas", "USAspending FY2024 P12 award-financial gross outlays · place of performance", 73138733.9],
-        ["Maine", "USAspending FY2024 P12 award-financial gross outlays · place of performance", 65906668.64],
-        ["West Virginia", "USAspending FY2024 P12 award-financial gross outlays · place of performance", 65570163.98],
-        ["Utah", "USAspending FY2024 P12 award-financial gross outlays · place of performance", 60395766.52],
-        ["Kansas", "USAspending FY2024 P12 award-financial gross outlays · place of performance", 58357410.38],
-        ["Nebraska", "USAspending FY2024 P12 award-financial gross outlays · place of performance", 56933770.2],
-        ["Delaware", "USAspending FY2024 P12 award-financial gross outlays · place of performance", 42697489.91],
-        ["District of Columbia", "USAspending FY2024 P12 award-financial gross outlays · place of performance", 42032060.26],
-        ["Rhode Island", "USAspending FY2024 P12 award-financial gross outlays · place of performance", 41279794.06],
-        ["Idaho", "USAspending FY2024 P12 award-financial gross outlays · place of performance", 31389837.28],
-        ["New Hampshire", "USAspending FY2024 P12 award-financial gross outlays · place of performance", 24876923.56],
-        ["Montana", "USAspending FY2024 P12 award-financial gross outlays · place of performance", 20058317.47],
-        ["South Dakota", "USAspending FY2024 P12 award-financial gross outlays · place of performance", 19933810.33],
-        ["Guam", "USAspending FY2024 P12 award-financial gross outlays · place of performance", 18473447.01],
-        ["Vermont", "USAspending FY2024 P12 award-financial gross outlays · place of performance", 17694680.56],
-        ["Wyoming", "USAspending FY2024 P12 award-financial gross outlays · place of performance", 16884307.06],
-        ["North Dakota", "USAspending FY2024 P12 award-financial gross outlays · place of performance", 13073591.87],
-        ["Virgin Islands", "USAspending FY2024 P12 award-financial gross outlays · place of performance", 9674720.88],
-        ["File B/File C award-linkage bridge", "Exact arithmetic difference; not allocated to a geography", 2083669.62],
-        ["Puerto Rico", "USAspending FY2024 P12 award-financial gross outlays · place of performance", 1282326.52],
-        ["American Samoa", "USAspending FY2024 P12 award-financial gross outlays · place of performance", 249230.24]
+        [
+          "California",
+          "USAspending FY2024 P12 award-financial gross outlays · place of performance",
+          2252211864.96
+        ],
+        [
+          "New York",
+          "USAspending FY2024 P12 award-financial gross outlays · place of performance",
+          1634633410.92
+        ],
+        [
+          "Florida",
+          "USAspending FY2024 P12 award-financial gross outlays · place of performance",
+          988825368.26
+        ],
+        [
+          "Texas",
+          "USAspending FY2024 P12 award-financial gross outlays · place of performance",
+          913155190.48
+        ],
+        [
+          "Illinois",
+          "USAspending FY2024 P12 award-financial gross outlays · place of performance",
+          663138531.35
+        ],
+        [
+          "Pennsylvania",
+          "USAspending FY2024 P12 award-financial gross outlays · place of performance",
+          645724998.45
+        ],
+        [
+          "Michigan",
+          "USAspending FY2024 P12 award-financial gross outlays · place of performance",
+          606130702.87
+        ],
+        [
+          "Georgia",
+          "USAspending FY2024 P12 award-financial gross outlays · place of performance",
+          443411897.61
+        ],
+        [
+          "North Carolina",
+          "USAspending FY2024 P12 award-financial gross outlays · place of performance",
+          419632078.28
+        ],
+        [
+          "Ohio",
+          "USAspending FY2024 P12 award-financial gross outlays · place of performance",
+          387281030.71
+        ],
+        [
+          "Massachusetts",
+          "USAspending FY2024 P12 award-financial gross outlays · place of performance",
+          351119905.33
+        ],
+        [
+          "Kentucky",
+          "USAspending FY2024 P12 award-financial gross outlays · place of performance",
+          318905843.56
+        ],
+        [
+          "Oregon",
+          "USAspending FY2024 P12 award-financial gross outlays · place of performance",
+          286966412.83
+        ],
+        [
+          "Washington",
+          "USAspending FY2024 P12 award-financial gross outlays · place of performance",
+          269024405.3
+        ],
+        [
+          "New Jersey",
+          "USAspending FY2024 P12 award-financial gross outlays · place of performance",
+          267000537.32
+        ],
+        [
+          "Missouri",
+          "USAspending FY2024 P12 award-financial gross outlays · place of performance",
+          264303191.53
+        ],
+        [
+          "Arizona",
+          "USAspending FY2024 P12 award-financial gross outlays · place of performance",
+          263338305.05
+        ],
+        [
+          "Maryland",
+          "USAspending FY2024 P12 award-financial gross outlays · place of performance",
+          246422165.81
+        ],
+        [
+          "Virginia",
+          "USAspending FY2024 P12 award-financial gross outlays · place of performance",
+          244247920.9
+        ],
+        [
+          "Oklahoma",
+          "USAspending FY2024 P12 award-financial gross outlays · place of performance",
+          244160855.95
+        ],
+        [
+          "Louisiana",
+          "USAspending FY2024 P12 award-financial gross outlays · place of performance",
+          233875028.86
+        ],
+        [
+          "Alabama",
+          "USAspending FY2024 P12 award-financial gross outlays · place of performance",
+          230877332.5
+        ],
+        [
+          "Tennessee",
+          "USAspending FY2024 P12 award-financial gross outlays · place of performance",
+          215885939.99
+        ],
+        [
+          "Indiana",
+          "USAspending FY2024 P12 award-financial gross outlays · place of performance",
+          200531767.36
+        ],
+        [
+          "Wisconsin",
+          "USAspending FY2024 P12 award-financial gross outlays · place of performance",
+          185855544.01
+        ],
+        [
+          "Colorado",
+          "USAspending FY2024 P12 award-financial gross outlays · place of performance",
+          180853133.9
+        ],
+        [
+          "South Carolina",
+          "USAspending FY2024 P12 award-financial gross outlays · place of performance",
+          180498643.26
+        ],
+        [
+          "New Mexico",
+          "USAspending FY2024 P12 award-financial gross outlays · place of performance",
+          156204494.37
+        ],
+        [
+          "Nevada",
+          "USAspending FY2024 P12 award-financial gross outlays · place of performance",
+          155768519.16
+        ],
+        [
+          "Minnesota",
+          "USAspending FY2024 P12 award-financial gross outlays · place of performance",
+          132154413
+        ],
+        [
+          "Connecticut",
+          "USAspending FY2024 P12 award-financial gross outlays · place of performance",
+          130835014.84
+        ],
+        [
+          "Hawaii",
+          "USAspending FY2024 P12 award-financial gross outlays · place of performance",
+          104798894.02
+        ],
+        [
+          "Mississippi",
+          "USAspending FY2024 P12 award-financial gross outlays · place of performance",
+          92823462.81
+        ],
+        [
+          "Iowa",
+          "USAspending FY2024 P12 award-financial gross outlays · place of performance",
+          82260982.26
+        ],
+        [
+          "Alaska",
+          "USAspending FY2024 P12 award-financial gross outlays · place of performance",
+          80560694.26
+        ],
+        [
+          "Arkansas",
+          "USAspending FY2024 P12 award-financial gross outlays · place of performance",
+          73138733.9
+        ],
+        [
+          "Maine",
+          "USAspending FY2024 P12 award-financial gross outlays · place of performance",
+          65906668.64
+        ],
+        [
+          "West Virginia",
+          "USAspending FY2024 P12 award-financial gross outlays · place of performance",
+          65570163.98
+        ],
+        [
+          "Utah",
+          "USAspending FY2024 P12 award-financial gross outlays · place of performance",
+          60395766.52
+        ],
+        [
+          "Kansas",
+          "USAspending FY2024 P12 award-financial gross outlays · place of performance",
+          58357410.38
+        ],
+        [
+          "Nebraska",
+          "USAspending FY2024 P12 award-financial gross outlays · place of performance",
+          56933770.2
+        ],
+        [
+          "Delaware",
+          "USAspending FY2024 P12 award-financial gross outlays · place of performance",
+          42697489.91
+        ],
+        [
+          "District of Columbia",
+          "USAspending FY2024 P12 award-financial gross outlays · place of performance",
+          42032060.26
+        ],
+        [
+          "Rhode Island",
+          "USAspending FY2024 P12 award-financial gross outlays · place of performance",
+          41279794.06
+        ],
+        [
+          "Idaho",
+          "USAspending FY2024 P12 award-financial gross outlays · place of performance",
+          31389837.28
+        ],
+        [
+          "New Hampshire",
+          "USAspending FY2024 P12 award-financial gross outlays · place of performance",
+          24876923.56
+        ],
+        [
+          "Montana",
+          "USAspending FY2024 P12 award-financial gross outlays · place of performance",
+          20058317.47
+        ],
+        [
+          "South Dakota",
+          "USAspending FY2024 P12 award-financial gross outlays · place of performance",
+          19933810.33
+        ],
+        [
+          "Guam",
+          "USAspending FY2024 P12 award-financial gross outlays · place of performance",
+          18473447.01
+        ],
+        [
+          "Vermont",
+          "USAspending FY2024 P12 award-financial gross outlays · place of performance",
+          17694680.56
+        ],
+        [
+          "Wyoming",
+          "USAspending FY2024 P12 award-financial gross outlays · place of performance",
+          16884307.06
+        ],
+        [
+          "North Dakota",
+          "USAspending FY2024 P12 award-financial gross outlays · place of performance",
+          13073591.87
+        ],
+        [
+          "Virgin Islands",
+          "USAspending FY2024 P12 award-financial gross outlays · place of performance",
+          9674720.88
+        ],
+        [
+          "File B/File C award-linkage bridge",
+          "Exact arithmetic difference; not allocated to a geography",
+          2083669.62
+        ],
+        [
+          "Puerto Rico",
+          "USAspending FY2024 P12 award-financial gross outlays · place of performance",
+          1282326.52
+        ],
+        [
+          "American Samoa",
+          "USAspending FY2024 P12 award-financial gross outlays · place of performance",
+          249230.24
+        ]
       ],
-      "covers": [["Benefits issued · grants, subsidies, and contributions", "USAspending FY2024 gross outlays · 2023 annual availability", 14755405202.32]]
+      "covers": [
+        [
+          "Benefits issued · grants, subsidies, and contributions",
+          "USAspending FY2024 gross outlays · 2023 annual availability",
+          14755405202.32
+        ]
+      ]
     },
     {
       "title": "Child Nutrition 2024-2025 fund resources from FNS program costs",
@@ -255,10 +1084,25 @@
       "sourceLabel": "USDA FNS Child Nutrition tables and Treasury Combined Statement",
       "sourceUrl": "https://www.fns.usda.gov/pd/child-nutrition-tables",
       "rows": [
-        ["FNS FY2024 Child Nutrition cost schedule", "Published program-and-geography schedule before the cost-to-outlay bridge", 28391968503.44],
-        ["FNS cost-to-Treasury outlay basis bridge", "Exact arithmetic difference; not allocated to a program or geography", -5507869893.18]
+        [
+          "FNS FY2024 Child Nutrition cost schedule",
+          "Published program-and-geography schedule before the cost-to-outlay bridge",
+          28391968503.44
+        ],
+        [
+          "FNS cost-to-Treasury outlay basis bridge",
+          "Exact arithmetic difference; not allocated to a program or geography",
+          -5507869893.18
+        ]
       ],
-      "covers": [["Fund resources · 2024-2025", "Combined Statement FY2024 net outlays · period-of-availability row", 22884098610.26]]
+      "covers": [
+        [
+          "Fund resources · 2024-2025",
+          "Combined Statement FY2024 net outlays · period-of-availability row",
+          22884098610.26
+        ]
+      ],
+      "publicationCeiling": "Official source-native publication ceiling at the cited table, account, program, geography, appropriation, or payee level; no lower additive row is published in that same-basis source."
     },
     {
       "title": "012-3505-000 FY2024 net outlays by period of availability",
@@ -268,26 +1112,98 @@
       "sourceUrl": "https://fiscal.treasury.gov/system/files/files/reports-statements/combined-statement/cs2024/c07.xlsx",
       "combinedStatementAvailability": true,
       "covers": [
-        ["012-3505-000","Supplemental Nutrition Assistance Program, Food and Nutrition Service, Agriculture",106754491269.41]
+        [
+          "012-3505-000",
+          "Supplemental Nutrition Assistance Program, Food and Nutrition Service, Agriculture",
+          106754491269.41
+        ]
       ],
       "rows": [
-        ["Fund resources · 2024","Combined Statement FY2024 net outlays · period-of-availability row",89263314079.06],
-        ["Fund resources · 2023","Combined Statement FY2024 net outlays · period-of-availability row",15990341846.75],
-        ["Fund resources · 2023-2024","Combined Statement FY2024 net outlays · period-of-availability row",678722473.73],
-        ["Fund resources · 2024-2025","Combined Statement FY2024 net outlays · period-of-availability row",452914746.82],
-        ["Fund resources · 2021-2023","Combined Statement FY2024 net outlays · period-of-availability row",148454061.74],
-        ["Fund resources · 2022-2023","Combined Statement FY2024 net outlays · period-of-availability row",76088202.99],
-        ["Fund resources · 2022","Combined Statement FY2024 net outlays · period-of-availability row",59691579.15],
-        ["Fund resources · 2021","Combined Statement FY2024 net outlays · period-of-availability row",22977347.97],
-        ["Fund resources · 2020","Combined Statement FY2024 net outlays · period-of-availability row",21652161.98],
-        ["Fund resources · 2021-2027","Combined Statement FY2024 net outlays · period-of-availability row",17685683.14],
-        ["Fund resources · 2020-2021","Combined Statement FY2024 net outlays · period-of-availability row",8600440.45],
-        ["Fund resources · 2021-2022","Combined Statement FY2024 net outlays · period-of-availability row",3704450.93],
-        ["Fund resources · 2021-2026","Combined Statement FY2024 net outlays · period-of-availability row",3251883.85],
-        ["Fund resources · 2019-2021","Combined Statement FY2024 net outlays · period-of-availability row",2201946.71],
-        ["Fund resources · 2019-2020","Combined Statement FY2024 net outlays · period-of-availability row",2190305.66],
-        ["Fund resources · 2019","Combined Statement FY2024 net outlays · period-of-availability row",1461608.81],
-        ["Fund resources · No Year","Combined Statement FY2024 net outlays · period-of-availability row",1238449.67]
+        [
+          "Fund resources · 2024",
+          "Combined Statement FY2024 net outlays · period-of-availability row",
+          89263314079.06
+        ],
+        [
+          "Fund resources · 2023",
+          "Combined Statement FY2024 net outlays · period-of-availability row",
+          15990341846.75
+        ],
+        [
+          "Fund resources · 2023-2024",
+          "Combined Statement FY2024 net outlays · period-of-availability row",
+          678722473.73
+        ],
+        [
+          "Fund resources · 2024-2025",
+          "Combined Statement FY2024 net outlays · period-of-availability row",
+          452914746.82
+        ],
+        [
+          "Fund resources · 2021-2023",
+          "Combined Statement FY2024 net outlays · period-of-availability row",
+          148454061.74
+        ],
+        [
+          "Fund resources · 2022-2023",
+          "Combined Statement FY2024 net outlays · period-of-availability row",
+          76088202.99
+        ],
+        [
+          "Fund resources · 2022",
+          "Combined Statement FY2024 net outlays · period-of-availability row",
+          59691579.15
+        ],
+        [
+          "Fund resources · 2021",
+          "Combined Statement FY2024 net outlays · period-of-availability row",
+          22977347.97
+        ],
+        [
+          "Fund resources · 2020",
+          "Combined Statement FY2024 net outlays · period-of-availability row",
+          21652161.98
+        ],
+        [
+          "Fund resources · 2021-2027",
+          "Combined Statement FY2024 net outlays · period-of-availability row",
+          17685683.14
+        ],
+        [
+          "Fund resources · 2020-2021",
+          "Combined Statement FY2024 net outlays · period-of-availability row",
+          8600440.45
+        ],
+        [
+          "Fund resources · 2021-2022",
+          "Combined Statement FY2024 net outlays · period-of-availability row",
+          3704450.93
+        ],
+        [
+          "Fund resources · 2021-2026",
+          "Combined Statement FY2024 net outlays · period-of-availability row",
+          3251883.85
+        ],
+        [
+          "Fund resources · 2019-2021",
+          "Combined Statement FY2024 net outlays · period-of-availability row",
+          2201946.71
+        ],
+        [
+          "Fund resources · 2019-2020",
+          "Combined Statement FY2024 net outlays · period-of-availability row",
+          2190305.66
+        ],
+        [
+          "Fund resources · 2019",
+          "Combined Statement FY2024 net outlays · period-of-availability row",
+          1461608.81
+        ],
+        [
+          "Fund resources · No Year",
+          "Combined Statement FY2024 net outlays · period-of-availability row",
+          1238449.67
+        ]
       ]
     },
     {
@@ -298,20 +1214,68 @@
       "sourceUrl": "https://fiscal.treasury.gov/system/files/files/reports-statements/combined-statement/cs2024/c07.xlsx",
       "combinedStatementAvailability": true,
       "covers": [
-        ["012-3539-000","Child Nutrition Programs, Food and Nutrition Service, Agriculture",32732684349.3]
+        [
+          "012-3539-000",
+          "Child Nutrition Programs, Food and Nutrition Service, Agriculture",
+          32732684349.3
+        ]
       ],
       "rows": [
-        ["Fund resources · 2024-2025","Combined Statement FY2024 net outlays · period-of-availability row",22884098610.26],
-        ["Fund resources · 2023-2024","Combined Statement FY2024 net outlays · period-of-availability publication ceiling",8901640365.19],
-        ["Fund resources · 2022-2023","Combined Statement FY2024 net outlays · period-of-availability row",610022460.94],
-        ["Fund resources · No Year","Combined Statement FY2024 net outlays · period-of-availability row",287352570.96],
-        ["Fund resources · 2021-2022","Combined Statement FY2024 net outlays · period-of-availability row",32587702.96],
-        ["Fund resources · 2020-2021","Combined Statement FY2024 net outlays · period-of-availability row",8422276.6],
-        ["Fund resources · 2019-2020","Combined Statement FY2024 net outlays · period-of-availability row",6871151.39],
-        ["Fund resources · 2018-2019","Combined Statement FY2024 net outlays · period-of-availability row",2294280.55],
-        ["Fund resources · 2023","Combined Statement FY2024 net outlays · period-of-availability row",205236],
-        ["Fund resources · 2024","Combined Statement FY2024 net outlays · period-of-availability row",54730],
-        ["Fund resources · 2021","Combined Statement FY2024 net outlays · period-of-availability row",-865035.55]
+        [
+          "Fund resources · 2024-2025",
+          "Combined Statement FY2024 net outlays · period-of-availability row",
+          22884098610.26
+        ],
+        [
+          "Fund resources · 2023-2024",
+          "Combined Statement FY2024 net outlays · period-of-availability publication ceiling",
+          8901640365.19
+        ],
+        [
+          "Fund resources · 2022-2023",
+          "Combined Statement FY2024 net outlays · period-of-availability row",
+          610022460.94
+        ],
+        [
+          "Fund resources · No Year",
+          "Combined Statement FY2024 net outlays · period-of-availability row",
+          287352570.96
+        ],
+        [
+          "Fund resources · 2021-2022",
+          "Combined Statement FY2024 net outlays · period-of-availability row",
+          32587702.96
+        ],
+        [
+          "Fund resources · 2020-2021",
+          "Combined Statement FY2024 net outlays · period-of-availability row",
+          8422276.6
+        ],
+        [
+          "Fund resources · 2019-2020",
+          "Combined Statement FY2024 net outlays · period-of-availability row",
+          6871151.39
+        ],
+        [
+          "Fund resources · 2018-2019",
+          "Combined Statement FY2024 net outlays · period-of-availability row",
+          2294280.55
+        ],
+        [
+          "Fund resources · 2023",
+          "Combined Statement FY2024 net outlays · period-of-availability row",
+          205236
+        ],
+        [
+          "Fund resources · 2024",
+          "Combined Statement FY2024 net outlays · period-of-availability row",
+          54730
+        ],
+        [
+          "Fund resources · 2021",
+          "Combined Statement FY2024 net outlays · period-of-availability row",
+          -865035.55
+        ]
       ]
     },
     {
@@ -1717,221 +2681,1527 @@
           -51.19
         ]
       ]
+    },
+    {
+      "title": "School Breakfast FY2024 cash payments by state and territory",
+      "displayParent": [
+        "School Breakfast",
+        "FY2024 cash payments",
+        5754887412.06
+      ],
+      "basis": "Exact FY2024 column from USDA FNS School Breakfast cash-payment workbook. The published total reconciles to 55 state/territory rows plus a $0.06 rounding bridge; DOD Navy is a memo child of the Department of Defense row and is not double-counted.",
+      "rows": [
+        [
+          "Texas",
+          "FNS FY2024 School Breakfast cash payment",
+          745713624.6,
+          "https://www.fns.usda.gov/sites/default/files/resource-files/10sbcash-8.xlsx"
+        ],
+        [
+          "California",
+          "FNS FY2024 School Breakfast cash payment",
+          661448262.9,
+          "https://www.fns.usda.gov/sites/default/files/resource-files/10sbcash-8.xlsx"
+        ],
+        [
+          "New York",
+          "FNS FY2024 School Breakfast cash payment",
+          373242561.72,
+          "https://www.fns.usda.gov/sites/default/files/resource-files/10sbcash-8.xlsx"
+        ],
+        [
+          "Florida",
+          "FNS FY2024 School Breakfast cash payment",
+          343544871.64,
+          "https://www.fns.usda.gov/sites/default/files/resource-files/10sbcash-8.xlsx"
+        ],
+        [
+          "Georgia",
+          "FNS FY2024 School Breakfast cash payment",
+          252050420.51,
+          "https://www.fns.usda.gov/sites/default/files/resource-files/10sbcash-8.xlsx"
+        ],
+        [
+          "Pennsylvania",
+          "FNS FY2024 School Breakfast cash payment",
+          201659147.37,
+          "https://www.fns.usda.gov/sites/default/files/resource-files/10sbcash-8.xlsx"
+        ],
+        [
+          "North Carolina",
+          "FNS FY2024 School Breakfast cash payment",
+          190804762.35,
+          "https://www.fns.usda.gov/sites/default/files/resource-files/10sbcash-8.xlsx"
+        ],
+        [
+          "Illinois",
+          "FNS FY2024 School Breakfast cash payment",
+          181489834.29,
+          "https://www.fns.usda.gov/sites/default/files/resource-files/10sbcash-8.xlsx"
+        ],
+        [
+          "Michigan",
+          "FNS FY2024 School Breakfast cash payment",
+          176432688.32,
+          "https://www.fns.usda.gov/sites/default/files/resource-files/10sbcash-8.xlsx"
+        ],
+        [
+          "Ohio",
+          "FNS FY2024 School Breakfast cash payment",
+          164930301.29,
+          "https://www.fns.usda.gov/sites/default/files/resource-files/10sbcash-8.xlsx"
+        ],
+        [
+          "Virginia",
+          "FNS FY2024 School Breakfast cash payment",
+          153557907.99,
+          "https://www.fns.usda.gov/sites/default/files/resource-files/10sbcash-8.xlsx"
+        ],
+        [
+          "Tennessee",
+          "FNS FY2024 School Breakfast cash payment",
+          135347425.28,
+          "https://www.fns.usda.gov/sites/default/files/resource-files/10sbcash-8.xlsx"
+        ],
+        [
+          "New Jersey",
+          "FNS FY2024 School Breakfast cash payment",
+          128641323.12,
+          "https://www.fns.usda.gov/sites/default/files/resource-files/10sbcash-8.xlsx"
+        ],
+        [
+          "Kentucky",
+          "FNS FY2024 School Breakfast cash payment",
+          123907800.82,
+          "https://www.fns.usda.gov/sites/default/files/resource-files/10sbcash-8.xlsx"
+        ],
+        [
+          "South Carolina",
+          "FNS FY2024 School Breakfast cash payment",
+          121183294.56,
+          "https://www.fns.usda.gov/sites/default/files/resource-files/10sbcash-8.xlsx"
+        ],
+        [
+          "Indiana",
+          "FNS FY2024 School Breakfast cash payment",
+          120377010.76,
+          "https://www.fns.usda.gov/sites/default/files/resource-files/10sbcash-8.xlsx"
+        ],
+        [
+          "Alabama",
+          "FNS FY2024 School Breakfast cash payment",
+          118761145.4,
+          "https://www.fns.usda.gov/sites/default/files/resource-files/10sbcash-8.xlsx"
+        ],
+        [
+          "Louisiana",
+          "FNS FY2024 School Breakfast cash payment",
+          109209182.91,
+          "https://www.fns.usda.gov/sites/default/files/resource-files/10sbcash-8.xlsx"
+        ],
+        [
+          "Arizona",
+          "FNS FY2024 School Breakfast cash payment",
+          108736914.12,
+          "https://www.fns.usda.gov/sites/default/files/resource-files/10sbcash-8.xlsx"
+        ],
+        [
+          "Massachusetts",
+          "FNS FY2024 School Breakfast cash payment",
+          103297787.56,
+          "https://www.fns.usda.gov/sites/default/files/resource-files/10sbcash-8.xlsx"
+        ],
+        [
+          "Maryland",
+          "FNS FY2024 School Breakfast cash payment",
+          89408800.89,
+          "https://www.fns.usda.gov/sites/default/files/resource-files/10sbcash-8.xlsx"
+        ],
+        [
+          "Missouri",
+          "FNS FY2024 School Breakfast cash payment",
+          87556747.98,
+          "https://www.fns.usda.gov/sites/default/files/resource-files/10sbcash-8.xlsx"
+        ],
+        [
+          "Washington",
+          "FNS FY2024 School Breakfast cash payment",
+          86429897.28,
+          "https://www.fns.usda.gov/sites/default/files/resource-files/10sbcash-8.xlsx"
+        ],
+        [
+          "Minnesota",
+          "FNS FY2024 School Breakfast cash payment",
+          78444800.09,
+          "https://www.fns.usda.gov/sites/default/files/resource-files/10sbcash-8.xlsx"
+        ],
+        [
+          "Wisconsin",
+          "FNS FY2024 School Breakfast cash payment",
+          73232293.71,
+          "https://www.fns.usda.gov/sites/default/files/resource-files/10sbcash-8.xlsx"
+        ],
+        [
+          "Mississippi",
+          "FNS FY2024 School Breakfast cash payment",
+          72120016.39,
+          "https://www.fns.usda.gov/sites/default/files/resource-files/10sbcash-8.xlsx"
+        ],
+        [
+          "Oklahoma",
+          "FNS FY2024 School Breakfast cash payment",
+          70821633.56,
+          "https://www.fns.usda.gov/sites/default/files/resource-files/10sbcash-8.xlsx"
+        ],
+        [
+          "Arkansas",
+          "FNS FY2024 School Breakfast cash payment",
+          68149038.94,
+          "https://www.fns.usda.gov/sites/default/files/resource-files/10sbcash-8.xlsx"
+        ],
+        [
+          "Colorado",
+          "FNS FY2024 School Breakfast cash payment",
+          55440975.23,
+          "https://www.fns.usda.gov/sites/default/files/resource-files/10sbcash-8.xlsx"
+        ],
+        [
+          "Connecticut",
+          "FNS FY2024 School Breakfast cash payment",
+          53372088.5,
+          "https://www.fns.usda.gov/sites/default/files/resource-files/10sbcash-8.xlsx"
+        ],
+        [
+          "New Mexico",
+          "FNS FY2024 School Breakfast cash payment",
+          52543360.73,
+          "https://www.fns.usda.gov/sites/default/files/resource-files/10sbcash-8.xlsx"
+        ],
+        [
+          "West Virginia",
+          "FNS FY2024 School Breakfast cash payment",
+          51338940.7,
+          "https://www.fns.usda.gov/sites/default/files/resource-files/10sbcash-8.xlsx"
+        ],
+        [
+          "Nevada",
+          "FNS FY2024 School Breakfast cash payment",
+          47211418.6,
+          "https://www.fns.usda.gov/sites/default/files/resource-files/10sbcash-8.xlsx"
+        ],
+        [
+          "Oregon",
+          "FNS FY2024 School Breakfast cash payment",
+          44431567.85,
+          "https://www.fns.usda.gov/sites/default/files/resource-files/10sbcash-8.xlsx"
+        ],
+        [
+          "Kansas",
+          "FNS FY2024 School Breakfast cash payment",
+          42062178.32,
+          "https://www.fns.usda.gov/sites/default/files/resource-files/10sbcash-8.xlsx"
+        ],
+        [
+          "Iowa",
+          "FNS FY2024 School Breakfast cash payment",
+          40470949.26,
+          "https://www.fns.usda.gov/sites/default/files/resource-files/10sbcash-8.xlsx"
+        ],
+        [
+          "Nebraska",
+          "FNS FY2024 School Breakfast cash payment",
+          28051570.16,
+          "https://www.fns.usda.gov/sites/default/files/resource-files/10sbcash-8.xlsx"
+        ],
+        [
+          "Utah",
+          "FNS FY2024 School Breakfast cash payment",
+          23067982.58,
+          "https://www.fns.usda.gov/sites/default/files/resource-files/10sbcash-8.xlsx"
+        ],
+        [
+          "Puerto Rico",
+          "FNS FY2024 School Breakfast cash payment",
+          21217768.76,
+          "https://www.fns.usda.gov/sites/default/files/resource-files/10sbcash-8.xlsx"
+        ],
+        [
+          "Delaware",
+          "FNS FY2024 School Breakfast cash payment",
+          15667053.06,
+          "https://www.fns.usda.gov/sites/default/files/resource-files/10sbcash-8.xlsx"
+        ],
+        [
+          "District of Columbia",
+          "FNS FY2024 School Breakfast cash payment",
+          15563030.56,
+          "https://www.fns.usda.gov/sites/default/files/resource-files/10sbcash-8.xlsx"
+        ],
+        [
+          "Maine",
+          "FNS FY2024 School Breakfast cash payment",
+          14844422.68,
+          "https://www.fns.usda.gov/sites/default/files/resource-files/10sbcash-8.xlsx"
+        ],
+        [
+          "Idaho",
+          "FNS FY2024 School Breakfast cash payment",
+          14698157.07,
+          "https://www.fns.usda.gov/sites/default/files/resource-files/10sbcash-8.xlsx"
+        ],
+        [
+          "Hawaii",
+          "FNS FY2024 School Breakfast cash payment",
+          13841384.97,
+          "https://www.fns.usda.gov/sites/default/files/resource-files/10sbcash-8.xlsx"
+        ],
+        [
+          "Montana",
+          "FNS FY2024 School Breakfast cash payment",
+          12693920.97,
+          "https://www.fns.usda.gov/sites/default/files/resource-files/10sbcash-8.xlsx"
+        ],
+        [
+          "Alaska",
+          "FNS FY2024 School Breakfast cash payment",
+          12415908.42,
+          "https://www.fns.usda.gov/sites/default/files/resource-files/10sbcash-8.xlsx"
+        ],
+        [
+          "Rhode Island",
+          "FNS FY2024 School Breakfast cash payment",
+          11757073.19,
+          "https://www.fns.usda.gov/sites/default/files/resource-files/10sbcash-8.xlsx"
+        ],
+        [
+          "Vermont",
+          "FNS FY2024 School Breakfast cash payment",
+          9200487.5,
+          "https://www.fns.usda.gov/sites/default/files/resource-files/10sbcash-8.xlsx"
+        ],
+        [
+          "South Dakota",
+          "FNS FY2024 School Breakfast cash payment",
+          9163224.71,
+          "https://www.fns.usda.gov/sites/default/files/resource-files/10sbcash-8.xlsx"
+        ],
+        [
+          "North Dakota",
+          "FNS FY2024 School Breakfast cash payment",
+          8129942.41,
+          "https://www.fns.usda.gov/sites/default/files/resource-files/10sbcash-8.xlsx"
+        ],
+        [
+          "New Hampshire",
+          "FNS FY2024 School Breakfast cash payment",
+          5917405.24,
+          "https://www.fns.usda.gov/sites/default/files/resource-files/10sbcash-8.xlsx"
+        ],
+        [
+          "Wyoming",
+          "FNS FY2024 School Breakfast cash payment",
+          4603383.78,
+          "https://www.fns.usda.gov/sites/default/files/resource-files/10sbcash-8.xlsx"
+        ],
+        [
+          "Guam",
+          "FNS FY2024 School Breakfast cash payment",
+          3938630.68,
+          "https://www.fns.usda.gov/sites/default/files/resource-files/10sbcash-8.xlsx"
+        ],
+        [
+          "Dept. of Defense",
+          "FNS FY2024 School Breakfast cash payment",
+          1456381,
+          "https://www.fns.usda.gov/sites/default/files/resource-files/10sbcash-8.xlsx"
+        ],
+        [
+          "Virgin Islands",
+          "FNS FY2024 School Breakfast cash payment",
+          1288708.72,
+          "https://www.fns.usda.gov/sites/default/files/resource-files/10sbcash-8.xlsx"
+        ],
+        [
+          "Source rounding",
+          "Difference between published total and independently rounded state rows",
+          0.06,
+          "https://www.fns.usda.gov/sites/default/files/resource-files/10sbcash-8.xlsx"
+        ]
+      ],
+      "sourceTotal": 5754887412.06,
+      "sourceLabel": "USDA FNS School Breakfast cash payments",
+      "sourceUrl": "https://www.fns.usda.gov/sites/default/files/resource-files/10sbcash-8.xlsx"
     }
   ],
   "largeAccountRows": [
-    ["012-3505-000", "Supplemental Nutrition Assistance Program, Food and Nutrition Service, Agriculture", 106754491269.41, 23],
-    ["012-3539-000", "Child Nutrition Programs, Food and Nutrition Service, Agriculture", 32732684349.3, 11],
-    ["012-4085-000", "Federal Crop Insurance Corporation Fund, Risk Management Agency, Agriculture · official Treasury publication ceiling (one availability row)", 9768288060.88, 1],
-    ["012-0115-000", "Processing, Research and Marketing, Office of the Secretary, Agriculture", 7629506855.95, 15],
-    ["012-3510-000", "Special Supplemental Nutrition Program for Women, Infants, and Children (WIC), Food and Nutrition Service, Agriculture", 7256773620.08, 9],
-    ["012-4336-000", "Commodity Credit Corporation Fund, Agriculture", 5516852950.13, 6],
-    ["012-1115-000", "Wildland Fire Management, Forest Service, Agriculture", 5237645553.31, 6],
-    ["012-1004-000", "Farm Security and Rural Investment Programs, Natural Resources Conservation Service, Agriculture", 3911289898.13, 28],
-    ["012-4208-000", "Rural Electrification and Telephone Direct Loan Financing Account, Rural Utilities Service · official Treasury publication ceiling (one availability row)", 3548838258.65, 1],
-    ["012-1106-000", "National Forest System, Forest Service, Agriculture", 2559697265.83, 13],
-    ["012-1600-000", "Salaries and Expenses, Animal and Plant Health Inspection Service, Agriculture", 2104848785.93, 16],
-    ["012-1400-000", "Salaries and Expenses, Agricultural Research Service, Agriculture", 1791669164.07, 7],
-    ["012-4212-000", "Agricultural Credit Insurance Fund Direct Loan Financing Account, Consolidated Farm Service Agency · official Treasury publication ceiling (one availability row)", 1676339093.92, 1],
-    ["012-0137-000", "Rental Assistance Program, Rural Housing Service, Agriculture", 1579704789.05, 40],
-    ["012-1140-000", "Agricultural Credit Insurance Fund Program Account, Farm Service Agency, Agriculture", 1548609018.7, 8],
-    ["012-5209-000", "Funds for Strengthening Markets, Income, and Supply (Section 32), Agriculture · official Treasury publication ceiling (one availability row)", 1534894331.99, 1],
-    ["012-2500-000", "Marketing Services, Agricultural Marketing Service, Agriculture", 1483550367.03, 11],
-    ["012-1122-000", "Forest Service Operations, Forest Service, Agriculture", 1359903691.46, 6],
-    ["012-0600-000", "Salaries and Expenses, Farm Service Agency, Agriculture", 1263006317.6, 14],
-    ["012-3700-000", "Food Safety and Inspection Service, Agriculture", 1226647331.14, 8],
-    ["012-1000-000", "Conservation Operations, Natural Resources Conservation Service, Agriculture", 1141979848.44, 9],
-    ["012-1500-000", "Research and Education Activities, National Institute of Food and Agriculture, Agriculture", 1081014803.39, 14],
-    ["012-2081-000", "Rural Housing Insurance Fund Program Account, Rural Housing Service, Agriculture", 1014717745.87, 13]
+    [
+      "012-3505-000",
+      "Supplemental Nutrition Assistance Program, Food and Nutrition Service, Agriculture",
+      106754491269.41,
+      23
+    ],
+    [
+      "012-3539-000",
+      "Child Nutrition Programs, Food and Nutrition Service, Agriculture",
+      32732684349.3,
+      11
+    ],
+    [
+      "012-4085-000",
+      "Federal Crop Insurance Corporation Fund, Risk Management Agency, Agriculture · official Treasury publication ceiling (one availability row)",
+      9768288060.88,
+      1
+    ],
+    [
+      "012-0115-000",
+      "Processing, Research and Marketing, Office of the Secretary, Agriculture",
+      7629506855.95,
+      15
+    ],
+    [
+      "012-3510-000",
+      "Special Supplemental Nutrition Program for Women, Infants, and Children (WIC), Food and Nutrition Service, Agriculture",
+      7256773620.08,
+      9
+    ],
+    [
+      "012-4336-000",
+      "Commodity Credit Corporation Fund, Agriculture",
+      5516852950.13,
+      6
+    ],
+    [
+      "012-1115-000",
+      "Wildland Fire Management, Forest Service, Agriculture",
+      5237645553.31,
+      6
+    ],
+    [
+      "012-1004-000",
+      "Farm Security and Rural Investment Programs, Natural Resources Conservation Service, Agriculture",
+      3911289898.13,
+      28
+    ],
+    [
+      "012-4208-000",
+      "Rural Electrification and Telephone Direct Loan Financing Account, Rural Utilities Service · official Treasury publication ceiling (one availability row)",
+      3548838258.65,
+      1
+    ],
+    [
+      "012-1106-000",
+      "National Forest System, Forest Service, Agriculture",
+      2559697265.83,
+      13
+    ],
+    [
+      "012-1600-000",
+      "Salaries and Expenses, Animal and Plant Health Inspection Service, Agriculture",
+      2104848785.93,
+      16
+    ],
+    [
+      "012-1400-000",
+      "Salaries and Expenses, Agricultural Research Service, Agriculture",
+      1791669164.07,
+      7
+    ],
+    [
+      "012-4212-000",
+      "Agricultural Credit Insurance Fund Direct Loan Financing Account, Consolidated Farm Service Agency · official Treasury publication ceiling (one availability row)",
+      1676339093.92,
+      1
+    ],
+    [
+      "012-0137-000",
+      "Rental Assistance Program, Rural Housing Service, Agriculture",
+      1579704789.05,
+      40
+    ],
+    [
+      "012-1140-000",
+      "Agricultural Credit Insurance Fund Program Account, Farm Service Agency, Agriculture",
+      1548609018.7,
+      8
+    ],
+    [
+      "012-5209-000",
+      "Funds for Strengthening Markets, Income, and Supply (Section 32), Agriculture · official Treasury publication ceiling (one availability row)",
+      1534894331.99,
+      1
+    ],
+    [
+      "012-2500-000",
+      "Marketing Services, Agricultural Marketing Service, Agriculture",
+      1483550367.03,
+      11
+    ],
+    [
+      "012-1122-000",
+      "Forest Service Operations, Forest Service, Agriculture",
+      1359903691.46,
+      6
+    ],
+    [
+      "012-0600-000",
+      "Salaries and Expenses, Farm Service Agency, Agriculture",
+      1263006317.6,
+      14
+    ],
+    [
+      "012-3700-000",
+      "Food Safety and Inspection Service, Agriculture",
+      1226647331.14,
+      8
+    ],
+    [
+      "012-1000-000",
+      "Conservation Operations, Natural Resources Conservation Service, Agriculture",
+      1141979848.44,
+      9
+    ],
+    [
+      "012-1500-000",
+      "Research and Education Activities, National Institute of Food and Agriculture, Agriculture",
+      1081014803.39,
+      14
+    ],
+    [
+      "012-2081-000",
+      "Rural Housing Insurance Fund Program Account, Rural Housing Service, Agriculture",
+      1014717745.87,
+      13
+    ]
   ],
   "supplementalBreakdowns": [
     {
-      "parent": ["Food and Nutrition Service", "Supplemental Nutrition Assistance Program", 106754000000],
+      "parent": [
+        "Food and Nutrition Service",
+        "Supplemental Nutrition Assistance Program",
+        106754000000
+      ],
       "title": "FNS-reported FY2024 SNAP benefits by geography and month",
       "basis": "These 64 FNS rows total $93,475,887,992 and exclude P-EBT/Other. California is split into its 12 published months so every source leaf is below $10B. The FNS benefit scope remains $13,278,112,008 below the broader MTS cash row.",
       "sourceLabel": "USDA FNS SNAP Data Tables",
       "sourceUrl": "https://www.fns.usda.gov/pd/supplemental-nutrition-assistance-program-snap",
       "rows": [
-        ["Texas", "FY2024 SNAP benefit cost", 7332023032],
-        ["New York", "FY2024 SNAP benefit cost", 7231611169],
-        ["Florida", "FY2024 SNAP benefit cost", 6548475145],
-        ["Illinois", "FY2024 SNAP benefit cost", 4469341818],
-        ["Pennsylvania", "FY2024 SNAP benefit cost", 4268035433],
-        ["Ohio", "FY2024 SNAP benefit cost", 3186433783],
-        ["Georgia", "FY2024 SNAP benefit cost", 3181329856],
-        ["Michigan", "FY2024 SNAP benefit cost", 3061361572],
-        ["North Carolina", "FY2024 SNAP benefit cost", 2934626410],
-        ["Massachusetts", "FY2024 SNAP benefit cost", 2617666701],
-        ["Arizona", "FY2024 SNAP benefit cost", 2015185004],
-        ["New Jersey", "FY2024 SNAP benefit cost", 1925707853],
-        ["Washington", "FY2024 SNAP benefit cost", 1920375025],
-        ["Louisiana", "FY2024 SNAP benefit cost", 1902455806],
-        ["Virginia", "FY2024 SNAP benefit cost", 1766229367],
-        ["Alabama", "FY2024 SNAP benefit cost", 1733693703],
-        ["Tennessee", "FY2024 SNAP benefit cost", 1623231075],
-        ["Oregon", "FY2024 SNAP benefit cost", 1596585242],
-        ["Missouri", "FY2024 SNAP benefit cost", 1512570795],
-        ["Oklahoma", "FY2024 SNAP benefit cost", 1506326652],
-        ["Maryland", "FY2024 SNAP benefit cost", 1498308252],
-        ["Indiana", "FY2024 SNAP benefit cost", 1435952329],
-        ["Wisconsin", "FY2024 SNAP benefit cost", 1363921863],
-        ["Colorado", "FY2024 SNAP benefit cost", 1303172697],
-        ["South Carolina", "FY2024 SNAP benefit cost", 1293584986],
-        ["Kentucky", "FY2024 SNAP benefit cost", 1150201172],
-        ["New Mexico", "FY2024 SNAP benefit cost", 1028090754],
-        ["California · Aug 2024", "FY2024 SNAP benefit cost", 1027430626],
-        ["California · Sep 2024", "FY2024 SNAP benefit cost", 1024551145],
-        ["California · Mar 2024", "FY2024 SNAP benefit cost", 1023984053],
-        ["California · Jul 2024", "FY2024 SNAP benefit cost", 1021186667],
-        ["California · May 2024", "FY2024 SNAP benefit cost", 1020377545],
-        ["California · Jun 2024", "FY2024 SNAP benefit cost", 1016637189],
-        ["California · Apr 2024", "FY2024 SNAP benefit cost", 1012666513],
-        ["California · Dec 2023", "FY2024 SNAP benefit cost", 1011085285],
-        ["California · Oct 2023", "FY2024 SNAP benefit cost", 1009615132],
-        ["California · Jan 2024", "FY2024 SNAP benefit cost", 1007389977],
-        ["Nevada", "FY2024 SNAP benefit cost", 1006600692],
-        ["California · Nov 2023", "FY2024 SNAP benefit cost", 1006129703],
-        ["California · Feb 2024", "FY2024 SNAP benefit cost", 1002031717],
-        ["Connecticut", "FY2024 SNAP benefit cost", 892819650],
-        ["Minnesota", "FY2024 SNAP benefit cost", 859038624],
-        ["Mississippi", "FY2024 SNAP benefit cost", 842267063],
-        ["Hawaii", "FY2024 SNAP benefit cost", 731331421],
-        ["West Virginia", "FY2024 SNAP benefit cost", 565647589],
-        ["Iowa", "FY2024 SNAP benefit cost", 528905499],
-        ["Arkansas", "FY2024 SNAP benefit cost", 515343148],
-        ["Kansas", "FY2024 SNAP benefit cost", 408410165],
-        ["Utah", "FY2024 SNAP benefit cost", 382660017],
-        ["Maine", "FY2024 SNAP benefit cost", 363838898],
-        ["Rhode Island", "FY2024 SNAP benefit cost", 343066538],
-        ["Nebraska", "FY2024 SNAP benefit cost", 331710249],
-        ["District of Columbia", "FY2024 SNAP benefit cost", 319119173],
-        ["Idaho", "FY2024 SNAP benefit cost", 281230283],
-        ["Delaware", "FY2024 SNAP benefit cost", 254854243],
-        ["Alaska", "FY2024 SNAP benefit cost", 249618195],
-        ["South Dakota", "FY2024 SNAP benefit cost", 180195817],
-        ["Montana", "FY2024 SNAP benefit cost", 169446871],
-        ["New Hampshire", "FY2024 SNAP benefit cost", 154254645],
-        ["Vermont", "FY2024 SNAP benefit cost", 148302129],
-        ["Guam", "FY2024 SNAP benefit cost", 119035771],
-        ["North Dakota", "FY2024 SNAP benefit cost", 111448901],
-        ["Virgin Islands", "FY2024 SNAP benefit cost", 70457505],
-        ["Wyoming", "FY2024 SNAP benefit cost", 56701860]
+        [
+          "Texas",
+          "FY2024 SNAP benefit cost",
+          7332023032
+        ],
+        [
+          "New York",
+          "FY2024 SNAP benefit cost",
+          7231611169
+        ],
+        [
+          "Florida",
+          "FY2024 SNAP benefit cost",
+          6548475145
+        ],
+        [
+          "Illinois",
+          "FY2024 SNAP benefit cost",
+          4469341818
+        ],
+        [
+          "Pennsylvania",
+          "FY2024 SNAP benefit cost",
+          4268035433
+        ],
+        [
+          "Ohio",
+          "FY2024 SNAP benefit cost",
+          3186433783
+        ],
+        [
+          "Georgia",
+          "FY2024 SNAP benefit cost",
+          3181329856
+        ],
+        [
+          "Michigan",
+          "FY2024 SNAP benefit cost",
+          3061361572
+        ],
+        [
+          "North Carolina",
+          "FY2024 SNAP benefit cost",
+          2934626410
+        ],
+        [
+          "Massachusetts",
+          "FY2024 SNAP benefit cost",
+          2617666701
+        ],
+        [
+          "Arizona",
+          "FY2024 SNAP benefit cost",
+          2015185004
+        ],
+        [
+          "New Jersey",
+          "FY2024 SNAP benefit cost",
+          1925707853
+        ],
+        [
+          "Washington",
+          "FY2024 SNAP benefit cost",
+          1920375025
+        ],
+        [
+          "Louisiana",
+          "FY2024 SNAP benefit cost",
+          1902455806
+        ],
+        [
+          "Virginia",
+          "FY2024 SNAP benefit cost",
+          1766229367
+        ],
+        [
+          "Alabama",
+          "FY2024 SNAP benefit cost",
+          1733693703
+        ],
+        [
+          "Tennessee",
+          "FY2024 SNAP benefit cost",
+          1623231075
+        ],
+        [
+          "Oregon",
+          "FY2024 SNAP benefit cost",
+          1596585242
+        ],
+        [
+          "Missouri",
+          "FY2024 SNAP benefit cost",
+          1512570795
+        ],
+        [
+          "Oklahoma",
+          "FY2024 SNAP benefit cost",
+          1506326652
+        ],
+        [
+          "Maryland",
+          "FY2024 SNAP benefit cost",
+          1498308252
+        ],
+        [
+          "Indiana",
+          "FY2024 SNAP benefit cost",
+          1435952329
+        ],
+        [
+          "Wisconsin",
+          "FY2024 SNAP benefit cost",
+          1363921863
+        ],
+        [
+          "Colorado",
+          "FY2024 SNAP benefit cost",
+          1303172697
+        ],
+        [
+          "South Carolina",
+          "FY2024 SNAP benefit cost",
+          1293584986
+        ],
+        [
+          "Kentucky",
+          "FY2024 SNAP benefit cost",
+          1150201172
+        ],
+        [
+          "New Mexico",
+          "FY2024 SNAP benefit cost",
+          1028090754
+        ],
+        [
+          "California · Aug 2024",
+          "FY2024 SNAP benefit cost",
+          1027430626
+        ],
+        [
+          "California · Sep 2024",
+          "FY2024 SNAP benefit cost",
+          1024551145
+        ],
+        [
+          "California · Mar 2024",
+          "FY2024 SNAP benefit cost",
+          1023984053
+        ],
+        [
+          "California · Jul 2024",
+          "FY2024 SNAP benefit cost",
+          1021186667
+        ],
+        [
+          "California · May 2024",
+          "FY2024 SNAP benefit cost",
+          1020377545
+        ],
+        [
+          "California · Jun 2024",
+          "FY2024 SNAP benefit cost",
+          1016637189
+        ],
+        [
+          "California · Apr 2024",
+          "FY2024 SNAP benefit cost",
+          1012666513
+        ],
+        [
+          "California · Dec 2023",
+          "FY2024 SNAP benefit cost",
+          1011085285
+        ],
+        [
+          "California · Oct 2023",
+          "FY2024 SNAP benefit cost",
+          1009615132
+        ],
+        [
+          "California · Jan 2024",
+          "FY2024 SNAP benefit cost",
+          1007389977
+        ],
+        [
+          "Nevada",
+          "FY2024 SNAP benefit cost",
+          1006600692
+        ],
+        [
+          "California · Nov 2023",
+          "FY2024 SNAP benefit cost",
+          1006129703
+        ],
+        [
+          "California · Feb 2024",
+          "FY2024 SNAP benefit cost",
+          1002031717
+        ],
+        [
+          "Connecticut",
+          "FY2024 SNAP benefit cost",
+          892819650
+        ],
+        [
+          "Minnesota",
+          "FY2024 SNAP benefit cost",
+          859038624
+        ],
+        [
+          "Mississippi",
+          "FY2024 SNAP benefit cost",
+          842267063
+        ],
+        [
+          "Hawaii",
+          "FY2024 SNAP benefit cost",
+          731331421
+        ],
+        [
+          "West Virginia",
+          "FY2024 SNAP benefit cost",
+          565647589
+        ],
+        [
+          "Iowa",
+          "FY2024 SNAP benefit cost",
+          528905499
+        ],
+        [
+          "Arkansas",
+          "FY2024 SNAP benefit cost",
+          515343148
+        ],
+        [
+          "Kansas",
+          "FY2024 SNAP benefit cost",
+          408410165
+        ],
+        [
+          "Utah",
+          "FY2024 SNAP benefit cost",
+          382660017
+        ],
+        [
+          "Maine",
+          "FY2024 SNAP benefit cost",
+          363838898
+        ],
+        [
+          "Rhode Island",
+          "FY2024 SNAP benefit cost",
+          343066538
+        ],
+        [
+          "Nebraska",
+          "FY2024 SNAP benefit cost",
+          331710249
+        ],
+        [
+          "District of Columbia",
+          "FY2024 SNAP benefit cost",
+          319119173
+        ],
+        [
+          "Idaho",
+          "FY2024 SNAP benefit cost",
+          281230283
+        ],
+        [
+          "Delaware",
+          "FY2024 SNAP benefit cost",
+          254854243
+        ],
+        [
+          "Alaska",
+          "FY2024 SNAP benefit cost",
+          249618195
+        ],
+        [
+          "South Dakota",
+          "FY2024 SNAP benefit cost",
+          180195817
+        ],
+        [
+          "Montana",
+          "FY2024 SNAP benefit cost",
+          169446871
+        ],
+        [
+          "New Hampshire",
+          "FY2024 SNAP benefit cost",
+          154254645
+        ],
+        [
+          "Vermont",
+          "FY2024 SNAP benefit cost",
+          148302129
+        ],
+        [
+          "Guam",
+          "FY2024 SNAP benefit cost",
+          119035771
+        ],
+        [
+          "North Dakota",
+          "FY2024 SNAP benefit cost",
+          111448901
+        ],
+        [
+          "Virgin Islands",
+          "FY2024 SNAP benefit cost",
+          70457505
+        ],
+        [
+          "Wyoming",
+          "FY2024 SNAP benefit cost",
+          56701860
+        ]
       ],
-      "covers": [["FNS FY2024 SNAP benefit schedule", "Published geography-and-month schedule before the benefit-to-outlay bridge", 93475887992]]
+      "covers": [
+        [
+          "FNS FY2024 SNAP benefit schedule",
+          "Published geography-and-month schedule before the benefit-to-outlay bridge",
+          93475887992
+        ]
+      ]
     },
     {
-      "parent": ["Food and Nutrition Service", "Child Nutrition Programs", 32733000000],
+      "parent": [
+        "Food and Nutrition Service",
+        "Child Nutrition Programs",
+        32733000000
+      ],
       "title": "FNS FY2024 Child Nutrition costs by program and geography",
       "basis": "The official FNS program schedules total $28,391,968,503.44. National School Lunch cash is expanded by geography, with the source's $0.54 row bridge and $0.01 cross-workbook component bridge retained; every source leaf is below $10B. This source scope remains $4,341,031,496.56 below the MTS cash row.",
       "sourceLabel": "USDA FNS Child Nutrition Tables",
       "sourceUrl": "https://www.fns.usda.gov/pd/child-nutrition-tables",
       "rows": [
-        ["School Breakfast", "FY2024 cash payments", 5754887412.06],
-        ["Child and Adult Care Food Program", "FY2024 program cost", 4093862833.49],
-        ["National School Lunch · Texas", "FY2024 cash payments", 2011819509.78],
-        ["National School Lunch · California", "FY2024 cash payments", 1837999804.73],
-        ["Commodity entitlement", "FY2024 commodity cost", 1554494129.71],
-        ["National School Lunch · Florida", "FY2024 cash payments", 1157053956.19],
-        ["National School Lunch · New York", "FY2024 cash payments", 1086819426.41],
-        ["Summer Food Service Program", "FY2024 expenditures", 695599530.94],
-        ["National School Lunch · Georgia", "FY2024 cash payments", 660015927.69],
-        ["National School Lunch · Illinois", "FY2024 cash payments", 548615828.49],
-        ["National School Lunch · Pennsylvania", "FY2024 cash payments", 543475757.61],
-        ["National School Lunch · North Carolina", "FY2024 cash payments", 512146241.99],
-        ["National School Lunch · Ohio", "FY2024 cash payments", 463725692.57],
-        ["National School Lunch · Michigan", "FY2024 cash payments", 455105951.96],
-        ["National School Lunch · Virginia", "FY2024 cash payments", 384533846.73],
-        ["National School Lunch · Indiana", "FY2024 cash payments", 370488731.58],
-        ["National School Lunch · Tennessee", "FY2024 cash payments", 347758099.98],
-        ["National School Lunch · New Jersey", "FY2024 cash payments", 343415059.71],
-        ["National School Lunch · Arizona", "FY2024 cash payments", 336796435.65],
-        ["National School Lunch · South Carolina", "FY2024 cash payments", 332516801.36],
-        ["National School Lunch · Alabama", "FY2024 cash payments", 326879106.87],
-        ["National School Lunch · Louisiana", "FY2024 cash payments", 305487345.55],
-        ["National School Lunch · Kentucky", "FY2024 cash payments", 300396690.98],
-        ["National School Lunch · Massachusetts", "FY2024 cash payments", 293270359.1],
-        ["National School Lunch · Washington", "FY2024 cash payments", 267826594.74],
-        ["National School Lunch · Maryland", "FY2024 cash payments", 244387448.81],
-        ["National School Lunch · Minnesota", "FY2024 cash payments", 233512533.99],
-        ["National School Lunch · Missouri", "FY2024 cash payments", 222383935.38],
-        ["National School Lunch · Wisconsin", "FY2024 cash payments", 214271821.52],
-        ["National School Lunch · Oklahoma", "FY2024 cash payments", 205633098.35],
-        ["National School Lunch · Mississippi", "FY2024 cash payments", 186605633.12],
-        ["National School Lunch · Colorado", "FY2024 cash payments", 181811500.15],
-        ["National School Lunch · Arkansas", "FY2024 cash payments", 169074833.98],
-        ["National School Lunch · Connecticut", "FY2024 cash payments", 155449458.73],
-        ["National School Lunch · Iowa", "FY2024 cash payments", 146979123.62],
-        ["National School Lunch · Oregon", "FY2024 cash payments", 136133343.74],
-        ["National School Lunch · Kansas", "FY2024 cash payments", 134820126.03],
-        ["National School Lunch · Nevada", "FY2024 cash payments", 133265286.6],
-        ["National School Lunch · New Mexico", "FY2024 cash payments", 119757720.22],
-        ["National School Lunch · Utah", "FY2024 cash payments", 115052575.52],
-        ["National School Lunch · Puerto Rico", "FY2024 cash payments", 113907066.21],
-        ["National School Lunch · Nebraska", "FY2024 cash payments", 102698455.87],
-        ["National School Lunch · West Virginia", "FY2024 cash payments", 100431216.43],
-        ["National School Lunch · Hawaii", "FY2024 cash payments", 59331568.94],
-        ["National School Lunch · Idaho", "FY2024 cash payments", 51315900.5],
-        ["National School Lunch · Delaware", "FY2024 cash payments", 40725727.6],
-        ["National School Lunch · Maine", "FY2024 cash payments", 36481219.62],
-        ["National School Lunch · Alaska", "FY2024 cash payments", 36467729.79],
-        ["National School Lunch · Montana", "FY2024 cash payments", 34882739.71],
-        ["National School Lunch · District of Columbia", "FY2024 cash payments", 34470001.02],
-        ["National School Lunch · South Dakota", "FY2024 cash payments", 33832613.66],
-        ["National School Lunch · Rhode Island", "FY2024 cash payments", 33320905.11],
-        ["National School Lunch · North Dakota", "FY2024 cash payments", 27467576.94],
-        ["National School Lunch · Vermont", "FY2024 cash payments", 23354609.03],
-        ["National School Lunch · New Hampshire", "FY2024 cash payments", 22398918.37],
-        ["National School Lunch · Wyoming", "FY2024 cash payments", 17353927.84],
-        ["National School Lunch · Guam", "FY2024 cash payments", 11099165.85],
-        ["National School Lunch · Dept. of Defense", "FY2024 cash payments", 10683131.0],
-        ["Commodity bonus", "FY2024 commodity cost", 8838007.62],
-        ["Special Milk", "FY2024 cash payments", 4668724.72],
-        ["National School Lunch · Virgin Islands", "FY2024 cash payments", 4109781.45],
-        ["National School Lunch · source rounding", "Difference between rounded geography rows and FNS program total", 0.54],
-        ["FNS component rounding", "Difference from combining independently rounded program tables", -0.01]
+        [
+          "School Breakfast",
+          "FY2024 cash payments",
+          5754887412.06
+        ],
+        [
+          "Child and Adult Care Food Program",
+          "FY2024 program cost",
+          4093862833.49
+        ],
+        [
+          "National School Lunch · Texas",
+          "FY2024 cash payments",
+          2011819509.78
+        ],
+        [
+          "National School Lunch · California",
+          "FY2024 cash payments",
+          1837999804.73
+        ],
+        [
+          "Commodity entitlement",
+          "FY2024 commodity cost",
+          1554494129.71
+        ],
+        [
+          "National School Lunch · Florida",
+          "FY2024 cash payments",
+          1157053956.19
+        ],
+        [
+          "National School Lunch · New York",
+          "FY2024 cash payments",
+          1086819426.41
+        ],
+        [
+          "Summer Food Service Program",
+          "FY2024 expenditures",
+          695599530.94
+        ],
+        [
+          "National School Lunch · Georgia",
+          "FY2024 cash payments",
+          660015927.69
+        ],
+        [
+          "National School Lunch · Illinois",
+          "FY2024 cash payments",
+          548615828.49
+        ],
+        [
+          "National School Lunch · Pennsylvania",
+          "FY2024 cash payments",
+          543475757.61
+        ],
+        [
+          "National School Lunch · North Carolina",
+          "FY2024 cash payments",
+          512146241.99
+        ],
+        [
+          "National School Lunch · Ohio",
+          "FY2024 cash payments",
+          463725692.57
+        ],
+        [
+          "National School Lunch · Michigan",
+          "FY2024 cash payments",
+          455105951.96
+        ],
+        [
+          "National School Lunch · Virginia",
+          "FY2024 cash payments",
+          384533846.73
+        ],
+        [
+          "National School Lunch · Indiana",
+          "FY2024 cash payments",
+          370488731.58
+        ],
+        [
+          "National School Lunch · Tennessee",
+          "FY2024 cash payments",
+          347758099.98
+        ],
+        [
+          "National School Lunch · New Jersey",
+          "FY2024 cash payments",
+          343415059.71
+        ],
+        [
+          "National School Lunch · Arizona",
+          "FY2024 cash payments",
+          336796435.65
+        ],
+        [
+          "National School Lunch · South Carolina",
+          "FY2024 cash payments",
+          332516801.36
+        ],
+        [
+          "National School Lunch · Alabama",
+          "FY2024 cash payments",
+          326879106.87
+        ],
+        [
+          "National School Lunch · Louisiana",
+          "FY2024 cash payments",
+          305487345.55
+        ],
+        [
+          "National School Lunch · Kentucky",
+          "FY2024 cash payments",
+          300396690.98
+        ],
+        [
+          "National School Lunch · Massachusetts",
+          "FY2024 cash payments",
+          293270359.1
+        ],
+        [
+          "National School Lunch · Washington",
+          "FY2024 cash payments",
+          267826594.74
+        ],
+        [
+          "National School Lunch · Maryland",
+          "FY2024 cash payments",
+          244387448.81
+        ],
+        [
+          "National School Lunch · Minnesota",
+          "FY2024 cash payments",
+          233512533.99
+        ],
+        [
+          "National School Lunch · Missouri",
+          "FY2024 cash payments",
+          222383935.38
+        ],
+        [
+          "National School Lunch · Wisconsin",
+          "FY2024 cash payments",
+          214271821.52
+        ],
+        [
+          "National School Lunch · Oklahoma",
+          "FY2024 cash payments",
+          205633098.35
+        ],
+        [
+          "National School Lunch · Mississippi",
+          "FY2024 cash payments",
+          186605633.12
+        ],
+        [
+          "National School Lunch · Colorado",
+          "FY2024 cash payments",
+          181811500.15
+        ],
+        [
+          "National School Lunch · Arkansas",
+          "FY2024 cash payments",
+          169074833.98
+        ],
+        [
+          "National School Lunch · Connecticut",
+          "FY2024 cash payments",
+          155449458.73
+        ],
+        [
+          "National School Lunch · Iowa",
+          "FY2024 cash payments",
+          146979123.62
+        ],
+        [
+          "National School Lunch · Oregon",
+          "FY2024 cash payments",
+          136133343.74
+        ],
+        [
+          "National School Lunch · Kansas",
+          "FY2024 cash payments",
+          134820126.03
+        ],
+        [
+          "National School Lunch · Nevada",
+          "FY2024 cash payments",
+          133265286.6
+        ],
+        [
+          "National School Lunch · New Mexico",
+          "FY2024 cash payments",
+          119757720.22
+        ],
+        [
+          "National School Lunch · Utah",
+          "FY2024 cash payments",
+          115052575.52
+        ],
+        [
+          "National School Lunch · Puerto Rico",
+          "FY2024 cash payments",
+          113907066.21
+        ],
+        [
+          "National School Lunch · Nebraska",
+          "FY2024 cash payments",
+          102698455.87
+        ],
+        [
+          "National School Lunch · West Virginia",
+          "FY2024 cash payments",
+          100431216.43
+        ],
+        [
+          "National School Lunch · Hawaii",
+          "FY2024 cash payments",
+          59331568.94
+        ],
+        [
+          "National School Lunch · Idaho",
+          "FY2024 cash payments",
+          51315900.5
+        ],
+        [
+          "National School Lunch · Delaware",
+          "FY2024 cash payments",
+          40725727.6
+        ],
+        [
+          "National School Lunch · Maine",
+          "FY2024 cash payments",
+          36481219.62
+        ],
+        [
+          "National School Lunch · Alaska",
+          "FY2024 cash payments",
+          36467729.79
+        ],
+        [
+          "National School Lunch · Montana",
+          "FY2024 cash payments",
+          34882739.71
+        ],
+        [
+          "National School Lunch · District of Columbia",
+          "FY2024 cash payments",
+          34470001.02
+        ],
+        [
+          "National School Lunch · South Dakota",
+          "FY2024 cash payments",
+          33832613.66
+        ],
+        [
+          "National School Lunch · Rhode Island",
+          "FY2024 cash payments",
+          33320905.11
+        ],
+        [
+          "National School Lunch · North Dakota",
+          "FY2024 cash payments",
+          27467576.94
+        ],
+        [
+          "National School Lunch · Vermont",
+          "FY2024 cash payments",
+          23354609.03
+        ],
+        [
+          "National School Lunch · New Hampshire",
+          "FY2024 cash payments",
+          22398918.37
+        ],
+        [
+          "National School Lunch · Wyoming",
+          "FY2024 cash payments",
+          17353927.84
+        ],
+        [
+          "National School Lunch · Guam",
+          "FY2024 cash payments",
+          11099165.85
+        ],
+        [
+          "National School Lunch · Dept. of Defense",
+          "FY2024 cash payments",
+          10683131
+        ],
+        [
+          "Commodity bonus",
+          "FY2024 commodity cost",
+          8838007.62
+        ],
+        [
+          "Special Milk",
+          "FY2024 cash payments",
+          4668724.72
+        ],
+        [
+          "National School Lunch · Virgin Islands",
+          "FY2024 cash payments",
+          4109781.45
+        ],
+        [
+          "National School Lunch · source rounding",
+          "Difference between rounded geography rows and FNS program total",
+          0.54
+        ],
+        [
+          "FNS component rounding",
+          "Difference from combining independently rounded program tables",
+          -0.01
+        ]
       ],
-      "covers": [["FNS FY2024 Child Nutrition cost schedule", "Published program-and-geography schedule before the cost-to-outlay bridge", 28391968503.44]]
+      "covers": [
+        [
+          "FNS FY2024 Child Nutrition cost schedule",
+          "Published program-and-geography schedule before the cost-to-outlay bridge",
+          28391968503.44
+        ]
+      ],
+      "publicationCeiling": "FNS publishes annual program/state cash cells as its lowest same-basis geography; state cells have no monthly or recipient child schedule."
     }
   ],
   "rows": [
-    ["Department of Agriculture", "Agricultural Research Service", 1921000000, 1921000000, 1, 1921000000, 0],
-    ["National Institute of Food and Agriculture", "Research and Education Activities", 1082000000, 1082000000, 1, 1082000000, 0],
-    ["National Institute of Food and Agriculture", "Extension Activities", 638000000, 638000000, 1, 638000000, 0],
-    ["National Institute of Food and Agriculture", "Other", 172000000, 172000000, 1, 172000000, 0],
-    ["National Institute of Food and Agriculture", "Animal and Plant Health Inspection Service", 2393000000, 2393000000, 1, 2393000000, 0],
-    ["National Institute of Food and Agriculture", "Food Safety and Inspection Service", 1246000000, 1246000000, 1, 1246000000, 0],
-    ["National Institute of Food and Agriculture", "Agricultural Marketing Service", 3351000000, 3351000000, 1, 3389000000, 38000000],
-    ["Risk Management Agency", "Administrative and Operating Expenses", 77000000, 77000000, 1, 77000000, 0],
-    ["Risk Management Agency", "Federal Crop Insurance Corporation Fund", 9768000000, 9768000000, 1, 21492000000, 11724000000],
-    ["Farm Service Agency", "Salaries and Expenses", 1263000000, 1263000000, 1, 1263000000, 0],
-    ["Farm Service Agency", "USDA Supplemental Assistance", 4000000, 4000000, 1, 4000000, 0],
-    ["Farm Service Agency", "Agricultural Disaster Relief Fund", 0, 0, 1, 0, 0],
-    ["Farm Service Agency", "Commodity Credit Corporation", 5524000000, 5524000000, 1, 11168000000, 5644000000],
-    ["Farm Service Agency", "Tobacco Trust Fund", 9000000, 9000000, 1, 9000000, 0],
-    ["Farm Service Agency", "Agricultural Credit Insurance Fund", 1533000000, 1533000000, 1, 1551000000, 18000000],
-    ["Farm Service Agency", "Other", 242000000, 242000000, 1, 242000000, 0],
-    ["Natural Resources Conservation Service", "Conservation Operations", 1142000000, 1142000000, 1, 1142000000, 0],
-    ["Natural Resources Conservation Service", "Farm Security and Rural Investment Programs", 3911000000, 3911000000, 1, 3911000000, 0],
-    ["Natural Resources Conservation Service", "Other", 438000000, 438000000, 1, 438000000, 0],
-    ["Natural Resources Conservation Service", "Rural Development", 362000000, 362000000, 1, 362000000, 0],
-    ["Rural Housing Service", "Rural Housing Insurance Fund", 644000000, 644000000, 1, 1021000000, 376000000],
-    ["Rural Housing Service", "Rental Assistance Program", 1580000000, 1580000000, 1, 1580000000, 0],
-    ["Rural Housing Service", "Other", -35000000, -35000000, 1, -35000000, 0],
-    ["Rural Utilities Service", "Rural Electrification and Telecommunications Fund", 339000000, 339000000, 1, 489000000, 150000000],
-    ["Rural Utilities Service", "Other", 1165000000, 1165000000, 1, 1188000000, 23000000],
-    ["Rural Utilities Service", "Foreign Agricultural Service", 1419000000, 1419000000, 1, 1419000000, 0],
-    ["Food and Nutrition Service", "Supplemental Nutrition Assistance Program", 106754000000, 106754000000, 1, 106754000000, 0],
-    ["Food and Nutrition Service", "Child Nutrition Programs", 32733000000, 32733000000, 1, 32733000000, 0],
-    ["Food and Nutrition Service", "Special Supplemental Nutrition Program for Women, Infants, and Children (WIC)", 7257000000, 7257000000, 1, 7257000000, 0],
-    ["Food and Nutrition Service", "Other", 703000000, 703000000, 1, 703000000, 0],
-    ["Forest Service", "National Forest System", 2560000000, 2560000000, 1, 2560000000, 0],
-    ["Forest Service", "Capital Improvement and Maintenance", 299000000, 299000000, 1, 299000000, 0],
-    ["Forest Service", "Wildland Fire Management", 5238000000, 5238000000, 1, 5238000000, 0],
-    ["Forest Service", "Forest Service Permanent Appropriations", 578000000, 578000000, 1, 578000000, 0],
-    ["Forest Service", "Other", 2598000000, 2598000000, 1, 2598000000, 0],
-    ["Department of Agriculture", "Other", 10403000000, 10403000000, 1, 10433000000, 31000000],
-    ["Department of Agriculture", "Proprietary Receipts from the Public", -4868000000, -4868000000, 1, 0, 4868000000],
-    ["Department of Agriculture", "Intrabudgetary Transactions", -1038000000, -1038000000, 1, -1038000000, 0],
-    ["Department of Agriculture", "Published Table 5 rounding adjustment", -3000000, -3000000, 0, -3000000, 0]
+    [
+      "Department of Agriculture",
+      "Agricultural Research Service",
+      1921000000,
+      1921000000,
+      1,
+      1921000000,
+      0
+    ],
+    [
+      "National Institute of Food and Agriculture",
+      "Research and Education Activities",
+      1082000000,
+      1082000000,
+      1,
+      1082000000,
+      0
+    ],
+    [
+      "National Institute of Food and Agriculture",
+      "Extension Activities",
+      638000000,
+      638000000,
+      1,
+      638000000,
+      0
+    ],
+    [
+      "National Institute of Food and Agriculture",
+      "Other",
+      172000000,
+      172000000,
+      1,
+      172000000,
+      0
+    ],
+    [
+      "National Institute of Food and Agriculture",
+      "Animal and Plant Health Inspection Service",
+      2393000000,
+      2393000000,
+      1,
+      2393000000,
+      0
+    ],
+    [
+      "National Institute of Food and Agriculture",
+      "Food Safety and Inspection Service",
+      1246000000,
+      1246000000,
+      1,
+      1246000000,
+      0
+    ],
+    [
+      "National Institute of Food and Agriculture",
+      "Agricultural Marketing Service",
+      3351000000,
+      3351000000,
+      1,
+      3389000000,
+      38000000
+    ],
+    [
+      "Risk Management Agency",
+      "Administrative and Operating Expenses",
+      77000000,
+      77000000,
+      1,
+      77000000,
+      0
+    ],
+    [
+      "Risk Management Agency",
+      "Federal Crop Insurance Corporation Fund",
+      9768000000,
+      9768000000,
+      1,
+      21492000000,
+      11724000000
+    ],
+    [
+      "Farm Service Agency",
+      "Salaries and Expenses",
+      1263000000,
+      1263000000,
+      1,
+      1263000000,
+      0
+    ],
+    [
+      "Farm Service Agency",
+      "USDA Supplemental Assistance",
+      4000000,
+      4000000,
+      1,
+      4000000,
+      0
+    ],
+    [
+      "Farm Service Agency",
+      "Agricultural Disaster Relief Fund",
+      0,
+      0,
+      1,
+      0,
+      0
+    ],
+    [
+      "Farm Service Agency",
+      "Commodity Credit Corporation",
+      5524000000,
+      5524000000,
+      1,
+      11168000000,
+      5644000000
+    ],
+    [
+      "Farm Service Agency",
+      "Tobacco Trust Fund",
+      9000000,
+      9000000,
+      1,
+      9000000,
+      0
+    ],
+    [
+      "Farm Service Agency",
+      "Agricultural Credit Insurance Fund",
+      1533000000,
+      1533000000,
+      1,
+      1551000000,
+      18000000
+    ],
+    [
+      "Farm Service Agency",
+      "Other",
+      242000000,
+      242000000,
+      1,
+      242000000,
+      0
+    ],
+    [
+      "Natural Resources Conservation Service",
+      "Conservation Operations",
+      1142000000,
+      1142000000,
+      1,
+      1142000000,
+      0
+    ],
+    [
+      "Natural Resources Conservation Service",
+      "Farm Security and Rural Investment Programs",
+      3911000000,
+      3911000000,
+      1,
+      3911000000,
+      0
+    ],
+    [
+      "Natural Resources Conservation Service",
+      "Other",
+      438000000,
+      438000000,
+      1,
+      438000000,
+      0
+    ],
+    [
+      "Natural Resources Conservation Service",
+      "Rural Development",
+      362000000,
+      362000000,
+      1,
+      362000000,
+      0
+    ],
+    [
+      "Rural Housing Service",
+      "Rural Housing Insurance Fund",
+      644000000,
+      644000000,
+      1,
+      1021000000,
+      376000000
+    ],
+    [
+      "Rural Housing Service",
+      "Rental Assistance Program",
+      1580000000,
+      1580000000,
+      1,
+      1580000000,
+      0
+    ],
+    [
+      "Rural Housing Service",
+      "Other",
+      -35000000,
+      -35000000,
+      1,
+      -35000000,
+      0
+    ],
+    [
+      "Rural Utilities Service",
+      "Rural Electrification and Telecommunications Fund",
+      339000000,
+      339000000,
+      1,
+      489000000,
+      150000000
+    ],
+    [
+      "Rural Utilities Service",
+      "Other",
+      1165000000,
+      1165000000,
+      1,
+      1188000000,
+      23000000
+    ],
+    [
+      "Rural Utilities Service",
+      "Foreign Agricultural Service",
+      1419000000,
+      1419000000,
+      1,
+      1419000000,
+      0
+    ],
+    [
+      "Food and Nutrition Service",
+      "Supplemental Nutrition Assistance Program",
+      106754000000,
+      106754000000,
+      1,
+      106754000000,
+      0
+    ],
+    [
+      "Food and Nutrition Service",
+      "Child Nutrition Programs",
+      32733000000,
+      32733000000,
+      1,
+      32733000000,
+      0
+    ],
+    [
+      "Food and Nutrition Service",
+      "Special Supplemental Nutrition Program for Women, Infants, and Children (WIC)",
+      7257000000,
+      7257000000,
+      1,
+      7257000000,
+      0
+    ],
+    [
+      "Food and Nutrition Service",
+      "Other",
+      703000000,
+      703000000,
+      1,
+      703000000,
+      0
+    ],
+    [
+      "Forest Service",
+      "National Forest System",
+      2560000000,
+      2560000000,
+      1,
+      2560000000,
+      0
+    ],
+    [
+      "Forest Service",
+      "Capital Improvement and Maintenance",
+      299000000,
+      299000000,
+      1,
+      299000000,
+      0
+    ],
+    [
+      "Forest Service",
+      "Wildland Fire Management",
+      5238000000,
+      5238000000,
+      1,
+      5238000000,
+      0
+    ],
+    [
+      "Forest Service",
+      "Forest Service Permanent Appropriations",
+      578000000,
+      578000000,
+      1,
+      578000000,
+      0
+    ],
+    [
+      "Forest Service",
+      "Other",
+      2598000000,
+      2598000000,
+      1,
+      2598000000,
+      0
+    ],
+    [
+      "Department of Agriculture",
+      "Other",
+      10403000000,
+      10403000000,
+      1,
+      10433000000,
+      31000000
+    ],
+    [
+      "Department of Agriculture",
+      "Proprietary Receipts from the Public",
+      -4868000000,
+      -4868000000,
+      1,
+      0,
+      4868000000
+    ],
+    [
+      "Department of Agriculture",
+      "Intrabudgetary Transactions",
+      -1038000000,
+      -1038000000,
+      1,
+      -1038000000,
+      0
+    ],
+    [
+      "Department of Agriculture",
+      "Published Table 5 rounding adjustment",
+      -3000000,
+      -3000000,
+      0,
+      -3000000,
+      0
+    ]
   ]
 }

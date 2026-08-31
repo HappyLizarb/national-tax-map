@@ -5,13 +5,16 @@ const path = require("node:path");
 const root = path.resolve(__dirname, "..");
 const states = fs.readdirSync(path.join(root, "data")).filter((name) => /^state-[a-z]{2}$/.test(name));
 const files = states.map((directory) => path.join(root, "data", directory, "ipeds-public-university-fy2024.json"));
+const universe = require("../data/ipeds-public-institution-universe-fy2024.json");
 const totals = { institutions: 0, reporters: 0, covered: 0, missing: 0, expenses: 0,
   publicSupport: 0, breakdowns: 0 };
 const supportByLevel = { federal: 0, state: 0, local: 0, capitalUnassigned: 0 };
 const grapevine = { stateSupport: 0, fourYearPublicOperating: 0, taxAppropriations: 0,
   nonTaxSupport: 0, otherStateSupport: 0, returnsAndMultiyear: 0, roundingRows: 0, roundingNet: 0 };
 const budgetCoverage = { sources: 0, adopted: 0, appropriations: 0, schedules: 0 };
+const expenseComposition = { panels: 0, rows: 0, resolved: 0, largeChildren: 0 };
 const statesByTier = new Map();
+const functionalByUnitid = new Map();
 let fasb = 0, reportedFederal = 0;
 
 assert.equal(files.length, 50);
@@ -63,13 +66,32 @@ for (const file of files) {
   assert.match(panel.sourceUrl, /^https:\/\/nces\.ed\.gov\/ipeds\//);
   assert.ok(panel.institutionCount >= 1 && panel.reportingRecordCount >= 1, detail.scope);
   assert.equal(panel.rows.length, panel.reportingRecordCount, detail.scope);
-  assert.equal(detail.sourceBreakdowns.length, panel.reportingRecordCount * 2, detail.scope);
+  const compositionPanels = detail.sourceBreakdowns.filter((item) =>
+    item.dataset === "ipeds-fy2024-functional-salary-split");
+  const institutionPanels = detail.sourceBreakdowns.filter((item) =>
+    item.dataset !== "ipeds-fy2024-functional-salary-split");
+  assert.equal(institutionPanels.length, panel.reportingRecordCount * 2, detail.scope);
   assert.equal(panel.rows.reduce((sum, row) => sum + row[2], 0), panel.sourceTotal, detail.scope);
   assert.ok(panel.rows.every((row, index) => !index || panel.rows[index - 1][2] >= row[2]), detail.scope);
   const parents = new Map(panel.rows.map((row) => [JSON.stringify(row), row[2]]));
+  const functionalRows = new Set(institutionPanels.filter((item) => item.view === "functional-expenses")
+    .flatMap((item) => item.rows).map((row) => JSON.stringify(row)));
   const viewsByParent = new Map();
   for (const breakdown of detail.sourceBreakdowns) {
     const parentKey = JSON.stringify(breakdown.displayParent);
+    if (breakdown.dataset === "ipeds-fy2024-functional-salary-split") {
+      assert.ok(functionalRows.has(parentKey), breakdown.title);
+      assert.equal(breakdown.rows.reduce((sum, row) => sum + row[2], 0), breakdown.sourceTotal);
+      assert.equal(breakdown.sourceTotal, breakdown.displayParent[2]);
+      assert.match(breakdown.basis, /Exact same-record split/);
+      assert.ok(breakdown.rows.every((row) => /salaries and wages|non-salary expenses/.test(row[0])));
+      expenseComposition.panels += 1;
+      expenseComposition.rows += breakdown.rows.length;
+      const large = breakdown.rows.filter((row) => Math.abs(row[2]) >= 1e9);
+      expenseComposition.largeChildren += large.length;
+      if (!large.length) expenseComposition.resolved += 1;
+      continue;
+    }
     assert.ok(parents.has(parentKey), breakdown.title);
     assert.equal(breakdown.rows.reduce((sum, row) => sum + row[2], 0), breakdown.sourceTotal, breakdown.title);
     assert.ok(breakdown.rows.every((row, index, rows) => !index
@@ -78,6 +100,7 @@ for (const file of files) {
     if (breakdown.view === "functional-expenses") {
       assert.equal(breakdown.sourceTotal, parents.get(parentKey), breakdown.title);
       assert.match(breakdown.basis, /reconcile exactly/);
+      functionalByUnitid.set(breakdown.title.match(/UNITID (\d+)/)[1], breakdown);
     } else {
       assert.equal(breakdown.view, "public-support-revenue");
       assert.match(breakdown.basis, /not an enacted or adopted budget/);
@@ -102,7 +125,8 @@ for (const file of files) {
 }
 
 assert.deepEqual(totals, { institutions: 826, reporters: 790, covered: 824, missing: 2,
-  expenses: 438230886773, publicSupport: 170574559732, breakdowns: 1580 });
+  expenses: 438230886773, publicSupport: 170574559732, breakdowns: 1638 });
+assert.deepEqual(expenseComposition, { panels: 58, rows: 116, resolved: 34, largeChildren: 39 });
 assert.deepEqual(supportByLevel, { federal: 61955307815, state: 92964789771,
   local: 8353032748, capitalUnassigned: 7301429398 });
 assert.deepEqual(grapevine, { stateSupport: 123616420870, fourYearPublicOperating: 60155985040,
@@ -116,6 +140,37 @@ assert.deepEqual(Object.fromEntries([...statesByTier].sort()), {
 assert.equal(totals.covered - totals.reporters, 34, "campuses consolidated into official parent records");
 assert.equal(fasb, 12);
 assert.equal(reportedFederal, 5);
+
+const schema = Object.fromEntries(universe.rowSchema.map((name, index) => [name, index]));
+const ids = universe.institutions.map((row) => row[schema.UNITID]);
+const reported = universe.institutions.filter((row) => row[schema.financeStatus] === "finance-record");
+const twoYear = universe.institutions.filter((row) => row[schema.sector] === 4);
+const large = reported.filter((row) => row[schema.totalExpenses] >= 1e9);
+const functions = ["instruction", "research", "publicService", "academicSupport", "studentServices",
+  "institutionalSupport", "scholarshipsOrNetGrantAid", "auxiliaryEnterprises", "hospitalServices",
+  "independentOperations", "otherExpenses"];
+const labels = ["Instruction", "Research", "Public service", "Academic support", "Student services",
+  "Institutional support", "Scholarships/fellowships or net grant aid", "Auxiliary enterprises",
+  "Hospital services", "Independent operations", "Other expenses/deductions"];
+
+assert.deepEqual(universe.counts, { institutions: 1589, publicFourYear: 826, publicTwoYear: 763,
+  financeRecords: 1546, gasbFinanceRecords: 1531, fasbFinanceRecords: 15,
+  noSeparateFinanceRecords: 43, expensesAtLeast1B: 97 });
+assert.equal(new Set(ids).size, ids.length, "IPEDS institution universe UNITIDs must be unique");
+assert.ok(universe.sourceUrls.every((source) => /^https:\/\/nces\.ed\.gov\/ipeds\//.test(source[1])));
+assert.equal(Math.max(...twoYear.map((row) => row[schema.totalExpenses] || 0)), 643478551);
+assert.ok(twoYear.every((row) => !row[schema.totalExpenses] || row[schema.totalExpenses] < 1e9));
+for (const row of reported) {
+  assert.equal(functions.reduce((sum, name) => sum + row[schema[name]], 0), row[schema.totalExpenses], row[1]);
+}
+for (const row of large) {
+  const panel = functionalByUnitid.get(row[schema.UNITID]);
+  assert.ok(panel, `Missing exact IPEDS panel for ${row[1]} (${row[0]})`);
+  assert.equal(panel.sourceTotal, row[schema.totalExpenses], row[1]);
+  const amounts = new Map(panel.rows.map((item) => [item[0], item[2]]));
+  labels.forEach((label, index) => assert.equal(amounts.get(label) || 0,
+    row[schema[functions[index]]], `${row[1]} · ${label}`));
+}
 const unavailable = files.flatMap((file) => JSON.parse(fs.readFileSync(file, "utf8"))
   .supplementalBreakdowns[0].unreportedInstitutions);
 assert.deepEqual(unavailable.sort(), [
@@ -123,4 +178,4 @@ assert.deepEqual(unavailable.sort(), [
   "Naval Postgraduate School (UNITID 119678; federally operated)"
 ]);
 
-console.log("IPEDS FY2024 expenses cover 824 of 826 public four-year institutions across all 50 states without allocating parent totals to child campuses.");
+console.log("IPEDS audit covers all 1,589 public degree-granting institutions in the 50 states; all 97 $1B+ Finance records have exact panels.");

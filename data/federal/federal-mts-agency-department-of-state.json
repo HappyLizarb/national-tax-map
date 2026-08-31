@@ -5,14 +5,47 @@
   "department": "Department of State",
   "sourceTotal": 37017000000,
   "sourceUrl": "https://fiscal.treasury.gov/system/files/files/reports-statements/mts/mts0924.pdf",
-  "sourceUrls": [["Treasury FY2024 MTS Table 5", "https://fiscal.treasury.gov/system/files/files/reports-statements/mts/mts0924.pdf"]],
-  "relatedSources": [["USAspending gross research (supporting detail)", "data/federal/archive-agency-source/federal-department-of-state.json"]],
+  "sourceUrls": [
+    [
+      "Treasury FY2024 MTS Table 5",
+      "https://fiscal.treasury.gov/system/files/files/reports-statements/mts/mts0924.pdf"
+    ]
+  ],
+  "relatedSources": [
+    [
+      "USAspending gross research (supporting detail)",
+      "data/federal/archive-agency-source/federal-department-of-state.json"
+    ]
+  ],
   "sourceBasis": "Treasury MTS Table 5 current-fiscal-year gross outlays, applicable receipts, and net outlays; published in $ millions and converted to USD.",
-  "rowSchema": ["subAgency", "program", "amount", "sourceAmount", "sourceRows", "grossOutlays", "applicableReceipts"],
-  "sourceCheck": {"groupRows": 15, "difference": 0, "publishedRoundingAdjustment": -1000000},
+  "rowSchema": [
+    "subAgency",
+    "program",
+    "amount",
+    "sourceAmount",
+    "sourceRows",
+    "grossOutlays",
+    "applicableReceipts"
+  ],
+  "sourceCheck": {
+    "groupRows": 15,
+    "difference": 0,
+    "publishedRoundingAdjustment": -1000000
+  },
   "note": "Displayed amounts are net outlays; each row retains its published gross outlays and applicable receipts.",
-  "accountResearch": {"accountCount": 59, "largeAccountCount": 10, "netAccountOutlays": 43331487861.65, "threshold": 1000000000, "sourceUrl": "https://fiscal.treasury.gov/system/files/files/reports-statements/combined-statement/cs2024/c34.xlsx"},
-  "largeAccountSchema": ["treasuryAccount", "title", "netOutlays", "availabilityRows"],
+  "accountResearch": {
+    "accountCount": 59,
+    "largeAccountCount": 10,
+    "netAccountOutlays": 43331487861.65,
+    "threshold": 1000000000,
+    "sourceUrl": "https://fiscal.treasury.gov/system/files/files/reports-statements/combined-statement/cs2024/c34.xlsx"
+  },
+  "largeAccountSchema": [
+    "treasuryAccount",
+    "title",
+    "netOutlays",
+    "availabilityRows"
+  ],
   "largeAccountBasis": "Exact Combined Statement net outlays by appropriation or fund account. This is a research cross-section of the same department, not another amount to add to MTS classification rows.",
   "sourceBreakdowns": [
     {
@@ -22,115 +55,550 @@
       "sourceLabel": "ForeignAssistance.gov · Funding Agency Summary CSV · FY2024 State Global Health Programs",
       "sourceUrl": "https://foreignassistance.gov/data",
       "rows": [
-        ["World", "FY2024 disbursement · public multi-country/global geography", 7666306876],
-        ["South Africa", "FY2024 disbursement", 437917867],
-        ["Mozambique", "FY2024 disbursement", 391350699],
-        ["Nigeria", "FY2024 disbursement", 387313680],
-        ["Tanzania", "FY2024 disbursement", 384748838],
-        ["Uganda", "FY2024 disbursement", 340505550],
-        ["Zambia", "FY2024 disbursement", 334930709],
-        ["Kenya", "FY2024 disbursement", 328706654],
-        ["Ethiopia", "FY2024 disbursement", 233337965],
-        ["Malawi", "FY2024 disbursement", 228085817],
-        ["Democratic Republic of the Congo", "FY2024 disbursement", 218092352],
-        ["Zimbabwe", "FY2024 disbursement", 181657716],
-        ["Cote d'Ivoire", "FY2024 disbursement", 142084256],
-        ["Cameroon", "FY2024 disbursement", 111529899],
-        ["Haiti", "FY2024 disbursement", 97966671],
-        ["Mali", "FY2024 disbursement", 82543002],
-        ["Rwanda", "FY2024 disbursement", 80371606],
-        ["Burkina Faso", "FY2024 disbursement", 74721659],
-        ["Namibia", "FY2024 disbursement", 73897779],
-        ["India", "FY2024 disbursement", 72137160],
-        ["Senegal", "FY2024 disbursement", 71969617],
-        ["South Sudan", "FY2024 disbursement", 71251003],
-        ["Ghana", "FY2024 disbursement", 68674026],
-        ["Lesotho", "FY2024 disbursement", 67729046],
-        ["Eswatini", "FY2024 disbursement", 60365254],
-        ["Madagascar", "FY2024 disbursement", 58960069],
-        ["Niger", "FY2024 disbursement", 57280385],
-        ["Indonesia", "FY2024 disbursement", 55913873],
-        ["Liberia", "FY2024 disbursement", 47099007],
-        ["Bangladesh", "FY2024 disbursement", 44072460],
-        ["Botswana", "FY2024 disbursement", 43725926],
-        ["Vietnam", "FY2024 disbursement", 43613649],
-        ["Angola", "FY2024 disbursement", 42850465],
-        ["Philippines", "FY2024 disbursement", 41980785],
-        ["Burma (Myanmar)", "FY2024 disbursement", 41719770],
-        ["Burundi", "FY2024 disbursement", 39346642],
-        ["Benin", "FY2024 disbursement", 38617976],
-        ["Cambodia", "FY2024 disbursement", 37607212],
-        ["Sierra Leone", "FY2024 disbursement", 37558807],
-        ["Nepal", "FY2024 disbursement", 37404999],
-        ["Ukraine", "FY2024 disbursement", 35456591],
-        ["Guinea", "FY2024 disbursement", 32369195],
-        ["Guatemala", "FY2024 disbursement", 27043727],
-        ["Sub-Saharan Africa Region", "FY2024 disbursement", 24720337],
-        ["Dominican Republic", "FY2024 disbursement", 22072323],
-        ["Tajikistan", "FY2024 disbursement", 21285822],
-        ["Central America Region", "FY2024 disbursement", 18398808],
-        ["West Africa Region", "FY2024 disbursement", 16570509],
-        ["Pakistan", "FY2024 disbursement", 15915254],
-        ["Venezuela", "FY2024 disbursement", 14827816],
-        ["Thailand", "FY2024 disbursement", 14286509],
-        ["Laos", "FY2024 disbursement", 13580714],
-        ["Kyrgyzstan", "FY2024 disbursement", 12284568],
-        ["El Salvador", "FY2024 disbursement", 11580830],
-        ["Jamaica", "FY2024 disbursement", 11550519],
-        ["Asia Region", "FY2024 disbursement", 11176319],
-        ["Togo", "FY2024 disbursement", 10465916],
-        ["Afghanistan", "FY2024 disbursement", 9475115],
-        ["Latin America and Caribbean Region", "FY2024 disbursement", 8803636],
-        ["Uzbekistan", "FY2024 disbursement", 8696869],
-        ["Yemen", "FY2024 disbursement", 8577781],
-        ["Colombia", "FY2024 disbursement", 8536499],
-        ["Eastern Africa Region", "FY2024 disbursement", 7853255],
-        ["Eastern Asia Region", "FY2024 disbursement", 7384887],
-        ["Honduras", "FY2024 disbursement", 7103020],
-        ["Kazakhstan", "FY2024 disbursement", 5991289],
-        ["Papua New Guinea", "FY2024 disbursement", 4593291],
-        ["Peru", "FY2024 disbursement", 4409482],
-        ["Panama", "FY2024 disbursement", 3571122],
-        ["Southern Africa Region", "FY2024 disbursement", 3445010],
-        ["Timor-Leste", "FY2024 disbursement", 2963955],
-        ["Nicaragua", "FY2024 disbursement", 2775762],
-        ["Sudan", "FY2024 disbursement", 2181494],
-        ["Jordan", "FY2024 disbursement", 2161982],
-        ["Brazil", "FY2024 disbursement", 2071311],
-        ["Oceania Region", "FY2024 disbursement", 1906089],
-        ["Eurasia Region", "FY2024 disbursement", 1777353],
-        ["Eastern Europe Region", "FY2024 disbursement", 1777184],
-        ["Trinidad and Tobago", "FY2024 disbursement", 1531896],
-        ["Malaysia", "FY2024 disbursement", 1031877],
-        ["Egypt", "FY2024 disbursement", 925000],
-        ["Morocco", "FY2024 disbursement", 770694],
-        ["Somalia", "FY2024 disbursement", 699336],
-        ["Central African Republic", "FY2024 disbursement", 639902],
-        ["South East Asia Region", "FY2024 disbursement", 638171],
-        ["Gambia", "FY2024 disbursement", 632993],
-        ["Korea, Republic of", "FY2024 disbursement", 506540],
-        ["Congo", "FY2024 disbursement", 350193],
-        ["Mongolia", "FY2024 disbursement", 263853],
-        ["Barbados", "FY2024 disbursement", 183537],
-        ["Armenia", "FY2024 disbursement", 125044],
-        ["Azerbaijan", "FY2024 disbursement", 124821],
-        ["Kiribati, Republic of", "FY2024 disbursement", 94276],
-        ["Middle East and North Africa Region", "FY2024 disbursement", 68520],
-        ["Fiji", "FY2024 disbursement", 65569],
-        ["East Asia and Oceania Region", "FY2024 disbursement", 55759],
-        ["Western Hemisphere Region", "FY2024 disbursement", 45204],
-        ["Malta", "FY2024 disbursement", 25805],
-        ["Georgia", "FY2024 disbursement", 25168],
-        ["Caribbean Region", "FY2024 disbursement", 14639],
-        ["Djibouti", "FY2024 disbursement", 7410],
-        ["Lithuania", "FY2024 disbursement", 4896],
-        ["Poland", "FY2024 disbursement", 4726],
-        ["Moldova", "FY2024 disbursement", 4457],
-        ["Guyana", "FY2024 disbursement", 4454],
-        ["Italy", "FY2024 disbursement", 1826],
-        ["Qatar", "FY2024 disbursement", 16]
+        [
+          "World",
+          "FY2024 disbursement · public multi-country/global geography",
+          7666306876
+        ],
+        [
+          "South Africa",
+          "FY2024 disbursement",
+          437917867
+        ],
+        [
+          "Mozambique",
+          "FY2024 disbursement",
+          391350699
+        ],
+        [
+          "Nigeria",
+          "FY2024 disbursement",
+          387313680
+        ],
+        [
+          "Tanzania",
+          "FY2024 disbursement",
+          384748838
+        ],
+        [
+          "Uganda",
+          "FY2024 disbursement",
+          340505550
+        ],
+        [
+          "Zambia",
+          "FY2024 disbursement",
+          334930709
+        ],
+        [
+          "Kenya",
+          "FY2024 disbursement",
+          328706654
+        ],
+        [
+          "Ethiopia",
+          "FY2024 disbursement",
+          233337965
+        ],
+        [
+          "Malawi",
+          "FY2024 disbursement",
+          228085817
+        ],
+        [
+          "Democratic Republic of the Congo",
+          "FY2024 disbursement",
+          218092352
+        ],
+        [
+          "Zimbabwe",
+          "FY2024 disbursement",
+          181657716
+        ],
+        [
+          "Cote d'Ivoire",
+          "FY2024 disbursement",
+          142084256
+        ],
+        [
+          "Cameroon",
+          "FY2024 disbursement",
+          111529899
+        ],
+        [
+          "Haiti",
+          "FY2024 disbursement",
+          97966671
+        ],
+        [
+          "Mali",
+          "FY2024 disbursement",
+          82543002
+        ],
+        [
+          "Rwanda",
+          "FY2024 disbursement",
+          80371606
+        ],
+        [
+          "Burkina Faso",
+          "FY2024 disbursement",
+          74721659
+        ],
+        [
+          "Namibia",
+          "FY2024 disbursement",
+          73897779
+        ],
+        [
+          "India",
+          "FY2024 disbursement",
+          72137160
+        ],
+        [
+          "Senegal",
+          "FY2024 disbursement",
+          71969617
+        ],
+        [
+          "South Sudan",
+          "FY2024 disbursement",
+          71251003
+        ],
+        [
+          "Ghana",
+          "FY2024 disbursement",
+          68674026
+        ],
+        [
+          "Lesotho",
+          "FY2024 disbursement",
+          67729046
+        ],
+        [
+          "Eswatini",
+          "FY2024 disbursement",
+          60365254
+        ],
+        [
+          "Madagascar",
+          "FY2024 disbursement",
+          58960069
+        ],
+        [
+          "Niger",
+          "FY2024 disbursement",
+          57280385
+        ],
+        [
+          "Indonesia",
+          "FY2024 disbursement",
+          55913873
+        ],
+        [
+          "Liberia",
+          "FY2024 disbursement",
+          47099007
+        ],
+        [
+          "Bangladesh",
+          "FY2024 disbursement",
+          44072460
+        ],
+        [
+          "Botswana",
+          "FY2024 disbursement",
+          43725926
+        ],
+        [
+          "Vietnam",
+          "FY2024 disbursement",
+          43613649
+        ],
+        [
+          "Angola",
+          "FY2024 disbursement",
+          42850465
+        ],
+        [
+          "Philippines",
+          "FY2024 disbursement",
+          41980785
+        ],
+        [
+          "Burma (Myanmar)",
+          "FY2024 disbursement",
+          41719770
+        ],
+        [
+          "Burundi",
+          "FY2024 disbursement",
+          39346642
+        ],
+        [
+          "Benin",
+          "FY2024 disbursement",
+          38617976
+        ],
+        [
+          "Cambodia",
+          "FY2024 disbursement",
+          37607212
+        ],
+        [
+          "Sierra Leone",
+          "FY2024 disbursement",
+          37558807
+        ],
+        [
+          "Nepal",
+          "FY2024 disbursement",
+          37404999
+        ],
+        [
+          "Ukraine",
+          "FY2024 disbursement",
+          35456591
+        ],
+        [
+          "Guinea",
+          "FY2024 disbursement",
+          32369195
+        ],
+        [
+          "Guatemala",
+          "FY2024 disbursement",
+          27043727
+        ],
+        [
+          "Sub-Saharan Africa Region",
+          "FY2024 disbursement",
+          24720337
+        ],
+        [
+          "Dominican Republic",
+          "FY2024 disbursement",
+          22072323
+        ],
+        [
+          "Tajikistan",
+          "FY2024 disbursement",
+          21285822
+        ],
+        [
+          "Central America Region",
+          "FY2024 disbursement",
+          18398808
+        ],
+        [
+          "West Africa Region",
+          "FY2024 disbursement",
+          16570509
+        ],
+        [
+          "Pakistan",
+          "FY2024 disbursement",
+          15915254
+        ],
+        [
+          "Venezuela",
+          "FY2024 disbursement",
+          14827816
+        ],
+        [
+          "Thailand",
+          "FY2024 disbursement",
+          14286509
+        ],
+        [
+          "Laos",
+          "FY2024 disbursement",
+          13580714
+        ],
+        [
+          "Kyrgyzstan",
+          "FY2024 disbursement",
+          12284568
+        ],
+        [
+          "El Salvador",
+          "FY2024 disbursement",
+          11580830
+        ],
+        [
+          "Jamaica",
+          "FY2024 disbursement",
+          11550519
+        ],
+        [
+          "Asia Region",
+          "FY2024 disbursement",
+          11176319
+        ],
+        [
+          "Togo",
+          "FY2024 disbursement",
+          10465916
+        ],
+        [
+          "Afghanistan",
+          "FY2024 disbursement",
+          9475115
+        ],
+        [
+          "Latin America and Caribbean Region",
+          "FY2024 disbursement",
+          8803636
+        ],
+        [
+          "Uzbekistan",
+          "FY2024 disbursement",
+          8696869
+        ],
+        [
+          "Yemen",
+          "FY2024 disbursement",
+          8577781
+        ],
+        [
+          "Colombia",
+          "FY2024 disbursement",
+          8536499
+        ],
+        [
+          "Eastern Africa Region",
+          "FY2024 disbursement",
+          7853255
+        ],
+        [
+          "Eastern Asia Region",
+          "FY2024 disbursement",
+          7384887
+        ],
+        [
+          "Honduras",
+          "FY2024 disbursement",
+          7103020
+        ],
+        [
+          "Kazakhstan",
+          "FY2024 disbursement",
+          5991289
+        ],
+        [
+          "Papua New Guinea",
+          "FY2024 disbursement",
+          4593291
+        ],
+        [
+          "Peru",
+          "FY2024 disbursement",
+          4409482
+        ],
+        [
+          "Panama",
+          "FY2024 disbursement",
+          3571122
+        ],
+        [
+          "Southern Africa Region",
+          "FY2024 disbursement",
+          3445010
+        ],
+        [
+          "Timor-Leste",
+          "FY2024 disbursement",
+          2963955
+        ],
+        [
+          "Nicaragua",
+          "FY2024 disbursement",
+          2775762
+        ],
+        [
+          "Sudan",
+          "FY2024 disbursement",
+          2181494
+        ],
+        [
+          "Jordan",
+          "FY2024 disbursement",
+          2161982
+        ],
+        [
+          "Brazil",
+          "FY2024 disbursement",
+          2071311
+        ],
+        [
+          "Oceania Region",
+          "FY2024 disbursement",
+          1906089
+        ],
+        [
+          "Eurasia Region",
+          "FY2024 disbursement",
+          1777353
+        ],
+        [
+          "Eastern Europe Region",
+          "FY2024 disbursement",
+          1777184
+        ],
+        [
+          "Trinidad and Tobago",
+          "FY2024 disbursement",
+          1531896
+        ],
+        [
+          "Malaysia",
+          "FY2024 disbursement",
+          1031877
+        ],
+        [
+          "Egypt",
+          "FY2024 disbursement",
+          925000
+        ],
+        [
+          "Morocco",
+          "FY2024 disbursement",
+          770694
+        ],
+        [
+          "Somalia",
+          "FY2024 disbursement",
+          699336
+        ],
+        [
+          "Central African Republic",
+          "FY2024 disbursement",
+          639902
+        ],
+        [
+          "South East Asia Region",
+          "FY2024 disbursement",
+          638171
+        ],
+        [
+          "Gambia",
+          "FY2024 disbursement",
+          632993
+        ],
+        [
+          "Korea, Republic of",
+          "FY2024 disbursement",
+          506540
+        ],
+        [
+          "Congo",
+          "FY2024 disbursement",
+          350193
+        ],
+        [
+          "Mongolia",
+          "FY2024 disbursement",
+          263853
+        ],
+        [
+          "Barbados",
+          "FY2024 disbursement",
+          183537
+        ],
+        [
+          "Armenia",
+          "FY2024 disbursement",
+          125044
+        ],
+        [
+          "Azerbaijan",
+          "FY2024 disbursement",
+          124821
+        ],
+        [
+          "Kiribati, Republic of",
+          "FY2024 disbursement",
+          94276
+        ],
+        [
+          "Middle East and North Africa Region",
+          "FY2024 disbursement",
+          68520
+        ],
+        [
+          "Fiji",
+          "FY2024 disbursement",
+          65569
+        ],
+        [
+          "East Asia and Oceania Region",
+          "FY2024 disbursement",
+          55759
+        ],
+        [
+          "Western Hemisphere Region",
+          "FY2024 disbursement",
+          45204
+        ],
+        [
+          "Malta",
+          "FY2024 disbursement",
+          25805
+        ],
+        [
+          "Georgia",
+          "FY2024 disbursement",
+          25168
+        ],
+        [
+          "Caribbean Region",
+          "FY2024 disbursement",
+          14639
+        ],
+        [
+          "Djibouti",
+          "FY2024 disbursement",
+          7410
+        ],
+        [
+          "Lithuania",
+          "FY2024 disbursement",
+          4896
+        ],
+        [
+          "Poland",
+          "FY2024 disbursement",
+          4726
+        ],
+        [
+          "Moldova",
+          "FY2024 disbursement",
+          4457
+        ],
+        [
+          "Guyana",
+          "FY2024 disbursement",
+          4454
+        ],
+        [
+          "Italy",
+          "FY2024 disbursement",
+          1826
+        ],
+        [
+          "Qatar",
+          "FY2024 disbursement",
+          16
+        ]
       ],
-      "covers": [["Department of State", "Global Health and Child Survival", 10848000000]]
+      "covers": [
+        [
+          "Department of State",
+          "Global Health and Child Survival",
+          10848000000
+        ]
+      ],
+      "publicationCeiling": "Official source-native publication ceiling at the cited table, account, program, geography, appropriation, or payee level; no lower additive row is published in that same-basis source."
     },
     {
       "title": "State FY2024 estimated Diplomatic Programs by operating category",
@@ -139,11 +607,29 @@
       "sourceLabel": "Department of State · FY2025 Congressional Budget Justification · Appendix 1 Diplomatic Engagement · FY2024 estimate",
       "sourceUrl": "https://www.usaid.gov/sites/default/files/2024-03/FY-2025-Congressional-Budget-Justification-Appendix-One-Department-of-State-Diplomatic-Engagement.pdf",
       "rows": [
-        ["Program Operations", "FY2024 estimate · budget authority", 5080827000],
-        ["Worldwide Security Protection", "FY2024 estimate · budget authority", 3813707000],
-        ["Public Diplomacy", "FY2024 estimate · budget authority", 655679000]
+        [
+          "Program Operations",
+          "FY2024 estimate · budget authority",
+          5080827000
+        ],
+        [
+          "Worldwide Security Protection",
+          "FY2024 estimate · budget authority",
+          3813707000
+        ],
+        [
+          "Public Diplomacy",
+          "FY2024 estimate · budget authority",
+          655679000
+        ]
       ],
-      "covers": [["Administration of Foreign Affairs", "Diplomatic and Consular Programs", 10453000000]]
+      "covers": [
+        [
+          "Administration of Foreign Affairs",
+          "Diplomatic and Consular Programs",
+          10453000000
+        ]
+      ]
     },
     {
       "title": "019-1031-000 FY2024 net outlays by period of availability",
@@ -153,87 +639,403 @@
       "sourceUrl": "https://fiscal.treasury.gov/system/files/files/reports-statements/combined-statement/cs2024/c34.xlsx",
       "combinedStatementAvailability": true,
       "covers": [
-        ["019-1031-000","Global Health Programs, State",10848212740.67]
+        [
+          "019-1031-000",
+          "Global Health Programs, State",
+          10848212740.67
+        ]
       ],
       "rows": [
-        ["Transfer To · US Agency for International Development · 2023-2027","Combined Statement FY2024 net outlays · period-of-availability publication ceiling",2050902942.82],
-        ["Transfer To · US Agency for International Development · 2022-2026","Combined Statement FY2024 net outlays · period-of-availability publication ceiling",1491566230.37],
-        ["Transfer To · US Agency for International Development · 2022-2027","Combined Statement FY2024 net outlays · period-of-availability publication ceiling",1415736670.71],
-        ["Transfer To · Office of Secretary, Health and Human Services · 2023-2027","Combined Statement FY2024 net outlays · period-of-availability publication ceiling",1200656876.73],
-        ["Transfer To · US Agency for International Development · 2023-2024","Combined Statement FY2024 net outlays · period-of-availability publication ceiling",1045793574.57],
-        ["Fund resources · 2023-2027","Combined Statement FY2024 net outlays · period-of-availability row",846291931.42],
-        ["Transfer To · US Agency for International Development · 2021-2026","Combined Statement FY2024 net outlays · period-of-availability row",757839319.1],
-        ["Transfer To · Office of Secretary, Health and Human Services · 2022-2026","Combined Statement FY2024 net outlays · period-of-availability row",582109142.16],
-        ["Fund resources · 2024-2028","Combined Statement FY2024 net outlays · period-of-availability row",329787779.96],
-        ["Transfer To · US Agency for International Development · 2020-2025","Combined Statement FY2024 net outlays · period-of-availability row",216269858.41],
-        ["Transfer To · US Agency for International Development · 2021-2025","Combined Statement FY2024 net outlays · period-of-availability row",170865264.28],
-        ["Transfer To · Office of Secretary, Health and Human Services · 2020-2024","Combined Statement FY2024 net outlays · period-of-availability row",118015407.96],
-        ["Transfer To · Office of Secretary, Health and Human Services · 2021-2025","Combined Statement FY2024 net outlays · period-of-availability row",76560894.81],
-        ["Transfer To · Department of Defense · 2023-2027","Combined Statement FY2024 net outlays · period-of-availability row",68328306.89],
-        ["Transfer To · US Agency for International Development · 2019-2020","Combined Statement FY2024 net outlays · period-of-availability row",67226541.17],
-        ["Transfer To · Department of Defense · 2022-2026","Combined Statement FY2024 net outlays · period-of-availability row",67090825.09],
-        ["Transfer To · US Agency for International Development · 2020-2024","Combined Statement FY2024 net outlays · period-of-availability row",53413101.9],
-        ["Transfer To · Office of Secretary, Health and Human Services · 2024-2028","Combined Statement FY2024 net outlays · period-of-availability row",20616477.01],
-        ["Transfer To · US Agency for International Development · 2018-2019","Combined Statement FY2024 net outlays · period-of-availability row",19530662.32],
-        ["Transfer To · Peace Corps · 2020-2024","Combined Statement FY2024 net outlays · period-of-availability row",19286213.86],
-        ["Transfer To · US Agency for International Development · No Year","Combined Statement FY2024 net outlays · period-of-availability row",19207876.39],
-        ["Transfer To · Office of Secretary, Health and Human Services · 2019-2023","Combined Statement FY2024 net outlays · period-of-availability row",19061985.18],
-        ["Transfer To · Department of Defense · 2020-2024","Combined Statement FY2024 net outlays · period-of-availability row",18753485.2],
-        ["Fund resources · 2020-2024","Combined Statement FY2024 net outlays · period-of-availability row",16626088.28],
-        ["Transfer To · US Agency for International Development · 2018-2023","Combined Statement FY2024 net outlays · period-of-availability row",16036079.3],
-        ["Fund resources · 2022-2026","Combined Statement FY2024 net outlays · period-of-availability row",15199631.74],
-        ["Transfer To · US Agency for International Development · 2019-2027","Combined Statement FY2024 net outlays · period-of-availability row",15168005.62],
-        ["Transfer To · US Agency for International Development · 2017-2022","Combined Statement FY2024 net outlays · period-of-availability row",11930546.58],
-        ["Transfer To · US Agency for International Development · 2019-2024","Combined Statement FY2024 net outlays · period-of-availability row",11309599.77],
-        ["Fund resources · 2021-2025","Combined Statement FY2024 net outlays · period-of-availability row",9808702.73],
-        ["Transfer To · US Agency for International Development · 2020-2026","Combined Statement FY2024 net outlays · period-of-availability row",9639294.09],
-        ["Transfer To · US Agency for International Development · 2016-2020","Combined Statement FY2024 net outlays · period-of-availability row",9404427],
-        ["Fund resources · No Year","Combined Statement FY2024 net outlays · period-of-availability row",7797632.19],
-        ["Transfer To · US Agency for International Development · 2016-2021","Combined Statement FY2024 net outlays · period-of-availability row",6412539.52],
-        ["Transfer To · US Agency for International Development · 2018-2026","Combined Statement FY2024 net outlays · period-of-availability row",6008950.53],
-        ["Transfer To · Peace Corps · 2022-2026","Combined Statement FY2024 net outlays · period-of-availability row",5475370.34],
-        ["Transfer To · Department of Defense · 2021-2025","Combined Statement FY2024 net outlays · period-of-availability row",5164060.57],
-        ["Fund resources · 2019-2023","Combined Statement FY2024 net outlays · period-of-availability row",3615947.81],
-        ["Transfer To · US Agency for International Development · 2024-2028","Combined Statement FY2024 net outlays · period-of-availability row",3355467.3],
-        ["Transfer To · US Agency for International Development · 2022-2024","Combined Statement FY2024 net outlays · period-of-availability row",2690140.08],
-        ["Transfer To · US Agency for International Development · 2017-2025","Combined Statement FY2024 net outlays · period-of-availability row",2429068.84],
-        ["Transfer To · US Agency for International Development · 2024-2025","Combined Statement FY2024 net outlays · period-of-availability row",2202692.02],
-        ["Transfer To · US Agency for International Development · 2014-2019","Combined Statement FY2024 net outlays · period-of-availability row",2057699.8],
-        ["Transfer To · US Agency for International Development · 2015-2020","Combined Statement FY2024 net outlays · period-of-availability row",1766431.23],
-        ["Transfer To · US Agency for International Development · 2015-2019","Combined Statement FY2024 net outlays · period-of-availability row",1715894.83],
-        ["Transfer To · Peace Corps · 2021-2025","Combined Statement FY2024 net outlays · period-of-availability row",1497590.77],
-        ["Transfer To · Department of Defense · 2019-2023","Combined Statement FY2024 net outlays · period-of-availability row",1444286.46],
-        ["Transfer To · US Agency for International Development · 2013-2021","Combined Statement FY2024 net outlays · period-of-availability row",1014480.26],
-        ["Transfer To · Peace Corps · 2019-2023","Combined Statement FY2024 net outlays · period-of-availability row",824931.95],
-        ["Transfer To · Office of Secretary, Health and Human Services · 2018-2022","Combined Statement FY2024 net outlays · period-of-availability row",760196.25],
-        ["Transfer To · US Agency for International Development · 2016-2024","Combined Statement FY2024 net outlays · period-of-availability row",755302.27],
-        ["Transfer To · Office of Secretary, Health and Human Services · No Year","Combined Statement FY2024 net outlays · period-of-availability row",604410.38],
-        ["Transfer To · Department of Defense · 2018-2022","Combined Statement FY2024 net outlays · period-of-availability row",573480.84],
-        ["Transfer To · Peace Corps · 2023-2027","Combined Statement FY2024 net outlays · period-of-availability row",409566.14],
-        ["Transfer To · Office of Secretary, Health and Human Services · 2017-2021","Combined Statement FY2024 net outlays · period-of-availability row",269045.53],
-        ["Transfer To · Department of Defense · No Year","Combined Statement FY2024 net outlays · period-of-availability row",260138.36],
-        ["Transfer To · Office of Secretary, Health and Human Services · 2016-2020","Combined Statement FY2024 net outlays · period-of-availability row",168158.91],
-        ["Transfer To · Peace Corps · No Year","Combined Statement FY2024 net outlays · period-of-availability row",118408.87],
-        ["Fund resources · 2016-2020","Combined Statement FY2024 net outlays · period-of-availability row",97007.86],
-        ["Transfer To · US Agency for International Development · 2017-2021","Combined Statement FY2024 net outlays · period-of-availability row",96131.28],
-        ["Transfer To · Department of Defense · 2015-2019","Combined Statement FY2024 net outlays · period-of-availability row",93222.39],
-        ["Transfer To · US Agency for International Development · 2018-2022","Combined Statement FY2024 net outlays · period-of-availability row",86816.69],
-        ["Fund resources · 2018-2022","Combined Statement FY2024 net outlays · period-of-availability row",67471.77],
-        ["Fund resources · 2015-2019","Combined Statement FY2024 net outlays · period-of-availability row",67042.46],
-        ["Transfer To · US Agency for International Development · 2020-2022","Combined Statement FY2024 net outlays · period-of-availability row",44169.52],
-        ["Transfer To · Peace Corps · 2018-2022","Combined Statement FY2024 net outlays · period-of-availability row",15352.97],
-        ["Transfer To · Peace Corps · 2017-2021","Combined Statement FY2024 net outlays · period-of-availability row",14067.54],
-        ["Transfer To · Office of Secretary, Health and Human Services · 2015-2019","Combined Statement FY2024 net outlays · period-of-availability row",13908.11],
-        ["Transfer To · Peace Corps · 2016-2020","Combined Statement FY2024 net outlays · period-of-availability row",784.2],
-        ["Transfer To · Department of Defense · 2017-2021","Combined Statement FY2024 net outlays · period-of-availability row",676.94],
-        ["Transfer To · Department of Defense · 2016-2020","Combined Statement FY2024 net outlays · period-of-availability row",71.01],
-        ["Fund resources · 2017-2021","Combined Statement FY2024 net outlays · period-of-availability row",-2875.25],
-        ["Transfer To · US Agency for International Development · 2019-2023","Combined Statement FY2024 net outlays · period-of-availability row",-60781.96],
-        ["Transfer To · US Agency for International Development · 2022-2023","Combined Statement FY2024 net outlays · period-of-availability row",-132900],
-        ["Transfer To · US Agency for International Development · 2020-2021","Combined Statement FY2024 net outlays · period-of-availability row",-232450.53],
-        ["Transfer To · US Agency for International Development · 2021-2022","Combined Statement FY2024 net outlays · period-of-availability row",-274782.55],
-        ["Transfer To · US Agency for International Development · 2015-2023","Combined Statement FY2024 net outlays · period-of-availability row",-423489.99],
-        ["Transfer To · US Agency for International Development · 2014-2022","Combined Statement FY2024 net outlays · period-of-availability row",-682337.26]
+        [
+          "Transfer To · US Agency for International Development · 2023-2027",
+          "Combined Statement FY2024 net outlays · period-of-availability publication ceiling",
+          2050902942.82
+        ],
+        [
+          "Transfer To · US Agency for International Development · 2022-2026",
+          "Combined Statement FY2024 net outlays · period-of-availability publication ceiling",
+          1491566230.37
+        ],
+        [
+          "Transfer To · US Agency for International Development · 2022-2027",
+          "Combined Statement FY2024 net outlays · period-of-availability publication ceiling",
+          1415736670.71
+        ],
+        [
+          "Transfer To · Office of Secretary, Health and Human Services · 2023-2027",
+          "Combined Statement FY2024 net outlays · period-of-availability publication ceiling",
+          1200656876.73
+        ],
+        [
+          "Transfer To · US Agency for International Development · 2023-2024",
+          "Combined Statement FY2024 net outlays · period-of-availability publication ceiling",
+          1045793574.57
+        ],
+        [
+          "Fund resources · 2023-2027",
+          "Combined Statement FY2024 net outlays · period-of-availability row",
+          846291931.42
+        ],
+        [
+          "Transfer To · US Agency for International Development · 2021-2026",
+          "Combined Statement FY2024 net outlays · period-of-availability row",
+          757839319.1
+        ],
+        [
+          "Transfer To · Office of Secretary, Health and Human Services · 2022-2026",
+          "Combined Statement FY2024 net outlays · period-of-availability row",
+          582109142.16
+        ],
+        [
+          "Fund resources · 2024-2028",
+          "Combined Statement FY2024 net outlays · period-of-availability row",
+          329787779.96
+        ],
+        [
+          "Transfer To · US Agency for International Development · 2020-2025",
+          "Combined Statement FY2024 net outlays · period-of-availability row",
+          216269858.41
+        ],
+        [
+          "Transfer To · US Agency for International Development · 2021-2025",
+          "Combined Statement FY2024 net outlays · period-of-availability row",
+          170865264.28
+        ],
+        [
+          "Transfer To · Office of Secretary, Health and Human Services · 2020-2024",
+          "Combined Statement FY2024 net outlays · period-of-availability row",
+          118015407.96
+        ],
+        [
+          "Transfer To · Office of Secretary, Health and Human Services · 2021-2025",
+          "Combined Statement FY2024 net outlays · period-of-availability row",
+          76560894.81
+        ],
+        [
+          "Transfer To · Department of Defense · 2023-2027",
+          "Combined Statement FY2024 net outlays · period-of-availability row",
+          68328306.89
+        ],
+        [
+          "Transfer To · US Agency for International Development · 2019-2020",
+          "Combined Statement FY2024 net outlays · period-of-availability row",
+          67226541.17
+        ],
+        [
+          "Transfer To · Department of Defense · 2022-2026",
+          "Combined Statement FY2024 net outlays · period-of-availability row",
+          67090825.09
+        ],
+        [
+          "Transfer To · US Agency for International Development · 2020-2024",
+          "Combined Statement FY2024 net outlays · period-of-availability row",
+          53413101.9
+        ],
+        [
+          "Transfer To · Office of Secretary, Health and Human Services · 2024-2028",
+          "Combined Statement FY2024 net outlays · period-of-availability row",
+          20616477.01
+        ],
+        [
+          "Transfer To · US Agency for International Development · 2018-2019",
+          "Combined Statement FY2024 net outlays · period-of-availability row",
+          19530662.32
+        ],
+        [
+          "Transfer To · Peace Corps · 2020-2024",
+          "Combined Statement FY2024 net outlays · period-of-availability row",
+          19286213.86
+        ],
+        [
+          "Transfer To · US Agency for International Development · No Year",
+          "Combined Statement FY2024 net outlays · period-of-availability row",
+          19207876.39
+        ],
+        [
+          "Transfer To · Office of Secretary, Health and Human Services · 2019-2023",
+          "Combined Statement FY2024 net outlays · period-of-availability row",
+          19061985.18
+        ],
+        [
+          "Transfer To · Department of Defense · 2020-2024",
+          "Combined Statement FY2024 net outlays · period-of-availability row",
+          18753485.2
+        ],
+        [
+          "Fund resources · 2020-2024",
+          "Combined Statement FY2024 net outlays · period-of-availability row",
+          16626088.28
+        ],
+        [
+          "Transfer To · US Agency for International Development · 2018-2023",
+          "Combined Statement FY2024 net outlays · period-of-availability row",
+          16036079.3
+        ],
+        [
+          "Fund resources · 2022-2026",
+          "Combined Statement FY2024 net outlays · period-of-availability row",
+          15199631.74
+        ],
+        [
+          "Transfer To · US Agency for International Development · 2019-2027",
+          "Combined Statement FY2024 net outlays · period-of-availability row",
+          15168005.62
+        ],
+        [
+          "Transfer To · US Agency for International Development · 2017-2022",
+          "Combined Statement FY2024 net outlays · period-of-availability row",
+          11930546.58
+        ],
+        [
+          "Transfer To · US Agency for International Development · 2019-2024",
+          "Combined Statement FY2024 net outlays · period-of-availability row",
+          11309599.77
+        ],
+        [
+          "Fund resources · 2021-2025",
+          "Combined Statement FY2024 net outlays · period-of-availability row",
+          9808702.73
+        ],
+        [
+          "Transfer To · US Agency for International Development · 2020-2026",
+          "Combined Statement FY2024 net outlays · period-of-availability row",
+          9639294.09
+        ],
+        [
+          "Transfer To · US Agency for International Development · 2016-2020",
+          "Combined Statement FY2024 net outlays · period-of-availability row",
+          9404427
+        ],
+        [
+          "Fund resources · No Year",
+          "Combined Statement FY2024 net outlays · period-of-availability row",
+          7797632.19
+        ],
+        [
+          "Transfer To · US Agency for International Development · 2016-2021",
+          "Combined Statement FY2024 net outlays · period-of-availability row",
+          6412539.52
+        ],
+        [
+          "Transfer To · US Agency for International Development · 2018-2026",
+          "Combined Statement FY2024 net outlays · period-of-availability row",
+          6008950.53
+        ],
+        [
+          "Transfer To · Peace Corps · 2022-2026",
+          "Combined Statement FY2024 net outlays · period-of-availability row",
+          5475370.34
+        ],
+        [
+          "Transfer To · Department of Defense · 2021-2025",
+          "Combined Statement FY2024 net outlays · period-of-availability row",
+          5164060.57
+        ],
+        [
+          "Fund resources · 2019-2023",
+          "Combined Statement FY2024 net outlays · period-of-availability row",
+          3615947.81
+        ],
+        [
+          "Transfer To · US Agency for International Development · 2024-2028",
+          "Combined Statement FY2024 net outlays · period-of-availability row",
+          3355467.3
+        ],
+        [
+          "Transfer To · US Agency for International Development · 2022-2024",
+          "Combined Statement FY2024 net outlays · period-of-availability row",
+          2690140.08
+        ],
+        [
+          "Transfer To · US Agency for International Development · 2017-2025",
+          "Combined Statement FY2024 net outlays · period-of-availability row",
+          2429068.84
+        ],
+        [
+          "Transfer To · US Agency for International Development · 2024-2025",
+          "Combined Statement FY2024 net outlays · period-of-availability row",
+          2202692.02
+        ],
+        [
+          "Transfer To · US Agency for International Development · 2014-2019",
+          "Combined Statement FY2024 net outlays · period-of-availability row",
+          2057699.8
+        ],
+        [
+          "Transfer To · US Agency for International Development · 2015-2020",
+          "Combined Statement FY2024 net outlays · period-of-availability row",
+          1766431.23
+        ],
+        [
+          "Transfer To · US Agency for International Development · 2015-2019",
+          "Combined Statement FY2024 net outlays · period-of-availability row",
+          1715894.83
+        ],
+        [
+          "Transfer To · Peace Corps · 2021-2025",
+          "Combined Statement FY2024 net outlays · period-of-availability row",
+          1497590.77
+        ],
+        [
+          "Transfer To · Department of Defense · 2019-2023",
+          "Combined Statement FY2024 net outlays · period-of-availability row",
+          1444286.46
+        ],
+        [
+          "Transfer To · US Agency for International Development · 2013-2021",
+          "Combined Statement FY2024 net outlays · period-of-availability row",
+          1014480.26
+        ],
+        [
+          "Transfer To · Peace Corps · 2019-2023",
+          "Combined Statement FY2024 net outlays · period-of-availability row",
+          824931.95
+        ],
+        [
+          "Transfer To · Office of Secretary, Health and Human Services · 2018-2022",
+          "Combined Statement FY2024 net outlays · period-of-availability row",
+          760196.25
+        ],
+        [
+          "Transfer To · US Agency for International Development · 2016-2024",
+          "Combined Statement FY2024 net outlays · period-of-availability row",
+          755302.27
+        ],
+        [
+          "Transfer To · Office of Secretary, Health and Human Services · No Year",
+          "Combined Statement FY2024 net outlays · period-of-availability row",
+          604410.38
+        ],
+        [
+          "Transfer To · Department of Defense · 2018-2022",
+          "Combined Statement FY2024 net outlays · period-of-availability row",
+          573480.84
+        ],
+        [
+          "Transfer To · Peace Corps · 2023-2027",
+          "Combined Statement FY2024 net outlays · period-of-availability row",
+          409566.14
+        ],
+        [
+          "Transfer To · Office of Secretary, Health and Human Services · 2017-2021",
+          "Combined Statement FY2024 net outlays · period-of-availability row",
+          269045.53
+        ],
+        [
+          "Transfer To · Department of Defense · No Year",
+          "Combined Statement FY2024 net outlays · period-of-availability row",
+          260138.36
+        ],
+        [
+          "Transfer To · Office of Secretary, Health and Human Services · 2016-2020",
+          "Combined Statement FY2024 net outlays · period-of-availability row",
+          168158.91
+        ],
+        [
+          "Transfer To · Peace Corps · No Year",
+          "Combined Statement FY2024 net outlays · period-of-availability row",
+          118408.87
+        ],
+        [
+          "Fund resources · 2016-2020",
+          "Combined Statement FY2024 net outlays · period-of-availability row",
+          97007.86
+        ],
+        [
+          "Transfer To · US Agency for International Development · 2017-2021",
+          "Combined Statement FY2024 net outlays · period-of-availability row",
+          96131.28
+        ],
+        [
+          "Transfer To · Department of Defense · 2015-2019",
+          "Combined Statement FY2024 net outlays · period-of-availability row",
+          93222.39
+        ],
+        [
+          "Transfer To · US Agency for International Development · 2018-2022",
+          "Combined Statement FY2024 net outlays · period-of-availability row",
+          86816.69
+        ],
+        [
+          "Fund resources · 2018-2022",
+          "Combined Statement FY2024 net outlays · period-of-availability row",
+          67471.77
+        ],
+        [
+          "Fund resources · 2015-2019",
+          "Combined Statement FY2024 net outlays · period-of-availability row",
+          67042.46
+        ],
+        [
+          "Transfer To · US Agency for International Development · 2020-2022",
+          "Combined Statement FY2024 net outlays · period-of-availability row",
+          44169.52
+        ],
+        [
+          "Transfer To · Peace Corps · 2018-2022",
+          "Combined Statement FY2024 net outlays · period-of-availability row",
+          15352.97
+        ],
+        [
+          "Transfer To · Peace Corps · 2017-2021",
+          "Combined Statement FY2024 net outlays · period-of-availability row",
+          14067.54
+        ],
+        [
+          "Transfer To · Office of Secretary, Health and Human Services · 2015-2019",
+          "Combined Statement FY2024 net outlays · period-of-availability row",
+          13908.11
+        ],
+        [
+          "Transfer To · Peace Corps · 2016-2020",
+          "Combined Statement FY2024 net outlays · period-of-availability row",
+          784.2
+        ],
+        [
+          "Transfer To · Department of Defense · 2017-2021",
+          "Combined Statement FY2024 net outlays · period-of-availability row",
+          676.94
+        ],
+        [
+          "Transfer To · Department of Defense · 2016-2020",
+          "Combined Statement FY2024 net outlays · period-of-availability row",
+          71.01
+        ],
+        [
+          "Fund resources · 2017-2021",
+          "Combined Statement FY2024 net outlays · period-of-availability row",
+          -2875.25
+        ],
+        [
+          "Transfer To · US Agency for International Development · 2019-2023",
+          "Combined Statement FY2024 net outlays · period-of-availability row",
+          -60781.96
+        ],
+        [
+          "Transfer To · US Agency for International Development · 2022-2023",
+          "Combined Statement FY2024 net outlays · period-of-availability row",
+          -132900
+        ],
+        [
+          "Transfer To · US Agency for International Development · 2020-2021",
+          "Combined Statement FY2024 net outlays · period-of-availability row",
+          -232450.53
+        ],
+        [
+          "Transfer To · US Agency for International Development · 2021-2022",
+          "Combined Statement FY2024 net outlays · period-of-availability row",
+          -274782.55
+        ],
+        [
+          "Transfer To · US Agency for International Development · 2015-2023",
+          "Combined Statement FY2024 net outlays · period-of-availability row",
+          -423489.99
+        ],
+        [
+          "Transfer To · US Agency for International Development · 2014-2022",
+          "Combined Statement FY2024 net outlays · period-of-availability row",
+          -682337.26
+        ]
       ]
     },
     {
@@ -244,27 +1046,103 @@
       "sourceUrl": "https://fiscal.treasury.gov/system/files/files/reports-statements/combined-statement/cs2024/c34.xlsx",
       "combinedStatementAvailability": true,
       "covers": [
-        ["019-0113-000","Diplomatic and Consular Programs, State",10401551887.12]
+        [
+          "019-0113-000",
+          "Diplomatic and Consular Programs, State",
+          10401551887.12
+        ]
       ],
       "rows": [
-        ["Fund resources · 2024","Combined Statement FY2024 net outlays · period-of-availability publication ceiling",4349392562.64],
-        ["Fund resources · No Year","Combined Statement FY2024 net outlays · period-of-availability publication ceiling",4189286136.5],
-        ["Fund resources · 2023","Combined Statement FY2024 net outlays · period-of-availability publication ceiling",1052521228.26],
-        ["Fund resources · 2023-2024","Combined Statement FY2024 net outlays · period-of-availability row",391463803.31],
-        ["Fund resources · 2022-2023","Combined Statement FY2024 net outlays · period-of-availability row",138488222.72],
-        ["Fund resources · 2022-2024","Combined Statement FY2024 net outlays · period-of-availability row",114804960.43],
-        ["Fund resources · 2022","Combined Statement FY2024 net outlays · period-of-availability row",77676215.41],
-        ["Fund resources · 2021","Combined Statement FY2024 net outlays · period-of-availability row",26588551.39],
-        ["Fund resources · 2020","Combined Statement FY2024 net outlays · period-of-availability row",15544357.23],
-        ["Fund resources · 2024-2025","Combined Statement FY2024 net outlays · period-of-availability row",12081215.1],
-        ["Fund resources · 2021-2022","Combined Statement FY2024 net outlays · period-of-availability row",7864041.32],
-        ["Fund resources · 2019","Combined Statement FY2024 net outlays · period-of-availability row",7007498.04],
-        ["Fund resources · 2023-2027","Combined Statement FY2024 net outlays · period-of-availability row",5087590.14],
-        ["Fund resources · 2019-2020","Combined Statement FY2024 net outlays · period-of-availability row",3389592.34],
-        ["Fund resources · 2024-2028","Combined Statement FY2024 net outlays · period-of-availability row",3340382.1],
-        ["Fund resources · 2020-2021","Combined Statement FY2024 net outlays · period-of-availability row",3300841.86],
-        ["Fund resources · 2018-2019","Combined Statement FY2024 net outlays · period-of-availability row",3176516.49],
-        ["Fund resources · 2020-2022","Combined Statement FY2024 net outlays · period-of-availability row",538171.84]
+        [
+          "Fund resources · 2024",
+          "Combined Statement FY2024 net outlays · period-of-availability publication ceiling",
+          4349392562.64
+        ],
+        [
+          "Fund resources · No Year",
+          "Combined Statement FY2024 net outlays · period-of-availability publication ceiling",
+          4189286136.5
+        ],
+        [
+          "Fund resources · 2023",
+          "Combined Statement FY2024 net outlays · period-of-availability publication ceiling",
+          1052521228.26
+        ],
+        [
+          "Fund resources · 2023-2024",
+          "Combined Statement FY2024 net outlays · period-of-availability row",
+          391463803.31
+        ],
+        [
+          "Fund resources · 2022-2023",
+          "Combined Statement FY2024 net outlays · period-of-availability row",
+          138488222.72
+        ],
+        [
+          "Fund resources · 2022-2024",
+          "Combined Statement FY2024 net outlays · period-of-availability row",
+          114804960.43
+        ],
+        [
+          "Fund resources · 2022",
+          "Combined Statement FY2024 net outlays · period-of-availability row",
+          77676215.41
+        ],
+        [
+          "Fund resources · 2021",
+          "Combined Statement FY2024 net outlays · period-of-availability row",
+          26588551.39
+        ],
+        [
+          "Fund resources · 2020",
+          "Combined Statement FY2024 net outlays · period-of-availability row",
+          15544357.23
+        ],
+        [
+          "Fund resources · 2024-2025",
+          "Combined Statement FY2024 net outlays · period-of-availability row",
+          12081215.1
+        ],
+        [
+          "Fund resources · 2021-2022",
+          "Combined Statement FY2024 net outlays · period-of-availability row",
+          7864041.32
+        ],
+        [
+          "Fund resources · 2019",
+          "Combined Statement FY2024 net outlays · period-of-availability row",
+          7007498.04
+        ],
+        [
+          "Fund resources · 2023-2027",
+          "Combined Statement FY2024 net outlays · period-of-availability row",
+          5087590.14
+        ],
+        [
+          "Fund resources · 2019-2020",
+          "Combined Statement FY2024 net outlays · period-of-availability row",
+          3389592.34
+        ],
+        [
+          "Fund resources · 2024-2028",
+          "Combined Statement FY2024 net outlays · period-of-availability row",
+          3340382.1
+        ],
+        [
+          "Fund resources · 2020-2021",
+          "Combined Statement FY2024 net outlays · period-of-availability row",
+          3300841.86
+        ],
+        [
+          "Fund resources · 2018-2019",
+          "Combined Statement FY2024 net outlays · period-of-availability row",
+          3176516.49
+        ],
+        [
+          "Fund resources · 2020-2022",
+          "Combined Statement FY2024 net outlays · period-of-availability row",
+          538171.84
+        ]
       ]
     },
     {
@@ -670,63 +1548,313 @@
       ]
     }
   ],
-  "itemBreakdownSchema": ["treasuryAccount", "title", "netOutlays"],
+  "itemBreakdownSchema": [
+    "treasuryAccount",
+    "title",
+    "netOutlays"
+  ],
   "itemBreakdownBasis": "Exact FY2024 Treasury accounts grouped to one MTS row; each final bridge reconciles account cents to the parent published in rounded $ millions.",
   "largeAccountRows": [
-    ["019-1031-000", "Global Health Programs, State", 10848212740.67, 86],
-    ["019-0113-000", "Diplomatic and Consular Programs, State", 10401551887.12, 18],
-    ["019-1143-000", "Migration and Refugee Assistance, State", 4614948270.18, 2],
-    ["019-5713-000", "Consular and Border Security Programs, Administration of Foreign Affairs, State", 4588830470.42, 6],
-    ["011-1022-000", "International Narcotics Control and Law Enforcement, International Security Assistance, State", 1850529772.37, 25],
-    ["011-0040-000", "United States Emergency Refugee and Migration Assistance Fund, Funds Appropriated to the President, Executive Office of the President · official Treasury publication ceiling (multiple availability rows, one nonzero)", 1840018646.25, 2],
-    ["019-1124-000", "Contributions for International Peacekeeping Activities, State", 1816568797, 6],
-    ["019-0535-000", "Embassy Security, Construction, and Maintenance, State", 1810521202.82, 8],
-    ["019-1126-000", "Contributions to International Organizations, State", 1549370833.31, 13],
-    ["019-8186-000", "Foreign Service Retirement and Disability Fund, State · official Treasury publication ceiling (one availability row)", 1188753572.64, 1]
+    [
+      "019-1031-000",
+      "Global Health Programs, State",
+      10848212740.67,
+      86
+    ],
+    [
+      "019-0113-000",
+      "Diplomatic and Consular Programs, State",
+      10401551887.12,
+      18
+    ],
+    [
+      "019-1143-000",
+      "Migration and Refugee Assistance, State",
+      4614948270.18,
+      2
+    ],
+    [
+      "019-5713-000",
+      "Consular and Border Security Programs, Administration of Foreign Affairs, State",
+      4588830470.42,
+      6
+    ],
+    [
+      "011-1022-000",
+      "International Narcotics Control and Law Enforcement, International Security Assistance, State",
+      1850529772.37,
+      25
+    ],
+    [
+      "011-0040-000",
+      "United States Emergency Refugee and Migration Assistance Fund, Funds Appropriated to the President, Executive Office of the President · official Treasury publication ceiling (multiple availability rows, one nonzero)",
+      1840018646.25,
+      2
+    ],
+    [
+      "019-1124-000",
+      "Contributions for International Peacekeeping Activities, State",
+      1816568797,
+      6
+    ],
+    [
+      "019-0535-000",
+      "Embassy Security, Construction, and Maintenance, State",
+      1810521202.82,
+      8
+    ],
+    [
+      "019-1126-000",
+      "Contributions to International Organizations, State",
+      1549370833.31,
+      13
+    ],
+    [
+      "019-8186-000",
+      "Foreign Service Retirement and Disability Fund, State · official Treasury publication ceiling (one availability row)",
+      1188753572.64,
+      1
+    ]
   ],
   "itemBreakdowns": [
     {
-      "parent": ["Administration of Foreign Affairs", "Other", 5306000000],
+      "parent": [
+        "Administration of Foreign Affairs",
+        "Other",
+        5306000000
+      ],
       "accountCount": 17,
       "rows": [
-        ["019-5713-000", "Consular and Border Security Programs, Administration of Foreign Affairs, State", 4588830470.42],
-        ["019-0120-000", "Capital Investment Fund, State", 426561672.34],
-        ["019-4519-000", "Working Capital Fund, State", -140189797.9],
-        ["019-0529-000", "Expenses, Office of Inspector General, State", 138407133.64],
-        ["019-0522-000", "Emergencies in the Diplomatic and Consular Service, State", 81907252],
-        ["019-0520-000", "Protection of Foreign Missions and Officials, State", 46849469.23],
-        ["019-4519-001", "Working Capital Fund, International Cooperative Administrative Support Services, State", 38597763.53],
-        ["019-0523-000", "Payment to the American Institute in Taiwan, State", 36829629.94],
-        ["019-8340-000", "Foreign Service National Separation Liability Trust Fund, State", 34632219.33],
-        ["019-8821-000", "Unconditional Gift Fund, State", 21243601.5],
-        ["019-5497-000", "Foreign Service National Defined Contributions Retirement Fund, State", 18731607.1],
-        ["019-0545-000", "Representation Expenses, State", 6550870.7],
-        ["019-8822-000", "Conditional Gift Fund, General, State", 3714164.49],
-        ["019-0601-000", "Repatriation Loans, Program Account, State", 2945455.1],
-        ["019-0600-000", "Repatriation Loans, Liquidating Account, State", -51132.63],
-        ["019-0121-000", "Conflict Stabilization Operations, State", -4107.54],
-        ["019-8167-000", "Trust Funds, State", 3737.54],
-        ["MTS-rounding", "Published MTS million-dollar rounding bridge", 439991.21]
+        [
+          "019-5713-000",
+          "Consular and Border Security Programs, Administration of Foreign Affairs, State",
+          4588830470.42
+        ],
+        [
+          "019-0120-000",
+          "Capital Investment Fund, State",
+          426561672.34
+        ],
+        [
+          "019-4519-000",
+          "Working Capital Fund, State",
+          -140189797.9
+        ],
+        [
+          "019-0529-000",
+          "Expenses, Office of Inspector General, State",
+          138407133.64
+        ],
+        [
+          "019-0522-000",
+          "Emergencies in the Diplomatic and Consular Service, State",
+          81907252
+        ],
+        [
+          "019-0520-000",
+          "Protection of Foreign Missions and Officials, State",
+          46849469.23
+        ],
+        [
+          "019-4519-001",
+          "Working Capital Fund, International Cooperative Administrative Support Services, State",
+          38597763.53
+        ],
+        [
+          "019-0523-000",
+          "Payment to the American Institute in Taiwan, State",
+          36829629.94
+        ],
+        [
+          "019-8340-000",
+          "Foreign Service National Separation Liability Trust Fund, State",
+          34632219.33
+        ],
+        [
+          "019-8821-000",
+          "Unconditional Gift Fund, State",
+          21243601.5
+        ],
+        [
+          "019-5497-000",
+          "Foreign Service National Defined Contributions Retirement Fund, State",
+          18731607.1
+        ],
+        [
+          "019-0545-000",
+          "Representation Expenses, State",
+          6550870.7
+        ],
+        [
+          "019-8822-000",
+          "Conditional Gift Fund, General, State",
+          3714164.49
+        ],
+        [
+          "019-0601-000",
+          "Repatriation Loans, Program Account, State",
+          2945455.1
+        ],
+        [
+          "019-0600-000",
+          "Repatriation Loans, Liquidating Account, State",
+          -51132.63
+        ],
+        [
+          "019-0121-000",
+          "Conflict Stabilization Operations, State",
+          -4107.54
+        ],
+        [
+          "019-8167-000",
+          "Trust Funds, State",
+          3737.54
+        ],
+        [
+          "MTS-rounding",
+          "Published MTS million-dollar rounding bridge",
+          439991.21
+        ]
       ],
       "sourceUrl": "https://fiscal.treasury.gov/system/files/files/reports-statements/combined-statement/cs2024/c34.xlsx",
       "basis": "Exact Combined Statement net-outlay accounts."
     }
   ],
   "rows": [
-    ["Administration of Foreign Affairs", "Diplomatic and Consular Programs", 10453000000, 10453000000, 1, 10453000000, 0],
-    ["Administration of Foreign Affairs", "Educational and Cultural Exchange Programs", 811000000, 811000000, 1, 811000000, 0],
-    ["Administration of Foreign Affairs", "Embassy Security, Construction, and Maintenance", 1811000000, 1811000000, 1, 1811000000, 0],
-    ["Administration of Foreign Affairs", "Payment to Foreign Service Retirement and Disability Fund", 609000000, 609000000, 1, 609000000, 0],
-    ["Administration of Foreign Affairs", "Foreign Service Retirement and Disability Fund", 1189000000, 1189000000, 1, 1189000000, 0],
-    ["Administration of Foreign Affairs", "Other", 5306000000, 5306000000, 1, 5306000000, 0],
-    ["Department of State", "International Organizations and Conferences", 3366000000, 3366000000, 1, 3366000000, 0],
-    ["Department of State", "Global Health and Child Survival", 10848000000, 10848000000, 1, 10848000000, 0],
-    ["Department of State", "Migration and Refugee Assistance", 6455000000, 6455000000, 1, 6455000000, 0],
-    ["Department of State", "International Narcotics Control and Law Enforcement", 1851000000, 1851000000, 1, 1851000000, 0],
-    ["Department of State", "Andean Counterdrug Programs", 0, 0, 1, 0, 0],
-    ["Department of State", "Other", 632000000, 632000000, 1, 632000000, 0],
-    ["Department of State", "Proprietary Receipts from the Public", -5590000000, -5590000000, 1, 0, 5590000000],
-    ["Department of State", "Intrabudgetary Transactions", -723000000, -723000000, 1, -723000000, 0],
-    ["Department of State", "Published Table 5 rounding adjustment", -1000000, -1000000, 0, -1000000, 0]
+    [
+      "Administration of Foreign Affairs",
+      "Diplomatic and Consular Programs",
+      10453000000,
+      10453000000,
+      1,
+      10453000000,
+      0
+    ],
+    [
+      "Administration of Foreign Affairs",
+      "Educational and Cultural Exchange Programs",
+      811000000,
+      811000000,
+      1,
+      811000000,
+      0
+    ],
+    [
+      "Administration of Foreign Affairs",
+      "Embassy Security, Construction, and Maintenance",
+      1811000000,
+      1811000000,
+      1,
+      1811000000,
+      0
+    ],
+    [
+      "Administration of Foreign Affairs",
+      "Payment to Foreign Service Retirement and Disability Fund",
+      609000000,
+      609000000,
+      1,
+      609000000,
+      0
+    ],
+    [
+      "Administration of Foreign Affairs",
+      "Foreign Service Retirement and Disability Fund",
+      1189000000,
+      1189000000,
+      1,
+      1189000000,
+      0
+    ],
+    [
+      "Administration of Foreign Affairs",
+      "Other",
+      5306000000,
+      5306000000,
+      1,
+      5306000000,
+      0
+    ],
+    [
+      "Department of State",
+      "International Organizations and Conferences",
+      3366000000,
+      3366000000,
+      1,
+      3366000000,
+      0
+    ],
+    [
+      "Department of State",
+      "Global Health and Child Survival",
+      10848000000,
+      10848000000,
+      1,
+      10848000000,
+      0
+    ],
+    [
+      "Department of State",
+      "Migration and Refugee Assistance",
+      6455000000,
+      6455000000,
+      1,
+      6455000000,
+      0
+    ],
+    [
+      "Department of State",
+      "International Narcotics Control and Law Enforcement",
+      1851000000,
+      1851000000,
+      1,
+      1851000000,
+      0
+    ],
+    [
+      "Department of State",
+      "Andean Counterdrug Programs",
+      0,
+      0,
+      1,
+      0,
+      0
+    ],
+    [
+      "Department of State",
+      "Other",
+      632000000,
+      632000000,
+      1,
+      632000000,
+      0
+    ],
+    [
+      "Department of State",
+      "Proprietary Receipts from the Public",
+      -5590000000,
+      -5590000000,
+      1,
+      0,
+      5590000000
+    ],
+    [
+      "Department of State",
+      "Intrabudgetary Transactions",
+      -723000000,
+      -723000000,
+      1,
+      -723000000,
+      0
+    ],
+    [
+      "Department of State",
+      "Published Table 5 rounding adjustment",
+      -1000000,
+      -1000000,
+      0,
+      -1000000,
+      0
+    ]
   ]
 }
