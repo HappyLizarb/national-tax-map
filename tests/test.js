@@ -39,6 +39,7 @@ require("./test-offsetting-receipts.js");
 require("./test-tax-estimates.js");
 require("./test-kpi-disclosures.js");
 require("./test-source-explorer-layout.js");
+require("./test-jurisdiction-selection.js");
 require("./test-source-breakdown-placement.js");
 require("./test-public-university-spending.js");
 require("./test-data-structure.js");
@@ -256,7 +257,7 @@ for (const pattern of [/id="themeToggle"/, /id="taxRateRows"/, /data\/jurisdicti
 assert.doesNotMatch(html, /data\/(?:fiscal|research)\//);
 assert.doesNotMatch(html + app + styles, /budgetStatus|data-status/);
 assert.doesNotMatch(html + app + details, /accountingComparison|accounting-comparison|accounting-total-grid/);
-assert.doesNotMatch(html + app, /data-layer|scopeSelect|setLayer|populateScopeSelect/);
+assert.doesNotMatch(html + app, /data-layer|setLayer|populateScopeSelect/);
 assert.doesNotMatch(html + app + styles, /data-metric|map-metric-switch|setMetric|updateMetricControls|state\.metric/);
 assert.doesNotMatch(html, /allocation-source-switch|data-allocation-source|Audited state GAAP|Standardized Census comparison|USAspending gross research/);
 assert.doesNotMatch(html, /class="kpi-grid"/);

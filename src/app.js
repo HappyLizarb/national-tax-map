@@ -16,6 +16,12 @@ async function initialize() {
   }
 }
 function bindControls() {
+  // Offer every jurisdiction through a native keyboard-accessible control.
+  const select = $("#scopeSelect");
+  Object.keys(model.states).sort().forEach((name) => select.add(new Option(name, name)));
+  select.addEventListener("change", () => {
+    if (select.value !== state.scope) setScope(select.value);
+  });
   $("#themeToggle").addEventListener("click", toggleTheme);
   themePreference.addEventListener("change", followSystemTheme);
   setTheme(document.documentElement.dataset.theme);
@@ -24,6 +30,7 @@ function bindControls() {
 function setScope(scope) {
   state.scope = scope === state.scope && scope !== "United States" ? "United States" : scope;
   state.layer = state.scope === "United States" ? "federal" : "stateGovernment";
+  $("#scopeSelect").value = state.scope;
   $(".detail-panel").scrollTop = 0;
   drawMap(); updatePanel();
 }
@@ -90,7 +97,7 @@ function showTooltip(event, feature) {
     + model.formatMoney(mapValue(feature.properties.name)) + "</b>";
   tooltip.hidden = false;
   const stage = $(".map-stage").getBoundingClientRect();
-  tooltip.style.transform = "translate(" + Math.min(event.clientX - stage.left + 14, stage.width - 190) + "px," + Math.max(event.clientY - stage.top - 74, 12) + "px)";
+  tooltip.style.transform = "translate(" + Math.max(12, Math.min(event.clientX - stage.left + 14, stage.width - tooltip.offsetWidth - 12)) + "px," + Math.max(event.clientY - stage.top - 74, 12) + "px)";
 }
 function updateLegend(values) {
   if (!values.length) return;

@@ -1,50 +1,51 @@
+/* Shared palette and typography from leland-lee.com, tuned for data contrast. */
 :root {
   color-scheme: light;
-  --ink: #332f2a;
-  --muted: #6f675e;
-  --paper: #efe7da;
-  --panel: #fffaf0;
-  --line: #d6c8b5;
-  --pine: #35584f;
-  --sage: #587460;
-  --clay: #9e593f;
-  --ochre: #88682f;
-  --soft-sage: #d9e3d8;
-  --soft-clay: #efd7c9;
-  --surface-muted: #e4dacb;
-  --surface-subtle: #f2eadd;
-  --map-water: #b9d2d2;
-  --map-negative: #c8755b;
-  --map-neutral: #d6c8b4;
-  --map-positive: #6e907c;
-  --map-low: #d9d3c5;
-  --map-high: #658776;
-  --mono: "DM Sans", sans-serif;
-  --sans: "DM Sans", sans-serif;
-  --display: "Fraunces", serif;
+  --ink: #243a2d;
+  --muted: #485d4d;
+  --paper: #f8f8f0;
+  --panel: #fffff9;
+  --line: #d4dfcf;
+  --pine: #3e6449;
+  --sage: #42694d;
+  --clay: #a65e70;
+  --ochre: #886b32;
+  --soft-sage: #e4eddc;
+  --soft-clay: #f1e2e4;
+  --surface-muted: #e2e8da;
+  --surface-subtle: #f0f4e9;
+  --map-water: #e9f0e6;
+  --map-negative: #b87084;
+  --map-neutral: #e3dfbc;
+  --map-positive: #47734e;
+  --map-low: #e3dfbc;
+  --map-high: #47734e;
+  --mono: "Plus Jakarta Sans", "Avenir Next", sans-serif;
+  --sans: "Plus Jakarta Sans", "Avenir Next", sans-serif;
+  --display: "Instrument Serif", Georgia, serif;
 }
 
 :root[data-theme="dark"] {
   color-scheme: dark;
-  --ink: #f4eadc;
-  --muted: #c0b4a4;
-  --paper: #201d1a;
-  --panel: #2b2721;
-  --line: #4a4237;
-  --pine: #344e45;
-  --sage: #a7c2a6;
-  --clay: #e39a78;
-  --ochre: #d7b86a;
-  --soft-sage: #374138;
-  --soft-clay: #523b31;
-  --surface-muted: #39332b;
-  --surface-subtle: #322d27;
-  --map-water: #24434a;
-  --map-negative: #d88569;
-  --map-neutral: #a59d8e;
-  --map-positive: #8eaf98;
-  --map-low: #6e6c60;
-  --map-high: #97b8a2;
+  --ink: #edf1e5;
+  --muted: #c0d0c4;
+  --paper: #131e1b;
+  --panel: #1b2a23;
+  --line: #3b5142;
+  --pine: #3e6449;
+  --sage: #b0d2a0;
+  --clay: #e0a5b5;
+  --ochre: #decb8a;
+  --soft-sage: #2c4232;
+  --soft-clay: #44343e;
+  --surface-muted: #334738;
+  --surface-subtle: #22352a;
+  --map-water: #203a31;
+  --map-negative: #dca2b1;
+  --map-neutral: #d4d5b1;
+  --map-positive: #7eaf87;
+  --map-low: #d4d5b1;
+  --map-high: #7eaf87;
 }
 
 * { box-sizing: border-box; }
@@ -92,7 +93,7 @@ a { transition: color .18s ease; }
 .map-pane { min-width: 0; padding: 36px clamp(32px, 3.5vw, 56px) 32px; }
 .map-intro { display: flex; align-items: center; justify-content: space-between; gap: 28px; }
 .eyebrow { margin: 0 0 12px; color: var(--sage); text-transform: uppercase; letter-spacing: .13em; font: 700 13px var(--mono); }
-h1, h2 { margin: 0; font-family: var(--display); font-weight: 650; letter-spacing: -.035em; }
+h1, h2 { margin: 0; font-family: var(--display); font-weight: 400; letter-spacing: -.025em; }
 h1 { max-width: none; white-space: nowrap; font-size: clamp(52px, 5vw, 68px); line-height: .94; }
 .lede { max-width: 70ch; margin: 14px 0 0; color: var(--muted); font-size: 18px; line-height: 1.6; text-wrap: pretty; }
 .map-stage { position: relative; height: clamp(430px, calc(100dvh - 270px), 560px); min-height: 0; margin-top: 24px; overflow: hidden; border: 1px solid color-mix(in srgb, var(--line) 70%, transparent); border-radius: 24px; background: radial-gradient(circle at 48% 42%, color-mix(in srgb, var(--map-water) 68%, var(--panel)), var(--map-water)); box-shadow: inset 0 1px #ffffff59, 0 24px 64px color-mix(in srgb, var(--pine) 16%, transparent); }
@@ -155,7 +156,7 @@ h1 { max-width: none; white-space: nowrap; font-size: clamp(52px, 5vw, 68px); li
 .tax-estimate-profile:first-child { padding-left: 0; border-left: 0; }
 .tax-estimate-profile:last-child { padding-right: 0; }
 .tax-estimate-profile header { display: flex; justify-content: space-between; align-items: baseline; gap: 10px; }
-.tax-estimate-profile h4 { margin: 0; font: 600 20px var(--display); }
+.tax-estimate-profile h4 { margin: 0; font: 400 24px var(--display); }
 .tax-estimate-profile header span, .tax-estimate-profile > small, .tax-estimate-footer small { color: var(--muted); font-size: 12px; line-height: 1.55; }
 .tax-estimate-profile > small { display: block; margin-top: 7px; }
 .tax-estimate-footer { padding-top: 12px; border-top: 1px solid var(--line); }

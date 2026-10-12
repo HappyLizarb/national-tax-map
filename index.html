@@ -16,10 +16,10 @@
   </script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles/styles.css?v=27">
-  <link rel="stylesheet" href="styles/details.css?v=22">
-  <link rel="stylesheet" href="styles/polish.css?v=7">
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/styles.css?v=28">
+  <link rel="stylesheet" href="styles/details.css?v=23">
+  <link rel="stylesheet" href="styles/polish.css?v=8">
 </head>
 <body>
   <a class="skip-link" href="#mainContent">Skip to content</a>
@@ -37,10 +37,13 @@
       <span class="brand-mark" aria-hidden="true">PL</span>
       <span>Public Ledger</span>
     </a>
+    <nav class="site-links" aria-label="Primary navigation">
+      <a href="#map-title">Explore the map</a>
+      <a href="#fiscalDetailTitle">Source details</a>
+    </nav>
     <div class="topbar-actions">
       <div class="topbar-meta">
-        <span>National fiscal map</span>
-        <span class="prototype-label">FY 2024 source data</span>
+        <a class="portfolio-link" href="https://leland-lee.com/">Leland Lee <span aria-hidden="true">↗</span></a>
       </div>
       <button class="theme-toggle" id="themeToggle" type="button" aria-label="Switch theme" aria-pressed="false">
         <svg class="moon-icon" aria-hidden="true" viewBox="0 0 24 24">
@@ -60,11 +63,15 @@
       <div class="map-intro">
         <div>
           <p class="eyebrow">United States · Fiscal year 2024</p>
-          <h1 id="map-title">Your tax dollars at work.</h1>
-          <p class="lede">As taxpayers, know how your government spends your money without endless file-digging.</p>
+          <h1 id="map-title">Your tax dollars <em>at work.</em></h1>
+          <p class="lede">Follow public money, from the national picture to your state. Explore the spending, then go straight to the source.</p>
         </div>
       </div>
 
+      <div class="map-toolbar">
+        <label for="scopeSelect">Explore a jurisdiction</label>
+        <select id="scopeSelect"><option value="United States">United States · Federal</option></select>
+      </div>
       <div class="map-stage">
         <svg id="usMap" role="img" aria-labelledby="map-title map-description" viewBox="0 0 900 520">
           <desc id="map-description">Select a state to compare audited GAAP fiscal indicators; select it again to return to the national view.</desc>
@@ -81,6 +88,7 @@
       <div class="map-footnotes">
         <p><span class="dot reported"></span> Reported public-finance data</p>
         <p><span class="dot estimated"></span> State map uses government totals</p>
+        <p class="map-hint">Select a state on the map or in the menu. Select it again on the map to return to the national view.</p>
         <p class="source-note">Federal outlays and state expenditures are separate ledgers; transfers can appear in both. This map does not measure tax expenditures—revenue forgone through tax preferences.</p>
       </div>
     </section>
@@ -211,6 +219,6 @@
   <script src="src/tax-estimates.js?v=11"></script>
   <script src="src/kpi-disclosure.js?v=1"></script>
   <script src="src/fiscal-panel.js?v=26"></script>
-  <script src="src/app.js?v=27"></script>
+  <script src="src/app.js?v=28"></script>
 </body>
 </html>

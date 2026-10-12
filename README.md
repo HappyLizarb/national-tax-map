@@ -3,7 +3,7 @@
 A source-linked map of FY2024 U.S. federal and state spending, 2026 tax rates,
 and household income and property-tax estimates.
 
-**[Open the production site](https://public-ledger.babelloni.chatgpt.site)**
+**[Open the production site](https://public-ledger.ambereel.chatgpt.site)**
 
 > Public Ledger is a transparency tool, not an accounting standard or tax
 > calculator. Source scope and accounting basis vary; the interface keeps those
@@ -64,6 +64,15 @@ node tests/test.js
 The suite validates data shape, source placement, cent-level reconciliation,
 all 50 state controls, browser-visible large-row coverage, and the complete
 public-institution universe.
+
+## Prepare for Sites
+
+```sh
+node scripts/build-static.mjs
+```
+
+This copies the browser app into `dist/` and compacts deployment JSON without
+changing its values. The static directory is configured in `.openai/hosting.json`. The current Site is private to its owner.
 
 ## Repository map
 
