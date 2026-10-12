@@ -78,6 +78,7 @@ async function updateAllocation(data) {
   $("#categoryList").innerHTML = ""; $("#breakdownDetails").textContent = "Choose a department after it loads.";
   setText("#sourceExplorerTitle", "Agency source explorer");
   $("#agencyRows").innerHTML = ""; setText("#sourceExplorerNote", "Itemized rows load only after a department is selected.");
+  $("#sourceDirectory").innerHTML = ""; $("#sourceDirectoryControl").hidden = true;
   try {
     const primary = await DepartmentData.loadSummary(data.name);
     const summary = await allocationSummary(data.name, primary);
@@ -118,7 +119,8 @@ function renderAllocation(summary, scopeData) {
   const reconciled = summary.coverageStatus === "gaap-reconciled-official-archive";
   drawDonut(departments, reconciled ? "GAAP" : "100%", reconciled ? "signed reconciliation" : "itemized allocations");
   setText("#sourceExplorerNote", summary.note || "Itemized rows load only after a department is selected.");
-  if (scopeData.kind === "federal") $("#agencyRows").innerHTML = federalSourceCatalog();
+  $("#sourceDirectory").innerHTML = scopeData.kind === "federal" ? federalSourceCatalog() : "";
+  $("#sourceDirectoryControl").hidden = scopeData.kind !== "federal";
   $("#allocationTitle a").href = summary.departments[0]?.sourceUrl || summary.sourceUrl;
 }
 function allocationLabel(summary, total, scopeData) {
@@ -129,10 +131,9 @@ function allocationLabel(summary, total, scopeData) {
   return model.formatMoney(total) + " " + label;
 }
 function federalSourceCatalog() {
-  return model.federalSourceRows().map((source) => '<details class="source-catalog"><summary><strong>'
+  return model.federalSourceRows().map((source) => renderDrilldownRow('<span><strong>'
     + escapeHtml(source.label) + '</strong><small>' + escapeHtml(source.status + " · " + source.decision)
-    + '</small></summary><div>' + source.links.map((link) => sourceAnchor(link.url, link.label + " ↗")).join("")
-    + "</div></details>").join("");
+    + '</small></span>', source.links.map((link) => sourceAnchor(link.url, link.label + " ↗")).join(""))).join("");
 }
 function sourceAnchor(url, label) {
   return '<a href="' + escapeHtml(url) + '" target="_blank" rel="noopener noreferrer">' + escapeHtml(label) + "</a>";
@@ -163,6 +164,12 @@ function drawDonut(departments, coverageLabel, coverageNote) {
 }
 
 async function showBreakdown(department) {
+  resetEntryDialog();
+  const dialog = $("#departmentDialog");
+  $("#agencyRows").innerHTML = "";
+  setText("#departmentDialogTitle", department.name);
+  dialog.querySelector(".dialog-body").scrollTop = 0;
+  if (!dialog.open) dialog.showModal();
   const request = ++state.detailRequest;
   const details = $("#breakdownDetails");
   const detailLabel = department.reconciliationTarget ? "signed bridge" : shareLabel(department);
@@ -186,7 +193,6 @@ async function showBreakdown(department) {
     sourceUrl: department.sourceUrl, note: department.note } : null;
   if (inlineDetail) { renderDetail(inlineDetail); return; }
   setText("#sourceExplorerNote", department.note || "No additional itemized rows are available for this source group.");
-  $("#agencyRows").innerHTML = "";
 }
 
 // Load every leaf row from both published sides of a reconciliation bridge.
@@ -253,12 +259,17 @@ function renderDetail(detail) {
         + (supplementalCount ? " · " + supplementalCount.toLocaleString() + " separate topic rows" : "");
   setText("#sourceExplorerNote", detail.department + " · " + rowCount + (detail.rows.length > limit ? " · first 500 shown" : "") + note);
   const rendered = new Set(), rowHtml = hierarchy || flatSingleton ? "" : rows.map((row) => {
-    const subAgency = row[0], program = model.displayAccountDescription(detail, row), amount = row[2];
-    return '<div class="agency-row"><span><strong>' + escapeHtml(subAgency) + '</strong><small>' + escapeHtml(program) + '</small></span><b>' + detailAmount(row, detail.rowSchema) + '</b></div>' + itemBreakdown(detail, row, rendered) + supplementalBreakdown(detail, row, rendered) + nestedSourceBreakdowns(detail, row, rendered);
+    const subAgency = row[0], program = model.displayAccountDescription(detail, row);
+    const content = '<span><strong>' + escapeHtml(subAgency) + '</strong><small>' + escapeHtml(program)
+      + '</small></span><b>' + detailAmount(row, detail.rowSchema) + '</b>';
+    return renderDrilldownRow(content, itemBreakdown(detail, row, rendered)
+      + supplementalBreakdown(detail, row, rendered) + nestedSourceBreakdowns(detail, row, rendered));
   }).join("");
   $("#agencyRows").innerHTML = detailSourceLinks(detail, rendered) + hierarchy + rowHtml
-    + (detail.supplementalRows || []).slice(0, limit).map((row) => '<a class="agency-row" href="' + escapeHtml(row[4]) + '" target="_blank" rel="noopener noreferrer"><span><strong>' + escapeHtml(row[0]) + '</strong><small>' + escapeHtml(model.displayAccountDescription(detail, row)) + ' · ' + escapeHtml(row[3]) + '</small></span><b>' + model.formatMoney(row[2]) + '</b></a>'
-      + nestedSourceBreakdowns(detail, row, rendered)).join("");
+    + (detail.supplementalRows || []).slice(0, limit).map((row) => renderDrilldownRow('<span><strong>'
+      + escapeHtml(row[0]) + '</strong><small>' + escapeHtml(model.displayAccountDescription(detail, row))
+      + ' · ' + escapeHtml(row[3]) + '</small></span><b>' + model.formatMoney(row[2]) + '</b>',
+    nestedSourceBreakdowns(detail, row, rendered), row[4])).join("");
 }
 function detailSourceLinks(detail, rendered) {
   const sources = [...(detail.sourceUrls || [["Official source", detail.sourceUrl]]), ...(detail.relatedSources || [])];

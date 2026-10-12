@@ -1,10 +1,14 @@
+// Use the same drilldown markup in browser rendering and dependency-free tests.
+const renderReceiptEntry = typeof module === "undefined" ? renderDrilldownRow
+  : require("./detail-dialog.js").renderDrilldownRow;
+
 function receiptAccountHtml(account, formatMoney, escapeHtml) {
   const audit = account.largeAccountAudited ? " · Audited ≥$10B account" : "";
   const ceiling = Math.abs(account.amount) >= 1e9 ? " · current imported-detail ceiling" : "";
   const metadata = "TAS " + account.tas + " · " + account.flowType + " · " + account.sourceFloor + audit + ceiling;
-  return '<div class="agency-row receipt-account"><span><strong>' + escapeHtml(account.title)
+  return renderReceiptEntry('<span><strong>' + escapeHtml(account.title)
     + '</strong><small>' + escapeHtml(metadata) + '</small></span><b>'
-    + formatMoney(account.amount) + '</b></div>';
+    + formatMoney(account.amount) + '</b>', "", "", "receipt-account");
 }
 
 function receiptGroupHtml(group, accounts, formatMoney, escapeHtml) {
@@ -12,9 +16,9 @@ function receiptGroupHtml(group, accounts, formatMoney, escapeHtml) {
   if (matches.length === 1) return receiptAccountHtml(matches[0], formatMoney, escapeHtml);
   const rows = matches
     .map((account) => receiptAccountHtml(account, formatMoney, escapeHtml)).join("");
-  return '<details class="receipt-group" open><summary><span><strong>' + escapeHtml(group.name)
+  return renderReceiptEntry('<span><strong>' + escapeHtml(group.name)
     + '</strong><small>' + escapeHtml(group.accountCount + " accounts · " + group.explanation)
-    + '</small></span><b>' + formatMoney(group.amount) + '</b></summary><div>' + rows + '</div></details>';
+    + '</small></span><b>' + formatMoney(group.amount) + '</b>', rows, "", "receipt-group");
 }
 
 function receiptClassHtml(category, groups, accounts, formatMoney, escapeHtml) {
@@ -22,9 +26,9 @@ function receiptClassHtml(category, groups, accounts, formatMoney, escapeHtml) {
   if (matches.length === 1) return receiptAccountHtml(matches[0], formatMoney, escapeHtml);
   const groupHtml = category.groupNames.map((name) => groups.find((group) => group.name === name))
     .map((group) => receiptGroupHtml(group, accounts, formatMoney, escapeHtml)).join("");
-  return '<details class="receipt-class" open><summary><span><strong>' + escapeHtml(category.name)
+  return renderReceiptEntry('<span><strong>' + escapeHtml(category.name)
     + '</strong><small>' + escapeHtml(category.accountCount + " accounts · " + category.explanation)
-    + '</small></span><b>' + formatMoney(category.amount) + '</b></summary><div>' + groupHtml + '</div></details>';
+    + '</small></span><b>' + formatMoney(category.amount) + '</b>', groupHtml, "", "receipt-class");
 }
 
 function renderReceiptHierarchy(detail, formatMoney, escapeHtml) {

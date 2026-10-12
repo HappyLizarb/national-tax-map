@@ -45,9 +45,8 @@ html { scroll-padding-top: 112px; }
 
 .brand { font-size: 16px; font-weight: 600; white-space: nowrap; }
 .brand-mark { border: 0; border-radius: 50% 50% 50% 12%; background: var(--sage); color: var(--paper); font: 20px var(--display); }
-.site-links { display: flex; gap: 4px; margin-left: auto; }
-.site-links a, .portfolio-link { display: flex; align-items: center; gap: 8px; min-height: 44px; padding: 0 12px; border-radius: 10px; color: var(--muted); font-size: 13px; text-decoration: none; }
-.site-links a:hover, .portfolio-link:hover { background: var(--soft-sage); color: var(--ink); }
+.portfolio-link { display: flex; align-items: center; gap: 8px; min-height: 44px; padding: 0 12px; border-radius: 10px; color: var(--muted); font-size: 13px; text-decoration: none; }
+.portfolio-link:hover { background: var(--soft-sage); color: var(--ink); }
 .topbar-actions { gap: 8px; }
 .theme-toggle { width: 44px; border-color: var(--line); border-radius: 10px; background: transparent; color: var(--sage); }
 .theme-toggle:hover { background: var(--soft-sage); border-color: var(--sage); }
@@ -245,21 +244,18 @@ h1 em { color: var(--clay); font-weight: 400; }
   .map-stage { flex: none; }
   .map-pane { height: auto; }
   .detail-panel { height: auto; max-height: none; min-height: 0; margin-top: 28px; overflow-y: visible; }
-  .site-links a { padding-inline: 8px; }
   .portfolio-link { padding-inline: 4px; }
 }
 
 @media (max-width: 900px) {
 
   .topbar { gap: 10px; }
-  .site-links { gap: 0; }
   .topbar-meta { display: none; }
 }
 
 @media (max-width: 560px) {
   .topbar { top: 8px; width: calc(100% - 24px); min-height: 60px; margin-top: 8px; padding: 6px 8px 6px 12px; gap: 8px; }
   .brand { gap: 8px; font-size: 14px; }
-  .site-links { display: none; }
   .dashboard { width: calc(100% - 36px); margin-top: 30px; }
   .map-pane { padding: 0; }
   .detail-panel, .fiscal-detail { padding-inline: 18px; }

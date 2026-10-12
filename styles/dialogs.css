@@ -1,0 +1,46 @@
+/* A single focused surface keeps source details out of the surrounding ledger. */
+.data-dialog {
+  width: min(960px, calc(100% - 32px));
+  max-height: calc(100dvh - 48px);
+  padding: 0;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 18px 18px 18px 5px;
+  background: var(--panel);
+  color: var(--ink);
+  box-shadow: 0 24px 80px #08171066;
+}
+.data-dialog::backdrop { background: #10231dcc; backdrop-filter: blur(5px); }
+.data-dialog[open] { display: flex; flex-direction: column; }
+body:has(.data-dialog[open]) { overflow: hidden; }
+.dialog-heading { display: flex; align-items: center; justify-content: space-between; gap: 20px; padding: 22px 28px; border-bottom: 1px solid var(--line); }
+.dialog-heading h2 { min-width: 0; overflow-wrap: anywhere; font-size: clamp(30px, 4vw, 44px); line-height: 1.05; }
+.dialog-heading h2:focus { outline: none; }
+.dialog-actions { display: flex; flex: none; gap: 8px; }
+.dialog-actions button, .source-directory-button { min-height: 44px; padding: 8px 14px; border: 1px solid var(--line); border-radius: 10px; color: var(--sage); background: var(--surface-subtle); font-size: 13px; cursor: pointer; }
+.dialog-actions button:hover, .source-directory-button:hover { background: var(--soft-sage); }
+.dialog-body { min-height: 0; padding: 24px 28px 32px; overflow: auto; overscroll-behavior: contain; }
+.dialog-body .breakdown-details { margin: 0 0 20px; }
+.dialog-body .source-explorer { padding: 0; border: 0; }
+.dialog-body .agency-rows { max-height: none; overflow: visible; }
+.dialog-body .section-heading h3 { font-size: 28px; }
+.detail-entry { width: 100%; background: transparent; font: inherit; text-align: left; cursor: pointer; }
+.detail-entry::after { content: "↗"; flex: none; color: var(--sage); font-size: 20px; }
+.detail-entry:focus-visible { outline: 2px solid var(--clay); outline-offset: 3px; }
+.entry-summary { margin-bottom: 24px; background: var(--surface-subtle); }
+.dialog-body > a { display: block; width: fit-content; margin-bottom: 18px; color: var(--sage); font-size: 13px; }
+.entry-panel { margin-top: 24px; padding-top: 24px; border-top: 1px solid var(--line); }
+.entry-panel h3 { margin: 0 0 14px; color: var(--ink); font: 400 28px/1.2 var(--display); }
+.entry-panel .item-breakdown-note { margin: 0 0 16px; font-size: 13px; }
+.entry-panel .agency-row { margin-top: 8px; }
+.entry-panel > a:not(.agency-row) { display: inline-block; margin-top: 14px; color: var(--sage); font-size: 13px; }
+#sourceDirectoryControl { margin-top: 24px; }
+#sourceDirectoryControl[hidden], .dialog-actions button[hidden] { display: none; }
+@media (max-width: 560px) {
+  .data-dialog { width: calc(100% - 16px); max-height: calc(100dvh - 16px); }
+  .dialog-heading { align-items: flex-start; padding: 18px; gap: 12px; }
+  .dialog-actions { flex-direction: column; }
+  .dialog-body { padding: 18px; }
+  .dialog-body .agency-row { flex-wrap: wrap; }
+  .dialog-body .agency-row > b { flex-basis: auto; }
+}

@@ -148,13 +148,17 @@ function largeAccountCatalog(detail, rendered) {
   if (!research) return "";
   const summary = rows.length + " of " + research.accountCount.toLocaleString()
     + " Treasury accounts are at least " + model.formatMoney(research.threshold);
-  return '<details class="source-catalog"><summary><strong>Treasury account cross-checks</strong><small>'
+  const content = '<span><strong>Treasury account cross-checks</strong><small>'
     + escapeHtml(summary + " · the same spending regrouped; reference only, not a subtotal")
-    + '</small></summary><div>' + rows.map((row) => '<small><b>' + model.formatMoney(row[2])
-      + '</b> · TAS ' + escapeHtml(row[0]) + ' · ' + escapeHtml(model.displayAccountDescription(detail, row)) + ' · '
-      + row[3].toLocaleString() + (row[3] === 1 ? ' availability row' : ' availability rows') + '</small>'
-      + nestedSourceBreakdowns(detail, row, rendered)).join("")
-    + '<a href="' + escapeHtml(research.sourceUrl) + '" target="_blank" rel="noopener noreferrer">Open official Treasury account table ↗</a></div></details>';
+    + '</small></span>';
+  const children = rows.map((row) => {
+    const label = '<span><strong>' + escapeHtml(model.displayAccountDescription(detail, row))
+      + '</strong><small>TAS ' + escapeHtml(row[0]) + ' · ' + row[3].toLocaleString()
+      + (row[3] === 1 ? ' availability row' : ' availability rows')
+      + '</small></span><b>' + model.formatMoney(row[2]) + '</b>';
+    return renderDrilldownRow(label, nestedSourceBreakdowns(detail, row, rendered), research.sourceUrl);
+  }).join("");
+  return renderDrilldownRow(content, children, research.sourceUrl);
 }
 
 function itemBreakdown(detail, parent, rendered) {
@@ -163,20 +167,22 @@ function itemBreakdown(detail, parent, rendered) {
   if (!match) return "";
   if (match.rows.length === 1) {
     const row = match.rows[0];
-    return '<a class="agency-row" href="' + escapeHtml(match.sourceUrl) + '" target="_blank" rel="noopener noreferrer"><span><strong>'
+    const content = '<span><strong>'
       + escapeHtml(model.displayAccountDescription(detail, row)) + '</strong><small>' + escapeHtml((match.rowPrefix || "TAS") + " " + row[0]
         + " · leaf account · " + (match.title || "Reconciled account"))
-      + '</small></span><b>' + model.formatMoney(row[2]) + '</b></a>'
-      + nestedSourceBreakdowns(detail, row, rendered);
+      + '</small></span><b>' + model.formatMoney(row[2]) + '</b>';
+    return renderDrilldownRow(content, nestedSourceBreakdowns(detail, row, rendered), match.sourceUrl);
   }
-  return '<details class="item-breakdown"><summary>' + escapeHtml(match.title || "Show reconciled account breakdown") + ' · '
-    + match.accountCount.toLocaleString() + ' accounts</summary><small class="item-breakdown-note">'
-    + escapeHtml(match.basis || detail.itemBreakdownBasis) + '</small>' + match.rows.map((row) =>
-      '<div class="agency-row"><span><strong>' + escapeHtml(model.displayAccountDescription(detail, row)) + '</strong><small>'
+  return '<section class="entry-panel"><h3>' + escapeHtml(match.title || "Reconciled account breakdown") + ' · '
+    + match.accountCount.toLocaleString() + ' accounts</h3><p class="item-breakdown-note">'
+    + escapeHtml(match.basis || detail.itemBreakdownBasis) + '</p>' + match.rows.map((row) => {
+    const content = '<span><strong>' + escapeHtml(model.displayAccountDescription(detail, row)) + '</strong><small>'
       + escapeHtml((match.rowPrefix || "TAS") + " " + row[0]) + '</small></span><b>' + model.formatMoney(row[2])
-      + '</b></div>' + nestedSourceBreakdowns(detail, row, rendered)).join("")
+      + '</b>';
+    return renderDrilldownRow(content, nestedSourceBreakdowns(detail, row, rendered));
+  }).join("")
     + '<a href="' + escapeHtml(match.sourceUrl) + '" target="_blank" rel="noopener noreferrer">Open '
-    + escapeHtml(match.sourceLabel || "official Treasury account table") + ' ↗</a></details>';
+    + escapeHtml(match.sourceLabel || "official Treasury account table") + ' ↗</a></section>';
 }
 
 function supplementalBreakdown(detail, parent, rendered) {
@@ -232,22 +238,19 @@ function renderSourceBreakdown(match, detail, rendered) {
   const count = /\brows$/.test(match.title) ? "" : ' · ' + match.rows.length.toLocaleString() + ' rows';
   if (match.rows.length === 1) {
     const row = match.rows[0];
-    return '<a class="agency-row" href="' + escapeHtml(row[3] || match.sourceUrl)
-      + '" target="_blank" rel="noopener noreferrer"><span><strong>' + escapeHtml(row[0])
+    const content = '<span><strong>' + escapeHtml(row[0])
       + '</strong><small>' + escapeHtml(model.displayAccountDescription(detail, row) + " · leaf account · " + match.title)
-      + '</small></span><b>' + model.formatMoney(row[2]) + '</b></a>'
-      + nestedSourceBreakdowns(detail, row, rendered);
+      + '</small></span><b>' + model.formatMoney(row[2]) + '</b>';
+    return renderDrilldownRow(content, nestedSourceBreakdowns(detail, row, rendered), row[3] || match.sourceUrl);
   }
-  return '<details class="item-breakdown"><summary>' + escapeHtml(match.title)
-    + count + '</summary><small class="item-breakdown-note">'
-    + escapeHtml(match.basis) + '</small>' + match.rows.map((row) => {
+  return '<section class="entry-panel"><h3>' + escapeHtml(match.title)
+    + count + '</h3><p class="item-breakdown-note">'
+    + escapeHtml(match.basis) + '</p>' + match.rows.map((row) => {
       const content = '<span><strong>' + escapeHtml(row[0]) + '</strong><small>' + escapeHtml(model.displayAccountDescription(detail, row))
         + '</small></span><b>' + model.formatMoney(row[2]) + '</b>';
-      const rowHtml = row[3] ? '<a class="agency-row" href="' + escapeHtml(row[3])
-        + '" target="_blank" rel="noopener noreferrer">' + content + '</a>' : '<div class="agency-row">' + content + '</div>';
-      return rowHtml + nestedSourceBreakdowns(detail, row, rendered);
+      return renderDrilldownRow(content, nestedSourceBreakdowns(detail, row, rendered), row[3]);
     }).join("") + '<a href="' + escapeHtml(match.sourceUrl) + '" target="_blank" rel="noopener noreferrer">Open '
-    + escapeHtml(match.sourceLabel) + ' ↗</a></details>';
+    + escapeHtml(match.sourceLabel) + ' ↗</a></section>';
 }
 
 function shareLabel(department) {

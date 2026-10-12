@@ -19,7 +19,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles/styles.css?v=28">
   <link rel="stylesheet" href="styles/details.css?v=23">
-  <link rel="stylesheet" href="styles/polish.css?v=8">
+  <link rel="stylesheet" href="styles/polish.css?v=9">
+  <link rel="stylesheet" href="styles/dialogs.css?v=1">
 </head>
 <body>
   <a class="skip-link" href="#mainContent">Skip to content</a>
@@ -37,10 +38,6 @@
       <span class="brand-mark" aria-hidden="true">PL</span>
       <span>Public Ledger</span>
     </a>
-    <nav class="site-links" aria-label="Primary navigation">
-      <a href="#map-title">Explore the map</a>
-      <a href="#fiscalDetailTitle">Source details</a>
-    </nav>
     <div class="topbar-actions">
       <div class="topbar-meta">
         <a class="portfolio-link" href="https://leland-lee.com/">Leland Lee <span aria-hidden="true">↗</span></a>
@@ -177,21 +174,43 @@
           </div>
           <div class="category-list" id="categoryList"></div>
         </div>
-        <div class="breakdown-details" id="breakdownDetails" aria-live="polite"></div>
-        <section class="panel-section source-explorer nested-source-explorer" aria-labelledby="sourceExplorerTitle">
-          <div class="section-heading">
-            <h3 id="sourceExplorerTitle">Agency source explorer</h3>
-            <span>Nested view</span>
-          </div>
-          <p class="source-explorer-note" id="sourceExplorerNote">Federal agency outlays and obligations are nested evidence and are not added to the pie.</p>
-          <div id="agencyRows" class="agency-rows"></div>
-        </section>
+        <div id="sourceDirectoryControl" hidden>
+          <button class="source-directory-button" type="button" data-detail-entry aria-haspopup="dialog">Official source directory</button>
+          <template id="sourceDirectory" data-detail-content></template>
+        </div>
       </section>
 
       </div>
 
     </section>
   </main>
+
+  <dialog class="data-dialog" id="departmentDialog" aria-labelledby="departmentDialogTitle">
+    <header class="dialog-heading">
+      <h2 id="departmentDialogTitle">Spending details</h2>
+      <div class="dialog-actions"><button type="button" data-dialog-close autofocus>Close</button></div>
+    </header>
+    <div class="dialog-body">
+        <div class="breakdown-details" id="breakdownDetails" aria-live="polite"></div>
+        <section class="panel-section source-explorer nested-source-explorer" aria-labelledby="sourceExplorerTitle">
+          <div class="section-heading">
+            <h3 id="sourceExplorerTitle">Agency source explorer</h3>
+          </div>
+          <p class="source-explorer-note" id="sourceExplorerNote">Federal agency outlays and obligations are nested evidence and are not added to the pie.</p>
+          <div id="agencyRows" class="agency-rows"></div>
+        </section>
+    </div>
+  </dialog>
+  <dialog class="data-dialog" id="entryDialog" aria-labelledby="entryDialogTitle">
+    <header class="dialog-heading">
+      <h2 id="entryDialogTitle" tabindex="-1">Entry details</h2>
+      <div class="dialog-actions">
+        <button type="button" id="entryDialogBack" hidden>← Back</button>
+        <button type="button" data-dialog-close>Close</button>
+      </div>
+    </header>
+    <div class="dialog-body" id="entryDialogBody"></div>
+  </dialog>
 
   <footer class="methodology-disclaimer" aria-label="Methodology and legal disclaimers">
     <strong>Methodology note</strong>
@@ -215,10 +234,11 @@
   <script src="src/department-loader.js?v=7"></script>
   <script src="src/tax-overview.js?v=1"></script>
   <script src="src/model.js?v=12"></script>
-  <script src="src/receipt-hierarchy.js?v=2"></script>
+  <script src="src/detail-dialog.js?v=1"></script>
+  <script src="src/receipt-hierarchy.js?v=3"></script>
   <script src="src/tax-estimates.js?v=11"></script>
   <script src="src/kpi-disclosure.js?v=1"></script>
-  <script src="src/fiscal-panel.js?v=26"></script>
-  <script src="src/app.js?v=28"></script>
+  <script src="src/fiscal-panel.js?v=27"></script>
+  <script src="src/app.js?v=29"></script>
 </body>
 </html>

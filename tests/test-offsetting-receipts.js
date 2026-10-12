@@ -23,9 +23,10 @@ assert.equal(detail.sourceCheck.mtsRoundingAdjustment, -262971.56);
 assert.equal(detail.rows.reduce((sum, row) => sum + cents(row[2]), 0), cents(-330572000000));
 
 const html = render(detail);
-assert.equal((html.match(/class="receipt-class"/g) || []).length, 2);
-assert.equal((html.match(/class="receipt-group"/g) || []).length, 3);
-assert.equal((html.match(/class="agency-row receipt-account"/g) || []).length, 107);
+assert.equal((html.match(/class="[^"]*\breceipt-class\b[^"]*"/g) || []).length, 2);
+assert.equal((html.match(/class="[^"]*\breceipt-group\b[^"]*"/g) || []).length, 3);
+assert.equal((html.match(/class="[^"]*\breceipt-account\b[^"]*"/g) || []).length, 107);
+assert.doesNotMatch(html, /<details|<summary/);
 assert.doesNotMatch(html, /<strong>Other Interest<\/strong><small>1 accounts/);
 assert.equal((html.match(/MTS rounded-control bridge/g) || []).length, 1);
 assert.match(html, /107 source-native receipt accounts · 18 ≥\$1B disclosure ceilings/);
